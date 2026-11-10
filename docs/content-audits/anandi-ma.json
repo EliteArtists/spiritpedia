@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "anandi-ma",
+    "location_source": "https://dyc.org/msg-dyc/",
+    "create": {
+      "name": "Shri Anandi Ma",
+      "bio": "Shri Anandi Ma is an Indian meditation teacher and the head of the Kundalini Maha Yoga lineage of Shri Dhyanyogi Madhusudandas. As a young woman in Gujarat she went through an intense period of practice and visionary experience, and the elderly yogi, recognising her as his spiritual heir, trained her closely for several years. She travelled with him to the United States in 1976 and, at his request, carried on his work after he went back to India. Dileepji, who met Dhyanyogi as a boy and served as his translator, has taught alongside her ever since, and the two lead their community together.\n\nTheir path centres on shaktipat, the awakening of kundalini energy through a teacher, which Anandi Ma gives in person and at a distance, together with mantra, breath practice, chanting and meditation. Their organisation, Dhyanyoga Centers, has a meditation centre in Antioch, California, where they hold a Sunday programme of chanting, meditation, prayer for world peace and question-and-answer satsang that is also streamed online, and an ashram and temple Anandi Ma built beside the Narmada River at Nikora in Gujarat. They teach in the United States from spring to autumn and in India in the winter, and recorded workshops on practices such as pranayama and tratak are available from their store.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Antioch, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://dyc.org/",
+      "booking_url": "https://dyc.org/events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@dyc.org",
+      "image_urls": [
+        "https://dyc.org/wp-content/uploads/dhyanyoga-centers-shri-anandi-ma-janmashtami-2022.jpg",
+        "https://dyc.org/wp-content/uploads/2021/06/dhyanyoga-centers-anandi-ma-bowed-by-water.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tratak (2-disc set)",
+      "url": "https://store.dyc.org/product/tratak/",
+      "description": "A recorded workshop in which Anandi Ma and Dileepji teach tratak, the yogic practice of steady gazing, as a support for concentration and meditation on the path of Kundalini Maha Yoga.",
+      "price": "$34.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://store.dyc.org/wp-content/uploads/2013/08/tratakNEW.png"
+    },
+    {
+      "title": "Pranayama (2-disc set)",
+      "url": "https://store.dyc.org/product/pranayama/",
+      "description": "A classic Dhyanyoga Centers workshop recording on breath control and the yogic understanding of prana. It is sold as a DVD set and can also be rented or bought as video on demand.",
+      "price": "$34.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://store.dyc.org/wp-content/uploads/pranayama-thumb-for-bookstore.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Meditation with Anandi Ma",
+      "url": "https://dyc.org/sunday-meditation-program/",
+      "description": "A weekly programme streamed from Antioch at 10:30am Pacific time, with chanting, meditation to Dhyanyogi's mantra arrangement, arati, followed by satsang on the Sundays the two teachers are there. It is free to join online or in person.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://dyc.org/wp-content/uploads/dyc-chanting.jpg"
+    },
+    {
+      "title": "Satsang Replays",
+      "url": "https://dyc.org/satsang-replays/",
+      "description": "Recordings of the question-and-answer sessions Anandi Ma and Dileepji give after Sunday meditation, free to watch on the site or on Vimeo.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://dyc.org/wp-content/uploads/dhyanyoga-centers-shri-anandi-ma-janmashtami-2022.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 338,
+    "hub_url": "https://www.soundstrue.com/collections/authors-shri-anandi-ma",
+    "tier_evidence": "No personal accounts found; Dhyanyoga Centers' social icons are the organisation's (not counted, not opened) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://dyc.org/",
+    "contact_form_url": "https://dyc.org/msg-dyc/",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. Site dyc.org (Dhyanyoga Centers) found by web search; robots.txt read (Crawl-delay 20 respected for pages and images after the first header check).",
+      "Teaching pair: Shri Anandi Ma and Dileepji (Dileepji Pathak, rank 339 on the same list) teach together; one listing under Anandi Ma, with Dileepji in the bio. Rank 339 skipped as part of this listing.",
+      "Email info@dyc.org is Dhyanyoga Centers' general inbox (their own organisation); contact form on dyc.org/msg-dyc/.",
+      "Thin on items: no YouTube (replays are on Vimeo/IBM Video), no books with an ISBN on their pages; two store recordings plus two free resources.",
+      "Store recordings are DVDs; Tratak's page says it strengthens vision (health-adjacent wording, not used). Pranayama DVD is out of stock but sold as video on demand.",
+      "Photos from her own site; the 2022 Janmashtami photo is named for her in the file name, the older one is from her teacher page. Same person likely but decades apart; please check.",
+      "Regional: Antioch, California."
+    ],
+    "left_out": [
+      "Pancha Karma Healing Retreat, Nikora (16-29 Jan 2027): framed as healing/detox (health rule).",
+      "Shaktipat weekends: no dates currently scheduled (2026 dates past).",
+      "Guruji's Birthday Celebration (10 Jan 2027): registration not open.",
+      "Foundations of Meditation, Chakra Bhedan 1-4, Mudra: out of stock; Rites at Dying / Understanding and Preparing for Death sets and 'Spirituality and Psychology' recordings not checked.",
+      "Books: the store sells scripture translations and Dhyanyogi's books; none authored by her with an ISBN on a page read."
+    ]
+  },
+  "images_final": true
+}

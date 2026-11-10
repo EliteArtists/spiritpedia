@@ -1,0 +1,153 @@
+{
+  "healer": {
+    "healer_slug": "matthieu-ricard",
+    "location_source": null,
+    "no_public_base": "His own site says only that he has lived in the Himalayan region for decades and lives in a monastery; it names no monastery, town or country.",
+    "create": {
+      "name": "Matthieu Ricard",
+      "bio": "Matthieu Ricard is a French Buddhist monk, writer, translator and photographer. Born in 1946 to the philosopher Jean-François Revel and the painter Yahne Le Toumelin, he first travelled to India in 1967 and met Tibetan masters there. He completed a doctorate in cell genetics in 1972 and then left science behind to settle in the Himalayas, where he has lived ever since, and since 1989 he has been the Dalai Lama's French interpreter.\n\nHe is best known for his books on happiness, altruism and meditation, which bring Buddhist practice into conversation with modern research; they include Happiness, Altruism, Why Meditate? and The Monk and the Philosopher, a set of conversations with his father. As a member of the Mind and Life Institute he has taken part in university studies of how meditation affects the brain, and his TED talks on happiness and altruism have reached millions. He has also translated many Tibetan texts, among them The Life of Shabkar, and published photo books of Himalayan landscapes and people. All income from his books, photographs and events goes to Karuna-Shechen, the humanitarian organisation he set up to run education, health and social projects in the Himalayan region. He is clear that he doesn't see himself as a teacher, and he points people to his writing rather than giving teachings.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "conscious-science",
+        "spirituality"
+      ],
+      "website_url": "https://www.matthieuricard.org/en/",
+      "booking_url": "https://www.matthieuricard.org/en/schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.matthieuricard.org/wp-content/uploads/2022/12/MR1166-D4784-1024x681.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "A path towards inner freedom, with Matthieu Ricard",
+      "url": "https://www.youtube.com/watch?v=23iiGlSsPGk",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Landguet Ried, Center for mindful living"
+    },
+    {
+      "title": "Change your Mind Change your Brain: The Inner Conditions...",
+      "url": "https://www.youtube.com/watch?v=L_30JzRGDHI",
+      "subjects": [
+        "meditation",
+        "conscious-science"
+      ],
+      "channel": "Google"
+    },
+    {
+      "title": "How Do We Become Happy? | Matthieu Ricard | Google Zeitgeist",
+      "url": "https://www.youtube.com/watch?v=hQbBSxooz_I",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Google Zeitgeist"
+    }
+  ],
+  "books": [
+    {
+      "title": "Happiness: A Guide to Developing Life's Most Important Skill",
+      "slug": "happiness-a-guide-to-developing-lifes-most-important-skill",
+      "author": "Matthieu Ricard",
+      "asin": "0316167258",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Drawing on Buddhist practice and his scientific training, Ricard argues that lasting happiness is a skill built from inner conditions, and shows how to cultivate them.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0316167258.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Altruism: The Power of Compassion to Change Yourself and the World",
+      "slug": "altruism-the-power-of-compassion",
+      "author": "Matthieu Ricard",
+      "asin": "031620823X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A long, wide-ranging case for altruism as something that benefits both the giver and society, built on decades of his own practice and on research.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/031620823X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Why Meditate: Working with Thoughts and Emotions",
+      "slug": "why-meditate",
+      "author": "Matthieu Ricard",
+      "asin": "1401926630",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short guide answering why to meditate, on what and how, with practical exercises for working with thoughts and emotions.",
+      "subjects": [
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401926630.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Monk and the Philosopher: A Father and Son Discuss the Meaning of Life",
+      "slug": "the-monk-and-the-philosopher",
+      "author": "Jean-François Revel and Matthieu Ricard",
+      "asin": "0805211039",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Conversations between Ricard and his father, a leading French thinker, weighing Buddhism against Western philosophy on the big questions of life.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0805211039.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 347,
+    "hub_url": "https://www.soundstrue.com/collections/authors-matthieu-ricard",
+    "tier_evidence": "No YouTube channel found on pages read (videos are on other channels); Instagram, Facebook and X not opened (not readable without login) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://karuna-shechen.org/en/contact-us/",
+    "flags": [
+      "OWNER: his own FAQ (matthieuricard.org/en/faq/) says he 'does not consider himself as a teacher' and cannot grant requests for teachings; kept because being on the Sounds True list is enough, but owner may prefer to leave him out.",
+      "Sounds True list used as names only; soundstrue.com not opened. matthieuricard.org and karuna-shechen.org found by web search; robots.txt read for both.",
+      "Contact: his own contact page shows an unrendered form shortcode (no working form); his FAQ sends event requests to Karuna-Shechen, whose contact page has a working form, used here. No email published on either site.",
+      "Base: no public base (lives in an unnamed Himalayan monastery per his site).",
+      "Tier: no personal counts readable; internationally known author and TED speaker, owner may consider editorial stature.",
+      "Book ASINs from the Amazon links on his own book pages (matthieuricard.org/en/books_mr/…, links not opened). Why Meditate is a Hay House title; only its ASIN from his page is used (hayhouse.com not opened).",
+      "Videos linked from his own site's video pages and checked with oEmbed; Google talks and a centre's channel, with him as the speaker.",
+      "booking_url is his schedule page; the only upcoming item is a photo auction (12–14 Nov 2026) for Karuna-Shechen, not an offering."
+    ],
+    "left_out": [
+      "Photo auction at Hôtel Drouot (12–14 Nov 2026): not a teaching offering and starts before 13 Nov.",
+      "84000 online teaching (16 Mar 2025): past.",
+      "Translations, photo books and other titles: kept to four main books.",
+      "Podcasts page not opened."
+    ],
+    "bio_check": "OK: no 8-word runs against 16 source(s)"
+  },
+  "images_final": true
+}

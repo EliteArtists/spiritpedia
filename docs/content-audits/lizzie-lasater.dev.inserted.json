@@ -1,0 +1,70 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1119,
+    "healer_slug": "lizzie-lasater"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2306,
+      "slug": "savasana-the-practice-of-radical-rest",
+      "title": "Savasana: The Practice of Radical Rest"
+    },
+    {
+      "table": "courses",
+      "id": "e00958c2-560d-484b-b6ad-51accf5af178",
+      "slug": "winter-reset-embody-inspire-utrecht",
+      "title": "Winter Reset: Embody & Inspire (Utrecht)"
+    },
+    {
+      "table": "courses",
+      "id": "1297478a-ea11-42d3-8321-0bbc196a0cf9",
+      "slug": "living-your-yoga-a-retreat-in-italy",
+      "title": "Living Your Yoga: A Retreat in Italy"
+    },
+    {
+      "table": "courses",
+      "id": "59220de3-f70e-4e66-b787-004795fddb44",
+      "slug": "yoga-summer-camp-finding-connection-and-creativity",
+      "title": "Yoga Summer Camp: Finding Connection and Creativity"
+    },
+    {
+      "table": "courses",
+      "id": "b3771fee-95ab-4349-94aa-bc7ff5991fd8",
+      "slug": "savasana-intensive",
+      "title": "Savasana Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "5a55a6d8-c65c-4e1b-9dbf-34e4a4d732d3",
+      "slug": "pranayama-intensive",
+      "title": "Pranayama Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "21329489-a176-4774-96af-35f34f75ddcd",
+      "slug": "meditation-intensive",
+      "title": "Meditation Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "04932f86-596a-4f1a-8096-09022fc0c82c",
+      "slug": "restorative-teacher-training-50-hour-certification",
+      "title": "Restorative Teacher Training (50 Hour Certification)"
+    },
+    {
+      "table": "free_resources",
+      "id": "81c7dedb-3247-4e10-90d5-a84c3dca64ad",
+      "slug": "savasana-summit",
+      "title": "Savasana Summit"
+    },
+    {
+      "table": "free_resources",
+      "id": "80a1d69f-99ff-4668-8ec5-97172f6c5e5f",
+      "slug": "rest-for-real-free-savasana-class",
+      "title": "Rest for Real: Free Savasana Class"
+    }
+  ],
+  "at": "2026-11-10T00:36:19.057Z"
+}

@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "byron-yoga-centre",
+    "location_source": "https://www.byronyoga.com/our-story/",
+    "create": {
+      "name": "Byron Yoga Centre",
+      "bio": "Byron Yoga Centre is a residential yoga school on a thirty-acre property just outside the town of Byron Bay in northern New South Wales. John Ogilvie, who still leads it as founder and chief executive, began teaching in the town in 1986 and opened the centre with two fellow teachers in 1988. After two decades of training in the Iyengar and Ashtanga traditions he shaped his own approach, Purna Yoga, a name meaning complete: alignment-based posture work with props, joined to breathing practice, meditation, philosophy and the ethical code of yoga. Since 2010 the school has run its programmes on its own land at Skinners Shoot, with a garden kitchen serving sattvic vegetarian food and on-site cabins and rooms.\n\nTeacher education is the school's main work. A 200-hour Level 1 course runs in 20-, 12- or 7-day residential formats several times a year, a 300-hour Level 2 builds on it, and shorter modules, such as a meditation immersion, can count towards those hours. The centre is also a registered training organisation offering a Certificate IV in yoga teaching. Alongside the trainings it hosts weekly five- and seven-day yoga retreats, day retreats and an annual trip to India, with Marita Dortins as head teacher trainer.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 1988,
+      "availability": "local",
+      "city": "Byron Bay, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.byronyoga.com/",
+      "booking_url": "https://www.byronyoga.com/byron-yoga-centre-teacher-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@byronyoga.com",
+      "image_urls": [
+        "https://www.byronyoga.com/wp-content/uploads/2025/10/Web-homepage-images-1000-%C3%97-667px-35.jpg",
+        "https://www.byronyoga.com/wp-content/uploads/2024/10/Web-images-1030-%C3%97-515px0724-1000-x-667-px-3.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "About Byron Yoga Centre ❤",
+      "url": "https://www.youtube.com/watch?v=3KW_I1bg9Yg",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Byron Yoga Centre"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Level 1 200hr Yoga Teacher Training",
+      "url": "https://www.byronyoga.com/level-1-20-and-12-day-teacher-training/",
+      "description": "The school's foundation training in Purna Yoga, accredited at 200 hours, taken on site as a 20-day residential or as shorter 12- and 7-day versions with study before and afterwards. Intakes are listed for January, April, late June and August 2027.",
+      "price": "Investment: from $5,980 (20-Day Intensive)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    },
+    {
+      "title": "Level 2 300hr Yoga Teacher Training",
+      "url": "https://www.byronyoga.com/byron-20-12-day-intensive-level-2/",
+      "description": "A fortnight's residential course for teachers who already hold a 200-hour qualification, framed by online study before and after. Together with chosen specialist modules it completes 300 hours.",
+      "price": "Investment: Residential priced from $5,779",
+      "product_type": "course",
+      "start_date": "2027-08-23",
+      "end_date": "2027-09-05",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    },
+    {
+      "title": "6 Day Meditation Immersion",
+      "url": "https://www.byronyoga.com/meditation-teacher-training/",
+      "description": "A new 50-hour residential course led by Bec Isaacs, combining guided sitting practice, yogic breathing, asana and talks on the philosophy of meditation. It can count towards the school's 300-hour programme.",
+      "price": "Investment: from $2,660",
+      "product_type": "course",
+      "start_date": "2027-02-14",
+      "end_date": "2027-02-19",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    },
+    {
+      "title": "5 Day Yoga Retreat",
+      "url": "https://www.byronyoga.com/5-day-yoga-retreat/",
+      "description": "A weekly residential retreat at the centre with several yoga classes a day, meditation, vegetarian meals and short sessions on asana alignment, cooking and the gardens. Each season has its own theme, and guests join in as much as they wish.",
+      "price": "Investment: from $1,770",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 522,
+    "hub": null,
+    "tier_evidence": "YouTube not read (consent rule); Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.byronyoga.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Found by web search for Byron Bay yoga schools; own site only (Retreat Guru, Yoga Alliance and BookRetreats results not used).",
+      "robots.txt sets Crawl-delay: 10; every request to byronyoga.com was spaced 11 seconds apart.",
+      "Email info@byronyoga.com is the centre's office inbox (plain mailto link on every page).",
+      "Prices are shown with '$' only (Australian business, but no currency code is stated), so they are copied as published.",
+      "The school is partly a retreat centre; it is kept because teacher training (200/300 hour, Certificate IV) is its main work.",
+      "Only one video is embedded on the site (an introduction to the centre); the channel page was not opened.",
+      "Regional: Byron Bay, New South Wales; Spiritpedia has few listings there.",
+      "Possible future listings: John Ogilvie, Marita Dortins, Bec Isaacs.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "The founder's story page discusses his past addiction and recovery; that is not used in the bio."
+    ],
+    "left_out": [
+      "Trauma-Aware, Remedial, Yoga and the Nervous System, Yoga for Seniors and Restorative teacher trainings: therapeutic or condition-led (health rule).",
+      "Women's 3 Day Retreat and Sacred Women's Retreats: women's health framing (fertility, menopause) on the related pages (health rule).",
+      "7 Day Wellness Retreat and the New Year retreat: pages not opened.",
+      "Founder headshot and historic street photo: not of the school's rooms or grounds."
+    ]
+  },
+  "images_final": true
+}

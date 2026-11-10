@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "samadhi-yoga-ashram",
+    "location_source": "https://samadhiyogaashram.com/about-us.php",
+    "create": {
+      "name": "Samadhi Yoga Ashram",
+      "bio": "Samadhi Yoga Ashram is a residential yoga school beside the Ganga at Laxman Jhula in Rishikesh. Yogi Vishnu Panigrahi, who grew up in western Odisha, started it in 2011 and still guides it as spiritual director, with Maa Haripriya as co-founder and Kundalini teacher. The ashram places itself in the Himalayan tradition of Swami Rama, through Yogi Vishnu's own training with Swami Veda Bharati, and treats asana as one strand among pranayama, meditation, mantra, kriya, philosophy and karma yoga. A second campus runs in Ubud, Bali.\n\nIts main work is Yoga Alliance-registered teacher training: multi-style courses at 100, 200, 300 and 500 hours drawing on Hatha, Ashtanga and Vinyasa, and a parallel Kundalini and Tantra track, with new groups starting at the beginning of each month and students living on site with vegetarian meals. A faculty of Rishikesh-trained teachers covers asana, pranayama, the Yoga Sutras, Vedanta and meditation. The ashram also hosts short yoga and meditation retreats on rolling dates, drop-in classes for visitors seven days a week, and some online trainings, and it keeps a free library of classic texts for download.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2011,
+      "availability": "local_online",
+      "city": "Rishikesh, Uttarakhand",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://samadhiyogaashram.com/",
+      "booking_url": "https://samadhiyogaashram.com/yoga-teacher-training-in-india.php",
+      "youtube_url": "https://www.youtube.com/channel/UC3VD5t3EnngsBdIS4b3IYFg",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@samadhiyogaashram.com",
+      "image_urls": [
+        "https://samadhiyogaashram.com/images/banner/new-banner-image2.webp",
+        "https://samadhiyogaashram.com/images/banner/new-banner-image3.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Yoga Teacher Training Overview in Samadhi Yoga Ashram",
+      "url": "https://www.youtube.com/watch?v=EMjS66o-SH0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Samadhi Yoga Ashram"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 Hour Yoga Teacher Training in Rishikesh",
+      "url": "https://samadhiyogaashram.com/200-hours-yoga-teacher-training-in-rishikesh.php",
+      "description": "A 25-day residential foundation course mixing Hatha, Ashtanga and Vinyasa, with daily pranayama and meditation and classes in anatomy, the Yoga Sutras and teaching method. Groups begin on the first of each month, and the fee covers room and meals.",
+      "price": "From $599",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/200-hour-yoga-ttc-detail1.webp"
+    },
+    {
+      "title": "300 Hour Yoga Teacher Training in Rishikesh",
+      "url": "https://samadhiyogaashram.com/300-hours-yoga-teacher-training-in-rishikesh.php",
+      "description": "The advanced 29-day residential course for teachers who already hold a 200-hour qualification, deepening asana, pranayama, philosophy and teaching skills. Taken after the 200-hour course it completes the 500-hour level.",
+      "price": "From $1,290",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/300-hour-yoga-ttc-detail1.webp"
+    },
+    {
+      "title": "200 Hour Kundalini Yoga Teacher Training in Rishikesh",
+      "url": "https://samadhiyogaashram.com/kundalini-yoga-in-rishikesh.php",
+      "description": "A 25-day residential training in Kundalini and Tantra practice rooted in the Himalayan tradition: kriyas, pranayama, bandhas, mudras, mantra and chakra meditation, with classical Hatha asana as support and readings from the Hatha Yoga Pradipika. Shorter and longer tracks are also offered.",
+      "price": "From $990",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "chakra-healing",
+        "meditation"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/200-hour-kundalini-yttc-detail1.webp"
+    },
+    {
+      "title": "Yoga and Meditation Retreat in Rishikesh",
+      "url": "https://samadhiyogaashram.com/yoga-and-meditation-retreat-in-rishikesh.php",
+      "description": "Stays of 5, 7, 14 or 21 days at the ashram with daily yoga, pranayama, meditation and philosophy, vegetarian meals and visits to the evening Ganga Aarti and Kunjapuri temple. Start dates are open all year; the five-day price is for a shared room, and longer stays are quoted on request.",
+      "price": "USD 499",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/sya-india-about-us1.webp"
+    },
+    {
+      "title": "Daily drop-in yoga classes in Rishikesh",
+      "url": "https://samadhiyogaashram.com/daily-yoga-classes-in-rishikesh.php",
+      "description": "Hour-long Hatha and Ashtanga classes open to visitors at every level, held mornings and evenings seven days a week at the Laxman Jhula ashram. Single classes or multi-class cards are available.",
+      "price": "₹300 / class",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/sya-india-about-us1.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Yoga Library",
+      "url": "https://samadhiyogaashram.com/yoga-library.php",
+      "description": "A set of classic texts the ashram uses in its trainings, free to read or download without giving an email: Vivekananda on the Yoga Sutras and on meditation, Satyananda on Yoga Nidra, an anatomy reference and a mantra book compiled by Yogi Vishnu.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/new-sya-samadhi-about-us1.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 502,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram and Facebook not fetched; no readable followers → local_hero. The site states 5,000+ graduates from 100+ countries (possible override by published student counts; not applied).",
+    "email": "yes",
+    "email_source": "https://samadhiyogaashram.com/contact.php",
+    "contact_form_url": "https://samadhiyogaashram.com/contact.php",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Found by web search for Rishikesh teacher trainings; school's own site only.",
+      "Email contact@samadhiyogaashram.com is the school's office inbox (also in the site header).",
+      "Prices copied from the fee table on https://samadhiyogaashram.com/course-fees.php ('From $599' etc.), which says it was updated 9 Nov 2026; the same page's FAQ quotes the 200-hour course 'from approximately USD 990', so the owner may want to check.",
+      "The ashram also runs a campus in Ubud, Bali; for the Ubud lead (rank 503) a different school was sought so as not to double up.",
+      "Lineage (Swami Rama, Swami Veda Bharati) is as the school states it; not verified independently.",
+      "Kundalini course page uses health-flavoured wording ('rebuild the nervous system'); the plan's description keeps to the practices only.",
+      "Photos are group-practice banners from the home page; another banner shows two people who may be the founders, but it could not be confirmed, so it was not used.",
+      "Possible future listings: Yogi Vishnu Panigrahi, Maa Haripriya, Yogi Sunil Bisht, Yogi Naveen, Mandeep Bhatt, Yogi Praveen Rajput, Swami Shiv Ji.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Rishikesh, Uttarakhand, India."
+    ],
+    "left_out": [
+      "Prenatal Yoga Teacher Training (prenatal; health rule).",
+      "Ayurveda Yoga Teacher Training, Ayurveda retreat and 7-day Ayurveda course (Ayurveda framed around health).",
+      "Reiki training, marma therapy, naturopathy and the 'therapeutic yoga' strands named on the teachers page (therapy or health-led).",
+      "Online trainings and the Bali courses (not opened; Bali is a separate campus).",
+      "Other channel videos: only one video ID is embedded on the school's own site."
+    ]
+  },
+  "images_final": true
+}

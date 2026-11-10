@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "anjie-cho",
+    "location_source": "https://www.anjiecho.com/about",
+    "create": {
+      "name": "Anjie Cho",
+      "bio": "Anjie Cho is a New York teacher of feng shui, ikebana and dharma art, and a licensed architect who has been designing homes and workplaces since 1999. She approaches space as both inner and outer, drawing on Black Sect (BTB) feng shui, in which she trained and certified with mentors Katherine Metz and Rosalie Prinzivalli, and on Buddhist practice, quoting Chögyam Trungpa on dharma art. Since 2015 she has studied ikebana, Japanese flower arranging, in the Ikenobo school, where she now holds a teaching rank and sits on the New York chapter board.\n\nWith Laura Morris she co-founded the Mindful Design Feng Shui School, which runs a live online certification taught over six months, and the pair co-host the Holistic Spaces podcast. Anjie teaches ikebana as a contemplative practice that opens with guided meditation and treats arranging flowers as meditation in motion, in workshops and retreats in New York and further afield, and she gives one-to-one feng shui consultations online or in person. Her books are Holistic Spaces and Mindful Homes, and she co-wrote Mindful Living. She studied architecture at the University of California, Berkeley.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.anjiecho.com/",
+      "booking_url": "https://www.holisticspaces.com/services",
+      "youtube_url": null,
+      "instagram_url": "http://instagram.com/anjiecho",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@anjiecho.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5241ad3be4b0e0354670a347/1677705754758-8MFLDNP4W6TJHZ3ZSULZ/Anjie_05+copy+lo+res.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5241ad3be4b0e0354670a347/1711414494761-IGYVQ7ZHY2QXMRL4M9YG/5X7A0599+copy.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindful Ikebana at the Isamu Noguchi Foundation and Garden Museum",
+      "url": "https://www.anjiecho.com/events-cal/2026/11noguchi",
+      "description": "A morning session in the Noguchi Museum galleries in Long Island City that begins with guided meditation and conversation, then moves into making simple seasonal flower arrangements as a moving meditation. No experience needed; materials and museum entry are included.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/5241ad3be4b0e0354670a347/5bc817fb1905f4be76373ebf/6aa977cdefdede38de78b6b6/1789491438479/IMG_4678.webp?format=1500w"
+    },
+    {
+      "title": "One-to-One Feng Shui Session with Anjie Cho",
+      "url": "https://www.holisticspaces.com/services",
+      "description": "A personal feng shui consultation with Anjie, online or, case by case, in person, looking at how a home or workspace can better support the life you want. Booked by email.",
+      "price": "$450/hr online; $540/hr + travel in person",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/546a6654e4b0f3e58c215d23/t/55e5d2ede4b07b6c17f060aa/1441125110480/HSStorelogo.png?format=1500w"
+    },
+    {
+      "title": "Mindful Design Feng Shui Certification Program",
+      "url": "https://mindfuldesignschool.com/certification/",
+      "description": "A 100-hour live online certification taught by Anjie and Laura Morris once a year from February to July, opening with an intensive weekend and continuing with weekly classes, case studies and observed client consultations.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://mindfuldesignschool.com/img/title-2021.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Holistic Spaces Podcast",
+      "url": "https://www.holisticspaces.com/podcast",
+      "description": "Anjie and Laura Morris's free podcast on feng shui, mindful living and creating supportive spaces at home and at work.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/546a6654e4b0f3e58c215d23/t/55e5d2ede4b07b6c17f060aa/1441125110480/HSStorelogo.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 487,
+    "hub_url": "https://kripalu.org/people/anjie-cho",
+    "tier_evidence": "Instagram (anjiecho, anjie.ikebana) not read (off limits to us); the YouTube link on her site is @morrisfengshui (co-founder Laura Morris's channel, not counted) → no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.anjiecho.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "No Kripalu mention on own site: listed without the link.",
+      "Website (anjiecho.com) first seen in search results; confirmed on the site itself.",
+      "Scope: her work is mainly feng shui, ikebana and architecture, with meditation and Buddhist dharma art woven in; 'feng shui' isn't a Spiritpedia subject, so ancient-wisdom is used. Please confirm she fits.",
+      "She is also listed as a teacher at New York Insight Meditation Center (nyimc.org, from search; not opened).",
+      "Note on contact page: she doesn't answer personal enquiries outside consultations; info@anjiecho.com is given for media and general contact.",
+      "Noguchi event price not shown on her page (fee includes museum entry); registration is via the museum.",
+      "No videos: the YouTube channel on her site belongs to Laura Morris."
+    ],
+    "left_out": [
+      "Books (Holistic Spaces, Mindful Homes, Mindful Living): only amzn.to affiliate links on her sites, no ISBN on a page we may open.",
+      "Mexico ikebana and Día de Muertos retreat (23 Oct 2026): past.",
+      "Energy reset packages (2020/2025 Year of the Wood Snake): dated past.",
+      "Architecture and interior design services: not spiritual teaching and closed to new clients.",
+      "Mindful Design certification dates and prices on mindfuldesignschool.teachable.com: not opened."
+    ]
+  },
+  "images_final": true
+}

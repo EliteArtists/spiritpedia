@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1151,
+    "healer_slug": "under-the-light-yoga-school"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6cf89281-7f49-4704-8798-b5273fd7cebe",
+      "slug": "ryt200-yoga-teacher-training-yoga-alliance-200-hour",
+      "title": "RYT200 Yoga Teacher Training (Yoga Alliance 200-hour)"
+    },
+    {
+      "table": "courses",
+      "id": "bb3d4b05-df63-4881-ab8c-d7f38681afcd",
+      "slug": "ryt500-advanced-yoga-teacher-training-300-hour",
+      "title": "RYT500 Advanced Yoga Teacher Training (300-hour)"
+    },
+    {
+      "table": "courses",
+      "id": "431ec5ac-061d-4d75-8ef5-51bd65e37cca",
+      "slug": "studio-classes-in-yoyogi-drop-in",
+      "title": "Studio classes in Yoyogi (drop-in)"
+    },
+    {
+      "table": "courses",
+      "id": "4532020e-acaa-4da1-8307-be27ff406557",
+      "slug": "utl-yoga-online",
+      "title": "UTL Yoga Online"
+    }
+  ],
+  "at": "2026-11-10T02:33:50.274Z"
+}

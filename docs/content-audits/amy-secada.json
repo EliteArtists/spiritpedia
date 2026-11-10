@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "amy-secada",
+    "location_source": "https://amysecada.com/courses",
+    "no_public_base": "Her site says only that she currently lives in Brazil, with no town; her trainings' in-person intensive is in Itacaré, Bahia, which is a venue rather than a stated home.",
+    "create": {
+      "name": "Amy Secada",
+      "bio": "Amy Secada is a dancer and movement teacher who created the Dance of the Chakras Method, a seven-stage practice that pairs each chakra with movement, breath, mudra and mantra. Trained at the School of American Ballet in New York, she spent years as a professional dancer and choreographer before turning to ancestral dance, studying in Senegal, Congo, Angola and India and settling in Brazil in 2011. She has trained in Capoeira for more than two decades, is a certified Ashtanga Vinyasa yoga teacher who has studied in Mysore, and is a daughter of the Monacan Indian Nation.\n\nHer classes blend African and Afro-Brazilian dance, martial arts, yoga philosophy and the chakra system, so that dance is treated as prayer and as a way back into the body. She teaches the method through a recorded online course, a monthly online dance ceremony and a two-level certification for teachers who want to lead it themselves, with an in-person intensive in Bahia. She has taught at festivals and retreat centres in many countries, including a week-long Dance of the Chakras course at Esalen.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": "Brazil",
+      "subjects": [
+        "chakra-healing",
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://amysecada.com/",
+      "booking_url": "https://amysecada.com/courses",
+      "youtube_url": "https://www.youtube.com/@AmySecada",
+      "instagram_url": "http://instagram.com/amysecada",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@amysecada.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5559fc04e4b0384b6ca15056/1487617492930-5P0PQFV71GBSUY3AQHMH/desert-secada.jpg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/5559fc04e4b0384b6ca15056/4da545b4-0834-4b7d-be0f-9501f36b4bed/41ad605b-0f38-436a-a8d2-ad7ccdc9d851.JPG?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "WHAT IS DANCE OF THE CHAKRAS?",
+      "url": "https://www.youtube.com/watch?v=ye3QLCM-VPA",
+      "subjects": [
+        "chakra-healing",
+        "yoga"
+      ],
+      "channel": "Amy Secada"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dance of the Chakras Method (online course)",
+      "url": "https://amysecada.com/courses",
+      "description": "A recorded course of more than 22 hours that moves through the seven chakras in turn with dance, breathwork, mudras and mantras drawn from yoga, martial arts and African dance. A shorter two-hour foundations module is also sold on its own.",
+      "price": "$108 (or 2 payments of $55); foundations module $33",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5559fc04e4b0384b6ca15056/7af2c43d-a798-49df-a6d2-ec02882848c8/fly_dotc.png"
+    },
+    {
+      "title": "Dance of the Chakras Teacher Training, Level 1: Somatic Dance Practitioner",
+      "url": "https://amysecada.com/teacher-training",
+      "description": "A nine-week online training of 45 hours with weekly live sessions, self-paced modules and personal practice, introducing the method and how to guide others through it. It leads on to a 100-hour Level 2 facilitator certification with an in-person intensive in Bahia, Brazil.",
+      "price": "$555 USD early bird; $777 USD after 30 November",
+      "product_type": "course",
+      "start_date": "2027-01-10",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "chakra-healing",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5559fc04e4b0384b6ca15056/a00d4c78-9328-4ed0-8b4d-94d0a857e9c1/beach1.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 406,
+    "hub_url": "https://www.esalen.org/faculty/amy-secada",
+    "tier_evidence": "YouTube @AmySecada: count unreadable (channel pages not fetched from this machine, 10 Nov 2026); Instagram @amysecada: not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://amysecada.com/dance",
+    "contact_form_url": "https://amysecada.com/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Website amysecada.com taken from her Esalen faculty page link (www redirects to the bare host); robots.txt read for both hosts (standard Squarespace).",
+      "Esalen named on: https://amysecada.com/dance (past 'Dance Of The Chakras (Live Course)' at Esalen Institute, 1-5 Sept 2025, linking esalen.org).",
+      "Email info@amysecada.com is a mailto link on https://amysecada.com/dance; contact form also recorded.",
+      "Health framing (borderline): her site describes the method as somatic healing, says students report reduced anxiety and stress, links stages to releasing fear, anxiety and chronic tension, and calls the teacher training trauma-informed. Item descriptions here avoid all of that; owner may judge the teacher too healing-led.",
+      "Photos: both are full-body dance shots from her own site (desert photo filename 'desert-secada.jpg' on the contact page; a beach jump on the training page). No close headshot; identity is from the site, face small. Flag for a look.",
+      "Base: country only (Brazil, from 'currently lives in Brazil' on the courses and training pages); city left null. Regional: Brazil.",
+      "Item count is low: two offerings and one video."
+    ],
+    "left_out": [
+      "Prayer in Motion monthly online dance ceremony ($33, https://amysecada.com/dance): its page promises to 'release energetic blockages and trauma from the body', a trauma claim.",
+      "Past live workshops and festivals on https://amysecada.com/dance (Esalen 2025, Italy 2025, iXã Festival Brazil March 2026): past.",
+      "iXã retreat page (https://amysecada.com/retreat): no current dates found."
+    ]
+  },
+  "images_final": true
+}

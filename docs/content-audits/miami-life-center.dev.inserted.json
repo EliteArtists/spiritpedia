@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1157,
+    "healer_slug": "miami-life-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c23df4c0-a36a-494e-9602-9f727f6f3c5a",
+      "slug": "ashtanga-intensive-with-joseph-armstrong-and-edgar-navarro",
+      "title": "Ashtanga Intensive with Joseph Armstrong and Edgar Navarro"
+    },
+    {
+      "table": "courses",
+      "id": "9e66b2ea-3d5d-45e2-bdb8-dc22564542e9",
+      "slug": "january-2027-miami-mysore-season-with-kino-and-tim",
+      "title": "January 2027 Miami Mysore Season with Kino and Tim"
+    },
+    {
+      "table": "courses",
+      "id": "0485521e-0258-404f-bd95-b70ddd8c6101",
+      "slug": "summer-2027-miami-mysore-season-with-kino-and-tim",
+      "title": "Summer 2027 Miami Mysore Season with Kino and Tim"
+    },
+    {
+      "table": "courses",
+      "id": "184416b1-96aa-4224-b036-5a13f6a4b598",
+      "slug": "all-access-membership-plus-mysore",
+      "title": "All Access Membership (Plus Mysore)"
+    }
+  ],
+  "at": "2026-11-10T02:34:32.591Z"
+}

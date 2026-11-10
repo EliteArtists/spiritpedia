@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1116,
+    "healer_slug": "robert-rosenbaum"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8d91dcaa-5848-44f6-8790-5ddcc58b1e2e",
+      "slug": "ordinary-mind-zen-sacramento-weekly-zazen",
+      "title": "Ordinary Mind Zen Sacramento: Weekly Zazen"
+    },
+    {
+      "table": "courses",
+      "id": "80891a3d-d147-42ae-9bcc-478d93db11d5",
+      "slug": "dayan-wild-goose-qigong-practice",
+      "title": "Dayan (Wild Goose) Qigong Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "011c3b31-3073-41d1-9bd4-51f5cc9c5113",
+      "slug": "compassion-and-emptiness",
+      "title": "Compassion and Emptiness"
+    },
+    {
+      "table": "free_resources",
+      "id": "95738ffc-3aab-4df9-9f4b-9d69ca5e186a",
+      "slug": "practicing-with-feelings",
+      "title": "Practicing with Feelings"
+    },
+    {
+      "table": "free_resources",
+      "id": "c4783c32-9d9b-405f-b9d8-c935966f6a32",
+      "slug": "zen-and-the-tao-te-ching",
+      "title": "Zen and the Tao Te Ching"
+    },
+    {
+      "table": "free_resources",
+      "id": "bfa12448-0872-414f-858b-37c804b7b3d7",
+      "slug": "mind-is-ungraspable",
+      "title": "Mind Is Ungraspable"
+    }
+  ],
+  "at": "2026-11-10T00:36:03.208Z"
+}

@@ -1,0 +1,57 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1127,
+    "healer_slug": "tsultrim-allione"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2319,
+      "slug": "feeding-your-demons",
+      "title": "Feeding Your Demons: Ancient Wisdom for Resolving Inner Conflict"
+    },
+    {
+      "table": "courses",
+      "id": "33f1aad9-11f7-46dc-953f-6f58aa084cff",
+      "slug": "the-great-perfection",
+      "title": "The Great Perfection"
+    },
+    {
+      "table": "courses",
+      "id": "cfdd607b-cfcf-4591-bc0d-2db5f4bee1bd",
+      "slug": "green-tara-self-paced-program",
+      "title": "Green Tara Self Paced Program"
+    },
+    {
+      "table": "courses",
+      "id": "8d40e554-daa1-4343-bf31-d24545399138",
+      "slug": "machig-labdron-and-the-nature-of-mind-self-paced-program",
+      "title": "Machig Labdron and the Nature of Mind Self Paced Program"
+    },
+    {
+      "table": "courses",
+      "id": "d579451a-0ff2-4da6-8240-377e6b8eaa9d",
+      "slug": "journey-into-the-mandala-of-the-empowered-feminine-self-paced-program",
+      "title": "Journey into the Mandala of the Empowered Feminine Self Paced Program"
+    },
+    {
+      "table": "courses",
+      "id": "460deb2e-4f62-41c1-b397-ca1901ea171d",
+      "slug": "opening-the-heart-sutra-self-paced-program",
+      "title": "Opening the Heart Sutra Self Paced Program"
+    },
+    {
+      "table": "courses",
+      "id": "a58c363c-abb4-4f90-95bc-385c3cffa2f1",
+      "slug": "feeding-your-demons-online-program",
+      "title": "Feeding Your Demons Online Program"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "0fcd15c5-aaeb-4ac0-b13c-07c8ef2ed15f",
+      "title": "tsultrim-allione teaches at Tara Mandala"
+    }
+  ],
+  "at": "2026-11-10T00:59:07.902Z"
+}

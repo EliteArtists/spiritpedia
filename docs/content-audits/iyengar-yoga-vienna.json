@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-vienna",
+    "location_source": "https://www.iyengaryoga.at/yoga-ferien/",
+    "create": {
+      "name": "Iyengar Yoga Vienna",
+      "bio": "Iyengar Yoga Vienna is a studio and training school in the Landstraße district of Vienna, a few minutes' walk from the Stadtpark, given over entirely to the method of B.K.S. Iyengar. Two senior teachers founded it at the end of 2015: Elke Pichler, a trained modern-dance teacher and philosophy graduate who started the first Iyengar teacher training in Austria and chairs the national association, and Claudia Böhm, who trained in San Francisco in the early 1990s, founded what is now the Iyengar Yoga Institute in Berlin and trains and assesses teachers for the German association. Both continue to study at the Iyengar institute in Pune.\n\nA team of certified teachers runs graded weekly classes in German and several other languages, with some sessions streamed and an early-morning pranayama class online. Saturday intensives give longer practice across the families of postures, and short residential holidays take place in the Austrian countryside and on the Ligurian coast. The teacher training lasts about three years: two foundation years of intensive personal practice of asana and pranayama with study of the method, followed by a year of supervised teaching that prepares candidates for the Iyengar assessment. A new foundation group begins in autumn 2027. Seminars for qualified teachers working on the higher syllabus levels run alongside.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Vienna",
+      "country": "Austria",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.iyengaryoga.at/",
+      "booking_url": "https://www.iyengaryoga.at/stundenplan/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@iyengaryoga.at",
+      "image_urls": [
+        "https://www.iyengaryoga.at/wp-content/uploads/IyengarWien15-7181Final.jpg",
+        "https://www.iyengaryoga.at/wp-content/uploads/2015/12/logo-iyv-1.jpg"
+      ],
+      "founded_year": 2015
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar Yoga Ausbildung: Grundlagenkurs 1 (ab Herbst 2027)",
+      "url": "https://www.iyengaryoga.at/ausbildung-information/",
+      "description": "The first stage of a three-year training towards certification as an Iyengar teacher. The two foundation years centre on a candidate's own practice of postures and breathing, with study of the method; the third year turns to supervised teaching and preparation for assessment. Applicants need at least two years of regular practice with a certified teacher.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.iyengaryoga.at/wp-content/uploads/2015/11/header-elke-claudia.jpg"
+    },
+    {
+      "title": "Iyengar Yoga-Intensive an Himmelfahrt im Kremstal",
+      "url": "https://www.iyengaryoga.at/yoga-ferien/",
+      "description": "Four days of practice with Claudia Böhm and Elke Pichler at a country retreat house in the Kremstal in Upper Austria, with morning and late-afternoon sessions over the Ascension holiday. Rooms and vegan half-board are booked with the venue; a September week in Dolcedo, Liguria, is listed on the same page.",
+      "price": "€ 329,- Earlybird bis 28.02., danach 355,- Euro",
+      "product_type": "retreat",
+      "start_date": "2027-05-06",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.iyengaryoga.at/wp-content/uploads/2015/11/yogaferien-sw1100x320.jpg"
+    },
+    {
+      "title": "Yoga-Samstage",
+      "url": "https://www.iyengaryoga.at/yoga-samstage/",
+      "description": "Three-hour Saturday morning sessions for students who already practise the method, working through one family of postures at a time together with pranayama, to build a stronger home practice. Held roughly monthly with one of the two founders.",
+      "price": "€ 55,-",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.iyengaryoga.at/wp-content/uploads/2015/11/hseminare2-1100x320.jpg"
+    },
+    {
+      "title": "10 Einheiten (1 Jahr gültig)",
+      "url": "https://www.iyengaryoga.at/stundenplan/",
+      "description": "A ten-class card for the studio's weekly classes, valid for a year and tied to one teacher. Trial cards for newcomers, single classes and twenty-class cards are on the same timetable page.",
+      "price": "€ 200,- (90 Minuten) / € 175,- (75 Minuten)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.at/wp-content/uploads/2015/12/hkurse1-1100x320.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 539,
+    "hub": null,
+    "tier_evidence": "No YouTube channel found on the pages read; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.iyengaryoga.at/yoga-ferien/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Domain iyengaryoga.at came from a search summary (citing a 2016 Falter article) and was confirmed on the site itself (title 'iyengar yoga vienna – 1030 Wien, Bayerngasse 3/1/6'); the bare host redirects to www, whose robots.txt allows us. The studio has since moved from Hermanngasse (7th district, per Falter 2016) to Bayerngasse (3rd district).",
+      "One request (/ausbildung-team/) timed out with no response (curl 000). It was not a refusal code, but the fetch loop stopped there and that page was never requested again; three later pages loaded normally at a slower pace. Owner may want to note it.",
+      "Email info@iyengaryoga.at is the studio's inbox, published on several pages; no contact form found.",
+      "First photo shows the two founders practising (studio portrait), second is the logo (322 px wide); no empty-room photo was found.",
+      "The studio is run as an association whose stated aim includes physical and mental health, and it also offers therapeutic and pregnancy classes; neither is listed here.",
+      "The current training group (from autumn 2024) is in its later years; the next foundation course starts autumn 2027 with no published price for it (Grundlagenkurs 2 of the current group is € 1.395,- pro Semester), so 'Contact for pricing'.",
+      "Possible future listings: Elke Pichler (co-founder, Senior Intermediate I, trainer and assessor), Claudia Böhm (co-founder; founder of the Iyengar Yoga Institute Berlin).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "founded_year 2015 from the about page (\"Ende 2015 gegründet\")."
+    ],
+    "left_out": [
+      "Therapie (therapeutic yoga) and Schwangerschaft (pregnancy) classes, Yogatherapie-Einzelstunden: health rule.",
+      "Seminar 'Das Becken – Stabilität aus der Mitte' (21–22 Nov 2026): pelvis and pelvic-floor focus, borderline; left out.",
+      "Aufbaukurs (third year of the current training group) and Level 2-3 seminars: already under way in 2026.",
+      "Kids & Teens and Yoga 55+ classes, Yogaforschung (research) pages: not opened or outside the core offer.",
+      "Dolcedo week (3–7 Sept 2027): shares the Yoga-Ferien page URL with the Kremstal retreat."
+    ]
+  },
+  "images_final": true
+}

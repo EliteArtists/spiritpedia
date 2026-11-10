@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "melina-meza",
+    "location_source": "https://www.melinameza.com/about/",
+    "create": {
+      "name": "Melina Meza",
+      "bio": "Melina Meza is a yoga teacher, Ayurveda educator and photographer who has taught since the late 1990s. She came to yoga in 1993 while studying nutrition at Bastyr University, trained with Gary Kraftsow among others, and for many years directed and co-directed the 200- and 500-hour teacher trainings at 8 Limbs Yoga Centers in Seattle. Out of this grew Seasonal Vinyasa, her own approach, which links yoga practice, daily routine and food to the rhythm of the four seasons and the five elements.\n\nNow based in Oakland, California, she teaches weekly gentle and strength-based yoga classes in person and online, sees students for private sessions on seasonal yoga, Ayurvedic routines and mindful eating, and leads small residential retreats that mix yoga with nature, creativity and local culture, from the California coast to Japan. Her online classes appear on Yoga Anytime, YogaUOnline and Gaia. Her books include Seasonal Health and Wellness, a week-by-week guide of simple seasonal practices, and of the Art of Sequencing books for yoga teachers, and she brings her eye as a photographer into her teaching on attention and beauty.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Oakland, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "ayurveda",
+        "mindfulness"
+      ],
+      "website_url": "https://www.melinameza.com/",
+      "booking_url": "https://www.melinameza.com/classes-trainings/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "melinameza@comcast.net",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2017-09/MezaM.jpg?itok=izoQHrsn"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter Treasure Hunt Retreat: Yoga, Nature, Creativity (Monterey)",
+      "url": "https://www.melinameza.com/2027-monterey/",
+      "description": "A small winter retreat at a seaside resort on Monterey Bay, with yoga, creative exercises, time in nature and visits to local galleries. Places are by application through Melina.",
+      "price": "Single: $2700, $2800 w/airport transfer; Double: $2300, $2400 w/airport transfer",
+      "product_type": "retreat",
+      "start_date": "2027-01-24",
+      "end_date": "2027-01-28",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-09/MezaM.jpg?itok=izoQHrsn"
+    },
+    {
+      "title": "Japan: Coastal Calm & Ancient Kyoto",
+      "url": "https://www.melinameza.com/spring-retreat-japan/",
+      "description": "A week in Kansai with Melina and Baxter Bell, beginning with daily yoga on Awaji Island and continuing to Kyoto for Zen temples, tea and traditional arts.",
+      "price": "$6,199 per person (double occupancy); $7,699 per person (single occupancy)",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-14",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-09/MezaM.jpg?itok=izoQHrsn"
+    },
+    {
+      "title": "Weekly Yoga Classes (in person and livestream)",
+      "url": "https://www.melinameza.com/classes-trainings/",
+      "description": "Her regular weekly timetable on Pacific time: gentle yoga, yoga with weights, a conditioning class and a Saturday class for students over fifty, with an on-demand library. Some classes are hybrid from a studio in Oakland.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-09/MezaM.jpg?itok=izoQHrsn"
+    },
+    {
+      "title": "Private Sessions: Seasonal Yoga and Ayurveda",
+      "url": "https://www.melinameza.com/one-on-one/",
+      "description": "One-to-one or small-group sessions shaping a seasonal yoga sequence and Ayurvedic daily routine for the student, or bringing mindfulness to eating.",
+      "price": "$70 30-minutes; $125 60-minutes; $175 90-minutes",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2017-09/MezaM.jpg?itok=izoQHrsn"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 367,
+    "hub_url": "https://kripalu.org/people/melina-meza",
+    "tier_evidence": "No social account links readable on her site (Instagram feed widget broken); no YouTube channel → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.melinameza.com/one-on-one/",
+    "contact_form_url": "https://www.melinameza.com/connect/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Own site melinameza.com: her Kripalu page links none; found by web search and confirmed on the site itself, which names her throughout (robots.txt read).",
+      "Esalen named on: https://www.melinameza.com/about/ (her work 'regularly included in Esalen and Breitenbush Hot Springs catalogs'); esalen link added.",
+      "Kripalu: only an image filename on her home page mentions a 2019 Kripalu retreat; no text names Kripalu, so no kripalu link. Owner may add it.",
+      "Her about page frames Seasonal Vinyasa as helping people 'stay healthy as they age' and lists her as a certified Yoga for Aging teacher; no condition named, so kept, but borderline overall.",
+      "Co-teaches with Baxter Bell (rank 369), a physician; see his entry.",
+      "Email melinameza@comcast.net appears as the booking mailto on her one-on-one page and on retreat pages.",
+      "Second photo is a wide banner (1950x650) from her about page; Kripalu headshot first."
+    ],
+    "left_out": [
+      "Fall Retreat Washington (6-8 Nov 2026) and Fall Retreat California (13-15 Nov 2026, sold out; framed on healthy ageing); Winter Retreat Mexico (sold out).",
+      "Fall Quarter Yoga for Healthy Aging (16 Sep - 19 Nov 2026): already started.",
+      "Building Cognitive Resilience (YogaUOnline, Dec 2026): framed on cognitive decline (health).",
+      "Elimination = Illumination programme (private sessions on elimination diets and 'toxins'): health claim.",
+      "Books Seasonal Health and Wellness and Art of Sequencing: no ISBN on her pages (one book page still holds placeholder text).",
+      "Videos on Yoga Anytime, YogaUOnline and Gaia: not YouTube."
+    ]
+  },
+  "images_final": true
+}

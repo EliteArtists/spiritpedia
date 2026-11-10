@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "ally-bogard",
+    "location_source": null,
+    "no_public_base": "No home town on her site's visible pages; a New York location appears only in hidden site settings, which does not count as published. Web search results describe her as New York-based.",
+    "create": {
+      "name": "Ally Bogard",
+      "bio": "Ally Bogard is a yoga and meditation teacher, mentor and author who has spent more than twenty years leading group processes, workshops and teacher trainings. Her teaching sits where somatic practice meets contemplative practice: she works through the body, at an unhurried pace, to help students stay present and honest with whatever their lives are asking of them, and she is interested less in technique than in becoming, as she puts it, a practitioner of life.\n\nHer book The Quiet Teachers: Becoming a Student of Your Life is a collection of short reflections, each paired with a practice, on finding guidance in ordinary encounters, sensations and relationships. She runs a small yearly mentorship group with live sessions, one-to-one time and a theme of inquiry each semester, and short online series such as Integrate, which mixes yoga, somatic work, silence and open questions over four Sundays. Her longer recorded teachings are shared through a newsletter, and her classes also appear on online yoga platforms. Alongside this she co-founded The Twenty Six, which guides families through the emotional side of passing on wealth.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.allybogard.com/",
+      "booking_url": "https://www.allybogard.com/learn",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/allybogard/",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Quiet Teachers: Becoming a Student of Your Life",
+      "slug": "the-quiet-teachers-ally-bogard",
+      "author": "Ally Bogard",
+      "asin": "B0C8Z7YR91",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short, stand-alone reflections on noticing the guidance hidden in daily life, from bodily sensations and beliefs to the people we meet. Each one ends with a practice or a question for reflection.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0C8Z7YR91.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "INTEGRATE: Practice Series",
+      "url": "https://www.allybogard.com/learn",
+      "description": "Four live online Sunday sessions combining yoga, somatic practice, silence and open questions with Ally, focused on living out insights already gained. All sessions are recorded.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-03",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Mentorship 2027",
+      "url": "https://www.allybogard.com/learn#mentorship",
+      "description": "A small group that meets for eight live sessions around a theme of inquiry set each semester, with teaching, guided practice, dialogue and one-to-one time. The winter theme and dates are still to be announced.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 404,
+    "hub_url": "https://www.esalen.org/faculty/ally-bogard-guest-faculty",
+    "held": "No usable photo: her site is on Wix (photos on static.wixstatic.com, which refuses our robots.txt request), her Esalen photo is on cdn.prod.website-files.com (robots.txt 403), the Kripalu presenter page found by search returns 404, and her YouTube avatar was not taken (no channel found on her site). Not worked around.",
+    "tier_evidence": "Instagram @allybogard: not readable without login (not tried); Substack not opened (off limits) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.allybogard.com/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Website allybogard.com found by web search (listed on her Substack per the search summary) and confirmed: the site is hers (about page names her as author of The Quiet Teachers and co-founder of The Twenty Six). robots.txt read for both the bare and www hosts.",
+      "Queue name 'Ally Bogard Guest Faculty' is Esalen's page label; listed as Ally Bogard (slug ally-bogard).",
+      "No Esalen mention on own site: listed without the link (search results show Kripalu and Omega presenter pages, but her site names neither).",
+      "Contact: form only (https://www.allybogard.com/contact); no published email.",
+      "Book: ASIN B0C8Z7YR91 from the Amazon link on her own site (https://www.allybogard.com/quietteachers); not confirmed elsewhere and may be a Kindle ASIN. No cover.",
+      "Mentorship 2027 has no own URL; given as https://www.allybogard.com/learn#mentorship. Owner may prefer to drop it or merge it.",
+      "Item count is low: one book and two offerings.",
+      "Part of her work (The Twenty Six) is family-wealth mediation, a business service; it is mentioned in the bio but not listed."
+    ],
+    "left_out": [
+      "Members' video library ($90): framed around burnout, overwhelm, numbness and nervous-system regulation; left out under the strict health rule.",
+      "In-person 2027 events and retreats: 'will be confirmed and updated shortly' on https://www.allybogard.com/events.",
+      "Substack audio teachings: substack.com is off limits.",
+      "SkyTing and Centr app classes: third-party subscription platforms."
+    ]
+  }
+}

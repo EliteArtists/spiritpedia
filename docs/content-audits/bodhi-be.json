@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "bodhi-be",
+    "location_source": "https://www.doorwayintolight.org/contact",
+    "create": {
+      "name": "Reverend Bodhi Be",
+      "bio": "Reverend Bodhi Be works with death as a spiritual teacher and practical guide on Maui. With his wife Leilah Be and Ram Dass he founded Doorway Into Light, a nonprofit that since 2006 has offered education and volunteer support around conscious ageing, dying and death, and that since 2012 has also run Hawaii's only nonprofit, certified green funeral home, in Haiku. He sees an honest awareness of death as one of the quickest ways to change how we live, and treats looking after people at the end of life, and their bodies afterwards, as sacred service rather than business.\n\nHis teaching centres on the role of the death doula, which he describes as someone who keeps a place for death in community life. He has run international death doula trainings on Maui and online courses on preparing for one's own dying, and leads a six-month certification for doulas he has trained, with live sessions twice a month and guest teachers. His conversations on dying with Ram Dass and with the writer Alan Clements are shared as videos, and the Clements conversation became the book Facing Death.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Haiku, Hawaii",
+      "country": "United States",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "website_url": "https://www.doorwayintolight.org/",
+      "booking_url": "https://www.doorwayintolight.org/death-doula-certification-program",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@doorwayintolight.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ram Dass and Bodhi Be - A Conversation on Dying",
+      "url": "https://www.youtube.com/watch?v=cDsTjdlf7GI",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "channel": "Bodhi Be"
+    },
+    {
+      "title": "Facing Death Alan Clements in Conversation with Reverend Bodhi Be at Doorway Into Light",
+      "url": "https://www.youtube.com/watch?v=Ege0PVathiQ",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Bodhi Be"
+    },
+    {
+      "title": "Ram Dass Webcast with Bodhi Be",
+      "url": "https://www.youtube.com/watch?v=v6y-vVcT8uM",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "channel": "Baba Ram Dass"
+    }
+  ],
+  "books": [
+    {
+      "title": "Facing Death: A Conversation with Reverend Bodhi Be",
+      "slug": "facing-death-alan-clements-bodhi-be",
+      "author": "Alan Clements and Reverend Bodhi Be",
+      "asin": "1953508251",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book-length conversation between the writer Alan Clements and Bodhi Be about dying, after-death care and living with the knowledge of death. It grew out of their recorded talks at Doorway Into Light.",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1953508251.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Death Doula Certification (2027)",
+      "url": "https://www.doorwayintolight.org/death-doula-certification-program",
+      "description": "A six-month online certification for people who have completed a Doorway Into Light death doula training. Two live Zoom sessions a month cover a topic with a guest teacher and reflection on participants' bedside experience.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-02-08",
+      "end_date": "2027-07-26",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 394,
+    "hub_url": "https://www.esalen.org/faculty/reverend-bodhi-be",
+    "held": "No usable photo: the photos on his site (and on Esalen's page) are served from cdn.prod.website-files.com, whose robots.txt returns 403 to us (10 Nov 2026), so the ingest will refuse them; his YouTube channel avatar could not be taken (channel pages not fetched from this machine). Not worked around.",
+    "tier_evidence": "YouTube channel 'Bodhi Be': count unreadable (channel pages not fetched, 10 Nov 2026); Instagram/Facebook on the site belong to the funeral home's Death Store, not counted → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.doorwayintolight.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Website doorwayintolight.org taken from his Esalen faculty page link; robots.txt read (no rules).",
+      "Email info@doorwayintolight.org is the general inbox of Doorway Into Light, the nonprofit he co-founded and directs (mailto on the contact page).",
+      "No Esalen mention on his own site: listed without the link.",
+      "Doorway Into Light is a funeral home as well as an educational nonprofit; only its teaching (doula certification, talks, book) is listed. Funeral, cremation, grief support and counselling services were not used as offerings.",
+      "Slug bodhi-be drops the title 'Reverend'; the name keeps it as he is known by it.",
+      "Base: the contact page gives an address in Haiku, Maui (a census-designated place); recorded as 'Haiku, Hawaii'. Regional: Haiku, Maui, Hawaii.",
+      "Book: ISBN-10 1953508251 from the Amazon link on https://www.doorwayintolight.org/education/read-the-new-book (Barnes & Noble link there gives EAN 9781953508256); not confirmed elsewhere. Alan Clements is the lead author; listed as co-author by Bodhi Be. No cover.",
+      "Video v6y-vVcT8uM is on the Ram Dass channel; he is co-speaker. All three video IDs come from his own site and pass oEmbed.",
+      "Tier: no follower count could be read.",
+      "Ingest note: Haiku, Hawaii is not in the places table; needs a place alias (or map to Maui)."
+    ],
+    "left_out": [
+      "Facing Death, Nourishing Life (online, 5 Oct - 19 Nov 2026): already started; one strand also covers caring for people with brain disorders.",
+      "6th International Death Doula Training on Maui (Sept 2024): past.",
+      "Deep Caregiving to the Dying talk (Vimeo, Final Passages): not YouTube.",
+      "Certification price: only on the Zeffy registration page, which was not opened."
+    ]
+  }
+}

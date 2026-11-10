@@ -5,7 +5,7 @@
 //   node docs/content-audits/night-sprint-2026-11-09/sprint.mjs insert <from> <to> --env dev|live
 //   node docs/content-audits/night-sprint-2026-11-09/sprint.mjs summary
 //
-// progress.json is the queue: leads/<first rank>.json in chunks of 20: centres (ranks 1-46), apps (47-82), then Quantum-Touch instructors and practitioners (83 on).
+// progress.json is the queue: leads/<first rank>.json in chunks of 20: centres (ranks 1-46), apps (47-82), Quantum-Touch instructors and practitioners (83-487), yoga schools by target city (501-540).
 // Held plans (sprint.held) are never checked or inserted. A teacher's state comes from the files:
 // a plan docs/content-audits/<slug>.json with sprint.sprint SPRINT and sprint.rank, a skipped/<slug>.json, and the plan's .<env>.inserted.json.
 

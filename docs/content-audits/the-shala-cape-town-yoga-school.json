@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "the-shala-cape-town-yoga-school",
+    "location_source": "https://theshala.co.za/contact/",
+    "create": {
+      "name": "The Shala – Cape Town Yoga School",
+      "bio": "The Shala is a yoga school in the Gardens neighbourhood of Cape Town, set in a restored heritage building on Dunkley Square with a high-ceilinged practice room and old wooden floors. Tamsin Sheehy opened it in 2007. Her own grounding runs through several lineages: Ashtanga, Vinyasa and Iyengar practice, a first training with Louisa Sears, two years of Bihar-school training in Pretoria, and study of Sivananda asana, chanting, puja and philosophy in Kerala, followed by advanced training in Hong Kong.\n\nThe school's main work is teacher education. Its 200-hour training, registered with Yoga Alliance, runs part-time over weekends and covers alignment, sequencing, pranayama, yoga philosophy and history, self-inquiry and anatomy; a 300-hour programme in three ten-day modules and a mentorship scheme for working teachers follow on from it. A faculty of senior teachers, several of them Shala graduates, also teach a full timetable of public classes that pair traditional philosophy with careful alignment, alongside visiting workshops and an on-demand online library through the school's app. The Shala supports the Earthchild Project, which brings yoga to schoolchildren.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2007,
+      "availability": "local_online",
+      "city": "Cape Town",
+      "country": "South Africa",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://theshala.co.za/",
+      "booking_url": "https://theshala.co.za/teacher-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@theshala.co.za",
+      "image_urls": [
+        "https://theshala.co.za/wp-content/uploads/2026/04/about.webp",
+        "https://theshala.co.za/wp-content/uploads/2026/04/landing-01-e1777476349852.webp",
+        "https://theshala.co.za/wp-content/uploads/2026/04/tt.webp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200-Hour Teacher Training 2027",
+      "url": "https://theshala.co.za/teacher-training/200-hour-teacher-training/",
+      "description": "A part-time Yoga Alliance 200-hour course held over weekends at the Gardens studio from February to June 2027. It covers asana alignment and sequencing, props, pranayama, yogic philosophy and self-inquiry, yoga history and lineage, anatomy and supervised teaching. Bursaries are offered; the early-bird price is R20,000.",
+      "price": "R25,000",
+      "product_type": "course",
+      "start_date": "2027-02-06",
+      "end_date": "2027-06-27",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "image": "https://theshala.co.za/wp-content/uploads/2026/04/tt200.webp"
+    },
+    {
+      "title": "In-studio classes and memberships",
+      "url": "https://theshala.co.za/in-studio/",
+      "description": "Public classes at the Dunkley Square studio taught by the school's senior teachers, combining traditional yoga philosophy with precise alignment. Options run from a single class to class passes and unlimited monthly or yearly memberships.",
+      "price": "R260",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://theshala.co.za/wp-content/uploads/2026/04/in-studio-01.webp"
+    },
+    {
+      "title": "The Shala Online",
+      "url": "https://theshala.co.za/online/",
+      "description": "An on-demand library of classes filmed by The Shala's RYT500 teachers, with new sessions added each week and available through the school's app. Weekly, monthly and yearly plans are offered, and first-time subscribers can try it for a month.",
+      "price": "R300",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://theshala.co.za/wp-content/uploads/2026/04/online-01-819x1024.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 509,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the site; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://theshala.co.za/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Found by web search for Cape Town teacher trainings; school's own site only.",
+      "Email info@theshala.co.za is the school's office inbox.",
+      "Prices as published in rand: the 200-hour full price R25,000; the in-studio item shows the single-class price (R260) and the online item the monthly plan (R300). Currency is written as the site writes it ('R').",
+      "Name kept with the en dash as the school writes it ('The Shala – Cape Town Yoga School'); slug the-shala-cape-town-yoga-school.",
+      "Three items only (one dated training and two memberships); acceptable for a school, but thin on free content.",
+      "Possible future listings: Tamsin Sheehy, Thomas Sheehy, Yanna Romano, Firdose Moonda, Len-Barry Simons, Naomi Marshak.",
+      "No Spiritpedia teachers are named on the site (Mike Sheehy on dev is unrelated), so the teachers file has no links.",
+      "Regional: Cape Town, South Africa; Spiritpedia has few listings in Africa."
+    ],
+    "left_out": [
+      "300-Hour Teacher Training: the published 2026 modules (Aug-Oct 2026) have passed, and its modules lean on lymphatic, digestive and healthcare themes.",
+      "2026 Mentorship Programme: started 30 May 2026; no new dates published.",
+      "Workshops: the next one (28 Nov 2026) is a strength-and-mobility wall workshop (fitness-led); the others have passed.",
+      "Thomas Sheehy's food-science and digestive-health workshops (health framing).",
+      "The only embedded video (EARTHCHILD PROJECT, The Learning Trust channel) is about the charity, not the school's teaching."
+    ]
+  },
+  "images_final": true
+}

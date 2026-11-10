@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "asha-carolyn-young",
+    "location_source": "https://www.ashashealingarts.com/about.html",
+    "create": {
+      "name": "Asha Carolyn Young",
+      "bio": "Asha Carolyn Young works intuitively with energy and is certified by Quantum-Touch both to practise and to teach its Level 1 workshop. She runs Asha's Healing Arts from Gualala, a small town on the Northern California coast. She grew up partly in Thailand and Laos, studied history at UCLA and cultural anthropology at Berkeley, where her doctoral fieldwork among Buddhist nuns near Chiang Mai first drew her towards a spiritual path. Over the years she has practised intensive Theravada meditation, studied laying-on-of-hands in San Francisco, and worked as a writer, editor, teacher of English and abstract painter. The name Asha came to her in meditation after the 1991 Oakland Hills fire, a time when she also began channelling a spirit guide she calls Laya.\n\nIn her sessions she blends Quantum-Touch methods, sending life-force energy through her hands, breath and heart field with toning, with other intuitive techniques, working in a meditative state. Sessions take place remotely by phone, Zoom or WhatsApp, so clients can join from anywhere, and she also offers short sessions for pets. She teaches the Quantum-Touch Becoming Energized (Level 1) workshop online, and has spoken about her practice in interviews for Quantum-Touch and on internet radio. She belongs to a local network of holistic practitioners on the coast.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Gualala, California",
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "channelled-teachings"
+      ],
+      "website_url": "https://www.ashashealingarts.com/",
+      "booking_url": "https://www.ashashealingarts.com/sessions.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ashacarolyn@protonmail.com",
+      "image_urls": [
+        "https://www.ashashealingarts.com/uploads/1/3/9/9/139924566/published/asha-2024-ed-sf.jpg",
+        "https://www.ashashealingarts.com/uploads/1/3/9/9/139924566/published/asha-portrait-bkgrnd-ed-lf.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "We Can Open to the Magnificence of the Universe and Help Others | Asha Carolyn Young",
+      "url": "https://www.youtube.com/watch?v=L839GZDbfmM",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "Quantum-Touch"
+    },
+    {
+      "title": "Energy Healing Is an Innate Human Ability— Quantum Conversations with Asha Carolyn Young",
+      "url": "https://www.youtube.com/watch?v=LmafogCeDJc",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "Quantum-Touch"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Remote energy healing sessions",
+      "url": "https://www.ashashealingarts.com/sessions.html",
+      "description": "Hour-long distance sessions by phone, Zoom or WhatsApp in which Asha works with Quantum-Touch and other intuitive energy methods. Shorter sessions for pets are also available.",
+      "price": "$95/session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://www.ashashealingarts.com/uploads/1/3/9/9/139924566/joy-asha-carolyn-young_orig.jpg"
+    },
+    {
+      "title": "Quantum-Touch Level 1 Virtual Workshop: Becoming Energized",
+      "url": "https://www.ashashealingarts.com/quantum-touch.html",
+      "description": "The online foundation course of Quantum-Touch, with no experience needed. Students practise breathing and body-awareness exercises for running life-force energy, work with chakras, toning and distance sessions, and learn to offer energy to animals as well as people.",
+      "price": "$350",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://www.ashashealingarts.com/uploads/1/3/9/9/139924566/published/level-1-branding.png?1744758922"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 87,
+    "hub": null,
+    "tier_evidence": "No social accounts linked on her site; no readable follower counts → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashashealingarts.com/contact.html",
+    "contact_form_url": "https://www.ashashealingarts.com/contact.html",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Email is Cloudflare-protected on her contact page (decoded: ashacarolyn@protonmail.com); same address on her Quantum-Touch profile.",
+      "Base: Gualala, California, a coastal town well under 5,000 people (about page); recorded as published.",
+      "Availability set to worldwide: her site says sessions are remote (phone, Zoom, WhatsApp); her Quantum-Touch profile also mentions in-person sessions.",
+      "Level 1 workshop is listed undated: her page says the next one will be in early 2027 (no date yet); the sessions page still shows an old 'February 14, 15 & 16' notice.",
+      "Both videos are interviews on the official Quantum-Touch channel (linked from her about page) in which she is the speaker.",
+      "Her News for the Soul radio archive (newsforthesoul.com) is not used: its robots.txt disallows ClaudeBot, anthropic-ai and Claude-Web.",
+      "Subject channelled-teachings added because she describes channelling a spirit guide; owner may prefer reiki or self-healing instead.",
+      "Health rule: her sessions page speaks of relief from physical and psychological 'ailments' and support during surgery; none of that is used.",
+      "Regional: Gualala, California (Mendocino coast)."
+    ],
+    "left_out": [
+      "Emotional-physical processing sessions: framed on psychological suffering and health improvement (therapy-like), left out.",
+      "Self-published art books (e.g. 'Carry Your Own Joy', 2015): no ISBN on a page I opened.",
+      "News for the Soul radio show: site blocks Claude agents."
+    ]
+  },
+  "images_final": true
+}

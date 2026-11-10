@@ -1,0 +1,159 @@
+{
+  "healer": {
+    "healer_slug": "megha-nancy-buttenheim",
+    "location_source": "https://www.letyouryogadance.com/service-page/let-your-yoga-dance",
+    "create": {
+      "name": "Megha Nancy Buttenheim",
+      "bio": "Megha Nancy Buttenheim is a dancer, singer, actor and yoga teacher-trainer based in Pittsfield, Massachusetts, in the Berkshires. She has taught at Kripalu since 1985, where she spent years directing its yoga teacher training and its holistic health training, and she now belongs to its legacy faculty. She is also the founding director of Let Your Yoga Dance, a joyful practice that she has been training instructors in since 1997, and she helped create Embodied Positive Psychology with the Wholebeing Institute.\n\nLet Your Yoga Dance blends yoga, dance, breath and qigong with the chakra system, using music chosen for each energy centre and moving from dance prayer through to meditation and relaxation. Megha teaches regular live classes on Zoom, including a gentle yoga and qigong class, runs teacher trainings at her home studio, at Kripalu and online, and has led workshops across North America, England, Australia and Costa Rica. Her book Expanding Joy brings her practice and positive psychology together, with short movement exercises woven through the chapters, and she has made recorded practices such as a thirty-day movement series built on personal strengths.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Pittsfield, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "qi-gong",
+        "chakra-healing"
+      ],
+      "website_url": "https://www.letyouryogadance.com",
+      "booking_url": "https://www.letyouryogadance.com/class-schedule",
+      "youtube_url": "https://www.youtube.com/@letyouryogadance4504",
+      "instagram_url": "https://instagram.com/megha_nancy_buttenheim",
+      "facebook_url": "http://www.facebook.com/letyouryogadance",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "meghab@letyouryogadance.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/Megha-Nancy-Buttenheim_2023.jpg?itok=hZYj29Ik"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Yamas & Niyamas with Megha",
+      "url": "https://www.youtube.com/watch?v=O5W4Rpb3Qr0",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Let Your Yoga Dance"
+    },
+    {
+      "title": "Journey through the Chakras",
+      "url": "https://www.youtube.com/watch?v=xQq7L9SSyi4",
+      "subjects": [
+        "chakra-healing",
+        "yoga"
+      ],
+      "channel": "Let Your Yoga Dance"
+    }
+  ],
+  "books": [
+    {
+      "title": "Expanding Joy: Let Your Yoga Dance, Embodying Positive Psychology",
+      "slug": "expanding-joy-let-your-yoga-dance",
+      "author": "Megha Nancy Buttenheim",
+      "asin": "0692622292",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Megha's book on her dancing yoga practice, joining it with ideas from positive psychology. Short movement exercises run through the text, and readers can download matching videos.",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0692622292.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Let Your Yoga Dance Online Class",
+      "url": "https://www.letyouryogadance.com/service-page/let-your-yoga-dance",
+      "description": "A one-hour live class on Zoom in which Megha leads the group in dancing through the chakras, mixing yoga movement, music and prayerful dance.",
+      "price": "From $15 US dollars",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "chakra-healing"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/Megha-Nancy-Buttenheim_2023.jpg?itok=hZYj29Ik"
+    },
+    {
+      "title": "Gentle Yoga-QiGong Online Class",
+      "url": "https://www.letyouryogadance.com/service-page/gentle-yoga-qigong",
+      "description": "A one-hour live class on Zoom combining gentle yoga with qigong movement, taught by Megha as a calm, unhurried practice.",
+      "price": "From $15 US dollars",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/Megha-Nancy-Buttenheim_2023.jpg?itok=hZYj29Ik"
+    },
+    {
+      "title": "Let Your Yoga Dance Teacher Training",
+      "url": "https://www.letyouryogadance.com/service-page/let-your-yoga-dance-teacher-training-4",
+      "description": "Megha's certification training for those who want to lead Let Your Yoga Dance classes, covering the chakra system, music for each centre, yogic ethics and practice teaching. Open to all levels.",
+      "price": "$2,100 US dollars ($1,800 early bird)",
+      "product_type": "course",
+      "start_date": "2027-01-22",
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "chakra-healing"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/Megha-Nancy-Buttenheim_2023.jpg?itok=hZYj29Ik"
+    },
+    {
+      "title": "Moving With Your Strengths: A 30 Day Practice for Every Body! - Videos",
+      "url": "https://www.letyouryogadance.com/product-page/moving-with-your-strengths-a-30-day-practice-for-every-body-videos",
+      "description": "A set of short recorded movement sequences, one for each day of a month, each built around a personal character strength. Designed for any body and any level.",
+      "price": "$35.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/Megha-Nancy-Buttenheim_2023.jpg?itok=hZYj29Ik"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 478,
+    "hub_url": "https://kripalu.org/people/megha-nancy-buttenheim",
+    "tier_evidence": "YouTube @letyouryogadance4504: subscriber count not read (channel pages off limits to us, 10 Nov 2026); Instagram/Facebook not read; video views 950-7,600 (watch pages, 10 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.letyouryogadance.com/service-page/let-your-yoga-dance",
+    "contact_form_url": "https://www.letyouryogadance.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Kripalu named on: https://www.letyouryogadance.com/about-megha (legacy faculty since 1985).",
+      "Photo from her Kripalu person page; her own site is on Wix (static.wixstatic.com refuses our robots.txt request), so its images can't be used.",
+      "Book ISBN from https://www.letyouryogadance.com/product-page/expanding-joy-let-your-yoga-dance-paperback-book, not confirmed elsewhere; no cover checked.",
+      "Teacher training start date 22 Jan 2027 from the events page; end date not shown; the page doesn't say if this run is online or in person.",
+      "Her site has a special-populations strand (Parkinson's, MS, chemotherapy); those items are left out.",
+      "Tier counts unreadable for the YouTube channel."
+    ],
+    "left_out": [
+      "Let Your Yoga Dance for Special Populations teacher training: condition-named (health rule).",
+      "The Joy of AbunDance weekend at Kripalu (26-28 Jun 2026) and Teacher Training Module 1 at Kripalu (2-7 Aug 2026): past.",
+      "Let Your Yoga Dance on the Insight Timer app: Insight Timer not opened.",
+      "Introduction & Welcome video: about two minutes, a short welcome.",
+      "Music and older media downloads (Animal Songs, Moontides, Power and Grace): music or not checked."
+    ]
+  },
+  "images_final": true
+}

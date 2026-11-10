@@ -1,0 +1,158 @@
+{
+  "healer": {
+    "healer_slug": "leslie-booker",
+    "location_source": "https://www.lesliebooker.com/about",
+    "create": {
+      "name": "Leslie Booker",
+      "bio": "Leslie Booker, known to most students simply as Booker, is a Buddhist meditation teacher and writer whose teaching joins the dharma with embodiment and collective liberation. She began as a yoga teacher in 2007, then trained at Spirit Rock in mindful yoga and meditation, went on to its Community Dharma Leaders programme under the guidance of Gina Sharpe, and completed its four-year retreat teacher training in 2020. For more than ten years she also directed teacher trainings for the Lineage Project, bringing yoga and mindfulness to young people in the justice system in New York.\n\nToday she lives in Philadelphia and is co-guiding teacher of New York Insight Meditation Center. She leads silent insight retreats and daylongs at centres around the United States, both on site and online, and runs small three-month mentoring groups in which three people at a time study core Buddhist teachings and build a steady practice together. She lectures at universities, has written for Lion's Roar, Tricycle, Yoga Journal and Ten Percent Happier, and co-founded the Yoga Service Council. Her teaching style is warm and direct, with a strong emphasis on community and belonging.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Philadelphia, Pennsylvania",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.lesliebooker.com/",
+      "booking_url": "https://www.lesliebooker.com/work-with-me",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@lesliebooker.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/613a5c35df0ff6283f0f78e7/2a54e1ee-8036-4e13-8984-5bda8fb12c5f/Booker-3.jpg",
+        "https://images.squarespace-cdn.com/content/v1/613a5c35df0ff6283f0f78e7/e90c98ee-d866-4f32-a857-4463cb07a189/a699d1bd-c027-402d-b1e8-7948648c2581.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "insight-meditation-society",
+      "role": "instructor"
+    },
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Knowing How Deeply Our Lives Are Intertwined: Talk with Leslie Booker December 9, 2020",
+      "url": "https://www.youtube.com/watch?v=Ieqe8rihT_8",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Knowing How Deeply Our Lives Are Intertwined: Meditation with Leslie Booker December 9, 2020",
+      "url": "https://www.youtube.com/watch?v=KH5PGdE6OZQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Developing Lovingkindness and Equanimity: Meditation with Leslie Booker November 18, 2020",
+      "url": "https://www.youtube.com/watch?v=J2d0dL7Jd34",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Leslie Booker Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=KLGYWSJwdk4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Tricycle"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "3 Month Mentoring Program",
+      "url": "https://www.lesliebooker.com/work-with-me",
+      "description": "Small mentoring groups of three people who meet with Booker over twelve weeks to study core Buddhist teachings and carry practice into daily life. The programme includes group sessions, two one-to-one sessions and half-day opening and closing retreats; new groups are gathered through a waiting list.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/613a5c35df0ff6283f0f78e7/acb047e5-93eb-49bc-9baa-0b042e3c7a9f/email+header+images+%286%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Practice Walking Meditation",
+      "url": "https://www.lionsroar.com/how-to-practice-walking-meditation/",
+      "description": "Booker's step-by-step guide to walking meditation, published by Lion's Roar and linked from her teachings page.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.lionsroar.com/wp-content/uploads/2023/08/walkingmeditation.jpg"
+    },
+    {
+      "title": "A 20-Minute Practice to Hold the Emotional Body",
+      "url": "https://www.mindful.org/a-practice-to-open-up-to-the-emotional-body/",
+      "description": "A guided practice of about twenty minutes, published by Mindful, for noticing feelings in the body with patience and care.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.mindful.org/content/uploads/a-practice-for-opening-up-to-the-emotional-body.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 353,
+    "hub_url": "https://kripalu.org/people/leslie-booker",
+    "tier_evidence": "No own YouTube channel found; Instagram (therealbookerproject), Facebook and LinkedIn linked from her site but not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.lesliebooker.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Own site lesliebooker.com found via the link on her Kripalu person page (robots.txt read).",
+      "Kripalu named on: https://www.lesliebooker.com/live-teachings (links a past Kripalu programme).",
+      "Insight Meditation Society named on: https://www.lesliebooker.com/work-with-me (centres where she offers retreats).",
+      "Omega named on: https://www.lesliebooker.com/about (spoke at Omega's Mindfulness in Education conferences; co-founder of the Yoga Service Council at Omega). Hub link added; please check.",
+      "Tier: no follower counts readable (Instagram/Facebook need login); local_hero.",
+      "Base Philadelphia per her about page; she is co-guiding teacher at New York Insight in New York City, so availability set to worldwide rather than local_online.",
+      "Her site has a social-justice strand (e.g. a 2024 post-election meditation event, 'Love in the Midst of Dominance'); her work is centred on meditation, not political commentary, so she is kept. Those items are left out.",
+      "Possible link: Kate Johnson (rank 354) co-taught with her; separate teachers, separate listings."
+    ],
+    "left_out": [
+      "Upcoming New York Insight events listed on her site (Community Meditation Gathering 18 Nov and 9 Dec 2026, Sitting on Sunday 6 Dec 2026, Midlife Sangha 14 Dec 2026, Day of Insight 19 Dec 2026, New Year's Eve 2026): nyimc.org answered our robots.txt request with 406, so the whole domain is treated as blocked and its pages were not used.",
+      "Spirit Rock retreats (Winter Insight Meditation Retreat 5-11 Jan 2027; Moving Into Meditation 23-29 Jun 2027): spiritrock.org is never fetched and its pages would be refused at ingest.",
+      "Taming Anxiety course (Ten Percent Happier app) and articles 'The Dharma of Anxiety & Depression' and 'Buddhist Lessons on Anxiety': condition-named.",
+      "Interview about Power Source on Rikers Island (Lionheart Foundation video): an interview about a prison programme, not teaching.",
+      "Mindfulness, Ethics, and Right Action (Wisdom 2.0): a three-person panel, she is not the main speaker.",
+      "'Love in the Midst of Dominance' talks and the post-election event: political framing.",
+      "Best Practices for Yoga in a Criminal Justice Setting: a co-authored practice guide, no ISBN on her site.",
+      "Omega video 'Speaking Bravely About Race & Yoga': eomega.org not opened."
+    ]
+  },
+  "images_final": true
+}

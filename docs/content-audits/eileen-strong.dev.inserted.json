@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1110,
+    "healer_slug": "eileen-strong"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "417cec50-4440-4850-9128-d04b0e8e4ea7",
+      "slug": "quantum-touch-sessions-2",
+      "title": "Quantum-Touch sessions"
+    },
+    {
+      "table": "courses",
+      "id": "2f165379-6a64-4e9f-ad0e-a2fc70f126a4",
+      "slug": "reiki-sessions",
+      "title": "Reiki sessions"
+    },
+    {
+      "table": "courses",
+      "id": "33fce004-414f-4289-85e6-f9396353b24e",
+      "slug": "quantum-touch-becoming-energised-level-1-cheltenham",
+      "title": "Quantum-Touch Becoming Energised (Level 1), Cheltenham"
+    },
+    {
+      "table": "courses",
+      "id": "024c5a0e-4331-49c3-a754-09f6b93a048a",
+      "slug": "quantum-touch-becoming-energised-level-1-belper",
+      "title": "Quantum-Touch Becoming Energised (Level 1), Belper"
+    },
+    {
+      "table": "courses",
+      "id": "f49346a2-0ab1-4f0e-896f-8ea9c455c7ab",
+      "slug": "learn-to-love-to-meditate",
+      "title": "Learn to Love to Meditate"
+    },
+    {
+      "table": "courses",
+      "id": "9d8cb657-6a3f-4458-8795-4e96f9c44669",
+      "slug": "spirit-led-art-readings",
+      "title": "Spirit-Led Art Readings"
+    }
+  ],
+  "at": "2026-11-10T00:27:37.154Z"
+}

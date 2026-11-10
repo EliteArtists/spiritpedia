@@ -1,0 +1,94 @@
+{
+  "healer": {
+    "healer_slug": "aaravindha-himadra",
+    "location_source": null,
+    "no_public_base": "His site says only that he was born in America and that he 'returns to Europe' for seminars; it publishes no home town or country.",
+    "create": {
+      "name": "Aaravindha Himadra",
+      "bio": "Aaravindha Himadra is an American-born spiritual teacher and author who teaches within what he calls the Amartya tradition, a Himalayan lineage of mystics. In the summer of 2006 he made a hard trek deep into the Himalayas to a hidden valley, where he stayed among the masters of this lineage and received an initiation as one of its teachers. He tells the story of that journey, and shares some of the lineage's teachings, in his book Immortal Self, which has also come out in German as Das Tal der unsterblichen Meister.\n\nHe has been guiding students for several decades, working with individuals as well as small and large groups. His approach combines meditation practices, which mentors in his community pass on to newcomers according to their needs, with teachings on self-knowledge, compassion and devotion, and he also draws on modern science. The aim he describes is to help people let go of doubt and fear, recognise their true nature and live out their own purpose. He teaches through seminars and retreats online and in person, including multi-day satsangs in Switzerland, and through a free online library of articles, recorded satsangs and podcasts, along with a forum in which he answers questions sent in by students.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "spiritual-awakening",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.aaravindha.com/",
+      "booking_url": "https://www.aaravindha.com/courses",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "inspiration@aaravindha.com",
+      "image_urls": [
+        "https://ideamensch.com/wp-content/uploads/2019/02/aaravindha-himadra-e1549646451975.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Immortal Self: A Journey to the Himalayan Valley of the Amartya Masters",
+      "slug": "immortal-self",
+      "author": "Aaravindha Himadra",
+      "asin": "1683641132",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His account of a 2006 trek to a remote Himalayan valley to live among the masters of the Amartya lineage, with teachings from that tradition shared in print for the first time.",
+      "subjects": [
+        "ancient-wisdom",
+        "spiritual-awakening",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1683641132.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Explore More and the Communiqué",
+      "url": "https://www.aaravindha.com/offers/FWoBK6dY",
+      "description": "Free sign-up to his online library of articles, recorded satsangs, video clips and podcasts, together with the Communiqué, where students send in questions and he answers them for the community.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://ideamensch.com/wp-content/uploads/2019/02/aaravindha-himadra-e1549646451975.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 350,
+    "hub_url": "https://www.soundstrue.com/collections/authors-aaravindha-himadra",
+    "tier_evidence": "No YouTube channel found; Instagram @aaravindhahimadra, Facebook and Medium linked from his contact page, not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.aaravindha.com/contact",
+    "contact_form_url": "https://www.aaravindha.com/contact",
+    "flags": [
+      "Screen 'unsure': confirmed as a spiritual teacher (author and teacher of the 'Amartya tradition', seminars and satsangs); not a musician, doctor, therapist or academic.",
+      "Sounds True list used as names only; soundstrue.com not opened (his site links to it). aaravindha.com found by web search; robots.txt read.",
+      "Photo: kajabi-storefronts-production.kajabi-cdn.com refused our robots.txt request (403), so none of his own site's photos can be used. The one photo is from the ideamensch.com interview linked from his About page (robots.txt read); the image isn't captioned, so identity is likely but not certain.",
+      "Email inspiration@aaravindha.com from the contact page, shown behind Cloudflare email protection and decoded from the page itself. His FAQ says he can't answer individual messages; the team does.",
+      "Base: no public base (born in America; 'returns to Europe' for seminars).",
+      "No upcoming offerings: the only listed event (Swiss Alps satsangs, 18–30 Oct 2026) has passed; booking_url is his offerings page. FAQ says mini courses are coming.",
+      "His site uses grand claims ('globally revered Rishi Seer', 'teachings are a beacon of healing'); the bio leaves these out.",
+      "Book ASIN from the Amazon link on his own About page (link not opened)."
+    ],
+    "left_out": [
+      "The Living Thread satsang-seminars, Landguet Ried, Switzerland (18–23 and 25–30 Oct 2026): past.",
+      "Medium, Substack and Sambodha writing: not opened (substack.com on the never-fetch list).",
+      "German edition Das Tal der unsterblichen Meister (amazon.de link): US store only."
+    ],
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "held": "Held for the owner (10 Nov 2026): the photo comes from an uncaptioned ideamensch.com interview (identity likely, not certain), and the email was decoded from Cloudflare email protection (his contact form is fine)."
+  }
+}

@@ -10,7 +10,11 @@
       "availability": "local_online",
       "city": "Mesa, Arizona",
       "country": "United States",
-      "subjects": ["quantum-touch", "energy-medicine", "chakra-healing"],
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "chakra-healing"
+      ],
       "website_url": "https://www.reenergizement.com/",
       "booking_url": "https://www.reenergizement.com/services.html",
       "youtube_url": null,
@@ -30,7 +34,11 @@
     {
       "title": "Introducing Annabel Hall and the Quantum Touch Level 1 class.",
       "url": "https://www.youtube.com/watch?v=SA6bre97-mg",
-      "subjects": ["quantum-touch", "energy-medicine"]
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "Annabel Hall Quantum Touch Practitioner-Instructor"
     }
   ],
   "books": [],
@@ -43,7 +51,11 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["quantum-touch", "energy-medicine"]
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://www.reenergizement.com/uploads/1/2/5/9/125916050/published/give-package-080421.png?1628104074"
     },
     {
       "title": "Quantum-Touch Becoming Energized (Level 1)",
@@ -53,7 +65,11 @@
       "product_type": "course",
       "start_date": null,
       "end_date": null,
-      "subjects": ["quantum-touch", "energy-medicine"]
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://www.reenergizement.com/uploads/1/2/5/9/125916050/inhale-love-exhale-gratitude-qt_orig.jpg"
     },
     {
       "title": "Quantum-Touch Becoming Heart Conscious (Level 4)",
@@ -63,7 +79,11 @@
       "product_type": "course",
       "start_date": "2027-01-15",
       "end_date": "2027-01-16",
-      "subjects": ["quantum-touch", "chakra-healing"]
+      "subjects": [
+        "quantum-touch",
+        "chakra-healing"
+      ],
+      "image": "https://www.reenergizement.com/uploads/1/2/5/9/125916050/annabel-051926-50percent_orig.jpg"
     }
   ],
   "free_resources": [],
@@ -90,5 +110,6 @@
       "Two quantumtouch.com workshop pages linked from her site (Level 3 with Henri Rand Furgiuele, July 2024; Level 6 with Richard Gordon, Feb 2024): past and not hers.",
       "Session packages listed separately: folded into the one sessions item."
     ]
-  }
+  },
+  "images_final": true
 }

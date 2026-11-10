@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "onlyoga",
+    "location_source": "https://www.onlyoga.com/aboutus",
+    "create": {
+      "name": "onlYoga",
+      "bio": "onlYoga is an independent yoga school in Midtown Atlanta, Georgia. It opened in 2001 as the first yoga studio in the neighbourhood, passed to new owners in 2016 and moved in 2023 to Colony Square on Peachtree Street. The studio is kept at room temperature and has no mirrors, so that attention turns inward, and it describes itself as a place to learn yoga as a path of transformation rather than a workout. Classes follow three strands: Ashtanga, taught through progressive sequences using the tristana method of posture, breath and gaze; Dharma Yoga, the devotional Hatha-Raja practice created by Sri Dharma Mittra, which closes with breathwork, relaxation and meditation; and creative vinyasa.\n\nIts 200-hour teacher training, approved by Yoga Alliance, takes a deliberately small group through the history and philosophy of yoga, ethics, breathing practice and meditation, alignment, observation and hands-on adjustment, with a strong emphasis on teaching real students during an internship. Those who want depth without teaching can join a shorter meditation pathway over the first four Sundays. The school also holds one-day retreats that combine Dharma Yoga, discussion, pranayama and yoga nidra, along with seasonal 108 sun salutation gatherings.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2001,
+      "availability": "local",
+      "city": "Atlanta, Georgia",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.onlyoga.com/",
+      "booking_url": "https://www.onlyoga.com/membership",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "classes@onlyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5642517be4b024d1dbdf6bf6/1622758581345-T257B128MP29WCBYCU77/IMG_9653.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5642517be4b024d1dbdf6bf6/1625418511171-UFDP18Q5UR381VBFXB6U/IMG_9364.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5642517be4b024d1dbdf6bf6/1622758543075-4H9SNX0TNF097MHFUT4V/IMG_5895.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 Hour Yoga Teacher Training",
+      "url": "https://www.onlyoga.com/welcome#oy-teacher-training",
+      "description": "A Yoga Alliance-approved training for a small group, covering yoga history and philosophy, ethics, pranayama and meditation, alignment, observation and adjustments, and vinyasa sequencing. Trainees teach real students in an internship before graduating. Dates for 2027 are still to be announced; a non-teaching meditation pathway uses the first four Sundays.",
+      "price": "3300 tuition (teaching pathway)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5642517be4b024d1dbdf6bf6/t/5709f288f850829681809afd/1609030537093/OYlogo2016.png?format=1500w"
+    },
+    {
+      "title": "Membership+",
+      "url": "https://www.onlyoga.com/membership",
+      "description": "Unlimited classes at the Colony Square studio, including Ashtanga, Dharma Yoga and creative vinyasa, on a rolling monthly plan with a three-month minimum. A student rate is listed on the same page.",
+      "price": "$155/MONTH",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5642517be4b024d1dbdf6bf6/t/5709f288f850829681809afd/1609030537093/OYlogo2016.png?format=1500w"
+    },
+    {
+      "title": "One Day Retreat",
+      "url": "https://www.onlyoga.com/onedayretreat",
+      "description": "A full day of practice at the studio without travelling: a Dharma Yoga class, a vegan lunch, discussion of spiritual teachings, partner and restorative work, and a close with pranayama and yoga nidra. Registration closes a few days ahead.",
+      "price": "$125 (includes lunch and snack) $95 members",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5642517be4b024d1dbdf6bf6/t/5709f288f850829681809afd/1609030537093/OYlogo2016.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 520,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on its site; Instagram never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.onlyoga.com/aboutus",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Found by web search (Atlanta Ashtanga yoga teacher training); the search result was the Squarespace host onlyoga.squarespace.com, whose sitemap names www.onlyoga.com; robots.txt read on both (standard Squarespace group, no Disallow: /).",
+      "Email classes@onlyoga.com is the studio's class inbox (mailto on the about and home pages).",
+      "Lineage: Ashtanga method and Dharma Yoga (Sri Dharma Mittra) classes, but the school does not claim formal affiliation with either lineage on the pages read. No founder or director is named.",
+      "The studio also teaches aerial yoga and offers Gyrokinesis; these were not listed as items.",
+      "The 200-hour training has no 2027 dates yet (the site invites sign-ups to its mailing list for the announcement), so it is listed undated. Its description sits on the home page (anchor #oy-teacher-training), so the item URL uses that anchor on /welcome to stay distinct from the website URL.",
+      "Photos are of the practice room before the 2023 move to Colony Square (brick-walled studio with tall windows); the current room may look different.",
+      "Thin: three items only (training, membership, one-day retreat); no teacher names are published, so no Possible future listings.",
+      "No teachers named on the site, so onlyoga-teachers.json has an empty links list."
+    ],
+    "left_out": [
+      "Myofascial release workshop: framed around healing and hormones (health rule); also undated.",
+      "Partner stretching/acro workshop and Beginner Series: dates on the events page have no year, so not listed.",
+      "2025 retreat pages: past.",
+      "Aerial yoga packages, Gyrokinesis and corporate yoga: fitness or corporate services, not the school's spiritual teaching.",
+      "Meditation (non-teaching) pathway: no separate price or page published.",
+      "Videos: none embedded on the pages read."
+    ]
+  },
+  "images_final": true
+}

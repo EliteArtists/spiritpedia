@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "teja-bell",
+    "location_source": null,
+    "no_public_base": "His site gives no home town: the weekly class is streamed from his 'home Zendo' with no place named, and the in-person dates it lists (San Anselmo, Spirit Rock in Marin County) are venues, not a stated base.",
+    "create": {
+      "name": "Teja Bell",
+      "bio": "Teja Bell, also known by his Zen name Fudō Myōō, is a Rinzai Zen teacher and qigong teacher who has combined Buddhist meditation with Chinese internal arts for most of his life. He started martial arts as a teenager in 1965, went on to Aikido, in which he holds a sixth-degree black belt, and from 1975 learned qigong and Yang taijiquan from the lineage master Li Leita. He trained in the Theravada, Zen and Tibetan traditions, received teachings from Gelugpa, Nyingma and Kagyu masters, and was ordained a Zen priest in the Hollow Bones order before receiving transmission as a Zen master from Junpo Denis Kelly.\n\nHe calls his approach QigongDharma: standing qigong, seated Dao Yin and meditation taught together as one path, so that insight is grounded in the body. He created the Radiant Heart Qigong system and still holds its lineage. Every Wednesday he leads a 75-minute online class from his home zendo, he runs an in-depth training with a route to teacher certification, and he has led well over a hundred retreats at a Marin County meditation centre since 1999. His website carries his longer written teachings on meditation, the Buddha's teaching on inquiry and qigong practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "qi-gong",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.tejabell.com/",
+      "booking_url": "https://www.tejabell.com/wednesday/",
+      "youtube_url": "https://www.youtube.com/@tejabell-qigongdharma",
+      "instagram_url": "https://www.instagram.com/tejabell",
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "teja@tejabell.com",
+      "image_urls": [
+        "https://www.tejabell.com/wp-content/uploads/2021/09/tb2_500.png",
+        "https://www.tejabell.com/wp-content/uploads/2021/09/TejaBellDoubleLotus144crop.jpg",
+        "https://www.tejabell.com/wp-content/uploads/2021/11/TB-Zen-400.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "QigongDharma Weekly Online Class",
+      "url": "https://www.tejabell.com/wednesday/",
+      "description": "A live 75-minute class on Zoom every Wednesday morning (Pacific time), moving through dharma reflection, standing qigong, seated Dao Yin and meditation, with time for questions. Students can drop in for a single week or book a month, with recordings available for a week.",
+      "price": "Sliding scale: suggested minimum $20 per class, or from $60 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    },
+    {
+      "title": "Radiant Heart Qigong In-Depth Training and Teacher Training",
+      "url": "https://www.tejabell.com/teacher-training/",
+      "description": "An immersive study of Radiant Heart Qigong and Dao Yin together with his approach to meditation and mindfulness. Participants can work towards teacher or guide certification, starting at Level 1; there is currently a waitlist.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Seven Directions Meditation",
+      "url": "https://www.tejabell.com/7-directions-meditation/",
+      "description": "A written practice that guides attention through front, back, sides, above, below and centre, so awareness of the body widens into the space around it. He notes how it draws on Daoist, Buddhist and martial-arts ways of orienting practice.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ],
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    },
+    {
+      "title": "Knowing for Yourself, Part 1: The Four Reliances",
+      "url": "https://www.tejabell.com/https-www-tejabell-com-wp-content-uploads-2025-12-knowing-for-yourself-part-1-pdf/",
+      "description": "A teaching essay on the Four Reliances of the Mahayana tradition as a way to practise without blind faith in any teacher. It is the first of a two-part series on the Buddha's guidance about inquiry.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "esalen",
+    "rank": 395,
+    "hub_url": "https://www.esalen.org/faculty/teja-bell",
+    "tier_evidence": "YouTube @tejabell-qigongdharma: count unreadable (channel pages not fetched from this machine, 10 Nov 2026); Instagram @tejabell: not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.tejabell.com/faqs/",
+    "contact_form_url": "https://www.tejabell.com/contact/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Website tejabell.com taken from his Esalen faculty page link; robots.txt read (WordPress defaults only).",
+      "Email teja@tejabell.com is printed in the FAQ text ('We use: teja@tejabell.com ...'), not a mailto link; contact form also recorded.",
+      "No Esalen mention on own site: listed without the link.",
+      "His site centres on Spirit Rock (150+ retreats there since 1999). Spirit Rock is not linked or opened; the bio refers to it only as a Marin County meditation centre.",
+      "No base published: no_public_base set. If the owner wants him in Near You, his events are in Marin County, California.",
+      "Photos: all three from his own site (circular crops). The Zen-robes photo (TB-Zen-400) shows him with a shaved head, later than the other two; same name in the file and page, but flag for a look.",
+      "No videos: no video IDs on his site and his YouTube channel page was not fetched.",
+      "Item count is low: two offerings and two free writings (four items).",
+      "Some site copy speaks of 'healing dimensions' of qigong and 'vibrant health'; the bio and items avoid health wording."
+    ],
+    "left_out": [
+      "Multi-week immersions and retreats on https://www.tejabell.com/offerings/: no dates posted ('Please check back').",
+      "Daylong retreats in the resources list (Spirit Rock 8 Feb and 14 Jun 2026, San Anselmo 19 Sept 2026): past.",
+      "'The Three Centers in QigongDharma': mentions digestion, immunity and mood, left out under the strict health rule.",
+      "'A Reflection on Trauma-Sensitivity, Meditation, and QigongDharma' series: trauma-framed, left out."
+    ]
+  },
+  "images_final": true
+}

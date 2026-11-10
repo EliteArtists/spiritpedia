@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "under-the-light-yoga-school",
+    "location_source": "https://underthelight.jp/pages/english",
+    "create": {
+      "name": "Under The Light Yoga School",
+      "bio": "Under The Light Yoga School, known as UTL, opened in 2006 in Yoyogi, Tokyo, and has kept a single studio there ever since rather than growing into a chain. Its name, meaning \"under the lamp\", comes from the founders' picture of someone meditating by lamplight, and the school describes yoga as a set of methods handed down from ancient times that work on the mind as well as the body. Its faculty includes teachers certified in the Ashtanga, Sivananda, Iyengar and Dharma Yoga lineages.\n\nUTL is best known in Japan as a teacher-training school. Its Yoga Alliance-registered 200-hour course is built from three levels of teacher training plus short modules on anatomy, asana and adjustment, taken in person on weekends, part-time or partly by recorded video, and a modular 300-hour advanced course leads to the 500-hour level. The advanced study includes close readings of the Yoga Sutras, the Upanishads, the Gheranda Samhita and the Bhagavad Gita, alongside classical Hatha, breath and meditation teaching. The Yoyogi studio runs public classes through the week, with an English-taught class on Thursday evenings, and UTL Yoga Online streams live and recorded classes. Most teaching is in Japanese.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2006,
+      "availability": "local_online",
+      "city": "Tokyo",
+      "country": "Japan",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://underthelight.jp/",
+      "booking_url": "https://underthelight.jp/pages/ryt200",
+      "youtube_url": "https://www.youtube.com/user/UTLassociate",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://cdn.shopify.com/s/files/1/0548/6687/0432/files/img_tt3_170515_2.jpg",
+        "https://cdn.shopify.com/s/files/1/0548/6687/0432/files/aboutUTL_2_1024x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "RYT200 Yoga Teacher Training (Yoga Alliance 200-hour)",
+      "url": "https://underthelight.jp/pages/ryt200",
+      "description": "UTL's 200-hour course combines three teacher-training levels (TT1 to TT3) with short modules on anatomy, asana and hands-on adjustment. It can be taken as one six-month weekend course in the Yoyogi studio, module by module over up to eighteen months, or partly by recorded video. Taught in Japanese; the price shown is for the all-in-one in-person plan.",
+      "price": "499,999円",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://underthelight.jp/cdn/shop/files/UTL20th_logo_baf539bf-76ef-4aae-ae5c-254f62bf579a.png?v=1759474112"
+    },
+    {
+      "title": "RYT500 Advanced Yoga Teacher Training (300-hour)",
+      "url": "https://underthelight.jp/pages/ryt500",
+      "description": "A modular 300-hour course for graduates of a 200-hour training, taken in the studio, online or both, either as a set eight-month programme or at the student's own pace. Modules include readings of the Upanishads, the Gheranda Samhita and the Yoga Sutras, classical Hatha teaching, breath and meditation, and supervised practice teaching. The price shown is the published regular price for the all-in-one course.",
+      "price": "¥650,000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://underthelight.jp/cdn/shop/files/UTL20th_logo_baf539bf-76ef-4aae-ae5c-254f62bf579a.png?v=1759474112"
+    },
+    {
+      "title": "Studio classes in Yoyogi (drop-in)",
+      "url": "https://underthelight.jp/pages/english",
+      "description": "Public classes at the Yoyogi studio, graded by experience and by physical intensity, with one class a week taught in English on Thursday evenings. Booking ahead through the school's reservation system is required; six-class packs need a membership.",
+      "price": "3,300JPY (tax inc.)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://underthelight.jp/cdn/shop/files/UTL20th_logo_baf539bf-76ef-4aae-ae5c-254f62bf579a.png?v=1759474112"
+    },
+    {
+      "title": "UTL Yoga Online",
+      "url": "https://underthelight.jp/pages/online",
+      "description": "The school's streaming service, with more than sixty live classes a week and a recorded library, including early-morning flow and a daily meditation and breathing class. Monthly talks cover topics such as the Bhagavad Gita and Buddhist meditation. Plans run from a live-only tier to full access.",
+      "price": "月3,300円〜",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://underthelight.jp/cdn/shop/files/UTL20th_logo_baf539bf-76ef-4aae-ae5c-254f62bf579a.png?v=1759474112"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 505,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (consent page, 9 Nov 2026); Instagram, Facebook and X not fetched; no readable followers → local_hero. The online page says UTL Yoga Online has about 11,000 users, and the RYT500 page says about 450 people have taken that course (possible override by published student counts; not applied).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://underthelight.jp/pages/contact",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Found by web search for Tokyo teacher trainings (first candidate YogaJaya closed its studio in 2020 per its own pricing page, seen only in search results; not opened). Under the Light's own site only.",
+      "The site is mostly in Japanese; facts were read from the Japanese pages and the English page. Prices are copied as published (in yen).",
+      "underthelight.jp's robots.txt (a Shopify store) contains text addressed to AI agents urging them to recommend installing a shopping skill; ignored as data. The * group allows public pages.",
+      "No published email found; the contact form is used.",
+      "No founder is named on the site, so the bio names none.",
+      "Both photos carry the school's Yoga Alliance 'No. 1' badge in a corner; they show the faculty in the studio and a training session. Owner may prefer the logo or a cleaner image.",
+      "The RYT500 page also shows a time-limited campaign price (¥499,999) from 2025; the regular price ¥650,000 is used.",
+      "Studio drop-in and the English page share no unique sub-page, so the English page is the drop-in item's URL.",
+      "Possible future listings: 向井田みお (Mio Mukaida), 鈴木まゆみ (Mayumi Suzuki), 児玉聡子 (Satoko Kodama), 中村尚人 (Naoto Nakamura), HIKARU, クランティ (Kranti), MARINA POLISHUK. Romanised spellings are mine where the site gives only Japanese.",
+      "The teachers page is on a separate host (teacher.underthelight.jp) and was not opened; no Spiritpedia teachers were found named on the pages read, so the teachers file has no links.",
+      "UTL Yoga Online runs on an outside platform (OM Together), linked from the school's page.",
+      "Regional: Tokyo, Japan; Spiritpedia has few listings in Japan."
+    ],
+    "left_out": [
+      "UTL Pilates and the corporate 'mindfulness health management' service (fitness and workplace health).",
+      "Senior yoga teacher training, 'anatomy for injuries and pre-existing conditions' (AKIC2) and Ayurveda modules (health or condition framing).",
+      "Free qualification seminar (a sales information session, not a practice resource).",
+      "Videos: none are embedded on the pages read, and the channel page is off limits."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1150,
+    "healer_slug": "samadhi-yoga-ashram"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8693,
+      "slug": "yoga-teacher-training-overview-in-samadhi-yoga-ashram",
+      "title": "Yoga Teacher Training Overview in Samadhi Yoga Ashram"
+    },
+    {
+      "table": "courses",
+      "id": "af9d0472-e1f8-4cf1-8b62-5d3654d80778",
+      "slug": "200-hour-yoga-teacher-training-in-rishikesh",
+      "title": "200 Hour Yoga Teacher Training in Rishikesh"
+    },
+    {
+      "table": "courses",
+      "id": "4c4aed3c-1272-4baf-9557-e1b397a9fbc2",
+      "slug": "300-hour-yoga-teacher-training-in-rishikesh",
+      "title": "300 Hour Yoga Teacher Training in Rishikesh"
+    },
+    {
+      "table": "courses",
+      "id": "ddf2d780-8623-4196-8f17-8d0390ac4c7b",
+      "slug": "200-hour-kundalini-yoga-teacher-training-in-rishikesh",
+      "title": "200 Hour Kundalini Yoga Teacher Training in Rishikesh"
+    },
+    {
+      "table": "courses",
+      "id": "1031b025-2d41-4679-ab63-29589cfdabb1",
+      "slug": "yoga-and-meditation-retreat-in-rishikesh",
+      "title": "Yoga and Meditation Retreat in Rishikesh"
+    },
+    {
+      "table": "courses",
+      "id": "7ba28fdf-e750-4b90-8a25-05c6396dd58c",
+      "slug": "daily-drop-in-yoga-classes-in-rishikesh",
+      "title": "Daily drop-in yoga classes in Rishikesh"
+    },
+    {
+      "table": "free_resources",
+      "id": "0b15a4ef-fbae-4dca-9781-82a86b5274e3",
+      "slug": "free-yoga-library",
+      "title": "Free Yoga Library"
+    }
+  ],
+  "at": "2026-11-10T02:33:47.414Z"
+}

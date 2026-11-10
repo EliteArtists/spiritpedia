@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1161,
+    "healer_slug": "onlyoga"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5cc37658-c34b-44bc-8907-9878039be7c3",
+      "slug": "200-hour-yoga-teacher-training",
+      "title": "200 Hour Yoga Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "07d3f79b-30ec-40d2-b39b-8a3232596198",
+      "slug": "membership",
+      "title": "Membership+"
+    },
+    {
+      "table": "courses",
+      "id": "e30e3b60-c0ba-4bd4-a5bb-c0e521e151ea",
+      "slug": "one-day-retreat",
+      "title": "One Day Retreat"
+    }
+  ],
+  "at": "2026-11-10T02:50:57.357Z"
+}

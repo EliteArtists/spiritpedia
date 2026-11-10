@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1105,
+    "healer_slug": "bia-de-castro-oliveira"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8622,
+      "slug": "toque-quantico",
+      "title": "Toque Quântico"
+    },
+    {
+      "table": "videos",
+      "id": 8623,
+      "slug": "entrevista-toque-quantico-bia-de-oliveira-05-10-2012",
+      "title": "Entrevista - Toque Quântico - Bia de Oliveira - 05/10/2012"
+    },
+    {
+      "table": "videos",
+      "id": 8624,
+      "slug": "programa-espaco-dos-aromas-radio-mundial-toque-quantico-1",
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Toque Quântico 1"
+    },
+    {
+      "table": "videos",
+      "id": 8625,
+      "slug": "programa-espaco-dos-aromas-radio-mundial-toque-quantico-2",
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Toque Quântico 2"
+    },
+    {
+      "table": "videos",
+      "id": 8626,
+      "slug": "programa-espaco-dos-aromas-radio-mundial-saude-autocriada",
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Saúde Autocriada"
+    },
+    {
+      "table": "courses",
+      "id": "478bc0a7-6682-433b-8257-eb0962ff6670",
+      "slug": "quantum-touch-nivel-1-tornando-se-energizado-becoming-energized",
+      "title": "Quantum-Touch Nível 1: Tornando-se Energizado (Becoming Energized)"
+    },
+    {
+      "table": "courses",
+      "id": "f46d6e54-e59c-43c3-89e2-daf29b2810b3",
+      "slug": "consulta-de-tarot-leitura-do-inconsciente",
+      "title": "Consulta de Tarot (Leitura do Inconsciente)"
+    },
+    {
+      "table": "courses",
+      "id": "3b00c8e9-0e11-43d1-8f9e-3e94841f0b75",
+      "slug": "consulta-de-astrologia-mapa-astrologico",
+      "title": "Consulta de Astrologia (Mapa Astrológico)"
+    },
+    {
+      "table": "courses",
+      "id": "146d7096-e5e8-4559-bdc2-cec9a2482a4d",
+      "slug": "consulta-de-numerologia",
+      "title": "Consulta de Numerologia"
+    }
+  ],
+  "at": "2026-11-10T00:09:31.618Z"
+}

@@ -1,0 +1,201 @@
+{
+  "healer": {
+    "healer_slug": "lizzie-lasater",
+    "location_source": "https://www.lizzielasater.com/media-kit",
+    "create": {
+      "name": "Lizzie Lasater",
+      "bio": "Lizzie Lasater has taught yoga since 2005 and specialises in Restorative Yoga, which she also writes about. The daughter of the Restorative Yoga pioneer Judith Hanson Lasater, she grew up with the practice, studied at UCLA and Columbia, and now trains other teachers as a senior Relax and Renew trainer. Her teaching treats rest as a practice in its own right: few poses, plenty of props, little talking and long periods of stillness, so that students can turn their attention inwards, notice the breath and rediscover quiet. Much of her current work is for women in midlife and later, looking at how practice can change as the body does.\n\nShe lives in Salzburg, Austria, and teaches mostly online through the lasater.yoga school she runs with her mother, with self-paced intensives on Savasana, pranayama and embodied meditation, alongside a small number of in-person retreats and workshops in Europe and the United States. Every Sunday she sends a short newsletter on rest and ageing gracefully, and she offers free online Savasana classes. With her mother she co-wrote Savasana: The Practice of Radical Rest, published by Shambhala in November 2026, which presents the final resting pose as a complete practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Salzburg",
+      "country": "Austria",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.lizzielasater.com/",
+      "booking_url": "https://www.lizzielasater.com/retreats-workshops",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/1740995096479-LJNF41SUE7JEQQD9JVVH/Lizzie18072024%C2%A9DanielaGruber-9.jpg",
+        "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/b838fd9c-a0a8-4687-96ce-fb838a4432f6/Lizzie07032025%40DaniGruber-184.jpg",
+        "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/1740994852319-RQ97GUE3D6EYVVF1JOJW/LizzieXYogaworldJournal%C2%A9DaniGruber-50.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Savasana: The Practice of Radical Rest",
+      "slug": "savasana-the-practice-of-radical-rest",
+      "author": "Judith Hanson Lasater, Lizzie Lasater",
+      "asin": "1645474917",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Co-written with her mother, the book argues that Savasana is a whole practice rather than the end of a class. It offers instructions and variations, illustrations, journaling prompts and the authors' own stories.",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1645474917.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Winter Reset: Embody & Inspire (Utrecht)",
+      "url": "https://www.yogamoves.nl/workshops-events/winter-reset-27",
+      "description": "A two-day in-person Restorative Yoga workshop at Yoga Moves in Utrecht, counting towards continuing education hours. Early-bird rates are offered.",
+      "price": "€275",
+      "product_type": "retreat",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-13",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/6086e2a5bf366f6273c2471c/t/69f9b52ccfa3e81e12d7236d/1777972524336/Lizzie08122021%C2%A9DanielaGruber-19.jpg?format=1500w"
+    },
+    {
+      "title": "Living Your Yoga: A Retreat in Italy",
+      "url": "https://www.yogainsalento.com/en/item-living-your-yoga-a-retreat-in-italy.aspx?week=02/05/2027",
+      "description": "A week-long residential retreat in Salento, Puglia, taught by Lizzie with Judith Hanson Lasater. Booking is through the host.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-05-02",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.yogainsalento.com/images/yis-1.jpg"
+    },
+    {
+      "title": "Yoga Summer Camp: Finding Connection and Creativity",
+      "url": "https://featheredpipe.com/feathered_retreats/lizzie-lasater-judith-hanson-lasater-yoga-summer-camp-2027/",
+      "description": "A week at the Feathered Pipe Ranch in Montana with Lizzie and Judith Hanson Lasater, joining yoga with creative practice. Currently taking a waiting list.",
+      "price": "$3295 (tuition and basic accommodation; wait list only)",
+      "product_type": "retreat",
+      "start_date": "2027-07-31",
+      "end_date": "2027-08-07",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://featheredpipe.com/wp-content/uploads/2025/10/LizzieLasater@DaniGruber-219_facebook.jpg"
+    },
+    {
+      "title": "Savasana Intensive",
+      "url": "https://www.lasater.yoga/courses/savasana-intensive",
+      "description": "A self-paced online course in 25 lessons on Savasana and Restorative Yoga, moving attention from outside to inside. It can be bought alone or in a bundle with other courses.",
+      "price": "$499.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1645474917.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Pranayama Intensive",
+      "url": "https://www.lasater.yoga/courses/pranayama-intensive",
+      "description": "A five-week self-paced course for building a home breath practice, with preparatory poses and lying pranayama, available for a year after enrolling.",
+      "price": "$499.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/1740995096479-LJNF41SUE7JEQQD9JVVH/Lizzie18072024%C2%A9DanielaGruber-9.jpg"
+    },
+    {
+      "title": "Meditation Intensive",
+      "url": "https://www.lasater.yoga/courses/meditation-intensive",
+      "description": "An online course with Judith Hanson Lasater and Lizzie on an embodied, daily meditation practice that uses the whole body as well as the mind.",
+      "price": "$499.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/1740995096479-LJNF41SUE7JEQQD9JVVH/Lizzie18072024%C2%A9DanielaGruber-9.jpg"
+    },
+    {
+      "title": "Restorative Teacher Training (50 Hour Certification)",
+      "url": "https://www.lizzielasater.com/certification",
+      "description": "Training in the theory, sequencing and energetics of Restorative Yoga for teachers and serious students. Certification combines live workshop hours with a library of pose videos.",
+      "price": "USD $500 (plus tax) certification fee, in addition to the live workshop hours",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/e30d2cc4-0840-4cb6-8e78-57f20d4a6f21/Lizzie_HauptDark.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Savasana Summit",
+      "url": "https://www.lasater.yoga/courses/Savasana-Summit",
+      "description": "Five days of free online reading, conversation and practice marking the launch of the Savasana book, with video lessons, guided practice and two live Zoom sessions on 12 and 16 December 2026.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1645474917.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Rest for Real: Free Savasana Class",
+      "url": "https://www.lizzielasater.com/rest-for-real",
+      "description": "A free online Restorative Yoga session offering a pause to rest body and mind; the Zoom link comes with her newsletter.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/53fe33cbe4b0f7be79e0b3e3/e30d2cc4-0840-4cb6-8e78-57f20d4a6f21/Lizzie_HauptDark.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 365,
+    "hub_url": "https://kripalu.org/people/lizzie-lasater",
+    "tier_evidence": "YouTube (/c/lizzielasater) linked from her site: count unreadable (channel pages not fetched); Instagram (lizzie.lasater) not readable without login (not tried); her site states 15,000+ newsletter readers (not a follower count) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.lizzielasater.com/contact",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Own site lizzielasater.com found via the link on her Kripalu person page (robots.txt read; Squarespace AI-bot names share the * group, so open).",
+      "No Kripalu mention on own site: listed without the link.",
+      "An address (jai@lizzielasater.com) appears only in the shop's hidden returns-policy data, so it is not treated as published; contact form used.",
+      "lasater.yoga is the online school she runs with her mother Judith Hanson Lasater (not on Spiritpedia as far as the dev list shows); several items are co-taught. Judith may be a candidate for her own listing.",
+      "lasater.yoga also sells menopause and pelvic-floor courses (condition-named); those are left out. Her own site frames her work as Restorative Yoga 'for midlife and beyond'; no condition named, so kept.",
+      "Book ISBN-13 9781645474913 from the Bookshop and Barnes & Noble links on her own Savasana page, converted to ISBN-10; not confirmed elsewhere; publishes 24 Nov 2026; cover null.",
+      "Her contact page says she is not taking new in-person invitations; the three retreats listed are already scheduled.",
+      "Prices in '$' on lasater.yoga state no currency; written as published."
+    ],
+    "left_out": [
+      "Graceful Aging: Pelvic Floor Resilience Course and menopause courses on lasater.yoga: condition-named.",
+      "YouTube videos: no video IDs on her own site; channel not fetched.",
+      "Sunday Self-Care newsletter (newsletter.lasater.yoga): a newsletter, not a resource page.",
+      "Prop shop links (Hugger Mugger affiliate): not teaching."
+    ]
+  },
+  "images_final": true
+}

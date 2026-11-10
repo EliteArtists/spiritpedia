@@ -1,0 +1,154 @@
+{
+  "healer": {
+    "healer_slug": "yongey-mingyur-rinpoche",
+    "location_source": "https://www.yongeyfoundation.org/impact/tergar-osel-ling-monastery",
+    "create": {
+      "name": "Yongey Mingyur Rinpoche",
+      "bio": "Yongey Mingyur Rinpoche is a Tibetan Buddhist meditation master, born in Nepal in 1975, who leads the Tergar Meditation Community, a network of groups and centres in more than thirty countries. He first learnt to meditate as a boy under his father, Tulku Urgyen Rinpoche. As a child and teenager he lived with severe anxiety and panic, and it was through meditation that he found his way through it, an experience he talks about openly with students. Meeting the scientists who came to see his father sparked a lasting interest in research, and he later took part in studies of meditation and the brain with Richard Davidson, Antoine Lutz and colleagues at the University of Wisconsin.\n\nHis teaching blends traditional practice with modern findings about the mind, and it runs along two paths: Joy of Living, a set of simple meditations open to people of any faith, and the Path of Liberation, a graded training in Mahamudra and Dzogchen. Among his books are The Joy of Living and Joyful Wisdom; a later one, In Love with the World, tells of the years he spent as a wandering yogi in India after quietly leaving his monastery. His home is Tergar Osel Ling Monastery in Kathmandu, and each year he teaches retreats and workshops in person and online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Kathmandu",
+      "country": "Nepal",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "website_url": "https://tergar.org/",
+      "booking_url": "https://tergar.org/2026",
+      "youtube_url": "https://www.youtube.com/mingyurrinpoche",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@tergar.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6544fb32e4b6c344b1ad0840/b3da7aa9-f833-40ed-8969-34b664d44741/Mingyur+Rinpoche+Picture+2022.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "A Guided Meditation for Difficult Moments with Yongey Mingyur Rinpoche",
+      "url": "https://www.youtube.com/watch?v=FkcSI90MBKE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yongey Mingyur Rinpoche"
+    },
+    {
+      "title": "Being Patient in an Impatient World with Yongey Mingyur Rinpoche",
+      "url": "https://www.youtube.com/watch?v=QGdGDN879lM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Yongey Mingyur Rinpoche"
+    },
+    {
+      "title": "Compassion for Planet Earth with Yongey Mingyur Rinpoche",
+      "url": "https://www.youtube.com/watch?v=TTsyxFIRXp0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Yongey Mingyur Rinpoche"
+    }
+  ],
+  "books": [
+    {
+      "title": "In Love with the World: A Monk's Journey Through the Bardos of Living and Dying",
+      "slug": "in-love-with-the-world",
+      "author": "Yongey Mingyur Rinpoche with Helen Tworkov",
+      "asin": "0525512543",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His own story of slipping away from his monastery to live as a wandering yogi in India, of the near-death experience that came early in that journey, and of what the experience taught him about living and dying.",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "nde"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0525512543.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "A World of Difference",
+      "slug": "a-world-of-difference",
+      "author": "Yongey Mingyur Rinpoche",
+      "asin": "1538779536",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His newest book, a down-to-earth guide to finding steadiness inside ourselves when the world feels uncertain, built around inner refuge, awareness, compassion and wisdom.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1538779536.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Finding Freedom in Life's Transitions: The Teachings on the Six Bardos",
+      "url": "https://tergar.org/2026",
+      "description": "An online weekend of teachings from Mingyur Rinpoche on the six bardos, the transitional states of living and dying, streamed live from Kathmandu.",
+      "price": null,
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/6544fb32e4b6c344b1ad0840/t/694b04f88e035c2d44ddb3a3/1766524152175/ymr-russia-save-the-date-smiling-hand.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Beyond Mindfulness Webinar",
+      "url": "https://tergar.org/beyond-mindfulness-webinar",
+      "description": "A free recorded webinar in which Mingyur Rinpoche shows how meditation can turn stressful situations and strong emotions into support for awareness. Free registration gives immediate access.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6544fb32e4b6c344b1ad0840/t/6688326c10c0560a9ea5a671/1720201836846/ymr-bodhgaya.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 345,
+    "hub_url": "https://www.soundstrue.com/blogs/authors/yongey-mingyur-rinpoche",
+    "tier_evidence": "YouTube youtube.com/mingyurrinpoche: unreadable (channel pages not fetched, 9 Nov 2026 rule); Facebook, X and Instagram linked from tergar.org/contact, not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://tergar.org/contact",
+    "contact_form_url": null,
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. tergar.org found by web search and confirmed by its own pages naming him; robots.txt read for tergar.org, blog.tergar.org, info.tergar.org, yongeyfoundation.org, penguinrandomhouse.com and images.squarespace-cdn.com (404, none).",
+      "Email info@tergar.org is Tergar International's general inquiries address (Minneapolis office), the organisation founded to share his teaching; shown on the contact page behind Cloudflare email protection and decoded from the page itself (not a login or API).",
+      "Tier: counts unreadable for main accounts; New York Times bestselling author with a worldwide network of groups, owner may consider editorial stature.",
+      "Possible link: tergar-meditation-app.json (already on dev) is Tergar's app listing and names him as its teacher; owner may want the app linked to this listing.",
+      "Base: Kathmandu from the Yongey Foundation page calling Tergar Osel Ling Monastery (Kathmandu, Nepal) his home; his own bio page doesn't name a city. Tergar International itself is in Minneapolis.",
+      "Offerings: the Six Bardos weekend is on tergar.org/2026 without its own registration link or prices, so url is the schedule page and price null.",
+      "A World of Difference is still on preorder; ISBN 9781538779538 from the Hachette link and cover filename on info.tergar.org/worldofdifference, converted to ISBN-10. In Love with the World ISBN from penguinrandomhouse.com (paperback).",
+      "His bio mentions panic attacks in youth; kept as personal history only, with no claim that meditation treats anxiety.",
+      "Regional: Kathmandu, Nepal."
+    ],
+    "left_out": [
+      "The Joy of Living, Joyful Wisdom, Turning Confusion into Clarity and the two Ziji children's books: tergar.org links these to Goodreads only; no ISBN on a page we opened.",
+      "The Primordial Secret: Dzogchen Instructions on Trekchö Meditation (11–14 Dec 2026, online from Kathmandu): listed on tergar.org/2026 with no link of its own, and the ingest keeps one offering per URL.",
+      "Path of Liberation Levels 3 & 4 (18–21 Sep 2026) and other 2026 events: before 12 Nov 2026.",
+      "The Bardos year-long programme on vajrayana.tergar.org and Voices of Dzogchen: subdomain not opened; Bardos started in September.",
+      "Feel Better Now 3-day course: already in tergar-meditation-app.json.",
+      "Home-page videos with Michael Imperioli and Tim Olmsted: he is not the main speaker."
+    ],
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "held": "Held for the owner (10 Nov 2026): the only contact route is an email the helper decoded from Cloudflare email protection on tergar.org. That protection is meant to stop harvesting, so it isn't used without your OK. Could also be linked to the Tergar app."
+  }
+}

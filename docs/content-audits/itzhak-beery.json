@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "itzhak-beery",
+    "location_source": "https://www.itzhakbeery.com/contact.html",
+    "create": {
+      "name": "Itzhak Beery",
+      "bio": "Itzhak Beery is a shamanic teacher, healer and writer based in Greenwich Village, New York. He grew up on Kibbutz Beit Alfa in Israel and worked for years as a fine artist and the head of an advertising agency before a spiritual awakening in midlife turned him towards the healing traditions of South America. Since the mid-1990s he has trained with indigenous elders in the Andes and the Amazon, receiving initiation from a Quechua teacher in Ecuador, who brought him into a circle of yachaks in Imbabura, and from a Kanamari pajé in Brazil. In 2019 a gathering of elders at the Andes Summit gave him the title Taita.\n\nHe sees people in person in Manhattan and over Zoom for shamanic ceremony and counselling, which can include palm reading, journeying with spirit guides, the Andean cleansing known as La Limpia, cord cutting and protection practices. He runs a year-long shamanic healing apprenticeship in New York, gives workshops and webinars in the United States, Europe and Israel, and has led trips to Ecuador. He founded ShamanPortal.org and the Andes Summit, co-founded the New York Shamanic Circle, and has written several books with Inner Traditions, including Shamanic Healing and Shamanic Transformations, as well as Life as a Ceremony.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "website_url": "https://www.itzhakbeery.com/",
+      "booking_url": "https://www.itzhakbeery.com/book-a-session.html",
+      "youtube_url": "https://www.youtube.com/@ibeery",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ibeery@yahoo.com",
+      "image_urls": [
+        "https://www.itzhakbeery.com/uploads/4/5/5/1/455157/published/itzhak-4-6-18c.jpg?1523157736",
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/BeeryI_web.jpg?itok=l2OYBrGh"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "ראיון עם יצחק בארי: החיים כטקס - הספר החדש",
+      "url": "https://www.youtube.com/watch?v=ceCAy1DIZCI",
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "channel": "chen profesorsky"
+    },
+    {
+      "title": "ראיון  של עם יצחק בארי על הספר שתורגם לעברית. מראיין  חן פרופסורסקי",
+      "url": "https://www.youtube.com/watch?v=TYNMS-MQWH4",
+      "subjects": [
+        "shamanism"
+      ],
+      "channel": "chen profesorsky"
+    }
+  ],
+  "books": [
+    {
+      "title": "Shamanic Healing: Traditional Medicine for the Modern World",
+      "slug": "shamanic-healing-itzhak-beery",
+      "author": "Itzhak Beery",
+      "asin": "1620553767",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Itzhak's account of the Andean and Amazonian healing practices he trained in, including La Limpia and soul mending, with stories from his own sessions.",
+      "subjects": [
+        "shamanism",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1620553767.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Shamanic Transformations: True Stories of the Moment of Awakening",
+      "slug": "shamanic-transformations",
+      "author": "Itzhak Beery",
+      "asin": "1620554755",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection, gathered by Itzhak, of first-hand accounts from shamanic practitioners and teachers describing the moments that set them on their path.",
+      "subjects": [
+        "shamanism",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1620554755.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Personal Shamanic Ceremony or Counselling Session",
+      "url": "https://www.itzhakbeery.com/book-a-session.html",
+      "description": "A 90-minute shamanic session in downtown Manhattan or on Zoom, or a shorter 45-minute counselling session online. Sessions may include palm reading, journeying with spirit guides, La Limpia cleansing and protection practices. Booked by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://www.itzhakbeery.com/uploads/4/5/5/1/455157/mg-4924_orig.gif"
+    },
+    {
+      "title": "Shamanic Healing Apprenticeship Program",
+      "url": "https://www.itzhakbeery.com/shamanic-healing-apprenticeship.html",
+      "description": "A year-long apprenticeship meeting one Sunday a month in a Tribeca loft, for committed students with earlier shamanic training. It covers working with spirit allies, altar and ceremony, La Limpia, soul mending, protection, dreamwork and relationship with the elements. Dates to be announced.",
+      "price": "$3,800.00 (payment plan available)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "dreamwork"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1620553767.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Life As Ceremony: The Art of Shamanic Rituals (online)",
+      "url": "https://www.itzhakbeery.com/events.html",
+      "description": "An online session on Zoom on the rituals in Itzhak's new book Life as a Ceremony, part of his programme of talks and workshops around its launch.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-08",
+      "end_date": "2026-12-08",
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "image": "https://www.itzhakbeery.com/uploads/4/5/5/1/455157/published/itzhak-4-6-18c.jpg?1523157736"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 491,
+    "hub_url": "https://kripalu.org/people/itzhak-beery",
+    "held": "Psychedelics: his Ecuador shamanic healers training lists 'visionary plant medicine work with Huachuma (San Pedro), Yajé, and Ayahuasca' (https://www.itzhakbeery.com/ecuador-trip.html), his site's keywords include Ayahuasca, and one book is titled The Gift of Shamanism: Visionary Power, Ayahuasca Dreams. Held for the owner, who has left out such teachers before. Also has political articles (see flags).",
+    "tier_evidence": "YouTube @ibeery: subscriber count not read (channel pages off limits to us, 10 Nov 2026); no other accounts linked → local_hero",
+    "email": "yes",
+    "email_source": "https://www.itzhakbeery.com/contact.html",
+    "contact_form_url": "https://www.itzhakbeery.com/contact.html",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Kripalu named on: https://www.itzhakbeery.com/itzhak-bio.html (faculty list).",
+      "Political items among his articles: 'Trump is possess[ed]' and 'Indigenous Zionism' (article list on his home page); not used, but the owner may want to weigh them under the no-political-content rule.",
+      "Email ibeery@yahoo.com is Cloudflare-obfuscated on the contact and booking pages and decoded; the home page also shows ibeery@gmail.com.",
+      "He is in Israel from 9 Oct to 14 Dec 2026 for a book launch; his base remains Greenwich Village, New York.",
+      "Both videos are Hebrew-language interviews on a third-party channel (chen profesorsky) in which he is the main speaker; titles copied as published.",
+      "'Soul retrieval – the mending of the soul after the onset of traumas' appears in his session description; the offering text here avoids it. Borderline, please check.",
+      "Book ASINs from Amazon links on his own site (https://www.itzhakbeery.com/books.html and bio page), not confirmed elsewhere; no covers checked.",
+      "The 8 Dec Zoom session links to his general events page, which lists many dated events."
+    ],
+    "left_out": [
+      "Ecuador Shamanic Healers Training trip: includes ayahuasca, yajé and San Pedro ceremonies (psychedelics).",
+      "The Gift of Shamanism: Visionary Power, Ayahuasca Dreams: psychedelic in title.",
+      "Master Healing Trauma (19 Nov, Zoom summit) and the 21 Healing Practices summit (8-28 Dec): condition framing / hosted by others.",
+      "Israel workshops in Hebrew on his events page (12 Nov onwards): no separate URLs.",
+      "Book trailers (under 2 minutes) and the Ecuador expedition trailer: too short.",
+      "Life as a Ceremony (Hebrew book): no ISBN found on his site."
+    ]
+  }
+}

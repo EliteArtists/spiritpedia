@@ -1,0 +1,246 @@
+{
+  "healer": {
+    "healer_slug": "joan-halifax",
+    "location_source": "https://www.upaya.org/person/roshi-joan-halifax-phd/",
+    "create": {
+      "name": "Roshi Joan Halifax",
+      "bio": "Roshi Joan Halifax is a Zen teacher who founded Upaya Zen Center, a residential Zen community in Santa Fe, and still serves as its abbot. She started out as a cultural anthropologist and activist in the 1960s, came to Buddhism partly through Thich Nhat Hanh, began formal Zen practice in the 1970s with Seung Sahn, and later trained for nearly thirty years with Roshi Bernie Glassman. She has also studied with Tibetan teachers, among them Chagdud Tulku Rinpoche and the Dalai Lama. For decades she has worked with people who are dying and with those who care for them, and this sits at the centre of her teaching on compassion.\n\nAt Upaya she leads sesshins, practice periods and online programmes that join Zen meditation with socially engaged Buddhism, and she founded the Prajna Mountain Buddhist Order. She speaks to Buddhists and non-Buddhists alike about compassion, suffering and what it means to be human, and her own practice includes photography, brush painting and haiku. Her books include The Fruitful Darkness, Being with Dying and Standing at the Edge, which looks at how qualities such as empathy and engagement can turn harmful and how to find balance; she has also written Sophie Learns to Be Brave for children.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Santa Fe, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "website_url": "https://www.joanhalifax.org/",
+      "booking_url": "https://www.upaya.org/live-programs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "upaya@upaya.org",
+      "image_urls": [
+        "https://www.upaya.org/wp-content/uploads/2000/03/Roshi-17-Sept-26-Bamboo-scaled-e1789842013387.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/61ecb0a809747432d0804ce7/65dbfd63-28ec-4eed-a1dc-d82f03534b9d/image0.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/61ecb0a809747432d0804ce7/3dc935e6-894a-425d-a213-7167fa2ec965/sunnys_edit1.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Joan Halifax: Compassion and the true meaning of empathy",
+      "url": "https://www.youtube.com/watch?v=dQijrruP9c4",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "TED"
+    },
+    {
+      "title": "Roshi Joan Halifax, Contemplation By Design 2018 keynote, The Strange and Necessary Case for Hope",
+      "url": "https://www.youtube.com/watch?v=8xMNZVe2u-w",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Stanford"
+    },
+    {
+      "title": "Transforming Suffering Today: Imagination and the Bodhisattva Attitude",
+      "url": "https://www.youtube.com/watch?v=1d7HiNVL234",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Upaya Zen Center"
+    },
+    {
+      "title": "GRACE - Cultivating Compassion While Interacting with Others",
+      "url": "https://www.youtube.com/watch?v=SWLmnHB4rLY",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "channel": "Upaya Zen Center"
+    },
+    {
+      "title": "Finding the right path | Roshi Joan Halifax",
+      "url": "https://www.youtube.com/watch?v=pbsXx6p0p4c",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Wisdom 2.0 with Soren Gordhamer"
+    },
+    {
+      "title": "Roshi Joan Halifax discusses her book, Standing at the Edge",
+      "url": "https://www.youtube.com/watch?v=RHAtA6f6exM",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Flatiron Books"
+    },
+    {
+      "title": "Joan Halifax ~ In a Moment, in a Breath",
+      "url": "https://www.youtube.com/watch?v=MMVZrUIozYc",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Banyen Books & Sound"
+    }
+  ],
+  "books": [
+    {
+      "title": "Standing at the Edge: Finding Freedom Where Fear and Courage Meet",
+      "slug": "standing-at-the-edge",
+      "author": "Joan Halifax",
+      "asin": "1250101352",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book on five qualities that help us serve others, among them altruism, empathy and engagement, and on how each can tip into harm. Drawing on her years of Zen practice and care work, she shows ways back to steadiness and compassion.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1250101352.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Being with Dying: Cultivating Compassion and Wisdom in the Presence of Death",
+      "slug": "being-with-dying",
+      "author": "Joan Halifax",
+      "asin": "B00ATMWJN0",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Teachings and stories from her long work with dying people and their carers, with contemplative practices for meeting death, one's own or another's, with presence.",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B00ATMWJN0.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Fruitful Darkness: A Journey Through Buddhist Practice",
+      "slug": "the-fruitful-darkness",
+      "author": "Joan Halifax",
+      "asin": "0802140718",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An account of her journeys through Buddhist practice, indigenous traditions and the natural world, exploring what she learnt from each about the shadow side of life.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "shamanism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0802140718.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Shaman: The Wounded Healer",
+      "slug": "shaman-the-wounded-healer",
+      "author": "Joan Halifax",
+      "asin": "050081029X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated study of shamanic traditions around the world, from her work as an anthropologist.",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/050081029X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Sophie Learns to Be Brave",
+      "slug": "sophie-learns-to-be-brave",
+      "author": "Joan Halifax",
+      "asin": "1611808952",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A picture book for children aged four to eight in which a girl and a lost old dog face a thunderstorm together, with a simple breathing verse to steady them.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611808952.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "ROHATSU: Circle of the Way (Online 2026)",
+      "url": "https://www.upaya.org/program/rohatsu-online-2026/",
+      "description": "Upaya's annual week-long silent sesshin marking the Buddha's awakening, joined online. Days include sitting and walking meditation, formal meals, daily talks and practice interviews, with Roshi Joan and Sensei Kazuaki Tanahashi among the teachers.",
+      "price": "Donation requested",
+      "product_type": "retreat",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-08",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2025/12/Screenshot-2025-12-04-at-4.57.15%E2%80%AFPM.png"
+    },
+    {
+      "title": "THE PATH of LOVE (Online February, 2027)",
+      "url": "https://www.upaya.org/program/the-path-of-love-online-february-2027/",
+      "description": "A weekend programme with Roshi Joan Halifax and Henry Shukman, offered online by donation, with recordings for those registered.",
+      "price": "Donation requested",
+      "product_type": "retreat",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2026/02/cropped-2-person-grid-Henry-and-Roshi.jpg"
+    },
+    {
+      "title": "LOVE and DEATH: Opening the Great Gifts (Online 2027)",
+      "url": "https://www.upaya.org/program/love-and-death-opening-the-great-gifts-online-2027/",
+      "description": "A weekend with Frank Ostaseski and Roshi Joan on love and death as twin teachers, through talks, exchanges and practices around impermanence, service and surrender.",
+      "price": "Donation requested",
+      "product_type": "retreat",
+      "start_date": "2027-09-17",
+      "end_date": "2027-09-19",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2019/11/roshi-and-frank-o-happy-face.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 335,
+    "hub_url": "https://www.soundstrue.com/collections/authors-joan-halifax",
+    "tier_evidence": "No personal YouTube found; Upaya Zen Center's channel is the centre's (not counted, not opened); Instagram/Facebook/X icons on joanhalifax.org not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.upaya.org/person/roshi-joan-halifax-phd/",
+    "contact_form_url": "https://www.joanhalifax.org/contact",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. Upaya (upaya.org) found by web search; her own site joanhalifax.org confirmed via the link on her Upaya page (robots.txt read for both).",
+      "Email upaya@upaya.org is Upaya Zen Center's general inbox (centre she founded and leads); her own site has a contact form. The gmail address in her site footer belongs to the web designer and was not used.",
+      "Upaya is not a Spiritpedia hub as far as I can tell; no teaches_at link. Owner may want to list Upaya Zen Center.",
+      "Tier: no personal counts readable; widely known author, TED speaker and founder-abbot of Upaya, owner may consider editorial stature.",
+      "Much of her work is in end-of-life care training for clinicians; those programmes were left out. Being with Dying is kept (title and theme are death and compassion, not a condition), borderline.",
+      "Book ASINs from the Amazon links on her publications page (joanhalifax.org/publications, links not opened); Sophie Learns to Be Brave ISBN-13 from the Shambhala URL on that page, converted. Not confirmed elsewhere. Being with Dying ASIN is a Kindle ASIN, so cover set to null.",
+      "Videos all linked from her own site (teacher and publications pages) and checked with oEmbed; none from her own channel.",
+      "Regional: Santa Fe, New Mexico."
+    ],
+    "left_out": [
+      "The Human Encounter with Death (with Stanislav Grof): describes psychedelic work with dying patients (psychedelics rule).",
+      "The Measure of Our Humanity (13 Dec 2026): series framed around 'speaking truth to power' and corporate and political power; left out under the political-content rule.",
+      "G.R.A.C.E. training (Sep 2027): a clinician training with CME credits; Being with Dying and Inner Practice of Medicine programmes: clinical training.",
+      "'A Practice for When You're Sick' (Lion's Roar video): condition-framed. 'Roshi Joan and the Power of Voting' (listed on her site): political.",
+      "Winter Practice Period 2027 and other Upaya programmes where she is not named as a teacher.",
+      "In a Moment, In a Breath (card deck) and Simplicity in the Complex: no ISBN found on a page we read."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,143 @@
+{
+  "healer": {
+    "healer_slug": "rick-barrett",
+    "location_source": "https://rickbarrett.net/about-rick-barrett/",
+    "create": {
+      "name": "Rick Barrett",
+      "bio": "Rick Barrett has studied and taught the Chinese internal martial arts for more than forty years. His t'ai chi ch'uan teacher was Grandmaster William C. C. Chen, and he studied xingyiquan, yiquan and related styles with Master Fukui Yang, and he has competed and won titles in push hands. Alongside the martial arts he trained for several years in energy work with John Beaulieu and practises polarity therapy, so his teaching treats taiji as a meeting point of body, breath, attention and spirit rather than as exercise alone.\n\nHe is based in New York City and, under the name Tai Chi Alchemy, has led workshops around the United States for three decades, including a long-running yearly gathering in Sedona and a five-day meditation retreat at Kripalu. Each Tuesday evening he hosts an open online class on Zoom, recorded for his YouTube channel, where he works through practical exercises in qi cultivation, structure and coherence. His style is hands-on and experimental: he asks students to test ideas in their own bodies rather than take them on trust. His books include Taijiquan: Through the Western Gate, Finding You in a World of It, on meeting others and the world with full presence, and Tai Chi: A Path to Becoming Superconscious.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "New York, New York",
+      "country": "United States",
+      "subjects": [
+        "tai-chi",
+        "qi-gong",
+        "consciousness"
+      ],
+      "website_url": "https://rickbarrett.net/",
+      "booking_url": "https://rickbarrett.net/events/",
+      "youtube_url": "https://www.youtube.com/@RickBarrettTCA",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "rick@rickbarrett.net",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/headshot_medium_2x/public/2015-10/BarrettR.jpg?itok=cRU2sj8Q"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Po, the Spirit of the Body",
+      "url": "https://www.youtube.com/watch?v=s5nYX-5qk3o",
+      "subjects": [
+        "tai-chi",
+        "consciousness"
+      ],
+      "channel": "Rick Barrett"
+    },
+    {
+      "title": "Taijiquan: Through the Western Gate by Rick Barrett",
+      "url": "https://www.youtube.com/watch?v=9OhRE5XuT4k",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "Rick Barrett"
+    },
+    {
+      "title": "Rick Barrett is Interviewed about \"Finding You in a World of It\"",
+      "url": "https://www.youtube.com/watch?v=dtkajuINU40",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "channel": "Rick Barrett"
+    },
+    {
+      "title": "Rick Barrett (Directors Cut): Feel First, Then Do—Tai Chi and the Path to Superconsciousness",
+      "url": "https://www.youtube.com/watch?v=9CnLVXip0Cg",
+      "subjects": [
+        "tai-chi",
+        "consciousness"
+      ],
+      "channel": "Paul Coffey"
+    },
+    {
+      "title": "Rick Barrett: Tai Chi Chuan Practitioner - Episode 1162 - Whistlekick Martial Arts Radio Podcast",
+      "url": "https://www.youtube.com/watch?v=xOTtINXodlY",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "whistlekick"
+    }
+  ],
+  "books": [
+    {
+      "title": "Tai Chi: A Path to Becoming Superconscious",
+      "slug": "tai-chi-a-path-to-becoming-superconscious-rick-barrett",
+      "author": "Rick Barrett",
+      "asin": "1594390150",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His newest book presents taiji as a route to a wider, more awake state of consciousness. It draws on his decades of practice and teaching to link the form's physical principles with presence and inner coherence.",
+      "subjects": [
+        "tai-chi",
+        "consciousness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1594390150.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "A Wee Bit of Alchemy (weekly online class)",
+      "url": "https://rickbarrett.net/events/",
+      "description": "An open hour-long class on Zoom every Tuesday at 8 pm Eastern, exploring the internal arts through practical exercises in qi cultivation and body mechanics. There is no entry charge, with an optional suggested contribution, and recordings go up on his YouTube channel.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/headshot_medium_2x/public/2015-10/BarrettR.jpg?itok=cRU2sj8Q"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 593,
+    "hub_url": "https://kripalu.org/people/rick-barrett",
+    "tier_evidence": "YouTube @RickBarrettTCA: count unreadable (channel pages not fetched from this machine, 10 Nov 2026); Facebook page mentioned on site but not linked or opened → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://rickbarrett.net/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Website rickbarrett.net taken from his Kripalu people page link (www redirects to the bare host; robots.txt of both read).",
+      "Kripalu named on: https://rickbarrett.net/events/ (blog recap 'Meditation in Stillness. Meditation in Action. A Review.', 1 Apr 2020: he taught a five-day meditation retreat for Kripalu).",
+      "Base: about page says he teaches 'in NYC and in seminars all over the country'; site also says classes are currently online only. Recorded as New York, New York.",
+      "Photo: only usable headshot is his Kripalu people-page photo (400 px); his own site's headshots are 240-300 px. Same man as the RBFace image on his own site.",
+      "Videos: IDs taken from embeds on his own site and checked with oEmbed (10 Nov 2026). Three are on his own channel; two are interviews on other channels (Whistlekick podcast, Paul Coffey) where he is the sole guest. Durations not checked.",
+      "Book: ASIN 1594390150 from the Amazon link on https://rickbarrett.net/ (not confirmed elsewhere; publisher YMAA not fetched, as ymaa.com blocks Claude agents). Cover null.",
+      "Three email addresses published on the contact page; rick@ used (questions for Rick); info@ is for events and bookings.",
+      "His wife Maria Barrett handles the site and online classes (contact page)."
+    ],
+    "left_out": [
+      "Books Taijiquan: Through the Western Gate and Finding You in a World of It: no ISBN on his own site (only an Amazon author link), so left out. Finding You's page also lists 'Overcome fear and anxiety' as a benefit.",
+      "Healing sessions (polarity therapy, craniosacral balancing, myofascial work) by appointment: bodywork/therapy framing, no own page, left out.",
+      "Past Sedona Tai Chi Alchemy retreats (2024, 2025): past events.",
+      "YouTube channel videos beyond those embedded on his site: channel pages not fetched (owner rule)."
+    ]
+  },
+  "images_final": true
+}

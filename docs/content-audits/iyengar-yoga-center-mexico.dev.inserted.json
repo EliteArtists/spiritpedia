@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1154,
+    "healer_slug": "iyengar-yoga-center-mexico"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "1b7534c9-1c15-4a6d-9a25-663dd2ff3be3",
+      "slug": "continuing-education-for-teachers",
+      "title": "Continuing Education for Teachers"
+    },
+    {
+      "table": "courses",
+      "id": "e40bc4d4-e782-4fb5-abf8-6d49e75caa48",
+      "slug": "iyengar-yoga-classes-in-lomas-and-online",
+      "title": "Iyengar yoga classes in Lomas and online"
+    },
+    {
+      "table": "free_resources",
+      "id": "8366fc50-75d1-410c-9f7e-d06ef1f373b9",
+      "slug": "ananda-revista",
+      "title": "Ananda (Revista)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e4feb564-8470-49e7-90c4-e1b0d344d3c9",
+      "slug": "glosario-en-sanscrito",
+      "title": "Glosario en Sánscrito"
+    },
+    {
+      "table": "free_resources",
+      "id": "b8cd69aa-d696-4212-8eaa-0ea371cb25a9",
+      "slug": "canto-a-patanjali",
+      "title": "Canto a Patanjali"
+    }
+  ],
+  "at": "2026-11-10T02:34:06.356Z"
+}

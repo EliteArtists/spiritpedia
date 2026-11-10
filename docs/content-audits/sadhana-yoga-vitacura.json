@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "sadhana-yoga-vitacura",
+    "location_source": "https://sadhanayoga.cl/contacto/",
+    "create": {
+      "name": "Sadhana Yoga Vitacura",
+      "bio": "Sadhana Yoga is a teacher-training school in Vitacura, Santiago, led by its founder Emma Marín, a former Olympic gymnast and dancer who began teaching yoga in 2000 and is a senior teacher of Jyotim Yoga. The school takes its name from the Sanskrit word for spiritual practice, and it asks every trainee to keep a steady personal practice of their own throughout the course. Over eighteen years it has trained hundreds of teachers, and Emma also leads trainings in Mexico, Spain, Peru and Italy.\n\nThe heart of the school is a Yoga Alliance-registered programme lasting two or three years, taken in person, online or both, with theory and practice classes on Saturday mornings from March to December. The first year is shared by all students and covers asana, anatomy, yoga philosophy, an introduction to meditation and pranayama, the mythology behind the postures and beginning Sanskrit; after that each student specialises in one or both of the school's methods, the flowing Harmonic Yoga or the precise, prop-supported Alineamiento Fisiológico. Harish Morán, who spent twelve years in an Indian ashram, teaches pranayama, meditation and philosophy, and the weekly timetable runs in the studio and online alongside a free Friday meditation and Yoga Sutras reading circle.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Santiago",
+      "country": "Chile",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://sadhanayoga.cl/",
+      "booking_url": "https://sadhanayoga.cl/formacion/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contacto@sadhanayoga.cl",
+      "image_urls": [
+        "https://sadhanayoga.cl/wp-content/uploads/2026/07/formacion-photo-scaled.jpg",
+        "https://sadhanayoga.cl/wp-content/uploads/2026/07/hero.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Formación de Profesores de Yoga 2027",
+      "url": "https://sadhanayoga.cl/formacion/",
+      "description": "A two- to three-year Yoga Alliance teacher training (RYT-200 or RYT-500) held on Saturday mornings from March to December, in person in Vitacura, online or mixed, with entry by interview. The shared first year covers asana theory, anatomy, yoga philosophy, meditation and pranayama, asana mythology and introductory Sanskrit; students then specialise in Harmonic Yoga, Alineamiento Fisiológico or both. Price shown is the published first-year fee, plus an annual enrolment fee of $84.000.",
+      "price": "$2.587.000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://sadhanayoga.cl/wp-content/uploads/2026/07/sadhana-formacion-pose-a-cut.png"
+    },
+    {
+      "title": "Weekly classes in Vitacura and online",
+      "url": "https://sadhanayoga.cl/horario/",
+      "description": "A weekday timetable of Harmonic Yoga and Alineamiento classes at three levels, with daily pranayama, a Friday meditation and a reading-and-reflection session, taught in the studio and live online. Monthly plans range from one class a week to unlimited; the price shown is the in-person full plan.",
+      "price": "$104.000",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://sadhanayoga.cl/wp-content/uploads/2026/07/hero.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Friday meditation and Yoga Sutras study circle",
+      "url": "https://sadhanayoga.cl/actividades-gratuitas/",
+      "description": "Two free weekly sessions on Zoom open to anyone: a half-hour guided meditation on Friday mornings, followed by a group reading of B.K.S. Iyengar's Light on the Yoga Sutras of Patanjali, studying and discussing the text together. In Spanish, Chilean time.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://sadhanayoga.cl/wp-content/uploads/2026/07/hero.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 515,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched; no readable followers → local_hero. The home page says 500+ graduates (information only).",
+    "email": "yes",
+    "email_source": "https://sadhanayoga.cl/contacto/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Found by web search for Santiago teacher-training schools; the school's own site only. First candidate Savittar Santiago (savittarsantiago.cl) shows only a 'coming soon' page; Academia de Yoga Patashala's domain (academiadeyoga.cl) does not resolve.",
+      "The home page's title reads 'Mockup Nuevo Home' and includes a designer's note, so the site is mid-redesign; facts were taken from the inner pages (formación, escuela, horario, contacto). The founder's linked biography page returns 404.",
+      "No founding year is stated, only '18 años de trayectoria', so founded_year is left blank.",
+      "Health rule: the third year of the Alineamiento and double-degree tracks includes 'Patologías y Yogaterapia' and 'Yoga y embarazo'; the course item describes the shared first year and the price shown is the first-year fee. Owner may want to judge.",
+      "The school's own methods (Harmonic Yoga, Alineamiento Fisiológico) are strongly posture-based; philosophy, Sanskrit, meditation and pranayama run alongside throughout, so it is listed as a spiritual yoga school.",
+      "Prices in Chilean pesos as published ('$2.587.000', '$104.000').",
+      "Photos: a trainee group around a teacher in the studio, and a class in warrior pose (carries the photographer's watermark 'Mauricio Fernández Novoa').",
+      "Possible future listings: Emma Marín, Harish Morán.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Santiago, Chile; Spiritpedia has few listings in Latin America."
+    ],
+    "left_out": [
+      "Sadhana Travels India trip (November 2026; no exact dates published, likely before 13 Nov or undated).",
+      "Third-year modules on pathologies, yoga therapy and pregnancy (health rule).",
+      "Senior-citizen and student plan details (kept within the classes item)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,136 @@
+{
+  "healer": {
+    "healer_slug": "jo-ann-levitt",
+    "location_source": "https://joannlevitt.com/",
+    "create": {
+      "name": "Jo Ann Levitt",
+      "bio": "Jo Ann Levitt, also known by her ashram name Atma, is a spiritual counsellor, channel and author who has worked for many years at Canyon Ranch in the Berkshires as a metaphysician and Healing Touch practitioner. Raised in Reform Judaism, she spent eighteen years living in an ashram steeped in Hindu tradition and yoga, and more than twenty years as a senior faculty member and resident at Kripalu, where she designed many of the centre's early spiritual programmes and compiled a biography of Swami Kripalu. Before that she taught high-school history and worked as a nurse, and she has trained in Kripalu yoga and meditation, Peruvian shamanism, Vivation and Gestalt work.\n\nHer present teaching centres on helping people reach their own connection with Source. She describes herself as a scribe who receives material from her guides, and her books include Channeling the Sacred, Awakening to the Power of Source, on co-creating with spirit, and The Spiritual Path of Aging, which treats later life as a time for deeper practice and is the basis of her workshops on the subject at Omega and elsewhere. She offers private Zoom sessions of spiritual guidance, Healing Touch and tarot, and teaches step by step how to work with spirit guides on her podcast, The Awakening Channel.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Berkshires, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "channelled-teachings",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "website_url": "https://joannlevitt.com/",
+      "booking_url": "https://joannlevitt.com/services/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/joann.levitt.355",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "joann@joannlevitt.com",
+      "image_urls": [
+        "https://joannlevitt.com/wp-content/uploads/2023/11/joann-levit-1-700x700-1.jpg",
+        "https://kripalu.org/sites/default/files/styles/headshot_medium_2x/public/2015-10/LevittA_web.jpg?itok=RZu7HX6S"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Spiritual Path of Aging",
+      "slug": "the-spiritual-path-of-aging-jo-ann-levitt",
+      "author": "Jo Ann Levitt",
+      "asin": "196134730X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide for elders who want to meet the changes of later life as a spiritual path. It encourages readers to find a form of practice that suits them and to make regular time for it.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/196134730X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Awakening to the Power of Source: Your Guide to Co-Creating with the Divine",
+      "slug": "awakening-to-the-power-of-source-jo-ann-levitt",
+      "author": "Jo Ann Levitt",
+      "asin": "1951694724",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical book on inviting spiritual guidance into creative work of any kind, from writing to business. It builds on her channelling practice and earlier book Channeling the Sacred.",
+      "subjects": [
+        "channelled-teachings",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1951694724.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Private Zoom Sessions: Spiritual Guidance, Healing Touch and Tarot",
+      "url": "https://joannlevitt.com/services/",
+      "description": "Fifty-minute sessions on Zoom, for individuals or couples. Guidance sessions use meditation, dialogue and channelled messages from spiritual guides; Healing Touch sessions are given while you rest at home with a guided visualisation; tarot readings address a question you bring.",
+      "price": "50 mins. for $150",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "energy-medicine"
+      ],
+      "image": "https://i0.wp.com/email.eomega.org/cdnr/aorpci6/acton/attachment/23078/f-f1ced60a-4c6a-4f18-a4be-629dd4f6423d/2/-/-/-/-/image.jpg?w=1170&#038;ssl=1"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Awakening Channel (podcast)",
+      "url": "https://joannlevitt.com/podcast/",
+      "description": "Her podcast teaches channelling step by step, arguing that contact with spirit guides is a natural capacity open to anyone. Episodes cover different methods of reaching and interpreting guidance.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "channelled-teachings",
+        "mediumship-spirits"
+      ],
+      "image": "https://joannlevitt.com/wp-content/uploads/2023/11/joann-levit-1-700x700-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 601,
+    "hub_url": "https://kripalu.org/people/atma-jo-ann-levitt",
+    "tier_evidence": "Facebook joann.levitt.355 (personal profile): not readable without login (not tried); no YouTube or Instagram linked → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://joannlevitt.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Website joannlevitt.com found by web search (podcast listing) and confirmed by the site itself (names her, Kripalu and Canyon Ranch roles). Robots.txt read (Yoast, allows all).",
+      "Name: Kripalu lists her as 'Atma Jo Ann Levitt'; her own site uses 'Jo Ann Levitt' (once '(Atma)'). Listing name and slug use Jo Ann Levitt; Atma is mentioned in the bio.",
+      "Kripalu named on: https://joannlevitt.com/ ('senior faculty member at Kripalu Center for more than 20 years').",
+      "Omega named on: https://joannlevitt.com/ and /about/ ('The Spiritual Path of Aging with Jo Ann Levitt September 19-21 at Omega Institute', linking eomega.org/workshops/spiritual-path-aging). omega-institute link added. Omega page not opened: eomega.org returns 403 to us (6 Nov 2026). The September date has passed, so it is not an offering.",
+      "Base: she works at Canyon Ranch 'in the Berkshires' (home page); no town given. Recorded as 'Berkshires, Massachusetts' (a region) for the owner to map (Canyon Ranch Berkshires is in Lenox). Regional: western Massachusetts.",
+      "Health: she is a registered nurse and Healing Touch practitioner; her services include Zoom Healing Touch (energy medicine). No condition claims used. Her podcast page carries a medical disclaimer.",
+      "Her services page's testimonials section contains placeholder text (lorem ipsum, a 'Katy Perry' testimonial); not used.",
+      "All three session types book through one page (/booking/), so they are one offering.",
+      "Books: ASINs 196134730X and 1951694724 from the Amazon links on https://joannlevitt.com/books/; not confirmed elsewhere. Covers not set.",
+      "Photos: own site headshot (700 px) and Kripalu people-page headshot (400 px); same woman."
+    ],
+    "left_out": [
+      "Prayers for the Pandemic (ASIN 1796098728): framed on the COVID-19 pandemic, left out under the health rule.",
+      "The Last Supper: A Novel (ASIN 1968891013): fiction.",
+      "Channeling the Sacred, The Twenty-First-Century Gospel of Jesus Christ, Sibling Revelry, Pilgrim of Love, a chant book and Kripalu cookbooks: no ISBN or product link on her site.",
+      "Omega workshop The Spiritual Path of Aging (19-21 Sept): past; eomega.org not opened.",
+      "Source Healing Virtual Summit (sourcehealingsummit.com): third-party summit, not opened."
+    ]
+  },
+  "images_final": true
+}

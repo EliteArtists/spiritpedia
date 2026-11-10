@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "thupten-jinpa",
+    "location_source": "https://tibetanclassics.org/",
+    "create": {
+      "name": "Thupten Jinpa",
+      "bio": "Thupten Jinpa is a Tibetan Buddhist scholar and teacher of compassion who has served as the Dalai Lama's chief English translator since 1985, travelling with him across North America and Europe. He trained in the classical Tibetan monastic system, where he earned the Geshe Lharam, the highest degree of that curriculum, and went on to study philosophy and then religious studies at the University of Cambridge, finishing with a doctorate.\n\nAlongside translating and editing many of the Dalai Lama's books, he founded the Institute of Tibetan Classics in Montreal, which is bringing key texts of Tibetan thought into modern languages, and he leads it as president and editor-in-chief. He is also the founder of the Compassion Institute and chairs the Mind and Life Institute, which brings contemplative practice into dialogue with science. He was the principal author of Compassion Cultivation Training, a structured programme for learning compassion first developed at Stanford University and now taught by certified teachers around the world.\n\nHis book A Fearless Heart explains how compassion can be trained like a muscle and become a source of inner strength. He has also written Tsongkhapa, a biography of a founding figure of the Gelug school, and he teaches through online courses, talks and conversations with the Compassion Institute.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Montreal, Quebec",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://tibetanclassics.org/",
+      "booking_url": "https://compassioninstitute.com/bcftio/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@tibetanclassics.org",
+      "image_urls": [
+        "https://tibetanclassics.org/wp-content/uploads/2020/08/Jinpa-Thupten-Official-Color-s.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Thupten Jinpa PhD. - Practicing Compassion: An Antidote for These Challenging Times",
+      "url": "https://www.youtube.com/watch?v=uinWbpCTyjw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Compassion Institute"
+    },
+    {
+      "title": "From Overwhelming to Restorative: Transform Your Emotions | Event with Thupten Jinpa, Ph.D.",
+      "url": "https://www.youtube.com/watch?v=TduP7MnpC20",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Compassion Institute"
+    },
+    {
+      "title": "Thupten Jinpa - Keynote at Omega CC Conference - November 2018",
+      "url": "https://www.youtube.com/watch?v=LCPXLNEAXXk",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Compassion Institute"
+    }
+  ],
+  "books": [
+    {
+      "title": "A Fearless Heart: How the Courage to Be Compassionate Can Transform Our Lives",
+      "slug": "a-fearless-heart",
+      "author": "Thupten Jinpa",
+      "asin": "1101982926",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Jinpa sets out how compassion works as an inner resource that can be strengthened through practice, drawing on Buddhist training and on the course he helped design at Stanford.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1101982926.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Tsongkhapa: A Buddha in the Land of Snows",
+      "slug": "tsongkhapa-a-buddha-in-the-land-of-snows",
+      "author": "Thupten Jinpa",
+      "asin": "1611806461",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A full-length biography of Tsongkhapa, the Tibetan master behind the Gelug school of Tibetan Buddhism, drawn from Tibetan sources.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611806461.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 346,
+    "hub_url": "https://www.soundstrue.com/collections/authors-thupten-jinpa",
+    "tier_evidence": "No personal YouTube or social accounts linked from tibetanclassics.org or compassioninstitute.com pages read; Compassion Institute's channel is the organisation's (not counted, not opened) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://tibetanclassics.org/",
+    "contact_form_url": "https://compassioninstitute.com/contact-us/",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. No personal site found; tibetanclassics.org (Institute of Tibetan Classics, which he founded and leads) and compassioninstitute.com (which he founded) found by web search and both name him; robots.txt read for both (tibetanclassics.org 404, none) and for penguinrandomhouse.com.",
+      "Email info@tibetanclassics.org is the institute's general address; the Compassion Institute contact page has a form (its email is Cloudflare-protected and was not decoded).",
+      "Scope: much of his work is scholarly (translation, Tibetan classics; adjunct professor at McGill per search result), but he founded and teaches compassion training, so kept; owner may judge.",
+      "Tier: no personal counts readable; long-time translator to the Dalai Lama and author, owner may consider editorial stature.",
+      "Base Montreal from the Institute of Tibetan Classics address on its home page (organisation address, not his own).",
+      "booking_url is his Building Compassion From the Inside Out course page, which shows no open cohort right now.",
+      "Videos are from the Compassion Institute's free-media page (its own channel) with him as main speaker; checked with oEmbed.",
+      "Regional: Montreal, Canada."
+    ],
+    "left_out": [
+      "Building Compassion From the Inside Out: no open cohort; last listed dates July–August 2025.",
+      "Compassion Cultivation Training courses: taught by certified CCT teachers, not by him.",
+      "Compassion Institute videos on racial equity and 'Transforming Society' keynote (political-leaning framing); videos led by other teachers.",
+      "Translations and scholarly volumes (Library of Tibetan Classics, Self, Reality and Reason in Tibetan Thought, Songs of Spiritual Experience): no ISBN on a page we opened, or scholarly.",
+      "Health page and 'healthcare studies' claims on the course page: not used."
+    ],
+    "bio_check": "OK: no 8-word runs against 11 source(s)"
+  },
+  "images_final": true
+}

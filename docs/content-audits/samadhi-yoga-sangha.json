@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "samadhi-yoga-sangha",
+    "location_source": "https://samadhiyoga.com/about",
+    "create": {
+      "name": "Samadhi Yoga Sangha",
+      "bio": "Samadhi Yoga Sangha is a yoga school and studio in Uptown Denver, Colorado, which has held classes, workshops, retreats and teacher trainings on East 19th Avenue since 2001. It came under new ownership in 2021 and reopened with a renewed purpose: to be a sangha, a practising community, where yoga is studied as a path for body, energy, mind and spirit rather than as exercise alone. The daily timetable balances active styles with gentler ones such as restorative practice and yoga nidra, and graduates of its trainings lead free weekly community classes.\n\nTeacher education is central to the school. Its Yoga Alliance-registered 200-hour course, Seek Samadhi, trains teachers in a Hatha Vinyasa style while giving real time to sacred texts, the subtle body, Sanskrit and mantra, devotional yoga and Ayurveda. An 88-hour immersion offers the first half of that course to students who simply want to go deeper, and a 300-hour advanced programme meets in monthly weekend modules on themes from samkhya philosophy and nada yoga to the Bhagavad Gita and puja. The faculty includes Jeremy Wolf, Buffy Barfoot, Soozie Kinstler, Kristine Whittle and Derik Eselius, and the school also leads a spring retreat in Costa Rica.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2001,
+      "availability": "local",
+      "city": "Denver, Colorado",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://samadhiyoga.com/",
+      "booking_url": "https://samadhiyoga.com/teacher-training",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "samadhiheart@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/611a881f199d2b38bb4386dc/03e176c9-51f7-47c2-9b17-f81cbdc1859b/SamadhiSavasana.jpg",
+        "https://images.squarespace-cdn.com/content/v1/611a881f199d2b38bb4386dc/1629219649339-22DWWX14OIJEKT1EE9G3/samadhi-denver-yoga-studio.jpg",
+        "https://images.squarespace-cdn.com/content/v1/611a881f199d2b38bb4386dc/3aa8b2d4-898a-436d-a28d-564bd7963064/DSC04700.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Seek Samadhi 200 Hour Yoga Teacher Certification Course (Spring 2027)",
+      "url": "https://samadhiyoga.com/basic-training",
+      "description": "A Yoga Alliance-registered training held over Thursday evenings and alternate weekends at the Uptown studio. Alongside teaching skills in a Hatha Vinyasa style, it covers breathing practice, meditation, sacred texts, the subtle body, Sanskrit and mantra, devotional yoga and Ayurveda. Unlimited classes at the studio are included while the course runs.",
+      "price": "Tuition: $2950",
+      "product_type": "course",
+      "start_date": "2027-01-22",
+      "end_date": "2027-05-08",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/611a881f199d2b38bb4386dc/t/678d69019ae9d36a67c7a7d1/1737320752556/ytt-15.jpg?format=1500w"
+    },
+    {
+      "title": "Embody Samadhi 300 Hour Advanced Teacher Training (2027)",
+      "url": "https://samadhiyoga.com/advanced-training",
+      "description": "A year of monthly weekend modules for teachers who already hold a 200-hour certificate. Themes include the subtle body, mantra and meditation, samkhya philosophy, the Yoga Sutras, nada yoga and japa, puja and the Bhagavad Gita, Ayurveda and refined sequencing. Single modules are also open to experienced practitioners when space allows.",
+      "price": "Tuition Investment $4500",
+      "product_type": "course",
+      "start_date": "2027-01-29",
+      "end_date": "2027-11-14",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/611a881f199d2b38bb4386dc/t/641c745511328f107ac1597f/1679586389912/27368961_1843701392366510_4938470363586879342_o.jpg?format=1500w"
+    },
+    {
+      "title": "88-Hour Yoga Immersion (Spring 2027)",
+      "url": "https://samadhiyoga.com/yoga-immersion",
+      "description": "The first half of the 200-hour course, for students who want to study yoga in depth without aiming to teach yet. It spans asana, meditation, breathwork, philosophy and classical texts, Sanskrit chant and yoga nidra, and the hours can later count towards full certification.",
+      "price": "Investment $1350 includes unlimited yoga",
+      "product_type": "course",
+      "start_date": "2027-01-22",
+      "end_date": "2027-03-11",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/611a881f199d2b38bb4386dc/t/641c745511328f107ac1597f/1679586389912/27368961_1843701392366510_4938470363586879342_o.jpg?format=1500w"
+    },
+    {
+      "title": "Vital Renewal Retreat, Costa Rica",
+      "url": "https://samadhiyoga.com/fcostaricaretreat",
+      "description": "A seven-day retreat on the Nicoya Peninsula, run by Samadhi Yoga with Sandhya Yoga and led by Jeremy Wolf and Devon Sweeney. Days hold Hatha and Prana Vinyasa practice, meditation, contemplation, yoga nidra and sound, with time for the beach and the surrounding nature.",
+      "price": "Triple Cabina $2299",
+      "product_type": "retreat",
+      "start_date": "2027-03-28",
+      "end_date": "2027-04-03",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/611a881f199d2b38bb4386dc/t/6a07aa869120657df2093867/1778887302626/SalvaTierraPool55-1.jpg?format=1500w"
+    },
+    {
+      "title": "Sangha Monthly Membership",
+      "url": "https://samadhiyoga.com/membership",
+      "description": "Unlimited classes at the Uptown Denver studio on a rolling monthly plan, with member discounts on workshops, retreats and the shop. Single-month, annual and class-pack options are listed on the same page.",
+      "price": "$124/month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/611a881f199d2b38bb4386dc/t/641c745511328f107ac1597f/1679586389912/27368961_1843701392366510_4938470363586879342_o.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 519,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on its site; Instagram and Facebook never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://samadhiyoga.com/advanced-training",
+    "contact_form_url": "https://samadhiyoga.com/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Found by web search (Denver yoga teacher training); the search result was the Squarespace preview host jaguar-octahedron-sexa.squarespace.com, whose sitemap names samadhiyoga.com; robots.txt read on both hosts (standard Squarespace group, no Disallow: /).",
+      "Email samadhiheart@gmail.com is published in plain text on the 300-hour and Costa Rica retreat pages as the school's enquiries inbox (named contact Emelia); flag as a studio inbox. The contact page has a form.",
+      "Not a single-lineage school: a Hatha Vinyasa training with strong study of texts, mantra, Ayurveda and devotional practice. Founder not named; the site says only that the studio has run since 2001 and changed ownership in 2021.",
+      "Free weekly community classes taught by graduates are mentioned on the membership page but have no page of their own, so no free resource is listed.",
+      "300-hour end date is the final listed module (12-14 Nov 2027); graduation may be 11 Dec 2027. Dates are marked 'subject to change' on the site.",
+      "Costa Rica retreat: only one triple-occupancy place was left when read (other rooms sold out); price given is the triple cabina rate as published.",
+      "The building photo shows the earlier 'Samadhi Center for Yoga' sign at the same studio; the sign photo shows the current 'Samadhi Yoga' sign.",
+      "Regional: Denver adds a Mountain West school for Near You.",
+      "Possible future listings: Jeremy Wolf, Buffy Barfoot, Soozie Kinstler, Kristine Whittle, Derik Eselius, Jeni Nelson-Fagan, Sheela Bringi.",
+      "No faculty member is on Spiritpedia, so samadhi-yoga-sangha-teachers.json has an empty links list."
+    ],
+    "left_out": [
+      "Sacred Reset Maui retreat: waitlist only, page not opened.",
+      "1:1 Teacher Internship and workshops/events catalogue: not opened.",
+      "Mentions of trauma-informed and prenatal or adaptive introductions in the 200-hour course kept out of descriptions (health rule).",
+      "Videos: none embedded on the pages read; YouTube not searched."
+    ]
+  },
+  "images_final": true
+}

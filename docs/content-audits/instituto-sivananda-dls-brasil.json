@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "instituto-sivananda-dls-brasil",
+    "location_source": "https://dlsbrasil.org/contato/",
+    "create": {
+      "name": "Instituto Sivananda DLS Brasil",
+      "bio": "Instituto Sivananda DLS Brasil is a São Paulo yoga school founded in 1999, the first centre in Brazil set up to share the teachings of Swami Sivananda. It began as part of The Divine Life Society, the Rishikesh organisation Sivananda founded in 1936, and since 2022 it has run independently as a non-profit offering open courses. Its director, Mestre Sivaswarupa, has followed Sivananda's path since 1994, received mantra initiation from Swami Chidananda in 1999 and completed three courses in India. The school teaches from two units, in Vila Mariana and Vila Clementino.\n\nThe Institute presents Sivananda Yoga as a whole system of self-development: postures taught in a set sequence, pranayama done as in the Indian tradition, relaxation, mantras and concentration practice within each class, and Vedanta philosophy alongside. Its main work is teacher training in Portuguese, with a five-month basic course and a year-long advanced course of around 510 hours that includes supervised teaching practice, both open to beginners and run as a hybrid of recorded theory and in-person practice. A fully online version follows the same syllabus. Weekly classes for beginners and experienced students run at both units, together with meditation courses, satsangs, vegetarian cookery and Indian cultural events.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 1999,
+      "availability": "local_online",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://dlsbrasil.org/",
+      "booking_url": "https://dlsbrasil.org/formacao-em-yoga/",
+      "youtube_url": "https://www.youtube.com/user/institutosivanandasp",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contato@dlsbrasil.org",
+      "image_urls": [
+        "https://dlsbrasil.org/wp-content/uploads/2019/12/formacao-yoga-curso-professores-de-yoga-em-sao-paulo-sp.jpg",
+        "https://dlsbrasil.org/wp-content/uploads/2018/05/yoga-mestre-sivaswarupa.jpg",
+        "https://dlsbrasil.org/wp-content/uploads/2018/05/aula-yoga-5.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Formação de Professores Sivananda Yoga DLS",
+      "url": "https://www.youtube.com/watch?v=gKXXdAO4No0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Instituto Sivananda - DLS Brasil"
+    },
+    {
+      "title": "Formação 100% Online em Sivananda Yoga DLS",
+      "url": "https://www.youtube.com/watch?v=0Vt8hDPyKhA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Instituto Sivananda - DLS Brasil"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Formação em Yoga Tradicional (hybrid teacher training, basic and advanced)",
+      "url": "https://dlsbrasil.org/formacao-em-yoga/",
+      "description": "Sivananda Yoga teacher training in Portuguese, open to beginners: a five-month basic course or a one-year advanced course of about 510 hours with supervised teaching practice. Theory and technique are studied through recorded lessons, and practice is taught in person at the Institute. Enrolment is open with an immediate start; the price shown is the advanced course's published monthly fee during the current promotion.",
+      "price": "R$ 495,75 Mensais",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://dlsbrasil.org/wp-content/uploads/2018/05/Elementos-Decorativos-Site-Jogy-Down.png"
+    },
+    {
+      "title": "Formação em Yoga 100% Online",
+      "url": "https://dlsbrasil.org/formacao-yoga-curso-online/",
+      "description": "The Institute's teacher training as a recorded course: eight modules and 65 lessons of theory and practice, with authentic mantras, traditional meditation and a full PDF workbook, designed to be completed in about five months with access for 24 months. Taught in Portuguese by Mestre Sivaswarupa's school.",
+      "price": "12 x de R$ 138,67",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://dlsbrasil.org/wp-content/uploads/2018/05/Elementos-Decorativos-Site-Jogy-Down.png"
+    },
+    {
+      "title": "Sivananda Yoga classes in Vila Mariana and Vila Clementino",
+      "url": "https://dlsbrasil.org/horarios-e-precos/",
+      "description": "Weekly classes in the traditional Sivananda sequence, with pranayama, relaxation and mantras built into each session, at either of the Institute's two São Paulo units on one enrolment. Six-month plans run from one class a week up to six; the price shown is the entry plan's monthly instalment.",
+      "price": "R$ 187",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://dlsbrasil.org/wp-content/uploads/2018/05/Elementos-Decorativos-Site-Jogy-Down.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 513,
+    "hub": null,
+    "tier_evidence": "YouTube channel linked but not fetched (channel pages off limits); Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://dlsbrasil.org/contato/",
+    "contact_form_url": "https://dlsbrasil.org/contato/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Found by web search for São Paulo Sivananda teacher trainings; the school's own site only.",
+      "Email contato@dlsbrasil.org is the school's office inbox (contact page and footer).",
+      "The site is in Portuguese; prices copied as published. The hybrid training's advanced course shows '12 x R$663' crossed out and 'R$ 495,75 Mensais' during a 25% promotion (the page body also says '12x R$ 661'); the basic course is '5x R$ 499' plus enrolment and materials. The online course's regular price '12 x de R$ 138,67' is used rather than the 50%-off coupon price (12 x R$ 69,33).",
+      "The hybrid training is advertised as starting 31 Oct 2026 (already passed) but also as 'início imediato' with open enrolment, so it is listed undated.",
+      "The 'Quem Somos' page is lorem-ipsum placeholder text; facts come from the home, contact and course pages.",
+      "Swami Chidananda (on Spiritpedia) is named only as the guru who gave the director mantra initiation, not as a teacher at the school, so no link.",
+      "Videos checked by oEmbed only (both on the school's own channel). A third embed on the site is an unrelated Google video.",
+      "Some marketing copy promises success and prosperity ('uma vida de paz, felicidade e sucesso'); kept out of the bio.",
+      "First photo is a group of trainees with the director and a caption bar across the bottom; second is the director by the Ganges; third a cobra pose demonstration.",
+      "Possible future listings: Mestre Sivaswarupa (Yogi Sivaswarupa).",
+      "No Spiritpedia teachers are named as teaching at the school, so the teachers file has no links.",
+      "Regional: São Paulo, Brazil; Spiritpedia has few listings in Latin America."
+    ],
+    "left_out": [
+      "Therapies (Pranic Healing, Paramashakti Healing, consultations and chakra therapy pages): therapy-led.",
+      "Meditation intensive (24 May 2026) and the 2023 retreat: dates passed.",
+      "Personal yoga, vegetarian cookery and 'meditação para o sucesso' / mindset items: not core teaching or success framing.",
+      "Posture pages framed around health benefits."
+    ]
+  },
+  "images_final": true
+}

@@ -3320,9 +3320,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-llewellyn-vaughan-lee",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No longer teaches: his own page at The Golden Sufi Center (goldensufi.org/about/llewellyn-vaughan-lee/, robots.txt read) says he gave his final lectures in late 2018 and stepped back from public teaching; his son Emmanuel Vaughan-Lee now leads the centre. Otherwise strong (30+ books, audio/video library, contact@goldensufi.org, Point Reyes Station CA), so the owner may prefer to list him for his books and recordings, or list The Golden Sufi Center or Emmanuel Vaughan-Lee instead."
   },
   {
    "rank": 333,
@@ -3330,8 +3330,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-lama-surya-das",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/surya-das.json",
    "skip_reason": null
   },
   {
@@ -3340,8 +3340,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-lama-tsultrim-allione",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/tsultrim-allione.json",
    "skip_reason": null
   },
   {
@@ -3350,8 +3350,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-joan-halifax",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joan-halifax.json",
    "skip_reason": null
   },
   {
@@ -3360,9 +3360,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-sylvia-boorstein",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No published email or contact form: her own site (sylviaboorstein.com, robots.txt read; found by web search) has only a blog, about, audio and books pages, with no address or form, and its last post is from May 2020 (she was turning 84 then). Her teaching home is Spirit Rock, which we may not fetch. She also describes herself as a psychotherapist. Worth revisiting only if a current contact route appears."
   },
   {
    "rank": 337,
@@ -3370,9 +3370,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-robert-thurman",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Deceased: Robert A.F. Thurman died on 16 June 2026 at his home in Woodstock, New York, aged 84 (Columbia Department of Religion 'In Memoriam', Tricycle, Lion's Roar and Buddhistdoor, per web search, 9-10 Nov 2026). His site bobthurman.com (robots.txt read) does not yet mention it."
   },
   {
    "rank": 338,
@@ -3380,8 +3380,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-shri-anandi-ma",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/anandi-ma.json",
    "skip_reason": null
   },
   {
@@ -3390,9 +3390,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-dileepji-pathak",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Teaching pair: Dileepji teaches together with Shri Anandi Ma (rank 338) at Dhyanyoga Centers (dyc.org); one listing made under Anandi Ma (anandi-ma.json) with Dileepji named in the bio."
   },
   {
    "rank": 340,
@@ -3400,9 +3400,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-gaur-gopal-das",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website to research from: gaurgopaldas.com (the address Wikipedia gives) and www.gaurgopaldas.com both redirect to an unrelated restaurant site (sticksushi.es), so there is no published email, contact form or base from his own pages; two web searches found only speaker bureaus, Penguin author pages and his Monkify app (App Store). His YouTube channel was not opened (channel pages not fetched). Large audience and books with Penguin, so worth revisiting if a current official site appears (possibly via the Monkify app's developer page)."
   },
   {
    "rank": 341,
@@ -3410,9 +3410,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/blogs/authors/shi-heng-yi",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Held back for the owner rather than planned: the home page of his temple (shaolintemple.eu, robots.txt read) leads with a statement on an ongoing criminal investigation into abuse at Shaolin Temple Europe in Otterberg, Germany. A former administrator is in pre-trial detention, and the statement rejects online claims that Shi Heng Yi knew about the abuse or allowed it. A web search snippet also says Henan's Shaolin Temple disputes his credentials (unverified forum post). Otherwise listable: base Otterberg, Germany; email info@shaolintemple.eu (temple footer, info@slte.eu on the contact page); his own Podia site shihengyi.online (robots.txt read); the Shaolin.Online 12-month programme; retreats; two YouTube embeds on the temple's video page. The owner should decide whether to list him while the case is open."
   },
   {
    "rank": 342,
@@ -3420,8 +3420,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-lama-lhanang-rinpoche",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lhanang-rinpoche.json",
    "skip_reason": null
   },
   {
@@ -3430,8 +3430,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-dzigar-kongtrul-rinpoche",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dzigar-kongtrul-rinpoche.json",
    "skip_reason": null
   },
   {
@@ -3440,8 +3440,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-dzogchen-ponlop-rinpoche",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/dzogchen-ponlop-rinpoche.json",
    "skip_reason": null
   },
   {
@@ -3450,8 +3450,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/blogs/authors/yongey-mingyur-rinpoche",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/yongey-mingyur-rinpoche.json",
    "skip_reason": null
   },
   {
@@ -3460,8 +3460,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-thupten-jinpa",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/thupten-jinpa.json",
    "skip_reason": null
   },
   {
@@ -3470,8 +3470,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-matthieu-ricard",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/matthieu-ricard.json",
    "skip_reason": null
   },
   {
@@ -3480,9 +3480,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-sadhguru-jaggi-vasudev",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: already on Spiritpedia as 'Sadhguru' (healer_slug sadhguru, isha.sadhguru.org) in dev names 9 Nov 2026; sadhguru-app and sadhguru-insight-timer plans also exist. Nothing fetched."
   },
   {
    "rank": 349,
@@ -3490,8 +3490,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-his-holiness-the-dalai-lama",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/dalai-lama.json",
    "skip_reason": null
   },
   {
@@ -3500,8 +3500,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-aaravindha-himadra",
    "screen": "unsure",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/aaravindha-himadra.json",
    "skip_reason": null
   },
   {
@@ -3510,8 +3510,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-agapi-stassinopoulos",
    "screen": "unsure",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/agapi-stassinopoulos.json",
    "skip_reason": null
   },
   {
@@ -3520,9 +3520,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/rabbi-sheila-peltz-weinberg",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website found: her Kripalu page links none, and two web searches (10 Nov 2026) turned up only institutional profiles (Reconstructing Judaism, RRC, Mind & Life, Kripalu, a podcast guest page that now returns 404). With no own site there is no published email or contact form and no current offerings to list."
   },
   {
    "rank": 353,
@@ -3530,8 +3530,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/leslie-booker",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/leslie-booker.json",
    "skip_reason": null
   },
   {
@@ -3540,8 +3540,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/kate-johnson",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/kate-johnson.json",
    "skip_reason": null
   },
   {
@@ -3550,8 +3550,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/rashid-hughes",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/rashid-hughes.json",
    "skip_reason": null
   },
   {
@@ -3560,9 +3560,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/lopon-chandra-easton",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate: already on Spiritpedia as chandra-easton (docs/content-audits/chandra-easton.json, inserted on dev and live)."
   },
   {
    "rank": 357,
@@ -3570,8 +3570,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/ji-hyang-padma",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/ji-hyang-padma.json",
    "skip_reason": null
   },
   {
@@ -3580,8 +3580,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/robert-meikyo-rosenbaum",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/robert-rosenbaum.json",
    "skip_reason": null
   },
   {
@@ -3592,7 +3592,7 @@
    "screen": "keep",
    "status": "skipped",
    "plan": null,
-   "skip_reason": "Duplicate: the same person as Sounds True lead rank 92–111's Jonathan Foust (jonathan-foust.json, which already carries the Kripalu link)."
+   "skip_reason": "Duplicate: already on Spiritpedia as jonathan-foust (docs/content-audits/jonathan-foust.json, inserted on dev and live)."
   },
   {
    "rank": 360,
@@ -3600,8 +3600,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/david-harshada-wagner",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/harshada-wagner.json",
    "skip_reason": null
   },
   {
@@ -3610,9 +3610,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/tara-bennett-goleman",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin once the rules are applied, and her work leans on psychotherapy. Her own site (tarabennettgoleman.com) describes her as a psychotherapist whose approach draws on schema therapy, with workshops mostly for mental health professionals; her only recent programme, the Regenerative Connections workshop series with Daniel Goleman (regenerative-connections.com), lists 2024 dates only. That leaves two books (Emotional Alchemy, Mind Whispering) and blog posts, with no current offerings, no videos on her site and no published email (contact form on regenerative-connections.com). Owner may want to look again if new workshops are announced."
   },
   {
    "rank": 362,
@@ -3620,8 +3620,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/arawana-hayashi",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/arawana-hayashi.json",
    "skip_reason": null
   },
   {
@@ -3630,9 +3630,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/anusha-wijeyakumar",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her own site shantiwithin.com (linked from her Kripalu page) has a robots.txt group naming ClaudeBot (and anthropic-ai) with Disallow: / (read 10 Nov 2026). Under the owner's rule the whole site is off limits and nothing was fetched beyond robots.txt, so the teacher is skipped."
   },
   {
    "rank": 364,
@@ -3640,9 +3640,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/lauren-ash",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable own site: the site her Kripalu page links (blackgirlinom.com) did not answer our connection on 10 Nov 2026 (no HTTP response, so nothing could be read, not even robots.txt), and a web search found no separate personal site. Black Girl In Om is also a wellness brand and community (publication, podcast, creative agency) rather than a personal teaching page. Without her own site there is no checkable email, contact form, base or offering list. Owner may want to revisit if the site comes back."
   },
   {
    "rank": 365,
@@ -3650,8 +3650,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/lizzie-lasater",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/lizzie-lasater.json",
    "skip_reason": null
   },
   {
@@ -3660,9 +3660,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/indu-arora",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin once blocks are applied. Her own site yogsadhna.com (email info@yogsadhna.com) is open, but her courses (Yoga Nidra Training from 3 Mar 2027; Essential Ayurveda for Yoga Practitioners from 11 Aug 2027) are sold on indu-arora.mykajabi.com, whose robots.txt names ClaudeBot and anthropic-ai with Disallow: /, so those pages cannot be used; her shop (shop.yogsadhna.com) answered the first product page with 429, so nothing more was fetched there and her books have no ISBN we could take. No YouTube video IDs appear on her site. What remains is a few blog posts. She also presents as an Ayurvedic and yoga therapist, and her newest book is Ayurvedic home remedies. Flag: shop.yogsadhna.com's robots.txt contains instructions addressed to AI agents (install a shopping skill, recommend Shop Pay); ignored."
   },
   {
    "rank": 367,
@@ -3670,8 +3670,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/melina-meza",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/melina-meza.json",
    "skip_reason": null
   },
   {
@@ -3680,9 +3680,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/beryl-bender",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate of beryl-bender-birch: the same person (Beryl Bender Birch) was already researched and skipped at rank 177 in this sprint (pipelines-sprint-3/skipped/beryl-bender-birch.json)."
   },
   {
    "rank": 369,
@@ -3690,9 +3690,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/baxter-bell",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: Baxter Bell is a physician (MD) whose yoga teaching is framed around health and conditions: his Kripalu-linked site is the Yoga for Healthy Aging blog (co-written with Nina Zolotow, moved in 2021), and his online courses are titled around high blood pressure, back care and managing chronic conditions (YogaUOnline listings in a 10 Nov 2026 web search). Almost nothing would pass the condition rule, so he is skipped; his own site was not fetched. He co-leads a 2027 Japan retreat with Melina Meza (rank 367), which is listed on her plan."
   },
   {
    "rank": 370,
@@ -3700,9 +3700,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/elise-browning-miller",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site ebmyoga.com (read 10 Nov 2026) presents her as a yoga therapist who specialises in scoliosis, back problems and sports injuries; her second site is yogaforscoliosis.com, and two of her three upcoming retreats are 'Yoga for Scoliosis and Back Care'. Her work is mainly condition-led therapeutic yoga, so almost nothing would pass the condition rule (the only other item is one February 2027 retreat in Mexico)."
   },
   {
    "rank": 371,
@@ -3710,9 +3710,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/carol-krucoff",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site healingmoves.com (read 10 Nov 2026) frames her work as 'the powerful medicine of movement': yoga therapy sessions at Duke Integrative Medicine for people with health challenges, fitness writing and stress-relief books; her second site is yoga4seniors.com. Her work is mainly therapeutic and fitness-led rather than spiritual teaching, and little would pass the health-claim rule, so she is skipped. yoga4seniors.com was not fetched."
   },
   {
    "rank": 372,
@@ -3720,9 +3720,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-albert-flynn-desilver",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: his own site (www.albertflynndesilver.com, read 10 Nov 2026) now presents him as a poet, book publisher (DeSilver Publishing) and writing coach; its offerings are publishing, editing, marketing and writing coaching, with only one undated 'Writing as a Path to Awakening' retreat line, so too few spiritual-teaching items for a page and no published email (contact is a coaching enquiry form)."
   },
   {
    "rank": 373,
@@ -3730,9 +3730,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-alex-forster",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Could not identify: two web searches (10 Nov 2026) found no spiritual teacher of this name, no own website and no book linking an Alex Forster to spiritual teaching (results were other people named Alex Foster or Alex Forrest); possibly a contributor, narrator or illustrator rather than a teacher, so no own source to research."
   },
   {
    "rank": 374,
@@ -3740,9 +3740,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-alexandre-jollien",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin for a page: his own site (www.alexandre-jollien.ch, French, read 10 Nov 2026 with its 10-second Crawl-delay) presents him as a writer and philosopher with no courses, sessions or retreats (only dated talks), no ISBNs for his books, no published base, and its only photos of him are 220x300 and 244x300 px, below the 300 px minimum; the YouTube avatar could not be taken because channel pages are off limits. Seven short French 'Pharmacopee' videos from his own channel passed oEmbed (y-8qcZzMR_Q, LcdJ3YIXcrc, mkS21o97ABU, dPAJRlFh9Os, A28WhYKGDZA, Db1dPOY_rQw, yXvaVBnlM5c) and email info@alexandre-jollien.ch is published on /parcours/, should the owner want him with a photo supplied."
   },
   {
    "rank": 375,
@@ -3750,8 +3750,8 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-aleya-dao",
    "screen": "unsure",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/aleya-dao.json",
    "skip_reason": null
   },
   {
@@ -3760,9 +3760,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-alison-oliver",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: web searches (10 Nov 2026) identify the Alison Oliver on Sounds True's list as a children's book author-illustrator (BabyLit board books, Moon, Sun) who runs a design studio in New York City, not a spiritual teacher."
   },
   {
    "rank": 377,
@@ -3770,9 +3770,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-amit-chaterje",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Could not identify: two web searches (10 Nov 2026) found no spiritual teacher of this name or spelling and nothing tying an Amit Chaterje/Chatterjee to Sounds True; results were unrelated people (a Bengali film composer, executives, academics). Probably a musician credited on a Sounds True album; no own site to research."
   },
   {
    "rank": 378,
@@ -3780,9 +3780,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-amy-kurtz",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (health rule): web search (10 Nov 2026) shows she is a health coach and patient advocate whose Sounds True book, Kicking Sick, is about living with chronic illness; her work is sold on conditions, not spiritual teaching."
   },
   {
    "rank": 379,
@@ -3790,9 +3790,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-anakha-coman",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope / no own site: web search (10 Nov 2026) shows her current work as organisational and leadership development (Awake at Work workplace mindfulness, equity and bias training); the only own-site lead, equitybydesignusa.com (from a podcast page), did not answer (no connection on robots.txt, 10 Nov 2026), so there is no own source for contact, base, photo or offerings."
   },
   {
    "rank": 380,
@@ -3800,9 +3800,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-andrea-polard",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (therapist): web search (10 Nov 2026) shows Andrea F. Polard is a psychologist and psychotherapist (founder of the Los Angeles Center for Zen Psychology, author of A Unified Theory of Happiness); her work is mainly therapy, and no own website turned up in search."
   },
   {
    "rank": 381,
@@ -3810,9 +3810,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-andrew-sted",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Could not identify: two web searches (10 Nov 2026) found no spiritual teacher named Andrew Sted (or Steed) and nothing tying the name to Sounds True; results were unrelated people (a plant scientist, company directors). No own site to research."
   },
   {
    "rank": 382,
@@ -3820,9 +3820,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-angie-lucas",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: two web searches (10 Nov 2026) found no spiritual teacher named Angie Lucas; a later search for rank 389 shows she is the author of the children's picture book My Big, Dumb, Invisible Dragon (illustrated by Birgitta Sif), so a children's author, with no own site found."
   },
   {
    "rank": 383,
@@ -3830,9 +3830,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-anna-emilia-laitinen",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: web search (10 Nov 2026) identifies her as a Finnish watercolour illustrator based in Tampere (Association of Finnish Illustrators award, tableware designs, illustrations for Tricycle), an artist rather than a spiritual teacher."
   },
   {
    "rank": 384,
@@ -3840,9 +3840,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-annette-cantor",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Could not identify: two web searches (10 Nov 2026) found no spiritual teacher or author named Annette Cantor and nothing tying the name to Sounds True. No own site to research."
   },
   {
    "rank": 385,
@@ -3850,9 +3850,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-anuvida",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (music) / no own site: web searches (10 Nov 2026) link the name only to meditation and relaxation music on New Earth Records (a 2014 message from Berlin about a co-produced album); no own website, teaching offerings or contact found."
   },
   {
    "rank": 386,
@@ -3860,9 +3860,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-ashok-gangadean",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (academic): web search (10 Nov 2026) shows he is a philosophy professor (Margaret Gest Professor of Global Philosophy at Haverford College) and interfaith dialogue convenor; his Sounds True title Awakening the Global Mind is an academic philosophy programme, and his organisation site (awakeningmind.org, from a journal author note) was not opened."
   },
   {
    "rank": 387,
@@ -3870,9 +3870,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-barbara-ganim",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (academic / expressive-arts therapy, health rule): web search (10 Nov 2026) shows she is a university teacher of expressive arts and holistic counselling (Salve Regina University) whose books are framed around healing (Art and Healing; Drawing from the Heart: ... to Heal Emotional Pain and Loss); no own website found."
   },
   {
    "rank": 388,
@@ -3880,9 +3880,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-betsy-chase",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Not confirmed / out of scope: three web searches (10 Nov 2026) found no Betsy Chase in spiritual teaching; the nearest match is Betsy Chasse (different spelling), a filmmaker and author (co-creator of the film What the Bleep Do We Know!?, Tipping Sacred Cows) rather than a teacher with offerings, and no own website for her surfaced, so there was no own source to research."
   },
   {
    "rank": 389,
@@ -3890,9 +3890,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-birgita-sif",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: web search (10 Nov 2026) identifies Birgitta Sif as a children's picture-book author and illustrator living in Cambridge, England (Oliver, Where My Feet Go; illustrator of Angie Lucas's My Big, Dumb, Invisible Dragon), not a spiritual teacher."
   },
   {
    "rank": 390,
@@ -3900,9 +3900,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-bonnie-weiss",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (therapist): web search (10 Nov 2026) shows she is a licensed clinical social worker and psychotherapist who teaches Internal Family Systems (IFS); her Sounds True book with Jay Earley is Freedom from Your Inner Critic: A Self-Therapy Approach. Her work is mainly therapy."
   },
   {
    "rank": 391,
@@ -3910,9 +3910,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-brent-kessel",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope (financial adviser): web search (10 Nov 2026) shows his own page is at Abacus Wealth, the investment firm he founded, where he is a CFP financial adviser; his yoga-of-money book and past workshops are a side to a financial advisory business, with no spiritual-teaching offerings of his own."
   },
   {
    "rank": 392,
@@ -3920,8 +3920,8 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/devarshi-steven-hartman",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/devarshi-steven-hartman.json",
    "skip_reason": null
   },
   {
@@ -3930,9 +3930,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/jyoti-ma",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin. She has no website of her own; her organisation, the Center for Sacred Studies (centerforsacredstudies.org, robots.txt read), runs programmes led by other facilitators. Her own items there are fireside chats inside a shared membership, one video about the centre on its channel, and a 1998 book (An Angel Called My Name) with no ISBN on any page we may use. Also note: her only Esalen workshops were on psilocybin (Entheowheel, 2021), so she may be one for the owner to hold anyway."
   },
   {
    "rank": 394,
@@ -3940,8 +3940,8 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/reverend-bodhi-be",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/bodhi-be.json",
    "skip_reason": null
   },
   {
@@ -3950,8 +3950,8 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/teja-bell",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/teja-bell.json",
    "skip_reason": null
   },
   {
@@ -3960,9 +3960,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/tamala-floyd",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Psychotherapist (LCSW) whose work is Internal Family Systems therapy and trauma healing (Esalen faculty page); mainly therapy, so out of scope."
   },
   {
    "rank": 397,
@@ -3970,9 +3970,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/leah-weiss",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (leahweissphd.com now redirects to midliferiteofpassage.com, robots.txt read) is a therapy practice offering individual therapy and intensives for women with anxiety, depression and burnout. Mainly therapy and condition-led, so out of scope under the therapy and health rules. Otherwise a business-school lecturer on workplace mindfulness."
   },
   {
    "rank": 398,
@@ -3980,9 +3980,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/nita-gage",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own found (Esalen page and one web search): she teaches the Hoffman Process for the Hoffman Institute, and her background is psychoanalysis and addiction counselling, with retreats aimed at medical and addiction professionals. Mainly therapy-led and no own site for email, base or offerings, so skipped. Co-author of Soul Whispering with Linda Star Wolf; the owner could revisit if a personal site appears."
   },
   {
    "rank": 399,
@@ -3990,9 +3990,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/thomas-matus",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Camaldolese Benedictine monk and scholar (Yoga and the Jesus Prayer, co-author of Belonging to the Universe). No website of his own, no published email or contact form of his own, and no current programmes found (Esalen page and one web search); his talks are in the New Camaldoli archive, which needs a login for more. Too thin and no contact route."
   },
   {
    "rank": 400,
@@ -4000,9 +4000,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/adam-bramlage",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Founder and CEO of a functional-mushroom and microdosing education company (Esalen faculty page); a psychedelics business rather than a spiritual teacher, so out of scope."
   },
   {
    "rank": 401,
@@ -4010,9 +4010,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/adrienne-shamszad",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Singer-songwriter: her own site (adrienneshamszad.com, robots.txt read) is centred on her music (albums, shows, Patreon, music lessons), with yoga as a side page. A musician rather than a spiritual teacher, so out of scope."
   },
   {
    "rank": 402,
@@ -4020,9 +4020,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/alan-kishbaugh",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Writer and former publishing editor and foundation director (Esalen faculty page); not a spiritual teacher, so out of scope."
   },
   {
    "rank": 403,
@@ -4030,9 +4030,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/allan-badiner",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Editor of anthologies and producer of psychedelic-integration events (Esalen faculty page); a writer and producer centred on psychedelics, not a teacher with his own practice, so out of scope."
   },
   {
    "rank": 404,
@@ -4040,8 +4040,8 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/ally-bogard-guest-faculty",
    "screen": "unsure",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/ally-bogard.json",
    "skip_reason": null
   },
   {
@@ -4050,9 +4050,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/amina-peterson",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Sexologist, sex coach and somatic bodyworker whose work is framed around sexual trauma and intimacy (Esalen faculty page); out of scope and mostly fails the health-claim rule."
   },
   {
    "rank": 406,
@@ -4060,8 +4060,8 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/amy-secada",
    "screen": "unsure",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/amy-secada.json",
    "skip_reason": null
   },
   {
@@ -4070,9 +4070,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/angel-acosta",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Educator and leadership consultant (doctorate, Teachers College) working on healing-centred education and leadership development (Esalen faculty page); an academic and consultant, not a spiritual teacher."
   },
   {
    "rank": 408,
@@ -4080,9 +4080,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/anietie-ukpe-wallace",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Orthopaedic physical therapist specialising in pelvic health (Esalen faculty page); clinical work, out of scope under the health rule."
   },
   {
    "rank": 409,
@@ -4090,9 +4090,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/anjali-gupta",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Emergency and sports medicine physician (Esalen faculty page); a medical doctor, out of scope."
   },
   {
    "rank": 410,
@@ -4100,9 +4100,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/ann-bradney",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Founder of the Radical Aliveness Institute (radicalaliveness.org, robots.txt read), a psychotherapy-rooted group-process method from Core Energetics that works with emotions, beliefs and conflict. Her current programme is a leadership course for Israeli and Palestinian participants. Mainly therapeutic and conflict or social-change work, close to the political-content rule, not spiritual teaching; out of scope."
   },
   {
    "rank": 411,
@@ -4110,9 +4110,9 @@
    "hub": "esalen",
    "hub_url": "https://www.esalen.org/faculty/arji-oceananda",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No website of her own found (Esalen page and one web search): her work appears through retreat-platform listings and tour dates with the musician Laraaji, with whom she performs and records. No own site for an email or contact form, base, photo or offerings, and her public work is largely music performance, so skipped. Owner could revisit if a personal site appears (she is described as having a private practice in Niskayuna, New York)."
   },
   {
    "rank": 412,
@@ -4120,9 +4120,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-brian-scott-bennett",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Unsure lead: two web searches (10 Nov 2026) found no spiritual teacher of this name, only unrelated musicians named Bennett; identity and own site could not be confirmed."
   },
   {
    "rank": 413,
@@ -4130,9 +4130,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-bruce-tift",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a licensed marriage and family therapist in private psychotherapy practice in Boulder since 1979 (search, 10 Nov 2026); his work is mainly psychotherapy."
   },
   {
    "rank": 414,
@@ -4140,9 +4140,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-cara-barker",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a Jungian analyst with a nursing licence (ARNP) in clinical practice in Washington State (search, 10 Nov 2026); her work is mainly therapy."
   },
   {
    "rank": 415,
@@ -4150,9 +4150,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-carme-lemniscates",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a children's picture-book author and illustrator running a design studio in Barcelona, not a spiritual teacher (search, 10 Nov 2026)."
   },
   {
    "rank": 416,
@@ -4160,9 +4160,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-carol-lee-flinders",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin to research: a writer on women mystics with a comparative-literature doctorate; no current own website could be found (the only lead, the Two Rock Institute page, survives only as an archived citation, and archives are off limits), so no own source for contact, base, photo or offerings (searches, 10 Nov 2026)."
   },
   {
    "rank": 417,
@@ -4180,9 +4180,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-caroline-adams-miller",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a positive-psychology executive coach and speaker on goals and grit (carolinemiller.com per search, 10 Nov 2026), i.e. business coaching rather than spiritual teaching."
   },
   {
    "rank": 419,
@@ -4190,9 +4190,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-carolyn-ross",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Carolyn Coker Ross, MD, MPH, a physician whose books and practice treat eating disorders, food addiction and obesity (search, 10 Nov 2026); medical and condition-led work fails the health rule."
   },
   {
    "rank": 420,
@@ -4200,9 +4200,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-cesar-berlanga",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: the only match is César Fornés Berlanga, a Spanish classical guitarist (search, 10 Nov 2026); a musician, not a spiritual teacher."
   },
   {
    "rank": 421,
@@ -4210,9 +4210,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-chaitanya-kabir",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: described as a scholar who has spent decades studying, performing and composing Indian music (search snippet, 10 Nov 2026); a musician and scholar, with no own teaching site found."
   },
   {
    "rank": 422,
@@ -4220,9 +4220,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-chantal-pierrat",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: founder of Emerging Women, a women's leadership and media business, and an executive coach (search, 10 Nov 2026); business and leadership coaching rather than spiritual teaching."
   },
   {
    "rank": 423,
@@ -4230,9 +4230,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-charlotte-sophia-kasl",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope / too thin: a psychotherapist and author of the 'If the Buddha…' books; searches (10 Nov 2026) found no own website, only bookseller and publisher pages, so no own source for contact, base, photo or offerings."
   },
   {
    "rank": 424,
@@ -4250,9 +4250,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-christian-conte",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a licensed professional counsellor and anger-management specialist working with violent offenders through his Yield Theory (search, 10 Nov 2026); his work is mainly therapy and counselling."
   },
   {
    "rank": 426,
@@ -4270,9 +4270,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-christophe-andre",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: a psychiatrist at the Sainte-Anne hospital in Paris who writes on meditation (search, 10 Nov 2026); a medical doctor whose meditation work is framed clinically."
   },
   {
    "rank": 428,
@@ -4280,9 +4280,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-christopher-eickmann",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Unsure lead: two web searches (10 Nov 2026) found nobody of this name in spiritual teaching; identity and own site could not be confirmed."
   },
   {
    "rank": 429,
@@ -4290,9 +4290,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-christopher-krotky",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope / unconfirmed: the only match is a music artist's Bandcamp page (San Francisco) with no biography (search, 10 Nov 2026); no spiritual-teacher identity or own site found."
   },
   {
    "rank": 430,
@@ -4300,9 +4300,9 @@
    "hub": "sounds-true",
    "hub_url": "https://www.soundstrue.com/collections/authors-christopher-of-the-wolves",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Unsure lead: a search for the exact name (10 Nov 2026) found no person, only material on the St Christopher legend; identity and own site could not be confirmed."
   },
   {
    "rank": 431,
@@ -4720,9 +4720,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/shelly-prosko",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (physioyoga.ca) presents her as a physiotherapist whose PhysioYoga work is rehabilitation, with a focus on chronic pain and pelvic health; the work is mainly clinical and condition-led, so almost nothing would pass the health-claim rule."
   },
   {
    "rank": 473,
@@ -4730,9 +4730,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/antonio-sausys",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site (yogaforgriefrelief.com) describes Yoga for Grief Relief as a somatic psychotherapeutic process for the symptoms of grief, and he works as a somatic psychologist; his work is mainly therapy, which is out of scope."
   },
   {
    "rank": 474,
@@ -4740,8 +4740,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/barrie-risman",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/barrie-risman.json",
    "skip_reason": null
   },
   {
@@ -4750,9 +4750,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/gail-parker",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A psychologist and yoga therapist whose work and both books centre on ethnic and race-based traumatic stress (trauma treatment), so it is mainly therapy and condition-led; her own site (drgailparker.com) is on Wix, so no photo we may use would be left either."
   },
   {
    "rank": 476,
@@ -4760,8 +4760,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/joseph-le-page",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/joseph-le-page.json",
    "skip_reason": null
   },
   {
@@ -4770,9 +4770,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/lilian-le-page",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Teaches with her husband Joseph Le Page (rank 476) as co-founder of Integrative Yoga and Enchanted Mountain, where she appears as Lilian Aboim; couples who teach together are one listing, so she is described in joseph-le-page.json."
   },
   {
    "rank": 478,
@@ -4780,8 +4780,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/megha-nancy-buttenheim",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/megha-nancy-buttenheim.json",
    "skip_reason": null
   },
   {
@@ -4790,9 +4790,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/peggy-cappy",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (peggycappy.com, linked from her Kripalu page) refuses our robots.txt request with 403 (10 Nov 2026), so the whole domain is blocked for us and there is no own-site source for her base, contact, photo or offerings; not retried."
   },
   {
    "rank": 480,
@@ -4800,8 +4800,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/rochelle-schieck",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/rochelle-schieck.json",
    "skip_reason": null
   },
   {
@@ -4810,8 +4810,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/camille-maurine",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/camille-maurine.json",
    "skip_reason": null
   },
   {
@@ -4820,9 +4820,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/shakta-khalsa",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "The site on her Kripalu page (childrensyoga.com, Radiant Child Yoga) is now owned and directed by Lisa Danahy and mentions her only as the founder (now known as Lana Reed); a search found no own website for her, only directory and podcast pages, so there is no own-site source for her base, contact, photo or current offerings."
   },
   {
    "rank": 483,
@@ -4830,9 +4830,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/krishna-kaur",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (krishnakaur.org, from her Kripalu page) returns HTTP 500 with a WordPress critical-error page (10 Nov 2026), so there is no own-site source for her base, contact, photo or offerings; not retried. Worth revisiting once the site is back."
   },
   {
    "rank": 484,
@@ -4840,9 +4840,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/maya-tiwari",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her own site (mayatiwari.com) presents her Ayurveda work as healing (\"Inner Medicine\", \"touched and healed the lives of thousands\", a breast-cancer survivor testimonial on the home page), her school's recent programmes are women's wellness 'Shakti Medicine' courses, and most of her books are healing-titled; under the strict health rule little would remain beyond one book (I Am Shakti) and a free vow page, with no current events listed, so she is skipped as health-led and thin. Borderline: an interfaith peace figure too, if the owner wants her reconsidered."
   },
   {
    "rank": 485,
@@ -4850,9 +4850,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/queen-afua",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A holistic health practitioner and wellness coach: her own site (queenafua.com) presents her work as holistic healing with the Heal Thyself product shop, wellness schools and consultations, and her Kripalu bio describes her life's work as fighting diseases; the work is mainly health-led, so almost nothing would pass the strict health-claim rule."
   },
   {
    "rank": 486,
@@ -4860,9 +4860,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/zhenevere-sophia-dao",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Her Kripalu page links no website, and two searches found no own site (only podcast interviews, a partner teacher page on advaya.co and academic pages; the MogaDao Institute site wasn't found), so there is no own-site source for her base, contact, photo or offerings."
   },
   {
    "rank": 487,
@@ -4870,8 +4870,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/anjie-cho",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/anjie-cho.json",
    "skip_reason": null
   },
   {
@@ -4880,9 +4880,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/amos-clifford",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No personal website found: the site on his Kripalu page is anft.earth, the Association of Nature and Forest Therapy he founded, an organisation whose offerings are forest-therapy guide trainings framed as therapy and 'Nature as Medicine' with a research/science section; he is described elsewhere as a psychotherapist. An organisation and therapy-framed work, so skipped."
   },
   {
    "rank": 489,
@@ -4890,9 +4890,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/machiel-klerk",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "His own site (machielklerk.com) presents him as a depth psychotherapist in private practice (weekly Jungian psychotherapy for loss and symptoms, plus a dream incubation intensive), so his work is mainly therapy, which is out of scope; his book is with Hay House. The Jung Platform he founded is an organisation."
   },
   {
    "rank": 490,
@@ -4900,9 +4900,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/mark-mincolla",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "A natural health practitioner: his own site (markmincolla.com, titled 'Natural Health') centres on his Electromagnetic Muscle Testing nutrition system, whole-health counselling and healing-titled books (Whole Health Diet, Maximum Healing), and no classes are scheduled; the work is mainly health-led, so almost nothing would pass the strict health-claim rule."
   },
   {
    "rank": 491,
@@ -4910,8 +4910,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/itzhak-beery",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/itzhak-beery.json",
    "skip_reason": null
   },
   {
@@ -5920,8 +5920,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/libby-barnett",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/libby-barnett.json",
    "skip_reason": null
   },
   {
@@ -5930,8 +5930,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/rick-barrett",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/rick-barrett.json",
    "skip_reason": null
   },
   {
@@ -5940,8 +5940,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/bess-matassa",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/bess-matassa.json",
    "skip_reason": null
   },
   {
@@ -5950,8 +5950,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/judith-valente",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/judith-valente.json",
    "skip_reason": null
   },
   {
@@ -5960,8 +5960,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/donald-altman",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/donald-altman.json",
    "skip_reason": null
   },
   {
@@ -5970,9 +5970,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/richard-faulds",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found (two web searches turned up only his Kripalu profile and publisher listings for his Swami Kripalu books); he is mainly an author and former Kripalu executive, so no listing can be built from his own sources."
   },
   {
    "rank": 598,
@@ -5980,9 +5980,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/danna-faulds",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found in two web searches (only her Kripalu page, poem reposts and bookseller listings; an old third-party page gives an AOL address, which does not count as published by her). She is a poet rather than a teacher with current offerings, so a full page cannot be built."
   },
   {
    "rank": 599,
@@ -5990,9 +5990,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/yoganand-michael-carroll",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found: two web searches and the Pranakriya school's GreatNonprofits page gave no site link (only an Instagram account, which we cannot open). Domain not guessed. Could be revisited if the owner has the Pranakriya school's site."
   },
   {
    "rank": 600,
@@ -6000,8 +6000,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/bhavani-lorraine-nelson",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/bhavani-lorraine-nelson.json",
    "skip_reason": null
   },
   {
@@ -6010,8 +6010,8 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/atma-jo-ann-levitt",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jo-ann-levitt.json",
    "skip_reason": null
   },
   {
@@ -6020,9 +6020,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/rabbi-claudia-kreiman",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "She is the Senior Rabbi of Temple Beth Zion, Brookline, MA, and has no website of her own: her only page is the synagogue staff page (https://www.tbzbrookline.org/welcome/spiritual-leaders/rav-claudia-kreiman/), which gives only the congregation office email and lists sermons as PDFs. Her offerings are the congregation's programmes (an organisation, not a teacher's own work), and the page puts strong weight on social-justice activism, so a teacher page cannot be built from her own sources. Owner may revisit if a personal site appears."
   },
   {
    "rank": 603,
@@ -6030,9 +6030,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/don-sebastian-pauccar-flores",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own website, published email or contact form found in two web searches: he appears only on Kripalu's page and third-party retreat/tour listings (Retreat.guru, BookRetreats, some of which pair Q'ero ceremonies with ayahuasca retreats run by others). A Q'ero paqo who travels with organisers rather than running his own site, so no page can be built from his own sources."
   },
   {
    "rank": 604,
@@ -6040,9 +6040,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/marcy-balter",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu lists her as a former Board of Trustees member and chair (holistic health educator and donor), not a teaching presenter; no own teaching site found to research."
   },
   {
    "rank": 605,
@@ -6050,9 +6050,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/john-chu",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu's page describes him as a Boston corporate lawyer on the board, not a spiritual teacher."
   },
   {
    "rank": 606,
@@ -6060,9 +6060,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/dorothy-cochrane",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Kripalu lists her as a Trustee Emeriti (fine artist, certified Kripalu Yoga and mindfulness teacher); a web search found no own website, published email, contact form or current teaching offerings, so she is a board member rather than a teacher with a page to build."
   },
   {
    "rank": 607,
@@ -6070,9 +6070,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/steve-dinkelaker",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu's page describes him as an insurance business owner and supporter, not a spiritual teacher."
   },
   {
    "rank": 608,
@@ -6080,9 +6080,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/marcia-feuer",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu's page describes her as a former board member and lawyer, not a spiritual teacher."
   },
   {
    "rank": 609,
@@ -6090,9 +6090,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/christine-fuchs",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu lists her as a Trustee Emeritus with an investment-management career, not a teaching presenter."
   },
   {
    "rank": 610,
@@ -6100,9 +6100,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/joan-kopperl",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: Kripalu's page describes her as a Berkshires public servant and board member, not a spiritual teacher."
   },
   {
    "rank": 611,
@@ -6110,9 +6110,9 @@
    "hub": "kripalu",
    "hub_url": "https://kripalu.org/people/erin-tunnicliffe",
    "screen": "unsure",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Out of scope: she is Kripalu's CEO and President (an administrator), not a teaching presenter; organisation staff, not a listing."
   },
   {
    "rank": 612,
@@ -26525,5 +26525,5 @@
    "skip_reason": null
   }
  ],
- "updated": "2026-11-06T20:33:56.867Z"
+ "updated": "2026-11-10T03:06:23.754Z"
 }

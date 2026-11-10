@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "cathy-marshall",
+    "location_source": "https://www.cathysartofenergy.com/contact",
+    "create": {
+      "name": "Cathy Marshall",
+      "bio": "Cathy Marshall, of Kingston, Ontario, is certified by Quantum-Touch as a practitioner and as a teacher of its first level. She brings together energy work, intuition and painting in her practice, Cathy's Art of Energy. She trained in fine art and education and has some twenty years of experience in education as a certified Ontario teacher; her first encounter with Quantum-Touch came in 2013, and its practical, adaptable techniques kept her interest. She is also an Integrative Nutrition health coach.\n\nIn her sessions she combines intention, life-force breathing and light touch, and may share intuitive impressions or questions along the way, leaving the client to decide what feels meaningful; she sees herself as a companion on a walk rather than someone who decides what the other should notice. Sessions are by appointment at her Kingston studio, starting with a free consultation call. As a painter she also makes intuitive digital artworks and card sets for clients, sometimes alongside a session. She teaches the Quantum-Touch Becoming Energized workshop, partly with a fellow instructor, drawing on her classroom years to encourage questions and steady practice, and hosts a monthly online healing circle for Quantum-Touch students on the last Sunday of the month.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Kingston, Ontario",
+      "country": "Canada",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "website_url": "https://www.cathysartofenergy.com/",
+      "booking_url": "https://www.cathysartofenergy.com/contact",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@cathysartofenergy.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfileImages/Canada/CathyMarshall.jpg",
+        "https://images.squarespace-cdn.com/content/v1/686ee5c7e939f47bfacf26bc/cdc418e6-d3a1-4dd8-926f-0b3414037e5e/Photot+only+.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intuitive Quantum-Touch Energy Session",
+      "url": "https://www.cathysartofenergy.com/",
+      "description": "An hour-long session in Kingston combining focused intention, life-force breathing and light touch, with intuitive feedback if wanted. Single sessions or a three-month weekly plan; begins with a free consultation call.",
+      "price": "$133.00 CAD per hour",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "http://static1.squarespace.com/static/686ee5c7e939f47bfacf26bc/t/689cfb5c500ca30ef19f29ee/1755118428954/CAE+Logo+with+Paintbrush.png?format=1500w"
+    },
+    {
+      "title": "Personalised energy artwork",
+      "url": "https://www.cathysartofenergy.com/cae-artwork",
+      "description": "Cathy tunes in to a client and paints a digital artwork for them, available as prints, limited editions or with a Quantum-Touch session. Meant as a reflective piece for a home or practice space.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/686ee5c7e939f47bfacf26bc/1790a526-5292-4a50-9641-8cc0180e2f8e/Speaking+Your+Truth.jpg"
+    },
+    {
+      "title": "Quantum-Touch Healing Circle (online, monthly)",
+      "url": "https://www.cathysartofenergy.com/contact",
+      "description": "A two-hour online circle on the last Sunday of each month where Quantum-Touch students practise together. Open to those holding a Quantum-Touch certificate; book through her contact page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/686ee5c7e939f47bfacf26bc/1752334078479-MD9OY9QQWL8ZF7DIWJ3P/unsplash-image-eALgIl0Cm-A.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 94,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram and Facebook linked but never fetched; no YouTube) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.cathysartofenergy.com/contact",
+    "contact_form_url": "https://www.cathysartofenergy.com/contact",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Thin: 3 offerings, no videos or free resources. Level 1 workshop has no own page or date on her site (links to quantumtouch.com fees page and a co-instructor's site, not named).",
+      "Base: her studio is in Kingston, Ontario (street address on her site; city only used). Availability local_online because the healing circles are virtual; sessions appear to be in person.",
+      "First photo is her Quantum-Touch profile photo (2223x2609, same person as the circular crop on her site).",
+      "Healing circle price isn't stated; I didn't assume it is free.",
+      "Name/credentials: post-nominals (B.F.A.H., B.Ed, OCT, INHC) dropped.",
+      "Session item URL is her home page, where the offering and price are published; the booking link (Acuity) was not opened."
+    ],
+    "left_out": [
+      "Healing Art Cards 2026 - Set 1 ($88.88 CAD): a printed card set, no ISBN; not a course or download.",
+      "Quantum-Touch Level 1 workshop: no own URL or date on her site.",
+      "Healing circle on 'Sunday, April 25, 2026': past."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "judith-valente",
+    "location_source": null,
+    "no_public_base": "Her own site (about, events and pilgrimage pages) gives no home town or base; it mentions past radio work in central Illinois and her ties to a Benedictine monastery in Atchison, Kansas, neither stated as where she lives.",
+    "create": {
+      "name": "Judith Valente",
+      "bio": "Judith Valente is a poet, essayist and retreat leader whose spiritual writing grew out of a long career in journalism. She started as a reporter at The Washington Post, later wrote for The Wall Street Journal from Chicago and London, and spent years covering religion for PBS's Religion & Ethics NewsWeekly and for public radio. A lay associate of Mount St. Scholastica, the Benedictine community in Atchison, Kansas, she wrote about her time with the sisters in the memoir Atchison Blue, and the Rule of St. Benedict remains at the centre of her teaching.\n\nHer retreats and talks focus on living contemplatively in an ordinary working life: pausing, paying attention, finding the sacred in small daily things and reading poetry as a spiritual practice. Her books include The Art of Pausing, How to Live, on what Benedict's rule offers people today, How to Be, a conversation with a monk, and The Italian Soul, which looks at Italian habits of slowness and joy as a quiet spiritual discipline. She has also published several collections of poems, most recently How to Be a Contemplative. Since 2023 she has led a small annual pilgrimage to little-known Benedictine places in the Abruzzo region of Italy, and she speaks to Benedictine lay groups, retreat houses and conferences in the United States and abroad.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mysticism",
+        "spirituality",
+        "meditation"
+      ],
+      "website_url": "https://www.judithvalente.com/",
+      "booking_url": "https://www.judithvalente.com/benedictine-footprints-pilgrimage/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/judithvalente_author",
+      "facebook_url": "https://www.facebook.com/JudithValenteAuthor",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jvalente17@msn.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/headshot_medium_2x/public/2025-06/ValenteJudith.jpg?itok=oK2XjGYC"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Judy Valente - Spiritual Journey - Monastic Values",
+      "url": "https://www.youtube.com/watch?v=FPbRS1XkAUc",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "30GoodMinutes"
+    }
+  ],
+  "books": [
+    {
+      "title": "The Italian Soul: How to Savor the Full Joys of Life",
+      "slug": "the-italian-soul-judith-valente",
+      "author": "Judith Valente",
+      "asin": "1642970727",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Part travel writing and part spiritual guide, drawn from her many stays in Italy. It looks at the slower rhythms, hospitality and contemplative attitudes of Italian life and how readers might bring them home.",
+      "subjects": [
+        "spirituality",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1642970727.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How to Be a Contemplative",
+      "slug": "how-to-be-a-contemplative-judith-valente",
+      "author": "Judith Valente",
+      "asin": "163980725X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A collection of her poems, each followed by a short reflection. The poems look for the sacred in ordinary days, meals and objects.",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/163980725X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "How to Live: What the Rule of St. Benedict Teaches Us About Happiness, Meaning, and Community",
+      "slug": "how-to-live-judith-valente",
+      "author": "Judith Valente",
+      "asin": "1571747982",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An exploration of the main themes of the sixth-century Rule of St. Benedict for readers today. She draws on her years with a Benedictine community to show how its practices of listening, balance and hospitality can shape daily life.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1571747982.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 595,
+    "hub_url": "https://kripalu.org/people/judith-valente",
+    "tier_evidence": "Facebook JudithValenteAuthor and Instagram @judithvalente_author: not readable without login (not tried); no YouTube channel of her own → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.judithvalente.com/benedictine-footprints-pilgrimage/",
+    "contact_form_url": "https://www.judithvalente.com/about/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Website judithvalente.com found by web search (her Kripalu page has no link) and confirmed by the site itself (about page names her and her books). http://www → https://judithvalente.com → https://www.judithvalente.com; robots.txt of both hosts read; Crawl-delay 10 respected.",
+      "No Kripalu mention on own site: listed without the link.",
+      "Email jvalente17@msn.com is published on her pilgrimage page as the contact for pilgrimage enquiries; the about page gives her publicist (julia@kayepublicity.com) for media and speaking plus a contact form.",
+      "Pilgrimage page still describes the 2025 trip (3-18 Sept 2025) and says it is planned again 'next year'; added undated as a yearly retreat. Owner may wish to hold it until 2026/2027 dates are published.",
+      "Photo: her Kripalu people-page headshot (400 px); her own site's header photo is a small inset inside a text banner, so not used.",
+      "Books: ISBN-10s 1642970727 and 163980725X from Amazon links on https://www.judithvalente.com/books/; How to Live ISBN-13 9781571747983 from the Bookshop link on the same page, converted to 1571747982. Not confirmed elsewhere. Covers not set.",
+      "Video: a WTTW '30 Good Minutes' segment embedded on her videos page (channel 30GoodMinutes), checked with oEmbed; she is the subject. Duration not checked.",
+      "She is a journalist as well as a retreat leader; her PBS news segments (some on political or social topics) were not added."
+    ],
+    "left_out": [
+      "The Art of Pausing, Atchison Blue, How to Be: A Monk and a Journalist Reflect, Twenty Poems to Nourish Your Soul, Discovering Moons and other poetry collections shown only as covers: no ISBN or product link on her books page (only an Amazon search link), so left out.",
+      "Speaking engagements on the events page (Caldwell University, Word & Life talk, Australia tour, Merton Society June 2027): talks hosted by others, not her offerings.",
+      "PBS Religion & Ethics NewsWeekly segments on her videos page: journalism, not her teaching; some are on political topics.",
+      "Kripalu programme 'Maintaining a Contemplative Calm in a Chaotic Time' (28-30 Nov 2025): past, and not linked from her own site.",
+      "Benedictine Footprints Pilgrimage (https://www.judithvalente.com/benedictine-footprints-pilgrimage/): the page still shows the 2025 dates and only says it will run again; a retreat needs dates after 12 Nov 2026 (lead, 10 Nov 2026)."
+    ]
+  },
+  "images_final": true
+}

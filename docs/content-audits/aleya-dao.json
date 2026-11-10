@@ -1,0 +1,221 @@
+{
+  "healer": {
+    "healer_slug": "aleya-dao",
+    "location_source": "https://www.aleyadao.com/mystical-sounds/contact/",
+    "create": {
+      "name": "Aleya Dao",
+      "bio": "Aleya Dao is a sound healer and spiritual guide who lives on ten acres in the Sierra Nevada foothills of Central California, a little south of Yosemite. After studying at Lewis and Clark she trained in Oriental medicine in Santa Fe, then practised for several years in Telluride and later in Santa Barbara. Her teaching dates from 2001, when an experience on a sound table during a session changed how she perceived the world; she describes a lasting awareness of other realms and of angelic voices from that point on.\n\nHer method is the subject of Seven Cups of Consciousness, a New World Library title and since translated into three further languages, which offers seven principles for working with the higher self and the energy fields around a person. Much of her work reaches people through Cups of Consciousness, a library of more than two thousand short guided audio meditations sent out by subscription, alongside live online group sessions every three weeks, an Empowered Empath course and recorded master classes. She sings and tones on nine sound healing albums, sees clients one to one, trains practitioners in her method over two years, and in spring hosts small private retreats on her land, with sessions in a sun room of crystal bowls.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Prather, California",
+      "country": "United States",
+      "subjects": [
+        "energy-medicine",
+        "sound-healing",
+        "meditation"
+      ],
+      "website_url": "https://www.aleyadao.com/",
+      "booking_url": "https://www.aleyadao.com/mystical-sounds/about-private-sessions/",
+      "youtube_url": "https://www.youtube.com/@aleyadao",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.aleyadao.com/uploads/pics/new-images-11-20/Aleya-Laughing-Headshot-01-23.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "About Aleya Dao And Her Offerings | Covering The Basics",
+      "url": "https://www.youtube.com/watch?v=2HNpYRkR8Vc",
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "channel": "Cups of Consciousness"
+    },
+    {
+      "title": "Aleya's Book Seven Cups of Consciousness | Covering The Basics",
+      "url": "https://www.youtube.com/watch?v=5lYn_4Q1u1c",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Cups of Consciousness"
+    },
+    {
+      "title": "How To Ride Emotions Like Waves Of Energy | Introduction: Surf Your Emotions | Detailed Techniques",
+      "url": "https://www.youtube.com/watch?v=18vfauJw4wI",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "channel": "Cups of Consciousness"
+    }
+  ],
+  "books": [
+    {
+      "title": "Seven Cups of Consciousness: Change Your Life by Connecting to the Higher Realms",
+      "slug": "seven-cups-of-consciousness",
+      "author": "Aleya Dao",
+      "asin": "160868332X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her book lays out seven principles for working with the higher self and with the energy fields that she sees as shaping daily life. It mixes personal stories with step-by-step practices that readers can try on their own.",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/160868332X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Cups of Consciousness Daily Meditations",
+      "url": "https://www.aleyadao.com/catalog/products/Cups-of-Consciousness-Guided-Spiritual-Meditations/77/",
+      "description": "A subscription that sends three or five short guided audio meditations a week by email, with sound and toning woven in. A higher tier adds her live online group sessions, and a yearly option opens the full archive of past recordings.",
+      "price": "$15.00 USD / mo (daily); $30.00 USD / mo (with TALL Cups); $900.00 USD (1 year plus archive)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://www.aleyadao.com/dynamic/images/products/thumbs/cr500x500smallcup-Square.jpg"
+    },
+    {
+      "title": "TALL Cups of Consciousness Live Sessions",
+      "url": "https://www.aleyadao.com/catalog/products/Upcoming-TALL-Cups-of-Consciousness-Sessions/591/",
+      "description": "An hour-long live energy balancing session on video call, held every three weeks and recorded for those who listen later. She guides the group into a deep meditative state and works with their energy fields.",
+      "price": "$15.00 - $18.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://www.aleyadao.com/dynamic/images/products/thumbs/cr500x500smallcup-Square.jpg"
+    },
+    {
+      "title": "The Empowered Empath Course",
+      "url": "https://www.aleyadao.com/catalog/products/The-Empowered-Empath-6-Week-Course/700/",
+      "description": "A recorded course of about seven hours for people who feel other people's emotions strongly. It teaches practices and concepts for clearing what they pick up and for working with that sensitivity.",
+      "price": "$250.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://www.aleyadao.com/dynamic/images/products/thumbs/cr500x500smallcup-Square.jpg"
+    },
+    {
+      "title": "Private Sessions with Aleya",
+      "url": "https://www.aleyadao.com/mystical-sounds/about-private-sessions/",
+      "description": "One-to-one sessions in which she tunes into a client's energy fields and passes information to their higher self, framing the client as the one who makes the change. Sessions are booked through her booking page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "channelled-teachings"
+      ],
+      "image": "https://www.aleyadao.com/uploads/pics/large_uploads/canstockphoto260006_1520703388.jpg"
+    },
+    {
+      "title": "Private Retreat on the Land",
+      "url": "https://www.aleyadao.com/feature/Private-Retreat/",
+      "description": "Three nights on her ten acres in the Central California foothills, open from February to May to a single guest or to groups of no more than four. It includes two in-person sessions of two hours, with calls by phone or Zoom before and after the stay.",
+      "price": "$7,200",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://www.aleyadao.com/uploads/pics/new-images-11-20/Aleya-Laughing-Headshot-01-23.jpg"
+    },
+    {
+      "title": "Deep Energetic Dive Intensives (recordings)",
+      "url": "https://www.aleyadao.com/catalog/products/Deep-Energetic-Dive-Intensives/4/",
+      "description": "Video and audio downloads of her past Deep Dive intensives. They can be watched or listened to at home in place of the live retreat.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ],
+      "image": "https://www.aleyadao.com/dynamic/images/products/thumbs/cr500x500smallcup-Square.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Cups of Consciousness Meditations",
+      "url": "https://www.aleyadao.com/mystical-sounds/free-meditations/",
+      "description": "A free page of over 75 of her audio meditations, together with her Conscious Conversations videos. Access is given after entering an email address.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "image": "https://www.aleyadao.com/images/header/cups.png"
+    },
+    {
+      "title": "Cups of Consciousness Podcast",
+      "url": "https://www.buzzsprout.com/2139076/follow",
+      "description": "Her free podcast, linked from her events page, with talks and conversations on her work with the higher realms.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "spirituality",
+        "energy-medicine"
+      ],
+      "image": "https://www.buzzsprout.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsiZGF0YSI6NzcxMTMwNTEsInB1ciI6ImJsb2JfaWQifX0=--1fa766a2efe87e9038e98c4e6c2053b6eecf1442/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzE0MDAsMTQwMCx7ImNyb3AiOiJjZW50cmUifV0sImRlZmF1bHRfdXJsIjoiaHR0cHM6Ly93d3cuYnV6enNwcm91dC5jb20vaW1hZ2VzL2FydHdvcmtzX2xhcmdlLmpwZyIsInNhdmVyIjp7InF1YWxpdHkiOjYwfSwiY29sb3Vyc3BhY2UiOiJzcmdiIn0sInB1ciI6InZhcmlhdGlvbiJ9fQ==--2454c883dcd12a10059f243d8ea753f8b5c1613e/Aleya%20Podcast%20Artwork.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 375,
+    "hub_url": "https://www.soundstrue.com/collections/authors-aleya-dao",
+    "tier_evidence": "YouTube @aleyadao: unreadable (channel pages are not fetched from this machine, 10 Nov 2026); Instagram aleya.dao and Facebook CupsOfConsciousness: not readable without logging in, not tried → total unknown → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.aleyadao.com/mystical-sounds/contact/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Counts unreadable for her main accounts (YouTube, Instagram, Facebook); tier set to local_hero without numbers.",
+      "Base: her contact page publishes a mailing address in Prather, California (a PO box; city only used here), and her about page says she lives in the Sierra Nevada foothills south of Yosemite. Prather is a small unincorporated community, probably under 5,000 people: please map it.",
+      "Regional: Central California foothills (Fresno County area), where Spiritpedia has few teachers.",
+      "Health framing to watch: she holds a Doctor of Oriental Medicine and acupuncture licence and her home page mentions physical, mental and emotional health; the bio names the training but makes no health claims, and condition-led items were left out.",
+      "Two YouTube IDs on her site (OUv8JkKAlp8, ODCW2ID0RqI) are music and toning samples, so they were left out under the no-music-only rule; lengths of the three kept videos could not be checked without opening the watch pages.",
+      "Book ASIN 160868332X taken from the Amazon link on her own home page (not opened), not confirmed elsewhere; cover from her own site.",
+      "No Sounds True link (names only); no hub named on her site, so teaches_at is empty.",
+      "Several offerings are recordings or subscriptions sold on her own store; the practitioner-led sessions with her trainees were not listed as her offering."
+    ],
+    "left_out": [
+      "Wise Fire - Peri-Menopause and Menopause Master Class (14 Nov 2026): names a condition (health rule).",
+      "Energy Healing Downloads and individual 'issue' meditations: framed around healing specific problems; left out as borderline under the health rule.",
+      "Hybrid, Dimensional Merges, Walk-In Class: mentions bodies not responding to foods or medicines; left out as borderline.",
+      "Aleya's Music albums: music only, not teaching.",
+      "Seven Cups of Consciousness practitioner training: no price or dates published on a page of its own.",
+      "One-on-one sessions with her trained practitioners: other people's sessions, not hers."
+    ]
+  },
+  "images_final": true
+}

@@ -410,3 +410,31 @@ step, never in the same command.
 When finished, reply with one line per teacher:
 `<rank> <name> → <slug>.json | tier | V/B/O/F counts | email yes/contact form | bio check OK | flags: n`
 or `<rank> <name> → SKIPPED: reason`.
+
+---
+
+# Kind: yoga-school (ranks 501–540; owner, 9 Nov 2026)
+
+Each lead is a **target city** (`target_city`, `target_country`). Find **one** physical yoga school there, research it and list it as a **School**. The aim is to spread schools across countries for Near You.
+
+- **What counts:** a school or studio with a physical home that teaches yoga as a spiritual practice and **trains teachers** (a teacher training such as 200- or 300-hour, or a lineage school such as Iyengar, Ashtanga, Sivananda, Kundalini or Satyananda), with its own website and a contact route.
+- **Prefer** a school with a named lineage or founder, current trainings or retreats, and a teachers page.
+- **Not in scope:** fitness-led chains (hot-yoga gyms, CorePower-style), franchises, pure retreat resorts and online-only brands.
+- **Finding it:** web search only, at most 3 searches per city, for example "yoga teacher training <city>" or "<lineage> yoga school <city>".
+  - **Never use directories as sources** (Yoga Alliance, BookYogaRetreats, Tripaneer, Retreat Guru listings, Google Maps, review sites).
+  - Open the school's own site after its robots.txt.
+  - If the first good candidate is blocked or thin, try one more. Then skip the city with a reason.
+- **Before researching:** check the school isn't already on Spiritpedia (the dev names file) or planned (grep docs/content-audits/*.json for its domain).
+- **Plan:** `create.entity_type` "school", `availability` "local" or "local_online", `founded_year` if published, `city` and `country` (its own address, at city level), `subjects` starting with `yoga`.
+  - **Slug:** the school's name, kebab-case.
+  - **Bio:** own words: lineage, founder or directors, what it teaches (classes, trainings, retreats), where.
+- **Items:**
+  - **offerings:** its teacher trainings (`product_type` "course"; dated ones only if they start after 12 Nov 2026), retreats (`retreat`, with dates) and class passes or memberships (`membership`), each with its own URL, priced exactly as published;
+  - **free resources:** free classes or videos on its site;
+  - **videos:** as described above, never from a channel page.
+- **Photo:** the studio, building or practice room, or its logo, from its own site. Look at each one.
+- **Teachers:** write `docs/content-audits/<school-slug>-teachers.json` as for centres (`{ "hub", "links": [{ "teacher", "role", "evidence" }] }`).
+  - Link only teachers already on Spiritpedia (the dev names file) whom the school's own site names as teaching or founding there.
+  - Put the school's other named lead teachers in a flag starting "Possible future listings:" (names only).
+- **Health and fitness rule:** leave out therapeutic, injury or condition-led items (yoga therapy for back pain and the like), prenatal medical claims and weight loss. Skip a school sold mainly as fitness or therapy.
+- `sprint.kind` "yoga-school"; `sprint.rank` the lead's rank. A skipped city gets `skipped/yoga-<city>.json` with the reason.

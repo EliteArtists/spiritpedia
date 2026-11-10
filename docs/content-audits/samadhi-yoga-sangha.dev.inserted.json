@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1160,
+    "healer_slug": "samadhi-yoga-sangha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5fc2c4ab-a911-4b4e-9348-cc11daef7f43",
+      "slug": "seek-samadhi-200-hour-yoga-teacher-certification-course-spring-2027",
+      "title": "Seek Samadhi 200 Hour Yoga Teacher Certification Course (Spring 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "53b2c726-57d3-4e08-85e3-f2a89a09a557",
+      "slug": "embody-samadhi-300-hour-advanced-teacher-training-2027",
+      "title": "Embody Samadhi 300 Hour Advanced Teacher Training (2027)"
+    },
+    {
+      "table": "courses",
+      "id": "401ce55a-f82a-440b-8052-93f252b65bbf",
+      "slug": "88-hour-yoga-immersion-spring-2027",
+      "title": "88-Hour Yoga Immersion (Spring 2027)"
+    },
+    {
+      "table": "courses",
+      "id": "3577414d-4d2e-4ba5-93af-66a12446179b",
+      "slug": "vital-renewal-retreat-costa-rica",
+      "title": "Vital Renewal Retreat, Costa Rica"
+    },
+    {
+      "table": "courses",
+      "id": "ebcac3e4-2cbe-4b5c-8893-e859a678d4ec",
+      "slug": "sangha-monthly-membership",
+      "title": "Sangha Monthly Membership"
+    }
+  ],
+  "at": "2026-11-10T02:50:54.843Z"
+}

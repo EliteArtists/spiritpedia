@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1109,
+    "healer_slug": "deborah-gair"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8a8396b4-1f05-42b5-96e5-b789b5160040",
+      "slug": "quantum-touch-private-sessions",
+      "title": "Quantum-Touch private sessions"
+    },
+    {
+      "table": "courses",
+      "id": "da3bd3e2-4218-47bf-b8c9-e5c0c500fa1b",
+      "slug": "quantum-touch-level-1-becoming-energized-virtual",
+      "title": "Quantum-Touch Level 1: Becoming Energized (virtual)"
+    },
+    {
+      "table": "courses",
+      "id": "22ec1765-8cfd-48b7-9781-5fdb3502734c",
+      "slug": "quantum-touch-level-5-becoming-miraculous-2",
+      "title": "Quantum-Touch Level 5: Becoming Miraculous"
+    },
+    {
+      "table": "courses",
+      "id": "c83033c8-357a-4d31-a662-93f4269edb00",
+      "slug": "black-whole-healing-sessions-and-course",
+      "title": "Black Whole Healing sessions and course"
+    },
+    {
+      "table": "courses",
+      "id": "26eed8a0-6cfa-425d-9155-d3426135892d",
+      "slug": "infinity-vortex-sessions-and-training",
+      "title": "Infinity Vortex sessions and training"
+    }
+  ],
+  "at": "2026-11-10T00:27:14.114Z"
+}

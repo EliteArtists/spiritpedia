@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1145,
+    "healer_slug": "judith-valente"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8691,
+      "slug": "judy-valente-spiritual-journey-monastic-values",
+      "title": "Judy Valente - Spiritual Journey - Monastic Values"
+    },
+    {
+      "table": "books",
+      "id": 2354,
+      "slug": "the-italian-soul-judith-valente",
+      "title": "The Italian Soul: How to Savor the Full Joys of Life"
+    },
+    {
+      "table": "books",
+      "id": 2355,
+      "slug": "how-to-be-a-contemplative-judith-valente",
+      "title": "How to Be a Contemplative"
+    },
+    {
+      "table": "books",
+      "id": 2356,
+      "slug": "how-to-live-judith-valente",
+      "title": "How to Live: What the Rule of St. Benedict Teaches Us About Happiness, Meaning, and Community"
+    }
+  ],
+  "at": "2026-11-10T01:27:35.738Z"
+}

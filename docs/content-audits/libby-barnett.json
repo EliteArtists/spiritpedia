@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "libby-barnett",
+    "location_source": "https://www.reikienergy.com/reiki-class-schedule/",
+    "create": {
+      "name": "Libby Barnett",
+      "bio": "Libby Barnett is a Reiki Master teacher in the traditional Usui system who has been practising since 1979. She first learned from John Harvey Gray, one of the twenty-two masters trained by Hawayo Takata, and was later initiated as a Reiki Master in 1989 through Judy-Carol Stewart, another line back to Takata. Before Reiki became her main work she trained as a social worker at Simmons and worked at Massachusetts General Hospital, and she says that counselling background still shapes the way she teaches. In 1999 she travelled to Kyoto and climbed Mount Kurama to learn more about Mikao Usui and the roots of the practice.\n\nHer teaching is arranged as a ladder of certification classes, each a single day: Reiki I for self-practice and practice on others, Reiki II with its three symbols and distant work, and then three master levels for those who want to attune and train students of their own. Most classes now run live on Zoom, with in-person weekends in Asheville, North Carolina, and residential programmes at Kripalu. She has taught many thousands of students over four decades, including staff at New England hospitals, and co-wrote a widely read book on bringing Reiki into home, hospital and hospice care.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Asheville, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "spirituality"
+      ],
+      "website_url": "https://www.reikienergy.com/",
+      "booking_url": "https://www.reikienergy.com/reiki-class-schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/reikimaster.libbybarnett",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "reiki@reikienergy.com",
+      "image_urls": [
+        "https://www.reikienergy.com/wp-content/uploads/2020/12/LBarnett__0004s_0000_Libby-Headshot.webp"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki I Certification Class",
+      "url": "https://www.reikienergy.com/reiki-i/",
+      "description": "A one-day first-degree class covering the history of Reiki, how the hands-on practice works and how to give it to yourself and others. Students receive the Reiki I attunement, a notebook and a certificate. Held online or in person.",
+      "price": "Online $150; in person $200",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    },
+    {
+      "title": "Reiki II Certification Class",
+      "url": "https://www.reikienergy.com/reiki-ii/",
+      "description": "The second-degree class introduces the three traditional Reiki II symbols and how to use them, including sending Reiki at a distance. There is plenty of supervised hands-on practice, and students leave with the second-degree attunement and certificate.",
+      "price": "Online $250; in person $300",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    },
+    {
+      "title": "Reiki Master Class",
+      "url": "https://www.reikienergy.com/reiki-class-descriptions/reiki-master-training/",
+      "description": "A one-day online class open to Reiki II graduates from any teacher. Students receive the master attunement and symbol, learn to give the Reiki I attunement and are given further tools for personal and spiritual growth.",
+      "price": "Online $395; in person $445",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    },
+    {
+      "title": "Reiki Master Teacher Class",
+      "url": "https://www.reikienergy.com/reiki-class-descriptions/reiki-master-teacher/",
+      "description": "A one-day class that prepares Reiki Masters to teach Reiki I and II themselves, including the Reiki II attunement. It comes with teaching notebooks, a teacher's manual and practical advice on building a practice.",
+      "price": "Online $450; in person $500",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    },
+    {
+      "title": "Reiki Master of Masters Class",
+      "url": "https://www.reikienergy.com/reiki-class-descriptions/reiki-master-of-masters/",
+      "description": "A half-day class, the last level in her sequence, in which students learn to give the master attunement and run master trainings of their own. It ends with a personal ceremony and can also be booked privately.",
+      "price": "Online $500; in person $550",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 592,
+    "hub_url": "https://kripalu.org/people/libby-barnett",
+    "tier_evidence": "No YouTube channel of her own found on her site; Facebook page reikimaster.libbybarnett: count not readable without login (not tried) → 0 readable → local_hero. Site states 14,000-16,000+ students taught over decades (below the luminary threshold).",
+    "email": "yes",
+    "email_source": "https://www.reikienergy.com/contact/",
+    "contact_form_url": "https://www.reikienergy.com/contact/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Website reikienergy.com taken from her Kripalu people page link; robots.txt read (Crawl-delay 10 respected).",
+      "Kripalu named on: https://www.reikienergy.com/ (banner 'Kripalu August 13 - 20, 2027 Reiki I, Reiki II & Reiki Master - Registration Coming Soon') and https://www.reikienergy.com/reiki-class-schedule/ ('To register for classes at Kripalu…').",
+      "Base: no 'lives in' statement; her in-person classes are listed in Asheville, NC (class schedule page) and her published phone number is a western North Carolina number. Recorded as Asheville, North Carolina; owner may wish to confirm. Regional: Asheville, North Carolina.",
+      "Health framing: her own class pages say Reiki helps 'manage pain', 'strengthen your immune system' and 'reduce anxiety'. These claims were left out of all descriptions; the classes themselves are Reiki training. Owner may wish to review given how much of the site's framing is health-led.",
+      "Only one photo used: the second site image (LibbyTop) shows her giving Reiki to another person, so not a single-person shot.",
+      "Prices are shown on the class schedule page in dollars without a currency code; written as published.",
+      "Contact form and email are on the same contact page."
+    ],
+    "left_out": [
+      "Book 'Reiki Energy Medicine: Bringing Healing Touch into Home, Hospital, and Hospice' (with Maggie Babb): left out under the health rule, as the title is framed on hospital and hospice care and the back-cover blurb on her book page says 'All conditions of physical disease are rooted in this energy system'. Its ISBN 0892816333 appears in the Amazon link on https://www.reikienergy.com/; the owner may choose to add it.",
+      "Reiki Treatment Sessions and distant Reiki sessions: framed on stress, pain and healing, left out.",
+      "Dated class dates (Asheville 20-22 Nov 2026; online 5-6 Dec 2026): classes added undated, as they repeat.",
+      "Kripalu programme 13-20 Aug 2027: registration not yet open and no Kripalu programme URL on her site, so not added as an offering.",
+      "A 4.5-minute YouTube interview linked from the Reiki I page is with a hospital resiliency programme director about Zoom teaching; not added (third-party, clinical setting)."
+    ]
+  },
+  "images_final": true
+}

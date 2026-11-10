@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "bia-de-castro-oliveira",
+    "location_source": "https://biadeoliveira.com.br/",
+    "create": {
+      "name": "Bia de Castro Oliveira",
+      "bio": "Bia de Castro Oliveira is a São Paulo teacher of Quantum-Touch, known in Brazil as Toque Quântico, and a reader of tarot, astrology and numerology. Trained as an educator, she began studying esoteric subjects in her early teens under a mentor who introduced her to Theosophy, Spiritism, the Kabbalah and the symbolic arts. In the 1990s she lived in California, where she trained in several energy and tapping methods, and after returning to Brazil she became one of the first Quantum-Touch instructors there. She serves as the method's Portuguese-language liaison, is accredited to teach several of its levels and trains new Level 1 instructors, and is also a Reiki and Seichim master.\n\nShe runs the Quantum-Touch workshop series in São Paulo, from the two-day Becoming Energized course, which teaches breathing and body-awareness techniques for focusing life-force energy, through the advanced levels, holding them at a holistic centre in the city. Alongside this she gives private consultations: tarot used as a tool for self-knowledge rather than fortune-telling, natal astrology charts with solar returns and transits, and numerology readings, in person in São Paulo or online by video call. She works in Portuguese and English and has explained Toque Quântico on Brazilian television and radio.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "São Paulo",
+      "country": "Brazil",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "astrology"
+      ],
+      "website_url": "https://biadeoliveira.com.br/",
+      "booking_url": "https://biadeoliveira.com.br/#cursos",
+      "youtube_url": "https://www.youtube.com/@ToqueQuantico",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "biadecastrooliveira@gmail.com",
+      "image_urls": [
+        "https://biadeoliveira.com.br/template/assets/images/bia-portrait.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Toque Quântico",
+      "url": "https://www.youtube.com/watch?v=AOO2BFyupvs",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "Todo Seu"
+    },
+    {
+      "title": "Entrevista - Toque Quântico - Bia de Oliveira - 05/10/2012",
+      "url": "https://www.youtube.com/watch?v=rsvKIEaevP8",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "Todo Seu"
+    },
+    {
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Toque Quântico 1",
+      "url": "https://www.youtube.com/watch?v=31DAfPBGF2Q",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "channel": "ToqueQuantico"
+    },
+    {
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Toque Quântico 2",
+      "url": "https://www.youtube.com/watch?v=nPXYZ2Cqu1E",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "breathwork"
+      ],
+      "channel": "ToqueQuantico"
+    },
+    {
+      "title": "Programa Espaço dos Aromas - Rádio Mundial - Saúde Autocriada",
+      "url": "https://www.youtube.com/watch?v=h1ul_1HqXUg",
+      "subjects": [
+        "quantum-touch",
+        "self-healing"
+      ],
+      "channel": "ToqueQuantico"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch Nível 1: Tornando-se Energizado (Becoming Energized)",
+      "url": "https://biadeoliveira.com.br/#cursos",
+      "description": "Bia's two-day foundation workshop in São Paulo, taught in Portuguese. Students learn to combine breathing and body awareness to focus and amplify life-force energy, the base for all later Quantum-Touch levels.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "breathwork"
+      ],
+      "image": "https://biadeoliveira.com.br/template/assets/images/quantum-touch.png"
+    },
+    {
+      "title": "Consulta de Tarot (Leitura do Inconsciente)",
+      "url": "https://biadeoliveira.com.br/#taro",
+      "description": "A tarot consultation of about an hour and a quarter, approached as a way into the unconscious for self-knowledge and clearer decisions rather than prediction. In person in São Paulo or online by video call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://biadeoliveira.com.br/template/assets/images/quantum-touch.png"
+    },
+    {
+      "title": "Consulta de Astrologia (Mapa Astrológico)",
+      "url": "https://biadeoliveira.com.br/#astrologia",
+      "description": "A recorded reading of about ninety minutes covering the natal chart, the solar return for the year ahead and current planetary transits.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ],
+      "image": "https://biadeoliveira.com.br/template/assets/images/quantum-touch.png"
+    },
+    {
+      "title": "Consulta de Numerologia",
+      "url": "https://biadeoliveira.com.br/#numerologia",
+      "description": "A numerology reading of the birth chart, the personal year ahead and daily vibration, offered in person or online.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://biadeoliveira.com.br/template/assets/images/quantum-touch.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 91,
+    "hub": null,
+    "tier_evidence": "No readable follower counts (Instagram and Facebook group linked but never fetched; YouTube @ToqueQuantico unreadable, consent page, 9 Nov 2026) → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://biadeoliveira.com.br/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 2 source(s)",
+    "flags": [
+      "One-page site: offering URLs are the page's own section anchors (#cursos, #taro, #astrologia, #numerologia); each item has no separate page.",
+      "Level 1 dates read '14 e 15 de Novembro (Inscrições Abertas)' with no year; taken as 2026 (site footer © 2026, registration open). Starts after 12 Nov 2026. The owner may want to drop it once past.",
+      "Directory lists toquequantico.com.br as a second site; it gave no response, so only biadeoliveira.com.br was used.",
+      "Site is in Portuguese; titles kept as published, with English in brackets for Level 1.",
+      "Her California training named on the site includes TIR, TFT, EFT and TAT (trauma-related methods); summarised as 'energy and tapping methods', no condition named.",
+      "Health rule: the site speaks of 'curas' and Level 4 is described around emotional causes of chronic pain; Level 2-5 (no dates) and the video 'Quantum-Touch _ O Poder de Curar' (on another channel, 'healing' framing) left out. A testimonial about an asthma crisis not used.",
+      "Second photo (Quantum-Touch profile) is only 166x200 px, so not used; one photo only.",
+      "Only one headshot; video titles are TV/radio interviews from 2012 or so, uploaded to her own channel (ToqueQuantico) and the Todo Seu programme channel.",
+      "Regional: São Paulo, Brazil (no Spiritpedia teachers known there)."
+    ],
+    "left_out": [
+      "Quantum-Touch Levels 2-5: no dates ('Em breve'); Level 4 framed on chronic pain.",
+      "Video Nqe_97Ymk0c 'Quantum-Touch _ O Poder de Curar' (channel Arrumando Gavetas por Ananda Porto): healing-claim title and not her channel.",
+      "Prices: none published ('Sob Consulta')."
+    ]
+  },
+  "images_final": true
+}

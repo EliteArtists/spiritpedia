@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "miami-life-center",
+    "location_source": "https://miamilifecenter.com/contact",
+    "create": {
+      "name": "Miami Life Center",
+      "bio": "Miami Life Center is an Ashtanga Yoga shala founded by the married teachers Kino MacGregor and Tim Feldmann, both of whom trained in Mysore under K. Pattabhi Jois and later R. Sharath Jois, and hold certification from that lineage. The school traces its home in the city to a South Beach shala that opened in 2006; since 2020 its main rooms have been in the Wynwood and Overtown area, at a space it calls the Miami Yoga Garage. Its resident Mysore teachers, among them the directors Joseph Armstrong and Edgar Navarro, came up through a two-year apprenticeship at the centre, practising daily, assisting classes and reading yogic texts before taking students of their own.\n\nThe heart of the timetable is self-paced Mysore practice, alongside led classes, vinyasa sessions and observance of moon days, with some classes also streamed online. Twice a year Kino and Tim run a Mysore season of morning practice, chanting and afternoon workshops on the method and its roots. Each autumn a month-long intensive, meeting Yoga Alliance's 200-hour standard, covers the Primary Series, Sanskrit vinyasa counting, breathing practice and Patanjali's Yoga Sutras. Shorter trainings and visiting-teacher workshops fill the rest of the year.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2006,
+      "availability": "local_online",
+      "city": "Miami, Florida",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://miamilifecenter.com/",
+      "booking_url": "https://miamilifecenter.com/prices",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@miamilifecenter.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5ec3f48699dedd7547fa3d84/1589984882786-YA87I322MWEMWJXU4UKH/563A0385SM.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ashtanga Intensive with Joseph Armstrong and Edgar Navarro",
+      "url": "https://miamilifecenter.com/ashtanga-intensive-with-joseph-armstrong-edgar-navarro",
+      "description": "A month of daily Mysore practice and study at the shala, led by its two directors and resident faculty. Sessions cover the Primary Series, breathing practice, Sanskrit vinyasa counting, chanting and the Yoga Sutras, and the course meets Yoga Alliance's 200-hour standard.",
+      "price": "Regular Tuition: $2,700 (Early Bird Tuition: $2,250, available through February 2, 2027)",
+      "product_type": "course",
+      "start_date": "2027-10-02",
+      "end_date": "2027-10-30",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ec3f48699dedd7547fa3d84/9868d83b-748d-4e4f-bc0f-e238f17a9d5c/IMG_3613.JPG"
+    },
+    {
+      "title": "January 2027 Miami Mysore Season with Kino and Tim",
+      "url": "https://miamilifecenter.com/mysoreseasonjanuary2027",
+      "description": "One to three weeks of morning Mysore-style practice with Kino MacGregor and Tim Feldmann, a led Primary Series each Saturday, and optional afternoon workshops on asana and the Ashtanga method. Open to students of any level who already know the Mysore format.",
+      "price": "1 week of Mysore Style + Led Primary on Saturday: $400 MLC Members | $450 Non-members",
+      "product_type": "course",
+      "start_date": "2027-01-11",
+      "end_date": "2027-01-30",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec3f48699dedd7547fa3d84/t/6789368d7940543c5a86edc9/1787599156342/DSC02184+%281%29.jpg?format=1500w"
+    },
+    {
+      "title": "Summer 2027 Miami Mysore Season with Kino and Tim",
+      "url": "https://miamilifecenter.com/mysoreseasonsummer2027",
+      "description": "Up to four weeks of morning practice with the founders, with chanting and Puranas sessions and a different afternoon theme each week, from the roots of vinyasa krama to an assisting school. Students can join for a single week or the full programme.",
+      "price": "Total Program Cost: $3,300",
+      "product_type": "course",
+      "start_date": "2027-06-21",
+      "end_date": "2027-07-17",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec3f48699dedd7547fa3d84/t/6aa95c5bd283af4551318b24/1789484123903/A4T00258.jpeg?format=1500w"
+    },
+    {
+      "title": "All Access Membership (Plus Mysore)",
+      "url": "https://miamilifecenter.com/prices",
+      "description": "A monthly auto-renewing pass to the studio's timetable, including the Mysore programme. Class passes and online-only options are also listed on the same page.",
+      "price": "$185",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec3f48699dedd7547fa3d84/t/6813e7424bbb2150bba40529/1746134850707/_MG_5909.JPG?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 521,
+    "hub": null,
+    "tier_evidence": "YouTube not read (consent rule); Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://miamilifecenter.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Found by web search for Miami yoga teacher training; the school's own site only (BookRetreats results ignored).",
+      "Email info@miamilifecenter.com is the studio's office inbox.",
+      "Blocked: https://miamilifecenter.com/apprenticeship23 answered 401, so per the refusal rule no further pages were fetched from the site (the podcast page and the apprenticeship details were not read).",
+      "founded_year 2006 is when the site says the South Beach shala opened; the centre may be older.",
+      "Kino MacGregor (kino-macgregor) is on Spiritpedia and is linked as founder in miami-life-center-teachers.json; Kino has a large personal following, so a possible editorial-stature override is for the owner.",
+      "Possible future listings: Tim Feldmann, Joseph Armstrong, Edgar Navarro, Esmeralda Lamas, Eddy Rivero.",
+      "No YouTube videos are embedded on the pages read, so videos is empty; only one usable studio photo (a class in the practice room).",
+      "The 2027 Mysore seasons price by the week; the January price shown is for one week, as published."
+    ],
+    "left_out": [
+      "50-Hour PranaScience pranayama teacher training: framed around clinical research and cancer survivorship (health rule).",
+      "10-Hour Yoga Drills Teacher Training (25-29 Jan 2027): mobility, strength and conditioning focus (fitness rule).",
+      "Pilates Plug Program, Rocket Vinyasa and Yin trainings: not opened (refusal rule stopped fetching).",
+      "Founders' photos and a stock-like Krishnamacharya image: not the studio."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1141,
+    "healer_slug": "anjie-cho"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "376696b0-c586-4f71-abc3-3c07530b6650",
+      "slug": "mindful-ikebana-at-the-isamu-noguchi-foundation-and-garden-museum",
+      "title": "Mindful Ikebana at the Isamu Noguchi Foundation and Garden Museum"
+    },
+    {
+      "table": "courses",
+      "id": "3fb9cf86-ffc0-4d22-bf9e-91b608614aa9",
+      "slug": "one-to-one-feng-shui-session-with-anjie-cho",
+      "title": "One-to-One Feng Shui Session with Anjie Cho"
+    },
+    {
+      "table": "courses",
+      "id": "7379f49b-086c-41c4-adbd-4d58d9b8fcfd",
+      "slug": "mindful-design-feng-shui-certification-program",
+      "title": "Mindful Design Feng Shui Certification Program"
+    },
+    {
+      "table": "free_resources",
+      "id": "f77bc28d-32bf-4721-8f96-7a6a2be6ea62",
+      "slug": "holistic-spaces-podcast",
+      "title": "Holistic Spaces Podcast"
+    }
+  ],
+  "at": "2026-11-10T01:22:07.352Z"
+}

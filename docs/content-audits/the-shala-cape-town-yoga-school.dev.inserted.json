@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1152,
+    "healer_slug": "the-shala-cape-town-yoga-school"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "77626ec0-7cbd-4ad3-a8df-d9edc1004825",
+      "slug": "200-hour-teacher-training-2027",
+      "title": "200-Hour Teacher Training 2027"
+    },
+    {
+      "table": "courses",
+      "id": "b8de0d3b-8f76-4fe0-986b-53e76231a2d1",
+      "slug": "in-studio-classes-and-memberships",
+      "title": "In-studio classes and memberships"
+    },
+    {
+      "table": "courses",
+      "id": "f907a5a4-f54f-4483-9c4f-d1ed2f7bb362",
+      "slug": "the-shala-online",
+      "title": "The Shala Online"
+    }
+  ],
+  "at": "2026-11-10T02:33:55.487Z"
+}

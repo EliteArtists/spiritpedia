@@ -1,0 +1,151 @@
+{
+  "healer": {
+    "healer_slug": "lhanang-rinpoche",
+    "location_source": "https://www.buddhistsandiego.com/contact-us",
+    "create": {
+      "name": "Lama Lhanang Rinpoche",
+      "bio": "Lama Lhanang Rinpoche is a Tibetan teacher of Vajrayana Buddhism in the Nyingma school's Longchen Nyingthig lineage. Born in Golok in north-eastern Tibet, he entered Thubten Chokor Ling Monastery as a child, where his root teacher Kyabje Orgyen Kusum Lingpa gave him a full monastic education and training in the yogic lineage of Anu Yoga. A monastery in eastern Tibet recognised him as a reincarnate lama, and he has studied with many masters, among them the Dalai Lama and the fourth Dodrupchen Rinpoche. Alongside Buddhist study he learnt Tibetan history, astrology, grammar, painting, sculpture, music and theatre.\n\nHe is the spiritual teacher of the Jigme Lingpa Center, a non-profit he inspired, which holds weekly practice in San Diego, on Zoom and in Tijuana, has affiliated groups in North America, Europe and Asia, and organises retreats across North America. His teaching is practical and warm, summed up in the phrase world peace through inner peace, and covers meditation, Anu Yoga, mantra and the Tibetan view of living and dying. He leads a meditation teacher training, and with his student Mordy Levine he has written accessible books on Buddhism, karma and the Tibetan Book of the Dead.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "San Diego, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "website_url": "https://www.buddhistsandiego.com/",
+      "booking_url": "https://www.buddhistsandiego.com/calendar",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "jigmelingpacenter@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5d50b357a0df7a000124120e/7064d528-32ac-472c-a48d-d7af7ff82cd5/Meditation+Teacher+Training+program+Lama+lhanang+pic+5+300.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5d50b357a0df7a000124120e/1566440423956-UQB3S41U495Z9TKYGI55/Lama+pic+%281%29.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "The Tibetan Book of the Dead for Beginners: A Guide to Living and Dying",
+      "slug": "the-tibetan-book-of-the-dead-for-beginners",
+      "author": "Lama Lhanang Rinpoche and Mordy Levine",
+      "asin": "1649631324",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to the teachings behind the Tibetan Book of the Dead, written with Mordy Levine. It covers karma, impermanence and the bardos, with practices for living well and for meeting death, one's own or a loved one's, with less fear.",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1649631324.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Beginner's Guide to Karma",
+      "slug": "the-beginners-guide-to-karma",
+      "author": "Lama Lhanang Rinpoche and Mordy Levine",
+      "asin": "1608688720",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A plain-language look at karma in Buddhist thought, setting aside popular myths and showing how actions, words and thoughts shape experience, with practices for building good karma.",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1608688720.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Buddha in You",
+      "slug": "the-buddha-in-you",
+      "author": "Lama Lhanang Rinpoche and Mordy Levine",
+      "asin": "1649633793",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A beginner's introduction to the main ideas of Buddhism in short chapters, each with a reflection, practice or meditation to try in daily life.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1649633793.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Meditation Teacher Training Program with Lama Lhanang",
+      "url": "https://www.buddhistsandiego.com/",
+      "description": "A training led by Lama Lhanang for students who want to teach meditation, covering how to present vipassana and shamatha practice to beginners and answer their questions, with practice teaching. It ends with a certificate and asks for a daily meditation practice throughout.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5d50b357a0df7a000124120e/t/686b422ea0397042725a6af0/1791227267338/Gold+and+White+Real+Estate+Agency+Logo+Template.png?format=1500w"
+    },
+    {
+      "title": "Buddhist Kit for Living & Dying",
+      "url": "https://www.buddhistsandiego.com/dana",
+      "description": "A boxed collection of written and recorded prayers, poems and readings, including his reading of the phowa practice, with his artwork and a small preloaded audio player.",
+      "price": "$45 (local pickup); $50 with US shipping; $65 shipped to Canada",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5d50b357a0df7a000124120e/t/686b422ea0397042725a6af0/1791227267338/Gold+and+White+Real+Estate+Agency+Logo+Template.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly Classes and Practice",
+      "url": "https://www.buddhistsandiego.com/calendar",
+      "description": "Free weekly classes and practice sessions with the Jigme Lingpa Center, held in person in San Diego on Sundays and on Zoom. The Zoom link is sent on request by email.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5d50b357a0df7a000124120e/t/686b422ea0397042725a6af0/1791227267338/Gold+and+White+Real+Estate+Agency+Logo+Template.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 342,
+    "hub_url": "https://www.soundstrue.com/collections/authors-lama-lhanang-rinpoche",
+    "tier_evidence": "No personal accounts found; Jigme Lingpa Center's Facebook pages are the centre's (not counted, not opened) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.buddhistsandiego.com/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. Site buddhistsandiego.com (Jigme Lingpa Center, which he leads) found via web search snippets and confirmed on the site itself; robots.txt read for the bare and www hosts.",
+      "Email jigmelingpacenter@gmail.com is the centre's inbox (centre he leads).",
+      "Slug drops 'Lama' but keeps 'Rinpoche', as for tenzin-wangyal-rinpoche and demo-rinpoche; owner may prefer another slug.",
+      "Teacher training is described on the home page only (no page of its own); its URL is the home page.",
+      "Book ASINs from the Amazon links on the centre's site (home and Tibetan Book of the Dead pages, links not opened); Tibetan Book of the Dead ISBN-13 9781649631329 matches. Not confirmed elsewhere. Co-author Mordy Levine.",
+      "The centre's secular phone-meditation programme is offered to people who are ill to reduce stress or anxiety (health framing); not used.",
+      "No videos: no YouTube IDs on his site.",
+      "The centre also has groups in Tijuana, Mexico (Casa Dakini and Jigme Lingpa Center Tijuana)."
+    ],
+    "left_out": [
+      "Teaching Meditation to Anyone in Need (phone programme): framed around illness, stress and anxiety.",
+      "Celebration of Awakening (19 Sep 2026): past.",
+      "Retreats in the US, Mexico and Canada and a Bardo self-paced course: no dated page on his site (the course was only seen on a retreat.guru listing, not opened)."
+    ]
+  },
+  "images_final": true
+}

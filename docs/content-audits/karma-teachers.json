@@ -1,0 +1,136 @@
+{
+  "healer": {
+    "healer_slug": "karma-teachers",
+    "location_source": "https://www.karmateachers.org/about",
+    "create": {
+      "name": "Karma Teachers",
+      "bio": "Karma Teachers is a registered non-profit yoga school in Vancouver, British Columbia. It began in 2011 as a studio in a heritage building in Gastown, where classes were offered free or by donation every day, and it has been preparing new yoga teachers since 2014. The school takes its name and outlook from karma yoga, the path of selfless service, and keeps its trainings within reach through full and partial scholarships. Since the pandemic it no longer runs its own Gastown room; in-person sessions now meet at Green Room Yoga on East Hastings Street, with live classes also taught online.\n\nIts core programme is a 200-hour Hatha training registered with Yoga Alliance, run as a six-week hybrid: weekend days in the studio and weekday evening sessions over video. Trainees study posture and alignment, sequencing, breathing practice, meditation and yoga nidra, and the history and ethics of yoga, including the yamas and niyamas, with Siddhartha set as reading before the course begins. A fully online version runs over twelve weeks. Past graduates can continue with shorter trainings such as a self-paced Yin course, and the school also arranges trainings in Rishikesh with an Indian partner school. The current lead trainers include Daniel Clement, Jennifer Clarke and Andrew Fredericks.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2011,
+      "availability": "local_online",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.karmateachers.org/",
+      "booking_url": "https://www.karmateachers.org/200-hr-teacher-training",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/62267c23bda791203657193c/82b2508c-c635-4890-a121-f5169e7fa870/130814_Karma_Teachers-273.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 Hour Hatha Yoga Teacher Training (Vancouver, hybrid)",
+      "url": "https://www.karmateachers.org/200-hr-teacher-training",
+      "description": "A six-week training registered with Yoga Alliance, with weekend days in the studio and three live online evenings a week, plus home study and practice teaching. It covers postures and alignment, sequencing, breathing practice, meditation and the philosophy and ethics of yoga. Cohorts are listed for January, March and May 2027, and partial scholarships are offered.",
+      "price": "$3000 Full Course Tuition",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62267c23bda791203657193c/fb3e0fa6-3ae2-4fb6-99ed-edc4b6919655/laughing-yoga-teachers.jpeg"
+    },
+    {
+      "title": "Online 200hr Yoga Teacher Training",
+      "url": "https://www.karmateachers.org/online-yoga-teacher-training",
+      "description": "The school's teacher training delivered wholly online over twelve weeks, in two-hour live evening sessions that mix practice, study and teaching drills. Every session is recorded for review, and the same reading list and manual are used as in the studio course.",
+      "price": "$1,700 ( plus GST & Manual ($25)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62267c23bda791203657193c/fb3e0fa6-3ae2-4fb6-99ed-edc4b6919655/laughing-yoga-teachers.jpeg"
+    },
+    {
+      "title": "Yin Yoga Teacher Training",
+      "url": "https://www.karmateachers.org/yin-yoga-teacher-training",
+      "description": "A 50-hour Yin course that can be taken at the student's own pace, open both to teachers and to keen practitioners. It looks at the yin and yang philosophy behind the style, long-held postures, breath and meditation, how to build a Yin class, and includes a teaching practicum.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/62267c23bda791203657193c/t/628eb2137151c62158cde922/1653509384433/unsplash-image-t809JJ6r9KA.jpg?format=1500w"
+    },
+    {
+      "title": "Traditional Yoga Teacher Training in India",
+      "url": "https://www.karmateachers.org/yoga-teacher-training-in-india",
+      "description": "Residential 200, 300 and 500-hour trainings in Rishikesh, arranged by Karma Teachers with the Maharishi Yoga Peeth school there. Lodging, vegetarian meals and outings to local temples are included, and a Karma Teachers trainer gives an orientation before departure.",
+      "price": "200 HR Starting at €1300 / $1503",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62267c23bda791203657193c/3870d999-a88b-4db6-bbf3-f56ea25e39f0/Screenshot+2026-01-02+at+4.19.53%E2%80%AFPM.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free and donation-based classes",
+      "url": "https://www.karmateachers.org/class-schedule",
+      "description": "In keeping with its non-profit aims, the school offers classes that are free or by donation, booked through its live class timetable.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62267c23bda791203657193c/e08c575e-2fc4-4bb4-b267-07f386bba937/yoga-mat-yoga-school-vancouver.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 517,
+    "hub": null,
+    "tier_evidence": "YouTube: no channel linked on its site; Instagram and Facebook never fetched; no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.karmateachers.org/contact",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Found by web search (Vancouver yoga teacher training); the search result was a Squarespace preview host (grouper-deer-gmpj.squarespace.com) whose sitemap points to www.karmateachers.org; robots.txt read on both hosts (standard Squarespace group, no Disallow: /).",
+      "Physical home is borderline: the school closed its own Gastown studio after the pandemic and now holds in-person sessions at a rented room, Green Room Yoga on East Hastings Street (named on its home and about pages). Owner to confirm this counts as a physical school.",
+      "No lineage school in the strict sense: modern Hatha training framed around karma yoga (selfless service); no founder is named on the pages read.",
+      "Only one photo used: a 2013 faculty group shot in the former Gastown practice room (the school's own image). Other images were stock-like (a mat being rolled), a graduation group or a 225 px logo.",
+      "Online 200hr training: the page lists cohorts only up to September-November 2026; no 2027 dates are published, so it is listed undated as a repeating course.",
+      "India training is run with a partner school in Rishikesh (Maharishi Yoga Peeth); listed because the school's own page sells it. Price shown is the 200-hour starting price as published.",
+      "No published email (no mailto on any page read); contact form used.",
+      "Regional: Vancouver adds a Canadian west-coast school for Near You.",
+      "Possible future listings: Daniel Clement, Jennifer Clarke, Andrew Fredericks, Kevin Naidoo, Megha Ghai.",
+      "No faculty member is on Spiritpedia, so karma-teachers-teachers.json has an empty links list."
+    ],
+    "left_out": [
+      "Videos: the home page's embedded video is a silent banner loop, and the India page embeds Maharishi Yoga Peeth's own promotional videos; none is the school's teaching.",
+      "Yoga Nidra Teacher Training: the page is built around a sleep-problems quiz (health rule).",
+      "Somatic Healing Teacher Training and Yoga & Life Coaching pages: not opened; healing/therapy framing (health rule).",
+      "200-hour training in Calgary (spring 2027): not in Vancouver and its page was not opened.",
+      "Advanced Philosophy & Pranayama: page says it is not currently offered.",
+      "Mentions of manual therapeutics and rehabilitative yoga in the 200-hour curriculum kept out of descriptions (health rule)."
+    ],
+    "held": "Held for the owner (10 Nov 2026): the brief asks for a physical home; Karma Teachers closed its Gastown studio after the pandemic and now teaches in a rented room (Green Room Yoga). Also only one photo, a 2013 group shot."
+  }
+}

@@ -1,0 +1,59 @@
+# For you to decide (night sprint, collected as helpers report)
+- Arava Spiritual Center (rank 44): held. A Haaretz report, summarised on Wikipedia, describes cult-style allegations about its founder Lama Dvora (Dvora Tzvieli), who is already listed on Spiritpedia. Founder link prepared, to apply only if released.
+- Institute of Noetic Sciences (46): in scope as a centre? (a research institute; one psychedelic and one UFO/orgone webinar left out)
+- Tergar (55): listed as an app; the app page is thin. Would an organisation listing for Tergar be better?
+- Swami Sarvapriyananda: on Vedanta Society of Southern California's audio-talks page, but now minister in New York. Not linked; link him?
+- Waking Up (48): held. No usable image (assets.wakingup.com refuses robots.txt), and thin.
+- The Sati Center (41): held. The ingest couldn't read sati.org's robots.txt (socket error), so its logo was refused.
+- Skips you may want to overrule: Calm (calm.com 403), Ten Percent Happier (meditatehappier.com blocks ClaudeBot), Healthy Minds, Balance, Aura and Breethe (condition-led).
+- **lama-dvora (already live):** the Arava allegations concern her as founder and spiritual director. Keep her listing, or take it down as with Adam Apollo?
+- East Bay Meditation Center (23): held. Strong social-justice framing (a published "stance on Gaza" post, a white-identity group, an organising programme). List it or leave it out?
+- San Francisco Zen Center (36): held. sfzc.org answered the ingest's image check with 429 (rate limit). Not retried; can go in later with a photo from a host that allows us.
+- Sivananda Ashram Yoga Retreat Bahamas (37): held. Publicly reported abuse allegations against the late founder, Swami Vishnudevananda (2019). The helper didn't open a source this session, so this is from general knowledge. Its images also failed. Banafsheh Sayyad's April 2027 course there would be her link.
+- Skipped for blocks: Drala Mountain Center (robots.txt 406), The Rowe Center (blocks ClaudeBot), Sit-Heads (blocks all). Bellingham Insight (no photo, thin), Insight Meditation South Bay (no photo; Shaila Catherine's centre), Brightheart (Finnbarr Kennedy's own).
+- Apps held: Buddhify (its blog now shows casino spam, so the site looks hacked); Mindfulness.com (borderline health, and its only image has "Ease Anxiety" and "Better Sleep" tiles); The Way (overlaps Henry Shukman's listing); Sadhguru App (overlaps Sadhguru's listing); The Pattern (Wix images only).
+- Apps skipped you may want to overrule: Smiling Mind, Simple Habit and Abide (condition-led); Lectio 365 and 24-7 Prayer (robots.txt 403); Heartfulness (app site 503; could be an organisation); Art of Living (404 everywhere); Sahaja Online (healing claims); CHANI (blocks anthropic-ai, and chaninicholas.com now redirects there, which affects the live chani-nicholas listing's links); Co–Star (JavaScript only); Sanctuary (now a psychic-reading marketplace).
+- Possible tier raises from published user numbers: Mindfulness.com (1M+), Sadhguru App (5M downloads), Pray As You Go (500k, from a search result only), Glorify (20M, from a snippet only).
+- Centres held: Buddhist Society of Western Australia (bswa.org drops the ingest's connection; Ajahn Brahm's centre); Mission Dharma (only image under 300 px).
+- Centre links with thin evidence (made on dev, review before live):
+  - guest-talk speakers at Mountain Stream (Dawn Mauricio, Tuere Sala, Devin Berry);
+  - Hugh Byrne at IMCW (named an "IMCW teacher" on its sister Center for Mindful Living site);
+  - all 34 teachers on Sangha Live's teachers page.
+  Mission Dharma's guest speakers wait with the held plan.
+- Possible editorial-stature raises (not made): BSWA, Garrison Institute, IMCW, InsightLA, Sangha Live, Vedanta Society of New York, Insight Meditation Center.
+- Skipped centres: Theosophical Society (theosophical.org blocks ClaudeBot); SF Dharma Collective (site behind a Google sign-in).
+- Meditation Studio (81): held. It has Pain, Fertility, Cancer Comfort, Sleep and Anxiety collections, and only a 477 x 60 wordmark logo.
+- Quantum-Touch skips you might overrule: Bianca Telle (Heilpraktiker practice framed on illness; could be a Quantum-Touch-only listing).
+- Carol Wetherill: her base and email come from her Quantum-Touch profile, not her own site.
+- Quantum-Touch skips under the strict health rule that you may want to overrule: Goldi Chan, Grace Lee, Eric Jacquet, Gene Skaggs (each skip file says what could be listed). Eileen Strong was listed, but her site also has a Cancer Support page (left out).
+- Kripalu chunk (pipelines 352–371):
+  - **Scope calls:** Arawana Hayashi (largely leadership and organisational work); Ji Hyang Padma (her book is about Buddhist healers' rituals); Melina Meza ("healthy ageing" framing); Harshada Wagner (a course titled "Yogic Energy Healing").
+  - **Hub links from their own sites:** Leslie Booker to Kripalu, IMS and Omega; Kate Johnson to Kripalu and Omega; Melina Meza to Esalen.
+  - **Possible future listing:** Judith Hanson Lasater, Lizzie Lasater's mother and co-teacher.
+- **Quantum-Touch paused after rank 140** (83–140 researched: 12 listed, 1 held). Most practitioners have no website of their own, or sell Quantum-Touch on pain and conditions. Ranks 141–487 are still in the queue. Carry on, or stop?
+  - Jodie Cruz: held (her session pages list conditions).
+  - Kathie Scott: viable as "Kathie and Paul Scott"; the only headshot on their site is of Paul.
+  - Linda Menkhorst-Elsinga, the Dutch Quantum-Touch liaison: skipped, because her team's site promises back-pain relief and bone realignment.
+- **Amy Secada (inserted on dev, Esalen 406):** her own site promises less anxiety and release of trauma; the helper left out the trauma class and wrote the rest without health wording. Keep, or drop before live?
+- **Bodhi Be and Ally Bogard (held, Esalen 394, 404):** no usable photo (Webflow and Wix image hosts refuse our robots.txt). They could go in once YouTube avatars can be read through the API, or with a photo you choose.
+- **Dalai Lama (held, Sounds True 349):** much of his site is Tibet politics; the plan leaves it out. Does he fit the no-political-content rule?
+- **Yongey Mingyur Rinpoche (held, 345):** the only email came from decoding Cloudflare's email protection on tergar.org. I didn't use it without your OK. If you OK him, he could also be linked to the Tergar app listing.
+- **Aaravindha Himadra (held, 350):** his photo is uncaptioned (from an interview site), and his email was decoded the same way. He has a contact form.
+- **Matthieu Ricard (inserted on dev):** his own FAQ says he doesn't see himself as a teacher. Keep him?
+- **Tiers:** Surya Das, Tsultrim Allione, Joan Halifax, Thupten Jinpa and Matthieu Ricard (and the Dalai Lama and Mingyur if you OK them) are all local_hero, because no follower counts could be read without YouTube. Tier override, or wait for the API key?
+- **Shi Heng Yi (skipped, 341):** shaolintemple.eu carries a statement about an abuse investigation, so he's held under the allegations rule.
+- **Agapi Stassinopoulos (inserted):** her work is largely corporate wellbeing talks. Keep her?
+- **Itzhak Beery (held, Kripalu 491):** his Ecuador training includes ayahuasca, yajé and San Pedro ceremonies, and his site carries political articles. Psychedelics rule → held.
+- **Anjie Cho (inserted):** her work is mainly feng shui and ikebana. Is that in scope?
+- **Camille Maurine (inserted):** her site names The Shift Network among the places she has taught, so she's linked to it (no Shift Network page opened). Keep that link?
+- **Maya Tiwari (skipped, 484):** her Ayurveda work is health-led, but she is also an interfaith peace figure. Reconsider?
+- **Krishna Kaur (skipped, 483):** her site was down (HTTP 500). Worth revisiting.
+- **Libby Barnett (inserted, Kripalu 592):** her own site frames Reiki around pain, immunity and anxiety. The listing avoids that wording, and her book "Reiki Energy Medicine" is left out. Keep her?
+- **Donald Altman (inserted, 596):** a licensed psychotherapist as well as a former monk. He's listed for his mindfulness books only (his offerings sit on a host that disallows us). Keep him?
+- **Bess Matassa (inserted, 594):** "New York-based" comes from her publisher's page, not her own site, and one ISBN comes from a cover image filename on her own site.
+- **Judith Valente (inserted, 595):** I dropped her pilgrimage, because the page still shows only the 2025 dates. She keeps 1 video and 3 books.
+- **Karma Teachers, Vancouver (held, yoga 517):** a non-profit teacher-training school, but with no studio of its own since the pandemic (it rents a room). Does it count as a physical school?
+- **Squarespace preview hosts (yoga 517–520):** the helper reached three schools through Squarespace preview addresses from search results, then took each real domain from the preview site's robots.txt sitemap line. Is that acceptable?
+- **The Yoga Flat, Copenhagen (held, yoga 530):** a teacher-training school that also sells strength and pilates. In scope or out?
+- **Centre Sivananda Paris (held, yoga 527):** its robots.txt answered the ingest with HTTP 502, so the ingest refused every image. Not retried. Try again on a later day?
+- **Yoga schools, 22 of 40 cities skipped:** most were blocked (yoga.se and Yoga Centre Toronto name ClaudeBot in robots.txt), known only from directories, or fitness chains. Europe was the hardest. The next yoga list could start from lineage sites' own centre lists (Iyengar, Sivananda, Ashtanga), checking each one's robots.txt first.

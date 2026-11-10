@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "the-yoga-flat",
+    "location_source": "https://www.yogaflat.com/the-studio",
+    "create": {
+      "name": "The Yoga Flat",
+      "bio": "The Yoga Flat is a Copenhagen yoga studio and teacher-training school with three rooms in the city, in Christianshavn, Vesterbro and Nørrebro. It was set up by a brother and sister, Nicolai and Sarah Emilie Boas, who still run it together and lead its trainings alongside the meditation teacher Cédric Gorinas. Sarah Emilie's own teaching leans towards breath and meditation within flowing practice shaped by Anusara, while Nicolai brings a close interest in anatomy and body awareness. Classes run in English and Danish, in the studios and by livestream, from gentle and yin sessions to stronger flow, with evening meditation and regular kirtan evenings of call-and-response mantra chanting.\n\nThe school's main programme is a Yoga Alliance-registered 200-hour training held over eight weekends, built on vinyasa and hatha with alignment, and giving real time to pranayama, a personal meditation practice, the subtle body and philosophy read from both classical and nondual tantric sources. Graduates can go on to a 300-hour advanced course that opens with a residential week on the Zealand coast, and there is a shorter 50-hour course in seated meditation and pranayama that draws on the Yoga Sutras and the Bhagavad Gita. The studio also runs trainings abroad and a wider timetable of movement classes.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.yogaflat.com/",
+      "booking_url": "https://www.yogaflat.com/teacher-training",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogaflat.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/56c9932c8259b508f2d86335/f4f63333-a2d6-4cd5-9026-055700abe378/KimWendt-8559.png",
+        "https://images.squarespace-cdn.com/content/v1/56c9932c8259b508f2d86335/ef346ccb-f096-4c23-9d7c-c8e39468ea33/KimWendt-2522.JPG",
+        "https://images.squarespace-cdn.com/content/v1/56c9932c8259b508f2d86335/037024da-11b7-4e9e-bb9d-8e07ce5e290f/The+Yoga+Flat+Best+Studio+Copenhagen+3.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200-Hour Yoga Teacher Training w. Sarah Emilie, Nicolai & Cédric",
+      "url": "https://www.yogaflat.com/teacher-training/200-hour-ytt-2027",
+      "description": "The school's foundation training, taught in person over eight full weekends in Copenhagen. It blends vinyasa and hatha practice with anatomy, philosophy from classical and nondual tantric sources, the subtle body, pranayama and a daily meditation practice, alongside teaching method and sequencing.",
+      "price": "27,500 DKK",
+      "product_type": "course",
+      "start_date": "2027-11-12",
+      "end_date": "2028-03-12",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/56c9932c8259b508f2d86335/60b15a8f7e5f467bac3a615a/6ac0db02d7b0644dc4078fc5/1793703278405/the-yoga-flat-tessa-nicolai.png?format=1500w"
+    },
+    {
+      "title": "300-Hour Advanced Yoga Teacher Training",
+      "url": "https://www.yogaflat.com/teacher-training/300-hour-ytt",
+      "description": "An advanced course for qualified teachers that opens with a week living in at Gudmindrup on the coast, then continues through the year with modules on philosophy and its texts, a steady meditation and breath practice, refined asana technique, mentoring and self-inquiry, and teaching retreats and private sessions.",
+      "price": "32.800 DKK ex moms (including moms for students above the age of 30 is 41.000 DKK)",
+      "product_type": "course",
+      "start_date": "2027-03-05",
+      "end_date": "2027-10-30",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "shadow-work"
+      ],
+      "image": "http://static1.squarespace.com/static/56c9932c8259b508f2d86335/60b15a8f7e5f467bac3a615a/6ac0dc71fcdbcf3649eeaff0/1794228352680/The+Yoga+Flat+10+years+31.JPG?format=1500w"
+    },
+    {
+      "title": "50-Hour Meditation & Breath Work Training w. Sarah Emilie & Cédric",
+      "url": "https://www.yogaflat.com/teacher-training/50-hour-meditation-breathwork-2027",
+      "description": "Two intensive weekends with weekly online sessions in between, centred on seated meditation and pranayama, with study of the Yoga Sutras, nondual tantra and the Bhagavad Gita. Participants keep a daily home practice and design a short series of meditation classes for a continuing-education certificate.",
+      "price": "10.000 DKK (including VAT/Moms); 8.000 kr. if you are under 30",
+      "product_type": "course",
+      "start_date": "2027-01-08",
+      "end_date": "2027-01-30",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/56c9932c8259b508f2d86335/60b15a8f7e5f467bac3a615a/69cbb17c2fc61174e2dc01d0/1781257569806/KimWendt-2524.JPG?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 530,
+    "hub": null,
+    "tier_evidence": "No YouTube channel found on the pages read; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogaflat.com/contact-us",
+    "contact_form_url": "https://www.yogaflat.com/contact-us",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Owner check (scope): the studio describes itself as offering 'yoga, breathwork, strength training, pilates & more' and runs many prenatal and pelvic-floor events. Kept because it is a founder-led yoga school whose own 200/300-hour and meditation trainings put philosophy, pranayama and meditation at the centre, with kirtan evenings; it is not lineage-led (Anusara-influenced, vinyasa/hatha). No lineage school with an own site was found in Copenhagen within three searches.",
+      "Domain yogaflat.com was found as the canonical address of the Squarespace site theyoga-flat.squarespace.com (seen in search results) and confirmed on its own home page, which names The Yoga Flat. robots.txt is the standard Squarespace file (AI crawlers share the * group, only /config, /search, /api and similar disallowed).",
+      "300-hour course text mentions 'trauma informed practice' and an introduction to 'yoga therapy'; neither is repeated in the description. Owner may prefer to drop this item.",
+      "Email info@yogaflat.com is the studio's office inbox (mailto on the contact page); a contact form is on the same page.",
+      "No founding year is published on the pages read.",
+      "Photos are class shots inside the studios (photographer Kim Wendt credited on the studio page), not empty rooms.",
+      "Possible future listings: Sarah Emilie Boas (co-founder, teacher trainer), Nicolai Boas (co-founder, teacher trainer), Cédric Gorinas (meditation teacher, trainer).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Copenhagen; Spiritpedia has few listings in Denmark."
+    ],
+    "left_out": [
+      "85-Hour Prenatal & Postnatal Yoga Teacher Training, 30-hour Pelvic Floor Teacher Training, pelvic-floor class series and birth-preparation workshops: prenatal/medical and condition-led (health rule).",
+      "200-Hour Dynamic & Yin Teacher Training in Thailand: held abroad.",
+      "60-Hour Yin Yoga & Traditional Chinese Medicine Training (Sept 2026, past) and the Aug–Dec 2026 200-hour training: already started or past.",
+      "Memberships and class passes: prices not in the page text (booking widget).",
+      "Cacao ceremony: ceremonial plant item, borderline; kirtan evenings: dated one-offs with unclear pricing.",
+      "On-demand videos: members only."
+    ],
+    "held": "Held for the owner (10 Nov 2026): scope check. The studio also sells strength and pilates classes and runs prenatal and pelvic-floor items (all left out of the plan); the brief excludes fitness-led studios."
+  }
+}

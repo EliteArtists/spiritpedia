@@ -1,0 +1,45 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1147,
+    "healer_slug": "bhavani-lorraine-nelson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2c133647-cbab-4a2c-b7b1-7159ef67211f",
+      "slug": "gateways-to-meditation-exploring-six-concentration-practices",
+      "title": "Gateways to Meditation: Exploring Six Concentration Practices"
+    },
+    {
+      "table": "courses",
+      "id": "b1bb6ffa-e993-450f-8236-97ea0b4c07e8",
+      "slug": "one-on-one-sessions-with-bhavani",
+      "title": "One-on-One Sessions with Bhavani"
+    },
+    {
+      "table": "courses",
+      "id": "6077c479-ab21-442d-a984-90d3fa0c4bb5",
+      "slug": "the-soothing-series-chant-recordings",
+      "title": "The Soothing Series (chant recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "37b9a982-108f-4f7d-b8b9-ab323fb6ef9b",
+      "slug": "monday-evening-zoom-meditation-sangha",
+      "title": "Monday Evening Zoom Meditation Sangha"
+    },
+    {
+      "table": "free_resources",
+      "id": "76647bbe-1715-417e-8ae7-c81e8571172c",
+      "slug": "wednesday-evening-zoom-chanting",
+      "title": "Wednesday Evening Zoom Chanting"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b50328c9-0ed2-43a6-b16e-0730b6eda10a",
+      "title": "bhavani-lorraine-nelson teaches at Kripalu Center for Yoga & Health"
+    }
+  ],
+  "at": "2026-11-10T01:29:54.687Z"
+}

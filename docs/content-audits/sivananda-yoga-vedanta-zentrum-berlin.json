@@ -1,0 +1,149 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-zentrum-berlin",
+    "location_source": "https://berlin.sivananda.yoga/kontakt-formular/",
+    "create": {
+      "name": "Sivananda Yoga Vedanta Zentrum Berlin",
+      "bio": "The Sivananda Yoga Vedanta Zentrum Berlin has taught in the city since 1991 as one of the International Sivananda Yoga Vedanta Centres, the network Swami Vishnudevananda founded in the West to pass on the teaching of his guru, Swami Sivananda. It is run as a registered non-profit association from a yellow house in leafy Friedenau, on the Schöneberg side of Steglitz, with several bright wooden-floored practice rooms over some 650 square metres and a garden platform used for classes in summer.\n\nTeaching follows Vishnudevananda's five points of postures, breathing, relaxation, vegetarian diet, and positive thinking with meditation, set within the four classical paths of yoga. The centre runs drop-in classes, four-week courses for beginners and improvers, meditation and philosophy courses, and live online classes. Silent meditation with mantra chanting, a reading and the arati light ceremony is held twice a week on a donation basis, and the site hosts an archive of recorded talks by Vishnudevananda. A few times a year the centre takes groups to a country house in the Uckermark, north of Berlin, for yoga weekends. For students who want to teach, it is the Berlin home of the month-long Sivananda Teacher Training Course, held at the organisation's ashrams in Tyrol, near Orléans and in the Himalayas, and of the follow-on advanced and two-year trainings.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Berlin",
+      "country": "Germany",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://berlin.sivananda.yoga/",
+      "booking_url": "https://berlin.sivananda.yoga/stundenplan/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "berlin@sivananda.net",
+      "image_urls": [
+        "https://berlin.sivananda.yoga/wp-content/uploads/2023/05/P1140982-fuer-Web_1000x667px.jpg",
+        "https://berlin.sivananda.yoga/wp-content/uploads/2023/05/P1010601_1000x667px.jpg",
+        "https://berlin.sivananda.yoga/wp-content/uploads/2023/05/IMG_0720_1000x667px.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Internationale Sivananda Yogalehrer-Ausbildung (TTC)",
+      "url": "https://berlin.sivananda.yoga/yogalehrer-ausbildung/",
+      "description": "The four-week residential teacher training first run by Swami Vishnudevananda in 1969, with two meditations, two asana classes and two lectures a day plus an hour of karma yoga, leading to the organisation's diploma at the 200-hour standard. German-language courses are held in Tyrol, with others in France and the Indian Himalayas.",
+      "price": "ab 3.770 € / 2.671 € (ermäßigt, begrenzt verfügbar) in Reith bei Kitzbühel; ab 3.100 € in Rudraprayag; ab 2.400 € in Orléans",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2021/09/yogalehrer-ausbildung-oesterreich.jpg"
+    },
+    {
+      "title": "Frühjahrs-Retreat in der Breitenteicher Mühle",
+      "url": "https://berlin.sivananda.yoga/yoga-retreats-berlin/",
+      "description": "A long weekend of yoga at a renovated mill in a nature reserve about 90 km north of Berlin, with morning and evening meditation and chanting, two asana classes a day, a talk, walks and organic vegetarian meals. Suitable for beginners; summer and autumn dates follow later in 2027.",
+      "price": "Yoga Programm: 60,- (pro Tag); Übernachtung und 2 Mahlzeiten: Einzelzimmer 140,- €, Doppelzimmer 110,- €, 3-4 Bettzimmer 100,- € (pro Person und pro Tag)",
+      "product_type": "retreat",
+      "start_date": "2027-04-22",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2022/09/entspannung-am-see-1.jpg"
+    },
+    {
+      "title": "Yogakurse für Anfänger und Geübte",
+      "url": "https://berlin.sivananda.yoga/yoga-kurse-anfaenger/",
+      "description": "Small fixed groups meeting once a week for four weeks, in ninety-minute sessions that build from sun salutations, simple postures and abdominal breathing towards pranayama, posture variations and a first taste of meditation. New groups start through the year.",
+      "price": "ab 71,- € für 4 Wochen",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2023/09/yoga-kuhkopf.jpg"
+    },
+    {
+      "title": "Flatrate 6 Monate",
+      "url": "https://berlin.sivananda.yoga/preise/",
+      "description": "Six months of unlimited drop-in classes at the Friedenau centre. Single classes, ten- and twenty-class cards, a trial month and online passes are listed on the same page.",
+      "price": "530,-€",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2023/05/P1140982-fuer-Web_1000x667px.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditations-Abende (Satsang)",
+      "url": "https://berlin.sivananda.yoga/meditationsabende/",
+      "description": "Group evenings at the centre on Wednesdays and Sundays: silent sitting, mantra chanting, a reading on yoga philosophy and the arati light ceremony, lasting an hour and three quarters. Free, with donations welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2022/09/Meditation-Zeich-1.jpg"
+    },
+    {
+      "title": "Audio Archives: Swami Vishnudevananda",
+      "url": "https://berlin.sivananda.yoga/audio-archives/",
+      "description": "Recorded classes, lectures and satsangs by Swami Vishnudevananda, transferred from the cassette archive of the Sivananda ashram in Canada and shared on the centre's site.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://berlin.sivananda.yoga/wp-content/uploads/2022/09/Yoga-als-Weg-tiny.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 528,
+    "hub": null,
+    "tier_evidence": "No YouTube channel found on the site's pages read; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://berlin.sivananda.yoga/kontakt-formular/",
+    "contact_form_url": "https://berlin.sivananda.yoga/kontakt-formular/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Domain berlin.sivananda.yoga came from a search summary and was confirmed on the site's own pages (title 'Sivananda Yoga - seit 1991 in Berlin', contact page with the Schmiljanstr. address).",
+      "Second Sivananda centre in this batch (Paris, rank 527, is held). Part of the international Sivananda network (lineage organisation, not a commercial franchise); owner may prefer to spread lineages. Three Boons Yoga (formerly Jivamukti Yoga Berlin) was the alternative, but its own domain wasn't found within the three-search limit.",
+      "The four-week teacher training is held at the organisation's ashrams (Tyrol, Orléans, India), not in Berlin; the centre promotes it and runs follow-on trainings ('Yogalehrer-Fortbildungen ... auch in Berlin'). Prices differ by venue and are copied as published.",
+      "Retreat accommodation prices are marked 'Preise gültig bis Dezember 2026'; the 2027 retreat may be priced differently.",
+      "Email berlin@sivananda.net is the centre's office inbox; a contact form is on the same page.",
+      "The centre's own pages make some general health statements about yoga (stress, depression); none are repeated in the bio or items.",
+      "Possible future listings: none named (the Berlin site names no resident lead teachers on the pages read).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links."
+    ],
+    "left_out": [
+      "Yoga-Präventionskurse (health-insurance prevention courses): health framing.",
+      "Zweijährige Yogalehrer-Ausbildung: framed around recognition by German health insurers; page not opened.",
+      "Ayurveda courses, children's and teenagers' yoga, spiritual festivals, shop: not opened or outside the core offer.",
+      "Meditation course for beginners: no dates published ('Neue Daten in Kürze').",
+      "Retreats abroad (Spain, Austria, France): run elsewhere by the network."
+    ]
+  },
+  "images_final": true
+}

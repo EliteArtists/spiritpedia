@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1108,
+    "healer_slug": "constantina-vaseliades"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "625df985-2dc7-4adb-9069-fe6a31451584",
+      "slug": "advanced-energy-healing-sessions",
+      "title": "Advanced Energy Healing sessions"
+    },
+    {
+      "table": "courses",
+      "id": "6136073a-9250-402b-9f9e-8dbaf7edb307",
+      "slug": "quantum-touch-level-i-workshop",
+      "title": "Quantum-Touch Level I workshop"
+    },
+    {
+      "table": "courses",
+      "id": "d47787a2-fb10-49a3-b129-4852e2969798",
+      "slug": "animal-communication-workshop",
+      "title": "Animal Communication workshop"
+    },
+    {
+      "table": "courses",
+      "id": "c0a882ba-ca9a-4098-addb-c330ce8554dc",
+      "slug": "qigong-instruction",
+      "title": "Qigong instruction"
+    }
+  ],
+  "at": "2026-11-10T00:23:11.702Z"
+}

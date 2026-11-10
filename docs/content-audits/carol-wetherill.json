@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "carol-wetherill",
+    "location_source": "https://quantumtouch.com/en/practitioners/practitioner-4400",
+    "create": {
+      "name": "Carol Wetherill",
+      "bio": "Carol Wetherill is a certified Quantum-Touch practitioner who teaches both the Level 1 and Level 4 workshops, working through her practice Intrinsic You from Columbia, Maryland. She spent close to three decades in energy and bodywork before Quantum-Touch, which she found drew together its breath, touch, love and intention in a simple way that she wanted to pass on. Her approach rests on the idea that healing comes from within and that a practitioner's part is to hold a steady, heart-centred field of energy for the other person's own process.\n\nShe gives individual Quantum-Touch sessions in person or over Zoom, opening with a conversation about the client's intentions, then offering energy while the client rests, and ending with time to talk over whatever came up; a short free introductory session is available. She teaches Becoming Energized (Level 1) and Becoming Heart Conscious (Level 4) as live online classes, over a weekend or spread across shorter weekday sessions, and helps run free weekly healing circles on Zoom for anyone who has completed Level 1, opening with a chakra meditation. Alongside Quantum-Touch, Intrinsic You offers wellness coaching, spiritual care, yoga and breathwork, and bodywork.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Columbia, Maryland",
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "chakra-healing"
+      ],
+      "website_url": "https://intrinsicyou.com/",
+      "booking_url": "https://intrinsicyou.com/quantum-touch-sessions",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "carolwetherill@intrinsicyou.com",
+      "image_urls": [
+        "https://intrinsicyou.com/wp-content/uploads/2026/03/headshot-3-3-26.png",
+        "https://quantumtouch.com/images/ProfilePictures/CarolWetherill2026.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch sessions",
+      "url": "https://intrinsicyou.com/quantum-touch-sessions",
+      "description": "Private sessions in person or on Zoom: a short talk about your intention, a period of rest while Carol offers Quantum-Touch energy, and time afterwards to reflect on what arose. Single sessions or packages; a free mini session is offered to newcomers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://intrinsicyou.com/wp-content/uploads/2026/03/headshot-3-3-26.png"
+    },
+    {
+      "title": "Quantum-Touch Level 4: Becoming Heart Conscious (2-day virtual class)",
+      "url": "https://intrinsicyou.com/upcoming-events",
+      "description": "A live online class for those who have taken Level 1, focused on connecting more deeply with the heart and using heart energy with any part of the body. Held over a weekend; a four-part weekday version runs in early December.",
+      "price": "$450 USD",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://intrinsicyou.com/wp-content/uploads/2026/03/headshot-3-3-26.png"
+    },
+    {
+      "title": "Quantum-Touch Level 1: Becoming Energized (2-day virtual class)",
+      "url": "https://intrinsicyou.com/quantum-touch-workshops",
+      "description": "The foundation Quantum-Touch workshop, taught live online. Students learn to build and focus life-force energy and to use hands-on and distance techniques for themselves, family and friends; it is the prerequisite for all later levels.",
+      "price": "$350 USD",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://intrinsicyou.com/wp-content/uploads/2024/02/new-logo-banner-card-attenpt-3.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Quantum-Touch community circles",
+      "url": "https://intrinsicyou.com/community-quantum-touch",
+      "description": "Free group practice on Zoom for Quantum-Touch students: a Sunday healing circle for anyone who has done Level 1, opening with a chakra meditation before partners exchange energy, and a Wednesday morning guided practice that Carol is starting.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "quantum-touch",
+        "meditation"
+      ],
+      "image": "https://intrinsicyou.com/wp-content/uploads/2026/03/headshot-3-3-26.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 93,
+    "hub": null,
+    "tier_evidence": "No social accounts linked on her site; no readable follower counts → 0 → local_hero.",
+    "email": "yes",
+    "email_source": "https://quantumtouch.com/en/practitioners/practitioner-4400",
+    "contact_form_url": "https://intrinsicyou.com/contact",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email from the Quantum-Touch profile (her site publishes only a contact form); written there as carolwetherill@Intrinsicyou.com, lowercased.",
+      "Base from the Quantum-Touch profile (Columbia, Maryland); her own site doesn't publish a location.",
+      "Second photo is her Quantum-Touch profile photo (same person as her site headshot).",
+      "Offering URLs: both classes are listed on her upcoming-events page; Level 1 uses her workshops page so each item has its own URL. Level 1 also runs as a 4-day weekday class.",
+      "Free circles: the Sunday healing circle is on her upcoming-events page; the Wednesday circle page (used as the URL) says 'coming soon'.",
+      "Her site carries post-nominals MTP, CCP, CHt (dropped from name). Her events page describes the free 'Discover Quantum-Touch' mini-class as supporting the immune system; not used.",
+      "Her /qthc26 page is password-protected; not opened further.",
+      "No videos on her site."
+    ],
+    "left_out": [
+      "Discover Quantum-Touch free mini-class: run by Quantum-Touch instructors generally, described with immune-support wording.",
+      "Level 4 4-day weekday class (1-10 Dec 2026): duplicate of the Level 4 item.",
+      "Wellness coaching, spiritual care, yoga and bodywork pages: not Quantum-Touch; kept to the bio only.",
+      "Session price: not published."
+    ]
+  },
+  "images_final": true
+}

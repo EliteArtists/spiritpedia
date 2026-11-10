@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "barrie-risman",
+    "location_source": "https://www.barrierisman.com/contact",
+    "create": {
+      "name": "Barrie Risman",
+      "bio": "Barrie Risman is a yoga teacher and writer who lives in Sutton, in Quebec's Eastern Townships, and teaches students and teachers both online and in person. Originally from New York, she has taught yoga full time since 1999. Her background includes several years on the staff of the SYDA Foundation in India and the United States, a long period as a senior Anusara Yoga teacher trainer, and more than twenty-five years of study in the Iyengar tradition. She later co-directed Shri Yoga in Montreal, and she also facilitates Joanna Macy's Work That Reconnects.\n\nHer classes join careful, alignment-based posture work with the philosophy of yoga, treating practice as a path of self-knowledge and inner growth rather than exercise alone. She runs a yearly online subscription of livestreamed classes with a library of recordings, a monthly online satsang of talk, meditation, breathwork and discussion, and teacher trainings and mentoring. Her book Evolving Your Yoga, which has a foreword by Sophie Grégoire Trudeau, sets out the principles behind her teaching, and she writes a weekly blog called Beyond Asana. She has led programmes at Kripalu.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sutton, Quebec",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.barrierisman.com",
+      "booking_url": "https://www.barrierisman.com/series",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/barrierisman/",
+      "facebook_url": "https://www.facebook.com/Barrrierismanyoga/",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@barrierisman.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga for Turbulent Times: Online Class Subscription",
+      "url": "https://www.barrierisman.com/series",
+      "description": "A year-round online subscription of livestreamed yoga classes with Barrie, each recorded for later viewing, plus access to a library of earlier series. The monthly satsangs are included, and a free trial is offered.",
+      "price": "$250 USD per year ($320 CAD) or $49 USD per month ($57 CAD)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+    },
+    {
+      "title": "Yoga for Turbulent Times Monthly Satsang",
+      "url": "https://www.barrierisman.com/yoga-for-turbulent-times-talks",
+      "description": "A monthly online gathering on Zoom that opens with a talk drawn from yoga philosophy and moves into guided meditation, breathwork, quiet reflection and group conversation. Anyone who signs up receives the recording.",
+      "price": "By donation (suggested $25 CAD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Yoga We Need Now: Free Video Series",
+      "url": "https://www.barrierisman.com/free",
+      "description": "Six short talks sent over two weeks, taken from Barrie's online workshops, on themes such as staying steady through change, the breath as a companion, and gratitude. Sign-up by email.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 474,
+    "hub_url": "https://kripalu.org/people/barrie-risman",
+    "tier_evidence": "No YouTube channel found; Instagram (instagram.com/barrierisman) and Facebook counts not read (sites off limits to us) → no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.barrierisman.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Kripalu named on: https://www.barrierisman.com/ (Rise Up, Rooted retreat at Kripalu, 9-12 Oct 2026, now past).",
+      "Website (barrierisman.com) first seen in a search snippet; confirmed on the site itself, which names her throughout.",
+      "Email is Cloudflare-obfuscated on the contact page and decoded (info@ studio inbox).",
+      "Sutton, Quebec is a small town (about 4,000 people) in the Eastern Townships; recorded as published, please map.",
+      "Regional: Eastern Townships of Quebec, outside the big cities.",
+      "Photo from her Kripalu person page; her own site's images are on kajabi-cdn, whose robots.txt returns 403 to us, so none could be used.",
+      "Tier counts unreadable: no YouTube found and social counts can't be read.",
+      "Thin listing: 3 items (two offerings and a free series)."
+    ],
+    "left_out": [
+      "Evolving Your Yoga (book): no ISBN on her own book page and no publisher page found, so left out.",
+      "Yoga for Anxiety on-demand workshop: condition in the title (health rule).",
+      "Yoga for Times of Change video companion classes: chapters named for anxiety, depression and grief (health rule).",
+      "Concordia University 200-hour teacher training: started September 2026.",
+      "Rise Up, Rooted retreat at Kripalu (9-12 Oct 2026) and Active Hope online book club (July/August): past.",
+      "Free Chapter 1 of Evolving Your Yoga: no separate URL found."
+    ]
+  },
+  "images_final": true
+}

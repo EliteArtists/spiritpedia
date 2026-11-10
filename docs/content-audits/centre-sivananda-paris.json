@@ -1,0 +1,147 @@
+{
+  "healer": {
+    "healer_slug": "centre-sivananda-paris",
+    "location_source": "https://sivanandaparis.org/contact/",
+    "create": {
+      "name": "Centre Sivananda Paris",
+      "bio": "The Centre Sivananda de Yoga Vedanta in Paris belongs to the international Sivananda Yoga Vedanta organisation, the network Swami Vishnudevananda built to carry the teaching of his guru, Swami Sivananda of Rishikesh. Swami Kailasananda, a long-time disciple of Vishnudevananda who directs the organisation's centres in France and England, oversees it, and Swami Shantananda runs the Paris centre day to day. It is set up as a non-profit association and staffed mostly by volunteer teachers working in the spirit of karma yoga, in a building with three practice rooms a short walk from the Gare de l'Est in the 10th arrondissement.\n\nThe yoga taught here is the classical Sivananda form of hatha yoga: twelve basic postures, breathing practice, deep relaxation, a vegetarian diet, positive thinking and meditation, framed by the four paths of karma, bhakti, raja and jnana yoga. A weekly timetable of classes runs alongside six-week beginners' and progression courses, a four-week introduction to meditation, kirtan and philosophy workshops and festival days, plus one online class a week. Group meditation with chanting and a talk is open to all without charge several times a week. Students who want to teach go on to the month-long Sivananda Teacher Training Course, held mainly at the organisation's ashram near Orléans, and later to its advanced training.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Paris",
+      "country": "France",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://sivanandaparis.org/",
+      "booking_url": "https://sivanandaparis.org/cours/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "paris@sivananda.net",
+      "image_urls": [
+        "https://sivanandaparis.org/wp-content/uploads/2018/08/DSC06861-1.jpg",
+        "https://sivanandaparis.org/wp-content/uploads/2018/07/DSC01110-1.jpg",
+        "https://sivanandaparis.org/wp-content/uploads/2018/07/DSC06833.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sivananda Yoga Teacher Training Course (TTC)",
+      "url": "https://sivanandaparis.org/formation-de-professeurs/",
+      "description": "The organisation's founding teacher training, a residential month of daily meditation, asana and pranayama practice, lectures on yoga philosophy, chanting and teaching practice, leading to the Yoga Siromani certificate at the 200-hour standard. French-language courses run several times a year at the Sivananda ashram near Orléans, about an hour from Paris.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Sivananda Advanced Teacher Training Course (ATTC)",
+      "url": "https://sivanandaparis.org/formation-de-professeurs-avancee/",
+      "description": "A second residential month for graduates of the teacher training, going further into advanced pranayama and postures, the Yoga Sutras of Patanjali, Vedanta philosophy, Sanskrit and the subtle body. Sessions are listed at the Orléans ashram, in Austria and in the Himalayas.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "non-duality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Sivananda yoga courses for beginners and beyond",
+      "url": "https://sivanandaparis.org/stages-de-yoga/",
+      "description": "Six weekly sessions of ninety minutes that build a steady practice in stages: a first course on the twelve basic postures and full yogic breathing, a second that adds variations and the headstand, and a progression course with kriyas, concentration and mantra.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Discovering meditation",
+      "url": "https://sivanandaparis.org/stage-de-meditation/",
+      "description": "Four evening sessions of ninety minutes that explain the stages of meditation in the Sivananda tradition, with guided sitting each time and an introduction to working with mantras.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Pack Une année de Bien-Être",
+      "url": "https://sivanandaparis.org/tarifs/",
+      "description": "A twelve-month package of unlimited classes with membership of the association, one course and one workshop of your choice, a private session, and a discount on stays at the Sivananda ashram. Class cards and other subscriptions are on the same page.",
+      "price": "88€/mois ou 988€ en une fois",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Group meditation (satsang)",
+      "url": "https://sivanandaparis.org/meditation-de-groupe-gratuite/",
+      "description": "Open sessions at the centre of half an hour of silent sitting, half an hour of mantra chanting and a short talk on yoga philosophy, held on Wednesday evenings and at weekends. Entry is free.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 527,
+    "hub": null,
+    "tier_evidence": "YouTube channel (@sivananda_paris, seen via oEmbed only) unreadable (consent page, 9 Nov 2026); Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://sivanandaparis.org/contact/",
+    "contact_form_url": "https://sivanandaparis.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Domain sivanandaparis.org came from a search summary and was confirmed on the site's own pages, which name the Centre Sivananda de Yoga Vedanta Paris; www redirects to the bare host. robots.txt (both hosts) allows all with Crawl-delay: 30, which was honoured.",
+      "Part of the international Sivananda Yoga Vedanta Centres network (a lineage organisation, not a commercial franchise); Instituto Sivananda DLS Brasil and the Bahamas ashram are separate plans. Owner may want to check the network fits 'not franchises'.",
+      "The teacher trainings are run by the organisation and held mainly at its ashram near Orléans (and abroad), not at the Paris building; the Paris centre promotes them and prepares students for them. Next French TTC starts 14 Nov 2026; sessions are listed on one page, so the items are undated.",
+      "Email paris@sivananda.net is the centre's office inbox; a contact form is on the same page.",
+      "No founding year on the site (a search snippet said 1977, not used).",
+      "Prices for classes, courses and the trainings are not in the page text (shown via a booking widget), so 'Contact for pricing'.",
+      "One video (93LZF08fkAs, 'Cours de yoga pour votre bien-être…') is embedded on the site and passes oEmbed, but its length can't be checked without a watch page, and it looks promotional; left out.",
+      "Possible future listings: Swami Kailasananda (director of the Sivananda centres in France and England; author of 'Le Yoga de la Méditation'), Swami Shantananda (director of the Paris centre).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links."
+    ],
+    "left_out": [
+      "Stage 'Yoga et techniques de méditation pour dépasser l'anxiété et les traumatismes' (health rule).",
+      "Workshop and theme day 'Se reconstruire après un burn-out grâce au yoga' (health rule).",
+      "Dated workshops and theme days in November 2026 (one-off events, mostly starting before or just after 12 Nov; the pages are general).",
+      "Cooking classes, spiritual festivals, Bharatanatyam dance workshop: not core yoga teaching or already started.",
+      "Photos of Swami Sivananda and Swami Vishnudevananda and posed single-person shots: not the school's building or rooms."
+    ],
+    "held": "Ingest dry run (10 Nov 2026): sivanandaparis.org answered the ingest's robots.txt request with HTTP 502, so every image was refused (the same robots.txt returned 200 to a plain curl earlier). Not retried, per the blocked-means-skip rule. Owner to decide whether to retry later or drop."
+  }
+}

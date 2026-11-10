@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-center-mexico",
+    "location_source": "https://yogacenter.com.mx/en/contact-us/",
+    "create": {
+      "name": "Iyengar Yoga Center",
+      "bio": "Iyengar Yoga Center, known as IYC, is a Mexico City school devoted to the method of B.K.S. Iyengar. Herta Rogg founded it in 1992, and it received official authorisation from Iyengar himself in 2007. It aims to stay faithful to the teaching of Guruji, Geeta Iyengar and Prashant Iyengar, and several of its senior teachers, among them Alicia Ramos and Anette Witemberg, have travelled for decades to the Ramamani Iyengar Memorial Yoga Institute in Pune to study with the Iyengar family. Its home is now a studio on Monte Himalaya in Lomas de Chapultepec.\n\nClasses follow the Iyengar approach: careful attention to alignment of body, breath and mind, poses explored in depth, and generous use of props such as ropes, belts, blankets and chairs. A weekly timetable runs in the studio and online, with pranayama and yoga philosophy sessions alongside asana. IYC has trained more than ninety internationally certified Iyengar teachers, and it runs a continuing education programme for certified teachers and those preparing for certification. It also publishes Ananda, a free online magazine of articles on practice and philosophy.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 1992,
+      "availability": "local_online",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://yogacenter.com.mx/",
+      "booking_url": "https://iyengaryogacenter.tribu.yoga/schedule",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yogacenter.com.mx/wp-content/uploads/2020/09/banner-desktop-02-scaled.jpg",
+        "https://yogacenter.com.mx/wp-content/uploads/2024/11/banner-yogacenter-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Continuing Education for Teachers",
+      "url": "https://yogacenter.com.mx/en/continuing-education-for-teachers/",
+      "description": "IYC's programme for certified Iyengar teachers and for students preparing for certification, bringing teachers from across Mexico and abroad to deepen their practice and teaching together. Sessions appear on the weekly timetable in the studio and online, and the full programme is published as a downloadable document.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogacenter.com.mx/wp-content/uploads/2020/08/yoga-center-header-paquetes.png"
+    },
+    {
+      "title": "Iyengar yoga classes in Lomas and online",
+      "url": "https://iyengaryogacenter.tribu.yoga/products",
+      "description": "Weekday morning classes at the Monte Himalaya studio and a parallel online timetable, including pranayama and yoga philosophy sessions and a Saturday class for children. Plans and class packages are bought through the school's booking platform.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://yogacenter.com.mx/wp-content/uploads/2020/09/banner-desktop-02-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ananda (Revista)",
+      "url": "https://yogacenter.com.mx/ananda/",
+      "description": "The school's free online magazine in Spanish, with articles by its teachers on Iyengar practice, props and awareness, the Brahmaviharas (maitri, karuna, mudita, upeksa), the teacher-student relationship and the Yoga Sutras' view of fear and the afflictions.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://yogacenter.com.mx/wp-content/uploads/2020/08/yoga-center-header-clases.png"
+    },
+    {
+      "title": "Glosario en Sánscrito",
+      "url": "https://yogacenter.com.mx/docs/GlosarioenSanscrito.pdf",
+      "description": "A free PDF glossary of Sanskrit yoga terms, linked from every page of the school's site.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://yogacenter.com.mx/wp-content/uploads/2020/09/banner-desktop-02-scaled.jpg"
+    },
+    {
+      "title": "Canto a Patanjali",
+      "url": "https://yogacenter.com.mx/docs/CantoaPatanjali.pdf",
+      "description": "A free PDF of the invocation to Patanjali in Sanskrit, offered on the school's site so students can learn the chant.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "https://yogacenter.com.mx/wp-content/uploads/2020/09/banner-desktop-02-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 511,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero. The site says more than 90 internationally certified teachers have trained there (information only).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://yogacenter.com.mx/en/contact-us/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Found by web search for Mexico City Iyengar, Sivananda and Ashtanga schools; school's own site only.",
+      "The site's email address is hidden behind Cloudflare email protection; per this run's rule it was not decoded, so the contact form (Ninja Forms on the contact page) is used. WhatsApp 55-6101-0784 is also published.",
+      "Slug carries '-mexico' because the plain name 'Iyengar Yoga Center' is generic; the site also calls itself Yoga Center Mexico and IYC.",
+      "Teacher training: the site says it has trained 70 (older pages) to 90+ (newer pages) certified teachers; formal teacher training runs through the Continuing Education programme (programme PDF dated 2023, not opened), and the teachers' area is password-protected. No current dated training found.",
+      "Prices and the timetable live on an outside booking platform (iyengaryogacenter.tribu.yoga, a script-built app with no robots.txt); no prices could be read, so 'Contact for pricing'.",
+      "First photo is a home-page banner of a class in the studio with 'New Address' text over it; second is a rope-wall practice banner. Both from the school's own site.",
+      "The first free resource is the school's magazine page; its resource_type 'practice' is the nearest fit.",
+      "Possible future listings: Alicia Ramos, Anette Witemberg, Lorena Paez, Marta Vergara (director per search snippet only; not on pages read), Herta Rogg (founder).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Mexico City; Spiritpedia has few listings in Latin America."
+    ],
+    "left_out": [
+      "Therapeutic yoga classes and the site's wording about practitioners of 'all health conditions' (health rule).",
+      "Magazine articles with condition-led titles (for example a sequence for emotional stability) are not listed individually.",
+      "Workshops: shown only on the outside booking platform; none read."
+    ]
+  },
+  "images_final": true
+}

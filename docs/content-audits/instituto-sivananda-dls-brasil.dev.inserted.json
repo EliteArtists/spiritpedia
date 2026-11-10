@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1155,
+    "healer_slug": "instituto-sivananda-dls-brasil"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8694,
+      "slug": "formacao-de-professores-sivananda-yoga-dls",
+      "title": "Formação de Professores Sivananda Yoga DLS"
+    },
+    {
+      "table": "videos",
+      "id": 8695,
+      "slug": "formacao-100-online-em-sivananda-yoga-dls",
+      "title": "Formação 100% Online em Sivananda Yoga DLS"
+    },
+    {
+      "table": "courses",
+      "id": "7410c5ea-c33a-44c7-95c0-4a07e114470d",
+      "slug": "formacao-em-yoga-tradicional-hybrid-teacher-training-basic-and-advanced",
+      "title": "Formação em Yoga Tradicional (hybrid teacher training, basic and advanced)"
+    },
+    {
+      "table": "courses",
+      "id": "9dbb915f-3d4d-4765-b635-207c1e7e3d38",
+      "slug": "formacao-em-yoga-100-online",
+      "title": "Formação em Yoga 100% Online"
+    },
+    {
+      "table": "courses",
+      "id": "05992468-4c8d-4012-87cc-0089e5658a00",
+      "slug": "sivananda-yoga-classes-in-vila-mariana-and-vila-clementino",
+      "title": "Sivananda Yoga classes in Vila Mariana and Vila Clementino"
+    }
+  ],
+  "at": "2026-11-10T02:34:18.879Z"
+}

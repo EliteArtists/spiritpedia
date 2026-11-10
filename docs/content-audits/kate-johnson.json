@@ -1,0 +1,150 @@
+{
+  "healer": {
+    "healer_slug": "kate-johnson",
+    "location_source": null,
+    "no_public_base": "Her site says she was born and raised in Chicago and is training at a centre in Montreal, but it does not say where she lives or is based now; nothing else we read publishes a base.",
+    "create": {
+      "name": "Kate Johnson",
+      "bio": "Kate Johnson is a Buddhist meditation teacher, writer and facilitator who brings together insight practice, somatic movement and creativity. Raised in Chicago, she trained in dance at the Ailey School and Fordham University and took a master's in performance studies at NYU before turning to contemplative work. In 2011 she co-founded the meditation group within Occupy Wall Street, later trained in Social Presencing Theater with the Presencing Institute, and was authorised to teach in the Theravada and Western Insight lineage in 2020 after Spirit Rock's four-year retreat teacher training, with Gina Sharpe, Larry Yang and Lila Kate Wheeler as her guides. African and African diasporic religious paths also sit at the centre of her own practice.\n\nShe now serves on the teachers' councils of Spirit Rock and True North Insight and leads residential retreats, including retreats for women and for people of colour, alongside online programmes and monthly one-to-one meditation mentoring. Her book Radical Friendship draws on the Buddha's teaching on spiritual friendship to offer seven ways of living one's values in every relationship. She also designs staff retreats for organisations, weaving dialogue, creative group practice and care for the nervous system.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "conscious-relationships",
+        "mindfulness"
+      ],
+      "website_url": "https://www.katejohnson.com/",
+      "booking_url": "https://www.katejohnson.com/events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kate@katejohnson.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/61060817f85f1a42d9ee5bc7/edc84b10-59b8-4af1-bf3a-0191fe93c924/IMG_0312.jpg",
+        "https://images.squarespace-cdn.com/content/v1/61060817f85f1a42d9ee5bc7/d8037b63-27b9-453c-ab44-cf39977e7395/home-photo-tight-wide.jpg"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "omega-institute",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Radical Friendship: Seven Ways to Love Yourself and Find Your People in an Unjust World",
+      "slug": "radical-friendship",
+      "author": "Kate Johnson",
+      "asin": "1611808111",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Building on the Buddha's teaching about spiritual friendship, the book sets out seven practices for bringing love, courage and trust into all our relationships. It treats friendship as a spiritual path and a way of living one's values among others.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611808111.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Already Good: A BIPOC Retreat on Bodhicitta (True North Insight)",
+      "url": "https://www.katejohnson.com/events/already-good-a-bipoc-retreat-on-bodhicitta",
+      "description": "A weekend meditation retreat for Black, Indigenous and people of colour, held in forest by the Ottawa River with True North Insight. The weekend centres on our basic goodness and the awakened heart.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-07-09",
+      "end_date": "2027-07-11",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/61060817f85f1a42d9ee5bc7/610ca2a82c3b736116e67993/6ae8cff06f5c03743032609c/1793673362227/1hysnEHc.jpg?format=1500w"
+    },
+    {
+      "title": "The Spirit of Creativity: Awakening the Heart through Meditation, Qigong, Story, and Song",
+      "url": "https://www.katejohnson.com/events/the-spirit-of-creativitythe-spirit-of-creativity-awakening-the-heart-through-meditation-qigong-story-and-song",
+      "description": "A residential retreat at Spirit Rock that treats making art as dharma practice, with meditation, qigong, storytelling and song. Her co-teachers are Anne Cushman, Chenxing Han, Sam Rise and Roshi Teja Bell.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-09-07",
+      "end_date": "2027-09-11",
+      "subjects": [
+        "meditation",
+        "qi-gong"
+      ],
+      "image": "http://static1.squarespace.com/static/61060817f85f1a42d9ee5bc7/610ca2a82c3b736116e67993/6ae8d31b4a574a3c095a1121/1793673333094/_MG_6614.jpg?format=1500w"
+    },
+    {
+      "title": "Rest, Renewal, and Liberation: A Women's Meditation Retreat",
+      "url": "https://www.katejohnson.com/events/rest-renewal-and-liberation-a-womens-meditation-retreat",
+      "description": "A week-long silent retreat for women and gender-expansive people, taught by Kate with a team of four other teachers. Teachings explore the three characteristics of experience and what they show about self and freedom.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-09-20",
+      "end_date": "2027-09-27",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/61060817f85f1a42d9ee5bc7/610ca2a82c3b736116e67993/6ae8ea4de353641822d8680a/1793673295141/kate-hires-32.jpg?format=1500w"
+    },
+    {
+      "title": "One on One Meditation Mentorship",
+      "url": "https://www.katejohnson.com/one-on-one",
+      "description": "Monthly hour-long mentoring sessions over six months for committed practitioners, with tailored guided meditations and context from Buddhist psychology. Places open through a waiting list.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61060817f85f1a42d9ee5bc7/bb65e711-cc38-435b-9740-feb3d0343f60/kate-proof-336.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 354,
+    "hub_url": "https://kripalu.org/people/kate-johnson",
+    "tier_evidence": "No social accounts or YouTube channel linked from her site; nothing readable → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.katejohnson.com/contact",
+    "contact_form_url": "https://www.katejohnson.com/one-on-one",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Own site katejohnson.com found via the link on her Kripalu person page (robots.txt read).",
+      "Kripalu named on: https://www.katejohnson.com/events (links a past Kripalu conference she taught at).",
+      "Omega named on: https://www.katejohnson.com/events (links past Omega workshops); omega-institute link added. Omega pages not opened: eomega.org returns 403 to us (6 Nov 2026).",
+      "No published base: city and country left null (see no_public_base).",
+      "Common name: confirmed as the same person via the Kripalu page's link to katejohnson.com.",
+      "Two photos from her own site look like the same person some years apart; please check.",
+      "Contact form URL is her mentorship waiting-list form (one-on-one page).",
+      "She is interim executive director of Buddhist Peace Fellowship and her teaching carries a social-justice strand; her work is centred on meditation, so kept.",
+      "Prices for the three retreats are on the host centres' pages (Spirit Rock, True North Insight), which were not opened; 'Contact for pricing' used. Event URLs are her own event pages.",
+      "Book ISBN-13 9781611808117 from the Bookshop link on her own home page, converted to ISBN-10; not confirmed elsewhere.",
+      "Co-taught with Leslie Booker (rank 353); separate listings."
+    ],
+    "left_out": [
+      "Radical Friendship Practice Lab (online, February 2027): mentioned on her about page but no page or link to it yet.",
+      "Staff retreats and workshops for organisations (work-with-kate): organisational consulting, not a public offering.",
+      "Past events on her events page (2021-2025) and podcast interviews listed there.",
+      "No YouTube videos linked from her site."
+    ]
+  },
+  "images_final": true
+}

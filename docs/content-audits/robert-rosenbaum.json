@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "robert-rosenbaum",
+    "location_source": "https://www.zenqigong.com/ordinary%20mind%20zen/",
+    "create": {
+      "name": "Robert Rosenbaum",
+      "bio": "Robert Rosenbaum, known as Bob and by the dharma name Meikyo, teaches Zen meditation and Dayan (Wild Goose) qigong in Sacramento. He has practised meditation and movement for more than fifty years. Sojun Mel Weitsman gave him lay entrustment in the Soto school, Karen Terzano authorised him (denkai) in the Ordinary Mind Zen line, and was asked by Master Hui Liu to carry forward her lineage of Wild Goose qigong. Before turning to teaching full time he had a long career as a psychologist, and he once taught in India as a Fulbright scholar.\n\nAt Meadowmind, the small centre he started, he serves as guiding teacher of Ordinary Mind Zen Sacramento, a lay sangha that keeps Soto-style forms but runs without hierarchy and welcomes meditators of any background to its weekly sittings. Alongside zazen the group practises the long flowing Dayan sequence of sixty-four movements, combined with natural breathing and Taoist sitting meditation. His recorded talks, given at Houston Zen Center, Berkeley Zen Center and the Commonwealth Club, touch on emptiness and compassion, working with feelings, and the meeting of Zen with the Tao Te Ching, and he has written books on Zen and Taoist teachings.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Sacramento, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "qi-gong",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.zenqigong.com/",
+      "booking_url": "https://www.zenqigong.com/ordinary%20mind%20zen/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/RosenbaumB_web.jpg?itok=8gwwrzn-"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ordinary Mind Zen Sacramento: Weekly Zazen",
+      "url": "https://www.zenqigong.com/ordinary%20mind%20zen/",
+      "description": "Weekly sittings at Meadowmind in Sacramento on Monday mornings and Wednesday evenings, in Soto-style forms within a lay sangha. Newcomers contact the group before attending; a year-long precepts study is also offered.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://www.zenqigong.com/resources/purple-meadow-flower-3.jpg"
+    },
+    {
+      "title": "Dayan (Wild Goose) Qigong Practice",
+      "url": "https://www.zenqigong.com/Dayan%20Qigong/",
+      "description": "Group practice of the Dayan qigong form, with its long flowing sequences, self-massage and Taoist meditation. Sessions are for people with some qigong background; class information is on the site's resources page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong"
+      ],
+      "image": "http://www.zenqigong.com/resources/Lyell-w-Goose3.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Compassion and Emptiness",
+      "url": "https://www.zenqigong.com/resources/Compassion_and_Emptiness_HZC.mp3",
+      "description": "A recorded dharma talk from Houston Zen Center (2014) on how compassion and emptiness fit together.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/RosenbaumB_web.jpg?itok=8gwwrzn-"
+    },
+    {
+      "title": "Practicing with Feelings",
+      "url": "https://www.zenqigong.com/resources/Practicing_with_Feelings.mp3",
+      "description": "A 2018 talk at Houston Zen Center on bringing emotions into Zen practice rather than pushing them away.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/RosenbaumB_web.jpg?itok=8gwwrzn-"
+    },
+    {
+      "title": "Zen and the Tao Te Ching",
+      "url": "https://www.zenqigong.com/resources/Walking_Way_Commonwealth_Club.mp3",
+      "description": "A 2013 talk at the Commonwealth Club on reading the Tao Te Ching through Zen practice.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/RosenbaumB_web.jpg?itok=8gwwrzn-"
+    },
+    {
+      "title": "Mind Is Ungraspable",
+      "url": "https://www.zenqigong.com/resources/01-Mind-is-Ungraspable.mp3",
+      "description": "A 2005 talk from Berkeley Zen Center on the Zen teaching that mind cannot be grasped.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2015-10/RosenbaumB_web.jpg?itok=8gwwrzn-"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 358,
+    "hub_url": "https://kripalu.org/people/robert-meikyo-rosenbaum",
+    "tier_evidence": "No social accounts or YouTube channel linked from his sites → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.zenqigong.com/Meadowmind%20contact/",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Own site zenqigong.com (Meadowmind) found via the link on his Kripalu person page; his second site robertrosenbaumphd.com is linked from it (robots.txt read for both; both return 404 for robots.txt, so open).",
+      "Kripalu lists him as 'Robert Meikyo Rosenbaum'; his own sites use Robert (Bob) Rosenbaum, so slug robert-rosenbaum.",
+      "No Kripalu mention on own sites: listed without the link.",
+      "Retired clinical psychologist and neuropsychologist; his clinical career (single-session therapy, pain programmes) is left out. He now teaches Zen and qigong only.",
+      "Photo: only the Kripalu headshot (og:image crop). His own site's photo shows him with two teachers, so not used.",
+      "Sites carry '© 2019' / '© 2022' footers; the weekly schedule may be out of date. Owner may want to confirm Meadowmind is still meeting.",
+      "Availability set to local: in-person sittings in Sacramento; no online classes stated.",
+      "Regional: Sacramento, California."
+    ],
+    "left_out": [
+      "Books (including That Is Not Your Mind; Walking the Way; Zen and the Heart of Psychotherapy): his pages show covers and excerpts only, no ISBNs.",
+      "Essays (What About Love?, Mindfulness is Full Engagement, The Problem with Purity, Precepts and Paramitas): link labels and page titles on his site do not match one-to-one, so not used.",
+      "Single Session Therapy books and articles: psychotherapy, not spiritual teaching.",
+      "Medical qigong references on the qigong page: medical."
+    ]
+  },
+  "images_final": true
+}

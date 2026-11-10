@@ -1,0 +1,90 @@
+{
+  "healer": {
+    "healer_slug": "dalai-lama",
+    "location_source": "https://www.dalailama.com/office/contact",
+    "create": {
+      "name": "His Holiness the Dalai Lama",
+      "bio": "Tenzin Gyatso, the 14th Dalai Lama, calls himself a simple Buddhist monk. He was born Lhamo Dhondup in 1935 into a farming family in Amdo, in north-eastern Tibet, and was recognised at the age of two as the rebirth of the 13th Dalai Lama. His monastic training began when he was six and followed the Nalanda curriculum, centred on Buddhist philosophy, and in 1959 he passed his final examination in Lhasa and received the Geshe Lharampa degree. Since going into exile that same year he has lived in Dharamsala, in northern India.\n\nHis teaching rests on three commitments he describes on his own site. As a human being, he encourages people to be happy by training the mind and growing warm-heartedness, compassion, forgiveness, patience and contentment, values he calls secular ethics because they can help anyone, whether or not they follow a religion. As a monk, he works for harmony and respect between the world's faiths. As a Tibetan, he cares for the language and culture that came down from the masters of Nalanda. He also takes a keen interest in what ancient Indian understanding of the mind and practices such as meditation can offer modern education. His talks and teachings are free of charge, and his office shares many of them as videos online.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Dharamsala, Himachal Pradesh",
+      "country": "India",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.dalailama.com/",
+      "booking_url": "https://www.dalailama.com/schedule",
+      "youtube_url": "https://www.youtube.com/dalailama",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ohhdl@dalailama.com",
+      "image_urls": [
+        "https://www.dalailama.com/assets/pages/_1200x630_crop_center-center_none/2021-04-20-sympathy_SA971452-gigapixel-high-fidelity-v2-2x.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Facing Life's Problems",
+      "url": "https://www.youtube.com/watch?v=CPyLlvHKcz8",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Dalai Lama"
+    },
+    {
+      "title": "Warm Heartedness Is the Key",
+      "url": "https://www.youtube.com/watch?v=I32pEHAqb3M",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Dalai Lama"
+    },
+    {
+      "title": "The True Meaning of Non-Violence",
+      "url": "https://www.youtube.com/watch?v=_jObBaYng7U",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Dalai Lama"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 349,
+    "hub_url": "https://www.soundstrue.com/collections/authors-his-holiness-the-dalai-lama",
+    "tier_evidence": "YouTube youtube.com/dalailama: unreadable (channel pages not fetched, 9 Nov 2026 rule); X, Facebook and Instagram linked from dalailama.com, not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.dalailama.com/office/contact",
+    "contact_form_url": null,
+    "flags": [
+      "OWNER: tier needs your call. No counts readable under the current rules, so local_hero by the rule; editorial stature (world-famous spiritual leader, Nobel laureate) clearly argues for a higher tier via sprint.tier_override.",
+      "Political content: his site gives a large share to Tibet, China and the exile administration. The bio mentions exile only as a fact of where he lives; Tibet-politics videos (e.g. U.S. Congressional Delegation meeting), messages and the 'Voice for the Voiceless' book were left out. Owner may judge whether the listing itself fits the no-political-content rule.",
+      "Sounds True list used as names only; soundstrue.com not opened. dalailama.com found by web search; robots.txt read (allows all).",
+      "Slug dalai-lama drops 'His Holiness' (title rule); name keeps it as he is known.",
+      "Email ohhdl@dalailama.com is the Office of His Holiness (contact page); base Dharamsala from the office mailing address (McLeod Ganj) and his brief biography.",
+      "No offerings: his talks and teachings are free and public (schedule page); the only upcoming item is a Long Life Prayer ceremony on 24 Feb 2027, not a teaching. availability set to local_online (teachings in Dharamsala, webcasts online).",
+      "Videos from dalailama.com video pages (his office's own channel), checked with oEmbed.",
+      "Regional: Dharamsala, Himachal Pradesh, India."
+    ],
+    "left_out": [
+      "Books: dalailama.com lists 142 books but gives no ISBNs or store links; none added.",
+      "Long Life Offering Ceremony (24 Feb 2027): a ceremony offered to him, not a teaching offering.",
+      "Political videos, statements and messages on Tibet, reincarnation politics and the Shugden issue.",
+      "Live webcasts page not opened."
+    ],
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "held": "Held for the owner (night sprint, 10 Nov 2026): much of his own site is Tibet politics; does the listing fit the no-political-content rule?"
+  }
+}

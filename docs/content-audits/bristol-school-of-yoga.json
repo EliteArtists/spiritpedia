@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "bristol-school-of-yoga",
+    "location_source": "https://www.bristolschoolofyoga.co.uk/contact",
+    "create": {
+      "name": "Bristol School of Yoga",
+      "bio": "Bristol School of Yoga is a teaching studio and teacher-training school in a converted building on Backfields Lane, close to Stokes Croft in central Bristol. It is directed by Laura Gilmore, who leads its trainings and has shaped its approach: respect for the classical roots of yoga, read alongside what modern study of the body and mind has to say. Its courses move between alignment and anatomy on one side and the subtle body, the chakras and vayus, meditation and the Yoga Sutras on the other, and the school describes its take on philosophy as down to earth and non-dogmatic.\n\nThe school has run a 200-hour training for some seventeen years. It currently offers it in two strands, Hatha with Restorative and Vinyasa with Yin, taught over several months of weekend days with home study, practice teaching and assessment, and certified with YogaPros UK. Graduates can continue to a 300-hour advanced course. For students not yet ready to train, Yoga in Depth spends eight Sundays across the year on posture families, breathing practice, meditation, yoga nidra and philosophy, with the option to join from home by video. A weekly timetable of studio classes runs alongside, with monthly memberships and class passes.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Bristol",
+      "country": "United Kingdom",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.bristolschoolofyoga.co.uk/",
+      "booking_url": "https://www.bristolschoolofyoga.co.uk/200hr-yoga-teacher-training",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@bristolschoolofyoga.co.uk",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5f521f8f92fb0606858627e1/e43430f1-65a7-4e4d-bad1-c90f409a2b44/DSC_5586.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5f521f8f92fb0606858627e1/32918d8e-28d9-41e1-878b-2fe664d39d12/DSC_5530.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Vinyasa and Yin 200hr Yoga Teacher Training",
+      "url": "https://www.bristolschoolofyoga.co.uk/vin-yin-200hr-training",
+      "description": "The school's 200-hour course in flowing and slow, held practice, running from April to October 2027 in Bristol with a live online option. It covers asana and adjustment, meditation and pranayama, philosophy from the key texts, anatomy, observed and assessed teaching, and setting up as a teacher.",
+      "price": "£3,597",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f521f8f92fb0606858627e1/a44d69cf-1358-41a6-b7c8-20bf43f59134/yy3.webp"
+    },
+    {
+      "title": "Yoga in Depth",
+      "url": "https://www.bristolschoolofyoga.co.uk/yogain-depth",
+      "description": "Eight Sunday study days spread over the year, each led by one of the school's teachers, on posture families, rest and yoga nidra, meditation, pranayama and the Yoga Sutras. It can be joined at the studio or by video, with recordings afterwards, and suits students weighing up teacher training.",
+      "price": "Full course: £795 / Members price £695",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": "2027-09-26",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f521f8f92fb0606858627e1/fa8ea173-967d-4c4f-9e2d-2cf12e136b9c/DSC07194.jpg"
+    },
+    {
+      "title": "Earth Membership",
+      "url": "https://www.bristolschoolofyoga.co.uk/passes-memberships",
+      "description": "A monthly studio membership giving nine classes a month and a discount on in-house workshops. Larger memberships, drop-in classes and class passes are on the same page.",
+      "price": "£99",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5f521f8f92fb0606858627e1/02e7807a-e289-4f62-abee-6430f55ef950/DSC_5522.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 524,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.bristolschoolofyoga.co.uk/yogain-depth",
+    "contact_form_url": "https://www.bristolschoolofyoga.co.uk/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Owner check: the school frames itself as 'rooted in science' and its site mixes yoga philosophy, meditation and the subtle body with strength science, pain science and mental-health teaching. Kept because it is mainly a teacher-training school with philosophy and meditation at the core of its courses, but it is less lineage-led than the brief prefers; no clear lineage school with its own site was found in Bristol (Yogawest, the Iyengar centre, appeared only in directory results).",
+      "Domain bristolschoolofyoga.co.uk came from a search summary and was confirmed on the site's own home page, which names the school.",
+      "Email info@bristolschoolofyoga.co.uk is the school's office inbox; a contact form is also published.",
+      "No founding year is published (the training page says the 200hr course has run for 17 years), so founded_year is left out.",
+      "Vinyasa and Yin training dates are published as April to October 2027 without days, so start_date and end_date are null and the months are in the description.",
+      "Possible future listings: Laura Gilmore (school director).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Bristol; Spiritpedia has few listings there."
+    ],
+    "left_out": [
+      "October 2026 Hatha & Restorative 200hr: already started.",
+      "300 hour Advanced Teacher Training: run under Laura Gilmore's own site and includes anxiety and trauma modules (health rule).",
+      "Unpause program and Extended Practice pages: not opened.",
+      "Single-person posture photos: not of the studio as a whole."
+    ]
+  },
+  "images_final": true
+}

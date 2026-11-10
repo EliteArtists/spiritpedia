@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1107,
+    "healer_slug": "cathy-marshall"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9c0286bb-4c65-4ca5-a5ff-65dbd246b933",
+      "slug": "intuitive-quantum-touch-energy-session",
+      "title": "Intuitive Quantum-Touch Energy Session"
+    },
+    {
+      "table": "courses",
+      "id": "9568055e-6a60-4b5a-aa27-b9d322e585e6",
+      "slug": "personalised-energy-artwork",
+      "title": "Personalised energy artwork"
+    },
+    {
+      "table": "courses",
+      "id": "5e5daf31-6082-4971-809c-6f211ac5db42",
+      "slug": "quantum-touch-healing-circle-online-monthly",
+      "title": "Quantum-Touch Healing Circle (online, monthly)"
+    }
+  ],
+  "at": "2026-11-10T00:09:44.840Z"
+}

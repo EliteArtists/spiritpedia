@@ -1,0 +1,154 @@
+{
+  "healer": {
+    "healer_slug": "arawana-hayashi",
+    "location_source": null,
+    "no_public_base": "Her site and Kripalu page describe past work in Cambridge, Massachusetts and Boulder, Colorado and programmes around the world, but neither says where she lives or is based now.",
+    "create": {
+      "name": "Arawana Hayashi",
+      "bio": "Arawana Hayashi is a meditation teacher, choreographer and performer whose work joins contemplative practice with the arts. She is a senior teacher in Shambhala, where she teaches meditation and dharma art grounded in the view that every person has basic goodness, and she has studied bugaku, the ancient court dance of Japan, since 1977, becoming one of its few lineage holders outside Japan. Earlier in her career she directed an interracial street dance company in Boston, co-directed the dance programme at Naropa University and founded two dance companies in Cambridge, Massachusetts.\n\nAt the Presencing Institute, which she helped found with Otto Scharmer and colleagues, she leads the development of Social Presencing Theater, an embodied practice of stillness, simple movement and group awareness that helps people sense what is happening in themselves and in the systems they belong to. She teaches it to individuals, schools, companies and community projects in the Americas, Europe and Asia, both in person and online, and offers an awareness practices course for leaders. Her book on Social Presencing Theater, subtitled The Art of Making a True Move, gives practice instructions and stories from this work and has appeared in several languages.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "consciousness"
+      ],
+      "website_url": "https://arawanahayashi.com/",
+      "booking_url": "https://arawanahayashi.com/programs-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2022-06/ArawanaHayashi_2022.jpg?itok=vvNBK2vx"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Arawana Hayashi - Meditation",
+      "url": "https://www.youtube.com/watch?v=COsx5MKYSgw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Arawana Hayashi"
+    },
+    {
+      "title": "#619 evolve Live with Arawana Hayashi – The Art of Making a True Move",
+      "url": "https://www.youtube.com/watch?v=DNwALHCl1ME",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "channel": "Radio evolve - Dialoge zu Bewusstsein und Kultur"
+    },
+    {
+      "title": "Fellowship Forum: Arawana Hayashi on Welcoming the Unknown Through Embodied Practices",
+      "url": "https://www.youtube.com/watch?v=io00hoSBg-I",
+      "subjects": [
+        "mindfulness",
+        "consciousness"
+      ],
+      "channel": "Garrison Institute"
+    },
+    {
+      "title": "Social Presencing Theatre - Arawana Hayashi at Wisdom Together Oslo 2017",
+      "url": "https://www.youtube.com/watch?v=NAlBvdYFRYo",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Wisdom Together"
+    },
+    {
+      "title": "Inner change for emerging futures: From imagination to action | Arawana Hayashi | ChangeNOW2023",
+      "url": "https://www.youtube.com/watch?v=ALcjwpPPJLg",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "ChangeNOW"
+    }
+  ],
+  "books": [
+    {
+      "title": "Social Presencing Theater: The Art of Making a True Move",
+      "slug": "social-presencing-theater",
+      "author": "Arawana Hayashi",
+      "asin": "0999717979",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to the embodied group practice she developed at the Presencing Institute, covering its roots, principles and exercises. It includes instructions for beginners and accounts of the practice in schools, companies and social projects.",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0999717979.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Presence in Action: The art of moving authentically in times of change",
+      "url": "https://emana.net/curso/arawana-hayashi/",
+      "description": "A two-day in-person workshop in Barcelona, hosted by Emana, on meeting change with presence through embodied practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-02-26",
+      "end_date": "2027-02-27",
+      "subjects": [
+        "mindfulness",
+        "consciousness"
+      ],
+      "image": "https://emana.net/wp-content/uploads/2023/07/imagen-curso-EMANA-Arawana_110526.jpg"
+    },
+    {
+      "title": "The Art of Making a True Move",
+      "url": "https://www.u-school.org/offerings/social-presencing-theater-true-move-2027",
+      "description": "A three-day online Social Presencing Theater programme with Arawana, Manish Srivastava and Angela Baldini, offered through the Presencing Institute's u-school.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-04-01",
+      "end_date": "2027-04-03",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "image": "https://www.u-school.org/_next/image?url=https%3A%2F%2Fpi-2022.s3.amazonaws.com%2Fquote_175a16063e.png&w=3840&q=75"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 362,
+    "hub_url": "https://kripalu.org/people/arawana-hayashi",
+    "tier_evidence": "Own YouTube channel (author of COsx5MKYSgw) not fetched: count unreadable; Instagram, Facebook, LinkedIn linked but not readable without login (not tried) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://arawanahayashi.com/meditation/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Own site arawanahayashi.com found via the link on her Kripalu person page (robots.txt read).",
+      "No Kripalu mention on own site: listed without the link.",
+      "Scope: much of her work (Social Presencing Theater, Theory U) is for organisations and leadership; she is also a senior Shambhala meditation teacher. Owner may judge whether she fits.",
+      "No published email of her own (the mailto addresses on her site belong to other SPT teachers); booking contact form on her meditation page.",
+      "Photo: only the Kripalu headshot (og:image crop, soft); her own site's images are small or group shots.",
+      "No published base: city and country left null.",
+      "Videos from IDs on her own resources page, checked with oEmbed. Book ASIN from the Amazon link on her own home page (not opened); not confirmed elsewhere; cover null.",
+      "Prices for the two programmes are on the hosts' pages (not opened): 'Contact for pricing'."
+    ],
+    "left_out": [
+      "Holiday Meditation Retreat with Gaylon Ferguson (26 Dec 2026 - 1 Jan 2027, Atlanta Shambhala): atlanta.shambhala.org robots.txt blocks ClaudeBot (Disallow: /), so not used.",
+      "Five free guided meditations on her resources page: hosted on pi-2022.s3.amazonaws.com, whose robots.txt request returned 403, so not used.",
+      "4D Mapping Online Training (1 Dec 2026), SPT Basics Tokyo (Jul 2027) and the Philadelphia programmes (Oct 2026): organisational-mapping training, a contact-only listing, and past dates.",
+      "Programmes run by other SPT teachers listed on her events page.",
+      "Bugaku performance and masterclasses (booking only); performance videos with musicians (ALIA); TEDx talk by Otto Scharmer; Collective Trauma Summit talk (condition-framed)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "dzogchen-ponlop-rinpoche",
+    "location_source": "https://nalandabodhi.org/nalanda-west/",
+    "create": {
+      "name": "Dzogchen Ponlop Rinpoche",
+      "bio": "Dzogchen Ponlop Rinpoche is a Tibetan Buddhist teacher and scholar trained in both the Nyingma and Kagyu schools. He founded Nalandabodhi, an international network of Buddhist centres, and the Nitartha Institute for Higher Buddhist Studies, and he leads both as their spiritual director. Nalanda West, the contemplative centre he opened in a former church in Seattle in 2004, is Nalandabodhi's headquarters and his seat in the Americas. Through these communities he offers a path that combines study, meditation and mindful activity in daily life.\n\nHe is known for a direct, humorous and relaxed way of teaching aimed at modern, urban audiences, and for the kindness campaign #GoKind. Outside the shrine room he is a poet, photographer, calligrapher and visual artist with a love of classic rock. His books bring traditional teachings into contemporary language. Rebel Buddha and Emotional Rescue are written for readers new to Buddhism, the second focusing on how to work with strong feelings; Mind Beyond Death explains Tibetan teachings on dying and the in-between states; and Wild Awakening and Penetrating Wisdom, the latter a commentary on the Aspiration of Samantabhadra, turn to the nature of mind.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Seattle, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://dpr.info/",
+      "booking_url": "https://nalandabodhi.org/teacher/dzogchen-ponlop-rinpoche/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@dproffice.com",
+      "image_urls": [
+        "https://nalandabodhi.org/wp-content/uploads/2018/12/Dzogchen-Ponlop-Rinpoche_ER-French_1054x1272.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Rebel Buddha",
+      "slug": "rebel-buddha",
+      "author": "Dzogchen Ponlop Rinpoche",
+      "asin": "1590309294",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His best-known book, which presents the Buddha's teaching as a path to freedom of mind for readers with no Buddhist background.",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590309294.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Emotional Rescue: How to Work with Your Emotions to Transform Hurt and Confusion into Energy That Empowers You",
+      "slug": "emotional-rescue",
+      "author": "Dzogchen Ponlop",
+      "asin": "0143130412",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to meeting strong emotions with awareness, drawing on Buddhist practice to work with their energy rather than be swept away by it.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0143130412.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mind Beyond Death",
+      "slug": "mind-beyond-death",
+      "author": "Dzogchen Ponlop Rinpoche",
+      "asin": "1559393017",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide to what Tibetan Buddhism teaches about dying and the in-between states that follow, and how to prepare through practice in this life.",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1559393017.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wild Awakening",
+      "slug": "wild-awakening",
+      "author": "Dzogchen Ponlop Rinpoche",
+      "asin": "1590300963",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Teachings on recognising the nature of mind in the Tibetan traditions he holds.",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590300963.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Penetrating Wisdom: The Aspiration of Samantabhadra",
+      "slug": "penetrating-wisdom",
+      "author": "Dzogchen Ponlop Rinpoche",
+      "asin": "1590304160",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A commentary on a famous Dzogchen prayer, the Aspiration of Samantabhadra, and what it teaches about awareness and confusion.",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1590304160.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "sounds-true",
+    "rank": 344,
+    "hub_url": "https://www.soundstrue.com/collections/authors-dzogchen-ponlop-rinpoche",
+    "tier_evidence": "YouTube RebelBuddhaTV: unreadable (channel pages not fetched); Instagram @rebel_buddha, Facebook and X @ponlop linked from dpr.info but not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://dpr.info/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Sounds True list used as names only; soundstrue.com not opened. His site dpr.info found via web search and confirmed from his Nalandabodhi teacher page; robots.txt read for dpr.info and nalandabodhi.org (both Crawl-delay 40, respected).",
+      "Email info@dproffice.com is the mailto link in his site footer (his office).",
+      "Items are books only: his site's schedule and his Nalandabodhi teaching schedule show no upcoming events, and no YouTube IDs appear on his pages. His own channel RebelBuddhaTV could not be read.",
+      "Tier: no counts readable for his main accounts (YouTube, Instagram, Facebook, X); widely published author, owner may consider editorial stature.",
+      "Book ISBNs from penguinrandomhouse.com title pages linked from his books page (robots.txt read), converted from ISBN-13; not confirmed elsewhere.",
+      "Base: Seattle, where Nalanda West is described as his seat in the Americas and Nalandabodhi's headquarters.",
+      "One photo only (Nalandabodhi teacher page).",
+      "dpr.info has one article on talking about politics; the site is not centred on politics and nothing from it was used."
+    ],
+    "left_out": [
+      "Teaching events: none scheduled on dpr.info or Nalandabodhi.",
+      "Nalandabodhi online practice sessions: led by the community, not by him."
+    ]
+  },
+  "images_final": true
+}

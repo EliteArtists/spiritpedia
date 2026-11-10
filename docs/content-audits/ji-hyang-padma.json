@@ -1,0 +1,133 @@
+{
+  "healer": {
+    "healer_slug": "ji-hyang-padma",
+    "location_source": "https://www.mountainpath.org/zen",
+    "create": {
+      "name": "Ji Hyang Padma",
+      "bio": "Ji Hyang Padma is a Zen teacher in the Soto lineage of Shunryu Suzuki and a scholar of contemplative traditions. For around three decades she has worked inside higher education, serving as a chaplain at Wellesley College, Tufts and Northeastern, completing a chaplaincy residency at UCSF in 2020-21, and now directing the Master of Divinity programme at Naropa University, where she teaches wisdom traditions. Her doctoral research gathered the life stories of traditional Buddhist healers, looking at how their worldview shapes ritual and care.\n\nFrom Boulder she leads Step by Step Zen Circle, a weekly online sitting group that welcomes beginners, with private interviews for individual guidance, retreats, life ceremonies and council process. Her interests include engaged Buddhism, narrative approaches to spiritual life and earth-honouring traditions, which she brings into walking meditation. Her books are Living the Season, on Zen practice in changing times, and Field of Blessings, a study of ritual and consciousness in Tibetan Buddhist healing practices such as Chöd and the Medicine Buddha, and she co-edited The Buddhist Campus Chaplaincy Sourcebook.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Boulder, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.mountainpath.org/",
+      "booking_url": "https://www.mountainpath.org/zen",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2023-07/Ji-Hyang-Padma_2023.jpg?itok=o-8QH2Go"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Buddhism & Buddhist Healing with JI Hyang Padme.  Belfast Real #EP21",
+      "url": "https://www.youtube.com/watch?v=m2sIKIB9spk",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Belfast Real"
+    }
+  ],
+  "books": [
+    {
+      "title": "Field of Blessings: Ritual and Consciousness in the Work of Buddhist Healers",
+      "slug": "field-of-blessings",
+      "author": "Ji Hyang Padma",
+      "asin": "1785356445",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Drawing on her research with traditional Buddhist healers, the book looks at how story and ritual such as Chöd and Medicine Buddha practice carry meaning and connect people with the sacred.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1785356445.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Living the Season: Zen Practice for Transformative Times",
+      "slug": "living-the-season",
+      "author": "Ji Hyang Padma",
+      "asin": "0835609197",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her 2013 book on Zen practice, offering reflections and practices for times of change.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0835609197.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Step by Step Zen Circle",
+      "url": "https://www.mountainpath.org/zen",
+      "description": "A weekly online Zen sitting group on Friday evenings (Mountain Time), open to beginners after a short orientation. Private interviews for personal guidance are available alongside.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2023-07/Ji-Hyang-Padma_2023.jpg?itok=o-8QH2Go"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zen Meditation Instruction",
+      "url": "https://naturalwisdom.blogspot.com/2020/03/zen-meditation-instruction.html",
+      "description": "Her written instructions for Zen sitting, which she asks newcomers to read before joining the circle.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgs0HjqKvkNef6tYawTsbJCSQ8anyi4xij_cSEyhR5jeh88-Qt17hPEn75TyJfdrOfVo8z8SzpZoewS5ezvYhUPSfAvYJ71nRhFLeVWW5SqV-rjrt_Xuq_d8Zzvc5WunF1bbHzm/w1200-h630-p-k-no-nu/044A7889-7B43-4736-8A44-62A955290F4C.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 357,
+    "hub_url": "https://kripalu.org/people/ji-hyang-padma",
+    "tier_evidence": "No YouTube channel of her own; Instagram (natural.wisdom) and Facebook linked from her site but not readable without login (not tried) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.mountainpath.org/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Own site mountainpath.org found via the link on her Kripalu person page (robots.txt read).",
+      "No Kripalu mention on own site: listed without the link.",
+      "Photo: her site is on Wix (static.wixstatic.com refuses us), so the only photo is the Kripalu headshot (og:image crop).",
+      "She is an associate professor at Naropa University and a former chaplain; listed because she leads an active Zen sitting group and has two Zen/Buddhist books. Owner may judge her mainly academic.",
+      "Field of Blessings is about Buddhist healers' rituals; kept because it is a study of ritual and meaning, not a health claim. Borderline; owner may drop it. The video interview title also uses 'Buddhist Healing' (no condition named).",
+      "Video is an interview on the Belfast Real channel, linked from her own books page; she is the guest and main speaker. Checked with oEmbed.",
+      "Book ASINs from the Amazon links on her own books page (links not opened); not confirmed elsewhere. Covers set to null.",
+      "Contact form is on her home page; no published email.",
+      "Regional: Boulder, Colorado."
+    ],
+    "left_out": [
+      "The Buddhist Campus Chaplaincy Sourcebook (co-editor): no ISBN on her site; sumeru-books.com not opened.",
+      "Conscious End-of-Life Care programme and course pages: pages carry no text we could read (Wix), and chaplaincy/end-of-life care training is clinical.",
+      "Medicine Buddha puja liturgy and images (.docx downloads on her home page): files for Northeastern students, and Medicine Buddha is a healing practice; left out as borderline.",
+      "Mindfulness-Based Stress Reduction and spiritual counselling: listed as ways she works but no page to link.",
+      "Podcast on anchor.fm: not checked."
+    ]
+  },
+  "images_final": true
+}

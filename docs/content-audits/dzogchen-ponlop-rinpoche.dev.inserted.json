@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1132,
+    "healer_slug": "dzogchen-ponlop-rinpoche"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2328,
+      "slug": "rebel-buddha",
+      "title": "Rebel Buddha"
+    },
+    {
+      "table": "books",
+      "id": 2329,
+      "slug": "emotional-rescue",
+      "title": "Emotional Rescue: How to Work with Your Emotions to Transform Hurt and Confusion into Energy That Empowers You"
+    },
+    {
+      "table": "books",
+      "id": 2330,
+      "slug": "mind-beyond-death",
+      "title": "Mind Beyond Death"
+    },
+    {
+      "table": "books",
+      "id": 2331,
+      "slug": "wild-awakening",
+      "title": "Wild Awakening"
+    },
+    {
+      "table": "books",
+      "id": 2332,
+      "slug": "penetrating-wisdom",
+      "title": "Penetrating Wisdom: The Aspiration of Samantabhadra"
+    }
+  ],
+  "at": "2026-11-10T01:03:36.526Z"
+}

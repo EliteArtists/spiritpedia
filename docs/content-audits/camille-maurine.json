@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "camille-maurine",
+    "location_source": "http://www.camillemaurine.com/about/private_sessions.html",
+    "create": {
+      "name": "Camille Maurine",
+      "bio": "Camille Maurine is a meditation mentor, dancer and writer based in Marina del Rey, California, whose teaching brings meditation, movement and creative expression together, with a particular focus on women's spiritual life and embodiment. With her husband, the meditation teacher Lorin Roche, she developed Instinctive Meditation, an approach that encourages each person to find practices that suit their own nature rather than follow a fixed method, and together they founded the Radiance Sutras School of Meditation. She has also performed movement pieces drawn from The Radiance Sutras, Lorin's rendering of the Vijnana Bhairava Tantra.\n\nCamille and Lorin co-wrote Meditation 24/7, a collection of short practices for the moments of an ordinary day, and before it Meditation Secrets for Women. For years she has guided an online circle of women through the twelve secrets of her first book, training some of them to facilitate the work themselves, and she created a process called Moving Theater of the Soul. She offers private sessions in person, by phone or on Zoom, using meditation, breath, voice and expressive movement, and has taught at Esalen, Kripalu and 1440 Multiversity.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Marina del Rey, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "http://www.camillemaurine.com/",
+      "booking_url": "http://www.camillemaurine.com/about/private_sessions.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/camille.maurine",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "cm@camillemaurine.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2018-03/MaurineC.jpg?itok=hhgHcwuD"
+      ]
+    }
+  },
+  "teaches_at": [
+    {
+      "hub": "kripalu",
+      "role": "instructor"
+    },
+    {
+      "hub": "esalen",
+      "role": "instructor"
+    },
+    {
+      "hub": "1440-multiversity",
+      "role": "instructor"
+    },
+    {
+      "hub": "the-shift-network",
+      "role": "instructor"
+    }
+  ],
+  "videos": [],
+  "books": [
+    {
+      "title": "Meditation Secrets for Women: Discovering Your Passion, Pleasure, and Inner Peace",
+      "slug": "meditation-secrets-for-women",
+      "author": "Camille Maurine, Lorin Roche",
+      "asin": "0062516973",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Camille and Lorin's guide to meditation as women actually experience it, encouraging readers to trust their own rhythms and feelings rather than force a single technique.",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0062516973.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Meditation 24/7: Practices to Enlighten Every Moment of the Day",
+      "slug": "meditation-24-7",
+      "author": "Camille Maurine, Lorin Roche",
+      "asin": "0740747150",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Brief essays and practices for points in an everyday routine, from waking to falling asleep, first published with an audio CD of the two authors guiding the meditations.",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0740747150.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Private Sessions in Soulful Embodiment with Camille Maurine",
+      "url": "http://www.camillemaurine.com/about/private_sessions.html",
+      "description": "One-to-one sessions in person, by phone or on Zoom, shaped around what each person brings. They may include tailored meditation, subtle and expressive movement, breathwork and voice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2018-03/MaurineC.jpg?itok=hhgHcwuD"
+    },
+    {
+      "title": "Radiance Sutras Meditation Teacher Training (200 hours, online)",
+      "url": "https://radiancesutras.com/online-meditation-teacher-training-200-hours-certification-program-interest/",
+      "description": "A six-month online training in Instinctive Meditation from the Radiance Sutras School of Meditation, with live classes during the week and Yoga Alliance certification at 200 hours. Dates for the next round are sent to those who register interest.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://radiancesutras.com/wp-content/uploads/2024/10/extended-rsmtt-hero-background.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 481,
+    "hub_url": "https://kripalu.org/people/camille-maurine",
+    "tier_evidence": "No YouTube or Instagram found on her site; Facebook count not read (off limits to us) → no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "http://www.camillemaurine.com/about/private_sessions.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Kripalu, Esalen, 1440 Multiversity and The Shift Network named on: http://www.camillemaurine.com/about/index.html (faculty list); Shift Network page not opened.",
+      "Her husband and co-teacher Lorin Roche died in April 2026 (skipped as rank 108, lorin-roche.json); his skip note suggested considering Camille separately. The teacher training page still presents both of them and gives no dates, so it may not run again in this form; please check.",
+      "Her own site is partly dated (copyright 2016-2023 on some pages), but the home page mentions a free class on Wednesday 18 March (2026) and radiancesutras.com announces a class on 11 Nov 2026, so she is still teaching.",
+      "Base: Marina del Rey, California, from her P.O. Box on her own site (an unincorporated community of about 11,000).",
+      "Also published: support@camillemaurine.com (mailto on the home page).",
+      "Photo from her Kripalu person page; her own site's photos are under 300 px wide.",
+      "Book ISBNs from her own site: Meditation 24/7 (http://www.camillemaurine.com/writings/24-7.html) and the Amazon link for Meditation Secrets for Women on her home page; not confirmed elsewhere; no covers checked.",
+      "Thin on media: no YouTube channel; her performance videos are on Vimeo."
+    ],
+    "left_out": [
+      "Free class 'Wild Serenity' on radiancesutras.com (11 Nov 2026): too soon (before 12 Nov).",
+      "Circle of Love, Power, Peace and the Meditation Secrets for Women course: no upcoming dates ('Stay tuned').",
+      "Sleep Is Magic 21-day training and past retreats on her events page: prior offerings.",
+      "Radiance Sutras School membership (join.radiancesutras.com redirects to the home page): no membership page found.",
+      "Books by Lorin Roche alone (The Radiance Sutras and others): not her books.",
+      "Vimeo performance videos: YouTube only."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1120,
+    "healer_slug": "melina-meza"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "78c84458-66d9-430e-a11e-2372c1a4500c",
+      "slug": "winter-treasure-hunt-retreat-yoga-nature-creativity-monterey",
+      "title": "Winter Treasure Hunt Retreat: Yoga, Nature, Creativity (Monterey)"
+    },
+    {
+      "table": "courses",
+      "id": "06538dec-59dd-4a05-b463-e02e0ea7a142",
+      "slug": "japan-coastal-calm-ancient-kyoto",
+      "title": "Japan: Coastal Calm & Ancient Kyoto"
+    },
+    {
+      "table": "courses",
+      "id": "2d85b354-daea-4c8a-bed1-42b92d8b805e",
+      "slug": "weekly-yoga-classes-in-person-and-livestream",
+      "title": "Weekly Yoga Classes (in person and livestream)"
+    },
+    {
+      "table": "courses",
+      "id": "10add2d9-0fe3-4cf7-8cd6-aa1db6089e4c",
+      "slug": "private-sessions-seasonal-yoga-and-ayurveda",
+      "title": "Private Sessions: Seasonal Yoga and Ayurveda"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "e91444f1-9d1f-46a3-9810-0f6433d3ada2",
+      "title": "melina-meza teaches at Esalen Institute"
+    }
+  ],
+  "at": "2026-11-10T00:36:22.783Z"
+}

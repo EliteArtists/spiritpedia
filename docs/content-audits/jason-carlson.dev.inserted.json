@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1121,
+    "healer_slug": "jason-carlson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0185ec26-d4d4-4bec-b7ed-571d289f245c",
+      "slug": "private-sessions-7",
+      "title": "Private Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "37203be8-eef3-4e61-a1cd-049c4fbbff57",
+      "slug": "quantum-touch-level-1-becoming-energized-2",
+      "title": "Quantum-Touch Level 1: Becoming Energized"
+    },
+    {
+      "table": "courses",
+      "id": "5f9c3a47-3345-4f4e-955c-d5faed31965f",
+      "slug": "quantum-touch-level-4-becoming-heart-conscious-2",
+      "title": "Quantum-Touch Level 4: Becoming Heart-Conscious"
+    },
+    {
+      "table": "courses",
+      "id": "72cc9bba-ac87-4d9b-aea1-82ea1b6ea79a",
+      "slug": "gathering-of-angels",
+      "title": "Gathering of Angels"
+    },
+    {
+      "table": "courses",
+      "id": "a89aa1f1-e325-471f-8a0b-34c36aba6c0b",
+      "slug": "celebration-circle",
+      "title": "Celebration Circle"
+    }
+  ],
+  "at": "2026-11-10T00:41:16.284Z"
+}

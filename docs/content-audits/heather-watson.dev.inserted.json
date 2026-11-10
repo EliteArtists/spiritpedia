@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1111,
+    "healer_slug": "heather-watson"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "17bb5a94-8b4e-4691-bff7-659db291f308",
+      "slug": "quantum-touch-and-reiki-sessions",
+      "title": "Quantum-Touch and Reiki sessions"
+    },
+    {
+      "table": "courses",
+      "id": "0900ea60-a844-4d56-b098-dcee482e3ff3",
+      "slug": "quantum-touch-classes",
+      "title": "Quantum-Touch classes"
+    },
+    {
+      "table": "courses",
+      "id": "904b00dc-e412-4779-898f-554866e7c2af",
+      "slug": "firewalking-instructor-training-2026",
+      "title": "Firewalking Instructor Training 2026"
+    },
+    {
+      "table": "courses",
+      "id": "79210c9a-70e4-43f0-9a6a-e9cc06e3ecab",
+      "slug": "sound-healing-and-cacao-ceremonies",
+      "title": "Sound healing and cacao ceremonies"
+    }
+  ],
+  "at": "2026-11-10T00:27:42.787Z"
+}

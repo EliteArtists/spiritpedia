@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "eileen-strong",
+    "location_source": "https://www.eileenstrongcoaching.com/contact",
+    "create": {
+      "name": "Eileen Strong",
+      "bio": "Eileen Strong is a Quantum-Touch instructor and practitioner who works from a therapy room in Belper, Derbyshire, and offers some of her work online to clients abroad. Over more than fifteen years she has trained in a range of holistic and energy-based methods, adding coaching skills more recently. She first learnt Quantum-Touch over a decade ago and still enjoys experimenting with it, and she is also attuned to traditional Usui Reiki.\n\nHer one-to-one sessions use Quantum-Touch's light touch, breath and body awareness, or Reiki, to support the natural flow of life-force energy. As an instructor she runs the two-day Quantum-Touch Becoming Energised (Level 1) workshop in person, in Belper and in Cheltenham, open to beginners as well as to those who already practise energy work. Meditation has been part of her life for many years and she has taught it since 2014, including through her own online course for newcomers, Learn to Love to Meditate. A keen sketcher, she also offers Spirit-Led Art Readings: a portrait and reading produced through automatic drawing, which she sees as guidance from spirit for someone at a crossroads in life.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Belper",
+      "country": "United Kingdom",
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "meditation"
+      ],
+      "website_url": "https://www.eileenstrongcoaching.com/",
+      "booking_url": "https://www.eileenstrongcoaching.com/quantum-touch",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "eileen@eileenstrongcoaching.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Quantum-Touch sessions",
+      "url": "https://www.eileenstrongcoaching.com/quantum-touch",
+      "description": "One-to-one Quantum-Touch sessions at her therapy room in Belper, given clothed while seated, standing or lying down. Eileen uses a very light touch with breath and body awareness to raise the energy of the person she works with, and can also work at a distance.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    },
+    {
+      "title": "Reiki sessions",
+      "url": "https://www.eileenstrongcoaching.com/reiki",
+      "description": "Usui Reiki sessions in Belper, in which Eileen channels life-force energy through the chakras and meridians to encourage balance, ease and inner peace.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    },
+    {
+      "title": "Quantum-Touch Becoming Energised (Level 1), Cheltenham",
+      "url": "https://www.eileenstrongcoaching.com/event-details/quantum-touch-becoming-energised-level1-the-2-day-workshop",
+      "description": "Two full days of in-person training in Charlton Kings, Cheltenham, in the core Quantum-Touch breathing and awareness techniques, suitable for complete beginners. A half-price refresher ticket is available to anyone who has done a live Level 1 class before.",
+      "price": "£330.00",
+      "product_type": "course",
+      "start_date": "2027-02-06",
+      "end_date": "2027-02-07",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    },
+    {
+      "title": "Quantum-Touch Becoming Energised (Level 1), Belper",
+      "url": "https://www.eileenstrongcoaching.com/event-details/quantum-touch-becoming-energised-workshop-level1-2-days-1",
+      "description": "The same two-day Level 1 workshop held in Belper, Derbyshire, teaching the foundations of running life-force energy through the hands for yourself, family and pets. Refresher and under-18 places are offered at half price.",
+      "price": "£330.00",
+      "product_type": "course",
+      "start_date": "2027-03-06",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    },
+    {
+      "title": "Learn to Love to Meditate",
+      "url": "https://www.eileenstrongcoaching.com/online-meditation-course",
+      "description": "Eileen's online introduction to meditation, for people who are curious but unsure where to begin. It explains what meditation is and builds a simple foundational practice for every day.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    },
+    {
+      "title": "Spirit-Led Art Readings",
+      "url": "https://www.eileenstrongcoaching.com/spiritartreadings",
+      "description": "A one-off portrait drawn by automatic drawing, with a written reading, intended as guidance from spirit guides at a turning point in life. Each one takes her about ninety minutes, and a free introductory chat is offered first.",
+      "price": "£75",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "channelled-teachings"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "quantum-touch",
+    "rank": 105,
+    "hub": null,
+    "tier_evidence": "Instagram @eileenstrong_uk and Facebook page linked from her site, never fetched (rule); no YouTube channel found → 0 readable followers → local_hero. Main accounts unreadable.",
+    "email": "yes",
+    "email_source": "https://www.eileenstrongcoaching.com/contact",
+    "contact_form_url": "https://www.eileenstrongcoaching.com/contact",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Borderline on the health rule as a whole: her brand is 'Lifestyle Prescriptions Holistic Health Coaching & Therapies' and the site also offers a Cancer Support page, massage (including condition-named massage), EFT and Hopi candling. Energy work, meditation and spirit art make up a large share, so she was kept; owner may prefer to skip.",
+      "Health rule: her Quantum-Touch page says bones move under a light touch and speaks of restoring cells and organs; none of that is used. Her meditation page lists blood-pressure and anxiety benefits; not used.",
+      "Photo is her Quantum-Touch profile photo; her own site is on Wix, whose image host refuses our ingest.",
+      "Spirit-Led Art Readings kept as a spiritual offering (spirit guides, automatic drawing); owner may judge it off-theme.",
+      "Learn to Love to Meditate is sold on Teachable (eileen-strong-s-school.teachable.com); not opened, so price not read.",
+      "A third Level 1 workshop (Falkirk) has no date yet, so it was left out.",
+      "Regional: Belper, Derbyshire."
+    ],
+    "left_out": [
+      "Health coaching, Cancer Support, massage therapies, EFT and Hopi ear candling: coaching, bodywork or condition-led.",
+      "Quantum-Touch Level 1 workshop in Falkirk: date to be confirmed.",
+      "Spirit-Led Art event in Belper: date to be confirmed.",
+      "Energy Boost mini class mentioned on her Quantum-Touch page: no page or date of its own."
+    ]
+  },
+  "images_final": true
+}

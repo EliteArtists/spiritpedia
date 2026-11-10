@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "rashid-hughes",
+    "location_source": "https://www.rashidhughes.com/about",
+    "create": {
+      "name": "Rashid Hughes",
+      "bio": "Rashid Hughes is a mindfulness and yoga teacher who links contemplative practice with restorative justice and community care. He studied music and then divinity at Howard University, holds certifications as a mindfulness teacher and a yoga instructor, and has been training to serve as a fire pujari. His teaching centres on R.E.S.T., his own approach to meditation: relaxing attention, letting go of striving, sensing silence and trusting awareness, so that sitting becomes a way of resting in one's natural state rather than another task to manage.\n\nIn 2019 he co-founded the Heart Refuge Mindfulness Community in Washington, DC, which offers free weekly practice groups grounded in the experiences of Black, Indigenous and people of colour, and he leads its sessions for men and masculine-identifying practitioners. Alongside this he works in DC schools as a restorative justice facilitator, building circles for accountability and community. He writes for Mindful, Lion's Roar and the Garrison Institute on rest, loneliness, compassion and haiku as meditation, and shares recorded talks on grief, brokenness and freedom.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Washington, DC",
+      "country": "United States",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "website_url": "https://www.rashidhughes.com/",
+      "booking_url": "https://www.rashidhughes.com/events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "rashid.hughes@gmail.com",
+      "image_urls": [
+        "https://kripalu.org/sites/default/files/styles/og_image/public/2025-03/Custom%2520dimensions%2520470x470%2520px.jpeg?itok=2tv5eAy9"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "R.E.S.T.: A Guided Practice for the Tired & Weary",
+      "url": "https://www.mindful.org/r-e-s-t-a-guided-practice-for-the-tired-and-weary/",
+      "description": "A guided practice published by Mindful that walks through the four steps of his R.E.S.T. approach. It invites the reader to rest in awareness instead of working to calm down.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.mindful.org/content/uploads/Rashid-Hughes-R.E.S.T.-e1613764453511.jpg"
+    },
+    {
+      "title": "How Writing Three Lines of Poetry Can Open Your Heart",
+      "url": "https://www.mindful.org/how-writing-three-lines-of-poetry-can-open-your-heart/",
+      "description": "An article on writing haiku as a form of meditation, with a simple way to begin. Linked from his published-work page.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.mindful.org/content/uploads/daniel-christie-n8Vv_o9cz0s-unsplash-scaled.jpg"
+    },
+    {
+      "title": "Working with Loneliness on the Contemplative Path",
+      "url": "https://www.lionsroar.com/working-with-loneliness-on-the-contemplative-path/",
+      "description": "A Lion's Roar piece on listening to loneliness during a contemplative life and turning towards connection with others.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.lionsroar.com/wp-content/uploads/2023/11/together-mountain.png"
+    },
+    {
+      "title": "What to Do When Aggression Masquerades as Compassion",
+      "url": "https://www.lionsroar.com/what-to-do-when-aggression-masquerades-as-compassion/",
+      "description": "A short teaching on using mindfulness to notice when what feels like compassion is really aggression.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "image": "https://www.lionsroar.com/wp-content/uploads/2023/09/hangingheart.jpg"
+    },
+    {
+      "title": "The Great Bypass: Resting in the Aliveness of Being",
+      "url": "https://www.garrisoninstitute.org/blog/the-great-bypass-resting-in-the-aliveness-of-being/",
+      "description": "An essay for the Garrison Institute that asks who we are at the level of being, and how resting there changes practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.garrisoninstitute.org/wp-content/uploads/2024/09/gi-lockup-rgb.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "pipelines-3",
+    "hub": "kripalu",
+    "rank": 355,
+    "hub_url": "https://kripalu.org/people/rashid-hughes",
+    "tier_evidence": "No YouTube channel; Instagram (justbeandbreathe), Facebook and X linked from his site but not readable without login (not tried) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.rashidhughes.com/r-e-s-t",
+    "contact_form_url": "https://www.rashidhughes.com/contactme",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Own site rashidhughes.com found via the link on his Kripalu person page (robots.txt read).",
+      "No Kripalu mention on own site: listed without the link.",
+      "Photo: his own site is on Wix (static.wixstatic.com refuses us), so the only photo is the Kripalu headshot (og:image crop, 1200x640, upscaled from 470px; soft). Owner may want a better photo.",
+      "Email rashid.hughes@gmail.com is a mailto on his R.E.S.T. course page (a 2022 course); contact form on /contactme also recorded.",
+      "Base: Washington, DC, taken from his about page (co-founded Heart Refuge in DC; works for a DC non-profit); not stated as 'lives in'.",
+      "No current paid offerings on his site; the listing rests on five free resources (articles and practices on other sites linked from his own).",
+      "His writing carries a social-justice and anti-capitalist framing in places; the work is centred on mindfulness, so kept, and the overtly political pieces are left out."
+    ],
+    "left_out": [
+      "R.E.S.T. five-week online course (21 Jan-18 Feb 2022): past.",
+      "Heart Refuge practice groups (free, weekly): run on the community's own site (heartrefugemindfulnesscommunity.org), not opened; the five free resources cap was reached.",
+      "Audio talk 'What It Means to Be Free' and the Journal for Contemplative Inquiry article on capitalism and colonialism: political framing.",
+      "SoundCloud talks (Please Grieve, When I Hit Rock Bottom, Aggression Masquerading As Compassion): free-resource cap reached; soundcloud.com not checked.",
+      "Restorative justice work in DC schools: not spiritual teaching."
+    ]
+  },
+  "images_final": true
+}

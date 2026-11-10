@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "kanga-studio-nairobi",
+    "location_source": "https://kangastudio.co/nairobi/",
+    "create": {
+      "name": "Kanga Studio Nairobi",
+      "bio": "Kanga Studio is a yoga and wellbeing centre off Peponi Road in Nairobi, with a timber-lined practice room looking onto a garden. Its founder, Emma Bonnici, teaches Kanga Yoga, the studio's own multi-style approach, which draws on the teachings of Swami Sivananda, B.K.S. Iyengar and K. Pattabhi Jois and puts adapting the practice to each person ahead of fixed forms. Teachers wear white at the studio, and philosophy, chanting and ceremony sit alongside asana.\n\nThe school trains teachers through a Yoga Alliance-certified 200-hour course in two parts: 150 hours taught live online by senior teachers based in Rishikesh, covering asana, pranayama, meditation, yoga and Ayurveda philosophy, bhajans and puja, and a 50-hour in-person module in Nairobi on teaching method, adjustment and class planning, capped at ten students. Further 100-hour courses run in Rishikesh and Arusha. Day to day, a large team teaches Kanga, Hatha, Ashtanga, Jivamukti, Vinyasa and Yin classes, meditation and pranayama, and the studio hosts visiting teachers for chanting, breathwork and sound sessions and leads retreats to Rishikesh.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Nairobi",
+      "country": "Kenya",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://kangastudio.co/nairobi/",
+      "booking_url": "https://kangastudio.co/nairobi/teacher-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "wellbeing@kangastudio.co",
+      "image_urls": [
+        "https://kangastudio.co/nairobi/wp-content/uploads/2024/08/KS-12-1-1-scaled.jpg",
+        "https://kangastudio.co/nairobi/wp-content/uploads/2025/09/Kanga-Yoga-Teacher-Training-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kanga Yoga Teacher Training: 50-Hour In-Person Course, Nairobi",
+      "url": "https://kangastudio.co/nairobi/teacher-training/",
+      "description": "The in-person half of Kanga Yoga's 200-hour training, held at the Nairobi studio each morning except Sundays and limited to ten students. Led by Emma Bonnici, it centres on teaching method, hands-on adjustment, paired teaching and class planning, and is also open to teachers who already hold a qualification. The 150-hour online part runs beforehand.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-02",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kangastudio.co/nairobi/wp-content/uploads/2025/04/Screenshot-2025-04-09-at-12.09.08.png"
+    },
+    {
+      "title": "Rishikesh Yoga & Ayurveda Retreat with Emma Bonnici",
+      "url": "https://kangastudio.co/nairobi/upcoming-events/",
+      "description": "A week in Rishikesh by the Ganges with the studio's founder, built around daily yoga and meditation in the Himalayan foothills.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kangastudio.co/nairobi/wp-content/uploads/2025/04/Screenshot-2025-04-09-at-12.09.08.png"
+    },
+    {
+      "title": "Om Chanting with Khilan Shah",
+      "url": "https://bookwhen.com/kangastudionairobi/e/ev-sbf0v-20261114143000",
+      "description": "A donation-based session of Om chanting in the studio garden led by Khilan Shah, a teacher of Atma Kriya Yoga in the Bhakti Marga tradition of Paramahamsa Vishwananda. The chanting can also be offered as a prayer for others.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "https://kangastudio.co/nairobi/wp-content/uploads/2024/08/KS-12-1-1-scaled.jpg"
+    },
+    {
+      "title": "Jivamukti Spiritual Warrior",
+      "url": "https://bookwhen.com/kangastudionairobi/e/ev-ssq33-20261115083000",
+      "description": "A one-hour class in the Jivamukti Spiritual Warrior sequence with Inga Groth, combining a set flow with breath awareness. All levels are welcome.",
+      "price": "1,800",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kangastudio.co/nairobi/wp-content/uploads/2024/08/KS-12-1-1-scaled.jpg"
+    },
+    {
+      "title": "Studio classes and packages",
+      "url": "https://kangastudio.co/nairobi/classes/",
+      "description": "A weekly timetable of Kanga, Hatha, Ashtanga, Vinyasa, Yin and other classes for all levels, with meditation, pranayama and spiritual philosophy sessions. Single classes or multi-class passes can be bought, and every session is booked in advance.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://kangastudio.co/nairobi/wp-content/uploads/2025/04/Screenshot-2025-04-09-at-12.09.08.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 510,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the pages read; Instagram and Facebook not fetched; no readable followers → local_hero.",
+    "email": "yes",
+    "email_source": "https://kangastudio.co/nairobi/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Found by web search for Nairobi teacher trainings; studio's own site only. kangastudio.co serves pages on the bare host while its robots.txt redirects to www.kangastudio.co/robots.txt, which allows all; read that before fetching.",
+      "Email wellbeing@kangastudio.co is the studio's office inbox (site footer).",
+      "Kanga Studio is a broad wellbeing centre as well as a yoga school: its site also sells massage, pain reprocessing therapy, psychotherapy and other therapies, all left out. Owner may want to judge whether it counts as 'mainly' yoga; the teacher training and Kanga Yoga lineage are central on the home page.",
+      "Psychedelic-adjacent: the events page lists 'An Evening with Shipibo Maestro Nelson' (Shipibo plant-medicine tradition, 10 Nov 2026, already passed); left out and flagged under the psychedelics rule.",
+      "The 200-hour training's price is not on the studio's site (a search snippet from a different Kanga domain mentioned £800; not used).",
+      "The Rishikesh retreat (14-21 Nov 2026) has no page of its own on the site, so it uses the upcoming-events page; the venue is in India, not the studio's base.",
+      "The two one-off events link to the studio's Bookwhen pages (links taken from the studio's own events page; bookwhen.com robots.txt allows them). Jivamukti price written as published ('1,800', currency not stated, presumably KES).",
+      "No founding year is stated (footer copyright 'Kanga Studio Nairobi LTD 2020' is not used as one).",
+      "Possible future listings: Emma Bonnici, Khilan Shah, Inga Groth, Bettina Bachmann (Jivamukti).",
+      "No Spiritpedia teachers found named on the pages read, so the teachers file has no links.",
+      "Regional: Nairobi, Kenya; Spiritpedia has few listings in East Africa."
+    ],
+    "left_out": [
+      "Therapies page (deep tissue and other massage, pain reprocessing therapy, prenatal massage, reflexology, Reiki and Ayurveda consultations) and psychotherapy services: health or therapy-led.",
+      "Prenatal and restorative classes framed around pregnancy or 'nervous system regulation' (health rule).",
+      "150-Hour Online Teacher Training (21 Sep - 30 Oct 2026): already finished.",
+      "Shipibo plant-medicine evening (psychedelics rule) and puppy yoga, coaching and breathwork events (not core yoga teaching, or trauma framing).",
+      "Prices for classes are in Google Drive PDFs, not opened."
+    ]
+  },
+  "images_final": true
+}

@@ -999,7 +999,7 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2087",
    "screen": "keep",
-   "status": "planned",
+   "status": "dev",
    "plan": "docs/content-audits/annabel-hall.json",
    "skip_reason": null
   },
@@ -1011,8 +1011,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4202",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/april-walker.json",
    "skip_reason": null
   },
   {
@@ -1023,8 +1023,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4433",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/asha-carolyn-young.json",
    "skip_reason": null
   },
   {
@@ -1035,9 +1035,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-500",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (greathearthealing.com) leads with a 'Conditions Treated' list (pain, anxiety, depression, immune restoration, cancer management, Alzheimer's, sleep disorders, post-surgery recovery) and cure testimonials (fractured ankle, sciatica, bladder infection), so it is mainly sold on conditions; the same list is on her Quantum-Touch profile."
   },
   {
    "rank": 89,
@@ -1047,9 +1047,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3744",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists only an email (Hong Kong, no website), and a web search found no site of hers naming Quantum-Touch. Her profile also presents her mainly as a social worker."
   },
   {
    "rank": 90,
@@ -1059,9 +1059,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-299",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site, and presents as a physician: his Quantum-Touch profile lists him as a physiatrist (rehabilitation doctor) in Taichung, Taiwan, with only a Facebook page (QuantumTouchTwBooks) as his web link; Facebook is never fetched and a page on someone else's platform doesn't count as his own site. A web search found no site of his."
   },
   {
    "rank": 91,
@@ -1071,8 +1071,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-160",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/bia-de-castro-oliveira.json",
    "skip_reason": null
   },
   {
@@ -1083,9 +1083,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-552",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: she presents herself mainly as a Heilpraktikerin (German licensed naturopathic practitioner) running a natural-medicine practice for patients for over 40 years (Quantum-Touch profile and bianca-telle.de home page), and her site is framed on healing illness, with pages such as regression therapy for illnesses ('RF-Krankheiten'), Grabovoi 'Infomedizin', laser and healing magnetism; Quantum-Touch is one of many therapies. Owner may overrule: a Quantum-Touch-only listing (her QT seminar and session pages, her book 'Total Touch') might be possible."
   },
   {
    "rank": 93,
@@ -1095,8 +1095,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4400",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/carol-wetherill.json",
    "skip_reason": null
   },
   {
@@ -1107,8 +1107,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4443",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/cathy-marshall.json",
    "skip_reason": null
   },
   {
@@ -1119,9 +1119,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-1052",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Celestial Quantum Healing, Springdale, Ohio) lists a phone and email but no website, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 96,
@@ -1131,9 +1131,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4524",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Presents mainly as a clinical practitioner, with no own site: her Quantum-Touch profile titles her 'Quantum Touch Practitioner, Osteopath and Acupuncturist' (Montréal), framed on helping people regain their health, and lists only an email, no website; a web search found no site of hers."
   },
   {
    "rank": 97,
@@ -1143,9 +1143,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3448",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable own site: his Quantum-Touch profile (Taipei) links only a Facebook page (never fetched), and a web search found only a hosted blog at blog.udn.com/Kapler, whose robots.txt refused us (403); not retried, nothing fetched from udn.com."
   },
   {
    "rank": 98,
@@ -1155,9 +1155,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4448",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Hong Kong) gives only an email, no website or bio, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 99,
@@ -1167,9 +1167,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3353",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (lillypilly.nl) is condition-led throughout: the home page sells a free 'health scan' around hay fever, and its main pages are Allergieën (allergies), Angsten (fears/anxiety), Huid (skin) and Preventief; her Quantum-Touch profile is likewise built on Quantum-Allergy for allergy complaints."
   },
   {
    "rank": 100,
@@ -1179,9 +1179,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2409",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Joy of Healing, Pleasanton, California) lists a phone and email but no website, and a web search found only third-party listings (retreat.guru, bookretreats.com, Meetup), not a site of her own. The domain in her email address was not tried (never guess a domain)."
   },
   {
    "rank": 101,
@@ -1191,8 +1191,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-1598",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/constantina-vaseliades.json",
    "skip_reason": null
   },
   {
@@ -1203,9 +1203,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3955",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Own site blocks us: http://www.debbiegiles.com/robots.txt has User-agent: * Disallow: / (9 Nov 2026; https host did not connect). Nothing else fetched."
   },
   {
    "rank": 103,
@@ -1215,8 +1215,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-275",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/deborah-gair.json",
    "skip_reason": null
   },
   {
@@ -1227,9 +1227,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4176",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her own site (denisewillinger.com) presents her first as an intuitive massage therapist, with the home-page headline aimed at people with chronic pain and body realignment; Quantum-Touch is secondary to a massage-therapy practice."
   },
   {
    "rank": 105,
@@ -1239,8 +1239,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3136",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/eileen-strong.json",
    "skip_reason": null
   },
   {
@@ -1251,9 +1251,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2380",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists no website (email is a quantumtouch.com liaison address), and two web searches (English and Chinese) found none."
   },
   {
    "rank": 107,
@@ -1263,9 +1263,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-486",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists no website and two web searches found none."
   },
   {
    "rank": 108,
@@ -1275,9 +1275,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4057",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (lumieredeguerison.fr) sells his sessions on a list of conditions (physical pain, anxiety, trauma, addictions, smoking cessation, weight loss, phobias) alongside hypnosis and neurotherapy; only his Reiki and Quantum-Touch trainings would pass, so the work is mainly condition-led. Owner may reconsider for the trainings alone."
   },
   {
    "rank": 109,
@@ -1287,9 +1287,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4026",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists no website or city (China, all regions) and a web search found none."
   },
   {
    "rank": 110,
@@ -1299,9 +1299,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4526",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists no website (business name Pace Aroma) and a web search found none."
   },
   {
    "rank": 111,
@@ -1311,9 +1311,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4449",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: his own site (tomtti.com, shared with his IT project-management business) offers one bookable set of Quantum-Touch/Reiki healing sessions; no workshops or classes are listed, the Reiki pages are information only, and the membership plans are framed around discounts for chronic patients. Fewer than 3 usable items."
   },
   {
    "rank": 112,
@@ -1323,9 +1323,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3767",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: his own site (geneskaggs.com) markets his Quantum-Touch work on relieving pain and chronic or undiagnosed illness, his Videos page is entirely condition-named (addiction, autoimmune disorders, Alzheimer's, cancer, TMJ, lower back), and his Youthing page claims reversal of cellular ageing. He also teaches A Course In Miracles weekly and has written ACIM study books, which the owner may want to consider separately."
   },
   {
    "rank": 113,
@@ -1335,9 +1335,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4267",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: his Quantum-Touch profile lists no website and two web searches found none."
   },
   {
    "rank": 114,
@@ -1347,9 +1347,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4398",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (borderline): her own site (aquamarine-energy.com, in Chinese) frames her work around pain and conditions: the About page names chronic pain, post-surgery discomfort and bone problems, the Level 1 and Level 4 workshop pages sell pain relief and spinal correction and invite people with pain to attend, and the home-page testimonials are almost all about pain. She also presents as a psychotherapist and hypnotherapist. Her QT Level 1/2/4 workshops (Nov 2026 to Jan 2027, HK$3,500 to HK$4,350) and sessions would otherwise make a full page; owner may reconsider."
   },
   {
    "rank": 115,
@@ -1359,9 +1359,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4035",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule (borderline): her own site (gracequantumhealing.com) presents her Quantum-Touch results in terms of conditions (her About section names dementia, anxiety, depression, scoliosis, lymphoma, high blood pressure, fibroids and allergies), and every session and workshop product page carries the same text on bones sliding into alignment, pain and inflammation, chiropractic and breast-cancer surgery. Her workshops are undated and the booking page shows nothing to book. Owner may reconsider: she lists QT Level 1 ($550.00), Level 2 ($690.00) and sessions ($120.00 per hour) in Richardson, Texas."
   },
   {
    "rank": 116,
@@ -1371,9 +1371,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3930",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile lists no website and two web searches (including the surname Senju from her profile photo's file name) found none."
   },
   {
    "rank": 117,
@@ -1383,8 +1383,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-1754",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/heather-watson.json",
    "skip_reason": null
   },
   {
@@ -1395,9 +1395,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-165",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: the website on his Quantum-Touch profile (quantumhealingHENRI.com) is only a frame around his quantumtouch.com instructor page, and a web search found no other site of his. He chairs the Quantum-Touch curriculum department (per a radio guest profile), so the owner may want him listed another way."
   },
   {
    "rank": 119,
@@ -1407,9 +1407,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4458",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (uralahealing.wixsite.com/home, Kyoto) has only two usable items, individual energy sessions (no prices published) and the Quantum-Touch Level 1 course, whose only published dates (24-25 Oct 2026) have passed (now on request, 88,000 yen). No other offerings, free resources or videos; contact is by LINE or a course application form, with an email only on her Quantum-Touch profile."
   },
   {
    "rank": 120,
@@ -1419,9 +1419,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3008",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Too thin: her own site (lilyef.com, run under the name qoo and never naming Hitoe Yamane; the link to it comes from her Quantum-Touch profile) has only two current items, the online Level 1 workshop (2026 dates finished, next planned January 2027, 88,000 yen) and the Level 4 workshop (1-22 Dec 2026, 104,500 yen). Its sessions ran only Dec 2019 to Feb 2020, and the free seminar and practice group are not being held."
   },
   {
    "rank": 121,
@@ -1431,9 +1431,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4584",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: his Quantum-Touch profile (Istanbul, Turkey) lists phone numbers and an email but no website, and web searches in English and Turkish found no site of his naming Quantum-Touch."
   },
   {
    "rank": 122,
@@ -1443,9 +1443,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-1223",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (State of The Heart, Sandy, Utah) gives only a phone and email, and web searches found no site of hers or of State of The Heart naming Quantum-Touch."
   },
   {
    "rank": 123,
@@ -1455,8 +1455,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3687",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "dev",
+   "plan": "docs/content-audits/jason-carlson.json",
    "skip_reason": null
   },
   {
@@ -1467,8 +1467,8 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3589",
    "screen": "keep",
-   "status": "todo",
-   "plan": null,
+   "status": "planned",
+   "plan": "docs/content-audits/jodie-cruz.json",
    "skip_reason": null
   },
   {
@@ -1479,9 +1479,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4532",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Blocked: her site judithbank.nl (listed on her Quantum-Touch profile) is on Jimdo and its robots.txt request returned a Cloudflare 'Sorry, you have been blocked' page, so nothing was fetched there (not retried). Her profile also presents Germanic New Medicine (GNM), a condition-led system, alongside Quantum-Touch; owner may not want her in any case."
   },
   {
    "rank": 126,
@@ -1491,9 +1491,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2552",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her site energytherapys.ca sells Quantum-Touch for reducing back pain, realigning structure, healing injuries and burns, its workshop page promises to relieve pain and re-align bones, and its BodyTalk page lists arthritis, chronic pain, digestive disorders, infections and more; animal sessions are offered as 'stress and pain release'. The site is mainly condition-led."
   },
   {
    "rank": 127,
@@ -1503,9 +1503,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2806",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No usable photo: her site quantumlife.ca (shared with her husband Paul Scott as Quantum Life) has no picture of her, only stock art, a crowd photo and a headshot of Paul, and her Quantum-Touch profile has no photo. Otherwise plausible (QT workshops Levels 1-4, Anahata cacao breathwork journeys in Vancouver, monthly online circle, email published); owner could list the couple as 'Kathie and Paul Scott' if a photo of her or of both is acceptable. Note: her About page credits PEMF mats with curing her sciatica and sells them, which would be left out."
   },
   {
    "rank": 128,
@@ -1515,9 +1515,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2805",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No readable own site: her Quantum-Touch profile links to Colorado Sage Learning Center (a centre in Parker, Colorado, not a personal site), whose home page is an old site-builder page that renders only through scripts and shows no text; nothing about her or her offerings could be read."
   },
   {
    "rank": 129,
@@ -1527,9 +1527,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2833",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Pacifica, California) gives only an email and client comments, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 130,
@@ -1539,9 +1539,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4275",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Hong Kong) has no website or contact details beyond the listing, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 131,
@@ -1551,9 +1551,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4124",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Milton Keynes) gives only an email and a LinkedIn link (never fetched), and a web search found no site of hers. Her profile story is also condition-led (hip repositioning, conceiving after miscarriages)."
   },
   {
    "rank": 132,
@@ -1563,9 +1563,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3929",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: his Quantum-Touch profile (Macau) gives only a phone and email, and a web search found no site of his. The profile text itself sells Quantum-Touch for back pain, bone alignment, muscle pain and burns (health rule)."
   },
   {
    "rank": 133,
@@ -1575,9 +1575,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2394",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Kildare, Ireland) gives only a phone and email, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 134,
@@ -1587,9 +1587,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-4504",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her Quantum-Touch profile (Hong Kong) gives only an email; she works as a pet communicator and pet masseur, and a web search found no site of hers naming Quantum-Touch."
   },
   {
    "rank": 135,
@@ -1599,9 +1599,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2348",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site: her two Quantum-Touch profiles (ranks 135 Bangkok and 136 Deux-Montagnes, Quebec; same email) list no website, and a web search found no site of hers. Profiles also present her as a naturopath and Doctor of Natural Medicine."
   },
   {
    "rank": 136,
@@ -1611,9 +1611,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-2327",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Duplicate of rank 135 (same person and email, second Quantum-Touch profile in Quebec); no own site found, so skipped with 135."
   },
   {
    "rank": 137,
@@ -1623,9 +1623,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-544",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her Quantum-Touch profile presents her mainly as an acupuncturist running an allergy and acupuncture practice (Praktijk Jade, Egmond aan Zee) who treats people 'for all kinds of complaints'; she also teaches with QTouch Trainingen (qtouch.nl), whose Quantum-Touch pages are condition-led (see rank 138). Her own site praktijkjade.nl was not fetched."
   },
   {
    "rank": 138,
@@ -1635,9 +1635,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-495",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her site qtouch.nl (QTouch Trainingen, run with Yolande van Rosmalen) is condition-led: the Level 1 page promises to reduce or cure back pain and inflammation and realign bones, its testimonials describe pain relief after fractures, injuries and illness, and Quantum-Allergy (allergy testing and reset) is a core product; she describes herself as an allergy therapist since 2003. Owner may wish to reconsider, as she is the Dutch Quantum-Touch liaison and the site also offers all seven QT levels."
   },
   {
    "rank": 139,
@@ -1647,9 +1647,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-3911",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "No own site found (helper report, 10 Nov 2026; the skip file was missing and was written by the lead from that report)."
   },
   {
    "rank": 140,
@@ -1659,9 +1659,9 @@
    "qt_role": "instructor",
    "qt_profile": "https://quantumtouch.com/en/practitioners/practitioner-853",
    "screen": "keep",
-   "status": "todo",
+   "status": "skipped",
    "plan": null,
-   "skip_reason": null
+   "skip_reason": "Health rule: her site healthblessings.com.au leads with testimonials about no pain after a broken back and a broken collarbone and recovery from depression, and offers 'Fertility and Babies' sessions; the site is mainly condition-led."
   },
   {
    "rank": 141,
@@ -5826,7 +5826,447 @@
    "status": "todo",
    "plan": null,
    "skip_reason": null
+  },
+  {
+   "rank": 501,
+   "kind": "yoga-school",
+   "name": "Yoga school in Mysuru",
+   "target_city": "Mysuru",
+   "target_country": "India",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/sachidananda-ashtanga-yoga-shala.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 502,
+   "kind": "yoga-school",
+   "name": "Yoga school in Rishikesh",
+   "target_city": "Rishikesh",
+   "target_country": "India",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/samadhi-yoga-ashram.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 503,
+   "kind": "yoga-school",
+   "name": "Yoga school in Ubud, Bali",
+   "target_city": "Ubud, Bali",
+   "target_country": "Indonesia",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found within the brief's two-candidate limit. First candidate, Intuitive Flow / Nalanda School (intuitiveflow.com, Penestanan, Ubud), is a drop-in studio whose own site shows no current teacher training (classes and class cards only), and its founder describes her work partly as healing and yoga therapy. Second candidate, Ubud Yoga House (ubudyogahouse.com), is blocked: its robots.txt names ClaudeBot, Claude-Web and anthropic-ai with Disallow: / (10 Nov 2026), so nothing was fetched. Samadhi Yoga Ashram (rank 502) also has an Ubud campus, but it is planned under Rishikesh."
+  },
+  {
+   "rank": 504,
+   "kind": "yoga-school",
+   "name": "Yoga school in Chiang Mai",
+   "target_city": "Chiang Mai",
+   "target_country": "Thailand",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No suitable school within the two-candidate limit. First candidate, Yoga Ananda Chiang Mai (yogaananda.net, Nimmanhaemin), runs a 200-hour training (Aug 2027) but its own pages sell it largely on fitness and therapy (therapeutic and rehab yoga, 'fat burn' classes, aerial and Pilates training, a founder story of recovering from named conditions), so it fails the health-and-fitness rule. Second candidate, True Nature Chiang Mai (truenaturecm.com, RYS 200, 45-50 minutes north of the city), is a family-run retreat homestay whose own site offers only the 200-hour training (June and September 2027, fees on request) and rolling retreat stays, with no classes, free resources or embedded videos: a retreat rather than a school, and under the ~3 item minimum. For you to decide: True Nature could be listed if a retreat-based school with two items is acceptable."
+  },
+  {
+   "rank": 505,
+   "kind": "yoga-school",
+   "name": "Yoga school in Tokyo",
+   "target_city": "Tokyo",
+   "target_country": "Japan",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/under-the-light-yoga-school.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 506,
+   "kind": "yoga-school",
+   "name": "Yoga school in Seoul",
+   "target_city": "Seoul",
+   "target_country": "South Korea",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. The Flow Room (theflowroomyoga.com, Itaewon, English-led) is a Wix site, so its photos sit on static.wixstatic.com, which refuses our robots.txt request; no usable photo, and no teacher training was confirmed. Magic Pond International Yoga School and the Gangnam Ashtanga Yoga Studio appeared only in directory and magazine listings, with no own website found. A Korean-language search turned up no Seoul school's own site. Directories (10mag, Yoga Alliance, BookRetreats) were not used as sources."
+  },
+  {
+   "rank": 507,
+   "kind": "yoga-school",
+   "name": "Yoga school in Singapore",
+   "target_city": "Singapore",
+   "target_country": "Singapore",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No suitable school within the two-candidate limit. First candidate, Vyasa Yoga Singapore (vyasasingapore.com, founder Manoj Thakur, 25 years), is blocked: its robots.txt names ClaudeBot, anthropic-ai and Claude-Web with Disallow: / (10 Nov 2026), so nothing was fetched. Second candidate, Align Studio (alignstudio.sg, Ang Mo Kio), is a fitness-led studio (handstands, splits, 'science-backed' anatomy) whose only 200-hour training ran 5 Sep - 8 Nov 2026 with no future date published, so it fails both the spiritual-practice test and the current-training test. Wendy Chan's Yoga Seeds is already on Spiritpedia as an individual listing, so it was not considered."
+  },
+  {
+   "rank": 508,
+   "kind": "yoga-school",
+   "name": "Yoga school in Hong Kong",
+   "target_city": "Hong Kong",
+   "target_country": "Hong Kong",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No suitable school within the two-candidate limit. First candidate, Anahata Yoga (anahatayoga.com.hk, Central, founder Dr. Yogananth Andiappan), runs RYT 200-500 trainings but its own site sells it mainly on the Andiappan yoga therapy series (back care, detox, slimming and weight loss, prenatal, conditions such as insomnia and anxiety), so it fails the health-and-fitness rule. Second candidate, Tapas Yoga HK (yogatung.com, Lai Chi Kok, SYC-authorised Ashtanga), is blocked: its robots.txt names ClaudeBot with Disallow: / (10 Nov 2026; owner rule of 5 Nov treats this as blocking the whole site even though Claude-User is allowed), so no page was fetched."
+  },
+  {
+   "rank": 509,
+   "kind": "yoga-school",
+   "name": "Yoga school in Cape Town",
+   "target_city": "Cape Town",
+   "target_country": "South Africa",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/the-shala-cape-town-yoga-school.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 510,
+   "kind": "yoga-school",
+   "name": "Yoga school in Nairobi",
+   "target_city": "Nairobi",
+   "target_country": "Kenya",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/kanga-studio-nairobi.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 511,
+   "kind": "yoga-school",
+   "name": "Yoga school in Mexico City",
+   "target_city": "Mexico City",
+   "target_country": "Mexico",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/iyengar-yoga-center-mexico.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 512,
+   "kind": "yoga-school",
+   "name": "Yoga school in Buenos Aires",
+   "target_city": "Buenos Aires",
+   "target_country": "Argentina",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school within the two-candidate limit. First candidate, Escuela Internacional de Yoga Integral (escuelainternacionaldeyoga.org, Swami Asuri Kapila lineage): the profesorado page from search returned 404 and the domain's home page now serves an Indonesian gambling/shop spam page (domain apparently lapsed or hijacked, 10 Nov 2026), so nothing usable. Second candidate, Yoga Baires (yogabaires.com.ar, Krishnamacharya lineage), refused our robots.txt request (403 'Request Blocked!'), so the whole domain is off limits and nothing was fetched. Other Buenos Aires schools seen in the search (C.E.Y. Kaivalyadhama/yogaterapia, Norma Fol, Escuela Sudamericana de Yoga, Maas Yoga) were not tried, per the brief's limit; Escuela Sudamericana de Yoga (Asuri Kapila lineage) may be worth a later try."
+  },
+  {
+   "rank": 513,
+   "kind": "yoga-school",
+   "name": "Yoga school in São Paulo",
+   "target_city": "São Paulo",
+   "target_country": "Brazil",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/instituto-sivananda-dls-brasil.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 514,
+   "kind": "yoga-school",
+   "name": "Yoga school in Lima",
+   "target_city": "Lima",
+   "target_country": "Peru",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "Three web searches. First candidate Zenda Yoga (zendayoga.com, Miraflores, 200-hour Yoga Alliance profesorado in three modules) is a Wix site: robots.txt allows us, but its photos live on static.wixstatic.com, which refuses our robots.txt, so no usable images. Second candidate The Yoga Journey (theyogajourney.net, Vinyasa 200-hour with coaching, 2027 dates per search snippet) is also a Wix site, same image problem. Other results were a personal teacher's shop (Fiorella Fuentes), a Miami-based visiting programme, or directories. Skipped; owner could add Zenda Yoga by hand with its own photos."
+  },
+  {
+   "rank": 515,
+   "kind": "yoga-school",
+   "name": "Yoga school in Santiago",
+   "target_city": "Santiago",
+   "target_country": "Chile",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/sadhana-yoga-vitacura.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 516,
+   "kind": "yoga-school",
+   "name": "Yoga school in Toronto, Ontario",
+   "target_city": "Toronto, Ontario",
+   "target_country": "Canada",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "First candidate, Yoga Centre Toronto (Iyengar, yogacentretoronto.ca), is blocked: its robots.txt has ClaudeBot, anthropic-ai and Claude-Web groups with Disallow: /, so nothing was fetched. Second candidate, Toronto Yoga Co. (torontoyogaco.ca, Danforth), is a mixed yoga, mat Pilates and reformer studio with no named lineage; its retreats are all past or sold out, class prices sit in a booking widget with no published figures, and only the 200-hour training (April-June 2027) would count, so it is too thin and leans to fitness. Third search (Downward Dog, Ashtanga) found no own website, only directory and listing pages. Three searches used; city skipped."
+  },
+  {
+   "rank": 517,
+   "kind": "yoga-school",
+   "name": "Yoga school in Vancouver, British Columbia",
+   "target_city": "Vancouver, British Columbia",
+   "target_country": "Canada",
+   "screen": "keep",
+   "status": "planned",
+   "plan": "docs/content-audits/karma-teachers.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 518,
+   "kind": "yoga-school",
+   "name": "Yoga school in Austin, Texas",
+   "target_city": "Austin, Texas",
+   "target_country": "United States",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No in-scope school found in three searches. Austin Yoga Institute (Iyengar, now Austin Iyengar Yoga) was the best fit, but no website of its own turned up, only directory listings and an old blog, so it was not researched (no guessed domains). Flow Yoga (flowyogatx.com) is a six-location Austin-area studio chain led by heated and general classes, and publishes its email only in script-obfuscated form. PURE Yoga Texas (pureyogatexas.com) is a hot-yoga and fitness chain in Austin and Dallas (HIIT, strength and Pilates events). Both chains fall under the brief's fitness-led chain exclusion. Owner could revisit Austin Iyengar Yoga if its own site is known."
+  },
+  {
+   "rank": 519,
+   "kind": "yoga-school",
+   "name": "Yoga school in Denver, Colorado",
+   "target_city": "Denver, Colorado",
+   "target_country": "United States",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/samadhi-yoga-sangha.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 520,
+   "kind": "yoga-school",
+   "name": "Yoga school in Atlanta, Georgia",
+   "target_city": "Atlanta, Georgia",
+   "target_country": "United States",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/onlyoga.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 521,
+   "kind": "yoga-school",
+   "name": "Yoga school in Miami, Florida",
+   "target_city": "Miami, Florida",
+   "target_country": "United States",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/miami-life-center.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 522,
+   "kind": "yoga-school",
+   "name": "Yoga school in Byron Bay, New South Wales",
+   "target_city": "Byron Bay, New South Wales",
+   "target_country": "Australia",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/byron-yoga-centre.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 523,
+   "kind": "yoga-school",
+   "name": "Yoga school in Auckland",
+   "target_city": "Auckland",
+   "target_country": "New Zealand",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No school's own website found within three searches. Candidates Four Winds Yoga (Iyengar, Ponsonby), Auckland Yoga Academy and Ashram Yoga (Saraswati lineage) appeared only in directory, listing and magazine results (Yoga Alliance, Wanderlust partner page, localist, yellow.co.nz, balancegurus); no own domain was confirmed, and directories may not be used as sources. Worth a manual look: Four Winds Yoga and Ashram Yoga."
+  },
+  {
+   "rank": 524,
+   "kind": "yoga-school",
+   "name": "Yoga school in Bristol",
+   "target_city": "Bristol",
+   "target_country": "United Kingdom",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/bristol-school-of-yoga.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 525,
+   "kind": "yoga-school",
+   "name": "Yoga school in Edinburgh",
+   "target_city": "Edinburgh",
+   "target_country": "United Kingdom",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. Meadowlark Yoga (Argyle Place, which ran 200hr trainings) is gone: meadowlarkyoga.com now redirects to an unrelated gymnastics club, so nothing was fetched. Other results were directories or listings (BookRetreats, Cademy, Yoga Alliance, Hoop) or single teachers, with no Edinburgh studio's own site showing a current teacher training. Directories were not used as sources."
+  },
+  {
+   "rank": 526,
+   "kind": "yoga-school",
+   "name": "Yoga school in Dublin",
+   "target_city": "Dublin",
+   "target_country": "Ireland",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. Results were almost all directories (BookRetreats, Yoga Alliance Professionals, Retreat Guru) or booking pages (Punchpass, Ticketbud). Mandala Yoga Dublin showed only a Punchpass booking site and an informal 'Teaching Circle', with no own website or current training confirmed; Init Yoga and Hot Yoga Dublin (hot-yoga, out of scope) had no current own-site training found. Nearby schools (ālaya wellbeing in Cork, Aruna Yoga near Maynooth) are outside Dublin."
+  },
+  {
+   "rank": 527,
+   "kind": "yoga-school",
+   "name": "Yoga school in Paris",
+   "target_city": "Paris",
+   "target_country": "France",
+   "screen": "keep",
+   "status": "planned",
+   "plan": "docs/content-audits/centre-sivananda-paris.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 528,
+   "kind": "yoga-school",
+   "name": "Yoga school in Berlin",
+   "target_city": "Berlin",
+   "target_country": "Germany",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/sivananda-yoga-vedanta-zentrum-berlin.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 529,
+   "kind": "yoga-school",
+   "name": "Yoga school in Amsterdam",
+   "target_city": "Amsterdam",
+   "target_country": "Netherlands",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. Results were mostly directories (BookRetreats, Yoga Alliance, Urban Sports Club, OneFit). B.K.S. Iyengar Yoga Institute Amsterdam: iyengaryogaamsterdam.com now redirects to an online-only class site (iyengaryogaonline.com) whose classes are 'postponed' since 2022. Yogaschool Amsterdam (Iyengar, Kanaalstraat; teacher training led by Kristien Van Reusel since 1999), found via its Momoyoga booking pages: its own site yogaschoolamsterdam.nl answered our robots.txt request with HTTP 403, so it was not fetched (blocked means skip). Evolation Yoga (hot yoga) is out of scope."
+  },
+  {
+   "rank": 530,
+   "kind": "yoga-school",
+   "name": "Yoga school in Copenhagen",
+   "target_city": "Copenhagen",
+   "target_country": "Denmark",
+   "screen": "keep",
+   "status": "planned",
+   "plan": "docs/content-audits/the-yoga-flat.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 531,
+   "kind": "yoga-school",
+   "name": "Yoga school in Stockholm",
+   "target_city": "Stockholm",
+   "target_country": "Sweden",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. The best candidate, Skandinavisk Yoga och Meditationsskola (yoga.se, classical/Satyananda-based, the city's oldest school), has a robots.txt group naming ClaudeBot, Claude-Web and anthropic-ai with Disallow: /, so the site is off limits (owner, 5 Nov 2026). Other results were directories (BookRetreats, Yoga Alliance Professionals, Reco, Yogobe event listings) or past trainings (Urban OM 2018/19, Embodied Yin at Pranama 2020/21) with no own site found."
+  },
+  {
+   "rank": 532,
+   "kind": "yoga-school",
+   "name": "Yoga school in Madrid",
+   "target_city": "Madrid",
+   "target_country": "Spain",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No school's own website found in three searches. The best candidate, Escuela Internacional de Yoga (EIY, Calle Francisco Navacerrada, Ventas; teacher trainings since 2000/2004), appeared only in directories and course portals (Aprendemas, Educaweb, Emagister, Time Out, Salir, Wellhub); a Feldenkrais Institute venue page for EIY didn't link the school's site, and domains are never guessed. Other names (Sivananda Madrid, City Yoga, Yoga Center Madrid, Mahashakti, The Mysore Shala) also came only from directories or press listings. Could be retried with the school's domain if the owner has it."
+  },
+  {
+   "rank": 533,
+   "kind": "yoga-school",
+   "name": "Yoga school in Lisbon",
+   "target_city": "Lisbon",
+   "target_country": "Portugal",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. Centro Português de Yoga (one of the city's oldest schools, Avenidas Novas) appeared only in Time Out and listicles; no own site found, and domains are never guessed. The Confederação Portuguesa do Yoga (yoga-samkhya.pt, Yoga Sámkhya, robots.txt allows us) was opened but is a national, guru-centred confederation of many centres with medical and pregnancy departments, not a single Lisbon school; not planned (owner may wish to look at it separately). Other results were directories (BookRetreats, Retreat Guru, Urban Sports Club, Superprof) or a visiting physiotherapist-led training (Nov 2026, already starting)."
+  },
+  {
+   "rank": 534,
+   "kind": "yoga-school",
+   "name": "Yoga school in Rome",
+   "target_city": "Rome",
+   "target_country": "Italy",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No school's own website found in three searches. Candidates (Centro Yogadarshana with a four-year teacher course, Scuola Asia Darshana, Accademia Yoga di Consapevolezza, the Sivananda centre in Via Tommasini, Lino Miele's Ashtanga Yoga Research Institute) appeared only in directories and course portals (Emagister, Superprof, Fitprime, Recommended) or old articles; domains are never guessed. A Squarespace page in the results turned out to be Ashtanga Spirit Munich, not Rome."
+  },
+  {
+   "rank": 535,
+   "kind": "yoga-school",
+   "name": "Yoga school in Athens",
+   "target_city": "Athens",
+   "target_country": "Greece",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No school's own website found in three searches (English and Greek). Results were almost all directories and booking platforms (BookRetreats, Retreat Guru, BalanceBoat, Greeka) and travel blogs; trainings listed were mostly on islands or elsewhere in Greece (Evia, Sparta, Mytikas, Ioannina, Crete), several framed as therapeutic. 'Athens Yoga' (central studio since 2008) appeared only on Greeka, with no own domain found; domains are never guessed."
+  },
+  {
+   "rank": 536,
+   "kind": "yoga-school",
+   "name": "Yoga school in Istanbul",
+   "target_city": "Istanbul",
+   "target_country": "Türkiye",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school found in three searches. Results were almost all BookRetreats pages, event sites and an online institute. The one real candidate, YogaŞala (founded 2001, Nişantaşı), has a site (yogasala.com, named in a search summary; its robots.txt path returns the app page, so no rules) built as a Flutter web app whose content isn't readable without running scripts, so nothing could be read or checked; its past teacher trainings found in listings were yoga-therapy programmes (health rule). Not fetched further."
+  },
+  {
+   "rank": 537,
+   "kind": "yoga-school",
+   "name": "Yoga school in Tel Aviv",
+   "target_city": "Tel Aviv",
+   "target_country": "Israel",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No usable school after three searches. Studio Naim (naim.org.il, robots allows us) runs a 200-hour training but is a 16-branch studio chain whose site also sells dance, gym, fitness and pilates, with yoga-therapy tracks: out of scope as a fitness-led chain. The Iyengar Yoga Center Neve Tzedek-Noga (yoga-center.co.il, founded 1995 by Gabi Doron, officially recognised by B.K.S. Iyengar; robots allows us; email yoga@yoga-center.co.il) is a good lineage school, but its Wix site has no teacher-training page (only a weekly 'class for teachers'), its workshops have no item URLs we could read, several classes are therapeutic or back-and-joint led (health rule), and every photo is on static.wixstatic.com, which refuses our robots.txt request, so it would be thin and held. Owner may want to revisit it if Wix images become usable. Possible future listing: Gabi Doron."
+  },
+  {
+   "rank": 538,
+   "kind": "yoga-school",
+   "name": "Yoga school in Dubai",
+   "target_city": "Dubai",
+   "target_country": "United Arab Emirates",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No school's own website found in three searches. The best candidate, Yoga Ashram (Jumeirah Lake Towers; founded by Rashi Datt, Harsha Varyani and Jaya Harikumar per Gulf News; 200-hour Hatha training), appeared only in Gulf News, Yoga Alliance reviews, BookRetreats, HiDubai and a gym directory; no own domain found and domains are never guessed. Sri Sri School of Yoga (Art of Living, a global brand) and a Jivamukti satsang group were the only other Dubai items; the rest were BookRetreats listings for courses in India."
+  },
+  {
+   "rank": 539,
+   "kind": "yoga-school",
+   "name": "Yoga school in Vienna",
+   "target_city": "Vienna",
+   "target_country": "Austria",
+   "screen": "keep",
+   "status": "dev",
+   "plan": "docs/content-audits/iyengar-yoga-vienna.json",
+   "skip_reason": null
+  },
+  {
+   "rank": 540,
+   "kind": "yoga-school",
+   "name": "Yoga school in Prague",
+   "target_city": "Prague",
+   "target_country": "Czechia",
+   "screen": "keep",
+   "status": "skipped",
+   "plan": null,
+   "skip_reason": "No in-scope school found in three searches. Prague Yoga Collective (pragueyogacollective.com, found via its Squarespace address; robots allows us; 200/300-hour Yoga Alliance trainings) was opened but is a four-studio English-language studio business sold as 'strong, stretchy & fun' classes, with Barre, Strength & Mobility, Rocket and hot-yoga roots, MultiSport fitness cards and prenatal classes, and no lineage or spiritual framing: treated as fitness-led and out of scope (owner may disagree). Lineage names (Iyengar Yoga Institute Praha, Traditional Ashtanga Praha, Prague Yoga founded 2004) appeared only in directories (firmy.cz, ashtangayoga.info, lifestyle guides) without a teacher training or own site confirmed within the search limit."
   }
  ],
- "updated": "2026-11-09T23:56:13.518Z"
+ "updated": "2026-11-10T03:06:18.006Z"
 }
