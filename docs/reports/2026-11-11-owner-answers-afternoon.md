@@ -2,6 +2,33 @@
 
 Follows `2026-11-11-admin-build.md`. Migrations 0044–0047 are on dev and live with the expected check rows (your message).
 
+## 0. Proved on live (11 Nov, 15:46–15:50, logged in to www.spiritpedia.co/admin)
+
+**a) Inbox refresh: works.**
+- Clicking **Inbox** while on the Inbox showed "Refreshing…", made one new `GET /api/admin/overview` (200), and moved "Updated" from 15:46:00 to 15:46:17.
+- The **Refresh** button next to "Inbox" did the same: one new request, then 15:46:40.
+
+**c) Activity totals: update with new visitors.**
+- "Totals across everyone" read 3,117 pages opened, 60 today, latest activity recorded 2026-11-11.
+- I made one real visit (Plum Village) in another tab; live's count for that page went from no row to 1.
+- **Refresh** then showed **3,118, 61 today**, and "Updated" moved from 15:46:49 to 15:47:48.
+- The page also re-reads every minute.
+
+**d) Pending items: correct, and each one clicks through.**
+- The cards read **1 / 0 / 1**:
+  - Practitioners awaiting review **1** opens Inbox → Applications (1): the incomplete application from 25 days ago.
+  - Claim requests **0** (was wrongly 1) opens Inbox → Claims (0).
+  - Reported reviews **1** opens Reports: a test report from 31 Oct ("Testing for Apple.") on our own review. You can dismiss it.
+- "New this week" is split by kind.
+
+**b) Ingestion → Add Listing: works.**
+- With Kind set to School, the tiers read **Superstar / Shining Star / Rising Star**.
+- **Read channel** with the new YouTube key returned **Plum Village App: 305,000 subscribers, 1,271 videos**, suggested tier Shining Star.
+- **Check** (read-only) stopped "Plum Village" as already on Spiritpedia, and listed the missing subject, the contact rule, the base rule and the photo warning.
+- Nothing was added; the form was left unsaved.
+
+**Slow first load:** the Inbox takes about 5–8 seconds to fill. The overview now reads about 20 counts one after another. Running them at once would cut that a lot; say if you want it.
+
 ## 1. Next.js security upgrade: live
 
 - **Upgrade:** merged and pushed (7f35c5f): Next.js 16.4.0 → 16.4.1, the lowest version with the fixes.
@@ -54,12 +81,12 @@ Follows `2026-11-11-admin-build.md`. Migrations 0044–0047 are on dev and live 
 - **The sprint ingest** accepts `sprint.contact_recipient_type` (and the publisher source and type) and writes them once 0048 has run.
 - README §18.4 has the rule.
 
-**The sending rule, as built:**
-- No email source: **refused, for every kind.** README §18.4 already requires every published email to carry its source.
+**The sending rule:**
+- No email source: a **warning only, for every kind, never a block** (your later decision; e006a48). No backfill. New listings keep recording the source.
 - Channels, apps, organisations, schools and publishers also need a `business`, `organisation` or `personal_business` inbox, from your doc's "published business or organisation inboxes". Whether a named person's address counts is one of the solicitor's questions.
 - For individuals, a missing or unknown type is a warning only.
 
-**Run 0048 on dev, then live. Check row:**
+**0048 is run on dev and live, matching the expected rows** (your message):
 
 | Database | new columns, listing emails with no type, listing emails with no source, publisher emails with no source |
 | :-- | :-- |
@@ -91,23 +118,18 @@ About 950 MB of the npm cache belongs to an administrator account from an old `s
 
 ## 6. Checks
 
-- **Web tests:** 222 of 222. **Script tests:** 13 of 13. `scripts/ingest.mjs` passes a syntax check.
+- **Web tests:** 222 of 222. **Script tests:** 13 of 13.
 - **Lint:** no errors in changed files.
 - **Build:** passes on 16.4.1.
-- **Not tried yet, needing you logged in to live /admin in Chrome:**
-  - the publisher Start panel
-  - the inbox-type selects
-  - the publisher contact fields
-  - "Read channel" with the new YouTube key
-  - the morning list: Inbox refresh, Activity totals, Pending items, Add Listing
+- **Proved on live:** section 0.
+- **Not tried on live:** the publisher Start panel and the inbox-type selects (needs 0048, now run). Start stays off until you switch journeys on.
 
 ## 7. For you
 
-1. **Run 0048** on dev, then live, and send the check row.
-2. **Older listings without an email source: 566 of the 827 individuals with an email**, plus 9 organisations, 7 channels, 2 schools and 1 app. As built, none of them can start a journey. Nothing has started yet, so nothing running is affected. Should individuals only get a warning instead (a one-line change), or should the sources be filled in? A source backfill could be a morning job: each listing's own page, robots.txt first.
-3. **Log in to live /admin in Chrome** so I can prove the admin fixes on live.
-4. Megan Riley's photo (you're checking).
+1. Faster first load of the Inbox (run the counts in parallel): yes or no.
+2. Dismiss the test report under Reports.
+3. Megan Riley's photo (you're checking).
 
 ## 8. Rule slips
 
-None this afternoon.
+None this afternoon. The live proof made one real page visit, adding 1 to Plum Village's opens today. No form was submitted, nothing was inserted, and no email was sent.
