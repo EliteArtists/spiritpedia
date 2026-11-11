@@ -2856,9 +2856,10 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   business, `personal`, or `unknown`), on listings and publishers alike;
   publishers store their email's source page too. Plans set
   `sprint.contact_recipient_type` (publishers: `contact_email_source` and
-  `contact_recipient_type`). Outreach refuses any address with no source;
-  channels, apps, organisations, schools and publishers also need a
-  business, organisation or personal-business inbox.
+  `contact_recipient_type`). At Outreach a missing source is a warning
+  only, for every kind (owner, 11 Nov 2026; no backfill of older listings);
+  channels, apps, organisations, schools and publishers need a business,
+  organisation or personal-business inbox.
 - **Base location** (owner, 3 Nov 2026): every living person, school and
   organisation gets the city and country they **publish** as their base
   (where they live or are based; a school or organisation: its headquarters

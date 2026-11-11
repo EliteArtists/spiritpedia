@@ -118,13 +118,21 @@ test("a publisher's links go to /publishers and claim as a publisher", () => {
   });
 });
 
-test('eligibility: every address needs its source; the shared kinds need a business or organisation inbox', () => {
+test('eligibility: a missing source only warns, for every kind; the shared kinds need a business or organisation inbox', () => {
   const sourced = { email: 'info@x.org', source: 'https://x.org/contact' };
-  // A person: source required; a missing or unknown type only warns.
+  // A person: a missing source or a missing or unknown type only warns.
   assert.deepEqual(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: 'personal' }), { problems: [], warnings: [] });
   assert.equal(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: null }).problems.length, 0);
   assert.match(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: 'unknown' }).warnings.join(), /not set/);
-  assert.match(outreachEligibility({ entityType: 'individual', email: 'a@b.c', source: '', recipientType: 'business' }).problems.join(), /published on/);
+  {
+    const noSource = outreachEligibility({ entityType: 'individual', email: 'a@b.c', source: '', recipientType: 'business' });
+    assert.deepEqual(noSource.problems, []);
+    assert.match(noSource.warnings.join(), /published on/);
+    // Never a block for the shared kinds either (owner, 11 Nov 2026).
+    const school = outreachEligibility({ entityType: 'school', email: 'a@b.c', source: '', recipientType: 'organisation' });
+    assert.deepEqual(school.problems, []);
+    assert.match(school.warnings.join(), /published on/);
+  }
   // The shared kinds.
   for (const type of ['business', 'organisation', 'personal_business']) {
     assert.deepEqual(outreachEligibility({ entityType: 'school', ...sourced, recipientType: type }).problems, [], type);

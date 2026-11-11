@@ -131,9 +131,10 @@ the same greeting rule.
 - **Links:** `/healers/{slug}` and `/auth/claim?slug={slug}`; a publisher's
   `/publishers/{slug}` and `/auth/claim?slug={slug}&kind=publisher`.
 - **Sending eligibility** (`web/utils/journey.js` → `outreachEligibility`,
-  migration 0048): every journey needs the page the address is published on
-  (`contact_email_source`; README §18.4), so older listings without one can't
-  be started until it's added. Every listing and publisher records whose
+  migration 0048): a journey records the page the address is published on
+  (`contact_email_source`; README §18.4). A missing source is a warning
+  only, for every kind, never a block (owner, 11 Nov 2026); older listings
+  are not backfilled, and new ones keep recording it. Every listing and publisher records whose
   inbox the address is (`contact_recipient_type`: business, organisation,
   personal_business, personal, unknown). The shared journey goes only to a
   business or organisation inbox (or a named person's address published by

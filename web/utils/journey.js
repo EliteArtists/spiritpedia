@@ -152,8 +152,10 @@ export function outreachEligibility({ entityType, email, source, recipientType }
   const problems = [];
   const warnings = [];
   if (!email) problems.push('No contact email.');
+  // A missing source is a warning, never a block, for every kind (owner,
+  // 11 Nov 2026: no backfill of older listings; new ones keep recording it).
   if (email && !source) {
-    problems.push('No record of the page this email is published on. Add it (Profile → Where the email is published) first.');
+    warnings.push('No record of the page this email is published on (Profile → Where the email is published).');
   }
   const person = outreachKind(entityType) === 'individual';
   if (recipientType === undefined) {
