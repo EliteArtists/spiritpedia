@@ -834,6 +834,34 @@ double distanceKm(Place a, Place b) {
   );
 }
 
+/// Schools & Academies and Retreat Centres & Platforms for someone in [area]
+/// (owner, 11 Nov 2026): sorted, never filtered. Those with a town come
+/// first, nearest first; then those with none, in [hubs]' order; ties keep
+/// that order. No area: [hubs] as they are. The website's nearestFirst
+/// (web/utils/area.js) — change both together.
+List<Healer> nearestFirst(
+  List<Healer> hubs,
+  Place? area,
+  Map<int, Place> places,
+) {
+  if (area == null) return hubs;
+  final placed = <(Healer, double, int)>[];
+  final unplaced = <Healer>[];
+  for (final (i, h) in hubs.indexed) {
+    final town = places[h.placeId];
+    if (town == null) {
+      unplaced.add(h);
+    } else {
+      placed.add((h, distanceKm(area, town), i));
+    }
+  }
+  placed.sort((a, b) {
+    final c = a.$2.compareTo(b.$2);
+    return c != 0 ? c : a.$3.compareTo(b.$3);
+  });
+  return [for (final (h, _, _) in placed) h, ...unplaced];
+}
+
 /// How many "Closest to you" shows when nobody is within [nearRadiusKm].
 const closestCount = 10;
 

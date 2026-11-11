@@ -108,12 +108,10 @@ void main() {
     test('closest to you: nearest first, with distances, towns only, ten at '
         'most', () {
       final r = closestTo(all, edinburgh, places);
-      expect([for (final c in r) c.healer], [
-        manchesterLocal,
-        manchesterOnline,
-        inLondon,
-        inCroydon,
-      ]);
+      expect(
+        [for (final c in r) c.healer],
+        [manchesterLocal, manchesterOnline, inLondon, inCroydon],
+      );
       expect(r.first.km, closeTo(282, 5));
       expect(closestTo(all, null, places), isEmpty);
       final many = [
@@ -128,6 +126,25 @@ void main() {
       ];
       expect(closestTo(many, paris, places), hasLength(10));
       expect(closestTo([nowhere], paris, places), isEmpty);
+    });
+
+    test('schools and organisations: nearest first, nobody hidden, no town '
+        'last', () {
+      expect(nearestFirst(all, null, places), all);
+      expect(nearestFirst(all, edinburgh, places), [
+        manchesterLocal,
+        manchesterOnline,
+        inLondon,
+        inCroydon,
+        nowhere,
+      ]);
+      expect(nearestFirst(all, london, places), [
+        inLondon,
+        inCroydon,
+        manchesterLocal,
+        manchesterOnline,
+        nowhere,
+      ]);
     });
 
     test('miles in the United Kingdom and the United States, kilometres '

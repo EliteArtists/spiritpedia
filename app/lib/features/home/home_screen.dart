@@ -139,6 +139,14 @@ class HomeScreen extends ConsumerWidget {
             // empty with an area: nobody within 50 km makes it "Closest to
             // you", the ten nearest with how far away each is (the website's
             // rule too; docs/reports/2026-11-03-near-you-plan.md).
+            // Schools and organisations nearest first once an area is set
+            // (owner, 11 Nov 2026): nobody hidden, those with no town last.
+            final schools = nearestFirst(shelves.schools, area, places);
+            final organisations = nearestFirst(
+              shelves.organisations,
+              area,
+              places,
+            );
             final near = nearYou(shelves.localHeroes, area, places);
             final closest = area != null && near.near.isEmpty
                 ? closestTo(shelves.localHeroes, area, places)
@@ -247,12 +255,12 @@ class HomeScreen extends ConsumerWidget {
                 child: Shelf(
                   title: 'Schools & Academies',
                   subtitle: 'Train With a School',
-                  itemCount: shelves.schools.length,
+                  itemCount: schools.length,
                   itemWidth: 200,
                   height: 230,
                   itemBuilder: (_, i) => SchoolCard(
-                    school: shelves.schools[i],
-                    teacherCount: teacherCount(shelves.schools[i], links),
+                    school: schools[i],
+                    teacherCount: teacherCount(schools[i], links),
                   ),
                 ),
               ),
@@ -262,12 +270,12 @@ class HomeScreen extends ConsumerWidget {
                 child: Shelf(
                   title: 'Retreat Centres & Platforms',
                   subtitle: 'Discover Where They Teach',
-                  itemCount: shelves.organisations.length,
+                  itemCount: organisations.length,
                   itemWidth: 200,
                   height: 230,
                   itemBuilder: (_, i) => SchoolCard(
-                    school: shelves.organisations[i],
-                    teacherCount: teacherCount(shelves.organisations[i], links),
+                    school: organisations[i],
+                    teacherCount: teacherCount(organisations[i], links),
                     kind: 'Organisation',
                   ),
                 ),
