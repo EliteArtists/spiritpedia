@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1326,
+    "healer_slug": "megan-riley"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6b3cf6aa-e07f-4dd9-b1dd-6c641078e488",
+      "slug": "mysore-class-passes",
+      "title": "Mysore Class Passes"
+    },
+    {
+      "table": "courses",
+      "id": "bf8dbe61-7a7d-4a5b-a7af-ce8e4b470cbd",
+      "slug": "daily-mysore-programme-and-saturday-led-primary",
+      "title": "Daily Mysore Programme and Saturday Led Primary"
+    },
+    {
+      "table": "free_resources",
+      "id": "5983616f-9660-4795-84ee-9268900de383",
+      "slug": "how-do-i-get-started",
+      "title": "How Do I Get Started?"
+    }
+  ],
+  "at": "2026-11-11T17:12:07.176Z"
+}
