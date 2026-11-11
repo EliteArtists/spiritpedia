@@ -140,34 +140,36 @@ const SHARED_RECIPIENT_TYPES = ['business', 'organisation', 'personal_business']
 
 // May this address be written to, before any send? Pure, so the rules are
 // tested. → { problems, warnings }: any problem refuses the start.
-//   - The page the address is published on, always (README §18.4: every
-//     published email is stored with the page it's on; the shared copy asks
-//     for it too). Listings from before 0039 need it added first.
-//   - The recipient type: for the shared journey (every kind but a person),
-//     one of the business or organisation inboxes above; for a person,
-//     missing or "unknown" is a warning, not a refusal.
+//
+// ONLY THREE THINGS BLOCK (owner, 11 Nov 2026): no email at all, an address
+// that asked to stop, or one that bounced. The last two are do-not-contact
+// (doNotContactReason, doNotContactByAddress); here it is only "no email".
+// Everything else about the address is a warning shown before Start:
+//   - no record of the page the address is published on (README §18.4 still
+//     asks new listings to record it; older ones are not backfilled)
+//   - the recipient type: for the shared journey (every kind but a person)
+//     the doc's business or organisation inboxes; for anyone, missing or
+//     "unknown"
 // recipientType undefined means migration 0048 has not run: then the type
 // is not asked for, and the warning says so.
 export function outreachEligibility({ entityType, email, source, recipientType }) {
   const problems = [];
   const warnings = [];
   if (!email) problems.push('No contact email.');
-  // A missing source is a warning, never a block, for every kind (owner,
-  // 11 Nov 2026: no backfill of older listings; new ones keep recording it).
   if (email && !source) {
     warnings.push('No record of the page this email is published on (Profile → Where the email is published).');
   }
   const person = outreachKind(entityType) === 'individual';
   if (recipientType === undefined) {
     warnings.push("The recipient type isn't recorded yet (migration 0048 has not been run).");
-  } else if (person) {
-    if (!recipientType || recipientType === 'unknown') warnings.push('The recipient type is not set for this address.');
-  } else if (!SHARED_RECIPIENT_TYPES.includes(recipientType)) {
-    problems.push(
-      recipientType === 'personal'
-        ? "This is a private individual's address; the shared journey goes only to business or organisation inboxes."
-        : 'Set the recipient type first: the shared journey goes only to business or organisation inboxes.'
+  } else if (!recipientType || recipientType === 'unknown') {
+    warnings.push(
+      person
+        ? 'The recipient type is not set for this address.'
+        : 'The recipient type is not set: the shared journey is meant for business or organisation inboxes.'
     );
+  } else if (!person && !SHARED_RECIPIENT_TYPES.includes(recipientType)) {
+    warnings.push("This is a private individual's address; the shared journey is meant for business or organisation inboxes.");
   }
   return { problems, warnings };
 }

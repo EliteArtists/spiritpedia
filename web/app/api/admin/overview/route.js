@@ -23,60 +23,63 @@ export async function GET() {
 
   const publicClient = supabase || (await import('@/utils/supabase')).supabase;
 
-  for (const table of ['healers', 'videos', 'books', 'courses', 'free_resources', 'publishers']) {
-    const { count } = await publicClient.from(table).select('*', { count: 'exact', head: true });
-    counts[table] = count ?? 0;
-  }
+  // ALL AT ONCE (owner, 11 Nov 2026: the Inbox took 5–8 seconds to fill).
+  // Every count is its own request; read one after another they were most
+  // of the wait, and none depends on another. head: true, so each returns a
+  // number and no rows.
+  //
   // Listings by kind (owner, 11 Nov 2026). A person is entity_type
   // 'individual' or NULL, as listings always were before 0029. `schools` stays
-  // for the Inbox strip.
+  // for the Inbox strip. Teacher links are a school, organisation, channel or
+  // app linked to the people who teach there (hub_teachers, migration 0029).
   const KINDS = ['individual', 'channel', 'app', 'organisation', 'school'];
+  const head = (table) => publicClient.from(table).select('*', { count: 'exact', head: true });
   const byKind = (query, kind) =>
     kind === 'individual'
       ? query.or('entity_type.is.null,entity_type.eq.individual')
       : query.eq('entity_type', kind);
   counts.kinds = {};
   counts.kinds_this_week = {};
-  await Promise.all(
-    KINDS.flatMap((kind) => [
-      byKind(publicClient.from('healers').select('*', { count: 'exact', head: true }), kind).then(({ count }) => {
-        counts.kinds[kind] = count ?? 0;
+  const readCounts = () =>
+    Promise.all([
+      ...['healers', 'videos', 'books', 'courses', 'free_resources', 'publishers'].map((table) =>
+        head(table).then(({ count }) => {
+          counts[table] = count ?? 0;
+        })
+      ),
+      ...['healers', 'books', 'publishers', 'courses', 'free_resources', 'videos'].map((table) =>
+        head(table)
+          .gte('created_at', since)
+          .then(({ count }) => {
+            counts[`${table}_this_week`] = count ?? 0;
+          })
+      ),
+      ...KINDS.flatMap((kind) => [
+        byKind(head('healers'), kind).then(({ count }) => {
+          counts.kinds[kind] = count ?? 0;
+        }),
+        byKind(head('healers'), kind)
+          .gte('created_at', since)
+          .then(({ count }) => {
+            counts.kinds_this_week[kind] = count ?? 0;
+          }),
+      ]),
+      head('hub_teachers').then(({ count }) => {
+        counts.teacher_links = count ?? 0;
       }),
-      byKind(publicClient.from('healers').select('*', { count: 'exact', head: true }), kind)
+      head('hub_teachers')
         .gte('created_at', since)
         .then(({ count }) => {
-          counts.kinds_this_week[kind] = count ?? 0;
+          counts.teacher_links_this_week = count ?? null;
         }),
-    ])
-  );
-  counts.schools = counts.kinds.school;
-
-  // Teacher links: a school, organisation, channel or app linked to the
-  // people who teach there (hub_teachers, migration 0029).
-  {
-    const { count } = await publicClient.from('hub_teachers').select('*', { count: 'exact', head: true });
-    counts.teacher_links = count ?? 0;
-  }
-
-  for (const table of ['healers', 'books', 'publishers', 'courses', 'free_resources', 'videos']) {
-    const { count } = await publicClient
-      .from(table)
-      .select('*', { count: 'exact', head: true })
-      .gte('created_at', since);
-    counts[`${table}_this_week`] = count ?? 0;
-  }
-  {
-    const { count } = await publicClient
-      .from('hub_teachers')
-      .select('*', { count: 'exact', head: true })
-      .gte('created_at', since);
-    counts.teacher_links_this_week = count ?? null;
-  }
-
-  // When these figures were read, for the "Updated" line under them.
-  counts.read_at = new Date().toISOString();
+    ]).then(() => {
+      counts.schools = counts.kinds.school;
+      // When these figures were read, for the "Updated" line under them.
+      counts.read_at = new Date().toISOString();
+    });
 
   if (!supabase) {
+    await readCounts();
     return NextResponse.json(
       {
         ...NOT_CONFIGURED,
@@ -94,14 +97,10 @@ export async function GET() {
     );
   }
 
-  const { data: profiles, error } = await supabase
+  const profilesQuery = supabase
     .from('user_profiles')
     .select('*')
     .order('created_at', { ascending: false });
-
-  if (error) {
-    return NextResponse.json({ error: 'query_failed', message: error.message, counts }, { status: 200 });
-  }
 
   // Reviews waiting on a moderator. Needs the service role for the same reason
   // the profiles above do: the public policy on reviews is `status =
@@ -110,7 +109,7 @@ export async function GET() {
   //
   // Only the columns the queue row renders. The body is deliberately absent:
   // the Inbox lists what is waiting, and reading it is the Reviews tab's job.
-  const { data: pendingReviews } = await supabase
+  const pendingReviewsQuery = supabase
     .from('reviews')
     .select('id, content_type, content_slug, rating, author_name, created_at')
     .eq('status', 'pending')
@@ -128,11 +127,96 @@ export async function GET() {
   // the anon key cannot read it. Oldest first — a thing that has been broken
   // for a month is more urgent than one that broke yesterday, which is the
   // opposite of how an application queue reads.
-  const { data: brokenImages } = await supabase
+  const brokenImagesQuery = supabase
     .from('broken_images')
     .select('table_name, record_id, healer_slug, title, image_url, status_code, problem, failures, first_seen_at')
     .gte('failures', MIN_FAILURES)
     .order('first_seen_at', { ascending: true });
+
+  // The last scheduled broken-image check (migration 0028), for the Inbox
+  // status line. Null before 0028 runs or before the first recorded run.
+  const imageCheckRowsQuery = supabase
+    .from('broken_image_runs')
+    .select('ran_at, shard, shards, checked, skipped, undetermined, queued, recovered, elapsed_ms, error')
+    .order('ran_at', { ascending: false })
+    .limit(1);
+
+  // Accounts with a claimed listing that their owner deleted, still to be
+  // reviewed (migration 0013; a publisher listing since 0022). Service role
+  // only, like broken_images. A missing table (migration not yet run) reads as
+  // none rather than failing.
+  const accountDeletionsQuery = supabase
+    .from('account_deletions')
+    .select('id, deleted_at, source, linked_healer_slug, linked_publisher_id, kept_image_count, publishers(name, slug)')
+    .is('resolved_at', null)
+    .order('deleted_at', { ascending: true });
+
+  // Reviews members have reported and nobody has decided on yet (migration
+  // 0015). Service role only: a reporter can read their own reports, nobody
+  // else's. Only what the queue row shows; the snapshot and the decision are
+  // the Reports page's.
+  const openReportsQuery = supabase
+    .from('review_reports')
+    .select('id, reason, content_type, content_slug, review_author_name, review_rating, created_at')
+    .eq('status', 'open')
+    .order('created_at', { ascending: true });
+
+  // "Request to claim it" (claim_requests, migration 0020), still undecided.
+  // Owners can read only their own, so this needs the service role too. With
+  // the listing's name and published contact address, which is how the admin
+  // confirms it.
+  const claimRowsQuery = supabase
+    .from('claim_requests')
+    .select(
+      'id, user_id, healer_slug, publisher_id, connection, proof_code, created_at, healers(name, entity_type, contact_email, website_url, youtube_url), publishers(name, slug, contact_email, website_url)'
+    )
+    .eq('status', 'pending')
+    .order('created_at', { ascending: true });
+
+  // Content owners added or changed (content_submissions, migration 0024),
+  // still undecided. Service role only. Before 0024 runs this reads as none.
+  const submissionRowsQuery = supabase
+    .from('content_submissions')
+    .select('id, user_id, kind, content_type, fields, author_pending, created_at, healers(name), publishers(name)')
+    .eq('status', 'pending')
+    .order('created_at', { ascending: true });
+
+  // user_profiles has no email column — the address lives in auth.users, which
+  // only the service role can read. One listUsers call and a lookup map is far
+  // cheaper than a getUserById per profile.
+  const usersQuery = supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
+
+  // Every read above starts here, together, with the counts: none depends on
+  // another (supabase-js queries run when awaited).
+  const [
+    { data: profiles, error },
+    { data: pendingReviews },
+    { data: brokenImages },
+    { data: imageCheckRows },
+    { data: accountDeletions },
+    { data: openReports },
+    { data: claimRows },
+    { data: submissionRows },
+    { data: userPage },
+  ] = await Promise.all([
+    profilesQuery,
+    pendingReviewsQuery,
+    brokenImagesQuery,
+    imageCheckRowsQuery,
+    accountDeletionsQuery,
+    openReportsQuery,
+    claimRowsQuery,
+    submissionRowsQuery,
+    usersQuery,
+    readCounts(),
+  ]);
+
+  if (error) {
+    return NextResponse.json({ error: 'query_failed', message: error.message, counts }, { status: 200 });
+  }
+
+  const emails = new Map();
+  for (const user of userPage?.users || []) emails.set(user.id, user.email);
 
   // Which broken listing pictures are logos (a school, organisation, channel
   // or app) rather than a person's photo, for the queue row's label.
@@ -145,60 +229,6 @@ export async function GET() {
     }
   }
 
-  // The last scheduled broken-image check (migration 0028), for the Inbox
-  // status line. Null before 0028 runs or before the first recorded run.
-  const { data: imageCheckRows } = await supabase
-    .from('broken_image_runs')
-    .select('ran_at, shard, shards, checked, skipped, undetermined, queued, recovered, elapsed_ms, error')
-    .order('ran_at', { ascending: false })
-    .limit(1);
-
-  // Accounts with a claimed listing that their owner deleted, still to be
-  // reviewed (migration 0013; a publisher listing since 0022). Service role
-  // only, like broken_images. A missing table (migration not yet run) reads as
-  // none rather than failing.
-  const { data: accountDeletions } = await supabase
-    .from('account_deletions')
-    .select('id, deleted_at, source, linked_healer_slug, linked_publisher_id, kept_image_count, publishers(name, slug)')
-    .is('resolved_at', null)
-    .order('deleted_at', { ascending: true });
-
-  // Reviews members have reported and nobody has decided on yet (migration
-  // 0015). Service role only: a reporter can read their own reports, nobody
-  // else's. Only what the queue row shows; the snapshot and the decision are
-  // the Reports page's.
-  const { data: openReports } = await supabase
-    .from('review_reports')
-    .select('id, reason, content_type, content_slug, review_author_name, review_rating, created_at')
-    .eq('status', 'open')
-    .order('created_at', { ascending: true });
-
-  // "Request to claim it" (claim_requests, migration 0020), still undecided.
-  // Owners can read only their own, so this needs the service role too. With
-  // the listing's name and published contact address, which is how the admin
-  // confirms it.
-  const { data: claimRows } = await supabase
-    .from('claim_requests')
-    .select(
-      'id, user_id, healer_slug, publisher_id, connection, proof_code, created_at, healers(name, entity_type, contact_email, website_url, youtube_url), publishers(name, slug, contact_email, website_url)'
-    )
-    .eq('status', 'pending')
-    .order('created_at', { ascending: true });
-
-  // Content owners added or changed (content_submissions, migration 0024),
-  // still undecided. Service role only. Before 0024 runs this reads as none.
-  const { data: submissionRows } = await supabase
-    .from('content_submissions')
-    .select('id, user_id, kind, content_type, fields, author_pending, created_at, healers(name), publishers(name)')
-    .eq('status', 'pending')
-    .order('created_at', { ascending: true });
-
-  // user_profiles has no email column — the address lives in auth.users, which
-  // only the service role can read. One listUsers call and a lookup map is far
-  // cheaper than a getUserById per profile.
-  const emails = new Map();
-  const { data: userPage } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
-  for (const user of userPage?.users || []) emails.set(user.id, user.email);
 
   // The kind of listing each owner manages, so a school's account is not
   // labelled "Practitioner" (People, Inbox).

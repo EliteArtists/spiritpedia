@@ -118,7 +118,7 @@ test("a publisher's links go to /publishers and claim as a publisher", () => {
   });
 });
 
-test('eligibility: a missing source only warns, for every kind; the shared kinds need a business or organisation inbox', () => {
+test('eligibility: only a missing email blocks; source and inbox type only warn, for every kind', () => {
   const sourced = { email: 'info@x.org', source: 'https://x.org/contact' };
   // A person: a missing source or a missing or unknown type only warns.
   assert.deepEqual(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: 'personal' }), { problems: [], warnings: [] });
@@ -137,9 +137,18 @@ test('eligibility: a missing source only warns, for every kind; the shared kinds
   for (const type of ['business', 'organisation', 'personal_business']) {
     assert.deepEqual(outreachEligibility({ entityType: 'school', ...sourced, recipientType: type }).problems, [], type);
   }
-  assert.match(outreachEligibility({ entityType: 'publisher', ...sourced, recipientType: 'personal' }).problems.join(), /private individual/);
-  assert.match(outreachEligibility({ entityType: 'channel', ...sourced, recipientType: null }).problems.join(), /Set the recipient type/);
-  assert.match(outreachEligibility({ entityType: 'app', ...sourced, recipientType: 'unknown' }).problems.join(), /Set the recipient type/);
+  // The inbox type only warns, for every kind (owner, 11 Nov 2026).
+  {
+    const personal = outreachEligibility({ entityType: 'publisher', ...sourced, recipientType: 'personal' });
+    assert.deepEqual(personal.problems, []);
+    assert.match(personal.warnings.join(), /private individual/);
+    const unset = outreachEligibility({ entityType: 'channel', ...sourced, recipientType: null });
+    assert.deepEqual(unset.problems, []);
+    assert.match(unset.warnings.join(), /not set/);
+  }
+  // No email at all is the one address problem that blocks.
+  assert.match(outreachEligibility({ entityType: 'school', email: '', source: '', recipientType: 'business' }).problems.join(), /No contact email/);
+  assert.deepEqual(outreachEligibility({ entityType: 'app', ...sourced, recipientType: 'unknown' }).problems, []);
   // Before migration 0048: the type isn't asked for, and a warning says why.
   const before = outreachEligibility({ entityType: 'organisation', ...sourced, recipientType: undefined });
   assert.deepEqual(before.problems, []);
