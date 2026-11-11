@@ -27,7 +27,9 @@ Follows `2026-11-11-admin-build.md`. Migrations 0044–0047 are on dev and live 
 - **Check** (read-only) stopped "Plum Village" as already on Spiritpedia, and listed the missing subject, the contact rule, the base rule and the photo warning.
 - Nothing was added; the form was left unsaved.
 
-**Slow first load:** the Inbox takes about 5–8 seconds to fill. The overview now reads about 20 counts one after another. Running them at once would cut that a lot; say if you want it.
+**Faster Inbox (your yes; f8ecb98):** the overview made about 30 database reads one after another, at 0.1–0.3 seconds each. Now they all start at once.
+- **Before**, timed on live from your admin tab: 4.2–4.9 seconds per load.
+- **After the deploy:** 0.7–1.0 seconds once warm (736, 872, 884 and 989 ms; the first after the deploy took 1.9 s).
 
 ## 1. Next.js security upgrade: live
 
@@ -81,8 +83,16 @@ Follows `2026-11-11-admin-build.md`. Migrations 0044–0047 are on dev and live 
 - **The sprint ingest** accepts `sprint.contact_recipient_type` (and the publisher source and type) and writes them once 0048 has run.
 - README §18.4 has the rule.
 
-**The sending rule:**
-- No email source: a **warning only, for every kind, never a block** (your later decision; e006a48). No backfill. New listings keep recording the source.
+**The sending rule (your later decisions; e006a48, f8ecb98):**
+- **Only three things about the address block a journey:** no email at all, an address that asked to stop (or for removal), or a bounce.
+- Everything else is an amber **warning** before Start, for every kind:
+  - a missing email source (no backfill; new listings keep recording it)
+  - a missing or unknown inbox type
+  - a private individual's address on a channel, app, organisation, school or publisher
+- **Still blocks, because these aren't checks on the address:**
+  - a kind that is switched off (all but individuals, until you turn them on)
+  - a listing that is already claimed
+  - a journey that is already running for that listing
 - Channels, apps, organisations, schools and publishers also need a `business`, `organisation` or `personal_business` inbox, from your doc's "published business or organisation inboxes". Whether a named person's address counts is one of the solicitor's questions.
 - For individuals, a missing or unknown type is a warning only.
 
@@ -126,9 +136,8 @@ About 950 MB of the npm cache belongs to an administrator account from an old `s
 
 ## 7. For you
 
-1. Faster first load of the Inbox (run the counts in parallel): yes or no.
-2. Dismiss the test report under Reports.
-3. Megan Riley's photo (you're checking).
+1. Dismiss the test report under Reports.
+2. **Megan Riley:** your message said "[yes it's her / no]" with neither filled in. Which is it?
 
 ## 8. Rule slips
 
