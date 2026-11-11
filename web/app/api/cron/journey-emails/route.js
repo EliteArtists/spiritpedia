@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { JOURNEY_EMAILS, sendJourneyEmail } from '@/utils/email';
-import { isClaimed, nextDue, sentAtColumn } from '@/utils/journey';
+import { cronDecision, isClaimed, nextDue, recordMessage, sentAtColumn } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -38,43 +38,57 @@ export async function GET(request) {
 
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
 
-  const tally = { processed: 0, sent: 0, stopped: 0, errors: 0 };
+  const tally = { processed: 0, sent: 0, stopped: 0, paused: 0, errors: 0 };
 
   for (const journey of journeys || []) {
+    // A form contact (migration 0044) was one message, sent by hand. Recorded
+    // as stopped, so it is not normally here; never sent to if it is.
+    if (journey.channel === 'form') continue;
+    const publisherId = journey.publisher_id || null;
     const slug = journey.healer_slug;
-    // A journey to a publisher (migration 0020) has no healer to read. Nothing
-    // starts one yet — it comes with the outreach emails' publisher wording —
-    // so one found here is left alone rather than stopped as removed.
-    if (!slug) continue;
+    if (!slug && !publisherId) continue;
     tally.processed += 1;
 
     try {
-      const { data: healer } = await supabase
-        .from('healers')
-        .select('name, healer_slug, contact_email')
-        .eq('healer_slug', slug)
-        .maybeSingle();
+      // The listing as it is TODAY: a healers row of any kind, or a publisher
+      // (migration 0020). Read every run, never copied onto the journey, so a
+      // changed address or a changed kind is seen before the next email.
+      const { data: listing } = publisherId
+        ? await supabase
+            .from('publishers')
+            .select('name, slug, contact_email')
+            .eq('id', publisherId)
+            .maybeSingle()
+        : await supabase
+            .from('healers')
+            .select('name, healer_slug, contact_email, entity_type')
+            .eq('healer_slug', slug)
+            .maybeSingle();
 
-      // The listing is gone. Nothing left to invite anyone to.
-      if (!healer) {
-        await stop(supabase, journey.id, 'healer_removed');
+      const entityType = publisherId ? 'publisher' : listing?.entity_type;
+
+      // THE CHECKS, in cronDecision's order (utils/journey.js): gone, claimed
+      // (checked every run, so somebody who joins on day 22 never receives
+      // email 3), a kind whose wording is not approved, no address.
+      const decision = cronDecision({
+        listing,
+        claimed: listing ? await isClaimed(supabase, publisherId ? { publisherId } : slug) : false,
+        entityType,
+      });
+
+      if (decision.stop) {
+        await stop(supabase, journey.id, decision.stop);
         tally.stopped += 1;
         continue;
       }
-
-      // THE POINT OF THE WHOLE SEQUENCE. Checked every run rather than once, so
-      // somebody who joins on day 22 never receives email 3.
-      if (await isClaimed(supabase, slug)) {
-        await stop(supabase, journey.id, 'claimed');
-        tally.stopped += 1;
-        continue;
-      }
-
-      // An address removed since the journey began. Stopped rather than carried
-      // on with a stale copy: the healer row is the authority on where to write.
-      if (!healer.contact_email) {
-        await stop(supabase, journey.id, 'no_contact_email');
-        tally.stopped += 1;
+      // Paused, not stopped: the history stays as it is, and an admin can
+      // resume it once the wording for that kind is approved.
+      if (decision.pause) {
+        await supabase
+          .from('healer_journeys')
+          .update({ status: 'paused', stop_reason: decision.pause })
+          .eq('id', journey.id);
+        tally.paused += 1;
         continue;
       }
 
@@ -104,9 +118,11 @@ export async function GET(request) {
 
       const result = await sendJourneyEmail({
         emailNumber: due,
-        to: healer.contact_email,
-        healerName: healer.name,
-        healerSlug: healer.healer_slug,
+        to: listing.contact_email,
+        healerName: listing.name,
+        healerSlug: publisherId ? listing.slug : listing.healer_slug,
+        entityType,
+        publisher: Boolean(publisherId),
       });
 
       // On Resend's suppression list: it bounced or they complained. Never
@@ -123,12 +139,14 @@ export async function GET(request) {
           .from('healer_journeys')
           .update({ [column]: null })
           .eq('id', journey.id);
-        console.error(`[journey] ${slug} email ${due} failed:`, result.error);
+        console.error(`[journey] ${slug || publisherId} email ${due} failed:`, result.error);
         tally.errors += 1;
         continue;
       }
 
       tally.sent += 1;
+      // For the delivered and bounced webhook (migration 0044).
+      await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: due });
 
       // The last one. The sequence is over whether or not they ever answered.
       if (due === JOURNEY_EMAILS) {
@@ -136,7 +154,7 @@ export async function GET(request) {
         tally.stopped += 1;
       }
     } catch (err) {
-      console.error(`[journey] ${slug} failed:`, err);
+      console.error(`[journey] ${slug || publisherId} failed:`, err);
       tally.errors += 1;
     }
   }

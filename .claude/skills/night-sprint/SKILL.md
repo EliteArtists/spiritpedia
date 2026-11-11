@@ -39,7 +39,9 @@ health rule, no questions overnight).
    (`--env live`), after removing any dated item that has started. Held plans
    wait for the owner and are never inserted. Write any place-alias migration
    needed (the next number in `supabase/migrations/`, as 0043); the owner runs
-   it, dev first, then live.
+   it, dev first, then live. Then refresh Admin → Ops with
+   `node scripts/ops-sync.mjs --env live` (held plans, dev-only listings, the retry
+   list and the reports; it says so if migration 0045 isn't on live yet).
 7. **Report:** `docs/reports/YYYY-MM-DD-night-sprint.md` and the same text in
    `docs/reports/latest.md`: totals by source, every listing, held plans and
    why, skips, rule slips (helpers' and your own), and "For you to decide".

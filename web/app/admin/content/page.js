@@ -1,12 +1,13 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { Suspense, useEffect, useMemo, useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DataProblem from '@/components/admin/DataProblem';
 import { useAdminData } from '@/components/admin/AdminData';
 import { supabase } from '@/utils/supabase';
+import { tierName, typeLabel } from '@/utils/badges';
 
 // THE HEALER DIRECTORY — every record in the healers table.
 //
@@ -27,14 +28,21 @@ const PAGE = 1000;
 // and neither appears here — pulling them would be ~400KB for a list of names.
 // The contact columns feed the "No email" filter (contact_form_url is
 // migration 0039).
-const COLUMNS = 'id, name, healer_slug, tier, subject_slugs, death_year, contact_email, contact_form_url';
+const COLUMNS = 'id, name, healer_slug, tier, entity_type, subject_slugs, death_year, contact_email, contact_form_url';
 
-const TIER_LABELS = {
-  superhero: 'Superhero',
-  ascended_master: 'Ascended Master',
-  luminary: 'Luminary',
-  local_hero: 'Local Hero',
-};
+// The five kinds of listing (healers.entity_type, migration 0029). A person is
+// 'individual' or NULL, as every listing was before 0029. /admin/content?kind=
+// opens on one (the Activity page's counts link here).
+const KIND_FILTERS = [
+  { key: 'all', label: 'Every kind' },
+  { key: 'individual', label: 'Practitioners' },
+  { key: 'channel', label: 'Channels' },
+  { key: 'app', label: 'Apps' },
+  { key: 'organisation', label: 'Organisations' },
+  { key: 'school', label: 'Schools' },
+];
+
+const kindOf = (h) => h.entity_type || 'individual';
 
 const TIER_STYLES = {
   superhero: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
@@ -77,7 +85,7 @@ function Badge({ className, children }) {
   );
 }
 
-export default function AdminContentPage() {
+function AdminContentPage() {
   const router = useRouter();
 
   // Claim state comes from the dashboard's existing payload — see the note on
@@ -91,6 +99,13 @@ export default function AdminContentPage() {
   const [subject, setSubject] = useState('all');
   const [claim, setClaim] = useState('all');
   const [contact, setContact] = useState('all');
+  // ?kind= opens on one (the Activity page's counts link here).
+  const params = useSearchParams();
+  const [kind, setKind] = useState(() => {
+    const wanted = params.get('kind');
+    return wanted && KIND_FILTERS.some((f) => f.key === wanted) ? wanted : 'all';
+  });
+
 
   useEffect(() => {
     let cancelled = false;
@@ -156,6 +171,7 @@ export default function AdminContentPage() {
     const q = query.trim().toLowerCase();
 
     return healers.filter((h) => {
+      if (kind !== 'all' && kindOf(h) !== kind) return false;
       if (subject !== 'all' && !(h.subject_slugs || []).includes(subject)) return false;
 
       if (claim !== 'all' && claimedSlugs) {
@@ -172,7 +188,7 @@ export default function AdminContentPage() {
       if (!q) return true;
       return String(h.name || '').toLowerCase().includes(q);
     });
-  }, [healers, query, subject, claim, contact, claimedSlugs]);
+  }, [healers, query, subject, claim, contact, kind, claimedSlugs]);
 
   const total = Array.isArray(healers) ? healers.length : 0;
 
@@ -200,6 +216,19 @@ export default function AdminContentPage() {
                 className="w-full rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
               />
             </label>
+
+            <select
+              value={kind}
+              onChange={(e) => setKind(e.target.value)}
+              aria-label="Filter by kind"
+              className="rounded-full border border-white/10 bg-[#111827] px-4 py-2 text-sm text-white"
+            >
+              {KIND_FILTERS.map((f) => (
+                <option key={f.key} value={f.key}>
+                  {f.label}
+                </option>
+              ))}
+            </select>
 
             <select
               value={subject}
@@ -278,9 +307,14 @@ export default function AdminContentPage() {
                     </div>
 
                     <div className="flex items-center gap-2">
+                      {typeLabel(h.entity_type) && (
+                        <Badge className="border-slate-600 bg-slate-800 text-slate-300">{typeLabel(h.entity_type)}</Badge>
+                      )}
+                      {/* The tier named for the kind: a platform's superhero
+                          is a Superstar (utils/badges.js). */}
                       {h.tier && (
                         <Badge className={TIER_STYLES[h.tier] || 'border-slate-700 bg-slate-800 text-slate-400'}>
-                          {TIER_LABELS[h.tier] || h.tier}
+                          {tierName(h.tier, h.entity_type) || h.tier}
                         </Badge>
                       )}
 
@@ -324,5 +358,14 @@ export default function AdminContentPage() {
         </>
       )}
     </>
+  );
+}
+
+// useSearchParams needs a Suspense boundary (as app/admin/ingestion/page.js).
+export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <AdminContentPage />
+    </Suspense>
   );
 }

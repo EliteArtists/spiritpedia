@@ -6,6 +6,7 @@ import { supabase } from '@/utils/supabase';
 // anon key can lose its write grants without this form losing its job.
 import { adminWrite } from '@/utils/adminWrite';
 import { PLATFORM_TIER_GUIDANCE, tierOptions } from '@/utils/badges';
+import ListingIngestion from './ListingIngestion.jsx';
 
 // Extract the canonical YouTube video ID from any common URL shape.
 function extractYouTubeId(url) {
@@ -30,14 +31,6 @@ function extractAmazonId(url) {
   const m = url.match(/(?:\/dp\/|\/gp\/product\/|\/product\/|\/ASIN\/)([A-Z0-9]{10})/i);
   return m ? m[1].toUpperCase() : null;
 }
-
-// Human-readable label persisted to healers.availability_type (drives the
-// modality badge on the healer profile page).
-const AVAILABILITY_LABELS = {
-  worldwide: 'Worldwide (Famous Names)',
-  local: 'Local Only (In-Person)',
-  local_online: 'Local & Online Sessions',
-};
 
 // Convert a free-text name into a web-safe, lowercase, hyphenated slug.
 function slugify(value) {
@@ -143,48 +136,13 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
   // Optional availability window — blank saves as NULL (evergreen content).
   const [freeResourceStartDate, setFreeResourceStartDate] = useState('');
   const [freeResourceEndDate, setFreeResourceEndDate] = useState('');
-  // Healer-specific fields
-  const [name, setName] = useState('');
-  const [bio, setBio] = useState('');
-  const [slug, setSlug] = useState('');
-  const [imageUrl1, setImageUrl1] = useState('');
-  const [imageUrl2, setImageUrl2] = useState('');
-  const [imageUrl3, setImageUrl3] = useState('');
-  const [entityType, setEntityType] = useState('individual'); // 'individual' | 'channel' | 'app'
-  const [availability, setAvailability] = useState('worldwide'); // 'worldwide' | 'local' | 'local_online'
-  const [tier, setTier] = useState('superhero'); // 'superhero' | 'ascended_master' | 'luminary' | 'local_hero'
-  // Lifespan — Ascended Masters only. Kept as strings while editing so the
-  // inputs can be cleared; parsed to integers (or NULL) at submit.
-  const [birthYear, setBirthYear] = useState('');
-  const [deathYear, setDeathYear] = useState('');
-  const [country, setCountry] = useState('');
-  const [city, setCity] = useState('');
-  const [contactEmail, setContactEmail] = useState('');
-  const [contactPhone, setContactPhone] = useState('');
-  const [bookingUrl, setBookingUrl] = useState('');
-  // Social media + web links (all optional)
-  const [websiteUrl, setWebsiteUrl] = useState('');
-  const [youtubeUrl, setYoutubeUrl] = useState('');
-  const [instagramUrl, setInstagramUrl] = useState('');
-  const [facebookUrl, setFacebookUrl] = useState('');
-  const [twitterUrl, setTwitterUrl] = useState('');
-  const [tiktokUrl, setTiktokUrl] = useState('');
   const [subjects, setSubjects] = useState([]);
   const [healers, setHealers] = useState([]); // for relational Link Healer/Author dropdown
   const [linkedHealerSlug, setLinkedHealerSlug] = useState(''); // '' = None / General Content
   const [selectedSlugs, setSelectedSlugs] = useState([]); // multi-tag selection
-  // PUBLISHER form — links a publishing house to many healers via publisher_healers.
-  const [publisherName, setPublisherName] = useState('');
-  const [publisherSlug, setPublisherSlug] = useState('');
-  const [publisherDescription, setPublisherDescription] = useState('');
-  const [publisherWebsite, setPublisherWebsite] = useState('');
-  const [publisherLogoUrl, setPublisherLogoUrl] = useState('');
-  const [publisherFoundedYear, setPublisherFoundedYear] = useState('');
-  const [publisherTier, setPublisherTier] = useState('local_hero');
-  const [publisherHealerIds, setPublisherHealerIds] = useState([]); // linked healer ids
-  const [publisherHealerSearch, setPublisherHealerSearch] = useState(''); // dropdown filter
-  // EDIT PUBLISHER — a second workspace below the create form for updating an
-  // existing house and managing its healer junction links.
+  // EDIT PUBLISHER — the Publisher tab's workspace for updating an existing
+  // house and managing its healer junction links. New listings of every kind,
+  // publishers included, are added on Add Listing (ListingIngestion.jsx).
   const [publisherList, setPublisherList] = useState([]); // dropdown options
   const [selectedPublisherId, setSelectedPublisherId] = useState('');
   const [editName, setEditName] = useState('');
@@ -227,20 +185,28 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
 
   // DYNAMIC HEALER FETCH — load all healers for the relational link dropdown.
   // The slug column is `healer_slug`; alias it to `slug` for a clean shape.
+  // Paged: the API returns at most 1,000 rows a request, and there are more
+  // listings than that (1,275 on live, 11 Nov 2026).
   useEffect(() => {
     let active = true;
     async function loadHealers() {
-      const { data, error } = await supabase
-        .from('healers')
-        .select('id, name, slug:healer_slug, subject_slugs')
-        .order('name', { ascending: true });
-
-      if (!active) return;
-      if (error) {
-        console.error('Failed to load healers:', error);
-        return;
+      const rows = [];
+      for (let from = 0; ; from += 1000) {
+        const { data, error } = await supabase
+          .from('healers')
+          .select('id, name, slug:healer_slug, subject_slugs')
+          .order('name', { ascending: true })
+          .order('id', { ascending: true })
+          .range(from, from + 999);
+        if (!active) return;
+        if (error) {
+          console.error('Failed to load healers:', error);
+          return;
+        }
+        rows.push(...(data || []));
+        if (!data || data.length < 1000) break;
       }
-      setHealers(data || []);
+      setHealers(rows);
     }
     loadHealers();
     return () => {
@@ -278,19 +244,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
     );
   }
 
-  // Auto-generate the publisher slug from the name as the admin types (they can
-  // still override the slug field manually afterwards).
-  function handlePublisherName(value) {
-    setPublisherName(value);
-    setPublisherSlug(slugify(value));
-  }
 
-  // Toggle a healer id in/out of the publisher's linked-healer selection.
-  function togglePublisherHealer(id) {
-    setPublisherHealerIds((prev) =>
-      prev.includes(id) ? prev.filter((x) => x !== id) : [...prev, id]
-    );
-  }
 
   // --- EDIT PUBLISHER handlers --------------------------------------------
 
@@ -495,117 +449,15 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
     setIsFeatured(false);
     setFreeResourceStartDate('');
     setFreeResourceEndDate('');
-    setName('');
-    setBio('');
-    setSlug('');
-    setImageUrl1('');
-    setImageUrl2('');
-    setImageUrl3('');
-    setEntityType('individual');
-    setAvailability('worldwide');
-    setTier('superhero');
-    setBirthYear('');
-    setDeathYear('');
-    setCountry('');
-    setCity('');
-    setContactEmail('');
-    setContactPhone('');
-    setBookingUrl('');
-    setWebsiteUrl('');
-    setYoutubeUrl('');
-    setInstagramUrl('');
-    setFacebookUrl('');
-    setTwitterUrl('');
-    setTiktokUrl('');
     setLinkedHealerSlug('');
     setSelectedSlugs([]);
-    setPublisherName('');
-    setPublisherSlug('');
-    setPublisherDescription('');
-    setPublisherWebsite('');
-    setPublisherLogoUrl('');
-    setPublisherFoundedYear('');
-    setPublisherTier('local_hero');
-    setPublisherHealerIds([]);
-    setPublisherHealerSearch('');
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
     setToast(null);
 
-    // PUBLISHER — self-contained flow: insert the house, then bulk-link healers
-    // through the publisher_healers join. Handled up front and returned so it
-    // stays clear of the content/healer insert path below.
-    if (tab === 'publisher') {
-      if (!publisherName.trim() || !publisherSlug.trim()) {
-        setToast({ type: 'error', message: 'Publisher name and slug are both required.' });
-        return;
-      }
-      const site = publisherWebsite.trim();
-      if (site && !/^https?:\/\/.+\..+/i.test(site)) {
-        setToast({ type: 'error', message: 'Website URL must be a valid http(s) address.' });
-        return;
-      }
-      const foundedNum = publisherFoundedYear.trim() ? parseInt(publisherFoundedYear.trim(), 10) : null;
-
-      setSaving(true);
-      try {
-        // 1. Insert the publisher and retrieve its generated id.
-        const { data: created, error: pubErr } = await adminWrite({
-          table: 'publishers',
-          op: 'insert',
-          select: 'id',
-          single: true,
-          values: {
-            name: publisherName.trim(),
-            slug: publisherSlug.trim(),
-            description: publisherDescription.trim() || null,
-            website_url: site || null,
-            logo_url: publisherLogoUrl.trim() || null,
-            founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
-            tier: publisherTier,
-            subject_slugs: selectedSlugs,
-          },
-        });
-        if (pubErr) throw pubErr;
-
-        // 2 & 3. Map each selected healer to a join row and bulk insert.
-        if (publisherHealerIds.length > 0) {
-          const rows = publisherHealerIds.map((healerId) => ({
-            publisher_id: created.id,
-            healer_id: healerId,
-          }));
-          const { error: linkErr } = await adminWrite({
-          table: 'publisher_healers',
-          op: 'insert',
-          values: rows,
-        });
-          if (linkErr) throw linkErr;
-        }
-
-        setToast({
-          type: 'success',
-          message: `Publisher saved! Linked ${publisherHealerIds.length} healer${
-            publisherHealerIds.length === 1 ? '' : 's'
-          }.`,
-        });
-        resetForm();
-      } catch (err) {
-        console.error('Publisher save failed:', err);
-        setToast({ type: 'error', message: `Save failed: ${err.message || 'unknown error'}` });
-      } finally {
-        setSaving(false);
-      }
-      return;
-    }
-
-    if (tab === 'healer') {
-      if (!name.trim() || !slug.trim()) {
-        setToast({ type: 'error', message: 'Name and Slug are both required.' });
-        return;
-      }
-    } else if (!title.trim() || !url.trim()) {
+    if (!title.trim() || !url.trim()) {
       setToast({ type: 'error', message: 'Title and URL are both required.' });
       return;
     }
@@ -785,64 +637,6 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           start_date: freeResourceStartDate || null,
           end_date: freeResourceEndDate || null,
         } }));
-      } else {
-        // Healer: `tier` classifies the practitioner (superhero / luminary /
-        // local_hero); availability options carry country/city for local healers.
-        // Channels and apps have no availability of their own — they are
-        // reachable from anywhere — so they always persist as Worldwide, which
-        // is what every existing channel/app row carries.
-        const isPlatform = entityType !== 'individual';
-        const effectiveAvailability = isPlatform ? 'worldwide' : availability;
-        const isLocal =
-          effectiveAvailability === 'local' || effectiveAvailability === 'local_online';
-        // Lifespan is only collected for Ascended Masters; any value typed
-        // before switching tier is discarded rather than persisted.
-        const toYear = (value) => {
-          const n = parseInt(value, 10);
-          return Number.isFinite(n) ? n : null;
-        };
-        const isAscended = tier === 'ascended_master';
-        // Collect the three image inputs, drop blanks, store as a clean array.
-        const imageUrls = [imageUrl1, imageUrl2, imageUrl3]
-          .map((s) => s.trim())
-          .filter(Boolean);
-
-        // DUPLICATE GUARD — block insert if a healer already exists with the
-        // same slug or name.
-        const { data: healerDupes, error: healerDupeErr } = await supabase
-          .from('healers')
-          .select('id')
-          .or(`healer_slug.eq.${slug.trim()},name.eq.${name.trim()}`)
-          .limit(1);
-        if (healerDupeErr) throw healerDupeErr;
-        if (healerDupes && healerDupes.length > 0) {
-          setToast({ type: 'error', message: 'A healer profile with this name already exists' });
-          return; // halt execution; finally{} clears the saving flag
-        }
-
-        ({ error } = await adminWrite({ table: 'healers', op: 'insert', values: {
-          name: name.trim(),
-          bio: bio.trim() || null,
-          healer_slug: slug.trim(),
-          image_urls: imageUrls,
-          tier,
-          birth_year: isAscended ? toYear(birthYear) : null,
-          death_year: isAscended ? toYear(deathYear) : null,
-          entity_type: entityType,
-          availability_type: AVAILABILITY_LABELS[effectiveAvailability],
-          country: isLocal ? country.trim() || null : null,
-          city: isLocal ? city.trim() || null : null,
-          contact_email: contactEmail.trim() || null,
-          contact_phone: contactPhone.trim() || null,
-          booking_url: bookingUrl.trim() || null,
-          website_url: websiteUrl.trim() || null,
-          youtube_url: youtubeUrl.trim() || null,
-          instagram_url: instagramUrl.trim() || null,
-          facebook_url: facebookUrl.trim() || null,
-          twitter_url: twitterUrl.trim() || null,
-          tiktok_url: tiktokUrl.trim() || null,
-          subject_slugs: tags,
-        } }));
       }
 
       if (error) throw error;
@@ -854,9 +648,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
             ? 'Book'
             : tab === 'course'
               ? 'Course'
-              : tab === 'free_resource'
-                ? 'Free Resource'
-                : 'Healer';
+              : 'Free Resource';
       setToast({
         type: 'success',
         message: `${savedLabel} saved! Tagged: ${tags.join(', ')}`,
@@ -905,9 +697,9 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
             { key: 'video', label: '🎬 Add Video' },
             { key: 'book', label: '📚 Add Book' },
             { key: 'course', label: '🎓 Add Course' },
-            { key: 'healer', label: '👤 Add Healer' },
+            { key: 'healer', label: '👤 Add Listing' },
             { key: 'free_resource', label: '✨ Add Free Resource' },
-            { key: 'publisher', label: '🏢 Add Publisher' },
+            { key: 'publisher', label: '🏢 Edit Publisher' },
           ].map((t) => (
             <button
               key={t.key}
@@ -928,6 +720,14 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
         </div>
 
         {/* FORM */}
+        {/* A person, channel, app, organisation, school or publisher: one
+            form for every kind (ListingIngestion.jsx, owner 11 Nov 2026).
+            The Publisher tab keeps the edit workspace below. */}
+        {tab === 'healer' ? (
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+            <ListingIngestion subjects={subjects} />
+          </div>
+        ) : tab === 'publisher' ? null : (
         <form onSubmit={handleSubmit} className="space-y-6 bg-slate-900 border border-slate-800 rounded-2xl p-8">
           {/* VIDEO + BOOK SHARED FIELDS */}
           {tab !== 'healer' && tab !== 'publisher' && (
@@ -1256,421 +1056,9 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
             </>
           )}
 
-          {/* HEALER FIELDS */}
-          {tab === 'healer' && (
-            <>
-              <div>
-                <label className={labelClass}>Name</label>
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => {
-                    const next = e.target.value;
-                    setName(next);
-                    // Auto-derive a web-safe slug as the admin types the name.
-                    setSlug(slugify(next));
-                  }}
-                  placeholder="e.g. Esther Hicks"
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Entity Type</label>
-                <select
-                  value={entityType}
-                  onChange={(e) => setEntityType(e.target.value)}
-                  className={inputClass}
-                >
-                  <option value="individual">Individual</option>
-                  <option value="channel">Channel (YouTube/content channel)</option>
-                  <option value="app">App (wellness/meditation app)</option>
-                  <option value="organisation">Organisation (network, school or community)</option>
-                </select>
-              </div>
-
-              <div>
-                <label className={labelClass}>Bio</label>
-                <textarea
-                  value={bio}
-                  onChange={(e) => setBio(e.target.value)}
-                  placeholder="Short biography…"
-                  rows={4}
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Slug (unique)</label>
-                <input
-                  type="text"
-                  value={slug}
-                  onChange={(e) => setSlug(e.target.value)}
-                  placeholder="e.g. esther-hicks"
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Profile Image URL 1</label>
-                <input
-                  type="text"
-                  value={imageUrl1}
-                  onChange={(e) => setImageUrl1(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Profile Image URL 2</label>
-                <input
-                  type="text"
-                  value={imageUrl2}
-                  onChange={(e) => setImageUrl2(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Profile Image URL 3</label>
-                <input
-                  type="text"
-                  value={imageUrl3}
-                  onChange={(e) => setImageUrl3(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Tier</label>
-                <select
-                  value={tier}
-                  onChange={(e) => setTier(e.target.value)}
-                  className={inputClass}
-                >
-                  <option value="superhero">Superhero</option>
-                  <option value="ascended_master">Ascended Master</option>
-                  <option value="luminary">Luminary</option>
-                  <option value="local_hero">Local Hero</option>
-                </select>
-              </div>
-
-              {/* Lifespan — shown only for Ascended Masters, who are by
-                  definition no longer living. Rendered on the profile page as
-                  "1931 — 2015", or "b. 1931" when only the birth year is known. */}
-              {tier === 'ascended_master' && (
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className={labelClass}>Birth Year (optional)</label>
-                    <input
-                      type="number"
-                      inputMode="numeric"
-                      min="1"
-                      max="2100"
-                      value={birthYear}
-                      onChange={(e) => setBirthYear(e.target.value)}
-                      placeholder="e.g. 1931"
-                      className={inputClass}
-                    />
-                  </div>
-                  <div>
-                    <label className={labelClass}>Death Year (optional)</label>
-                    <input
-                      type="number"
-                      inputMode="numeric"
-                      min="1"
-                      max="2100"
-                      value={deathYear}
-                      onChange={(e) => setDeathYear(e.target.value)}
-                      placeholder="e.g. 2015"
-                      className={inputClass}
-                    />
-                  </div>
-                </div>
-              )}
-
-              {/* Availability only applies to individuals — channels and apps
-                  save as Worldwide (see the insert payload). Country/City are
-                  sub-fields of this select, so they follow it out of view. */}
-              {entityType === 'individual' && (
-                <div>
-                  <label className={labelClass}>Availability Type</label>
-                  <select
-                    value={availability}
-                    onChange={(e) => setAvailability(e.target.value)}
-                    className={inputClass}
-                  >
-                    <option value="worldwide">Worldwide (Famous Names)</option>
-                    <option value="local">Local Only (In-Person)</option>
-                    <option value="local_online">Local &amp; Online Sessions</option>
-                  </select>
-                </div>
-              )}
-
-              {/* Country + City slide open for either Local option */}
-              {entityType === 'individual' &&
-                (availability === 'local' || availability === 'local_online') && (
-                <>
-                  <div>
-                    <label className={labelClass}>Country</label>
-                    <input
-                      type="text"
-                      value={country}
-                      onChange={(e) => setCountry(e.target.value)}
-                      placeholder="e.g. United States"
-                      className={inputClass}
-                    />
-                  </div>
-                  <div>
-                    <label className={labelClass}>City</label>
-                    <input
-                      type="text"
-                      value={city}
-                      onChange={(e) => setCity(e.target.value)}
-                      placeholder="e.g. Sedona"
-                      className={inputClass}
-                    />
-                  </div>
-                </>
-              )}
-
-              {/* DIRECT CONTACT DETAILS */}
-              <div>
-                <label className={labelClass}>Contact Email (optional)</label>
-                <input
-                  type="email"
-                  value={contactEmail}
-                  onChange={(e) => setContactEmail(e.target.value)}
-                  placeholder="e.g. hello@practitioner.com"
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Contact Phone (optional)</label>
-                <input
-                  type="tel"
-                  value={contactPhone}
-                  onChange={(e) => setContactPhone(e.target.value)}
-                  placeholder="e.g. +1 555 123 4567"
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Booking URL (optional)</label>
-                <input
-                  type="text"
-                  value={bookingUrl}
-                  onChange={(e) => setBookingUrl(e.target.value)}
-                  placeholder="https://calendly.com/..."
-                  className={inputClass}
-                />
-              </div>
-
-              {/* SOCIAL MEDIA + WEB LINKS — all optional, mapped to *_url columns */}
-              <div>
-                <label className={labelClass}>Website URL (optional)</label>
-                <input
-                  type="text"
-                  value={websiteUrl}
-                  onChange={(e) => setWebsiteUrl(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>YouTube URL (optional)</label>
-                <input
-                  type="text"
-                  value={youtubeUrl}
-                  onChange={(e) => setYoutubeUrl(e.target.value)}
-                  placeholder="https://www.youtube.com/@..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Instagram URL (optional)</label>
-                <input
-                  type="text"
-                  value={instagramUrl}
-                  onChange={(e) => setInstagramUrl(e.target.value)}
-                  placeholder="https://www.instagram.com/..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Facebook URL (optional)</label>
-                <input
-                  type="text"
-                  value={facebookUrl}
-                  onChange={(e) => setFacebookUrl(e.target.value)}
-                  placeholder="https://www.facebook.com/..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>Twitter URL (optional)</label>
-                <input
-                  type="text"
-                  value={twitterUrl}
-                  onChange={(e) => setTwitterUrl(e.target.value)}
-                  placeholder="https://twitter.com/..."
-                  className={inputClass}
-                />
-              </div>
-              <div>
-                <label className={labelClass}>TikTok URL (optional)</label>
-                <input
-                  type="text"
-                  value={tiktokUrl}
-                  onChange={(e) => setTiktokUrl(e.target.value)}
-                  placeholder="https://www.tiktok.com/@..."
-                  className={inputClass}
-                />
-              </div>
-            </>
-          )}
-
-          {/* PUBLISHER FIELDS */}
-          {tab === 'publisher' && (
-            <>
-              <div>
-                <label className={labelClass}>Publisher Name</label>
-                <input
-                  type="text"
-                  value={publisherName}
-                  onChange={(e) => handlePublisherName(e.target.value)}
-                  placeholder="e.g. Hay House"
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Slug (auto-generated)</label>
-                <input
-                  type="text"
-                  value={publisherSlug}
-                  onChange={(e) => setPublisherSlug(slugify(e.target.value))}
-                  placeholder="hay-house"
-                  className={inputClass}
-                />
-                <p className="mt-2 text-xs text-slate-500">
-                  Public profile lives at <span className="text-cyan-400">/publishers/{publisherSlug || 'your-slug'}</span>
-                </p>
-              </div>
-
-              <div>
-                <label className={labelClass}>Description</label>
-                <textarea
-                  value={publisherDescription}
-                  onChange={(e) => setPublisherDescription(e.target.value)}
-                  placeholder="2–3 sentences about the publishing house."
-                  rows={3}
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Website URL</label>
-                <input
-                  type="url"
-                  value={publisherWebsite}
-                  onChange={(e) => setPublisherWebsite(e.target.value)}
-                  placeholder="https://www.hayhouse.com"
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Logo Image URL</label>
-                <input
-                  type="text"
-                  value={publisherLogoUrl}
-                  onChange={(e) => setPublisherLogoUrl(e.target.value)}
-                  placeholder="https://…/logo.png"
-                  className={inputClass}
-                />
-              </div>
-
-              <div>
-                <label className={labelClass}>Founded Year (optional)</label>
-                <input
-                  type="number"
-                  value={publisherFoundedYear}
-                  onChange={(e) => setPublisherFoundedYear(e.target.value)}
-                  placeholder="1984"
-                  className={inputClass}
-                />
-              </div>
-
-              <PublisherTierField value={publisherTier} onChange={setPublisherTier} />
-
-              {/* LINK HEALERS — searchable, chainable multi-select */}
-              <div>
-                <label className={labelClass}>
-                  Link Healers
-                  <span className="ml-2 text-cyan-400 normal-case tracking-normal font-semibold">
-                    {publisherHealerIds.length} selected
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  value={publisherHealerSearch}
-                  onChange={(e) => setPublisherHealerSearch(e.target.value)}
-                  placeholder="Search healers by name…"
-                  className={inputClass}
-                />
-
-                {publisherHealerIds.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {publisherHealerIds.map((id) => {
-                      const h = healers.find((x) => x.id === id);
-                      return (
-                        <button
-                          key={id}
-                          type="button"
-                          onClick={() => togglePublisherHealer(id)}
-                          className="px-3 py-1.5 rounded-full text-xs font-bold bg-gradient-to-r from-cyan-400 to-emerald-400 text-slate-950"
-                        >
-                          {h?.name || `#${id}`} ✕
-                        </button>
-                      );
-                    })}
-                  </div>
-                )}
-
-                <div className="mt-3 max-h-48 overflow-y-auto rounded-lg border border-slate-700 divide-y divide-slate-800">
-                  {healers
-                    .filter((h) =>
-                      h.name.toLowerCase().includes(publisherHealerSearch.trim().toLowerCase())
-                    )
-                    .map((h) => {
-                      const active = publisherHealerIds.includes(h.id);
-                      return (
-                        <button
-                          key={h.id}
-                          type="button"
-                          onClick={() => togglePublisherHealer(h.id)}
-                          className={`w-full text-left px-4 py-2 text-sm transition-colors ${
-                            active ? 'bg-cyan-500/20 text-white font-semibold' : 'text-slate-300 hover:bg-slate-800'
-                          }`}
-                        >
-                          {active ? '✓ ' : ''}
-                          {h.name}
-                        </button>
-                      );
-                    })}
-                  {healers.length === 0 && (
-                    <p className="px-4 py-2 text-sm text-slate-500">Loading healers…</p>
-                  )}
-                </div>
-              </div>
-            </>
-          )}
-
-          {/* MULTI-TAG SUBJECT SELECTOR — shared by Video, Book, Healer and
-              Publisher forms. The Course and Free Resource forms supply their
-              slugs via their own comma-separated fields. */}
+          {/* MULTI-TAG SUBJECT SELECTOR — shared by the Video and Book forms.
+              The Course and Free Resource forms supply their slugs via their
+              own comma-separated fields. */}
           {tab !== 'course' && tab !== 'free_resource' && (
           <div>
             <label className={labelClass}>
@@ -1724,24 +1112,19 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
                       ? 'Book'
                       : tab === 'course'
                         ? 'Course'
-                        : tab === 'free_resource'
-                          ? 'Free Resource'
-                          : tab === 'publisher'
-                            ? 'Publisher'
-                            : 'Healer'
+                        : 'Free Resource'
                 }`}
           </button>
         </form>
+        )}
 
         {/* ================= EDIT EXISTING PUBLISHER ================= */}
         {tab === 'publisher' && (
           <>
-            {/* Section divider */}
-            <div className="border-t border-white/10 my-10 text-center relative">
-              <span className="bg-[#0a0f1d] px-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-gray-500 text-sm font-medium uppercase tracking-wider">
-                — or edit an existing publisher —
-              </span>
-            </div>
+            {/* A new publisher is added on Add Listing, as kind Publisher. */}
+            <p className="mb-4 text-center text-xs text-slate-500">
+              New publishers are added on Add Listing (kind: Publisher).
+            </p>
 
             <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8">
               <h2 className="text-lg font-semibold text-white mb-6">Edit Existing Publisher</h2>

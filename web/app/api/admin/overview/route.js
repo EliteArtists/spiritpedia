@@ -27,22 +27,54 @@ export async function GET() {
     const { count } = await publicClient.from(table).select('*', { count: 'exact', head: true });
     counts[table] = count ?? 0;
   }
-  // Schools are listings (healers.entity_type 'school', migration 0029).
+  // Listings by kind (owner, 11 Nov 2026). A person is entity_type
+  // 'individual' or NULL, as listings always were before 0029. `schools` stays
+  // for the Inbox strip.
+  const KINDS = ['individual', 'channel', 'app', 'organisation', 'school'];
+  const byKind = (query, kind) =>
+    kind === 'individual'
+      ? query.or('entity_type.is.null,entity_type.eq.individual')
+      : query.eq('entity_type', kind);
+  counts.kinds = {};
+  counts.kinds_this_week = {};
+  await Promise.all(
+    KINDS.flatMap((kind) => [
+      byKind(publicClient.from('healers').select('*', { count: 'exact', head: true }), kind).then(({ count }) => {
+        counts.kinds[kind] = count ?? 0;
+      }),
+      byKind(publicClient.from('healers').select('*', { count: 'exact', head: true }), kind)
+        .gte('created_at', since)
+        .then(({ count }) => {
+          counts.kinds_this_week[kind] = count ?? 0;
+        }),
+    ])
+  );
+  counts.schools = counts.kinds.school;
+
+  // Teacher links: a school, organisation, channel or app linked to the
+  // people who teach there (hub_teachers, migration 0029).
   {
-    const { count } = await publicClient
-      .from('healers')
-      .select('*', { count: 'exact', head: true })
-      .eq('entity_type', 'school');
-    counts.schools = count ?? 0;
+    const { count } = await publicClient.from('hub_teachers').select('*', { count: 'exact', head: true });
+    counts.teacher_links = count ?? 0;
   }
 
-  for (const table of ['healers', 'books']) {
+  for (const table of ['healers', 'books', 'publishers', 'courses', 'free_resources', 'videos']) {
     const { count } = await publicClient
       .from(table)
       .select('*', { count: 'exact', head: true })
       .gte('created_at', since);
     counts[`${table}_this_week`] = count ?? 0;
   }
+  {
+    const { count } = await publicClient
+      .from('hub_teachers')
+      .select('*', { count: 'exact', head: true })
+      .gte('created_at', since);
+    counts.teacher_links_this_week = count ?? null;
+  }
+
+  // When these figures were read, for the "Updated" line under them.
+  counts.read_at = new Date().toISOString();
 
   if (!supabase) {
     return NextResponse.json(
@@ -102,6 +134,17 @@ export async function GET() {
     .gte('failures', MIN_FAILURES)
     .order('first_seen_at', { ascending: true });
 
+  // Which broken listing pictures are logos (a school, organisation, channel
+  // or app) rather than a person's photo, for the queue row's label.
+  const brokenHealerIds = (brokenImages || []).filter((r) => r.table_name === 'healers').map((r) => r.record_id);
+  if (brokenHealerIds.length) {
+    const { data: kinds } = await supabase.from('healers').select('id, entity_type').in('id', brokenHealerIds);
+    const kindOf = new Map((kinds || []).map((k) => [String(k.id), k.entity_type]));
+    for (const row of brokenImages) {
+      if (row.table_name === 'healers') row.entity_type = kindOf.get(String(row.record_id)) || null;
+    }
+  }
+
   // The last scheduled broken-image check (migration 0028), for the Inbox
   // status line. Null before 0028 runs or before the first recorded run.
   const { data: imageCheckRows } = await supabase
@@ -157,9 +200,19 @@ export async function GET() {
   const { data: userPage } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
   for (const user of userPage?.users || []) emails.set(user.id, user.email);
 
+  // The kind of listing each owner manages, so a school's account is not
+  // labelled "Practitioner" (People, Inbox).
+  const ownedSlugs = [...new Set((profiles || []).map((p) => p.linked_healer_slug).filter(Boolean))];
+  const kindBySlug = new Map();
+  if (ownedSlugs.length) {
+    const { data: owned } = await supabase.from('healers').select('healer_slug, entity_type').in('healer_slug', ownedSlugs);
+    for (const row of owned || []) kindBySlug.set(row.healer_slug, row.entity_type || 'individual');
+  }
+
   const withEmail = (profiles || []).map((profile) => ({
     ...profile,
     email: emails.get(profile.id) || null,
+    linked_kind: profile.linked_healer_slug ? kindBySlug.get(profile.linked_healer_slug) || null : null,
   }));
 
   // When the ownership check (D6) went to the listing's address, if it has.
@@ -185,7 +238,10 @@ export async function GET() {
   counts.pending_practitioners = withEmail.filter(
     (p) => p.user_type === 'practitioner' && p.verification_status === 'pending'
   ).length;
-  counts.claims = withEmail.filter((p) => p.linked_healer_slug).length;
+  // Listings and publishers someone manages: a record, not a worklist. The
+  // "Claim requests" card is `claim_requests` below (it used to show this
+  // number, so a single claimed listing read as a request waiting forever).
+  counts.claims = withEmail.filter((p) => p.linked_healer_slug || p.linked_publisher_id).length;
   counts.users_this_week = withEmail.filter((p) => p.created_at && p.created_at >= since).length;
   counts.pending_reviews = (pendingReviews || []).length;
   counts.broken_images = (brokenImages || []).length;

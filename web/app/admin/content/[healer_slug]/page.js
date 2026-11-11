@@ -689,7 +689,7 @@ function OutreachTab({ healer }) {
       cache: 'no-store',
     });
     const json = await res.json();
-    return res.ok && !json.error ? json : { journey: null, claimed: false, error: json.error };
+    return res.ok && !json.error ? json : { journey: null, history: [], claimed: false, error: json.error };
   }, [slug]);
 
   useEffect(() => {
@@ -754,9 +754,33 @@ function OutreachTab({ healer }) {
     setBusy(false);
   };
 
+  // Mark replied, undo it, or record a contact made through the listing's
+  // form (POST /api/admin/journey, migration 0044).
+  const act = async (body, success) => {
+    if (busy) return;
+    setBusy(true);
+    setToast(null);
+    try {
+      const res = await fetch('/api/admin/journey', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) setToast({ type: 'error', message: json.message || json.error });
+      else {
+        setToast({ type: 'success', message: success });
+        setState(await read());
+      }
+    } catch (err) {
+      setToast({ type: 'error', message: err.message });
+    }
+    setBusy(false);
+  };
+
   if (!state) return <Placeholder icon="◴" title="Loading…" />;
 
-  const { journey, claimed, doNotContact } = state;
+  const { journey, claimed, doNotContact, kindRefusal, history = [], trackingReady } = state;
 
   // NOTHING RUNNING — the start button, and the reasons it might refuse.
   if (!journey) {
@@ -764,11 +788,16 @@ function OutreachTab({ healer }) {
       ? 'This healer has claimed their account.'
       : doNotContact
         ? `Not to be emailed again. ${doNotContact}`
-        : healer.entity_type && healer.entity_type !== 'individual'
-          ? 'The outreach emails are written for individual practitioners. Channels, apps and organisations get their own versions later.'
+        : kindRefusal
+          ? kindRefusal
           : !healer.contact_email
-            ? 'No contact email — add one to the healer profile first.'
+            ? healer.contact_form_url
+              ? 'No contact email, only a contact form. Write to them through the form yourself, then record it below.'
+              : 'No contact email — add one to the healer profile first.'
             : null;
+    // A form-only listing (owner, 11 Nov 2026): the admin writes through the
+    // form by hand and records the day here. Nothing is sent from Spiritpedia.
+    const formOnly = !claimed && !doNotContact && !healer.contact_email && Boolean(healer.contact_form_url);
 
     return (
       <>
@@ -806,6 +835,19 @@ function OutreachTab({ healer }) {
             </span>
           )}
         </div>
+
+        {formOnly && (
+          <FormContact
+            healer={healer}
+            busy={busy}
+            trackingReady={trackingReady}
+            onRecord={(date) =>
+              act({ action: 'form', healer_slug: slug, contacted_at: date }, 'Form contact recorded.')
+            }
+          />
+        )}
+
+        <JourneyHistory history={history} trackingReady={trackingReady} busy={busy} act={act} />
       </>
     );
   }
@@ -931,13 +973,38 @@ function OutreachTab({ healer }) {
           </div>
         )}
 
+        {/* A reply ends the automatic emails (owner, 11 Nov 2026). */}
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          {trackingReady ? (
+            <button
+              type="button"
+              onClick={() =>
+                act({ action: 'replied', id: journey.id }, 'Marked replied. The automatic emails have stopped.')
+              }
+              disabled={busy}
+              className="rounded-full border border-cyan-500/40 px-4 py-1.5 text-xs font-bold text-cyan-300 transition-colors hover:bg-cyan-500/10 disabled:opacity-40"
+            >
+              Mark replied (today)
+            </button>
+          ) : (
+            <span className="text-xs text-amber-300">Mark replied needs migration 0044.</span>
+          )}
+        </div>
+
         <ul className="mt-5 divide-y divide-white/5 border-t border-white/10">
           {steps.map((step) => (
             <li key={step.number} className="flex items-center justify-between gap-3 py-2.5">
               <span className="text-sm text-white">Email {step.number}</span>
               <span className="text-xs text-slate-500">
                 {step.sentAt ? (
-                  <span className="text-emerald-400">Sent {journeyDate(step.sentAt)}</span>
+                  <>
+                    <span className="text-emerald-400">Sent {journeyDate(step.sentAt)}</span>
+                    {step.bouncedAt ? (
+                      <span className="ml-2 text-red-400">Bounced {journeyDate(step.bouncedAt)}</span>
+                    ) : step.deliveredAt ? (
+                      <span className="ml-2 text-cyan-400">Delivered {journeyDate(step.deliveredAt)}</span>
+                    ) : null}
+                  </>
                 ) : journey.status === 'running' ? (
                   <>Scheduled {journeyDate(step.dueAt)}</>
                 ) : (
@@ -956,11 +1023,112 @@ function OutreachTab({ healer }) {
       </div>
 
       <p className="mt-4 text-xs leading-relaxed text-slate-600">
-        Emails 2 to 5 go out 21, 42, 63 and 84 days after the start, one per day at most, sent by
-        the daily job. Only emails that are due are sent, and a claim stops the sequence whatever
-        stage it has reached.
+        Emails 2 to 8 go out 21, 42, 63, 84, 105, 126 and 147 days after the start, one per day at
+        most, sent by the daily job. Only emails that are due are sent, and a claim or a reply stops
+        the sequence whatever stage it has reached. Every journey is listed in Admin → Outreach.
       </p>
+
+      <JourneyHistory history={history} trackingReady={trackingReady} busy={busy} act={act} />
     </>
+  );
+}
+
+// Recording a message sent through the listing's own contact form, with the
+// day it was sent. Nothing is sent from here.
+function FormContact({ healer, busy, trackingReady, onRecord }) {
+  const [date, setDate] = useState(() => new Date().toISOString().slice(0, 10));
+  return (
+    <div className="mt-6 rounded-2xl border border-sky-500/30 bg-sky-500/5 p-5">
+      <p className="text-sm font-bold text-sky-200">Contacted through their form?</p>
+      <p className="mt-1 text-xs leading-relaxed text-sky-100/70">
+        Open{' '}
+        <a href={healer.contact_form_url} target="_blank" rel="noopener noreferrer" className="text-cyan-300 underline">
+          their contact form
+        </a>
+        , send your message there, then record the day here. It appears in Admin → Outreach as
+        &ldquo;Contacted via form&rdquo;.
+      </p>
+      {trackingReady === false ? (
+        <p className="mt-3 text-xs text-amber-300">Recording a form contact needs migration 0044.</p>
+      ) : (
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          <input
+            type="date"
+            value={date}
+            max={new Date().toISOString().slice(0, 10)}
+            onChange={(e) => setDate(e.target.value)}
+            className="rounded-lg border border-white/10 bg-[#0a0f1d] px-2 py-1 text-xs text-white"
+          />
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => onRecord(date)}
+            className="rounded-full bg-sky-600 px-4 py-1.5 text-xs font-bold text-white hover:bg-sky-500 disabled:opacity-40"
+          >
+            Record form contact
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Journeys that have ended, newest first: what was sent, delivered or bounced,
+// and how each one ended. A reply can be marked here too, after the event.
+const STOP_WORDS = {
+  claimed: 'Claimed',
+  healer_removed: 'Listing removed',
+  no_contact_email: 'Address removed',
+  suppressed: 'Bounced or marked as spam',
+  sequence_complete: 'All eight sent',
+  asked_to_stop: 'Asked to stop',
+  removal_requested: 'Asked for removal',
+  replied: 'Replied',
+  contacted_via_form: 'Contacted via form',
+  stopped_by_admin: 'Stopped by admin',
+};
+
+function JourneyHistory({ history, trackingReady, busy, act }) {
+  if (!history.length) return null;
+  return (
+    <div className="mt-6">
+      <p className="mb-2 text-[10px] font-bold uppercase tracking-wider text-slate-500">Earlier</p>
+      <ul className="space-y-2">
+        {history.map((j) => {
+          const sent = (j.schedule || []).filter((step) => step.sentAt);
+          return (
+            <li key={j.id} className="rounded-xl border border-white/10 bg-[#0a0f1d] p-4 text-xs">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <span className="text-white">
+                  {j.channel === 'form' ? 'Form contact' : 'Email journey'} · {journeyDate(j.started_at)}
+                </span>
+                <span className="text-slate-400">
+                  {STOP_WORDS[j.stop_reason] || j.stop_reason || 'Stopped'}
+                  {j.replied_at && j.stop_reason !== 'replied' ? ` · replied ${journeyDate(j.replied_at)}` : ''}
+                </span>
+              </div>
+              {j.channel !== 'form' && (
+                <p className="mt-1 text-slate-500">
+                  {sent.length} of 8 sent
+                  {sent.some((step) => step.bouncedAt) ? ' · bounced' : ''}
+                  {sent.some((step) => step.deliveredAt) ? ` · ${sent.filter((step) => step.deliveredAt).length} delivered` : ''}
+                </p>
+              )}
+              {trackingReady && !j.replied_at && (
+                <button
+                  type="button"
+                  disabled={busy}
+                  onClick={() => act({ action: 'replied', id: j.id }, 'Marked replied.')}
+                  className="mt-2 text-cyan-400 underline hover:text-cyan-300 disabled:opacity-40"
+                >
+                  Mark replied (today)
+                </button>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
 }
 

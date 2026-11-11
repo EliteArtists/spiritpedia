@@ -16,6 +16,8 @@ export const dynamic = 'force-dynamic';
 // 3. Content submissions (migration 0024): the same, 12 months after the
 //    decision, with any image they held; and images uploaded to a form that
 //    was never sent, after two days (utils/contentSubmissions.js).
+// 4. Amazon buy clicks (migration 0046): the anonymous daily counts after 25
+//    months, like the activity totals. Before 0046 runs this reads as null.
 //
 // These are the figures the Privacy Policy gives — change both together. One
 // step failing doesn't stop the other. Returns counts only.
@@ -38,6 +40,10 @@ export async function GET(request) {
   const submissions = await purgeDecidedSubmissions(supabase, new Date(), HOLDING_BUCKET);
   const abandoned = await purgeAbandonedUploads(supabase);
   const editions = await purgeOldEditions(supabase);
+  const amazonClicks = await supabase.rpc('purge_amazon_clicks').then(
+    (r) => (r.error ? null : r.data),
+    () => null
+  );
 
   const failed = Boolean(error || claims.error || submissions.error);
   return NextResponse.json(
@@ -48,6 +54,7 @@ export async function GET(request) {
       submissions_deleted: submissions.error ? null : submissions.deleted,
       abandoned_images_deleted: abandoned,
       discovery_editions_deleted: editions,
+      amazon_clicks_deleted: amazonClicks,
       ...(error ? { activity_error: error.message } : {}),
       ...(claims.error ? { claim_requests_error: claims.error } : {}),
       ...(submissions.error ? { submissions_error: submissions.error } : {}),

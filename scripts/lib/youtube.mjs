@@ -10,6 +10,7 @@
 // videos.list cost 1 unit each. search.list costs 100 and is not used.
 
 import fs from 'node:fs';
+import { CHANNEL_PARTS, parseRef, shapeChannel } from '../../web/utils/youtubeChannel.js';
 
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
 const API = 'https://www.googleapis.com/youtube/v3/';
@@ -32,48 +33,11 @@ async function call(endpoint, params) {
   return j;
 }
 
-// What a channel reference is: a handle, a channel id, a legacy username, a
-// custom /c/ name (no API lookup; resolve it through one of its videos), or a
-// video (its channel).
-export function parseRef(input) {
-  const s = String(input || '').trim();
-  if (/^UC[\w-]{22}$/.test(s)) return { id: s };
-  if (/^@[\w.-]+$/.test(s)) return { handle: s };
-  let u;
-  try { u = new URL(/^https?:/i.test(s) ? s : `https://${s}`); } catch { return {}; }
-  if (u.hostname === 'youtu.be') return { video: u.pathname.slice(1) };
-  if (!/(^|\.)youtube\.com$/i.test(u.hostname)) return {};
-  const [a, b] = u.pathname.split('/').filter(Boolean);
-  if (a?.startsWith('@')) return { handle: decodeURIComponent(a) };
-  if (a === 'channel' && b) return { id: b };
-  if (a === 'user' && b) return { username: b };
-  if (a === 'c' && b) return { custom: b };
-  if (a === 'watch' && u.searchParams.get('v')) return { video: u.searchParams.get('v') };
-  if ((a === 'shorts' || a === 'embed' || a === 'live') && b) return { video: b };
-  return {};
-}
-
-const PARTS = 'snippet,statistics,contentDetails';
-
-function shape(c) {
-  if (!c) return null;
-  const t = c.snippet?.thumbnails || {};
-  return {
-    id: c.id,
-    title: c.snippet?.title,
-    handle: c.snippet?.customUrl || null,
-    url: c.snippet?.customUrl ? `https://www.youtube.com/${c.snippet.customUrl}` : `https://www.youtube.com/channel/${c.id}`,
-    description: c.snippet?.description || '',
-    country: c.snippet?.country || null,
-    published: c.snippet?.publishedAt || null,
-    subscribers: c.statistics?.hiddenSubscriberCount ? null : Number(c.statistics?.subscriberCount ?? NaN),
-    subscribersHidden: Boolean(c.statistics?.hiddenSubscriberCount),
-    videos: Number(c.statistics?.videoCount ?? 0),
-    views: Number(c.statistics?.viewCount ?? 0),
-    avatar: (t.high || t.medium || t.default)?.url || null,
-    uploads: c.contentDetails?.relatedPlaylists?.uploads || null,
-  };
-}
+// The reference parser and the channel's shape are shared with Admin →
+// Ingestion (web/utils/youtubeChannel.js).
+const PARTS = CHANNEL_PARTS;
+const shape = shapeChannel;
+export { parseRef };
 
 // One channel from any reference; null when there is none.
 export async function getChannel(input) {

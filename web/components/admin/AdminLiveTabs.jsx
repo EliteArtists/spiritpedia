@@ -275,121 +275,82 @@ export function AccountsTab({ profiles }) {
   );
 }
 
-/* ── TAB 4 — CLAIMS ───────────────────────────────────────────────────── */
-
-export function ClaimsTab({ profiles }) {
-  const claimed = profiles === null ? null : profiles.filter((p) => p.linked_healer_slug);
-
-  return (
-    <div className="flex flex-col gap-10">
-      <section>
-        <h3 className="mb-4 text-left text-xs font-bold uppercase tracking-wider text-slate-500">
-          Claimed profiles
-        </h3>
-        {claimed === null ? (
-          <NotConfigured what="Claims" />
-        ) : claimed.length === 0 ? (
-          <Placeholder icon="○" title="No profiles claimed yet" />
-        ) : (
-          <div className="flex flex-col gap-3">
-            {claimed.map((profile) => (
-              <div
-                key={profile.id}
-                className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-slate-800 bg-slate-900 p-4"
-              >
-                <div className="text-left">
-                  <p className="break-all text-sm font-semibold text-white">
-                    {profile.email || profile.id}
-                  </p>
-                  <Link
-                    href={`/healers/${profile.linked_healer_slug}`}
-                    className="mt-1 inline-block text-xs text-cyan-400 hover:text-cyan-300"
-                  >
-                    {profile.linked_healer_slug} →
-                  </Link>
-                </div>
-                <div className="flex items-center gap-2">
-                  <StatusBadge status={profile.verification_status} />
-                  <Link
-                    href={`/healers/${profile.linked_healer_slug}`}
-                    className="rounded-full border border-slate-700 px-4 py-1.5 text-xs font-bold text-slate-300 hover:text-white"
-                  >
-                    View Profile
-                  </Link>
-                  <button
-                    type="button"
-                    title="Coming soon"
-                    className="cursor-not-allowed rounded-full border border-slate-800 px-4 py-1.5 text-xs font-bold text-slate-600"
-                  >
-                    Revoke Claim
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </section>
-
-      <section>
-        <h3 className="mb-4 text-left text-xs font-bold uppercase tracking-wider text-slate-500">
-          Publisher claim requests
-        </h3>
-        <Placeholder
-          icon="🏢"
-          title="No publisher claims yet"
-          body="When publishers click Claim Your Account, requests will appear here."
-        />
-      </section>
-    </div>
-  );
-}
-
 /* ── TAB 7 — STATS ────────────────────────────────────────────────────── */
 
-function StatCard({ label, value, tone = 'default' }) {
+// A card can link to the items it counts (owner, 11 Nov 2026: "make each one
+// clickable"), so a number that looks wrong is one click from the rows.
+function StatCard({ label, value, tone = 'default', href }) {
   const tones = {
     default: 'border-slate-800 bg-slate-900 text-white',
     alert: 'border-amber-500/40 bg-amber-500/10 text-amber-300',
     quiet: 'border-slate-800 bg-slate-900 text-slate-600',
   };
-  return (
-    <div className={`rounded-2xl border p-6 text-left ${tones[tone]}`}>
-      <p className="text-3xl font-black tabular-nums">{value ?? '—'}</p>
-      <p className="mt-1 text-xs font-semibold uppercase tracking-wider opacity-70">{label}</p>
-    </div>
+  const body = (
+    <>
+      <p className="text-3xl font-black tabular-nums">
+        {typeof value === 'number' ? value.toLocaleString('en-GB') : value ?? '—'}
+      </p>
+      <p className="mt-1 text-xs font-semibold uppercase tracking-wider opacity-70">
+        {label}
+        {href && <span aria-hidden="true"> →</span>}
+      </p>
+    </>
+  );
+  const box = `block rounded-2xl border p-6 text-left ${tones[tone]}`;
+  return href ? (
+    <Link href={href} className={`${box} transition-colors hover:border-[#7c3aed]/60`}>
+      {body}
+    </Link>
+  ) : (
+    <div className={box}>{body}</div>
   );
 }
 
+// The five kinds of listing (healers.entity_type, migration 0029), in the
+// order the site names them. The Content directory filters by the same keys.
+export const KIND_LABELS = [
+  { key: 'individual', label: 'Practitioners' },
+  { key: 'channel', label: 'Channels' },
+  { key: 'app', label: 'Apps' },
+  { key: 'organisation', label: 'Organisations' },
+  { key: 'school', label: 'Schools' },
+];
+
 export function StatsTab({ counts, accountsAvailable }) {
   const c = counts || {};
+  const kinds = c.kinds || {};
+  const weekKinds = c.kinds_this_week || {};
+  const accounts = (value) => (accountsAvailable ? value : 'n/a');
+  const accountTone = accountsAvailable ? 'default' : 'quiet';
   return (
     <div className="flex flex-col gap-10 text-left">
       <section>
         <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
-          Platform totals
+          Listings by kind
         </h3>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          <StatCard label="Healers" value={c.healers} />
+          <StatCard label="All listings" value={c.healers} href="/admin/content" />
+          {KIND_LABELS.map((k) => (
+            <StatCard key={k.key} label={k.label} value={kinds[k.key]} href={`/admin/content?kind=${k.key}`} />
+          ))}
+          <StatCard label="Publishers" value={c.publishers} href="/admin/publishers" />
+          <StatCard label="Teacher links" value={c.teacher_links} />
+        </div>
+      </section>
+
+      <section>
+        <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
+          Content and accounts
+        </h3>
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           <StatCard label="Videos" value={c.videos} />
           <StatCard label="Books" value={c.books} />
           <StatCard label="Courses & offerings" value={c.courses} />
           <StatCard label="Free resources" value={c.free_resources} />
-          <StatCard label="Publishers" value={c.publishers} />
-          <StatCard
-            label="Registered users"
-            value={accountsAvailable ? c.users : 'n/a'}
-            tone={accountsAvailable ? 'default' : 'quiet'}
-          />
-          <StatCard
-            label="Practitioners"
-            value={accountsAvailable ? c.practitioners : 'n/a'}
-            tone={accountsAvailable ? 'default' : 'quiet'}
-          />
-          <StatCard
-            label="Explorers"
-            value={accountsAvailable ? c.explorers : 'n/a'}
-            tone={accountsAvailable ? 'default' : 'quiet'}
-          />
+          <StatCard label="Registered users" value={accounts(c.users)} tone={accountTone} href="/admin/people" />
+          <StatCard label="Practitioner accounts" value={accounts(c.practitioners)} tone={accountTone} />
+          <StatCard label="Explorers" value={accounts(c.explorers)} tone={accountTone} />
+          <StatCard label="Managed by their owner" value={accounts(c.claims)} tone={accountTone} href="/admin/claims" />
         </div>
         {!accountsAvailable && (
           <p className="mt-3 text-xs text-slate-600">
@@ -402,21 +363,27 @@ export function StatsTab({ counts, accountsAvailable }) {
         <h3 className="mb-4 text-xs font-bold uppercase tracking-wider text-slate-500">
           Pending items
         </h3>
+        {/* Each is the same number as its Inbox filter, and opens it. "Claim
+            requests" counts requests waiting for a decision; it used to show
+            the number of claimed listings, so it read 1 for ever. */}
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
           <StatCard
             label="Practitioners awaiting review"
-            value={accountsAvailable ? c.pending_practitioners : 'n/a'}
+            value={accounts(c.pending_practitioners)}
             tone={accountsAvailable && c.pending_practitioners > 0 ? 'alert' : 'quiet'}
+            href="/admin?filter=application"
           />
           <StatCard
             label="Claim requests"
-            value={accountsAvailable ? c.claims : 'n/a'}
-            tone={accountsAvailable && c.claims > 0 ? 'alert' : 'quiet'}
+            value={accounts(c.claim_requests ?? 0)}
+            tone={accountsAvailable && c.claim_requests > 0 ? 'alert' : 'quiet'}
+            href="/admin?filter=claim"
           />
           <StatCard
             label="Reported reviews"
-            value={accountsAvailable ? c.open_reports ?? 0 : 'n/a'}
+            value={accounts(c.open_reports ?? 0)}
             tone={accountsAvailable && c.open_reports > 0 ? 'alert' : 'quiet'}
+            href="/admin/flags"
           />
         </div>
       </section>
@@ -426,13 +393,16 @@ export function StatsTab({ counts, accountsAvailable }) {
           New this week
         </h3>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-          <StatCard label="Healers added" value={c.healers_this_week} />
+          {KIND_LABELS.map((k) => (
+            <StatCard key={k.key} label={`${k.label} added`} value={weekKinds[k.key]} />
+          ))}
+          <StatCard label="Publishers added" value={c.publishers_this_week} />
+          <StatCard label="Teacher links added" value={c.teacher_links_this_week} />
           <StatCard label="Books added" value={c.books_this_week} />
-          <StatCard
-            label="Users signed up"
-            value={accountsAvailable ? c.users_this_week : 'n/a'}
-            tone={accountsAvailable ? 'default' : 'quiet'}
-          />
+          <StatCard label="Offerings added" value={c.courses_this_week} />
+          <StatCard label="Free resources added" value={c.free_resources_this_week} />
+          <StatCard label="Videos added" value={c.videos_this_week} />
+          <StatCard label="Users signed up" value={accounts(c.users_this_week)} tone={accountTone} />
         </div>
       </section>
     </div>

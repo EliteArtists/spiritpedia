@@ -1,7 +1,9 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Suspense, useCallback, useMemo, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import SectionHeading from '@/components/admin/SectionHeading';
+import RefreshButton from '@/components/admin/RefreshButton';
 import StatStrip from '@/components/admin/StatStrip';
 import QueueTable from '@/components/admin/QueueTable';
 import QueueReviewer from '@/components/admin/QueueReviewer';
@@ -26,7 +28,7 @@ const FILTERS = [
   { key: 'content', label: 'Content' },
 ];
 
-export default function AdminInboxPage() {
+function AdminInboxPage() {
   const {
     profiles,
     pendingReviews,
@@ -38,31 +40,21 @@ export default function AdminInboxPage() {
     contentSubmissions,
     loading,
     reload,
+    refreshing,
+    updatedAt,
     accountsAvailable,
     error,
   } = useAdminData();
-  const [filter, setFilter] = useState('all');
+  // ?filter= opens on one (the Activity page's counts link here).
+  const params = useSearchParams();
+  const [filter, setFilter] = useState(() => {
+    const wanted = params.get('filter');
+    return wanted && FILTERS.some((f) => f.key === wanted) ? wanted : 'all';
+  });
+
   const [selectedId, setSelectedId] = useState(null);
   const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState(null);
-
-  // FRESH ON EVERY VISIT.
-  //
-  // The data provider lives in the admin layout, which persists across route
-  // changes, so it fetched once per full page load and the Inbox then served
-  // whatever it had — an approval made in another tab, or a practitioner who
-  // applied while the dashboard was open, simply would not appear. Re-fetching
-  // when this page mounts makes clicking Inbox mean "show me what is there
-  // now".
-  //
-  // The ref keeps it to once per mount: reload sets state, and calling it
-  // unguarded from an effect would re-run on the render it causes.
-  const refreshedRef = useRef(false);
-  useEffect(() => {
-    if (refreshedRef.current) return;
-    refreshedRef.current = true;
-    reload();
-  }, [reload]);
 
   const queue = useMemo(
     () =>
@@ -215,8 +207,11 @@ export default function AdminInboxPage() {
 
   return (
     <>
+      {/* Fresh on every visit and on every click of Inbox (AdminData,
+          AdminShell); the button re-reads in place and says when. */}
       <SectionHeading
         title="Inbox"
+        aside={<RefreshButton onClick={() => reload()} busy={refreshing} updatedAt={updatedAt} />}
         subtitle={
           // "Nothing waiting" while the data is still in flight is a claim we
           // cannot make yet — and it read as a contradiction next to the
@@ -312,5 +307,14 @@ export default function AdminInboxPage() {
         <QueueTable items={visible} onOpen={(item) => setSelectedId(item.id)} selectedId={selectedId} />
       )}
     </>
+  );
+}
+
+// useSearchParams needs a Suspense boundary (as app/admin/ingestion/page.js).
+export default function Page() {
+  return (
+    <Suspense fallback={null}>
+      <AdminInboxPage />
+    </Suspense>
   );
 }

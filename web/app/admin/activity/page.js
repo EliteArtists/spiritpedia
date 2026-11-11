@@ -6,6 +6,8 @@ import SectionHeading from '@/components/admin/SectionHeading';
 import { useAdminData } from '@/components/admin/AdminData';
 import { StatsTab } from '@/components/admin/AdminLiveTabs';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
+import RefreshButton from '@/components/admin/RefreshButton';
+import AmazonClicksPanel from '@/components/admin/AmazonClicksPanel';
 
 // Admin → Activity (migration 0021). Totals only: what is opened, saved and
 // searched for, across everyone, from anonymous daily counts — never what any
@@ -53,6 +55,30 @@ function Panel({ title, note, children }) {
       {note && <p className="mt-0.5 text-xs text-slate-500">{note}</p>}
       <div className="mt-4">{children}</div>
     </section>
+  );
+}
+
+// The headline: how much happened in the period, and today so far.
+const TOTAL_KINDS = [
+  { key: 'open', label: 'Pages opened' },
+  { key: 'watch', label: 'Videos watched' },
+  { key: 'save', label: 'Saves' },
+  { key: 'share', label: 'Shares' },
+];
+
+function Totals({ totals }) {
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      {TOTAL_KINDS.map((k) => (
+        <div key={k.key} className="rounded-xl border border-white/10 bg-[#0a0f1d] px-4 py-3">
+          <p className="text-2xl font-black tabular-nums text-white">
+            {(totals.period[k.key] || 0).toLocaleString('en-GB')}
+          </p>
+          <p className="mt-0.5 text-[11px] font-semibold uppercase tracking-wider text-slate-500">{k.label}</p>
+          <p className="mt-1 text-xs text-slate-400">{(totals.today[k.key] || 0).toLocaleString('en-GB')} today</p>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -131,14 +157,16 @@ function SignupChart({ rows, from, to }) {
 }
 
 export default function AdminActivityPage() {
-  const { counts, loading: countsLoading, accountsAvailable } = useAdminData();
+  const { counts, loading: countsLoading, accountsAvailable, reload, refreshing, updatedAt } = useAdminData();
   const [days, setDays] = useState(30);
   const [platform, setPlatform] = useState('all');
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+  const [busy, setBusy] = useState(false);
 
   const load = useCallback(async (d, p) => {
     setError(null);
+    setBusy(true);
     try {
       const res = await fetch(`/api/admin/activity?days=${d}&platform=${p}`, { cache: 'no-store' });
       const json = await res.json();
@@ -146,11 +174,19 @@ export default function AdminActivityPage() {
       setData(json);
     } catch (err) {
       setError(err.message);
+    } finally {
+      setBusy(false);
     }
   }, []);
 
+  // Read on open, on every change of range or platform, and again every
+  // minute while the page is open (owner, 11 Nov 2026: the totals looked
+  // "filled once and never again"). The counts themselves are written as
+  // visits happen (log_activity, migration 0021).
   useEffect(() => {
     load(days, platform);
+    const timer = setInterval(() => load(days, platform), 60000);
+    return () => clearInterval(timer);
   }, [days, platform, load]);
 
   const fresh = data && data.days === days && data.platform === platform;
@@ -167,6 +203,14 @@ export default function AdminActivityPage() {
         />
         <Toggle options={PLATFORMS} value={platform} onChange={setPlatform} />
         {data && !fresh && <span className="text-xs text-slate-500">Updating…</span>}
+        <RefreshButton
+          onClick={() => {
+            load(days, platform);
+            reload();
+          }}
+          busy={busy || refreshing}
+          updatedAt={data?.readAt ? Date.parse(data.readAt) : null}
+        />
       </div>
 
       {error ? (
@@ -175,6 +219,16 @@ export default function AdminActivityPage() {
         <Placeholder icon="◴" title="Loading…" />
       ) : (
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <div className="lg:col-span-2">
+            <Panel
+              title="Totals across everyone"
+              note={`${data.from} to ${data.to}${
+                data.totals.latestDay ? ` · latest activity recorded ${data.totals.latestDay}` : ' · nothing recorded in this period'
+              }`}
+            >
+              <Totals totals={data.totals} />
+            </Panel>
+          </div>
           <Panel title="Most opened" note="Pages opened, once per visit">
             <ItemList rows={data.mostOpened} unit="opens" />
           </Panel>
@@ -212,6 +266,9 @@ export default function AdminActivityPage() {
             )}
           </Panel>
           <div className="lg:col-span-2">
+            <AmazonClicksPanel days={days} platform={platform} />
+          </div>
+          <div className="lg:col-span-2">
             <Panel title="Sign-ups over time" note="By where the account was made (the platform toggle doesn't apply)">
               <SignupChart rows={data.signups} from={data.from} to={data.to} />
             </Panel>
@@ -219,7 +276,10 @@ export default function AdminActivityPage() {
         </div>
       )}
 
-      <h2 className="mb-3 mt-10 text-sm font-bold uppercase tracking-wider text-slate-500">In the database</h2>
+      <div className="mb-3 mt-10 flex flex-wrap items-center gap-3">
+        <h2 className="text-sm font-bold uppercase tracking-wider text-slate-500">In the database</h2>
+        <RefreshButton onClick={() => reload()} busy={refreshing} updatedAt={updatedAt} />
+      </div>
       {countsLoading ? (
         <Placeholder icon="◴" title="Loading…" />
       ) : (

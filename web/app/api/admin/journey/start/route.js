@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { isSuppressed, sendJourneyEmail } from '@/utils/email';
-import { doNotContactReason, isClaimed, outreachAllowedFor } from '@/utils/journey';
+import { doNotContactReason, isClaimed, outreachRefusal, recordMessage } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -19,33 +19,45 @@ export async function POST(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
-  const { healer_slug: slug } = await request.json().catch(() => ({}));
-  if (!slug) return NextResponse.json({ error: 'missing_healer_slug' }, { status: 400 });
+  // A healers listing of any kind by healer_slug, or a publisher by
+  // publisher_slug (migration 0020; owner 11 Nov 2026: publishers are in
+  // scope). Exactly one.
+  const { healer_slug: slug, publisher_slug: publisherSlug } = await request.json().catch(() => ({}));
+  if (!slug && !publisherSlug) return NextResponse.json({ error: 'missing_healer_slug' }, { status: 400 });
 
-  const { data: healer } = await supabase
-    .from('healers')
-    .select('name, healer_slug, contact_email, entity_type')
-    .eq('healer_slug', slug)
-    .maybeSingle();
+  const { data: listing } = publisherSlug
+    ? await supabase
+        .from('publishers')
+        .select('id, name, slug, contact_email')
+        .eq('slug', publisherSlug)
+        .maybeSingle()
+    : await supabase
+        .from('healers')
+        .select('name, healer_slug, contact_email, entity_type')
+        .eq('healer_slug', slug)
+        .maybeSingle();
 
-  if (!healer) return NextResponse.json({ error: 'healer_not_found' }, { status: 404 });
+  if (!listing) return NextResponse.json({ error: 'healer_not_found' }, { status: 404 });
 
-  if (!outreachAllowedFor(healer.entity_type)) {
-    return NextResponse.json(
-      { error: 'not_an_individual', message: 'The outreach emails are written for individual practitioners.' },
-      { status: 400 }
-    );
+  const entityType = publisherSlug ? 'publisher' : listing.entity_type;
+  const target = publisherSlug ? { publisherId: listing.id } : slug;
+
+  // Only the kinds whose wording is approved (utils/journey.js). Today that is
+  // individuals; the rest wait for the owner's wording.
+  const refusal = outreachRefusal(entityType);
+  if (refusal) {
+    return NextResponse.json({ error: 'wording_not_approved', message: refusal }, { status: 400 });
   }
 
-  if (!healer.contact_email) {
+  if (!listing.contact_email) {
     return NextResponse.json(
-      { error: 'no_contact_email', message: 'This healer has no contact email to write to.' },
+      { error: 'no_contact_email', message: 'This listing has no contact email to write to.' },
       { status: 400 }
     );
   }
 
   // Nobody who has already joined should be asked to join.
-  if (await isClaimed(supabase, slug)) {
+  if (await isClaimed(supabase, target)) {
     return NextResponse.json(
       { error: 'already_claimed', message: 'This healer has claimed their account.' },
       { status: 409 }
@@ -54,11 +66,11 @@ export async function POST(request) {
 
   // Someone who asked us to stop, or asked for removal, or whose address
   // bounced, is never written to again.
-  const refusal = await doNotContactReason(supabase, slug);
-  if (refusal) {
-    return NextResponse.json({ error: 'do_not_contact', message: refusal }, { status: 409 });
+  const doNotContact = await doNotContactReason(supabase, target);
+  if (doNotContact) {
+    return NextResponse.json({ error: 'do_not_contact', message: doNotContact }, { status: 409 });
   }
-  const suppressed = await isSuppressed(healer.contact_email);
+  const suppressed = await isSuppressed(listing.contact_email);
   if (suppressed !== false) {
     return NextResponse.json(
       {
@@ -76,7 +88,7 @@ export async function POST(request) {
   // as history and does not block a restart.
   const { data: journey, error: insertError } = await supabase
     .from('healer_journeys')
-    .insert({ healer_slug: slug })
+    .insert(publisherSlug ? { publisher_id: listing.id } : { healer_slug: slug })
     .select('*')
     .single();
 
@@ -95,9 +107,11 @@ export async function POST(request) {
 
   const result = await sendJourneyEmail({
     emailNumber: 1,
-    to: healer.contact_email,
-    healerName: healer.name,
-    healerSlug: healer.healer_slug,
+    to: listing.contact_email,
+    healerName: listing.name,
+    healerSlug: publisherSlug ? listing.slug : listing.healer_slug,
+    entityType,
+    publisher: Boolean(publisherSlug),
   });
 
   if (result.suppressed) {
@@ -125,6 +139,8 @@ export async function POST(request) {
     .from('healer_journeys')
     .update({ email_1_sent_at: new Date().toISOString() })
     .eq('id', journey.id);
+  // For the delivered and bounced webhook (migration 0044).
+  await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: 1 });
 
   return NextResponse.json({
     message: 'Journey started',

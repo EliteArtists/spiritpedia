@@ -162,6 +162,14 @@ export function practitionerFirstName(listingName) {
   return first || '';
 }
 
+// What an outreach greeting calls a listing (owner, 11 Nov 2026). A person
+// (entity_type individual, or none: it predates the column) by their first
+// name. A channel, app, organisation, school or publisher is not a person, so
+// '' and the greeting says "Hello," — never "Hi White," to White Tiger Qigong.
+export function outreachFirstName(entityType, listingName) {
+  return !entityType || entityType === 'individual' ? practitionerFirstName(listingName) : '';
+}
+
 // Removal and stopping are offered in every email, and nothing promises
 // bookings, exposure or prices: the wording is the approved copy, unchanged.
 const OUTREACH = {

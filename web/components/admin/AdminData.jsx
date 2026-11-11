@@ -1,6 +1,7 @@
 'use client';
 
-import { createContext, useCallback, useContext, useEffect, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 // One fetch of /api/admin/overview for the whole dashboard.
 //
@@ -35,7 +36,11 @@ export function AdminDataProvider({ children }) {
     contentSubmissions: [],
     counts: {},
     error: null,
+    // When the data on screen was read (ms), for "Updated 14:02" lines.
+    updatedAt: null,
   });
+  // True while a reload is in flight; the data on screen stays until it lands.
+  const [refreshing, setRefreshing] = useState(false);
 
   const fetchOverview = useCallback(async () => {
     // A DEADLINE, not an open-ended wait.
@@ -67,6 +72,7 @@ export function AdminDataProvider({ children }) {
         contentSubmissions: json.contentSubmissions || [],
         counts: json.counts || {},
         error: json.error || null,
+        updatedAt: Date.now(),
       };
     } catch (err) {
       return {
@@ -81,26 +87,41 @@ export function AdminDataProvider({ children }) {
         contentSubmissions: [],
         counts: {},
         error: err?.name === 'AbortError' ? 'unreachable' : err.message,
+        updatedAt: null,
       };
     } finally {
       clearTimeout(timer);
     }
   }, []);
 
+  // Only the newest request may land. Two reloads close together (a click
+  // and a route change) would otherwise race, and the slower, older answer
+  // could overwrite the newer one.
+  const latestRef = useRef(0);
+
   const reload = useCallback(async () => {
-    setState(await fetchOverview());
+    const ticket = ++latestRef.current;
+    setRefreshing(true);
+    const next = await fetchOverview();
+    if (ticket !== latestRef.current) return;
+    setState(next);
+    setRefreshing(false);
   }, [fetchOverview]);
 
+  // FRESH ON EVERY PAGE (owner, 11 Nov 2026: "Inbox never reloads").
+  //
+  // This provider lives in the admin layout, which persists across route
+  // changes, so it used to fetch once per full page load: the Activity totals,
+  // the pending counts and Claims all showed whatever was read when the
+  // dashboard first opened. The Inbox re-fetched on mount, but clicking Inbox
+  // while already on it changed nothing, and a reload gave no sign it had
+  // happened. Now every route change reads again (the first render's fetch
+  // included), the nav re-reads when its own page is clicked
+  // (AdminShell), and pages show when the data was read.
+  const pathname = usePathname();
   useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      const next = await fetchOverview();
-      if (!cancelled) setState(next);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [fetchOverview]);
+    reload();
+  }, [pathname, reload]);
 
   const accountsAvailable = Array.isArray(state.profiles);
   const pendingApplications = accountsAvailable
@@ -145,6 +166,7 @@ export function AdminDataProvider({ children }) {
       value={{
         ...state,
         reload,
+        refreshing,
         accountsAvailable,
         pendingApplications,
         pendingReviewCount,

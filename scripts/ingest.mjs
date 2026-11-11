@@ -480,8 +480,12 @@ for (const c of plan.courses || []) {
   if (!PRODUCT_TYPES.includes(c.product_type)) problems.push(`${label('offering', c)}: product_type "${c.product_type}" isn't one of ${PRODUCT_TYPES.join(', ')}`);
   // A shared programme (one hub page for a retreat several teachers lead) may
   // belong to more than one teacher; skip it only if this teacher has it already.
-  const dupes = healer ? await get(`courses?select=id&course_url=eq.${encodeURIComponent(c.url)}&healer_id=eq.${healer.id}`) : [];
-  if (dupes.length || queue.some((q) => q.table === 'courses' && q.row.course_url === c.url)) { notes.push(`skip ${label('offering', c)}: its link is already in`); continue; }
+  // An item is the same item when its link AND title match (owner, 11 Nov
+  // 2026; migration 0047). Two things sold on one real page are two items,
+  // with the page's own link: never a made-up #fragment.
+  const sameLink = healer ? await get(`courses?select=id,title&course_url=eq.${encodeURIComponent(c.url)}&healer_id=eq.${healer.id}`) : [];
+  const queuedLink = queue.filter((q) => q.table === 'courses' && q.row.course_url === c.url);
+  if ([...sameLink, ...queuedLink.map((q) => q.row)].some((x) => normTitle(x.title) === normTitle(c.title))) { notes.push(`skip ${label('offering', c)}: its link and title are already in`); continue; }
   if (existing.courses.find((x) => normTitle(x.title) === normTitle(c.title))) { notes.push(`skip ${label('offering', c)}: same title already in`); continue; }
   if (removed.has(c.url)) { notes.push(`skip ${label('offering', c)}: the owner removed it`); continue; }
   queue.push({ table: 'courses', title: c.slug || c.title, row: {
@@ -494,8 +498,9 @@ for (const c of plan.courses || []) {
 for (const f of plan.free_resources || []) {
   fixSubjects('free resource', f);
   if (!RESOURCE_TYPES.includes(f.resource_type)) problems.push(`${label('free resource', f)}: resource_type "${f.resource_type}" isn't one of ${RESOURCE_TYPES.join(', ')}`);
-  const dupes = await get(`free_resources?select=id&resource_url=eq.${encodeURIComponent(f.url)}`);
-  if (dupes.length) { notes.push(`skip ${label('free resource', f)}: its link is already in`); continue; }
+  const sameLink = await get(`free_resources?select=id,title&resource_url=eq.${encodeURIComponent(f.url)}`);
+  const queuedLink = queue.filter((q) => q.table === 'free_resources' && q.row.resource_url === f.url);
+  if ([...sameLink, ...queuedLink.map((q) => q.row)].some((x) => normTitle(x.title) === normTitle(f.title))) { notes.push(`skip ${label('free resource', f)}: its link and title are already in`); continue; }
   if (removed.has(f.url)) { notes.push(`skip ${label('free resource', f)}: the owner removed it`); continue; }
   queue.push({ table: 'free_resources', title: f.slug || f.title, row: {
     title: f.title, description: f.description || null, resource_url: f.url, resource_type: f.resource_type,
@@ -574,6 +579,14 @@ for (const q of queue) {
     // Before 0031 an offering link can belong to one listing only. Leave the
     // shared one out; running the plan again after 0031 adds it.
     if (q.table === 'courses' && /courses_url_unique/.test(e.message)) { say(`  skip offering "${q.row.title}": shared link, needs 0031`); skippedShared += 1; continue; }
+    // Before 0047 a link can hold one item only (per listing for offerings,
+    // across the table for free resources). Leave the second item on the same
+    // page out; running the plan again after 0047 adds it.
+    if (/courses_url_healer_unique|free_resources_url_unique/.test(e.message)) {
+      say(`  skip ${q.table === 'courses' ? 'offering' : 'free resource'} "${q.row.title}": same link as another item, needs 0047`);
+      skippedShared += 1;
+      continue;
+    }
     throw e;
   }
   log.rows.push({ table: q.table, id: r.id, slug: r.slug, title: r.title });

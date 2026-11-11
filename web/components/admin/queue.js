@@ -199,6 +199,7 @@ const LISTING_WORDS = {
   channel: 'Channel',
   app: 'App',
   organisation: 'Organisation',
+  school: 'School',
 };
 
 // Build the queue from everything currently readable. Sources with no table yet
@@ -326,7 +327,13 @@ export function buildQueue(
       // image appeared this week.
       at: row.first_seen_at,
       person: row.healer_slug || 'Unattributed content',
-      title: `${TABLE_LABELS[row.table_name] || row.table_name} · ${row.title || 'Untitled'}`,
+      // A school's, organisation's, channel's or app's picture is its logo, not
+      // a profile photo (entity_type is attached by the overview route).
+      title: `${
+        row.table_name === 'healers' && row.entity_type && row.entity_type !== 'individual'
+          ? 'Logo'
+          : TABLE_LABELS[row.table_name] || row.table_name
+      } · ${row.title || 'Untitled'}`,
       // The status code earns its place: a 404 is a missing file and a 403 is a
       // host that has started refusing us, and they are fixed differently.
       detail: [describeFailure(row.status_code, row.problem), truncateUrl(row.image_url)]

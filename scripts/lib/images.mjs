@@ -78,7 +78,7 @@ async function robotsFor(origin) {
 // at least that far apart, counting the robots.txt request. Slots are taken in
 // call order, so parallel probes of one host queue up rather than burst.
 const nextSlot = new Map();
-async function polite(url) {
+export async function polite(url) {
   const { origin } = new URL(url);
   const { delay } = await robotsFor(origin);
   if (!delay) return;

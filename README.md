@@ -3147,11 +3147,10 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    and a dropped connection; plans held), La Sarmiento (connection errors), Bakara
    Wintner (429). Sivananda Ashram Bahamas goes in once a usable photo loads.
 6. **Waiting:** Ally Bogard (a photo from her); Megan Riley (confirm that the only photo
-   is her); Buddhist Geeks (no email or form on buddhistgeeks.org; politics to judge);
-   Yongey Mingyur Rinpoche (a clean contact route; decoded emails are never used);
+   is her); Yongey Mingyur Rinpoche (a clean contact route; decoded emails are never used);
    Aaravindha Himadra (a certain photo; use his contact form).
 7. **Out** (owner, 11 Nov 2026): Lion's Roar (phone only; out unless a contact form
-   appears), and every plan whose only email is Cloudflare-protected with no form. The
+   appears), Buddhist Geeks (politics, and no contact route), and every plan whose only email is Cloudflare-protected with no form. The
    plans dropped on 11 Nov are in `night-sprint-2026-11-09/dropped/` with the reason.
 
 **App 1.0.2** (owner, 10 Nov 2026; 1.0.1 is in review and stays as it is; plan it as soon as
@@ -3231,9 +3230,14 @@ anything that needs the owner goes under "For you to decide". The report goes in
   The steps are in `.claude/skills/night-sprint/SKILL.md`; the helpers' prompt is
   `docs/content-audits/night-sprint-2026-11-09/HELPER-PROMPT.md`; the names list for
   duplicate checks comes from `node scripts/dev-names.mjs <out.json>`.
+- **After the live insert, refresh Admin → Ops:** `node scripts/ops-sync.mjs --env live`
+  (migration 0045). It copies the held plans, listings on dev only, the §18.7 retry list
+  and the sprint reports into the admin, replacing the last sync.
 
 **MORNING, first job: the broken images.** Fix every broken image in the admin Inbox
-(§19), then report. Then the owner's decisions on the night's report.
+(§19), then report. Then the owner's decisions on the night's report; after acting on
+them (plans dropped, holds lifted, inserts), run `node scripts/ops-sync.mjs --env live`
+again so Admin → Ops matches the repo.
 
 **DAY:** whatever is being built.
 

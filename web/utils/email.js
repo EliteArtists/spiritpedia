@@ -7,7 +7,7 @@ import {
   applicationApproved,
   explorerWelcome,
   outreachEmail,
-  practitionerFirstName,
+  outreachFirstName,
   practitionerWelcome,
   reviewApproved,
   reviewReceived,
@@ -258,13 +258,19 @@ export const JOURNEY_SCHEDULE = [0, 21, 42, 63, 84, 105, 126, 147];
 export const JOURNEY_EMAILS = OUTREACH_EMAILS;
 
 // The links every outreach email carries. The claim link works signed out:
-// /auth/claim sends a visitor with no account through sign-up and back.
-export function outreachLinks(healerSlug) {
+// /auth/claim sends a visitor with no account through sign-up and back. A
+// publisher's (migration 0020) are its own page and &kind=publisher.
+export function outreachLinks(healerSlug, { publisher = false } = {}) {
   const slug = encodeURIComponent(healerSlug);
-  return {
-    profileUrl: `${SITE}/healers/${slug}`,
-    claimUrl: `${SITE}/auth/claim?slug=${slug}`,
-  };
+  return publisher
+    ? {
+        profileUrl: `${SITE}/publishers/${slug}`,
+        claimUrl: `${SITE}/auth/claim?slug=${slug}&kind=publisher`,
+      }
+    : {
+        profileUrl: `${SITE}/healers/${slug}`,
+        claimUrl: `${SITE}/auth/claim?slug=${slug}`,
+      };
 }
 
 // Has this address bounced or complained before? Resend keeps that list
@@ -287,10 +293,14 @@ export async function isSuppressed(address) {
   }
 }
 
-// → { sent, recipient } on success, or { sent: false, suppressed: true } when
+// entityType decides the greeting: a person by first name, anything else
+// "Hello," (outreachFirstName). publisher: the links go to /publishers.
+//
+// → { sent, id, recipient } on success (id is Resend's, for the delivered and
+// bounced webhook), or { sent: false, suppressed: true } when
 // the practitioner's address is on the suppression list (the caller stops the
 // journey), or { sent: false, error } for anything to retry.
-export async function sendJourneyEmail({ emailNumber, to, healerName, healerSlug }) {
+export async function sendJourneyEmail({ emailNumber, to, healerName, healerSlug, entityType, publisher = false }) {
   // A TEST OVERRIDE THAT CANNOT BE FORGOTTEN BY ACCIDENT. While
   // JOURNEY_TEST_EMAIL is set, every journey email goes there instead of to the
   // practitioner — so a mistake during setup reaches one inbox rather than a
@@ -299,8 +309,8 @@ export async function sendJourneyEmail({ emailNumber, to, healerName, healerSlug
   if (!to || !recipient) return { sent: false, error: 'no_recipient' };
 
   const template = outreachEmail(emailNumber, {
-    firstName: practitionerFirstName(healerName),
-    ...outreachLinks(healerSlug),
+    firstName: outreachFirstName(entityType, healerName),
+    ...outreachLinks(healerSlug, { publisher }),
   });
   if (!template) {
     return { sent: false, error: `journey email ${emailNumber} has no template` };

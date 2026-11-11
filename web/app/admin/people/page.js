@@ -9,11 +9,18 @@ import DataProblem from '@/components/admin/DataProblem';
 import PersonRecord from '@/components/admin/PersonRecord';
 import { StatusPill } from '@/components/admin/QueueTable';
 import { deriveStatus, hasVisibleStatus } from '@/components/admin/queue';
+import { typeLabel } from '@/utils/badges';
 
 // Two populations, not one list with a filter on top. A practitioner is
 // somebody being reviewed and listed; an explorer is somebody with an account.
 // They are looked at for different reasons, so they get their own tabs — and
 // the status filter only makes sense on one of them.
+// What an owner's account manages, named as the site names it.
+function ownerLabel(p) {
+  if (p.linked_publisher_id) return 'Publisher';
+  return typeLabel(p.linked_kind) || 'Practitioner';
+}
+
 const TABS = [
   { key: 'practitioner', label: 'Practitioners' },
   { key: 'explorer', label: 'Explorers' },
@@ -178,7 +185,10 @@ function PeopleView() {
                           : 'border-slate-700 bg-slate-800 text-slate-400'
                       }`}
                     >
-                      {p.user_type === 'practitioner' ? 'Practitioner' : 'Explorer'}
+                      {/* An owner is named for what they manage: a school's
+                          account is not a Practitioner (linked_kind comes
+                          from the overview route). */}
+                      {p.user_type === 'practitioner' ? ownerLabel(p) : 'Explorer'}
                     </span>
                     {hasVisibleStatus(p) && <StatusPill status={deriveStatus(p)} />}
                     <button

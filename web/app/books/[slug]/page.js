@@ -9,6 +9,7 @@ import ShareButton from '@/components/ShareButton';
 import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/seo';
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 import { amazonAffiliateUrl } from '@/utils/affiliate';
+import AmazonBuyLink from '@/components/AmazonBuyLink';
 import TrackOpen from '@/components/TrackOpen';
 import { bookAuthorSlugs } from '@/utils/bookAuthors';
 
@@ -157,14 +158,15 @@ export default async function BookDetail({ params, searchParams }) {
               <div>
                 {/* rel="sponsored" marks a paid link to search engines, as
                     Google's link guidelines require for affiliate links. */}
-                <a
+                <AmazonBuyLink
                   href={amazon.url}
-                  target="_blank"
+                  contentType="book"
+                  contentSlug={book.slug}
                   rel="sponsored noopener noreferrer"
                   className="bg-[#FF9900] hover:bg-[#e68900] text-black font-bold text-sm rounded-xl py-3 px-6 text-center block w-full"
                 >
                   Buy on Amazon
-                </a>
+                </AmazonBuyLink>
                 {/* Disclosure sits directly under the link it discloses, and
                     only when that link actually carries a tag. Required by the
                     Associates Operating Agreement and by FTC / UK ASA rules —

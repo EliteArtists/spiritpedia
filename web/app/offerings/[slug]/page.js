@@ -8,6 +8,7 @@ import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/se
 import ReviewSection, { RatingRow } from '@/components/ReviewSection';
 import TrackOpen from '@/components/TrackOpen';
 import { amazonAffiliateUrl } from '@/utils/affiliate';
+import AmazonBuyLink from '@/components/AmazonBuyLink';
 
 // Hourly ceiling on staleness — see the note in app/page.js.
 export const revalidate = 3600;
@@ -147,14 +148,26 @@ export default async function OfferingDetail({ params, searchParams }) {
 
           {offering.course_url ? (
             <>
-              <a
-                href={amazon ? amazon.url : offering.course_url}
-                target="_blank"
-                rel={amazon ? 'sponsored noopener noreferrer' : 'noopener noreferrer'}
-                className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
-              >
-                {type.cta}
-              </a>
+              {amazon ? (
+                <AmazonBuyLink
+                  href={amazon.url}
+                  contentType="course"
+                  contentSlug={offering.slug}
+                  rel="sponsored noopener noreferrer"
+                  className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
+                >
+                  {type.cta}
+                </AmazonBuyLink>
+              ) : (
+                <a
+                  href={offering.course_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-8 w-full py-4 px-8 bg-violet-600 hover:bg-violet-700 text-white font-bold text-base rounded-2xl transition-colors duration-200 text-center block"
+                >
+                  {type.cta}
+                </a>
+              )}
               {amazon?.tagged && (
                 <p className="mt-2 text-xs leading-relaxed text-gray-500">
                   <Link href="/affiliate-disclosure" className="transition-colors hover:text-gray-300">

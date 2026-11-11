@@ -17,6 +17,8 @@ const NAV = [
   { href: '/admin/content', label: 'Content', icon: 'content' },
   { href: '/admin/submissions', label: 'From owners', icon: 'ingestion' },
   { href: '/admin/messages', label: 'Messages', icon: 'messages' },
+  { href: '/admin/publishers', label: 'Publishers', icon: 'content' },
+  { href: '/admin/outreach', label: 'Outreach', icon: 'mailshots' },
   { href: '/admin/claims', label: 'Claims', icon: 'claims' },
   { href: '/admin/reviews', label: 'Reviews', icon: 'reviews' },
   { href: '/admin/flags', label: 'Reports', icon: 'flags' },
@@ -24,6 +26,7 @@ const NAV = [
   { href: '/admin/notifications', label: 'Notifications', icon: 'bell' },
   { href: '/admin/activity', label: 'Activity', icon: 'analytics' },
   { href: '/admin/ingestion', label: 'Ingestion', icon: 'ingestion' },
+  { href: '/admin/ops', label: 'Ops', icon: 'settings' },
 ];
 
 // /admin is the Inbox, so it must match exactly — otherwise it would read as
@@ -33,11 +36,18 @@ function isActive(pathname, href) {
 }
 
 function NavItem({ item, pathname, badgeCount }) {
+  const { reload } = useAdminData();
   const active = isActive(pathname, item.href);
+  // A link to the page you are on is a no-op to the router, so clicking
+  // Inbox on the Inbox used to change nothing. On its own page the click
+  // re-reads instead (other pages re-read on the route change itself,
+  // AdminData).
+  const onClick = pathname === item.href ? () => reload() : undefined;
   const Icon = Icons[item.icon];
   return (
     <Link
       href={item.href}
+      onClick={onClick}
       aria-current={active ? 'page' : undefined}
       // The label is hidden below md, leaving the icon rail. title= keeps the
       // name reachable there, where there is nothing else to identify it by.

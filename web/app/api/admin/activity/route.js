@@ -21,6 +21,37 @@ const TITLES = {
   free_resource: { table: 'free_resources', key: 'slug', label: 'title', path: '/free-resources/' },
 };
 
+// Every activity_daily row in the range, paged (PostgREST returns at most
+// 1,000 rows a request), summed by kind and platform, with today's figures
+// apart. These are the headline totals: how much is happening, not what.
+async function totals(supabase, from, to, platform) {
+  const sum = { period: {}, today: {}, latestDay: null };
+  const today = to;
+  for (let start = 0; ; start += 1000) {
+    let q = supabase
+      .from('activity_daily')
+      .select('day, platform, kind, count')
+      .gte('day', from)
+      .lte('day', to)
+      .order('day', { ascending: false })
+      .order('platform')
+      .order('kind')
+      .order('content_type')
+      .order('content_slug')
+      .range(start, start + 999);
+    if (platform) q = q.eq('platform', platform);
+    const { data, error } = await q;
+    if (error) throw error;
+    for (const r of data || []) {
+      sum.period[r.kind] = (sum.period[r.kind] || 0) + r.count;
+      if (r.day === today) sum.today[r.kind] = (sum.today[r.kind] || 0) + r.count;
+      if (!sum.latestDay || r.day > sum.latestDay) sum.latestDay = r.day;
+    }
+    if (!data || data.length < 1000) break;
+  }
+  return sum;
+}
+
 function isoDay(date) {
   return date.toISOString().slice(0, 10);
 }
@@ -73,6 +104,13 @@ export async function GET(request) {
   const error = [opened, saved, rising, misses, signups].find((r) => r.error)?.error;
   if (error) return NextResponse.json({ error: 'query_failed', message: error.message }, { status: 500 });
 
+  let headline;
+  try {
+    headline = await totals(supabase, range.p_from, range.p_to, platform);
+  } catch (err) {
+    return NextResponse.json({ error: 'query_failed', message: err.message }, { status: 500 });
+  }
+
   const subjectNames = Object.fromEntries((subjects.data || []).map((s) => [s.slug, s.name]));
 
   return NextResponse.json({
@@ -85,5 +123,8 @@ export async function GET(request) {
     rising: (rising.data || []).map((r) => ({ ...r, name: subjectNames[r.subject_slug] || r.subject_slug })),
     searchMisses: misses.data || [],
     signups: signups.data || [],
+    totals: headline,
+    // When this was read on the server: the page's "Updated" line.
+    readAt: new Date().toISOString(),
   });
 }
