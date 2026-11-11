@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1428,
+    "healer_slug": "sakya-tsechen-ling"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "72dde47c-279a-4b0f-a6ee-4f5023609ac8",
+      "slug": "buddha-manjushri-teachings-and-initiation-with-khenpo-tashi-sangpo",
+      "title": "Buddha Manjushri: teachings and initiation with Khenpo Tashi Sangpo"
+    },
+    {
+      "table": "courses",
+      "id": "e2050a32-f64d-4f46-825e-2d3eabe7fe29",
+      "slug": "dharma-chakra-program-classical-buddhist-philosophy",
+      "title": "Dharma Chakra Program: classical Buddhist philosophy"
+    },
+    {
+      "table": "free_resources",
+      "id": "d4419b89-e393-4815-bbf5-111ce1cfab8f",
+      "slug": "monthly-teaching-weekends",
+      "title": "Monthly teaching weekends"
+    }
+  ],
+  "at": "2026-11-11T21:04:50.237Z"
+}

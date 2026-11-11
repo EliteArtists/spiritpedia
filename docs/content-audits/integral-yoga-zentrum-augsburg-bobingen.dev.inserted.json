@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1359,
+    "healer_slug": "integral-yoga-zentrum-augsburg-bobingen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "9cf38fc7-1d11-495d-b467-92cd5eb0c41b",
+      "slug": "ausbildung-zum-integral-yogalehrer-2028-200-hour-teacher-training",
+      "title": "Ausbildung zum Integral Yogalehrer 2028 (200-hour teacher training)"
+    },
+    {
+      "table": "courses",
+      "id": "3485e6ba-303b-4a5a-9200-3937210f67af",
+      "slug": "integral-yoga-fur-fortgeschrittene-jahres-abo",
+      "title": "Integral Yoga für Fortgeschrittene (Jahres-Abo)"
+    },
+    {
+      "table": "courses",
+      "id": "a43763c4-a1cb-437d-85e4-9278ad77687a",
+      "slug": "integral-yoga-fur-anfanger-i-ii",
+      "title": "Integral Yoga für Anfänger I & II"
+    },
+    {
+      "table": "courses",
+      "id": "1e4f115b-b237-4249-b719-22b71343d244",
+      "slug": "wochenende-yoga-klang-gesang-kloster-bernried",
+      "title": "Wochenende Yoga – Klang & Gesang (Kloster Bernried)"
+    },
+    {
+      "table": "courses",
+      "id": "6b8d628b-3624-4e95-8702-af4869313212",
+      "slug": "yoga-breathwork-retreat-tamanga-styria",
+      "title": "Yoga & Breathwork Retreat (TamanGa, Styria)"
+    },
+    {
+      "table": "courses",
+      "id": "0fb92a93-b73f-41d9-8ba4-efb5b05dca93",
+      "slug": "valentins-idee-partner-yoga-fur-paare",
+      "title": "Valentins-Idee: Partner Yoga für Paare"
+    }
+  ],
+  "at": "2026-11-11T18:58:38.719Z"
+}

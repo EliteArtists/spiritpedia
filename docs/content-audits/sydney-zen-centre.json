@@ -1,0 +1,154 @@
+{
+  "healer": {
+    "healer_slug": "sydney-zen-centre",
+    "location_source": "https://szc.org.au/contact/",
+    "create": {
+      "name": "Sydney Zen Centre",
+      "bio": "The Sydney Zen Centre describes itself as Australia's original Zen Buddhist community. It is a lay sangha in the Diamond Sangha lineage, whose founder Robert Aitken Rōshi first came to Sydney in 1979 and led yearly sesshin there for almost a decade; John Tarrant, one of his heirs, also led early retreats. Today a circle of teachers guides the community with an elected board, led by Subhana Barzaghi Rōshi and Gillian Coote Rōshi with Will Moon, Maggie Gluek and Jane Andino, and Peter Bursky, an apprentice teacher since 2019, is due to receive transmission in December 2026.\n\nThe centre has two zendos. In the inner-west suburb of Annandale a former corner shop serves as the city zendo, used for evening sittings on Mondays and Wednesdays, a monthly Sunday zazenkai, ceremonies on the full moon and non-residential sesshin, with teacher interviews during sittings; online groups meet on Tuesday mornings and Thursday evenings. Kodoji, its bush zendo, sits in a valley below the sandstone cliffs of Yengo National Park, about two hours north-west of the city near St Albans. Members bought the land in 1984 and built it up over years of work weekends, and it hosts the longer residential retreats. Newcomers start with a monthly orientation evening, and recent talks are published as a podcast.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Sydney, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://szc.org.au/",
+      "booking_url": "https://szc.org.au/newcomers/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@szc.org.au",
+      "image_urls": [
+        "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Orientation for newcomers",
+      "url": "https://szc.org.au/newcomers/",
+      "description": "A relaxed monthly Tuesday evening at the Annandale zendo, or on Zoom, with instruction in sitting and walking meditation and an introduction to Zen ideas and forms. Places are booked by email with the volunteer named for each date, and the fee also covers one further sitting.",
+      "price": "There is a $20 fee which covers the Orientation night and one other sitting night",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+    },
+    {
+      "title": "Rohatsu Sesshin 2026",
+      "url": "https://szc.org.au/classes/rohatsu-sesshin/",
+      "description": "A non-residential sesshin at the Annandale zendo marking the Buddha's awakening, led jointly by Allan Marett Rōshi and Peter Bursky, with zazen, walking meditation, chanting, interviews and talks. People can attend full-time or choose blocks of sitting; it closes with Peter Bursky's transmission ceremony.",
+      "price": "Full-time: SZC member $400, non-member $470; Part-time: SZC member $22 per block, non-member $26 per block",
+      "product_type": "retreat",
+      "start_date": "2026-12-03",
+      "end_date": "2026-12-08",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+    },
+    {
+      "title": "Zazenkai",
+      "url": "https://szc.org.au/classes/zazenkai/",
+      "description": "A monthly Sunday half-day of extended sitting at the city zendo with a dharma talk, a sutra service and interviews with a teacher; some months are given to ceremonies, a creative-arts workshop or a bushwalking retreat. An orientation is needed first.",
+      "price": "the facility fee is $10",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+    },
+    {
+      "title": "Women's retreat at Kodoji",
+      "url": "https://szc.org.au/classes/womens-retreat/",
+      "description": "A weekend at the bush zendo for women with meditation experience, sitting, walking and sharing meals together in the valley, with simple camping or dormitory beds.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-20",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2019/01/IMG_4337.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://szc.org.au/membership/",
+      "description": "Membership supports the teachers and both zendos and gives free entry to regular events, private interviews with teachers, retreat discounts and use of Kodoji. Standard, concession and online-only rates are suggested.",
+      "price": "Standard: Annual: $575; Limited engagement/Concession: Annual: $315; Online only: Annual: $150",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://szc.org.au/wp-content/uploads/2019/10/IMG_8562.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sydney Zen Centre podcasts",
+      "url": "https://szc.org.au/podcasts/",
+      "description": "Recordings of teisho and dharma talks from the centre's teachers and senior students, often working through a classic koan, posted soon after they are given.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+    },
+    {
+      "title": "Sutras",
+      "url": "https://szc.org.au/sutras/",
+      "description": "The texts the sangha chants at its services, available to read on its website.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://szc.org.au/wp-content/uploads/2017/09/SZC-logo-waratah.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2170,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://szc.org.au/contact/",
+    "contact_form_url": "https://szc.org.au/contact/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Possible editorial-stature override: calls itself Australia's original Zen Buddhist community (owner decides; tier left at local_hero).",
+      "Base: city zendo in Annandale, an inner-west suburb of Sydney; city recorded as Sydney.",
+      "Email info@szc.org.au (contact page); a contact form is also on the contact page.",
+      "founded_year left null: the footer says 'Copyright © 1975-2025' but no founding year is stated in the text.",
+      "Photos: the Kodoji bush dojo and the Annandale zendo interior, both from its own bush-zendo and city-zendo pages; both have a painterly filter applied by the site (1991x854 and 1536x529). Checked.",
+      "No hub links: Subhana Barzaghi Roshi, Gillian Coote Roshi, Will Moon, Maggie Gluek, Jane Andino and Peter Bursky are not on Spiritpedia. Allan Marett Roshi co-teaches the Rohatsu sesshin as a visiting teacher and is not linked. Possible future listings: Subhana Barzaghi Roshi, Gillian Coote Roshi. Teachers file written with an empty list.",
+      "Women's retreat page shows the price as '$ a night' with the figure missing; 'Contact for pricing' used.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Memorial ceremony (15 Nov 2026), full-moon precept ceremonies, Dharma Café and transmission ceremony: ceremonies or one-off events.",
+      "Encouraging Words (newsletter extracts) and Mind Moon Circle journal: not opened."
+    ]
+  },
+  "images_final": true
+}

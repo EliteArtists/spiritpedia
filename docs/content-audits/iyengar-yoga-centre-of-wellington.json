@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-centre-of-wellington",
+    "location_source": "https://www.wellingtonyoga.co.nz/our-studio",
+    "create": {
+      "name": "Iyengar Yoga Centre of Wellington",
+      "bio": "The Iyengar Yoga Centre of Wellington is a city-centre studio in Te Aro, set upstairs in The Bakehouse, a brick building from 1911 off Cuba Street. Its founding teacher, Tessa Meek, began giving classes in the Aro Valley Community Hall in 1998 and opened the centre at the start of 2007; some of her first students still practise there. She holds a senior Iyengar certificate, has studied with Geeta Iyengar and at the Pune institute, has learned from her own teacher Peter Thomson for some 25 years, and also practises Vipassana meditation.\n\nA small team of certified teachers shares a weekly timetable graded from a four-week beginners' course and Level 1 through to Level 3, with general classes for mixed groups. Some general and Level 2 sessions can be joined by live stream once students know the props. Tessa leads themed Sunday workshops and slower restorative sessions roughly every two months, and runs residential retreats, both in New Zealand, at Wangapeka on the South Island and by Lake Taupō, and overseas in places such as Bali, Bhutan and Sri Lanka, combining posture work with pranayama and meditation.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.wellingtonyoga.co.nz/",
+      "booking_url": "https://www.wellingtonyoga.co.nz/timetable",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "tessa@wellingtonyoga.co.nz",
+      "image_urls": [],
+      "founded_year": 2007
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Class memberships and passes",
+      "url": "https://www.wellingtonyoga.co.nz/",
+      "description": "Weekly memberships priced per class for one, two or three classes a week, alongside casual drop-ins, a two-month five-class pass, a live-stream pass and a three-class introduction for new students. Passes are bought online or at the studio.",
+      "price": "$28/class (1 class wk membership); casual $30 per class; New Student Intro 3 classes for $60",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ]
+    },
+    {
+      "title": "Weekly classes and workshops (timetable)",
+      "url": "https://www.wellingtonyoga.co.nz/timetable",
+      "description": "The online timetable for the centre's graded classes, from Level 1 to Level 3 and general mixed-level sessions, together with Tessa Meek's themed workshops and occasional restorative afternoons. Classes and workshops are booked directly from this page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Wangapeka Retreat",
+      "url": "https://www.wellingtonyoga.co.nz/retreats",
+      "description": "A week-long residential retreat at the Wangapeka Retreat Centre in the hills of the South Island, a place the studio returns to often. Days combine posture practice, pranayama and meditation in a quiet rural setting.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1905,
+    "hub": null,
+    "held": "No usable photo: every image on the site is stored on strapi-wellingtonyoga-images.s3.ap-southeast-2.amazonaws.com, whose robots.txt request answered 403 (AccessDenied), so under the refused-robots rule that host is blocked for us and nothing was downloaded from it. The site also serves the same images through its own /_next/image proxy on wellingtonyoga.co.nz; that route was not used, as it would be a way round the refused host. Owner to decide whether the proxy URLs are acceptable; otherwise the plan stays out.",
+    "tier_evidence": "No YouTube channel linked on the pages read; Instagram and Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.wellingtonyoga.co.nz/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Website taken from the Iyengar Yoga New Zealand studio page for the centre. The site has no robots.txt (404), so it is treated as open.",
+      "Email tessa@wellingtonyoga.co.nz is the founder's address, published in the site footer on every page; no contact form.",
+      "Prices are shown with a bare $ sign on the site (no currency code stated), copied as published.",
+      "Wangapeka retreat (16-22 Nov 2026) starts after 12 Nov; no price is published.",
+      "Beginner course is described on the home page but its listed dates (Oct-Nov) have started; the class descriptions share the home page URL with the pricing, so they are covered by the membership item.",
+      "Possible future listings: Tessa Meek (founding teacher), Simon Fogarty, Caroline McArthur, Bret Thurston, Fiona Dillon, Asher Emanuel.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Wellington has few Spiritpedia listings.",
+      "founded_year 2007 from the Our studio page (centre opened at the start of 2007; classes since 1998)."
+    ],
+    "left_out": [
+      "Restorative workshops as a separate item: the page frames them around relieving stress, anxiety and immune health (health rule); mentioned only neutrally in the bio.",
+      "Acacia Bay Retreat (1-5 April 2026): past.",
+      "Beginner course (Oct-Nov 2026 dates): already started, and partly framed around injuries and medical conditions."
+    ]
+  }
+}

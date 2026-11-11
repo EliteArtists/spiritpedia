@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1339,
+    "healer_slug": "honolulu-diamond-sangha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a071f721-e3c7-47b0-a558-f116bde05743",
+      "slug": "orientation-to-practice",
+      "title": "Orientation to Practice"
+    },
+    {
+      "table": "courses",
+      "id": "c2cb93fe-6b14-48dc-84cb-88d456caa6e4",
+      "slug": "sesshin",
+      "title": "Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "ffee1698-c327-4f49-a53f-50a63cb2dbf7",
+      "slug": "zazenkai",
+      "title": "Zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "c1fb0822-9ab3-4f53-a59e-4f475d428b64",
+      "slug": "residential-training-at-palolo",
+      "title": "Residential Training at Palolo"
+    },
+    {
+      "table": "courses",
+      "id": "018f2490-b8bd-41da-98bc-86adbc65c91d",
+      "slug": "membership-9",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "ac27bebe-947e-4d0e-b26f-0ae1ea458655",
+      "slug": "sutra-book",
+      "title": "Sutra Book"
+    }
+  ],
+  "at": "2026-11-11T21:39:54.769Z"
+}

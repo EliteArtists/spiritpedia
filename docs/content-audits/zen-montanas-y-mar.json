@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "zen-montanas-y-mar",
+    "location_source": "https://www.zenmontanasymar.org/",
+    "create": {
+      "name": "Zen Montañas y Mar",
+      "bio": "Zen Montañas y Mar is a lay Zen community in Santiago, Chile, practising in the Diamond Sangha stream of the Sanbō Zen lineage that comes down from Harada and Yasutani Rōshi. Its teacher is Daniel Terragno Rōshi, who was born in Santiago, moved to San Francisco in the late 1960s to study economics and spent some twenty years with the teachings of G. I. Gurdjieff before taking up meditation in 1986. Two years later he joined the California Diamond Sangha in Santa Rosa, where he trained with John Tarrant Rōshi, beginning as an apprentice teacher in 1995 and receiving dharma transmission in 2001. He has also volunteered in hospices and taught Zen in prisons.\n\nThe sangha meets for zazen on Friday evenings in the Providencia district of Santiago, and newcomers with no experience are welcome after arranging a short introduction by email. Its main retreat is a silent summer sesshin led by Terragno Rōshi at a country retreat house, with sitting and walking meditation, daily talks, private interviews, work practice, chanting and formal oryoki meals. The website keeps a page of the teacher's recorded talks and interviews, including talks given at Latin American Zen gatherings, and an archive of the community's past retreats.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Santiago",
+      "country": "Chile",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.zenmontanasymar.org/",
+      "booking_url": "https://www.zenmontanasymar.org/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "zenmontanasymar@gmail.com",
+      "image_urls": [
+        "https://www.zenmontanasymar.org/wp-content/uploads/2018/01/IMG_2818.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Charla Maestro Daniel Terragno- 3er encuentro Zen Latinoamericano",
+      "url": "https://www.youtube.com/watch?v=GyuQAgzFIS0",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    },
+    {
+      "title": "Daniel Terragno Lay Zen Meditation Practice: Waking Up to Who and What We Are pt. 1",
+      "url": "https://www.youtube.com/watch?v=l_B2rCFheg0",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "BAJO LA LUZ DE CURAUMA - Entrevista a Daniel Terragno, Budismo Zen",
+      "url": "https://www.youtube.com/watch?v=Lx-PCrQqAEs",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly zazen in Providencia",
+      "url": "https://www.zenmontanasymar.org/",
+      "description": "Zen sitting every Friday evening at the group's Santiago practice place in Providencia. No previous experience is needed; first-timers write first to arrange a simple introduction.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Sesshin de Verano 2027",
+      "url": "https://www.zenmontanasymar.org/2026/10/23/sesshin-de-verano-2027/",
+      "description": "A silent summer Zen retreat at Casa Guangualí led by Daniel Terragno Rōshi, with zazen, walking meditation, daily teisho, private interviews, work practice, sutra chanting and oryoki meals. Shared rooms and vegetarian meals are included; registration is by online form.",
+      "price": "$290.000 CLP",
+      "product_type": "retreat",
+      "start_date": "2027-02-09",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Charlas y teishos",
+      "url": "https://www.zenmontanasymar.org/charlas-y-teishos/",
+      "description": "A page of recorded talks and interviews with Daniel Terragno Rōshi, in Spanish and English, gathered from Zen gatherings in Latin America and elsewhere.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2176,
+    "hub": null,
+    "tier_evidence": "No YouTube channel of its own linked from its site; Facebook and Instagram not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.zenmontanasymar.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Santiago, Chile (Spanish-language site).",
+      "Email zenmontanasymar@gmail.com (home page, mailto).",
+      "Photo: the only image showing the community is a group of five, with Daniel Terragno Roshi in robes, on a wooden bridge in a garden (1139x531, home page). The site has no logo or photo of its practice place; other images are a river landscape and flowers. Held for the owner to decide on the group photo.",
+      "Videos: all three are on other channels (Felipe Sepulveda, Escuela de Periodismo PUCV, The Karma Yoga Foundation) and are linked from the centre's own talks page; Daniel Terragno is the main speaker in each. All pass oEmbed (11 Nov 2026). A fourth linked talk (CdJbhEcYnag, Sangha Zen Viento del Sur channel) fails oEmbed (401, embedding disabled) and is left out.",
+      "Its practice page is empty and the 'biblioteca' link returns a bare directory index; the weekly sitting item uses the home page, which gives the time and place.",
+      "No hub links: Daniel Terragno Roshi is not on Spiritpedia. Possible future listing: Daniel Terragno Roshi (also guides Zen Viento del Sur, rank 2177). Teachers file written with an empty list.",
+      "Lineage: the site calls it Sanbo Zen lineage; it reached the teacher through John Tarrant and the California Diamond Sangha.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Talk 'Práctica Zen y la incertidumbre' (CdJbhEcYnag): oEmbed 401.",
+      "Biblioteca: empty directory listing."
+    ],
+    "held": "Only image of the community is a group photo of the teacher and four members; the site has no logo or photo of its practice place. Owner to decide whether this is acceptable."
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-institute-of-new-jersey",
+    "location_source": "https://iyinj.org/contact/",
+    "create": {
+      "name": "Integral Yoga Institute of New Jersey",
+      "bio": "The Integral Yoga Institute of New Jersey has taught the Integral Yoga of Swami Satchidananda in the north of the state since 1969, when a Montclair couple asked the New York institute to help them start classes in their home, with John \"Margabandhu\" Martarano as the first teacher. After spells in a Garfield loft and on Broadway in Elmwood Park, supporters bought the present house on Maple Avenue in Fair Lawn in 1995; Satchidananda himself came to bless it after a year of volunteer renovation.\n\nToday a team of more than a dozen volunteer teachers leads beginner, multilevel and intermediate hatha classes, each a slow-paced blend of postures and breathwork that ends in guided yoga nidra and meditation. Some sessions are also streamed live on Zoom. The institute adds group meditation, meditation courses and private lessons, and over the decades it has run teacher trainings in basic and intermediate hatha, meditation and raja yoga, with a pranayama training now being added. Workshops on yoga, meditation and spiritual living fill out the calendar, and the institute has hosted a long line of senior Integral Yoga teachers as visiting speakers.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Fair Lawn, New Jersey",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://iyinj.org/",
+      "booking_url": "https://iyinj.org/yoga-classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "integralyoga@gmail.com",
+      "image_urls": [
+        "https://iyinj.org/wp-content/uploads/2026/07/Main-Building-IYINJ-cropped-1.jpeg",
+        "https://iyinj.org/wp-content/uploads/2026/07/Lotus-Hall-Welcome-Back-scaled-1.jpg"
+      ],
+      "founded_year": 1969
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Class memberships (in person and on Zoom)",
+      "url": "https://iyinj.org/pricing/",
+      "description": "Monthly options covering the institute's regular hatha classes in Fair Lawn and online: a weekly-practice pass for one class a week, or unlimited classes for 30 days. Neither renews automatically.",
+      "price": "Weekly Practice $80.00 (30 days); Unlimited Monthly Practice $125.00 (30 days)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyinj.org/wp-content/uploads/2026/07/Main-Building-IYINJ-cropped-1.jpeg"
+    },
+    {
+      "title": "Introduction to Meditation",
+      "url": "https://iyinj.org/program/introduction-to-meditation/",
+      "description": "A 90-minute class at the institute on several ways to meditate and how to work with the usual obstacles, led by Rev. Premajyothi Devi, the institute's teacher-training coordinator.",
+      "price": "$15 – $35",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://iyinj.org/wp-content/uploads/2026/09/aee1de51-8bf8-43ab-9501-2bddf89eb160.jpg"
+    },
+    {
+      "title": "Private Yoga Classes",
+      "url": "https://iyinj.org/private-classes/",
+      "description": "One-to-one sessions arranged with an institute teacher and shaped around the student's own goals and schedule, for those who want individual attention or prefer not to practise in a group.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyinj.org/wp-content/uploads/2026/07/Main-Building-IYINJ-cropped-1.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2012,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from the site → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://iyinj.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/), listed as Fair Lawn with http://www.iyinj.org. Facts from the institute's own site (robots.txt allows us; www and http redirect to https://iyinj.org).",
+      "Thin-ish: three items (monthly memberships, one dated meditation class on 5 Dec 2026, private classes). Teacher trainings are mentioned in the history but none is currently listed.",
+      "Health rule: pricing and private-class text talk about health, stress and 'health conditions'; the history mentions Cardiac Yoga Teacher Training. Bio and items describe only the practice.",
+      "Fair Lawn, NJ is in the New York metro area (the brief lists the big US coastal cities as well covered); the institute itself is in a suburban town.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Guests named in the history (Reverend Jaganath Carrera, Swami Karunananda, Swami Ramananda and others) are visiting speakers, not linked; none found in dev names.",
+      "Possible future listings: John 'Margabandhu' Martarano (first teacher, still on the instructor list), Rev. Premajyothi Devi.",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "'Grief Begins Before Goodbye: Understanding Loss, Love, and Healing' (14 Nov 2026, $15 – $35): grief and healing framing (health rule).",
+      "Class Styles page (hatha class description): folded into the memberships item.",
+      "Private Group Classes and studio rental pages: not fetched."
+    ]
+  },
+  "images_final": true
+}

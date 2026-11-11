@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-centre-of-melbourne",
+    "location_source": "https://integralyogamelbourne.org/about/classes/iycm-classes/carnegie/",
+    "create": {
+      "name": "Integral Yoga Centre of Melbourne",
+      "bio": "The Integral Yoga Centre of Melbourne is a volunteer-run incorporated association, formed in June 2018, that carries on the Integral Yoga of Swami Satchidananda in Victoria, where the method has been taught for close to fifty years. Chitra and Hridayan Stern are among its longest-serving teachers, and a small committee of teachers keeps the programme going.\n\nWeekly classes take place in the ground-floor community room of the Murrumbeena Park Community Hub in Melbourne's south-east, with two of the evening sessions also streamed on Zoom. There is a gentle Monday-morning class for newcomers and people returning after a break, and multilevel classes on Monday and Tuesday evenings that offer fuller variations to experienced students. A class follows the classic Integral Yoga shape of postures, guided deep relaxation, breathing practice and a closing meditation.\n\nBeyond the classes, the centre hosts Saturday-evening satsangs in members' homes, built around chanting, a talk by a senior teacher or visiting guest, a short meditation and a shared vegetarian supper. It also runs the 200-hour Integral Yoga Hatha I teacher training in Australia, spread over twelve months in two modules that mix residential retreats, training days and home practice.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Melbourne, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://integralyogamelbourne.org/",
+      "booking_url": "https://integralyogamelbourne.org/about/classes/pricing/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@integralyogamelbourne.org",
+      "image_urls": [
+        "https://integralyogamelbourne.org/wp-content/uploads/2018/10/Group-class-2015_2.jpg",
+        "https://integralyogamelbourne.org/wp-content/uploads/2018/10/IMG_2346-1.jpg"
+      ],
+      "founded_year": 2018
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Class passes (Murrumbeena and online)",
+      "url": "https://integralyogamelbourne.org/about/classes/pricing/",
+      "description": "Passes valid across every weekly class and teacher: gentle Monday-morning yoga, and multilevel Monday and Tuesday evening classes at Murrumbeena Park Community Hub, two of them also on Zoom. A 14-day unlimited intro pass is offered to newcomers.",
+      "price": "Intro Pass $35 (14 days, new students); casual $25; 10 class pass $220 or $190 concession",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyogamelbourne.org/wp-content/uploads/2018/08/cropped-cropped-cropped-IYCM-header.png"
+    },
+    {
+      "title": "Satsang evenings",
+      "url": "https://integralyogamelbourne.org/events/satsang/",
+      "description": "Saturday-evening gatherings, usually in a member's home, with chanting, a talk on yoga practice or philosophy by a senior teacher or guest, a short meditation and a shared vegetarian supper. Open to students, newcomers, friends and family; write to the centre for the next date.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://integralyogamelbourne.org/wp-content/uploads/2018/08/cropped-cropped-cropped-IYCM-header.png"
+    },
+    {
+      "title": "Integral Yoga 200-hour Hatha I Teacher Training",
+      "url": "https://integralyogamelbourne.org/teacher-training/",
+      "description": "A 12-month, two-module certification: Living Integral Yoga (the six branches and personal practice), then a second module on how to lead a basic Level 1 hatha class. Combines residential retreats, non-residential training days, home practice and assessed tasks; Module 1 can be taken alone. Expressions of interest are open for the next intake.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyogamelbourne.org/wp-content/uploads/2018/08/cropped-cropped-cropped-IYCM-header.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2010,
+    "hub": null,
+    "tier_evidence": "No YouTube channel found on the site; Facebook only (not fetched) → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://integralyogamelbourne.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/). Facts from the centre's own site (robots.txt allows us; Crawl-delay 60 respected, www redirects to the bare host).",
+      "No studio of its own: classes run in a hired community room (Murrumbeena Park Community Hub, 28 Gerald Street, Murrumbeena) and online; satsangs in private homes.",
+      "Thin-ish: three items (class passes, satsangs, teacher training with expressions of interest only, no dates). Owner may judge it thin.",
+      "Pricing page is slightly inconsistent: the banner says Intro Pass $35, a 2025 offer line says $30 for 14 days; the plan uses $35 (ongoing). Class prices '$22 per class or $19 concession' on a 10-pass give $220 / $190.",
+      "Base is Melbourne, one of the cities the brief says is already well covered; kept because Integral Yoga is not otherwise listed in Australia (as far as the dev names show).",
+      "Health rule: the class page lists a 'Yoga for Chronic Conditions' class; left out. Bio and items describe only the practice.",
+      "Satsang page gives a separate personal address (debanandi@integralyogamelbourne.org) for satsang enquiries; the plan uses the centre's info@ address from the contact page.",
+      "Photos are older (a 2015 group class in an earlier practice room, and a group portrait with a visiting swami); they are the best on the site. Both looked at.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: Chitra Stern and Hridayan Stern (senior Integral Yoga teachers).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Annual Retreat page: last dated retreat 2022 (stale).",
+      "'Yoga for Chronic Conditions' class: health framing.",
+      "Individual weekly classes listed separately: folded into the class-pass item (one page URL for all class times)."
+    ]
+  },
+  "images_final": true
+}

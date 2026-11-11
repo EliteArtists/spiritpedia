@@ -1,0 +1,202 @@
+{
+  "healer": {
+    "healer_slug": "tara-institute",
+    "location_source": "https://www.tarainstitute.org.au/contact",
+    "create": {
+      "name": "Tara Institute",
+      "bio": "Tara Institute is a Tibetan Buddhist centre for study and meditation in Brighton East, a bayside suburb in Melbourne's south-east. It is part of the FPMT network founded by Lama Thubten Yeshe and Lama Zopa Rinpoche, teaches in the tradition of Lama Tsongkhapa and follows the guidance of the Dalai Lama. Venerable Geshe Doga has been its resident teacher since 1984, and Geshe Lobsang Dorjee now teaches there too. Some of the residents are ordained, and the house also holds a library, a dining room and a well-stocked bookshop.\n\nClasses are not charged for, and the centre runs on membership, donations and volunteers. Monday evenings bring an informal introduction to Buddhist philosophy and meditation led by senior students, with a talk, guided meditation and discussion; on Wednesday nights Geshe Lobsang teaches Shantideva's Guide to the Bodhisattva's Way of Life, and a short Wednesday morning meditation works through a twelve-week cycle from the breath to the nature of reality. A Tuesday study group, a monthly Dharma club for children aged four to fifteen and a programme for school groups complete the week. For thirty years volunteers have transcribed the evening teachings, and many Monday classes can be watched on the institute's YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Melbourne, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.tarainstitute.org.au/",
+      "booking_url": "https://www.tarainstitute.org.au/calendar",
+      "youtube_url": "https://www.youtube.com/@tarainstitute8514",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@tarainstitute.org.au",
+      "image_urls": [
+        "https://yt3.ggpht.com/8JGS0vG76d51hP6ZyEn6kNkesG1Ru0k7qifjOXI3jC4ylki6_svGvW1i4dJ28Y03j6AJC7Qg7g=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Guard your actions of Body Speech and Mind to protect your future Monday Tara Institute class Denis",
+      "url": "https://www.youtube.com/watch?v=YfNoMN_fAfo",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Patience and loving Kindness protect our merit from destruction by Anger Tara Institute Monday Mark",
+      "url": "https://www.youtube.com/watch?v=yanD5YY0wps",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Meditation shows we have the potential to develop our own happiness Monday Tara Institute class Mark",
+      "url": "https://www.youtube.com/watch?v=aFIZ8Wui-Nc",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Experience a quiet clear and bright mind with meditation Monday Intro Class Tara Institute by Mark",
+      "url": "https://www.youtube.com/watch?v=OCdhmcfgtMk",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Contentment - the Wisdom of Enough Creates Space and Opens our Heart Monday Tara Institute by Anjali",
+      "url": "https://www.youtube.com/watch?v=EnP3bU7pa_4",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Inspiration from Atisha's Jewel Rosary reducing Craving & Suffering  Monday Tara Institute by Anjali",
+      "url": "https://www.youtube.com/watch?v=2YK1n0ob__Y",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "What is our Buddha Potential understanding the nature of the Mind Monday class Tara Institute byJohn",
+      "url": "https://www.youtube.com/watch?v=fte2bU2P_Hc",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Why Am I Not Happy? A Buddhist Look at the Mind. Monday Class Tara Institute by Ashwini",
+      "url": "https://www.youtube.com/watch?v=S7tqCUUvrBM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Geshe Doga 91st Birthday including a tribute from Sandup and a celebration of the Published books",
+      "url": "https://www.youtube.com/watch?v=N_tJvGXaH5w",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Membership",
+      "url": "https://www.tarainstitute.org.au/membership",
+      "description": "Yearly or monthly membership that keeps the centre's free classes running, with a welcome pack, a bookshop discount, library membership, access to Tara Institute TV and dedications in the centre's pujas.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Teaching Transcripts Subscription",
+      "url": "https://www.tarainstitute.org.au/teaching-transcripts",
+      "description": "An annual subscription to emailed transcripts of the Tuesday or Wednesday evening teachings by Geshe Doga and Geshe Lobsang, prepared each week by volunteer teams, which also funds the centre's printed archive and new books.",
+      "price": "Take an annual $40 single subscription (both nights $70)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Monday Nights: Buddhist philosophy and meditation",
+      "url": "https://www.tarainstitute.org.au/monday-nights",
+      "description": "An informal Monday evening for everyone, led by a senior student, combining guided meditation, a talk and group discussion on a monthly theme; no booking, with a small optional facility contribution.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Wednesday Nights with Geshe Lobsang Dorjee",
+      "url": "https://www.tarainstitute.org.au/wednesday-nights",
+      "description": "Weekly evening teachings by the resident geshe on Shantideva's Guide to the Bodhisattva's Way of Life; no registration, just come along.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Wednesday 11am Meditations",
+      "url": "https://www.tarainstitute.org.au/wednesday-morning-meditations",
+      "description": "A half-hour morning meditation for beginners and experienced meditators, following a twelve-week cycle from mindfulness of breathing and of the body through impermanence, loving kindness and compassion to the nature of reality.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Self Study Education Programme",
+      "url": "https://www.tarainstitute.org.au/self-study-education-programme",
+      "description": "Self-paced study of classic Indian and Tibetan Buddhist texts taught by Geshe Doga, such as Liberation in the Palm of Your Hand, using transcripts, discussion points and exams, with help from senior students on request.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2075,
+    "hub": null,
+    "held": "Photo: the site is on Wix (static.wixstatic.com refuses our robots.txt read), so the only usable image is the YouTube channel avatar, which is a portrait of a robed Tibetan teacher (most likely Geshe Doga) rather than the centre. Owner to decide whether a teacher portrait is acceptable for an organisation listing.",
+    "tier_evidence": "YouTube @tarainstitute8514: 1,380 subscribers (scripts/yt.mjs) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.tarainstitute.org.au/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Base: 3 Mavis Avenue, Brighton East, Victoria 3187 (contact page), a suburb about 13 km south-east of Melbourne's city centre (not the city centre itself). City recorded as 'Melbourne, Victoria'.",
+      "Email admin@tarainstitute.org.au is the office inbox (contact page).",
+      "Membership fees are not shown on the page (Wix plan widget), so 'Contact for pricing'.",
+      "Classes are free; Monday nights ask a $5-$10 facility contribution.",
+      "Video titles kept exactly as on YouTube (some have odd spacing).",
+      "No hub links: Geshe Doga, Geshe Lobsang Dorjee and the senior students are not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Geshe Doga.",
+      "Found via the Buddhist Council of Victoria member directory (names and links only)."
+    ],
+    "left_out": [
+      "The Healing Group and White Tara practice day (29 Nov): health rule.",
+      "Long Life Puja video: a ceremony for a teacher's health and long life (health rule).",
+      "Dharma Club and School Programme: for children and school groups.",
+      "Golden Light Sutra recitations: dedicated to teachers' health and long life.",
+      "Tuesday study group: in November it studies a downloaded commentary (Aryadeva) after Geshe Doga's last teaching of the year on 3 Nov."
+    ]
+  }
+}

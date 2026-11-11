@@ -1,0 +1,76 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1345,
+    "healer_slug": "berlin-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9609,
+      "slug": "on-dont-know-mind-in-zen",
+      "title": "On Don't-Know-Mind in Zen"
+    },
+    {
+      "table": "videos",
+      "id": 9610,
+      "slug": "wann-ist-es-genug",
+      "title": "Wann ist es genug?"
+    },
+    {
+      "table": "videos",
+      "id": 9611,
+      "slug": "alles-zu-einer-sache-buddhas-machen",
+      "title": "Alles zu einer Sache Buddhas machen"
+    },
+    {
+      "table": "videos",
+      "id": 9612,
+      "slug": "dankbarkeit",
+      "title": "Dankbarkeit"
+    },
+    {
+      "table": "videos",
+      "id": 9613,
+      "slug": "gute-beziehungen-machen-frei",
+      "title": "Gute Beziehungen machen frei"
+    },
+    {
+      "table": "videos",
+      "id": 9614,
+      "slug": "das-leben-findet-jetzt-und-hier-statt",
+      "title": "Das Leben findet jetzt und hier statt"
+    },
+    {
+      "table": "videos",
+      "id": 9615,
+      "slug": "sich-selbst-erkennen-und-eins-werden",
+      "title": "Sich selbst erkennen und eins werden"
+    },
+    {
+      "table": "courses",
+      "id": "ec50c7ed-38dd-4418-990c-dcbddfa707bf",
+      "slug": "ymjj-with-zen-master-gu-ja",
+      "title": "YMJJ with Zen Master Gu Ja"
+    },
+    {
+      "table": "courses",
+      "id": "79d1db81-dbae-4fde-a2d9-95cc8c83a94f",
+      "slug": "online-zen-kurs-fur-einsteiger",
+      "title": "Online Zen-Kurs für Einsteiger"
+    },
+    {
+      "table": "courses",
+      "id": "a2232645-85e3-4e8c-b424-283ceb1c81fa",
+      "slug": "temple-stay-living-and-practising-at-the-zen-zentrum-berlin",
+      "title": "Temple stay: living and practising at the Zen Zentrum Berlin"
+    },
+    {
+      "table": "free_resources",
+      "id": "e7580dce-72d7-47ee-9819-1d4746071dae",
+      "slug": "einfuhrung-in-die-meditation",
+      "title": "Einführung in die Meditation"
+    }
+  ],
+  "at": "2026-11-11T18:00:29.996Z"
+}

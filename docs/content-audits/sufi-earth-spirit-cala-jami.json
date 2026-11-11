@@ -1,0 +1,92 @@
+{
+  "healer": {
+    "healer_slug": "sufi-earth-spirit-cala-jami",
+    "location_source": "https://sufisardegna.org/en/contact-3/",
+    "create": {
+      "name": "Sufi Earth Spirit (Cala Jami)",
+      "bio": "Sufi Earth Spirit is a small non-profit association based at Cala Jami, a private valley of olive groves, springs and granite rocks a few kilometres inland from the north-east coast of Sardinia, near San Pantaleo above Olbia. Its founder and president, known as Roshan, has taught meditation for more than three decades and is a representative and retreat guide of the Inayatiyya, the Sufi order of Hazrat Inayat Khan, Pir Vilayat and Pir Zia. The association was set up on the land in 2015.\n\nThe idea behind the place is that spiritual practice and care for the earth belong together. Alongside Sufi meditation the valley is farmed organically, and volunteers come through the WWOOF network to work and learn there. On most weekday mornings there is an hour of shared meditation that anyone may join without charge, with an evening Sufi gathering once a week. For those with some experience, Cala Jami hosts solitary retreats through much of the year, following the retreat process taught by Pir Vilayat, with a guide meeting the retreatant each day. Multi-day seminars with visiting Sufi and other teachers take place across the year, and members support the work through a modest yearly subscription. Visits are by appointment only.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "San Pantaleo, Olbia, Sardinia",
+      "country": "Italy",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://sufisardegna.org/en/",
+      "booking_url": "https://sufisardegna.org/en/contact-3/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@sufisardegna.org",
+      "image_urls": [
+        "https://sufisardegna.org/wp-content/uploads/2017/02/2016_Juli_Rainbow_Meditation.jpg",
+        "https://sufisardegna.org/wp-content/uploads/2017/01/Sardaigne-mai-juin-2010-klein.jpg",
+        "https://sufisardegna.org/wp-content/uploads/2017/02/Meditationsmitte-Cala-Jami.jpg"
+      ],
+      "founded_year": 2015
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Membership of Sufi Earth Spirit",
+      "url": "https://sufisardegna.org/en/contact-3/",
+      "description": "Yearly membership of the association: news by email, an invitation to the annual meeting at Cala Jami with a free overnight stay, and discounts on events led by Inayatiyya teachers. Valid for one calendar year.",
+      "price": "The annual membership fee is €35.",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://sufisardegna.org/wp-content/uploads/2018/08/Zhikr-on-the-sunset-rock-at-Cala-Jami.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Daily morning meditations at Cala Jami",
+      "url": "https://sufisardegna.org/en/all_events/",
+      "description": "Shared meditation at Cala Jami on most weekdays, Monday to Friday, 7:00 to 8:15 am. Free and open to all; contact the association a couple of days before coming.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://sufisardegna.org/wp-content/uploads/2018/08/Zhikr-on-the-sunset-rock-at-Cala-Jami.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1880,
+    "hub": null,
+    "tier_evidence": "No YouTube channel; Facebook (Cala.Jami) not read; a small rural association → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://sufisardegna.org/en/individual-retreats/",
+    "contact_form_url": "https://sufisardegna.org/en/contact-3/",
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Teachers file is empty: the founder, known only as Roshan, is not on Spiritpedia; Faz'l Hermann Stein is mentioned as a past visiting retreat guide (not linked).",
+      "Individual retreats are offered but no price is shown; left out as an offering.",
+      "Free online Zoom meditations are mentioned on the homepage but the events page read showed no schedule for them; left out.",
+      "The email is in plain text on /individual-retreats/ (its link is malformed, missing mailto:); a contact form is on /contact-3/.",
+      "Photos: a man on the terrace overlooking the valley (1600x1200), a sunset over the rocks (1024x768) and candles at a meditation (816x599); all from 2010 to 2017.",
+      "Private property: visits by appointment only.",
+      "Roshan practises the 'Keys to the Heart' method (releasing suppressed emotions); not included under the health rule."
+    ],
+    "left_out": [
+      "Outreach workshops and Milan events (no dates or prices seen).",
+      "Donations.",
+      "WWOOF volunteering."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (two items). List it, or skip?"
+  }
+}

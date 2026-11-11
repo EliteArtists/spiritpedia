@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "bodhinyanarama-monastery",
+    "location_source": "https://bodhinyanarama.net.nz/contact/",
+    "create": {
+      "name": "Bodhinyanarama Monastery",
+      "bio": "Bodhinyanarama, the Garden of Enlightened Knowing, is a Theravada Buddhist forest monastery in Stokes Valley, Lower Hutt, in the Wellington region. It belongs to the international family of branch monasteries of the Thai teacher Ajahn Chah and his senior Western disciple Ajahn Sumedho. After Ajahn Sumedho visited New Zealand in 1982, local Buddhists set up a charitable association, which brought two English monks over in 1985 to settle near the capital; the monastery has grown on its wooded site ever since, with a meditation hall, a library and a stupa above the grounds.\n\nIt is first of all a home for monks in training, who keep the monastic discipline and walk an alms round on Wednesday mornings, but lay visitors are welcome every day and nothing is charged. The community meditates together for three hours on Sunday afternoons, followed by evening chanting, a Dhamma talk and questions; there is a midweek talk on Wednesday evenings and a meditation workshop on the first Saturday of each month. Group retreats are held over the King's Birthday and Labour weekends and at New Year, guests may stay for two to seven nights on the eight precepts, and the monks visit lay groups in Palmerston North and New Plymouth.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1985,
+      "availability": "local",
+      "city": "Lower Hutt",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://bodhinyanarama.net.nz/",
+      "booking_url": "https://bodhinyanarama.net.nz/booking",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "office@bodhinyanarama.net.nz",
+      "image_urls": [
+        "https://bodhinyanarama.net.nz/wp-content/uploads/2023/04/skyStupa2.jpg",
+        "https://bodhinyanarama.net.nz/wp-content/uploads/2026/01/home-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "New Year Retreat",
+      "url": "https://bodhinyanarama.net.nz/retreats/",
+      "description": "An eight-day silent retreat across the turn of the year, with guidance, teachings and chances to meet the teacher, in a full schedule of sitting and walking meditation on the eight precepts. Open to beginners and experienced meditators; places to stay overnight are limited, and day attendance is possible.",
+      "price": "There is no set charge for retreats. You are welcome to make a donation.",
+      "product_type": "retreat",
+      "start_date": "2026-12-26",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://bodhinyanarama.net.nz/wp-content/uploads/2023/04/skyStupa2.jpg"
+    },
+    {
+      "title": "Staying as a Guest",
+      "url": "https://bodhinyanarama.net.nz/staying/",
+      "description": "Overnight stays of two to seven nights for a first visit, joining the monastery's daily round of chanting, meditation, work and a single main meal, while keeping the eight precepts. Supported by donation only.",
+      "price": "No obligatory charge (donation)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://bodhinyanarama.net.nz/wp-content/uploads/2023/05/kitchenGarden.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Monastery Teachings",
+      "url": "https://bodhinyanarama.net.nz/teaching/",
+      "description": "The monastery's free public programme: three hours of silent group meditation on Sunday afternoons, a Sunday evening puja with Dhamma talk and questions, a Wednesday evening talk, a short reflection at the daily meal and a meditation workshop on the first Saturday of the month. No booking is needed.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://bodhinyanarama.net.nz/wp-content/uploads/2023/04/fern.jpg"
+    },
+    {
+      "title": "Monastery Visit",
+      "url": "https://bodhinyanarama.net.nz/visiting/",
+      "description": "Day visitors may come at any time the gate is open, sit in the meditation hall, borrow from the library, walk up to the stupa and meet the monks after the late-morning meal.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://bodhinyanarama.net.nz/wp-content/uploads/2023/05/woodRail.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2064,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from its own site → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://bodhinyanarama.net.nz/contact/",
+    "contact_form_url": "https://bodhinyanarama.net.nz/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Base: Stokes Valley, Lower Hutt, Wellington region (contact page). City recorded as Lower Hutt.",
+      "Email office@bodhinyanarama.net.nz is the monastery office inbox (site footer); contact form on the contact page.",
+      "founded_year 1985: the year two monks arrived at the invitation of the new association (history page); the site gives no separate founding date.",
+      "Photos: the stupa (450 px) and an alms-bowl offering (333 x 352 px, just over the minimum); both from its own site, checked.",
+      "No hub links: the site does not name a current abbot or resident teacher on the pages read; Ajahn Chah and Ajahn Sumedho are lineage figures, not teachers there. Teachers file written with an empty list.",
+      "Only 4 items; the King's Birthday and Labour weekend retreats for 2026 are past.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "King's Birthday (29 May–1 June) and Labour weekend (23–26 Oct) retreats: past for 2026.",
+      "Kathina celebration on 8 November 2026: past.",
+      "Media page: links to other sites' talks and books only.",
+      "Care Kuti project: a building appeal, not a programme."
+    ]
+  },
+  "images_final": true
+}

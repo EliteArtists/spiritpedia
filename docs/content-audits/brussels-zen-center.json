@@ -1,0 +1,89 @@
+{
+  "healer": {
+    "healer_slug": "brussels-zen-center",
+    "location_source": "https://www.kwanumzen.be/start-to-meditate",
+    "create": {
+      "name": "Kwan Um Zen Belgium (Brussels Zen Center)",
+      "bio": "Kwan Um Zen Belgium is the Brussels centre of the Kwan Um School of Zen, the Korean Zen school founded by Zen Master Seung Sahn, which now has groups in around twenty countries. Its practice rooms are on Nestelingstraat in Sint-Jans-Molenbeek, and its retreats are led by Koen Vermeulen JDPSN. The centre describes its practice as returning, moment by moment, to the mind as it is before thinking arises, and acting from that clear mind with compassion for all beings. It is a member of the Buddhist Union of Belgium and names an integrity contact under the union's ethics charter.\n\nIts main programme for newcomers and experienced students alike is Kompas voor het leven, a Wednesday evening course in Dutch that runs in parts: an introduction to Zen meditation through body, breath and sitting, an introduction to Buddhist teaching using mantra and self-enquiry, and practice in daily life. Each part can be joined on its own and is booked by email. Through the year the centre also holds one-day and weekend retreats in Brussels, including a day for beginners, and in 2026 it ran a week-long summer retreat at Mottereau in France. Supporting members pay a monthly fee that covers all activities except retreats.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Brussels",
+      "country": "Belgium",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.kwanumzen.be/",
+      "booking_url": "https://www.kwanumzen.be/en/retraite-zen-belgie-belgique",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kwanumzenbe@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kompas voor het leven: Introductie tot Zen meditatie",
+      "url": "https://www.kwanumzen.be/start-to-meditate",
+      "description": "The first part of the centre's Wednesday evening programme in Dutch: six sessions in Brussels on attention, breath, body awareness and sitting meditation, ending with a walk in silence nearby. Each part can be booked on its own by email.",
+      "price": "90 euro voor 6 sessies",
+      "product_type": "course",
+      "start_date": "2027-01-06",
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Retreat for beginners",
+      "url": "https://www.kwanumzen.be/en/retraite-zen-belgie-belgique",
+      "description": "A one-day retreat at the Brussels centre for people new to Zen, led by Koen Vermeulen JDPSN.",
+      "price": "50 euros",
+      "product_type": "retreat",
+      "start_date": "2026-12-20",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1829,
+    "hub": null,
+    "held": "No usable photo: the site is Wix and every image is on static.wixstatic.com, which refuses our robots.txt request; no YouTube channel or other photo source is linked. Owner to decide whether to supply a photo or drop the listing.",
+    "tier_evidence": "No YouTube or social accounts readable from its site → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.kwanumzen.be/start-to-meditate",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 3 source(s)",
+    "flags": [
+      "Held for photo (see held).",
+      "Health rule: the course page says part one helps you 'regulate stress better'; that claim is left out of the plan.",
+      "Site in Dutch and French with an English retreats page; plan written in English, course title kept in Dutch.",
+      "Course: only the first part's start date (6 Jan 2027) is published in the text read; end date left empty.",
+      "Name: the lead was 'Brussels Zen Center'; the site calls itself Kwan Um Zen België / Kwan Um Zen Center Brussels.",
+      "Wix site: pages fetched as plain HTML only; three section URLs redirected (302) to /en/ versions, of which only the retreats page was followed.",
+      "No hub links: Koen Vermeulen JDPSN is not on Spiritpedia. Teachers file written with an empty list.",
+      "Founded year not published on the pages read."
+    ],
+    "left_out": [
+      "Weekend retreat 20–21 Feb 2027 (50 euros per day): shares the retreats page URL with the beginners' retreat kept.",
+      "June and August 2026 retreats: already past.",
+      "Parts two and three of Kompas voor het leven: same page URL as part one."
+    ]
+  }
+}

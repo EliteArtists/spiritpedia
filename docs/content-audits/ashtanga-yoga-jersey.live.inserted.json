@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1304,
+    "healer_slug": "ashtanga-yoga-jersey"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "655d1830-b134-456d-b1c4-a2d1ea5570d1",
+      "slug": "shala-fees-class-passes-and-monthly-unlimited",
+      "title": "Shala fees: class passes and monthly unlimited"
+    },
+    {
+      "table": "courses",
+      "id": "8aa75559-6230-49c1-8638-06b5df1230be",
+      "slug": "mysore-classes-and-friday-led-class",
+      "title": "Mysore classes and Friday led class"
+    },
+    {
+      "table": "courses",
+      "id": "acc5954b-7966-4df6-8665-e152fa8aade7",
+      "slug": "starting-ashtanga-as-a-beginner",
+      "title": "Starting Ashtanga as a beginner"
+    }
+  ],
+  "at": "2026-11-11T21:38:00.574Z"
+}

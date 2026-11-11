@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1354,
+    "healer_slug": "iyoga-utrecht"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "1d9bef82-1c76-4ad9-9212-fd2267d62a63",
+      "slug": "groepslessen-iyengar-yoga",
+      "title": "Groepslessen Iyengar yoga"
+    },
+    {
+      "table": "courses",
+      "id": "1327dc1c-823a-41b8-957b-4458598cce5f",
+      "slug": "online-yogales",
+      "title": "Online yogales"
+    },
+    {
+      "table": "courses",
+      "id": "883a5a19-d095-430d-80f6-ea5692cf919a",
+      "slug": "beginnerscursus",
+      "title": "Beginnerscursus"
+    },
+    {
+      "table": "courses",
+      "id": "f59b905e-11e8-40bf-9e57-5f2e83135c87",
+      "slug": "mentortraject",
+      "title": "Mentortraject"
+    }
+  ],
+  "at": "2026-11-11T21:40:34.188Z"
+}

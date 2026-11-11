@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1327,
+    "healer_slug": "chinmaya-mission-vancouver"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9729,
+      "slug": "bhagawad-gita-100-chapter-10-verse-10-13",
+      "title": "Bhagawad Gita #100 Chapter 10: Verse 10 - 13"
+    },
+    {
+      "table": "videos",
+      "id": 9730,
+      "slug": "bhagawad-gita-101-chapter-10-verse-14-20",
+      "title": "Bhagawad Gita #101 Chapter 10: Verse 14 - 20"
+    },
+    {
+      "table": "videos",
+      "id": 9731,
+      "slug": "bhagawad-gita-93-chapter-9-verse-30-34",
+      "title": "Bhagawad Gita #93 Chapter 9: Verse 30 - 34"
+    },
+    {
+      "table": "videos",
+      "id": 9732,
+      "slug": "bhagawad-gita-108-chapter-11-verse-8-19",
+      "title": "Bhagawad Gita #108 Chapter 11: Verse 8 - 19"
+    },
+    {
+      "table": "videos",
+      "id": 9733,
+      "slug": "bhagawad-gita-109-chapter-11-verse-20-31",
+      "title": "Bhagawad Gita #109 Chapter 11: Verse 20 - 31"
+    },
+    {
+      "table": "videos",
+      "id": 9734,
+      "slug": "bhagawad-gita-113-chapter-11-verse-49-55",
+      "title": "Bhagawad Gita #113 Chapter 11: Verse 49 - 55"
+    },
+    {
+      "table": "courses",
+      "id": "b1d507ec-432a-4e38-9d55-274828d4021e",
+      "slug": "membership-7",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "221fb0bb-8d03-4c7c-900a-3f2ec4081847",
+      "slug": "adult-classes",
+      "title": "Adult Classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "e0f9fcc1-d060-42f2-abff-c4f5509efdfc",
+      "slug": "bala-vihar-k-12",
+      "title": "Bala Vihar (K-12)"
+    },
+    {
+      "table": "free_resources",
+      "id": "f9b83c82-a3ea-46f5-bccf-07ad21c82843",
+      "slug": "chinmaya-yuva-kendra-youth",
+      "title": "Chinmaya Yuva Kendra (youth)"
+    }
+  ],
+  "at": "2026-11-11T21:39:16.924Z"
+}

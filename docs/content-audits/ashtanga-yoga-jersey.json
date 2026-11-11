@@ -1,0 +1,108 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-jersey",
+    "location_source": "https://www.ashtangayogajersey.com/contact",
+    "create": {
+      "name": "Ashtanga Yoga Jersey",
+      "bio": "Ashtanga Yoga Jersey is a small traditional Ashtanga school in St Helier, the capital of the island of Jersey in the Channel Islands. Its founder, Anna Haines, studied in Mysore with Sharath Jois from 2016 until his death in 2024 and is authorised by the Sharath Yoga Centre; she presents the school as part of the lineage that runs from Krishnamacharya through Pattabhi Jois to Sharath, and frames the practice within Patanjali's eight limbs rather than as postures alone.\n\nClasses take place in the Quaker Meeting House on La Colomberie, on the east side of town. From Monday to Thursday the room is open early for Mysore-style practice, where each student arrives within the session, works through the sequence at the pace of their own breath and is taught new postures one at a time, with individual help and adjustments from the teacher. On Fridays a led primary series class opens with the traditional chant and is counted in Sanskrit, and the school rests on moon days. Complete beginners are welcome and usually start with the sun salutations and closing postures; the school also runs six-week introductory courses and holds occasional Sunday talks on the practice.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "St Helier",
+      "country": "Jersey",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "breathwork"
+      ],
+      "website_url": "https://www.ashtangayogajersey.com/",
+      "booking_url": "https://www.ashtangayogajersey.com/classes",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "anna@ashtangayogajersey.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/69481ec8f2296b40d8d96ec7/bc3d1735-e030-4a44-8a04-4f3a74ae701a/DSC_4140.jpg",
+        "https://images.squarespace-cdn.com/content/v1/69481ec8f2296b40d8d96ec7/828c18d6-4be8-4e30-951a-f2719e7ad15c/DSC_4252.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shala fees: class passes and monthly unlimited",
+      "url": "https://www.ashtangayogajersey.com/shala-fees",
+      "description": "Passes for the weekday Mysore room and the Friday led class, from a single drop-in to an unlimited month, with a reduced first month for newcomers. Students who cannot meet the fees are invited to talk to the teacher.",
+      "price": "Monthly Unlimited £135; 10 Class Pass £120; Single Week £50; Single Class £15; first month for newcomers £100",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/69481ec8f2296b40d8d96ec7/bc3d1735-e030-4a44-8a04-4f3a74ae701a/DSC_4140.jpg"
+    },
+    {
+      "title": "Mysore classes and Friday led class",
+      "url": "https://www.ashtangayogajersey.com/classes",
+      "description": "Self-paced Mysore sessions from Monday to Thursday, with personal guidance and new postures added as each student is ready, and a fully led primary series on Friday mornings, counted in Sanskrit after the opening chant.",
+      "price": "See shala fees (Single Class £15)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/69481ec8f2296b40d8d96ec7/828c18d6-4be8-4e30-951a-f2719e7ad15c/DSC_4252.jpg"
+    },
+    {
+      "title": "Starting Ashtanga as a beginner",
+      "url": "https://www.ashtangayogajersey.com/beginners",
+      "description": "How newcomers join the Mysore room: observing first, a short introduction to the breath, then learning the opening sun salutation and closing postures and building the sequence gradually over regular visits. First classes are booked through the form on this page.",
+      "price": "First month for newcomers £100",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/69481ec8f2296b40d8d96ec7/6fc54141-1df3-4229-b1da-f85dfa8201d3/DSC_7883.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2123,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtangayogajersey.com/contact",
+    "contact_form_url": "https://www.ashtangayogajersey.com/beginners",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Anna Haines, Ashtanga Yoga Jersey, website ashtangayogajersey.com); facts from its own site (Squarespace; robots.txt lists AI crawlers in the same group as *, with only path rules).",
+      "Her authorisation is stated from the Sharath Yoga Centre list (where she is listed); the school's site says she studied with Sharath Jois from 2016 to 2024.",
+      "The school meets in a rented hall (Quaker Meeting House, 71 La Colomberie), its fixed published address and timetable.",
+      "Home page says regular practice 'can help alleviate chronic pain' and calls the primary series 'yoga therapy'; neither is repeated.",
+      "Thin and overlapping: the three offerings are the fee page, the class timetable and the beginners' route, all for the same classes. The six-week introduction course (June–July 2026) has passed.",
+      "Country written as 'Jersey' (a Crown Dependency, not part of the United Kingdom); owner to confirm the country value.",
+      "Photos: a class in the hall and a teacher assisting a student, from its own site (looked at).",
+      "Possible future listings: Anna Haines.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: St Helier, Jersey; no Spiritpedia listings in the Channel Islands seen."
+    ],
+    "left_out": [
+      "Introduction to Ashtanga Yoga, six Fridays from 5 June 2026 (£100): has passed.",
+      "Sunday conferences (17 May and 27 Sep 2026): have passed.",
+      "Ashtanga explainer and moon-day pages: information pages rather than resources."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "tattvatirtha-adhyatma-vidya-mandir",
+    "location_source": "https://www.tattvatirtha.org/contact-us/",
+    "create": {
+      "name": "Adhyatma Vidya Mandir (Tattvatirtha)",
+      "bio": "Adhyatma Vidya Mandir is a Vedanta ashram on Shilaj Road in Thaltej, on the western side of Ahmedabad, whose campus is known as Tattvatirtha. It was registered as a public trust in 1983 around the teaching of Swami Viditatmananda Saraswati, a disciple of Swami Dayananda Saraswati, and belongs to the Arsha Vidya line, which traces itself through Swami Chinmayananda and Dayananda back to Adi Shankara. Swami Viditatmananda chairs it and remains its principal teacher, with several other sannyasi teachers of the tradition.\n\nThe core of the ashram's life is regular Vedanta classes, given in Gujarati and English at the ashram and around the city, on the Bhagavad Gita, the Upanishads and the Brahma Sutras with Shankara's commentaries. Twice a year it holds residential retreats of eight to ten days that combine three talks a day with meditation, chanting, satsang and kirtan, and each year Swamiji gives week-long public lecture series in Ahmedabad, Vadodara, Rajkot and Mumbai. For people studying at home the site sets out a guided study path in three stages, and talks are streamed and archived on its Harih Om YouTube channel and as podcasts.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1983,
+      "city": "Ahmedabad, Gujarat",
+      "country": "India",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://www.tattvatirtha.org/",
+      "booking_url": "https://www.tattvatirtha.org/vedanta-classes/",
+      "youtube_url": "https://www.youtube.com/@2010arsha",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "tattvatirtha@gmail.com",
+      "image_urls": [
+        "https://www.tattvatirtha.org/wp-content/uploads/2023/01/about-us-banner-2-1024x339.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "JnanaPradip Interview with Pujya Swamiji",
+      "url": "https://www.youtube.com/watch?v=oID9Hst9ICU",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "channel": "Harih Om"
+    },
+    {
+      "title": "June 24 2020 Advaita Makaranda",
+      "url": "https://www.youtube.com/watch?v=8GHJKNjuxUE",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Harih Om"
+    },
+    {
+      "title": "Sep 5 2020 Astavakragita",
+      "url": "https://www.youtube.com/watch?v=0Uc_PCGnrNw",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Harih Om"
+    },
+    {
+      "title": "29 Kenopanishad Vakya Bhasya 07 August 2020 (प्रथम: खण्डः)",
+      "url": "https://www.youtube.com/watch?v=ITzStz7pFuk",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Harih Om"
+    },
+    {
+      "title": "286 Live BhagavadGita Chap 13 Thursday, 05 November 2026",
+      "url": "https://www.youtube.com/watch?v=I5MIesQfWcs",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Harih Om"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Vedanta classes with Swami Viditatmananda",
+      "url": "https://www.tattvatirtha.org/vedanta-classes/",
+      "description": "Ongoing classes at the ashram and at venues in Ahmedabad, in Gujarati and English, working line by line through a text with Shankara's commentary. Current texts include the Brahma Sutras and the Bhagavad Gita.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.tattvatirtha.org/wp-content/uploads/2023/01/adhyatma-vidya-mandir.png"
+    },
+    {
+      "title": "Residential Vedanta retreats",
+      "url": "https://www.tattvatirtha.org/retreats/",
+      "description": "Retreats of eight to ten days held twice a year at the ashram, with three talks a day on a Vedanta text, morning puja, meditation, evening chanting, and satsang and kirtan at night. Dates are announced by the ashram.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.tattvatirtha.org/wp-content/uploads/2023/01/adhyatma-vidya-mandir.png"
+    },
+    {
+      "title": "Jnana Yajna lecture series",
+      "url": "https://www.tattvatirtha.org/jnana-yajna/",
+      "description": "Public talk series of a week or more given each year in Ahmedabad and other Gujarat cities and Mumbai: an Upanishad or short Vedanta text in the mornings and the Bhagavad Gita in the evenings, with time for questions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://www.tattvatirtha.org/wp-content/uploads/2023/01/adhyatma-vidya-mandir.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Vedanta Study",
+      "url": "https://www.tattvatirtha.org/guided-vedanta-study/",
+      "description": "A self-study path drawn from the ashram's books and recorded lecture series, arranged in beginner, intermediate and advanced stages in Gujarati and English, so that a student can move from the Tattvabodha and Gita overview to the major Upanishads in order.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.tattvatirtha.org/wp-content/uploads/2023/01/adhyatma-vidya-mandir.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2304,
+    "hub": null,
+    "tier_evidence": "YouTube 9,240 subscribers (Harih Om, @2010arsha, YouTube Data API, 11 Nov 2026); no other readable counts → ~9k → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.tattvatirtha.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from arshavidya.org's Ahmedabad ashram page (Arsha Vidya network). Facts from tattvatirtha.org (robots.txt allows us).",
+      "Possible overlap with the existing teacher plan swami-viditatmananda.json (his own listing); this is the ashram he leads, as a separate organisation.",
+      "Teachers: Swami Viditatmananda (on Spiritpedia) linked as instructor: the site presents him as chairman and teacher of the institute since its 1983 start but does not use the word 'founder'.",
+      "YouTube channel 'Harih Om' (@2010arsha) is the one the site's media page names; its own description names Adhyatma Vidya Mandir.",
+      "Photo: one image, the about-page banner of the ashram buildings (1024x339). Other site images are newspaper clippings and flyers.",
+      "Video titles are copied as published, dated class recordings; they are evergreen text teaching.",
+      "Regional: Ahmedabad, Gujarat.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: the banner loads (200, image/jpeg, 1024x339) and shows the ashram buildings."
+    ],
+    "left_out": [
+      "Children's summer camp (2024) and festival events: past or dated.",
+      "Values / management lectures and satsang pages under 'Vedanta in Practical Life': not opened.",
+      "Publications (books, MP3s): sold through the ashram, no ISBNs seen."
+    ]
+  },
+  "images_final": true
+}

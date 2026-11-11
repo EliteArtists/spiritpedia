@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1337,
+    "healer_slug": "providence-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9576,
+      "slug": "providence-zen-center-hosts-zen-master-dae-kwang-for-the-sunday-dharma-talk",
+      "title": "Providence Zen Center Hosts Zen Master Dae Kwang for the Sunday Dharma Talk."
+    },
+    {
+      "table": "videos",
+      "id": 9577,
+      "slug": "providence-zen-center-hosts-zen-master-tan-gong-jose-ramirez-for-the-sunday-dharma-talk",
+      "title": "Providence Zen Center Hosts Zen Master Tan Gong (José Ramírez) for the Sunday Dharma Talk."
+    },
+    {
+      "table": "videos",
+      "id": 9578,
+      "slug": "providence-zen-center-hosts-kwan-haeng-sunim-jdps-for-the-sunday-dharma-talk",
+      "title": "Providence Zen Center Hosts Kwan Haeng Sunim JDPS for the Sunday Dharma Talk."
+    },
+    {
+      "table": "videos",
+      "id": 9579,
+      "slug": "providence-zen-center-hosts-zen-master-dae-kwang-for-the-sunday-dharma-talk-2",
+      "title": "Providence Zen Center hosts Zen Master Dae Kwang for the Sunday dharma talk."
+    },
+    {
+      "table": "videos",
+      "id": 9580,
+      "slug": "providence-zen-center-hosts-zen-master-tan-gong-jose-ramirez-for-the-sunday-dharma-talk-2",
+      "title": "Providence Zen Center Hosts  Zen Master Tan Gong (José Ramírez) for the Sunday Dharma Talk"
+    },
+    {
+      "table": "videos",
+      "id": 9581,
+      "slug": "providence-zen-center-hosts-wonil-sunim-for-the-sunday-dharma-talk",
+      "title": "Providence Zen Center Hosts Wonil Sunim for the Sunday Dharma Talk"
+    },
+    {
+      "table": "videos",
+      "id": 9582,
+      "slug": "providence-zen-center-hosts-zen-master-dae-kwang-for-the-sunday-dharma-talk-3",
+      "title": "Providence Zen Center Hosts Zen Master Dae Kwang for the Sunday Dharma Talk"
+    },
+    {
+      "table": "courses",
+      "id": "5d845d73-96a8-46f7-85ec-8ea16d4a8446",
+      "slug": "kyol-che-long-retreats",
+      "title": "Kyol Che Long Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "cec69d67-e11c-422e-a6ee-a834b392a921",
+      "slug": "guest-stays",
+      "title": "Guest Stays"
+    },
+    {
+      "table": "courses",
+      "id": "7f622158-b10d-4d0f-8b49-2a07ceea1de3",
+      "slug": "zen-training-program-residency",
+      "title": "Zen Training Program (residency)"
+    },
+    {
+      "table": "free_resources",
+      "id": "6327a343-3e80-400d-ae36-5f90499b5e78",
+      "slug": "weekly-meditation-classes-and-sunday-dharma-program",
+      "title": "Weekly Meditation Classes and Sunday Dharma Program"
+    },
+    {
+      "table": "free_resources",
+      "id": "2dcd8ae4-9ee9-4984-92b9-f7806a23ca44",
+      "slug": "hybrid-online-zen-practice",
+      "title": "Hybrid & Online Zen Practice"
+    }
+  ],
+  "at": "2026-11-11T17:58:52.422Z"
+}

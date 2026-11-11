@@ -1,0 +1,158 @@
+{
+  "healer": {
+    "healer_slug": "zen-center-of-denver",
+    "location_source": "https://zencenterofdenver.org/",
+    "create": {
+      "name": "Zen Center of Denver",
+      "bio": "The Zen Center of Denver began in 1974 as the Denver Zen Center, an affiliate of Philip Kapleau's Rochester Zen Center meeting in a small house in Congress Park. It became independent in 1989, once Kapleau had given Danan Henry transmission and placed him in charge; Henry later trained for ten more years with Robert Aitken and became a Diamond Sangha teacher, so the centre carries both lineages, which mix Sōtō and Rinzai practice with koan study. Three of his heirs took over its spiritual direction, and today it is led by Karin Ryuku Kempe and Peggy Metta Sheehan; Kempe has also received transmission in the White Plum lineage. A team of assistant teachers works alongside them.\n\nAfter owning a historic church in the Highlands for nearly two decades, the community built a new temple near the University of Denver, opened just before the pandemic. Sittings run most mornings and on two evenings a week, in the zendo and on Zoom. Newcomers start with a monthly Beginners' Night or a Saturday introductory seminar, and members can meet a teacher one to one. The year also brings day-long zazenkai, five- and seven-day sesshin that can be joined in person or online, recorded talks, a tea-ceremony group, community discussion circles and volunteer work, including dharma programmes in prisons.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1974,
+      "city": "Denver, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://zencenterofdenver.org/",
+      "booking_url": "https://zencenterofdenver.org/getting-started/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "office@zencenterofdenver.org",
+      "image_urls": [
+        "https://zencenterofdenver.org/wp-content/uploads/2025/04/building-01.webp",
+        "https://zencenterofdenver.org/wp-content/uploads/2025/09/daily-zazen.jpg",
+        "https://zencenterofdenver.org/wp-content/uploads/2025/09/sesshin.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginners' Night and Intro to Zen Seminar",
+      "url": "https://zencenterofdenver.org/getting-started/",
+      "description": "Two ways in for newcomers: a monthly weeknight session with instruction in sitting postures and breath awareness, one round of zazen and walking meditation, and a follow-up question time; or a two-hour Saturday seminar with more time for posture, questions and meeting the teachers. Registration is needed.",
+      "price": "There is no set cost, but a donation of your choosing is much appreciated",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/04/hero-inner.webp"
+    },
+    {
+      "title": "Rohatsu Sesshin 2026",
+      "url": "https://zencenterofdenver.org/event/rohatsu-sesshin/",
+      "description": "A week of intensive practice in the Denver zendo under its two spiritual directors, Karin Ryuku Kempe and Peggy Metta Sheehan, with zazen, private interviews, talks, chanting and formal vegetarian meals. It can be joined staying overnight, coming daily from home or on Zoom; first-time participants apply through the office.",
+      "price": "$315 for ZCD members and $385 for non-members",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/04/building-01.webp"
+    },
+    {
+      "title": "Summer Sesshin 2027",
+      "url": "https://zencenterofdenver.org/event/summer-sesshin-2/",
+      "description": "A five-day retreat under the centre's two spiritual directors, with zazen, interviews, teisho, chanting and formal meals, attended in person or online. Partial scholarships are available.",
+      "price": "$225 for ZCD members and $275 for non-members",
+      "product_type": "retreat",
+      "start_date": "2027-06-18",
+      "end_date": "2027-06-23",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/04/building-01.webp"
+    },
+    {
+      "title": "Membership",
+      "url": "https://zencenterofdenver.org/membership/",
+      "description": "Members affirm the centre as their place of practice and gain ongoing one-to-one instruction with a teacher, a first-year mentor among senior students, discounts on classes, and a vote in its governance. Hardship never bars anyone from joining.",
+      "price": "Most members contribute between $50 and $100 per month, with $75 per month recommended",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/09/membership.jpg"
+    },
+    {
+      "title": "Zazenkai",
+      "url": "https://zencenterofdenver.org/zazenkai-2/",
+      "description": "Days of extended practice with long blocks of sitting, a talk, chanting, walking meditation and a silent meal, for people with some experience of zazen.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/09/zazenkai-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Recent dharma talks",
+      "url": "https://zencenterofdenver.org/recent-dharma-talks/",
+      "description": "Recorded teisho and dharma talks by the centre's teachers on koans, Zen classics and everyday practice, free to play on its website.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/04/hero-inner.webp"
+    },
+    {
+      "title": "Daily zazen on Zoom",
+      "url": "https://zencenterofdenver.org/daily-zazen/",
+      "description": "All the centre's regular sittings are streamed on Zoom, with two mornings a week online only, so anyone can sit with the community from home without being a member.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/09/zendo.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2164,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://zencenterofdenver.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "Email office@zencenterofdenver.org is the office inbox (home page footer).",
+      "founded_year 1974 (history page).",
+      "Photos: the temple building on S. Columbine Street (1920x715 webp), the zendo during a sitting (450x440) and the altar with a Manjushri figure (450x440); all from its own home page, checked. The two square images are small (450 px); owner may keep only the building.",
+      "Lineage: Rochester (Kapleau) and Diamond Sangha (Aitken) through Danan Henry; Karin Ryuku Kempe also holds White Plum transmission (lineage page).",
+      "No hub links: Karin Ryuku Kempe, Peggy Metta Sheehan, Danan Henry and the assistant teachers are not on Spiritpedia. Possible future listings: Karin Ryuku Kempe, Peggy Metta Sheehan. Teachers file written with an empty list.",
+      "The sesshin page warns that sesshin can be hard for people with past trauma and screens newcomers; noted only, nothing condition-led kept.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "MBSR and mindfulness classes, Recovery Group and 'Guided Healing Meditations': condition-led or clinical framing (health rule).",
+      "Fall Sesshin 2027 at Rocky Mountain Ecodharma Retreat Center and Rohatsu 2027: further dates; two sesshin already listed.",
+      "Queer Dharma, book club, food bank and Zen Peacemakers programmes: community groups, not teaching offerings.",
+      "Tea ceremony group: not opened."
+    ]
+  },
+  "images_final": true
+}

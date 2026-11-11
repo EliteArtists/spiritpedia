@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "sakya-tsechen-ling",
+    "location_source": "https://sakyatsechenling.eu/en/practical-information/",
+    "create": {
+      "name": "Sakya Tsechen Ling",
+      "bio": "Sakya Tsechen Ling, also known as the European Institute of Tibetan Buddhism, is a Sakya temple in the Alsatian village of Kuttolsheim, west of Strasbourg. It grew from a group started in Strasbourg in 1977 by the Tibetan master Khenchen Sherab Gyaltsen Amipa Rinpoche, who had been sent to Switzerland in the 1960s to serve Tibetan refugees; the centre moved to Kuttolsheim the following year and was inaugurated by His Holiness the Sakya Trizin. The Dalai Lama visited in 1982. For more than twenty-five years Khenpo Dakpa Woeser lived here as resident lama, and since Khenchen Sherab's death in 2014 his chosen successor, Khenpo Tashi Sangpo, has guided the European centres he founded.\n\nThe core of the programme is a monthly weekend of teachings, running from Friday evening to Sunday afternoon and often including an initiation. Between those weekends there are Saturday afternoon gatherings for listening, reflection and meditation, and themed study series. The temple also marks the great Buddhist festivals and holds summer and winter retreats. Several sessions can be followed on Zoom, including the Dharma Chakra Program, a multi-year study of classical Buddhist philosophy given in English by the 42nd Sakya Trizin, with interpretation into other European languages.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1977,
+      "availability": "local_online",
+      "city": "Kuttolsheim",
+      "country": "France",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://sakyatsechenling.eu/en/",
+      "booking_url": "https://sakyatsechenling.eu/en/monthly-teachings/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sakya.tsechen.ling@ozone.net",
+      "image_urls": [
+        "https://sakyatsechenling.eu/wp-content/uploads/2025/10/Lhabab-Duchen-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Buddha Manjushri: teachings and initiation with Khenpo Tashi Sangpo",
+      "url": "https://sakyatsechenling.eu/en/monthly-perspectives-november-2026/",
+      "description": "A monthly weekend session at the Kuttolsheim temple on Manjushri, the Buddha of wisdom, with teachings and an initiation: Friday evening, then Saturday and Sunday mornings and afternoons. On site only, with no video broadcast.",
+      "price": "See website",
+      "product_type": "course",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://sakyatsechenling.eu/wp-content/uploads/2022/05/HH42ST-775x1024.jpg"
+    },
+    {
+      "title": "Dharma Chakra Program: classical Buddhist philosophy",
+      "url": "https://sakyatsechenling.eu/en/dharma-chakra-program/",
+      "description": "A five-year study programme in which Ratna Vajra Rinpoche, the 42nd Sakya Trizin, teaches in English, moving from Abhidharma through the Way of the Bodhisattva to Madhyamaka and the Uttaratantra. Two Tuesday evenings a month on Zoom or in person at the sister centre in Arosio, Switzerland; open to all, with interpretation available.",
+      "price": "See website",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://sakyatsechenling.eu/wp-content/uploads/2025/10/Lhabab-Duchen-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Monthly teaching weekends",
+      "url": "https://sakyatsechenling.eu/en/monthly-teachings/",
+      "description": "How the temple's monthly teaching weekends run: Friday evening, then Saturday and Sunday mornings and afternoons, with registration through the secretariat about two weeks ahead.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sakyatsechenling.eu/wp-content/uploads/2025/10/Lhabab-Duchen-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2223,
+    "hub": null,
+    "tier_evidence": "No YouTube or social follower counts found on its site; small regional temple → local_hero",
+    "email": "yes",
+    "email_source": "https://sakyatsechenling.eu/en/practical-information/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Regional: Kuttolsheim, Alsace (near Strasbourg).",
+      "Photos: no photo of the building found on the pages read. Image 1 is a painted Lhabab Düchen mural from its home page (location of the painting not stated); image 2 is its logo (only 248x90 px). Owner may want a better image.",
+      "Founded 1977 in Strasbourg, settled in Kuttolsheim 1978 (founder's page).",
+      "No hub links: Khenpo Tashi Sangpo, Christian Bernert and the others named are not on Spiritpedia.",
+      "Dharma Chakra Program is held at the sister centre in Arosio (CH) and on Zoom, listed on this site.",
+      "Prices not stated on the pages read.",
+      "Phone +33 3 88 87 73 80.",
+      "Found via the Sakya global links list (sakyatradition.org, names and links only)."
+    ],
+    "left_out": [
+      "Dharma Chakra Tuesday sessions on 10 and 24 Nov: same programme as the course item.",
+      "Commemoration of Khenpo Dakpa Woeser (29 Nov): a memorial gathering, and on the same November page.",
+      "Past events (Lhabab Düchen 1 Nov, Saturday 7 Nov, October and earlier sessions).",
+      "Retreats page: lists only 2024 retreats.",
+      "Projects page: humanitarian association and craft sales."
+    ]
+  },
+  "images_final": true
+}

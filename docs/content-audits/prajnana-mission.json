@@ -1,0 +1,183 @@
+{
+  "healer": {
+    "healer_slug": "prajnana-mission",
+    "location_source": "https://www.prajnanamission.org/location-details/11/en",
+    "create": {
+      "name": "Prajnana Mission",
+      "bio": "Prajnana Mission is the Indian home of the Kriya Yoga lineage of Paramahamsa Hariharananda, run from its ashram at Jagatpur on the edge of Cuttack, beside the Mahanadi. The ashram began in 1993 as a small meditation hall with two rooms and a kitchen, built by the economics professor Triloki Dash, the disciple later known as Paramahamsa Prajnanananda, and grew after Hariharananda's visit in 1996 into the headquarters of a registered mission. Its spiritual centre is the Hariharananda Gurukulam at Balighai near Puri, where Hariharananda's samadhi temple stands.\n\nThe mission teaches Kriya Yoga as a breath-based meditation passed on personally at initiation, with no correspondence course. Monks of the order tour India to give talks, initiate newcomers and lead follow-up meditations, and a network of centres and groups stretches from Odisha and Andhra Pradesh to Gujarat, Kerala and Delhi. Daily meditation is held at Jagatpur, and through the year the mission runs retreats, Bhagavad Gita gatherings and pilgrimages, with a week-long international seminar at Balighai each January.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "founded_year": 1993,
+      "city": "Cuttack, Odisha",
+      "country": "India",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://www.prajnanamission.org/",
+      "booking_url": "https://www.prajnanamission.org/events/en",
+      "youtube_url": "https://www.youtube.com/@kriyayogainternational",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@prajnanamission.org",
+      "image_urls": [
+        "https://kriya.org/assets/media/banner_images/shri-guru-mandir-1761923415.png",
+        "https://kriya.org/assets/media/banner_images/spiritual-programs-1762669299.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Kriya Yoga Retreat - An Inner Pilgrimage | Vivekananda Kendra, Kanyakumari - Day 1",
+      "url": "https://www.youtube.com/watch?v=K_mseGmgXkM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Kriya Yoga Retreat - An Inner Pilgrimage | Vivekananda Kendra, Kanyakumari - Day 2",
+      "url": "https://www.youtube.com/watch?v=hcbQmkQou_4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Kriya Yoga Retreat - An Inner Pilgrimage | Vivekananda Kendra, Kanyakumari - Day 3",
+      "url": "https://www.youtube.com/watch?v=_H7xnRQWlH4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Obstacles in Meditation",
+      "url": "https://www.youtube.com/watch?v=-rfZsd8X7cE",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "You Will Lose Yourself Completely in Meditation",
+      "url": "https://www.youtube.com/watch?v=Fc1VvOqJaJQ",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "26th Intensive International Kriya Yoga Seminar",
+      "url": "https://www.prajnanamission.org/event-details/9465/en",
+      "description": "A week at the Hariharananda Gurukulam in Balighai, near Puri, spanning Makara Sankranti and the anniversaries of Bhupendranath Sanyal, one of the lineage's masters.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-14",
+      "end_date": "2027-01-20",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Kriya Yoga Retreat, Pune",
+      "url": "https://www.prajnanamission.org/event-details/9287/en",
+      "description": "A four-day Kriya Yoga retreat in Pune with Paramahamsa Prajnanananda as guru preceptor.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-10",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Geetha Jnana Yajna in Pattamundai",
+      "url": "https://www.prajnanamission.org/event-details/9288/en",
+      "description": "Three days of Bhagavad Gita teaching in Pattamundai, Odisha, organised from the Jagatpur ashram.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-15",
+      "end_date": "2026-12-17",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Holy River Prachi Saraswati Parikrama",
+      "url": "https://www.prajnanamission.org/event-details/9470/en",
+      "description": "A week-long pilgrimage along the Prachi river in Odisha, organised from the Jagatpur ashram.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-26",
+      "end_date": "2027-03-04",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Kriya Yoga initiation programmes",
+      "url": "https://www.prajnanamission.org/events/1/en",
+      "description": "Initiation weekends held in cities across India: an introductory talk, personal initiation by Paramahamsa Prajnanananda or one of his authorised teachers, instruction in the techniques and at least three follow-up group meditations.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free discourse recordings",
+      "url": "https://www.prajnanamission.org/discourses/en",
+      "description": "Recorded talks free to watch on the mission's site, including television interviews with Paramahamsa Hariharananda from the 1980s and talks by Paramahamsa Prajnanananda on Kriya practice and the Yoga Sutras.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2326,
+    "hub": null,
+    "tier_evidence": "YouTube 70,000 subscribers (@kriyayogainternational, the worldwide Kriya Yoga International channel linked from prajnanamission.org/discourses; YouTube Data API, 11 Nov 2026) → local_hero.",
+    "email": "info@prajnanamission.org",
+    "email_source": "https://www.prajnanamission.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "POSSIBLE ALLEGATION, general knowledge only: I vaguely recall a criminal case in Austria around 2011-12 involving Paramahamsa Prajnanananda, the mission's head. No source was opened; two web searches (English and German) found nothing. Not held; owner to check before inserting any Kriya Yoga International centre (ranks 2323-2330).",
+      "Listed as the mission (India headquarters at Jagatpur, Cuttack) rather than the Cuttack ashram alone, because the site is the mission's.",
+      "Founded year: the home page says founded 1993 (the Jagatpur ashram's opening); the Cuttack page says the mission was formally constituted on 2 February 1999. 1993 used.",
+      "YouTube channel is the worldwide Kriya Yoga International channel, not India-only; the five videos are India retreat days (Kanyakumari, run by the mission) and short teachings by Prajnanananda.",
+      "Photo 1 sits in the home-page slide for the Hariharananda Gurukulam at Balighai (a domed temple with gardens; file name 'shri-guru-mandir'); photo 2 is a satsang hall with a swami teaching seated students. Both from the site's own image host (kriya.org).",
+      "Health rule: the mission's Healthcare Services (free clinics) left out; the home-page clinic photo not used.",
+      "Many event pages carry personal Gmail addresses of swamis as contacts; not used.",
+      "Teachers named (Swamis Brahmajnanananda, Sugitananda, Pujananda Giri and others) are not on Spiritpedia; Paramahamsa Prajnanananda is not on Spiritpedia. Teachers file has no links.",
+      "Regional: Odisha (Cuttack and Puri), with centres across India.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: both load (200; PNG 494x330 temple with gardens, PNG 583x390 satsang hall)."
+    ],
+    "left_out": [
+      "11th Residential Brahmachari Training Course (1 Dec 2026 - 16 Feb 2027): application deadline 31 Oct 2026 passed; men only, monastic.",
+      "Healthcare services, Balashram school, Gau Seva and community outreach: service work, not programmes for seekers.",
+      "Retreat at Amarkantak 20-24 Nov 2026: Odia-speaking initiates only, and too close.",
+      "Premium discourse content: paid, no individual URLs."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): part of Paramahamsa Prajnanananda's Kriya Yoga network. The helper half-remembers a criminal case in Austria around 2011–12 but opened no source and found nothing in two searches. Please check before it goes in."
+  }
+}

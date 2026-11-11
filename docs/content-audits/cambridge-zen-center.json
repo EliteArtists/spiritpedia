@@ -1,0 +1,186 @@
+{
+  "healer": {
+    "healer_slug": "cambridge-zen-center",
+    "location_source": "https://www.cambridgezen.org/",
+    "create": {
+      "name": "Cambridge Zen Center",
+      "bio": "Cambridge Zen Center, whose Korean temple name Daegaksa means Temple of Great Awakening, was started in 1973 by students of the Korean Zen Master Seung Sahn and belongs to his Kwan Um School of Zen. After beginning across the river in Allston, it settled on Auburn Street in Cambridge, Massachusetts, where more than thirty residents now live and practise across three houses. Its guiding teachers include Zen Master Bon Yeon (Jane McLaughlin-Dobisz), who has held the role since 1993, Zen Master Bon Shim and Dyan Eagles, one of the centre's founding members.\n\nThe temple keeps a monastic-style timetable of bowing, chanting and sitting every morning and evening, open to anyone without booking. Thursday evenings bring an introductory class for newcomers and a Dharma talk with questions for a teacher; Tuesday evenings and Sunday mornings offer long sits with one-to-one kong-an interviews. A two-day silent retreat is held on the second weekend of each month, and there are affinity groups for young people, elders and BIPOC practitioners, a weekly community dinner, and guest stays and residencies for those who want to try Zen community life.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1973,
+      "availability": "worldwide",
+      "city": "Cambridge, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.cambridgezen.org/",
+      "booking_url": "https://www.cambridgezen.org/newcomers",
+      "youtube_url": "https://www.youtube.com/@cambzencenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "director@cambridgezen.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/0a927fa4-8e78-44ad-b99d-b196abda29d0/IMG_3488.JPG",
+        "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/c2d1f07c-aced-4c6c-95c2-daf1cf8219a1/199Auburn.jpg",
+        "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/3cd9b552-d674-40d4-80df-151adb105d09/IMG_3517.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What is enlightenment?",
+      "url": "https://www.youtube.com/watch?v=Zws-uF2IwqQ",
+      "subjects": [
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "How can we understand the teaching that everything is \"empty?\" *Zen Master Bon Yeon*",
+      "url": "https://www.youtube.com/watch?v=O92xMlmRUEA",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "Should we get rid of all our thinking? - Zen Master Bon Haeng *Mark Houghton*",
+      "url": "https://www.youtube.com/watch?v=L6S0czz3JhQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "Do we have free will or is everything predetermined?",
+      "url": "https://www.youtube.com/watch?v=CD4FOGAWQbQ",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "Can Zen practice change how we see suffering?",
+      "url": "https://www.youtube.com/watch?v=pRN5FVOuKFg",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "How to handle situations when someone is hostile towards you? *Zen Master Bon Yeon*",
+      "url": "https://www.youtube.com/watch?v=oKtA_sB-DP0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "How can we help the world by our practice? *Zen Master Bon Shim*",
+      "url": "https://www.youtube.com/watch?v=xDTsf1S44zQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "Why do we stop practicing when life gets easier?",
+      "url": "https://www.youtube.com/watch?v=AkPFI6-PDFo",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Cambridge Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yong Maeng Jong Jin (YMJJ) monthly retreats",
+      "url": "https://www.cambridgezen.org/retreats",
+      "description": "A two-day silent retreat on the second weekend of each month, with sitting and walking meditation, chanting, formal four-bowl meals and kong-an interviews with the leading teacher. You may sit one day or both, and first-timers get an orientation on the forms.",
+      "price": "General Public $75; Members, Seniors, Clergy $55; Students, Teachers in Training $45",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/97a0c017-7d24-49b1-9a90-43a2c7606913/IMG_3517.JPG"
+    },
+    {
+      "title": "Guest stays and residency",
+      "url": "https://www.cambridgezen.org/residency",
+      "description": "Stays of up to two weeks for people curious about Zen community life, and short- or long-term residencies for those who want to join the household, practising each morning and helping to run the evening programme.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/a31c2584-35cd-45bc-8ac2-624189ac625d/kwanumblue.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Daily Practice",
+      "url": "https://www.cambridgezen.org/daily-practice",
+      "description": "Morning and evening bowing, chanting and sitting in the Dharma Room every day, free and without registration, with guidance on the forms and links to the chanting book.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/a31c2584-35cd-45bc-8ac2-624189ac625d/kwanumblue.png"
+    },
+    {
+      "title": "Newcomers: Introduction to Meditation and Thursday Dharma Talk",
+      "url": "https://www.cambridgezen.org/newcomers",
+      "description": "A free Thursday evening class introducing Zen forms and sitting, followed by a talk from a practitioner and questions for a Zen teacher, then tea.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6997392e670e4c781b7a041b/0a927fa4-8e78-44ad-b99d-b196abda29d0/IMG_3488.JPG"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1805,
+    "hub": null,
+    "tier_evidence": "YouTube 2,690 subscribers (Cambridge Zen Center @cambzencenter, UCbA4o7YyH-Uv-t99WrNht9A; YouTube Data API, 11 Nov 2026; linked from its own site); Instagram/Facebook not fetched → ~2.7k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cambridgezen.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Website cambridgezen.org redirects to www.cambridgezen.org; robots.txt read on both hosts (Squarespace: Claude agents share the * group, which blocks only /config, /api and similar).",
+      "Email director@cambridgezen.org is the centre's director inbox (mailto on the home page).",
+      "No hub links: none of its guiding teachers (Bon Yeon / Jane McLaughlin-Dobisz, Bon Shim / Aleksandra Porter, Dyan Eagles, Colin Beavan) is on Spiritpedia. Teachers file written with an empty list. Possible future listings: Zen Master Bon Yeon (Jane Dobisz), Colin Beavan.",
+      "Big US coastal city area (Boston/Cambridge): not a regional gap.",
+      "YMJJ prices as published; the page doesn't say whether they are per day or per retreat."
+    ],
+    "left_out": [
+      "YouTube videos with condition words in the title (chronic sadness, past trauma, anger at my body): health rule.",
+      "Unpacking Whiteness group and prison programme: activist or outreach rather than practice offerings.",
+      "Workshops for teams and schools: organisational services.",
+      "Kyol Che: held at Providence Zen Center (planned separately)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "zen-institute-of-new-zealand",
+    "location_source": "https://www.zen.org.nz/contact-us.html",
+    "create": {
+      "name": "Zen Institute of New Zealand",
+      "bio": "The Zen Institute of New Zealand is the New Zealand branch of the Mountains and Rivers Order, the Zen lineage founded by John Daido Loori Roshi at Zen Mountain Monastery in upstate New York. Daido Roshi visited New Zealand every year from 1988 to 1996, and the order has kept a sangha here ever since; it now runs as a charitable incorporated society with sitting groups in Auckland, Rotorua, Manawatu, Wellington, Nelson and Christchurch, including the Opawa Zendo in Christchurch. Its training follows the Eight Gates of Zen, a framework Daido Roshi devised so that practice reaches into the whole of daily life, at home and at work as well as on retreat.\n\nThe order's head, Geoffrey Shugen Arnold Roshi, abbot of Zen Mountain Monastery, comes each July to lead a programme in Nelson, and each January Jody Hojin Kimmel Sensei, who leads the order's New York City centre, teaches in Christchurch with a public talk, a Zen art day and a week-long sesshin. Local groups add weekend retreats at places such as Wangapeka and Otaki, and members across the country sit together online on Sunday and weekday mornings. Recorded sesshin talks by the order's teachers and written meditation instructions are free on the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Christchurch",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.zen.org.nz/",
+      "booking_url": "https://www.zen.org.nz/events.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.zen.org.nz/uploads/6/3/1/4/63145119/zendosesshin_5.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sesshin Meditation Retreat (Mt Hutt)",
+      "url": "https://www.zen.org.nz/january-sesshin.html",
+      "description": "A week-long residential Zen intensive in silence with Jody Hojin Kimmel Sensei at a retreat house in Canterbury, recommended for people with some meditation experience; newcomers may join for part of the week after a phone interview. Zazen, daily talks and the closing discussion are also streamed on Zoom.",
+      "price": "Full week from Sun: Early-bird = $600 up to Jan 1; Standard rate = $630 after Jan 1 (shorter stays from Mon to Thu: $530–$290 early-bird, $560–$320 standard)",
+      "product_type": "retreat",
+      "start_date": "2027-01-17",
+      "end_date": "2027-01-23",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/zendosesshin_5.jpg"
+    },
+    {
+      "title": "Zen Art Practice Day",
+      "url": "https://www.zen.org.nz/zen-workshop-january.html",
+      "description": "A day at the Opawa Zendo in Christchurch with Hojin Sensei combining zazen with art-making, exploring curiosity and wonder through the senses. Materials and a vegetarian lunch are provided.",
+      "price": "$100 includes lunch",
+      "product_type": "course",
+      "start_date": "2027-01-16",
+      "end_date": "2027-01-16",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/published/screen-shot-2018-10-14-at-4-01-40-pm_2.png"
+    },
+    {
+      "title": "An Introduction to Zen Meditation and Practice",
+      "url": "https://www.zen.org.nz/public-talk-january.html",
+      "description": "An evening talk in Christchurch by Hojin Sensei introducing zazen and Zen practice to newcomers, with time for questions. No registration needed.",
+      "price": "Public talk attendance is by koha/donation",
+      "product_type": "course",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-15",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/screen-shot-2018-09-17-at-11-50-16-am_orig.png"
+    },
+    {
+      "title": "Wangapeka Zen Retreat",
+      "url": "https://www.zen.org.nz/wangapeka.html",
+      "description": "A weekend retreat in the Nelson region hosted by the order's Nelson students, with zazen, liturgy and a talk, suitable for beginners and experienced meditators alike. Subsidies are available.",
+      "price": "$220 includes all meals",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/wangapeka_orig.jpg"
+    },
+    {
+      "title": "Strathean Zen Retreat (Otaki)",
+      "url": "https://www.zen.org.nz/strathean.html",
+      "description": "A weekend of Zen practice on the Kapiti Coast hosted by the Wellington group, with zazen, liturgy, a talk and discussion and formal oryoki meals. Participants need prior beginner's instruction.",
+      "price": "$230 (to be confirmed closer to the time)",
+      "product_type": "retreat",
+      "start_date": "2027-04-30",
+      "end_date": "2027-05-02",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/screen-shot-2021-08-15-at-7-13-18-pm_orig.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sesshin dharma talks (audio)",
+      "url": "https://www.zen.org.nz/audio.html",
+      "description": "Recorded talks from New Zealand sesshin by Shugen Roshi, Hojin Sensei and Ron Hogen Green Sensei, on koans and themes such as faith within impermanence and what practice is.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/editor/shugen-sensei.jpg?1564907250"
+    },
+    {
+      "title": "Instructions in Zen Meditation (Zazen)",
+      "url": "https://www.zen.org.nz/learn-how-to-meditate.html",
+      "description": "A written guide to zazen covering the main sitting postures from cross-legged to chair, the alignment of body, breath and mind, and where to find beginner's instruction with a local group.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zen.org.nz/uploads/6/3/1/4/63145119/9920315_orig.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2069,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from its own site → no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.zen.org.nz/contact-us.html",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Name: the site presents itself as 'Mountains & Rivers Order' (Aotearoa) and says the Zen Institute of New Zealand Inc. is its official name; the council lists it as Zen Institute of New Zealand SMR Inc. Owner may prefer 'Mountains and Rivers Order New Zealand'.",
+      "Emails on the site are Cloudflare-protected (not decoded); the contact form on the contact page is used.",
+      "robots.txt disallows many older event pages (e.g. /nz-events.html, /dharma-teachings.html); none of those were fetched. The pages used are not disallowed.",
+      "Base: the institute's postal address is in Christchurch (PO Box, Barrington); it is a national network of six sitting groups, with its zendo in Christchurch (Opawa).",
+      "Sesshin price summarised from the published day-by-day table (full-week rates quoted exactly).",
+      "Visiting teachers (Shugen Arnold Roshi, Hojin Kimmel Sensei, Hogen Green Sensei) are US-based teachers of the order; none is on Spiritpedia. Teachers file written with an empty list. Possible future listings: Geoffrey Shugen Arnold Roshi, Jody Hojin Kimmel Sensei.",
+      "Photo: a sesshin in a meditation hall from its own January sesshin page (venue not named in the caption).",
+      "Found via the New Zealand Buddhist Council national-organisations list (names and links only)."
+    ],
+    "left_out": [
+      "Rotorua meditation day (3–4 Oct): past.",
+      "Video page: links to Zen Mountain Monastery videos and a documentary, not its own channel.",
+      "Local group pages (Auckland, Wellington and others): not opened."
+    ]
+  },
+  "images_final": true
+}

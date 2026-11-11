@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-basel",
+    "location_source": "https://www.ashtanga-basel.ch/kontakt/",
+    "create": {
+      "name": "Ashtanga Yoga Basel",
+      "bio": "Ashtanga Yoga Basel is a small shala on the first floor of a building on the Spalenring in Basel, run by Lladiu de la Mata. Lladiu first met yoga in 2003 as a student in Asturias and went on to train in Sivananda hatha yoga, Ashtanga, Satyananda's yoga nidra and Iyengar yoga; after several long stays in Mysore he became an authorised Ashtanga teacher there, and in 2016 he assisted at a Mysore yoga institute. He teaches in German, English, Spanish, Asturian and Catalan.\n\nThe weekly timetable mixes traditional Ashtanga with alignment-based hatha yoga: short and full led Ashtanga classes, a session that begins led and continues Mysore style, a gentler guided class that ends in yoga nidra, Saturday self-practice in the open room, and hatha and restorative classes at several levels. A two-hour themed workshop is held on one Sunday morning each month, free to members, and Lladiu leads yoga holidays abroad, including a week in Andalusia timed for the total solar eclipse of August 2027. Members can also attend classes at a partner Iyengar studio in the city, and the shala gives 2% of its profit to charitable organisations.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Basel",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.ashtanga-basel.ch/",
+      "booking_url": "https://www.ashtanga-basel.ch/classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "yoga@ashtanga-basel.ch",
+      "image_urls": [
+        "https://www.ashtanga-basel.ch/wp-content/uploads/elementor/thumbs/ashtanga-yoga-basel-shala-qlgaz33blxemsz8nud4jrhx308z42o77xu71b8ombg.jpg",
+        "https://www.ashtanga-basel.ch/wp-content/uploads/2021/11/ash.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ashtanga and hatha classes: memberships and class cards",
+      "url": "https://www.ashtanga-basel.ch/classes/",
+      "description": "Access to the full weekly timetable of led and Mysore-style Ashtanga, hatha, restorative and yoga nidra classes, with unlimited memberships or ten-class cards. Reduced rates apply for students, people on low incomes and pensioners, and members use the Saturday self-practice room free.",
+      "price": "Probemonat CHF 100; Einzellektion CHF 30/20; 1 Monat unlimitiert CHF 180/120; 12 Monate unlimitiert CHF 1500/1000; 10er-Karte CHF 270/180 (reduced price after the slash)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.ashtanga-basel.ch/wp-content/uploads/elementor/thumbs/ashtanga-yoga-basel-shala-qlgaz33blxemsz8nud4jrhx308z42o77xu71b8ombg.jpg"
+    },
+    {
+      "title": "Monthly Sunday workshops",
+      "url": "https://www.ashtanga-basel.ch/event/",
+      "description": "Two-hour themed workshops held from ten to noon on one Sunday each month, giving time to look closely at one aspect of the practice. Free for members; the next listed date is Sunday 22 November 2026.",
+      "price": "35 CHF (free for members)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtanga-basel.ch/wp-content/uploads/2026/02/Iyengar-Yoga-Basel-1024x768.png"
+    },
+    {
+      "title": "Yoga Retreat & Eclipse, Cabo de Gata (Almería, Andalusia)",
+      "url": "https://www.ashtanga-basel.ch/event2/",
+      "description": "A week on a country estate in Almería with Lladiu de la Mata: morning yoga sessions and restorative evening classes, two vegan meals a day, free time to explore, and a trip on the final day to watch the total solar eclipse. Open to beginners and experienced students.",
+      "price": "Mehrbettzimmer 890 Fr.; Einzelzimmer 980 Fr.",
+      "product_type": "retreat",
+      "start_date": "2027-07-27",
+      "end_date": "2027-08-02",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtanga-basel.ch/wp-content/uploads/2026/06/Genoveses-sunset-scaled-1024x683.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2127,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtanga-basel.ch/kontakt/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Lladiu de la Mata, Ashtanga Yoga Basel, website ashtanga-basel.ch); facts from its own site (WordPress; robots.txt allows us).",
+      "Not Ashtanga-only: about half the timetable is alignment-based hatha and restorative yoga, and members may also use a partner Iyengar studio (ayalgayoga.ch, not opened).",
+      "The retreat page says the yoga room is equipped to deepen Iyengar practice; listed as the school's own retreat, taught by Lladiu.",
+      "Prices published in CHF ('Fr.' on the retreat page); written as published.",
+      "Restorative class description mentions heart rate and calming the nervous system; not repeated.",
+      "Photos: the empty practice room with mats laid out, and the school's logo (a Patanjali figure), from its own site (looked at). The room photo is a 550px Elementor thumbnail.",
+      "Possible future listings: Lladiu de la Mata; Sevinç (hatha teacher, named on the timetable).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Basel, Switzerland."
+    ],
+    "left_out": [
+      "Free trial lessons in January (dates as published, apparently from an earlier year's agenda).",
+      "Chuck Miller workshop anchor on the workshops page: no dated page read.",
+      "Private lessons: price by arrangement, no page of their own."
+    ]
+  },
+  "images_final": true
+}

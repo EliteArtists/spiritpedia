@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-gurgaon",
+    "location_source": "https://anandagurgaon.org/",
+    "create": {
+      "name": "Ananda Sangha Gurgaon",
+      "bio": "Ananda Sangha Gurgaon was the first centre Swami Kriyananda opened in India, in 2003, as he set about bringing his guru Paramhansa Yogananda's teachings back to the country of their birth. Kriyananda, who first travelled to India in 1958, founded the worldwide Ananda movement in 1968, and the Gurugram centre remains one of its most active Indian branches.\n\nThe centre meets on the first floor of the community centre in K Block, DLF Phase II, in a hall with a shrine to the Kriya line of gurus. Beginners take Learn to Meditate, the first step on Ananda's path towards Kriya initiation, taught in person over two Sunday sessions with personal mentoring; it leads on to the course on the art and science of raja yoga. Weekend Ananda Yoga classes teach postures paired with silent affirmations, in the style Kriyananda developed.\n\nEach week brings a Saturday-morning meditation, a Sunday satsang with talks that are also recorded, and a short Wednesday wisdom session. The centre also hosts kirtan evenings, book study, children's Sunday activities and family evenings, and sells recordings of past workshops, among them a session on the Aum technique for Kriyabans and one on bringing spiritual values into marriage.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Gurugram, Haryana",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandagurgaon.org/",
+      "booking_url": "https://anandagurgaon.org/learn-to-meditate/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "gurgaon@anandaindia.org",
+      "image_urls": [
+        "https://anandagurgaon.org/wp-content/uploads/2021/04/IMG_20200209_102134-1024x768.jpg",
+        "https://anandagurgaon.org/wp-content/uploads/2021/04/IMG_20200221_193735-1024x768.jpg"
+      ],
+      "founded_year": 2003
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate – The Path of Kriya Yoga Level 1",
+      "url": "https://anandagurgaon.org/learn-to-meditate/",
+      "description": "Two in-person Sunday sessions at the Gurugram centre with personal mentoring from the instructor, introducing meditation as Yogananda taught it; required before the second-stage raja yoga course. New batches are posted on the page.",
+      "price": "₹500",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "http://anandagurgaon.org/wp-content/uploads/2021/11/Learn-to-Meditate-Banner-1.png"
+    },
+    {
+      "title": "Commune with Holy Aum (recorded workshop)",
+      "url": "https://anandagurgaon.org/commune-with-holy-aum/",
+      "description": "A recorded workshop with Nayaswami Bharat, a Kriyacharya and Ananda monastic of 40 years, on deepening the Aum technique: review of the practice, guided experiences with a gong, stories and how Kriya and Aum work together. For Ananda Kriyabans only.",
+      "price": "Donation ₹250",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "http://anandagurgaon.org/wp-content/uploads/2021/11/Aum-.png"
+    },
+    {
+      "title": "How to Spiritualize your Marriage (recorded workshop)",
+      "url": "https://anandagurgaon.org/how-to-spiritualise-your-marriage/",
+      "description": "A recorded workshop drawn from Yogananda's teachings on marriage as a path of inner growth, with practical suggestions for living a relationship in a more expansive, selfless way.",
+      "price": "₹400",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": "http://anandagurgaon.org/wp-content/uploads/2022/05/Health-Healing-5.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Satsang",
+      "url": "https://anandagurgaon.org/sunday-satsang/",
+      "description": "A weekly Sunday-morning gathering at the Gurugram centre with chanting, meditation and an inspirational talk; all welcome, with recent satsang talks posted as videos.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://anandagurgaon.org/wp-content/uploads/2021/04/Healing-Prayers-Request-2.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2021,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel read → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandagurgaon.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "Email gurgaon@anandaindia.org and address are in the site-wide footer (home page source).",
+      "Learn to Meditate page shows a past batch (27 Sep and 4 Oct 2026); listed undated as the recurring entry class.",
+      "'sound-healing' used on the Aum workshop for its gong-guided practice; owner may prefer meditation/spirituality only.",
+      "Ananda Yoga weekend classes have no times or prices on their page ('browse our calendar'); mentioned in the bio only.",
+      "Health rule: Saturday 'Meditation and Healing Prayers', healing classes and a 'bhajan therapy' event left out.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Nayaswami Bharat (Joseph Cornell) appears only as the presenter of a recorded workshop: not linked; not in dev names.",
+      "No Spiritpedia teachers named as teaching at the centre; teachers file has no links."
+    ],
+    "left_out": [
+      "Saturday Meditation and Healing Prayers (weekly): healing framing.",
+      "Ananda Yoga page: no schedule or price of its own.",
+      "Wednesday Wisdom (calendar only, no page).",
+      "Past events (kirtan evening 12 Sep 2026, Joy Fest 2024)."
+    ]
+  },
+  "images_final": true
+}

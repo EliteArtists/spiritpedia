@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1337,
+    "healer_slug": "gar-drolma-buddhist-learning-and-meditation-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cd985db3-2d20-4816-9698-a0c8a8bc8378",
+      "slug": "stages-of-meditation-online-course",
+      "title": "Stages of Meditation Online Course"
+    },
+    {
+      "table": "courses",
+      "id": "7dc6c112-b9fe-42e1-846e-61ec0370f691",
+      "slug": "gar-drolma-membership",
+      "title": "Gar Drolma membership"
+    },
+    {
+      "table": "courses",
+      "id": "cba57f13-288a-476a-9d03-bb93fa62c76c",
+      "slug": "weekly-meditation-and-learning-buddhism-class",
+      "title": "Weekly Meditation and Learning Buddhism class"
+    },
+    {
+      "table": "free_resources",
+      "id": "f955fd33-78d7-4cf6-b13f-34c650bf3a6c",
+      "slug": "practices-and-prayers-library-text-and-audio",
+      "title": "Practices and prayers library (text and audio)"
+    },
+    {
+      "table": "free_resources",
+      "id": "2b312fa9-b865-4cda-8f60-ba239906dd20",
+      "slug": "video-teachings-of-khenpo-samdup-rinpoche",
+      "title": "Video teachings of Khenpo Samdup Rinpoche"
+    }
+  ],
+  "at": "2026-11-11T21:39:48.930Z"
+}

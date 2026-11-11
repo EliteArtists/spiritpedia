@@ -1,0 +1,143 @@
+{
+  "healer": {
+    "healer_slug": "kuan-yin-meditation-centre",
+    "location_source": "https://www.kuanyinmeditationcentre.org/",
+    "create": {
+      "name": "Kuan Yin Meditation Centre",
+      "bio": "Kuan Yin Meditation Centre is a small Buddhist meditation centre in Lismore, in the Northern Rivers region of New South Wales, that holds both Zen and Insight (Vipassana) practice under one roof. It was established by Subhana Barzaghi, who teaches in both traditions and is a senior teacher of the Sydney Zen Centre in the Diamond Sangha lineage; she built its timber dojo herself, and the centre counts it as the first Zen temple built in Australia. Today the Zen side is led by 'Myokai' Rachel Whiting, who trained under the centre's former Zen teacher Ellen Davison and under Subhana, while Emma Pittaway, a teacher in the Burmese 'natural awareness' style of Sayadaw U Tejaniya, leads the Insight programme.\n\nEach weekday evening brings a different group to the dojo: a beginner-friendly Zen group on Mondays, a mindfulness evening with chanting and loving-kindness practice on Tuesdays, a guided Insight session with teaching and discussion on Wednesdays, and a silent sit for experienced meditators on Thursdays, each for a small hall fee and a donation to the teacher. Monthly Zen zazenkai, a six-week beginners' course and a week-long non-residential sesshin fill out the year, and recorded guided meditations and talks from past retreats can be played free on its website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Lismore, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.kuanyinmeditationcentre.org/",
+      "booking_url": "https://www.kuanyinmeditationcentre.org/zen-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kuanyinmeditation@gmail.com",
+      "image_urls": [
+        "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4446-cropped-scaled.jpg",
+        "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4490-scaled.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Lismore Zen Group and zazenkai",
+      "url": "https://www.kuanyinmeditationcentre.org/zen-events/",
+      "description": "A friendly Monday-evening Zen group that welcomes beginners, with meditation instruction and personal guidance, alongside monthly day-long zazenkai with guided and silent sitting, walking meditation, a dharma talk and one-to-one guidance with Myokai. The page also lists the annual beginners' course and a seven-day non-residential sesshin.",
+      "price": "$5 Hall Hire + $10 recommended donation to teacher/ dojo build (Dana)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2023/10/KYMC-Teachers-2023.jpg"
+    },
+    {
+      "title": "Insight Meditation evenings",
+      "url": "https://www.kuanyinmeditationcentre.org/insight-events/",
+      "description": "Relaxed Wednesday-evening sessions in insight meditation with Emma Pittaway and other teachers, combining a guided sitting, teaching and discussion; suitable for beginners and experienced meditators. Emma also offers one-to-one practice sessions by arrangement.",
+      "price": "$5 facility fee + dana (contribution for the teachings)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2026/02/KYMC-Banner.jpeg"
+    },
+    {
+      "title": "Weekly mindfulness and silent sitting groups",
+      "url": "https://www.kuanyinmeditationcentre.org/",
+      "description": "A Tuesday-evening mindfulness group with chanting, sitting and walking meditation, discussion and loving-kindness practice, led by Peta Kalyana Wright, and a Thursday-evening silent sitting of three rounds for experienced meditators.",
+      "price": "$5 per person/night (Thursday sitting)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2026/10/IMG_4497-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Foundational Guided Meditation",
+      "url": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/05/Foundational-Guided-Meditation-1.m4a",
+      "description": "A gentle recorded guided sitting for people starting a daily meditation practice, from the centre's Zen teacher.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4446-cropped-scaled.jpg"
+    },
+    {
+      "title": "Breath, Body, Greater Body (Part I)",
+      "url": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/05/Breath-Body-Greater-Body-Meditation-Pt-I.m4a",
+      "description": "A 25-minute guided Zen meditation recorded at an early-morning online sitting, moving through posture, breath counting and whole-body awareness.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4446-cropped-scaled.jpg"
+    },
+    {
+      "title": "Introduction to the Seven Factors of Awakening",
+      "url": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/11/1.-7-Factors-Mindfulness.m4a",
+      "description": "The first of a series of talks recorded at the centre's October 2025 sesshin, introducing the Buddha's seven factors of awakening, beginning with mindfulness.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4446-cropped-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2171,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Facebook group not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.kuanyinmeditationcentre.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Regional: Lismore, New South Wales (Northern Rivers).",
+      "Email kuanyinmeditation@gmail.com is the general enquiries inbox (contact page, mailto). The Zen contact is listed as myokaian@proton.me on the Zen page and mushinji@proton.me on the contact page.",
+      "Photos: the dojo interior with cushions and altar (2560x809) and the dojo's altar with a wooden Buddha (2560x1258), both from its own site, checked. Other images on the site are stock (dreamstime, stockcake) and were not used.",
+      "Two traditions: Zen (Diamond Sangha via Subhana Barzaghi) and Insight; subjects kept to meditation and mindfulness.",
+      "Free resources are direct .m4a audio files linked from the Zen page.",
+      "Teacher Mal Huxter (clinical psychologist, mindfulness for clinical populations) appears on the teachers page; nothing of his is listed (health rule).",
+      "No hub links: Subhana Barzaghi, 'Myokai' Rachel Whiting and Emma Pittaway are not on Spiritpedia. Possible future listings: Subhana Barzaghi Roshi, Emma Pittaway. Teachers file written with an empty list.",
+      "The first-Zen-temple claim is the centre's own; worded as such in the bio.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Non-residential sesshin 2–8 Oct 2027 ($20/day + dana) and the six-week beginners' course: on the same Zen page as the Zen group item (one item per URL); mentioned in its description.",
+      "'Remembering Freedom' insight retreat (23–26 July 2026): past.",
+      "Talk 'Sun Face Moon Face': its blurb speaks of remedies amid sickness and ageing; left out to be safe (health rule)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission-toronto",
+    "location_source": "https://chinmayatoronto.org/about-us-2/",
+    "create": {
+      "name": "Chinmaya Mission Toronto (Chinmaya Vedanta Heritage Centre)",
+      "bio": "Chinmaya Mission Toronto is one of the oldest Chinmaya centres outside India. Swami Chinmayananda first came to the city in 1972, invited by the local Vedanta Society, and on his second visit in 1974 local students formed the mission, with Charlotte Wallman as its first president. Study classes began on the University of Toronto campus, a centre named Chinmaya Shivalaya opened in Unionville in 1998 and moved to Maple in 2003, and since 2011 the mission has been based in Brampton, at what it now calls the Chinmaya Vedanta Heritage Centre. Swamini Shivapriyananda, its resident teacher since 1988, leads it with younger acharyas trained in the Chinmaya tradition.\n\nThe teaching is Advaita Vedanta in the line of Swami Tapovan Maharaj, Swami Chinmayananda and Swami Tejomayananda, taught in English through the Gita, the Upanishads and other classic texts. Volunteers run nearly everything, and most activities cost nothing. Adults can join weekly study groups across the Greater Toronto Area and online; children come to Shishu Vihar and Bala Vihar for stories, chanting and values, and young adults meet weekly to discuss the Gita. There is also a Monday Shiva puja, a monthly Hanuman Chalisa, a chanting awards programme, jnana yajnas, family camps and festival gatherings.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Brampton, Ontario",
+      "country": "Canada",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://chinmayatoronto.org/",
+      "booking_url": "https://chinmayatoronto.org/new-classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "chinmayatoronto@chinmayatoronto.org",
+      "image_urls": [
+        "https://chinmayatoronto.org/wp-content/uploads/2020/05/toronto_group.png",
+        "https://chinmayatoronto.org/wp-content/uploads/2020/04/Classes_Adults_848x600.jpg"
+      ],
+      "founded_year": 1974
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Adult Study Groups",
+      "url": "https://chinmayatoronto.org/adult-class-calendar/",
+      "description": "Ongoing study groups on Vedantic texts held across the Greater Toronto Area and online, open to all and free of charge, with a yearly programme list.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayatoronto.org/wp-content/themes/twentyseventeen-child/assets/images/header.jpg"
+    },
+    {
+      "title": "Bala Vihar and Shishu Vihar",
+      "url": "https://chinmayatoronto.org/children-classes/",
+      "description": "Weekly two-hour family sessions where children learn values, stories, chants and bhajans, with a playful Shishu Vihar for the youngest. Trial classes are offered.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://chinmayatoronto.org/wp-content/themes/twentyseventeen-child/assets/images/header.jpg"
+    },
+    {
+      "title": "Young Adult Classes (CHYK)",
+      "url": "https://chinmayatoronto.org/young-adult-classes/",
+      "description": "Weekly discussion classes for young adults on texts such as the Bhagavad Gita, focused on self-development and service.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://chinmayatoronto.org/wp-content/themes/twentyseventeen-child/assets/images/header.jpg"
+    },
+    {
+      "title": "OM Chanting Program",
+      "url": "https://chinmayatoronto.org/om-chanting/",
+      "description": "A graded programme for children and adults to learn prayers and verses, from daily invocations to the Vishnu Sahasranama and Gita verses, with ribbons and awards along the way.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayatoronto.org/wp-content/themes/twentyseventeen-child/assets/images/header.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1868,
+    "hub": null,
+    "tier_evidence": "No channel of its own (the site links the parent ChinmayaChannel, 1.01M, which is already listed and not counted); Instagram, Facebook and X not read → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://chinmayatoronto.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Related listings: Chinmaya Mission (parent, already listed) and Chinmaya International Foundation; this is the Toronto centre with its own site.",
+      "Teachers file is empty: Swamini Shivapriyananda and Brahmachari Raajivve are not on Spiritpedia. Possible future listing: Swamini Shivapriyananda.",
+      "Left out: the site's 'Healthy Body Healthy Mind' and 'BMI Chart' pages and the leaders page's mention of 'stress management courses' (health rule).",
+      "Photo 1 is a historic black-and-white group photo of Swami Chinmayananda with early Toronto members (516x387); photo 2 is a still life of Chinmaya books with prayer beads from the site's classes section.",
+      "No videos: the site links only the parent ChinmayaChannel.",
+      "Email is the general inbox listed on /contact/ (mailto); separate inboxes exist for Bala Vihar, youth and adult programmes.",
+      "Regional: Brampton, Ontario (Greater Toronto Area).",
+      "Master Gita Master Life is a CIF online course promoted on /courses/; it belongs to Chinmaya International Foundation and is not listed here."
+    ],
+    "left_out": [
+      "Deepavali 2026 (14-15 Nov 2026): a one-off festival event.",
+      "Hanuman Chalisa Havan (Amrit Mahotsav): event page on events.chinmayatoronto.org, not opened.",
+      "Bookstore (square.site shop) and the Gita 365 app links.",
+      "Health pages (BMI chart, Healthy Body Healthy Mind).",
+      "Weekly Shiva Puja: its event page (/event/weekly-shiv-puja) returns 404, so it is mentioned in the bio only."
+    ]
+  },
+  "images_final": true
+}

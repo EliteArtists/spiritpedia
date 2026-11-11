@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1326,
+    "healer_slug": "chinmaya-mission-toronto"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "95aa0336-753c-4b83-bbd0-04236ad98b98",
+      "slug": "adult-study-groups",
+      "title": "Adult Study Groups"
+    },
+    {
+      "table": "free_resources",
+      "id": "ff59752c-c72d-4cd5-abeb-821096ce6af9",
+      "slug": "bala-vihar-and-shishu-vihar",
+      "title": "Bala Vihar and Shishu Vihar"
+    },
+    {
+      "table": "free_resources",
+      "id": "47eda19a-9bbe-433c-97de-807426356d40",
+      "slug": "young-adult-classes-chyk",
+      "title": "Young Adult Classes (CHYK)"
+    },
+    {
+      "table": "free_resources",
+      "id": "55537109-328d-4e7d-a212-4ccb109183fa",
+      "slug": "om-chanting-program",
+      "title": "OM Chanting Program"
+    }
+  ],
+  "at": "2026-11-11T21:39:14.426Z"
+}

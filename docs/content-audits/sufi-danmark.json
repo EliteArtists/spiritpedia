@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "sufi-danmark",
+    "location_source": "https://www.sufi-danmark.dk/aktiviteter",
+    "create": {
+      "name": "Sufi Danmark",
+      "bio": "Sufi Danmark is the Danish branch of the Inayatiyya, the Sufi order that traces its teaching to Hazrat Inayat Khan, the Indian musician and mystic who brought a universal form of Sufism to the West early in the twentieth century. It is a small, volunteer-led network rather than a single building, open to people of any religion or none who are drawn to the search for love, harmony and beauty.\n\nMeditation sits at the centre of everything it does. Sufi practice here uses sacred words and sounds, called wazifas, and zikr, a prayer of the heart, to quieten and open the mind. Small groups meet once or twice a month in Copenhagen, Aalborg and Nakskov, guided by experienced Danish leaders, and taking part costs nothing. For around thirty years the network's twice-yearly meditation weekends were led by the teacher Aziza Scott; since she stepped back in 2020 visiting teachers from Europe and North America have taken her place, and the next weekend in Copenhagen is with Nigel Hamilton in April 2027. Members also join silent retreats in the Danish countryside and the order's large international summer camp in the Swiss Alps, and recordings from past weekends are shared on the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Copenhagen",
+      "country": "Denmark",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://www.sufi-danmark.dk/",
+      "booking_url": "https://www.sufi-danmark.dk/aktiviteter",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "post@sufi-danmark.dk",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5bed26462971141807898c66/1542314951647-FMCNYBBU149Z72EVDEFN/Solnedgang+ved+Lumsa%CC%8As+copy.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5bed26462971141807898c66/1551184005589-SDQ2QW2NWI96T0Y6VDKH/download.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation Weekend in Copenhagen with Nigel Hamilton",
+      "url": "https://www.sufi-danmark.dk/aktiviteter",
+      "description": "A weekend of Sufi meditation in central Copenhagen (Integrativ Udvikling, Adelgade 58+60) led by a visiting teacher: Friday evening 7 to 9.15 pm, Saturday 10 am to 5 pm and Sunday 10 am to 4 pm. Recordings are sent to participants afterwards.",
+      "price": "1700 kr.",
+      "product_type": "retreat",
+      "start_date": "2027-04-23",
+      "end_date": "2027-04-25",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5bed26462971141807898c66/1548953789635-0HRJV1VWRSUH55NFMQKX/image-asset.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sufi meditation groups",
+      "url": "https://www.sufi-danmark.dk/aktiviteter/#meditationsgrupper",
+      "description": "Free Sufi meditation groups meeting once or twice a month in Copenhagen, Aalborg and Nakskov, led by experienced Danish group leaders; contact the network by email to join.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5bed26462971141807898c66/1548953789635-0HRJV1VWRSUH55NFMQKX/image-asset.jpeg"
+    },
+    {
+      "title": "Lydfiler (recordings)",
+      "url": "https://www.sufi-danmark.dk/lydfiler",
+      "description": "Audio recordings of the sessions from a past meditation weekend, from Friday evening to Sunday afternoon, free to play on the site.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5bed26462971141807898c66/1542314951647-FMCNYBBU149Z72EVDEFN/Solnedgang+ved+Lumsa%CC%8As+copy.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1879,
+    "hub": null,
+    "tier_evidence": "No YouTube channel; Facebook not read; a small volunteer network → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sufi-danmark.dk/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Network, not a centre: no premises of its own; groups meet in Copenhagen, Aalborg and Nakskov, and the April weekend is in a hired venue. City set to Copenhagen.",
+      "Guest: Nigel Hamilton leads the April 2027 weekend; he is not on Spiritpedia and is not linked.",
+      "Photos: a Danish beach at sunset (from the homepage, 1280x960) and a sunrise over a jetty (1000x667); no photos of people or a venue of its own. A group photo is of the Swiss Alp camp run by the Zenith Institute, and another image looks like stock, so both left out.",
+      "Teachers file is empty: organisers named by first name only (Ulla Nurya, Mette Hayat, Pia Jamila); Aziza Scott has retired from leading.",
+      "Site is mostly in Danish.",
+      "The recordings page gives only session names and a first name (Inge); the speaker's full name and the year are not stated.",
+      "Email is the network's own inbox in plain text; no contact form."
+    ],
+    "left_out": [
+      "Sufi healing group / distant healing (health rule).",
+      "Retreat at Løgumkloster (details page not opened, no date seen).",
+      "Alp Camp (run by the Zenith Institute in Switzerland)."
+    ]
+  },
+  "images_final": true
+}

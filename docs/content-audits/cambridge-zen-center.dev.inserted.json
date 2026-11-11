@@ -1,0 +1,82 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1338,
+    "healer_slug": "cambridge-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9583,
+      "slug": "what-is-enlightenment",
+      "title": "What is enlightenment?"
+    },
+    {
+      "table": "videos",
+      "id": 9584,
+      "slug": "how-can-we-understand-the-teaching-that-everything-is-empty-zen-master-bon-yeon",
+      "title": "How can we understand the teaching that everything is \"empty?\" *Zen Master Bon Yeon*"
+    },
+    {
+      "table": "videos",
+      "id": 9585,
+      "slug": "should-we-get-rid-of-all-our-thinking-zen-master-bon-haeng-mark-houghton",
+      "title": "Should we get rid of all our thinking? - Zen Master Bon Haeng *Mark Houghton*"
+    },
+    {
+      "table": "videos",
+      "id": 9586,
+      "slug": "do-we-have-free-will-or-is-everything-predetermined",
+      "title": "Do we have free will or is everything predetermined?"
+    },
+    {
+      "table": "videos",
+      "id": 9587,
+      "slug": "can-zen-practice-change-how-we-see-suffering",
+      "title": "Can Zen practice change how we see suffering?"
+    },
+    {
+      "table": "videos",
+      "id": 9588,
+      "slug": "how-to-handle-situations-when-someone-is-hostile-towards-you-zen-master-bon-yeon",
+      "title": "How to handle situations when someone is hostile towards you? *Zen Master Bon Yeon*"
+    },
+    {
+      "table": "videos",
+      "id": 9589,
+      "slug": "how-can-we-help-the-world-by-our-practice-zen-master-bon-shim",
+      "title": "How can we help the world by our practice? *Zen Master Bon Shim*"
+    },
+    {
+      "table": "videos",
+      "id": 9590,
+      "slug": "why-do-we-stop-practicing-when-life-gets-easier",
+      "title": "Why do we stop practicing when life gets easier?"
+    },
+    {
+      "table": "courses",
+      "id": "64456a3c-6437-4899-aa00-8026211e0b7b",
+      "slug": "yong-maeng-jong-jin-ymjj-monthly-retreats",
+      "title": "Yong Maeng Jong Jin (YMJJ) monthly retreats"
+    },
+    {
+      "table": "courses",
+      "id": "ba4562d0-c9ca-4891-a3cf-0bf475ed969c",
+      "slug": "guest-stays-and-residency",
+      "title": "Guest stays and residency"
+    },
+    {
+      "table": "free_resources",
+      "id": "44b94c08-5581-4e74-b7ae-ca0f05271ee7",
+      "slug": "daily-practice",
+      "title": "Daily Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "78c11e49-f044-45ea-a2c0-cdb03fd9dcc6",
+      "slug": "newcomers-introduction-to-meditation-and-thursday-dharma-talk",
+      "title": "Newcomers: Introduction to Meditation and Thursday Dharma Talk"
+    }
+  ],
+  "at": "2026-11-11T17:58:59.956Z"
+}

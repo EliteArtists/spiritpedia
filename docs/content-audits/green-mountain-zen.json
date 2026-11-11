@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "green-mountain-zen",
+    "location_source": "https://greenmountainzen.org.nz/",
+    "create": {
+      "name": "Green Mountain Zen",
+      "bio": "Green Mountain Zen is a Soto Zen practice community in Wellington, New Zealand, guided by Philip Shinko Squire Roshi. Shinko grew up in Wellington and trained full-time for a decade from 1994 at Yokoji Zen Mountain Center, California; Charles Tenshin Fletcher Roshi, the abbot there, gave him Dharma transmission in 2006 and final inka in 2016. The sangha is affiliated with Yokoji and belongs to the White Plum Asanga of teachers in Maezumi Roshi's lineage.\n\nThe group has no building of its own. It sits together every Thursday evening at the Quaker Meeting House in Mount Victoria, with chanting, two periods of zazen, walking meditation and a talk or discussion, and offers a short introduction to Zen for newcomers on the first Thursday of each month. Early-morning sittings run online three days a week, a longer Sunday morning sit with lunch is held monthly at Breaker Bay, and twice a year the community goes on a five-day silent sesshin near Otaki. Members can follow a training path that includes the lay precepts and koan study, and recordings of Shinko Roshi's sesshin talks are free on the site.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Wellington",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://greenmountainzen.org.nz/",
+      "booking_url": "https://greenmountainzen.org.nz/practice-schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@greenmountainzen.org.nz",
+      "image_urls": [
+        "https://greenmountainzen.org.nz/wp-content/uploads/2022/03/Zafu-with-Sunlight.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sesshin (Meditation Retreat)",
+      "url": "https://greenmountainzen.org.nz/practice-schedule/",
+      "description": "A five-day silent Zen retreat from Tuesday evening to Sunday midday at a retreat house near Otaki, opening with a ceremony and built around zazen, with walking, chanting, meals, rest, Dharma talks and work practice in between.",
+      "price": "$100/night or $80/night members or unwaged",
+      "product_type": "retreat",
+      "start_date": "2027-05-04",
+      "end_date": "2027-05-09",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "Membership and training paths",
+      "url": "https://greenmountainzen.org.nz/pratice-paths/",
+      "description": "Membership for those who want to practise regularly with the sangha and enter a teacher–student relationship, with a small financial commitment, discounts on activities and a path that can lead on to receiving the precepts and senior training.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Shinko Roshi's sesshin dharma talks",
+      "url": "https://greenmountainzen.org.nz/dharma-talks/",
+      "description": "Audio recordings of talks given on the community's retreats from 2016 onwards, on themes such as impermanence, Bodhidharma and Huike, Rinzai's true person and the Four Noble Truths, free to stream or download.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Introduction to Zen",
+      "url": "https://greenmountainzen.org.nz/contact/",
+      "description": "A free half-hour introduction to Zen meditation for complete beginners, held on the first Thursday of each month before the regular evening sitting; sign up through the contact form.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2066,
+    "hub": null,
+    "held": "Photo not certain: the community has no premises; the only candidate is a black-and-white photo of zafu cushions in a sunlit room ('Zafu-with-Sunlight.jpg' on its own site), which may or may not be its own space; the other site images are Unsplash stock or a teacher headshot, and the logo is only 279 x 141 px. Owner to decide whether the cushion photo or the small logo is acceptable.",
+    "tier_evidence": "No YouTube channel or social accounts linked from its own site → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://greenmountainzen.org.nz/",
+    "contact_form_url": "https://greenmountainzen.org.nz/contact/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "No building of its own: weekly sittings at the Quaker Meeting House, Mount Victoria; monthly Sundays at Breaker Bay Community Hall; sesshin at a retreat house near Otaki. Base recorded as Wellington.",
+      "Email contact@greenmountainzen.org.nz is the community's inbox (home page).",
+      "Zen Thursdays ($10/5) and the monthly Zen Sundays share the practice-schedule URL with the sesshin, so only the sesshin is listed as an offering (one item per URL).",
+      "No hub links: Philip Shinko Squire Roshi is not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Philip Shinko Squire Roshi.",
+      "The site describes him as also a marriage celebrant offering Buddhist weddings and other rites of passage; not listed as items.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Zen Thursdays and Zen Sundays: same page URL as the sesshin (noted in the bio).",
+      "October 2026 sesshin: past.",
+      "Weddings and rites of passage: ceremonies, not practice offerings.",
+      "Articles page: not opened."
+    ]
+  }
+}

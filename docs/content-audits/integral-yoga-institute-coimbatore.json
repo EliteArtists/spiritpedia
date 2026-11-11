@@ -1,0 +1,109 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-institute-coimbatore",
+    "location_source": "https://www.integralyogaindia.org/contact-us/",
+    "create": {
+      "name": "Integral Yoga Institute Coimbatore",
+      "bio": "The Integral Yoga Institute in Coimbatore, founded in 1974, is the Indian home of the Integral Yoga taught by Sri Swami Satchidananda, who was born near the city and became a disciple of Swami Sivananda. The tradition joins hatha yoga with meditation, prayer, chanting and selfless service, with the stated goal of ease in the body, peace in the mind and a life of service. Its building on West Sambandam Road in R. S. Puram, in the heart of the city, holds three yoga halls, a meditation hall, a library, a bookshop and a few guest rooms.\n\nClasses run from early morning to evening six days a week: ten-day beginners' courses, monthly practice classes at first and second level, a more vigorous morning session and very gentle classes, with some also streamed online. For more than thirty years the institute has trained teachers on a month-long, 200-hour course in hatha and raja yoga, chanting, meditation, anatomy and teaching practice, which leads to the Integral Yoga Level I certificate; it runs several times a year for day students and residents. It also holds monthly weekend residential retreats with practice, silence, scripture talks and satsang, and celebrates Satchidananda's birth anniversary each November.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Coimbatore, Tamil Nadu",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.integralyogaindia.org/",
+      "booking_url": "https://www.integralyogaindia.org/yoga-classes/",
+      "youtube_url": "https://www.youtube.com/@integralyogacbe",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.integralyogaindia.org/wp-content/themes/iyitheme/assets/img/integral-yoga-institute-1.jpg",
+        "https://www.integralyogaindia.org/wp-content/uploads/2025/03/teacher-training-scaled.jpg"
+      ],
+      "founded_year": 1974
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "General Yoga classes (Integral Yoga Hatha)",
+      "url": "https://www.integralyogaindia.org/yoga-classes/",
+      "description": "Ten-day beginners' courses and one-month practice classes at first and second level, morning, midday and evening, with an extra-gentle option and some classes online. Each class blends postures, deep relaxation and breathing.",
+      "price": "Beginners (10 days) ₹1500; Hatha I / Hatha II (1 month) ₹1500; Hatha Intense (1 month) ₹2000; Extra Gentle Beginners (5 days) ₹1000",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.integralyogaindia.org/wp-content/uploads/2025/03/teacher-training-39-scaled.jpg"
+    },
+    {
+      "title": "200-hour Beginners Yoga Teachers Training Course (BYTT)",
+      "url": "https://www.integralyogaindia.org/yoga-teacher-training-course-coimbatore/",
+      "description": "A four-week, full-time training from Monday to Saturday covering hatha practice and theory, raja yoga and the Yoga Sutras, chanting, meditation, anatomy, yogic diet and supervised teaching. Graduates who pass the exams receive the Integral Yoga Level I diploma.",
+      "price": "Day scholars - ₹ 35,000/- (inclusive brunch and materials); Residential - ₹ 60,000/- (inclusive twin sharing room, brunch and materials)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.integralyogaindia.org/wp-content/uploads/2025/03/teacher-training-11-scaled.jpg"
+    },
+    {
+      "title": "Sadhana – Weekend Residential Retreat",
+      "url": "https://www.integralyogaindia.org/sadhana-weekend-residential-retreat/",
+      "description": "A monthly weekend stay at the institute with asana, pranayama and relaxation sessions, talks on yoga and scripture, satsang, periods of silence and simple sattvic meals.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.integralyogaindia.org/wp-content/uploads/2025/03/sadhana-weekend-residential-retreat-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2009,
+    "hub": null,
+    "tier_evidence": "YouTube @integralyogacbe 16 subscribers (Data API, 11 Nov 2026); Facebook/Instagram/LinkedIn not fetched → 16 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.integralyogaindia.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/): 'Integral Yoga Institute – Coimbatore', Dr. O.A. Balasubramaniam, integralyogaindia.org. Facts from the institute's own site (robots.txt allows us).",
+      "Contact: every email on the site is Cloudflare-protected (not decoded) and a secretary address sits only inside an HTML comment (hidden, not used). The contact page has a contact form, used as the contact route.",
+      "Health rule: the site sells yoga therapy, a 'Healthy Heart' programme (reversing coronary disease), special-needs yoga for named conditions and a weight-loss testimonial; the building sign also reads 'Nature Cure Centre'. All left out; the core offer (classes, teacher training, retreats) is traditional Integral Yoga, so not skipped. Owner may want to review.",
+      "Teacher training: the only batch dates on the page are 2025 batches (May, July, Nov–Dec 2025); listed undated as a repeating course with the published fee. A 2026 '200 hours' banner appears on the home page but no dates are given.",
+      "YouTube @integralyogacbe (16 subscribers, Data API 11 Nov 2026) is linked from the site but holds only shorts and clips under 2 minutes, so no videos are listed.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: Dr. O.A. Balasubramaniam (named in the IYTA directory only).",
+      "No Spiritpedia teachers named on the site; teachers file has no links.",
+      "Regional: Coimbatore, Tamil Nadu; few Spiritpedia listings in Tamil Nadu outside Chennai."
+    ],
+    "left_out": [
+      "Yoga for Special Child, Healthy Heart, Yoga Therapy and Counselling, Prenatal/Postnatal: condition-led or medical framing.",
+      "Yoga Nidra Training Program: framed around overcoming muscular, mental and emotional stress and healing.",
+      "Swadharma one-day corporate workshop: corporate wellness, and its page carries a weight-loss testimonial.",
+      "Summer camps for children: seasonal (summer), no current dates.",
+      "Guest stay and hall rent: not teaching offerings.",
+      "Blog posts (sleep, stress relief): condition framing."
+    ]
+  },
+  "images_final": true
+}

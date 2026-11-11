@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "yoga-maastricht",
+    "location_source": "https://www.yogamaastricht.nl/contact/",
+    "create": {
+      "name": "Yoga Maastricht",
+      "bio": "Yoga Maastricht is an Iyengar studio on the Volksplein in Maastricht, opened in 2007 by Melanie Tillema after she moved to the city. She has practised the method since 1996, completed the three-year Iyengar teacher training in Amsterdam, and now mentors trainee teachers for the Dutch Iyengar association. She leads a regular team of certified teachers, among them Marianne Defesche, who first travelled to India in 1976 and brings meditation and philosophy into her classes, and teachers trained in Riga and Amsterdam.\n\nThe studio, a large wood-floored hall with rope walls and timber beams, runs more than twenty classes a week across six levels, from complete beginners to long-standing practitioners, with some mixed-level classes taught in English and others available online. Students can start at any time with a low-cost trial lesson. Beyond the timetable there is a monthly pranayama class and an introductory pranayama course, monthly three-hour Sunday sessions that explore a theme in depth and finish with soup, and weekend workshops with visiting senior Iyengar teachers from abroad. The studio also keeps a small library of articles and videos on its site and sells props through its own shop.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Maastricht",
+      "country": "Netherlands",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "website_url": "https://www.yogamaastricht.nl/",
+      "booking_url": "https://yogamaastricht.opencontrolplus.com/club_portal/lessons",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogamaastricht.nl",
+      "image_urls": [
+        "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/01/YM-interieur3_b.jpg",
+        "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/01/YM-interieur6.jpg",
+        "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/01/YM-interieur1_a.jpg"
+      ],
+      "founded_year": 2007
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Vast abonnement",
+      "url": "https://www.yogamaastricht.nl/tarieven/",
+      "description": "Monthly to yearly memberships for one or two classes a week, or unlimited classes, with class cards for extra sessions and single drop-in rates on the same page. A one-off registration fee applies.",
+      "price": "1 x per week per maand > € 58,-; onbeperkt per maand > €105,00",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/02/beurs.jpg"
+    },
+    {
+      "title": "Maandelijkse pranayamales",
+      "url": "https://www.yogamaastricht.nl/workshop/maandelijkse-pranayamales/",
+      "description": "A 90-minute breathing practice on one Sunday morning a month with Marianne Defesche, for students who already know the basics of pranayama. It can be joined in the studio or online, and questions from home practice can be sent in beforehand.",
+      "price": "€ 16 voor leden met actief abonnement; overige deelnemers €18,50",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/01/YM-interieur3_b.jpg"
+    },
+    {
+      "title": "Introductiecursus pranayama",
+      "url": "https://www.yogamaastricht.nl/cursus/introductie-cursus-pranayama/",
+      "description": "A six-week Sunday morning course introducing Iyengar pranayama, taught in Dutch by Marianne Defesche for students with at least a year of posture practice. Planned for January and February 2027, subject to confirmation.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2025/11/IMG_4183.jpeg"
+    },
+    {
+      "title": "Yoga & soep",
+      "url": "https://www.yogamaastricht.nl/cursus/cursus-a/",
+      "description": "A monthly three-hour Sunday session with Melanie Tillema that works through a different theme each time, for students with at least a year of Iyengar practice, followed by a bowl of soup.",
+      "price": "€39,50 voor leden met een actief abonnement; niet leden €45,00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2025/11/Photoroom_20251231_172738.jpeg"
+    },
+    {
+      "title": "Glenn Ceresoli komt naar Maastricht!",
+      "url": "https://www.yogamaastricht.nl/workshop/glenn-ceresoli-komt-naar-maastricht/",
+      "description": "A three-day weekend workshop, taught in English, with the Australian senior Iyengar teacher Glenn Ceresoli, for students with over a year of practice who are steady in headstand and shoulderstand. One or two days can be booked if places remain.",
+      "price": "3 dagen €350,00; 2 dagen €245,00; 1 dag €130,00",
+      "product_type": "course",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2024/10/IMG_0690.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1912,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Instagram and Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogamaastricht.nl/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Website from the IYVN teacher finder (Melanie Tillema, Maastricht); robots.txt open.",
+      "Email info@yogamaastricht.nl is the studio inbox; the trial-class page has an application form, but no general contact form.",
+      "Booking URL is the studio's own reservation portal on opencontrolplus.com (linked from the site); not opened.",
+      "Photos are the studio's own interior shots (practice hall with rope wall in black and white, a second room, and the washing corridor).",
+      "Glenn Ceresoli is a visiting guest teacher (not linked).",
+      "Possible future listings: Melanie Tillema (founder, mentor), Marianne Defesche, Andra Elvika, Ümit (surname not given).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Maastricht has few Spiritpedia listings.",
+      "founded_year 2007 from the teachers page (Melanie moved to Maastricht and started Yoga Maastricht in 2007)."
+    ],
+    "left_out": [
+      "Yoga voor bekkenbodem en postpartumgezondheid (pelvic floor and postpartum course): health rule, and already run (Sep-Oct 2026).",
+      "Yoga Asana & Physiology with Dr. Hermann Traitteur (6-8 Nov 2026): started before 12 Nov, and framed around working with conditions.",
+      "Pregnancy and postnatal classes; Melanie Tillema's breast-cancer programme: health rule.",
+      "Trial class (€10, second free): kept out as a separate item; mentioned in the bio.",
+      "Webshop (props and books): retail, not teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1358,
+    "healer_slug": "la-grace-integral-life-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a25e0cb6-4a62-4f70-a058-735c96ad34a7",
+      "slug": "integral-yoga-a-consciousness-based-approach",
+      "title": "Integral Yoga, a Consciousness-Based Approach"
+    },
+    {
+      "table": "courses",
+      "id": "de79d179-f321-4019-9ef3-c79353d8b869",
+      "slug": "cosmic-consciousness-in-the-light-of-sri-aurobindo",
+      "title": "Cosmic Consciousness in the light of Sri Aurobindo"
+    },
+    {
+      "table": "courses",
+      "id": "b7f60e08-e01f-4903-adcd-06fcea949caf",
+      "slug": "aitareya-and-taittiriya-upanishads",
+      "title": "Aitareya and Taittiriya Upanishads"
+    },
+    {
+      "table": "courses",
+      "id": "d46489a6-5a71-4d34-9323-8a15dc91c96b",
+      "slug": "a-course-in-sanskrit-grammar-semester-1",
+      "title": "A Course in Sanskrit Grammar, Semester 1"
+    },
+    {
+      "table": "free_resources",
+      "id": "acaf4eb1-dcc7-4c82-9f69-812f467d768a",
+      "slug": "integral-yoga-level-ia",
+      "title": "Integral Yoga, Level I.A."
+    },
+    {
+      "table": "free_resources",
+      "id": "86e90644-7680-4674-ad81-e0c5e20d19b0",
+      "slug": "monday-night-savitri-circle",
+      "title": "Monday Night Savitri Circle"
+    },
+    {
+      "table": "free_resources",
+      "id": "90831d3c-e90d-43ed-a1bc-aee47906f378",
+      "slug": "online-sunday-sangha",
+      "title": "Online Sunday Sangha"
+    }
+  ],
+  "at": "2026-11-11T21:40:46.502Z"
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1372,
+    "healer_slug": "ananda-sangha-pune"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "da36df0f-9c56-4d36-b645-1c3b20c9abff",
+      "slug": "ananda-yoga-classes-aundh",
+      "title": "Ananda Yoga classes (Aundh)"
+    },
+    {
+      "table": "courses",
+      "id": "998216ad-8945-4302-847c-b1f500777b08",
+      "slug": "learn-to-meditate-path-of-kriya-yoga-level-1",
+      "title": "Learn to Meditate: Path of Kriya Yoga (Level 1)"
+    },
+    {
+      "table": "courses",
+      "id": "31d3c3f1-c432-416d-9224-7c45b7ca72d5",
+      "slug": "kriya-yoga-meditation-level-2-the-art-and-science-of-raja-yoga",
+      "title": "Kriya Yoga Meditation – Level 2 (The Art and Science of Raja Yoga)"
+    }
+  ],
+  "at": "2026-11-11T19:07:13.840Z"
+}

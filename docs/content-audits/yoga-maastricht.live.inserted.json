@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1401,
+    "healer_slug": "yoga-maastricht"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "86afbb4c-e8fe-4a45-bd51-2576d567ca87",
+      "slug": "vast-abonnement",
+      "title": "Vast abonnement"
+    },
+    {
+      "table": "courses",
+      "id": "e0194234-073f-42e8-ae63-9b1739e707c4",
+      "slug": "maandelijkse-pranayamales",
+      "title": "Maandelijkse pranayamales"
+    },
+    {
+      "table": "courses",
+      "id": "840bf426-631e-47b9-9177-f1480c7142f0",
+      "slug": "introductiecursus-pranayama",
+      "title": "Introductiecursus pranayama"
+    },
+    {
+      "table": "courses",
+      "id": "a0bfa6fb-df49-4cc5-a691-bf628e5e1c8b",
+      "slug": "yoga-soep",
+      "title": "Yoga & soep"
+    },
+    {
+      "table": "courses",
+      "id": "4f5ef1c8-9972-4ccf-95a6-f750c7431243",
+      "slug": "glenn-ceresoli-komt-naar-maastricht",
+      "title": "Glenn Ceresoli komt naar Maastricht!"
+    }
+  ],
+  "at": "2026-11-11T21:42:49.207Z"
+}

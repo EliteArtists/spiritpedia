@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-ahmedabad",
+    "location_source": "https://anandaahmedabad.org/contact/",
+    "create": {
+      "name": "Ananda Sangha Ahmedabad",
+      "bio": "Ananda Sangha Ahmedabad is the Gujarat branch of Ananda Sangha, the worldwide movement Swami Kriyananda started in 1968 to pass on the Kriya Yoga teachings of his guru, Paramhansa Yogananda. The group began meeting in 2018 in a small flat and, as numbers grew, moved to a larger dedicated meditation hall in Bodakdev, in the west of the city; members now hope to buy land and build a centre of their own.\n\nThe centre is led by Nayaswami Devendra, a Kriyacharya who has practised Kriya Yoga for some twenty years and helped set up Ananda groups in several other Indian cities. Newcomers start with a two-part Learn to Meditate class, taught in English or Hindi, which introduces the Hong-Sau concentration technique and Yogananda's Energization Exercises as the first step towards Kriya initiation. After that, students can join group meditations most mornings and some evenings, mainly on Zoom with one in-person sitting each week.\n\nA free Sunday-morning satsang at the hall, also streamed online, brings chanting, a short meditation and a talk drawn from the Bhagavad Gita and Yogananda's teachings. Music matters here too: kirtan evenings and occasional harmonium classes support the devotional side of the path.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Ahmedabad, Gujarat",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandaahmedabad.org/",
+      "booking_url": "https://anandaahmedabad.org/learn-to-meditate/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://anandaahmedabad.org/wp-content/uploads/2025/11/IMG_3656-scaled.jpg",
+        "https://anandaahmedabad.org/wp-content/uploads/2024/09/Group-Meditation-New-Center-e1726072279773-650x544.jpg"
+      ],
+      "founded_year": 2018
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate (The Path of Kriya Yoga: Level 1)",
+      "url": "https://anandaahmedabad.org/learn-to-meditate/",
+      "description": "A two-part introductory class, in English or Hindi, teaching a simple concentration technique, ways to relax and energise body and mind, guided practice and tips for daily meditation, followed by ongoing support through the centre's group sittings. The first step towards Kriya Yoga; new dates are announced on the page.",
+      "price": "Rs. 1600/- (includes course handout)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://anandaahmedabad.org/wp-content/uploads/2024/09/Group-Meditation-New-Center-e1726072279773.jpg"
+    },
+    {
+      "title": "Chanting, kirtan and harmonium classes",
+      "url": "https://anandaahmedabad.org/chanting-music/",
+      "description": "Devotional chanting of songs by Yogananda and Kriyananda alongside traditional chants, with regular kirtan evenings and periodic beginners' classes in harmonium and cymbals to accompany the chants.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://anandaahmedabad.org/wp-content/uploads/2021/09/Chanting-Music-page-banner.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Satsang",
+      "url": "https://anandaahmedabad.org/satsangs/",
+      "description": "A weekly Sunday-morning gathering at the Ahmedabad centre, also on Zoom, with chants, a short meditation, an affirmation and a talk by one of Ananda's acharyas on Yogananda's teachings and the Bhagavad Gita. Free; all welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://anandaahmedabad.org/wp-content/uploads/2025/01/Meditation-Kriya-Yoga-1.png"
+    },
+    {
+      "title": "Group Meditations for students",
+      "url": "https://anandaahmedabad.org/group-meditation/",
+      "description": "Regular sittings for those who have learned meditation with Ananda: early-morning sessions from Tuesday to Friday that begin with the Energization Exercises, and evening meditations on Thursdays and Saturdays, held on Zoom. Free of charge.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://anandaahmedabad.org/wp-content/uploads/2025/11/IMG_3656-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2015,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel linked on the pages read → 0 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://anandaahmedabad.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "Contact: contact form at /contact/ (Gravity Forms); no email published on the pages read. Phone/WhatsApp +91 90238 63562 also given.",
+      "The address on the contact page is a flat in a commercial building (#703, Colonnade-2, Ashok Vatika Road, Bodakdev), visits 'with prior appointment'; photos show a fitted meditation hall used for in-person satsang.",
+      "Most practice sessions are on Zoom; the Sunday satsang and a Thursday-evening sitting are in person.",
+      "Kriya Yoga / meditation centre rather than a hatha yoga school; kind kept as yoga-school per the lead. ",
+      "Health rule: the site offers healing prayers, healing classes and 'improve your health' wording; left out. Items describe only the practice.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership (Nayaswamis Jyotish and Devi; locally Nayaswami Devendra).",
+      "Possible future listing: Nayaswami Devendra (centre leader).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Foundation Meditation Course (8 weeks from 20 Sept 2026, ₹ 4100 / ₹ 5100): already started.",
+      "Healing Prayers page: health framing.",
+      "Skills for Life: Summer Workshop (kids): seasonal, past.",
+      "Learn to Meditate dates on the page (21 and 28 June) are past; listed undated."
+    ]
+  },
+  "images_final": true
+}

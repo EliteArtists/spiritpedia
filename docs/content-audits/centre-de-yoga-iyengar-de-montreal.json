@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-de-montreal",
+    "location_source": "https://iyengaryogamontreal.com/nous-joindre/",
+    "create": {
+      "name": "Centre de Yoga Iyengar de Montréal",
+      "bio": "The Centre de Yoga Iyengar de Montréal is a French-speaking Iyengar studio on Rue Clark in the Plateau Mont-Royal, founded in 1989 by Marie-Andrée Morin. It is now run by two of her former students, Claudie Berge and Marie-Chantal Perras, who co-own it, and a team of nine certified teachers who belong to the Iyengar Yoga Association of Canada. Claudie, certified at Level 2 and authorised to mentor new teachers, has studied in Pune with Prashant and Geeta Iyengar.\n\nThe centre's bright, wood-floored room of about 900 square feet is fitted with ropes, chairs, blankets and blocks. Teaching follows the syllabus set in Pune, moving from a beginners' Level 1 class through combined multi-level groups, with classes of seventy-five minutes to two hours that close with relaxation, and quieter sessions using ropes and chairs. Regular online classes, including an early Friday practice, are taught over Zoom, and private one-to-one lessons can be arranged. For students who have practised the method for at least three years, the centre offers a three-year mentoring programme towards certification, combining observation and practice with study of anatomy and readings in Indian philosophy, with the final assessment validated by senior Canadian teachers.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Montreal, Quebec",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://iyengaryogamontreal.com/",
+      "booking_url": "https://iyengaryogamontreal.com/tarifs-des-cours-2/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@iyengaryogamontreal.com",
+      "image_urls": [
+        "https://iyengaryogamontreal.com/wp-content/uploads/2015/12/professeurs.jpg",
+        "https://iyengaryogamontreal.com/wp-content/uploads/2015/12/ponts.jpg"
+      ],
+      "founded_year": 1989
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Programme de formation (Mentorat)",
+      "url": "https://iyengaryogamontreal.com/formations/",
+      "description": "A three-year mentoring programme for students with at least three consecutive years of Iyengar practice, guided by a designated certified teacher. Study through practice, observation and classes is supported by anatomy and suggested reading in Indian philosophy, and the final assessment is validated by senior teachers of the Canadian association.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyengaryogamontreal.com/wp-content/uploads/2015/12/professeurs.jpg"
+    },
+    {
+      "title": "Cours réguliers au Centre",
+      "url": "https://iyengaryogamontreal.com/les-cours/",
+      "description": "Weekly in-studio classes taught in sequence from a beginners' Level 1 to multi-level groups, following the posture syllabus from Pune. Each class lasts between 75 minutes and two hours and ends with relaxation; new students can join at any time.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyengaryogamontreal.com/wp-content/uploads/2015/12/professeurs.jpg"
+    },
+    {
+      "title": "Cartes de cours illimités",
+      "url": "https://iyengaryogamontreal.com/tarifs-des-cours-2/",
+      "description": "Unlimited monthly or three-month class cards for in-studio classes, with introductory cards for new students and class-pack cards for occasional attendance. A trial class is available for the Level 1 groups.",
+      "price": "Carte Mauve – 115.00$ +tx (1 mois); Carte Orange – 85.00$ +tx (nouveaux élèves)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyengaryogamontreal.com/wp-content/uploads/2020/08/Cartes-CYIM-Orange-1024x570.jpg"
+    },
+    {
+      "title": "Cours en ligne",
+      "url": "https://iyengaryogamontreal.com/horaires-des-cours-en-ligne/",
+      "description": "Live online classes over Zoom, booked and paid for individually through the centre's online calendar.",
+      "price": "$19.00+tx",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://iyengaryogamontreal.com/wp-content/uploads/2026/08/horaires_automne2026_31aout-19dec-1-1024x962.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1911,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Instagram and Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://iyengaryogamontreal.com/nous-joindre/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Website from the IYAC/ACYI Find a Studio list; bare host iyengaryogamontreal.com, robots.txt open.",
+      "Email info@iyengaryogamontreal.com is the centre's inbox; no contact form (the home page has a newsletter form only).",
+      "Photos are wide banner images (1,400 x 600) from the centre's own site with an orange colour overlay on the right third, showing students practising in the studio; no plain studio photo was found.",
+      "Prices are published with a trailing $ and '+tx' (Canadian dollars implied, not stated); copied as published.",
+      "Workshops page lists only past workshops; no current workshop or retreat was found.",
+      "Possible future listings: Claudie Berge (co-owner, Level 2, mentor), Marie-Chantal Perras (co-owner), Christine Michaud, Paola Atallah, Martine Letarte, Nasim Behrouzmehr, Léa Nivet, Svetlana Veranes; founder Marie-Andrée Morin.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "founded_year 1989 from the Centre Iyengar de Montréal page."
+    ],
+    "left_out": [
+      "Past workshops (2018-2021 and the forest retreat): over.",
+      "Rope-and-chair and relaxation classes as separate items: share the classes page URL.",
+      "Private classes: mentioned on the home page only, no page of their own.",
+      "Class page note on joint problems and scoliosis: not used."
+    ]
+  },
+  "images_final": true
+}

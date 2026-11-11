@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "swami-dayananda-ashram",
+    "location_source": "https://www.dayananda.org/contact-us",
+    "create": {
+      "name": "Swami Dayananda Ashram (Arsha Vidya Pitham)",
+      "bio": "Swami Dayananda Ashram, also called Arsha Vidya Pitham, sits beside the Ganga at Muni Ki Reti on the edge of Rishikesh. Swami Dayananda Saraswati set it up in the 1960s as a gurukulam for the traditional study of Advaita Vedanta and Sanskrit, and it remains one of the main seats of the Arsha Vidya teaching line he founded. His samadhi shrine, the Adhishthanam, stands in the grounds alongside a Shiva temple, a library, a bookshop and a dining hall serving simple vegetarian meals. Swami Sakshatkrtananda Saraswati, a long-time disciple, has been its chief acharya since 2022.\n\nTeaching follows the sampradaya method: the Upanishads, the Bhagavad Gita and the Brahma Sutras are read with Shankara's commentaries, in English, together with Paninian Sanskrit grammar, Vedic chanting, meditation and satsang. Senior disciples of Swami Dayananda lead week-long memorial retreats each spring, and the ashram runs short and long residential courses, including a three-year course that began in 2025. Visitors who come to study may stay and join the daily classes, and the main festivals, above all Maha Shivaratri, are kept with chanting and temple worship.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "founded_year": null,
+      "city": "Rishikesh, Uttarakhand",
+      "country": "India",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://www.dayananda.org/",
+      "booking_url": "https://www.dayananda.org/visit-the-ashram",
+      "youtube_url": "https://www.youtube.com/@sda_rishikesh",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dayas1088@gmail.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/wSZDyPDcGlUVeoy6QdQoWQkpm0tt62I2tvk-0lnhTh3WiBIE-fNykBCiI88ZKrvzEE5Vnsb0DU4=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Swami Dayananda Memorial Retreats 2027",
+      "url": "https://www.dayananda.org/swami-dayananda-memorial-retreats-2027",
+      "description": "A season of week-long residential retreats at the ashram from February to April 2027, each led by a senior teacher of the Arsha Vidya line on one text or theme, from the Bhagavad Gita and the Mundaka Upanishad to Mandukya Karika. Applications close 90 days before each retreat begins.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-07",
+      "end_date": "2027-04-27",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/wSZDyPDcGlUVeoy6QdQoWQkpm0tt62I2tvk-0lnhTh3WiBIE-fNykBCiI88ZKrvzEE5Vnsb0DU4=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Study visits and daily classes",
+      "url": "https://www.dayananda.org/visit-the-ashram",
+      "description": "Students of Vedanta can ask to stay at the ashram through its visit form and attend the regular classes held there each day, covering Vedanta, Sanskrit, chanting of the Vedas and yoga. Rooms are offered to those coming to study, not as a guest house.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "https://yt3.ggpht.com/wSZDyPDcGlUVeoy6QdQoWQkpm0tt62I2tvk-0lnhTh3WiBIE-fNykBCiI88ZKrvzEE5Vnsb0DU4=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Maha Shivaratri and annual camps",
+      "url": "https://www.dayananda.org/celebrations-and-events",
+      "description": "Each year the ashram marks Maha Shivaratri with a day of chanting and worship in its Shiva temple, when students of the tradition receive sannyasa initiation, and holds memorial and annual camps around it. Dates are posted on the page.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/wSZDyPDcGlUVeoy6QdQoWQkpm0tt62I2tvk-0lnhTh3WiBIE-fNykBCiI88ZKrvzEE5Vnsb0DU4=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2303,
+    "hub": null,
+    "tier_evidence": "YouTube 2,450 subscribers (@sda_rishikesh, YouTube Data API, 11 Nov 2026); no other readable counts → ~2.5k → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.dayananda.org/contact-us",
+    "contact_form_url": "https://www.dayananda.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from arshavidya.org's Rishikesh ashram page (Arsha Vidya network). Facts from dayananda.org (robots.txt allows us).",
+      "Possible editorial-stature override: this is Swami Dayananda's own founding ashram in Rishikesh, a main seat of the Arsha Vidya tradition.",
+      "Address is Muni Ki Reti, a town adjoining Rishikesh; city given as Rishikesh, Uttarakhand.",
+      "Photo: the only image is the YouTube channel avatar (Data API), a photo of Swami Dayananda's murti at the ashram's Adhishthanam shrine. Site photos are on static.wixstatic.com, which refuses us, so none used.",
+      "The site warns of a fraudulent look-alike website taking room bookings in the ashram's name; the plan uses only dayananda.org.",
+      "Thin-ish: three items (retreat season, study visits, Maha Shivaratri camps); the channel's uploads are daily live pujas, not teaching talks, so no videos.",
+      "Teachers: Swamini Svatmavidyananda (on Spiritpedia) is named on the teachers page as Resident Acharya teaching the short and long courses: linked as instructor. Other named teachers (Swami Sakshatkrtananda, Swami Parabrahmananda) are not on Spiritpedia. Possible future listings: Swami Sakshatkrtananda Saraswati.",
+      "Second published email: sakshat1949@gmail.com (the chief acharya's own).",
+      "Dry run not run: node scripts/ingest.mjs was refused by a permission prompt; image checked by hand (yt3.ggpht.com avatar, 800x800, loads, 200)."
+    ],
+    "left_out": [
+      "Three-month course Jan–Apr 2027: applications closed on 10 Nov 2026.",
+      "Three-year residential course: began in 2025.",
+      "Six-month courses (Vidya Varshini, Tirunelveli; Arsha Vidya Mandir, Rajkot/Vadodara in Hindi): run by other gurukulams, only announced on this site.",
+      "YouTube uploads: daily temple pujas, dated, not teaching."
+    ]
+  },
+  "images_final": true
+}

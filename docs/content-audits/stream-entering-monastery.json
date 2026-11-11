@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "stream-entering-monastery",
+    "location_source": "https://plumvillage.org/practice-centre/stream-entering-monastery",
+    "create": {
+      "name": "Stream Entering Monastery",
+      "bio": "Known in Vietnamese as Tu viện Nhập Lưu and in English also as Plum Village Australia, Stream Entering Monastery is a residential community in the tradition of Thich Nhat Hanh. It began in 2010 when five of his monastic disciples, backed by lay sanghas around Australia, set up a nunnery at Beaufort in Victoria. In 2021 the community moved to a bush property at Porcupine Ridge, near Daylesford and about an hour north of Melbourne, on Dja Dja Wurrung country. Today both nuns and monks live there, several of them Dharma teachers who trained in Plum Village centres in France, Thailand, Vietnam and the United States.\n\nThe sisters and brothers open the monastery to visitors in several ways. Days of Mindfulness on Thursdays and Sundays combine singing and walking meditation, a Dharma talk, group sharing and a mindful lunch, with some Sundays given to reciting the Five or Fourteen Mindfulness Trainings in English or Vietnamese. Guests can also stay for a few days or weeks and join the daily rhythm, and there are longer retreats, many of them bilingual, through the year. Practice guides on its website cover sitting and walking meditation, total relaxation and the mindfulness trainings.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2010,
+      "availability": "worldwide",
+      "city": "Porcupine Ridge, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.streamenteringmonastery.org/",
+      "booking_url": "https://www.streamenteringmonastery.org/overnight-stay",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "streamentering.office@pvaustralia.org",
+      "image_urls": [
+        "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Love is the Way | 5 Day Retreat",
+      "url": "https://www.streamenteringmonastery.org/event-details/love-is-the-way-5-day-retreat",
+      "description": "A residential New Year retreat at the monastery, open to individuals and families, with breathing, walking and deep listening practice on the theme of true love. Teaching is in English and Vietnamese.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-30",
+      "end_date": "2027-01-03",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    },
+    {
+      "title": "Stay & Practice with us (overnight stays)",
+      "url": "https://www.streamenteringmonastery.org/overnight-stay",
+      "description": "Visitors may live alongside the monastics for anything from a couple of nights to several weeks, staying on the grounds and following the community's daily schedule; the monastery suggests one to two weeks to settle in. Three meals a day are included.",
+      "price": "Suggested contribution: $80/night adult or teenager, $60/night student, $40/night children (5–12)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    },
+    {
+      "title": "Days of Mindfulness",
+      "url": "https://www.streamenteringmonastery.org/event-calendar",
+      "description": "Regular Thursday and Sunday practice days at the monastery: singing and walking meditation, a Dharma talk by one of the resident teachers, sharing in small groups and a mindful lunch. Some Sundays are given to reciting the Five or Fourteen Mindfulness Trainings. RSVP first.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Total Relaxation",
+      "url": "https://www.streamenteringmonastery.org/total-relaxation",
+      "description": "Step-by-step instructions for the Plum Village practice of total relaxation, lying down and moving attention through the body with the breath, as used at the end of practice days.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    },
+    {
+      "title": "Sitting Meditation",
+      "url": "https://www.streamenteringmonastery.org/sitting-meditation",
+      "description": "A short guide to sitting in the Plum Village way: finding an easy posture on a cushion or chair, following the breath and meeting feelings with gentleness.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    },
+    {
+      "title": "The Five Mindfulness Trainings",
+      "url": "https://www.streamenteringmonastery.org/the-five-mindfulness-trainings",
+      "description": "The text of the Five Mindfulness Trainings, the ethical guidelines that lay practitioners in the tradition recite together and may formally receive.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://plumvillage.org/wp-content/uploads/2022/05/viber_image_2021-06-21_14-32-36-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1803,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its site and none found in one web search; Facebook/Instagram not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.streamenteringmonastery.org/overnight-stay",
+    "contact_form_url": "https://www.streamenteringmonastery.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Regional: Porcupine Ridge, a rural locality near Daylesford, Victoria (well under 5,000 people); recorded as published, for the owner to map.",
+      "Photo: its own site is Wix (all images on static.wixstatic.com, which refuses our robots.txt request), so the one photo is the monastery building from plumvillage.org's own page for this centre (plumvillage.org allows us). Only one image.",
+      "Retreat prices appear only in the event page's data (ticket types from $250 AUD), so the retreat is entered as 'Contact for pricing'.",
+      "The community was founded as a nunnery; its monastics page now also lists four resident monks.",
+      "No hub links: none of the ten resident monastics named on its monastics page is on Spiritpedia. Brother Phap Linh (on Spiritpedia) appears only in a linked practice video, not as a teacher there. Teachers file written with an empty list.",
+      "Domain pvaustralia.org (office email) not opened; address published as a mailto on the site's own pages.",
+      "Possible duplicate check: Mountain Spring Monastery (NSW) is a separate Plum Village centre, skipped earlier as a channel lead."
+    ],
+    "left_out": [
+      "Smile, Breathe & Go Slowly 4-day retreat (31 Oct–3 Nov 2026): past.",
+      "Retreat in Motion: Old Path White Clouds pilgrimage to India and Nepal (Feb 2027): fully booked and abroad.",
+      "Daily online morning meditation and chanting: only dated event pages from March 2026 and a plumvillage.org page; no evergreen page on its own site.",
+      "Peace walk, public talk and members-only weekend: one-off or closed events.",
+      "Videos: no own channel found."
+    ]
+  },
+  "images_final": true
+}

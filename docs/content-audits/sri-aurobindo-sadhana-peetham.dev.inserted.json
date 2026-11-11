@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1434,
+    "healer_slug": "sri-aurobindo-sadhana-peetham"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a96e7360-76e0-426e-97b5-6266ddc292a6",
+      "slug": "monthly-community-retreats-and-study-groups",
+      "title": "Monthly community retreats and study groups"
+    },
+    {
+      "table": "courses",
+      "id": "4d15df1f-9850-4ad3-80de-2cb82692deec",
+      "slug": "visits-and-short-guest-stays",
+      "title": "Visits and short guest stays"
+    },
+    {
+      "table": "courses",
+      "id": "285d0a43-220f-4d95-bbcd-c798c87a5f42",
+      "slug": "residential-sadhana",
+      "title": "Residential sadhana"
+    }
+  ],
+  "at": "2026-11-11T21:36:24.399Z"
+}

@@ -1,0 +1,190 @@
+{
+  "healer": {
+    "healer_slug": "sri-ramana-maharshi-heritage",
+    "location_source": "https://www.srmh.org/",
+    "create": {
+      "name": "Sri Ramana Maharshi Heritage",
+      "bio": "Sri Ramana Maharshi Heritage is a US non-profit, registered in 2022 and based in Fremont, California, that serves people drawn to the life and teaching of Sri Ramana Maharshi, the sage of Arunachala whose central practice was self-enquiry, the question 'Who am I?'. It works closely with Sri Ramanasramam in Tiruvannamalai, whose president has visited its gatherings, and it brings together several satsang groups across North America under one roof.\n\nIn the San Francisco Bay Area a weekly Saturday evening satsang, held in person and online, moves through chanting of Ramana's own compositions in Tamil and Sanskrit, a talk on his teaching, close study of a verse, reading from the classic records of his conversations, and silent meditation. Groups in the Washington DC area and Detroit follow a similar pattern, and the affiliated Sri Ramana Maharshi Center of Sonoma in Sebastopol keeps a satsang hall open for quiet sitting, with rooms for retreats. The Heritage also runs a monthly online satsang and a summer camp for young people, marks Ramana's birth, passing and arrival at Arunachala each year, and posts its talks, notably a long series of discourses on Atma Bodha, on YouTube and as a podcast.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 2022,
+      "city": "Fremont, California",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.srmh.org/",
+      "booking_url": "https://www.srmh.org/san-francisco-bay-area.html",
+      "youtube_url": "https://www.youtube.com/@sriramanamaharshiheritage",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sriramanabhagavanheritage@gmail.com",
+      "image_urls": [
+        "https://www.srmh.org/images/social-image/logo-social.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Discourse on Anma Bodham by Shri V. Krithivasan, September 26, 2026, SF Bay Area Satsang",
+      "url": "https://www.youtube.com/watch?v=sJaKWReBLTk",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    },
+    {
+      "title": "Discourse on Anma Bodham by Shri V. Krithivasan, September 19, 2026, SF Bay Area Satsang",
+      "url": "https://www.youtube.com/watch?v=ARqkosOaVL0",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    },
+    {
+      "title": "Discourse on Anma Bodham by Shri V. Krithivasan, September 12, 2026, SF Bay Area Satsang",
+      "url": "https://www.youtube.com/watch?v=zk-TD8HcXE8",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    },
+    {
+      "title": "Talk by Shri V. Krithivasan at Bhagavan's 130th Advent Celebration, Bay Area Satsang",
+      "url": "https://www.youtube.com/watch?v=7qGQ88HHXK4",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    },
+    {
+      "title": "Aksharamanamalai,  Upadesa Saram, Arunachala Pancharatnam - 130th Advent Day Celebration -Sri Ramana",
+      "url": "https://www.youtube.com/watch?v=cZcba5Xs4pw",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    },
+    {
+      "title": "Who am I? - SRMH Youth Summer Camp 2026",
+      "url": "https://www.youtube.com/watch?v=Z6dXzLcvgiM",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Sri Ramana Maharshi Heritage"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "San Francisco Bay Area weekly satsang",
+      "url": "https://www.srmh.org/san-francisco-bay-area.html",
+      "description": "Every Saturday from 5 to 7 pm Pacific time, in person and on Zoom: chanting of Ramana's compositions, a talk on his teaching, study of one verse, readings from the records of his conversations, and twenty minutes of silent sitting. All are welcome.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.srmh.org/images/social-image/logo-social.png"
+    },
+    {
+      "title": "Sri Ramana Maharshi Center of Sonoma",
+      "url": "https://www.srmh.org/center-of-sonoma.html",
+      "description": "A satsang hall in Sebastopol, about fifty miles north of San Francisco, open for quiet meditation or study by door code, with a lending library, local and online satsangs, bhajan and film nights, and rooms for up to twelve people on overnight retreats.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://www.srmh.org/images/social-image/logo-social.png"
+    },
+    {
+      "title": "Washington DC area satsang",
+      "url": "https://www.srmh.org/washington-dc-area.html",
+      "description": "Meetings on the first and third Saturdays of each month at 5.30 pm with readings from Ramana's talks and letters, chanting of his Tamil and Sanskrit works, devotional singing and meditation.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.srmh.org/images/social-image/logo-social.png"
+    },
+    {
+      "title": "Monthly virtual Youth Satsang",
+      "url": "https://www.srmh.org/Youth-Satsang.html",
+      "description": "A monthly Zoom meeting on the second Sunday for people aged 14 to 35 in North America, with reading, discussion of self-enquiry, chanting, individual singing and a guided meditation.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.srmh.org/images/social-image/logo-social.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Who am I?",
+      "url": "https://www.srmh.org/core-teaching.html",
+      "description": "The Heritage's core-teaching page presents Ramana's short early text Who am I?, the basic instruction in self-enquiry, with a note on its history from A. W. Chadwick's memoir.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.srmh.org/images/social-image/logo-social.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2314,
+    "hub": null,
+    "tier_evidence": "YouTube 1,300 subscribers (@sriramanamaharshiheritage, YouTube Data API, 11 Nov 2026) → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.srmh.org/",
+    "contact_form_url": "https://www.srmh.org/contact-us.html",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lead from Sri Ramanasramam's Satsangh Centres list (gururamana.org), US section. Facts from srmh.org (no robots.txt; 404, so no rules).",
+      "Base: the published address is a PO box in Fremont, California; city given as Fremont. The Bay Area satsang has no fixed hall named on the page; celebrations are held at venues in Fremont.",
+      "The Sri Ramana Maharshi Center of Sonoma (Sebastopol) has its own site (maharshicentersonoma.org) and could be a separate listing; included here as an item because the Heritage's site presents it as one of its activities.",
+      "Photo: the Heritage's logo (social image, 1200x630) showing Ramana inside the organisation's name; no photo of a hall.",
+      "Videos are from its own channel; video titles copied as published. A talk titled with 'Bhagavan's Medicine for the disease of humanity' was passed over under the health rule.",
+      "No Spiritpedia teachers named (main speaker V. Krithivasan is not listed); teachers file has no links.",
+      "Gmail address used as the organisation's published email.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: logo loads (200, image/png, 1200x630)."
+    ],
+    "left_out": [
+      "Detroit Michigan area satsang: page not opened.",
+      "Youth Summer Camp page: content loads by script.",
+      "Advent Retreat 2024/2025: past.",
+      "Spotify podcast and calendar sales."
+    ]
+  },
+  "images_final": true
+}

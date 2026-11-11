@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1348,
+    "healer_slug": "integral-yoga-institute-of-new-jersey"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2ac080e9-6548-4a09-b996-b8d8bef6c27a",
+      "slug": "class-memberships-in-person-and-on-zoom",
+      "title": "Class memberships (in person and on Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "8873ba49-9167-4e71-b4e7-b4f9fb0a03cd",
+      "slug": "introduction-to-meditation",
+      "title": "Introduction to Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "6d3aaf88-440d-4c9e-ae54-935b62983fd4",
+      "slug": "private-yoga-classes-2",
+      "title": "Private Yoga Classes"
+    }
+  ],
+  "at": "2026-11-11T21:40:18.614Z"
+}

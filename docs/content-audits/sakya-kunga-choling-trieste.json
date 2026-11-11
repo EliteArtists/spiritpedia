@@ -1,0 +1,91 @@
+{
+  "healer": {
+    "healer_slug": "sakya-kunga-choling-trieste",
+    "location_source": "https://www.sakyatrieste.it/ (footer: Via Guglielmo Marconi 34, Trieste)",
+    "create": {
+      "name": "Sakya Künga Chöling",
+      "bio": "Sakya Künga Chöling is a Tibetan Buddhist centre of the Sakya school in Trieste, in north-eastern Italy, and the first Buddhist centre to be founded in the region of Friuli Venezia Giulia. It was established by the Tibetan master Khenchen Sherab Gyaltsen Amipa Rinpoche, and since his death its spiritual guide has been his chosen successor, Khenpo Tashi Sangpo Amipa, who oversees all the Sakya centres Khenchen Sherab founded across Europe. A Sakya nun, Ani Sherab Choden, lives at the centre and serves as its president; before taking robes she sang professionally in Trieste's opera house. The shrine room, in a city flat on Via Marconi, is hung with painted thangkas around a richly laid altar.\n\nEvery Wednesday evening Ani Sherab Choden leads teaching and guided meditation in person, and a second weekly session of practice and teaching takes place on Zoom for those who register. Members also gather regularly for Tara and Mahakala practices, study traditional Sakya texts, and follow an introductory course for newcomers. Alongside its Dharma activity, the centre runs a long-standing project supporting Tibetan refugee children in India and Nepal through sponsorship and study grants, and the community of around a hundred members and friends meets each December for a seasonal gathering.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Trieste",
+      "country": "Italy",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.sakyatrieste.it/",
+      "booking_url": "https://www.sakyatrieste.it/events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.sakyatrieste.it/wp-content/uploads/2018/10/tempio.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Wednesday teachings and guided meditation",
+      "url": "https://www.sakyatrieste.it/2024/07/11/corso-base-di-buddhismo-tibetano-2/",
+      "description": "Every Wednesday at 7pm, teaching and guided meditation in person with the resident nun Ani Sherab Choden at the centre on Via Marconi, Trieste. In Italian.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.sakyatrieste.it/wp-content/uploads/2025/07/guru-rinpoche-05.jpg"
+    },
+    {
+      "title": "Weekly online practice and teaching on Zoom",
+      "url": "https://www.sakyatrieste.it/2024/03/28/sessione-di-meditazione-in-streaming/",
+      "description": "The centre's weekly online meditation and teaching sessions, with dates listed on the page; register through the link under each date to receive a Zoom invitation. In Italian.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.sakyatrieste.it/wp-content/uploads/2018/10/TaraBianca.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2228,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or follower counts linked from its site; small city centre of about a hundred members → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.sakyatrieste.it/chi-siamo/contatti/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Trieste.",
+      "No email published: contact form on its Contatti page, phone +39 040 571048.",
+      "Photo: the shrine room (from its home page; the page links it as http, fetched over https on the same host). Checked.",
+      "Site and programme in Italian.",
+      "Founded year not stated on the pages read.",
+      "No hub links: Khenpo Tashi Sangpo Amipa and Ani Sherab Choden are not on Spiritpedia.",
+      "The only video on its home page is from Unione Buddhista Italiana's channel, not the centre's; not used.",
+      "Found via the Sakya global links list (sakyatradition.org, names and links only)."
+    ],
+    "left_out": [
+      "Ayurvedic massage course (9 Nov post): health/bodywork, outside scope.",
+      "Medicine Buddha ritual: healing item.",
+      "Christmas gathering (11 Dec): a social and fundraising evening.",
+      "Progetto India: child sponsorship appeal.",
+      "Individual event pages on /events/: same weekly sessions as the two items.",
+      "\"The Sakya school\": an article page, not a practice resource (lead session)"
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (2 items once article pages were taken out). List it, or skip?"
+  }
+}

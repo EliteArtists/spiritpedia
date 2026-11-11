@@ -1,0 +1,82 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1404,
+    "healer_slug": "zen-centrum-nijmegen"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 10002,
+      "slug": "de-zendo-verlicht-lezing-hans-korteweg",
+      "title": "De Zendo Verlicht - Lezing Hans Korteweg"
+    },
+    {
+      "table": "videos",
+      "id": 10003,
+      "slug": "michel-dijkstra-poetische-lezing-over-zenmeester-dogen",
+      "title": "Michel Dijkstra: poëtische lezing over zenmeester Dogen"
+    },
+    {
+      "table": "videos",
+      "id": 10004,
+      "slug": "gesprek-met-dick-verstegen-nico-tydeman-en-gerolf-t-hooft-boekpresentatie-en-jubileum-zcn",
+      "title": "Gesprek met Dick Verstegen, Nico Tydeman en Gerolf 't Hooft -Boekpresentatie en jubileum ZCN -"
+    },
+    {
+      "table": "videos",
+      "id": 10005,
+      "slug": "hans-indruk-van-een-sesshin",
+      "title": "Hans' indruk van een sesshin"
+    },
+    {
+      "table": "videos",
+      "id": 10006,
+      "slug": "welkom-in-de-werkelijkheid-boekentrailer",
+      "title": "Welkom in de werkelijkheid - boekentrailer"
+    },
+    {
+      "table": "videos",
+      "id": 10007,
+      "slug": "oh-ja-het-nieuwe-boek-van-zenleraar-dick-verstegen",
+      "title": "Oh ja! Het nieuwe boek van zenleraar Dick Verstegen"
+    },
+    {
+      "table": "videos",
+      "id": 10008,
+      "slug": "wat-is-zen",
+      "title": "Wat is zen?"
+    },
+    {
+      "table": "courses",
+      "id": "023a4bee-7092-4760-b4d9-badbcf577a37",
+      "slug": "starterstraject-zen",
+      "title": "Starterstraject zen"
+    },
+    {
+      "table": "courses",
+      "id": "4ed074ca-0e71-435c-972f-fe84a1925867",
+      "slug": "studieklas-mahamudra",
+      "title": "Studieklas – Mahamudra"
+    },
+    {
+      "table": "courses",
+      "id": "827fb9ff-02a1-40ca-a18c-80e70852de47",
+      "slug": "stille-zondag-3e-zondag-v-d-maand",
+      "title": "Stille zondag – 3e zondag v/d maand"
+    },
+    {
+      "table": "courses",
+      "id": "65001127-1945-4871-9fa0-be49b920ade2",
+      "slug": "dana-daisan",
+      "title": "Dana Daisan"
+    },
+    {
+      "table": "courses",
+      "id": "2f3282bb-4ecd-4648-9013-5c3e2f6f8090",
+      "slug": "retraites-of-sesshins",
+      "title": "Retraites of sesshins"
+    }
+  ],
+  "at": "2026-11-11T21:42:55.806Z"
+}

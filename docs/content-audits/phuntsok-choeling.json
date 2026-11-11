@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "phuntsok-choeling",
+    "location_source": "https://www.phuntsokchoeling.co.nz/",
+    "create": {
+      "name": "Phuntsok Choeling",
+      "bio": "Phuntsok Choeling, a Tibetan name meaning a place of spiritual abundance, is a small Buddhist centre in Napier in Hawke's Bay, New Zealand. It follows the Sakya school of Tibetan Buddhism and was started by a group of local practitioners under the spiritual direction of Lama Choedak Rinpoche, who visits each year to teach. The centre describes itself as the only Sakya centre in the country and is run as a charitable trust by its members.\n\nMost weeks bring a short morning calm-abiding sit on Zoom from Monday to Saturday, an evening silent sit at the centre on Mondays and a chanted Chenrezig practice on Wednesdays, with a Green Tara puja on the first Sunday of each month; the regular practices are open to all for a koha. Beginners can take a four-week introduction to Buddhism, an eight-week calm-abiding course or a one-day meditation workshop. Each year Lama Choedak Rinpoche leads a weekend retreat in calm abiding and insight and a Vajrayana retreat with empowerments, while senior students lead two rural residential retreats. Recorded public talks are posted on the centre's YouTube channel, and it keeps a lending library of Buddhist books.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Napier",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.phuntsokchoeling.co.nz/",
+      "booking_url": "https://www.phuntsokchoeling.co.nz/",
+      "youtube_url": "https://www.youtube.com/@phuntsokchoeling",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "phuntsok.choeling@gmail.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/UXwpyimJeIhAmkcG5Bu20jwdm0p2MulkSqVythLTjAyTL-DO35X15BpaqpqnPRH_n1oQy_y-gA=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "\"The Miracle of Mindfulness\" Public Talk with Lama Choedak Rinpoche 19th September 2025",
+      "url": "https://www.youtube.com/watch?v=ybeZxn3eWvY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Looking After Ourselves and Others in Uncertain Times – Lama Choedak Rinpoche Public Talk 30/05/25",
+      "url": "https://www.youtube.com/watch?v=7pUVdyFMfJg",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Calm Abiding Meditation Course",
+      "url": "https://www.phuntsokchoeling.co.nz/",
+      "description": "An eight-week course in shamatha, the Tibetan practice of settling and steadying the mind, taught at the Napier centre in Lama Choedak Rinpoche's method. The fee includes a copy of his meditation manual; dates are given on request.",
+      "price": "$120",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2054,
+    "hub": null,
+    "tier_evidence": "YouTube 15 subscribers (Phuntsok Choeling Hawke's Bay Buddhist Centre, UCGQa7KW7cwHkWs-HdXlKYKA; YouTube Data API, 11 Nov 2026; linked from its own site); Facebook not fetched → ~15 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.phuntsokchoeling.co.nz/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 1 source(s)",
+    "flags": [
+      "Thin: the whole site is one page (its sections and event details open in place, with no separate URLs), so under the one-item-per-URL rule only one offering can be listed; the rest is in the bio. 3 items in total (1 offering, 2 videos).",
+      "Photo: the site's images are embedded in the page as data, so the only photo is the YouTube channel avatar, the centre's Sakya emblem (checked).",
+      "Regional: Napier, Hawke's Bay, New Zealand; no Spiritpedia listings there.",
+      "Email phuntsok.choeling@gmail.com is the centre's general inbox (shown on its page).",
+      "No hub links: Lama Choedak Rinpoche (spiritual director) is not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Lama Choedak Rinpoche.",
+      "The robots.txt URL returns 404 (no robots file), so nothing is disallowed.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Weekly practices, Introduction to Buddhism, Day of Meditation, annual retreats and membership: all on the same single page URL as the listed course (one item per URL).",
+      "Calm Abiding Retreat 20–23 November 2026: no page of its own (details open in a pop-up).",
+      "Video 'Health and Well Being: A Buddhist Perspective': health wording in the title.",
+      "Lama Choedak Rinpoche's books (one titled Healing Relationships): his own works, not the centre's; no ISBNs on a page we may use.",
+      "Prayer dedications for illness: health rule."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (a one-page site, three items) with only a logo. List it, or skip?"
+  }
+}

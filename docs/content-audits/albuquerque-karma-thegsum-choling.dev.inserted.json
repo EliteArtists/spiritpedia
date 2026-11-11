@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1420,
+    "healer_slug": "albuquerque-karma-thegsum-choling"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "36857a45-f95c-4861-83f3-c6ce90cda531",
+      "slug": "membership-of-albuquerque-ktc",
+      "title": "Membership of Albuquerque KTC"
+    },
+    {
+      "table": "free_resources",
+      "id": "7b2672c2-25d6-4f0c-8578-aa6c51eccf24",
+      "slug": "sunday-sadhana-and-group-meditation",
+      "title": "Sunday sadhana and group meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "78e8c717-2e39-48c7-a60b-783ea581702b",
+      "slug": "chenrezig-sadhana-practice-text",
+      "title": "Chenrezig sadhana practice text"
+    }
+  ],
+  "at": "2026-11-11T21:04:03.007Z"
+}

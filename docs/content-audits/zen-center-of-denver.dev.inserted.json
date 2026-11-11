@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1416,
+    "healer_slug": "zen-center-of-denver"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "338b0ccf-970b-4231-a9d6-f693983f5974",
+      "slug": "beginners-night-and-intro-to-zen-seminar",
+      "title": "Beginners' Night and Intro to Zen Seminar"
+    },
+    {
+      "table": "courses",
+      "id": "1eb7903f-77f6-4c72-a03a-be9424e85745",
+      "slug": "rohatsu-sesshin-2026-4",
+      "title": "Rohatsu Sesshin 2026"
+    },
+    {
+      "table": "courses",
+      "id": "eadf9c72-0329-496d-9e4e-20504b21aa58",
+      "slug": "summer-sesshin-2027-2",
+      "title": "Summer Sesshin 2027"
+    },
+    {
+      "table": "courses",
+      "id": "ff2088d9-4853-4cc8-8fe3-c1ea12c7fb3f",
+      "slug": "membership-12",
+      "title": "Membership"
+    },
+    {
+      "table": "courses",
+      "id": "a45b10df-2c47-45e8-8049-2b8890117eb2",
+      "slug": "zazenkai-2",
+      "title": "Zazenkai"
+    },
+    {
+      "table": "free_resources",
+      "id": "c823b22d-8cc5-4dc2-b38a-d351ef7dbe0c",
+      "slug": "recent-dharma-talks",
+      "title": "Recent dharma talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "9ebe9b9e-ed38-447b-bb60-e91bb950d860",
+      "slug": "daily-zazen-on-zoom",
+      "title": "Daily zazen on Zoom"
+    }
+  ],
+  "at": "2026-11-11T19:37:59.639Z"
+}

@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "three-treasures-sangha",
+    "location_source": "https://three-treasures-sangha.org/contact-information/",
+    "create": {
+      "name": "Three Treasures Sangha",
+      "bio": "Three Treasures Sangha is a lay Zen community in Seattle and one of the groups affiliated with the Diamond Sangha, the lineage that Robert Aitken Rōshi brought from the Sanbō Kyōdan school to Hawaii. The group has met for more than twenty-five years. Aitken himself was among its early teachers, followed by Jack Duffy Rōshi, an Aitken heir who led it until he stepped back at the end of 2021. Its present teacher is Lee Shields, who received independent teaching status in a transmission ceremony that November, with Madelon Yamane Bolling also teaching. Practice combines silent sitting, sutra chanting, talks and private interviews, and students may work with breath-counting, koans or just sitting.\n\nThe sangha's home is Dharma Gate, a renovated house in south Seattle with a zendo, an interview room, a library and a garden for walking meditation, which it shares with a mindfulness community. Sittings run on Wednesday evenings in person and on Zoom, with early-morning Zoom sittings on weekdays. A one-day zazenkai is held most months, and two seven-day sesshin a year alternate between a residential retreat at a camp in western Washington and a non-residential one in the city. Newcomers are asked to attend an orientation first, and transcripts of recent talks are posted on its website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Seattle, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://three-treasures-sangha.org/",
+      "booking_url": "https://three-treasures-sangha.org/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ttssangha@gmail.com",
+      "image_urls": [
+        "https://three-treasures-sangha.org/wp-content/uploads/2013/04/5-960x332.jpg",
+        "https://three-treasures-sangha.org/wp-content/uploads/2013/04/2-960x332.jpg",
+        "https://three-treasures-sangha.org/wp-content/uploads/2019/06/TTSangha-Logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Residential Sesshin with Jack Duffy and Lee Shields, March 2027",
+      "url": "https://three-treasures-sangha.org/twining-branches-march-sesshin/",
+      "description": "A traditional seven-day silent retreat at Samish Island Camp and Retreat Center in western Washington, led by Jack Duffy Rōshi and Lee Shields, with long days of sitting and walking meditation, daily dharma talks and private interviews. Those new to sesshin are invited to get in touch first.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-13",
+      "end_date": "2027-03-20",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://three-treasures-sangha.org/wp-content/uploads/2025/03/Ikebana.jpg"
+    },
+    {
+      "title": "Zazenkai (monthly day of practice)",
+      "url": "https://three-treasures-sangha.org/calendar/",
+      "description": "A one-day sitting retreat held most months at Dharma Gate and on Zoom, led in turn by the sangha's teachers, with zazen, walking meditation and a talk. Longer two-day intensives and the twice-yearly sesshin are listed on the same calendar.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://three-treasures-sangha.org/wp-content/uploads/2016/07/meditation-group-in-seattle.jpg"
+    },
+    {
+      "title": "Orientation for newcomers",
+      "url": "https://three-treasures-sangha.org/join-us/orientation/",
+      "description": "Beginners, and Zen students new to the group, are asked to attend an orientation before sitting with the sangha. It covers the forms of the lineage and answers questions; it is arranged by phone.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://three-treasures-sangha.org/wp-content/uploads/2011/10/orientation.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://three-treasures-sangha.org/join-us/membership/",
+      "description": "Regular members commit to a sitting practice and help run the sangha; supporting members take part less often. Both receive the member rate for sesshin, and weekly sitting stays free for everyone whether or not they join.",
+      "price": "dues of $35/month, though membership is not contingent on ability to pay",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://three-treasures-sangha.org/wp-content/uploads/2015/10/membership.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zen talks",
+      "url": "https://three-treasures-sangha.org/talks/",
+      "description": "Transcripts of dharma talks given at the sangha's zenkai and sesshin, mostly by Lee Shields with some by Madelon Bolling, posted shortly after they are given and often working through a koan or a classic Zen text.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "https://three-treasures-sangha.org/wp-content/uploads/2022/02/2-teachers.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2153,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://three-treasures-sangha.org/contact-information/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Email ttssangha@gmail.com is the sangha's shared inbox (contact and about pages). The sesshin page also shows a misspelt 'ttsangha@gmail.com'; not used.",
+      "Photos: two wide banners of the Dharma Gate zendo (960x332, people sitting or walking in the zendo; faces of members visible) and the sangha's logo, all from its own home page and checked. Owner may prefer the logo first if member faces are a concern.",
+      "Sesshin price: the March 2027 fees appear only inside the registration form's settings (hidden form data), so 'Contact for pricing' is used.",
+      "No hub links: Lee Shields, Madelon Yamane Bolling and Jack Duffy Roshi are not on Spiritpedia. Possible future listings: Lee Shields, Jack Duffy Roshi. Teachers file written with an empty list. Carlos Abusaid Elias leads one zenkai (8 Nov 2026) and is not linked.",
+      "Dharma Gate is shared with the Mindfulness Community of Puget Sound (a separate group).",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "September 2027 non-residential sesshin: listed only on the calendar page, which is already the Zazenkai item's URL.",
+      "Weekly Wednesday and Zoom morning sittings: also on the calendar page (same URL), so not a separate item.",
+      "Book of Lee Shields's talks, 'Weaving Wind and Stone': by a teacher, not the centre; no ISBN page opened.",
+      "Monthly gardening days: work days, not teaching."
+    ]
+  },
+  "images_final": true
+}

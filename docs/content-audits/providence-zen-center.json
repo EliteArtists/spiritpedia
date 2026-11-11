@@ -1,0 +1,195 @@
+{
+  "healer": {
+    "healer_slug": "providence-zen-center",
+    "location_source": "https://providencezen.org/about-us",
+    "create": {
+      "name": "Providence Zen Center",
+      "bio": "Providence Zen Center serves as the main temple for the Americas region of the Kwan Um School of Zen, the international community founded by the Korean Zen Master Seung Sahn. It grew out of the small group that formed around him after he arrived in Providence, Rhode Island, in 1972, and later moved to a wooded property in Cumberland, a short drive north of the city, where a pagoda and a monastery building now stand beside a pond. Its guiding teachers are Zen Master Dae Kwang, Zen Master Tan Gong (José Ramírez) and the abbot, Kwan Haeng Sunim.\n\nPractice follows the Kwan Um forms of sitting, chanting, bowing and kong-an interviews with a teacher. The centre keeps a daily schedule, a free Wednesday evening dinner and practice, and a Sunday morning programme with a beginners' class and a Dharma talk that is also streamed. Several evenings a week run on Zoom. It holds one- to three-day retreats through the year and the long silent Kyol Che retreats in winter and summer, and offers guest stays and a residential training programme for those who want to live in a Zen community.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1972,
+      "availability": "worldwide",
+      "city": "Cumberland, Rhode Island",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://providencezen.org/",
+      "booking_url": "https://providencezen.org/schedule",
+      "youtube_url": "https://www.youtube.com/@pzcweb",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@providencezen.org",
+      "image_urls": [
+        "https://providencezen.org/wp-content/uploads/2020/03/DSC_0389-scaled.jpg",
+        "https://providencezen.org/wp-content/uploads/2022/08/monastery_sunset-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Providence Zen Center Hosts Zen Master Dae Kwang for the Sunday Dharma Talk.",
+      "url": "https://www.youtube.com/watch?v=crTweIzo2sU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center Hosts Zen Master Tan Gong (José Ramírez) for the Sunday Dharma Talk.",
+      "url": "https://www.youtube.com/watch?v=ZXhlHdX15Dw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center Hosts Kwan Haeng Sunim JDPS for the Sunday Dharma Talk.",
+      "url": "https://www.youtube.com/watch?v=71E_rzn4Z8k",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center hosts Zen Master Dae Kwang for the Sunday dharma talk.",
+      "url": "https://www.youtube.com/watch?v=QPljDEWOHuQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center Hosts  Zen Master Tan Gong (José Ramírez) for the Sunday Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=DCjvTqBsw-g",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center Hosts Wonil Sunim for the Sunday Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=V6UzxN0F40g",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    },
+    {
+      "title": "Providence Zen Center Hosts Zen Master Dae Kwang for the Sunday Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=9Tfm9ocjw4k",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Providence Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kyol Che Long Retreats",
+      "url": "https://providencezen.org/kyol-che",
+      "description": "The school's intensive silent retreats, held at the head temple for up to 90 days in winter and 30 days in summer, with set entry and exit dates. Earlier retreat experience in the Kwan Um School is required.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://providencezen.org/wp-content/uploads/2024/10/winter-kyolche-scaled.jpg"
+    },
+    {
+      "title": "Guest Stays",
+      "url": "https://providencezen.org/guest-stay",
+      "description": "Short or longer stays at the centre in shared or single rooms, joining the daily round of chanting and sitting. Breakfast is included; a monthly single-room option is also offered.",
+      "price": "Monthly Guest Stay – Single Room: $1,800/month; nightly rates on the page",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://providencezen.org/wp-content/uploads/2020/03/DSC_0389-scaled.jpg"
+    },
+    {
+      "title": "Zen Training Program (residency)",
+      "url": "https://providencezen.org/residency",
+      "description": "Residents live, eat, work and practise together on the centre's schedule, following Seung Sahn's view that shared community life shows us our habits clearly. The monthly fee covers board and all retreats held there, including Kyol Che.",
+      "price": "$960 per month (2025 fee, private room)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://providencezen.org/wp-content/uploads/2020/03/DSC_0389-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly Meditation Classes and Sunday Dharma Program",
+      "url": "https://providencezen.org/schedule",
+      "description": "A free beginners' instruction class on Wednesday evenings and Sunday mornings, followed by sitting and walking meditation and, on Sundays, a Dharma talk with questions. Donations welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://providencezen.org/wp-content/uploads/2020/03/DSC_0389-scaled.jpg"
+    },
+    {
+      "title": "Hybrid & Online Zen Practice",
+      "url": "https://providencezen.org/online-practice-schedule",
+      "description": "Sunday sittings and talks, Tuesday chanting with kong-an interviews and a Thursday reading group, all joinable on Zoom, with the Sunday talk also streamed on YouTube.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://providencezen.org/wp-content/uploads/2020/03/DSC_0389-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1804,
+    "hub": null,
+    "tier_evidence": "YouTube 1,240 subscribers (Providence Zen Center @pzcweb, UCApuDk0FoHQrrPoqy7FbA0A; YouTube Data API, 11 Nov 2026; linked from its own site); Facebook, Instagram, X not fetched → ~1.2k → local_hero",
+    "email": "yes",
+    "email_source": "https://providencezen.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Possible editorial-stature override: head temple of the Kwan Um School of Zen in the Americas, founded by Zen Master Seung Sahn; not raised.",
+      "Regional: Cumberland, Rhode Island (town of about 36,000).",
+      "Site found by web search (the Kwan Um list names providencezen.org in text but links '#'); robots.txt allows all.",
+      "Founded year 1972 = when Seung Sahn began teaching in Providence (about-us page); the Cumberland site came later.",
+      "Email info@providencezen.org is the general-enquiries inbox on the contact page; director@ handles retreats and stays.",
+      "No hub links: none of its teachers (Dae Kwang, Tan Gong / José Ramírez, Kwan Haeng Sunim, Dennis Duermeier) or its founder Seung Sahn is on Spiritpedia. Teachers file written with an empty list. Possible future listings: Zen Master Dae Kwang, Zen Master Seung Sahn.",
+      "Residency fee is the published 2025 figure; 2026 not stated.",
+      "Upcoming retreat listings load by script and could not be read; Kyol Che kept as an evergreen item."
+    ],
+    "left_out": [
+      "Upcoming one-, two- and three-day retreats: listing loads by script, no dated pages read.",
+      "YouTube Shorts and clips under 2 minutes.",
+      "Kids' Dharma School, art retreat and rentals: not core practice offerings or no current page read.",
+      "Books page (books-kusz): orders of school authors, not authored by the centre."
+    ]
+  },
+  "images_final": true
+}

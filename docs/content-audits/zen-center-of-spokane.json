@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "zen-center-of-spokane",
+    "location_source": "https://zencenterspokane.org/contact/",
+    "create": {
+      "name": "Zen Center of Spokane",
+      "bio": "The Zen Center of Spokane is a lay Zen group in downtown Spokane, Washington, affiliated with the Diamond Sangha, the lineage founded by Robert Aitken Rōshi that joins the Sōtō and Rinzai approaches. Its teacher is Jack Duffy Rōshi, one of Aitken's dharma heirs, who makes his home on Lummi Island, among the San Juans, and guides the group mostly at a distance; Carlos Abusaid Elias, his apprentice teacher, has also given talks at its retreats. Being a Buddhist is not required to sit with the group, and people from any tradition are welcome.\n\nThe zendo is a room in the Saranac Building on West Main Avenue, entered by keypad, so first-time visitors arrange a short orientation by phone or through the website's form and come a little early. Members sit together three times a week, in rounds of twenty-five minutes broken by walking meditation and a short sutra recitation. On the first Saturday of most months Duffy joins by Zoom to give a talk, answer questions and meet students one to one. Twice a year, in spring and late autumn, the group holds a five-day retreat that people can attend in the zendo or online, and recordings of the teacher's talks from these retreats and the Saturday sessions are posted on its website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Spokane, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://zencenterspokane.org/",
+      "booking_url": "https://zencenterspokane.org/our-practice/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://zencenterspokane.org/wp-content/uploads/2026/11/20261101_JPALLEN_IMG_1590-1024x767.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly zazen and monthly teisho",
+      "url": "https://zencenterspokane.org/our-practice/",
+      "description": "Group sitting three times a week in the downtown zendo, in rounds of twenty-five minutes with walking meditation and a short sutra recital. On the first Saturday of most months the teacher, Jack Duffy Rōshi, joins by Zoom for a talk, questions and private interviews. New people arrange an orientation before their first sit.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Semi-annual hybrid retreats",
+      "url": "https://zencenterspokane.org/our-practice/retreats/",
+      "description": "Five-day Zen retreats held each spring and late autumn, led by Jack Duffy Rōshi, which can be attended in the Spokane zendo or remotely on Zoom. Days are given to zazen, walking meditation and the teacher's talks.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma talks (teisho)",
+      "url": "https://zencenterspokane.org/dharma-talks-teisho/",
+      "description": "Recordings of Jack Duffy Rōshi's talks from the group's retreats since 2023 and from the monthly Saturday sessions, with a few given by Carlos Abusaid Elias.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    },
+    {
+      "title": "For newcomers",
+      "url": "https://zencenterspokane.org/for-newcomers-2/",
+      "description": "A short guide for first-time visitors on sitting and walking meditation as the group practises them, with links to two beginners' talks by Jack Duffy and a suggested introductory book.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2155,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://zencenterspokane.org/contact/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Spokane, Washington.",
+      "No email published; contact is the form on its contact page (plus a phone number).",
+      "Photo: the only image on the site is a group portrait of fifteen members seated in the zendo after the autumn 2026 retreat (1024x767, from the home page). No logo or empty-hall photo exists. Held for the owner to decide whether a group portrait is acceptable.",
+      "robots.txt sets Crawl-delay: 30; requests were spaced at least 30 seconds apart.",
+      "No hub links: Jack Duffy Roshi and Carlos Abusaid Elias are not on Spiritpedia. Possible future listing: Jack Duffy Roshi (also guides Three Treasures Sangha, rank 2153). Teachers file written with an empty list.",
+      "Small item count: two offerings and two free resources.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Autumn 2026 'Wandering Mountain' retreat (late Oct to 1 Nov 2026): past; next retreat not yet dated.",
+      "Calendar page is empty (embedded calendar only).",
+      "Beginners' talks hosted on Mountain Lamp's site: not opened separately."
+    ],
+    "held": "Only image is a group portrait of members in the zendo; the site has no logo or photo of the room alone. Owner to decide whether this photo is acceptable for an Organisation listing."
+  }
+}

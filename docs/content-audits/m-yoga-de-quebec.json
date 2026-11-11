@@ -1,0 +1,109 @@
+{
+  "healer": {
+    "healer_slug": "m-yoga-de-quebec",
+    "location_source": "https://myogaquebec.com/nous-joindre/",
+    "create": {
+      "name": "M Yoga de Québec",
+      "bio": "M Yoga de Québec describes itself as the first Iyengar yoga studio in Quebec City. It opened in 2015 in a multidisciplinary centre on Rue Marie-de-l'Incarnation and is directed by Louis Gérin, a certified Level 2 Iyengar teacher who trained at the Centre de Yoga Iyengar de Montréal with Marie-Andrée Morin, Donna Fornelli and Tim Ruddy after first studying the method in Quebec City. A pianist and music teacher by profession, he also holds a minor in Sanskrit from Université Laval. A small team of certified teachers, including Sylvie Moisan, teaches alongside him, all members of the Iyengar Yoga Association of Canada.\n\nThe bright main hall, with a rope wall, chairs, blankets and blocks, hosts classes in French that follow a yearly posture programme for each level, from Level 1 and gentle classes through to intermediate and advanced groups, each ending in Savasana. Classes run in two fifteen-week sessions each autumn and winter, paid for with class cards, and private lessons are available. Occasional three-hour weekend workshops explore a theme in depth for students at Level 2 and above. Since 2021 the studio has run a three-year mentoring programme for experienced students who wish to become certified Iyengar teachers.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Québec, Quebec",
+      "country": "Canada",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://myogaquebec.com/",
+      "booking_url": "https://myogaquebec.com/horaire-tarifs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@myogaquebec.com",
+      "image_urls": [
+        "https://myogaquebec.com/wp-content/uploads/2021/09/studio-m-yoga-02.jpg",
+        "https://myogaquebec.com/wp-content/uploads/2015/07/caroussel-3.jpg",
+        "https://myogaquebec.com/wp-content/uploads/2022/05/m-yoga-quebec.jpg"
+      ],
+      "founded_year": 2015
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Cartes de cours (sessions d'automne et d'hiver)",
+      "url": "https://myogaquebec.com/horaire-tarifs/",
+      "description": "Class cards for the studio's fifteen-week autumn and winter sessions, from a single class up to fifteen, with private one-hour lessons priced on the same page. The winter session runs from January to April 2027.",
+      "price": "15 cours 280$ + taxes (321,93$); 10 cours 190$ + taxes; 1 cours 22$ + taxes",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://myogaquebec.com/wp-content/uploads/2015/07/horaire-et-tarifs.jpg"
+    },
+    {
+      "title": "Cours réguliers",
+      "url": "https://myogaquebec.com/cours-et-ateliers/cours/",
+      "description": "Graded weekly classes of 75 or 90 minutes that follow an annual posture programme for each level, from Level 1 through intermediate and advanced, and end with Savasana. Newcomers are encouraged to begin at Level 1.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://myogaquebec.com/wp-content/uploads/2022/05/m-yoga-quebec.jpg"
+    },
+    {
+      "title": "Formation des professeurs (mentorat)",
+      "url": "https://myogaquebec.com/cours-et-ateliers/formation-des-professeurs/",
+      "description": "A mentoring programme of about three years for students with at least three years of Iyengar practice. Apprentices attend two classes a week, assist and teach in Level 1 classes, and meet monthly for three-hour study sessions on the art of teaching.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://myogaquebec.com/wp-content/uploads/2015/07/formation-des-professeurs.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1916,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://myogaquebec.com/nous-joindre/",
+    "contact_form_url": "https://myogaquebec.com/nous-joindre/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Website from the IYAC/ACYI Find a Studio list; robots.txt open.",
+      "Email info@myogaquebec.com and a registration/message form are both on the contact page.",
+      "'First Iyengar studio in Quebec City' is the studio's own claim (home page), phrased as such in the bio.",
+      "Photos: the empty practice hall with rope wall (1,400 x 600 banner), a class in forward bends, and the studio logo.",
+      "Prices are published with a trailing $ and taxes (Canadian dollars implied, not stated); copied as published.",
+      "Availability 'local': recordings of one class type are mentioned on the price page, but no live online classes were found.",
+      "Possible future listings: Louis Gérin (director, Level 2, mentor), Sylvie Moisan, Geneviève St-Martin, Môses Alafe Santos.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Quebec City has few Spiritpedia listings.",
+      "founded_year 2015 from the studio page ('ouvert depuis 2015')."
+    ],
+    "left_out": [
+      "Workshop 8 Nov 2026 ('Connaissez-vous vraiment vos postures...'): before 12 Nov.",
+      "Older workshops on the same page (2025): past.",
+      "'Récupération et Détente' recordings: name suggests recovery work, borderline; left out.",
+      "Free trial classes (September 2026): over.",
+      "Partner services in the building (massage therapy, individual therapy): not the studio's own teaching."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,116 @@
+{
+  "healer": {
+    "healer_slug": "tapas-yoga-hk",
+    "location_source": "https://tapasyogahk.com/contact.html",
+    "create": {
+      "name": "Tapas Yoga HK",
+      "bio": "Tapas Yoga HK (一念瑜伽) is a small yoga school in Hong Kong's New Territories, with a main studio in Yuen Long and a second room in Tsuen Wan. It was started in 2019 by Tung, a former software engineer who trained as a teacher in Mysore and now holds authorisation from the Sharath Yoga Centre to teach Ashtanga. The name draws on tapas, the inner fire of discipline in Patanjali's Yoga Sutras, while the Chinese name points to bringing the mind back to the present moment.\n\nBoth studios hold Ashtanga in the Mysore style, where each student moves through the sequence at their own pace and the teacher works with them one by one, alongside a timetable of hatha, vinyasa, yin and gentle classes in small groups, taught in Cantonese and English. The school also trains teachers: a Yoga Alliance registered 200-hour course run over weekends at Tsuen Wan, covering asana across several styles, philosophy including the Yoga Sutras, pranayama, meditation and teaching practice, and a shorter certificate course in leading singing-bowl sound sessions. Workshops on the Ashtanga primary series are held from time to time.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2019,
+      "availability": "local",
+      "city": "Yuen Long",
+      "country": "Hong Kong",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "sound-healing"
+      ],
+      "website_url": "https://tapasyogahk.com/",
+      "booking_url": "https://tapasyogahk.com/schedule.html",
+      "youtube_url": "https://www.youtube.com/@tapasyogahkyuenlongtsuenwa4428",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "tapasyogahk@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Tapas的200Hours Multi Style Yoga Teacher Training Course有甚麼特別呢？",
+      "url": "https://www.youtube.com/watch?v=2gT1JWAJOxs",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Tapas Yoga HK Yuen Long Tsuen Wan Yoga 元朗 荃灣 一念瑜伽 "
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "200-Hour RYT200 Yoga Teacher Training",
+      "url": "https://tapasyogahk.com/teacher-training/ryt200-yoga-teacher-training.html",
+      "description": "A Yoga Alliance registered 200-hour training held on weekends at the Tsuen Wan studio, in cohorts of six to ten. Trainees study hatha, vinyasa, Ashtanga and yin asana, the Yoga Sutras and yogic ethics, pranayama and meditation, and practise teaching with feedback.",
+      "price": "HK$29,888 early bird; HK$32,888 regular",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Ashtanga Yoga Mysore classes",
+      "url": "https://tapasyogahk.com/tapas-yuen-long-hk-yoga-classes/yoga-class-ashtanga-yoga-mysore.html",
+      "description": "Two-hour Mysore-style sessions held at both studios: students work through the Ashtanga series in their own rhythm while the teacher helps each of them in turn. Suitable for newcomers and long-time practitioners; a trial class is offered.",
+      "price": "Trial class $200 (as published); regular rates: Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ]
+    },
+    {
+      "title": "16-Hour Sound Healing Certificate Course",
+      "url": "https://tapasyogahk.com/teacher-training/sound-healing-certificate-course.html",
+      "description": "A two-weekend certificate course at the Yuen Long studio for groups of six to eight. It teaches singing-bowl technique, layering tones and planning sound sessions for one person or a group, with supervised practice.",
+      "price": "HK$4,000 early bird; HK$4,500 regular",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "chakra-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2106,
+    "hub": null,
+    "tier_evidence": "YouTube 37 subscribers (Tapas Yoga HK channel, Data API, 11 Nov 2026); Instagram, Facebook and X not fetched → ~37 total → local_hero.",
+    "email": "yes",
+    "email_source": "https://tapasyogahk.com/teacher-training/ryt200-yoga-teacher-training.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Tung Yiu, Tapas Yoga HK, website tapasyogahk.com); facts from the school's own site (robots.txt allows all, and names Claude-User as allowed).",
+      "A multi-style studio rather than an Ashtanga-only shala: it also runs aerial yoga, yoga wheel, core and prenatal/postnatal classes, which are left out; its Ashtanga Mysore programme and teacher training make it a school in the brief's sense.",
+      "The founder is named only as 'Tung' on the site (the Sharath list gives Tung Yiu); his personal site yogatung.com is linked but was not requested.",
+      "Email is a Gmail inbox shown as a mailto link on the RYT200 page (and in the footer of the workshop page).",
+      "Sound healing course kept as a skills course; its page also mentions 'therapeutic applications of frequency', which is not repeated in the description. Drop it if unwanted.",
+      "Mysore price: only the trial price is published ('$200', currency not stated on that page; the home page FAQ is in Hong Kong context).",
+      "Only one video is 2 minutes or longer (a 12-minute talk about the teacher training); the rest of the channel is short clips.",
+      "Country written as 'Hong Kong' (as in an earlier plan); the Sharath list files it under China.",
+      "Possible future listings: Tung (founder), Charmain, Hailey, Jacqueline, Deon, Yan.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Yuen Long, Hong Kong; Spiritpedia has few listings in Hong Kong."
+    ],
+    "left_out": [
+      "Aerial Yoga Teacher Training and Yoga Wheel Teacher Training: fitness-led apparatus courses.",
+      "Prenatal and postnatal yoga classes (pregnancy-related).",
+      "Yoga Cikitsā Ashtanga workshop with Tung, 23–25 May 2026: has passed.",
+      "Myofascial release and 'yoga therapy' classes (body-treatment framing).",
+      "Short YouTube clips under 2 minutes (Baddha Padmasana how-to, yoga wheel camel, studio promos)."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): the ingest could not load any profile photo from its site or channel."
+  }
+}

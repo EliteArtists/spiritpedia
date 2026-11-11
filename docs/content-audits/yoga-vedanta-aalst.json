@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "yoga-vedanta-aalst",
+    "location_source": "https://www.yoga-vedanta-aalst.be/lidworden.html",
+    "create": {
+      "name": "Yoga Vedanta Aalst",
+      "bio": "Yoga Vedanta Aalst is the Aalst branch of the Divine Life Society, the movement founded in Rishikesh by Swami Sivananda, and teaches classical hatha yoga and Vedanta in his line in this East Flemish town. It is run as a non-profit association with a large team of volunteer teachers, and in 2026 it moved from its Swami Sivananda Yoga Ashram on Volksverheffingstraat into a new ashram on Geraardsbergsestraat, opened with a ceremony and satsang in September.\n\nThe weekly timetable runs from Monday to Saturday, with beginners' and advanced hatha yoga classes in the mornings, afternoons and evenings, yoga nidra once a month, a Friday meditation evening and a Saturday satsang open to all. Members also get live online classes four times a week and a library of recorded lessons. New students start after a free introductory talk and join for a yearly membership fee. Yoga Vedanta Aalst also runs its own four-year Yoga Academy, a teacher training of more than 500 hours covering asana, pranayama and meditation, the Yoga Sutras, Upanishads and Bhagavad Gita, Western anatomy and philosophy, and the art of teaching, recognised by the Flemish yoga federation and the European Yoga Union. Weekend retreats are held during the year.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Aalst",
+      "country": "Belgium",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.yoga-vedanta-aalst.be/",
+      "booking_url": "https://www.yoga-vedanta-aalst.be/nieuwelessen.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yoga-vedanta-aalst.be",
+      "image_urls": [
+        "https://www.yoga-vedanta-aalst.be/graphics/embleem2.gif"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga for beginners (yearly membership)",
+      "url": "https://www.yoga-vedanta-aalst.be/nieuwelessen.html",
+      "description": "Beginners start with a free introductory talk at the ashram and then choose a weekly class slot on a weekday morning, afternoon or evening. The yearly membership covers a year of lessons.",
+      "price": "80 euro per year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yoga-vedanta-aalst.be/graphics/embleem5.gif"
+    },
+    {
+      "title": "Weekly timetable: classes, meditation and satsang",
+      "url": "https://www.yoga-vedanta-aalst.be/adressen.html",
+      "description": "The full timetable of hatha yoga classes for beginners and advanced students with each teacher, plus yoga nidra on the last Friday of the month, a Friday evening meditation and a Saturday satsang open to everyone.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.yoga-vedanta-aalst.be/graphics/embleem5.gif"
+    },
+    {
+      "title": "Live online yoga classes for members",
+      "url": "https://www.yoga-vedanta-aalst.be/homeindex.html",
+      "description": "Members can follow four live online classes a week, on Monday, Wednesday, Thursday and Friday, and use a collection of recorded audio and video lessons. Access is given by email.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yoga-vedanta-aalst.be/afbeelding/facebookImage1.gif"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2316,
+    "hub": null,
+    "tier_evidence": "Facebook linked but never fetched; no YouTube; 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.yoga-vedanta-aalst.be/homeindex.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from the Divine Life Society's branches page (dlshq.org). Facts from yoga-vedanta-aalst.be (robots.txt allows us); the site is in Dutch and built with frames, so item URLs are the frame pages.",
+      "Teacher training: the four-year Yoga Academy (500+ hours, 400 euro a year) began its current cohort on 27 Sep 2025, so it is not listed as an offering; described in the bio only. Owner may want it as an undated item.",
+      "Moved in August 2026 to a new ashram at Geraardsbergsestraat 220A; the classes and training pages still name the old Volksverheffingstraat ashram.",
+      "Photo: the Divine Life Society Yoga Vedanta Aalst emblem (GIF, 605x593); the site has no photos of the ashram.",
+      "Possible future listings: none; teachers named by first name only (Luc Van Stalle, Luc Bael, Harinath and others). No Spiritpedia teachers; teachers file has no links.",
+      "Regional: Aalst, East Flanders.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: emblem loads (200, image/gif, 605x593)."
+    ],
+    "left_out": [
+      "Retreat 23–25 Oct 2026: past.",
+      "Opening ceremony of the new ashram, 13 Sep 2026: past.",
+      "Harmonium and kirtan course: page not opened.",
+      "Membership/support page (lidworden.html): same membership as the beginners item."
+    ]
+  },
+  "images_final": true
+}

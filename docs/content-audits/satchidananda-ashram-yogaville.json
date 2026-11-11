@@ -1,0 +1,195 @@
+{
+  "healer": {
+    "healer_slug": "satchidananda-ashram-yogaville",
+    "location_source": "https://www.yogaville.org/contact/",
+    "create": {
+      "name": "Satchidananda Ashram–Yogaville",
+      "bio": "Satchidananda Ashram–Yogaville is the residential ashram and world headquarters of Integral Yoga, founded by Sri Swami Satchidananda, the Sivananda disciple who opened Woodstock in 1969 and taught in the United States from 1966 until his death in 2002. It stands on some 750 acres beside the James River in Buckingham County, central Virginia, with a teaching academy, monastery, library, guest housing and the Light Of Truth Universal Shrine (LOTUS), a lotus-shaped interfaith temple opened in 1986 with altars for the world's faiths. His interred remains lie at the Chidambaram shrine on the grounds, and monastics, ministers and lay residents carry the teaching on.\n\nThe Integral Yoga Academy has trained teachers for over fifty years; its 200-hour course now combines an online first part with a residential fortnight at the ashram and leads to Integral Yoga Level I certification, and it also runs meditation and advanced trainings, including one at the Coimbatore institute in India. Guests can come for silent retreats with daily postures, breathing, deep relaxation, meditation and philosophy, for weekend workshops on chanting, qigong or the mind, or for the 28-day Living Yoga Training of practice and service in community. Weekly satsangs and kirtan concerts are streamed on its YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Buckingham, Virginia",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.yogaville.org/",
+      "booking_url": "https://www.yogaville.org/programs/programs-calendar/",
+      "youtube_url": "https://www.youtube.com/@satchidanandaashramyogaville",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "arc@yogaville.org",
+      "image_urls": [
+        "https://www.yogaville.org/wp-content/uploads/2024/06/LOTUS-Yogaville-Virginia.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Kirtan with Krishna Das | Live at Yogaville | May 22, 2026",
+      "url": "https://www.youtube.com/watch?v=lzaI546JsfM",
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "channel": "Satchidananda Ashram – Yogaville"
+    },
+    {
+      "title": "Satsang | Guru Poornima | July 25, 2026",
+      "url": "https://www.youtube.com/watch?v=bez5xHLuGsA",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "Satchidananda Ashram – Yogaville"
+    },
+    {
+      "title": "Satsang | Sivananda Jayanthi | Saturday September 12, 2026",
+      "url": "https://www.youtube.com/watch?v=65fQS9pbQm0",
+      "subjects": [
+        "spirituality",
+        "yoga"
+      ],
+      "channel": "Satchidananda Ashram – Yogaville"
+    },
+    {
+      "title": "Interfaith Service and Program | LOTUS 40th Anniversary | September 5, 2026",
+      "url": "https://www.youtube.com/watch?v=otz1cT5COEg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Satchidananda Ashram – Yogaville"
+    },
+    {
+      "title": "Building LOTUS",
+      "url": "https://www.youtube.com/watch?v=rD_Z7_gqqPQ",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Satchidananda Ashram – Yogaville"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "200-Hour Integral Yoga Teacher Training (Part 1 online, Part 2 at Yogaville)",
+      "url": "https://www.yogaville.org/yoga-programs/12340/2027-200-hour-integral-yoga-teacher-training-online/",
+      "description": "A two-part teacher training: ten weeks online from February to April 2027, then two weeks in residence at the ashram in August. It covers hatha practice and teaching, the Yoga Sutras, the six branches of Integral Yoga, anatomy and practice teaching, leading to the Level I diploma.",
+      "price": "$4,200 for the full 200-hour training ($100.00 off if paid in full by Nov 15, 2026)",
+      "product_type": "course",
+      "start_date": "2027-02-14",
+      "end_date": "2027-08-29",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2026/10/yoga-teacher-training-featured.jpg"
+    },
+    {
+      "title": "Meditation Teacher Training in India",
+      "url": "https://www.yogaville.org/yoga-programs/11902/meditation-teacher-training-in-india/",
+      "description": "A two-week certification course in Integral Yoga meditation held at the Integral Yoga Institute in Coimbatore, near Swami Satchidananda's birthplace, led by Swami Ramananda and Ram Wiener. Shared rooms and vegetarian meals are included.",
+      "price": "$2,550.00 – Double Accommodations ($2400 if paid in full by November 9, 2026)",
+      "product_type": "course",
+      "start_date": "2027-01-10",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2025/11/Meditation-TT-INDIA-2-@950.jpg"
+    },
+    {
+      "title": "Spring Silent Retreat: Reconnect, Renew, Restore",
+      "url": "https://www.yogaville.org/yoga-programs/12282/spring-silent-retreat-reconnect-renew-restore-2/",
+      "description": "Four days held in silence at the ashram with Swami Divyananda Ma and Swan Michelle, with classes in postures, breathing, deep relaxation, meditation and yoga philosophy, and private mentoring on request.",
+      "price": "$875.00 (tuition, classes and meals; accommodation complimentary)",
+      "product_type": "retreat",
+      "start_date": "2027-03-17",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2026/09/featured-spring-silent-retreat.jpg"
+    },
+    {
+      "title": "A New Year Journey: 19 Days of Yoga and Meditation (Online)",
+      "url": "https://www.yogaville.org/yoga-programs/12380/a-new-year-journey-18-days-of-yoga-and-meditation/",
+      "description": "A daily online practice led live on Zoom by Saci Murphy, Yogaville's executive director: a short contemplative teaching, a guided meditation and an Integral Yoga class each day, with recordings for those who cannot join live.",
+      "price": "By Donation – $0.00 - $324.00",
+      "product_type": "course",
+      "start_date": "2027-01-04",
+      "end_date": "2027-01-22",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2026/10/featured_New_Year_Challenge.png"
+    },
+    {
+      "title": "Living Yoga Training (LYT)",
+      "url": "https://www.yogaville.org/programs/residential-programs/living-yoga-training/",
+      "description": "A 28-day residential immersion in ashram life, with daily group meditations, a morning hatha class, spiritual study and karma yoga service alongside the resident community. Applicants are screened and start on set dates.",
+      "price": "Program Fee: $750; Deposit $100 (non-refundable); Application Fee $25",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.yogaville.org/wp-content/uploads/2024/06/Living-Yoga-Training-LYT-at-Yogaville.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Integral Yoga Hatha Class (free full-length class)",
+      "url": "https://www.youtube.com/watch?v=T7WnfFDnmmk",
+      "description": "A complete hour-long Integral Yoga Level I class on video, with postures, deep relaxation, breathing and a short meditation, which the ashram suggests to newcomers before teacher training.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://i.ytimg.com/vi/T7WnfFDnmmk/maxresdefault.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2011,
+    "hub": null,
+    "tier_evidence": "YouTube @satchidanandaashramyogaville 14,500 subscribers (Data API, 11 Nov 2026); Facebook/Instagram/X not fetched → 14,500 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.yogaville.org/programs/retreats/silent-retreats/",
+    "contact_form_url": "https://www.yogaville.org/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/), which lists Satchidananda Ashram Yogaville (Saci Murphy) as the US headquarters. Facts from yogaville.org (robots.txt allows us; Crawl-delay 10 respected).",
+      "Possible editorial-stature override: Yogaville is Integral Yoga's international headquarters and the LOTUS shrine is well known; tier left at local_hero on followers.",
+      "Owner may prefer entity_type 'organisation' (an ashram and retreat centre that is also a hub) rather than 'school'; kept as school because the lead kind is yoga-school and it runs the Integral Yoga Academy.",
+      "Lineage: Swami Satchidananda faced sexual-misconduct allegations from former students in the early 1990s (general knowledge, no source opened); he died in 2002. Nothing found about the ashram's current leadership, so the plan is not held, but the owner may want to look.",
+      "Guests: Krishna Das and Nina Rao (both on Spiritpedia) appear in kirtan videos on the ashram's channel as visiting musicians; not linked (guests). The Krishna Das kirtan video is kept as a video item; owner may prefer to drop it as music-only.",
+      "New Year's Silent Retreat (28 Dec 2026–2 Jan 2027) is listed on the Silent Retreats page but its programme page returned 404, so it is left out.",
+      "Free resource is a full class on the official Integral Yoga channel, linked from the teacher-training page.",
+      "Photo: the LOTUS shrine (1495 px). Other ashram photos on the site are under 300 px or portraits.",
+      "Email arc@yogaville.org is the Ashram Reservation Center's published inbox (brand inbox).",
+      "Possible future listings: Swami Ramananda, Swami Karunananda, Swami Divyananda Ma, Saci Murphy.",
+      "Regional: Buckingham County, rural central Virginia; few Spiritpedia listings in Virginia."
+    ],
+    "left_out": [
+      "Relax and Rejuvenate (4–6 Dec 2026): framed around stress reduction and healing.",
+      "The Calm Circuit: Neuro-Yoga Practices for Healing; Somatic & Spiritual Smiles (anxiety and trauma framing): health/therapy framing.",
+      "Live, Laugh, Love! Free Laugha Yoga Workshop (13 Feb 2027): 'healing laughter' framing; borderline, left out.",
+      "Sounds of the Soul (Amir Vahab), Qigong & Tai Chi weekend, Reclaiming Your Attention: guest-led weekends; kept the list to the ashram's own core programmes.",
+      "Ministers' memorial services and celebration-of-life videos: not teaching."
+    ]
+  },
+  "images_final": true
+}

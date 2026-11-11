@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission-vancouver",
+    "location_source": "https://chinmayavancouver.org/contacts/",
+    "create": {
+      "name": "Chinmaya Mission Vancouver",
+      "bio": "Chinmaya Mission Vancouver is the British Columbia centre of the worldwide Chinmaya Mission, started in 1972 by students of Swami Chinmayananda. It is a volunteer-run community: trained lay teachers lead its classes, with talks and jnana yajnas from visiting acharyas of the mission, and its in-person meetings take place at a school in New Westminster, east of Vancouver, alongside a full timetable on Zoom.\n\nThe centre teaches Advaita Vedanta in the Chinmaya tradition, approaching the Bhagavad Gita, the Upanishads and short teaching manuals through study and open discussion rather than belief. Adults can join an introductory course on the fundamentals of Vedanta, in person or online, a Sunday class going verse by verse through the Gita, a Friday class on the Mandukya Upanishad and a short weekly Gita chanting session; the adult classes are always free. On Sunday mornings children from kindergarten to grade twelve attend Bala Vihar, learning stories, chants, values and culture from trained volunteers, and a youth group, Chinmaya Yuva Kendra, meets for satsang and service. Members support the work with a yearly fee, and recordings of the long-running Gita series are posted on the centre's own YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://chinmayavancouver.org/",
+      "booking_url": "https://chinmayavancouver.org/classes/",
+      "youtube_url": "https://www.youtube.com/@chinmayavancouver",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@chinmayavancouver.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nSbNasAT5610EVa_VJUKxOXFzph887vkx6BHNknWXGFA=s800-c-k-c0x00ffffff-no-rj"
+      ],
+      "founded_year": 1972
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Bhagawad Gita #100 Chapter 10: Verse 10 - 13",
+      "url": "https://www.youtube.com/watch?v=a75bZh61Bgk",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    },
+    {
+      "title": "Bhagawad Gita #101 Chapter 10: Verse 14 - 20",
+      "url": "https://www.youtube.com/watch?v=g_cwfAqagNw",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    },
+    {
+      "title": "Bhagawad Gita #93 Chapter 9: Verse 30 - 34",
+      "url": "https://www.youtube.com/watch?v=deMQNIQ5-ps",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    },
+    {
+      "title": "Bhagawad Gita #108 Chapter 11: Verse 8 - 19",
+      "url": "https://www.youtube.com/watch?v=7kI9WWCkIkA",
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    },
+    {
+      "title": "Bhagawad Gita #109 Chapter 11: Verse 20 - 31",
+      "url": "https://www.youtube.com/watch?v=x5PYoutJGI4",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    },
+    {
+      "title": "Bhagawad Gita #113 Chapter 11: Verse 49 - 55",
+      "url": "https://www.youtube.com/watch?v=_eqU4oI6_eA",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Chinmaya Mission Vancouver Videos"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Membership",
+      "url": "https://chinmayavancouver.org/about/membership/",
+      "description": "Yearly membership that supports the centre's classes and jnana yajnas and gives a vote at the annual meeting. A family membership is required for children attending Bala Vihar; adult classes stay free for everyone.",
+      "price": "$150 per year (individual); $200 per year (family)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nSbNasAT5610EVa_VJUKxOXFzph887vkx6BHNknWXGFA=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Adult Classes",
+      "url": "https://chinmayavancouver.org/classes/adults/",
+      "description": "Weekly discussion-based study of Vedantic texts: Fundamentals of Vedanta in person and online, a Sunday Gita class, a Friday class on the Mandukya Upanishad and a short Gita chanting session. Free of charge.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayavancouver.org/wp-content/uploads/2024/10/Gita-Chanting-Class-1-300x106.png"
+    },
+    {
+      "title": "Bala Vihar (K-12)",
+      "url": "https://chinmayavancouver.org/classes/bala-vihar/",
+      "description": "Sunday morning classes in New Westminster for school-age children, teaching culture, values and scripture through stories, games, chants and crafts, led by trained volunteers.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://chinmayavancouver.org/wp-content/uploads/2026/08/Bala-Vihar-2026-300x106.png"
+    },
+    {
+      "title": "Chinmaya Yuva Kendra (youth)",
+      "url": "https://chinmayavancouver.org/classes/chinmaya-yuva-kendra/",
+      "description": "The centre's youth and young adult group, meeting for Vedanta study, satsang and community service.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayavancouver.org/wp-content/uploads/2021/09/CHYK-Class-Banner-300x106.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1869,
+    "hub": null,
+    "tier_evidence": "YouTube 471 subscribers on its own channel @chinmayavancouver (YouTube Data API, 11 Nov 2026); Facebook not read → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://chinmayavancouver.org/",
+    "contact_form_url": "https://chinmayavancouver.org/contacts/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Related listing: Chinmaya Mission (parent) is already listed; this is the Vancouver centre with its own site and channel.",
+      "Photo is the channel avatar, the Chinmaya Mission emblem (logo). The site's photos are stock images, portraits of the mission's gurus and a volunteer teacher's selfie, so none shows the centre; its own logo file is only 232x100.",
+      "Membership prices have no currency stated on the page (Canadian centre; currency not assumed).",
+      "Teachers file is empty: the class teachers named (Jaya Muzumdar, Nithya Ramani, Sheetal Gupta) are volunteers and not on Spiritpedia.",
+      "Email is the general inbox (mailto on the homepage); a contact form is on /contacts/.",
+      "Regional: Vancouver, British Columbia (classes in New Westminster)."
+    ],
+    "left_out": [
+      "Store (shop).",
+      "Amrit Mahotsav Hanuman Pooja recording (ritual)."
+    ]
+  },
+  "images_final": true
+}

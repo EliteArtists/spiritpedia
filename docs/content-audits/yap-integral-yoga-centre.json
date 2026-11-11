@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "yap-integral-yoga-centre",
+    "location_source": "https://centroyap.it/contatti/",
+    "create": {
+      "name": "YAP Integral Yoga Centre",
+      "bio": "YAP Integral Yoga Centre is a non-profit association in Teramo, in the Abruzzo hills, that has taught yoga since 2004 and has been an officially recognised Integral Yoga centre since 2009. It follows Swami Satchidananda, a disciple of Swami Sivananda, and his principle that truth is one while the paths to it are many. The centre was founded by Alessandra Uma Cocchi, an Integral Yoga teacher trainer, who serves as vice-president; Alessandra Zancocchia chairs the association, and the teaching team works in a spirit of karma yoga rather than as a business.\n\nRegular Integral Hatha Yoga classes, at several levels, follow the tradition's classic sequence of concentration, sun salutations, postures, guided relaxation, breathing and a closing meditation, and short meditation sittings are free to members several mornings a week. Other teachers offer hatha yoga in the Himalayan tradition of Swami Rama, an early-morning vinyasa class, a hatha class taught entirely in English, children's yoga modules and tai chi. Practice takes place in two Teramo venues, one on a stepped lane in the old town, with many sessions also streamed online. Since 2015 the centre has also been Italy's main base for Accessible Yoga teacher education, run with the international Accessible Yoga network.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Teramo",
+      "country": "Italy",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://centroyap.it/",
+      "booking_url": "https://centroyap.it/corsi-2/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@centroyap.it",
+      "image_urls": [
+        "https://centroyap.it/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-12-at-09.19.18.jpeg",
+        "https://centroyap.it/wp-content/uploads/2026/01/unnamed-1024x576.jpg"
+      ],
+      "founded_year": 2004
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Integral Yoga e Meditazione Yoga (corsi regolari)",
+      "url": "https://centroyap.it/corsi-2/",
+      "description": "Weekly Integral Hatha Yoga classes at mixed and advanced levels, in person in Teramo and online, taught by three Integral Yoga teachers. Short silent meditation sittings with breath focus and mantra run on several mornings and are free to members.",
+      "price": "Contact for pricing (prima lezione gratuita; meditazione gratuita per Soci)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://centroyap.it/wp-content/uploads/2025/11/ChatGPT-Image-5-nov-2025-18_09_49-Photoroom.png"
+    },
+    {
+      "title": "Yoga in English (Hridaya Hatha Yoga)",
+      "url": "https://centroyap.it/corsi_speciali/yoga-in-english/",
+      "description": "A Wednesday-evening hatha class taught entirely in English by Ingrid Goudsmit, trained in the Hridaya style. The practice is slow and inward-looking, for fluent and learning English speakers alike.",
+      "price": "Contact for pricing (lezioni singole o nei pacchetti dello Yoga tradizionale; quota associativa)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centroyap.it/wp-content/uploads/2025/11/ChatGPT-Image-5-nov-2025-18_09_49-Photoroom.png"
+    },
+    {
+      "title": "Slow Flow Yoga",
+      "url": "https://centroyap.it/corsi_speciali/slow-flow-yoga/",
+      "description": "An hour of flowing vinyasa practice at 6:30 on Friday mornings with Luana Di Gaetano, joined in the old-town studio or from home. It can be booked singly or as part of a yoga pass.",
+      "price": "Contact for pricing (fruibile singolarmente con quota associativa o negli abbonamenti)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centroyap.it/wp-content/uploads/2025/11/ChatGPT-Image-5-nov-2025-18_09_49-Photoroom.png"
+    },
+    {
+      "title": "YAP Lounge #2: Yoga, tisane e letture",
+      "url": "https://centroyap.it/eventi/yap-lounge-un-tempo-lento-tra-yoga-tisane-e-parole-che-scaldano-il-cuore/",
+      "description": "An unhurried Saturday afternoon gathering with a practice for all levels, herbal tea, readings and informal sharing, this time led by Luana Di Gaetano. It is planned as a monthly meeting.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://centroyap.it/wp-content/uploads/2025/11/ChatGPT-Image-5-nov-2025-18_09_49-Photoroom.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2004,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or readable social counts linked from the site → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://centroyap.it/contatti/",
+    "contact_form_url": "https://centroyap.it/contatti/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/): 'YAP Integral Yoga Centre', Alessandra Uma Cocchi, Teramo, centroyap.it. Facts from the centre's own site (robots.txt allows us).",
+      "Health rule: the centre also runs a yoga-therapy strand (cardiac, oncology, gastrointestinal and other conditions) and yoga for children with named disabilities; all of it is left out of the bio and items. It is one strand among regular classes, so the school is not skipped, but the owner may want to look.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; from general knowledge, no source opened. Nothing found about the centre's current leadership. The site also names Swami Rama (Himalayan Institute founder, died 1996, also subject of abuse allegations, general knowledge) as the reference teacher for one class.",
+      "Guest: a 28 Nov 2026 online talk by Jivana Heyman (founder of Accessible Yoga) on yoga and social justice; not linked and left out (guest, and political-leaning topic). Not on Spiritpedia.",
+      "Photos: the practice room at the second venue (Via Paolucci), and the stepped lane in the old town where the main studio is ('Scalette'); the second shows the street, not the studio itself.",
+      "Prices are not published for regular classes; offerings say 'Contact for pricing'.",
+      "Possible future listings: Alessandra Uma Cocchi.",
+      "No Spiritpedia teachers named on the site; teachers file has no links.",
+      "Regional: Teramo (Abruzzo); Spiritpedia has no listings in Abruzzo that I know of."
+    ],
+    "left_out": [
+      "Corso di formazione in Yoga Accessibile, autumn edition (30 Oct–29 Nov 2026): already started; registration is on accessibleyogaeurope.com.",
+      "Semi di Yoga (Integral Yoga Kids) autumn 2026: started 3 Oct 2026.",
+      "Overdance Lab with Hélène Gautier (15 Nov 2026, €30): a contemporary-dance workshop, not yoga or spiritual practice.",
+      "Incontro con Jivana Heyman (28 Nov 2026): guest talk on yoga and social justice (political-leaning).",
+      "YAP Therapy, Yoga of the Heart, Yoga per bambini con bisogni speciali, prenatal and post-natal yoga: condition-led or medical framing.",
+      "Tai Chi and Hatha Yoga in the Himalayan tradition: on the same /corsi-2/ page as the regular courses, so not separate items."
+    ]
+  },
+  "images_final": true
+}

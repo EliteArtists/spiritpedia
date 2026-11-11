@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "wccm-italia",
+    "location_source": "https://wccmitalia.org/la-comunita-in-italia/",
+    "create": {
+      "name": "WCCM Italia (Comunità Mondiale per la Meditazione Cristiana)",
+      "bio": "WCCM Italia is the Italian community of the World Community for Christian Meditation. Founded in Florence in 1996, it is now based in Brescia, where the bishop recognised it as a private association of the faithful in 2007. It teaches the way of silent prayer handed on by John Main and Laurence Freeman: a regular time of stillness, morning and evening, in which the meditator repeats a single prayer word and lets go of thoughts and images.\n\nThirty-odd weekly groups meet in about ten Italian regions, each with a leader who welcomes newcomers and passes on the basic teaching. A national council organises silent retreats, conferences and a six-week introductory school, and volunteers translate the weekly readings and teachings from the international community into Italian. Its website shares these weekly teachings, a guide to meditating and a Sunday evening online group, and members can join silent weekends such as its Advent retreat at the hermitage of Lecceto near Florence.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Brescia",
+      "country": "Italy",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://wccmitalia.org/",
+      "booking_url": "https://wccmitalia.org/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@wccmitalia.org",
+      "image_urls": [
+        "https://wccmitalia.org/wp-content/uploads/2024/03/Logo-WCCM-420x420-quadrato-may-2022.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Fine settimana di silenzio 4-6 dicembre 2026 - Lecceto (FI)",
+      "url": "https://wccmitalia.org/eventi/ritiro-meditazione-silenzio-lecceto-2026/",
+      "description": "A silent residential weekend of meditation at the hermitage of Lecceto near Florence; open to members of the association (a €15 yearly membership).",
+      "price": "Camera singola: 185,00 EUR; Camera doppia: 170,00 EUR",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://wccmitalia.org/wp-content/uploads/2024/03/Logo-WCCM-420x420-quadrato-may-2022.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Insegnamenti settimanali",
+      "url": "https://wccmitalia.org/category/insegnamenti-settimanali/",
+      "description": "Weekly teachings and readings from the international community, translated into Italian by volunteers.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://wccmitalia.org/wp-content/uploads/2026/11/flowercaribbean-650x433.jpg"
+    },
+    {
+      "title": "Meditatori in Rete",
+      "url": "https://wccmitalia.org/meditatori-in-rete/",
+      "description": "An online meditation group that meets on Sunday evenings from 19:00 to 20:00.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://wccmitalia.org/wp-content/uploads/2024/03/Logo-WCCM-420x420-quadrato-may-2022.png"
+    },
+    {
+      "title": "Come Meditare",
+      "url": "https://wccmitalia.org/come-meditare/",
+      "description": "A short Italian guide to the practice: posture, the prayer word and the rhythm of meditating twice a day.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://wccmitalia.org/wp-content/uploads/2024/03/Logo-WCCM-420x420-quadrato-may-2022.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2266,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: its site links a YouTube channel (/c/WCCMItaliaMeditazioneCristiana) but scripts/yt.mjs found no channel for that link → local_hero (Rising Star).",
+    "email": "yes",
+    "email_source": "https://wccmitalia.org/contatti/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "National community of the World Community for Christian Meditation; the international WCCM is already on Spiritpedia (world-community-for-christian-meditation): owner to decide whether national communities should be separate listings.",
+      "Photo: logo only (no photo of a place of its own on the site). Checked by eye. 420 px square.",
+      "Regional: Brescia (Lombardy).",
+      "robots.txt for wccmitalia.org was read over http before the https homepage.",
+      "No hub links: no named teacher on Spiritpedia.",
+      "Found via the WCCM national communities list (wccm.org/national-communities/, names and links only)."
+    ],
+    "left_out": [
+      "Scuola di sei settimane (online introductory school) and the Milan 'Meditazione e Mistica' series with Maciej Bielawski: already started.",
+      "YouTube channel: link did not resolve with yt.mjs, so no videos.",
+      "Donations and membership pages."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): a national community of the World Community for Christian Meditation, which is already listed (world-community-for-christian-meditation). List the national communities separately, or not? The photo is a logo."
+  }
+}

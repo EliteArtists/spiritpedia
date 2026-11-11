@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1325,
+    "healer_slug": "chinmaya-mission-london-ontario"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "ed84f4b1-0256-4418-b114-8b348b1830d0",
+      "slug": "adult-vedanta-classes",
+      "title": "Adult Vedanta Classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "0600d8c3-812b-48f7-b18b-26d9e4594662",
+      "slug": "bala-vihar-for-children",
+      "title": "Bala Vihar for Children"
+    },
+    {
+      "table": "free_resources",
+      "id": "e40ce8ed-9909-4e85-ac6d-4ff7096997dc",
+      "slug": "ashram-weekly-puja-and-satsang",
+      "title": "Ashram Weekly Puja and Satsang"
+    }
+  ],
+  "at": "2026-11-11T21:39:12.663Z"
+}

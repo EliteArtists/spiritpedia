@@ -1,0 +1,159 @@
+{
+  "healer": {
+    "healer_slug": "instituto-kriya-yoga",
+    "location_source": "https://kriya.org.br/ashram/",
+    "create": {
+      "name": "Instituto Kriya Yoga",
+      "bio": "The Instituto Kriya Yoga is the Brazilian branch of the Kriya Yoga mission founded by Paramahamsa Hariharananda and now led by Paramahamsa Prajnanananda, and it serves as the mother centre for Latin America. Its monks first lived in a house in Mogi das Cruzes from 2012, moved twice within São Paulo, and in October 2015 opened its city ashram, called the Templo do Amor Divino: a large house among trees in a quiet part of the city, chosen by Prajnanananda himself, who came from India to inaugurate it. A rural ashram in Mogi has since followed.\n\nGuided meditations at the ashram are for people initiated in the lineage, and the institute holds initiation weekends in São Paulo and other Brazilian cities, each preceded by a public talk. Several programmes are open to everyone: a Monday satsang on spirituality and meditation at the São Paulo ashram and on Zoom, a Bhagavad Gita study every Wednesday that has run online since 2014, a Spanish-language satsang, and Sunday readings from the lives of the Kriya masters with occasional interfaith guests.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "São Paulo",
+      "country": "Brazil",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://kriya.org.br/",
+      "booking_url": "https://kriya.org.br/eventos/",
+      "youtube_url": "https://www.youtube.com/@institutokriyayogabrasil",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "iniciacao@kriya.org.br",
+      "image_urls": [
+        "https://i0.wp.com/kriya.org.br/wp-content/uploads/2021/02/foto1.jpg?resize=1024%2C683&ssl=1",
+        "https://i0.wp.com/kriya.org.br/wp-content/uploads/2021/02/foto2.jpg?resize=1024%2C571&ssl=1",
+        "https://i0.wp.com/kriya.org.br/wp-content/uploads/2021/02/foto3.jpg?resize=1024%2C609&ssl=1"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Introdução à Kriya Yoga - Parte 1 - Paramahamsa Prajnanananda",
+      "url": "https://www.youtube.com/watch?v=8OhtZlJgBs0",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Introdução à Kriya Yoga - Parte 2 - Paramahamsa Prajnanananda",
+      "url": "https://www.youtube.com/watch?v=FIM-6yAWCI8",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Introdução à Kriya Yoga - Parte 3 - Paramahamsa Prajnanananda",
+      "url": "https://www.youtube.com/watch?v=odJm1Ol4oAc",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "O que é Kriya Yoga? Quais são os mestres dessa linhagem?",
+      "url": "https://www.youtube.com/watch?v=YS1j-rVRAGw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "EP #01: A história da Kriya no Brasil I Websérie Kriya Yoga",
+      "url": "https://www.youtube.com/watch?v=vDfxSPWIOxI",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iniciação em São Paulo/SP - 12 e 13 de dezembro de 2026",
+      "url": "https://kriya.org.br/evento/iniciacao-saopaulo-12-dezembro-2026/",
+      "description": "A weekend initiation into Kriya Yoga meditation in São Paulo with Yogacharya John Thomas, booked through the institute's registration form (in Portuguese).",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Iniciação em Aracaju/SE - 21 e 22 de Novembro de 2026",
+      "url": "https://kriya.org.br/evento/iniciacao-aracaju-21-novembro-2026/",
+      "description": "A weekend initiation into Kriya Yoga meditation in Aracaju, following a public talk in the city the evening before (in Portuguese).",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Aulas on-line: satsang and Bhagavad Gita study",
+      "url": "https://kriya.org.br/aulas-online/",
+      "description": "Free weekly classes open to all on Zoom: a Monday satsang with short guided meditation (also in person at the São Paulo ashram), a Spanish satsang on Tuesdays, Bhagavad Gita study on Wednesdays and Sunday readings on the lives of the Kriya masters, mostly led by Swami Ishwarananda (in Portuguese).",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Palestras e aulas online",
+      "url": "https://kriya.org.br/palestras/",
+      "description": "Transcribed talks by the lineage's monks, free to read in Portuguese, beginning with Swami Atmavidyananda on the art of forgiveness.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2329,
+    "hub": null,
+    "tier_evidence": "YouTube 5,130 subscribers (@institutokriyayogabrasil, YouTube Data API, 11 Nov 2026) → local_hero.",
+    "email": "iniciacao@kriya.org.br",
+    "email_source": "https://kriya.org.br/",
+    "contact_form_url": "https://kriya.org.br/contato/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "POSSIBLE ALLEGATION, general knowledge only: I vaguely recall a criminal case in Austria around 2011-12 involving Paramahamsa Prajnanananda, head of Kriya Yoga International. No source was opened; two web searches (English and German) found nothing. Not held; owner to check before inserting any Kriya Yoga International centre (ranks 2323-2330).",
+      "Lead URL www.kriya.org.br redirects to kriya.org.br; robots.txt read on both before any page request.",
+      "Site is in Portuguese; item titles kept as published, descriptions in English say so.",
+      "Health rule: the initiation pages promise relief from anxiety, depression, fear and poor sleep; those claims are left out of the descriptions and bio.",
+      "Channel notes its content has moved to Kriya Yoga International's 'Spiritual Programs' channel; the five videos are its own uploads, all oEmbed 200.",
+      "Image URLs are the site's own i0.wp.com (Jetpack) links, with &#038; decoded to &; photos show the ashram house front, its entrance and garden path.",
+      "Founded year left null: the site gives the ashram's opening (October 2015) but no founding date for the institute.",
+      "Teachers named (Swami Ishwarananda, Yogacharya John Thomas, Swami Atmavidyananda) are not on Spiritpedia; teachers file has no links.",
+      "Regional: São Paulo, Brazil (South America).",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: all three load (200, image/jpeg): ashram house front, entrance with palm, garden path."
+    ],
+    "left_out": [
+      "Spiritual Living ashram stay (5-21 Feb 2027): single male initiates only.",
+      "Brahmachari training course: monastic, men only.",
+      "Hand in Hand, school and Lar Vida projects, donations and the book shop: service and sales.",
+      "Initiation in João Pessoa 14-15 Nov 2026 and public talks 13 and 20 Nov: too close.",
+      "Agnihotra class video: ritual fire practice, not used."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): part of Paramahamsa Prajnanananda's Kriya Yoga network. The helper half-remembers a criminal case in Austria around 2011–12 but opened no source and found nothing in two searches. Please check before it goes in."
+  }
+}

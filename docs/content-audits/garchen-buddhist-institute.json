@@ -1,0 +1,157 @@
+{
+  "healer": {
+    "healer_slug": "garchen-buddhist-institute",
+    "location_source": "https://garchen.net/contact-2/",
+    "create": {
+      "name": "Garchen Buddhist Institute",
+      "bio": "The Garchen Buddhist Institute is a Drikung Kagyu retreat and teaching centre on ninety-five acres of forested hills above Chino Valley, near Prescott in Arizona, bordering the Prescott National Forest and looking out towards Sedona's red cliffs and the San Francisco Peaks. It was created by His Eminence Garchen Rinpoche, a Tibetan master of the Drikung Kagyu school of Vajrayana Buddhism, as a place where students of every level can study, practise and go into retreat. Its resident teacher is Khenpo Tenzin, trained at Gargon Monastery, Sertar and Sera Jey, and lamas such as Lopon Thupten Nima and Drupon Rinchen Dorjee teach there regularly; Drupon Rinchen Dorjee also guides its three-year retreat.\n\nThe institute runs a full yearly calendar of group retreats, ritual practice gatherings and teachings, many streamed free online, from week-long drupchens to a New Year retreat on Chenrezig and Mahamudra. Every week Khenpo Tenzin leads a free mindfulness meditation session and Sunday Dharma teachings and discussion, and an online preliminary-practice programme guides students through the ngöndro over the year. Practitioners can also arrange short or long solitary retreats in its cabins, and the site keeps an online library of practice texts. Its YouTube channel holds thousands of recorded teachings and practices.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Chino Valley, Arizona",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://garchen.net/",
+      "booking_url": "https://garchen.net/event-summary/",
+      "youtube_url": "https://www.youtube.com/@GarchenBuddhistInstituteAZ",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "questions@garchen.net",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Tara Stupa Talk with H.E. Garchen Rinpoche",
+      "url": "https://www.youtube.com/watch?v=8uacPZfASUk",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Garchen Buddhist Institute"
+    },
+    {
+      "title": "Mingyur Rinpoche’s visit and oral transmission of the 8 Doha of Mahamudra ~ 2025/05/09",
+      "url": "https://www.youtube.com/watch?v=PMK6d8RPWJw",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Garchen Buddhist Institute"
+    },
+    {
+      "title": "Chenrezig Empowerment - Part 1 ~ 2020-05-23 ~ H.E. Garchen Rinpoche",
+      "url": "https://www.youtube.com/watch?v=ZUyxcH09Sm0",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Garchen Buddhist Institute"
+    },
+    {
+      "title": "Chenrezig Empowerment - Part 2 ~ 2020-05-23 ~ H.E. Garchen Rinpoche",
+      "url": "https://www.youtube.com/watch?v=pJhDPWBQO0Q",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Garchen Buddhist Institute"
+    },
+    {
+      "title": "Arya Tara Sadhana for H.E. Garchen Rinpoche's Long Life & All Beings ~ 2026/11/10 ~ GBI Lamas",
+      "url": "https://www.youtube.com/watch?v=5lSgIJsfRCg",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Garchen Buddhist Institute"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "2026-2027 Winter Event: Mani Drubcho and Mahamudra",
+      "url": "https://garchen.net/annual-events/",
+      "description": "A week bringing in the New Year with three days of group Chenrezig practice followed by teachings and guided meditation on Mahamudra with Drupon Rinchen Dorjee and Khenpo Tenzin. Attend in person in Chino Valley, or join online, where the programme is free; registration opens on 23 November.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-04",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Personal solitary retreats",
+      "url": "https://garchen.net/personal-retreats/",
+      "description": "Short-term and long-term solitary retreats in silence at the institute, for practitioners accepted after an application to the office. Newcomers are encouraged to attend a group retreat first; retreat guidelines and an agreement are provided.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly meditation with Khenpo Tenzin",
+      "url": "https://garchen.net/weekly-meditation/",
+      "description": "A free hour of meditation instruction and practice with the institute's resident teacher on Sunday mornings, open to everyone in person or online.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Online library of practice texts",
+      "url": "https://garchen.net/lib-table-of-contents/",
+      "description": "An index of practice texts and other materials used at the institute's teachings and retreats, free to view or download.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2214,
+    "hub": null,
+    "tier_evidence": "YouTube @garchenbuddhistinstituteaz: 27,600 subscribers (YouTube Data API, 11 Nov 2026; channel linked from its own events pages); Facebook linked, not fetched → local_hero",
+    "email": "yes",
+    "email_source": "https://garchen.net/contact-2/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Possible editorial-stature override: the seat in the West of H.E. Garchen Rinpoche, a widely known Drikung Kagyu master; tier left at local_hero.",
+      "Garchen Rinpoche's health: the home page posts recovery updates and says his attendance at events depends on it. Nothing else to note.",
+      "Photo: one image only, the temple with its stupa roof under a rainbow, from the About page (500 px), checked. The other site photos are a landscape view and portraits.",
+      "Crawl-delay 10 respected for pages (11 s); the three image downloads were made back to back (helper slip, reported).",
+      "Email questions@garchen.net is the office inbox (Contact page).",
+      "No hub links: Khenpo Tenzin (resident teacher), Lopon Thupten Nima, Drupon Rinchen Dorjee, Lopon Barbara Du Bois and others are not on Spiritpedia. Possible future listings: Garchen Rinpoche, Lopon Barbara Du Bois.",
+      "Regional: Chino Valley, Arizona.",
+      "Found via the Drikung Kagyu centre list (drikungtmc.com 'Other Centers', names and links only)."
+    ],
+    "left_out": [
+      "Vajrakilaya Drupchen (31 Oct-8 Nov) and intensive (10-24 Nov): already started.",
+      "Online Ngondro programme and Guru Yoga retreat (21 Nov-12 Dec), Sunday teachings and Dharma discussion: on the same annual-events page as the winter event (one item per URL).",
+      "Medicine Buddha practice and pujas, Jangchok for the deceased, puja services and dedications: ritual services or healing-deity practice.",
+      "Balm and Blessing Pills: products with healing connotations.",
+      "3-Year Retreat page: no current intake or dates published.",
+      "Coronavirus resources page.",
+      "Videos from the Taiwan Garchen Dharma Institute channel linked on the home page (another channel)."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): the ingest could not load a profile photo from its site or channel."
+  }
+}

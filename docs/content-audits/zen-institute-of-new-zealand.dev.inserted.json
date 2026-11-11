@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1380,
+    "healer_slug": "zen-institute-of-new-zealand"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "48033f73-4500-4c23-af76-898753ec8349",
+      "slug": "sesshin-meditation-retreat-mt-hutt",
+      "title": "Sesshin Meditation Retreat (Mt Hutt)"
+    },
+    {
+      "table": "courses",
+      "id": "219a837a-388d-4a87-ad66-c26de0960142",
+      "slug": "zen-art-practice-day",
+      "title": "Zen Art Practice Day"
+    },
+    {
+      "table": "courses",
+      "id": "e290ae0a-b31e-4d7c-ad5e-1d392e3bf151",
+      "slug": "an-introduction-to-zen-meditation-and-practice",
+      "title": "An Introduction to Zen Meditation and Practice"
+    },
+    {
+      "table": "courses",
+      "id": "ee7882c0-adaa-42f0-b81e-e375c2608083",
+      "slug": "wangapeka-zen-retreat",
+      "title": "Wangapeka Zen Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "be03cf9b-db34-4934-beee-8132a364485d",
+      "slug": "strathean-zen-retreat-otaki",
+      "title": "Strathean Zen Retreat (Otaki)"
+    },
+    {
+      "table": "free_resources",
+      "id": "a07f7bc3-ef57-4fe8-9c9f-085230720851",
+      "slug": "sesshin-dharma-talks-audio",
+      "title": "Sesshin dharma talks (audio)"
+    },
+    {
+      "table": "free_resources",
+      "id": "3fcca559-3862-4830-9196-44b814c3f5e7",
+      "slug": "instructions-in-zen-meditation-zazen",
+      "title": "Instructions in Zen Meditation (Zazen)"
+    }
+  ],
+  "at": "2026-11-11T19:10:05.747Z"
+}

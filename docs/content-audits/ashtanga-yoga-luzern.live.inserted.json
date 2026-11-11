@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1305,
+    "healer_slug": "ashtanga-yoga-luzern"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6c8bc3aa-fdd7-47b9-a1f4-9f9136b1d89f",
+      "slug": "group-classes-mysore-and-led-i-iii",
+      "title": "Group classes: Mysore and Led I–III"
+    },
+    {
+      "table": "courses",
+      "id": "ff4c719e-d194-4e00-a0ab-2c59e13f7066",
+      "slug": "class-passes",
+      "title": "Class passes"
+    },
+    {
+      "table": "courses",
+      "id": "1ce8274c-7e22-4e26-adbc-add64935cc2b",
+      "slug": "private-classes",
+      "title": "Private classes"
+    }
+  ],
+  "at": "2026-11-11T21:38:02.171Z"
+}

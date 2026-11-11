@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1398,
+    "healer_slug": "way-of-the-forest-empty-mountain-zen-hermitage"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0119e6e8-2509-4ccf-8849-e08ba149291b",
+      "slug": "weekly-zen-meditation-groups",
+      "title": "Weekly Zen meditation groups"
+    },
+    {
+      "table": "courses",
+      "id": "d2786e93-99e5-4e9d-9935-54560e834e5f",
+      "slug": "an-introduction-to-zen-buddhism-workshop",
+      "title": "An Introduction to Zen Buddhism Workshop"
+    },
+    {
+      "table": "free_resources",
+      "id": "da812d94-2491-48db-aa0a-378c64a675be",
+      "slug": "writings-and-articles-by-rev-doshin-kusan",
+      "title": "Writings and articles by Rev. Doshin Kusan"
+    }
+  ],
+  "at": "2026-11-11T21:42:44.579Z"
+}

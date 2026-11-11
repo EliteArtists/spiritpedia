@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1357,
+    "healer_slug": "kuan-yin-meditation-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0e818fa1-0b95-4bd8-a37d-47d8443d613e",
+      "slug": "lismore-zen-group-and-zazenkai",
+      "title": "Lismore Zen Group and zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "b1405287-2844-4196-a17f-028979875e86",
+      "slug": "insight-meditation-evenings",
+      "title": "Insight Meditation evenings"
+    },
+    {
+      "table": "courses",
+      "id": "3c9ae173-2e71-47d6-8af1-2144050e8118",
+      "slug": "weekly-mindfulness-and-silent-sitting-groups",
+      "title": "Weekly mindfulness and silent sitting groups"
+    },
+    {
+      "table": "free_resources",
+      "id": "e9a246e7-9868-459f-af8f-2c21386a67b6",
+      "slug": "foundational-guided-meditation",
+      "title": "Foundational Guided Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "b624a9ba-b73f-42ac-a0bc-cdc111be0100",
+      "slug": "breath-body-greater-body-part-i",
+      "title": "Breath, Body, Greater Body (Part I)"
+    },
+    {
+      "table": "free_resources",
+      "id": "2f97dc70-b293-4e0a-9a55-41267ab27933",
+      "slug": "introduction-to-the-seven-factors-of-awakening",
+      "title": "Introduction to the Seven Factors of Awakening"
+    }
+  ],
+  "at": "2026-11-11T21:40:44.125Z"
+}

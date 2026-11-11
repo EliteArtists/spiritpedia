@@ -1,0 +1,177 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-nazare",
+    "location_source": "https://ashtangayoganazare.com/local",
+    "create": {
+      "name": "Ashtanga Yoga Nazaré",
+      "bio": "Ashtanga Yoga Nazaré is a small traditional shala in the Atlantic fishing town of Nazaré, on Portugal's Silver Coast, run by the married teachers Sérgio Ramos and Vanessa José. Between them they bring more than fifteen years of Ashtanga practice; Sérgio holds Level 2 authorisation from the Sharath Yoga Centre in Mysore, and the couple previously directed the Mysore programme at Ashtanga Yoga Porto from 2020 to 2024 before moving to Nazaré to live closer to the land.\n\nThe shala runs a full Mysore programme on weekday and Saturday mornings in a first-floor room in the town centre, open to complete beginners as well as experienced students, with a led primary class on Saturdays and rest on new- and full-moon days; there are also evening Mysore sessions, a pranayama class and online classes for those further away. Philosophy has a strong place in their teaching. Sérgio leads a self-paced video course on the first chapter of Patanjali's Yoga Sutras, read verse by verse, and the school's YouTube channel holds long talks in Portuguese on the yamas and niyamas, practice and detachment, and the eight limbs, alongside demonstrations of the second and advanced series. Classes are taught in Portuguese and English.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Nazaré",
+      "country": "Portugal",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "breathwork"
+      ],
+      "website_url": "https://ashtangayoganazare.com/",
+      "booking_url": "https://ashtangayoganazare.com/sobre-as-aulas",
+      "youtube_url": "https://www.youtube.com/@ashtangayoganazare",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ashtangayoganazare@gmail.com",
+      "image_urls": [
+        "https://img1.wsimg.com/isteam/ip/7f9c2a11-938e-49b6-8564-128ffb7eeaaa/Untitled%20design.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ashtanga Vinyasa Yoga - an Exposition of Sergio Ramos and Vanessa Jose Yoga practice",
+      "url": "https://www.youtube.com/watch?v=NeD65J30aSE",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "VLOG EP.1 - The Birth of Ashtanga Yoga Nazare // Casa Viva project",
+      "url": "https://www.youtube.com/watch?v=g0pWz4x-oRM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Os Yamas",
+      "url": "https://www.youtube.com/watch?v=wlQQhUy0fEU",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Os Niyamas",
+      "url": "https://www.youtube.com/watch?v=eub8FKgMY3k",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Ashtanga Yoga de Patanjāli",
+      "url": "https://www.youtube.com/watch?v=mtqL4Vz4W4w",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Abhyāsa & Vairāgya",
+      "url": "https://www.youtube.com/watch?v=Su928vPamB8",
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Setting Intentions in a life of Yoga",
+      "url": "https://www.youtube.com/watch?v=lAJvuDGktd0",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    },
+    {
+      "title": "Second Series Ashtanga Yoga Demo with Sérgio Ramos 1/3",
+      "url": "https://www.youtube.com/watch?v=nje5DESgKD8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Nazare - Vanessa & Sérgio"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "In-person Mysore and led classes (passes)",
+      "url": "https://ashtangayoganazare.com/sobre-as-aulas",
+      "description": "Passes for the Nazaré shala's morning Mysore programme, evening sessions and Saturday led class, from a single drop-in to a monthly pass covering every class. Students facing financial difficulty are invited to get in touch.",
+      "price": "€ Mensalidade 108 (all classes for a month); 2-week pass 75; 1-week pass 60; drop-in 20; 4 classes/month 40",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/7f9c2a11-938e-49b6-8564-128ffb7eeaaa/Untitled%20design.jpeg"
+    },
+    {
+      "title": "Aulas Online (online classes)",
+      "url": "https://ashtangayoganazare.com/aulas-online",
+      "description": "Live online group classes with Sérgio and Vanessa for students who cannot reach Nazaré, plus private online sessions by appointment.",
+      "price": "€ drop-in 12; 4 classes/month 35; 8 classes/month 45; private class 40€",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/7f9c2a11-938e-49b6-8564-128ffb7eeaaa/Untitled%20design.jpeg"
+    },
+    {
+      "title": "Study of the Yoga Sutras: Samādhi Pada",
+      "url": "https://ashtangayoganazare.com/estudo-dos-yoga-sutras",
+      "description": "A self-paced course led by Sérgio Ramos on the 51 verses of the first chapter of Patanjali's Yoga Sutras, in five recorded one-hour classes with the text in Sanskrit, transliteration and translation, and a group chat for questions. Access lasts four months.",
+      "price": "€ 45",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/7f9c2a11-938e-49b6-8564-128ffb7eeaaa/Untitled%20design.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2120,
+    "hub": null,
+    "tier_evidence": "YouTube 172 subscribers (Ashtanga Yoga Nazare - Vanessa & Sérgio, Data API, 11 Nov 2026); Instagram not fetched → ~172 total → local_hero.",
+    "email": "yes",
+    "email_source": "https://ashtangayoganazare.com/local",
+    "contact_form_url": "https://ashtangayoganazare.com/local",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Sergio Ramos, Ashtanga Yoga Nazaré, website ashtangayoganazare.com); facts from the school's own site (GoDaddy builder; robots.txt allows us; img1.wsimg.com robots.txt has rules for Googlebot only).",
+      "Address published as a first floor in the Sub-Vila shopping centre, Nazaré; city recorded as Nazaré (a town of about 10,000).",
+      "Email is a Gmail inbox on the contact page, which also has a message form.",
+      "Photo: one image only, the school's logo laid over a puja altar with flowers and lamps (from its own site). The site's other photos show the teachers practising outdoors or a timetable, not the room.",
+      "The 'about us' page says the school is still at an early stage; it also mentions a 'Casa Viva' land project, not listed.",
+      "Videos: most talks are in Portuguese and date from 2020–2022, recorded while the couple ran Ashtanga Yoga Porto, on the same channel that now carries the Nazaré name.",
+      "Possible future listings: Sérgio Ramos, Vanessa José.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Nazaré, Portugal; Spiritpedia has few listings on Portugal's Silver Coast."
+    ],
+    "left_out": [
+      "Mantra session and private or small-group classes: mentioned on the classes page but without pages of their own.",
+      "Videos 'Mulher Cíclica e a Prática de Ashtanga' (cycle-related) and 'As Aflições da Humanidade', and short clips under 2 minutes.",
+      "The site's blog (on a separate weebly.com host) was not opened."
+    ]
+  },
+  "images_final": true
+}

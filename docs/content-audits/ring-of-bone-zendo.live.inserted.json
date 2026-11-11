@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1372,
+    "healer_slug": "ring-of-bone-zendo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5ea3a6ea-c87d-4514-b2b4-dea11f515df7",
+      "slug": "weekly-zazen",
+      "title": "Weekly zazen"
+    },
+    {
+      "table": "courses",
+      "id": "8e0ef0d7-4d11-4017-875d-7abaa9831e5f",
+      "slug": "sesshin-2",
+      "title": "Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "7fd02183-3737-444d-8895-86b6dba7616f",
+      "slug": "membership-10",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "e5568622-e988-49ec-b6ca-5512d7007c02",
+      "slug": "ring-of-bone-newsletters",
+      "title": "Ring of Bone newsletters"
+    }
+  ],
+  "at": "2026-11-11T21:41:27.967Z"
+}

@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission-london-ontario",
+    "location_source": "https://chinmayalondon.org/our-ashram-chinmaya-mission-london/",
+    "create": {
+      "name": "Chinmaya Mission London (Ontario)",
+      "bio": "Chinmaya Mission London is the local centre of the worldwide Chinmaya Mission in London, Ontario, in south-western Canada. It began in September 2011 under the guidance of Shri Vivekji, with a children's class of about twenty-five, and has since grown to well over a hundred families. Its resident acharya, Shri Vijay Gupta, leads the adult study, and the centre now has an ashram of its own on Highbury Avenue in the north of the city, alongside Sunday programmes held at a local school.\n\nAs in other Chinmaya centres, the teaching is Advaita Vedanta in the line of Swami Tapovan Maharaj and Swami Chinmayananda, studied through the Bhagavad Gita, the Upanishads and Shankara's shorter works. On Sunday afternoons adults meet for the Gita, Tattvabodha and a yoga and meditation class while children from three to seventeen attend Bala Vihar, a values and culture programme of stories, chanting and discussion. Through the week there are evening classes on Zoom on texts such as the Vivekachudamani, the Ashtavakra Gita and the Prashna Upanishad, a Tuesday Hanuman puja and Ramayana reading at the ashram, a monthly women's satsang, a youth group at Western University, summer camps and seva projects.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "London, Ontario",
+      "country": "Canada",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "website_url": "https://chinmayalondon.org/",
+      "booking_url": "https://chinmayalondon.org/adults/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hello@chinmayalondon.org",
+      "image_urls": [
+        "https://chinmayalondon.org/wp-content/uploads/2023/05/about-us.jpg",
+        "https://chinmayalondon.org/wp-content/uploads/2023/07/Chinamaya-banner.jpg"
+      ],
+      "founded_year": 2011
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Adult Vedanta Classes",
+      "url": "https://chinmayalondon.org/adults/",
+      "description": "Weekly study guided by the resident acharya: Sunday in-person classes on the Bhagavad Gita, Tattvabodha and yoga with meditation, plus evening Zoom classes on the Vivekachudamani, Ashtavakra Gita and Prashna Upanishad.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayalondon.org/wp-content/uploads/2023/05/2-logo_chinamayaMission_LDN.png"
+    },
+    {
+      "title": "Bala Vihar for Children",
+      "url": "https://chinmayalondon.org/bala-vihar/",
+      "description": "Sunday afternoon classes for children from three to seventeen on values, stories, chanting and Indian culture, held at a London school while parents attend their own classes.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayalondon.org/wp-content/uploads/2023/05/2-logo_chinamayaMission_LDN.png"
+    },
+    {
+      "title": "Ashram Weekly Puja and Satsang",
+      "url": "https://chinmayalondon.org/our-ashram-chinmaya-mission-london/",
+      "description": "The centre's ashram on Highbury Avenue hosts a Tuesday evening Hanuman puja with Ramcharitmanas reading; the page also lists how to request the hall.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://chinmayalondon.org/wp-content/uploads/2023/05/2-logo_chinamayaMission_LDN.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1867,
+    "hub": null,
+    "tier_evidence": "No channel of its own (links the parent Chinmaya Channel); X, Instagram and Facebook not read → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://chinmayalondon.org/",
+    "contact_form_url": "https://chinmayalondon.org/our-ashram-chinmaya-mission-london/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Related listings: Chinmaya Mission (chinmaya-mission) and Chinmaya International Foundation are already on Spiritpedia; this is a separate local centre with its own site and ashram.",
+      "Teachers file is empty: Shri Vijay Gupta (resident acharya) and Shri Vivekji are not on Spiritpedia.",
+      "No videos: the site links only the parent Chinmaya Channel.",
+      "Thin on items (3 free resources, no videos); bio, contact and photos are solid. Fees for Bala Vihar are not shown on the registration page, so it is listed as a free resource rather than a priced offering; owner may prefer it as an offering with 'Contact for pricing'.",
+      "Photos: the community in the hall, and a summer camp group in matching T-shirts (children visible, group shot).",
+      "Contact form is the ashram reservation form; the email hello@chinmayalondon.org is a mailto on the homepage.",
+      "Regional: London, Ontario.",
+      "The homepage quotes Swami Chinmayananda's line 'Let us convert Hindus to Hinduism'; a religious slogan, not political commentary."
+    ],
+    "left_out": [
+      "Monthly Shrimad Bhagavata satsang (started 6 Sep 2026, already running).",
+      "Past events (2026 Vanaprastha Retreat in Akron, Ganesh Puja).",
+      "Donation and payment pages."
+    ]
+  },
+  "images_final": true
+}

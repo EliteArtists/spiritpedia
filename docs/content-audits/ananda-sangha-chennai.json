@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-chennai",
+    "location_source": "https://anandachennai.org/contact-us/",
+    "create": {
+      "name": "Ananda Sangha Chennai",
+      "bio": "Ananda Sangha Chennai is a meditation and yoga centre in the Kriya Yoga tradition of Paramhansa Yogananda, part of the worldwide Ananda movement started by his disciple Swami Kriyananda. It opened in June 2013, shortly after Kriyananda drew a crowd of some two thousand to a talk at the city's Music Academy and asked Nayaswamis Dharmarajan and Dharmini to settle in Chennai and lead a new centre; the couple remain its spiritual directors.\n\nThe centre is a house on East Road in CIT Nagar West, where classes are taught in person in English and Tamil. Beginners start with a one-day Learn to Meditate and Energize class, covering the Hong-Sau technique and Yogananda's Energization Exercises, which opens a graded course through raja yoga, discipleship and the Aum technique towards Kriya initiation.\n\nSundays begin with a fire ceremony and meditation, followed by a satsang of chanting, affirmations, prayer and a talk that is also streamed online. During the week there are group meditations and Wednesday \"how-to-live\" classes applying Yogananda's practical teachings to work, money, leadership and the cycles of history, along with yoga asana sessions and devotional music.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Chennai, Tamil Nadu",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandachennai.org/",
+      "booking_url": "https://anandachennai.org/level1registrationpage/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "AnandaChennai@anandaindia.org",
+      "image_urls": [
+        "https://anandachennai.org/wp-content/uploads/2022/05/welcome-ananda-chennai.png"
+      ],
+      "founded_year": 2013
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Level 1: Learn to Meditate & Energize",
+      "url": "https://anandachennai.org/level1registrationpage/",
+      "description": "A one-day, in-person beginners' class (2:00–6:00 pm) on the Hong-Sau meditation technique and Yogananda's Energization Exercises, with handouts and a course textbook. Offered on 14, 15 and 19 November 2026 in English and Tamil; the first step towards Kriya initiation.",
+      "price": "Rs.750",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-19",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://anandachennai.org/wp-content/uploads/2022/08/cropped-pink-lotus-flower2.png"
+    },
+    {
+      "title": "Level 2: The Art and Science of Raja Yoga",
+      "url": "https://anandachennai.org/kriya-yoga/the-path-of-kriya-yoga-course/raja-yoga/",
+      "description": "The second stage of the Kriya Yoga training course, based on Kriyananda's book of the same name: Patanjali's eight-fold path, karma and reincarnation, the chakras, the meaning of Aum and spirituality in daily life. Level 1 is a prerequisite; dates on the centre's calendar.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://anandachennai.org/wp-content/uploads/2022/08/cropped-pink-lotus-flower2.png"
+    },
+    {
+      "title": "\"How-to-Live\" classes",
+      "url": "https://anandachennai.org/spiritual-living/how-to-live-classes/",
+      "description": "Evening classes, usually on Wednesdays, on Yogananda's practical teachings for daily life as developed by Kriyananda: supportive leadership, money magnetism, how to be a success, the yugas and facing death.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://anandachennai.org/wp-content/uploads/2022/08/cropped-pink-lotus-flower2.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Satsang",
+      "url": "https://anandachennai.org/spiritual-living/sunday-satsangs/",
+      "description": "Every Sunday at the centre: a fire ceremony and meditation at 9 am, then a satsang at 10 am with chanting, singing, affirmations, meditation, prayers and an inspirational talk. In person and online; all welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://anandachennai.org/wp-content/uploads/2022/08/cropped-pink-lotus-flower2.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2018,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel linked on the pages read → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandachennai.org/",
+    "contact_form_url": "https://anandachennai.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "Email AnandaChennai@anandaindia.org is the home page's newsletter sign-up mailto button; the contact page also has a contact form (Gravity Forms). Both recorded.",
+      "Level 1 is dated 14, 15 and 19 Nov 2026 (one page, three one-day sessions): start 14 Nov, end 19 Nov. All after 12 Nov.",
+      "Health rule: meditation pages promise to 'reduce tension and stress' and 'improve your health'; a how-to-live class is 'How to Achieve Glowing Health and Vitality'; healing prayer angels page. Left out; items describe only the practice.",
+      "One photo used: the site's collage of the centre's shrine room, classes and a public talk. The other centre photo (chennai-group-dhyana.jpg) is blurred, so not used.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: Nayaswamis Dharmarajan and Dharmini (spiritual directors).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Group Meditation page: timings only by phone or email.",
+      "Healing Prayer Angels: health framing.",
+      "Free Inspiration / videos pages: not fetched."
+    ]
+  },
+  "images_final": true
+}

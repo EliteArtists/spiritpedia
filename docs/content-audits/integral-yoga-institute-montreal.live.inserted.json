@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1347,
+    "healer_slug": "integral-yoga-institute-montreal"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "427972ca-b0de-48f5-9ad1-71f34923cc15",
+      "slug": "integral-flow-friday-community-class",
+      "title": "Integral Flow (Friday community class)"
+    },
+    {
+      "table": "courses",
+      "id": "e70562d3-5c1d-4cab-a767-881f607ddcae",
+      "slug": "meditation-and-kirtan-sunday-gathering",
+      "title": "Meditation and Kirtan (Sunday gathering)"
+    },
+    {
+      "table": "courses",
+      "id": "94638f13-9249-45e0-9206-294beb7820f4",
+      "slug": "private-yoga-classes",
+      "title": "Private Yoga Classes"
+    }
+  ],
+  "at": "2026-11-11T21:40:16.910Z"
+}

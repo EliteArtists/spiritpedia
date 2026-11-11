@@ -1,0 +1,97 @@
+{
+  "healer": {
+    "healer_slug": "dhargyey-buddhist-centre",
+    "location_source": "https://www.dhargyeybuddhism.com/",
+    "create": {
+      "name": "Dhargyey Buddhist Centre",
+      "bio": "Dhargyey Buddhist Centre is a Tibetan Buddhist teaching centre in the Otago city of Dunedin, New Zealand. It was set up in 1984 as a charitable trust for Geshe Ngawang Dhargyey, a senior lama of the Gelug school who had earlier led the Dalai Lama's teaching programme for Westerners in Dharamsala, and he named it Thuptän Shädrub Dhargyey Ling. Geshe Dhargyey taught in Dunedin until his death in 1995, and his close disciples Venerable Thupten Rinpoche and Venerable Lhagön Rinpoche carried on the lineage there. The Dalai Lama stayed at the centre in 1992 and taught in the city again in 2013.\n\nThe centre occupies a historic house on Royal Terrace with a meditation room, a library and rooms for its resident lamas. Geshe Lobsang Dhönyë, a geshe from Sera Jey Monastery who arrived in 2016, is the resident teacher, and his Sunday morning teachings are free, open to all and shared on Zoom; further online classes and a monthly guru puja run through the week. The centre also cares for the Portobello Stupa on the Otago Peninsula, built where Geshe Dhargyey was cremated, and has a sister centre in Christchurch.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1984,
+      "availability": "local_online",
+      "city": "Dunedin",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.dhargyeybuddhism.com/",
+      "booking_url": "https://www.dhargyeybuddhism.com/weekly-events-1",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Become a Member",
+      "url": "https://www.dhargyeybuddhism.com/become-a-member",
+      "description": "Weekly membership for those who wish to support the centre, its resident lamas and the free teachings it offers; joining is arranged through the contact form.",
+      "price": "Membership starts at just $7 per week",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Teachings with Geshe Dhonye",
+      "url": "https://www.dhargyeybuddhism.com/weekly-events-1",
+      "description": "Free Sunday morning teachings by the resident geshe, currently on Shantideva's guide to the bodhisattva's way of life, open to all in Dunedin and on Zoom. A Monday evening Zoom class on Tsongkhapa's verses is given by another geshe.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "The Portobello Stupa",
+      "url": "https://www.dhargyeybuddhism.com/portabello-peace-stupa",
+      "description": "An enlightenment stupa on the Otago Peninsula, raised where Geshe Dhargyey was cremated in 1995 and described as the southernmost stupa in the world, set in a private nature reserve above Otago Harbour; visits are arranged through the centre.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2059,
+    "hub": null,
+    "held": "No usable photo: the site is on Wix and every image is on static.wixstatic.com, which refuses our robots.txt request; no YouTube channel is linked, so there is no avatar either. Hold until the owner supplies or approves a photo.",
+    "tier_evidence": "No YouTube channel linked from its own site; Facebook and X not fetched → no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.dhargyeybuddhism.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Council link dhargyey.org.nz does not resolve; the site used, dhargyeybuddhism.com, is linked from the New Zealand Buddhist Council's national-organisations page.",
+      "Held: no photo (Wix-hosted images only).",
+      "Thin-ish: 3 items (membership, Sunday teachings, Portobello Stupa).",
+      "No hub links: the resident teacher Geshe Lobsang Dhönyë is not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Geshe Lobsang Dhönyë.",
+      "Regional: Dunedin, New Zealand; few or no Spiritpedia listings there.",
+      "Christchurch sister centre (Phen Day Dhargyey Ling) is lead 2063.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Thursday restricted teaching: for initiated students only.",
+      "Kyabje Ling Rinpoche 2025 visit and past events: dated, past.",
+      "Monday Zoom class: on the same page as the Sunday teachings (one item per URL); mentioned in that item."
+    ]
+  }
+}

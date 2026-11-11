@@ -1,0 +1,96 @@
+{
+  "healer": {
+    "healer_slug": "cochise-zen-center",
+    "location_source": "https://www.cochisezencenter.org/contact",
+    "create": {
+      "name": "Cochise Zen Center",
+      "bio": "Cochise Zen Center is a small meditation community in Old Bisbee, in the borderlands of south-eastern Arizona. It began in 2003 as the Bisbee Lotus Sangha, a lay group loosely linked to Zen Desert Sangha in Tucson that kept up its practice for fourteen years without a resident teacher. In 2017 Zen Master Hye Mun (Barry Briggs), a Kwan Um School of Zen teacher who had led retreats across several continents and served as resident teacher at Cambridge Zen Center, retired to Bisbee; the following year the sangha invited him to be its guiding teacher, and it is now affiliated with the Kwan Um School.\n\nThe group meets in its own building on Brewery Avenue, a short walk up the hill from the Mimosa Market, and online. There are three sittings a week, on Sunday and Tuesday mornings in person and on Zoom and on Thursday evenings online only, with chanting and a short talk on Sundays. Longer Zen Days of alternating sitting and walking, public Dharma talks, occasional study workshops, private meetings with the teacher for kong-an practice and the two traditional Buddha festivals fill out the year. Everything is offered without charge, and practitioners from any tradition are welcome.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2003,
+      "availability": "worldwide",
+      "city": "Bisbee, Arizona",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.cochisezencenter.org/",
+      "booking_url": "https://www.cochisezencenter.org/weekly-meditation",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "cochisezen@icloud.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5a83af2ff6576e08daea14ad/1563322038369-8HJXD62D50ZN54PA2G1C/July+2019.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/5a83af2ff6576e08daea14ad/ca7f609e-7b5f-4212-b921-6dc6245c0dc0/IMG_6111.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Weekly Meditation",
+      "url": "https://www.cochisezencenter.org/weekly-meditation",
+      "description": "Three group sittings a week: Sunday and Tuesday mornings at the centre and on Zoom, and Thursday evenings on Zoom, with chanting and a short teaching on Sundays. No charge; donations welcome.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a83af2ff6576e08daea14ad/1525040681923-W2MB9PUVOMQ522CG977F/Clouds.jpg"
+    },
+    {
+      "title": "Zen Day, Dharma talks and workshops",
+      "url": "https://www.cochisezencenter.org/events",
+      "description": "Regular half-day Zen Days of sitting and walking meditation, occasional public talks and study workshops with the guiding teacher, and the Buddha's Birthday and Enlightenment Day ceremonies, all free.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a83af2ff6576e08daea14ad/1519926295029-S2EUHE7NTWD0XQ70IILQ/Events.jpg"
+    },
+    {
+      "title": "Getting Started",
+      "url": "https://www.cochisezencenter.org/getting-started",
+      "description": "How to join a first sitting, with the offer of a short one-to-one orientation from the teacher or a senior student before practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a83af2ff6576e08daea14ad/ca7f609e-7b5f-4212-b921-6dc6245c0dc0/IMG_6111.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1810,
+    "hub": null,
+    "tier_evidence": "No YouTube or social accounts linked from its site → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cochisezencenter.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Regional: Bisbee, Arizona (town of about 5,000; site says Old Bisbee).",
+      "Thin: three free programme pages only, no paid offerings and no videos; kept because all practice is free and the community is active (owner may prefer to skip).",
+      "Photos: a sangha group photo (July 2019) and a Buddha statue close-up from its own gallery; no photo of the building or meditation room was found. Photo choice for owner review.",
+      "Email cochisezen@icloud.com is the centre's general inbox (mailto on its pages).",
+      "Founded 2003 as Bisbee Lotus Sangha (history page).",
+      "No hub links: Zen Master Hye Mun (Barry Briggs) and Tony Sager JDPSN are not on Spiritpedia. Teachers file written with an empty list."
+    ],
+    "left_out": [
+      "Private dharma meetings with the teacher: same page URL as the events item.",
+      "Buddhist holiday ceremonies: folded into the events item."
+    ]
+  },
+  "images_final": true
+}

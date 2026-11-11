@@ -1,0 +1,144 @@
+{
+  "healer": {
+    "healer_slug": "honolulu-diamond-sangha",
+    "location_source": "https://diamondsangha.org/contact-form-3/",
+    "create": {
+      "name": "Honolulu Diamond Sangha",
+      "bio": "The Honolulu Diamond Sangha is the home community of the Diamond Sangha, a lay Zen lineage that draws on both the Sōtō and Rinzai streams of Chinese and Japanese Zen. It was co-founded by Robert Aitken Rōshi, who met Zen as a wartime internee in Japan, later trained with Yamada Kōun Rōshi of the Sanbō Kyōdan and became the lineage's founding teacher, and by his wife Anne Aitken. Its present main teacher is Michael Kieran Rōshi, a dharma heir of Nelson Foster who received full transmission in 2004, with Kathy Ratliffe teaching alongside him as a Dharma Guide since 2021. Affiliated groups that grew from Aitken's students now meet in the United States, Australia, New Zealand, Argentina and Germany.\n\nPractice takes place at the Palolo Zen Center, a temple set on thirteen acres high in Honolulu's Palolo Valley, built by members in the 1980s with a screened zendo, a separate dokusan room and a small residential wing. Newcomers begin with a free Saturday-morning orientation each month, then join the regular sittings, all-day zazenkai (including hiking ones on Oahu's trails), work mornings and sesshin of three to eight days. Members with an established practice can apply to live at the temple as lay residents, and some dharma talks are also given on Zoom.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Honolulu, Hawaii",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://diamondsangha.org/",
+      "booking_url": "https://diamondsangha.org/new-to-hds/orientation-to-zazen/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@diamondsangha.org",
+      "image_urls": [
+        "https://diamondsangha.org/wp-content/uploads/2014/04/Zendo-fr-Rd1-980x600.jpg",
+        "https://diamondsangha.org/wp-content/uploads/2014/04/ZendoEmpty1-1024x682.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Orientation to Practice",
+      "url": "https://diamondsangha.org/new-to-hds/orientation-to-zazen/",
+      "description": "A three-hour Saturday morning at the Palolo Zen Center that shows newcomers how to sit zazen, find a workable posture and follow the zendo's bells and forms, with walking meditation, a word on sutra chanting and time for questions. It runs about once a month and is required before joining the regular sittings; reservations are needed.",
+      "price": "There is no charge",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://diamondsangha.org/wp-content/uploads/2014/02/OrientationDeck-980x600.jpg"
+    },
+    {
+      "title": "Sesshin",
+      "url": "https://diamondsangha.org/training/sesshin/",
+      "description": "Silent full-time Zen retreats of three to eight days at the Palolo Zen Center, with zazen from early morning to night, daily dharma talks, work periods and private meetings with the teacher. Members and friends have priority before the sign-up deadline, and part-time places are possible under set conditions.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://diamondsangha.org/wp-content/uploads/2014/07/Sesshin7_144-980x600.jpg"
+    },
+    {
+      "title": "Zazenkai",
+      "url": "https://diamondsangha.org/training/zazenkai/",
+      "description": "A day of intensive sitting that can be joined for part or all of the day, with a full sutra service, long rounds of zazen, a dharma talk with discussion and, for students who already work with a teacher, dokusan. Variations include a community day and a hiking day of silent walking meditation on an Oahu trail.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://diamondsangha.org/wp-content/uploads/2014/04/IMG_1548-980x600.jpg"
+    },
+    {
+      "title": "Residential Training at Palolo",
+      "url": "https://diamondsangha.org/training/residential-training/",
+      "description": "Lay residency at the temple for people with an established Zen practice who want to train within a community while working or studying. Residents keep the daily sitting schedule, give three hours of temple work each week and join the intensive practice periods; the minimum stay is two months.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://diamondsangha.org/wp-content/uploads/2014/04/DSC_0027-980x600.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://diamondsangha.org/new-to-hds/becoming-a-member/",
+      "description": "Members treat the sangha as their dharma home, take part in sittings, work practice and sesshin and help govern the community, with reduced sesshin rates. Membership is open after three months of practice with the sangha; a lighter 'friend' relationship is also offered.",
+      "price": "There is no required minimum pledge for membership",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://diamondsangha.org/wp-content/themes/organic_nonprofit/images/default-page.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sutra Book",
+      "url": "https://diamondsangha.org/resources-2/sutras/",
+      "description": "The sangha's book of chants used at its sutra services, offered as a free download so visitors can follow along or chant at home.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://diamondsangha.org/wp-content/uploads/2014/06/ChantingCliftonKathyJoan1-crop1-980x600.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2151,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://diamondsangha.org/contact-form-3/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Possible editorial-stature override: the Honolulu Diamond Sangha is the home of Robert Aitken Roshi's Diamond Sangha lineage, well known in Western Zen (owner decides; tier left at local_hero).",
+      "Regional: Honolulu, Hawaii.",
+      "Email info@diamondsangha.org is the Administrator's inbox (contact page).",
+      "Photos: the Palolo Zen Center buildings and its empty main zendo, both from its own facilities page and home slider, checked (980 and 1024 px).",
+      "No hub links: Michael Kieran Roshi, Kathy Ratliffe and Nelson Foster are not on Spiritpedia; Robert Aitken (died 2010) also not listed. Possible future listings: Michael Kieran, Kathy Ratliffe. Teachers file written with an empty list.",
+      "founded_year left null: the site names the Aitkens as co-founders but gives no founding year.",
+      "Pages carry a stray string '7ads6x98y' in the footer; harmless, noted only.",
+      "Found via the Honolulu Diamond Sangha's own Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Hiking Zazenkai on 22 Nov 2026 and Zoom dharma talk on 14 Nov 2026: covered by the undated Zazenkai item, or one-off talks.",
+      "Samu (work practice) Sundays, sangha meetings and Thanksgiving potluck: community events, not teaching offerings.",
+      "Reading list and newsletters: not practice resources of their own."
+    ]
+  },
+  "images_final": true
+}

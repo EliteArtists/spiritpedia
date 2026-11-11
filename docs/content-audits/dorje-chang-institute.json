@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "dorje-chang-institute",
+    "location_source": "https://www.dci.org.nz/contact-us/",
+    "create": {
+      "name": "Dorje Chang Institute",
+      "bio": "Known in full as the Dorje Chang Institute for Wisdom Culture, this Tibetan Buddhist centre in Avondale, Auckland, calls itself the oldest centre of its kind in New Zealand. It became a registered charitable trust in 1976, so the end of 2026 marks fifty years of work in the city. The institute belongs to the FPMT, the international network begun by Lama Thubten Yeshe and Lama Zopa Rinpoche, and teaches in the Gelug lineage that comes down from Lama Tsongkhapa. Its resident teacher is Geshe Wangchen, and a resident nun coordinates the spiritual programme.\n\nThe centre sits in spacious grounds with a stupa, a large prayer wheel for world peace, outdoor Buddha statues, gardens and a fruit orchard, which it describes as a green oasis in the city. Its programme runs from introductory Sunday morning talks and the FPMT Discovering Buddhism and Buddhist Mind Science series, many led by long-time student Simon Harrison, to guided meditation evenings on Tuesdays and the five-year Basic Program for committed students. There are also pujas, a library, a bookshop and a volunteer garden team. Classes ask a small facility contribution, audio recordings can be requested by people who live too far away, and monthly Dharma Friend supporters attend regular teachings free.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1976,
+      "availability": "local",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.dci.org.nz/",
+      "booking_url": "https://www.dci.org.nz/program/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dci@dci.org.nz",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Tenzin Osel Hita - Dorje Chang Institute, Auckland, New Zealand 6 October 2024",
+      "url": "https://www.youtube.com/watch?v=O-1lLBrP3pI",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Clear Light"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dharma Friend Supporter",
+      "url": "https://www.dci.org.nz/support/dharma_friend/",
+      "description": "Monthly supporter membership of the centre for individuals or families, with free entry to regular teachings, discounts on some courses, retreats and visiting teachers, library borrowing and shop discounts. A higher Vajra level adds a Tibetan calendar. A minimum of six months is asked.",
+      "price": "Dharma Friend (Individuals) $35 a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Sunday Morning Classes",
+      "url": "https://www.dci.org.nz/introductory-classes/",
+      "description": "Introductory Dharma talks and classes on Sunday mornings from 10am to noon, open to everyone, with topics announced on the centre's programme calendar; audio recordings can be requested by those who cannot attend.",
+      "price": "Requested facility contribution $10 per regular class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Experiencing the Benefit of Mantras",
+      "url": "https://www.dci.org.nz/mantra/",
+      "description": "A free guide to mantra recitation with pages for the Tara, Avalokiteshvara and Padmasambhava mantras, covering their meaning, pronunciation and visualisation, plus short and long ways to set a motivation and dedicate the practice, drawn from Lama Zopa Rinpoche's advice.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2071,
+    "hub": null,
+    "tier_evidence": "No YouTube channel of its own linked from its site; Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.dci.org.nz/",
+    "contact_form_url": "https://www.dci.org.nz/contact-us/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Base: 56 Powell Street, Avondale, Auckland (contact page); Avondale is a suburb about 8 km from the city centre.",
+      "Email dci@dci.org.nz is the general inbox (site footer); spc@dci.org.nz is the programme inbox.",
+      "Thin on current dated items: the Presenting the Path course (from 4 Oct 2026) and the How to Meditate series (4 Aug-1 Dec 2026) started before 12 Nov, and the Basic Program is paused; so only 4 items.",
+      "Sunday classes price: the $10 per regular class contribution is stated on the audio-recordings page, not on the class page itself.",
+      "Video: Osel Hita's talk at DCI (Oct 2024), linked from its own site but posted by another channel ('Clear Light'); owner may drop it.",
+      "Photo: three Sangha members in robes outside a temple building, from its own Dharma Friend page gallery (2153 px, checked); the place is likely the centre but not captioned.",
+      "No hub links: Geshe Wangchen, Simon Harrison and Ven. Gyalten Wangmo are not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Geshe Wangchen.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Presenting the Path (Discovering Buddhism Module 3, from 4 Oct 2026) and How to Meditate series (from 4 Aug 2026): started before 12 Nov 2026.",
+      "FPMT Basic Program: paused.",
+      "Request prayers and puja sponsorship: includes prayers for the sick (health rule).",
+      "Audio recording service: a request service, not a separate offering.",
+      "Gardens and volunteer pages: appeals, not programmes."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): the ingest found no usable profile photo (none on its site or channel)."
+  }
+}

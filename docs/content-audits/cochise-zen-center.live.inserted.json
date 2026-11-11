@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1329,
+    "healer_slug": "cochise-zen-center"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "1b663933-315f-4a5f-8ef0-260bb1d54a87",
+      "slug": "weekly-meditation-2",
+      "title": "Weekly Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "24c2fb7c-cea1-4bc4-92d5-c1325ec4efbf",
+      "slug": "zen-day-dharma-talks-and-workshops",
+      "title": "Zen Day, Dharma talks and workshops"
+    },
+    {
+      "table": "free_resources",
+      "id": "c10551cb-ad30-426c-b42d-15d44c105406",
+      "slug": "getting-started-2",
+      "title": "Getting Started"
+    }
+  ],
+  "at": "2026-11-11T21:39:22.094Z"
+}

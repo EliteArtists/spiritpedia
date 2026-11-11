@@ -1,0 +1,128 @@
+{
+  "healer": {
+    "healer_slug": "christchurch-buddhist-centre",
+    "location_source": "https://www.christchurchbuddhistcentre.nz/",
+    "create": {
+      "name": "Christchurch Buddhist Centre",
+      "bio": "Christchurch Buddhist Centre, also called Dho Nyak Osel Ling, is a Tibetan Buddhist community in Christchurch, New Zealand, and part of the Rigdzin Trust, a charity directed by the Tibetan teacher Amnyi Trulchung Rinpoche. Its story began in 2012, when Rinpoche saw a site for a gompa beside the home of one of his students; the meditation hall that local Buddhists then built together was opened by him in August 2015. The group has since given up that physical home and now meets mainly online, with some gatherings at other venues around the city.\n\nIts calendar centres on teaching over Zoom. A free Wednesday evening course works through The 37 Practices of a Bodhisattva, a fourteenth-century text on training the heart and mind, and Amnyi Trulchung Rinpoche gives weekend teaching series for the Rigdzin centres, offered by donation. Visiting teachers from other Tibetan lineages lead talks and occasional outdoor practices, such as a traditional mountain smoke offering. All Dharma teaching is given freely, and the centre is kept going by members' monthly support and donations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Christchurch",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.christchurchbuddhistcentre.nz/",
+      "booking_url": "https://www.christchurchbuddhistcentre.nz/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "cbc@rigdzin.org",
+      "image_urls": [
+        "https://www.christchurchbuddhistcentre.nz/static/images/Rigdzin-logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Exploring the Heart Sutra (Zoom)",
+      "url": "https://www.christchurchbuddhistcentre.nz/calendar/68",
+      "description": "Four evening teachings over two weekends in which Amnyi Trulchung Rinpoche explains the Heart Sutra and its view of reality as open potential, for newcomers and long-time practitioners alike. Registration is needed to receive the Zoom link.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.christchurchbuddhistcentre.nz/media/filer_public_thumbnails/filer_public/b0/74/b0741b25-c9c2-454b-8e88-c10160e6b31c/amnyi_rinpoche.jpg__900x1200_q60_crop_subsampling-2_upscale.jpg"
+    },
+    {
+      "title": "Approaching the Path of the Great Perfection (Zoom)",
+      "url": "https://www.christchurchbuddhistcentre.nz/calendar/71",
+      "description": "An evening talk by a long-time student, translator and meditation instructor on Dzogchen, set within Buddhism as a whole, and on how people today can practise it.",
+      "price": "Registration fee: $10",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://www.christchurchbuddhistcentre.nz/media/filer_public_thumbnails/filer_public/5e/ce/5ece2e9b-7b23-48d8-b97b-2f54ff4389b2/jakob1.jpg__900x1200_q60_crop_subsampling-2_upscale.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://www.christchurchbuddhistcentre.nz/membership/",
+      "description": "Regular monthly support for the centre, which runs on donations alone; members may borrow from the library.",
+      "price": "The suggested membership fee starts at NZ$20 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.christchurchbuddhistcentre.nz/media/filer_public_thumbnails/filer_public/1c/8b/1c8bdd7f-f5ea-4fca-8438-7bf40ce96610/christchurch_buddhist_centre_opening.jpg__900x505_q60_crop_subject_location-2040%2C1113_subsampling-2_upscale.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Heart Training - Mind Training (Zoom)",
+      "url": "https://www.christchurchbuddhistcentre.nz/calendar/56",
+      "description": "A free weekly Wednesday evening course on Zoom that studies Ngulchu Thogme Zangpo's verses, The 37 Practices of a Bodhisattva, on turning everyday difficulties into the path and growing a brave, open heart.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.christchurchbuddhistcentre.nz/media/filer_public_thumbnails/filer_public/25/3e/253e3dff-f5bf-4d53-a4de-a163b7832dfd/keith_in_2021_at_nbc_reduced.jpg__900x1200_q60_crop_subsampling-2_upscale.jpg"
+    },
+    {
+      "title": "Riwo Sangchö – Mountain Smoke Offering",
+      "url": "https://www.christchurchbuddhistcentre.nz/calendar/70",
+      "description": "An outdoor Tibetan incense-offering practice at Godley Head, Christchurch, on 15 November 2026, with an introduction for newcomers and a shared picnic brunch; everyone is welcome, by donation.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.christchurchbuddhistcentre.nz/media/filer_public_thumbnails/filer_public/5e/ce/5ece2e9b-7b23-48d8-b97b-2f54ff4389b2/jakob1.jpg__900x1200_q60_crop_subsampling-2_upscale.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2062,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.christchurchbuddhistcentre.nz/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No physical premises at present: the site says the centre has 'temporarily let go of its physical address' and moved online (history page). Base kept as Christchurch (published), availability 'worldwide' because teaching is on Zoom. The owner may prefer to wait until it has a home again.",
+      "Photo: only the Rigdzin Trust emblem (logo, 600 px, checked); its history page photos show the former gompa, which it no longer uses.",
+      "Email cbc@rigdzin.org is the centre's inbox (footer of every page).",
+      "Amnyi Trulchung Rinpoche's Heart Sutra series is shared with the Nelson Buddhist Centre (same trust; lead 2058, skipped for contact).",
+      "Jakob Leschly (Siddhartha's Intent Australia) leads the Great Perfection talk and the smoke offering as a visiting teacher; not on Spiritpedia, not linked.",
+      "No hub links: Amnyi Trulchung Rinpoche is not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Amnyi Trulchung Rinpoche.",
+      "Robots: robots.txt redirects to a 404 (no file), so nothing is disallowed.",
+      "Found via the New Zealand Buddhist Council national-organisations list (names and links only)."
+    ],
+    "left_out": [
+      "History page photos of the former gompa: no longer the centre's premises."
+    ]
+  },
+  "images_final": true
+}

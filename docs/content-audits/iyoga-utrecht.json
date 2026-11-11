@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "iyoga-utrecht",
+    "location_source": "https://www.iyogautrecht.nl/contact/",
+    "create": {
+      "name": "iYoga Utrecht",
+      "bio": "iYoga Utrecht is a studio given over entirely to the Iyengar method, founded in 2013 by Claas Hille and Hiske van der Meulen. Since 2017 it has occupied a converted garage on the Amsterdamsestraatweg in Utrecht, rebuilt as two heated practice rooms with a rope wall, ceiling ropes and a large stock of props. Work by local artists hangs on the walls, and the building can be reached by wheelchair.\n\nA team of around twenty certified teachers runs group classes at several levels, from a dedicated beginners' class and a six-lesson introductory course up to Level 3, alongside restorative sessions, supervised self-practice and a donation-based community class taught by trainees. Many classes are streamed live over Zoom, some purely online and some hybrid, so students join from elsewhere in the Netherlands and from abroad. Lessons are given in Dutch or English depending on who is in the room.\n\nFor committed students there is a year-long deepening course of weekend study days that tie posture and breathing practice to philosophy and practical anatomy, and a mentoring route of three years or more that prepares trainees for the Dutch Iyengar association's teaching exam. The studio also hosts workshops and pop-up classes with senior Iyengar teachers from the Netherlands and abroad.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.iyogautrecht.nl/",
+      "booking_url": "https://www.iyogautrecht.nl/rooster/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@iyogautrecht.nl",
+      "image_urls": [
+        "https://www.iyogautrecht.nl/wp-content/uploads/2021/03/yoga1.jpg",
+        "https://www.iyogautrecht.nl/wp-content/uploads/2021/02/Groepsles-leraar-demonstratie-1024x575.png",
+        "https://www.iyogautrecht.nl/wp-content/uploads/2021/03/IMG_2544-scaled.jpg"
+      ],
+      "founded_year": 2013
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Groepslessen Iyengar yoga",
+      "url": "https://www.iyogautrecht.nl/lessen/groepsles/",
+      "description": "Weekly group classes at all-levels, Level 2 and Level 3, plus restorative classes, booked through the studio timetable. Monthly and six-month memberships and class cards cover all regular group classes, in the studio or online, with student and U-pas discounts.",
+      "price": "Abonnement per maand €75; 10 lessen in 4 maanden €135; 1 les – €17,50",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2021/02/Groepsles-leraar-demonstratie-1024x575.png"
+    },
+    {
+      "title": "Online yogales",
+      "url": "https://www.iyogautrecht.nl/lessen/online-yoga/",
+      "description": "Live, interactive Iyengar classes over Zoom at several levels, including restorative, with early-morning and lunchtime slots. Some are online only and some are hybrid with the studio; teachers watch and correct students on screen, and household items can stand in for props.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2020/03/unnamed-4.jpg"
+    },
+    {
+      "title": "Beginnerscursus",
+      "url": "https://www.iyogautrecht.nl/cursussen/beginnerscursus/",
+      "description": "A six-lesson introduction to Iyengar yoga for complete newcomers, run a few times a year, covering the common postures with attention to alignment, breathing and props. New students can also start at any time with a trial class or a trial month.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2025/03/Home-Practice-Sequence-1.3.png"
+    },
+    {
+      "title": "Mentortraject",
+      "url": "https://www.iyogautrecht.nl/cursussen/mentortraject/",
+      "description": "A mentoring route of at least three years for experienced students preparing for the Iyengar Yoga Vereniging Nederland teaching exam: regular classes, the yearly deepening course, observing and assisting in classes, and small-group Teachers Lab sessions with fellow trainees.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2021/02/Foto-workshops-e1614250235818.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1927,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Instagram and Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.iyogautrecht.nl/contact/",
+    "contact_form_url": "https://www.iyogautrecht.nl/contact/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Website from the IYVN teacher finder; robots.txt (www host, after a 301 from the bare domain) open to all.",
+      "Not the same as iYoga – Iyengar Yoga Centrum Antwerpen (already on Spiritpedia): different country and domain.",
+      "Booking URL is the studio's own timetable page (Momoyoga booking behind it); not opened.",
+      "Photos are the studio's own: a rope-wall class in a standing pose, a teacher demonstrating to students, and a teacher adjusting a backbend over a chair.",
+      "Lucienne Vidah is a visiting guest teacher (not linked). No price is published for the pop-up class.",
+      "Possible future listings: Hiske van der Meulen (co-founder, CIYT Level 3, mentor) and Claas Hille (co-founder).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Prices on the online, beginners and mentor pages are not stated; the prices page says general cards and memberships cover all group classes."
+    ],
+    "left_out": [
+      "Verdiepingscursus 2026-2027 'Light on Yoga' in de praktijk (€990 full year; €160 per weekend): the year began on 4 Oct 2026, before 12 Nov; single weekends can still be booked. Owner may wish to add it.",
+      "Billy Konrad & Tobias Lotan, Iyengar Yoga & Osteopathy (11-13 Dec 2026 and 12-14 Mar 2027): osteopathy/body-therapy framing, health rule.",
+      "Garth McLean save-the-date (4-6 Jun 2027): page framed around his MS diagnosis, and no details yet.",
+      "Back Care, Special Needs and pregnancy classes: health rule.",
+      "Community Class (donation-based) and the €12,50 trial class: mentioned in the bio rather than listed as items.",
+      "Past workshops (Stephanie Quirk yoga-therapy course, Tally Eldor, Uday Bhosale, Nadège Chaumont masterclasses): already run.",
+      "1 dated offering(s) that had already started by 2026-11-14"
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1309,
+    "healer_slug": "auckland-buddhist-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "03076ac9-1707-42fb-976e-d6c1cd1f43a9",
+      "slug": "intro-to-meditation-and-buddhism",
+      "title": "Intro to meditation and Buddhism"
+    },
+    {
+      "table": "courses",
+      "id": "551fc2e1-dc76-400b-aa43-0b78996df1da",
+      "slug": "this-being-that-becomes",
+      "title": "This being, that becomes"
+    },
+    {
+      "table": "courses",
+      "id": "883b91e2-8d58-4a28-8147-88747b99541a",
+      "slug": "abc-sangha-retreat-autumn",
+      "title": "ABC sangha retreat (autumn)"
+    },
+    {
+      "table": "courses",
+      "id": "548a4542-81fd-48bb-b18c-f0a75f1386ce",
+      "slug": "abc-meditation-retreat",
+      "title": "ABC meditation retreat"
+    },
+    {
+      "table": "courses",
+      "id": "aede8fd6-822b-4e53-9766-ef33be665342",
+      "slug": "saturday-morning-meditation",
+      "title": "Saturday morning meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "75218c7d-c0c4-488b-9506-a22568485c42",
+      "slug": "meditation-resources-2",
+      "title": "Meditation resources"
+    }
+  ],
+  "at": "2026-11-11T21:38:16.975Z"
+}

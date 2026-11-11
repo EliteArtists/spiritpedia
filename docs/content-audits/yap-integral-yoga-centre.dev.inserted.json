@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1361,
+    "healer_slug": "yap-integral-yoga-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a430e33a-e07f-4620-ac71-a0e86a2a1161",
+      "slug": "integral-yoga-e-meditazione-yoga-corsi-regolari",
+      "title": "Integral Yoga e Meditazione Yoga (corsi regolari)"
+    },
+    {
+      "table": "courses",
+      "id": "c31d9049-f3a8-4cf8-8e01-1578a00c3d42",
+      "slug": "yoga-in-english-hridaya-hatha-yoga",
+      "title": "Yoga in English (Hridaya Hatha Yoga)"
+    },
+    {
+      "table": "courses",
+      "id": "d0f99805-73ea-4b70-a128-b20c402d0b39",
+      "slug": "slow-flow-yoga",
+      "title": "Slow Flow Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "e3a56c49-2f3a-4c29-8fe3-33433c4f4e1a",
+      "slug": "yap-lounge-2-yoga-tisane-e-letture",
+      "title": "YAP Lounge #2: Yoga, tisane e letture"
+    }
+  ],
+  "at": "2026-11-11T18:58:56.136Z"
+}

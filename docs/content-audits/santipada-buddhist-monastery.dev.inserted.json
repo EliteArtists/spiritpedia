@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1373,
+    "healer_slug": "santipada-buddhist-monastery"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b3c0ffae-294c-4f40-a15c-ecdcf5dc2e2d",
+      "slug": "7-day-meditation-retreat",
+      "title": "7 Day Meditation Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "8767965b-fb44-4fb1-a3bc-0969da010c82",
+      "slug": "general-retreat",
+      "title": "General Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "e1cb5be9-ca2c-4a74-929d-fb65da6455cc",
+      "slug": "membership-retreats",
+      "title": "Membership Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "6e815dc5-75e9-4bf0-b374-ec7191844866",
+      "slug": "volunteer-stays",
+      "title": "Volunteer stays"
+    },
+    {
+      "table": "free_resources",
+      "id": "3b177b67-199a-4626-ae42-09303c5902f9",
+      "slug": "sunday-meditation-2",
+      "title": "Sunday Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "8a2437e0-6774-4fd5-99f1-096a6675f094",
+      "slug": "dhamma-reflections",
+      "title": "Dhamma Reflections"
+    }
+  ],
+  "at": "2026-11-11T19:09:16.573Z"
+}

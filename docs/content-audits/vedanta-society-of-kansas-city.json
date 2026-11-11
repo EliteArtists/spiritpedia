@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "vedanta-society-of-kansas-city",
+    "location_source": "https://vedantakc.org/contact/",
+    "create": {
+      "name": "Vedanta Society of Kansas City",
+      "bio": "The Vedanta Society of Kansas City belongs formally to the Ramakrishna Order and is based on Wornall Road in Kansas City, Missouri. It was started in 1947 by Swami Satprakashananda, a disciple of Swami Brahmananda who had earlier set up the Vedanta Society of St. Louis, and it still shares leadership with St. Louis: Swami Chetanananda, the spiritual director of both, travels over to lead retreats and give talks, while Swami Paritushtananda, who served for many years at the Order's headquarters at Belur Math and later in New York, is the assistant minister.\n\nThe society presents Vedanta as a universal outlook rather than a single creed, honouring the teachers of every faith and the lives of Sri Ramakrishna, Sri Sarada Devi and Swami Vivekananda. Services are held on most Sundays, with classes, retreats, festival days and visits from monks of other centres through the year, and anyone may ask for an appointment to talk about spiritual practice. Nothing is charged for any of it. Its website keeps a large audio library of Sunday lectures and class series on the Bhagavad Gita, the Gospel of Sri Ramakrishna and Shankara's Vivekachudamani, and there is a small bookshop and lending library.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Kansas City, Missouri",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://vedantakc.org/",
+      "booking_url": "https://vedantakc.org/services/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@vedantakc.org",
+      "image_urls": [
+        "https://vedantakc.org/wp-content/uploads/2025/09/dsc_0673-1.jpg",
+        "https://vedantakc.org/wp-content/uploads/2025/09/dsc8697-2.jpg"
+      ],
+      "founded_year": 1947
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday Lectures (audio)",
+      "url": "https://vedantakc.org/audio/sunday-lectures/",
+      "description": "Recordings of Sunday talks by Swami Paritushtananda from 2017 onward, on subjects such as karma yoga, detachment, the guru, and the lives of Ramakrishna's disciples.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://vedantakc.org/wp-content/uploads/2025/09/dsc_0673-1.jpg"
+    },
+    {
+      "title": "Vivekachudamani lecture series",
+      "url": "https://vedantakc.org/vivekachudamani/",
+      "description": "A long run of recorded classes, more than forty sessions, working through Shankara's Crest-Jewel of Discrimination.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://vedantakc.org/wp-content/uploads/2025/09/dsc_0673-1.jpg"
+    },
+    {
+      "title": "Bhagavad Gita classes",
+      "url": "https://vedantakc.org/audio/bhagavad-gita/",
+      "description": "Recorded classes in which Swami Paritushtananda reads the Gita and draws out how its teaching applies to daily life.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://vedantakc.org/wp-content/uploads/2025/09/dsc_0673-1.jpg"
+    },
+    {
+      "title": "Gospel of Sri Ramakrishna classes",
+      "url": "https://vedantakc.org/audio/gospel-of-sri-ramakrishna/",
+      "description": "Audio classes on the recorded conversations of Ramakrishna with his followers, focused on the practical side of spiritual life.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://vedantakc.org/wp-content/uploads/2021/03/statue-of-sri-ramakrishna-at-belur-math-1.jpeg"
+    },
+    {
+      "title": "Towards the Goal Supreme (lecture series)",
+      "url": "https://vedantakc.org/towards-the-goal-supreme/",
+      "description": "A series of twenty-one recorded lectures kept on the society's site, free to stream.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://vedantakc.org/wp-content/uploads/2025/09/dsc_0673-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1858,
+    "hub": null,
+    "tier_evidence": "No YouTube channel of its own (the site points to the St. Louis society's channel); Facebook not read → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://vedantakc.org/",
+    "contact_form_url": "https://vedantakc.org/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Email info@vedantakc.org is the society's general inbox (mailto in the site footer); a contact form is also on /contact/.",
+      "Teachers file is empty: Swami Chetanananda (spiritual director, based in St. Louis) and Swami Paritushtananda (assistant minister) are not on Spiritpedia. Possible future listings: Swami Chetanananda (author).",
+      "Address: the society's site gives 10808 Wornall Road; the vedanta.org list still gives 8701 Ward Parkway, so it seems to have moved (a dedication ceremony was held in August 2025). City level only in the plan.",
+      "No videos: the society has no channel of its own; Swami Chetanananda's talks are on the Vedanta Society of St. Louis channel (lead 1859).",
+      "Photos are from the August 2025 dedication: the shrine, and monks of the Order carrying pictures into the new rooms. Both are very large files (6000-8000 px wide).",
+      "The Sunday lecture archive includes talks titled 'Healing the Mind' and 'Pain and Its Relief'; the item description does not mention them. Borderline only because of titles in the list.",
+      "Regional: Kansas City, Missouri."
+    ],
+    "left_out": [
+      "Visiting swamis' weekends (2026 list): Swami Tyagananda 14-15 Nov 2026 is a guest visit without a page of its own.",
+      "Bookshop and rental library (shop/lending)."
+    ]
+  },
+  "images_final": true
+}

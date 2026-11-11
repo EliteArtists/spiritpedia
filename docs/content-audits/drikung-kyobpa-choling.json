@@ -1,0 +1,147 @@
+{
+  "healer": {
+    "healer_slug": "drikung-kyobpa-choling",
+    "location_source": "https://www.drikungkc.org/",
+    "create": {
+      "name": "Drikung Kyobpa Choling",
+      "bio": "Drikung Kyobpa Choling is a Tibetan Buddhist meditation centre and temple on a hillside in Escondido, in north San Diego County, California. It was founded in 1996 by the late Drupon Samten Rinpoche with the guidance of His Holiness the Drikung Kyabgön Chetsang, head of the Drikung Kagyu school, and its name honours Kyobpa Jigten Sumgön, the lineage's founder. The richly painted shrine room houses a large Buddha statue, and a stupa of enlightenment is being built in the grounds. Resident and regular teachers include Khenpo Tenzin and Venerable Ani Chodron, a nun who completed the traditional three-year retreat under Drupon Samten Rinpoche.\n\nMost Sundays the community meets for Dharma teaching, meditation and group ritual practice such as Tara, Amitabha or protector practice, often with explanations for newcomers. Senior lamas of the Drikung Kagyu visit for weekend teachings, empowerments and vow ceremonies, which can usually be joined in person or on Zoom for a suggested donation, and a shared vegetarian potluck lunch is part of the day. The centre also holds lama dances and seasonal celebrations, and its YouTube channel shares recorded teachings, some with Spanish subtitles, for a sangha that reaches into Mexico.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1996,
+      "availability": "local_online",
+      "city": "Escondido, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.drikungkc.org/",
+      "booking_url": "https://www.drikungkc.org/calendar",
+      "youtube_url": "https://www.youtube.com/@drikungkc",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@drikungkc.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5be90f3b3c3a53a02589230e/1543168300655-980SIRW2CAJMTN2RKGQP/DSC01068.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/5be90f3b3c3a53a02589230e/1542579944203-Q0YAM53WH1NDHQNCYNA3/DSC01079.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "DKC Intro Film",
+      "url": "https://www.youtube.com/watch?v=sOjvwMz_Qpg",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Drikungkc"
+    },
+    {
+      "title": "Teachings Of Emptiness (w/ Spanish Subtitles)",
+      "url": "https://www.youtube.com/watch?v=y3BNP5KhSZE",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Drikungkc"
+    },
+    {
+      "title": "Practice Of Patience",
+      "url": "https://www.youtube.com/watch?v=gAFLtteBa50",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Drikungkc"
+    },
+    {
+      "title": "Thirty seven Point Mandala Offering",
+      "url": "https://www.youtube.com/watch?v=bj3h4JM8gfs",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Drikungkc"
+    },
+    {
+      "title": "Yogi Khenpo Tashi Rinpoche Visit Day 1 Saturday afternoon",
+      "url": "https://www.youtube.com/watch?v=BmnKzGCVdzQ",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Drikungkc"
+    },
+    {
+      "title": "Kenchen Konchog Gyaltshen Rinpoche Day 1 Saturday Morning",
+      "url": "https://www.youtube.com/watch?v=Pp-xlbJz1Z8",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Drikungkc"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mahamudra teachings with Khenchen Konchog Gyaltshen Rinpoche",
+      "url": "https://www.drikungkc.org/khenchen",
+      "description": "Two weekends of teachings in English on Mahamudra from the writings of Kyobpa Jigten Sumgön, closing with a ceremony to take or renew the bodhisattva vows. Join in person in Escondido or on Zoom; registration required, and no one is turned away for lack of funds.",
+      "price": "$30 per day in-person, $15 per day for online",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5be90f3b3c3a53a02589230e/1723296396492-4B7KTVK1XON5MBMBLDV3/Khenchen-Konchog-Gyaltsen-Rinpoche.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Dharma programme",
+      "url": "https://www.drikungkc.org/calendar",
+      "description": "Weekly Sunday gatherings at the temple with teachings, meditation and group practice led by Khenpo Tenzin, Ani Chodron and visiting teachers; the calendar lists each week's topic.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5be90f3b3c3a53a02589230e/1784389312980-EUMQ7NRATD1KI8CEIRY4/khenpo-cropped.jfif"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2217,
+    "hub": null,
+    "tier_evidence": "YouTube @drikungkc: 181 subscribers (YouTube Data API, 11 Nov 2026; found from the intro video embedded on its About page) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.drikungkc.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "YouTube channel identified through the intro film embedded on its own About page (yt.mjs video), not a channel link on the site; owner may want to confirm before setting youtube_url.",
+      "Photos: the painted shrine room (2500 px) and the temple building with prayer flags (1000 px), from its home page, checked.",
+      "Email info@drikungkc.org (home page footer). No separate contact form confirmed.",
+      "No hub links: Khenpo Tenzin, Ani Chodron, Khenchen Konchog Gyaltshen Rinpoche and others are not on Spiritpedia.",
+      "Thin on offerings: one dated programme plus the Sunday programme; six videos make up the rest.",
+      "Found via the Drikung Kagyu centre list (drikungtmc.com 'Other Centers', names and links only)."
+    ],
+    "left_out": [
+      "White Tara empowerment (15 Nov) and Amitabha practice (22 Nov): listed only on the calendar page (same URL as the Sunday item).",
+      "Mandala offering to the lama (minimum $400): a ritual offering, not a programme.",
+      "Stupa Enlightenment Project: a donation appeal.",
+      "Vajravidharan Healing Ceremony video: healing ritual.",
+      "'Our Sangha 3.0' video: on another channel (Drikung Dharma)."
+    ]
+  },
+  "images_final": true
+}

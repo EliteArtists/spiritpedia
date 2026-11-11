@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1299,
+    "healer_slug": "ananda-sangha-mumbai"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c6d49e8e-348c-4b00-a277-5b5749c456c0",
+      "slug": "learn-to-meditate-the-path-of-kriya-yoga-level-1-3",
+      "title": "Learn to Meditate: The Path of Kriya Yoga (Level 1)"
+    },
+    {
+      "table": "courses",
+      "id": "8fbd5ff1-1679-42ce-8e7a-209f8a479ccc",
+      "slug": "the-art-and-science-of-raja-yoga-level-2",
+      "title": "The Art and Science of Raja Yoga (Level 2)"
+    },
+    {
+      "table": "courses",
+      "id": "be1e6530-316e-4cc2-914f-e7cfce46f2c1",
+      "slug": "ananda-yoga",
+      "title": "Ananda Yoga"
+    },
+    {
+      "table": "free_resources",
+      "id": "68cdbe80-2874-4976-ac3d-58ebf36c8550",
+      "slug": "guided-meditation-fridays-and-sunday-satsang",
+      "title": "Guided Meditation (Fridays) and Sunday Satsang"
+    }
+  ],
+  "at": "2026-11-11T21:37:52.455Z"
+}

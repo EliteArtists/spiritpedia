@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1345,
+    "healer_slug": "integral-yoga-centre-of-melbourne"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6542cff9-aa20-44eb-805b-690599bc0315",
+      "slug": "class-passes-murrumbeena-and-online",
+      "title": "Class passes (Murrumbeena and online)"
+    },
+    {
+      "table": "courses",
+      "id": "58b87120-eae5-47ab-8e6b-7674b5df5db1",
+      "slug": "satsang-evenings",
+      "title": "Satsang evenings"
+    },
+    {
+      "table": "courses",
+      "id": "1b55e070-60fa-4cdb-8521-0128c659501a",
+      "slug": "integral-yoga-200-hour-hatha-i-teacher-training",
+      "title": "Integral Yoga 200-hour Hatha I Teacher Training"
+    }
+  ],
+  "at": "2026-11-11T21:40:13.702Z"
+}

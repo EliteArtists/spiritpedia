@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1350,
+    "healer_slug": "istituto-iyengar-yoga-firenze"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9817,
+      "slug": "iyengar-yoga-con-nicola-ricci",
+      "title": "Iyengar Yoga con Nicola Ricci"
+    },
+    {
+      "table": "videos",
+      "id": 9818,
+      "slug": "iyengar-yoga-con-filippo-nannucci",
+      "title": "Iyengar Yoga con Filippo Nannucci"
+    },
+    {
+      "table": "videos",
+      "id": 9819,
+      "slug": "iyengar-yoga-con-agrippina-pakharukova",
+      "title": "Iyengar Yoga con Agrippina Pakharukova"
+    },
+    {
+      "table": "videos",
+      "id": 9820,
+      "slug": "iyengar-yoga-con-pasquale-equizi",
+      "title": "Iyengar Yoga con Pasquale Equizi"
+    },
+    {
+      "table": "videos",
+      "id": 9821,
+      "slug": "iyengar-yoga-con-agrippina",
+      "title": "Iyengar Yoga con Agrippina"
+    },
+    {
+      "table": "videos",
+      "id": 9822,
+      "slug": "iyengar-yoga-con-filippo-nannucci-2",
+      "title": "Iyengar Yoga con Filippo Nannucci"
+    },
+    {
+      "table": "courses",
+      "id": "d7ded3d6-0fa9-40fa-982d-6ef1594d8b33",
+      "slug": "weekly-iyengar-yoga-classes",
+      "title": "Weekly Iyengar Yoga classes"
+    },
+    {
+      "table": "courses",
+      "id": "a45c3160-83b6-47af-8f4e-958be8450f78",
+      "slug": "seminari-insegnanti-livello-2-3-a-montauto",
+      "title": "Seminari insegnanti livello 2/3 a Montauto"
+    },
+    {
+      "table": "courses",
+      "id": "bb25e6c4-2763-4587-9a14-9c578c3ab7da",
+      "slug": "gabriella-giubilaro-e-rosana-seligman",
+      "title": "Gabriella Giubilaro e Rosana Seligman"
+    },
+    {
+      "table": "free_resources",
+      "id": "449f8c8a-ec06-4e0d-8df4-bb7661fea891",
+      "slug": "lezioni-di-prova-gratuite",
+      "title": "Lezioni di prova gratuite"
+    }
+  ],
+  "at": "2026-11-11T21:40:23.185Z"
+}

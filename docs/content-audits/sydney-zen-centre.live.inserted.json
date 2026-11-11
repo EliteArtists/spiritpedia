@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1387,
+    "healer_slug": "sydney-zen-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7b0782d8-5286-4b04-94c0-f9e24be0d46b",
+      "slug": "orientation-for-newcomers",
+      "title": "Orientation for newcomers"
+    },
+    {
+      "table": "courses",
+      "id": "7f3123af-831b-4fe2-a289-c5afcc74d940",
+      "slug": "rohatsu-sesshin-2026-4",
+      "title": "Rohatsu Sesshin 2026"
+    },
+    {
+      "table": "courses",
+      "id": "72df963e-e67e-446a-97fd-4b553f05bc77",
+      "slug": "zazenkai-2",
+      "title": "Zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "ec0d6bf0-16b4-4641-9467-a35b8d473eaf",
+      "slug": "womens-retreat-at-kodoji",
+      "title": "Women's retreat at Kodoji"
+    },
+    {
+      "table": "courses",
+      "id": "c3861e97-7ac3-49fa-bc9b-43c5c797eca2",
+      "slug": "membership-11",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "54f7532e-a005-4baa-8122-b06915b2392f",
+      "slug": "sydney-zen-centre-podcasts",
+      "title": "Sydney Zen Centre podcasts"
+    },
+    {
+      "table": "free_resources",
+      "id": "27c594d1-0f7d-43fd-b99c-309893492b2e",
+      "slug": "sutras",
+      "title": "Sutras"
+    }
+  ],
+  "at": "2026-11-11T21:42:05.877Z"
+}

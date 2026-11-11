@@ -1,0 +1,96 @@
+{
+  "healer": {
+    "healer_slug": "orlando-zen-center",
+    "location_source": "https://orlandozen.com/weekly-practice/",
+    "create": {
+      "name": "Orlando Zen Center",
+      "bio": "Orlando Zen Center, given the temple name Hwa Om Sa (Flower Garland Temple) in 2016, is a lay Zen group in Orlando, Florida, affiliated with the Kwan Um School of Zen founded by the Korean teacher Zen Master Seung Sahn. It started in 2000 as a local meditation circle and became a Florida non-profit in 2011. Zen Master Jok Um (Ken Kessel), a student of Seung Sahn since 1975, serves as the group's guiding teacher.\n\nThe sangha has no temple building of its own. Each Sunday evening it meets in person at The New Romantics bookstore in the Audubon Park neighbourhood and on Zoom, with an introduction for newcomers, chanting of the Heart Sutra and Great Dharani, a period of silent sitting, and a short talk with questions. On the third Saturday of every month a half-day Long Sit online combines several rounds of sitting and walking with a Dharma talk and a closing circle, and longer retreats are announced at practice. Regular practice is always free, chanting texts can be downloaded from the website, and a monthly newsletter began in November 2025.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2000,
+      "availability": "worldwide",
+      "city": "Orlando, Florida",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://orlandozen.com/",
+      "booking_url": "https://orlandozen.com/weekly-practice/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://orlandozen.com/wp-content/uploads/2025/09/536281616_1212690964233327_8570599638019561238_n-1.jpg",
+        "https://orlandozen.com/wp-content/uploads/2022/06/26849918_1173120842791384_7179949968223470414_o-1024x663.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday Evening Hybrid Practice",
+      "url": "https://orlandozen.com/weekly-practice/",
+      "description": "A weekly evening of chanting, 25 minutes of silent sitting and a short talk with questions, held at a bookstore in Audubon Park and on Zoom, with an introduction for newcomers beforehand.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://orlandozen.com/wp-content/uploads/2025/09/536281616_1212690964233327_8570599638019561238_n-1.jpg"
+    },
+    {
+      "title": "Long Sit (monthly)",
+      "url": "https://orlandozen.com/long-sit-2/",
+      "description": "A free half-day online retreat on the third Saturday of each month, with the Morning Bell Chant, six periods of sitting and walking, a Dharma talk and a closing sharing circle.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://orlandozen.com/wp-content/uploads/2025/09/536281616_1212690964233327_8570599638019561238_n-1.jpg"
+    },
+    {
+      "title": "For Newcomers",
+      "url": "https://orlandozen.com/2019/05/03/newcomers/",
+      "description": "What to expect at a first visit: no booking or experience needed, simple instruction before practice if wanted, and no charge.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://orlandozen.com/wp-content/uploads/2025/09/536281616_1212690964233327_8570599638019561238_n-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1814,
+    "hub": null,
+    "tier_evidence": "No YouTube or social accounts read (none linked from its pages that we opened) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://orlandozen.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Regional: Orlando, Florida.",
+      "No premises of its own: in-person practice is held in a bookstore (The New Romantics, Audubon Park), so the base is the city.",
+      "robots.txt Crawl-delay: 10 respected (10 s between our requests, images included).",
+      "No published email on the pages read; the contact page has a WPForms form. The Kwan Um list gives orlandozencenter@gmail.com, not used.",
+      "Thin: three free practice items and no videos or paid offerings.",
+      "No hub links: Zen Master Jok Um (Ken Kessel) is not on Spiritpedia. Teachers file written with an empty list."
+    ],
+    "left_out": [
+      "Multi-day retreats: mentioned but no dates or pages.",
+      "Meditation article page: mainly links to the Kwan Um site.",
+      "Newsletter sign-up: not a practice resource."
+    ]
+  },
+  "images_final": true
+}

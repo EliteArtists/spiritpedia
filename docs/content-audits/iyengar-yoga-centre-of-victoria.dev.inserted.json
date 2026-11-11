@@ -1,0 +1,58 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1329,
+    "healer_slug": "iyengar-yoga-centre-of-victoria"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9573,
+      "slug": "geeta-iyengar-vancouver-2001",
+      "title": "Geeta Iyengar | Vancouver 2001"
+    },
+    {
+      "table": "videos",
+      "id": 9574,
+      "slug": "iyengar-yoga-victoria-beginners-video-with-adia-kapoor",
+      "title": "Iyengar Yoga Victoria Beginners Video with Adia Kapoor"
+    },
+    {
+      "table": "videos",
+      "id": 9575,
+      "slug": "iyengar-yoga-victoria-beginners-video-with-gary-wong",
+      "title": "Iyengar Yoga Victoria Beginners Video with Gary Wong"
+    },
+    {
+      "table": "courses",
+      "id": "675b507f-9463-4517-beca-a09a73d761f7",
+      "slug": "term-classes-intro-to-level-4-pranayama-restorative-and-55",
+      "title": "Term classes: Intro to Level 4, Pranayama, Restorative and 55+"
+    },
+    {
+      "table": "courses",
+      "id": "2b791922-69b4-4241-b7e8-3950529281f1",
+      "slug": "drop-in-classes-and-pay-what-you-can",
+      "title": "Drop-in classes and Pay What You Can"
+    },
+    {
+      "table": "courses",
+      "id": "e19ab200-c4ba-4434-a0e7-1808d57b231a",
+      "slug": "centre-membership",
+      "title": "Centre membership"
+    },
+    {
+      "table": "courses",
+      "id": "fcce2575-8a70-4ba5-a82f-bc20c447a104",
+      "slug": "strength-stamina-stability-workshop-in-studio",
+      "title": "Strength Stamina Stability Workshop IN STUDIO"
+    },
+    {
+      "table": "free_resources",
+      "id": "eff58e68-9495-4ae3-89cc-129f74db5e33",
+      "slug": "an-independent-pranayama-practice",
+      "title": "An Independent Pranayama Practice"
+    }
+  ],
+  "at": "2026-11-11T17:54:18.257Z"
+}

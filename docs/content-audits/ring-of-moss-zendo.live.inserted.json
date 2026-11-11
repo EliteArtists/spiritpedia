@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1373,
+    "healer_slug": "ring-of-moss-zendo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c33eef4c-7f89-496f-9932-e8906f9bb490",
+      "slug": "weekly-zazen-and-orientation",
+      "title": "Weekly zazen and orientation"
+    },
+    {
+      "table": "courses",
+      "id": "0a80d44c-a6e9-418c-9b77-bd1562418f98",
+      "slug": "rohatsu-sesshin-2026-3",
+      "title": "Rohatsu Sesshin 2026"
+    },
+    {
+      "table": "courses",
+      "id": "bcfb9f3a-c167-44eb-9f37-a0b50ffa1336",
+      "slug": "sesshin-and-mountains-and-rivers-retreats",
+      "title": "Sesshin and Mountains and Rivers retreats"
+    },
+    {
+      "table": "free_resources",
+      "id": "785cc48b-a22f-4894-b13e-322a9c94d96c",
+      "slug": "ring-of-moss-sutra-book",
+      "title": "Ring of Moss Sutra Book"
+    }
+  ],
+  "at": "2026-11-11T21:41:29.817Z"
+}

@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "yoga-coolhaven",
+    "location_source": "https://www.yogacoolhaven.nl/yc/site/contact/index/en",
+    "create": {
+      "name": "Yoga Coolhaven",
+      "bio": "Yoga Coolhaven is an Iyengar yoga studio on the Coolhaven harbour in Rotterdam, run by a collective of certified teachers who set it up together and organise it through a non-profit foundation, Stichting Yoga Teachers Collective. Its large, light practice room has rope walls and a full set of props, and the teachers, several of whom study regularly with the Iyengar family in Pune, each bring their own style to a shared method built on precise instruction and careful adjustment of each posture to the student.\n\nThe weekly timetable runs from basics classes for newcomers, with headstand and shoulderstand taught step by step, through all-level groups to an intermediate class working on balances, twists and inversion variations, alongside quieter restorative evenings and classes for older students. Experienced students can join some sessions by live stream, and a library of recorded classes supports home practice. Beyond the mat, the studio runs a seasonal in-depth course that combines asana training on the Level 1 syllabus with study of philosophy and anatomy, holiday workshops, and a reading group on classic texts such as the Bhagavad Gita. Through its foundation it also takes yoga outdoors and into the neighbourhood with community projects.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Rotterdam",
+      "country": "Netherlands",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.yogacoolhaven.nl/",
+      "booking_url": "https://www.yogacoolhaven.nl/yc/site/les/index/en",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@yogacoolhaven.nl",
+      "image_urls": [
+        "https://www.yogacoolhaven.nl/yc/media/original/b1/space_01jpg.jpg",
+        "https://www.yogacoolhaven.nl/yc/media/original/c5/space_04jpg.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Unlimited membership",
+      "url": "https://www.yogacoolhaven.nl/yc/site/prijzen/index/en",
+      "description": "A monthly membership covering all regular studio and online classes, with the video library included at no extra charge. A six-month commitment brings the monthly rate down; credit cards and a trial month for newcomers are listed on the same page.",
+      "price": "Unlimited 6 months: €75 /mo; Unlimited 1 month: €81 /mo",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogacoolhaven.nl/yc/assets4/graphics/yc/instagram_ico.png"
+    },
+    {
+      "title": "Iyengar Basics",
+      "url": "https://www.yogacoolhaven.nl/yc/les/8/IYENGAR-BASICS/en",
+      "description": "A slower-paced weekly class for beginners and for regular students who want to revisit the foundations. Standing, seated and supine postures are taught in detail, with headstand and shoulderstand introduced in stages and a closing period of rest in Savasana.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogacoolhaven.nl/yc/assets4/graphics/yc/instagram_ico.png"
+    },
+    {
+      "title": "Iyengar Intermediate",
+      "url": "https://www.yogacoolhaven.nl/yc/les/15/IYENGAR-INTERMEDIATE/en",
+      "description": "A weekly class for practitioners already at home in headstand, shoulderstand and backbends. Alongside the core postures it brings in inversion variations, arm balances and more demanding twists, one step at a time.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogacoolhaven.nl/yc/assets4/graphics/yc/instagram_ico.png"
+    },
+    {
+      "title": "Live-Stream",
+      "url": "https://www.yogacoolhaven.nl/yc/les/21/Live-Stream/en",
+      "description": "Selected classes from the timetable are taught over Zoom for students who practise at home. They are open to those with at least a year of Iyengar practice at the studio, who are confident in the inversions and have their own props.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogacoolhaven.nl/yc/assets4/graphics/yc/instagram_ico.png"
+    },
+    {
+      "title": "Cool Video Recording",
+      "url": "https://www.yogacoolhaven.nl/yc/les/47/Cool-Video-Recording/en",
+      "description": "A rental library of full-length recorded classes, each about ninety minutes, for practising at a time that suits you. Each rental uses one credit and stays open for a week; members can watch without charge.",
+      "price": "1 credit per video (free with a membership)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogacoolhaven.nl/yc/assets4/graphics/yc/instagram_ico.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 1902,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel linked on the pages read; Instagram and Facebook linked but never fetched; no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.yogacoolhaven.nl/yc/site/contact/index/en",
+    "contact_form_url": "https://www.yogacoolhaven.nl/yc/site/contact/index/en",
+    "bio_check": "OK: no 8-word runs against 19 source(s)",
+    "flags": [
+      "Domain from the IYVN teacher finder (Franziska Wien, Lea Nieuwhof, Olga Russel listed with www.yogacoolhaven.nl). The site has no robots.txt (the request redirects to the home page), so it is treated as open.",
+      "The contact page carries both the studio inbox info@yogacoolhaven.nl and a message form.",
+      "Photos are the studio's own: the empty practice room with rope wall, and a class in progress in the same room.",
+      "About page says the teachers can give sequences for named health problems; this is left out of the bio under the health rule.",
+      "Possible future listings: Franziska Wien, Ilona, Ilonka Lei, Lea Nieuwhof, Olga Russel, Rutger, Sato Endo, Roemer (team page, first names only for some).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Rotterdam has few Spiritpedia listings."
+    ],
+    "left_out": [
+      "Yoga Academy In-Depth Course 2026/27 (€65 / €45 per weekend): started 10 Oct 2026.",
+      "Yoga Book Club #2, Bhagavad Gita: started 4 Oct 2026.",
+      "Yoga to Measure: framed around named conditions (pregnancy, cancer, hernia, long covid and others): health rule.",
+      "Relax and Restore: page names recovery from Covid as a reason to join: health rule, borderline.",
+      "Crossfit/Yoga 65+ and Yoga for Sports: fitness-led.",
+      "Past workshops and the May 2026 Russelsbrook retreat: dated and over.",
+      "Price of single drop-in classes: credit system on the prices page, already summarised in the membership item."
+    ]
+  },
+  "images_final": true
+}

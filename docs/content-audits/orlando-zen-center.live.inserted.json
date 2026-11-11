@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1366,
+    "healer_slug": "orlando-zen-center"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "57333a24-1dc9-4ca6-9209-8d51cc2115fd",
+      "slug": "sunday-evening-hybrid-practice",
+      "title": "Sunday Evening Hybrid Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "1894440d-ced2-41fb-9acd-6fedb21c7611",
+      "slug": "long-sit-monthly",
+      "title": "Long Sit (monthly)"
+    },
+    {
+      "table": "free_resources",
+      "id": "8cb7274b-3dc4-42e0-8fe1-da360e6049e4",
+      "slug": "for-newcomers",
+      "title": "For Newcomers"
+    }
+  ],
+  "at": "2026-11-11T21:41:08.852Z"
+}

@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1346,
+    "healer_slug": "integral-yoga-institute-coimbatore"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "30f5dc1a-566b-4706-887f-73e5da11cb0b",
+      "slug": "general-yoga-classes-integral-yoga-hatha",
+      "title": "General Yoga classes (Integral Yoga Hatha)"
+    },
+    {
+      "table": "courses",
+      "id": "631e90f0-f8c9-436e-a976-1ac221fc81c6",
+      "slug": "200-hour-beginners-yoga-teachers-training-course-bytt",
+      "title": "200-hour Beginners Yoga Teachers Training Course (BYTT)"
+    },
+    {
+      "table": "courses",
+      "id": "8f47fd06-72d9-4226-9c4b-219872c9e240",
+      "slug": "sadhana-weekend-residential-retreat",
+      "title": "Sadhana – Weekend Residential Retreat"
+    }
+  ],
+  "at": "2026-11-11T21:40:15.228Z"
+}

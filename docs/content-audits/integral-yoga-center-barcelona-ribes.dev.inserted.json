@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1363,
+    "healer_slug": "integral-yoga-center-barcelona-ribes"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "56185b18-b53a-462d-9554-389fc53c5612",
+      "slug": "clases-de-integral-yoga-hatha-y-raja-yoga-horario-otono-2026",
+      "title": "Clases de Integral Yoga Hatha y Raja Yoga (horario otoño 2026)"
+    },
+    {
+      "table": "courses",
+      "id": "77a6ae1d-b59e-410b-a1f9-8b0f04af7962",
+      "slug": "clases-particulares",
+      "title": "Clases particulares"
+    },
+    {
+      "table": "courses",
+      "id": "95b76870-7c62-44e3-b11e-9801f0593b61",
+      "slug": "anahata-el-sonido-del-alma-concierto-de-musica-devocional",
+      "title": "Anahata, el sonido del alma (concierto de música devocional)"
+    }
+  ],
+  "at": "2026-11-11T18:59:02.811Z"
+}

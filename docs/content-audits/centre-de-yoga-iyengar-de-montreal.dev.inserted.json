@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1331,
+    "healer_slug": "centre-de-yoga-iyengar-de-montreal"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "35270833-1a59-4ce5-8681-0fb3b4d2c64a",
+      "slug": "programme-de-formation-mentorat",
+      "title": "Programme de formation (Mentorat)"
+    },
+    {
+      "table": "courses",
+      "id": "187ddf80-97f2-4112-a51f-2cb41f1face5",
+      "slug": "cours-reguliers-au-centre",
+      "title": "Cours réguliers au Centre"
+    },
+    {
+      "table": "courses",
+      "id": "1ce4d09e-5ffc-4f12-b4e9-f6c100573382",
+      "slug": "cartes-de-cours-illimites",
+      "title": "Cartes de cours illimités"
+    },
+    {
+      "table": "courses",
+      "id": "eb420847-db49-4de5-b497-8080e4ee08c0",
+      "slug": "cours-en-ligne",
+      "title": "Cours en ligne"
+    }
+  ],
+  "at": "2026-11-11T17:54:28.402Z"
+}

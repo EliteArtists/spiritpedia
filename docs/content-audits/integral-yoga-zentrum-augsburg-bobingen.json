@@ -1,0 +1,149 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-zentrum-augsburg-bobingen",
+    "location_source": "https://integralyoga.de/kontakt/adresse/",
+    "create": {
+      "name": "Integral Yoga Zentrum Augsburg-Bobingen",
+      "bio": "The Integral Yoga Zentrum Augsburg-Bobingen is a small school of Integral Yoga, the synthesis of hatha, raja, bhakti, karma, jnana and japa yoga taught by Sri Swami Satchidananda, a disciple of Swami Sivananda. Heike Farkas, who met Satchidananda in 1990 and trained at the Integral Yoga Institute in Virginia, opened it in 1999 and still leads most classes. She has trained Integral Yoga teachers in Germany since 2002 and co-wrote the first German-language book on partner yoga. A small team of teachers she trained shares the timetable.\n\nIts studio is a bright, wood-floored room in Bobingen, just south of Augsburg in Bavaria. Weekly classes run in short blocks: graded beginners' courses that bring in philosophy alongside postures, deep relaxation and breathing, two-hour classes for experienced students, a gentler class with discussion, and a monthly men's class. Through the year Heike adds weekend and residential programmes, such as a winter weekend of yoga and singing at a Bavarian monastery and a spring retreat of yoga, breathwork and dance in Styria. The school also runs a residential 200-hour teacher training, certified by the Integral Yoga Institute, held at a seminar house in the Allgäu with weekend modules in Bobingen.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Bobingen",
+      "country": "Germany",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://integralyoga.de/",
+      "booking_url": "https://integralyoga.de/yoga-kurse/stundenplan/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "highkey@integralyoga.de",
+      "image_urls": [
+        "https://integralyoga.de/images/home/yogaraum.jpg"
+      ],
+      "founded_year": 1999
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ausbildung zum Integral Yogalehrer 2028 (200-hour teacher training)",
+      "url": "https://integralyoga.de/yogalehrer-ausbildung/",
+      "description": "A residential 200-hour Integral Yoga teacher training run with the Integral Yoga Institute, held in two retreats at a seminar house near Immenstadt plus two weekend modules in Bobingen or online. It covers asana, deep relaxation, pranayama, chanting, meditation, the Yoga Sutras and Gita, and teaching practice.",
+      "price": "Ausbildungskosten 2790 €; plus Unterkunft mit vegetarischer VP ca. 2400 €",
+      "product_type": "course",
+      "start_date": "2028-04-08",
+      "end_date": "2028-08-20",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    },
+    {
+      "title": "Integral Yoga für Fortgeschrittene (Jahres-Abo)",
+      "url": "https://integralyoga.de/yoga-kurse/fortgeschrittene/",
+      "description": "Two-hour classes for students who have finished the beginners' courses, held on several days of the week. The annual pass lets members join whichever of these classes suits them, with discounts on holiday courses and extra events.",
+      "price": "Jahres-Abo 600,- € (12 Monatsraten à 50,- €); einzelne Kursblöcke z. B. 120,00 € (6 Einheiten)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    },
+    {
+      "title": "Integral Yoga für Anfänger I & II",
+      "url": "https://integralyoga.de/yoga-kurse/anfaenger/",
+      "description": "Two linked Tuesday-evening courses for newcomers. The first introduces postures, deep relaxation, breathing and a short meditation around the themes of a balanced life; the second adds yoga ethics, the gunas and the six branches of Integral Yoga.",
+      "price": "Anfänger II (12.01.–02.02.2027): 80,00 € (4 Einheiten); Anfänger I (16.02.–16.03.2027): 100,00 € (5 Einheiten); 20,- € Ermäßigung bei Buchung von I und II",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    },
+    {
+      "title": "Wochenende Yoga – Klang & Gesang (Kloster Bernried)",
+      "url": "https://integralyoga.de/workshops/yoga-klang-und-gesang/",
+      "description": "A New Year weekend at Kloster Bernried that alternates Heike's gentle yoga, breathing and meditation sessions with group singing and sound baths led by the musician Doro Heckelsmüller. Rooms are booked separately with the venue.",
+      "price": "Seminarkosten: 175 €; Unterkunft (2 ÜVP): Dreibettzimmer 182 €, Doppelzimmer 206 €, Einzelzimmer 254 €",
+      "product_type": "retreat",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "yoga",
+        "sound-healing"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    },
+    {
+      "title": "Yoga & Breathwork Retreat (TamanGa, Styria)",
+      "url": "https://integralyoga.de/yoga-breathwork-retreat/",
+      "description": "Five days at the TamanGa retreat centre in Styria, Austria, combining yoga classes, connected-breathing sessions, five-rhythms dance and singing, led by Heike Farkas with three guest facilitators. Rooms are booked directly with the centre.",
+      "price": "Super Frühbucher (bis Ende Oktober 2026) 380,- €; Frühbucher (bis Ende Januar 2027) 420,- €; Regulärer Seminar Preis 460,- €",
+      "product_type": "retreat",
+      "start_date": "2027-05-23",
+      "end_date": "2027-05-28",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    },
+    {
+      "title": "Valentins-Idee: Partner Yoga für Paare",
+      "url": "https://integralyoga.de/workshops/valentins-idee/",
+      "description": "An afternoon workshop for couples in the Bobingen studio, mixing gentle partner yoga with massage and small exercises in attentive contact. No previous yoga experience is needed.",
+      "price": "Pro Paar 140,- €",
+      "product_type": "course",
+      "start_date": "2027-02-20",
+      "end_date": "2027-02-20",
+      "subjects": [
+        "yoga",
+        "conscious-relationships"
+      ],
+      "image": "https://integralyoga.de/images/header-banner.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2001,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or readable social counts linked from the site → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://integralyoga.de/kontakt/adresse/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/), which lists it as 'Integral Yoga Zentrum' with Heike Amma Farkas at a postal address in Graben; the studio itself is in Bobingen (contact page), so the base is Bobingen.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; this is from general knowledge, no source opened. Nothing was found about the school's current leadership, so the plan is not held.",
+      "The classes overview page lists health complaints (back pain, burnout, anxiety, sleep problems, depression) as reasons to start yoga; the bio and items leave all of that out.",
+      "The Breathwork retreat page describes healing through breath and trance states, and one guest facilitator calls herself a Theta healer; the item describes only the yoga, breathing, dance and singing. Borderline: owner may prefer to drop it.",
+      "Only one photo: the studio's practice room (1200 px wide). Other site images are under 300 px.",
+      "Possible future listings: Heike Farkas.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Bobingen (Augsburg area, Bavaria); Spiritpedia has few listings in Bavaria outside Munich."
+    ],
+    "left_out": [
+      "Integral Yoga Woche Langeoog, 02.–06.11.2026: already started/finished.",
+      "Breath Work Sessions (October 2026 Tuesdays): past; the page also frames the work as releasing what is painful.",
+      "Partner Yoga page (/partner-yoga/): lists the same 20.02.2027 couples' workshop as Valentins-Idee, so only one URL is kept.",
+      "Sanftes Yoga: dates on the page run only to 2026; kept out as possibly stale.",
+      "Book 'Partner Yoga' (Via Nova 2003, Heike Farkas and Doris Iding): no ISBN on a page we may read; the site links only to Amazon and bücher.de.",
+      "YouTube podcast video CLD-X3EcGY0 on the home page: oEmbed returned 401 (embedding disabled)."
+    ]
+  },
+  "images_final": true
+}

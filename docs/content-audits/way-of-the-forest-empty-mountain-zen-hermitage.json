@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "way-of-the-forest-empty-mountain-zen-hermitage",
+    "location_source": "https://forestwayzen.com.au/",
+    "create": {
+      "name": "Way of the Forest Empty Mountain Zen Hermitage",
+      "bio": "Forest Way Zen is a small Zen community based at a bush hermitage in Doonan, in the Sunshine Coast hinterland of Queensland. Its teacher, Reverend Doshin Kusan Rōshi, started the group in 1989. He trained for many years with Subhana Barzaghi Rōshi of the Diamond Sangha, spent an Ango training period with Robert Aitken Rōshi in Hawaii and was named a Rōshi in 2015; in 2020 James Ford Rōshi ordained him as a Sōtō Zen priest and gave him transmission. The hermitage now brings the two streams together, keeping Sōtō forms, chanting and just sitting (shikantaza) alongside the koan curriculum of the Diamond Sangha.\n\nMembers gather at the Doonan zendo on Wednesday evenings for sitting, chanting and a talk by the Rōshi, and there are online sittings on Tuesday and Thursday evenings and on Saturday mornings with chanting and a teisho. One-day zazenkai and short and longer sesshin are held through the year, and students can arrange to see the teacher on any day. Free introductory workshops on Zen history, posture and liturgy are offered from time to time, online or in person, and the website carries Kusan's essays, talks and sesshin poems.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1989,
+      "city": "Doonan, Queensland",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://forestwayzen.com.au/",
+      "booking_url": "https://forestwayzen.com.au/classes-retreats-and-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://forestwayzen.com.au/wp-content/uploads/2022/04/front-760-x-760.png",
+        "https://forestwayzen.com.au/wp-content/uploads/2022/03/logo-1024-x-1024.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Zen meditation groups",
+      "url": "https://forestwayzen.com.au/classes-retreats-and-events/",
+      "description": "A Wednesday-evening sitting with chanting and a talk by the Rōshi at the Doonan zendo, plus online sittings on Tuesday and Thursday evenings and a Saturday-morning online session with chanting and teisho. The same page lists monthly zazenkai and sesshin; newcomers ring the teacher first.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://forestwayzen.com.au/wp-content/uploads/2017/11/0FFB0B8D-4582-4EFF-A4A7-D0AB908212A9-1024x768.jpg"
+    },
+    {
+      "title": "An Introduction to Zen Buddhism Workshop",
+      "url": "https://forestwayzen.com.au/an-introduction-to-zen-buddhism/",
+      "description": "A workshop for complete beginners on the history and ideas of Zen, how to begin and sit comfortably, and the chanting and forms of this school, run by Rev. Doshin Kusan online or in person when there is enough interest.",
+      "price": "These workshops are offered for free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://forestwayzen.com.au/wp-content/uploads/2022/04/Sangha-2.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Writings and articles by Rev. Doshin Kusan",
+      "url": "https://forestwayzen.com.au/writings-and-articles/",
+      "description": "Essays, dharma talks and sesshin poems by the hermitage's teacher, on suffering and the Four Noble Truths, Sōtō liturgy such as the Five Remembrances, dependent arising and Zen practice in Australian life.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://forestwayzen.com.au/wp-content/uploads/2024/05/Sesshin-Poems.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2172,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Facebook not fetched → no readable followers → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://forestwayzen.com.au/contact-us/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Doonan, Sunshine Coast hinterland, Queensland. Doonan is a rural locality (well under 5,000 people); recorded as published, owner may map to Noosa or the Sunshine Coast.",
+      "Also known as Forest Way Zen (its domain, and 'Forrest Way Zen' in the footer). Slug follows the hermitage's full name on its home page; owner may prefer 'forest-way-zen'.",
+      "Contact: the only email is Cloudflare-protected ('[email protected]', classes page) and was not decoded; the contact form on its contact page is used (plus a phone number).",
+      "founded_year 1989 (teacher began the group on the Sunshine Coast in 1989, about page).",
+      "Photos: the hermitage house in the bush (760x760) and the hermitage's enso logo (1024x1024), both from its own site, checked.",
+      "Event dates on the classes page (zazenkai in Feb–Apr, a May sesshin, 'online until covid-safe') look out of date; only the standing weekly groups are listed.",
+      "No hub links: Rev. Doshin Kusan Roshi is not on Spiritpedia; James Ford Roshi (ordaining teacher) and Subhana Barzaghi (former teacher) are not teachers there. Possible future listing: Rev. Doshin Kusan Roshi. Teachers file written with an empty list.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Zazenkai and sesshin: on the same classes page as the weekly groups; dates appear stale.",
+      "Kusan's mindfulness workshops (past, linked to his former work) and a climate-change ethics paper: not listed."
+    ]
+  },
+  "images_final": true
+}

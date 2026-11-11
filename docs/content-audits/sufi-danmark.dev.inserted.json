@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1358,
+    "healer_slug": "sufi-danmark"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4abfd5c2-df72-47ef-8d3c-4728191b9163",
+      "slug": "meditation-weekend-in-copenhagen-with-nigel-hamilton",
+      "title": "Meditation Weekend in Copenhagen with Nigel Hamilton"
+    },
+    {
+      "table": "free_resources",
+      "id": "f5efab3a-85b3-4cb0-8947-eef090593ae9",
+      "slug": "sufi-meditation-groups",
+      "title": "Sufi meditation groups"
+    },
+    {
+      "table": "free_resources",
+      "id": "1ec33388-085d-4d49-a610-0c7cb2b21836",
+      "slug": "lydfiler-recordings",
+      "title": "Lydfiler (recordings)"
+    }
+  ],
+  "at": "2026-11-11T18:14:11.749Z"
+}

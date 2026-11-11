@@ -1,0 +1,87 @@
+{
+  "healer": {
+    "healer_slug": "fazal-manzil",
+    "location_source": "https://fazalmanzil.org/",
+    "create": {
+      "name": "Fazal Manzil",
+      "bio": "Fazal Manzil, the 'house of blessings', is the stone villa in Suresnes, on the western edge of Paris, where Hazrat Inayat Khan settled with his family in 1922 and held his summer schools until his death in 1927. His daughter Noor Inayat Khan, later remembered for her wartime courage, grew up here, and the house stayed in the family and remained a gathering place for Sufis long after. Restored and opened to the public in 2023, it is now run by a non-profit endowment fund as a centre for study, contemplation and the arts in the universal Sufi tradition.\n\nThe house holds a small museum space devoted to Inayat Khan's life and an event hall used for seminars, retreats, concerts and meditation. Twice a month the Inayatiyya's French circle meets here in the evening, on Tuesdays for zikr, the chanting remembrance of the divine, and on Thursdays for an hour of meditation. Fazal Manzil sits at the centre of a cluster of foundations known together as Sufi Suresnes, which includes a biographical archive of Inayat Khan's spoken words and, in the garden, the Universel, a meditation sanctuary consecrated by representatives of several faiths in 1990. Visitors and groups are welcome by arrangement.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Suresnes",
+      "country": "France",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://fazalmanzil.org/",
+      "booking_url": "https://fazalmanzil.org/upcoming-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@fazalmanzil.org",
+      "image_urls": [
+        "https://fazalmanzil.org/wp-content/uploads/2025/01/3-Fazal-Manzil-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Zikr (first and third Tuesdays)",
+      "url": "https://fazalmanzil.org/events/zikr/",
+      "description": "An hour of zikr, the Sufi practice of chanting remembrance, at Fazal Manzil from 8 to 9 pm on the first and third Tuesday of each month, run with the Inayatiyya's French circle (inayatiyya.france@gmail.com).",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://fazalmanzil.org/wp-content/uploads/2025/10/9-scaled.jpg"
+    },
+    {
+      "title": "Evening Meditation (first and third Thursdays)",
+      "url": "https://fazalmanzil.org/events/evening-meditation-2/",
+      "description": "An hour of evening meditation at Fazal Manzil from 8 to 9 pm on the first and third Thursday of each month, run with the Inayatiyya's French circle.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://fazalmanzil.org/wp-content/uploads/2025/10/8-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1877,
+    "hub": null,
+    "tier_evidence": "No YouTube channel; Facebook not read; a heritage house and small centre → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://fazalmanzil.org/",
+    "contact_form_url": "https://fazalmanzil.org/contact-location/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Free resources need a check: the zikr and meditation evening pages show no price at all; listed as free on that basis only.",
+      "Only one usable photo, the house front, 400x300 (other images are event flyers, a rose and portraits); check it passes the ingest size probe.",
+      "No YouTube channel or offerings; mainly a heritage house, museum and hall for hire.",
+      "Teachers file is empty: no resident teachers named; Pir Zia Inayat Khan lives in part of the estate (not on Spiritpedia).",
+      "Related: the Inayatiyya headquarters (the-astana-inayatiyya, 1872) and Inayatiyya UK (1876) are planned tonight.",
+      "Email is the house's own inbox in plain text; a contact form is on /contact-location/.",
+      "Site found by https although the Inayati list gives http."
+    ],
+    "left_out": [
+      "Event hall rental (commercial).",
+      "Friends of Fazal Manzil donations.",
+      "Sufi Organisations PDF."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (two free items) and only a 400 x 300 photo. List it, or fold it into an Inayatiyya listing?"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1426,
+    "healer_slug": "chamma-ling-colorado"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "13c8a312-73dd-4844-9ca5-02094f129d74",
+      "slug": "solitary-retreat-in-a-chamma-ling-cabin",
+      "title": "Solitary retreat in a Chamma Ling cabin"
+    },
+    {
+      "table": "courses",
+      "id": "4887835b-b955-4e6c-ad7c-55e4bc8fc2c2",
+      "slug": "dark-retreat",
+      "title": "Dark retreat"
+    },
+    {
+      "table": "courses",
+      "id": "351b4d36-013f-44f0-8712-85e13ca8d8c2",
+      "slug": "community-house-rental-for-group-retreats",
+      "title": "Community House rental for group retreats"
+    }
+  ],
+  "at": "2026-11-11T21:04:37.085Z"
+}

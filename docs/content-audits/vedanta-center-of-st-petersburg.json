@@ -1,0 +1,195 @@
+{
+  "healer": {
+    "healer_slug": "vedanta-center-of-st-petersburg",
+    "location_source": "https://vedantaflorida.org/contact-us/",
+    "create": {
+      "name": "Vedanta Center of St. Petersburg",
+      "bio": "The Vedanta Center of St. Petersburg is a branch of the Ramakrishna Order on the south side of St. Petersburg, Florida, close to Tampa Bay. Its roots go back to 1951, when Malcolm and Earnly Panton, students of Swami Nikhilananda in New York, came to lead a local congregation; they moved it to the present site in 1958 and opened a new temple there the following year. After their deaths the members sought formal ties with the Order, and the centre became an official branch in the mid-2000s. Swami Ishtananda, a monk of the Order since the 1970s who earlier served in San Diego, has been its resident minister since late 2007.\n\nTeaching rests on Vedanta as lived and taught by Sri Ramakrishna, Sri Sarada Devi and Swami Vivekananda, with an emphasis on the harmony of religions. The centre is open four days a week: a Sunday morning service with a talk, a Monday evening chanting class in the neighbouring Mother's House, and a Wednesday class on the Gita and on the recorded sayings of Ramakrishna, with Sunday and Wednesday sessions also on Zoom. Classes pause in July and August, when members join a week-long summer retreat. Recorded talks and classes are posted on its site, and it keeps a small bookshop and library.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "St. Petersburg, Florida",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://vedantaflorida.org/",
+      "booking_url": "https://vedantaflorida.org/activities-2/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@vedantaflorida.org",
+      "image_urls": [
+        "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg",
+        "https://vedantaflorida.org/wp-content/uploads/2023/01/vedanta-center-of-st.-petersburg13.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Search For God 9 27 26",
+      "url": "https://www.youtube.com/watch?v=hOyHl2DD6GI",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "Swami Vivekananda and the Bhagavad Gita 10 4 26",
+      "url": "https://www.youtube.com/watch?v=NJ1DPPQzb-E",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "The Mother Divine 10 25 26",
+      "url": "https://www.youtube.com/watch?v=V_uueVG4Q_s",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "How to Select: Knowledge or Devotion 11 1 26",
+      "url": "https://www.youtube.com/watch?v=kdIQnbRN0yc",
+      "subjects": [
+        "non-duality",
+        "spirituality"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "God Belongs to Us, Here and Now 6 7 26",
+      "url": "https://www.youtube.com/watch?v=g6SQ3-TEwL0",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "Attention is the New Spiritual Discipline 6 14 26",
+      "url": "https://www.youtube.com/watch?v=F6xOiAGoyoM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "The Prophet of Religious Harmony 9 13 26",
+      "url": "https://www.youtube.com/watch?v=QUzs0YtNT-w",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Vedanta Florida"
+    },
+    {
+      "title": "Moderation in Spiritual Life 9 20 26",
+      "url": "https://www.youtube.com/watch?v=I6jjb5OLLx4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Vedanta Florida"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday Lectures and Other Videos",
+      "url": "https://vedantaflorida.org/videos/",
+      "description": "Recordings of recent Sunday talks at the centre, mostly by Swami Ishtananda with some visiting monks, embedded on one page and refreshed from time to time.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "non-duality"
+      ],
+      "image": "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg"
+    },
+    {
+      "title": "Weekly Services and Classes",
+      "url": "https://vedantaflorida.org/activities-2/",
+      "description": "The month's programme: Sunday service and talk, Monday evening chanting, and the Wednesday scripture class, with Sunday and Wednesday also offered on Zoom. Everyone is welcome and no fee is listed.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg"
+    },
+    {
+      "title": "Bhagavad Gita Class Videos",
+      "url": "https://vedantaflorida.org/bhagavat-gita-class-videos/",
+      "description": "Zoom recordings of the Wednesday evening Gita class, which reads the text with Sridhara Swami's commentary in Swami Vireswarananda's translation.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg"
+    },
+    {
+      "title": "Gospel of Sri Ramakrishna Class Videos",
+      "url": "https://vedantaflorida.org/gospel-class-videos/",
+      "description": "Monthly class recordings working through the Gospel of Sri Ramakrishna, recorded on Zoom.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg"
+    },
+    {
+      "title": "Summer Retreat Videos",
+      "url": "https://vedantaflorida.org/summer-retreat-videos/",
+      "description": "Evening discourses from the centre's week-long summer retreat in July 2026, given by Swami Ishtananda and visiting monks of the Order.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://vedantaflorida.org/wp-content/uploads/2023/01/home-slide-01.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1853,
+    "hub": null,
+    "tier_evidence": "YouTube channel Vedanta Florida (UCZGxHo9xdttTG49ixgsWGNw) 108 subscribers (YouTube Data API, 11 Nov 2026); Facebook not read → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://vedantaflorida.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Videos are embedded on the centre's own video pages; the channel shows 0 public videos, so they appear to be unlisted (all pass oEmbed). youtube_url left empty because the site links no channel.",
+      "Channel avatar is a default letter, not used. Photos are the centre's house (homepage slide) and its chapel during a service with monks seated at the front, both from its own site.",
+      "Email is the centre's general inbox (mailto on the homepage header); the contact page shows only an empty 'Email:' label.",
+      "Teachers file is empty: Swami Ishtananda (resident minister) and visiting monks are not on Spiritpedia.",
+      "Founded_year left empty: congregation from 1951, present site 1958, temple opened 1959, branch of the Order from 2005.",
+      "Regional: St. Petersburg, Florida.",
+      "One summer-retreat talk is titled 'The Yoga of Grief'; kept only as part of the retreat page, borderline but not a condition claim."
+    ],
+    "left_out": [
+      "Summer retreat and camp: no dated 2027 page.",
+      "Bookstore (a shop).",
+      "Celebration of Universal Religion and Celebration of Spirit: past events (2019 onward)."
+    ]
+  },
+  "images_final": true
+}

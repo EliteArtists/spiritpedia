@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1369,
+    "healer_slug": "ananda-sangha-chennai"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8dc74403-7991-42fb-bd42-ed8b8fcc47c8",
+      "slug": "level-1-learn-to-meditate-energize",
+      "title": "Level 1: Learn to Meditate & Energize"
+    },
+    {
+      "table": "courses",
+      "id": "c6a98673-e8b1-41b4-9b32-3e79ab3a4a10",
+      "slug": "level-2-the-art-and-science-of-raja-yoga",
+      "title": "Level 2: The Art and Science of Raja Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "c3149922-0981-40f6-9b22-4cc89536a241",
+      "slug": "how-to-live-classes",
+      "title": "\"How-to-Live\" classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "6c96cf19-e81b-4382-9e14-1c659de10562",
+      "slug": "sunday-satsang-2",
+      "title": "Sunday Satsang"
+    }
+  ],
+  "at": "2026-11-11T19:06:58.958Z"
+}

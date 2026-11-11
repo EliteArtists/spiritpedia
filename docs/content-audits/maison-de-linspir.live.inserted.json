@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1361,
+    "healer_slug": "maison-de-linspir"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a9bcacc7-e347-4664-8716-57f9b8daa6b7",
+      "slug": "week-ends-de-retraite-practice-weekends",
+      "title": "Week-ends de retraite (practice weekends)"
+    },
+    {
+      "table": "courses",
+      "id": "061176dc-05f5-4803-9dc4-5e7588381af7",
+      "slug": "retraite-de-noel-christmas-retreat",
+      "title": "Retraite de Noël (Christmas retreat)"
+    },
+    {
+      "table": "courses",
+      "id": "309c4a95-ea98-4e92-b47e-d68ec7ece6d5",
+      "slug": "journees-de-pleine-conscience-days-of-mindfulness",
+      "title": "Journées de Pleine Conscience (Days of Mindfulness)"
+    },
+    {
+      "table": "free_resources",
+      "id": "54630d75-43bd-4612-a622-cae138aa4d88",
+      "slug": "41-pratiques-de-bases",
+      "title": "4.1 Pratiques de bases"
+    }
+  ],
+  "at": "2026-11-11T21:40:55.544Z"
+}

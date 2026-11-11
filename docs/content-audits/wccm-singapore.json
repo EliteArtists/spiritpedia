@@ -1,0 +1,160 @@
+{
+  "healer": {
+    "healer_slug": "wccm-singapore",
+    "location_source": "https://www.wccmsingapore.org/community/parishes/holy-family-parish",
+    "create": {
+      "name": "WCCM Singapore",
+      "bio": "WCCM Singapore is the local branch, in Singapore, of the World Community for Christian Meditation (WCCM), a worldwide network that carries on the teaching of the Benedictine monk John Main. Its practice is the simple prayer of the heart he recovered from the early desert tradition: sitting still twice a day and gently repeating one prayer word, so that attention moves from busy thought into silence. The community grew from a first weekly group at Holy Family Church in 1988, started after a visit from Laurence Freeman, and it now has groups in more than twenty parishes across the island. The parish priest of Holy Family serves as its spiritual director.\n\nNewcomers can learn the practice at a weekly group, where they hear a short recorded teaching and then sit with longer-standing meditators. Its website gathers a getting-started guide, a library of recorded talks, an online timer with a reading and chimes, and a list of groups and meeting times. Its YouTube channel holds introductory series on the journey of meditation and talks on quietening the mind.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1988,
+      "availability": "worldwide",
+      "city": "Singapore",
+      "country": "Singapore",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://www.wccmsingapore.org/",
+      "booking_url": "https://www.wccmsingapore.org/community/meditation-groups-in-singapore",
+      "youtube_url": "https://www.youtube.com/channel/UC2tHLaKdpnXe424T6wPoyvw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "enquiries@wccmsingapore.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Essence of Christian Meditation",
+      "url": "https://www.youtube.com/watch?v=oRikqg9rmmM",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    },
+    {
+      "title": "The Journey of Meditation - 1. The Practice",
+      "url": "https://www.youtube.com/watch?v=bnQaAiOQgTQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    },
+    {
+      "title": "The Journey of Meditation - 2. The Wheel of Prayer",
+      "url": "https://www.youtube.com/watch?v=rQ_G9b3g1ko",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    },
+    {
+      "title": "The Journey of Meditation - 5. Coming Home",
+      "url": "https://www.youtube.com/watch?v=ZA3c_ZZXbCw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    },
+    {
+      "title": "Quiet Mind Part 1",
+      "url": "https://www.youtube.com/watch?v=KgYKQnuZyws",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    },
+    {
+      "title": "The Human Condition Part 1",
+      "url": "https://www.youtube.com/watch?v=_B6UXJAwIvg",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "WCCM Singapore"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Getting Started With Meditation",
+      "url": "https://www.wccmsingapore.org/meditation/getting-started-with-meditation",
+      "description": "A short guide to beginning the practice: how to sit, the prayer word maranatha and how long to meditate each morning and evening.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Christian Meditation Timer",
+      "url": "https://www.wccmsingapore.org/timer/the-ego",
+      "description": "An online timer that opens with a short reading and prayer, then marks the silent period with chimes.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Talks",
+      "url": "https://www.wccmsingapore.org/resources/talks",
+      "description": "Recorded readings and talks chosen to encourage people to keep up a daily meditation practice.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Meditation Groups in Singapore",
+      "url": "https://www.wccmsingapore.org/community/meditation-groups-in-singapore",
+      "description": "A list of the weekly groups meeting in parishes around Singapore, with days and times, for anyone who wants to sit with others.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2256,
+    "hub": null,
+    "tier_evidence": "YouTube @wccmsingapore497 (UC2tHLaKdpnXe424T6wPoyvw): 1,600 subscribers (YouTube Data API, 11 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.wccmsingapore.org/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "National community of the World Community for Christian Meditation; the international WCCM is already on Spiritpedia (world-community-for-christian-meditation): owner to decide whether national communities should be separate listings.",
+      "No usable image: the site's images are on the Webflow CDN (cdn.prod.website-files.com), whose robots.txt answered 403, so treated as refused; the YouTube avatar is a default letter. Held.",
+      "Base: its home is Holy Family Church, Singapore (city level: Singapore).",
+      "No hub links: Peter Ng (founder of the local community) and Fr Eugene Vaz (spiritual director) are not on Spiritpedia; Laurence Freeman appears only as WCCM director and a visiting speaker.",
+      "Found via the WCCM national communities list (wccm.org/national-communities/, names and links only)."
+    ],
+    "left_out": [
+      "Video 'Lee Kuan Yew' talk: political figure.",
+      "'From Panic to Peace – Diagnosis and Treatment' and the cancer support group: health content.",
+      "Events page: latest dated events are 2019–2022; 'Go Deeper' (1 Nov 2026 update) shows no date for a future session.",
+      "Newsletters and articles pages: kept to the five strongest items."
+    ],
+    "held": "No usable image: every site image is on cdn.prod.website-files.com (robots.txt 403, treated as refused) and the YouTube avatar is a default letter. Not worked around; owner to decide."
+  }
+}

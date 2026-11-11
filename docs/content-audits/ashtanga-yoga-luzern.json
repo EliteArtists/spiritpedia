@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-luzern",
+    "location_source": "https://ashtanga-luzern.ch/contact",
+    "create": {
+      "name": "Ashtanga Yoga Luzern",
+      "bio": "Ashtanga Yoga Luzern teaches the Ashtanga method in its traditional form in central Lucerne, and describes itself as the only school doing so in central Switzerland. It is led by Martyna Syguda, who began practising yoga on her own at twelve, met Ashtanga through Przemek Nadolny while studying psychology in Warsaw, and then spent around two years in all in Mysore over repeated visits, studying the first two series with Sharath Jois as well as with senior teachers such as Rolf Naujokat. She was authorised to teach both series in 2014, joined Sharath's teachers' course in 2016, and has assisted Petri Räisänen at his retreats since meeting him in 2015.\n\nClasses are small and held in a renovated studio on Weggisgasse. In the Mysore sessions every student learns the sequence individually, arriving at any point within the class time, with instruction and adjustments in English, German or Polish; led classes at three levels take students from the basic standing and seated postures to the full primary series, counted in English. Private lessons can be booked in the studio, and Martyna leads occasional workshops and small retreats in the Swiss countryside. Reduced rates are available for anyone who cannot pay the full fee.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Luzern",
+      "country": "Switzerland",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://ashtanga-luzern.ch/",
+      "booking_url": "https://ashtanga-luzern.ch/classes",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ashtanga-luzern.ch",
+      "image_urls": [
+        "https://ashtanga-luzern.ch/wp-content/uploads/2023/01/Mysore-classes-with-Martyna-Syguda-Luzern.jpg",
+        "https://ashtanga-luzern.ch/wp-content/uploads/2023/01/Ashtanga-Led-classes-with-Martyna-Syguda.jpg",
+        "https://ashtanga-luzern.ch/wp-content/uploads/2022/12/ashtnga-yoga-luzern-studio-1-banner.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Group classes: Mysore and Led I–III",
+      "url": "https://ashtanga-luzern.ch/classes",
+      "description": "Mysore-style sessions open to complete beginners, where the sequence is taught one student at a time, and led classes at three levels, from the basic standing and seated postures to the whole primary series. Places are booked online for each class.",
+      "price": "Single class: CHF 34 (see prices page)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://ashtanga-luzern.ch/wp-content/uploads/2022/12/ashtnga-yoga-luzern-Martyna-Syguda-2.jpg"
+    },
+    {
+      "title": "Class passes",
+      "url": "https://ashtanga-luzern.ch/classes/prices",
+      "description": "Single classes, five- and ten-class passes and one- or three-month passes for the regular timetable, with a reduced first class for local newcomers. Students who cannot afford the full fee are invited to get in touch.",
+      "price": "Single class CHF 34; 5x pass CHF 150; 10x pass CHF 280; 1 month pass CHF 180; 3 months pass CHF 500",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://ashtanga-luzern.ch/wp-content/uploads/2022/12/ashtnga-yoga-luzern-studio-1-banner.jpg"
+    },
+    {
+      "title": "Private classes",
+      "url": "https://ashtanga-luzern.ch/classes/private-classes",
+      "description": "One-to-one or small-group lessons with Martyna Syguda in the Lucerne studio at a time agreed together; the five-lesson pass includes a written personal practice sequence.",
+      "price": "60′ CHF 130; 90′ CHF 160 (+ CHF 20 per additional person); 5x pass CHF 600 / CHF 700",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://ashtanga-luzern.ch/wp-content/uploads/2022/12/ashtnga-yoga-luzern-private-classes-1-banner.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2128,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://ashtanga-luzern.ch/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Martyna Syguda, Ashtanga Yoga Luzern, website www.ashtanga-luzern.ch). The www host did not connect, so the site was found at the bare host ashtanga-luzern.ch through one web search; its robots.txt allows all.",
+      "The studio on Weggisgasse is shared: the site says it is also rented to other teachers and is run by Claudia of Yoga Shala Luzern (yogashala-luzern.ch, not opened).",
+      "Martyna also works as a psychologist with an interest in trauma recovery (teacher page); not mentioned in the bio.",
+      "No dated items: the March 2026 workshop and June 2026 retreat have passed, and the February 2027 Berglodge37 retreat is marked cancelled.",
+      "Photos: a Mysore class and a led class in the studio, and its altar with candles, from its own site (looked at).",
+      "Possible future listings: Martyna Syguda; Claudia Zimmermann and Anna Zdepski (cover teachers named in a 2024 news post).",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Lucerne, Switzerland."
+    ],
+    "left_out": [
+      "Workshop 'Strength & Grace – a female perspective on Ashtanga Yoga', 28 Mar 2026: has passed, and covers menstrual symptoms, pregnancy and menopause.",
+      "Retreats at Château Gottrau (4–7 Jun 2026, passed) and Berglodge37 (12–14 Feb 2027, cancelled).",
+      "News posts and newsletters (2023–2024)."
+    ]
+  },
+  "images_final": true
+}

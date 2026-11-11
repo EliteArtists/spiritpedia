@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "northern-light-zen-center",
+    "location_source": "https://nlzc.info/",
+    "create": {
+      "name": "Northern Light Zen Center",
+      "bio": "Northern Light Zen Center is a Korean Zen community in Topsham, Maine, belonging to the Kwan Um School of Zen founded by Zen Master Seung Sahn. Several students of the school started it in 2002, and its first guiding teacher was the monk Chong Hae Sunim. Today it is guided by Terry Cronin, JDPSN, who began in Zen and Christian contemplation as a Yale Divinity School student in 1980, has trained in the Kwan Um School since 1986 and was authorised to teach by Zen Master Soeng Hyang in 2014. The centre is run entirely by volunteers.\n\nIts Dharma room, a bright wooden-floored hall on Meadow Road, hosts formal practice on Wednesday evenings and Sunday mornings that can be joined in person or on Zoom, with Zoom-only sittings early on Tuesday and Friday mornings. Evenings combine bows, chanting, sitting and walking meditation and a reading, with a monthly Dharma talk and regular kong-an and consulting interviews. On the last Saturday of most months there is a one-day, half-day or chanting (kido) retreat, and members also travel to the long Kyol Che retreats at Providence Zen Center. Newcomers are asked to get in touch before a first visit for orientation.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2002,
+      "availability": "worldwide",
+      "city": "Topsham, Maine",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://nlzc.info/",
+      "booking_url": "https://nlzc.info/retreats/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "northernlightzencenter@gmail.com",
+      "image_urls": [
+        "https://nlzc.info/wp-content/uploads/2024/02/cropped-DharmaRoom.png",
+        "https://nlzc.info/wp-content/uploads/2026/02/PXL_20260131_205942729.LONG_EXPOSURE-02.ORIGINAL-1536x989.jpg",
+        "https://nlzc.info/wp-content/uploads/2018/10/cropped-cropped-nlzcmasthead-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-Day Retreat with Terry Cronin JDPSN",
+      "url": "https://nlzc.info/retreats/",
+      "description": "A full Saturday of formal practice in the Dharma room with the guiding teacher: sitting and walking meditation, bowing, chanting and kong-an interviews, from early morning until 4 pm. Email or call to register.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://nlzc.info/wp-content/uploads/2024/02/cropped-DharmaRoom.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "A Dharma Teaching from Terry Cronin JDPSN",
+      "url": "https://nlzc.info/a-dharma-teaching-from-terry-cronin-jdpsn/",
+      "description": "The guiding teacher's written answer to a question from a Wednesday Dharma talk, on how practice lets us notice thoughts and strong feelings as they arise rather than being carried off by them.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://nlzc.info/wp-content/uploads/2024/08/IMG_7001-scaled.jpg"
+    },
+    {
+      "title": "What is Zen?",
+      "url": "https://nlzc.info/what-is-zen/",
+      "description": "A short dialogue between Zen Master Seung Sahn and a student about 'don't know' mind and understanding oneself, which the centre offers as an introduction to its tradition.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "image": "https://nlzc.info/wp-content/uploads/2024/02/cropped-DharmaRoom.png"
+    },
+    {
+      "title": "Zoom Participation Form",
+      "url": "https://nlzc.info/zoom-practice-form/",
+      "description": "Guidance for joining the centre's practice on Zoom as if present in the room: on time, camera on, silent once the moktak sounds.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://nlzc.info/wp-content/uploads/2024/02/cropped-DharmaRoom.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1817,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook linked on the Kwan Um list, not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://nlzc.info/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Regional: Topsham, Maine (town of about 9,000).",
+      "Email northernlightzencenter@gmail.com is the centre's general inbox (mailto on the home page); Abbot@nlzc.info also published.",
+      "robots.txt on nlzc.info is empty (HTTP 200), so all paths allowed.",
+      "No hub links: Terry Cronin JDPSN is not on Spiritpedia. Teachers file written with an empty list.",
+      "Only one dated offering left in 2026 (5 Dec); the 2027 calendar was not yet published."
+    ],
+    "left_out": [
+      "Kyol Che and ceremonies at Providence Zen Center: listed on its events page but held elsewhere (PZC planned separately).",
+      "Blog posts about sangha days and work days: community news, not teaching."
+    ]
+  },
+  "images_final": true
+}

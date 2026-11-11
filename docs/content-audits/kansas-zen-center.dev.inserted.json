@@ -1,0 +1,88 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1339,
+    "healer_slug": "kansas-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9591,
+      "slug": "dont-wait",
+      "title": "Don't wait!"
+    },
+    {
+      "table": "videos",
+      "id": 9592,
+      "slug": "awake-to-your-life",
+      "title": "Awake to your life"
+    },
+    {
+      "table": "videos",
+      "id": 9593,
+      "slug": "if-it-was-so-simple-we-wouldnt-be-here",
+      "title": "If it was so simple, we wouldn't be here."
+    },
+    {
+      "table": "videos",
+      "id": 9594,
+      "slug": "the-end-of-suffering",
+      "title": "The end of suffering"
+    },
+    {
+      "table": "videos",
+      "id": 9595,
+      "slug": "life-and-death",
+      "title": "Life and death"
+    },
+    {
+      "table": "videos",
+      "id": 9596,
+      "slug": "the-opportunity-is-always-there",
+      "title": "The opportunity is always there"
+    },
+    {
+      "table": "videos",
+      "id": 9597,
+      "slug": "boring",
+      "title": "Boring!"
+    },
+    {
+      "table": "videos",
+      "id": 9598,
+      "slug": "how-to-practice",
+      "title": "How to practice"
+    },
+    {
+      "table": "courses",
+      "id": "9e7ffd23-9bf0-477d-8160-1ff3168c4cdc",
+      "slug": "november-2-day-retreat",
+      "title": "November 2-day retreat"
+    },
+    {
+      "table": "courses",
+      "id": "976afd5e-3614-4476-a8df-652dad146ef5",
+      "slug": "january-7-day-retreat",
+      "title": "January 7 day retreat"
+    },
+    {
+      "table": "courses",
+      "id": "5b77c0a0-63bb-43ab-b9b1-0fd4333b5771",
+      "slug": "february-2-day-retreat",
+      "title": "February 2-day retreat"
+    },
+    {
+      "table": "free_resources",
+      "id": "02488e33-6842-43f9-a912-c02ade8ddbe9",
+      "slug": "practice-schedule-in-person-and-on-zoom",
+      "title": "Practice schedule (in person and on Zoom)"
+    },
+    {
+      "table": "free_resources",
+      "id": "fa53e732-c7a7-49d9-a764-f114963d975a",
+      "slug": "resources",
+      "title": "Resources"
+    }
+  ],
+  "at": "2026-11-11T17:59:07.591Z"
+}

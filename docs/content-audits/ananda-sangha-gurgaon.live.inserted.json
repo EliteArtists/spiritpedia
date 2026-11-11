@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1298,
+    "healer_slug": "ananda-sangha-gurgaon"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "f55c516b-aeb5-4638-aeda-d0a72b9f6bb5",
+      "slug": "learn-to-meditate-the-path-of-kriya-yoga-level-1-2",
+      "title": "Learn to Meditate – The Path of Kriya Yoga Level 1"
+    },
+    {
+      "table": "courses",
+      "id": "98638817-dbcf-4e1e-a525-2de57db753c9",
+      "slug": "commune-with-holy-aum-recorded-workshop",
+      "title": "Commune with Holy Aum (recorded workshop)"
+    },
+    {
+      "table": "courses",
+      "id": "57764130-2023-48aa-b581-080de25cba6b",
+      "slug": "how-to-spiritualize-your-marriage-recorded-workshop",
+      "title": "How to Spiritualize your Marriage (recorded workshop)"
+    },
+    {
+      "table": "free_resources",
+      "id": "3a1ff470-b634-4692-8ddb-2c9a0b21a5d2",
+      "slug": "sunday-satsang-3",
+      "title": "Sunday Satsang"
+    }
+  ],
+  "at": "2026-11-11T21:37:50.764Z"
+}

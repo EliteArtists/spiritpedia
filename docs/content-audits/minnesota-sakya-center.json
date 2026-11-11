@@ -1,0 +1,133 @@
+{
+  "healer": {
+    "healer_slug": "minnesota-sakya-center",
+    "location_source": "https://mnsakyacenter.org/ (footer: mailing address P.O. Box, Golden Valley, MN)",
+    "no_public_base": "Contact page says special events are held at different locations; only a P.O. Box mailing address is published.",
+    "create": {
+      "name": "Minnesota Sakya Center (Sakya Thupten Dargye Ling)",
+      "bio": "Sakya Thupten Dargye Ling, better known as the Minnesota Sakya Center, is a Tibetan Buddhist community in the Twin Cities area belonging to the Sakya school. It belongs, as a local branch, to Tsechen Kunchab Ling, the American seat of the Sakya Dolma Phodrang, and His Holiness the 41st Sakya Trichen is its spiritual director. The centre has no permanent temple of its own: it meets for study and practice in the Minneapolis area, and larger events are held in hired venues sized to the expected audience. Over the decades it has hosted many senior Sakya lamas, among them the Sakya Trichen himself, whose Minnesota visits drew large gatherings of both Tibetan and Western students.\n\nIts resident teacher, Khenpo Thupten Gongphel, gives a continuing Sunday series on Shantideva's Way of the Bodhisattva using a traditional Tibetan commentary, and a weekly online study group works through the same text with recorded teachings by the 42nd Sakya Trizin. There are also classes in Tibetan for young people, community and children's days with a shared lunch, and seasonal holy-day pujas. Its website collects free practice texts and articles, and its YouTube channel holds recorded teachings by the Sakya Trichen on refuge, the preliminary practices and meeting difficult times.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1980,
+      "availability": "local_online",
+      "city": "Golden Valley, Minnesota",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://mnsakyacenter.org/",
+      "booking_url": "https://mnsakyacenter.org/programs/",
+      "youtube_url": "https://www.youtube.com/channel/UCaj7NrlC6yivIli-6MI3Ngw",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@mnsakyacenter.org",
+      "image_urls": [
+        "https://mnsakyacenter.org/wp-content/uploads/2019/07/IMG_20190511_172905010-1000x350.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Sakya Lineage by H.H. Sakya Trichen",
+      "url": "https://www.youtube.com/watch?v=-rGXcLcNZec",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    },
+    {
+      "title": "Teaching on Ngondro by H.H. Sakya Trichen",
+      "url": "https://www.youtube.com/watch?v=zI5YP67m5J8",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    },
+    {
+      "title": "How to Face Difficult Circumstances by H.H. Sakya Trichen",
+      "url": "https://www.youtube.com/watch?v=wUWR2OZE3AY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    },
+    {
+      "title": "Living a Virtuous Worldly Life According to the Dharma by H.H. Sakya Trichen",
+      "url": "https://www.youtube.com/watch?v=fepeGMKJwVM",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    },
+    {
+      "title": "Teaching on the Six Paramitas by Ven. Khenpo Ngawang Jorden",
+      "url": "https://www.youtube.com/watch?v=7zYiEjN8sZo",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    },
+    {
+      "title": "His Holiness the Sakya Trichen ~ Bodhisattva Vow Teaching & Ceremony",
+      "url": "https://www.youtube.com/watch?v=wmUPpqrRL9Y",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Sakya Thupten Dargye Ling, Minnesota Sakya Center"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday teachings on The Way of the Bodhisattva",
+      "url": "https://mnsakyacenter.org/programs/",
+      "description": "The centre's monthly programme: Khenpo Thupten Gongphel's continuing Sunday teaching on Shantideva's Bodhisattva's Way of Life, a weekly Zoom study group on the same text, youth classes and holy-day practices. Email the centre for Zoom details.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://mnsakyacenter.org/wp-content/uploads/2021/09/lhabab-duchen-633x1024.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2225,
+    "hub": null,
+    "tier_evidence": "YouTube @mnsakyacenter: 2,840 subscribers (YouTube Data API, 11 Nov 2026; channel linked from its videos page) → local_hero",
+    "email": "yes",
+    "email_source": "https://mnsakyacenter.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Regional: Minneapolis area (Golden Valley mailing address).",
+      "No fixed public address: meets at varying locations; owner may prefer a centre with a physical home.",
+      "Founded year 1980 from its YouTube channel description; its About page says IRS recognition came in 2002.",
+      "Photos: a large teaching event stage (home page banner, 1000x350) and its logo (281x87). Checked.",
+      "No hub links: Khenpo Thupten Gongphel (resident teacher) is not on Spiritpedia; the Sakya Trichen is its spiritual director but not on Spiritpedia.",
+      "Found via the Sakya global links list (sakyatradition.org, names and links only)."
+    ],
+    "left_out": [
+      "Medicine Buddha Puja (29 Nov): healing item.",
+      "Green Tara and Jetsun Tara pujas, Sakya Pandita youth class (in Tibetan): on the same programs page.",
+      "Global Ecology from a Buddhist Perspective: a Google Drive file, not on its site.",
+      "Teaching texts on hhsakyatrizin.net and sakyatemple.org: other sites.",
+      "Birthday celebrations, announcements and live-stream videos.",
+      "\"Peace and Impermanence\": an article page, not a practice resource (lead session)"
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "melbourne-zen-group",
+    "location_source": "https://mzg.org.au/about/location/",
+    "create": {
+      "name": "Melbourne Zen Group",
+      "bio": "The Melbourne Zen Group is a lay Zen community in Brunswick East, in Melbourne's inner north, and part of the Diamond Sangha lineage, which draws on both Rinzai and Sōtō Zen. A handful of people who had sat retreats with Robert Aitken Rōshi started it in 1985. Its visiting teachers are Subhana Barzaghi Rōshi, who took on the role in 1999, and Susan Murphy Rōshi, who joined her in 2002; both are based in New South Wales and come to Melbourne twice a year for retreats and workshops. Since 2024 a long-standing member, Kirk Fisher, authorised as a Rōshi by Susan Murphy, has been the resident teacher. Practice includes both just sitting (shikantaza) and koan work.\n\nThe group rents a dojo in the Learning Centre at CERES, a community environment park beside Merri Creek, and meets there on Tuesday evenings and Saturday mornings, with a laptop link for people joining from home and short online sittings on weekday mornings. Newcomers book a free orientation first. Kirk Fisher gives private interviews at the dojo a few times a month and by phone, and the calendar adds half-day zazenkai and a residential sesshin with the visiting teachers. The group is volunteer-run, has around seventy members and keeps a collection of recorded talks.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1985,
+      "city": "Melbourne, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://mzg.org.au/",
+      "booking_url": "https://mzg.org.au/group-meditation/sitting-with-us/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mzgpractice@gmail.com",
+      "image_urls": [
+        "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Orientation and weekly group meditation",
+      "url": "https://mzg.org.au/group-meditation/sitting-with-us/",
+      "description": "A free orientation of just under an hour, covering Zen basics, dojo forms and sitting posture, held before the regular sittings on the first Saturday and third Tuesday of each month; newcomers then stay on for group meditation. Bookings are by email.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Residential sesshin with Subhana Barzaghi Roshi and Aladdin Jones Sensei",
+      "url": "https://mzg.org.au/group-meditation/sesshin-workhops/",
+      "description": "A week-long residential retreat in the Strathbogie Ranges in country Victoria on the theme of the Sandokai, combining silent zazen with daily qigong led by Peter Wong. Booking is through the group's calendar page.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-12-04",
+      "subjects": [
+        "meditation",
+        "qi-gong"
+      ]
+    },
+    {
+      "title": "Dokusan with Kirk Fisher Roshi",
+      "url": "https://mzg.org.au/group-meditation/dokusan/",
+      "description": "Private interviews about one's practice with the group's local teacher, offered during sittings at CERES a few times a month and monthly by phone. Non-members may attend a few times; regular dokusan is for members, and teachers are supported by dana.",
+      "price": "Dana",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "Membership",
+      "url": "https://mzg.org.au/about/membership/",
+      "description": "Members share in decisions about the group, have ongoing access to dokusan, get booking priority for some events and can borrow from the library of books and recorded talks. Newcomers are encouraged to sit with the group for a few months first.",
+      "price": "$120 to $180 full; $60 to $90 concession (annual, sliding scale)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "MZG teisho collection",
+      "url": "https://mzg.org.au/practice-resources/zen-talks-readings/",
+      "description": "Recorded talks by the group's teachers, among them Subhana Barzaghi, Susan Murphy, Kirk Fisher and Robert Aitken, free to stream or download, some transferred from old cassette tapes.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ]
+    },
+    {
+      "title": "Online weekday sittings",
+      "url": "https://mzg.org.au/group-meditation/when-and-where/",
+      "description": "Short Zoom sittings early on weekday mornings, plus an online link into the Tuesday and Saturday dojo sittings, open after an orientation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2169,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://mzg.org.au/group-meditation/sitting-with-us/",
+    "contact_form_url": "https://mzg.org.au/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Base: the dojo is at the CERES Learning Centre, Brunswick East (an inner suburb of Melbourne); city recorded as Melbourne.",
+      "Email mzgpractice@gmail.com is the group's practice inbox for orientation bookings (orientation page); a contact form is on the contact page; mzgcommittee@gmail.com handles membership.",
+      "founded_year 1985 ('Our group was formed in 1985', who-are-we page).",
+      "Photo: the only image is the site's header, a white Kuan Yin statue among wildflowers (3072x814). Its own header URL melbournezengroup.files.wordpress.com redirects to mzg.org.au/wp-content/uploads/...; the redirect target is used. It is not clearly the dojo, so the plan is held.",
+      "Sesshin includes daily qigong; the site's wording about meridians and strengthening the body was left out of the description (health rule).",
+      "No hub links: Kirk Fisher Roshi, Subhana Barzaghi Roshi and Susan Murphy Roshi are not on Spiritpedia. Possible future listings: Susan Murphy Roshi, Subhana Barzaghi Roshi. Aladdin Jones Sensei (visiting sesshin teacher) not linked. Teachers file written with an empty list.",
+      "Sesshin item URL is the group's calendar page; bookings themselves are on a Google Form.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Saturday Zazenkai (21 Nov 2026) and Zazenkai with precepts review: on the same calendar page as the sesshin item (one item per URL).",
+      "Merri Creek litter clean-up (14 Nov) and end-of-year get-together: community events.",
+      "Talks by Susan Murphy on Zen Open Circle's site and Sydney Zen Centre podcasts: other groups' resources."
+    ],
+    "held": "Only image on the site is a header photo of a Kuan Yin statue in a garden, not clearly the group's dojo or logo. Owner to decide whether it is acceptable."
+  }
+}

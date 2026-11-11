@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1433,
+    "healer_slug": "sri-aurobindo-center-of-los-angeles"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3eeff20c-c157-42ac-8d4c-fa9b4519765c",
+      "slug": "collective-sadhana-on-zoom-mondays-tuesdays-and-thursdays",
+      "title": "Collective sadhana on Zoom (Mondays, Tuesdays and Thursdays)"
+    },
+    {
+      "table": "courses",
+      "id": "73bb4f2d-bf4f-4b89-bf6c-6526f392d7cc",
+      "slug": "retreats-and-extended-stays-at-the-center",
+      "title": "Retreats and extended stays at the Center"
+    },
+    {
+      "table": "free_resources",
+      "id": "9f0d9a41-2830-4e6b-8a27-6a9f29d71fbc",
+      "slug": "savitri-study-line-by-line",
+      "title": "Savitri Study – Line by Line"
+    },
+    {
+      "table": "free_resources",
+      "id": "83f214c3-2dc9-42c1-86c5-199eabbcdd86",
+      "slug": "mantras-by-jyotipriya",
+      "title": "Mantras by Jyotipriya"
+    }
+  ],
+  "at": "2026-11-11T21:31:01.283Z"
+}

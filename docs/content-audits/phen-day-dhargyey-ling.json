@@ -1,0 +1,100 @@
+{
+  "healer": {
+    "healer_slug": "phen-day-dhargyey-ling",
+    "location_source": "https://tibetanbuddhistcentre.org.nz/?page_id=99",
+    "create": {
+      "name": "Phen Day Dhargyey Ling",
+      "bio": "Phen Day Dhargyey Ling, whose name means a source of benefit and happiness, is a Tibetan Buddhist centre serving Christchurch, New Zealand, and one of the Dhargyey Buddhist Centres founded in the lineage of Geshe Ngawang Dhargyey, the Gelug lama the Dalai Lama sent to New Zealand in 1984. Its spiritual head is Venerable Jampa Khedup Lhagön Rinpoche of Sera Je Monastery, who has lived in Dunedin since 1998. Since December 2010 the Christchurch community has had its own resident teacher, Geshe Nyima Dorjee, a Sera Jey geshe who had taught in Tibet and Mongolia before arriving in New Zealand in 2008.\n\nTeachings are now held at a rural property at Teddington, outside the city, with car-pooling arranged from the city, and are also shared on Zoom. Geshe-la's Sunday class concentrates on meditation and mindfulness, while midweek classes go further into study of the Dharma; recent courses have covered The Thirty-Seven Practices of a Bodhisattva and Tsongkhapa's Foundation of All Good Qualities. Anyone may attend, and no fee is charged. Each month the centre also holds a Guru Puja and a second puja, such as one to Tara, and its website offers a guide for first-time visitors and a transcribed sample teaching.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local_online",
+      "city": "Christchurch",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://tibetanbuddhistcentre.org.nz/",
+      "booking_url": "https://tibetanbuddhistcentre.org.nz/?page_id=71",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "christchurch.dhargyey@gmail.com",
+      "image_urls": [
+        "https://tibetanbuddhistcentre.org.nz/wp-content/uploads/2014/10/logo-2.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Regular teachings & events",
+      "url": "https://tibetanbuddhistcentre.org.nz/?page_id=71",
+      "description": "Free weekly classes with Geshe Nyima Dorjee: a Sunday morning session on meditation and mindfulness and a midweek evening of deeper Dharma study, together with monthly pujas on dates set by the Tibetan calendar.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://tibetanbuddhistcentre.org.nz/wp-content/uploads/2015/02/HHDL.Source-Sans-Pro.png"
+    },
+    {
+      "title": "For newcomers",
+      "url": "https://tibetanbuddhistcentre.org.nz/?page_id=597",
+      "description": "A short guide for anyone coming to a first class: when to arrive, how to sit, the customs around the teacher's arrival, the Tibetan prayers that open each teaching and how to make a prostration if you wish to.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://tibetanbuddhistcentre.org.nz/wp-content/uploads/2015/02/HHDL.Source-Sans-Pro.png"
+    },
+    {
+      "title": "Sample teaching",
+      "url": "https://tibetanbuddhistcentre.org.nz/?page_id=74",
+      "description": "A transcript of a 2012 talk by Geshe Nyima Dorjee, given after the Christchurch earthquakes, on turning hardship into practice through refuge, karma, love and compassion, ending with a meditation.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://tibetanbuddhistcentre.org.nz/wp-content/uploads/2015/02/HHDL.Source-Sans-Pro.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2063,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; no social counts read → local_hero",
+    "email": "yes",
+    "email_source": "https://tibetanbuddhistcentre.org.nz/?page_id=99",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Base: the centre names itself a Christchurch centre; teachings are held at 554 Governors Bay–Teddington Road, Teddington (postal Lyttelton 8971), a rural spot outside the city. City recorded as Christchurch; the owner may prefer Teddington or Lyttelton.",
+      "Thin: 3 items, all free (no paid offerings, no videos). Photo is the centre's logo only (591 x 299 px, checked); the other site images are quote graphics or a 1975 photo of the three lamas.",
+      "Home page notices (talk, pujas, course start dates) are from March 2026; no later dated events were found, though the weekly classes appear ongoing.",
+      "Email christchurch.dhargyey@gmail.com is the centre's general inbox (contact page).",
+      "Sister centre: Dhargyey Buddhist Centre, Dunedin (lead 2059, held for photo).",
+      "No hub links: Geshe Nyima Dorjee and Lhagön Rinpoche are not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Geshe Nyima Dorjee.",
+      "robots.txt returns 404 on both hosts (no file); www redirects to the bare domain.",
+      "Found via the New Zealand Buddhist Council national-organisations list (names and links only)."
+    ],
+    "left_out": [
+      "Pathways to World Peace talk (14 March) and March pujas: past.",
+      "Medicine Buddha puja named on its own: kept only as part of the monthly pujas, no item (the word medicine; borderline health rule).",
+      "Events calendar page: links to an old server address."
+    ]
+  },
+  "images_final": true
+}

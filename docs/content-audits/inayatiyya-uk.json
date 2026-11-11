@@ -1,0 +1,77 @@
+{
+  "healer": {
+    "healer_slug": "inayatiyya-uk",
+    "location_source": "https://inayatiyya.org.uk/contact-us/",
+    "create": {
+      "name": "Inayatiyya UK",
+      "bio": "Inayatiyya UK is the British branch of the Sufi order founded by Hazrat Inayat Khan, the Indian musician and mystic who came to the West in 1910 and set up his first Sufi Order in London a few years later. Known until recently as the Sufi Order (UK), it follows the line of teaching passed from Inayat Khan to his son Pir Vilayat and now to his grandson, Pir Zia, who heads the order today. Its office is at Beauchamp Lodge beside the canal in Little Venice, west London.\n\nThe heart of its teaching is a universal Sufism of love, harmony and beauty, open to people of every faith or none. In London a weekly Monday evening group starts with the Dances of Universal Peace, simple circle dances set to sacred phrases from many traditions, followed by a Message Class exploring one theme from Inayat Khan's talks and how to live it day to day. A parallel class runs online on Zoom, and smaller circles meet elsewhere in the country, including Glastonbury. Members can go further through the Inner School and its initiation, retreats, the interfaith Universal Worship, the nature-based Ziraat and a Kinship activity devoted to spiritual friendship.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "London",
+      "country": "United Kingdom",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://inayatiyya.org.uk/",
+      "booking_url": "https://inayatiyya.org.uk/event-calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@inayatiyya.org.uk",
+      "image_urls": [
+        "https://inayatiyya.org.uk/wp-content/uploads/2026/01/DSC07641-Medium.jpeg",
+        "https://inayatiyya.org.uk/wp-content/uploads/2025/08/photo-output-1-scaled-e1756562566255.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Centenary Urs Celebration for Hazrat Inayat Khan",
+      "url": "https://inayatiyya.org.uk/events/centenary-urs-hazrat-inayat-khan-london-2027/",
+      "description": "Two-day gathering at Colet House, West Kensington, marking a hundred years since Inayat Khan's passing, shared by the four UK Sufi groups descended from his order: talks, meditations, Dances of Universal Peace, zikr, a Universal Worship ceremony and a concert.",
+      "price": "Standard ticket (for the entire event): £50.00; Supporter ticket (with bursary subsidy): £75.00; Application for a bursary: £25.00",
+      "product_type": "retreat",
+      "start_date": "2027-04-03",
+      "end_date": "2027-04-04",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "image": "https://inayatiyya.org.uk/wp-content/uploads/2026/08/Hazrat-Inayat-Khan-100th-Urs.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1876,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook/Instagram not read; a national branch of a small order → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://inayatiyya.org.uk/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "No YouTube channel and no free resources: the weekly London and online Monday classes do not state a price on the pages read, and the current terms began in September, so they are described in the bio only.",
+      "The Centenary Urs is a joint event of the four UK Sufi groups from Inayat Khan's line (Inayatiyya UK, Ruhaniat, Sufi Movement and one more), not the Inayatiyya UK's alone. Sufi Ruhaniat International is on Spiritpedia.",
+      "Teachers file is empty: the class teachers named by first name only (Nigel, Sarida, Shams, Noor Alima and others) are not on Spiritpedia; Pir Zia Inayat Khan is not on Spiritpedia.",
+      "Photos: a talk in a hall (640x427) and a collage that includes old portraits of Inayat Khan and Pir Vilayat (845x500). Small; check they pass the ingest size probe.",
+      "Email is the office inbox from the contact page; the homepage mailto has a typo (inayaytiyya), not used.",
+      "Pages carry Cloudflare's passive JS script but returned normal content; crawl-delay 10 respected."
+    ],
+    "left_out": [
+      "The Healing Order and a healing retreat (health rule).",
+      "Retreat 'The Alchemy of Spiritual Eldering' with Saki Lee (retreat page not opened).",
+      "Library/shop of seminar recordings (WooCommerce, not opened)."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (one item). List it, or fold it into an Inayatiyya listing?"
+  }
+}

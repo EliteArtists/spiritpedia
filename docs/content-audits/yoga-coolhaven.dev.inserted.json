@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1327,
+    "healer_slug": "yoga-coolhaven"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4b63e95e-0821-432d-aa79-3fecf7aef9d0",
+      "slug": "unlimited-membership",
+      "title": "Unlimited membership"
+    },
+    {
+      "table": "courses",
+      "id": "4cbc2770-8e8e-4143-8a62-917199843ddb",
+      "slug": "iyengar-basics",
+      "title": "Iyengar Basics"
+    },
+    {
+      "table": "courses",
+      "id": "9d988307-68f5-4c8c-9931-6eccb6d0df8c",
+      "slug": "iyengar-intermediate",
+      "title": "Iyengar Intermediate"
+    },
+    {
+      "table": "courses",
+      "id": "11075659-c846-4fb2-bca8-c23ebee28800",
+      "slug": "live-stream",
+      "title": "Live-Stream"
+    },
+    {
+      "table": "courses",
+      "id": "a132f48a-b84b-472c-a439-7b5479f0e8a7",
+      "slug": "cool-video-recording",
+      "title": "Cool Video Recording"
+    }
+  ],
+  "at": "2026-11-11T17:53:59.881Z"
+}

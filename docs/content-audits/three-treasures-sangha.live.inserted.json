@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1389,
+    "healer_slug": "three-treasures-sangha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "799d03bb-fcbf-44d0-aeda-6155c4a84dae",
+      "slug": "residential-sesshin-with-jack-duffy-and-lee-shields-march-2027",
+      "title": "Residential Sesshin with Jack Duffy and Lee Shields, March 2027"
+    },
+    {
+      "table": "courses",
+      "id": "b4cdbc63-d354-42d5-be92-9b810ee0767a",
+      "slug": "zazenkai-monthly-day-of-practice",
+      "title": "Zazenkai (monthly day of practice)"
+    },
+    {
+      "table": "courses",
+      "id": "b5dae311-59f7-45ef-807d-719181cff950",
+      "slug": "orientation-for-newcomers-2",
+      "title": "Orientation for newcomers"
+    },
+    {
+      "table": "courses",
+      "id": "f9cbf342-a5d8-4ec6-b1c9-a7199a059bb7",
+      "slug": "membership-12",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "9c2eec56-8ff0-416b-b63a-6cedaf7a3483",
+      "slug": "zen-talks",
+      "title": "Zen talks"
+    }
+  ],
+  "at": "2026-11-11T21:42:11.456Z"
+}

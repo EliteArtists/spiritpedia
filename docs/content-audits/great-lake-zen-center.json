@@ -1,0 +1,89 @@
+{
+  "healer": {
+    "healer_slug": "great-lake-zen-center",
+    "location_source": "https://www.glzc.org/practice-schedule",
+    "create": {
+      "name": "Great Lake Zen Center",
+      "bio": "The Great Lake Zen Center is a Korean Zen sangha based in the Milwaukee area of Wisconsin and affiliated with the Kwan Um School of Zen. It follows the teaching of Zen Master Seung Sahn, who brought his style of practice to America in the 1970s, and its core instruction is his question 'What am I?', held as a 'don't know' mind in every situation. Zen Master Dae Kwang, a former abbot of the Kwan Um School, guided the community from its start in 1995 until he retired in 2025.\n\nToday Rebecca Otte, JDPSN, is guiding teacher: she leads retreats, gives kong-an interviews and sets the sangha's direction, while Susi Childress serves as co-abbot alongside a group of dharma teachers who lead the sittings. In-person practice takes place on Thursday evenings at the Unity Center on North 73rd Street in Wauwatosa, where newcomers can attend an Introduction to Zen on the first Thursday of most months. Two further sittings each week, on Tuesday evening and Saturday morning, are held on Zoom, with links shared through the group's mailing list. The centre also marks Buddhist holidays with ceremonies and holds weekend silent retreats with bowing, chanting, walking meditation and work practice.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1995,
+      "availability": "worldwide",
+      "city": "Wauwatosa, Wisconsin",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.glzc.org/",
+      "booking_url": null,
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@glzc.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/67f2b5aeac8f996e845b84e7/e6ea766a-2c30-4d83-ab5a-63567bd101f1/logowithname.jpg",
+        "https://images.squarespace-cdn.com/content/v1/67f2b5aeac8f996e845b84e7/1792706294910-INWTO08OQZXWS7UM5WMJ/Budhas_enlightenment.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Practice Schedule",
+      "url": "https://www.glzc.org/practice-schedule",
+      "description": "Thursday evening sittings in person at the Unity Center in Wauwatosa, plus Tuesday evening and Saturday morning sittings on Zoom, and a monthly Introduction to Zen for newcomers on the first Thursday.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67f2b5aeac8f996e845b84e7/1746186203776-9TIJVH47OSVNZDCP87DY/Budha2.png"
+    },
+    {
+      "title": "What Is Zen?",
+      "url": "https://www.glzc.org/blog/what-is-zen",
+      "description": "A short post by co-abbot Susi Childress on the question 'What am I?' and keeping a 'don't know' mind.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "http://static1.squarespace.com/static/67f2b5aeac8f996e845b84e7/67f2b5aeac8f996e845b850c/67f2b5aeac8f996e845b8515/1746991981548/Budha4-1.PNG?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1821,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its site; Facebook not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.glzc.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Regional: Wauwatosa (Milwaukee area), Wisconsin.",
+      "No building of its own: in-person practice is in a room at the Unity Center of Milwaukee, 1717 N 73rd Street, Wauwatosa (practice-schedule page; the Kwan Um list gives the same address).",
+      "The site's title says 'Great Lakes Zen Center' while its pages and logo say 'Great Lake Zen Center'; the logo form is used.",
+      "Thin: no paid offerings and no videos; two free resources only. Kept because practice is free and the sangha is active with a named teacher (owner may prefer to skip).",
+      "Photos: the centre's logo and a Buddha statue photo from its events page; teacher portraits not used.",
+      "The Kwan Um list gives susichildr@aol.com (co-abbot's personal address); the plan uses info@glzc.org from the contact page.",
+      "No hub links: Rebecca Otte JDPSN, Zen Master Dae Kwang and Susi Childress are not on Spiritpedia. Teachers file written with an empty list.",
+      "The YMJJ retreat was held at the Shambhala Center of Milwaukee (venue only); nothing taken from Shambhala sources."
+    ],
+    "left_out": [
+      "YMJJ Weekend Retreat (7–8 Nov 2026) and Public Talk (6 Nov 2026): already past.",
+      "Buddha's Enlightenment Day ceremony (10 Dec 2026): a ceremony replacing regular practice, not an offering.",
+      "Introduction to Zen: shares the practice-schedule page URL with the Practice Schedule item; folded into it."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin, two free items and no videos or offerings, practising in a rented room. List as it is, or skip?"
+  }
+}

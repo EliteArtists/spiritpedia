@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1437,
+    "healer_slug": "yoga-vedanta-aalst"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "2ad7c030-c16c-4394-9743-3044dbd477bf",
+      "slug": "yoga-for-beginners-yearly-membership",
+      "title": "Yoga for beginners (yearly membership)"
+    },
+    {
+      "table": "courses",
+      "id": "71a3bc45-997d-40de-be0f-386879795201",
+      "slug": "weekly-timetable-classes-meditation-and-satsang",
+      "title": "Weekly timetable: classes, meditation and satsang"
+    },
+    {
+      "table": "courses",
+      "id": "c8bcb325-332a-4ca1-aef7-16faf839ab2b",
+      "slug": "live-online-yoga-classes-for-members",
+      "title": "Live online yoga classes for members"
+    }
+  ],
+  "at": "2026-11-11T21:36:53.803Z"
+}

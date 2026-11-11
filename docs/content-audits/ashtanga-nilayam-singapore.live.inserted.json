@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1302,
+    "healer_slug": "ashtanga-nilayam-singapore"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9600,
+      "slug": "nilayam-shala-2021",
+      "title": "Nilayam Shala 2021"
+    },
+    {
+      "table": "videos",
+      "id": 9601,
+      "slug": "nilayam-bali-retreat",
+      "title": "NILAYAM BALI RETREAT"
+    },
+    {
+      "table": "videos",
+      "id": 9602,
+      "slug": "nilayam-bali-2023",
+      "title": "NILAYAM BALI 2023"
+    },
+    {
+      "table": "courses",
+      "id": "15b30449-9441-43f2-a390-14f2b1532326",
+      "slug": "mysore-class-packages-and-sadhana-memberships",
+      "title": "Mysore class packages and Sadhana memberships"
+    },
+    {
+      "table": "courses",
+      "id": "c5aff0a9-9bec-488e-ac6f-dd2df8d461fe",
+      "slug": "daily-mysore-programme",
+      "title": "Daily Mysore programme"
+    },
+    {
+      "table": "courses",
+      "id": "ba9ed438-4a1b-438e-808b-822d0adf5725",
+      "slug": "intro-to-ashtanga-workshop",
+      "title": "Intro To Ashtanga workshop"
+    },
+    {
+      "table": "courses",
+      "id": "74df61a8-7c93-4813-9a37-795fcfe04132",
+      "slug": "pranayama-workshop",
+      "title": "Pranayama Workshop"
+    }
+  ],
+  "at": "2026-11-11T21:37:57.156Z"
+}

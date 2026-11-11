@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1310,
+    "healer_slug": "auckland-zen-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e1c7b4f4-7f2e-4133-9f94-d9ccef62b35f",
+      "slug": "introductory-zen-meditation-workshop",
+      "title": "Introductory Zen Meditation Workshop"
+    },
+    {
+      "table": "courses",
+      "id": "54c48142-4d60-422f-89e6-507b8771318f",
+      "slug": "summer-sesshin-2027",
+      "title": "Summer Sesshin 2027"
+    },
+    {
+      "table": "courses",
+      "id": "94c87028-37ec-4819-953d-ce7fbf2b827b",
+      "slug": "supporting-membership",
+      "title": "Supporting Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "f0a3bdd3-d393-41de-8461-f6647cc4c20f",
+      "slug": "azc-podcasts-talks",
+      "title": "AZC podcasts (talks)"
+    },
+    {
+      "table": "free_resources",
+      "id": "0fb2de9a-4a6d-4f07-8588-0d6f3b26dcae",
+      "slug": "live-streamed-sittings",
+      "title": "Live-streamed sittings"
+    },
+    {
+      "table": "free_resources",
+      "id": "d840c9bd-543a-4371-ab57-6ef42250457a",
+      "slug": "new-years-eve-sitting-and-jukai-ceremony",
+      "title": "New Year's Eve sitting and Jukai ceremony"
+    }
+  ],
+  "at": "2026-11-11T21:38:19.355Z"
+}

@@ -1,0 +1,143 @@
+{
+  "healer": {
+    "healer_slug": "santipada-buddhist-monastery",
+    "location_source": "https://santipada.co.nz/contacts/",
+    "create": {
+      "name": "Santipada Buddhist Monastery",
+      "bio": "Santipada, whose Pali name means a state of peace, is a small Buddhist monastery in the hills of Northland, about twenty minutes' drive from Kerikeri. It follows a blended path that draws on both Korean Zen and the Theravada tradition, and its community is made up of monks, nuns and lay followers. The abbot, Bhante Yasala, was ordained as a nun in Korea in 1984, spent four years in a silent mountain retreat and later trained in Myanmar and India before settling in New Zealand in 2003. Bhante Anuttara, a Korean-born monk who ordained in 2008 and moved to New Zealand in 2015, teaches alongside her.\n\nEvery Sunday morning the monastery opens for walking and sitting practice and a Dhamma talk, with a short beginners' class beforehand, and all teaching is given on a donation basis. Visitors may stay as paying retreatants for three nights or more, join a seven-day retreat that starts on the last Sunday of each month, or live in as volunteers who share the daily timetable of chanting, meditation and work. A monthly membership scheme includes an annual retreat, and Bhante Anuttara's written reflections are posted on the site.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Kerikeri",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://santipada.co.nz/",
+      "booking_url": "https://santipada.co.nz/retreat-volunteer-form/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "santipada@hotmail.com",
+      "image_urls": [
+        "https://santipada.co.nz/wp-content/uploads/2022/11/DSC02358-scaled.jpg",
+        "https://santipada.co.nz/wp-content/uploads/2024/05/MG_0666-HDR-scaled.jpg",
+        "https://santipada.co.nz/wp-content/uploads/2022/11/DSC02362-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "7 Day Meditation Retreat",
+      "url": "https://santipada.co.nz/7-day-meditation-retreat/",
+      "description": "A week inside the monastery's own routine, beginning on the final Sunday of every month. Retreatants join the shared morning and evening chanting and sitting, about three hours a day, and can ask for extra sessions that bring the total to around seven hours.",
+      "price": "$100NZ per day – 7 days and more",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://santipada.co.nz/wp-content/uploads/2024/05/MG_0766-HDR-scaled.jpg"
+    },
+    {
+      "title": "General Retreat",
+      "url": "https://santipada.co.nz/about-retreat/",
+      "description": "A personal retreat of three nights or longer, shaped with one of the monastic teachers around the daily timetable of chanting, group sittings and a midday Dhamma discussion. Guests keep the monastery's precepts during their stay.",
+      "price": "$150NZ per day – general retreat ( minimum 3 nights)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://santipada.co.nz/wp-content/uploads/2022/11/DSC02362-scaled.jpg"
+    },
+    {
+      "title": "Membership Retreats",
+      "url": "https://santipada.co.nz/about-membership-retreats/",
+      "description": "Supporters who give monthly through a calendar year receive the newsletter, guidance from the teachers and an annual retreat whose length grows with the level chosen, from three days up to ten or more.",
+      "price": "Dhamma Rain – $30 per month; Dhamma Stream – $50 per month; Dhamma River – $80 per month; Dhamma Ocean & Beyond – $100 per month or more",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://santipada.co.nz/wp-content/uploads/2022/11/DSC02347-scaled.jpg"
+    },
+    {
+      "title": "Volunteer stays",
+      "url": "https://santipada.co.nz/about-volunteer/",
+      "description": "Volunteers live at the monastery and follow a timetable of chanting, group sittings, Dhamma discussion and working meditation, treating giving, conduct and meditation as one practice. Food, lodging and guidance are offered without charge.",
+      "price": "Free",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://santipada.co.nz/wp-content/uploads/2024/05/MG_0720-HDR-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Meditation",
+      "url": "https://santipada.co.nz/",
+      "description": "An open Sunday morning of walking and sitting meditation followed by a Dhamma talk, with a half-hour instruction class for newcomers beforehand. Offered on a donation basis.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://santipada.co.nz/wp-content/uploads/2023/11/cropped-IMG20231107065435-01-scaled-1.jpeg"
+    },
+    {
+      "title": "Dhamma Reflections",
+      "url": "https://santipada.co.nz/dhamma-reflections/",
+      "description": "Short written teachings by Bhante Anuttara, posted as downloadable newsletters, on themes such as walking meditation, right concentration, right effort and right intention.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://santipada.co.nz/wp-content/uploads/2023/11/prmrk6377ug81.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2051,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://santipada.co.nz/contacts/",
+    "contact_form_url": "https://santipada.co.nz/contacts/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Regional: Takou Bay near Kerikeri, Northland, New Zealand (the contact page gives Kerikeri, Bay of Islands); no Spiritpedia listings there.",
+      "Email santipada@hotmail.com is the monastery's general inbox (contact page).",
+      "No hub links: the abbot Bhante Yasala and Bhante Anuttara are not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Bhante Anuttara, Bhante Yasala.",
+      "Membership has four published levels, listed in the price field as published; currency not stated on that page.",
+      "Availability 'local': no online teaching found on its site.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Buddha's essential discourses page: mostly third-party texts, including a preview PDF of a published book.",
+      "Teaching page: no content beyond a photo.",
+      "No founding year published."
+    ]
+  },
+  "images_final": true
+}

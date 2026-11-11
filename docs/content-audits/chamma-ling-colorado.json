@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "chamma-ling-colorado",
+    "location_source": "https://chammaling.com/contact/",
+    "create": {
+      "name": "Chamma Ling Colorado",
+      "bio": "Chamma Ling Colorado is a solitary retreat centre of the Bön Buddhist tradition of Tibet, set among piñon pines on Camino Baca Grande near Crestone, Colorado, in the Sangre de Cristo Mountains above the San Luis Valley. It was founded by Tenzin Wangyal Rinpoche, the Bön meditation master who leads Ligmincha International and remains its spiritual director, on fifty acres given to him in 2000 by the Manitou Foundation to build a Bön centre. Its cabins and community house were paid for by students, private donors and the proceeds of Rinpoche's teachings in Colorado.\n\nThe centre exists mainly for people who want to practise alone for a week or for many months. Each small cabin has a shrine area with room for prostrations, yoga and meditation, a kitchen and bathroom, and can be fully darkened for the dark retreats that are a distinctive part of Bön practice; dark retreats are open only to people with suitable preparation under a qualified teacher, and first-timers apply for approval. A community house that sleeps eight can be rented for small group retreats and local practice groups. Retreatants are pointed to Ligmincha's online courses to prepare, and to Ligmincha for Rinpoche's teaching schedule.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Crestone, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://chammaling.com/",
+      "booking_url": "https://chammaling.com/reserve-a-cabin/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@chammaling.com",
+      "image_urls": [
+        "https://chammaling.com/wp-content/uploads/2024/12/Cabin-dramatic-sky.jpg",
+        "https://chammaling.com/wp-content/uploads/2024/12/Inside-Cabin-e1733505268730.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Solitary retreat in a Chamma Ling cabin",
+      "url": "https://chammaling.com/reserve-a-cabin/",
+      "description": "A self-catering personal retreat of a week or longer in one of the centre's single or two-person cabins, each with a shrine area, kitchen and bathroom, and access to the land. Local help with meals, transport and shopping can be arranged when booking.",
+      "price": "Single Cabin One week: $665 or $95 per night",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://chammaling.com/wp-content/uploads/2024/12/Sunset-and-cabin-e1733432073401.jpg"
+    },
+    {
+      "title": "Dark retreat",
+      "url": "https://chammaling.com/support-services/",
+      "description": "A Bön dark retreat in a fully darkened cabin with meals passed through a light-tight hatch, for practitioners prepared by a qualified teacher; first dark retreats are subject to approval. Cabin rates apply, with a one-time fee for darkening the cabin.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://chammaling.com/wp-content/uploads/2024/12/Cabin-dramatic-sky.jpg"
+    },
+    {
+      "title": "Community House rental for group retreats",
+      "url": "https://chammaling.com/our-retreat-cabins/",
+      "description": "The centre's Community House, sleeping up to eight with a large kitchen, and the whole site can be rented for small group retreats, teachings and practice groups.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://chammaling.com/wp-content/uploads/2024/12/Cabin-e1733852470852.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2219,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook and Instagram linked, never fetched → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://chammaling.com/contact/",
+    "contact_form_url": "https://chammaling.com/contact/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Hub link: Tenzin Wangyal Rinpoche (tenzin-wangyal-rinpoche, on Spiritpedia) as founder; its About page says he founded the centre and is its spiritual director.",
+      "Related listing: Ligmincha International (ligmincha-international) is already on Spiritpedia; Chamma Ling is one of its centres (ligmincha.org/center/).",
+      "Thin and retreat-only: three items, all retreat facilities; no events are scheduled ('No Events at this time') and no videos of its own. Kept because it has a founder link, contact, photos and clear offerings; owner may prefer to skip.",
+      "Dark retreat kept: a traditional Bön practice offered only to prepared practitioners with approval; not a health claim.",
+      "Prices rise 5% on 1 January 2027 per its own page; the published (post-increase) figure is used.",
+      "Photos: an adobe retreat cabin under an evening sky (480 px) and a cabin interior with shrine (1000 px), both from its own site, checked.",
+      "Email info@chammaling.com plus a contact form on the Contact page.",
+      "Regional: Crestone, Colorado (a small town; recorded as published).",
+      "Found via Ligmincha International's centre list (ligmincha.org/center/, names and links only)."
+    ],
+    "left_out": [
+      "Events: none scheduled.",
+      "Online support programmes: 'TBA'.",
+      "Ligmincha Learning courses: another organisation's offerings."
+    ]
+  },
+  "images_final": true
+}

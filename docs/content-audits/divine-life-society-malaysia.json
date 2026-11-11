@@ -1,0 +1,117 @@
+{
+  "healer": {
+    "healer_slug": "divine-life-society-malaysia",
+    "location_source": "https://www.sivananda.org.my/",
+    "create": {
+      "name": "The Divine Life Society Malaysia (Sivanandashram, Batu Caves)",
+      "bio": "The Divine Life Society's Malaysian branch keeps its Sivanandashram on Jalan Batu Caves in Selangor, a few kilometres north of Kuala Lumpur. It follows the teaching of Swami Sivananda of Rishikesh, summed up in his motto Serve, Love, Give, Purify, Meditate, Realize, and welcomes people of every faith who want a life of service, self-discipline, enquiry and meditation. Swamis of the order lead its management and teaching, and the movement counts some twenty sub-branches around the country.\n\nAt the ashram there is a weekly hatha yoga class on Saturday afternoons and a timetable of scripture study led by resident swamis: Swami Sivananda's teachings on the first Saturday, Gita chanting and Sivapuranam classes on other Saturdays, Sanskrit and a Bhagavad Gita class with chanting on Sundays, and an online Vivekachudamani class on Saturday evenings. Since 1988 it has trained spiritual tutors to teach in the community, and it runs youth camps and festival celebrations such as Navaratri and Deepavali. Service is central: the society runs a home, a charitable clinic and food drives for families in need around Gombak. Its website also carries short writings by Swami Sivananda on practices such as japa.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Batu Caves, Selangor",
+      "country": "Malaysia",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.sivananda.org.my/",
+      "booking_url": "https://www.sivananda.org.my/spiritual-activities.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dlsashram@gmail.com",
+      "image_urls": [
+        "https://www.sivananda.org.my/images/logo.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Saturday yoga class",
+      "url": "https://www.sivananda.org.my/yoga-class.html",
+      "description": "A two-hour hatha yoga class at the Batu Caves ashram every Saturday from 4 to 6 pm.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.org.my/images/yoga-class.jpg"
+    },
+    {
+      "title": "Scripture, chanting and Sanskrit classes",
+      "url": "https://www.sivananda.org.my/spiritual-activities.html",
+      "description": "Weekly classes with the ashram's swamis: Swami Sivananda's teachings, Bhagavad Gita and Sivapuranam study with chanting, Sanskrit on Sundays, and a Vivekachudamani class held online on Saturday evenings.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://www.sivananda.org.my/images/spiritual-teachings.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Japa Yoga Sadhana",
+      "url": "https://www.sivananda.org.my/article-japa-yoga.html",
+      "description": "Swami Sivananda's guidance on repeating a divine name or mantra as a daily practice, published on the society's site.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.sivananda.org.my/images/article-japa-yoga.jpg"
+    },
+    {
+      "title": "Sadhana – the Main Purpose of Life",
+      "url": "https://www.sivananda.org.my/article-sadhana.html",
+      "description": "A short teaching on why regular spiritual practice matters and what counts as sadhana, from the society's articles.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://www.sivananda.org.my/images/logo.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2319,
+    "hub": null,
+    "tier_evidence": "No social accounts readable; Videos page empty; 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.sivananda.org.my/",
+    "contact_form_url": "https://www.sivananda.org.my/contact-us.html",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from the Divine Life Society's branches page (dlshq.org). Facts from sivananda.org.my (robots.txt 404, so no rules).",
+      "Photo: the society's logo banner (1080x263) only; the photo gallery shows no images to curl.",
+      "Health rule: the Sivananda Free Clinic and the Sivananda Home (care home) are mentioned only as service work in the bio, not as items. Owner may prefer them left out of the bio too.",
+      "founded_year left empty: the About page says the Divine Life Society was 'established in 1953' without making clear whether that is the Malaysian branch.",
+      "Thin-ish: two offerings and two short articles.",
+      "No Spiritpedia teachers named (Swamis Samyamananda, Brahmajnanananda, Swayamjayananda, Swamini Skandapriyananda); teachers file has no links. Check: dev names has 'swami-chidananda' (not on this site).",
+      "Regional: Batu Caves, Selangor.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: logo loads (200, image/jpeg, 1080x263)."
+    ],
+    "left_out": [
+      "Sivananda Free Clinic (health rule).",
+      "Deepavali party and volunteer call: charity events, dated.",
+      "Youth camp: no date announced."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1393,
+    "healer_slug": "vedanta-society-of-kansas-city"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "db1cae34-03a7-4820-9bc6-71659fdd0e65",
+      "slug": "sunday-lectures-audio",
+      "title": "Sunday Lectures (audio)"
+    },
+    {
+      "table": "free_resources",
+      "id": "e0b35ade-8986-4962-bd68-5cf38dced76c",
+      "slug": "vivekachudamani-lecture-series",
+      "title": "Vivekachudamani lecture series"
+    },
+    {
+      "table": "free_resources",
+      "id": "b266e1da-ef52-474a-8a07-4a0dc1ea5e07",
+      "slug": "bhagavad-gita-classes",
+      "title": "Bhagavad Gita classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "ede9511a-9217-4a63-825f-97f61ee2d833",
+      "slug": "gospel-of-sri-ramakrishna-classes",
+      "title": "Gospel of Sri Ramakrishna classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "c6f218c8-d3b6-4bad-b1e0-3a17b5afc87a",
+      "slug": "towards-the-goal-supreme-lecture-series",
+      "title": "Towards the Goal Supreme (lecture series)"
+    }
+  ],
+  "at": "2026-11-11T21:42:25.665Z"
+}

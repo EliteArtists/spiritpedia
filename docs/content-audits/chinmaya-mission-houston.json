@@ -1,0 +1,161 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission-houston",
+    "location_source": "https://chinmayahouston.org/directions/",
+    "create": {
+      "name": "Chinmaya Mission Houston",
+      "bio": "Chinmaya Mission Houston is one of the longest-running Chinmaya centres in North America. It was set up in 1982 by Gaurang and Darshana Nanavaty, a married couple who left their careers to study Vedanta under Swami Chinmayananda and were later given the title of acharya by him. They still lead the centre, which now serves several hundred families from its own campus, Chinmaya Prabha, in Sugar Land on the south-western edge of Houston.\n\nThe heart of the week is Sunday. Adults gather for satsang in two morning sessions, with prayers, devotional singing and a talk from the acharyas on a scriptural text, while children from pre-school age to their late teens attend Bala Vihar, where stories, chanting, crafts and discussion introduce the values and culture of Indian tradition. Small study groups of five to fifteen people meet through the week to read and reflect on Vedantic texts together, and the centre runs a long series of Bhagavad Gita talks in Gujarati that is posted on its YouTube channel. The approach is non-dual Advaita Vedanta, presented as a practical philosophy open to people of any background and faith.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Sugar Land, Texas",
+      "country": "United States",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://chinmayahouston.org/",
+      "booking_url": "https://chinmayahouston.org/membership/",
+      "youtube_url": "https://www.youtube.com/@chinmayamissionhouston",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@chinmayahouston.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_lZY1QhINk2FQ-98LjmWKgGxHNpJ8pSDjJ64MMO_hMfVhY=s800-c-k-c0x00ffffff-no-rj"
+      ],
+      "founded_year": 1982
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Swami Chinmayananda's Life Story",
+      "url": "https://www.youtube.com/watch?v=e0-JRkVV10M",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "Meditation - July 10, 2025",
+      "url": "https://www.youtube.com/watch?v=nJleIjtojQg",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "CMH GujaratiGita Adhyay18 Pravachan 1 - August 21, 2025",
+      "url": "https://www.youtube.com/watch?v=creAhCLUT54",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "CMH GujaratiGita Adhyay18 Pravachan 8 (Final) - October 4, 2025",
+      "url": "https://www.youtube.com/watch?v=TpWtXJO5rrw",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "CMH GujaratiGita Adhyay17 Pravachan 1 - July 17, 2025",
+      "url": "https://www.youtube.com/watch?v=3NLBm2EAxWE",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "Gujarati Gita Adhyay16 Pravachan 1 - May 29, 2025",
+      "url": "https://www.youtube.com/watch?v=-tdHUb9YuFA",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    },
+    {
+      "title": "Gujarati Gita Adhyay 14 & 15 Pravachan 1 - April 10, 2025",
+      "url": "https://www.youtube.com/watch?v=FcC5Irf4IZE",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Chinmaya Mission Houston"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday Adult Satsanga",
+      "url": "https://chinmayahouston.org/weekly-classes-chinmaya/",
+      "description": "Sunday discourses at the Chinmaya Smrti hall in Sugar Land, in two sessions (8:35 to 10:15 AM and 11:20 AM to 1:00 PM), with prayers, bhajans and a talk by the centre's acharyas.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://chinmayahouston.org/wp-content/uploads/Front-Page-Satsang-2048x1059.png"
+    },
+    {
+      "title": "Study Groups",
+      "url": "https://chinmayahouston.org/study-group-chin/",
+      "description": "Groups of between five and fifteen members who gather on a regular basis to read and talk through a Vedantic text together, each with a coordinator.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://chinmayahouston.org/wp-content/uploads/Study-Groups.jpg"
+    },
+    {
+      "title": "Bala Vihar",
+      "url": "https://chinmayahouston.org/balaviharinfo/",
+      "description": "Weekly Sunday classes for children aged about five to seventeen, teaching Vedanta, values and Indian culture through stories, music, crafts and discussion.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://chinmayahouston.org/wp-content/uploads/Balavihar-Program-Motto-1024x100.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1871,
+    "hub": null,
+    "tier_evidence": "YouTube 3,900 subscribers on its own channel @chinmayamissionhouston (YouTube Data API, 11 Nov 2026); Facebook not read → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://chinmayahouston.org/membership/",
+    "contact_form_url": "https://chinmayahouston.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Related listing: Chinmaya Mission (parent) is already listed; this is the Houston centre with its own site and channel.",
+      "Photo is the channel avatar: a portrait of Swami Chinmayananda, the mission's founder, not of the centre or its acharyas. The site's own photos are under /images/, which robots.txt disallows.",
+      "Most videos are Bhagavad Gita talks in Gujarati.",
+      "Bala Vihar is listed free here but needs registration (non-refundable $25 per family with one or no child, max $50 for two or more children) and is waitlist-only for 2026-27.",
+      "Teachers file is empty: the resident acharyas Gaurang and Darshana Nanavaty are not on Spiritpedia.",
+      "Email is the general inbox, shown in plain text on /membership/; a contact form is on /contact-us/.",
+      "Regional: Houston area, campus in Sugar Land, Texas."
+    ],
+    "left_out": [
+      "Diwali Puja and Gurudaksina, 8 Nov (before 12 Nov).",
+      "Saumyakasi temple site (related, ritual).",
+      "Mobile apps (Upanisad Daily, Vedanta Daily, Gita 365, Gita Chanting): store links not checked."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): the only photo is a portrait of Swami Chinmayananda (the founder), not the centre; the site's /images/ folder is closed by robots.txt. Use the portrait, or send a photo?"
+  }
+}

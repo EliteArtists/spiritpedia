@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1378,
+    "healer_slug": "phen-day-dhargyey-ling"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "18e74411-f091-4fab-b680-29e5ed467db6",
+      "slug": "regular-teachings-events",
+      "title": "Regular teachings & events"
+    },
+    {
+      "table": "free_resources",
+      "id": "65654bdf-49c0-42f6-86f7-ca5c93c5594d",
+      "slug": "for-newcomers-2",
+      "title": "For newcomers"
+    },
+    {
+      "table": "free_resources",
+      "id": "2872e23f-e36a-4fe5-8f26-2acdeb61674d",
+      "slug": "sample-teaching",
+      "title": "Sample teaching"
+    }
+  ],
+  "at": "2026-11-11T19:09:56.775Z"
+}

@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-delhi",
+    "location_source": "https://anandadelhi.org/contact/",
+    "create": {
+      "name": "Ananda Sangha Delhi",
+      "bio": "Ananda Sangha Delhi is the capital's branch of Ananda, the international fellowship that Swami Kriyananda, one of Paramhansa Yogananda's own disciples, set up in 1968 to share Yogananda's Kriya Yoga path. Its ashram, known as Guru Prem, is a corner house on the Outer Ring Road service lane in Panchsheel Park, a short walk from the Hauz Khas and Panchsheel Park metro stations; a second group meets in Janakpuri in West Delhi.\n\nNewcomers begin with Learn to Meditate, two three-hour Sunday classes on Yogananda's Hong-Sau concentration technique and how to build a steady practice, which also serve as the first of four steps towards Kriya initiation. Later stages include raja yoga study and multi-week Kriya preparation series with a textbook.\n\nSunday mornings open with a fire ceremony in the garden, chanting and silent meditation, followed by an inspirational satsang that is also broadcast on Zoom and the centre's busy YouTube channel, where evening guided meditations and talks are posted every week. The calendar adds full-day silent retreats at the ashram with Ananda Yoga and time for reflection, twice-monthly book study, a spiritual Sunday for children, and day trips to Vrindavan to serve widows cared for by a Yogananda charitable trust.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "New Delhi, Delhi",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandadelhi.org/",
+      "booking_url": "https://anandadelhi.org/event/level-1/",
+      "youtube_url": "https://www.youtube.com/@anandadelhi",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "delhi@anandaindia.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_kvTuWhQS73FNski0mQyfq2u6p-UJgMi_dv4fAYxuQOAR4=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What Is the Best Way to Pray?",
+      "url": "https://www.youtube.com/watch?v=S0fyFREWmTs",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "The Courage to Live Your Convictions",
+      "url": "https://www.youtube.com/watch?v=yJgWOuVUyos",
+      "subjects": [
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Many Are the Pathways to Truth",
+      "url": "https://www.youtube.com/watch?v=HcqsLNcWF18",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Awaken Your Highest Potential",
+      "url": "https://www.youtube.com/watch?v=EYj8TE9Jg-Y",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Evening Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=7Vv59ov8kEI",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate: The Path of Kriya Yoga (Level 1)",
+      "url": "https://anandadelhi.org/event/level-1/",
+      "description": "Two three-hour Sunday classes at the Panchsheel Park ashram (Sundays 6 and 13 December 2026, late morning to mid-afternoon, with online options) on the Hong-Sau concentration technique, how to sit and quiet the mind, and a roadmap for daily practice, with guided meditations, Q&A and lunch after each class.",
+      "price": "₹ 1500/-",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Kriya Preparation 1 – Part 1",
+      "url": "https://anandadelhi.org/event/kriya-preparation-1-part-1-3/",
+      "description": "A three-class series on Sundays 22 and 29 November and 6 December 2026 (11:30 am–2:00 pm) on deepening meditation, attunement and receptivity, for students who have completed the raja yoga level. Textbook included; followed by Part 2 in December and January.",
+      "price": "₹ 1,500 (includes textbook)",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "A Day-Trip to Vrindavan",
+      "url": "https://anandadelhi.org/event/a-daytrip-to-vrindavan-2/",
+      "description": "A day of seva and pilgrimage on 28 November 2026: by bus from the Delhi ashram to the Paramhansa Yogananda Public Charitable Trust's care home for widows in Vrindavan for satsang, chanting and time together, with darshan at Katyayani Peeth and a visit to the Neem Karoli Baba ashram.",
+      "price": "Program Fee: Rs 1500",
+      "product_type": "retreat",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday Inspirational Satsang",
+      "url": "https://anandadelhi.org/event/inspirational-satsang/",
+      "description": "Every Sunday at the ashram and online: a fire ceremony in the garden, then chanting and silent meditation from 9 am and an inspirational talk from 10 am, broadcast on Zoom and YouTube.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2019,
+    "hub": null,
+    "tier_evidence": "YouTube @anandadelhi: 7,890 subscribers (Data API, 11 Nov 2026) → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandadelhi.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "NO CENTRE PHOTO: the site's images are personal headshots of satsang speakers, stock banners ('Meditation', 'Healing') and book art. The plan uses the channel avatar (Kriyananda and Yogananda), which is neither the centre nor its logo, so the plan is held for the owner.",
+      "YouTube @anandadelhi (UCH5IwurNbUBAxst0poJ3v5w): 7,890 subscribers, 892 videos (Data API, 11 Nov 2026), linked from the satsang event page. All 5 videos pass oEmbed.",
+      "Silent retreat (14 Nov 2026) has no published price and Level 1 is on 6 and 13 Dec. All dated items start after 12 Nov 2026.",
+      "The Vrindavan day trip is seva with widows (charitable), typed 'retreat' as a one-day pilgrimage; owner may prefer to drop it.",
+      "Health rule: healing prayer sessions and a 'Yogananda's Healing Techniques' workshop (21 Nov) left out.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: none named as resident teachers on the pages read (satsang speakers vary, e.g. Vasudha Bajoria, Br. Chika).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Full-Day Guided Silent Retreat (14 Nov 2026): no price published; kept out to keep the item list tidy (could be added as 'Contact for pricing').",
+      "Healing Prayer Sessions; Practical Applications of Yogananda's Healing Techniques (21 Nov): health framing.",
+      "'The Essence of Self-Realization' book study: online only.",
+      "Full-moon meditation and purification ceremony: not opened."
+    ],
+    "held": "No photo of the centre on its own site: the only image in the plan is the YouTube channel avatar (portraits of Kriyananda and Yogananda). Owner to accept the avatar, or the plan waits for a centre photo."
+  }
+}

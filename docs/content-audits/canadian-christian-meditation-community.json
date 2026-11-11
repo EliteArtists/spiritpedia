@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "canadian-christian-meditation-community",
+    "location_source": null,
+    "no_public_base": "Only a P.O. Box mailing address in Thornhill, Ontario is published (national resource centre); groups meet across Canada.",
+    "create": {
+      "name": "Canadian Christian Meditation Community (WCCM Canada)",
+      "bio": "The Canadian Christian Meditation Community is the Canadian branch of the World Community for Christian Meditation, a registered charity with a national resource centre in Ontario. It has a special link with John Main, who taught in Montreal in his final years and from whose priory the worldwide community grew. It passes on his prayer of the heart: sitting still twice a day for twenty to thirty minutes and silently saying the prayer word maranatha in four even syllables, letting go of thoughts as they come.\n\nIts life is grassroots, built on weekly groups in cities, towns and villages across the country and online groups that share Zoom links through their facilitators. A national council organises retreats, conferences and teaching weekends, publishes a quarterly newsletter and supports meditation in Christian schools. Its website offers a detailed guide to meditating, practical tips and answers on the mantra, introduction-to-meditation events, a video library and classroom timers.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://www.wccm-canada.ca/",
+      "booking_url": "https://www.wccm-canada.ca/copy-of-events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@wccm-canada.ca",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "How To Meditate",
+      "url": "https://www.wccm-canada.ca/how-to-meditate",
+      "description": "Step-by-step guidance: sit still, say maranatha in four equal syllables and meditate morning and evening for 20 to 30 minutes.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Online Groups",
+      "url": "https://www.wccm-canada.ca/test-1",
+      "description": "A list of online meditation groups at different times; contact a group's facilitator for the Zoom link.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Community Groups",
+      "url": "https://www.wccm-canada.ca/community-groups",
+      "description": "A directory of weekly in-person groups across Canada.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Introduction to Meditation events",
+      "url": "https://www.wccm-canada.ca/copy-of-events",
+      "description": "Links to introduction-to-meditation sessions for beginners held around Canada.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2279,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of its own linked from its site (Instagram/Facebook never fetched) → local_hero (Rising Star). Its site embeds videos from the international channel only.",
+    "email": "yes",
+    "email_source": "https://www.wccm-canada.ca/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "National community of the World Community for Christian Meditation; the international WCCM is already on Spiritpedia (world-community-for-christian-meditation): owner to decide whether national communities should be separate listings.",
+      "No usable image: the site is on Wix and every image is on static.wixstatic.com, which refuses us. Held.",
+      "Possible mailing-address base: Thornhill, Ontario (P.O. Box only); not used.",
+      "No hub links.",
+      "Found via the WCCM national communities list (wccm.org/national-communities/, names and links only)."
+    ],
+    "left_out": [
+      "Embedded videos: from the international WCCM channel, not its own.",
+      "Donate and Bonnevaux project pages.",
+      "Newsletter PDFs."
+    ],
+    "held": "No usable image: the site is on Wix and all its images are on static.wixstatic.com, which refuses us; no own YouTube channel. Not worked around; owner to decide."
+  }
+}

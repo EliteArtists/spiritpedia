@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-cascais-yoga-shala",
+    "location_source": "https://www.ashtangacascais.com/",
+    "create": {
+      "name": "Ashtanga Cascais Yoga Shala",
+      "bio": "Ashtanga Cascais Yoga Shala has taught traditional Ashtanga in Cascais, on the coast west of Lisbon, since 2007. It was co-founded by Vera Simões, who first studied at the Pattabhi Jois institute in Mysore in 2007, was authorised by Sharath Jois in 2010 and renewed that authorisation at Level 2 in 2016. She has taught yoga since 2003, writes the school's long-running blog and is the author of the Portuguese book Parar. Sentir. Respirar. Jo Bento, a former professional surfer who has practised for over ten years, teaches the evening classes.\n\nMorning sessions follow the Mysore method: each class opens with a short sitting meditation, then beginners are taken through the basics step by step while experienced students practise their own series with individual adjustments, ending in guided rest. A traditional led class runs early on Fridays, and there are online classes alongside the in-person room. Over almost two decades the shala has hosted workshops with senior Ashtanga teachers such as Peter Sanson, Sharmila Desai and Hamish Hendry, and it runs weekend retreats in the Portuguese countryside and on the Costa Vicentina that combine Ashtanga, meditation, walks and surfing. Teaching is in Portuguese and English.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": 2007,
+      "availability": "local_online",
+      "city": "Cascais",
+      "country": "Portugal",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "website_url": "https://www.ashtangacascais.com/",
+      "booking_url": "https://www.ashtangacascais.com/shala/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ashtangacascais.com",
+      "image_urls": [
+        "https://www.ashtangacascais.com/wp-content/uploads/2024/09/ASHTANGA_shala_outro_.jpg",
+        "https://www.ashtangacascais.com/wp-content/uploads/2024/09/ASHTANGA_shala_aulas-horarios.jpg",
+        "https://www.ashtangacascais.com/wp-content/uploads/2025/07/IMG_9351-scaled.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore Style and led Ashtanga classes",
+      "url": "https://www.ashtangacascais.com/shala/",
+      "description": "Morning Mysore sessions that begin with meditation and end with guided rest, evening classes, a traditional led class on Friday mornings, and online classes. Beginners are taught the foundations one to one inside the group; private classes are available on request.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.ashtangacascais.com/wp-content/uploads/2026/10/IMG_6303.jpeg"
+    },
+    {
+      "title": "Ashtanga Yoga, Surf & Lifestyle retreats",
+      "url": "https://www.ashtangacascais.com/retiros-24/",
+      "description": "Weekend retreats held in rural Alentejo and on the Costa Vicentina, taught by Vera Simões and Jo Bento, with daily Ashtanga and meditation, talks, shared meals, walks and surfing. New dates are announced on this page.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.ashtangacascais.com/wp-content/uploads/bfi_thumb/IMG_2412-rp4x25shn74tkv5s1sdghf72sqioa2oecxg8gqramc.jpeg"
+    },
+    {
+      "title": "Workshops with Vera Simões and visiting authorised teachers",
+      "url": "https://www.ashtangacascais.com/workshops-24/",
+      "description": "Intensive workshops at the shala, either led by Vera Simões or by visiting teachers authorised in Mysore, open to newcomers and experienced students. Upcoming and past workshops are listed on this page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.ashtangacascais.com/wp-content/uploads/bfi_thumb/FLYER-2026_Workshop-Yoga-Susanna-Finocchi_-rfmgbeaflkrwe0fryxy9dzx57u7mcq2hbvse4tw2jk.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2122,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram (@ashtangacascais_verasimoes) and Facebook not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.ashtangacascais.com/",
+    "contact_form_url": "https://www.ashtangacascais.com/contactos/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Vera Monica Lages Simões, Ashtanga Cascais Yoga Shala, website ashtangacascais.com); facts from its own site (WordPress; robots.txt allows us).",
+      "Health framing on the site: the home page lists stress, anxiety, depression and immune benefits, the classes page says meditation reduces anxiety, and Vera also works as a health coach (weekly health texts, a 'functional yoga' strength class). None of this is in the bio or items; the owner may judge it too health-led.",
+      "Street address not published on the pages read; city from the site title ('Ashtanga Yoga in Cascais') and the Sharath list.",
+      "Prices not published for classes, retreats or workshops.",
+      "Book 'Parar. Sentir. Respirar.' (May 2018) by Vera Simões mentioned on the shala page; no ISBN on a page read, so not listed.",
+      "Retreats and workshops entered undated with their listing pages (all dated ones read have passed or are elsewhere); see left_out.",
+      "Photos are of classes in the shala's practice room and a student practising, from its own site (looked at).",
+      "Possible future listings: Vera Simões (co-founder), Jo Bento.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Cascais, Portugal."
+    ],
+    "left_out": [
+      "Workshop 'Ashtanga Yoga, Saúde e Longevidade', Porto, 28–29 Nov 2026: held at another studio (TUF Yoga, Porto) and framed on health and longevity.",
+      "Retreat at Herdade da Matinha, 16–18 Oct 2026, and Costa Vicentina, 22–24 May 2026: have passed.",
+      "Ashtanga adapted for pregnancy and postpartum (pregnancy-related) and the functional yoga strength class.",
+      "Blog posts: the latest ('Esta Casa') makes physiological claims about breathing (blood pressure, immunity, sleep)."
+    ]
+  },
+  "images_final": true
+}

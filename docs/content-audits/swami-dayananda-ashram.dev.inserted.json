@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1431,
+    "healer_slug": "swami-dayananda-ashram"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e023a645-46bd-44e9-be4d-2f5c3bf8789e",
+      "slug": "swami-dayananda-memorial-retreats-2027",
+      "title": "Swami Dayananda Memorial Retreats 2027"
+    },
+    {
+      "table": "courses",
+      "id": "774e9b48-87d3-4bd7-8ba6-2e90029ab9ce",
+      "slug": "study-visits-and-daily-classes",
+      "title": "Study visits and daily classes"
+    },
+    {
+      "table": "courses",
+      "id": "7a23b250-9c0f-4e8e-a68a-dd7247887b81",
+      "slug": "maha-shivaratri-and-annual-camps",
+      "title": "Maha Shivaratri and annual camps"
+    }
+  ],
+  "at": "2026-11-11T21:30:50.332Z"
+}

@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "auckland-zen-centre",
+    "location_source": "https://www.aucklandzen.org.nz/our-auckland-teachers",
+    "create": {
+      "name": "Auckland Zen Centre",
+      "bio": "The Auckland Zen Centre is a city Zen community based in Onehunga, Auckland, belonging to the Rochester lineage that runs back to Roshi Philip Kapleau, author of The Three Pillars of Zen. It was founded by a married couple, Amala Wrightson (now a Roshi) and Richard von Sturmer (now a Sensei), who both grew up in Auckland and lived and trained for over a decade at the Zen Center in Rochester, New York, under Roshi Bodhin Kjolhede. They came home in 2003 and opened the centre the next year. Kjolhede later travelled to Auckland to make Amala a full Dharma heir in 2012 and to authorise Richard as a teacher in 2024, and both now teach within the Cloud-Water Sangha.\n\nThe zendo on Princes Street holds formal sittings on Tuesday and Thursday mornings and evenings and on Sunday mornings, with private interviews with a teacher and fortnightly talks; every sitting is streamed live as audio. Newcomers start with a whole-day Saturday workshop, run five times a year by donation, which covers sitting and walking meditation and how to keep up practice at home. Twice a year the community holds a seven-day silent sesshin, and almost all talks given at the centre since 2016 can be heard free as podcasts.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2004,
+      "availability": "local_online",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.aucklandzen.org.nz/",
+      "booking_url": "https://www.aucklandzen.org.nz/meditation-workshops",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@aucklandzen.org.nz",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/600f8ae92f24303b3a42ee82/1629341001023-KA9WTXAM5R24MAH02ERD/group%2Bzazen.jpg",
+        "https://images.squarespace-cdn.com/content/v1/600f8ae92f24303b3a42ee82/80521cf1-9272-4f15-aadb-a68b7ea8bc2c/P1013049.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Introductory Zen Meditation Workshop",
+      "url": "https://www.aucklandzen.org.nz/meditation-workshops",
+      "description": "A whole Saturday at the Onehunga zendo for people new to Zen or returning to it: a talk on the basics of Zen Buddhism by one of the teachers, detailed instruction in sitting postures and walking meditation, guided sittings, an optional interview with a teacher and a closing question time. Completing it opens all regular sittings. Registration is required.",
+      "price": "Suggested amount for workshops: $80 waged or $40 unwaged",
+      "product_type": "course",
+      "start_date": "2027-02-20",
+      "end_date": "2027-02-20",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/t/61400b8ff1d2f31cb61ad2f1/1631587215972/Workshop.jpg?format=1500w"
+    },
+    {
+      "title": "Summer Sesshin 2027",
+      "url": "https://www.aucklandzen.org.nz/sesshin",
+      "description": "A seven-day silent Zen retreat at Bella Rakha Retreat Centre in Oratia, Auckland, with one-to-one teacher interviews three times a day. Those who have not sat sesshin with the centre before should speak with a teacher before applying; full-time, day and part-day attendance are possible, and scholarships are available to members.",
+      "price": "supporting member $735 waged, $635 unwaged; non-member $835 waged, $735 unwaged",
+      "product_type": "retreat",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-16",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/t/6140157cd9ed0a616c77166d/1727903320972/Bella+Raka+July+2011+009.JPG?format=1500w"
+    },
+    {
+      "title": "Supporting Membership",
+      "url": "https://www.aucklandzen.org.nz/becoming-a-member",
+      "description": "Membership for regular participants who pledge a regular donation and take part in the life of the centre; members can borrow library books, sit at the centre outside scheduled hours and apply for scholarship grants, and after a year may ask to become formal students. An introductory workshop is required first.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/t/61491ed42791b95b7b532bc8/1632181972675/20210620_110258.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "AZC podcasts (talks)",
+      "url": "https://www.aucklandzen.org.nz/podcasts",
+      "description": "Recorded talks given at the centre since 2016, mostly by Roshi Amala Wrightson with others by Sensei Richard von Sturmer and senior students, grouped into series for beginners, on the precepts, on stories of awakened women from The Hidden Lamp and on winter Dharma study.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "non-duality"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/t/61402122fac5770164f48ead/1631592738415/Mist.jpg?format=1500w"
+    },
+    {
+      "title": "Live-streamed sittings",
+      "url": "https://www.aucklandzen.org.nz/sitting-schedule",
+      "description": "The centre's scheduled morning and evening sittings, ceremonies and talks are streamed live as audio, so anyone can sit along from home at the same times as the zendo.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/t/61428928bb4e0b2490503b8a/1631750448802/20201209_080524.jpg?format=1500w"
+    },
+    {
+      "title": "New Year's Eve sitting and Jukai ceremony",
+      "url": "https://www.aucklandzen.org.nz/upcoming-events/event-two-ycwc4-96d8r-5kxy2-shaph-9fl53-fm3b9-sazwb",
+      "description": "An evening of sitting and ceremony on 31 December 2026 that ends after midnight with Jukai, in which students receive the Sixteen Precepts; everyone is welcome to attend.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/600f8ae92f24303b3a42ee82/60d41fb7786a2c0d379b2fcb/69715235ea3ab16d2ebf5ddc/1771451415178/New%2BYears%2BEve%2BCeremony%2B2.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2070,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.aucklandzen.org.nz/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Base: 52 Princes Street, Onehunga, Auckland (teachers page footer). Onehunga is a suburb about 9 km from the city centre.",
+      "Email info@aucklandzen.org.nz is the Centre Manager's inbox (home page).",
+      "Photos: an outdoor group zazen by a lake (black and white; the place is not named, so it may be a Rochester or retreat setting) and the centre's 20th-anniversary poster with a Buddha head; both from its own home page, checked at 1000 px. Owner may prefer only the poster.",
+      "Workshop start_date is the next date (20 Feb 2027); later 2027 dates are 17 Apr, 12 Jun, 21 Aug and 16 Oct (same URL). The 7 Nov 2026 workshop is past.",
+      "Sesshin price: regular full-week rates quoted; early-bird and day/section rates are also published.",
+      "New Year's Eve event URL is Squarespace's own event slug (taken from the events page link, not invented).",
+      "No hub links: Roshi Amala Wrightson and Sensei Richard von Sturmer are not on Spiritpedia. Teachers file written with an empty list. Possible future listings: Roshi Amala Wrightson, Sensei Richard von Sturmer.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Buddha's Enlightenment ceremony (8 Dec) and temple cleaning (13 Dec): a ceremony and a working day; only the New Year's Eve Jukai is kept.",
+      "Our lineage page: about the Rochester teachers, not the centre's offerings.",
+      "Book 'Finding Your Seat' (sold at the centre only, no buy link found)."
+    ]
+  },
+  "images_final": true
+}

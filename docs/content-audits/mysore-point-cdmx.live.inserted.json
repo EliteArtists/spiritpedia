@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1364,
+    "healer_slug": "mysore-point-cdmx"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "342067c1-de0f-4303-9c51-57b7a826732c",
+      "slug": "mysore-class-packages",
+      "title": "Mysore class packages"
+    },
+    {
+      "table": "courses",
+      "id": "a4f19263-23bc-44ca-8bac-ccbcf47f9cf5",
+      "slug": "clases-privadas-private-mysore-style-classes",
+      "title": "Clases privadas (private Mysore-style classes)"
+    },
+    {
+      "table": "free_resources",
+      "id": "848ad422-0cbe-47a2-a891-a2702f8cecea",
+      "slug": "astanga-vinyasa-yoga-un-modelo-practico-del-yoga-de-patanjali",
+      "title": "Aṣṭāṅga Vinyāsa yoga: Un modelo práctico del Yoga de Patañjali"
+    }
+  ],
+  "at": "2026-11-11T21:41:04.685Z"
+}

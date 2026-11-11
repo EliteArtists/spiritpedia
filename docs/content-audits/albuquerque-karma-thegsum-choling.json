@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "albuquerque-karma-thegsum-choling",
+    "location_source": "https://abqktc.org/about-the-center/",
+    "create": {
+      "name": "Albuquerque Karma Thegsum Chöling",
+      "bio": "Albuquerque Karma Thegsum Chöling is a small Tibetan Buddhist centre in the North Valley of Albuquerque, New Mexico, set up in 1982 as a local affiliate of Karma Triyana Dharmachakra, the monastery in Woodstock, New York, that serves as the Karmapa's North American seat. It belongs to the Karma Kagyu school, often called the practice lineage, and looks to the 17th Karmapa, Ogyen Trinley Dorje, and to the lamas of its parent monastery for guidance. The centre keeps a shrine room, a library and a small white stupa in a building set back from the road.\n\nEvery Sunday morning members chant a short liturgy of Chenrezig and Amitabha, mostly in Tibetan with an English translation, and then sit together in silent meditation; newcomers can ask for basic instruction first, and both sessions can also be joined by Zoom. Several times a year a lama from the Kagyu network comes for a weekend of talks and practice, and a Tibetan artist returns from time to time to build a sand mandala with the sangha. Membership supports the centre and its links to the parent monastery, and visitors of any background, including local college students, are welcome.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1982,
+      "availability": "local_online",
+      "city": "Albuquerque, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://abqktc.org/",
+      "booking_url": "https://abqktc.org/regular-practices/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@abqktc.org",
+      "image_urls": [
+        "https://abqktc.org/wp-content/uploads/visit-alburquerque-ktc-img-1.jpg",
+        "https://abqktc.org/wp-content/uploads/KTC-stupa-400x284.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Membership of Albuquerque KTC",
+      "url": "https://abqktc.org/about-the-center/",
+      "description": "Monthly membership for individuals or families, either of the local centre alone or jointly with its parent monastery, Karma Triyana Dharmachakra. Members support the shrine room and teacher visits, borrow from the library and get reduced rates for events.",
+      "price": "Local KTC Member only: $15 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://abqktc.org/wp-content/uploads/favicon-1.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sunday sadhana and group meditation",
+      "url": "https://abqktc.org/regular-practices/",
+      "description": "An hour of chanted Chenrezig and Amitabha practice on Sunday mornings, followed by about thirty minutes of sitting meditation with instruction on request. Open to visitors in the shrine room or online through Zoom.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://abqktc.org/wp-content/uploads/favicon-1.png"
+    },
+    {
+      "title": "Chenrezig sadhana practice text",
+      "url": "https://abqktc.org/wp-content/uploads/Chenrezig-Sadhana.pdf",
+      "description": "The text the sangha chants at its Sunday practice, offered as a free download so that people joining in person or online can follow along.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://abqktc.org/wp-content/uploads/visit-alburquerque-ktc-img-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2205,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or other public account linked from its own site; Instagram/Facebook never fetched → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://abqktc.org/",
+    "contact_form_url": "https://abqktc.org/",
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Readable follower total is 0 (no linked YouTube channel); tier local_hero by default of evidence.",
+      "Email info@abqktc.org is the centre's general inbox (home and about pages); the home page also has a contact form.",
+      "Photos: the centre's own shrine room (1100 px) and its small stupa (400 px), both from its site and checked. The large shrine-hall photo on the home page (group-room.jpg) shows the parent monastery KTD, not this centre, so it is not used.",
+      "Thin: three items only; no upcoming dated events are posted yet (the latest listed weekend, Lama Kathy Wesley, was 16-18 Oct 2026).",
+      "No hub links: the centre has no resident teacher; Lama Kathy Wesley, Lama Lodro Lhamo, Khenpo Sangye Trinley, Lama Karma Chopal and others are visiting teachers (none on Spiritpedia). Possible future listings: Lama Kathy Wesley.",
+      "Regional: Albuquerque, New Mexico.",
+      "Found via Karma Triyana Dharmachakra's KTC list (kagyu.org, names and links only)."
+    ],
+    "left_out": [
+      "All posted visiting-teacher weekends (Nov 2024 to Oct 2026) have already taken place.",
+      "Medicine Buddha practice: cancelled as of January 2026 (and condition-adjacent wording).",
+      "Monthly business meeting: members' administration, not a practice.",
+      "group-room.jpg: shows the parent monastery, not this centre."
+    ]
+  },
+  "images_final": true
+}

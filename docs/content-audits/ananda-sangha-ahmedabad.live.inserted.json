@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1296,
+    "healer_slug": "ananda-sangha-ahmedabad"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "168bf971-9149-4cd9-a605-68b1cd6ea923",
+      "slug": "learn-to-meditate-the-path-of-kriya-yoga-level-1",
+      "title": "Learn to Meditate (The Path of Kriya Yoga: Level 1)"
+    },
+    {
+      "table": "courses",
+      "id": "f40b52a4-0fb2-4319-bc9b-753fee437661",
+      "slug": "chanting-kirtan-and-harmonium-classes",
+      "title": "Chanting, kirtan and harmonium classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "fd1536af-6fe1-4552-9bd4-b2dc79a756b5",
+      "slug": "sunday-satsang",
+      "title": "Sunday Satsang"
+    },
+    {
+      "table": "free_resources",
+      "id": "5c2682f7-2ca2-4b7c-b33a-7240899d8cbc",
+      "slug": "group-meditations-for-students",
+      "title": "Group Meditations for students"
+    }
+  ],
+  "at": "2026-11-11T21:37:47.145Z"
+}

@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "mysore-point-cdmx",
+    "location_source": "https://www.mysorecdmx.com/contacto",
+    "create": {
+      "name": "Mysore Point CDMX",
+      "bio": "Mysore Point CDMX is an Ashtanga Vinyasa school in the Polanco district of Mexico City, run by Toni (María Antonieta Ortiz Colmenero) and Benji. The pair first took up asana in 2010, found the traditional Ashtanga method in 2014 and have travelled to India repeatedly since 2016 to study with Sharath Jois; Toni holds Level 2 authorisation from the Sharath Yoga Centre in Mysore.\n\nThe school keeps the classical format. On weekday mornings the room is open from early until nine, and students of every level arrive within that window to work through their own sequence, learning it a few postures at a time with the teachers' help; a led class follows on Saturdays, and moon days are kept as rest days. Beginners need no prior experience, and first sessions last around three quarters of an hour. Toni and Benji also teach private Mysore-style classes at students' homes, alone or in small groups, and the school's blog places the practice within Patanjali's eight limbs, presenting the Mysore method as a practical route into the Yoga Sutras. Teaching is in Spanish.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom",
+        "breathwork"
+      ],
+      "website_url": "https://www.mysorecdmx.com/",
+      "booking_url": "https://www.mysorecdmx.com/precios",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mariantonieta.colmenero@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/664f927fe27b776208f9eb2a/d2318f74-9614-496a-a711-31ee2d15f7c5/mysore+cdmx+%285%29.png",
+        "https://images.squarespace-cdn.com/content/v1/664f927fe27b776208f9eb2a/f293ca2d-37a5-4cae-a1a4-4bd7d46bf9a3/95-_68A1123.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore class packages",
+      "url": "https://www.mysorecdmx.com/precios",
+      "description": "Passes for the weekday Mysore room and the Saturday led class, from a single class to an unlimited month, with introductory first-week and first-month offers for new students.",
+      "price": "Primera semana $550; Primer mes $1500 (new students); Mes ilimitado $3,000; 10 clases $2,700; Clase suelta $320",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/664f927fe27b776208f9eb2a/d2318f74-9614-496a-a711-31ee2d15f7c5/mysore+cdmx+%285%29.png"
+    },
+    {
+      "title": "Clases privadas (private Mysore-style classes)",
+      "url": "https://www.mysorecdmx.com/privadas",
+      "description": "Mysore-style teaching brought to the student's home, either one to one or for a small group of family or friends, following the same progressive approach as the school's morning room.",
+      "price": "Clase suelta $1,000; 4 clases $3,600; 8 clases $6,400",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/664f927fe27b776208f9eb2a/d2318f74-9614-496a-a711-31ee2d15f7c5/mysore+cdmx+%285%29.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Aṣṭāṅga Vinyāsa yoga: Un modelo práctico del Yoga de Patañjali",
+      "url": "https://www.mysorecdmx.com/blog/aga-vinysa-yoga-un-modelo-prctico-del-yoga-de-patajali",
+      "description": "A Spanish-language article by Toni on the history and philosophy behind Ashtanga, the eight limbs set out in Patanjali's Yoga Sutras, and how daily Mysore practice can carry those teachings into ordinary life.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/664f927fe27b776208f9eb2a/67b3f29ce9cf125daf8b56d1/67b3f999e657136e18d856d6/1739848739420/IMG_0351.JPG?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2112,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Instagram (@mysore.point.cdmx) not fetched → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://www.mysorecdmx.com/contacto",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Lead from the Sharath Yoga Centre authorised-teacher list (Maria Antonieta Ortiz Colmenero 'Toni', Mysore CDMX, website mysorecdmx.com); the site itself is titled 'Mysore Point CDMX', used as the name. Facts from its own site (Squarespace; robots.txt lists AI crawlers in the same group as *, with only path rules; images.squarespace-cdn.com robots.txt is 404).",
+      "The school meets inside another venue ('Adentro de AGORALUCIS', Calle Lafontaine, Polanco) rather than a building of its own; it is a named school at a fixed address with a fixed timetable.",
+      "Email is Toni's personal Gmail, shown on every page footer and the contact page.",
+      "Prices are published with '$' only (Mexico City context, so presumably pesos); no currency code added.",
+      "Photos: the school's logo mark, and a black-and-white photo of a teacher (likely Benji) sitting in a practice room; the site has no plain photo of the room. Other site images are stock flowers and portraits.",
+      "Thin: two offerings and one article; no YouTube channel or videos.",
+      "Possible future listings: María Antonieta Ortiz Colmenero (Toni), Benji.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Mexico City; few Ashtanga listings in Mexico."
+    ],
+    "left_out": [
+      "Moon days page (Lunas 2025): a 2025 calendar with general notes, not a resource as such.",
+      "Saturday led class: no page or price of its own (covered by the packages)."
+    ]
+  },
+  "images_final": true
+}

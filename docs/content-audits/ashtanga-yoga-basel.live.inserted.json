@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1303,
+    "healer_slug": "ashtanga-yoga-basel"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5d8d467e-1eaa-45fb-be6b-1dbd5a19d0d0",
+      "slug": "ashtanga-and-hatha-classes-memberships-and-class-cards",
+      "title": "Ashtanga and hatha classes: memberships and class cards"
+    },
+    {
+      "table": "courses",
+      "id": "853d9b35-b189-4c90-bfa1-aa390bcb7a68",
+      "slug": "monthly-sunday-workshops",
+      "title": "Monthly Sunday workshops"
+    },
+    {
+      "table": "courses",
+      "id": "7cd09100-7723-45fe-8154-a309a18cffcd",
+      "slug": "yoga-retreat-eclipse-cabo-de-gata-almeria-andalusia",
+      "title": "Yoga Retreat & Eclipse, Cabo de Gata (Almería, Andalusia)"
+    }
+  ],
+  "at": "2026-11-11T21:37:59.165Z"
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1333,
+    "healer_slug": "m-yoga-de-quebec"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "5481647a-6ce0-4964-b9ff-4ed73cde6066",
+      "slug": "cartes-de-cours-sessions-dautomne-et-dhiver",
+      "title": "Cartes de cours (sessions d'automne et d'hiver)"
+    },
+    {
+      "table": "courses",
+      "id": "21c1f1c5-cca2-408d-b475-cd148078f17f",
+      "slug": "cours-reguliers",
+      "title": "Cours réguliers"
+    },
+    {
+      "table": "courses",
+      "id": "45ab3a64-0306-4f0d-a955-01e08f085b5c",
+      "slug": "formation-des-professeurs-mentorat",
+      "title": "Formation des professeurs (mentorat)"
+    }
+  ],
+  "at": "2026-11-11T17:54:37.840Z"
+}

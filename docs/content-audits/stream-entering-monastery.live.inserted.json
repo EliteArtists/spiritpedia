@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1384,
+    "healer_slug": "stream-entering-monastery"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "63dbcbd8-35f6-4d60-a153-3b69ba996f0d",
+      "slug": "love-is-the-way-5-day-retreat",
+      "title": "Love is the Way | 5 Day Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "88a0b359-01cb-4abe-8df7-523e1f7fa907",
+      "slug": "stay-practice-with-us-overnight-stays",
+      "title": "Stay & Practice with us (overnight stays)"
+    },
+    {
+      "table": "courses",
+      "id": "c049fa55-9840-4e04-9f41-e90385b2ac49",
+      "slug": "days-of-mindfulness",
+      "title": "Days of Mindfulness"
+    },
+    {
+      "table": "free_resources",
+      "id": "67d4f70e-f5a2-4d3e-aa7a-33e96096bc07",
+      "slug": "total-relaxation",
+      "title": "Total Relaxation"
+    },
+    {
+      "table": "free_resources",
+      "id": "e1b29fd4-1b6c-4c5d-abf6-a20ac44aff65",
+      "slug": "sitting-meditation",
+      "title": "Sitting Meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "ad949c7a-181d-433f-8bab-2c2d16fd7379",
+      "slug": "the-five-mindfulness-trainings",
+      "title": "The Five Mindfulness Trainings"
+    }
+  ],
+  "at": "2026-11-11T21:42:00.954Z"
+}

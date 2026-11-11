@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "gar-drolma-buddhist-learning-and-meditation-center",
+    "location_source": "https://gardrolma.org/contact/",
+    "create": {
+      "name": "Gar Drolma Buddhist Learning and Meditation Center",
+      "bio": "Gar Drolma Buddhist Learning and Meditation Center is a Drikung Kagyu Tibetan Buddhist temple in Dayton, Ohio, housed in a white clapboard former church on Creighton Avenue. His Eminence Garchen Rinpoche is its spiritual founder, and its spiritual director is Khenpo Samdup Rinpoche, a Tibetan scholar who studied under Khenpo Munsel and Khenpo Jigme Phuntsok, taught at the Drikung Kagyu college in India and lives in Dayton between visits to other centres. He has written commentaries and a meditation guide, The Stages of Meditation.\n\nOn weekends Khenpo Samdup leads teachings and practice at the temple, streamed to an international sangha by Zoom, and on weekday mornings the community gathers online for prayers and the practice of Achi Chökyi Drolma. A Wednesday evening class for newcomers, taught on site by senior students, introduces meditation and the basics of Buddhism. For study at home the centre offers two self-paced online courses by Khenpo Samdup, one on the Stages of Meditation and one on Jigten Sumgön's Essence of the Mahayana, and keeps a free library of practice texts, audio recordings and videos of past teachings. Membership at several levels sustains the temple and Khenpo's residence.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Dayton, Ohio",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://gardrolma.org/",
+      "booking_url": "https://gardrolma.org/2026-gar-drolma-schedule-with-khenpo-samdup/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@gardrolma.org",
+      "image_urls": [
+        "https://gardrolma.org/wp-content/uploads/2016/10/Exterior.jpg",
+        "https://gardrolma.org/wp-content/uploads/2016/10/Altar.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Stages of Meditation Online Course",
+      "url": "https://gardrolma.org/gar-drolma-curriculum-offerings/",
+      "description": "A self-paced online course created by Khenpo Samdup Rinpoche at Garchen Rinpoche's request, leading step by step through progressive meditations from precious human birth and impermanence to compassion, calm abiding, insight and Mahamudra-style practice, with set practice times for each stage.",
+      "price": "Fee: $99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://gardrolma.org/wp-content/uploads/2018/11/Curriculum.jpg"
+    },
+    {
+      "title": "Gar Drolma membership",
+      "url": "https://gardrolma.org/memberships-and-donations/",
+      "description": "Monthly membership at four levels that sustains the temple, Khenpo Samdup Rinpoche's teaching activity and his Dayton residence.",
+      "price": "General Member: $5 – $49 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://gardrolma.org/wp-content/uploads/2020/07/sangha2.jpg"
+    },
+    {
+      "title": "Weekly Meditation and Learning Buddhism class",
+      "url": "https://gardrolma.org/weekly-meditation-and-learning-classes/",
+      "description": "An in-person Wednesday evening class at the temple for students of every level who want to explore meditation and the foundations of Buddhism, taught by senior students.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://gardrolma.org/wp-content/uploads/2016/10/Exterior.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Practices and prayers library (text and audio)",
+      "url": "https://gardrolma.org/practices-and-prayers/",
+      "description": "A free collection of practice texts and audio recordings used at the centre, from daily prayers and sadhanas to texts on Mahamudra, mind training and the bardo, to read, listen to or download.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://gardrolma.org/wp-content/uploads/2021/08/KhenpoVaranasi-1030x773.jpg"
+    },
+    {
+      "title": "Video teachings of Khenpo Samdup Rinpoche",
+      "url": "https://gardrolma.org/video-teachings/",
+      "description": "An index by year of recorded teachings and practice sessions given at the centre by Khenpo Samdup Rinpoche, with links to watch each event.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://gardrolma.org/wp-content/uploads/2021/04/Ganges_Mahamudra_Teaching_-_Gar_Drolma_Buddhist_Learning_and_Meditation_Center.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2215,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site (video pages link recordings, channel not identified); Facebook linked, never fetched → 0 readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://gardrolma.org/gar-drolma-curriculum-offerings/",
+    "contact_form_url": "https://gardrolma.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Readable follower total is 0; tier local_hero.",
+      "Email info@gardrolma.org is published on its Curriculum page (a course inbox admin@gardrolmacourses.com also appears there); the Contact page has an 'Email Us' form.",
+      "Photos: the temple's exterior (a converted white church) and its main shrine, both from its own site, checked.",
+      "The Stages of Meditation ($99) and Essence of the Mahayana ($108) online courses share one page; only Stages of Meditation is listed.",
+      "No hub links: Khenpo Samdup Rinpoche (spiritual director) and H.E. Garchen Rinpoche (spiritual founder) are not on Spiritpedia. Possible future listings: Khenpo Samdup Rinpoche (also linked from garchen.net).",
+      "Founded year not published.",
+      "Found via the Drikung Kagyu centre list (drikungtmc.com 'Other Centers', names and links only)."
+    ],
+    "left_out": [
+      "Essence of the Mahayana Online Course ($108): same page URL as the Stages of Meditation course.",
+      "Daily prayers for Garchen Rinpoche's health and long life; Parnashavari practice (protection from illness): health-related dedications.",
+      "Puja programme, thangka and prayer-wheel web store, sky-burial and food-offering fundraisers: services, goods or appeals.",
+      "Garchen Rinpoche 2016/2018 retreat recordings and Chakrasamvara audio files: paid store products, empowerment material.",
+      "Videos: no own YouTube channel identified from its site."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "maison-de-linspir",
+    "location_source": "https://maisondelinspir.org/page-1373146.html",
+    "create": {
+      "name": "Maison de l'Inspir",
+      "bio": "Maison de l'Inspir is a small house of Buddhist nuns in the Plum Village tradition of the Vietnamese Zen teacher Thich Nhat Hanh, set in the village of Villeneuve-sur-Bellot in Seine-et-Marne, east of Paris. The sisters who live there are his monastic disciples, and the community works closely with the brothers of the nearby Healing Spring Monastery at Verdelot. In October 2026 the house reopened with a new group of sisters after a quieter period.\n\nThe heart of its offering is the practice weekend: guests arrive on Friday and share the daily rhythm of sitting and walking meditation, a Dharma teaching, working meditation, silent meals and a Sunday sharing circle. Twice a month the two communities hold a Sunday Day of Mindfulness, one in French and one in Vietnamese, and there are longer retreats over Christmas and New Year. Everything runs on a donation basis, with lodging mostly in nearby guest houses, and people of any faith or none are welcome. Teaching is in French; the sisters point English speakers to other Plum Village centres.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Villeneuve-sur-Bellot",
+      "country": "France",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://maisondelinspir.org/",
+      "booking_url": "https://maisondelinspir.org/2022/04/1.6-retraites-en-presentiel.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@maisondelinspir.org",
+      "image_urls": [
+        "https://image.over-blog.com/BwZ5u7IXACCeJSIN-C_2kKwG7O8=/filters:no_upscale()/image%2F0553667%2F20261011%2Fob_b0b46b_tempimagel8tbr6.jpg",
+        "https://image.over-blog.com/2fImVb2YIs1f1capxcAf12z9sSA=/filters:no_upscale()/image%2F0553667%2F20240403%2Fob_5f5667_img-20230419-115704.jpg",
+        "https://image.over-blog.com/7bANJ2hkGDHuK76KKpvGdl5UUzA=/filters:no_upscale()/image%2F0553667%2F20221228%2Fob_737ae2_logo-oranje.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Week-ends de retraite (practice weekends)",
+      "url": "https://maisondelinspir.org/2022/04/1.6-retraites-en-presentiel.html",
+      "description": "Friday-to-Sunday stays in which guests follow the sisters' monastic timetable: early sitting, walking meditation, a Dharma talk, mindful work and silent meals, ending with a sharing circle. No experience of meditation is needed. Taught in French.",
+      "price": "Donation-based; suggested 170 euros per weekend, including 40 euros for lodging",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://image.over-blog.com/juY9_15RRkxT2ZZl6MmSkF_pOS8=/filters:no_upscale()/image%2F0553667%2F20240627%2Fob_4ac5e6_vs33.JPG"
+    },
+    {
+      "title": "Retraite de Noël (Christmas retreat)",
+      "url": "https://maisondelinspir.org/2024/04/2.1-retraites-et-journees-de-pleine-conscience.html",
+      "description": "A five-day residential retreat over Christmas with the sisters, following the same rhythm of meditation, teaching and community life as the weekends. Registration is through the house's online form.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-23",
+      "end_date": "2026-12-27",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://image.over-blog.com/z4cobBOLFXBZGm6xL-rLiHyD-6A=/filters:no_upscale()/image%2F0553667%2F20260614%2Fob_b93b1f_photo-2026-06-13-20-19-54.jpg"
+    },
+    {
+      "title": "Journées de Pleine Conscience (Days of Mindfulness)",
+      "url": "https://maisondelinspir.org/2022/02/1.4-bienvenue-journees-de-pleine-conscience.html",
+      "description": "A non-residential Sunday of practice held with the monastic brothers and sisters at the Healing Spring Monastery in Verdelot: a morning teaching, walking meditation, a mindful vegan lunch and afternoon activities. Held twice a month, one day in French and one in Vietnamese, with a break over the summer.",
+      "price": "Donation-based; suggested 45€",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://image.over-blog.com/xmNDgQnwwHpZVi_0a_FK6UdHyzA=/filters:no_upscale()/image%2F0553667%2F20240627%2Fob_5e0bcb_18-280524.JPG"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "4.1 Pratiques de bases",
+      "url": "https://maisondelinspir.org/2016/01/4-1-pratiques-de-base.html",
+      "description": "The house's own French guide to the everyday practices used on retreat: conscious breathing, walking meditation, short verses to recite, listening to the bell, mindful eating and sitting meditation.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://image.over-blog.com/7bANJ2hkGDHuK76KKpvGdl5UUzA=/filters:no_upscale()/image%2F0553667%2F20221228%2Fob_737ae2_logo-oranje.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1801,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel found; Facebook page announced on its site but never fetched; no readable follower counts → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://maisondelinspir.org/page-1373146.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Regional: Villeneuve-sur-Bellot (Seine-et-Marne), a village well under 5,000 people; recorded as published (address on every page) for the owner to map.",
+      "French-language centre: the site says it cannot offer activities in English for now. Item titles kept in French with an English gloss.",
+      "Found via plumvillage.org's monastic practice centres list (robots.txt allows us). The site is an Over-blog blog; its /contact page is disallowed by robots.txt and was not opened. Email info@maisondelinspir.org is a mailto on the welcome page (registration inbox inscriptions@maisondelinspir.org also published on the home page).",
+      "Days of Mindfulness take place at the Healing Spring Monastery (already listed), run jointly with the brothers there.",
+      "Reopened in October 2026 with a new group of sisters; the weekend calendar runs from November 2026.",
+      "No hub links: the site names no teacher on Spiritpedia as teaching there (Thich Nhat Hanh is named as the tradition's founder and the sisters' teacher, not as founder of the house). Teachers file written with an empty list.",
+      "image.over-blog.com answers robots.txt with HTTP 400 (treated as no robots.txt by the ingest)."
+    ],
+    "left_out": [
+      "Weekends of 20-22 Nov, 27-29 Nov (hiking weekend) and 4-6 Dec 2026, and the New Year retreat (30 Dec-3 Jan): they share the one retreats page URL with the items kept; registration links are Google Forms.",
+      "15 Nov 2026 Day of Mindfulness opening the Rains Retreat: covered by the Days of Mindfulness item.",
+      "Educ'Inspir workshops for educators: reports of past days only, no current date or page.",
+      "Online activities page (/activites-enligne): HTTP 410 gone.",
+      "Founded year: not published on the pages read."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1438,
+    "healer_slug": "divine-life-society-malaysia"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b19572a1-d5ab-4359-80be-28d882a41088",
+      "slug": "saturday-yoga-class",
+      "title": "Saturday yoga class"
+    },
+    {
+      "table": "courses",
+      "id": "40c4a47d-df53-48a6-a6cd-73d844e067ba",
+      "slug": "scripture-chanting-and-sanskrit-classes",
+      "title": "Scripture, chanting and Sanskrit classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "6bee8ac8-5942-4ee2-9c45-2d198da3417d",
+      "slug": "japa-yoga-sadhana",
+      "title": "Japa Yoga Sadhana"
+    },
+    {
+      "table": "free_resources",
+      "id": "3e7325af-7c96-45fc-928a-a6722410018b",
+      "slug": "sadhana-the-main-purpose-of-life",
+      "title": "Sadhana – the Main Purpose of Life"
+    }
+  ],
+  "at": "2026-11-11T21:36:57.736Z"
+}

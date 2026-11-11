@@ -1,0 +1,117 @@
+{
+  "healer": {
+    "healer_slug": "sri-aurobindo-center-of-los-angeles",
+    "location_source": "https://sriaurobindocenterla.wordpress.com/center/",
+    "create": {
+      "name": "Sri Aurobindo Center of Los Angeles",
+      "bio": "The Sri Aurobindo Center of Los Angeles, which also runs as the East-West Cultural Center, is a small house and garden in Culver City devoted to the Integral Yoga of Sri Aurobindo and the Mother. It was started in 1953 by Jyotipriya, the name the Mother gave to Judith Tyberg, an American scholar who became their direct disciple, and it has kept relics of Sri Aurobindo in its meditation room since August 1992.\n\nThe centre works as a quiet devotional community rather than a school. Members meet over Zoom three evenings a week for collective sadhana, keep the darshan days of Sri Aurobindo and the Mother, gather for work offerings at the house, and hold a retreat twice a year. Visitors may come to meditate in the relics room, and seekers can arrange longer stays to live in its atmosphere. It also has a library, a book and gift shop, a quarterly newsletter called Quest, and online material such as a line-by-line study of Savitri and recordings of mantras chanted by Jyotipriya.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1953,
+      "city": "Culver City, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "yoga"
+      ],
+      "website_url": "https://sriaurobindocenterla.wordpress.com/",
+      "booking_url": "https://sriaurobindocenterla.wordpress.com/center-programs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ewcc@sriaurobindocenter-la.org",
+      "image_urls": [
+        "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2013/07/meditation-room-1.jpg?w=640&h=479",
+        "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2013/07/entrance.jpg?w=640&h=479",
+        "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2013/07/front-garden.jpg?w=640&h=479"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Collective sadhana on Zoom (Mondays, Tuesdays and Thursdays)",
+      "url": "https://sriaurobindocenterla.wordpress.com/center-programs/",
+      "description": "Hour-long online meetings at 7 pm Pacific time three evenings a week, each with its own theme, in which members read from Sri Aurobindo and the Mother and meditate together. Open to anyone; joining details are on the page.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2011/02/cropped-header8.jpg"
+    },
+    {
+      "title": "Retreats and extended stays at the Center",
+      "url": "https://sriaurobindocenterla.wordpress.com/center/",
+      "description": "The Center holds a retreat twice a year and welcomes seekers who want to stay for a longer period, take part in its work offerings and meditate in the room that holds Sri Aurobindo's relics. Arrange visits by email or phone.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2011/02/cropped-header8.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Savitri Study – Line by Line",
+      "url": "https://sriaurobindocenterla.wordpress.com/savitri-study-line-by-line/",
+      "description": "A study of Sri Aurobindo's epic poem Savitri set out book by book, from the introduction through all twelve books, for reading at your own pace.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2011/02/cropped-header8.jpg"
+    },
+    {
+      "title": "Mantras by Jyotipriya",
+      "url": "https://sriaurobindocenterla.wordpress.com/mantras-by-jyotipriya/",
+      "description": "Recordings of mantras chanted by the Center's founder, offered free to listen to or download.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sriaurobindocenterla.wordpress.com/wp-content/uploads/2011/02/cropped-header8.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2305,
+    "hub": null,
+    "tier_evidence": "No social accounts linked from the site; 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://sriaurobindocenterla.wordpress.com/contact-us/",
+    "contact_form_url": "https://sriaurobindocenterla.wordpress.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Lead from Collaboration.org's Local Integral Yoga Groups list. Facts from the Center's own WordPress site (robots.txt allows us).",
+      "Founder Jyotipriya (Judith Tyberg) died in 1980; the Center names no current teacher. No Spiritpedia teachers linked.",
+      "The site's menu also links a 'ChatGPT Integral Yoga Companion' page; not used.",
+      "Image URLs carry WordPress size parameters exactly as published on the Pictures of the Center page.",
+      "Regional: Culver City, Los Angeles County.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: all three load (200, image/jpeg, 640 px): meditation room with relic shrine, entrance arch, front garden."
+    ],
+    "left_out": [
+      "Siddhi Day centenary celebration, 21 Nov 2026 (in person and Zoom): shares the programmes page URL with the weekly meetings, so not listed separately.",
+      "Quarterly newsletter Quest and podcast: no page of their own found."
+    ]
+  },
+  "images_final": true
+}

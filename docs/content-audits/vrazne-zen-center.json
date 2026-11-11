@@ -1,0 +1,100 @@
+{
+  "healer": {
+    "healer_slug": "vrazne-zen-center",
+    "location_source": "https://vraznezen.org/kontakt/",
+    "create": {
+      "name": "Vrážné Zen Center (Seon Mun Sa)",
+      "bio": "Seon Mun Sa, the Zen centre in the village of Vrážné in Moravia, serves as the Czech head temple of the Kwan Um School of Zen and the school's only residential centre in the country. It belongs to the worldwide network of more than a hundred centres and groups that follow the Korean Zen Master Seung Sahn, whose teaching asks the simple question 'What am I?' and invites students to keep a 'don't know' mind in bowing, chanting and sitting as much as in daily tasks. George (Jiří) Hazlbauer JDPSN is the abbot.\n\nThe temple stands in the Moravian countryside, reached from Brno, Olomouc or Prague by bus or train via Chornice or Jevíčko, and it hosts retreats through the year. Its best-known event is a three-week winter retreat in silence, which can be joined for one to three weeks, with a different Kwan Um teacher leading each week; participants are expected to know the school's forms and to have sat a weekend retreat first. In 2023 the European Kwan Um School ran a fundraising campaign to finish a new kitchen at the centre, and its small YouTube channel holds recorded dharma talks by senior teachers of the school.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Vrážné, Moravia",
+      "country": "Czech Republic",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://vraznezen.org/en/",
+      "booking_url": "https://vraznezen.org/event/winter-three-week-retreat-in-vrazne/",
+      "youtube_url": "https://www.youtube.com/@vraznezencenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "vrazne@vraznezen.org",
+      "image_urls": [
+        "https://vraznezen.org/wp-content/uploads/2023/04/IMG_0261-scaled.jpeg",
+        "https://vraznezen.org/wp-content/uploads/2023/10/75091605_1693504619274225_r.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Dharma talk by Zen Master Soeng Hyang (Barbara Rhodes), Olomouc 2019",
+      "url": "https://www.youtube.com/watch?v=5wM-pEQAFnU",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "VrazneZenCenter"
+    },
+    {
+      "title": "Dharma Talk by Zen Master Dae Bong Sunim & Chon Mun Sunim JDPSN / 2019-03-12",
+      "url": "https://www.youtube.com/watch?v=jvyCGvDZCzk",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "VrazneZenCenter"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter three-week retreat in Vrážné",
+      "url": "https://vraznezen.org/event/winter-three-week-retreat-in-vrazne/",
+      "description": "A silent winter retreat of sitting, chanting, walking and bowing at the temple, joined for one, two or three weeks, with George Hazlbauer, Knud Rosenmayr and Dušan Silváši (all JDPSN) each leading a week. Vegetarian meals; prior Kwan Um retreat experience required.",
+      "price": "One week: 6 200 CZK (250 EUR) / 4 700 CZK (190 EUR) / 4 200 CZK (170 EUR)",
+      "product_type": "retreat",
+      "start_date": "2027-01-16",
+      "end_date": "2027-02-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://vraznezen.org/wp-content/uploads/2023/04/IMG_0261-scaled.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1830,
+    "hub": null,
+    "tier_evidence": "YouTube 33 subscribers (VrazneZenCenter @vraznezencenter, UCq5-wQEFmNuUA1EO1YHpkSQ; YouTube Data API, 11 Nov 2026; linked from its site); Facebook not fetched → 33 → local_hero",
+    "email": "yes",
+    "email_source": "https://vraznezen.org/kontakt/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Regional/rural: Vrážné 3, 569 43, near Jevíčko, Czech Republic.",
+      "Winter retreat year: the page gives 'January 16' to 'February 5' with no year; 2027 inferred (Friday 15 January and Friday 5 February fit 2027, and the page is the newest winter retreat in the event sitemap).",
+      "Price is quoted as published: non-members / members / DT and DTIT for one week; 10% off for three weeks, 20% for students and the unemployed.",
+      "Videos are old (2019) recordings of visiting senior teachers on the centre's own small channel; the speakers are guests, not the centre's own teachers.",
+      "Thin on offerings: one dated retreat after 12 Nov 2026 found; other events in the sitemap are past or undated.",
+      "The site is mainly Czech; the English home page and English event page were used.",
+      "No hub links: George (Jiří) Hazlbauer JDPSN is not on Spiritpedia. Teachers file written with an empty list.",
+      "Founded year not published on the pages read (a 2012 YouTube title mentions an opening ceremony; not used).",
+      "Photos: snow-covered stupa in the temple garden and a sangha group in front of the buildings, both from its own site.",
+      "Dry run note: Vrážné isn't in places (village under 5,000); a place alias is needed for Near You (README §18.4)."
+    ],
+    "left_out": [
+      "Work weekends (Oct and Nov 2026) and the 2026 summer retreats: past.",
+      "Family retreat and other 2027 events: not read; dates unknown.",
+      "Fundraising videos (2018): appeals, not teaching."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (one retreat whose year is inferred, and two 2019 videos of visiting teachers), in a village that needs a place alias. List it, or skip?"
+  }
+}

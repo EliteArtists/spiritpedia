@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-mumbai",
+    "location_source": "https://anandamumbai.org/contact-us/",
+    "create": {
+      "name": "Ananda Sangha Mumbai",
+      "bio": "Ananda Sangha Mumbai is the city's centre for the Kriya Yoga teachings of Paramhansa Yogananda, belonging to the worldwide Ananda family that Swami Kriyananda, a disciple of Yogananda, began in the late 1960s. Its meditation centre is on the second floor of the Bengal Chemicals building on S.V. Savarkar Marg in Prabhadevi, opposite the Worli fire station, and visitors are welcome to drop in during opening hours.\n\nThe centre keeps a steady rhythm of practice: silent meditations on weekday mornings and evenings and on Saturday mornings, a guided meditation on Friday evenings, and a Sunday-morning satsang that can also be joined online. Newcomers start with Learn to Meditate, a two-hour session on posture, the breath-mind link, the Hong-Sau technique and building a routine, which opens the way to the six-session course on the art and science of raja yoga, covering yama and niyama, Yogananda's Energization Exercises, yogic breathing and Patanjali's eight limbs.\n\nAnanda Yoga sessions teach gentle, inward-looking postures paired with silent affirmations. The calendar also includes kirtans, purification ceremonies, workshops, book study, children's activities and pilgrimages.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Mumbai, Maharashtra",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandamumbai.org/",
+      "booking_url": "https://anandamumbai.org/lm/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mumbai@anandaindia.org",
+      "image_urls": [
+        "https://anandamumbai.org/wp-content/uploads/2023/09/JFP_3677-768x513.jpg",
+        "https://anandamumbai.org/wp-content/uploads/2023/09/JFW2854-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learn to Meditate: The Path of Kriya Yoga (Level 1)",
+      "url": "https://anandamumbai.org/lm/",
+      "description": "A two-hour in-person session at the Prabhadevi centre on Sunday 6 December 2026 (11:30 am–1:30 pm) covering correct posture, quieting the restless mind, the breath-mind connection, the Hong-Sau technique and setting up a daily routine, with a guided meditation and course book.",
+      "price": "Rs. 900 (includes Course book)",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://anandamumbai.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-03-at-7.25.08-AM.jpeg"
+    },
+    {
+      "title": "The Art and Science of Raja Yoga (Level 2)",
+      "url": "https://anandamumbai.org/raja-yoga-leve-2/",
+      "description": "A six-session in-person course for those who have completed Level 1: energy, will and magnetism, Sankhya and Vedanta, yama and niyama, the 39 Energization Exercises, yogic breathing, habits and affirmations, and Patanjali's ashtanga yoga, with Ananda Yoga postures. Pre-enrolment open.",
+      "price": "Rs. 3,500 (includes the book Art and Science of Raja Yoga)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://anandamumbai.org/wp-content/uploads/2026/06/WhatsApp-Image-2026-06-17-at-6.35.19-PM.jpeg"
+    },
+    {
+      "title": "Ananda Yoga",
+      "url": "https://anandamumbai.org/ananda-yoga-2/",
+      "description": "Gentle, inwardly directed hatha yoga in Kriyananda's style, combining Yogananda's Energization Exercises with postures each paired with a silent affirmation, pranayama and meditation. Suitable for beginners; contact the centre for session dates.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://anandamumbai.org/wp-content/uploads/2023/09/JFP_3677-768x513.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Meditation (Fridays) and Sunday Satsang",
+      "url": "https://anandamumbai.org/events/",
+      "description": "Weekly practice at the Prabhadevi centre: a guided meditation every Friday 6–7 pm and a Sunday satsang 10–11 am, both in person and on Zoom, alongside silent meditations on other mornings and evenings.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://anandamumbai.org/wp-content/uploads/2026/11/WhatsApp-Image-2026-11-05-at-8.27.04-PM.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2023,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel read → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandamumbai.org/contact-us/",
+    "contact_form_url": "https://anandamumbai.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "Ananda Yoga page has no dates or price; listed as 'Contact for pricing'. Owner may drop it if a dated item is required.",
+      "Free item uses the events calendar URL (the satsang and meditations have no page of their own).",
+      "Health rule: Saturday healing prayers, Yogananda Flower Essences and Ananda Yoga's 'reducing stress and enhancing health' line left out.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: none named as resident teachers on the pages read.",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Healing Prayers (Saturdays): health framing.",
+      "Yogananda Flower Essences: remedy product, health framing.",
+      "Ananda pilgrimages page: not opened."
+    ]
+  },
+  "images_final": true
+}

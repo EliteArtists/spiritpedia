@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "wccm-netherlands",
+    "location_source": null,
+    "no_public_base": "The site publishes no address for the foundation; groups meet in many towns and national events move between venues.",
+    "create": {
+      "name": "WCCM Nederland (Christelijke Meditatie Nederland)",
+      "bio": "WCCM Nederland is the Dutch foundation that represents the World Community for Christian Meditation in the Netherlands. It passes on the way of prayer taught by the Benedictine monk John Main, who drew on the early Christian desert monks: a daily period of silent, still sitting in which the meditator returns again and again to a single prayer word, usually maranatha. The foundation is legally independent but shares the aims and structure of the international community, and its board is led by a national coordinator.\n\nMost of its life happens in small weekly groups that meet in churches and homes across the country, many of them welcoming newcomers without any membership. Nationally it holds a yearly day of talks and workshops and a silent Advent retreat at a monastery. Online, it publishes a step-by-step guide to meditating, a series of weekly teaching letters in Dutch, a fortnightly reflection by email, a group finder and seasonal material for Lent and Advent.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://www.wccm.nl/",
+      "booking_url": "https://www.wccm.nl/agenda/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.wccm.nl/wp-content/uploads/2025/09/WCCM-Logo-transparant-e1770569326959.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Hoe mediteer je?",
+      "url": "https://www.wccm.nl/meditatie-2/hoe-mediteer-je/",
+      "description": "A Dutch guide to the practice: sitting still, saying the prayer word maranatha inwardly and meditating morning and evening.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.wccm.nl/wp-content/uploads/2025/09/WCCM-Logo-transparant-e1770569326959.png"
+    },
+    {
+      "title": "Lesbrieven",
+      "url": "https://www.wccm.nl/lesbrieven/",
+      "description": "A series of weekly teaching letters in Dutch that build up an understanding of the tradition and practice of Christian meditation.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.wccm.nl/wp-content/uploads/2025/09/WCCM-Logo-transparant-e1770569326959.png"
+    },
+    {
+      "title": "Meditatief",
+      "url": "https://www.wccm.nl/meditatief/",
+      "description": "A short reflection sent by email every two weeks to support a daily practice.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.wccm.nl/wp-content/uploads/2018/07/meditatief-300x193.jpg"
+    },
+    {
+      "title": "Vind een meditatiegroep",
+      "url": "https://www.wccm.nl/groepen/vind-een-meditatiegroep/",
+      "description": "A directory of weekly Christian meditation groups across the Netherlands, with meeting places and contacts.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.wccm.nl/wp-content/uploads/2025/09/WCCM-Logo-transparant-e1770569326959.png"
+    },
+    {
+      "title": "Vasten en advent",
+      "url": "https://www.wccm.nl/vasten-en-advent/",
+      "description": "Seasonal readings and reflections for meditators during Lent and Advent.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.wccm.nl/wp-content/uploads/2025/09/WCCM-Logo-transparant-e1770569326959.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2257,
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of its own linked from its site (Instagram/Facebook never fetched) → local_hero (Rising Star).",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.wccm.nl/contact/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "National community of the World Community for Christian Meditation; the international WCCM is already on Spiritpedia (world-community-for-christian-meditation): owner to decide whether national communities should be separate listings.",
+      "Photo: logo only (no photo of a place of its own on the site). Checked by eye. It is the shared WCCM doves logo (512 px), not a design unique to the Dutch community.",
+      "Email: wccmnl@gmail.com appears in the page source as HTML-entity-encoded text, so it is treated as obfuscated and not used; contact form instead.",
+      "No hub links: national coordinator Victor Scheijde is not on Spiritpedia.",
+      "Found via the WCCM national communities list (wccm.org/national-communities/, names and links only)."
+    ],
+    "left_out": [
+      "Stille Adventsretraite 2026 (11–13 Dec 2026, Abdij Koningsoord, Arnhem): marked fully booked (VOLGEBOEKT).",
+      "Vacare – WCCM dag 2026 (17 Oct 2026) and the Northern European retreat at Bonnevaux: past.",
+      "School voor meditatie page: describes the international School, not a dated offering.",
+      "A '?blackhole' link on the site was a crawler trap and was never fetched."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): a national community of the World Community for Christian Meditation, which is already listed (world-community-for-christian-meditation). List the national communities separately, or not? The photo is a logo."
+  }
+}

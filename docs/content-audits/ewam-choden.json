@@ -1,0 +1,91 @@
+{
+  "healer": {
+    "healer_slug": "ewam-choden",
+    "location_source": "https://www.ewamchoden.org/?page_id=36",
+    "create": {
+      "name": "Ewam Choden Tibetan Buddhist Center",
+      "bio": "Ewam Choden is a Tibetan Buddhist centre of the Sakya school in Kensington, a hillside residential area just north of Berkeley, California. It is among the oldest Tibetan Buddhist centres on the American west coast, founded in the early 1970s by Lama Kunga Thartse Rinpoche, who has guided it ever since. Born into a noble Lhasa family and recognised as a young boy as a reincarnated lama, he came to the United States in the early 1970s and settled in the Bay Area. The name joins 'Ewam', the union of method and wisdom, with 'Choden', holding the Dharma. Its shrine room looks out over the bay towards San Francisco, the Golden Gate and Mount Tamalpais.\n\nFor more than forty years the heart of the week has been a Sunday morning meditation on Chenrezig, the Buddha of compassion, mixing recitation, guided reflection and a short teaching; it now runs on Zoom, free and open to all, without registration. Lama Kunga Rinpoche also gives empowerments and occasional Tibetan language classes, and the centre welcomes visiting Sakya teachers and marks Losar and other important dates in the Tibetan calendar. The website offers explanations of empowerments, prayers and recordings of past lectures, and the centre is run entirely by volunteers.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1973,
+      "availability": "local_online",
+      "city": "Kensington, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.ewamchoden.org/",
+      "booking_url": "https://www.ewamchoden.org/?page_id=10",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ewamchoden.org",
+      "image_urls": [
+        "https://www.ewamchoden.org/wp-content/uploads/2009/04/ec-meditation.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sunday morning compassion meditation with Lama Kunga Rinpoche",
+      "url": "https://www.ewamchoden.org/?page_id=10",
+      "description": "A weekly Chenrezig compassion meditation of about ninety minutes, alternating recitation and reflection, with a teaching that changes each week. Free and open to everyone; currently held on Zoom on most Sundays at 10am Pacific time.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.ewamchoden.org/wp-content/uploads/2009/04/ec-meditation.jpg"
+    },
+    {
+      "title": "Recorded lectures: introduction to Abhidharma",
+      "url": "https://www.ewamchoden.org/?page_id=211",
+      "description": "Free recordings of teachings given at Ewam Choden, starting with Khenpo Migmar Tseten's introduction to Abhidharma, the Buddhist account of mind and matter, recorded in August 2010.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.ewamchoden.org/wp-content/uploads/2009/04/ec-meditation.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2227,
+    "hub": null,
+    "tier_evidence": "No YouTube channel or follower counts linked from its site; small volunteer-run centre → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ewamchoden.org/?page_id=637",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Bay Area (Kensington, near Berkeley): not a regional town, but a long-established centre.",
+      "Founded: About page says overseen by Lama Kunga since 1973 and a non-profit since 1972; 1973 used.",
+      "Photos: shrine room with bay view (707x530) and the house frontage (250x205, small), both from its About/meditation pages, checked. Old (2009) photos.",
+      "Sunday sessions currently Zoom-only per its Special Events page.",
+      "No hub links: Lama Kunga Thartse Rinpoche is not on Spiritpedia.",
+      "Phone 510-527-7363. Crawl-delay 10 respected.",
+      "Lama Kunga Rinpoche is 91 (birthday post July 2026); programme depends on him.",
+      "Found via the Sakya global links list (sakyatradition.org, names and links only)."
+    ],
+    "left_out": [
+      "Treasure vases (earth and wealth vases): ritual objects for sale with prosperity claims.",
+      "Amitayus long-life empowerment (23 Aug 2026): past.",
+      "Heart Sutra page: only an image to download, digital version 'forthcoming'.",
+      "Golf video page: old Flash video.",
+      "Ceremonies & Blessings page: not read.",
+      "\"What are empowerments?\": an article page, not a practice resource (lead session)"
+    ],
+    "held": "Held by the lead session (11 Nov 2026): thin (2 items once article pages were taken out). List it, or skip?"
+  }
+}

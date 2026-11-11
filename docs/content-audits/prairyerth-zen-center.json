@@ -1,0 +1,134 @@
+{
+  "healer": {
+    "healer_slug": "prairyerth-zen-center",
+    "location_source": "https://prairyerthzen.org/",
+    "create": {
+      "name": "Prairyerth Zen Center",
+      "bio": "Prairyerth Zen Center is a small Korean Zen community in Topeka, Kansas, affiliated with the Kwan Um School of Zen founded by Zen Master Seung Sahn. It takes its name from William Least Heat-Moon's book about the tallgrass prairie, an image the sangha uses for the open, spacious mind that Zen points to. Its guiding teacher is Rebecca Otte, JDPSN, a founding member who received inka in 2020 and gives kong-an interviews, with Senior Dharma Teacher Richard Brown offering consulting interviews.\n\nThe group practises in a Dharma room at First Congregational Church on SW Collins Avenue, and every session can also be joined on Zoom. Mornings begin with 108 bows, the Morning Bell Chant and sitting; evenings combine chanting, meditation and a short reading; and Sunday practice rotates through interviews, a Dharma talk with questions and plain sitting. Each spring and autumn Rebecca and Richard teach Deep Dive into Zen, a four-week introduction to bowing, chanting and sitting, and the centre holds one-day and multi-day retreats through the year. Attending practice costs nothing, and the guiding teacher's short reflections are posted on the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Topeka, Kansas",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://prairyerthzen.org/",
+      "booking_url": "https://prairyerthzen.org/retreats-events-2/",
+      "youtube_url": "https://www.youtube.com/@prairyerthzencenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "prairyerthzentopeka@gmail.com",
+      "image_urls": [
+        "https://prairyerthzen.org/wp-content/uploads/2018/08/IMG_1149.jpg",
+        "https://prairyerthzen.org/wp-content/uploads/2026/06/1dayretreat1-18-26copy.jpg",
+        "https://prairyerthzen.org/wp-content/uploads/2022/06/image010.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Nothing Ever Stays the Same",
+      "url": "https://www.youtube.com/watch?v=aa_WAT7BCBs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Prairyerth Zen Center"
+    },
+    {
+      "title": "Attention To the Wonder Around Us",
+      "url": "https://www.youtube.com/watch?v=riTQkYPm2x4",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Prairyerth Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Deep Dive Into Zen",
+      "url": "https://prairyerthzen.org/deep-dive-2/",
+      "description": "A four-week evening course each spring and autumn, taught in Topeka by Rebecca Otte and Richard Brown, covering the basic ideas of Zen and its practice forms of bowing, chanting and sitting, with plenty of room for questions.",
+      "price": "$35",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://prairyerthzen.org/wp-content/uploads/2018/08/IMG_1149.jpg"
+    },
+    {
+      "title": "5 day retreat (December)",
+      "url": "https://prairyerthzen.org/retreats-events-2/",
+      "description": "A five-day retreat in early December with the sangha, ahead of the Buddha's Enlightenment Day ceremony. Registration covers meals and contact details.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://prairyerthzen.org/wp-content/uploads/2018/08/IMG_1149.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Practice Schedule",
+      "url": "https://prairyerthzen.org/practice-schedule/",
+      "description": "Weekly morning, evening and Sunday sittings with chanting and readings, all open on Zoom, including monthly interviews and a Dharma talk. Orientation for newcomers on request.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://prairyerthzen.org/wp-content/uploads/2018/08/IMG_1149.jpg"
+    },
+    {
+      "title": "Zen Thoughts",
+      "url": "https://prairyerthzen.org/category/zen-thoughts/",
+      "description": "Short written reflections from the centre's guiding teacher on practice and daily life.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://prairyerthzen.org/wp-content/uploads/2018/08/IMG_1149.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1808,
+    "hub": null,
+    "tier_evidence": "YouTube 7 subscribers (Prairyerth Zen Center @prairyerthzencenter, UCphvoJBNG5TbQ-je7OFCIHQ; YouTube Data API, 11 Nov 2026; linked from the Kwan Um list); Facebook not fetched → 7 → local_hero",
+    "email": "yes",
+    "email_source": "https://prairyerthzen.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: Topeka, Kansas.",
+      "No building of its own: practice is held in a room at First Congregational Church, Topeka (the published practice address).",
+      "Email prairyerthzentopeka@gmail.com is the centre's general inbox (mailto on the home page); the Kwan Um list gives prairyerthzen@gmail.com instead.",
+      "Videos: only two short talks (2023) on its own channel.",
+      "No hub links: Rebecca Otte and Richard Brown are not on Spiritpedia. Teachers file written with an empty list.",
+      "Founded year not published."
+    ],
+    "left_out": [
+      "One-Day Retreat on 14 Nov 2026 led by Rebecca Otte: shares the events page URL with the December retreat kept.",
+      "Autumn 2026 Deep Dive (Oct–Nov): started; the course is kept undated as it recurs each spring and autumn.",
+      "Sangha meeting and Enlightenment Day ceremony: not offerings."
+    ]
+  },
+  "images_final": true
+}

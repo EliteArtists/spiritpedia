@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "sri-aurobindo-sadhana-peetham",
+    "location_source": "https://sasp.collaboration.org/visiting/",
+    "create": {
+      "name": "Sri Aurobindo Sadhana Peetham",
+      "bio": "Sri Aurobindo Sadhana Peetham is a small residential ashram devoted to Sri Aurobindo's and the Mother's Integral Yoga, set on a three-acre homestead among the vineyards just west of Lodi in California's Central Valley. It took its present name in 1993, when the community reorganised itself as a collective ashram, and it keeps relics of Sri Aurobindo in a meditation hall modelled on the atmosphere of the Samadhi in Pondicherry. Members live and work on the property, and their work includes running Auromère, which distributes the books of Sri Aurobindo and the Mother.\n\nThe ashram follows the Pondicherry ashram's few rules and treats daily work as the main field of practice, so its outward programme is modest. Evenings bring meditation and study groups on Savitri, The Synthesis of Yoga and Essays on the Gita, with one group meeting online, and on the third Saturday of each month it hosts a day-long retreat for the wider Integral Yoga community, led by a different volunteer each time. Darshan days are marked with special meditations. Visitors can sit in the meditation hall and gardens by arrangement, take a single room for a short stay, or apply to live there for sustained sadhana. There is also a library of more than 5,000 books and recordings.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Lodi, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://sasp.collaboration.org/",
+      "booking_url": "https://sasp.collaboration.org/activities/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://sasp.collaboration.org/wp-content/uploads/SASP-Aerial-view-February-2021-1024x1024.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Monthly community retreats and study groups",
+      "url": "https://sasp.collaboration.org/activities/",
+      "description": "A day-long retreat on the third Saturday of each month with talks, reading, group meditation, sharing, karma yoga and shared meals, each on a theme chosen by its facilitator. Evening meditation and study groups on Sri Aurobindo's major works meet through the week, one of them on Zoom.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sasp.collaboration.org/wp-content/uploads/Relics-meditation.jpg"
+    },
+    {
+      "title": "Visits and short guest stays",
+      "url": "https://sasp.collaboration.org/visiting/",
+      "description": "The gardens, meditation hall and relics room are open to visitors by arrangement, and single rooms are available for short stays. Guests cook for themselves in a vegetarian kitchen and are invited to help with the ashram's work.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://sasp.collaboration.org/wp-content/uploads/Ganesh.jpg"
+    },
+    {
+      "title": "Residential sadhana",
+      "url": "https://sasp.collaboration.org/residence/",
+      "description": "For people who want to give their lives to the Integral Yoga, the ashram offers collective residence with board and a field of work, under the rules Sri Aurobindo and the Mother set for their ashram in Pondicherry. Enquire through the contact form.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://sasp.collaboration.org/wp-content/uploads/Relics-Room-1-1024x554.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2306,
+    "hub": null,
+    "tier_evidence": "Facebook linked but never fetched; no YouTube; 0 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://sasp.collaboration.org/contact/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Lead from Collaboration.org's Local Integral Yoga Groups list. Facts from sasp.collaboration.org (robots.txt allows us, Crawl-delay 10 respected).",
+      "Contact: the site publishes no email, only a contact form (the Collaboration list gives sasp@auromere.com, not used because it is not on the ashram's own site).",
+      "Photo: one image, the 2021 aerial view of the property from the Visiting page. A relics-room photo was passed over because it shows a child.",
+      "Upcoming retreats on the Activities page (21 Nov 2026, 19 Dec 2026, 16 Jan 2027) share one URL, so listed as one undated item.",
+      "No Spiritpedia teachers named; teachers file has no links. Retreat facilitators are volunteers.",
+      "Regional: Lodi, California (Central Valley).",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: aerial view loads (200, image/jpeg, 1024x1024)."
+    ],
+    "left_out": [
+      "Auromère book and incense business: commercial, and Ayurvedic body-care products fall under the health rule.",
+      "Darshan day programmes: same Activities page."
+    ]
+  },
+  "images_final": true
+}

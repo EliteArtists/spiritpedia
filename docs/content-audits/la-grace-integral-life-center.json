@@ -1,0 +1,158 @@
+{
+  "healer": {
+    "healer_slug": "la-grace-integral-life-center",
+    "location_source": "https://lagracecenter.com/contact-us/",
+    "create": {
+      "name": "La Grace, Sri Aurobindo Integral Life Center",
+      "bio": "La Grace is a non-profit centre devoted to Sri Aurobindo's and the Mother's Integral Yoga, based on a rural property in the foothills near Fountain Inn, about half an hour from Greenville in upstate South Carolina. It describes its aim as learning that changes people and a growth of consciousness, and it serves long-time followers of the Integral Yoga as well as seekers from other faiths. It has a sister centre in Surat, India, and a research arm working on applied integral studies.\n\nMuch of its teaching now happens online. A library of self-paced courses runs from free introductory series on Integral Yoga to paid courses with Dr Soumitra Basu on consciousness and with Dr Vladimir Yatsenko on Sanskrit and the Upanishads. Weekly and fortnightly study circles meet on Zoom to read Savitri and Ilion together, and an online Sunday Sangha gathers twice a month around a theme from the practice. Each summer La Grace hosts an Integral Yoga retreat with invited speakers, and it publishes a Knowledge Bank of talks and articles and the Aspire publications.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Fountain Inn, South Carolina",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "consciousness",
+        "spirituality"
+      ],
+      "website_url": "https://lagracecenter.com/",
+      "booking_url": "https://lagracecenter.com/courses/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://lagracecenter.com/wp-content/uploads/2023/01/la-grace-logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Integral Yoga, a Consciousness-Based Approach",
+      "url": "https://lagracecenter.com/courses/integral-yoga-from-a-consciousness-based-perspective/",
+      "description": "A long self-paced online course of 38 lessons with Dr Soumitra Basu, looking at Sri Aurobindo's yoga through the lens of consciousness and its levels.",
+      "price": "$150.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "consciousness"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2024/05/website-header-scaled.jpg"
+    },
+    {
+      "title": "Cosmic Consciousness in the light of Sri Aurobindo",
+      "url": "https://lagracecenter.com/courses/cosmic-consciousness-with-dr-soumitra-basu/",
+      "description": "An eight-lesson self-paced course with Dr Soumitra Basu, made with the journal NAMAH, on what Sri Aurobindo meant by cosmic consciousness and how it opens in practice.",
+      "price": "$42.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "consciousness",
+        "spirituality"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/02/cosmic-consciousness-thumbnail.jpg"
+    },
+    {
+      "title": "Aitareya and Taittiriya Upanishads",
+      "url": "https://lagracecenter.com/courses/studies-of-the-upanishads-part-2-aitareya-taittiriya-mandukya-upanishads/",
+      "description": "Self-paced study of two Upanishads with Dr Vladimir Yatsenko, reading the Sanskrit in the light of Sri Aurobindo's interpretation of the Vedic texts.",
+      "price": "$65.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/06/THE-UPANISHADS.webp"
+    },
+    {
+      "title": "A Course in Sanskrit Grammar, Semester 1",
+      "url": "https://lagracecenter.com/courses/sanskrit-grammar/",
+      "description": "The first semester of Dr Vladimir Yatsenko's Sanskrit grammar programme, twenty self-paced lessons for students who want to read the scriptures and Sri Aurobindo's Vedic writings in the original.",
+      "price": "$625.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/02/BB-header-icon_003.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Integral Yoga, Level I.A.",
+      "url": "https://lagracecenter.com/courses/introduction-to-integral-yoga/",
+      "description": "The opening part of a free self-paced series on Integral Yoga led by Radhe, introducing Sri Aurobindo and the Mother and the basic ideas of their yoga.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/10/Sri-Aurobindo-and-Mother-Course-Icon-1.jpg"
+    },
+    {
+      "title": "Monday Night Savitri Circle",
+      "url": "https://lagracecenter.com/events/la-grace-savitri-circle/",
+      "description": "A free weekly Zoom gathering at 5 pm New York time to read and talk through passages of Sri Aurobindo's Savitri, open to newcomers and long-time readers alike.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/01/la-grace-logo.png"
+    },
+    {
+      "title": "Online Sunday Sangha",
+      "url": "https://lagracecenter.com/events/la-grace-online-sunday-sangha/",
+      "description": "A twice-monthly online meeting of Integral Yoga practitioners, each built around one theme from daily practice, such as stillness and presence.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://lagracecenter.com/wp-content/uploads/2023/03/Savitri-Part-8-Ameeta-Mehra-jpg.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2309,
+    "hub": null,
+    "tier_evidence": "Facebook and YouTube icons in the footer, but no channel link readable without scripts and Facebook never fetched; 0 readable → local_hero.",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://lagracecenter.com/contact-us/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Lead from Collaboration.org's Local Integral Yoga Groups list. Facts from lagracecenter.com (robots.txt allows us).",
+      "Contact: the site's only email is Cloudflare-protected (not decoded); the contact page has a working form (name, email, message).",
+      "Photo: the La Grace logo only (852x217). Site photos are on static.lagracecenter.com, whose robots.txt request is refused (403), so not used.",
+      "Health rule: the course catalogue includes several Ayurveda courses (healthy ageing, mental health, nutrition, healing) and the 2026 summer retreat dealt with ageing and medical advances; all left out.",
+      "Possible future listings: Dr Soumitra Basu, Dr Vladimir Yatsenko (course instructors). No Spiritpedia teachers named; teachers file has no links.",
+      "The site promotes an 'Olier AI' Integral Yoga chatbot; not used.",
+      "Regional: Fountain Inn, near Greenville, South Carolina.",
+      "Dry run not run (ingest refused by a permission prompt earlier tonight; the lead session runs it). Images checked by hand: logo loads (200, image/png, 852x217)."
+    ],
+    "left_out": [
+      "Ayurveda courses (health rule).",
+      "2026 Sri Aurobindo Integral Yoga Retreat (8–12 July 2026): past, and framed around ageing and medicine.",
+      "Ilion study group with Maya Gupta: co-sponsored; Savitri circle and Sunday Sangha kept instead.",
+      "Sanskrit Grammar semesters 2–5 and further Integral Yoga levels: kept to one of each series."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-pune",
+    "location_source": "https://anandapune.org/contact-us/",
+    "create": {
+      "name": "Ananda Sangha Pune",
+      "bio": "Ananda Sangha Pune shares the Kriya Yoga path of Paramhansa Yogananda as passed on by his disciple Swami Kriyananda, founder of the worldwide Ananda movement. Pune is something of a hub for Ananda in India: the site describes the Ananda Yoga School of India as headquartered in the city, and Ananda's meditation retreat lies just outside it.\n\nThe city centre occupies an office suite on the first floor of the Centriole Building on ITI Road in Aundh, fitted out as a carpeted meditation hall with a shrine to the line of Kriya gurus. Ananda Yoga classes run there in person from Tuesday to Friday mornings; the style links each posture with a silent affirmation and includes breathing practice, meditation and yoga philosophy, aiming to lift awareness rather than simply exercise the body.\n\nMeditation is taught through a graded Kriya Yoga course. The first level, a two-part class series in English or Marathi, introduces the Hong-Sau concentration technique and Yogananda's Energization Exercises with the Lessons in Meditation textbook and WhatsApp support between classes. The second level works through Kriyananda's Art and Science of Raja Yoga. The centre also holds satsangs, guided meditations, book study, kirtan and concerts, children's classes and corporate workshops.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Pune, Maharashtra",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandapune.org/",
+      "booking_url": "https://anandapune.org/learn-to-meditate/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "pune@anandaindia.org",
+      "image_urls": [
+        "https://anandapune.org/wp-content/uploads/2018/02/Class-Pune-650x434.jpg",
+        "https://anandapune.org/wp-content/uploads/2024/04/WhatsApp-Image-2024-04-10-at-15.54.26-650x366.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ananda Yoga classes (Aundh)",
+      "url": "https://anandapune.org/ananda-yoga-2/",
+      "description": "In-person hatha yoga classes at the Aundh centre, Tuesday to Friday 8:30–9:30 am, in the Ananda Yoga style: postures paired with silent affirmations, with an emphasis on inner awareness and energy rather than workout. Discounts available on enquiry.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://anandapune.org/wp-content/uploads/2023/06/facebook.png"
+    },
+    {
+      "title": "Learn to Meditate: Path of Kriya Yoga (Level 1)",
+      "url": "https://anandapune.org/learn-to-meditate/",
+      "description": "A two-part class series at the Aundh centre teaching the Hong-Sau technique and the basics of a daily meditation routine, with the Lessons in Meditation course book and WhatsApp support between classes. Taught in English (Marathi classes on request); new dates are posted on the page.",
+      "price": "Rs 1200",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://anandapune.org/wp-content/uploads/2023/06/facebook.png"
+    },
+    {
+      "title": "Kriya Yoga Meditation – Level 2 (The Art and Science of Raja Yoga)",
+      "url": "https://anandapune.org/meditation-kriya-yoga/",
+      "description": "The second step towards Kriya initiation, based on Kriyananda's book: breath and the spinal currents, the chakras, will and devotion, yoga philosophy and psychology, energisation, postures and affirmations. Follows Level 1.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://anandapune.org/wp-content/uploads/2023/06/facebook.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2025,
+    "hub": null,
+    "tier_evidence": "YouTube channel linked but not read → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandapune.org/",
+    "contact_form_url": "https://anandapune.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "Email pune@anandaindia.org from the home page; the contact page also has a form.",
+      "Learn to Meditate page still shows the Feb 2026 batch (8 and 22 Feb); listed undated. The calendar loads by script and shows nothing to curl, so no dated items.",
+      "Only one item has a published price (Rs 1200). Owner may judge it thin; the weekday yoga classes are current.",
+      "Health rule: 'reduce tension and stress at will' and healing prayer sessions left out.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "YouTube channel UCq6feW_YFcL3x5-07azYecw linked from the site but not read (quota kept for other leads).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Corporate workshops, Education for Life, art workshops (tools-for-living pages): not opened.",
+      "Free video and audio page: only embeds and a 'view more' link.",
+      "Ananda Yoga School certificate trainings (/ananda-yoga/): no course, dates or prices on the page."
+    ]
+  },
+  "images_final": true
+}

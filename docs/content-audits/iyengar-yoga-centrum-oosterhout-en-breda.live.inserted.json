@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1353,
+    "healer_slug": "iyengar-yoga-centrum-oosterhout-en-breda"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "ce35f1c2-0c66-4e64-891f-cd2fecea8b59",
+      "slug": "weekly-iyengar-yoga-classes-blocks",
+      "title": "Weekly Iyengar yoga classes (blocks)"
+    },
+    {
+      "table": "courses",
+      "id": "bae2f97a-e744-4fbd-b02c-6c3e25bf1039",
+      "slug": "verdiepingslessen-mentoring-en-verdiepingslessen",
+      "title": "Verdiepingslessen (Mentoring en verdiepingslessen)"
+    },
+    {
+      "table": "courses",
+      "id": "1a204713-2b5b-490b-a059-400c4c8ca914",
+      "slug": "bks-iyengar-yoga-mentortraject",
+      "title": "B.K.S. Iyengar Yoga mentortraject"
+    }
+  ],
+  "at": "2026-11-11T21:40:32.738Z"
+}

@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "ring-of-bone-zendo",
+    "location_source": "https://www.ringofbonezendo.org/",
+    "create": {
+      "name": "Ring of Bone Zendo",
+      "bio": "Set on the San Juan Ridge, Ring of Bone Zendo is a lay Zen community in the Sierra Nevada foothills of California that belongs to the Diamond Sangha lineage of Robert Aitken Rōshi. It grew out of sittings that the poet Gary Snyder began in 1970 with the volunteers building his family's house, after his own years of training at Daitoku-ji in Kyoto. The group took its name in 1974, in memory of Snyder's friend the poet Lew Welch, and moved into its own forest zendo beside a meadow in 1982. Its teacher is Nelson Foster, one of Aitken's first dharma heirs, who was authorised to teach independently in 1989 and later succeeded Aitken as head of the Diamond Sangha. He edited The Roaring Stream, an anthology of Chinese and Japanese masters, and published Storehouse of Treasures in 2024.\n\nThe sangha is small, run entirely by volunteers and governed by its members through consensus, with no residential programme. Sunday morning and Wednesday evening sittings run through most of the year with chanting and private interviews, newcomers are shown the forms by a member on their first visit, and sesshin of one to eight days are held through the year. Seasonal gatherings include Buddha's Birthday and a Founders' Day honouring the people behind the zendo.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "founded_year": 1974,
+      "city": "Nevada City, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.ringofbonezendo.org/",
+      "booking_url": "https://www.ringofbonezendo.org/joinus",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@ringofbonezendo.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/3093784f-2935-4008-8b0f-c3112bb78243/Cal+zendo+2.jpg",
+        "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/d7ad787a-aaa7-491f-a635-168cec5a78e9/Black+on+White+ROBZ+logo.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly zazen",
+      "url": "https://www.ringofbonezendo.org/joinus",
+      "description": "Sittings at the forest zendo on Sunday mornings and Wednesday evenings, with chanting, four periods of zazen and, usually, private interviews with the teacher. First-time visitors are asked to get in touch beforehand so that a member can guide them in and show them the forms.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/c8e05e52-e956-4029-8dd7-bad647b2ef43/20201014_144952.jpg"
+    },
+    {
+      "title": "Sesshin",
+      "url": "https://www.ringofbonezendo.org/sesshin-signup",
+      "description": "Full-time silent retreats at the zendo of one to eight days, led in the Diamond Sangha way with zazen, chanting, meals in the meditation hall and meetings with the teacher. Places are limited and booked through each event's coordinator; reduced fees can be discussed.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/d39dd489-2d3d-4242-b173-f0c2e37562ad/Screen+Shot+2022-03-18+at+3.31.16+PM.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://www.ringofbonezendo.org/membership",
+      "description": "After a year of taking part, participants may join as associate, sustaining or core members, according to how often they sit, serve and attend sesshin and the monthly business meetings.",
+      "price": "the annual membership fee is $40",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/c6bc6442-b58e-4d98-b2de-7e06929e8f4b/IMG_3101.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ring of Bone newsletters",
+      "url": "https://www.ringofbonezendo.org/news",
+      "description": "The sangha's seasonal newsletters, with the current issue and an archive of earlier ones, mixing practice reflections, stories, poems and news from the zendo.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61f36771c7a0ea4967016914/51f91eaf-6ba7-4ef3-9852-fe2ff84b103c/Screenshot_20261021_215314.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2157,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ringofbonezendo.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Possible editorial-stature override: founded under Gary Snyder's inspiration and taught by Nelson Foster, head of the Diamond Sangha lineage (owner decides; tier left at local_hero).",
+      "Regional: Nevada City, California (the zendo is in the forest on the San Juan Ridge; the site publishes only the Nevada City PO box, so Nevada City is used as the base).",
+      "Email info@ringofbonezendo.org is the general inquiries inbox (every page footer, mailto).",
+      "founded_year 1974 (named at an 'Opening the Mountain' ceremony that year, per its about page; sittings began in 1970).",
+      "Photos: the zendo building in the forest (2500 px wide banner) and the zendo's logo (1176x212, wide); both from its own site, checked.",
+      "No hub links: Nelson Foster and Gary Snyder are not on Spiritpedia (only Jeff Foster and Kristyn Rose Foster match 'Foster'; different people). Possible future listing: Nelson Foster. Teachers file written with an empty list.",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Book 'Storehouse of Treasures' (Nelson Foster): links to shambhala.com, not opened; a teacher's book, not the centre's.",
+      "Sutra book (Google Docs link) not opened.",
+      "Meetings for the Practice of Business, Buddha's Birthday and Founders' Day: community and ceremonial events on the calendar page, not teaching offerings.",
+      "Event calendar PDF not opened; no dated sesshin taken."
+    ]
+  },
+  "images_final": true
+}

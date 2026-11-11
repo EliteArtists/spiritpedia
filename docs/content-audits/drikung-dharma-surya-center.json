@@ -1,0 +1,148 @@
+{
+  "healer": {
+    "healer_slug": "drikung-dharma-surya-center",
+    "location_source": "https://drikungdharmasurya.org/contact/",
+    "create": {
+      "name": "Drikung Dharma Surya Center",
+      "bio": "Drikung Dharma Surya Center is a Drikung Kagyu Tibetan Buddhist temple on Ox Road in Fairfax, Northern Virginia, about half an hour west of Washington, D.C. It was founded by His Eminence Garchen Rinpoche, who gave it its name, meaning \"sun of the Dharma\", and the temple was consecrated in August 2015 by the Drikung Kyabgön Chetsang, with Garchen Rinpoche and Lamchen Gyalpo Rinpoche also taking part. Its spiritual director is Khenpo Samdup Rinpoche, and much of the daily practice is led by two resident nuns trained in India: Khenmo Konchok Tsechik and, alongside her, Lopön Konchok Gamtso. The shrine hall holds a thousand Buddha statues, with a large outdoor prayer wheel and a contemplation garden in the grounds.\n\nFrom Tuesday to Friday the temple holds late-morning prayers and deity practice, and on Sundays it alternates an introductory Learning Buddhism class with guided mindfulness meditation, in person and on Zoom. Khenpo Samdup gives longer teaching series, such as a commentary on the Dzogchen text Flight of the Garuda, and the centre runs annual group retreats, including a December Guru Rinpoche recitation retreat. It keeps a large free library of practice texts, audio and video, and posts recordings of its teachings on its YouTube channel. The temple is open to visitors from Tuesday to Sunday.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Fairfax, Virginia",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://drikungdharmasurya.org/",
+      "booking_url": "https://drikungdharmasurya.org/weekly-schedule/",
+      "youtube_url": "https://www.youtube.com/@DrikungDharmaSuryaCenter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "drikungdharmasuryainc@gmail.com",
+      "image_urls": [
+        "https://drikungdharmasurya.org/wp-content/uploads/2022/01/Temple-Front-Home-Page989.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Flight of the Garuda with Khenpo Samdup Rinpoche September 13, 2026 Part 21",
+      "url": "https://www.youtube.com/watch?v=OYR2ZPMhfSg",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Drikung Dharma Surya Center"
+    },
+    {
+      "title": "Flight of the Garuda with Khenpo Samdup Rinpoche September 5, 2026 Part 17   18",
+      "url": "https://www.youtube.com/watch?v=J7yw1TSY-Gk",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Drikung Dharma Surya Center"
+    },
+    {
+      "title": "Flight of the Garuda with Khenpo Samdup Rinpoche August 08, 2026 Part 13",
+      "url": "https://www.youtube.com/watch?v=ZOFTR2mJ9VY",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Drikung Dharma Surya Center"
+    },
+    {
+      "title": "Meditation on Four Applications of Mindfulness   Day 8 ~ 20260811 ~ Khenchen Gyaltsen Rinpoche",
+      "url": "https://www.youtube.com/watch?v=5pbreZbwgXk",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Drikung Dharma Surya Center"
+    },
+    {
+      "title": "Garchen Rinpoche Blessing Meditation Pith Instructions Book & the Transcribers - 2018",
+      "url": "https://www.youtube.com/watch?v=l58LRRH0uuA",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Drikung Dharma Surya Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "9th Annual Guru Rinpoche Bhum Tsok",
+      "url": "https://drikungdharmasurya.org/upcoming-events/",
+      "description": "A three-day group retreat guided by Khenpo Samdup Rinpoche and monastics from several traditions, opening with a transmission and teaching and then gathering a hundred thousand recitations of the prayers to Guru Rinpoche, Padmasambhava. Join in person in Fairfax or on Zoom; registration by email.",
+      "price": "Suggested Donation: $60 / Person / Entire Retreat",
+      "product_type": "retreat",
+      "start_date": "2026-12-18",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://drikungdharmasurya.org/wp-content/uploads/2026/09/DDSC-9th-Annual-Guru-Rinpoche-Bhum-Tsok-18-20-DEC-2026-page-001-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly programme: Learning Buddhism and guided mindfulness meditation",
+      "url": "https://drikungdharmasurya.org/weekly-schedule/",
+      "description": "Sunday afternoon sessions at the temple and on Zoom that alternate an introductory class on Buddhism with guided mindfulness meditation, alongside weekday prayers and deity practice with the resident nuns.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://drikungdharmasurya.org/wp-content/uploads/2022/01/HUNG.jpg"
+    },
+    {
+      "title": "Text library of sadhanas and teachings",
+      "url": "https://drikungdharmasurya.org/text-library/",
+      "description": "A large free collection of practice texts and teaching transcripts in English, Tibetan, Chinese, Spanish and Vietnamese, from daily prayers and Chenrezig practice to commentaries by Khenpo Samdup Rinpoche.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "image": "https://drikungdharmasurya.org/wp-content/uploads/2026/09/Book-Front-Cover-H.E.-Garchen-Rinpoche-Art-of-Inner-Transformation-SEP-2026-page-001-232x300.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2218,
+    "hub": null,
+    "tier_evidence": "YouTube @drikungdharmasuryacenter: 330 subscribers (YouTube Data API, 11 Nov 2026; linked from its home page) → local_hero",
+    "email": "yes",
+    "email_source": "https://drikungdharmasurya.org/contact/",
+    "contact_form_url": "https://drikungdharmasurya.org/contact/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Email: the visible address on the Contact and Upcoming Events pages is drikungdharmasuryainc@gmail.com, but the Contact page's mailto link points to drikungdharmasurya@gmail.com. The visible one is used; the Contact page also has a form.",
+      "Photo: one image, the temple front at dusk with its banner, from the home page (989 px), checked.",
+      "Khenpo Samdup Rinpoche is also spiritual director of Gar Drolma (rank 2215, planned tonight); both could link a future listing for him.",
+      "No hub links: none of its lamas are on Spiritpedia. Possible future listings: Khenpo Samdup Rinpoche.",
+      "Founded year not stated (temple consecrated August 2015; YouTube archive dates recordings 'since 2001').",
+      "Found via the Drikung Kagyu centre list (drikungtmc.com 'Other Centers', names and links only)."
+    ],
+    "left_out": [
+      "Pujas for the living and the deceased, lamp offerings, 1,000 Buddha sponsorship, tsampa product: ritual services, goods or appeals.",
+      "Medicine Buddha and Parnashavari practices, 'wellness-healing program' wording on the About page: healing-related.",
+      "Closed retreats (Chakrasamvara, Vajrayogini, Dzogchen): closed to the public, and past.",
+      "Puja videos for flood victims: memorial services."
+    ]
+  },
+  "images_final": true
+}

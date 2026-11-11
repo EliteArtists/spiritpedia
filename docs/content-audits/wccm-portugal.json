@@ -1,0 +1,175 @@
+{
+  "healer": {
+    "healer_slug": "wccm-portugal",
+    "location_source": null,
+    "no_public_base": "The site gives no address; the association was constituted in Coimbra and groups meet in several places and online.",
+    "create": {
+      "name": "WCCM Portugal (Comunidade Portuguesa para a Meditação Cristã)",
+      "bio": "WCCM Portugal is the Portuguese community of the World Community for Christian Meditation, which in January 2026, on the centenary of John Main's birth, became a formally constituted association in Coimbra. It passes on the contemplative prayer John Main recovered from the early Christian desert tradition: a simple discipline of sitting still, morning and evening, and repeating a prayer word inwardly, so that attention moves from thought to a silent presence.\n\nMeditators meet in groups both in person and online, with online sessions every weekday early in the morning, mid-morning and in the evening, and the community offers introductory courses for newcomers, an annual retreat and weekends on the essential teaching. Its website has recordings of talks, audio tracks with bells and silence for timing a meditation, and a guide to starting the practice. Its YouTube channel publishes Portuguese readings of John Main's talks on the mantra, letting go of distractions and the call to fullness of life.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "website_url": "https://wccm.pt/",
+      "booking_url": "https://wccm.pt/eventos",
+      "youtube_url": "https://www.youtube.com/channel/UCiDCh2Tbc4MubU9iNOLV7Ig",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "portugal@wccm.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/DRZBSu67Sem7fyS_rDs7-gD_lYMVG6zyB6IylXcbBvNttweebtTGXlB5FHha0yGRTK9qCDE_7A=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "John Main 3.1.1 O caminho do mantra",
+      "url": "https://www.youtube.com/watch?v=fdoCMJ9Fjek",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "John Main 3.1.2 Deixando as distrações para trás",
+      "url": "https://www.youtube.com/watch?v=z8hygqQ4X8E",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "John Main 3.1.3 O apelo à plenitude da vida",
+      "url": "https://www.youtube.com/watch?v=Zv5w7STwqDw",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "John Main 1.3.1 A tradição do mantra",
+      "url": "https://www.youtube.com/watch?v=K1d7bG10hl0",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "John Main 1.3.2 Dizendo o mantra",
+      "url": "https://www.youtube.com/watch?v=ZvTwhsRT35s",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "John Main 1.4.1 Coloca a tua mente no reino",
+      "url": "https://www.youtube.com/watch?v=S__5af0boCs",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    },
+    {
+      "title": "Mensagem do Fr. Laurence Freeman OSB após visita a Portugal",
+      "url": "https://www.youtube.com/watch?v=bvkh_Ykiiww",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Meditação Cristã - WCCM Portugal"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Áudios",
+      "url": "https://wccm.pt/%C3%A1udios",
+      "description": "Audio tracks with an opening bell, a period of silence and a closing bell for timing meditation at home.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/9a81901a-f67c-4b9c-95bd-55b927452984/20260525_183521.jpg"
+    },
+    {
+      "title": "Palestras",
+      "url": "https://wccm.pt/palestras",
+      "description": "Recorded talks in Portuguese on John Main's teaching and the practice of Christian meditation.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/9a81901a-f67c-4b9c-95bd-55b927452984/20260525_183521.jpg"
+    },
+    {
+      "title": "Inicia a prática",
+      "url": "https://wccm.pt/inicia-a-pr%C3%A1tica",
+      "description": "A short guide to starting a daily practice of Christian meditation.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/9a81901a-f67c-4b9c-95bd-55b927452984/20260525_183521.jpg"
+    },
+    {
+      "title": "Grupos e encontros de meditação",
+      "url": "https://wccm.pt/eventos",
+      "description": "In-person and online groups, with online sessions every weekday at 7:20, 9:20 and 21:00, plus an introductory course on request.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/9a81901a-f67c-4b9c-95bd-55b927452984/20260525_183521.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2269,
+    "hub": null,
+    "tier_evidence": "YouTube @meditacaocrista-wccmportugal (UCiDCh2Tbc4MubU9iNOLV7Ig): 234 subscribers (YouTube Data API, 11 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://wccm.pt/contacto",
+    "contact_form_url": "https://wccm.pt/contacto",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "National community of the World Community for Christian Meditation; the international WCCM is already on Spiritpedia (world-community-for-christian-meditation): owner to decide whether national communities should be separate listings.",
+      "Photo: its YouTube avatar (the community logo); no photo of a place of its own on the site. Checked.",
+      "Email portugal@wccm.org is on a wccm.org domain (the international body's), but it is the Portuguese community's published address.",
+      "Founded year left null: the association dates from 21 Jan 2026 but the community is older.",
+      "No hub links: no named teacher on Spiritpedia; Laurence Freeman appears only as WCCM director.",
+      "Found via the WCCM national communities list (wccm.org/national-communities/, names and links only)."
+    ],
+    "left_out": [
+      "Events (introductory course, annual retreat, essential teaching weekend): all on the one /eventos page with no dates or prices, so one free item only.",
+      "Statutes and privacy pages."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): a national community of the World Community for Christian Meditation, which is already listed (world-community-for-christian-meditation). List the national communities separately, or not? The photo is a logo."
+  }
+}

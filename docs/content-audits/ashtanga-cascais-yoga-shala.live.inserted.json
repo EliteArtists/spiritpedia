@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1301,
+    "healer_slug": "ashtanga-cascais-yoga-shala"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "30c34fc5-4e2a-43bb-ac8b-7b888595e227",
+      "slug": "mysore-style-and-led-ashtanga-classes",
+      "title": "Mysore Style and led Ashtanga classes"
+    },
+    {
+      "table": "courses",
+      "id": "2d4b574f-1dc2-4d4c-a3f9-06ecf64106c0",
+      "slug": "ashtanga-yoga-surf-lifestyle-retreats",
+      "title": "Ashtanga Yoga, Surf & Lifestyle retreats"
+    },
+    {
+      "table": "courses",
+      "id": "27f36552-f640-4de2-8600-6d5133be47ea",
+      "slug": "workshops-with-vera-simoes-and-visiting-authorised-teachers",
+      "title": "Workshops with Vera Simões and visiting authorised teachers"
+    }
+  ],
+  "at": "2026-11-11T21:37:55.354Z"
+}

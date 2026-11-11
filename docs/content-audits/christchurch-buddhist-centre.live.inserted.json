@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1328,
+    "healer_slug": "christchurch-buddhist-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "11b34532-d376-481c-8cc2-55046886d22d",
+      "slug": "exploring-the-heart-sutra-zoom",
+      "title": "Exploring the Heart Sutra (Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "d0edd0e7-d3e4-483b-955e-5dbd2ea1ee3f",
+      "slug": "approaching-the-path-of-the-great-perfection-zoom",
+      "title": "Approaching the Path of the Great Perfection (Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "769cc8dc-632d-496e-91a8-93057403cc8e",
+      "slug": "membership-8",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "b6818518-fcb0-48b2-aafa-69d9252ada29",
+      "slug": "heart-training-mind-training-zoom",
+      "title": "Heart Training - Mind Training (Zoom)"
+    },
+    {
+      "table": "free_resources",
+      "id": "221abac6-532c-455a-b582-354461323725",
+      "slug": "riwo-sangcho-mountain-smoke-offering",
+      "title": "Riwo Sangchö – Mountain Smoke Offering"
+    }
+  ],
+  "at": "2026-11-11T21:39:19.903Z"
+}

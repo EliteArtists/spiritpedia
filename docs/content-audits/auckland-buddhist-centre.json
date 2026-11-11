@@ -1,0 +1,149 @@
+{
+  "healer": {
+    "healer_slug": "auckland-buddhist-centre",
+    "location_source": "https://aucklandbuddhistcentre.org/about/contact",
+    "create": {
+      "name": "Auckland Buddhist Centre",
+      "bio": "The Auckland Buddhist Centre is the city's Triratna Buddhist Community centre, a sangha that has been teaching meditation and Buddhism in Auckland for close to fifty years. After 33 years in Grey Lynn it moved in late 2023 to a building on Normanby Road in Mt Eden, which volunteers and donors then helped renovate into a new home with shrine rooms, a bookshop, a library and a lift, opened in August 2025. Teaching is given by ordained members of the Triratna Order living locally, such as Ratnavyuha, Suvarnadhi and Vajrasarasi, and the centre's stated aim is to make the Dharma open to everyone whatever their background.\n\nNewcomers begin with a rolling eleven-week introduction to meditation and Buddhism on Monday nights or Tuesday mornings, which can be joined in any week and teaches the two core practices of the tradition, the mindfulness of breathing and metta bhavana, the cultivation of loving-kindness. From there people can come to the Monday Sangha Night, drop in to the Saturday morning sits, join an Under 35s evening or take part in pujas, study groups and weekend non-residential retreats in the city. Several times a year the sangha goes on week-long retreats at Sudarshanaloka, the Triratna retreat centre in the Tararu Valley near Thames.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": null,
+      "availability": "local",
+      "city": "Auckland",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://aucklandbuddhistcentre.org/",
+      "booking_url": "https://aucklandbuddhistcentre.org/events",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://aucklandbuddhistcentre.org/image/d2d9cf5c8bbe159f1f0ff302b5c39f85.jpg",
+        "https://aucklandbuddhistcentre.org/image/1eadcebc7442c797c6fc31efebd5cfef.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intro to meditation and Buddhism",
+      "url": "https://aucklandbuddhistcentre.org/event/intro-to-meditation-and-buddhism-nov-26-7",
+      "description": "The centre's starting class for newcomers: an eleven-theme Monday evening course, repeated through the year so it can be joined any week, teaching the mindfulness of breathing and metta bhavana along with karma, ethics, mindfulness and the nature of reality. No booking needed.",
+      "price": "$20 for your first class; $180 if you choose to commit to all 11 classes",
+      "product_type": "course",
+      "start_date": "2026-11-16",
+      "end_date": "2026-11-16",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/e95c5e26f8913e67dc95e6a64bab3cb3.jpg?w=960&h=auto&fit=max"
+    },
+    {
+      "title": "This being, that becomes",
+      "url": "https://aucklandbuddhistcentre.org/event/this-being-that-becomes-jan-27",
+      "description": "A non-residential weekend at the Mt Eden centre exploring conditionality, the principle behind the Buddha's awakening, through meditation, talks, reflection and discussion. Best for regulars who already know the two foundation practices; all three sessions are expected.",
+      "price": "$85 / $130",
+      "product_type": "retreat",
+      "start_date": "2027-01-15",
+      "end_date": "2027-01-17",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/483ab7c791ddf27a92b1c0c05428fb4c.png?w=960&h=auto&fit=max"
+    },
+    {
+      "title": "ABC sangha retreat (autumn)",
+      "url": "https://aucklandbuddhistcentre.org/event/abc-sangha-retreat-mar-27",
+      "description": "A week-long residential retreat at Sudarshanaloka near Thames combining sitting practice and ritual with talks, group discussion and time for reflection, for people who have learned the centre's two main meditation practices.",
+      "price": "Cash rates (internet banking / EFTPOS / cash): $512 / $565 / $618",
+      "product_type": "retreat",
+      "start_date": "2027-03-13",
+      "end_date": "2027-03-20",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/f250a54678a222747f1fa10ea33d2971.jpg?w=960&h=auto&fit=max"
+    },
+    {
+      "title": "ABC meditation retreat",
+      "url": "https://aucklandbuddhistcentre.org/event/abc-meditation-retreat-jul-27",
+      "description": "A week of deeper meditation and silent contemplation at Sudarshanaloka in the Tararu Valley, with longer silent periods, meditation reviews with the leaders and poems from past practitioners, for those who already know the Triratna meditation practices.",
+      "price": "Cash rates (internet banking / EFTPOS / cash): $512 / $565 / $618",
+      "product_type": "retreat",
+      "start_date": "2027-07-31",
+      "end_date": "2027-08-07",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/9eaebf9a40bcc3e8c5a4498b636bbaad.jpg?w=960&h=auto&fit=max"
+    },
+    {
+      "title": "Saturday morning meditation",
+      "url": "https://aucklandbuddhistcentre.org/event/saturday-morning-meditation-nov-26-1",
+      "description": "Drop-in group meditation in the shrine room, alternating weekly between mindfulness of breathing and metta bhavana: an unled 9am sit for experienced meditators and a led 10am sit open to beginners.",
+      "price": "By donation (suggested $15)",
+      "product_type": "course",
+      "start_date": "2026-11-14",
+      "end_date": "2026-11-14",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/a7973af7c3505f0c2f8e1b4609e6907a.jpg?w=960&h=auto&fit=max"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditation resources",
+      "url": "https://aucklandbuddhistcentre.org/meditation/special-stuff",
+      "description": "Free support for learning the centre's core practices: guided audio meditations from a three-minute breathing space to forty-minute sits of mindfulness of breathing and metta bhavana, a body scan, stage-by-stage guides to both practices, and notes on posture and common hindrances.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/d5d3f56156fe4f8775dcacd9c8aa5be3.jpg?w=960&h=auto&fit=max"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2072,
+    "hub": null,
+    "tier_evidence": "Its site links only a YouTube playlist, not a channel (playlist page not fetched, so no subscriber count); → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://aucklandbuddhistcentre.org/about/contact",
+    "bio_check": "OK: no 8-word runs against 22 source(s)",
+    "flags": [
+      "Triratna centre: its own robots.txt allows everything (User-agent: * Disallow: empty), so it was read; links to thebuddhistcentre.com were not opened.",
+      "Base: 45B Normanby Road, Mt Eden, Auckland (contact page); in the Uptown district at the city end of Mt Eden.",
+      "No email address on the site; the contact page has a form and a phone number.",
+      "Intro class and Saturday meditation are weekly; the URLs are the next dated instances (16 Nov and 14 Nov 2026), which will go stale. The owner may prefer the evergreen /buddhism page for the intro class.",
+      "Retreat prices: three self-selected cash rates quoted; credit card rates are slightly higher ($526 / $580 / $633).",
+      "YouTube: only a playlist link (PLYcQmFag9Yg5_RppSgHJKsZHtV4VVzuxX) on the resources page; channel not read.",
+      "Photos: the new shrine room with a Buddha rupa (2121 px) and the centre's entrance with its sign (600 x 800); both from its own site, checked.",
+      "No hub links: the Order members named (Ratnavyuha, Suvarnadhi, Vajrasarasi, Akasasri, Khemayogini) are not on Spiritpedia. Teachers file written with an empty list.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Buddhist Recovery Network meetings: recovery from addiction (health rule).",
+      "New moon puja and mitra ceremony (14 Nov): ritual and ceremony nights.",
+      "Oct 2027 sangha retreat: same format as the March retreat; one kept.",
+      "Dharma talks page: the list did not load in the saved page; guided audio files redirect to a separate storage host (not followed)."
+    ]
+  },
+  "images_final": true
+}

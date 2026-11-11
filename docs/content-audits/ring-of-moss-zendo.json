@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "ring-of-moss-zendo",
+    "location_source": "https://www.ringofmoss.org/contact",
+    "create": {
+      "name": "Ring of Moss Zendo",
+      "bio": "Ring of Moss Zendo is a lay Zen community on the south-eastern edge of Portland, Oregon, that has met since 1996. It is affiliated with the Diamond Sangha, the lineage founded by Robert Aitken Rōshi that draws on both Rinzai and Sōtō Zen, and keeps close ties with Ring of Bone Zendo in the California Sierra. Its teacher, Andrew Mason, started training with Aitken in 1988 and was authorised to teach by Nelson Foster in 2018; he is available for private interviews through the year.\n\nThe zendo is a house in Milwaukie with a meditation room and a separate room for meetings with the teacher. Members sit together in person on several mornings and evenings each week, with an online sitting on Tuesday mornings, and first-time visitors are met beforehand and shown the forms; a short orientation is also held on the first Wednesday of each month. The calendar adds monthly zazenkai, discussion evenings and book groups, a seasonal intensive training period, and sesshin from one to eight days, including a winter Rohatsu retreat and Mountains and Rivers sesshin held on wilderness trails while backpacking. The community is run by its members and decides its business together at regular meetings.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "founded_year": 1996,
+      "city": "Milwaukie, Oregon",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening",
+        "non-duality"
+      ],
+      "website_url": "https://www.ringofmoss.org/",
+      "booking_url": "https://www.ringofmoss.org/join",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "ringofmoss@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/62bf148b77fc16266229075b/1749991461367-GRNB9EPHT3XLSJ2TR37Y/IMG_0348.jpg",
+        "https://images.squarespace-cdn.com/content/v1/62bf148b77fc16266229075b/2dfc9338-898f-461c-b7d9-6dfe93f7c5b2/IMG_3595.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly zazen and orientation",
+      "url": "https://www.ringofmoss.org/join",
+      "description": "In-person sittings at the Milwaukie zendo on Wednesday evenings and Sunday mornings, with further sittings on the events calendar and private interviews with the teacher on most evenings. Newcomers are met before the sitting and shown the forms, and a short orientation is held on the first Wednesday of each month.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62bf148b77fc16266229075b/1657202893560-517ZBBCXE5H8KRPWB7P1/unsplash-image-omeaSFHIxYk.jpg"
+    },
+    {
+      "title": "Rohatsu Sesshin 2026",
+      "url": "https://www.ringofmoss.org/events/spring-sesshin-cndhm",
+      "description": "A week-long residential sesshin at the zendo in early December, the traditional retreat marking the Buddha's awakening, run by a volunteer coordinator who handles sign-up.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-08",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "http://static1.squarespace.com/static/62bf148b77fc16266229075b/62c6ee8ec1198a2d10564bd2/69591a4feee844559853ab30/1783723565507/IMG_9988.jpg?format=1500w"
+    },
+    {
+      "title": "Sesshin and Mountains and Rivers retreats",
+      "url": "https://www.ringofmoss.org/sesshin",
+      "description": "Full-time practice periods of one to eight days: silent five- and seven-day sesshin held in the zendo with forms adapted from monastic life, and less formal Mountains and Rivers sesshin practised on the trail in wild country. Fees are paid to each event's coordinator, and reductions can be discussed.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62bf148b77fc16266229075b/d4827d75-ab94-45bf-b552-d87a0c46f46e/Rohatsu+2023+a.JPG"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ring of Moss Sutra Book",
+      "url": "https://www.ringofmoss.org/s/ROMZ-Sutra-Book-rev-2020.pdf",
+      "description": "The zendo's own book of chants and verses used at its sutra services, offered as a free PDF.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62bf148b77fc16266229075b/1749991461367-GRNB9EPHT3XLSJ2TR37Y/IMG_0348.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2160,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ringofmoss.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Base: the zendo's published address is in Milwaukie, Oregon (a city of about 20,000 in the Portland metro area); the site calls itself a Portland community. Owner may prefer 'Portland, Oregon'.",
+      "Email ringofmoss@gmail.com is the zendo's shared inbox (contact page and footer, mailto).",
+      "founded_year 1996 ('Gathering in Portland, Oregon metro area since 1996', home page).",
+      "Photos: the zendo house with its garden fountain (2500x3333) and the meditation room with three people sitting, seen from behind (2000x1500); both from its own home page, checked.",
+      "No hub links: Andrew Mason is not on Spiritpedia. Possible future listing: Andrew Mason. Teachers file written with an empty list.",
+      "Its resources page also lists every Diamond Sangha group with its town (used to confirm lead towns, names only).",
+      "Found via the Honolulu Diamond Sangha's Diamond Sangha centres list (names and links only)."
+    ],
+    "left_out": [
+      "Zazen + Samu workday (22 Nov), Mind of Clover book discussion (29 Nov) and business meetings: community events.",
+      "Mountains and Rivers sesshin dates not published.",
+      "Ethics statement and What to Expect PDFs: documents, not practice resources (What to Expect is Ring of Bone's)."
+    ]
+  },
+  "images_final": true
+}

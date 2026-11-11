@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1368,
+    "healer_slug": "prairyerth-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9875,
+      "slug": "nothing-ever-stays-the-same",
+      "title": "Nothing Ever Stays the Same"
+    },
+    {
+      "table": "videos",
+      "id": 9876,
+      "slug": "attention-to-the-wonder-around-us",
+      "title": "Attention To the Wonder Around Us"
+    },
+    {
+      "table": "courses",
+      "id": "4a596f40-9fad-4161-b64b-18156ca5d743",
+      "slug": "deep-dive-into-zen",
+      "title": "Deep Dive Into Zen"
+    },
+    {
+      "table": "courses",
+      "id": "51333beb-bb9e-432b-8715-478eb18bb0ae",
+      "slug": "5-day-retreat-december",
+      "title": "5 day retreat (December)"
+    },
+    {
+      "table": "free_resources",
+      "id": "c5ced198-32de-42ec-b6d6-23e273e2e296",
+      "slug": "practice-schedule",
+      "title": "Practice Schedule"
+    },
+    {
+      "table": "free_resources",
+      "id": "b85c3d25-17fa-42fe-888d-a05a8fbd5895",
+      "slug": "zen-thoughts",
+      "title": "Zen Thoughts"
+    }
+  ],
+  "at": "2026-11-11T21:41:12.928Z"
+}

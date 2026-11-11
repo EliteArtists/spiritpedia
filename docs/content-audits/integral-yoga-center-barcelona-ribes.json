@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-center-barcelona-ribes",
+    "location_source": "https://integralyogabarcelona.com/index.php/sample-page/contacto/",
+    "create": {
+      "name": "Integral Yoga Center Barcelona Ribes",
+      "bio": "Integral Yoga Center Barcelona Ribes is a small Integral Yoga studio in Sant Pere de Ribes, a town in the Garraf hills just inland from Sitges, south-west of Barcelona. It teaches the method of Sri Swami Satchidananda, a disciple of Swami Sivananda, which joins hatha yoga, meditation, selfless service and the study of yoga philosophy under the interfaith motto that truth is one and paths are many. Its director since 2001, Kirana Lee Stover, met Satchidananda in 1982, trained as an Integral Yoga teacher at his Virginia ashram in 1993 and has led 200-hour teacher trainings at the centre; a few teachers she trained share the classes.\n\nThe centre has two practice rooms and a garden. Every hatha class follows the Integral Yoga format of opening chants, postures, deep relaxation, breathing and meditation, at levels from beginners to a more demanding second level that adds headstand and kriyas. Thursday evenings bring a raja yoga study group on Patanjali's Yoga Sutras, and the week also includes a meditation session, a sung Hanuman Chalisa and an open sangha hour for self-practice. The house has a long link with kirtan, having hosted chant leaders such as Krishna Das, and it holds devotional concerts and joins local interfaith and community projects.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local",
+      "city": "Sant Pere de Ribes",
+      "country": "Spain",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://integralyogabarcelona.com/",
+      "booking_url": "https://integralyogabarcelona.com/index.php/clases/horarios/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "integralyogabcn@gmail.com",
+      "image_urls": [
+        "https://integralyogabarcelona.com/wp-content/uploads/2018/12/sala-jardin-w-curtains.jpeg",
+        "https://integralyogabarcelona.com/wp-content/uploads/2015/12/entradaIYC_Bcn-940x480.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "\"The World of Integral Yoga\"",
+      "url": "https://www.youtube.com/watch?v=Xpz2QYZRgQg",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Integral Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Clases de Integral Yoga Hatha y Raja Yoga (horario otoño 2026)",
+      "url": "https://integralyogabarcelona.com/index.php/clases/horarios/",
+      "description": "Weekly hatha classes on four days, a Thursday raja yoga study group, and Friday meditation and Tuesday Hanuman Chalisa sessions open to all. Classes are paid singly or with a six- or twelve-class card; the meditation and chanting sessions are by donation.",
+      "price": "Clase suelta 12 €; bono 6 clases 65 €; bono 12 clases 120 €; meditación / chalisa: la voluntad",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://integralyogabarcelona.com/wp-content/uploads/2015/12/IYC-Barcelona-Ribes1.jpg"
+    },
+    {
+      "title": "Clases particulares",
+      "url": "https://integralyogabarcelona.com/index.php/clases/",
+      "description": "Private sessions at an agreed time for students who want a practice shaped around them, following the same Integral Yoga elements of postures, relaxation, breathing and meditation.",
+      "price": "35 € la sesión",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://integralyogabarcelona.com/wp-content/uploads/2015/12/IYC-Barcelona-Ribes1.jpg"
+    },
+    {
+      "title": "Anahata, el sonido del alma (concierto de música devocional)",
+      "url": "https://integralyogabarcelona.com/index.php/proximos-eventos/",
+      "description": "An evening concert at the centre bringing together Indian classical music and devotional bhakti song, with vocalist Dr. Rajnandini, Rohit Mistry on tabla and Santosh Ghante on harmonium. Places are reserved by WhatsApp.",
+      "price": "Aportación: 20 €",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "sound-healing",
+        "spirituality"
+      ],
+      "image": "https://integralyogabarcelona.com/wp-content/uploads/2015/12/IYC-Barcelona-Ribes1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2006,
+    "hub": null,
+    "tier_evidence": "No YouTube channel of its own; Facebook only (not fetched) → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://integralyogabarcelona.com/index.php/proximos-eventos/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from the Integral Yoga Teachers Association's centre directory (iyta.org/directory/centers/): 'Integral Yoga Center of Barcelona Ribes', Kirana Stover. Facts from the centre's own site (robots.txt allows us).",
+      "Email: the contact page shows 'info@ integralyogabcn.com' as link text but the mailto link and the events page both give integralyogabcn@gmail.com; that published Gmail address is used.",
+      "Schedule and prices are read from the hand-drawn autumn 2026 timetable image (5 Oct–4 Dec 2026) on the Horario page.",
+      "The concert item is a devotional music evening rather than a class; subject sound-healing is the nearest fit. Owner may prefer to drop it.",
+      "The Classes page says bodyrolling helps people with back pain, and offers prenatal and mother-and-baby yoga; none of these are listed.",
+      "Video is from the official Integral Yoga channel, linked from the centre's About page; not the centre's own channel.",
+      "Lineage note: Swami Satchidananda (died 2002) faced sexual-misconduct allegations in the 1990s; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Teacher training page shows only a 2015 image; no current training is advertised, so none is listed.",
+      "Possible future listings: Kirana Lee Stover.",
+      "Guests named on the Kirtan page (Krishna Das, Tina Malia, Brenda McMorrow and others) are past visiting musicians, not linked.",
+      "Regional: Sant Pere de Ribes (Garraf, Catalonia); few Spiritpedia listings near Sitges/Vilanova."
+    ],
+    "left_out": [
+      "Formación de profesores: no current dates (2015 image only).",
+      "Bodyrolling, Yoga Prenatal and Yoga Mamá/Bebé: condition or pregnancy framing (back pain, pelvic floor).",
+      "Room hire prices (El centro page): not a teaching offering.",
+      "Sangha y Sadhana open practice hour: on the same /clases/ page as private classes."
+    ]
+  },
+  "images_final": true
+}

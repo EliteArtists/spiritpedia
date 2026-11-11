@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "samadhi-buddhist-vihara",
+    "location_source": "https://samadhibuddhistvihara.org.nz/about/",
+    "create": {
+      "name": "Samadhi Buddhist Vihara",
+      "bio": "Samadhi Buddhist Vihara is a Theravada Buddhist temple at Rolleston, just south-west of Christchurch in Canterbury, New Zealand. It opened in May 2002 under the guidance of Venerable Makuldeniye Somarathana Thero, known as Bhante Soma, who was ordained in Sri Lanka at twelve and remains its chief incumbent. It is the main Sri Lankan Buddhist temple in the South Island and also serves Buddhists in Dunedin and Invercargill, with a trust drawn from both cities that looks after the property.\n\nThe temple's resident monks lead meditation twice a week: an English-language session on Sunday evenings and a Sinhala-language session on Wednesdays, both with Venerable Mapalane Sumanatissa Thero, who also takes meditation questions on weekday evenings. Through the year there are full-moon observance days, Dhamma discussions during the rains retreat, meditation retreats and festivals such as Vesak and the Kathina robe offering, many of them recorded on the temple's YouTube channel. A Dhamma library and a weekly Sri Lankan language and culture school for children complete its work.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 2002,
+      "availability": "local",
+      "city": "Rolleston",
+      "country": "New Zealand",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://samadhibuddhistvihara.org.nz/",
+      "booking_url": "https://samadhibuddhistvihara.org.nz/service/meditation/",
+      "youtube_url": "https://www.youtube.com/channel/UC3gCSWp9a1HwG15OjdFeeYg",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "temple@samadhibuddhistvihara.org.nz",
+      "image_urls": [
+        "https://samadhibuddhistvihara.org.nz/wp-content/uploads/2021/11/about-img.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Saturday Dhamma Sermon - conducted by Venerable Mapalane Sumanatissa Thero on 16th March 2024",
+      "url": "https://www.youtube.com/watch?v=xLJemVTqiW4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "සත්පුරුෂයෝ - Sathpurushayo - Samadhi Buddhist Vihara"
+    },
+    {
+      "title": "Katina Ceremony 2024 - Annual Katina Ceremony, Samadhi Buddhist Vihara Christchurch",
+      "url": "https://www.youtube.com/watch?v=9v2ZcdzDBZc",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "සත්පුරුෂයෝ - Sathpurushayo - Samadhi Buddhist Vihara"
+    },
+    {
+      "title": "Vesak Celebrations 2023 - Samadhi Vihara Christchurch",
+      "url": "https://www.youtube.com/watch?v=0PlS1Y7JC6k",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "සත්පුරුෂයෝ - Sathpurushayo - Samadhi Buddhist Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation sessions",
+      "url": "https://samadhibuddhistvihara.org.nz/service/meditation/",
+      "description": "Weekly insight meditation at the temple with Venerable Mapalane Sumanatissa Thero: an English-language evening on Sundays and a Sinhala-language evening on Wednesdays, with time on weekday evenings for questions about practice.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://samadhibuddhistvihara.org.nz/wp-content/uploads/2021/11/about-img.jpg"
+    },
+    {
+      "title": "All Night Pirith Chanting & Kathina Robe Offering Ceremony 2026",
+      "url": "https://samadhibuddhistvihara.org.nz/all-night-pirith-chanting-kathina-robe-offering-ceremony-2026/",
+      "description": "The temple's annual end-of-rains festival: a night of protective chanting from the evening of 20 November into the next morning, followed on 22 November by the offering of the Kathina robe to the monks.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://samadhibuddhistvihara.org.nz/wp-content/uploads/2026/11/Vas26Poster-English-724x1024.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2061,
+    "hub": null,
+    "tier_evidence": "YouTube 127 subscribers (Sathpurushayo - Samadhi Buddhist Vihara, UC3gCSWp9a1HwG15OjdFeeYg; YouTube Data API, 11 Nov 2026; linked from its own site); Facebook not fetched → ~127 → local_hero",
+    "email": "yes",
+    "email_source": "https://samadhibuddhistvihara.org.nz/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Mainly a Sri Lankan community temple: much of its programme and most videos are in Sinhala or are ceremonies; the Saturday Dhamma sermon video's language is not stated (probably Sinhala). The owner may judge it a weak fit.",
+      "Regional: Rolleston, Selwyn District, near Christchurch, New Zealand.",
+      "Email temple@samadhibuddhistvihara.org.nz is the temple's general inbox (footer).",
+      "Only one photo: the shrine room's Buddha image from the About page. The home-page photo of monks looked like a cut-out banner and was not used.",
+      "The Pirith and Kathina item is dated 20–22 Nov 2026 (after 12 Nov) and is listed as a free event without a start_date field because free resources carry none.",
+      "No hub links: the chief incumbent Ven. Makuldeniye Somarathana and Ven. Mapalane Sumanatissa are not on Spiritpedia. Teachers file written with an empty list.",
+      "Found via the New Zealand Buddhist Council member list (names and links only)."
+    ],
+    "left_out": [
+      "Sri Lankan Language and Cultural School: language and culture classes for children, not spiritual practice.",
+      "Learn Buddhism page: a short text with outside links only.",
+      "Poya sil programmes and monthly programmes: dated, past.",
+      "Short clips under two minutes and Sinhala-titled sermons."
+    ]
+  },
+  "images_final": true
+}
