@@ -1,7 +1,6 @@
 import HealerCard from './HealerCard.js';
 import HeroBillboard from './HeroBillboard.js';
 import ContentShelf from './ContentShelf.js';
-import SchoolCard from './SchoolCard.jsx';
 import PublisherCard from './PublisherCard.jsx';
 import { Tipped } from './ListingBadges.jsx';
 import { TIER_TIPS } from '../utils/badges.js';
@@ -9,6 +8,7 @@ import HomeMasthead from './HomeMasthead.jsx';
 import ExploreMore from './ExploreMore.jsx';
 import HomeTabs from './HomeTabs.jsx';
 import NearYouShelf from './NearYouShelf.jsx';
+import HubNearShelf from './HubNearShelf.jsx';
 import { SITE_URL, DEFAULT_TITLE } from '../utils/seo.js';
 
 // The shared anonymous data client, not a second one built here.
@@ -150,6 +150,22 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
     ? await supabase.from('places').select('id, name, region, country, lat, lng').in('id', nearPlaceIds)
     : { data: [] };
   const nearPlaces = Object.fromEntries((nearPlaceRows || []).map((p) => [p.id, p]));
+  // Schools and organisations are ordered in the browser too, nearest first
+  // once an area is set (components/HubNearShelf.jsx). Their cards need only
+  // these fields, so only these go to the browser, with their towns and
+  // teacher counts.
+  const hubCard = (h) => ({
+    id: h.id, healer_slug: h.healer_slug, name: h.name, image_urls: (h.image_urls || []).slice(0, 1),
+    tier: h.tier, entity_type: h.entity_type, verified: h.verified, official: h.official,
+    founded_year: h.founded_year, place_id: h.place_id,
+  });
+  const hubs = [...schools, ...organisations];
+  const hubPlaceIds = [...new Set(hubs.map((h) => h.place_id).filter(Boolean))];
+  const { data: hubPlaceRows } = hubPlaceIds.length
+    ? await supabase.from('places').select('id, lat, lng').in('id', hubPlaceIds)
+    : { data: [] };
+  const hubPlaces = Object.fromEntries((hubPlaceRows || []).map((p) => [p.id, p]));
+  const hubTeacherCounts = Object.fromEntries(hubs.map((h) => [h.id, teacherCount(h, schoolTeachers)]));
   const nearPortraits = Object.fromEntries(
     localHeroes.map((h) => {
       const seed = h.healer_slug || String(h.id);
@@ -303,27 +319,24 @@ export default async function HomePage({ initialSubjectSlug, initialSearch = '' 
 
           {/* Schools and academies (0029): listings that train and certify
               teachers. Hidden outright when there are none. */}
-          <ContentShelf
+          <HubNearShelf
             title="Schools & Academies"
             subtitle="Train With a School"
-            items={schools}
-            renderItem={(school) => (
-              <SchoolCard school={school} teacherCount={teacherCount(school, schoolTeachers)} />
-            )}
-            itemWidthClass="w-[260px]"
+            items={schools.map(hubCard)}
+            places={hubPlaces}
+            teacherCounts={hubTeacherCounts}
           />
 
           {/* Organisations, once there are 5 or more (utils/listings.js →
               splitOrganisations); empty, and so hidden, below that. No "See
               all" for now. */}
-          <ContentShelf
+          <HubNearShelf
             title="Retreat Centres & Platforms"
             subtitle="Discover Where They Teach"
-            items={organisations}
-            renderItem={(org) => (
-              <SchoolCard school={org} teacherCount={teacherCount(org, schoolTeachers)} kind="Organisation" />
-            )}
-            itemWidthClass="w-[260px]"
+            items={organisations.map(hubCard)}
+            places={hubPlaces}
+            teacherCounts={hubTeacherCounts}
+            kind="Organisation"
           />
 
           {/* Channels, apps and organisations, regardless of tier. Hidden outright when there
