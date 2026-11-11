@@ -48,10 +48,10 @@ test('the links are on www and the claim link names the listing', () => {
   });
 });
 
-test('every kind but individuals waits for its approved wording', () => {
+test('every kind but individuals is switched off, its wording installed', () => {
   for (const kind of ['channel', 'app', 'organisation', 'school', 'publisher']) {
     assert.equal(outreachAllowedFor(kind), false, kind);
-    assert.match(outreachRefusal(kind), /Waiting for the approved wording/);
+    assert.match(outreachRefusal(kind), /^Switched off. The approved wording for .+ is installed/);
   }
   assert.equal(outreachRefusal('individual'), null);
   assert.equal(outreachRefusal(undefined), null);

@@ -1,7 +1,14 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { isSuppressed, sendJourneyEmail } from '@/utils/email';
-import { doNotContactReason, isClaimed, outreachRefusal, recordMessage } from '@/utils/journey';
+import {
+  doNotContactByAddress,
+  doNotContactReason,
+  isClaimed,
+  listingFacts,
+  outreachRefusal,
+  recordMessage,
+} from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,7 +40,7 @@ export async function POST(request) {
         .maybeSingle()
     : await supabase
         .from('healers')
-        .select('name, healer_slug, contact_email, entity_type')
+        .select('id, name, healer_slug, contact_email, entity_type')
         .eq('healer_slug', slug)
         .maybeSingle();
 
@@ -66,7 +73,8 @@ export async function POST(request) {
 
   // Someone who asked us to stop, or asked for removal, or whose address
   // bounced, is never written to again.
-  const doNotContact = await doNotContactReason(supabase, target);
+  const doNotContact =
+    (await doNotContactReason(supabase, target)) || (await doNotContactByAddress(supabase, listing.contact_email));
   if (doNotContact) {
     return NextResponse.json({ error: 'do_not_contact', message: doNotContact }, { status: 409 });
   }
@@ -112,6 +120,13 @@ export async function POST(request) {
     healerSlug: publisherSlug ? listing.slug : listing.healer_slug,
     entityType,
     publisher: Boolean(publisherSlug),
+    // C4 of the shared sequence says only what is on the listing.
+    facts: await listingFacts(supabase, {
+      entityType,
+      healerId: listing.id,
+      healerSlug: listing.healer_slug,
+      publisherId: publisherSlug ? listing.id : null,
+    }),
   });
 
   if (result.suppressed) {

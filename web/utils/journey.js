@@ -3,6 +3,8 @@
 
 import { JOURNEY_EMAILS, JOURNEY_SCHEDULE } from './email.js';
 import { outreachFirstName } from './emailTemplates.js';
+import { booksByAuthorsFilter } from './bookAuthors.js';
+import { isPlatform } from './listings.js';
 
 export const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -38,7 +40,8 @@ export const DO_NOT_CONTACT = {
   suppressed: 'Their address bounced or marked an email as spam.',
 };
 
-// The reason a listing must not be written to again, or null.
+// The reason a listing must not be written to again, or null. By listing;
+// for the same rule by address, see doNotContactByAddress.
 export async function doNotContactReason(supabase, target) {
   const { slug, publisherId } = journeyTarget(target);
   const { data } = await supabase
@@ -52,12 +55,52 @@ export async function doNotContactReason(supabase, target) {
   return reason ? DO_NOT_CONTACT[reason] : null;
 }
 
+// ACROSS JOURNEYS. One inbox can sit behind several listings: a school and
+// its founder, or a publisher and a channel, often publish the same address.
+// Somebody who asked us to stop (or for removal, or whose address bounced)
+// through one of them must not be written to through another. → the reason,
+// or null. Addresses compare case-insensitively.
+export async function doNotContactByAddress(supabase, email) {
+  // ilike for case, with its wildcards escaped: "_" is common in addresses.
+  const address = (email || '').trim().replace(/[\\%_]/g, (c) => `\\${c}`);
+  if (!address) return null;
+  const [{ data: healers }, { data: publishers }] = await Promise.all([
+    supabase.from('healers').select('healer_slug').ilike('contact_email', address),
+    supabase.from('publishers').select('id').ilike('contact_email', address),
+  ]);
+  const slugs = (healers || []).map((h) => h.healer_slug);
+  const ids = (publishers || []).map((p) => p.id);
+  for (const [column, values] of [
+    ['healer_slug', slugs],
+    ['publisher_id', ids],
+  ]) {
+    if (!values.length) continue;
+    const { data } = await supabase
+      .from('healer_journeys')
+      .select('stop_reason')
+      .in(column, values)
+      .eq('status', 'stopped')
+      .in('stop_reason', Object.keys(DO_NOT_CONTACT))
+      .limit(1);
+    const reason = Array.isArray(data) && data[0]?.stop_reason;
+    if (reason) return `${DO_NOT_CONTACT[reason]} (through another listing with the same address)`;
+  }
+  return null;
+}
+
 // WHO THE OUTREACH EMAILS MAY GO TO.
 //
 // Every kind of listing can have a journey (publishers too, owner 11 Nov
-// 2026: healer_journeys.publisher_id, migration 0020), but the approved
-// wording is written for one person. The other kinds stay switched off until
-// the owner sends their approved wording; adding a kind here is the switch.
+// 2026: healer_journeys.publisher_id, migration 0020). Individuals have the
+// practitioner sequence; channels, apps, organisations, schools and
+// publishers have the shared sequence (utils/emailTemplates.js →
+// sharedOutreachEmail), installed 11 Nov 2026 and SWITCHED OFF.
+//
+// THE SWITCH, AND THE ONLY ONE. The owner turns the shared journeys on when
+// the app is in both stores. To do it, add the kinds to this list, e.g.
+//   export const OUTREACH_KINDS_APPROVED = ['individual', 'channel', 'app', 'organisation', 'school', 'publisher'];
+// and deploy. Start buttons, the start route and the daily job all read it;
+// journeys the daily job paused as kind_not_approved are resumed by hand.
 export const OUTREACH_KINDS = ['individual', 'channel', 'app', 'organisation', 'school', 'publisher'];
 export const OUTREACH_KINDS_APPROVED = ['individual'];
 
@@ -65,7 +108,6 @@ export const OUTREACH_KINDS_APPROVED = ['individual'];
 export function outreachKind(entityType) {
   return entityType || 'individual';
 }
-
 
 export function outreachAllowedFor(entityType) {
   return OUTREACH_KINDS_APPROVED.includes(outreachKind(entityType));
@@ -83,7 +125,7 @@ const KIND_WORDS = {
 export function outreachRefusal(entityType) {
   if (outreachAllowedFor(entityType)) return null;
   const words = KIND_WORDS[outreachKind(entityType)] || 'this kind of listing';
-  return `Waiting for the approved wording for ${words}. The outreach emails are written for one person, so journeys for ${words} stay off until the owner sends their wording.`;
+  return `Switched off. The approved wording for ${words} is installed, but journeys for ${words} stay off until the owner turns them on.`;
 }
 
 // What the greeting calls them (utils/emailTemplates.js): a person by their
@@ -210,4 +252,57 @@ export async function messagesFor(supabase, journeyIds) {
   if (error) return { byJourney, ready: !isMissingSchema(error) };
   for (const row of data || []) (byJourney[row.journey_id] ||= []).push(row);
   return { byJourney, ready: true };
+}
+
+// What is actually on a listing, for the shared sequence's C4 sentence
+// (utils/emailTemplates.js → listingDetail). Stored relationships only:
+//   channel                 its videos rows, split by host into videos and
+//                           podcast episodes (every row is YouTube today)
+//   organisation, school    hub_teachers rows with it as the hub
+//   publisher               books by the authors linked to it, the same
+//                           books its own page lists (publisher_healers →
+//                           books.healer_slug / co_healer_slugs; books carry
+//                           no publisher of their own)
+// An app needs nothing: it always has its own sentence. A failed read counts
+// as nothing there, so the email falls back to the general sentence rather
+// than claim something it could not check.
+const EPISODE_HOSTS = /(^|\.)(open\.spotify\.com|podcasts\.apple\.com|podbean\.com|buzzsprout\.com|anchor\.fm|soundcloud\.com|libsyn\.com|simplecast\.com|transistor\.fm|captivate\.fm|megaphone\.fm)$/i;
+
+export function isEpisodeUrl(url) {
+  try {
+    return EPISODE_HOSTS.test(new URL(url).hostname);
+  } catch {
+    return false;
+  }
+}
+
+export async function listingFacts(supabase, { entityType, healerId, healerSlug, publisherId }) {
+  const facts = { videos: 0, episodes: 0, teachers: 0, books: 0 };
+  if (entityType === 'channel' && healerSlug) {
+    const { data } = await supabase.from('videos').select('platform_url').eq('healer_slug', healerSlug);
+    for (const row of data || []) {
+      if (isEpisodeUrl(row.platform_url)) facts.episodes += 1;
+      else facts.videos += 1;
+    }
+  }
+  if ((entityType === 'organisation' || entityType === 'school') && healerId) {
+    const { count } = await supabase
+      .from('hub_teachers')
+      .select('id', { count: 'exact', head: true })
+      .eq('hub_id', healerId);
+    facts.teachers = count || 0;
+  }
+  if (publisherId) {
+    const { data: links } = await supabase
+      .from('publisher_healers')
+      .select('healers (healer_slug, entity_type)')
+      .eq('publisher_id', publisherId);
+    const authors = (links || []).map((row) => row.healers).filter((h) => h && !isPlatform(h));
+    const filter = booksByAuthorsFilter(authors.map((a) => a.healer_slug).filter(Boolean));
+    if (filter) {
+      const { count } = await supabase.from('books').select('id', { count: 'exact', head: true }).or(filter);
+      facts.books = count || 0;
+    }
+  }
+  return facts;
 }

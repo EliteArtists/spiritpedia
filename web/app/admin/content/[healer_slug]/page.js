@@ -1086,6 +1086,8 @@ const STOP_WORDS = {
   replied: 'Replied',
   contacted_via_form: 'Contacted via form',
   stopped_by_admin: 'Stopped by admin',
+  kind_not_approved: 'Its kind is switched off',
+  do_not_contact_address: 'Asked to stop through another listing',
 };
 
 function JourneyHistory({ history, trackingReady, busy, act }) {

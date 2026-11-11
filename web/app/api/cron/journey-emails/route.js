@@ -1,7 +1,15 @@
 import { NextResponse } from 'next/server';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { JOURNEY_EMAILS, sendJourneyEmail } from '@/utils/email';
-import { cronDecision, isClaimed, nextDue, recordMessage, sentAtColumn } from '@/utils/journey';
+import {
+  cronDecision,
+  doNotContactByAddress,
+  isClaimed,
+  listingFacts,
+  nextDue,
+  recordMessage,
+  sentAtColumn,
+} from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -61,7 +69,7 @@ export async function GET(request) {
             .maybeSingle()
         : await supabase
             .from('healers')
-            .select('name, healer_slug, contact_email, entity_type')
+            .select('id, name, healer_slug, contact_email, entity_type')
             .eq('healer_slug', slug)
             .maybeSingle();
 
@@ -95,6 +103,14 @@ export async function GET(request) {
       const due = nextDue(journey);
       if (!due) continue;
 
+      // Asked to stop, or for removal, through another listing that publishes
+      // the same address: that is a request from this inbox too.
+      if (await doNotContactByAddress(supabase, listing.contact_email)) {
+        await stop(supabase, journey.id, 'do_not_contact_address');
+        tally.stopped += 1;
+        continue;
+      }
+
       const column = sentAtColumn(due);
 
       // THE LOCK, AND IT IS THE WRITE ITSELF.
@@ -123,6 +139,11 @@ export async function GET(request) {
         healerSlug: publisherId ? listing.slug : listing.healer_slug,
         entityType,
         publisher: Boolean(publisherId),
+        // C4 of the shared sequence says only what is on the listing today.
+        facts:
+          due === 4
+            ? await listingFacts(supabase, { entityType, healerId: listing.id, healerSlug: slug, publisherId })
+            : undefined,
       });
 
       // On Resend's suppression list: it bounced or they complained. Never

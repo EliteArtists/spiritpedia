@@ -98,14 +98,48 @@ the same greeting rule.
   practitioner and back to the listing after the code. An account whose email
   matches the listing claims it at once (D7); any other is offered "ask us to
   check and link it to your account".
-- **Individuals only.** Channels, apps, publishers and organisations are
-  refused until they have their own wording.
+- **Individuals only, for now.** Channels, apps, organisations, schools and
+  publishers have their own sequence installed (below), switched off.
 - **Stops** when the listing is claimed, removed, or loses its contact email;
   when Resend lists the address as bounced or complained (checked before every
-  email; `suppressed`); after email 8; or when the admin presses Stop.
+  email; `suppressed`), or reports a permanent bounce through its webhook
+  (`/api/email/resend-webhook`, migration 0044); when the admin marks a reply
+  (`replied`); after email 8; or when the admin presses Stop.
 - **Never again:** a journey stopped as "Asked to stop emails"
   (`asked_to_stop`), "Asked for removal" (`removal_requested`) or `suppressed`
-  blocks any new journey to that listing.
+  blocks any new journey to that listing, and to any other listing that
+  publishes the same address (`do_not_contact_address`).
+- **Paused** by the daily job (`kind_not_approved`) if a listing's kind is
+  changed to one that is switched off; resumed by hand.
+
+## Shared outreach journey (C1–C8 for channels, apps, organisations, schools and publishers)
+
+- **Wording:** `docs/email-copy-2026-11-11-shared-journey.md`, unchanged except
+  "Claim your listing:" wherever it has "Claim your profile:" (owner, 11 Nov
+  2026). In `web/utils/emailTemplates.js` → `sharedOutreachEmail`; the
+  practitioner sequence is chosen for individuals and this one for every other
+  kind (`web/utils/email.js` → `journeyTemplate`).
+- **Same rules as the practitioner journey:** the same days, sender, plain
+  text, sign-off, stops and suppression. Greeting always "Hello,".
+- **[listing kind]:** channel, app, organisation, school, or "publishing house".
+- **[listing detail], C4 only,** from what is stored (`web/utils/journey.js` →
+  `listingFacts`): a channel's videos (podcast-host links count as episodes;
+  every video is YouTube today); an organisation's or school's `hub_teachers`
+  rows; a publisher's books, as its own page lists them (books by the authors
+  linked to it in `publisher_healers`; books have no publisher column). With
+  none, the doc's fallback sentence. An app always has its own sentence.
+- **Links:** `/healers/{slug}` and `/auth/claim?slug={slug}`; a publisher's
+  `/publishers/{slug}` and `/auth/claim?slug={slug}&kind=publisher`.
+- **SWITCHED OFF.** Installing it started nothing. The switch is the one list
+  `OUTREACH_KINDS_APPROVED` in `web/utils/journey.js`: today `['individual']`;
+  the owner turns the shared journeys on (when the app is in both stores) by
+  adding `'channel', 'app', 'organisation', 'school', 'publisher'` and
+  deploying. Until then Start is refused with "Switched off. The approved
+  wording for … is installed, but journeys for … stay off until the owner
+  turns them on."
+- **Preview:** `node scripts/shared-journey-preview.mjs` writes all 40, for a
+  real listing of each kind, to `docs/reports/<date>-shared-journey-preview.md`
+  (read only; sends nothing).
 - **JOURNEY_TEST_EMAIL:** while set (it is set on Vercel for Production and
   Preview), every journey email goes to that test inbox instead of the
   practitioner. It stays set until the solicitor has checked cold email.

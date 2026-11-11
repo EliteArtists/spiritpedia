@@ -47,7 +47,8 @@ const STOP_REASONS = {
   replied: 'Replied',
   contacted_via_form: 'Contacted via form',
   stopped_by_admin: 'Stopped by admin',
-  kind_not_approved: 'Waiting for approved wording for its kind',
+  kind_not_approved: 'Its kind is switched off',
+  do_not_contact_address: 'Asked to stop through another listing',
 };
 
 function day(value) {
@@ -233,8 +234,9 @@ export default function AdminOutreachPage() {
       </SectionHeading>
 
       <p className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4 text-xs leading-relaxed text-slate-400">
-        Journeys are started from a listing&apos;s Outreach tab. Only individuals can be started for now: channels, apps,
-        organisations, schools and publishers wait for the approved wording for their kind. Delivered and bounced come
+        Journeys are started from a listing&apos;s Outreach tab. Only individuals can be started for now: the wording for channels, apps,
+        organisations, schools and publishers is installed, and those journeys stay switched off until the owner turns
+        them on. Delivered and bounced come
         from Resend; opens and clicks are not tracked.
       </p>
 
