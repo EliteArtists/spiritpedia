@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1222,
+    "healer_slug": "mysore-room"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8e4b9bdb-f6fc-4652-b6f6-6270cec41f1e",
+      "slug": "mysore-room-memberships-and-class-passes",
+      "title": "Mysore Room memberships and class passes"
+    },
+    {
+      "table": "courses",
+      "id": "e6dab011-0306-4c84-b374-46c5313b6aa0",
+      "slug": "david-robson-jelena-vesic-3-day-ashtanga-workshop-in-kl",
+      "title": "David Robson & Jelena Vesic: 3 day Ashtanga Workshop in KL"
+    },
+    {
+      "table": "courses",
+      "id": "21758a91-c939-4760-988a-03289940811c",
+      "slug": "introduction-to-ashtanga-yoga-weekend",
+      "title": "Introduction to Ashtanga Yoga weekend"
+    },
+    {
+      "table": "courses",
+      "id": "6b976d0f-c688-4cb3-ba54-1bcc26b2653e",
+      "slug": "kino-macgregor-tim-feldmann-4-day-ashtanga-workshop-in-kl",
+      "title": "Kino MacGregor & Tim Feldmann: 4 day Ashtanga Workshop in KL"
+    }
+  ],
+  "at": "2026-11-11T11:39:48.237Z"
+}

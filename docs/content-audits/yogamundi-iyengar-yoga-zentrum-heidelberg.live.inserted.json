@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1289,
+    "healer_slug": "yogamundi-iyengar-yoga-zentrum-heidelberg"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e1a74d2a-2dc9-4fc0-96fa-61324e10256d",
+      "slug": "iyengar-yoga-classes-for-all-levels",
+      "title": "Iyengar yoga classes for all levels"
+    },
+    {
+      "table": "courses",
+      "id": "7729d228-98c4-4f4b-a85b-91b7d8cbb590",
+      "slug": "special-guest-workshop-with-anjali-ratnaparkhe-pune",
+      "title": "Special Guest Workshop with Anjali Ratnaparkhe (Pune)"
+    },
+    {
+      "table": "courses",
+      "id": "c4672dbb-5d40-47af-8a94-cc590669a9f0",
+      "slug": "iyengar-yoga-teacher-training-and-mentoring",
+      "title": "Iyengar yoga teacher training and mentoring"
+    }
+  ],
+  "at": "2026-11-11T11:44:04.033Z"
+}

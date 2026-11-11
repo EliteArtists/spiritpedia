@@ -1,0 +1,27 @@
+{
+  "env": "live",
+  "hub": "bodhi-college",
+  "rows": [
+    {
+      "id": "eb9b7cd1-00ee-45cb-9b4c-295c02e153b4",
+      "teacher": "Stephen Batchelor",
+      "role": "founder"
+    },
+    {
+      "id": "7568f9fe-b2cc-4ddf-a695-e21bfe081d9c",
+      "teacher": "Akincano Marc Weber",
+      "role": "founder"
+    },
+    {
+      "id": "577a2d98-936e-454a-8e19-2024c286de7e",
+      "teacher": "Martine Batchelor",
+      "role": "instructor"
+    },
+    {
+      "id": "3f63d9c8-5669-4763-b4d9-c223d73bd9b5",
+      "teacher": "Bernat Font",
+      "role": "instructor"
+    }
+  ],
+  "at": "2026-11-11T11:35:20.606Z"
+}

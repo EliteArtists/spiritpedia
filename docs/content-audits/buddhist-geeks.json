@@ -1,0 +1,168 @@
+{
+  "healer": {
+    "healer_slug": "buddhist-geeks",
+    "location_source": null,
+    "no_public_base": "Neither buddhistgeeks.org nor the channel description publishes a city; the YouTube Data API gives only the country (US), so no base is recorded.",
+    "create": {
+      "name": "Buddhist Geeks",
+      "bio": "Buddhist Geeks is a long-running dharma channel and publication presented by Vince Fakhoury Horn under the motto \"Evolving Dharma\". Its YouTube channel opened in March 2012 and now holds more than 350 videos, and the same work appears as a newsletter and podcast on buddhistgeeks.org. The recent material is mostly practical meditation teaching from a pragmatic, experimental angle: the stages of jhāna and access concentration, kasina practice with fire and breath, metta and compassion, equanimity, and how to give a dharma talk.\n\nAlongside these short teachings, the channel keeps a run of longer conversations in which Western teachers look back on the people who trained them, such as Sharon Salzberg remembering Dipa Ma, Trudy Goodman on Kōbun Chino Otogawa and Leigh Brasington on Ayya Khema. Earlier interviews feature teachers including Judith Blackstone on embodied nondual realisation. Formats range from guided sessions and five-minute explainers to hour-long dialogues, and it suits meditators who like to ask how classical Buddhist practice works in a modern, networked life.",
+      "tier": "local_hero",
+      "entity_type": "channel",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://www.buddhistgeeks.org/",
+      "booking_url": null,
+      "youtube_url": "https://www.youtube.com/@buddhistgeeks",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_n0LB8ewH50P5UDwMUrL56bJmXEJoS4E3yCikfn3qainww=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What is Access Concentration?",
+      "url": "https://www.youtube.com/watch?v=KctjGQCkIgE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Embodying Nondual Awakening",
+      "url": "https://www.youtube.com/watch?v=rykpsQx2-IY",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Sharon Salzberg on Dipa Ma",
+      "url": "https://www.youtube.com/watch?v=kV2bKxziuIE",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Trudy Goodman on Kōbun Chino Otogawa",
+      "url": "https://www.youtube.com/watch?v=IwIER8tzFGg",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "The 9th Jhāna",
+      "url": "https://www.youtube.com/watch?v=Yhe5RpMFDLo",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Leigh Brasington on Ayya Khema",
+      "url": "https://www.youtube.com/watch?v=iVPmNSMx_q4",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Focusing on the Fire Kasina",
+      "url": "https://www.youtube.com/watch?v=52FNpEA-hzo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Shamatha Jhāna 101",
+      "url": "https://www.youtube.com/watch?v=rKSuw7mClC0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "The Flavors of Jhāna",
+      "url": "https://www.youtube.com/watch?v=jMj-2OJZkL8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Three Ways to Prepare a Dharma Talk",
+      "url": "https://www.youtube.com/watch?v=ogrzCNEnx-k",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Equanimity Includes Everything",
+      "url": "https://www.youtube.com/watch?v=Zr1npTWe6yk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Geeks"
+    },
+    {
+      "title": "Touching into the Qualities of Compassion & Joy",
+      "url": "https://www.youtube.com/watch?v=Qlvlm5L71rE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Buddhist Geeks"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1701,
+    "hub": null,
+    "held": "No contact route on buddhistgeeks.org (owner's condition, 11 Nov 2026): the home, /about and /podcast pages (Substack custom domain, robots.txt allows us) publish no email address and have no contact form, only Substack subscribe and sign-in links onto substack.com, which were not followed. One web search found no published address on the domain either. The plan is otherwise complete.",
+    "tier_evidence": "YouTube 6,910 subscribers (YouTube Data API, 11 Nov 2026); buddhistgeeks.org shows \"Over 9,000 subscribers\" to the newsletter (/podcast page, 11 Nov 2026), which is a mailing list, not counted; Instagram/Facebook/X not fetched → ~6.9k total → local_hero",
+    "email": "none",
+    "email_source": null,
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Held: no published email or contact form on buddhistgeeks.org (the owner's condition); see sprint.held.",
+      "Political content on the channel and site: left out the uploads \"Dharma & Empire\", \"Trump as Imperial Policy Returned\", \"How Empire Occupies the Psyche\", \"Is the Insight Tradition Complicit in Genocide?\", \"TPOT, Palestine, & True Bodhisattvahood\", \"The Cost of Silence\" and \"Working Class Dharma\"; the site's sitemap also lists posts such as \"The Palestine Test\", \"Mindful Zionism\", \"Real Progressive Dharma\" and \"Dharma and Empire\". The bulk is still meditation teaching, but the political thread is recurrent in 2025-26: owner to judge whether this passes the no-political-centred rule.",
+      "buddhistgeeks.org is a Substack publication; only pages on the custom domain were read (home, /about, /podcast, /sitemap.xml). No substack.com page or link was opened.",
+      "Presenter named only as the copyright holder \"Vince Fakhoury Horn\" on buddhistgeeks.org; he is not on Spiritpedia (dev names file checked for Horn).",
+      "Our teachers interviewed on the channel: judith-blackstone, sharon-salzberg, trudy-goodman (Sharon Salzberg and Trudy Goodman videos included); Ramona Lisa Ortiz-Smith's video is also included.",
+      "Photo is the channel's logo avatar (cartoon head with glasses), not a person.",
+      "No offerings or free resources: the site's about page says full archive access needs a subscription, and no item with its own clearly free URL could be confirmed without JavaScript; videos only (12)."
+    ],
+    "left_out": [
+      "Political uploads (see flags) and all #shorts.",
+      "Recent short uploads under ~2 minutes (jhāna clips, \"Story\" and it's Gone, What is Awareness in the 2nd Person?).",
+      "Newsletter archive and podcast page as free resources: paid/free status not confirmable from the page text.",
+      "Base city: not published."
+    ]
+  }
+}

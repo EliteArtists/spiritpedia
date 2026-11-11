@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1199,
+    "healer_slug": "helsingin-astanga-joogakoulu"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7cb69c94-bab0-4d58-9d9f-85e82f745b98",
+      "slug": "winter-city-retreat-with-petri-and-juha",
+      "title": "Winter City Retreat with Petri and Juha"
+    },
+    {
+      "table": "courses",
+      "id": "7315c9b3-c87e-4194-84e5-f640cee29d4e",
+      "slug": "ashtanga-yoga-summer-retreat-on-houtskar",
+      "title": "Ashtanga Yoga Summer Retreat on Houtskär"
+    }
+  ],
+  "at": "2026-11-11T11:38:10.754Z"
+}

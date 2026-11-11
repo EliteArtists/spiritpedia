@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1150,
+    "healer_slug": "bandha-works"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0f9e2b35-ffd3-4979-be66-960688b69e15",
+      "slug": "astanga-mysore-program-passes",
+      "title": "Astanga Mysore-program passes"
+    },
+    {
+      "table": "courses",
+      "id": "78e6c8dd-56bb-40b5-9eaa-327e057b7dad",
+      "slug": "astanga-kezdo-tanfolyam-ashtanga-beginners-course",
+      "title": "Astanga Kezdő Tanfolyam (Ashtanga beginners' course)"
+    },
+    {
+      "table": "courses",
+      "id": "f8bddbed-0006-44b9-a86c-3aa100cc8cd8",
+      "slug": "astanga-mysore-kurzus",
+      "title": "Astanga Mysore-kurzus"
+    },
+    {
+      "table": "free_resources",
+      "id": "339c9e46-5b55-49d9-8461-2ffec0a2c322",
+      "slug": "letoltesek-series-charts-and-recordings",
+      "title": "Letöltések (series charts and recordings)"
+    },
+    {
+      "table": "free_resources",
+      "id": "d3c194e6-9709-4873-b350-9a4e3af108b8",
+      "slug": "mantrak",
+      "title": "Mantrák"
+    }
+  ],
+  "at": "2026-11-11T11:34:46.570Z"
+}

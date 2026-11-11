@@ -462,3 +462,11 @@ Channels that host 2 or more of our teachers (`docs/content-audits/channels-spri
 **Owner, 10 Nov 2026:** never decode protected or obfuscated emails (Cloudflare email protection, script-built addresses), ever: use the contact form, or hold the plan. Find a site's real domain directly (a search result or a page naming it), never through a Squarespace preview address.
 
 - **robots.txt in its own command** (10 Nov 2026): read it, decide from what it says, and only then make any other request to that host, even a HEAD request to see whether it resolves. Never combine a robots.txt read with another request in one command (a helper once sent a HEAD request alongside a robots.txt that blocked us). If https fails, do not fall back to plain http: treat the site as unreachable.
+
+## Owner's rules of 11 Nov 2026
+
+- **Contact:** a listing whose only email is Cloudflare-protected (or otherwise obfuscated) and that has no contact form is out: a skip file, not a held plan. A phone number or postal address alone fails the contact rule.
+- **Item URLs:** never make up a #fragment (or any other URL part) to keep two items apart. If two items would share one page URL, keep one and note the other in `left_out`. (A proper way to keep such items unique is proposed in `docs/reports/2026-11-11-sprint-decisions-admin-routine.md`.)
+- **Links:** only teachers the hub names as teaching there. Guest speakers, visiting teachers and people named as a "guide" or patron are not linked; flag them.
+- **Recording artists** who teach (sound healing, for example) may be listed when they teach classes, courses or retreats of their own.
+- **Queue order:** YouTube channels through the Data API and lineage or association centre lists (yoga, Buddhist, Vedanta, Sufi networks) come first; they yield best. Quantum-Touch (rank 361 on), Omega's "unsure" names and Sounds True are parked (README §18.7).

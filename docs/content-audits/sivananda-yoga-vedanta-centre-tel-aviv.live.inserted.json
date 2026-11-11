@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1252,
+    "healer_slug": "sivananda-yoga-vedanta-centre-tel-aviv"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "23b3dfe0-6ea6-4112-b546-5b087823f60f",
+      "slug": "unlimited-monthly-pass",
+      "title": "חפשי ללא הגבלה לחודש (unlimited monthly pass)"
+    },
+    {
+      "table": "courses",
+      "id": "a3f25046-0fd3-48fc-a226-f64ba6e057ff",
+      "slug": "1",
+      "title": "יוגה 1 – מבוא לשיבננדה יוגה"
+    },
+    {
+      "table": "courses",
+      "id": "f6fa149e-21a0-426d-8157-f7931d4cce74",
+      "slug": "2026",
+      "title": "ריטריט עירוני נובמבר 2026 עם רוקמיני צ׳יטניה"
+    }
+  ],
+  "at": "2026-11-11T11:41:36.658Z"
+}

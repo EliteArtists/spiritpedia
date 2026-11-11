@@ -123,7 +123,8 @@
       "subjects": [
         "spirituality",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://yt3.ggpht.com/-_ynCaT4HgRhDl_H7I-ycMADMubuLI_vPr6GjShRtm5mvq4o0_BVexhH9rOWOw2WT9QJQcyGGg=s800-c-k-c0x00ffffff-no-rj"
     },
     {
       "title": "Swami Vivekananda's speeches at the Parliament of Religions, Chicago 1893",
@@ -134,7 +135,8 @@
       "subjects": [
         "ancient-wisdom",
         "non-duality"
-      ]
+      ],
+      "image": "https://yt3.ggpht.com/-_ynCaT4HgRhDl_H7I-ycMADMubuLI_vPr6GjShRtm5mvq4o0_BVexhH9rOWOw2WT9QJQcyGGg=s800-c-k-c0x00ffffff-no-rj"
     }
   ],
   "sprint": {
@@ -154,12 +156,13 @@
       "Video titles are Bengali, kept as published; the channel is mostly festival coverage and short darshan clips, so only recorded talks were chosen.",
       "Branches already on Spiritpedia: Vedanta Society of Southern California and Vedanta Society of New York (Ramakrishna Order centres); Swami Sarvapriyananda belongs to the order but the pages read don't name him, so the teachers file is empty.",
       "No offerings: the headquarters doesn't sell courses or retreats; guest-house stays are by email only.",
-      "Item count: 10 videos and 2 free resources; no paid items."
+      "Item count: 10 videos and 2 free resources; no paid items.",
+      "Owner (11 Nov 2026): use the Belur Math YouTube avatar (read through the Data API) as the photo. belurmath.org asks for Crawl-delay 600, so images_final is set and the two free resources use the same avatar; no belurmath.org page is fetched by the ingest."
     ],
     "left_out": [
       "Puja livestreams, darshan clips, inaugurations, a government 'drug-free youth' pledge clip (health/political) and cultural performances.",
       "Books: the order's publications were not checked for ISBNs."
-    ],
-    "held": "Held by Claude (10 Nov 2026): belurmath.org asks for Crawl-delay 600, so the ingest's image check never finished (dry run stopped after 36 minutes); only one image (the emblem). Owner to decide: insert with a YouTube-avatar photo instead, or leave out."
-  }
+    ]
+  },
+  "images_final": true
 }

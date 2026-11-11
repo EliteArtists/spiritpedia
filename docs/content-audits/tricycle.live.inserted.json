@@ -1,0 +1,88 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1273,
+    "healer_slug": "tricycle"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9459,
+      "slug": "thich-nhat-hanh-poet-author-scholar",
+      "title": "Thich Nhat Hanh: Poet, Author, Scholar"
+    },
+    {
+      "table": "videos",
+      "id": 9460,
+      "slug": "deepen-your-faith-a-workshop-with-sharon-salzberg",
+      "title": "Deepen Your Faith: A Workshop with Sharon Salzberg"
+    },
+    {
+      "table": "videos",
+      "id": 9461,
+      "slug": "preparing-for-death-and-dying-naming-fears-finding-peace-with-sallie-jiko-tisdale",
+      "title": "Preparing for Death and Dying: Naming Fears, Finding Peace with Sallie Jiko Tisdale"
+    },
+    {
+      "table": "videos",
+      "id": 9462,
+      "slug": "thoughts-without-a-thinker-with-mark-epstein",
+      "title": "Thoughts without a Thinker with Mark Epstein"
+    },
+    {
+      "table": "courses",
+      "id": "4e0e3dd0-dee5-460f-b2c6-319e3aa561d0",
+      "slug": "effortless-mindfulness",
+      "title": "Effortless Mindfulness"
+    },
+    {
+      "table": "courses",
+      "id": "da93b260-afbe-40a0-9992-6f8c382023ec",
+      "slug": "meeting-the-five-hindrances",
+      "title": "Meeting the Five Hindrances"
+    },
+    {
+      "table": "courses",
+      "id": "52fe9c88-2f3b-45c6-94d7-27953cc904d3",
+      "slug": "demystifying-nirvana",
+      "title": "Demystifying Nirvana"
+    },
+    {
+      "table": "courses",
+      "id": "74e1467d-d2d9-41cf-81ee-8c1188977693",
+      "slug": "dependent-arising",
+      "title": "Dependent Arising"
+    },
+    {
+      "table": "courses",
+      "id": "63ddeaa6-2a4c-4594-bb47-a360e37f3cd7",
+      "slug": "dream-yoga-2",
+      "title": "Dream Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "f0d707e8-bbf5-49b1-964c-8f6ef6d55a51",
+      "slug": "tricycle-membership",
+      "title": "Tricycle membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "0b93adfa-8e6c-4a37-bd18-18b640eee06c",
+      "slug": "tricycle-talks-podcast",
+      "title": "Tricycle Talks podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "2620bab2-23d1-4730-b235-74cef5b4de68",
+      "slug": "buddhism-for-beginners",
+      "title": "Buddhism for Beginners"
+    },
+    {
+      "table": "free_resources",
+      "id": "3def3862-6265-4ace-b6e6-a41fe27996f3",
+      "slug": "daily-dharma-and-newsletters",
+      "title": "Daily Dharma and newsletters"
+    }
+  ],
+  "at": "2026-11-11T11:42:59.615Z"
+}

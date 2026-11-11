@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1248,
+    "healer_slug": "sheffield-iyengar-yoga-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "297fa680-31a5-4823-ae7c-68ec7603aee1",
+      "slug": "new-starter-returner-course",
+      "title": "New Starter/ Returner Course"
+    },
+    {
+      "table": "courses",
+      "id": "171e8493-ec7b-433f-9cef-0f2b241b35be",
+      "slug": "weekly-iyengar-classes-block-booking",
+      "title": "Weekly Iyengar classes (block booking)"
+    },
+    {
+      "table": "courses",
+      "id": "f28b93a4-4c40-4660-995a-46973c37cb05",
+      "slug": "introduction-to-pranayama-with-emma-rattenbury",
+      "title": "Introduction to Pranayama with Emma Rattenbury"
+    },
+    {
+      "table": "courses",
+      "id": "c387e982-310d-4eee-b274-8402762b1e83",
+      "slug": "new-year-online-workshops-with-edgar-stringer",
+      "title": "New Year, Online Workshops with Edgar Stringer"
+    }
+  ],
+  "at": "2026-11-11T11:41:25.483Z"
+}

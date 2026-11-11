@@ -1,0 +1,104 @@
+{
+  "healer": {
+    "healer_slug": "barbara-suss",
+    "location_source": "https://mysorevienna.com/classes/",
+    "create": {
+      "name": "Barbara Süss",
+      "bio": "Barbara Süss is an Ashtanga yoga teacher in Vienna who runs Mysore Vienna, a small shala she opened in October 2016. She came to yoga in 2000, during her pregnancy with her son, and first travelled to India for Ashtanga in 2007, where her earliest teachers were Rolf Naujokat and Marci. Years of study in Mysore followed, and in 2016 Sharath Jois authorised her to teach; she counts him as her teacher until his death in November 2024. She has also spent four years studying Buddhist psychology and meditation.\n\nShe teaches alone, on purpose, so that she comes to know each student's practice over time. The heart of the week is self-paced Mysore practice on Monday, Wednesday and Friday mornings in a courtyard room in Vienna's 18th district, with two guided Active Series classes, one of them near the Opera, and occasional Saturday morning introductions for people who have never tried Ashtanga. Visiting practitioners can drop in after writing first. She presents the method as more than postures, bringing in the yamas and niyamas, attention and self-inquiry, and she also accepts invitations to lead workshops, led classes and short practice periods for studios elsewhere, teaching in German, English or Spanish.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Vienna",
+      "country": "Austria",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://mysorevienna.com/",
+      "booking_url": "https://mysorevienna.com/classes/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "shala@mysorevienna.com",
+      "image_urls": [
+        "https://mysorevienna.com/wp-content/uploads/2026/10/Babsi-Suess_Yoga-Portraits_02_HD_BW-1024x640.jpg",
+        "https://mysorevienna.com/wp-content/uploads/2026/10/Biographie-Foto-2-1024x683.jpg",
+        "https://mysorevienna.com/wp-content/uploads/2026/10/Babsi-Suess_Yoga-Portraits_14_HD_BW-1536x1022.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore Style Ashtanga Classes in Vienna",
+      "url": "https://mysorevienna.com/classes/",
+      "description": "Self-paced Ashtanga practice on Monday, Wednesday and Friday mornings, arriving any time between seven and nine, with individual guidance from Barbara. Monthly passes and single visits are available, and visitors to Vienna are welcome after writing ahead.",
+      "price": "€ 150 per month (unlimited Mysore); € 120 (Mysore 8× per month); € 80 (Mysore 4× per month); € 25 drop-in",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://mysorevienna.com/wp-content/uploads/2025/01/Yoga-Kalsse-Barbara-Suess.jpg"
+    },
+    {
+      "title": "Workshops and Guest Teaching",
+      "url": "https://mysorevienna.com/teaching-beyond-vienna/",
+      "description": "Barbara travels to studios to give introductions to Ashtanga, workshops, led Primary Series, Mysore mornings, Active Series or a few days of shared practice. Each visit is shaped with the host around its students, in German, English or Spanish.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://mysorevienna.com/wp-content/uploads/2025/07/Herabschauender-Hund.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Practice: Learning Slowly",
+      "url": "https://mysorevienna.com/practice/",
+      "description": "A free bilingual guide on the shala's site explaining what yoga is about beyond the postures, why Ashtanga is repetitive by design, what happens in a self-paced Mysore class and how students take on the sequence a little at a time.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://mysorevienna.com/wp-content/uploads/2026/10/20759D55-EF2C-453B-8CCB-926462935F9B-1024x683.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "individual",
+    "rank": 1702,
+    "hub": null,
+    "tier_evidence": "No social accounts are linked from mysorevienna.com and none were fetched (Instagram/Facebook never fetched); no YouTube channel found → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://mysorevienna.com/",
+    "contact_form_url": "https://mysorevienna.com/contact/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Tier: no follower counts readable (no linked accounts), so local_hero by default.",
+      "Regional: Vienna, Austria.",
+      "Email shala@mysorevienna.com is the shala's inbox (her one-teacher studio), published in the header of every page.",
+      "Thin-ish: 3 items (2 offerings, 1 free resource); no videos or books found on her site.",
+      "Earlier skip as a school (skipped/mysore-vienna.json); the owner approved her as an individual on 11 Nov 2026. If Mysore Vienna is ever listed as a school, this would duplicate it.",
+      "Photos are from her own site: two black-and-white studio portraits (file names 'Babsi-Suess_Yoga-Portraits') and the about-page photo captioned as her in front of the shala in Mysore; all show the same woman."
+    ],
+    "left_out": [
+      "Active Series 10× card (€ 230) and Wednesday/Thursday Active Series: on the same /classes/ page as the Mysore passes, so not given a separate item (no made-up #fragments).",
+      "Saturday introductions on 28.11 and 12.12 (9–12, € 60): same /classes/ page (reservation only via the contact form), so left out as a separate item.",
+      "German-language duplicate pages (/kurse-und-workshops-in-wien/, /die-praxis-von-ashtanga-yoga/ and others): same content as the English pages.",
+      "/die-geschichte-von-ashtanga-yoga/: says sweating removes toxins (health claim), so not used as a free resource.",
+      "/vorteile-von-ashtanga-yoga/ ('benefits'): not opened; likely benefit/health framing."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1253,
+    "healer_slug": "sivananda-yoga-vedanta-centre-thiruvananthapuram"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "de789a0a-2b3d-4db2-9266-99aa1e040b15",
+      "slug": "beginners-course",
+      "title": "Beginners’ Course"
+    },
+    {
+      "table": "courses",
+      "id": "052f93b1-aae3-4eef-ae4e-f2cb34655736",
+      "slug": "weekend-beginners-course",
+      "title": "Weekend Beginners’ Course"
+    },
+    {
+      "table": "courses",
+      "id": "1bc2672f-9aa5-4151-a8ab-b6d2221766b0",
+      "slug": "meditation-course",
+      "title": "Meditation Course"
+    },
+    {
+      "table": "courses",
+      "id": "db8d055d-8554-403e-aa3c-b7679e348887",
+      "slug": "open-class-one-month-validity",
+      "title": "Open Class – One Month Validity"
+    },
+    {
+      "table": "free_resources",
+      "id": "3a614e11-33f2-436d-942e-d2cc30164e40",
+      "slug": "free-trial-yoga-class",
+      "title": "Free Trial Yoga Class"
+    }
+  ],
+  "at": "2026-11-11T11:41:38.336Z"
+}

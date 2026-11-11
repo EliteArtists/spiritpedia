@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1165,
+    "healer_slug": "centre-de-yoga-iyengar-de-clermont-ferrand"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "14c38c83-5bd6-4e9b-acd8-708304e8f4c7",
+      "slug": "atelier-niveau-avance-novembre-2026",
+      "title": "Atelier Niveau avancé – Novembre 2026"
+    },
+    {
+      "table": "courses",
+      "id": "2718fc97-cad5-4b46-9afe-d7c44be281d4",
+      "slug": "atelier-niveau-intermediaire-novembre-2026",
+      "title": "Atelier niveau intermédiaire – Novembre 2026"
+    },
+    {
+      "table": "courses",
+      "id": "e3741292-849e-4f07-ad9b-65849cb5561b",
+      "slug": "atelier-niveau-avance-decembre-2026",
+      "title": "Atelier Niveau avancé – Décembre 2026"
+    },
+    {
+      "table": "courses",
+      "id": "605aa0a9-b346-49a4-a13d-e720c55eac9c",
+      "slug": "atelier-niveau-intermediaire-decembre-2026",
+      "title": "Atelier niveau intermédiaire – Décembre 2026"
+    }
+  ],
+  "at": "2026-11-11T11:35:55.264Z"
+}

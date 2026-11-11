@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "megan-riley",
+    "location_source": "https://aycutrecht.com/",
+    "create": {
+      "name": "Megan Riley",
+      "bio": "Megan Riley teaches traditional Mysore-style Ashtanga yoga in Utrecht, where she runs Ashtanga Yoga Center Utrecht. She first took up Ashtanga in the United States while beginning a career in higher education, partly as a way to bring her philosophy reading into lived practice. That led her to a first teacher and then to Mysore in India, and in time she left university teaching for the practice room. After years of study there she was given Certification by R. Sharath Jois, and she has assisted in his teaching room, taught at Jois Shala in the US and ran her own Mysore programme in Connecticut before moving to the Netherlands.\n\nHer weekday mornings are self-paced Mysore practice in a room inside the Yoga Moves Fly building, a short walk from Utrecht Central station, where beginners and long-standing students work through the sequence at their own pace with individual help. On Saturdays she leads the Primary Series as a counted class at a second location, and from time to time she offers a one-hour introduction for complete newcomers. The shala keeps the tradition's rest days on Sundays and on new and full moons. In her teaching she asks students to meet themselves as they are each day while noticing long-held habits of body and mind.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Utrecht",
+      "country": "Netherlands",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "website_url": "https://aycutrecht.com/",
+      "booking_url": "https://aycutrecht.com/schedule/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "yoga.megan@gmail.com",
+      "image_urls": [
+        "https://aycutrecht.com/wp-content/uploads/2017/05/image1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mysore Class Passes",
+      "url": "https://aycutrecht.com/rates/",
+      "description": "Passes for the weekday Mysore room in Utrecht, which also cover the Saturday led class. Options run from a single class to monthly unlimited practice, with a lower rate for full-time students and an introductory month for newcomers.",
+      "price": "Unlimited pass/30 days – €135; 8 class pass/30 days – €99; 10 class pass/90 days – €150; Single class – €20; Unlimited pass for full-time enrolled students/30 days – €80; New students: 1 month unlimited mornings for €80",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aycutrecht.com/wp-content/uploads/2017/05/image1.jpg"
+    },
+    {
+      "title": "Daily Mysore Programme and Saturday Led Primary",
+      "url": "https://aycutrecht.com/schedule/",
+      "description": "Self-paced Mysore practice from Monday to Friday between six and quarter to nine in the morning, open to complete beginners, plus a counted Primary Series class on Saturdays for students who already know part of the sequence. Bookings go through the schedule page; walk-ins are also accepted.",
+      "price": "Single class – €20",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aycutrecht.com/wp-content/uploads/2013/08/about-supta-vajrasana1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How Do I Get Started?",
+      "url": "https://aycutrecht.com/how-do-i-get-started/",
+      "description": "A short free guide for newcomers explaining how a Mysore morning works when there is no fixed start time, how passes are activated and why no previous yoga experience is needed.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aycutrecht.com/wp-content/uploads/2013/08/about-supta-vajrasana1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "individual",
+    "rank": 1703,
+    "hub": null,
+    "tier_evidence": "No social accounts linked from aycutrecht.com and none fetched (Instagram/Facebook never fetched); no YouTube channel found → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://aycutrecht.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Photo identity not certain: the only usable image is an uncaptioned photo on her one-teacher site's home page (a woman seated on a mat; 660×349). The same woman appears adjusting a student in a smaller photo on the schedule page, and the about page's 'home-megan' image shows a woman from behind (458×275, too small and no face), so it is very likely Megan but nothing names her in the photo.",
+      "Thin: 3 items (2 offerings, 1 free resource), and the two offerings overlap (the passes cover the classes on the schedule page). No videos, books, workshops or trainings found.",
+      "Her site's header calls her an 'authorized level II teacher' while the about page says she received 'Certification'; the bio follows the about page. Owner may want to check.",
+      "Regional: Utrecht, Netherlands.",
+      "Email is a Gmail address (yoga.megan@gmail.com) published as a mailto on the home page, schedule page and getting-started page.",
+      "ashtangamegan.com, linked from the site, redirects to aycutrecht.com (same site).",
+      "Earlier skip as a school (skipped/ashtanga-yoga-center-utrecht.json); the owner approved her as an individual on 11 Nov 2026."
+    ],
+    "left_out": [
+      "Introduction to Mysore (1-hour class): on the same /schedule/ page and its next date is 'TBD', so no separate item.",
+      "Practice Information & Tips (/information/): practical etiquette notes that also discuss menstruation, menopause, pregnancy and illness, so not used as a free resource (health rule, borderline).",
+      "Workshop with Laksmisha Bhat (April 2-3-4): a past guest workshop, not opened.",
+      "Booking links on backoffice.bsport.io (preview URLs) not used as item URLs.",
+      "Photos home-megan1.jpg (back view, 275 px tall) and about-supta-vajrasana1.jpg (group shot, 249 px wide): not usable."
+    ],
+    "held": "Held by Claude (11 Nov 2026): the owner's condition was a usable photo of her, and the only photo is unnamed on her site (very likely her, not certain). Owner to confirm the photo, or send one."
+  }
+}

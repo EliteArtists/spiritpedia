@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "vairocana-zen-monastery",
+    "location_source": "https://vzmla.org/contact-us/",
+    "create": {
+      "name": "Vairocana Zen Monastery",
+      "bio": "Vairocana Zen Monastery is a Chinese Chan (Zen) temple in Garden Grove, in Orange County, California, founded and led by its abbot, Venerable Master Miao Tsan. Its stated purpose is to make clear the heart of Zen's teaching on Mind, and it has a dedicated Zen hall for meditation alongside landscaped Zen gardens. Branches have since opened in Arcadia, California, and in Mexico City. Master Miao Tsan writes in traditional Chinese; his books include Just Use This Mind and The Origin Is Pure, and his commentary on the Gateless Gate koans was launched in Taipei in 2026. He has taught meditation at universities, hospitals and on broadcast media across the United States, Mexico, Taiwan and mainland China.\n\nThe monastery's core training is meditation classes and intensive Zen retreats lasting three or seven days, and those unable to attend in person can join classes online. It also keeps the Buddhist calendar with ceremonies such as the Buddha's birthday bathing rite and a yearly commemoration of Huineng, the Sixth Patriarch. Its YouTube channel, 禪問 Zen Answer, opened in 2025 and carries the abbot's Mandarin teachings, including a long verse-by-verse series on the Platform Sutra, plus short bilingual answers to practical questions about the mind and practice.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Garden Grove",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "website_url": "https://vzmla.org/",
+      "booking_url": null,
+      "youtube_url": "https://www.youtube.com/@shihmiaotsan",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://vzmla.org/wp-content/uploads/2020/11/monastery.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "EP 028 - 六祖壇經直解 (Direct Exposition of the Sixth Patriarch's Platform Sutra)",
+      "url": "https://www.youtube.com/watch?v=pGsCXtkgQO0",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "EP 027 - 六祖壇經直解 (Direct Exposition of the Sixth Patriarch's Platform Sutra)",
+      "url": "https://www.youtube.com/watch?v=-xT3R7HTN6U",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "EP 023 - 六祖壇經直解 (Direct Exposition of the Sixth Patriarch's Platform Sutra)",
+      "url": "https://www.youtube.com/watch?v=3YiiHgYtJ9U",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "靜坐是把心放空嗎？Is Meditation About Emptying the Mind?",
+      "url": "https://www.youtube.com/watch?v=TjWPYD2ROac",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "慈悲、善良、愛，有什麼區別？What Is the Difference Between Compassion, Kindness, and Love?",
+      "url": "https://www.youtube.com/watch?v=N6ebybbc6kI",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "修行可以改變命運嗎？Can Practice Change Fate or Destiny?",
+      "url": "https://www.youtube.com/watch?v=y7QtBwCBFvY",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "禪問 Zen Answer "
+    },
+    {
+      "title": "什麼是小我、大我、內我、真我？What Do Modern People Mean by Small Self, Greater Self, Inner Self, and True Self?",
+      "url": "https://www.youtube.com/watch?v=XAgx-FEgFhI",
+      "subjects": [
+        "non-duality"
+      ],
+      "channel": "禪問 Zen Answer "
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "New to Zen",
+      "url": "https://vzmla.org/new-to-zen-2/",
+      "description": "Answers to common beginners' questions, from handling wandering thoughts in meditation to what karma means and how Zen meditation is learned.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://vzmla.org/wp-content/uploads/2020/11/VZM-typeRED-1024x45.png"
+    },
+    {
+      "title": "Abbot teachings",
+      "url": "https://vzmla.org/teachings/",
+      "description": "Written versions of classes given by the abbot, including a six-part series on no-thought and talks on the Fifth Patriarch and the bodhisattva path.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://vzmla.org/wp-content/uploads/2020/11/VZM-typeRED-1024x45.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 1409,
+    "hub": null,
+    "tier_evidence": "YouTube 22,400 subscribers (YouTube Data API, 10 Nov 2026); no other counts read → ~22k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "HELD: only Cloudflare-protected emails on the site (see sprint.held).",
+      "Channel is the abbot's own (handle @shihmiaotsan, title 禪問 Zen Answer); Master Miao Tsan is not on Spiritpedia. Listed here as the monastery because the channel names the monastery as its contact; owner may prefer a teacher listing.",
+      "Teaching is in Mandarin (long Platform Sutra series); many uploads are short English cartoon clips with high views (possibly promoted). Only talks and bilingual Q&A chosen.",
+      "Site's books are in Chinese with NT$ prices through Taiwanese retailers: not added as books (no ISBN/ASIN read).",
+      "vzmla.org has Crawl-delay 20: pages fetched about 21 seconds apart. One image URL (2025/12/vzm-home-images_NEW-1.jpg) returned 404.",
+      "No dated offerings after 12 Nov 2026 found; retreats and online classes are by enquiry."
+    ],
+    "left_out": [
+      "Cartoon shorts (#cartoonshort) under a minute.",
+      "Ceremony announcements (all dated before 12 Nov 2026).",
+      "Visit footage (高雄妙通寺 visit)."
+    ],
+    "held": "No usable contact route on the site: every email on vzmla.org (contact page, events page) is Cloudflare-protected (not decoded, per rule) and there is no contact form. The YouTube channel description gives vairocanala@gmail.com, but that is not one of the allowed site sources. Owner to decide (phone 714.894.3658 is published on the contact page).",
+    "dropped": "Dropped by the owner (11 Nov 2026): Cloudflare-only email and no contact form."
+  }
+}

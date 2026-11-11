@@ -1,0 +1,91 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-zentrum-hamburg",
+    "location_source": "https://www.iyengar-yoga-zentrum-hamburg.de/probestunde-yoga-hamburg/",
+    "create": {
+      "name": "Iyengar Yoga Zentrum Hamburg",
+      "bio": "The Iyengar Yoga Zentrum Hamburg is a small Iyengar studio in Eimsbüttel, on the fourth floor of a rear courtyard building on Eppendorfer Weg. It is run by Ute Marek, who first joined a yoga class in 1989 while studying in Montpellier and has taught since 1997. She trained for three years with Faeq and Corine Biria in Paris, qualified as an Iyengar teacher in 2000, later passed the Junior Intermediate assessments, and returns several times a year to further training in Europe and at the Iyengar institute in Pune. She is also a graduate biogeographer specialising in plant ecology, and says the devotion she has felt in nature is what she looks for in practice: postures held with an inner attitude of surrender, the gaze turned inwards.\n\nClasses last ninety minutes and are deliberately personal, with detailed instruction and individual correction rather than anonymous groups. The week runs from a beginners' foundation class, where newcomers may simply drop in for a trial, through intermediate and advanced groups to a class for experienced practitioners over fifty, and one morning class is also taught online. Ute teaches in English and French as well as German, and each spring she leads a long weekend of practice by the North Sea at St. Peter-Ording.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "founded_year": null,
+      "city": "Hamburg",
+      "country": "Germany",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.iyengar-yoga-zentrum-hamburg.de/",
+      "booking_url": "https://www.iyengar-yoga-zentrum-hamburg.de/probestunde-yoga-hamburg/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=796x10000:format=jpg/path/s84a4acdf804f96ef/image/ic9edc03909dc7b35/version/1737738167/image.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar Yoga weekend by the sea at St. Peter-Ording",
+      "url": "https://www.iyengar-yoga-zentrum-hamburg.de/yoga-workshops-hamburg/yogaferien/",
+      "description": "A Whitsun long weekend of asana, breathing practice, relaxation and meditation with Ute Marek in a bright, garden-facing room at a hotel on the dyke at St. Peter-Ording. For students with at least two to three years of regular Iyengar practice; accommodation, meals and travel are booked separately.",
+      "price": "350,00 €",
+      "product_type": "retreat",
+      "start_date": "2027-05-14",
+      "end_date": "2027-05-17",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=1920x10000:format=jpg/path/s84a4acdf804f96ef/image/ic9edc03909dc7b35/version/1737738167/image.jpg"
+    },
+    {
+      "title": "Iyengar yoga classes in Hamburg-Eimsbüttel",
+      "url": "https://www.iyengar-yoga-zentrum-hamburg.de/yoga-hamburg/",
+      "description": "Ninety-minute classes from a beginners' foundation course to intermediate, advanced and 50-plus groups, with detailed individual correction; one Friday morning class is also taught online. Beginners may drop in for a trial class.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://image.jimcdn.com/app/cms/image/transf/none/path/s84a4acdf804f96ef/backgroundarea/idc1d770a068ae393/version/1634626861/image.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 764,
+    "hub": null,
+    "held": "No usable contact: every email address on the site is behind Cloudflare email protection (cdn-cgi/l/email-protection), which we never decode, and the contact page has no contact form (only phone +49 163-6406049 and a newsletter sign-up). Owner to decide whether phone-only contact is acceptable.",
+    "tier_evidence": "No YouTube channel linked; Instagram not fetched; no readable followers → local_hero",
+    "email": "no (Cloudflare-protected, not decoded)",
+    "email_source": null,
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Lead from Iyengar Yoga Deutschland's own studio list (iyengar-yoga-deutschland.de/studioliste/). Jimdo site; robots.txt Crawl-Delay 5 respected (6 s between pages); image.jimcdn.com robots.txt allows us.",
+      "Health framing is heavy on this site: most group classes are sold as health-insurance 'Präventionskurse' ('Yoga gegen Stress'), there is a shoulder-and-neck 'Gesundheitskurs', and private sessions mention back problems, exhaustion and menopause. All of that left out; the bio and items describe only general Iyengar classes. Owner may judge whether the site is too health-led.",
+      "Class prices are in an image on /yoga-hamburg-preise/, not readable text, so 'Contact for pricing' (the home page mentions a 14 € trial class in cash).",
+      "The Sunday introduction workshop (11 Oct 2026) has passed.",
+      "Only one photo used (the St. Peter-Ording retreat room). Other images are small class shots or a portrait of B.K.S. Iyengar.",
+      "Possible future listing: Ute Marek.",
+      "No Spiritpedia teachers are named on the site, so the teachers file has no links.",
+      "Regional: Hamburg."
+    ],
+    "left_out": [
+      "Präventionskurse / Krankenkassen-Kurse and Gesundheitskurs Schulter-Nacken: health-insurance and condition framing.",
+      "Einzelunterricht / Personal Training: framed around therapeutic exercises for back, neck, exhaustion and menopause.",
+      "Yogastunde am Sonntag 'Einführung ins Iyengar Yoga' (11 Oct 2026): date passed.",
+      "Yoga Shop and room hire: not teaching offers."
+    ],
+    "dropped": "Dropped by the owner (11 Nov 2026): Cloudflare-only email and no contact form."
+  }
+}

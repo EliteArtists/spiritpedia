@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1136,
+    "healer_slug": "ann-james"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "31b04c36-1585-4a40-b95f-85c9c6074e0a",
+      "slug": "energy-healing-sessions",
+      "title": "Energy healing sessions"
+    },
+    {
+      "table": "courses",
+      "id": "ab1091f1-8503-486e-b11c-554c98ea3d6e",
+      "slug": "reiki-attunements-and-training",
+      "title": "Reiki attunements and training"
+    },
+    {
+      "table": "courses",
+      "id": "17e6b307-6e99-4309-9f13-56c2fb91ccfd",
+      "slug": "sound-for-the-soul-sound-baths",
+      "title": "Sound for the Soul sound baths"
+    }
+  ],
+  "at": "2026-11-11T11:34:08.179Z"
+}

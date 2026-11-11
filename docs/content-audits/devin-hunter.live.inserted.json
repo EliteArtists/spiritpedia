@@ -1,0 +1,63 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1180,
+    "healer_slug": "devin-hunter"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2420,
+      "slug": "the-witchs-book-of-power",
+      "title": "The Witch's Book of Power"
+    },
+    {
+      "table": "books",
+      "id": 2421,
+      "slug": "the-witchs-book-of-spirits",
+      "title": "The Witch's Book of Spirits"
+    },
+    {
+      "table": "books",
+      "id": 2422,
+      "slug": "the-witchs-book-of-mysteries",
+      "title": "The Witch's Book of Mysteries"
+    },
+    {
+      "table": "books",
+      "id": 2423,
+      "slug": "modern-witch",
+      "title": "Modern Witch"
+    },
+    {
+      "table": "books",
+      "id": 2424,
+      "slug": "crystal-magic-for-the-modern-witch",
+      "title": "Crystal Magic for the Modern Witch"
+    },
+    {
+      "table": "books",
+      "id": 2425,
+      "slug": "houseplant-hortocculture",
+      "title": "Houseplant Hortocculture"
+    },
+    {
+      "table": "books",
+      "id": 2426,
+      "slug": "the-bad-vibes-field-guide",
+      "title": "The Bad Vibes Field Guide"
+    },
+    {
+      "table": "courses",
+      "id": "1dfb249c-124a-4c43-9a88-950c0b2924ac",
+      "slug": "black-rose-witchcraft",
+      "title": "Black Rose Witchcraft"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "b2791ffc-bebd-4f81-a8b6-f562cbacc9b4",
+      "title": "devin-hunter teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-11T11:36:46.161Z"
+}

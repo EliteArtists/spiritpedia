@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1245,
+    "healer_slug": "samatva-yoga"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "92e643cb-4bec-4243-adb3-35e5f975a348",
+      "slug": "samatva-yoga-class-plans-in-person-and-online",
+      "title": "Samatva Yoga class plans (in person and online)"
+    },
+    {
+      "table": "courses",
+      "id": "0e24e799-cd79-4abf-a657-a6a6a61f014f",
+      "slug": "ashtanga-yoga-com-kino-macgregor-tim-feldmann",
+      "title": "Ashtanga Yoga com Kino MacGregor & Tim Feldmann"
+    }
+  ],
+  "at": "2026-11-11T11:41:19.511Z"
+}

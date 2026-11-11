@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1202,
+    "healer_slug": "iyoga-iyengar-yoga-centrum-antwerpen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4759cd0a-f89e-49f9-af95-9416010eb9ad",
+      "slug": "iyengar-yoga-classes-in-antwerp-and-live-online",
+      "title": "Iyengar yoga classes in Antwerp and live online"
+    },
+    {
+      "table": "courses",
+      "id": "df2ddd17-104d-4cbc-b0e4-492fe01c78fa",
+      "slug": "christmas-workshop-with-ann-brosens",
+      "title": "Christmas workshop with Ann Brosens"
+    }
+  ],
+  "at": "2026-11-11T11:38:21.124Z"
+}

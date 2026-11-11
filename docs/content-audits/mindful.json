@@ -5,7 +5,7 @@
     "create": {
       "name": "Mindful",
       "bio": "Mindful, published at Mindful.org, is a secular mindfulness magazine and website that sets out to make meditation practical for people of any background or belief. It brings together guided practices, articles by meditation teachers and researchers, interviews, book reviews and a print magazine, with regular contributors and featured teachers such as Jon Kabat-Zinn, Sharon Salzberg, Kristin Neff, Judson Brewer and Vinny Ferraro. Its business and editorial office is run by Mindfulness United in Byron Bay, New South Wales.\n\nThe YouTube channel, active since 2015, is mostly short guided practices led by different teachers: breath and body-scan meditations, walking and forest meditations, loving-kindness and self-compassion sits, and brief daily resets. Mindful also sells self-paced online courses with teachers including Sharon Salzberg, Jillian Pransky, Cara Bradley and Elisha Goldstein, runs a 12-minute meditation podcast and offers its own app. Its free guides on how to meditate and its library of guided meditations are open to everyone on the website.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "channel",
       "availability": "worldwide",
       "city": "Byron Bay, New South Wales",
@@ -255,7 +255,8 @@
       "Sleep, pain and illness meditations",
       "Loving-Kindness Meditation with Sharon Salzberg ($199): no product URL found on the courses page (could be added)",
       "Shorts and affirmations"
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (11 Nov 2026): leading mindfulness magazine. By count: local_hero."
   },
   "images_final": true
 }

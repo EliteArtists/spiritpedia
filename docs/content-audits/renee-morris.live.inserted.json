@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1241,
+    "healer_slug": "renee-morris"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9303,
+      "slug": "quantum-conversations-with-thea-willette-quantum-touch",
+      "title": "Quantum Conversations with Thea Willette - Quantum-Touch"
+    },
+    {
+      "table": "courses",
+      "id": "e750038b-d900-4ac9-968f-8342b5fbb56b",
+      "slug": "quantum-touch-energy-healing-sessions",
+      "title": "Quantum-Touch energy healing sessions"
+    },
+    {
+      "table": "courses",
+      "id": "cae84db5-a124-416b-8cd4-d2621df75255",
+      "slug": "the-energy-healing-experience",
+      "title": "The Energy Healing Experience"
+    },
+    {
+      "table": "courses",
+      "id": "b9a4c2bb-e2e5-476b-b798-e98fdf5ad6ad",
+      "slug": "energy-coaching",
+      "title": "Energy coaching"
+    }
+  ],
+  "at": "2026-11-11T11:41:10.951Z"
+}

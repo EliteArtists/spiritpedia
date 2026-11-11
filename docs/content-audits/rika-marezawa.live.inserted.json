@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1242,
+    "healer_slug": "rika-marezawa"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "b4da140d-3162-46c7-a06d-0e97e2c28d1f",
+      "slug": "nova-animal-communication-course",
+      "title": "Nova animal communication course (新星アニマルコミュニケーション講座)"
+    },
+    {
+      "table": "courses",
+      "id": "a1b3f089-f6ac-4783-8c38-7b8e969fc90a",
+      "slug": "individual-sessions-for-people-and-animals",
+      "title": "Individual sessions for people and animals"
+    },
+    {
+      "table": "courses",
+      "id": "ccc3f66c-586c-4f4b-bafa-f947040bf939",
+      "slug": "quantum-touch-level-1-level1",
+      "title": "Quantum-Touch Level 1 (クォンタムタッチ®Level.1)"
+    },
+    {
+      "table": "free_resources",
+      "id": "8491b81f-0bf0-4d13-b54e-6195853fb243",
+      "slug": "free-monthly-group-distance-healing-for-pets",
+      "title": "Free monthly group distance healing for pets"
+    }
+  ],
+  "at": "2026-11-11T11:41:12.567Z"
+}

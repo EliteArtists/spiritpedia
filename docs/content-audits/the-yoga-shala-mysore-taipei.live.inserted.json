@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1266,
+    "healer_slug": "the-yoga-shala-mysore-taipei"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9400,
+      "slug": "ashtanga-yoga-primary-series",
+      "title": "第一級體位法梵文名稱，Ashtanga Yoga Primary Series"
+    },
+    {
+      "table": "videos",
+      "id": 9401,
+      "slug": "maricasana-cd-c-d",
+      "title": "Maricāsana C、D，聖者馬里奇式 C 、D"
+    },
+    {
+      "table": "videos",
+      "id": 9402,
+      "slug": "maricasana-a-ba-b",
+      "title": "Maricāsana A, B；聖者馬里奇式A, B"
+    },
+    {
+      "table": "videos",
+      "id": 9403,
+      "slug": "ahimsasatyasteyabrahmacaryaparigrahah-yamah",
+      "title": "ahimsāsatyāsteyabrahmacaryāparigrahāḥ yamāḥ"
+    },
+    {
+      "table": "courses",
+      "id": "814b7dc0-b04e-4770-93b6-4849e2c17c63",
+      "slug": "tuition-mysore-programme-passes",
+      "title": "Tuition (Mysore programme passes)"
+    },
+    {
+      "table": "courses",
+      "id": "15c1d4c3-2a24-44e9-b6d4-e3d937202766",
+      "slug": "mysore-practice-and-saturday-full-primary-with-talk-and-qa",
+      "title": "Mysore practice and Saturday Full Primary with talk and Q&A"
+    }
+  ],
+  "at": "2026-11-11T11:42:29.952Z"
+}

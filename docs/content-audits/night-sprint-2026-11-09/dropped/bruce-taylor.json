@@ -1,0 +1,177 @@
+{
+  "healer": {
+    "healer_slug": "bruce-taylor",
+    "location_source": "https://www.youtube.com/@rootsoflife (channel description via YouTube Data API: 'Based in France')",
+    "create": {
+      "name": "Bruce Taylor",
+      "bio": "Bruce Taylor teaches meditation, Zen practice and traditional Japanese Usui Reiki Ryōhō through Roots of Life, the school and YouTube channel he runs from France. He taught in secondary schools in Chicago and Hong Kong before turning to this work full time, and he spends part of each year in Kyoto, practising on Mount Hiei and Mount Kurama, the mountain linked with the origins of the Usui lineage. His approach to Reiki is plain and historical: he presents it as a daily practice of stillness rooted in its Japanese sources rather than as a set of techniques.\n\nHis online Reiki training covers all three traditional levels, Shōden, Okuden and Shinpiden, in more than a hundred recorded lessons, and he leads a free live Reiki circle on Zoom every Thursday. He also guides small-group pilgrimages to Kyoto that meet temple priests and Reiki teachers there, and offers mentoring. His book Touching Silence draws together Zen, Reiki and reflections on physics. The channel, active since 2011, posts a new video each Saturday on how Reiki is learned and practised, attunements and self-practice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": "France",
+      "subjects": [
+        "reiki",
+        "meditation",
+        "non-duality"
+      ],
+      "website_url": "https://rootsoflife.org/",
+      "booking_url": "https://rootsoflife.org/usui-reiki-courses/",
+      "youtube_url": "https://www.youtube.com/@rootsoflife",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://rootsoflife.org/wp-content/uploads/2025/08/Untitled-1200-x-1500-px.webp",
+        "https://rootsoflife.org/wp-content/uploads/2023/12/Bruce-Taylor-in-Meditation.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "How to Learn Reiki: A Teacher’s Guide for Beginners",
+      "url": "https://www.youtube.com/watch?v=2ADtAExloWE",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "I Taught the Reiki Distance Symbol Wrong for Years",
+      "url": "https://www.youtube.com/watch?v=NkD9LjzNr5Y",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "Reiki Level 1: What You Actually Learn (Shoden, Explained)",
+      "url": "https://www.youtube.com/watch?v=qoEaPky298M",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "What Does Reiki Feel Like? Honest Answers After 20 Years",
+      "url": "https://www.youtube.com/watch?v=7v5NcYgA0cE",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "What Is A Reiki Attunement? (What Actually Happens)",
+      "url": "https://www.youtube.com/watch?v=MxsoNEde4wE",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "How to Do Reiki on Yourself - My Daily Self-Treatment After 20 Years",
+      "url": "https://www.youtube.com/watch?v=G0SPmwpGi9E",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "I No Longer Teach Reiki the Way I Was Taught",
+      "url": "https://www.youtube.com/watch?v=BAdKoch_IR0",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "The Reiki Video You'll Never Find",
+      "url": "https://www.youtube.com/watch?v=HBuw03vowpY",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    },
+    {
+      "title": "Usui Reiki Fundamentals with Frans Stiene and Bruce Taylor",
+      "url": "https://www.youtube.com/watch?v=BGK5OpDe3VU",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "RootsofLife"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Usui Reiki Ryōhō: The Complete Self-Paced Package",
+      "url": "https://rootsoflife.org/usui-reiki-courses/",
+      "description": "Recorded lessons covering the first, second and teacher levels of the Japanese Usui system, worked through at your own pace with his support. Completing it leads to teacher and practitioner certification in his lineage; Shōden can also be bought on its own for $345.",
+      "price": "$1,595",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://rootsoflife.org/wp-content/uploads/2023/10/Sending-Thanks-from-Osugi-Gongen-Mt.-Kurama-2.png"
+    },
+    {
+      "title": "The Deep Roots Pilgrimage to Kyoto (May 2027)",
+      "url": "https://rootsoflife.org/kyoto2027/",
+      "description": "A nine-day small-group pilgrimage in Kyoto with planned meetings with temple priests on Mount Hiei and Mount Kurama, Reiki teachers from his own line and a Zen teacher. Limited to twenty places.",
+      "price": "$4,595",
+      "product_type": "retreat",
+      "start_date": "2027-05-12",
+      "end_date": "2027-05-20",
+      "subjects": [
+        "reiki",
+        "meditation"
+      ],
+      "image": "https://rootsoflife.org/wp-content/uploads/2026/04/Japan-2027.webp"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekly Global Reiki Circle",
+      "url": "https://rootsoflife.org/reikicircle/",
+      "description": "A free live Reiki practice on Zoom each Thursday at 17:00 Paris time, open to people with or without Reiki training. Registration is a short free sign-up.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "reiki"
+      ],
+      "image": "https://rootsoflife.org/wp-content/uploads/2026/01/Global-Reiki-Healing-Circle-11.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "channel",
+    "rank": 628,
+    "hub": null,
+    "held": "Psychedelics: his own about page lists 'therapeutic psychedelic work' as one of his four areas of teaching, and Roots of Life sells an October 2027 'Sacred Roots' pilgrimage to Peru with ayahuasca and wachuma ceremonies. Held for the owner, as with earlier psychedelic cases.",
+    "tier_evidence": "YouTube 20,700 subscribers (RootsofLife channel, YouTube Data API, 10 Nov 2026); no other counts published on his site → ~21k total → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://rootsoflife.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Listed as an individual (Bruce Taylor) because the channel and site are one teacher's work under the brand Roots of Life; the channel name is not his own name. Owner may prefer 'Roots of Life'.",
+      "Base: only 'Based in France' is published (channel description); no city found. The channel's API country field says HK (from his Hong Kong years).",
+      "Frans Stiene (frans-stiene) appears with him in one video; no hub link implied.",
+      "Some uploads are condition-framed ('The Reiki Practice That Ended My Anxiety', 'Why You Aren't Healing'); left out. His book page frames the book partly around illness and anxiety; the book was left out.",
+      "Health: the about page mentions a cancer diagnosis in his own story; not used in the bio."
+    ],
+    "left_out": [
+      "Sacred Roots Pilgrimage to Peru, Oct 2027 (ayahuasca and wachuma ceremonies)",
+      "Touching Silence (book): no ISBN on his page; its blurb names illness and anxiety",
+      "Distance Reiki sessions and Holistic Wellness mentoring (not opened; distance healing framing)",
+      "Videos framed around anxiety, healing failures, debunking and sin/religion debates"
+    ],
+    "dropped": "Dropped by the owner (11 Nov 2026): psychedelic work."
+  }
+}

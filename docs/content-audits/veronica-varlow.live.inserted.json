@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1282,
+    "healer_slug": "veronica-varlow"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2462,
+      "slug": "bohemian-magick",
+      "title": "Bohemian Magick"
+    },
+    {
+      "table": "courses",
+      "id": "44206911-5d5b-462c-b7ae-fd16e0129ef0",
+      "slug": "love-witch-tarot-school",
+      "title": "Love Witch Tarot School"
+    },
+    {
+      "table": "courses",
+      "id": "a4791e19-0e11-4cd9-b93b-380ee57e90d6",
+      "slug": "the-spectaculus-school-of-spellcasting",
+      "title": "The Spectaculus School of Spellcasting"
+    },
+    {
+      "table": "courses",
+      "id": "e55bd365-ade3-4022-8f8c-efcc3a8a9131",
+      "slug": "virtual-witch-camp-crafting-your-own-enchanted-grimoire",
+      "title": "Virtual Witch Camp: Crafting Your Own Enchanted Grimoire"
+    }
+  ],
+  "at": "2026-11-11T11:43:42.860Z"
+}

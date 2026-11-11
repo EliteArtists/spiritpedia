@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1178,
+    "healer_slug": "debra-harris"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0fa518c0-f7fb-44b7-800c-9af30ce55664",
+      "slug": "quantum-touch-sessions-3",
+      "title": "Quantum-Touch sessions"
+    },
+    {
+      "table": "courses",
+      "id": "5e545804-1610-4d11-9dcc-4b7c454da203",
+      "slug": "reiki-sessions-2",
+      "title": "Reiki sessions"
+    },
+    {
+      "table": "courses",
+      "id": "56903ba0-55ca-4324-abc4-a943e35ad9cb",
+      "slug": "reiki-i-ii-and-master-classes",
+      "title": "Reiki I, II and Master classes"
+    }
+  ],
+  "at": "2026-11-11T11:36:38.200Z"
+}

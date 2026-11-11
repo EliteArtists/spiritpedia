@@ -193,19 +193,6 @@
         "meditation"
       ],
       "image": "http://static1.squarespace.com/static/627d71921c16fd3a8b7df95f/628e0e4baf7bfc56e3ae0563/69277fb9cb22c51459269292/1793779431546/thai+lanterns.jpg?format=1500w"
-    },
-    {
-      "title": "The Blessing Bowl | Guided Meditation with Dr. Peggy Rowe Ward",
-      "url": "https://www.thelotusinstitute.org/events-all/november-sit",
-      "description": "A half-hour online morning sitting on the theme of gratitude, mixing music, poetry and silent meditation. Offered at a sliding scale and recorded.",
-      "price": "from $15.00",
-      "product_type": "course",
-      "start_date": "2026-11-11",
-      "end_date": "2026-11-11",
-      "subjects": [
-        "meditation"
-      ],
-      "image": "http://static1.squarespace.com/static/627d71921c16fd3a8b7df95f/628e0e4baf7bfc56e3ae0563/6930c8856c47672e428d44df/1787675740653/rohan-chhipa-YaSqOhuqbCc-unsplash.jpg?format=1500w"
     }
   ],
   "free_resources": [],
@@ -240,5 +227,8 @@
       "Short clips under two minutes on the channel."
     ]
   },
-  "images_final": true
+  "images_final": true,
+  "left_out": [
+    "The Blessing Bowl guided meditation (11 Nov 2026): removed before the live insert because it falls on the insert day (Claude, 11 Nov 2026). It stays on dev until it expires."
+  ]
 }

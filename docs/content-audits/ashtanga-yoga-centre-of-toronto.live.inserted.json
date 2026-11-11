@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1141,
+    "healer_slug": "ashtanga-yoga-centre-of-toronto"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "45e3b145-794c-43f9-b1e7-b3cf903bb549",
+      "slug": "monthly-memberships-and-class-passes",
+      "title": "Monthly memberships and class passes"
+    },
+    {
+      "table": "courses",
+      "id": "6136c9cb-f850-4b86-861e-083749f6c2d2",
+      "slug": "intro-workshop",
+      "title": "Intro Workshop"
+    }
+  ],
+  "at": "2026-11-11T11:34:25.064Z"
+}

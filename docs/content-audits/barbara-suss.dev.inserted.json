@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1325,
+    "healer_slug": "barbara-suss"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "321a7236-f560-4fa1-9f62-6402fce0fd6f",
+      "slug": "mysore-style-ashtanga-classes-in-vienna",
+      "title": "Mysore Style Ashtanga Classes in Vienna"
+    },
+    {
+      "table": "courses",
+      "id": "883645dd-ae49-4a79-8382-abf5a4351d2f",
+      "slug": "workshops-and-guest-teaching",
+      "title": "Workshops and Guest Teaching"
+    },
+    {
+      "table": "free_resources",
+      "id": "26ca53bd-6dfc-42a7-a6f6-8f7784108954",
+      "slug": "the-practice-learning-slowly",
+      "title": "The Practice: Learning Slowly"
+    }
+  ],
+  "at": "2026-11-11T11:36:13.249Z"
+}

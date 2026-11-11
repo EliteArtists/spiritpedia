@@ -5,7 +5,7 @@
     "create": {
       "name": "Udbodhan - Ramakrishna Math Baghbazar",
       "bio": "Udbodhan is the branch of the Ramakrishna Math in Baghbazar, north Kolkata, and devotees know its house on Udbodhan Lane as Mayer Bari, the Holy Mother's House. Swami Saradananda, a close companion of Sri Ramakrishna, had it built near the Ganga so that Sri Sarada Devi would have a settled home in the city; she moved in on 23 May 1909 and spent much of her remaining life there, and he wrote his biography of Ramakrishna, the Lilaprasanga, in a small room downstairs. Her shrine room is still worshipped daily, and the house keeps a calendar of festivals including Durga, Kali and Saraswati Puja, Shivaratri and Christmas Eve, with readings from scripture on three evenings a week.\n\nUdbodhan is also the Bengali publishing arm of the Ramakrishna Order. It brings out Udbodhan Patrika, a monthly founded by Swami Vivekananda in 1899 and still in print, together with a large list of Bengali books on the Ramakrishna and Vivekananda tradition, some of which can be read online. Its Bengali-language YouTube channel, active since 2014, carries talks by monks of the Order, serialised audiobooks such as Vivekananda's Jnana Yoga, devotional songs and short explanations of the festivals.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "availability": "local_online",
       "city": "Kolkata",
@@ -131,7 +131,8 @@
       "Bookshop titles (Bengali print books without ISBNs on the page; Boi Utsav discount prices are temporary).",
       "Events page: no events scheduled.",
       "Short festival clips under 2 minutes."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (11 Nov 2026): historic Ramakrishna Math centre; YouTube 97,100, just under the line. By count: local_hero."
   },
   "images_final": true
 }

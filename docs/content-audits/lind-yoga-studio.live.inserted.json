@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1212,
+    "healer_slug": "lind-yoga-studio"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8fe4e951-c0ca-45aa-a40a-909db3c19722",
+      "slug": "iyengar-yoga-hold-ten-week-courses",
+      "title": "Iyengar® Yoga hold (ten-week courses)"
+    },
+    {
+      "table": "courses",
+      "id": "693ad929-ce4a-4cfd-a179-32e0e7e9322d",
+      "slug": "iyengar-yoga-uddannelsen-level-1-teacher-mentorship",
+      "title": "Iyengar® yoga uddannelsen Level 1 (teacher mentorship)"
+    },
+    {
+      "table": "courses",
+      "id": "03bc7e6e-cd0f-4a78-9792-2a51adc43b4a",
+      "slug": "undervisning-i-yoga-sutras-by-patanjali-ved-gitte-poulsen",
+      "title": "Undervisning i Yoga Sutras by Patanjali ved Gitte Poulsen"
+    },
+    {
+      "table": "courses",
+      "id": "07e731d7-95b8-4765-8baf-34fa90ecc95d",
+      "slug": "pranayama-vejrtrknings-workshop-19-november-2026",
+      "title": "Pranayama – Vejrtræknings workshop, 19. november 2026"
+    },
+    {
+      "table": "courses",
+      "id": "7a0f4dd8-03e8-463d-b508-1798d1f43bf2",
+      "slug": "jule-iyengaryoga-12-december-2026",
+      "title": "Jule Iyengar®Yoga – 12. december 2026"
+    }
+  ],
+  "at": "2026-11-11T11:39:09.344Z"
+}

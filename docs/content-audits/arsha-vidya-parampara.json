@@ -5,7 +5,7 @@
     "create": {
       "name": "Ārsha Vidyā Paramparā",
       "bio": "Ārsha Vidyā Paramparā is a charitable trust in India that teaches Advaita Vedanta in the line of Swami Dayananda Saraswati, reading the Upanishads and the Bhagavad Gita through Adi Shankara's commentaries. Its teacher is Swami Sarvananda Saraswati, who studied Vedanta and Sanskrit at Arsha Vijnana Gurukulam in Nagpur and then at Arsha Vidya Gurukulam in Coimbatore, where he also taught, after earlier years working in information technology in India and the United States.\n\nClasses run live on Zoom at weekends on Indian time: a long verse-by-verse cycle through the Gita, the Mundaka Upanishad and Vidyaranya's Panchadashi, each followed by questions. The trust also holds residential camps and retreats, in India and in Scandinavia, that pair classes with guided meditation and bhajans, and it is building Ātma Vidyā Gurukulam, a small residential study centre near Hosur in Tamil Nadu. The YouTube channel, started in 2017, carries whole class series, such as an eight-part enquiry into 'Who am I', a session-by-session reading of Bhaja Govindam and the closing chapter of the Gita, along with short talks on ideas such as the three gunas.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "channel",
       "founded_year": null,
       "availability": "worldwide",
@@ -158,7 +158,8 @@
       "Books (Mundaka Upanishad and another title) are on Amazon Kindle only; no ISBN on a page we may read.",
       "Past camps and retreats (2019 to 2024) are dated in the past.",
       "Short Gita verse classes beyond the selection, and the 'What is Rajas/Tamas' clips under 7 minutes, not picked."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (11 Nov 2026): major Vedanta teaching lineage. By count: local_hero."
   },
   "images_final": true
 }

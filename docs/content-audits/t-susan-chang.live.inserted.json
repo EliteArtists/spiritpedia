@@ -1,0 +1,58 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1262,
+    "healer_slug": "t-susan-chang"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2457,
+      "slug": "tarot-correspondences",
+      "title": "Tarot Correspondences"
+    },
+    {
+      "table": "books",
+      "id": 2458,
+      "slug": "36-secrets",
+      "title": "36 Secrets"
+    },
+    {
+      "table": "books",
+      "id": 2459,
+      "slug": "tarot-deciphered",
+      "title": "Tarot Deciphered"
+    },
+    {
+      "table": "books",
+      "id": 2460,
+      "slug": "the-living-tarot",
+      "title": "The Living Tarot"
+    },
+    {
+      "table": "books",
+      "id": 2461,
+      "slug": "4-stories",
+      "title": "4 Stories"
+    },
+    {
+      "table": "courses",
+      "id": "bfb4cdbb-e41c-473c-a6dc-9ad17a721193",
+      "slug": "the-living-tarot-online-course",
+      "title": "The Living Tarot Online Course"
+    },
+    {
+      "table": "courses",
+      "id": "fd41938d-eb28-400f-9962-e4d4920c00ba",
+      "slug": "tarot-readings-and-private-lessons",
+      "title": "Tarot Readings and Private Lessons"
+    },
+    {
+      "table": "free_resources",
+      "id": "e83c1f41-493f-4539-9f04-61d6bc98c2e0",
+      "slug": "fortunes-wheelhouse-podcast",
+      "title": "Fortune's Wheelhouse podcast"
+    }
+  ],
+  "at": "2026-11-11T11:42:13.276Z"
+}

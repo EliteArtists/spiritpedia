@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1288,
+    "healer_slug": "yogabiel"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c0566cc7-1b07-411a-bbc6-6dd02ad891f8",
+      "slug": "kursangebot-und-abos-weekly-iyengar-classes",
+      "title": "Kursangebot und Abos (weekly Iyengar classes)"
+    },
+    {
+      "table": "courses",
+      "id": "1f30fd96-9f9b-4b64-b44a-2ca507bd14e2",
+      "slug": "ausbildungsprogramm-zur-iyengar-yoga-lehrerin-three-year-teacher-training",
+      "title": "Ausbildungsprogramm zur Iyengar Yoga Lehrer*in (three-year teacher training)"
+    },
+    {
+      "table": "courses",
+      "id": "90a888eb-a02a-4fbe-aaa6-5adb3a95782f",
+      "slug": "neujahrsworkshop-2027",
+      "title": "Neujahrsworkshop 2027"
+    },
+    {
+      "table": "courses",
+      "id": "0d52004e-5f44-4b06-aab1-4426c29d9410",
+      "slug": "sommerworkshop-2027",
+      "title": "Sommerworkshop 2027"
+    },
+    {
+      "table": "courses",
+      "id": "fa68d5d4-79c2-44c0-b788-a8108601ccd9",
+      "slug": "yogabiel-im-wallis-yoga-retreat-2027",
+      "title": "yogabiel im Wallis: Yoga Retreat 2027"
+    }
+  ],
+  "at": "2026-11-11T11:44:02.119Z"
+}

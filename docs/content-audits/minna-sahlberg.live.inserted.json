@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1221,
+    "healer_slug": "minna-sahlberg"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "856bd776-87ce-454b-8726-3269c5d88ac3",
+      "slug": "quantum-touch-level-1-training-helsinki-and-zoom",
+      "title": "Quantum-Touch Level 1 training (Helsinki and Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "34842393-787a-429d-8d03-abf7093c7d0e",
+      "slug": "quantum-touch-and-intuitive-energy-sessions",
+      "title": "Quantum-Touch and intuitive energy sessions"
+    },
+    {
+      "table": "courses",
+      "id": "b5b3bdbd-529a-4a60-b3c2-7e2e2375cf8b",
+      "slug": "mystisen-sydamen-ruusu-circles",
+      "title": "Mystisen Sydämen Ruusu circles"
+    },
+    {
+      "table": "courses",
+      "id": "17d95abc-e9d0-4544-92ef-dd83aae8f05b",
+      "slug": "kehollistuneen-ykseyden-alkemia-pilot-training",
+      "title": "Kehollistuneen Ykseyden Alkemia (pilot training)"
+    },
+    {
+      "table": "courses",
+      "id": "1a737b4b-0ead-4d71-b90a-720877a3d51d",
+      "slug": "kohtaaminen-kvanttikentassa-gatherings",
+      "title": "Kohtaaminen kvanttikentässä gatherings"
+    }
+  ],
+  "at": "2026-11-11T11:39:45.361Z"
+}

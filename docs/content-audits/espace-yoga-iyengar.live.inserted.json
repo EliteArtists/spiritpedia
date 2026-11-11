@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1187,
+    "healer_slug": "espace-yoga-iyengar"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "f67751a7-10d5-4714-bc77-04482b86c2e0",
+      "slug": "horaires-et-tarifs-weekly-iyengar-classes",
+      "title": "Horaires et tarifs (weekly Iyengar classes)"
+    },
+    {
+      "table": "courses",
+      "id": "1bfee787-e99f-4fb1-a5df-2fdafa6bec20",
+      "slug": "ateliers-du-samedi-matin-a-lausanne",
+      "title": "Ateliers du samedi matin à Lausanne"
+    },
+    {
+      "table": "courses",
+      "id": "4c8a69c8-a5a0-48f4-ac9e-aec77cc7994e",
+      "slug": "yoga-et-decouverte-du-maroc-29-mai-5-juin-2027",
+      "title": "Yoga et découverte du Maroc (29 mai – 5 juin 2027)"
+    }
+  ],
+  "at": "2026-11-11T11:37:14.891Z"
+}

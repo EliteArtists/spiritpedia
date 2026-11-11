@@ -1,0 +1,51 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1217,
+    "healer_slug": "mark-horn"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2446,
+      "slug": "tarot-and-the-gates-of-light",
+      "title": "Tarot and the Gates of Light"
+    },
+    {
+      "table": "courses",
+      "id": "36c7d9c6-47bd-4db4-862a-058d2f521e45",
+      "slug": "kabbalistic-tarot-reading",
+      "title": "Kabbalistic Tarot Reading"
+    },
+    {
+      "table": "courses",
+      "id": "9801760d-ce19-4f96-a3f2-299dad6d1549",
+      "slug": "unlocking-the-gates-of-light-introduction-to-kabbalistic-tarot",
+      "title": "Unlocking the Gates of Light: Introduction to Kabbalistic Tarot"
+    },
+    {
+      "table": "courses",
+      "id": "b100d83f-5f2d-4f76-817d-73495750c49e",
+      "slug": "kabbalistically-speaking-how-to-read-the-tree-of-life-spread",
+      "title": "Kabbalistically Speaking: How to Read the Tree of Life Spread"
+    },
+    {
+      "table": "courses",
+      "id": "f4b8d4cc-1629-4805-969a-6f932f98bec6",
+      "slug": "make-every-day-count-counting-the-omer-with-tarot",
+      "title": "Make Every Day Count: Counting the Omer with Tarot"
+    },
+    {
+      "table": "courses",
+      "id": "c26dd6b9-bcd8-4a61-b81f-5a12b527f641",
+      "slug": "the-five-worlds-reading",
+      "title": "The Five Worlds Reading"
+    },
+    {
+      "table": "hub_teachers",
+      "id": "298fb206-6382-4259-9ea1-cdf33796513c",
+      "title": "mark-horn teaches at Omega Institute"
+    }
+  ],
+  "at": "2026-11-11T11:39:32.075Z"
+}

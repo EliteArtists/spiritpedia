@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1247,
+    "healer_slug": "satya-yoga"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8ec2c7bf-c930-4e1a-b271-b9958477a6be",
+      "slug": "iyengar-yoga-nye-hold-for-begyndere-start-tilbud",
+      "title": "Iyengar Yoga – Nye hold for begyndere (Start tilbud)"
+    },
+    {
+      "table": "courses",
+      "id": "04bb3dc2-9283-4169-b724-5789926e8ab2",
+      "slug": "priser-klippekort-og-manedskort",
+      "title": "Priser: klippekort og månedskort"
+    },
+    {
+      "table": "courses",
+      "id": "3974b4f0-6223-4845-b2fb-ea7fcd0a9595",
+      "slug": "eneundervisning-og-sma-grupper-private-lessons-and-small-groups",
+      "title": "Eneundervisning og små grupper (private lessons and small groups)"
+    },
+    {
+      "table": "courses",
+      "id": "20e1d8ec-f0dd-46bf-9be1-1eafb18421f8",
+      "slug": "livestream-virtuel-yoga",
+      "title": "Livestream – Virtuel Yoga"
+    }
+  ],
+  "at": "2026-11-11T11:41:23.667Z"
+}

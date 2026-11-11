@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1146,
+    "healer_slug": "ashtanga-yoga-squamish"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "696a5886-1994-40f7-902a-1618dcba30f3",
+      "slug": "passes-and-memberships",
+      "title": "Passes and memberships"
+    },
+    {
+      "table": "courses",
+      "id": "3867c125-9427-4a4b-b7f6-8b5aa8b0ca30",
+      "slug": "continuum-online-mentorship",
+      "title": "Continuum: online mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "72ce9b14-a1cf-4735-b8a0-ee4890d1bd74",
+      "slug": "summer-student-immersion-2027",
+      "title": "Summer Student Immersion 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "6639a46c-f87e-4d44-9c9e-9a0647094ab1",
+      "slug": "full-primary-series-of-ashtanga-yoga-led-class",
+      "title": "Full Primary Series of Ashtanga Yoga Led Class"
+    },
+    {
+      "table": "free_resources",
+      "id": "ee62f67c-f0e6-4c91-aa4c-a94e97d702b6",
+      "slug": "tristhana",
+      "title": "Tristhana"
+    }
+  ],
+  "at": "2026-11-11T11:34:34.593Z"
+}

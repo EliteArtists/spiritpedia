@@ -15,6 +15,24 @@ and on 30 October 2026 (the release plan, stale lines tidied), checked against
 the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
 
+## Next steps: Ross's own jobs (owner, 11 Nov 2026)
+
+Not code. Dated, so it's clear what is late.
+
+| Due | Job |
+| :--- | :--- |
+| 11 Nov 2026 | **Google Play:** store listing and screenshots |
+| 12 Nov 2026 | **Google Play:** apply for production when closed testing ends |
+| Once production access is granted | **Google Play:** release build 28 |
+| — | **Outreach and email journeys start only when the app is in BOTH stores** |
+| When ready (crisis fix first) | **App 1.0.2:** submit to both stores (branch `release/1.0.2`, §18.7) |
+| Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list; PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
+| Open | **World of Books (Awin):** reapply after fixing the profile |
+| Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
+| Open | **The Shift Network:** referral programme sign-up |
+| Open | **Insight Timer:** partnership email |
+| Open | **Owner photos:** Ally Bogard; Kathie and Paul Scott (a photo of both) |
+
 ## Open jobs (30 October 2026)
 
 The list to pick up from. Each points to where the detail lives.
@@ -315,6 +333,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 17. [Reference](#17-reference)
 18. [Content ingestion](#18-content-ingestion)
 19. [Fixing the broken-image queue (the morning routine)](#19-fixing-the-broken-image-queue-the-morning-routine)
+20. [The daily routine (night sprint, morning, day)](#20-the-daily-routine-night-sprint-morning-day)
 
 ---
 
@@ -2749,6 +2768,13 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
 
 ### 18.4 The rules
 
+- **Item URLs are real pages** (owner, 11 Nov 2026): never a made-up `#fragment`
+  or other URL part to keep two items apart (offering URLs are unique,
+  `courses_url_unique`). Two items on one page: keep one, note the other in
+  `left_out`. A proper fix is proposed in
+  `docs/reports/2026-11-11-sprint-decisions-admin-routine.md`.
+- **Contact** (owner, 11 Nov 2026): a Cloudflare-only email with no contact
+  form, or a phone number or address alone, fails the contact rule: out.
 - **At most 3 subjects per item**, each an existing slug in `subjects` (42,
   §17.3), most relevant first. Older rows have more; new rows don't.
 - **Amazon links** are stored as `https://www.amazon.com/dp/{ASIN}` (the US
@@ -2936,7 +2962,7 @@ dev, give the pages to check, stop. Live after their OK, as for healers.
 | Pipelines sprint 3 (`pipelines-3`; owner, 6 Nov 2026, §18.7 saved lists): IMS (all 91), then title-screened chunks of Sounds True (names only) alternating with Kripalu, Esalen and Omega past faculty (Omega's 948 saved names; eomega.org never fetched). Ranks 1–311 of 2,652 researched; 110 on dev, then after the owner's decisions (6 Nov) **110 live** (46 Sounds True, 23 Kripalu, 19 IMS, 16 Esalen, 6 Omega); hub link only where the teacher's own site names the hub (12 IMS after the owner removed Alexis Santos's and Ronya Fakhoury Banks's, which rested on teacher training only; 10 Esalen, 10 Kripalu, 8 Omega). Left out (owner): 8 for content (Marci Moberg, Miles Neale, Will Johnson, Erika Rosenberg for psychedelics; Margot Anand, Sai Maa, Wu De, Starhawk) and 14 for photos only, for now. 179 skips, all kept; don Jose Ruiz's two events added to don Miguel Ruiz's listing (`don-miguel-ruiz.jose-ruiz-events.json`). JoAnna Hardy made co-author of *Teaching Mindfulness to Empower Adolescents* (book 1735 dev, 1763 live). **Sounds True publisher links:** every teacher with a book whose ISBN-10 is in a Sounds True prefix (1-59179, 1-62203, 1-64963, 1-68364; each confirmed by our own book descriptions that say "published by Sounds True") is linked in `publisher_healers`: 66 teachers from 105 books, 56 new links on each database (log `sounds-true-publisher-links.<env>.inserted.json`); the 6 older links without a listed Sounds True book were left. Owner follow-up (6 Nov): 4 more linked from the older Sounds True prefixes 1-56455 and 1-60407 (Christine Stevens, Silvia Nakkach, Dana Ullman, Michael W. Taft; 76 linked on each database); Oren Jay Sofer added as the book's second co-author; don Miguel Ruiz's three Google thumbnails replaced with the solo portrait from his own teacher page (log `don-miguel-ruiz.photo-2026-11-06.json`; the site's share card is a group photo, so not used). The ingest's image lookup now reads robots.txt on every host (f3609da). Folder `docs/content-audits/pipelines-sprint-3/`, report `docs/reports/2026-11-06-pipelines-sprint-3.md`; `0041` run on both | Live 6 Nov 2026: 8 Luminary (Colette Baron-Reid, Travis Eliot, Shefali Tsabary, Kyle Cease by count; Julia Cameron, Rick Hanson, Thomas Moore, Elizabeth Lesser by stature, confirmed; Laura Day stays Local Hero), 102 Local Hero; email 78 published, 32 contact form. Live has 1,013 listings (988 teachers). Check row 92, 605, 2 on dev and live | Live |
 | Night sprint (`night-1`; owner, 9 Nov 2026, §18.7 sprint queue; run overnight with no questions): practice centres as organisations with their teachers linked (ranks 1–46), apps (47–82; Headspace kept, Calm allowed with no health claims but skipped: calm.com 403), Quantum-Touch practitioners from the official directory (names only; robots.txt allows, Crawl-delay 3; ranks 83–140, then paused for low yield, 141–487 still queued), and yoga schools, one per target city across 40 cities (501–540). **66 on dev** (31 centres with 82 teacher links, 9 apps, 11 Quantum-Touch, 15 yoga schools; Kino MacGregor linked as founder of Miami Life Center), 18 held for the owner. Search, subject and location gap check first (report only, `docs/reports/2026-11-09-search-subject-location-gaps.md`). Ingest fixes: Crawl-delay honoured (a746515); YouTube channel and consent pages never requested (aa6f385). Folder `docs/content-audits/night-sprint-2026-11-09/` (decisions in `for-you-to-decide.md`), report `docs/reports/2026-11-10-night-sprint.md`; `0042` run on both. **Owner's decisions (10 Nov):** 11 dropped (none had been inserted); Tergar relisted as an organisation (`tergar`); Dalai Lama added (teachings only); The Way's and the Sadhguru App's items merged into Henry Shukman's and Sadhguru's listings; the Mountain Stream guest-talk links removed; Lama Dvora unpublished on live (insert rolled back, row kept in `lama-dvora.live-row-2026-11-10.json`). **Live 10 Nov 2026: 103 new listings** with the pipelines continuation below, 105 teacher links. Report `docs/reports/2026-11-10-night-sprint-decisions.md` | Tiers redone 10 Nov 2026 with the YouTube Data API (`night-sprint-2026-11-09/tiers-2026-11-10.json`): Dalai Lama, Vedanta Society of New York, Plum Village App, Monroe Institute, Vedanta Society of Southern California and Hallow to Luminary on dev and live; the other 97 Local Hero | Live |
 | Pipelines sprint 3, continued (`pipelines-3`, same night): ranks 312–431 (Omega chunks skipped, as the 9 Nov message named Kripalu and Esalen only). **36 on dev** (22 Kripalu, 11 Sounds True, 3 Esalen), 6 held (the Dalai Lama for politics; Yongey Mingyur Rinpoche and Aaravindha Himadra for emails decoded from Cloudflare protection; Itzhak Beery for psychedelics; Bodhi Be and Ally Bogard for photos). "Unsure" Sounds True chunks yield almost nothing (1 of 20; 0 of 16); 4 names left in 412–431. Same report; live with the night sprint on 10 Nov 2026 (the Dalai Lama added there) | All Local Hero | Live |
-| Big content sprint (owner, 10 Nov 2026; `night-1` and `pipelines-3`, run with no questions): Sounds True's last 4 names and Judith Hanson Lasater, Quantum-Touch 141–360 (then **parked**, §18.7), Omega own-site ranks 312–571 and 45 screened "unsure" names, YouTube channels read through the Data API (`scripts/yt.mjs`; hosts of 2+ teachers, well-known, practice centres, listed teachers' centres, non-English, Asia and faith communities; leads 601–1512), and yoga schools from lineage lists (Sivananda, the Sharath authorised-teacher list, Iyengar UK, France, Switzerland, Denmark, Chile; leads 701–1616). **157 on dev** with 38 teacher links; held plans not inserted. Eye of Wisdom out; Bodhi Be in with his channel avatar; Ally Bogard still held. Leads in `night-sprint-2026-11-09/leads/`, report `docs/reports/2026-11-10-big-content-sprint.md` | From YouTube subscribers (Data API) per §17.1; stature overrides listed for the owner | Waiting for the owner's OK |
+| Big content sprint (owner, 10 Nov 2026; `night-1` and `pipelines-3`, run with no questions): Sounds True's last 4 names and Judith Hanson Lasater, Quantum-Touch 141–360 (then **parked**, §18.7), Omega own-site ranks 312–571 and 45 screened "unsure" names, YouTube channels read through the Data API (`scripts/yt.mjs`; hosts of 2+ teachers, well-known, practice centres, listed teachers' centres, non-English, Asia and faith communities; leads 601–1512), and yoga schools from lineage lists (Sivananda, the Sharath authorised-teacher list, Iyengar UK, France, Switzerland, Denmark, Chile; leads 701–1616). **157 on dev** with 38 teacher links; held plans not inserted. Eye of Wisdom out; Bodhi Be in with his channel avatar; Ally Bogard still held. Leads in `night-sprint-2026-11-09/leads/`, report `docs/reports/2026-11-10-big-content-sprint.md` | From YouTube subscribers (Data API) per §17.1. Owner's decisions 11 Nov 2026: Luminary on stature for Judith Hanson Lasater, Satish Kumar, Tricycle, Mindful, Udbodhan, Arsha Vidya Paramparā (and the Institute of Noetic Sciences, live); 14 held plans dropped (`night-sprint-2026-11-09/dropped/`); Belur Math in with its YouTube avatar; Barbara Süss added; channels added to Alan Finger (ISHTA Yoga), Jeannie O'Neill (Yoga Farm Ithaca), Eli Jaxon-Bear (Leela); `0043` place aliases written. Report `docs/reports/2026-11-11-sprint-decisions-admin-routine.md` | **Live 11 Nov 2026: 160** (the 157, Belur Math, Bodhi Be, Barbara Süss) with 40 teacher links; live has 1,275 listings |
 
 ### 18.7 Hub-by-hub sprints (the standard method)
 
@@ -3098,26 +3124,35 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    this machine, YouTube channel pages redirect to a cookie-consent page for curl and
    WebFetch alike, and consent pages are never accepted. Video oEmbed checks still work.
 
-**Queue after the night sprint** (owner, 10 Nov 2026):
-1. **Tiers:** once the YouTube Data API key is in (10 Nov), redo every tier from the
-   night sprint (all went in as Local Hero), then the channels sprint.
-2. **Sounds True:** finish the 4 names left in 412–431 (Clarissa Pinkola Estés, Cheryl
-   Richardson, Christina Baldwin, Carole Hyder), then **confident chunks only** (no more
-   "unsure" chunks).
-3. **Quantum-Touch: parked** (owner, 10 Nov 2026). Ranks 141–360 were done in the big content sprint (yield fell to about 1 in 40: most practitioners have no site of their own, or sell the work on pain and conditions). Ranks 361 onward are parked; don't research them unless the owner reopens the queue.
-4. **Yoga schools:** next list from lineage centre lists (Iyengar, Sivananda, Ashtanga),
-   robots.txt first; no directories.
-5. **Omega's 948** saved names, each researched from the teacher's own site (eomega.org
-   still never fetched).
-6. **Single names:** Judith Hanson Lasater.
-7. **Retry on another day** (never the same day): San Francisco Zen Center, the Sati
+**The queue** (owner, 11 Nov 2026; the night sprint takes it in this order, README §20):
+1. **YouTube channels through the Data API** (`node scripts/yt.mjs`): practice centres,
+   monasteries, lineage and faith communities, non-English channels, channels of the
+   centres where our teachers teach. Leads continue from the highest rank in
+   `docs/content-audits/night-sprint-2026-11-09/leads/`.
+2. **Lineage and association centre lists:** yoga (Sivananda, the Sharath authorised-
+   teacher list, national Iyengar associations), Buddhist, Vedanta and Sufi networks.
+   robots.txt first; lists are names only, each listing researched from its own site; no
+   commercial directories.
+3. **Single names** the owner adds, and **recording artists who teach** (sound healing,
+   for example) when they teach classes, courses or retreats of their own.
+4. **Parked** (owner): **Quantum-Touch** from rank 361 (10 Nov 2026; ranks 141–360 done,
+   yield about 1 in 40); **Omega's "unsure" names** (11 Nov 2026; about 586 left, about 1
+   in 15 after screening by name); **Sounds True** (11 Nov 2026; only "unsure" chunks
+   left). Don't research them unless the owner reopens them.
+5. **Retry on another day** (never the same day): San Francisco Zen Center, the Sati
    Center, Centre Sivananda Paris, the Buddhist Society of Western Australia, Krishna
    Kaur, Kathie and Paul Scott (the ingest's robots.txt request to quantumlife.ca failed;
-   on the retry, look for a photo of both of them before using Paul's headshot).
-   Sivananda Ashram Bahamas goes in once a usable photo loads.
-8. **Waiting:** Bodhi Be and Ally Bogard (YouTube avatars via the API); Yongey Mingyur
-   Rinpoche (a clean contact route; decoded emails are never used); Aaravindha Himadra
-   (a certain photo; use his contact form).
+   on the retry, look for a photo of both of them before using Paul's headshot), Ashram
+   Sivananda Orléans and Shakti Shala Antigua (the ingest's robots.txt request failed: 502
+   and a dropped connection; plans held), La Sarmiento (connection errors), Bakara
+   Wintner (429). Sivananda Ashram Bahamas goes in once a usable photo loads.
+6. **Waiting:** Ally Bogard (a photo from her); Megan Riley (confirm that the only photo
+   is her); Buddhist Geeks (no email or form on buddhistgeeks.org; politics to judge);
+   Yongey Mingyur Rinpoche (a clean contact route; decoded emails are never used);
+   Aaravindha Himadra (a certain photo; use his contact form).
+7. **Out** (owner, 11 Nov 2026): Lion's Roar (phone only; out unless a contact form
+   appears), and every plan whose only email is Cloudflare-protected with no form. The
+   plans dropped on 11 Nov are in `night-sprint-2026-11-09/dropped/` with the reason.
 
 **App 1.0.2** (owner, 10 Nov 2026; 1.0.1 is in review and stays as it is; plan it as soon as
 1.0.1 is approved). Branch `release/1.0.2` (local, from `main`).
@@ -3181,5 +3216,25 @@ The shared finding and testing code is `scripts/lib/images.mjs`, also used by
 | :--- | :--- | :--- | :--- | :--- |
 | 27 Oct 2026 (by hand, before the script) | Ra Uru Hu: 14 offerings and 1 free resource (Jovian Archive renamed its images; each from its own page) | — | — | — |
 | 27 Oct 2026 (first run, `2026-10-27.json`) | 17: 11 offerings, 4 free resources, 2 books (Tapping Insiders and Miracles Mastermind skipped after the sheet check) | Luchin (photo 1), Wim Hof (photo 2): both approved and set, from their YouTube channels | — (none queued yet; the first scheduled run after 0028 queues them) | 22: mostly Karina Grant's and Marisa Cranfill's (YMAA) offerings; Barbara Brennan's *Seeds of the Spirit 2001*; Chani's Astro 101 |
+
+## 20. The daily routine (night sprint, morning, day)
+
+The owner's standing routine (11 Nov 2026).
+
+**NIGHT: the content sprint.** It runs through the night from the queue in §18.7, with
+the standing brief (`docs/content-audits/night-sprint-2026-11-09/BRIEF.md`) and every
+rule. **Target: 100+ new listings.** Clean listings go to dev as they come in, then to
+live at the end of the night; held ones wait for the owner. No questions overnight:
+anything that needs the owner goes under "For you to decide". The report goes in
+`docs/reports/YYYY-MM-DD-night-sprint.md` and `latest.md`.
+- **To start it, the owner says "Start the night sprint"** (or types `/night-sprint`).
+  The steps are in `.claude/skills/night-sprint/SKILL.md`; the helpers' prompt is
+  `docs/content-audits/night-sprint-2026-11-09/HELPER-PROMPT.md`; the names list for
+  duplicate checks comes from `node scripts/dev-names.mjs <out.json>`.
+
+**MORNING, first job: the broken images.** Fix every broken image in the admin Inbox
+(§19), then report. Then the owner's decisions on the night's report.
+
+**DAY:** whatever is being built.
 
 Made with love in Tavira 💫

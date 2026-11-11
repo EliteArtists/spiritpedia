@@ -5,7 +5,7 @@
     "create": {
       "name": "Tricycle: The Buddhist Review",
       "bio": "Tricycle: The Buddhist Review is an independent Buddhist magazine published by the Tricycle Foundation, a New York non-profit set up in 1990. The quarterly first appeared in 1991 with the aim of presenting Buddhist ideas to Western readers, and it remains unattached to any single teacher, school or lineage, so its pages run from Theravada and Zen to Tibetan and secular approaches. Its readers include long-time practitioners, people simply curious about meditation and many who do not call themselves Buddhist.\n\nAlongside the print issues, the foundation runs a website of articles and teachings, the Tricycle Talks podcast, a monthly film club, members' dharma talks and a catalogue of self-paced online courses with teachers such as Loch Kelly, Christina Feldman and Andrew Holecek. Its YouTube channel, active since 2012, carries recorded talks, guided meditations, a meditation group and short clips. The foundation also organises Buddhist pilgrimages and relies on donations, as it accepts advertising only from teachers, centres and businesses it judges to fit its aims.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "channel",
       "founded_year": 1990,
       "availability": "worldwide",
@@ -243,7 +243,8 @@
       "Uploads on AI, ghost photography and a climate-policy event left out as off-topic or political.",
       "Courses with condition-led titles (e.g. 'Freeing the Mind When the Body Hurts', 'Mindful Grieving') left out under the health rule.",
       "Advertising and careers pages not items."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (11 Nov 2026): leading Buddhist magazine. By count: local_hero."
   },
   "images_final": true
 }

@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1280,
+    "healer_slug": "vedanta-ashram-indore"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9522,
+      "slug": "1",
+      "title": "ईशावास्योपनिषद : प्रवचन-1"
+    },
+    {
+      "table": "videos",
+      "id": 9523,
+      "slug": "2",
+      "title": "ईशावास्योपनिषद : प्रवचन-2"
+    },
+    {
+      "table": "videos",
+      "id": 9524,
+      "slug": "8-1",
+      "title": "भगवद गीता - अध्याय-8: प्रवचन-1"
+    },
+    {
+      "table": "videos",
+      "id": 9525,
+      "slug": "8-2",
+      "title": "भगवद गीता - अध्याय-8: प्रवचन-2"
+    },
+    {
+      "table": "videos",
+      "id": 9526,
+      "slug": "7-1",
+      "title": "भगवद गीता - अध्याय-7 : प्रवचन-1"
+    },
+    {
+      "table": "videos",
+      "id": 9527,
+      "slug": "1-2",
+      "title": "નાટકદીપ  / પ્રવચન - 1"
+    },
+    {
+      "table": "courses",
+      "id": "f172b75b-96d5-415a-ae4b-ecd0fc949868",
+      "slug": "tattva-bodha-gita-intro-online-courses",
+      "title": "Tattva Bodha & Gita Intro online courses"
+    },
+    {
+      "table": "free_resources",
+      "id": "b20e213d-aa0d-4421-bb11-c6e61dd6083a",
+      "slug": "atma-bodha-lessons",
+      "title": "Atma-bodha Lessons"
+    },
+    {
+      "table": "free_resources",
+      "id": "ad814a22-f59f-464c-bed2-d0bd8d9b32e6",
+      "slug": "meditation-introduction-and-guidance",
+      "title": "Meditation: introduction and guidance"
+    },
+    {
+      "table": "free_resources",
+      "id": "681ab6ec-af9a-4608-8bd3-387d11b7ded2",
+      "slug": "publications-ebooks",
+      "title": "Publications (ebooks)"
+    }
+  ],
+  "at": "2026-11-11T11:43:33.363Z"
+}

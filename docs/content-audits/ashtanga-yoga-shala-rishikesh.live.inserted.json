@@ -1,0 +1,58 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1145,
+    "healer_slug": "ashtanga-yoga-shala-rishikesh"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 8728,
+      "slug": "ashtanga-yoga-primary-series-led-class",
+      "title": "Ashtanga Yoga Primary series Led class"
+    },
+    {
+      "table": "videos",
+      "id": 8729,
+      "slug": "difference-in-ashtanga-mysore-led",
+      "title": "Difference in Ashtanga “Mysore & Led”"
+    },
+    {
+      "table": "courses",
+      "id": "4ee9b1fd-0ee5-430b-838f-1fd643cefdf2",
+      "slug": "200-hour-ashtanga-intensive",
+      "title": "200 Hour Ashtanga Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "3fe55498-859c-4882-a980-1c5bfecc5d3c",
+      "slug": "300-hour-ashtanga-intensive",
+      "title": "300 Hour Ashtanga Intensive"
+    },
+    {
+      "table": "courses",
+      "id": "86b1c583-ffca-4b72-8da2-afe79c965005",
+      "slug": "one-week-ashtanga-intensive-beginners",
+      "title": "One Week Ashtanga Intensive (beginners)"
+    },
+    {
+      "table": "courses",
+      "id": "883d575f-38a9-4215-af93-b12e5df81b93",
+      "slug": "mysore-drop-in-classes",
+      "title": "Mysore drop-in classes"
+    },
+    {
+      "table": "courses",
+      "id": "1e94a2a2-b1a0-498e-9075-d88b1fdd55d2",
+      "slug": "online-ashtanga-yoga-classes",
+      "title": "Online Ashtanga Yoga classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "99c9d31d-a09d-4678-a161-0c4d2d3cedde",
+      "slug": "primary-series-chart-pdf",
+      "title": "Primary series chart (PDF)"
+    }
+  ],
+  "at": "2026-11-11T11:34:32.039Z"
+}
