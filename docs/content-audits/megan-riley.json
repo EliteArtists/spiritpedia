@@ -97,7 +97,8 @@
       "Booking links on backoffice.bsport.io (preview URLs) not used as item URLs.",
       "Photos home-megan1.jpg (back view, 275 px tall) and about-supta-vajrasana1.jpg (group shot, 249 px wide): not usable."
     ],
-    "held": "Held by Claude (11 Nov 2026): the owner's condition was a usable photo of her, and the only photo is unnamed on her site (very likely her, not certain). Owner to confirm the photo, or send one."
+    "held_until": "Held by Claude (11 Nov 2026): the owner's condition was a usable photo of her, and the only photo is unnamed on her site (very likely her, not certain). Owner to confirm the photo, or send one.",
+    "released": "Owner confirmed the photo is her (11 Nov 2026); inserted on dev then live."
   },
   "images_final": true
 }
