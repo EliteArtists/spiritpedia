@@ -4,6 +4,7 @@ import { Suspense, useCallback, useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import AuthShell from '@/components/AuthShell';
 import ListingBadges from '@/components/ListingBadges';
+import { isPerson } from '@/utils/badges';
 import { supabase } from '@/utils/supabase';
 import { supabaseAuth, getUser } from '@/utils/supabaseAuth';
 
@@ -129,7 +130,7 @@ function ClaimForm() {
       releaseWelcome();
       setError(
         rpcError.message?.includes('does not match')
-          ? 'That profile does not match your email address.'
+          ? `That ${isPublisher || !isPerson(healer?.entity_type) ? 'listing' : 'profile'} does not match your email address.`
           : rpcError.message || 'We could not complete that. Please try again.'
       );
       setClaiming(false);
@@ -154,10 +155,15 @@ function ClaimForm() {
     healer.image_url ||
     '/avatar-placeholder.svg';
   const place = [healer.city, healer.country].filter(Boolean).join(', ');
+  // A school, organisation, channel, app or publisher is a listing run by a
+  // team, so it is "your listing" and "this is us" (owner, 11 Nov 2026); a
+  // person keeps "your profile" and "this is me".
+  const team = isPublisher || !isPerson(healer.entity_type);
+  const thing = team ? 'listing' : 'profile';
 
   return (
     <AuthShell>
-      <h1 className="mt-8 text-2xl font-bold leading-snug">We found your Spiritpedia profile.</h1>
+      <h1 className="mt-8 text-2xl font-bold leading-snug">We found your Spiritpedia {thing}.</h1>
 
       <div className="mt-8 rounded-3xl border border-white/10 bg-[#111827] p-8">
         <img
@@ -175,7 +181,7 @@ function ClaimForm() {
       </div>
 
       <p className="mt-8 text-sm leading-relaxed text-gray-400">
-        Does this look right? Would you like to claim this profile?
+        Does this look right? Would you like to claim this {thing}?
       </p>
 
       <div className="mt-6 flex flex-col gap-3">
@@ -185,7 +191,7 @@ function ClaimForm() {
           disabled={claiming}
           className="w-full rounded-full bg-[#7c3aed] px-6 py-4 text-base font-semibold text-white shadow-lg transition-all duration-200 hover:bg-[#6d28d9] hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 disabled:hover:scale-100"
         >
-          {claiming ? 'Claiming…' : isPublisher ? 'Yes, this is us →' : 'Yes, this is me →'}
+          {claiming ? 'Claiming…' : team ? 'Yes, this is us →' : 'Yes, this is me →'}
         </button>
 
         <button
@@ -197,7 +203,7 @@ function ClaimForm() {
           disabled={claiming}
           className="w-full rounded-full border border-white/20 px-6 py-4 text-base font-semibold text-white transition-all duration-200 hover:border-white/40 hover:bg-white/5 disabled:opacity-50"
         >
-          {isPublisher ? 'This isn’t us' : 'This isn’t me'} — continue setup
+          {team ? 'This isn’t us' : 'This isn’t me'} — continue setup
         </button>
       </div>
 
