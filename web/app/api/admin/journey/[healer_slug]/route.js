@@ -1,6 +1,14 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
-import { doNotContactReason, isClaimed, messagesFor, outreachRefusal, schedule } from '@/utils/journey';
+import {
+  doNotContactByAddress,
+  doNotContactReason,
+  isClaimed,
+  messagesFor,
+  outreachEligibility,
+  outreachRefusal,
+  schedule,
+} from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -34,14 +42,20 @@ export async function GET(request, { params }) {
   // healer who has joined since the page loaded.
   const claimed = await isClaimed(supabase, slug);
   // Why Start must stay off for good, if it must.
-  const doNotContact = journey ? null : await doNotContactReason(supabase, slug);
-  // Why Start is off for this kind (waiting for its approved wording), if it is.
-  const { data: healer } = await supabase
-    .from('healers')
-    .select('entity_type')
-    .eq('healer_slug', slug)
-    .maybeSingle();
+  // Why Start is off for this kind (switched off), if it is, and whether the
+  // address may be written to (source and recipient type, migration 0048;
+  // read as '*' so this works before 0048 runs).
+  const { data: healer } = await supabase.from('healers').select('*').eq('healer_slug', slug).maybeSingle();
   const kindRefusal = outreachRefusal(healer?.entity_type);
+  const doNotContact = journey
+    ? null
+    : (await doNotContactReason(supabase, slug)) || (await doNotContactByAddress(supabase, healer?.contact_email));
+  const eligibility = outreachEligibility({
+    entityType: healer?.entity_type,
+    email: healer?.contact_email,
+    source: healer?.contact_email_source,
+    recipientType: healer && 'contact_recipient_type' in healer ? healer.contact_recipient_type : undefined,
+  });
 
   // Every finished journey too, newest first: what was sent before, a form
   // contact, a reply (the Outreach list shows all of them; the card shows
@@ -63,6 +77,7 @@ export async function GET(request, { params }) {
     claimed,
     doNotContact,
     kindRefusal,
+    eligibility,
     // Before migration 0044: no replied, form or delivery tracking yet.
     trackingReady: ready && (!all.length || 'replied_at' in all[0]),
   });

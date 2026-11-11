@@ -13,6 +13,7 @@ import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import HubTeachers from '@/components/admin/HubTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
+import { RECIPIENT_TYPE_OPTIONS } from '@/utils/recipientTypes';
 
 // ONE HEALER RECORD — read, and edit the fields that are safe to edit here.
 //
@@ -83,6 +84,9 @@ const EDITABLE = [
   'image_urls',
   'image_url',
   'is_famous',
+  // Whose inbox contact_email is (migration 0048). Before 0048 the row has
+  // no such key and nothing is ever sent for it.
+  'contact_recipient_type',
   // No 'official' or 'verified': both set themselves from the account linked to
   // the listing (migration 0023), and the database ignores anything sent.
 ];
@@ -780,7 +784,7 @@ function OutreachTab({ healer }) {
 
   if (!state) return <Placeholder icon="◴" title="Loading…" />;
 
-  const { journey, claimed, doNotContact, kindRefusal, history = [], trackingReady } = state;
+  const { journey, claimed, doNotContact, kindRefusal, eligibility, history = [], trackingReady } = state;
 
   // NOTHING RUNNING — the start button, and the reasons it might refuse.
   if (!journey) {
@@ -794,7 +798,10 @@ function OutreachTab({ healer }) {
             ? healer.contact_form_url
               ? 'No contact email, only a contact form. Write to them through the form yourself, then record it below.'
               : 'No contact email — add one to the healer profile first.'
-            : null;
+            : eligibility?.problems?.length
+              ? eligibility.problems.join(' ')
+              : null;
+    const warnings = blocked ? [] : eligibility?.warnings || [];
     // A form-only listing (owner, 11 Nov 2026): the admin writes through the
     // form by hand and records the day here. Nothing is sent from Spiritpedia.
     const formOnly = !claimed && !doNotContact && !healer.contact_email && Boolean(healer.contact_form_url);
@@ -813,6 +820,11 @@ function OutreachTab({ healer }) {
             {blocked}
           </p>
         )}
+        {warnings.map((w) => (
+          <p key={w} className="mt-3 rounded-xl border border-amber-500/30 bg-amber-500/5 p-3 text-xs text-amber-300">
+            {w}
+          </p>
+        ))}
 
         <div className="mt-5 flex flex-wrap items-center gap-3">
           <button
@@ -1532,6 +1544,29 @@ export default function AdminHealerRecordPage({ params }) {
                     Spiritpedia’s own listing shows OFFICIAL and no tier.
                   </span>
                 )}
+              </LabelledField>
+
+              <LabelledField label="Email recipient type">
+                {'contact_recipient_type' in healer ? (
+                  <select
+                    value={draft.contact_recipient_type ?? ''}
+                    onChange={(e) => set('contact_recipient_type', e.target.value || null)}
+                    className={inputClass}
+                  >
+                    <option value="">Not looked at yet</option>
+                    {RECIPIENT_TYPE_OPTIONS.map((t) => (
+                      <option key={t.value} value={t.value}>
+                        {t.label}
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <span className="block py-2 text-xs text-amber-300">Needs migration 0048.</span>
+                )}
+                <span className="mt-1.5 block text-[11px] leading-snug text-slate-500">
+                  Whose inbox the contact email is. Outreach to anyone but a person needs a business or
+                  organisation inbox, and every journey needs the email source.
+                </span>
               </LabelledField>
 
               <LabelledField label="Entity type">

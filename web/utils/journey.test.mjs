@@ -9,6 +9,8 @@ import {
   journeyTarget,
   nextDue,
   outreachAllowedFor,
+  outreachEligibility,
+  startBlocker,
   outreachFirstName,
   outreachRefusal,
   schedule,
@@ -114,4 +116,35 @@ test("a publisher's links go to /publishers and claim as a publisher", () => {
     profileUrl: 'https://www.spiritpedia.co/publishers/hay-house',
     claimUrl: 'https://www.spiritpedia.co/auth/claim?slug=hay-house&kind=publisher',
   });
+});
+
+test('eligibility: every address needs its source; the shared kinds need a business or organisation inbox', () => {
+  const sourced = { email: 'info@x.org', source: 'https://x.org/contact' };
+  // A person: source required; a missing or unknown type only warns.
+  assert.deepEqual(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: 'personal' }), { problems: [], warnings: [] });
+  assert.equal(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: null }).problems.length, 0);
+  assert.match(outreachEligibility({ entityType: 'individual', ...sourced, recipientType: 'unknown' }).warnings.join(), /not set/);
+  assert.match(outreachEligibility({ entityType: 'individual', email: 'a@b.c', source: '', recipientType: 'business' }).problems.join(), /published on/);
+  // The shared kinds.
+  for (const type of ['business', 'organisation', 'personal_business']) {
+    assert.deepEqual(outreachEligibility({ entityType: 'school', ...sourced, recipientType: type }).problems, [], type);
+  }
+  assert.match(outreachEligibility({ entityType: 'publisher', ...sourced, recipientType: 'personal' }).problems.join(), /private individual/);
+  assert.match(outreachEligibility({ entityType: 'channel', ...sourced, recipientType: null }).problems.join(), /Set the recipient type/);
+  assert.match(outreachEligibility({ entityType: 'app', ...sourced, recipientType: 'unknown' }).problems.join(), /Set the recipient type/);
+  // Before migration 0048: the type isn't asked for, and a warning says why.
+  const before = outreachEligibility({ entityType: 'organisation', ...sourced, recipientType: undefined });
+  assert.deepEqual(before.problems, []);
+  assert.match(before.warnings.join(), /0048/);
+  assert.match(outreachEligibility({ entityType: 'school', email: '', source: '' }).problems.join(), /No contact email/);
+});
+
+test('Start is blocked by the first reason a person would read', () => {
+  const ok = { eligibility: { problems: [], warnings: ['w'] } };
+  assert.equal(startBlocker(ok), null);
+  assert.match(startBlocker({ ...ok, kindRefusal: 'Switched off.', claimed: true }), /^Switched off/);
+  assert.match(startBlocker({ ...ok, claimed: true, doNotContact: 'x' }), /claimed/);
+  assert.match(startBlocker({ ...ok, doNotContact: 'They asked us to stop emailing.' }), /Not to be emailed again/);
+  assert.match(startBlocker({ ...ok, running: 'running' }), /already running/);
+  assert.match(startBlocker({ eligibility: { problems: ['No source.'], warnings: [] } }), /No source/);
 });

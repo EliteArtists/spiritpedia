@@ -6,6 +6,7 @@ import {
   doNotContactReason,
   isClaimed,
   listingFacts,
+  outreachEligibility,
   outreachRefusal,
   recordMessage,
 } from '@/utils/journey';
@@ -35,12 +36,12 @@ export async function POST(request) {
   const { data: listing } = publisherSlug
     ? await supabase
         .from('publishers')
-        .select('id, name, slug, contact_email')
+        .select('*')
         .eq('slug', publisherSlug)
         .maybeSingle()
     : await supabase
         .from('healers')
-        .select('id, name, healer_slug, contact_email, entity_type')
+        .select('*')
         .eq('healer_slug', slug)
         .maybeSingle();
 
@@ -56,9 +57,21 @@ export async function POST(request) {
     return NextResponse.json({ error: 'wording_not_approved', message: refusal }, { status: 400 });
   }
 
-  if (!listing.contact_email) {
+  // SENDING ELIGIBILITY (utils/journey.js → outreachEligibility): the page
+  // the address is published on, always; for every kind but a person, a
+  // business or organisation inbox (migration 0048). Read as '*' so this
+  // works before 0048: a column it adds is then absent, not an error.
+  const recipientType = 'contact_recipient_type' in listing ? listing.contact_recipient_type : undefined;
+  const source = listing.contact_email_source || null;
+  const { problems, warnings } = outreachEligibility({
+    entityType,
+    email: listing.contact_email,
+    source,
+    recipientType,
+  });
+  if (problems.length) {
     return NextResponse.json(
-      { error: 'no_contact_email', message: 'This listing has no contact email to write to.' },
+      { error: listing.contact_email ? 'not_eligible' : 'no_contact_email', message: problems.join(' ') },
       { status: 400 }
     );
   }
@@ -96,7 +109,11 @@ export async function POST(request) {
   // as history and does not block a restart.
   const { data: journey, error: insertError } = await supabase
     .from('healer_journeys')
-    .insert(publisherSlug ? { publisher_id: listing.id } : { healer_slug: slug })
+    .insert({
+      ...(publisherSlug ? { publisher_id: listing.id } : { healer_slug: slug }),
+      // What it was eligible on, kept with the journey (migration 0048).
+      ...(recipientType === undefined ? {} : { contact_recipient_type: recipientType, contact_email_source: source }),
+    })
     .select('*')
     .single();
 
@@ -163,5 +180,7 @@ export async function POST(request) {
     // Surfaced so the admin is never in doubt about whether a real practitioner
     // was written to or the test inbox was.
     redirected: Boolean(process.env.JOURNEY_TEST_EMAIL),
+    // Allowed, but worth knowing: a person's address with no recipient type.
+    warnings,
   });
 }

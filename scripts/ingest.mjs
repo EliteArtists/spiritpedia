@@ -65,6 +65,19 @@ async function get(p) {
   if (!r.ok) throw new Error(`GET ${p.split('?')[0]}: ${r.status} ${await r.text()}`);
   return r.json();
 }
+// Migration 0048 (owner, 11 Nov 2026): whose inbox a contact email is
+// (contact_recipient_type on healers and publishers) and a publisher's
+// contact_email_source. Written only when the database has the columns; a
+// plan's values are kept in the plan either way.
+const RECIPIENT_TYPES = ['business', 'organisation', 'personal_business', 'personal', 'unknown'];
+let has0048Cache = null;
+async function has0048() {
+  if (has0048Cache === null) {
+    const r = await fetch(`${BASE}/rest/v1/publishers?select=contact_recipient_type,contact_email_source&limit=1`, { headers });
+    has0048Cache = r.ok;
+  }
+  return has0048Cache;
+}
 async function insert(table, row) {
   const post = (body) => fetch(`${BASE}/rest/v1/${table}`, {
     method: 'POST', headers: { ...headers, Prefer: 'return=representation' }, body: JSON.stringify(body),
@@ -165,6 +178,7 @@ function fixSubjects(kind, item) {
 // ── A publishing house (README §18.5): its own plan, no healer ────────────
 // { "publisher": { "slug", "name", "description", "website_url", "logo_url",
 //   "founded_year", "tier", "subjects", "contact_email",
+//   "contact_email_source", "contact_recipient_type" (0048),
 //   "authors": [{ "name", "healer_slug" | null, "note" }] } }
 // Creates the publisher (or uses the existing one with that slug), finds its
 // logo, links every author who has a healer_slug that exists, and lists the
@@ -175,6 +189,9 @@ if (plan.publisher) {
   pub.subjects = [...new Set((pub.subjects || []).map((x) => x.trim().toLowerCase()))];
   for (const x of pub.subjects) if (!subjects.has(x)) problems.push(`publisher subject "${x}" doesn't exist`);
   if (!['superhero', 'luminary', 'local_hero'].includes(pub.tier)) problems.push(`publisher tier "${pub.tier}" isn't superhero, luminary or local_hero`);
+  // Every published email with its page, a publisher's too (README §18.4).
+  if (pub.contact_email && !/^https?:\/\//.test(pub.contact_email_source || '')) problems.push('publisher contact_email: add contact_email_source (the page that publishes it)');
+  if (pub.contact_recipient_type && !RECIPIENT_TYPES.includes(pub.contact_recipient_type)) problems.push(`publisher contact_recipient_type "${pub.contact_recipient_type}" isn't one of ${RECIPIENT_TYPES.join(', ')}`);
   if (!existingPub) {
     const [byName] = await get(`publishers?select=slug&name=ilike.${encodeURIComponent(pub.name)}`);
     if (byName) problems.push(`a publisher named "${pub.name}" already exists as ${byName.slug}`);
@@ -212,7 +229,14 @@ if (plan.publisher) {
       name: pub.name, slug: pub.slug, description: pub.description || null, website_url: pub.website_url || null,
       logo_url: pub.logo_url || null, founded_year: pub.founded_year || null, subject_slugs: pub.subjects,
       tier: pub.tier, contact_email: pub.contact_email || null,
+      ...(await has0048()
+        ? {
+            contact_email_source: pub.contact_email ? pub.contact_email_source || null : null,
+            contact_recipient_type: pub.contact_email ? pub.contact_recipient_type || null : null,
+          }
+        : {}),
     });
+    if (pub.contact_email && !(await has0048())) say('  (migration 0048 not run: the email source and recipient type were not written)');
     log.publisher = { id: row.id, slug: pub.slug };
   }
   for (const a of toLink) {
@@ -237,6 +261,8 @@ if (create) {
   create.entity_type ||= 'individual';
   if (!TIERS.includes(create.tier)) problems.push(`healer tier "${create.tier}" isn't one of ${TIERS.join(', ')}`);
   if (!ENTITY_TYPES.includes(create.entity_type)) problems.push(`healer type "${create.entity_type}" isn't one of ${ENTITY_TYPES.join(', ')}`);
+  const recipientType = create.contact_recipient_type ?? plan.sprint?.contact_recipient_type;
+  if (recipientType && !RECIPIENT_TYPES.includes(recipientType)) problems.push(`contact_recipient_type "${recipientType}" isn't one of ${RECIPIENT_TYPES.join(', ')}`);
   if (create.tier === 'ascended_master' && create.entity_type !== 'individual') problems.push('an Ascended Master must be a person (entity_type individual)');
   if (create.tier === 'ascended_master' && !create.death_year) problems.push('an Ascended Master needs death_year (and birth_year if known)');
   if (create.tier !== 'ascended_master' && (create.birth_year || create.death_year)) problems.push('birth_year/death_year are only for Ascended Masters');
@@ -551,6 +577,11 @@ if (create) {
     // describe the source in words.
     contact_email_source: create.contact_email && /^https?:\/\//.test(plan.sprint?.email_source || '') ? plan.sprint.email_source : null,
     contact_form_url: /^https?:\/\//.test(plan.sprint?.contact_form_url || '') ? plan.sprint.contact_form_url : null,
+    // Whose inbox it is (0048): healer.create.contact_recipient_type, or
+    // sprint.contact_recipient_type beside sprint.email_source.
+    ...(create.contact_email && (await has0048())
+      ? { contact_recipient_type: create.contact_recipient_type ?? plan.sprint?.contact_recipient_type ?? null }
+      : {}),
     website_url: create.website_url || null, youtube_url: create.youtube_url || null,
     instagram_url: create.instagram_url || null, facebook_url: create.facebook_url || null,
     twitter_url: create.twitter_url || null, tiktok_url: create.tiktok_url || null,

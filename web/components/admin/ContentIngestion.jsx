@@ -7,6 +7,7 @@ import { supabase } from '@/utils/supabase';
 import { adminWrite } from '@/utils/adminWrite';
 import { PLATFORM_TIER_GUIDANCE, tierOptions } from '@/utils/badges';
 import ListingIngestion from './ListingIngestion.jsx';
+import { RECIPIENT_TYPE_OPTIONS } from '@/utils/recipientTypes';
 
 // Extract the canonical YouTube video ID from any common URL shape.
 function extractYouTubeId(url) {
@@ -153,6 +154,13 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
   const [editFoundedYear, setEditFoundedYear] = useState('');
   const [editTier, setEditTier] = useState('local_hero');
   const [editSubjectSlugs, setEditSubjectSlugs] = useState([]); // pre-checked subject tags
+  // The publisher's contact (0020), where it is published and whose inbox it
+  // is (0048; owner 11 Nov 2026). has0048 is false until that migration runs:
+  // the two newer fields are then shown as waiting, and never written.
+  const [editContactEmail, setEditContactEmail] = useState('');
+  const [editContactSource, setEditContactSource] = useState('');
+  const [editRecipientType, setEditRecipientType] = useState('');
+  const [has0048, setHas0048] = useState(false);
   const [linkedAuthors, setLinkedAuthors] = useState([]); // [{ healer_id, name }] currently linked
   const [editNewHealerIds, setEditNewHealerIds] = useState([]); // authors staged to add
   const [editHealerSearch, setEditHealerSearch] = useState('');
@@ -293,6 +301,10 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
       setEditFoundedYear(pub.founded_year != null ? String(pub.founded_year) : '');
       setEditTier(pub.tier || 'local_hero');
       setEditSubjectSlugs(Array.isArray(pub.subject_slugs) ? pub.subject_slugs : []);
+      setEditContactEmail(pub.contact_email || '');
+      setEditContactSource(pub.contact_email_source || '');
+      setEditRecipientType(pub.contact_recipient_type || '');
+      setHas0048('contact_recipient_type' in pub);
     }
     setLinkedAuthors(authors);
   }
@@ -353,6 +365,22 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
       return;
     }
     const foundedNum = editFoundedYear.trim() ? parseInt(editFoundedYear.trim(), 10) : null;
+    // The same contact rules as Add Listing (utils/listingIngest.js): a real
+    // address, with the page that publishes it, never a decoded one.
+    const contactEmail = editContactEmail.trim();
+    const contactSource = editContactSource.trim();
+    if (contactEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail)) {
+      flashEditToast(`"${contactEmail}" isn't an email address.`, 'error');
+      return;
+    }
+    if (contactSource && !/^https?:\/\/.+\..+/i.test(contactSource)) {
+      flashEditToast('Where the email is published must be a full http(s) link.', 'error');
+      return;
+    }
+    if (has0048 && contactEmail && !contactSource) {
+      flashEditToast('Add where the email is published (the page link).', 'error');
+      return;
+    }
 
     setEditSaving(true);
     try {
@@ -370,6 +398,13 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
           founded_year: Number.isFinite(foundedNum) ? foundedNum : null,
           tier: editTier,
           subject_slugs: editSubjectSlugs,
+          contact_email: contactEmail || null,
+          ...(has0048
+            ? {
+                contact_email_source: contactEmail ? contactSource || null : null,
+                contact_recipient_type: contactEmail ? editRecipientType || null : null,
+              }
+            : {}),
         },
       });
       if (updErr) throw updErr;
@@ -1206,6 +1241,52 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
                   </div>
 
                   <PublisherTierField value={editTier} onChange={setEditTier} />
+
+                  {/* CONTACT — for claims and outreach (README §18.4). */}
+                  <div className="space-y-4 rounded-xl border border-slate-800 p-4">
+                    <div>
+                      <label className={labelClass}>Contact email</label>
+                      <input
+                        type="email"
+                        value={editContactEmail}
+                        onChange={(e) => setEditContactEmail(e.target.value)}
+                        className={inputClass}
+                      />
+                    </div>
+                    {has0048 ? (
+                      <>
+                        <div>
+                          <label className={labelClass}>Where the email is published</label>
+                          <input
+                            type="url"
+                            value={editContactSource}
+                            onChange={(e) => setEditContactSource(e.target.value)}
+                            placeholder="https://…/contact"
+                            className={inputClass}
+                          />
+                        </div>
+                        <div>
+                          <label className={labelClass}>Whose inbox is it?</label>
+                          <select
+                            value={editRecipientType}
+                            onChange={(e) => setEditRecipientType(e.target.value)}
+                            className={inputClass}
+                          >
+                            <option value="">Not looked at yet</option>
+                            {RECIPIENT_TYPE_OPTIONS.map((t) => (
+                              <option key={t.value} value={t.value}>
+                                {t.label}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
+                      </>
+                    ) : (
+                      <p className="text-xs text-amber-300">
+                        Where the email is published and whose inbox it is need migration 0048.
+                      </p>
+                    )}
+                  </div>
 
                   {/* Subject tags — pre-checked from the stored subject_slugs */}
                   <div>

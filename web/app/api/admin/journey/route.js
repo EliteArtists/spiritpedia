@@ -33,7 +33,7 @@ export async function GET() {
 
   const { data: journeys, error } = await supabase
     .from('healer_journeys')
-    .select('*, healers(name, entity_type, contact_email, contact_form_url), publishers(name, slug, contact_email)')
+    .select('*, healers(*), publishers(*)')
     .order('started_at', { ascending: false });
   if (error) return NextResponse.json({ error: 'query_failed', message: error.message }, { status: 500 });
 
@@ -77,6 +77,18 @@ export async function GET() {
         kind: j.publisher_id ? 'publisher' : outreachKind(j.healers?.entity_type),
         contact_email: j.publishers?.contact_email || j.healers?.contact_email || null,
         contact_form_url: j.healers?.contact_form_url || null,
+        // Whose inbox and where it is published (migration 0048): what the
+        // journey was started on if it recorded it, else the listing today.
+        // undefined before 0048 runs.
+        ...(() => {
+          const listing = j.publishers || j.healers || {};
+          const recorded = 'contact_recipient_type' in j && (j.contact_recipient_type || j.contact_email_source);
+          return {
+            recipient_type: recorded ? j.contact_recipient_type : listing.contact_recipient_type,
+            email_source: (recorded ? j.contact_email_source : null) || listing.contact_email_source || null,
+            recorded_at_start: Boolean(recorded),
+          };
+        })(),
         status: j.status,
         stop_reason: j.stop_reason,
         channel: j.channel || 'email',

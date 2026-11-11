@@ -4,12 +4,14 @@ import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
+import { RECIPIENT_TYPE_SHORT } from '@/utils/recipientTypes';
 
 // ADMIN → OUTREACH (owner, 11 Nov 2026). Every journey ever started, not just
 // the running ones: who was written to, each of the eight emails (sent,
 // delivered, bounced), and how it ended — replied, claimed, stopped, or a
 // contact made by hand through the listing's form. Filter by kind and by
-// state. Journeys are started from a listing's own Outreach tab.
+// state. Journeys are started from a listing's own Outreach tab, and a
+// publisher's from the panel here (publishers have no listing record page).
 //
 // Delivered and bounced come from Resend's webhook, and replied and form
 // contacts need migration 0044; before it, the page says so rather than
@@ -182,6 +184,169 @@ function ReplyControl({ journey, trackingReady, onDone }) {
   );
 }
 
+// Whose inbox the address is and where it is published (migration 0048):
+// the sending eligibility record the shared copy asks for. Nothing at all
+// before 0048 runs (recipientType undefined).
+function ContactFacts({ recipientType, source }) {
+  if (recipientType === undefined && !source) return null;
+  return (
+    <span className="mt-0.5 block text-[11px] text-slate-500">
+      {recipientType !== undefined && (
+        <span className={recipientType && recipientType !== 'unknown' ? 'text-slate-400' : 'text-amber-300'}>
+          {RECIPIENT_TYPE_SHORT[recipientType] || 'Inbox type not set'}
+        </span>
+      )}
+      {recipientType !== undefined && ' · '}
+      {source ? (
+        <a
+          href={source}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="text-cyan-400 hover:text-cyan-300"
+        >
+          email source
+        </a>
+      ) : (
+        <span className="text-amber-300">no email source</span>
+      )}
+    </span>
+  );
+}
+
+// START A JOURNEY FOR A PUBLISHER (owner, 11 Nov 2026). Publishers have no
+// listing record page with an Outreach tab, so they are started here: find
+// one by name, see its address, where it is published and whose inbox it is,
+// and Start. Switched off with the other shared kinds until the owner turns
+// them on: the button is then disabled with the reason, and the start route
+// refuses anyway.
+function PublisherStart({ onStarted }) {
+  const [q, setQ] = useState('');
+  const [found, setFound] = useState([]);
+  const [picked, setPicked] = useState(null);
+  const [busy, setBusy] = useState(false);
+  const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    const term = q.trim();
+    if (term.length < 2) return undefined;
+    let cancelled = false;
+    const timer = setTimeout(async () => {
+      try {
+        const res = await fetch(`/api/admin/journey/publishers?q=${encodeURIComponent(term)}`, { cache: 'no-store' });
+        const json = await res.json();
+        if (!cancelled) setFound(json.publishers || []);
+      } catch {
+        if (!cancelled) setFound([]);
+      }
+    }, 250);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [q]);
+
+  // Under two letters nothing is searched, and nothing old is shown.
+  const results = q.trim().length >= 2 ? found : [];
+
+  const start = async () => {
+    if (!picked || picked.blocked || busy) return;
+    setBusy(true);
+    setMessage(null);
+    try {
+      const res = await fetch('/api/admin/journey/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ publisher_slug: picked.slug }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) setMessage({ type: 'error', text: json.message || json.error });
+      else {
+        setMessage({
+          type: 'success',
+          text: json.redirected ? `Email 1 sent to ${json.emailSentTo} — the test address.` : `Email 1 sent to ${json.emailSentTo}.`,
+        });
+        setPicked(null);
+        await onStarted();
+      }
+    } catch (err) {
+      setMessage({ type: 'error', text: err.message });
+    }
+    setBusy(false);
+  };
+
+  return (
+    <section className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4">
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Start a journey for a publisher</p>
+      <input
+        type="search"
+        value={q}
+        onChange={(e) => {
+          setQ(e.target.value);
+          setPicked(null);
+          setMessage(null);
+        }}
+        placeholder="Search publishers by name…"
+        className="mt-3 w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-sm text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
+      />
+      {!picked && results.length > 0 && (
+        <ul className="mt-2 divide-y divide-white/5 rounded-lg border border-white/10">
+          {results.map((p) => (
+            <li key={p.id}>
+              <button
+                type="button"
+                onClick={() => setPicked(p)}
+                className="flex w-full items-baseline justify-between gap-3 px-3 py-2 text-left text-sm text-white hover:bg-white/5"
+              >
+                {p.name}
+                <span className="font-mono text-[11px] text-slate-500">{p.contact_email || 'no email'}</span>
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {!picked && q.trim().length >= 2 && results.length === 0 && (
+        <p className="mt-2 text-xs text-slate-500">No publisher by that name.</p>
+      )}
+      {picked && (
+        <div className="mt-3 space-y-2 text-xs">
+          <p className="text-sm font-semibold text-white">{picked.name}</p>
+          <p className="text-slate-400">
+            {picked.contact_email ? <span className="font-mono">{picked.contact_email}</span> : 'No contact email'}
+          </p>
+          <ContactFacts recipientType={picked.recipient_type} source={picked.contact_email_source} />
+          {picked.blocked && (
+            <p className="rounded-lg border border-slate-700 bg-slate-800/50 p-3 text-slate-300">{picked.blocked}</p>
+          )}
+          {!picked.blocked &&
+            (picked.eligibility?.warnings || []).map((w) => (
+              <p key={w} className="rounded-lg border border-amber-500/30 bg-amber-500/5 p-3 text-amber-300">
+                {w}
+              </p>
+            ))}
+          <div className="flex flex-wrap items-center gap-3 pt-1">
+            <button
+              type="button"
+              onClick={start}
+              disabled={busy || Boolean(picked.blocked)}
+              title={picked.blocked || undefined}
+              className="rounded-full bg-[#7c3aed] px-5 py-2 text-xs font-bold text-white hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              {busy ? 'Sending…' : 'Start email journey'}
+            </button>
+            <button type="button" onClick={() => setPicked(null)} className="text-slate-500 underline hover:text-white">
+              Choose another
+            </button>
+          </div>
+        </div>
+      )}
+      {message && (
+        <p className={`mt-3 text-xs ${message.type === 'success' ? 'text-emerald-400' : 'text-red-400'}`}>{message.text}</p>
+      )}
+    </section>
+  );
+}
+
 export default function AdminOutreachPage() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -234,11 +399,13 @@ export default function AdminOutreachPage() {
       </SectionHeading>
 
       <p className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4 text-xs leading-relaxed text-slate-400">
-        Journeys are started from a listing&apos;s Outreach tab. Only individuals can be started for now: the wording for channels, apps,
+        Journeys are started from a listing&apos;s Outreach tab, and a publisher&apos;s from the panel below. Only individuals can be started for now: the wording for channels, apps,
         organisations, schools and publishers is installed, and those journeys stay switched off until the owner turns
         them on. Delivered and bounced come
         from Resend; opens and clicks are not tracked.
       </p>
+
+      <PublisherStart onStarted={load} />
 
       {data && !data.trackingReady && (
         <p className="mb-5 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4 text-xs text-amber-300">
@@ -299,6 +466,7 @@ export default function AdminOutreachPage() {
                       <td className="px-4 py-3">
                         <span className="font-semibold text-white">{j.name}</span>
                         {j.contact_email && <span className="block font-mono text-[11px] text-slate-500">{j.contact_email}</span>}
+                        <ContactFacts recipientType={j.recipient_type} source={j.email_source} />
                       </td>
                       <td className="px-4 py-3 text-xs capitalize text-slate-400">{j.kind}</td>
                       <td className="px-4 py-3 text-xs text-slate-400">{day(j.started_at)}</td>

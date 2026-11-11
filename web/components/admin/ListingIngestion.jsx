@@ -6,6 +6,7 @@ import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
 import { KINDS, MAX_SUBJECTS, checkListing, isHub, isPublisher, slugify } from '@/utils/listingIngest';
 import { suggestTier } from '@/utils/youtubeChannel';
+import { RECIPIENT_TYPE_OPTIONS } from '@/utils/recipientTypes';
 
 // Admin → Ingestion → Add Listing (owner, 11 Nov 2026): one new person,
 // channel, app, organisation, school or publisher, with every field a sprint
@@ -37,6 +38,7 @@ const EMPTY = {
   image_urls: ['', '', ''],
   contact_email: '',
   contact_email_source: '',
+  contact_recipient_type: '',
   contact_form_url: '',
   contact_phone: '',
   booking_url: '',
@@ -392,11 +394,20 @@ export default function ListingIngestion({ subjects }) {
           <Field label="Contact email">
             <input type="email" value={form.contact_email} onChange={(e) => set('contact_email', e.target.value)} className={inputClass} />
           </Field>
-          {!publisher && (
-            <Field label="Where the email is published">
-              <input value={form.contact_email_source} onChange={(e) => set('contact_email_source', e.target.value)} placeholder="https://…/contact" className={inputClass} />
-            </Field>
-          )}
+          <Field label="Where the email is published">
+            <input value={form.contact_email_source} onChange={(e) => set('contact_email_source', e.target.value)} placeholder="https://…/contact" className={inputClass} />
+          </Field>
+          {/* Whose inbox it is (migration 0048), for outreach eligibility. */}
+          <Field label="Whose inbox is it?">
+            <select value={form.contact_recipient_type} onChange={(e) => set('contact_recipient_type', e.target.value)} className={inputClass}>
+              <option value="">Not looked at yet</option>
+              {RECIPIENT_TYPE_OPTIONS.map((t) => (
+                <option key={t.value} value={t.value}>
+                  {t.label}
+                </option>
+              ))}
+            </select>
+          </Field>
         </div>
         {!publisher && (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">

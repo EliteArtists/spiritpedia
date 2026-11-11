@@ -5,6 +5,7 @@ import { JOURNEY_EMAILS, JOURNEY_SCHEDULE } from './email.js';
 import { outreachFirstName } from './emailTemplates.js';
 import { booksByAuthorsFilter } from './bookAuthors.js';
 import { isPlatform } from './listings.js';
+import { RECIPIENT_TYPES } from './recipientTypes.js';
 
 export const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -126,6 +127,59 @@ export function outreachRefusal(entityType) {
   if (outreachAllowedFor(entityType)) return null;
   const words = KIND_WORDS[outreachKind(entityType)] || 'this kind of listing';
   return `Switched off. The approved wording for ${words} is installed, but journeys for ${words} stay off until the owner turns them on.`;
+}
+
+// WHOSE INBOX IT IS (migration 0048): utils/recipientTypes.js.
+export { RECIPIENT_TYPES };
+
+// The shared journey goes only to published business or organisation inboxes
+// (docs/email-copy-2026-11-11-shared-journey.md); a named person's address
+// published by the business counts, pending the solicitor's answer on named
+// business inboxes.
+const SHARED_RECIPIENT_TYPES = ['business', 'organisation', 'personal_business'];
+
+// May this address be written to, before any send? Pure, so the rules are
+// tested. → { problems, warnings }: any problem refuses the start.
+//   - The page the address is published on, always (README §18.4: every
+//     published email is stored with the page it's on; the shared copy asks
+//     for it too). Listings from before 0039 need it added first.
+//   - The recipient type: for the shared journey (every kind but a person),
+//     one of the business or organisation inboxes above; for a person,
+//     missing or "unknown" is a warning, not a refusal.
+// recipientType undefined means migration 0048 has not run: then the type
+// is not asked for, and the warning says so.
+export function outreachEligibility({ entityType, email, source, recipientType }) {
+  const problems = [];
+  const warnings = [];
+  if (!email) problems.push('No contact email.');
+  if (email && !source) {
+    problems.push('No record of the page this email is published on. Add it (Profile → Where the email is published) first.');
+  }
+  const person = outreachKind(entityType) === 'individual';
+  if (recipientType === undefined) {
+    warnings.push("The recipient type isn't recorded yet (migration 0048 has not been run).");
+  } else if (person) {
+    if (!recipientType || recipientType === 'unknown') warnings.push('The recipient type is not set for this address.');
+  } else if (!SHARED_RECIPIENT_TYPES.includes(recipientType)) {
+    problems.push(
+      recipientType === 'personal'
+        ? "This is a private individual's address; the shared journey goes only to business or organisation inboxes."
+        : 'Set the recipient type first: the shared journey goes only to business or organisation inboxes.'
+    );
+  }
+  return { problems, warnings };
+}
+
+// Why Start can't be pressed, first reason first, or null. The order a
+// person reads it in: switched off, then claimed, do not contact, already
+// running, then the address itself. The start route checks the same again.
+export function startBlocker({ kindRefusal, claimed, doNotContact, running, eligibility }) {
+  if (kindRefusal) return kindRefusal;
+  if (claimed) return 'This listing has been claimed.';
+  if (doNotContact) return `Not to be emailed again. ${doNotContact}`;
+  if (running) return `A journey is already ${running}.`;
+  if (eligibility?.problems?.length) return eligibility.problems.join(' ');
+  return null;
 }
 
 // What the greeting calls them (utils/emailTemplates.js): a person by their

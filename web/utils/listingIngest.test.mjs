@@ -11,6 +11,7 @@ const good = {
   subjects: ['reiki'],
   contact_email: 'ana@example.com',
   contact_email_source: 'https://example.com/contact',
+  contact_recipient_type: 'personal_business',
   city: 'Lisbon',
   country: 'Portugal',
   location_source: 'https://example.com/about',
@@ -107,4 +108,14 @@ test('YouTube: references, the channel shape and the suggested tier', () => {
   assert.equal(suggestTier(c.subscribers), 'luminary');
   assert.equal(suggestTier(99_999), 'local_hero');
   assert.equal(suggestTier(null), null);
+});
+
+test("contact: a publisher's email needs its page too; the recipient type is checked", () => {
+  const pub = { kind: 'publisher', name: 'Hay House', slug: 'hay-house', tier: 'superhero', subjects: ['spirituality'] };
+  assert.match(checkListing({ ...pub, contact_email: 'info@hayhouse.com' }).problems.join(), /where the email is published/);
+  const sourced = { ...pub, contact_email: 'info@hayhouse.com', contact_email_source: 'https://www.hayhouse.com/contact' };
+  assert.deepEqual(checkListing({ ...sourced, contact_recipient_type: 'business' }).problems, []);
+  assert.ok(checkListing(sourced).warnings.some((w) => /Recipient type not set/.test(w)));
+  assert.ok(checkListing({ ...sourced, contact_recipient_type: 'unknown' }).warnings.some((w) => /Recipient type not set/.test(w)));
+  assert.match(checkListing({ ...sourced, contact_recipient_type: 'friend' }).problems.join(), /isn't one of the set/);
 });

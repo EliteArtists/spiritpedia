@@ -130,6 +130,16 @@ the same greeting rule.
   none, the doc's fallback sentence. An app always has its own sentence.
 - **Links:** `/healers/{slug}` and `/auth/claim?slug={slug}`; a publisher's
   `/publishers/{slug}` and `/auth/claim?slug={slug}&kind=publisher`.
+- **Sending eligibility** (`web/utils/journey.js` → `outreachEligibility`,
+  migration 0048): every journey needs the page the address is published on
+  (`contact_email_source`; README §18.4), so older listings without one can't
+  be started until it's added. Every listing and publisher records whose
+  inbox the address is (`contact_recipient_type`: business, organisation,
+  personal_business, personal, unknown). The shared journey goes only to a
+  business or organisation inbox (or a named person's address published by
+  one); for a person, a missing type is a warning. The type and source are
+  copied onto the journey when it starts. Publishers are started from Admin →
+  Outreach → "Start a journey for a publisher".
 - **SWITCHED OFF.** Installing it started nothing. The switch is the one list
   `OUTREACH_KINDS_APPROVED` in `web/utils/journey.js`: today `['individual']`;
   the owner turns the shared journeys on (when the app is in both stores) by

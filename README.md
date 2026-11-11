@@ -2850,6 +2850,15 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   don't. A fan-club inbox doesn't count; company support, centre office,
   press and assistant inboxes do (centres only if they founded or co-lead
   them).
+- **Whose inbox** (owner, 11 Nov 2026; `0048`): every contact email also
+  records its recipient type (`contact_recipient_type`: `business`,
+  `organisation`, `personal_business` for a named person's address at the
+  business, `personal`, or `unknown`), on listings and publishers alike;
+  publishers store their email's source page too. Plans set
+  `sprint.contact_recipient_type` (publishers: `contact_email_source` and
+  `contact_recipient_type`). Outreach refuses any address with no source;
+  channels, apps, organisations, schools and publishers also need a
+  business, organisation or personal-business inbox.
 - **Base location** (owner, 3 Nov 2026): every living person, school and
   organisation gets the city and country they **publish** as their base
   (where they live or are based; a school or organisation: its headquarters

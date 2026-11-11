@@ -6,6 +6,7 @@
 // import it.
 
 import { isPerson, tierOptions } from './badges.js';
+import { RECIPIENT_TYPES } from './recipientTypes.js';
 
 export const KINDS = [
   { value: 'individual', label: 'Individual (a person)' },
@@ -157,9 +158,17 @@ export function checkListing(input, { subjectSlugs = null } = {}) {
   }
   if (!publisher) {
     if (!email && !input.contact_form_url) problems.push('Contact: a published email or a contact form is needed (a phone or address alone fails).');
-    if (email && !input.contact_email_source) problems.push('Add where the email is published (the page link).');
   } else if (!email) {
     warnings.push('No contact email: the publisher can still be claimed, but outreach has nowhere to write.');
+  }
+  // Every email with the page that publishes it, a publisher's too (owner,
+  // 11 Nov 2026; migration 0048), and whose inbox it is: the outreach
+  // eligibility check reads both (utils/journey.js → outreachEligibility).
+  if (email && !input.contact_email_source) problems.push('Add where the email is published (the page link).');
+  const recipientType = String(input.contact_recipient_type || '').trim();
+  if (recipientType && !RECIPIENT_TYPES[recipientType]) problems.push(`Recipient type "${recipientType}" isn't one of the set.`);
+  if (email && (!recipientType || recipientType === 'unknown')) {
+    warnings.push("Recipient type not set: whose inbox is this email? Outreach to anyone but a person needs a business or organisation inbox.");
   }
 
   // The base.

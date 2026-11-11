@@ -23,9 +23,24 @@ const AVAILABILITY = {
 
 const TEXT = [
   'kind', 'name', 'slug', 'bio', 'tier', 'availability', 'city', 'country', 'location_source', 'no_public_base',
-  'contact_email', 'contact_email_source', 'contact_form_url', 'contact_phone', 'booking_url', 'website_url',
+  'contact_email', 'contact_email_source', 'contact_recipient_type', 'contact_form_url', 'contact_phone', 'booking_url', 'website_url',
   'youtube_url', 'instagram_url', 'facebook_url', 'twitter_url', 'tiktok_url',
 ];
+
+// Columns migration 0048 adds. Written when the database has them; before
+// 0048 runs, the insert is retried without them and says so, rather than
+// failing the whole listing.
+const MIGRATION_0048 = ['contact_recipient_type', 'contact_email_source'];
+
+async function insertListing(supabase, table, values, columns) {
+  const first = await supabase.from(table).insert(values).select(columns).single();
+  const missing = ['42703', 'PGRST204'].includes(first.error?.code);
+  if (!missing) return { ...first, without0048: false };
+  const fallback = { ...values };
+  for (const key of MIGRATION_0048) if (table === 'publishers' || key !== 'contact_email_source') delete fallback[key];
+  const second = await supabase.from(table).insert(fallback).select(columns).single();
+  return { ...second, without0048: true };
+}
 
 // Trimmed strings, whole-number years, real arrays: what the form sent, made
 // safe to check and to write.
@@ -145,9 +160,10 @@ export async function POST(request) {
 
     // ── Insert ─────────────────────────────────────────────────────────────
     if (publisher) {
-      const { data: row, error } = await supabase
-        .from('publishers')
-        .insert({
+      const { data: row, error, without0048 } = await insertListing(
+        supabase,
+        'publishers',
+        {
           name: input.name,
           slug: input.slug,
           description: input.bio || null,
@@ -157,10 +173,13 @@ export async function POST(request) {
           subject_slugs: input.subjects,
           tier: input.tier,
           contact_email: input.contact_email || null,
-        })
-        .select('id, slug')
-        .single();
+          contact_email_source: input.contact_email ? input.contact_email_source || null : null,
+          contact_recipient_type: input.contact_email ? input.contact_recipient_type || null : null,
+        },
+        'id, slug'
+      );
       if (error) throw new Error(error.message);
+      if (without0048) result.warnings.push('Saved without the email source and recipient type: run migration 0048, then add them.');
       let linked = 0;
       if (authors.length) {
         const { error: linkErr } = await supabase
@@ -176,9 +195,10 @@ export async function POST(request) {
 
     const ascended = input.tier === 'ascended_master';
     const availability = input.kind === 'individual' ? AVAILABILITY[input.availability] || AVAILABILITY.worldwide : AVAILABILITY.worldwide;
-    const { data: row, error } = await supabase
-      .from('healers')
-      .insert({
+    const { data: row, error, without0048 } = await insertListing(
+      supabase,
+      'healers',
+      {
         name: input.name,
         healer_slug: input.slug,
         bio: input.bio || null,
@@ -194,6 +214,7 @@ export async function POST(request) {
         country: ascended ? null : input.country || null,
         contact_email: input.contact_email || null,
         contact_email_source: input.contact_email ? input.contact_email_source || null : null,
+        contact_recipient_type: input.contact_email ? input.contact_recipient_type || null : null,
         contact_form_url: input.contact_form_url || null,
         contact_phone: input.contact_phone || null,
         booking_url: input.booking_url || null,
@@ -204,10 +225,11 @@ export async function POST(request) {
         twitter_url: input.twitter_url || null,
         tiktok_url: input.tiktok_url || null,
         founded_year: input.kind === 'individual' ? null : input.founded_year,
-      })
-      .select('id, healer_slug, place_id')
-      .single();
+      },
+      'id, healer_slug, place_id'
+    );
     if (error) throw new Error(error.message);
+    if (without0048) result.warnings.push('Saved without the recipient type: run migration 0048, then add it.');
     let linked = 0;
     if (teachers.length) {
       const { error: linkErr } = await supabase
