@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Chinmaya Garbha Samskara",
+      "slug": "chinmaya-garbha-samskara",
+      "url": "https://www.chinmayamission.com/global/chinmaya-garbha-samskara",
+      "page": "https://www.chinmayamission.com/global/chinmaya-garbha-samskara",
+      "description": "A four-module Vedic course for couples preparing for conception, pregnancy and early parenthood, begun in Dubai in 2019 and now run by Chinmaya Mission centres around the world. Trained facilitators cover the traditional samskaras (rites of passage), prayer and mantra, the mind and senses, and approaching childbirth and the first days with a baby with awareness. It is taught in small, supportive groups.",
+      "price": "Contact for pricing",
+      "image": null,
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/chinmaya-mission.json",
+    "left_out": [],
+    "flags": [
+      "Health check: the page (read 12 Nov 2026) presents the course as spiritual preparation for birth and parenthood (samskaras, mantras, prayer, conscious parenting). It names pregnancy and post-natal care and says facilitators include paediatricians, but makes no claim to treat any condition and says nothing about replacing medical care, so restored under the 12 Nov rule.",
+      "No price or dates on the page (run locally by centres), so undated and 'Contact for pricing'.",
+      "Image set to null: the page's images are served from images.chinmayamission.com, whose robots.txt returned a 503 (CloudFront error), so that host was skipped. images_final is set so the dry run does not go looking.",
+      "Offerings go from 3 to 4."
+    ]
+  },
+  "images_final": true
+}

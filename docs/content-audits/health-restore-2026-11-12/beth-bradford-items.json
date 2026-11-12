@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "beth-bradford"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Therapeutic Yoga",
+      "slug": "therapeutic-yoga-beth-bradford",
+      "url": "https://www.brad4d-wellness.com/service-page/therapeutic-yoga-1",
+      "page": "https://www.brad4d-wellness.com/service-page/therapeutic-yoga-1",
+      "description": "A one-hour private session in your own home for seniors and recovering athletes. There are no flowing sequences: Beth guides gentle stretching combined with awareness of the body and breath. Sessions are booked online at least a day ahead.",
+      "price": "$75 per person",
+      "image": null,
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/beth-bradford.json",
+    "left_out": [],
+    "flags": [
+      "Health check: the page (read 12 Nov 2026) says only 'for seniors and recovering athletes' and 'a gentle stretch combined with awareness'; no condition named and no claim to treat, so restored under the 12 Nov rule. It leans towards gentle movement more than spiritual teaching; a human may want a look.",
+      "Price as published ($75 per person; no currency code shown).",
+      "Image set to null: the page's image is on static.wixstatic.com, whose robots.txt answered 403, so that host was skipped. images_final is set so the dry run does not go looking.",
+      "Offerings go from 2 to 3."
+    ]
+  },
+  "images_final": true
+}

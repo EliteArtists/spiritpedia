@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "noirin-sheahan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Greeting the Devadutta",
+      "slug": "greeting-the-devadutta-noirin-sheahan",
+      "url": "https://www.satipanya.org.uk/wp-content/uploads/2015/09/Greeting-the-Devadutta.pdf",
+      "description": "A short essay Noirin wrote in the months after major throat surgery, describing how she met fear and anxiety in intensive care with the help of practice, friends' goodwill and the hospital staff. She comes to see the illness as a devadutta, a messenger showing that all pleasures end, and writes of finding moments of deep peace beyond the self. A free PDF from her teachings page at Satipanya.",
+      "image": "https://www.satipanya.org.uk/wp-content/uploads/2015/10/using-electrolarynx-June-2023.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Laryngectomy Dhamma",
+      "slug": "laryngectomy-dhamma-noirin-sheahan",
+      "url": "https://www.satipanya.org.uk/wp-content/uploads/2015/09/Laryngectomy.pdf",
+      "description": "Noirin reflects on learning to live without her natural voice: daydreams of a miracle, the grief underneath them, shame, anger and questions about kamma. Each turn becomes a Dhamma lesson in noting what is present and meeting it with compassion. A free PDF essay from her teachings page at Satipanya.",
+      "image": "https://www.satipanya.org.uk/wp-content/uploads/2015/10/using-electrolarynx-June-2023.jpg",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/noirin-sheahan.json",
+    "left_out": [
+      "Stumbling towards Gratitude, Mid-winter Darkness and Teaching with an Electro-larynx (same series on https://www.satipanya.org.uk/noirins-teachings/): not added, as the two essays above bring free resources to the cap of 5."
+    ],
+    "flags": [
+      "Health check: both essays (read in full, 12 Nov 2026) are personal Dhamma reflections on her throat cancer surgery and laryngectomy. They name the illness but make no healing claim; 'Laryngectomy Dhamma' treats hopes of a miraculous cure as a delusion to see through, and 'Greeting the Devadutta' credits doctors, nurses and medication for her recovery. Restored under the 12 Nov rule (a memoir of illness).",
+      "Image: the photo of Noirin already used for her other items (same satipanya.org.uk host).",
+      "Free resources go from 3 to 5 (at the cap)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "kristi-kuttner"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One to One Somatic Coaching: Journey to Somatic Liberation",
+      "slug": "somatic-coaching-kristi-kuttner",
+      "url": "https://www.kristikuttner.com/somatic",
+      "page": "https://www.kristikuttner.com/somatic",
+      "description": "Private one-to-one sessions for women moving through the hormonal shifts of midlife who want to meet this season as a time of renewal rather than decline. Kristi combines coaching with somatic embodied yoga, yoga nidra and energy work, with attention to intuition, self-love and relationships. Sessions begin with a discovery call.",
+      "price": "Contact for pricing",
+      "image": "https://images.squarespace-cdn.com/content/v1/5c64c4aa7d0c91424543fa3e/7a4f046e-c046-41f7-8f81-3ae67e0d394e/2024Kristi90.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "reiki",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kristi-kuttner.json",
+    "left_out": [],
+    "flags": [
+      "Health check: the page (https://www.kristikuttner.com/somatic, read 12 Nov 2026) frames the coaching around hormonal changes (menopause) in spiritual and emotional terms: intuition, self-love, sensuality, divine feminine energy. It makes no claim to treat a condition and says nothing about medication or medical care, so restored under the 12 Nov rule. A human may want a look given the midlife-hormones framing.",
+      "No price on the page (discovery call), so 'Contact for pricing'. Image is a photo of Kristi from the same page (images.squarespace-cdn.com, no robots.txt there).",
+      "Offerings go from 5 to 6."
+    ]
+  },
+  "images_final": true
+}

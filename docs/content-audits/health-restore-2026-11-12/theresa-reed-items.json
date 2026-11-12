@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "theresa-reed"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Cards You're Dealt: How to Deal When Life Gets Real (A Tarot Guidebook)",
+      "slug": "the-cards-youre-dealt",
+      "author": "Theresa Reed",
+      "asin": "1578638038",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Theresa shows how to use the tarot as a companion through hard passages of life: a frightening diagnosis, caring for someone, the end of a relationship or job, an empty nest, loss and grief. Drawing on more than thirty years of readings, she offers spreads and guidance for newcomers and professional readers alike, and frames the book as one about living well and making the most of the time we have.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://www.thetarotlady.com/wp-content/uploads/2023/07/BookBrushImage3D-5x8-Medium-Paperback-ttyoepklsm.png"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/theresa-reed.json",
+    "left_out": [],
+    "flags": [
+      "The Cards You're Dealt: ISBN-13 9781578638031 from her own book page (https://www.thetarotlady.com/cards-you-are-dealt/, its Bookshop, Barnes & Noble and Books-A-Million links), converted to ISBN-10 1578638038; not confirmed elsewhere. Author shown there as Theresa Reed. Cover is the page's own og:image (a 3D paperback mock-up of this book, looked at); no Amazon image used.",
+      "Health check: the blurb names a 'scary diagnosis' and caregiving among life's hard times, with loss and grief; no claim to cure or treat and nothing on medical care, so restored under the 12 Nov rule.",
+      "thetarotlady.com asks for Crawl-delay 5: fetches were spaced 6 seconds apart and images_final is set so the dry run does not fetch there.",
+      "Books go from 6 to 7."
+    ]
+  },
+  "images_final": true
+}
