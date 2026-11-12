@@ -144,23 +144,94 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
 - **What happened:** the first top-ups ran the ingest's existing-photo check, which dropped photos it couldn't fetch because the host refuses our checker. That changed the photo lists of 73 listings (70 on dev, 3 on live).
 - **The fix:** all 73 are back exactly as they were (`photos-reverted.log.json`). The ingest now drops a photo only when it's certainly dead (404 or 410, not an image, too small, a Google thumbnail), the same can't-tell rule as the audit.
 
-**Offerings, books, free resources:** helpers re-read each item's real page, then each plan was dry-run and inserted on dev, then live.
+**Offerings, books, free resources (done, dev and live):** helpers re-read each item's real page, then each plan was dry-run, checked by me and inserted on dev, then live.
 
-| Batches | Listings | Plans | Offerings | Free | Books |
+| Batches | Listings checked | Plans | Offerings | Free | Books |
 | :-- | --: | --: | --: | --: | --: |
-| 01–22 | 550 | 267 | 303 | 76 | 55 |
+| 01–25 | 601 | 281 | 315 | 77 | 56 |
 
-- **Commonest reasons still out:**
-  - the item is only on Insight Timer, which is never fetched;
-  - the page still makes a cure or treatment claim (immunity, blood pressure, "cure insomnia", disease prevention);
-  - past or closed;
-  - the 10-item cap;
-  - the site blocks us (robots.txt naming ClaudeBot, 429 or a Cloudflare challenge: skipped, never retried).
-- **Taken out on review:**
-  - Peter Sterios's "Yoga for Pain Relief" ("Tired of taking pain medications?");
-  - Schuyler Grant's two extra Commune courses (the cap is 2 per teacher);
-  - *Physicians of the Heart* (its authors weren't read from a page);
-  - Jeannie O'Neill's prenatal certification (the store page says Yoga Farm's educators teach it).
-- **For you to look at (kept):** Saskia Lightstar's *The Cancer Misfit* (life after treatment: grief, fear of recurrence, no cure claim); Mark Coleman's ADHD half-day (mindfulness and self-compassion, no treatment claim).
+About half the listings got nothing back. The commonest reasons:
+- the item is only on Insight Timer or The Shift Network, which are never fetched;
+- the page still makes a cure or treatment claim (immunity, blood pressure, detox, "cure insomnia", disease named as treated);
+- the page nudges away from medical care, even indirectly ("better than therapy", "equal to medications", relief "where medicine failed");
+- past or closed, or before 16 Nov;
+- no page of its own (one line on a page another item already uses);
+- the 10-item cap;
+- the site now blocks us (below).
 
-**Remaining:** batches 23–25 (about 51 listings) are being researched three at a time, and go in as each batch finishes.
+**Taken out on review (my calls, all logged in each plan's `left_out`):**
+- **Medical care:** Peter Sterios's "Yoga for Pain Relief" ("Tired of taking pain medications?").
+- **Pandemic:** Mary Sise's *Tapping the Panic Out of Pandemic* and Jo-Ann Levitt's *Prayers for the Pandemic*.
+- **Remedies for the body:** Robin Rose Bennett's *The Gift of Healing Herbs*, Gemma Petherbridge's *The Crystal Apothecary*, Lisa Marie Haley's herbal consultation, and Fred Haas's Lightwork sessions ("heal our bodies", "activate DNA").
+- **Possibly psychedelic:** Lindsay Aya McGowen's sessions ("plant-based medicine", unexplained).
+- **Clinical or therapy scope:** Upaya's physician-only weekend; Genevieve Tregor's Somatic Experiencing sessions.
+- **Diet or fitness:** John Douillard's two diet books; Sage Rountree's sports-recovery book.
+- **Not led by the listing:** Jeannie O'Neill's prenatal certification, Parmarth Niketan's Ayurveda week, Dhagpo's Medicine Buddha weekend (teacher may be visiting).
+- **Caps:** Schuyler Grant's two extra Commune courses; Melissa Kim Corter's workshop.
+- **No page read:** *Physicians of the Heart* (authors not read from a page).
+
+**For you to decide:**
+- **Left out, but you may want them in:**
+  - Ken Wilber's *Grace and Grit* (memoir; the publisher says it "questions conventional… approaches to illness");
+  - Daniel Foor's "Possession, Addiction, and Belonging" (passes health; left out for political framing, as before);
+  - Storm Faerywolf's spells page (one charm to "boost" healing of an ailment);
+  - Michelle Clare's Medical Intuitive Basics (body scanning, like diagnosis).
+- **Kept, worth a look:**
+  - Saskia Lightstar's *The Cancer Misfit* (life after treatment, no cure claim);
+  - Mark Coleman's ADHD half-day;
+  - the Iyengar Paris multiple sclerosis class (doctor's certificate needed, no claim);
+  - Michael Mayo's energy healing ("maximum possible relief", disclaimer present);
+  - Joan Halifax's and Upaya's clinician trainings (G.R.A.C.E., Being with Dying);
+  - Leslie McGuirk's chart readings (her site footer mentions "physical health");
+  - Bryan Kest's sessions (his page says "Talk Therapy"; we describe mentoring).
+- **Existing live items to review:**
+  - Asha Carolyn Young's "Remote energy healing sessions" (the page tells readers to monitor their medication with a physician; kidney and cancer testimonials);
+  - Constantina Vaseliades (her site makes cancer claims);
+  - the Sivananda Ho Chi Minh City item with `#satsang` in its URL.
+- **Old plans with emails decoded from Cloudflare** (an earlier slip, not used in the restore): Amrit Yoga Institute, Chitra Sukhu, Howard Cohn.
+- **Listing photos on never-fetch hosts:** Faye Li Yip (theshiftnetwork.com).
+
+**Sites that now block us** (robots.txt naming ClaudeBot or anthropic-ai, or a refusal; skipped, never retried). The listings marked * have live items from these sites:
+- **Blocked in robots.txt:**
+  - sharedcrossing.com*
+  - courses.suzilula.com*
+  - faithhunter.com*
+  - studentsoftheguides.com*
+  - sarahblondin.com*
+  - soulworld.com*
+  - Susie Hemsted's Kajabi*
+  - crowconsultations.com*
+  - milesyoga.com*
+  - vedicmystery.com*
+  - chitrasukhu.com
+  - open.spotify.com
+  - meditatehappier.com
+  - lifespa.com
+  - cyndidale.com*
+  - theartoftuningin.com*
+  - heartofsound.in*
+  - johnvosler.com*
+  - yogauonline.mykajabi.com
+  - offerings.kiamiller.com*
+  - melissaambrosini.com
+  - stevewolf1.bandcamp.com*
+  - tashayoga.com
+- **Refused (403, 406 or 429), a challenge page, or a dropped connection:**
+  - innertraditions.com
+  - nyimc.org
+  - liveanddare.com
+  - inayatiyyahudsonvalleycenter.com
+  - rylandpeters.com
+  - chelseagreen.com
+  - rolfgates.com
+  - jurianhughes.com
+  - static.wixstatic.com
+  - cdn.prod.website-files.com (Esalen's image host)
+
+**Rule slips (helpers'):**
+- **robots.txt:** four times one was read through a filter, so not seen in full; three times a redirect or link reached a bare or www host before its robots.txt was read.
+- **Requests:** two robots.txt reads went in one command; two requests went to rylandpeters.com together (the first got a 429, nothing retried).
+- **Crawl-delay:** two or three fetches may have come sooner than the site asks.
+- **The ingest dry run:** it fetches item pages for images without honouring Crawl-delay. Later helpers supplied their own images on such sites.
+
+**My slip:** my commit loop skipped the last plan of batch 18 (Jeralyn Glass). It was inserted on dev and live at the time; its files are committed now.

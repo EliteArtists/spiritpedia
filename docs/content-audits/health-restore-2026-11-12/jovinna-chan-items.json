@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "jovinna-chan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shedding the Old to Enter the Magnificent Wild: A Women's Third Rite of Passage",
+      "url": "https://www.esalen.org/workshops/shedding-the-old-to-enter-the-magnificent-wild-a-women-s-third-rite-of-passage-031927",
+      "description": "A weekend at Esalen in Big Sur, California, led by Jovinna, honouring perimenopause and menopause as a sacred passage rather than only a biological phase. The days combine conscious dance, time in nature, storytelling and community, with rituals and a ceremony of renewal.",
+      "price": "From $940 (all-inclusive)",
+      "image": null,
+      "product_type": "retreat",
+      "start_date": "2027-03-19",
+      "end_date": "2027-03-21",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jovinna-chan.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule: the workshop names perimenopause and menopause but frames them as 'sacred passages' and offers dance, nature and ritual; no claim to treat symptoms and nothing about medical care.",
+      "Image set to null: Esalen's images are on cdn.prod.website-files.com, whose robots.txt answered 403 (Access Denied) today, so that host is skipped. Her two existing Esalen items (and other Esalen items on the site) use images from that host; a human may want to look.",
+      "Price: the lowest all-inclusive rate on the page is $940 (sleeping bag space), plus the page notes an additional $35 faculty tuition; no currency code shown."
+    ]
+  },
+  "images_final": true
+}

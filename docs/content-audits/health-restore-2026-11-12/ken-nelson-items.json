@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "ken-nelson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mind-Body Life Coaching and Mentoring for Workshop Leaders",
+      "url": "https://kennelsonphd.com/coaching",
+      "description": "One-to-one sessions with Ken by phone or Zoom. The life coaching is self-directed inner exploration for working through worry, old beliefs and difficult decisions, and the mentoring helps holistic workshop and group leaders find their calling and make their teaching more transformational. A free 20-minute introductory call is offered.",
+      "price": "Contact for pricing",
+      "image": "https://img1.wsimg.com/isteam/ip/998ed10b-a2e1-402f-81bd-03a1dbf4c73d/Meadow-Morning%20cropped.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/ken-nelson.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule: the page offers to 'free yourself from anxiety and worry' and 'heal trauma' through self-directed coaching; it is life coaching, not psychotherapy, and makes no claim to treat a medical condition. Sessions are sold through his store; no price is shown on the coaching page, so 'Contact for pricing'."
+    ]
+  },
+  "images_final": true
+}

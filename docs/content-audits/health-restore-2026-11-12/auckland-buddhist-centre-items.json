@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "auckland-buddhist-centre"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Buddhist Recovery Network meetings",
+      "url": "https://aucklandbuddhistcentre.org/buddhistrecoverynetwork",
+      "description": "A weekly Sunday evening meeting at the Mt Eden centre for people recovering from addictive behaviours, led by the centre's Order Members and Mitras. Each meeting explores how mindfulness and other Buddhist practices can support a life in recovery and includes 20 to 30 minutes of guided meditation.",
+      "price": "By koha/dana",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://aucklandbuddhistcentre.org/image/96bd20757a344903885eb361e2f874ec.jpg?w=960&h=auto&fit=max"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/auckland-buddhist-centre.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule: a weekly peer-support meeting for addiction recovery, led by the centre's own Order Members and Mitras. The page says the meetings use mindfulness to help 'with maintaining mental health in general and abstinence from drugs and alcohol'; it is 'respectful of all recovery paths' and makes no treatment claim and says nothing about medication. A human may still want to look at it.",
+      "Listed undated on the network's own page (aucklandbuddhistcentre.org/buddhistrecoverynetwork) because the meeting repeats every Sunday; the dated event page for 15 Nov 2026 falls before the 16 Nov cut-off. The centre's event pages carry a standard link to its Covid guidelines; the item itself is not about COVID."
+    ]
+  },
+  "images_final": true
+}

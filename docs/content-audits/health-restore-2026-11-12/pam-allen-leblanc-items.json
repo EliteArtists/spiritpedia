@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "pam-allen-leblanc"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healthcare Reiki Level 1 & 2",
+      "url": "https://www.reikifromthefarm.com/event/healthcare-reiki-level-12-online/",
+      "description": "A two-day class for people who already hold Usui Reiki Levels 1 and 2, taught online by Pam with Tracey Sullivan, with whom she brought Healthcare Reiki into being. Students receive the Healthcare Reiki placements and symbols and learn how Reiki can sit alongside care for patients, caregivers and healthcare staff, as well as using the energy for their own inner work.",
+      "price": "$545",
+      "product_type": "course",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-10",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/pam-allen-leblanc.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule: the page frames Healthcare Reiki as a bridge between Reiki and healthcare, supporting patients, caregivers and staff ('reduce fear, foster calm'). It makes no claim to cure or treat a condition and does not suggest replacing medical care. One student quote says it 'changed the neurotic behavior of my dog instantly'; not repeated.",
+      "Co-taught with Tracey Sullivan (named as co-organiser and co-creator of Healthcare Reiki, not a visiting teacher); Pam is one of the two leads. Dates on the page are 9-10 Jan 2027; price as published '$545' (the page's instalment option is shown as '$100 USD biweekly').",
+      "The only image the ingest found was the events plugin placeholder; set to null (the page has no picture of its own)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "laura-day"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation Audio",
+      "url": "https://lauraday.com/meditation-audio/",
+      "description": "A free page of guided recordings from Laura's Practical Intuition work: preparations and prologues for intuitive and healing readings, and a short morning practice from The Circle. Further meditations are grouped by the way a person tends to respond to a crisis, such as anxiety, rage, denial or depression.",
+      "image": "https://lauraday.com/wp-content/uploads/2025/01/home-hero-12.jpg",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/laura-day.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule: the page says the recordings create 'states of relaxation, intuition and healing' and groups meditations by crisis response type (anxiety, rage, denial, depression). Two recordings are preparations for a 'healing reading' in her Practical Intuition method; the page makes no claim to cure or treat any condition and says nothing about medication. A human may want to look at the 'healing reading' wording.",
+      "lauraday.com sets Crawl-delay: 10; pages were read with a timed wait, and the image is the page's own og:image (a site-wide hero picture), set as final so the dry run doesn't fetch there."
+    ]
+  },
+  "images_final": true
+}

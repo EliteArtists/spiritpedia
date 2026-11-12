@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "yoga-des-bains"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Méditation Pleine Présence avec André",
+      "url": "https://yoga-des-bains.ch/meditation-pleine-presence-avec-andre/",
+      "description": "A weekly Tuesday morning meditation group at the Geneva studio, led by André Rossier of the Yoga des Bains team. Each session is about half an hour of guided, seated practice centred on perceiving the body and its inner movement, followed by time to share experiences; no previous experience is needed.",
+      "price": "CHF 140.- for 6 sessions",
+      "image": "https://yoga-des-bains.ch/wp-content/uploads/2020/07/20200221_165922-1024x768.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/yoga-des-bains.json",
+    "left_out": [],
+    "flags": [
+      "Restored: the page calls the practice 'un outil de la fasciathérapie telle que développée par Danis Bois' and says it calms, soothes and centres; it makes no claim to treat any condition. André Rossier is on the centre's own 'Qui sommes-nous' page (he is also a fasciatherapist and reflexologist), so this is the centre's own class, not a visiting teacher's. The original note left it out under the therapy rule; a human may want to confirm.",
+      "Price as published: 'CHF 140.- pour 6 séances' (also CHF 280.- for 13, CHF 420.- for 20, CHF 740.- for September to July)."
+    ]
+  },
+  "images_final": true
+}

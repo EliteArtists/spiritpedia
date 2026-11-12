@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "renee-vos-de-wael"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Traumatised Animal session",
+      "url": "https://sagittariusway.com/service/sessions/traumatised-animal/",
+      "description": "A one-to-one session in which Renée connects intuitively with an animal affected by past trauma, listens for the root of its fear and passes on what it shares. She then suggests changes the owner can make so the animal feels safe at home.",
+      "price": "Contact for pricing",
+      "image": "https://sagittariusway.com/wp-content/uploads/2023/08/sagittarius-way-traumatised-animal-01-scaled.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/renee-vos-de-wael.json",
+    "left_out": [
+      "Health Problem session (sagittariusway.com/service/sessions/health-problem/): says she can help with problems 'a vet would struggle with' such as skin conditions, digestive problems and wounds that won't heal, a claim to treat physical conditions.",
+      "Behavioural Problems session (sagittariusway.com/service/sessions/behavioural-problems/): pet behaviour consulting by 'our team' (diet, exercise, litter boxes, possible medical causes), not spiritual teaching and not clearly led by Renée alone."
+    ],
+    "flags": [
+      "Restored under the new health rule: trauma healing for animals through intuitive animal communication, in Renée's own words with her own dog as the example; no medical claim. Like her other sessions it is animal communication rather than spiritual teaching as such; the original plan already asked a human to confirm she fits.",
+      "No price on the page (booking buttons only), so 'Contact for pricing', as with her other sessions."
+    ]
+  },
+  "images_final": true
+}

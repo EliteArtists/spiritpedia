@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "jeralyn-glass"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sleep Loop - Digital Download",
+      "url": "https://www.crystalcadence.com/shop/p/sleep-loop-digital-download",
+      "description": "An 80-minute recorded crystal singing bowl meditation by Jeralyn Glass, made for listening as you fall asleep. It pairs celestial-sounding bowl tones with gentle affirmations of safety, renewal and letting go.",
+      "price": "$33.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/67108bf09ba53e3a6738e828/6710991921ef9c6e5312da3a/671b528f55b95928aa8934a9/1787923597878/cover+%281%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jeralyn-glass.json",
+    "left_out": [
+      "Healing Transmission at 528 Hz (https://www.crystalcadence.com/shop/p/healing-transmission-at-528-hz-recording-digital-download): the page calls 528 Hz the frequency of 'DNA repair', a physical healing claim; health rule.",
+      "Healing Transmission for the Endocrine System (https://www.crystalcadence.com/shop/p/healing-transmission-for-the-endocrine-system-digital-download): sold as supporting the endocrine system and 'the balance of the body chemistry', a claim about a body system; health rule. Both transmissions were also made for Dr. Sue Morter's monthly transmissions."
+    ],
+    "flags": [
+      "Price shown as '$33.00' with no currency code."
+    ]
+  },
+  "images_final": true
+}

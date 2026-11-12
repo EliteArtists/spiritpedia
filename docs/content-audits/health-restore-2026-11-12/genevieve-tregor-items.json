@@ -1,0 +1,23 @@
+{
+  "healer": {
+    "healer_slug": "genevieve-tregor"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/genevieve-tregor.json",
+    "left_out": [
+      "Mindfulness Mentoring & SE sessions: left out on review, 12 Nov 2026: Somatic Experiencing is a therapy modality (as with other SE sessions)."
+    ],
+    "flags": [
+      "Restored under the new health rule, borderline: the page includes Somatic Experiencing 'to heal trauma' and lists 'living well with chronic health issues' and 'transforming health and lifestyle' among what sessions can cover. It names conditions without a claim to cure or treat them and says nothing about medication; the main offer is mindfulness mentoring. SE is a trauma modality, so a human may want to confirm the scope fit.",
+      "Price as published: 'Single: 55-70 minute Session: $165' (also 27-minute sessions at $90 and packages); no currency code shown.",
+      "Image set to null: the page's images are on static.wixstatic.com, whose robots.txt answered 403 Forbidden, so that host is skipped."
+    ]
+  },
+  "images_final": true
+}

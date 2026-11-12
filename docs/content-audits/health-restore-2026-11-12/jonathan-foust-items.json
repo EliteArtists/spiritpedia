@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "jonathan-foust"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Body-Centered Inquiry sessions",
+      "url": "https://www.jonathanfoust.com/work-with-jonathan",
+      "description": "One-to-one sessions of up to 75 minutes combining insight meditation, attention to the body's felt sense and inquiry, informed by the Focusing method in which he has trained. They are offered as a way to work with a challenging personal issue while deepening a path of spiritual awakening.",
+      "price": "$400",
+      "image": "https://images.squarespace-cdn.com/content/v1/5a208956b07869ea230812e5/1513285208902-H2S3K6KQZRM3SP0XVV0L/Foust_June_07__2017_007cape.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jonathan-foust.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule, borderline: the page lists 'anxiety, depression, anger, addiction' among issues people may bring and calls Body-Centered Inquiry 'a therapeutic modality that is fully integrated with a path of spiritual awakening', drawing on Gendlin's Focusing. It makes no claim to cure or treat a condition and says nothing about medication. It is one-to-one sessions, not a psychotherapy training; a human may want to confirm the scope fit.",
+      "Price as published: 'The standard fee is $400' (no currency code shown). Image is his photo from the page itself."
+    ]
+  },
+  "images_final": true
+}

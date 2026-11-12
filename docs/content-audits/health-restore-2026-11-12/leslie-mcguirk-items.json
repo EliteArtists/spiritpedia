@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "leslie-mcguirk"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Natal Chart Readings",
+      "url": "https://www.lesliemcguirk.com/natal-readings/",
+      "description": "A one-to-one astrology reading of your birth chart with Leslie, held on a conference line and recorded so you can keep and listen back to it. The reading looks at the patterns at work in your life as a tool for self-awareness.",
+      "price": "Contact for pricing",
+      "image": "https://www.lesliemcguirk.com/wp-content/uploads/2020/01/DSF6512-Cropped-scaled.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/leslie-mcguirk.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the new health rule, borderline: the readings page itself says 'Leslie does not diagnose, prescribe for, attempt or claim to cure any disease' and describes the reading as a self-awareness tool. But the site-wide footer calls her 'a pioneer in bridging astrology with mental and physical health' who 'collaborates with top doctors to explore the emotional roots of illness', and one testimonial says the work 'changed my health'. None of that is in our description. A human should decide whether this stays.",
+      "No price is published on the page, so 'Contact for pricing'. The image is her own photo used as the page's og:image."
+    ]
+  },
+  "images_final": true
+}
