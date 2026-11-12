@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-centre-tel-aviv"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "קורס תזונה יוגית: המפגש המופלא בין מטבח לנשמה (yogic nutrition course)",
+      "url": "https://lp.sivananda.co.il/tezuna-racheli-b/",
+      "description": "Five Friday-morning sessions at the Tel Aviv centre with senior teacher Racheli (Bhavani) on food as part of spiritual practice. The course covers yogic and Ayurvedic principles of diet, how food bears on the gunas, the koshas and meditation, and includes preparing prasad in the traditional way.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-25",
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "image": "https://lp.sivananda.co.il/wp-content/uploads/2026/09/SVNDA_yoga-nutrition-sqr.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sivananda-yoga-vedanta-centre-tel-aviv.json",
+    "left_out": [
+      "Ayurveda course with Dr. Eran Magon (22 Dec 2026, https://lp.sivananda.co.il/ayurveda-wp/): page says the knowledge prevents and heals diseases and offers home remedies for common problems; a cure claim, still out.",
+      "Advanced Ayurveda (23 Dec 2026, https://lp.sivananda.co.il/ayurveda2/): promises natural ways to treat common health problems and diseases and keep immunity; a treatment claim, still out.",
+      "Ayurveda Online (https://lp.sivananda.co.il/ayurveda-online/): opens by asking whether you are tired of taking a pill for sleep and digestion problems and invites you to treat yourself naturally instead; suggests replacing medication, still out.",
+      "Thai Yoga Therapy workshop (25 Dec 2026) and the annual Thai Yoga Therapy course (4 Nov 2027): massage and yoga-therapy professional trainings with a therapist certificate, orthopaedic assessment and musculoskeletal pathology; therapy scope (and 'diagnose and heal' wording), still out.",
+      "Guided imagery workshop (https://lp.sivananda.co.il/guided-imagination/): the current round began 26 Oct 2026, so it has started.",
+      "Yoga for pregnancy: no page for it in the site menu now."
+    ],
+    "flags": [
+      "Nutrition course: start date 25 Dec 2026 from the page; five weekly Friday sessions, end date not published so left null; no price on the page. Teacher named on the page as רחלי טרשל (Bhavani); surname not transliterated in the description.",
+      "Title kept in Hebrew as published, with an English gloss, as for the listing's other items."
+    ]
+  }
+}

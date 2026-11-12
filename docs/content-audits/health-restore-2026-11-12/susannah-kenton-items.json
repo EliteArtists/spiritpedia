@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "susannah-kenton"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Susannah's De-Stress Bundle",
+      "url": "https://susannahkenton.com/product/susannahs-de-stress-bundle/",
+      "description": "A set of five downloadable audio practices: an EFT tapping session, two breathwork practices (box and 4-7-8 breathing, and rhythmic breathing with holds), a prayer and a one-minute dance break with affirmations. Each is short enough to use in the middle of a busy day.",
+      "price": "$11.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://susannahkenton.com/wp-content/uploads/2023/12/leaopard-shop.jpg",
+      "subjects": [
+        "eft-tapping",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "Susannah's Sleep Bundle",
+      "url": "https://susannahkenton.com/product/sleep/",
+      "description": "Five downloadable audios of spoken guidance and music for the night: a one-hour guided journey into sleep, a shorter journey for getting back to sleep, a tapping practice for winding down, a sleep story and a prayer for peace.",
+      "price": "$11.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://susannahkenton.com/wp-content/uploads/2023/12/moon-shop.jpg",
+      "subjects": [
+        "meditation",
+        "eft-tapping"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/susannah-kenton.json",
+    "left_out": [
+      "Nutrition coaching and weight-loss work: no such offering is on her site now (the shop, the coaching page and the page sitemap list none), so nothing to restore.",
+      "Susannah's Healing Bundle: still out (it includes a cancer meditation); not reopened.",
+      "Videos: handled separately."
+    ],
+    "flags": [
+      "De-Stress Bundle includes a track titled 'Tap to Clear Anxiety' and says the practices help 'move quickly out of anxiety or overwhelm'; the Sleep Bundle promises to help 'reclaim the ability to enjoy deep, restorative sleep'. Wellbeing wording, allowed under the new rule. Her site footer says nothing on it is meant to diagnose, treat or cure any disease."
+    ]
+  },
+  "images_final": true
+}

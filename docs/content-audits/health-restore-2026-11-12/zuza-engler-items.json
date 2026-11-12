@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "zuza-engler"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Moving Out of Anxiety and Overwhelm",
+      "url": "https://www.zuzaengler.com/masterclass",
+      "description": "A recorded online class mixing a little theory with a lot of guided movement, aimed at anyone wound up by stress and especially at therapists, coaches and teachers. Zuza teaches short, portable somatic practices for settling the body and coming back to presence, with a practice playlist and lifetime access to the recording.",
+      "price": "$37",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://static.showit.co/1200/sLs921FyS22Q9BbobBqVVw/196072/zuza_engler_-_moving_with_life.jpg",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/zuza-engler.json",
+    "left_out": [
+      "Body Process: Soul Motion and Embodied Gestalt (Esalen, 24-28 May 2027): left out under the therapy scope rule (Gestalt psychotherapy, CE credits for therapists), not the health rule; unchanged.",
+      "Moving Out of Anxiety & Overwhelm YouTube invitation video: videos are handled separately."
+    ],
+    "flags": [
+      "The masterclass is sold 'for therapists and other anxious humans' and offers practices 'as a therapeutic intervention' as well as for oneself; wellbeing wording only (stress, anxiety, nervous system), no treatment claim. A human may judge whether the therapist-training angle falls under the therapy scope rule."
+    ]
+  },
+  "images_final": true
+}

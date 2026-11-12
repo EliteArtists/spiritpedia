@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "kyle-cease"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Guided Meditations with Kyle Cease",
+      "url": "https://www.kylecease.com/meditations",
+      "description": "Fifteen downloadable guided meditations in three bundles of five, on presence, relationships, forgiveness, boundaries, trust, surrender and settling an overwhelmed nervous system. Single tracks or whole bundles can be bought, and all fifteen are included in his membership.",
+      "price": "$10 each; $40 for a bundle of five; $99 for all fifteen",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/J_dMzmrnnLnZbYUekp14TjoyW0QE1rQak84t23uEsVNDE4aa0UHO50VJeiPVUdo1dnf45nt1UQ=s900"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kyle-cease.json",
+    "left_out": [],
+    "flags": [
+      "The 'Health' track speaks of releasing tension and changing one's relationship with pain, and 'Loneliness' frames loneliness as a call inward; wellbeing language only, no claim to treat. Kept as one item for the whole set (the three bundles share one page)."
+    ]
+  },
+  "images_final": true
+}

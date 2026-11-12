@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "amrit-yoga-institute"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "I AM Yoga Nidra™ Advanced Training",
+      "url": "https://amrityoga.org/programs/2132/i-am-yoga-nidra-advanced-training-1120/",
+      "description": "A five-day residential training at the Salt Springs ashram for those who have completed the professional yoga nidra course, led by Kamini Desai with Amritji and John Vosler. It studies the Upanishads, the Yoga Sutras and the koshas, adds new practice cards, and teaches ways of guiding people through grief, trauma and transition.",
+      "price": "From $1,299.00 (local community) to $1,939.00 (private room, private bathroom)",
+      "product_type": "retreat",
+      "start_date": "2027-09-22",
+      "end_date": "2027-09-26",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2022/08/Yoga-Nidra-On-Demand-3-300x300.jpg"
+    },
+    {
+      "title": "Lineage of Light: Initiation Retreat",
+      "url": "https://amrityoga.org/programs/2262/lineage-of-light-initiation-retreat-2/",
+      "description": "A small weekend retreat, limited to 18 people, in which Gurudev Shri Amritji gives initiation into the Lakulish and Kripalu lineage, with the guru mantra and an optional Sanskrit name. Morning sadhana with Nirali and Chandrakant frames two sessions of darshan with Amritji.",
+      "price": "From $599.00 (commuter, meals included) to $919.00",
+      "product_type": "retreat",
+      "start_date": "2027-02-05",
+      "end_date": "2027-02-07",
+      "subjects": [
+        "yoga",
+        "spiritual-awakening",
+        "meditation"
+      ],
+      "image": "https://amrityoga.secure.retreat.guru/wp-content/uploads/sites/462/2024/09/Meditation-On-Demand-5-300x245.jpg"
+    },
+    {
+      "title": "Build Your Immunity to Anxiety",
+      "url": "https://amrityoga.org/on-demand-courses/build-your-immunity-to-anxiety/",
+      "description": "A self-study course with Kamini Desai that combines breathwork, yogic philosophy and yoga nidra for people living with high stress and anxiety. Six short teaching modules alternate with six guided practices, building a short daily routine that each student adapts to suit them.",
+      "price": "$99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://amrityoga.org/wp-content/uploads/2025/02/Kamini-5724-cutout-002.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/amrit-yoga-institute.json",
+    "left_out": [
+      "On-demand I AM Yoga Nidra™ Certification ($799, https://amrityoga.org/on-demand-courses/i-am-yoga-nidra-certification/): its page says students learn to build protocols 'to address such conditions as' trauma and PTSD, depression, habits and addictions and insomnia, aimed partly at healthcare workers and psychologists; treating named conditions, so still out.",
+      "I AM Yoga Therapy I and II trainings and Intro to Yoga Therapy: Feel to Heal: yoga therapy training, out on the scope rule (therapy is not spiritual teaching) rather than the health rule."
+    ],
+    "flags": [
+      "Advanced Training page lists techniques to 'address unresolved experiences, PTSD, and other energetic blockages' and calls the course a therapeutic tool for emotional integration; kept because its core is scriptural study and grief and trauma healing in spiritual terms, with no cure claim. A human may wish to check.",
+      "Lineage of Light page calls karmic fear blocks what is 'popularly' called post-traumatic stress disorder; a spiritual reading, not a treatment claim, so kept.",
+      "Prices for the two retreats are the page's room options (no currency code shown).",
+      "Ingest health check flags 'immunity' in 'Build Your Immunity to Anxiety': the word is a metaphor for resilience to anxiety; no claim about the immune system, so kept."
+    ]
+  }
+}

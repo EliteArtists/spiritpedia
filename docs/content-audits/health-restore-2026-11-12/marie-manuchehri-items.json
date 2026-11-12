@@ -1,0 +1,88 @@
+{
+  "healer": {
+    "healer_slug": "marie-manuchehri"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Upgrade Your Multisensory Intuition",
+      "url": "https://energyintuitive.com/product/upgrade-your-multisensory-intuition-shift/",
+      "description": "A 12-module recorded mediumship course on using the vibration of self-love to open intuition and connect with guides and loved ones who have died. It includes meditations, Qigong practices and exercises in writing down and interpreting intuitive messages, and is run through The Shift Network.",
+      "price": "$946 USD (or 2 payments of $483 USD)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "meditation",
+        "qi-gong"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_laUrQwqNMzntThwC9j4oShcCRd_YgwIZWqiAfwoF0fvCk=s900"
+    },
+    {
+      "title": "Power Sessions",
+      "url": "https://energyintuitive.com/product/power-sessions/",
+      "description": "An audio exchange in place of a live reading: you record a message of up to eight minutes with your questions, and Marie replies with a personal 20 to 30 minute intuitive recording. Replies take about three to four weeks.",
+      "price": "$295",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "spirituality"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_laUrQwqNMzntThwC9j4oShcCRd_YgwIZWqiAfwoF0fvCk=s900"
+    },
+    {
+      "title": "The Healing Field",
+      "url": "https://energyintuitive.com/product/the-healing-field/",
+      "description": "A five-day energy-medicine symposium at the Sivananda Ashram on Paradise Island in the Bahamas, where Marie teaches with two other presenters. Talks and guided practices explore the body's subtle energy field and how energetic practice supports emotional and spiritual wellbeing.",
+      "price": "Price varies with accommodation; $500 deposit",
+      "product_type": "retreat",
+      "start_date": "2027-04-05",
+      "end_date": "2027-04-09",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_laUrQwqNMzntThwC9j4oShcCRd_YgwIZWqiAfwoF0fvCk=s900"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "When Love Changes Form",
+      "url": "https://energyintuitive.com/product/when-love-changes-form/",
+      "description": "A free online programme on grief that sees continuing love for someone who has died as something to carry rather than let go of. It explores how the connection may continue and how healing can happen in your own time.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "death-the-afterlife",
+        "mediumship-spirits",
+        "self-healing"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_laUrQwqNMzntThwC9j4oShcCRd_YgwIZWqiAfwoF0fvCk=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marie-manuchehri.json",
+    "left_out": [
+      "Expand Your Consciousness & Ignite Multisensory Wellbeing: its page says your consciousness must be 'higher than the medical condition or dis-ease that you're trying to heal' and ties low vibration to lowered immunity and chronic medical conditions; a claim to heal disease.",
+      "Expand Your Frequency & Amplify Your Multisensory Powers: says releasing stagnation lets the body let go of 'toxicity' that 'leads to disease'; left out.",
+      "Awaken the Power of Your Cellular Memory ($794 USD): promises healthier cells and enzymes 'to counter the negative physical effects' and bundles the Expand Your Consciousness medical-intuition course; left out.",
+      "Energy Reading & Medical Intuition Training and How to Recognize & Translate Medical Intuitive Knowledge: courses in reading clients' medical conditions, run on The Shift Network (not fetched); left out.",
+      "Private sessions: no booking page found beyond Power Sessions (her site speaks of a two-year waitlist).",
+      "Podcast (The Marie Manuchehri Show, energyintuitive.com/podcast/): a live question-and-answer show; the page carries Zoom links and a schedule rather than a description, and her own notes say it regularly covers health questions; not added."
+    ],
+    "flags": [
+      "Her brand is medical intuition. Power Sessions invites 'questions about your health, relationships, career path' and calls her a medical intuitive; the page makes no claim to cure or treat, so it is kept under the new rule, but a human may prefer to leave health readings out.",
+      "The Healing Field: one of three presenters; the page says participants will learn 'how imbalance may contribute to illness' and how practice can 'awaken the body's innate capacity to heal'. No condition named and no claim to cure; kept. Booked through Sivananda Bahamas.",
+      "Every page of her site carries a testimonial about recovering arm movement faster than a neurologist expected after a self-love recording; not used.",
+      "Upgrade Your Multisensory Intuition includes Multisensory Mediumship, already on the listing as a separate Shift item; it is sold on The Shift Network, linked here through her own product page (Shift not fetched).",
+      "When Love Changes Form is run by Humanity's Team (sign-up there, not fetched); the item links her own page about it."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "richard-miller"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Breathing for Life: Pranayama for Health, Healing, and Self-Realization",
+      "url": "https://www.explorationsinstillness.com/pranayama-breathing-for-life-course",
+      "description": "A self-paced online course of about 25 hours on pranayama, with a course manual and live Zoom office hours with Richard. It covers seasonal breath practices, the physiology and anatomy of breathing, the vayus, breath ratios, sound and the chakras, and how to practise pranayama on its own or alongside asana.",
+      "price": "$599",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/696abdccb4ab8214f848f39d/b1ab1898-161d-4db4-ae85-2b30fe9ce936/Breathing-for-life-course-richard-miller-5.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/richard-miller.json",
+    "left_out": [
+      "The iRest Program for Healing PTSD (book): his books page describes it as a 'proven-effective ten-step yoga program for treating post-traumatic stress disorder' that helps overcome insomnia and depression: a claim to treat a medical condition, so still out under the new rule.",
+      "42 iRest Yoga Nidra Meditations: built on the PTSD book and not on his own books page; still out."
+    ],
+    "flags": [
+      "Breathing for Life: the page says pranayama supports nervous-system regulation and resilience to stress and anxiety (allowed wellbeing wording, no disease named). Price as published, $599 (a launch code gives $499); the page doesn't show a currency code. The page mentions live office hours starting 'Feb 11th' (no year); the course itself is self-paced, so it goes in undated.",
+      "This is the listing's only offering."
+    ]
+  }
+}

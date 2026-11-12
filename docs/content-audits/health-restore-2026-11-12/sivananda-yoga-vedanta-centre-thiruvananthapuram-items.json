@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-centre-thiruvananthapuram"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Deep Relaxation Workshop",
+      "url": "https://sivananda.org.in/trivandrum/workshops-events/",
+      "description": "A one-hour Saturday morning workshop at the Thiruvananthapuram centre on systematic relaxation in the Sivananda style. It works through breath awareness, relaxing the body part by part and guided relaxation, as a way to let go of tension and rest the mind.",
+      "price": "Indian: INR 300 | Foreigner: INR 600",
+      "product_type": "course",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://sivananda.org.in/trivandrum/wp-content/uploads/2026/08/Sivananda_TrivandrumLogo.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sivananda-yoga-vedanta-centre-thiruvananthapuram.json",
+    "left_out": [
+      "Shat Kriya Workshop (22 Nov 2026, INR 300 / INR 600): passes the new rule (respiratory health, digestion and detox wording, no disease claim), but it shares the single page https://sivananda.org.in/trivandrum/workshops-events/ with the Deep Relaxation workshop; one item per URL, so only Deep Relaxation is listed.",
+      "Balancing Asanas workshop (15 Nov 2026): starts before 16 Nov 2026.",
+      "Kids' Yoga, Gentle Yoga and Post/Pre-natal Yoga classes: pass the new rule, but all sit on https://sivananda.org.in/trivandrum/classes/, which the listing already uses for the Open Class pass; no unique URL, so not added. (No kids' summer programme is on the page now.)"
+    ],
+    "flags": [
+      "Deep Relaxation page says regular practice can improve sleep and reduce anxiety; allowed wellbeing wording, not repeated in the description.",
+      "The listing's existing items use #fragments on the courses and classes pages (#beginners-course, #free-trial etc.) from before the 11 Nov URL rule; worth tidying."
+    ]
+  }
+}

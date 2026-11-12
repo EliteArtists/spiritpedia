@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "sachidananda-ashtanga-yoga-shala"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ayurveda Course",
+      "url": "https://chidanandayoga.com/ayurveda/",
+      "description": "A two-week course in Ayurveda held at the Mysore shala each month. It covers the history and basic concepts of Ayurveda, the three doshas and the five elements, agni, diet and daily routine, and dosha-specific yoga practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga"
+      ],
+      "image": "https://chidanandayoga.com/wp-content/uploads/2024/09/shutterstock_359802536-scaled.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sachidananda-ashtanga-yoga-shala.json",
+    "left_out": [
+      "Anatomy (https://chidanandayoga.com/anatomy/): lecture sessions taught inside the 200- and 300-hour teacher training, which is already on the listing, not a course of its own. Not a health reason."
+    ],
+    "flags": [
+      "Ayurveda Course: the page calls Ayurveda 'a medical system' and lists 'designing individual yoga therapy sessions' among the topics, but says plainly that it 'is not a substitute for conventional medicine' and makes no claim to treat a condition. Kept under the new rule; a human may want to look.",
+      "No price or teacher is named on the page; the shala's Ayurvedic doctor (Dr. Shashirekha) probably teaches it, but the page doesn't say so.",
+      "The page image is a stock photo (shutterstock in the file name)."
+    ]
+  }
+}

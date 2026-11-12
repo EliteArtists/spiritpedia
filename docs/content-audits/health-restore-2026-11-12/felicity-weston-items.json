@@ -1,0 +1,72 @@
+{
+  "healer": {
+    "healer_slug": "felicity-weston"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Pilgrimage Of The Womb: A Devotional Rose Dieta & Pilgrimage In Avalon",
+      "url": "https://www.ookushana.com/pilgrimageretreat",
+      "description": "A five-day residential retreat for women in Glastonbury, working with the spirit of Rose through a plant dieta alongside ceremony, ritual, movement, sound and meditation. The group walks to the Tor at sunrise and holds a private ceremony at Chalice Well, exploring the womb as a sacred inner temple through the archetypes of Maiden, Mother and Crone.",
+      "price": "£1600 - £2200 (by room)",
+      "product_type": "retreat",
+      "start_date": "2027-09-22",
+      "end_date": "2027-09-27",
+      "subjects": [
+        "shamanism",
+        "plant-medicine",
+        "self-healing"
+      ],
+      "image": "https://static.wixstatic.com/media/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg/v1/fill/w_600,h_800,al_c,q_85/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg"
+    },
+    {
+      "title": "1-2-1 Womb Healing Journey",
+      "url": "https://www.ookushana.com/wombhealing",
+      "description": "A one-to-one journey of at least three months, online or with an in-person ceremony, for women who want to connect with the womb as an energetic centre at any stage of life. Sessions are co-created ceremonies using energy work, sound, light language and, where fitting, channelled guidance.",
+      "price": "£1750 for 6 bi-weekly sessions; £3300 for 12 weekly sessions",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "energy-medicine",
+        "shamanism"
+      ],
+      "image": "https://static.wixstatic.com/media/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg/v1/fill/w_600,h_800,al_c,q_85/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg"
+    },
+    {
+      "title": "1-2-1 Healing Ceremony",
+      "url": "https://www.ookushana.com/healingceremonywithfelicity",
+      "description": "A two-hour in-person ceremonial session focused on womb or ancestral lineage healing, working with plant and spirit allies, hands, voice and sound. Sessions may include energetic clearing, ancestral tending, soul retrieval and channelled light codes, led by what arises on the day.",
+      "price": "£325",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://static.wixstatic.com/media/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg/v1/fill/w_600,h_800,al_c,q_85/e16bf0_0b8f206e61884ddf8d5dbe261c591f90~mv2.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/felicity-weston.json",
+    "left_out": [
+      "Pilgrimage Of The Womb online journey and The Wounded Healer series (including Healing The Saviourhood Wound): their pages are on ookushana.mykajabi.com, whose robots.txt now says 'Disallow: /' for ClaudeBot and anthropic-ai; not fetched.",
+      "Womb Healing Retreat in North Yorkshire (1-5 Jun 2026): past.",
+      "Online 60-minute 1-2-1 Healing Ceremony (£222, /copy-of-1-2-1-healing-ceremony): a second sessions page; one sessions item kept (the in-person ceremony)."
+    ],
+    "flags": [
+      "Womb-healing framing: the retreat and journey pages address women preparing for conception, pregnancy or birth and those healing from birth or sexual trauma; they name these without claiming to treat any condition. Kept under the new rule.",
+      "The retreat works with Rose as a plant 'dieta' and a spagyric preparation taken during the retreat; a human may want to look at the plant-medicine side.",
+      "1-2-1 Womb Healing Journey page carries stale notes ('40% discount until Friday 6th October', 'just 2 spaces remain'); prices given are the standard ones on the page.",
+      "The listing's existing Kajabi offerings (Medicine Woman Practitioner Training, The Fundamentals Of Holistic & Ritualistic Healing) are on ookushana.mykajabi.com, which now blocks Claude's agents in robots.txt."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "centro-studi-tibetani-tenzin-cio-ling"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Corsi di Yoga, Tai Chi Chuan, Qi Gong e Cinque Tibetani",
+      "url": "https://www.centrotenzin.org/corsi/",
+      "description": "Weekly body-practice classes at the centre alongside its Dharma programme: gentle and Hatha yoga, Tai Chi Chuan, Qi Gong and the Five Tibetans. Open to beginners of any age, they run from October to June, with a free trial lesson and centre membership required.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://www.centrotenzin.org/wp-content/uploads/2026/10/franco07-1-768x512.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/centro-studi-tibetani-tenzin-cio-ling.json",
+    "left_out": [
+      "'Intenzionalità di guarigione' and 'La meditazione come cura': videos with Prof. Gioacchino Pagliaro, handled with videos, not here.",
+      "Each discipline has no page of its own (all are on /corsi/), so they go in as one offering rather than five."
+    ],
+    "flags": [
+      "The courses page says Qi Gong helps 'rafforzare la salute fisica e mentale e ridurre lo stress' (strengthen physical and mental health and reduce stress): general wellbeing, no condition named; kept under the new rule.",
+      "No price on the page (a free trial lesson, then centre membership); set to 'Contact for pricing'. Teachers are on /corsi/gli-insegnanti/, not the centre's lamas."
+    ]
+  },
+  "images_final": true
+}

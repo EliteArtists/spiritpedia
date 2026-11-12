@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "3bc6b805-2f8d-459d-855e-bf1102a3bbf6",
+      "slug": "chakra-health-check",
+      "title": "Chakra Health Check"
+    },
+    {
+      "table": "free_resources",
+      "id": "c87767a4-50c7-4b2f-b9e9-9174736bc23a",
+      "slug": "prayer-for-healing-meditation",
+      "title": "Prayer for Healing Meditation"
+    }
+  ],
+  "at": "2026-11-12T16:52:45.762Z",
+  "healer_update": {
+    "id": 804,
+    "before": {
+      "image_urls": [
+        "https://www.chakradance.com/wp-content/uploads/2022/06/natalie-southgate-doing-chakradance-on-the-beach-cropped-6-1.jpg",
+        "https://www.chakradance.com/wp-content/uploads/2022/07/Nat-website--768x768.png"
+      ]
+    }
+  }
+}

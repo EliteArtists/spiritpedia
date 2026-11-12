@@ -1,0 +1,89 @@
+{
+  "healer": {
+    "healer_slug": "donald-altman"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Mindfulness Code: Keys for Overcoming Stress, Anxiety, Fear, and Unhappiness",
+      "slug": "the-mindfulness-code",
+      "author": "Donald Altman",
+      "asin": "1577318935",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Altman sets out mindfulness as four keys, of body, mind, spirit and relationship, joining older contemplative teaching with findings from brain research. Each key comes with everyday practices and stories for meeting a hurried life with more ease and contentment.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1577318935.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Clearing Emotional Clutter: Mindfulness Practices for Letting Go of What's Blocking Your Fulfillment and Transformation",
+      "slug": "clearing-emotional-clutter",
+      "author": "Donald Altman",
+      "asin": "1608683648",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A four-part guide to letting go of the emotional baggage that builds up over a lifetime, from personal hurts to family and ancestral patterns. Altman pairs mindfulness exercises with a daily habit of decluttering and ends on purpose and wholeness.",
+      "subjects": [
+        "mindfulness",
+        "shadow-work"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1608683648.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Art of the Inner Meal: The Power of Mindful Practices to Heal Our Food Cravings",
+      "slug": "art-of-the-inner-meal",
+      "author": "Donald Altman",
+      "asin": "B08FP2BRVT",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A former Buddhist monk looks at how Hindu, Buddhist, Jewish, Christian and Muslim traditions regard food, fasting and the shared meal. The book suggests ways to make eating a daily practice of awareness, gratitude and connection.",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/B08FP2BRVT.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Simply Mindful Meal by Meal: 101 Mindful Ways to Create a Healthy Relationship with Food",
+      "slug": "simply-mindful-meal-by-meal",
+      "author": "Donald Altman",
+      "asin": "B0DDH5HMM9",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Short daily meditations and reflections on hunger, eating and food rituals, organised around a four-step food journey. Quotations come from Zen stories, the Rule of St Benedict, Hindu and Buddhist scripture and other wisdom traditions.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/B0DDH5HMM9.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/donald-altman.json",
+    "left_out": [
+      "The Mindfulness Toolbox: 50 Practical Tips, Tools & Handouts for Anxiety, Depression, Stress & Pain (1936128861): written for clinicians to use with clients, with scripts for 'overcoming depression'; therapy scope and treatment framing, still out.",
+      "The Mindfulness Toolbox for Relationships (1683731263): passes the new rule (relationships, stress), but the listing reaches the brief's cap of 10 books with the four above; could replace one if preferred.",
+      "Eat, Savor, Satisfy eBook programme: its page says 'Available Soon' and frames it on weight management and food cravings; not current, so not added."
+    ],
+    "flags": [
+      "Books: ISBN-10s and ASINs from the Amazon links on his own book pages (https://mindfulpractices.com/books/the-mindfulness-code/, /clearing-emotional-clutter/, /art-of-the-inner-meal/, /meal-by-meal/), not confirmed elsewhere; robots.txt Crawl-delay 10 honoured. The two B0… ASINs are the formats his pages link; covers left to the ingest for those.",
+      "Meal by Meal and Art of the Inner Meal speak of weight, cravings and a healthy relationship with food; no claim to treat an eating disorder, so kept under the new rule.",
+      "With these four the listing has 10 books (the brief's cap)."
+    ]
+  }
+}

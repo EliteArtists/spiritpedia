@@ -1,0 +1,25 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a3008777-fe60-44e8-b254-f43d56dcdf0f",
+      "slug": "sos-help-for-stress-and-anxiety",
+      "title": "SOS Help for Stress and Anxiety"
+    },
+    {
+      "table": "courses",
+      "id": "95e86bf0-6fda-4958-9173-494483c1bc8b",
+      "slug": "restful-sleep",
+      "title": "Restful Sleep"
+    },
+    {
+      "table": "courses",
+      "id": "0f141a0a-aab0-4190-bb8c-04ef67b9704b",
+      "slug": "restorative-sleep",
+      "title": "Restorative Sleep"
+    }
+  ],
+  "at": "2026-11-12T16:51:24.492Z"
+}

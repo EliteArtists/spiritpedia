@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "kamini-desai"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga Nidra Essentials: Learn to Relax",
+      "url": "https://www.kaminidesai.com/product-page/yoga-nidra-essentials-learn-to-relax",
+      "description": "An introductory self-paced course on what yoga nidra is and how to practise it well. Five short talks, on the practice, common experiences, working with stress and setting an intention, each come with a guided yoga nidra of about half an hour.",
+      "price": "$59.99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/49c250_e80b041c1fbe458e8365d96e7a48a15d~mv2.jpg/v1/crop/x_119,y_0,w_832,h_939/fill/w_831,h_939,al_c,q_85/IMG_9419.jpg"
+    },
+    {
+      "title": "Yoga Nidra III: Advanced Self-Paced Training",
+      "url": "https://www.kaminidesai.com/product-page/yoga-nidra-iii-advanced-training",
+      "description": "An advanced study for graduates of Yoga Nidra I and II that goes back to the roots of the practice in the Upanishads and the Yoga Sutras. Kamini covers the koshas, the higher and lower mind and the place of yoga nidra in the eight limbs, with ways of working with grief and life transitions and a new set of practice cards.",
+      "price": "$749.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://static.wixstatic.com/media/49c250_e80b041c1fbe458e8365d96e7a48a15d~mv2.jpg/v1/crop/x_119,y_0,w_832,h_939/fill/w_831,h_939,al_c,q_85/IMG_9419.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kamini-desai.json",
+    "left_out": [
+      "Yoga Nidra: The Art of Transformational Sleep (book, ASIN 0940676397 from the Amazon link on https://www.kaminidesai.com/books-by-kamini): her own book page says the practice lets you 'heal and recover from illness' and shows how to 'neutralize' insomnia, depression, addictions and ill health; that is a claim to treat conditions, so still out (see flags).",
+      "Yoga Nidra II: Self-Paced Certification Training ($649.00, https://www.kaminidesai.com/product-page/yoga-nidra-ii-certification-training) and the Complete Yoga Nidra bundle ($1,799.00): the pages offer facilitator protocols to 'support a wide range of conditions' including trauma and PTSD, depression, habits and addictions and insomnia, for healthcare professionals among others; treated as a claim to treat named conditions and still out (the same training on amrityoga.org says 'address such conditions'). Borderline: see flags.",
+      "Rewrite Stress with Yoga Nidra ($29.99) and Build Your Immunity to Anxiety ($99.00): pass the new rule (stress and anxiety wording only), but left out because the listing already has 8 offerings and the brief caps offerings at 10; Build Your Immunity to Anxiety is restored on the Amrit Yoga Institute listing instead.",
+      "12 Day Challenge ($199.00): page frames illness as coming from separation from spirit and the practice as restoring 'ultimate health'; still out as a health claim.",
+      "Vagus Nerve: Rebuilding Resilience and Epigenetics and Power of Thought ($45.00 each): physiology framing ('strengthen the health of our vagus nerve') and the offering cap; not added.",
+      "Intro to Yoga Therapy: Feel to Heal, I AM Yoga Therapy and Touch-Free Yoga Therapy certifications: yoga therapy training (scope rule: therapy is not spiritual teaching), not restored.",
+      "Complete Yoga Nidra Training bundle ($1,799.00): the same three trainings sold together; would duplicate the listed ones."
+    ],
+    "flags": [
+      "Yoga Nidra II (certification) is the natural step before Yoga Nidra III; left out because its page lists PTSD, depression, addictions and insomnia as conditions the protocols support. A human may judge it passes (no cure claim, nothing about medication) and swap it in.",
+      "Yoga Nidra Essentials page lists 'improve health, sleep and reduce anxiety' among its benefits; allowed wellbeing wording, not repeated in the description.",
+      "Yoga Nidra III page offers ways of working with grief, trauma and transition within a yoga therapy frame; emotional healing, allowed.",
+      "Prices are from the store's product data (priceCurrency USD); the visible page renders the price by script, so no currency code was added.",
+      "Her yoga nidra book is her best-known title; the owner may decide whether its blurb (healing illness, neutralising depression and addictions) is acceptable."
+    ]
+  }
+}

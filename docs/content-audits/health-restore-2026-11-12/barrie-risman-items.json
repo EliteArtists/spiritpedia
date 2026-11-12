@@ -1,0 +1,48 @@
+{
+  "healer": {
+    "healer_slug": "barrie-risman"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga for Anxiety",
+      "url": "https://www.barrierisman.com/yogaforanxiety-workshop",
+      "description": "A three-hour on-demand workshop with Nina Zolotow and Barrie. Nina explains what anxiety is and how it relates to chronic stress; Barrie then leads an active grounding practice followed by a calming sequence, with practices to use in the moment and over the long term.",
+      "price": "$35 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+    },
+    {
+      "title": "Yoga for Times of Change: Video Classes",
+      "url": "https://www.barrierisman.com/yogafortimesofchange",
+      "description": "Sixteen recorded classes in which Barrie teaches the sequences from Nina Zolotow's book Yoga for Times of Change, with props and variations so each pose can be adapted. The practices cover coping with change, stress, anger, anxiety, low mood and grief; streaming for a year, with downloads to keep.",
+      "price": "$75",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-04/Barrie%20Risman%20headshot.jpg?itok=AmDbvFJD"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/barrie-risman.json",
+    "left_out": [],
+    "flags": [
+      "Yoga for Anxiety: anxiety in the title, and the page talks of managing episodes and helping prevent future ones through practice; no medical claim and nothing about medication. Co-taught with Nina Zolotow. Price shown on the page as '35$ USD'.",
+      "Yoga for Times of Change: chapters are named for stress, anger, anxiety, depression and grief; the page says the classes are not for someone with 'an active injury or condition that requires personalized attention'. No treatment claim. Price shown as '75$' with no currency code.",
+      "With these two the listing has 4 offerings."
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "healer": {
+    "healer_slug": "alejandro-chaoul"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Tibetan Yoga for Health & Well-Being: The Science and Practice of Healing Your Body, Energy, and Mind",
+      "slug": "tibetan-yoga-for-health-and-well-being",
+      "author": "Alejandro Chaoul",
+      "asin": "1401954340",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Ale Chaoul's Hay House guide to Tibetan yoga, built around the five principal breath-energies and the movements that work with each of the five chakras. He adds the history and lineage of the practice and keeps the instructions simple enough for daily life.",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1401954340.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Rekindling the Heart: Ancient Breath Practices, Tibetan Yoga & the Science of Emotion",
+      "url": "https://www.esalen.org/workshops/rekindling-the-heart-ancient-breath-practices-tibetan-yoga-amp-the-science-of-emotion-021927",
+      "description": "A three-day Esalen workshop that Ale co-leads with Eve Ekman, pairing research on emotion and resilience with the traditions behind it. Participants practise Tibetan yoga breathwork, mantra and heart-opening meditation and map the emotions that sit under stress.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-02-19",
+      "end_date": "2027-02-21",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/67ca11e9b2bea94aaef09cbb_Alejandro-Chaoul-2025-Portrait%20(1).png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/alejandro-chaoul.json",
+    "left_out": [
+      "Tibetan Yoga Wellbeing: Heart Practices, Life-Force & Longevity (Menla, 12-15 Nov 2026): starts before 16 Nov 2026, so out on the date rule; not reopened.",
+      "Videos with condition framing: videos are handled separately."
+    ],
+    "flags": [
+      "Book: ASIN 1401954340 from the Amazon link on https://alechaoul.com/courses-books/, not confirmed elsewhere. The subtitle speaks of 'healing your body, energy, and mind' and the page of 'health and well-being'; no disease is named, so it passes the new rule.",
+      "Rekindling the Heart: the Esalen page mentions his past programmes supporting patients with chronic illness at MD Anderson and offers tools to 'ease emotional distress'; no claim to treat a condition. Esalen shows 'Price not available' for every room type (and some sessions say the programme is full), so price is 'Contact for pricing'. Co-led with Eve Ekman."
+    ]
+  },
+  "images_final": true
+}

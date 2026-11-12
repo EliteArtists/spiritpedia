@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "marta-metrass"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "1:1 Mentorship",
+      "url": "https://yogaofemotions.com/tailor-made-7799",
+      "description": "Single two-hour mentoring sessions with Marta, online or in person, by application, with ongoing mentorship possible afterwards. Each session is built around what the person brings, drawing on Yoga of Emotions, somatic work, meditation, breathwork, journaling and dance.",
+      "price": "$222 per two-hour session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "life-coaching"
+      ],
+      "image": "https://assets.cdn.filesafe.space/XUTLnJH3nMpx5huFlGr2/media/696d2e36d403b7f6baf5d98d.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marta-metrass.json",
+    "left_out": [
+      "Masterclass 'Como usar os chakras para a nossa cura interna': no page for it on her site (home, online classes, online courses and tailor-made pages read); the original plan doesn't say where it was seen. Not a health reason."
+    ],
+    "flags": [
+      "1:1 Mentorship: the page speaks of emotional regulation, stress, healing and lists 'Dance Therapy' and 'Emotional Processing Tools' among the methods, but its FAQ says it is 'a mentorship and embodied coaching space, not a clinical or therapeutic service'. Kept under the new rule.",
+      "The page is on yogaofemotions.com without www (the home page links it there; the www address returns 404). Price $222 as shown, no currency code on the page.",
+      "Bespoke Ceremonies share the same page and stay out (no unique URL)."
+    ]
+  }
+}

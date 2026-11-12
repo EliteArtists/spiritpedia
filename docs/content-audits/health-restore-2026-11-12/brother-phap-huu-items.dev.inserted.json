@@ -1,0 +1,31 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "books",
+      "id": 2435,
+      "slug": "calm-in-the-storm",
+      "title": "Calm in the Storm: Zen Ways to Cultivate Stability in an Anxious World"
+    },
+    {
+      "table": "books",
+      "id": 2436,
+      "slug": "being-with-busyness",
+      "title": "Being with Busyness: Zen Ways to Transform Overwhelm and Burnout"
+    },
+    {
+      "table": "free_resources",
+      "id": "ef3031fa-f55a-4707-b22b-d1138882256b",
+      "slug": "calm-in-the-storm-qr-part-one-the-way-out-is-in-episode-97",
+      "title": "Calm in the Storm Q&R, Part One (The Way Out Is In, Episode 97)"
+    },
+    {
+      "table": "free_resources",
+      "id": "4ef8136d-e051-444c-acf1-47adef8d9352",
+      "slug": "calm-in-the-storm-qr-part-two-the-way-out-is-in-episode-101",
+      "title": "Calm in the Storm Q&R, Part Two (The Way Out Is In, Episode 101)"
+    }
+  ],
+  "at": "2026-11-12T16:50:31.823Z"
+}

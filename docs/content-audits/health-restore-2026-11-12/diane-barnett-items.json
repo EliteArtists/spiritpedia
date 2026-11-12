@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "diane-barnett"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Zoom Curb Your Anxiety Package",
+      "url": "https://www.groundedmeditationstudio.com/service-page/private-zoom-curb-your-anxiety-package-1",
+      "description": "A private 75-minute Zoom session that combines breathing practices, chakra balancing, EFT tapping and Yoga Nidra with singing bowls to settle anxious feelings.",
+      "price": "$500 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "eft-tapping",
+        "meditation"
+      ],
+      "image": "https://www.eomega.org/sites/default/files/media/Diane-Barnett-Bio_600x600.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/diane-barnett.json",
+    "left_out": [
+      "EFT Tapping sessions (Zoom $250, in person $200): their pages call EFT 'an alternative method to aid in the relief of anxiety', which could be read as an alternative to medical care; left out to be safe.",
+      "Private In-Person Curb Your Anxiety (from $300 USD): near-duplicate of the Zoom package (the original plan likewise kept one of each near-duplicate pair).",
+      "Sound healing sessions: still out (the page claims help with depression, pain and blood pressure); not reopened."
+    ],
+    "flags": [
+      "Curb Your Anxiety: wellbeing framing (anxiety) with no claim to cure or treat. Price shown as $500 and '500 US dollars'."
+    ]
+  },
+  "images_final": true
+}

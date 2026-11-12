@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "yogamundi-iyengar-yoga-zentrum-heidelberg"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Workshop: Yoga gegen Rückenschmerzen (Iyengar yoga for the back)",
+      "url": "https://www.yogamundi.de/iyengar-yoga-workshop-yoga-gegen-rueckenschmerzen/",
+      "description": "A weekend workshop with senior teacher Liina at the Heidelberg studio on caring for the spine through Iyengar yoga. It uses chosen asanas, careful alignment and props for stability and ease of movement, is open to every level, and also gives Iyengar teachers principles for students with back pain.",
+      "price": "200 € (Early Bird 180 € until 31.01.2027)",
+      "product_type": "course",
+      "start_date": "2027-03-06",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogamundi.de/wp-content/uploads/22013_YogaMundi_WortBildmarke_RZ.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/yogamundi-iyengar-yoga-zentrum-heidelberg.json",
+    "left_out": [
+      "Iyengar Yogatherapie (https://www.yogamundi.de/iyengar-yogatherapie/): classes for people with acute or chronic physical complaints, with individual therapeutic programmes said to support healing and regeneration; yoga therapy for medical complaints (scope and treatment framing), still out.",
+      "Gesundheitskurs, Yoga für Frauen and Sanftes Yoga: described only on the courses page https://www.yogamundi.de/kurse/, which the listing already uses for its classes item; no page of their own, so not added (one item per URL)."
+    ],
+    "flags": [
+      "Back workshop: pain relief through practice, allowed under the new rule; the page speaks of supporting and strengthening the spine, no claim to treat a condition. Registration is by email to info@yogamundi.de."
+    ]
+  }
+}

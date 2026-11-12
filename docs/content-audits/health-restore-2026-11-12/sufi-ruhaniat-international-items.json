@@ -1,0 +1,23 @@
+{
+  "healer": {
+    "healer_slug": "sufi-ruhaniat-international"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sufi-ruhaniat-international.json",
+    "left_out": [
+      "Dervish Healing Order (https://ruhaniat.org/community/dervish-healing-order): an initiatory order with membership by dedication, not a priced offering; its class site https://dhoclasses.com/ is password-protected for members and its annual gathering (9-14 July 2026) has passed. No treatment claim found, so this is not a health reason.",
+      "Spiritual Psychology and SoulWork strand: left out under the therapy scope rule, not the health rule; unchanged.",
+      "Physicians of the Heart: left out on review, 12 Nov 2026: its author list wasn't read from a page; it may belong on Pir Shabda Kahn's listing."
+    ],
+    "flags": [
+      "'Physicians of the Heart' is a book, not a programme: https://ruhaniat.org/learning/physicians-of-the-heart links Amazon /dp/1936940000 and Bookshop.org (EAN 9781936940004); ISBN from that page, not confirmed elsewhere. The page quotes Wali Ali Meyer and the Bookshop link names Bilal Hyde; the full author list (Meyer, Hyde, Muqaddam, Kahn) is from my own knowledge and was not confirmed on a page I could read (bookshop.org's robots.txt restricts Claude agents, so not opened).",
+      "The book is by Ruhaniat's senior teachers rather than the organisation itself; Pir Shabda Kahn has his own listing (no books), so it may sit better there as his book with the Ruhaniat as co-author, or be left out. Owner to decide."
+    ]
+  }
+}

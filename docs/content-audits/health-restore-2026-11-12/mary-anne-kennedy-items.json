@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "mary-anne-kennedy"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Aura Clearing / Shamanic Extraction session",
+      "url": "https://maryannekennedy.ca/product/aura-clearing/",
+      "description": "A private energy session over Zoom with Mary-Anne Kennedy, a Reiki Master Teacher trained in core shamanism with the Foundation for Shamanic Studies. Sessions may include Reiki aura clearing, shamanic extraction or power animal retrieval, with intuitive messages about one's own path; no mediumship takes place.",
+      "price": "$325",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://maryannekennedy.ca/wp-content/uploads/2021/01/Mary-Anne-Kennedy-logo-PNG.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mary-anne-kennedy.json",
+    "left_out": [],
+    "flags": [
+      "Aura Clearing / Shamanic Extraction: the description page (maryannekennedy.ca/reiki-aura-clearing/) says low or blocked ki makes 'illness, disease, and stress' more likely and that aura clearing 'removes these energetic blocks that often can cause health issues'. No disease is named and no cure or advice about medical care is given, so kept as energy healing under the new rule, but this is the most borderline item in the batch: a human should look.",
+      "Price shown as $325.00 on the product page (CAD in the page data only)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "gen-kelsang-chokyi"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginner Workshop: Loss & Grief: Bearing the Unbearable",
+      "url": "https://www.meditation-indianapolis.org/calendar/lossandgrief-workshop-nov21-2026",
+      "description": "A two-hour Saturday morning workshop with Gen Kelsang Chokyi at the Kadampa Meditation Center Indianapolis, open to beginners. Drawing on Buddha's teaching that loss and change are natural, it explores why loss brings grief and how wisdom and compassion can turn grief into insight and inner peace.",
+      "price": "$25 (students and seniors $20)",
+      "image": "http://static1.squarespace.com/static/63ab9cc8b0e7fe37036ffa17/63ab9ce0b0e7fe37036ffe3d/6ade6ab1cf83a35e67fd2c32/1794248408021/Loss%26Grief_Web.png?format=1500w",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "death-the-afterlife"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gen-kelsang-chokyi.json",
+    "left_out": [
+      "Cincinnati workshop 'Working with Painful Feelings' (24 Apr 2027): still has no page of its own (only a line on the series page cincy-workshops-2027, whose booking is for the February workshop already listed), so not restored."
+    ],
+    "flags": [
+      "Loss & Grief: grief framed as Buddhist teaching on loss and change, based on Geshe Kelsang Gyatso's How to Solve Our Human Problems; no treatment claim. Teacher named on the at-a-glance page ('beginner workshop with Gen Chokyi').",
+      "Not health-related, so not restored here: Embracing the Holidays (5 Dec 2026) and the Vajrasattva retreat (19 Dec 2026) now have their own calendar pages, which the original plan said they lacked; a human may want to add them."
+    ]
+  },
+  "images_final": true
+}

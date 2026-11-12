@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "buddhist-discussion-centre-australia"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Pujas and Puja Texts",
+      "url": "https://bdcu.org.au/pujas/",
+      "description": "The centre's page on puja as devotional practice: offering flowers, light and incense, generating merit and practising the ritual as a meditation. It lists the pujas held regularly, including the Medicine Buddha and Pure Land pujas, and offers free PDF texts such as the Medicine Buddha puja and the Heart Sutra.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://bdcu.org.au/sangye/wp-content/uploads/2023/09/Medicine-Buddha-Thankha-600-900.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/buddhist-discussion-centre-australia.json",
+    "left_out": [
+      "Medicine Buddha Puja video: videos are handled separately.",
+      "A weekly Medicine Buddha puja as a dated or scheduled offering: the page says only that it is held regularly, with no schedule, so it goes in as part of the free puja-texts page."
+    ],
+    "flags": [
+      "Devotional ritual; the page mentions pujas for long life and wealth in passing, but makes no claim to cure or treat anything."
+    ]
+  },
+  "images_final": true
+}

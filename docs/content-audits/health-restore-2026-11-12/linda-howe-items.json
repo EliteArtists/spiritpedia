@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "linda-howe"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Healing Through the Akashic Records: Using the Power of Your Sacred Wounds to Discover Your Soul's Perfection",
+      "slug": "healing-through-the-akashic-records",
+      "author": "Linda Howe",
+      "asin": "1622036042",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide to working with painful experiences, which she calls sacred wounds, inside the Akashic Records through the Pathway Prayer. It sets out a three-step process for gaining a soul-level view of a difficulty and turning it into practical choices.",
+      "subjects": [
+        "akashic-records",
+        "self-healing",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1622036042.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Akashic Records Level II: Advanced Healing Practitioner",
+      "url": "https://lindahowe.learnitlive.com/Class/Level-II/20988",
+      "description": "The second recorded certification class in her method: twelve sessions on spiritual healing in the Records, self-love as a practice and making peace in relationships. It follows Level I and draws on her book Healing Through the Akashic Records.",
+      "price": "$650",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "akashic-records",
+        "self-healing"
+      ],
+      "image": "https://lindahowe.learnitlive.com/images/category/AkashicRecords.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/linda-howe.json",
+    "left_out": [],
+    "flags": [
+      "Book ASIN 1622036042 from the amazon.com link on her own book page (lindahowe.com), not confirmed elsewhere; Sounds True paperback, revised 2016.",
+      "Level II price: $650 as on her bundles page; the Learn It Live page shows $650 and a lower $585. 'Healing' here is spiritual healing of emotional wounds; no claim to treat a condition."
+    ]
+  },
+  "images_final": true
+}

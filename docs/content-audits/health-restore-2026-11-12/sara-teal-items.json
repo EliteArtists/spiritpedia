@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "sara-teal"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Gong Baths in Sheffield",
+      "url": "https://www.sarateal.co.uk/gongbaths",
+      "description": "Evening gong baths at Trinity Methodist Church in Hillsborough, timed with new moons and the turn of the year, including a longer candlelit session at year's end. People lie and listen to the gongs with nothing to achieve, resting in the space between waking and sleep.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/80ff58_5d31c5fe1d354dbdba1cb82ce396265a~mv2.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sara-teal.json",
+    "left_out": [
+      "The page holds two dated sessions (New Moon gong bath 9 Dec 2026 and an extended candlelit gong bath 30 Dec 2026); they repeat through the year, so one undated item uses the page.",
+      "Winter Solstice Sound Bath (18 Dec 2026): still left out, the page claims the tea served strengthens immunity."
+    ],
+    "flags": [
+      "Gong bath page says the gong 'can assist in understanding and processing trauma' and speaks of 'healing frequencies' and of rest in 'the healing process'; trauma and sound healing language, no claim to treat a medical condition. Kept under the new rule.",
+      "No price on the page (booking system only)."
+    ]
+  },
+  "images_final": true
+}

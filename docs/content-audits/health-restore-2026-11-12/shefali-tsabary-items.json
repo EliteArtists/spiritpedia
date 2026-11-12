@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "shefali-tsabary"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Raising Conscious Daughters: Building Confidence, Courage, and Inner Power in an Anxious World",
+      "slug": "raising-conscious-daughters",
+      "author": "Shefali Tsabary",
+      "asin": "0063499568",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A parenting book on helping girls trust their own voice, set boundaries and build confidence at a time of pressure and worry. Published by HarperCollins.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0063499568.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/shefali-tsabary.json",
+    "left_out": [
+      "Raising Conscious Daughters course ($47) on courses.drshefali.com: that site's robots.txt names ClaudeBot and anthropic-ai with Disallow: /, so it was not opened; left out."
+    ],
+    "flags": [
+      "Book: ISBN-13 9780063499560 from the HarperCollins buy links on https://www.drshefali.com/raisingconscious-daughters-sons/, converted to ISBN-10 0063499568; not confirmed elsewhere.",
+      "Raising Conscious Sons (ISBN 9780063499515, same page) is not in her original plan either; it wasn't left out for health, so not added here. Owner may want it.",
+      "courses.drshefali.com robots.txt disallows ClaudeBot (it allows Claude-User); her live listing already links courses there from the original plan."
+    ]
+  },
+  "images_final": true
+}

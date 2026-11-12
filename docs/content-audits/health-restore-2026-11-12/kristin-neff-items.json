@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "kristin-neff"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Self-Compassion for Caregivers, with Kristin Neff",
+      "url": "https://self-compassion.org/event/self-compassion-for-caregivers-with-kristin-neff-december-5-2026/",
+      "description": "A three-hour live online workshop for family and professional caregivers on why caring only outward leaves us drained and how self-compassion lets us keep going. Neff presents the research and teaches practices for staying balanced in hard caregiving situations.",
+      "price": "$135",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "image": "https://self-compassion.org/wp-content/uploads/2026/05/Self-Compassion-for-Caregivers-with-Kristin-Neff.png"
+    },
+    {
+      "title": "Self-Compassion for Work Stress and Burnout, with Kristin Neff",
+      "url": "https://self-compassion.org/event/self-compassion-for-work-stress-and-burnout-with-kristin-neff-april-17-2027/",
+      "description": "A three-hour live online workshop on how work stress turns into burnout and how tender and fierce self-compassion can ease it. Lecture, discussion and exercises give simple tools to use on the job.",
+      "price": "$145",
+      "product_type": "course",
+      "start_date": "2027-04-17",
+      "end_date": "2027-04-17",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "image": "https://self-compassion.org/wp-content/uploads/2026/11/Self-Compassion-for-Work-Stress-and-Burnout.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kristin-neff.json",
+    "left_out": [
+      "Free practices 'Self-Compassion for Stress and Burnout', 'Self-Compassion for Burnout', 'Self-Compassion While Caregiving' and 'Caring for the Caregiver': the listing already has 5 free resources (the cap), so not added."
+    ],
+    "flags": [
+      "Mindful Self-Compassion for Burnout (ASIN 1462550223, from the amazon.com link on https://self-compassion.org/mindful-self-compassion-for-burnout/; co-written with Chris Germer): the dry run says this ASIN is already on Spiritpedia (book id 2441), so it was taken out of this plan. If that row sits only under Chris Germer, a co_authorships entry adding kristin-neff would link it to her.",
+      "Workshop prices from each event page's ticket data: $135 (Dec 2026) and $145 (Apr 2027; tickets open 17 Jan 2027). CE credits are offered to professionals, but both are open to the public; teaching self-compassion, not therapy."
+    ]
+  },
+  "images_final": true
+}

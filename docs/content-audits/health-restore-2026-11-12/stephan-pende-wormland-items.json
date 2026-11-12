@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "stephan-pende-wormland"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Spiritual Mentoring",
+      "url": "https://www.stephanpende.com/spiritual-mentoring/",
+      "description": "One-to-one mentoring over Zoom, usually an hour every two or three weeks, drawing on his decades of Buddhist practice and his training in Western psychology. Sessions help with building a steady meditation practice, bringing awareness into work and relationships, and finding a footing through spiritual crisis or hard times.",
+      "price": "100 Euro per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.stephanpende.com/wp-content/uploads/2022/10/Stephan_7315-e1665597655923.jpg"
+    },
+    {
+      "title": "Become your own healer",
+      "url": "https://www.stephanpende.com/event/become-your-own-healer/",
+      "description": "A Saturday afternoon in Copenhagen led with Kristina Fryd Harnek, using meditation, conscious breathing, mindful movement and forgiveness practice. The aim is to learn to stay with difficult feelings through the body, with live demonstrations from volunteers in the group.",
+      "price": "500 DK",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://www.stephanpende.com/wp-content/uploads/2026/07/b87ea12a-8522-4d4b-a155-bc7cc345de76-1024x683.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Living Differently: A Pathway to Embrace and Transform Pain",
+      "url": "https://www.stephanpende.com/english/awakening-is-not-the-absence-of-pain/",
+      "description": "A blog essay on meeting emotional pain with acceptance and sharing it rather than fighting it, as a path to wholeness. It ends with the first part of his lojong meditation series on transforming problems, from his Natural Meditation podcast.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.stephanpende.com/wp-content/uploads/2022/12/buddha-gd83676c78_1920.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/stephan-pende-wormland.json",
+    "left_out": [
+      "Mindfulness Coaching (100 Euro a session, https://www.stephanpende.com/mindfulness-coaching/): passes the new rule (work stress; a testimonial mentions CBT for anxiety), but the listing reaches the cap of 10 offerings with the two above; could replace one.",
+      "Professional Supervision (for therapists) and Lectures: supervision is clinical work (scope rule); the lectures page is a list of talk themes for booking, not an offering with its own course page. Not restored."
+    ],
+    "flags": [
+      "Spiritual Mentoring page lists support 'in times of fear, depression, anxiety, stress or grief' and compares the confidentiality to psychotherapy; support, not a treatment claim, so kept.",
+      "Become your own healer (21 Nov 2026, Ørestad Skole, Copenhagen): the visible page says 'Price: 500 DK', while the page's event data says 1000 EUR; the visible price is used. Co-led with Kristina Fryd Harnek, a psychotherapist; the content is meditation and emotional healing practice.",
+      "The listing's existing offering 'Just drop it! – Practice Afternoon' sits at .../event/become-your-own-healer-2/ and takes place on 14 Nov 2026, so it will have passed in two days.",
+      "The blog post is called 'Pain management through awakening' in its page title; it is about emotional pain and acceptance, no medical claim."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "johnson-chong"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shamanic Breathwork Dearmoring Training",
+      "url": "https://www.johnsonchong.com/shamanic-breathwork-dearmoring-training/",
+      "description": "A 20-hour hybrid training: online foundations followed by two afternoons of hands-on practice in Surry Hills, Sydney. Johnson teaches how to read breath, posture, holding patterns and emotional access in the body, and how to work with touch, acupressure, breath, movement and verbal guidance; it is open to facilitators and to people who come for their own practice.",
+      "price": "$888 (with the 100-hour Shamanic Breathwork Facilitator Training: $999)",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "breathwork",
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://www.johnsonchong.com/wp-content/uploads/2025/09/Ubud-2025_099-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/johnson-chong.json",
+    "left_out": [
+      "Shamanic Spinal Sessions (https://www.johnsonchong.com/shamanic-spinal-sessions/): the page's wellbeing wording would pass (chronic tension softens, trauma held in the body), but it tells readers that clients 'doing talk-therapy for 5 or 10 years ... hit a plateau and cannot make real change' until the energy discharges, and 'You may have done the therapy ... yet your body still feels stuck'. That sets the sessions up against therapy, which is close to suggesting it in place of mental-health care; left out under the owner's 'even indirectly' note. A human may decide otherwise."
+    ],
+    "flags": [
+      "Dearmoring Training: dated Saturday 21 and Sunday 22 November (2026: the page lists both days with times), in person in Surry Hills, Sydney, after online foundations. No health claims on the page; it is a training in reading the body and facilitation, using touch and acupressure, for facilitators, therapists, bodyworkers and individuals. Prices shown with $ only (an Australian event, currency not stated).",
+      "With this offering the listing has 7 offerings."
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "healer": {
+    "healer_slug": "lotte-valentin"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Kindraya® Ancestral Healing Session",
+      "url": "https://drlotte.com/kindraya-ancestral-healing",
+      "description": "A one-hour session over Zoom in Dr. Lotte's own Kindraya method of ancestral work. Working from a questionnaire about your family line, she traces patterns and unresolved burdens handed down through the generations and holds a space for releasing them with your ancestors.",
+      "price": "$299.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "mediumship-spirits",
+        "shadow-work"
+      ],
+      "image": "http://static1.squarespace.com/static/59ade21d15d5dbe0dae8497c/t/64da90d4b4c12b3c361d1da4/1692045524279/Homepage+Final.PNG?format=1500w"
+    },
+    {
+      "title": "Trance Healing Session",
+      "url": "https://drlotte.com/trance-healing",
+      "description": "A thirty-minute online session in which Dr. Lotte goes into deep meditation and acts as a channel between the client and the spirit world for healing energy. No messages are passed on; the client simply rests and receives, and the page presents it as a spiritual practice alongside, not instead of, medical care.",
+      "price": "$199.00 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "energy-medicine"
+      ],
+      "image": "http://static1.squarespace.com/static/59ade21d15d5dbe0dae8497c/t/64da90d4b4c12b3c361d1da4/1692045524279/Homepage+Final.PNG?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lotte-valentin.json",
+    "left_out": [
+      "Medical Intuitive & Wellness session ($299.00 USD, https://drlotte.com/medical-intuitive-wellness-session): sold for 'mysterious health issues', with a medical medium reading of the client's health and suggestions of tests to ask a physician for; medical work, still out. Supplements and at-home tests: medical products, still out.",
+      "Book 'Med School After Menopause: The Journey of My Soul': passes the new rule (a memoir; menopause and a blood disorder are named, no cure claim), but her book page (https://drlotte.com/dr-lotte-book) links only Audible, with no ISBN or ASIN; Amazon is never fetched, so no identifier could be taken. Could be added if an ISBN turns up on a publisher page.",
+      "Ancestral Healing: Healing Your Ancestral Mother Wound (Hemi-Sync audio series, https://drlotte.com/ancestral-healing-healing-your-ancestral-mother-wound): passes the new rule, but no price on her page and the listing reaches the cap of 10 offerings with the two sessions above. The $499 USD 'Kindraya - Healing the Mother Wound' course named in the original notes was not found on her site now."
+    ],
+    "flags": [
+      "Kindraya page says ancestors pass down trauma through DNA and lists stress, wellness and life challenges among the themes; emotional and ancestral healing, no cure claim; it also says the method blends psychotherapy with shamanic journeying. Kept.",
+      "Trance Healing page states plainly that it should never replace professional medical care; kept.",
+      "With these two the listing has 10 offerings (the brief's cap)."
+    ]
+  }
+}

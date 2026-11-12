@@ -1,0 +1,56 @@
+{
+  "healer": {
+    "healer_slug": "steve-taylor"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Extraordinary Awakenings: When Trauma Leads to Transformation",
+      "slug": "extraordinary-awakenings",
+      "author": "Steve Taylor",
+      "asin": "1608687678",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Stories of people who went through bereavement, depression, addiction, combat or imprisonment and came out of it spiritually awakened rather than broken. Steve looks at the psychological processes behind these shifts and draws out lessons readers can use in their own hard times.",
+      "subjects": [
+        "spiritual-awakening",
+        "consciousness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1608687678.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Back to Sanity: Healing the Madness of Our Minds",
+      "slug": "back-to-sanity",
+      "author": "Steve Taylor",
+      "asin": "1848505477",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Steve argues that the restless discontent behind materialism, status-seeking and conflict comes from an ego-driven state of mind he calls humania. The book traces where it comes from and how moments of inner harmony can become a settled way of being.",
+      "subjects": [
+        "consciousness",
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1848505477.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/steve-taylor.json",
+    "left_out": [
+      "Out of the Darkness: From Turmoil to Transformation (1848502540): passes the new rule, but the listing reaches its 10-book cap with the two above; his page links only the UK Amazon edition."
+    ],
+    "flags": [
+      "Extraordinary Awakenings: ISBN-10 1608687678 from the Amazon link on https://www.stevenmtaylor.com/books/extraordinary-awakenings/ , not confirmed elsewhere. The blurb names depression, suicide attempts and addiction as what people went through; no cure or treatment claim.",
+      "Back to Sanity: ISBN-10 1848505477 from the amazon.com link on https://www.stevenmtaylor.com/books/back-to-sanity/ , not confirmed elsewhere. The blurb calls ego-madness a 'psychological disorder' in a figurative sense; no medical claim.",
+      "With these two the listing has 10 books (its cap)."
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "michael-mackintosh"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sleep Naturally",
+      "url": "https://awakenedacademy.com/sleep-naturally",
+      "description": "A self-paced programme of guided audio sessions, a workbook and sleep diary, and a short e-book that approach poor sleep through eight areas of life, from the nervous system and the bedroom to emotions, relationships and purpose. The sessions are made to be played while falling asleep.",
+      "price": "$27",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://awakenedacademy.com/sleep-naturally/rebuild-assets/hero.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/michael-mackintosh.json",
+    "left_out": [
+      "Free Meditations page (/meditations): its featured list includes a track titled 'Total Anxiety Cure' (a cure claim); left out. His Insight Timer profile is already listed."
+    ],
+    "flags": [
+      "Sleep Naturally was a free page in the original plan's notes; it is now a $27 paid programme (with an 'AI Sleep Mentor' and a 30-night refund guarantee), so it goes in as an offering. Wellbeing (sleep) language; a testimonial mentions insomnia; no claim to treat a condition and nothing about medication."
+    ]
+  },
+  "images_final": true
+}

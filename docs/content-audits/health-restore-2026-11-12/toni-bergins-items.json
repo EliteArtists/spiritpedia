@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "toni-bergins"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Embody: Feel, Heal, and Transform Your Life Through Movement",
+      "slug": "embody",
+      "author": "Toni Bergins",
+      "asin": "0757325009",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her book on using free, expressive movement to feel at home in the body and step into who you are meant to be, drawn from the JourneyDance practice she has taught for decades.",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0757325009.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Moving to Heal: A JourneyDance Experience",
+      "url": "https://kripalu.org/experiences/moving-heal-journeydance-experience",
+      "description": "A weekend at Kripalu for women, led by Toni Bergins with Kripalu faculty Antoinette Simms and Lena Warchol, using JourneyDance ritual, music, movement and art to release stuck emotion. It aims at a renewed sense of self with more confidence and resilience.",
+      "price": "Tuition $390 plus lodging",
+      "product_type": "retreat",
+      "start_date": "2027-05-21",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-03/Untitled%20design.png?itok=0L6mNTeH"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/toni-bergins.json",
+    "left_out": [],
+    "flags": [
+      "Embody: ASIN 0757325009 from the amazon.com link on https://www.tonibergins.com/ (not opened), not confirmed elsewhere; no cover found on her pages, so no cover given.",
+      "Moving to Heal is for women and those who identify as women only; Kripalu lists lodging separately (from $109 a night). 'Healing of body, mind, and soul' is wellbeing language; no claim to treat."
+    ]
+  },
+  "images_final": true
+}

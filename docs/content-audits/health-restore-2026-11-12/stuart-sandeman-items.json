@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "stuart-sandeman"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Breathe In, Breathe Out: Restore Your Health, Reset Your Mind and Find Happiness Through Breathwork",
+      "slug": "breathe-in-breathe-out",
+      "author": "Stuart Sandeman",
+      "asin": "1335430687",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Stuart's guide to breathwork, built from exercises he developed over years of teaching. It covers breathing for sleep, stress and focus, letting go of limiting beliefs, and deepening connection with yourself and others.",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1335430687.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/stuart-sandeman.json",
+    "left_out": [
+      "Overcome Stress & Anxiety (21-day course): no longer sold on its own; https://www.breathpod.com/courses says that since 1 May 2025 all courses are inside the Breathpod app subscription, which is already on the listing, and the course shares the /courses page with the other two. Not a health reason: its wording (stressors, mental well-being) passes."
+    ],
+    "flags": [
+      "Breathe In, Breathe Out: ISBN-10 1335430687 from the amazon.com link on his own page https://www.breathpod.com/about (the UK link there is 0008475377), not confirmed elsewhere. The page says the exercises help you 'sleep soundly and manage stress and pain': wellbeing wording, no disease named. 'Restore Your Health' is in the subtitle; kept under the new rule.",
+      "This is the listing's first book."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "heatherash-amara"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "When Grief Comes Calling",
+      "url": "https://warriorgoddess.com/grief/",
+      "description": "Recordings of a three-hour ritual workshop on grief with HeatherAsh Amara, Sarina Harz-Tolbert and Lara Rosenberg, as downloadable video and audio. It covers grief in its many forms, four elemental ritual practices drawn from Toltec and earth-based traditions, and gentle movement, breath and meditation for steadying the body.",
+      "price": "$77",
+      "image": "https://warriorgoddess.com/wp-content/uploads/2026/02/grief-workshop-scaled.png",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "shamanism",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/heatherash-amara.json",
+    "left_out": [
+      "Ancestral Fire: Connect to Your Beloved Dead and Tend Your Grief (Teotihuacán): the page now dates it 28 Oct to 3 Nov 2026, already past; the next annual date is not announced."
+    ],
+    "flags": [
+      "When Grief Comes Calling: grief, collective trauma and nervous-system calm through ritual and somatic practice; one co-leader is a licensed clinical social worker and the page mentions 'somatic therapy' and a 'trauma-informed lens', but it is ritual and practice, not therapy, with no treatment claim. Kept under the new rule.",
+      "Price shown as $77 (stated 'regular value' $397)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,66 @@
+{
+  "healer": {
+    "healer_slug": "tomek-wyczesany"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "SOS Help for Stress and Anxiety",
+      "url": "https://tomekwyczesany.com/downloads/sos-help-for-stress-and-anxiety/",
+      "description": "A 12-minute guided meditation download for moments of overwhelm. Tomek Wyczesany guides the listener to an inner place of safety from which to settle and feel like oneself again.",
+      "price": "$9.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://tomekwyczesany.com/wp-content/uploads/2018/10/SOS-STRESS-ANXIETY-Meditation.png"
+    },
+    {
+      "title": "Restful Sleep",
+      "url": "https://tomekwyczesany.com/downloads/restful-sleep/",
+      "description": "A 21-minute guided meditation download for bedtime, combining a breathing exercise with progressive muscle relaxation to ease the way into deep sleep.",
+      "price": "$9.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "http://tomekwyczesany.com/wp-content/uploads/2017/10/Restful-Sleep-300x300.png"
+    },
+    {
+      "title": "Restorative Sleep",
+      "url": "https://tomekwyczesany.com/downloads/restorative-sleep/",
+      "description": "A 20-minute guided meditation download that teaches the listener to use the body's own abilities to reach the edge of sleep and then cross into deep rest.",
+      "price": "$9.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://tomekwyczesany.com/wp-content/uploads/edd/2019/02/Restorative-Sleep.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tomek-wyczesany.json",
+    "left_out": [
+      "Insight Timer course 'Healing The Anxious Heart': not restored, since Insight Timer is never fetched and his own site has no page for it.",
+      "Other sleep downloads (Sleep Now, Every Day Body Scan) not added, to keep the listing's downloads few; the shop item already covers the catalogue."
+    ],
+    "flags": [
+      "The three downloads name stress, anxiety and sleep as wellbeing aims; no claim to treat a condition. Kept under the new rule.",
+      "The plan already lists the shop page 'Guided Meditation Downloads' (tomekwyczesany.com/guided-meditations/); these are individual product pages within it."
+    ]
+  },
+  "images_final": true
+}

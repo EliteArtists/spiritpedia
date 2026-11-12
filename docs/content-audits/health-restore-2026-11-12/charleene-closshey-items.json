@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "charleene-closshey"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Instant Calm: Sound Journeys for Anxious Moments",
+      "url": "https://charleene.com/instant-calm/",
+      "description": "Three short guided sound journeys, each under eight minutes, in which Charleene's voice leads slow breathing, humming and attention practices over crystal bowls, nature sounds and live instruments. Bought once and kept in a private online listening room, they are offered for relaxation in tense moments.",
+      "price": "$24",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://charleene.com/wp-content/uploads/2026/11/ic-share-1200x630-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/charleene-closshey.json",
+    "left_out": [
+      "The Anxiety Antidote masterclass: no longer on her site (not in its sitemap); Instant Calm, her current offer for anxious moments, is restored instead.",
+      "Sleep and Stress page (The Bliss Bundle): three free crystal-bowl tracks given out only through an email sign-up form; music-only and behind a form, so left out (not for health).",
+      "ALIGNED album: its sales page claims healing of chronic pain and disease; still out under the new rule (not reopened)."
+    ],
+    "flags": [
+      "Instant Calm price: $24 from the page's product data (USD); the visible price is filled in by script. The page's FAQ says it is for relaxation, isn't meant to diagnose or treat any condition and should be used alongside existing care; no cure claim. Kept."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "casa-tibet-mexico"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Se vale sentir: el arte de reconciliarte con tus emociones",
+      "url": "https://www.casatibet.org.mx/se-vale-sentir/",
+      "description": "A free teaching from Casa Tíbet México on relating to difficult emotions such as anxiety, anger and sadness without suppressing or over-analysing them. It explains the Buddhist view of afflictive mental states and links a recorded introductory session in which instructor Daniela Labra teaches staying with the bodily feel of an emotion.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://www.casatibet.org.mx/wp-content/uploads/2026/07/0daa8744-5568-474d-88fd-c1547ac1a2fd.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/casa-tibet-mexico.json",
+    "left_out": [
+      "'La práctica de nuestros botones: cómo manejar la ira': no page of its own on the site (not in its sitemaps); a video only, and videos are handled separately."
+    ],
+    "flags": [
+      "Se vale sentir is a Spanish-language post (31 Jul 2026) in the centre's free teachings; it ends by inviting readers to the August 2026 seminar (passed), but the teaching itself is evergreen."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "sheffield-iyengar-yoga-centre"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter Restorative and Social with Helen Clay",
+      "url": "https://sheffieldyogacentre.as.me/winterrestore",
+      "description": "A two-hour restorative Iyengar workshop at the centre, led by Helen Clay and open to all levels including beginners. Supported poses for warmth, rest and balance at a busy time of year, followed by tea and mince pies.",
+      "price": "£20.00",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/655ddad9df998a39f46ed220/17f7848a-bfdb-4142-86ca-ca018cea6e62/Front+Hall.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sheffield-iyengar-yoga-centre.json",
+    "left_out": [
+      "Therapeutic yoga classes: the events page mentions them in one line, but no class, page, date or price is published for them (the classes page doesn't list any)."
+    ],
+    "flags": [
+      "Winter Restorative and Social: date 6 December 2026 from https://sheffieldyogacentre.co.uk/events ; price £20.00 and the two-hour length from the Acuity booking page (the link redirects to sheffieldyogacentre.as.me/schedule/f9625f32/?appointmentTypeIds[]=99206328). The page speaks of releasing fatigue and deep rest; no health claim.",
+      "Helen Clay is not among the centre's teachers named in the original plan's flags; she may be a visiting teacher (team page not re-read)."
+    ]
+  }
+}

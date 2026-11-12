@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "medito"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation for Anxiety",
+      "url": "https://meditofoundation.org/meditation-for-anxiety/",
+      "description": "A free guide from the Medito Foundation on how meditation can help with anxious thinking, with short breathing, body-scan, grounding and loving-kindness practices to try straight away. It points to the free app's stress and anxiety section and says plainly that meditation doesn't replace professional treatment.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "breathwork"
+      ],
+      "image": "https://meditofoundation.org/logo.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/medito.json",
+    "left_out": [
+      "Meditation for Sleep page: says mindfulness-based approaches are 'as effective as sleep medication for some people', which reads as replacing medication; left out."
+    ],
+    "flags": [
+      "Meditation for Anxiety cites studies on reducing anxiety symptoms; it makes no cure claim and says meditation is not a replacement for professional treatment. Kept."
+    ]
+  },
+  "images_final": true
+}

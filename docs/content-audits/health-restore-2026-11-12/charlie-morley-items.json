@@ -1,0 +1,55 @@
+{
+  "healer": {
+    "healer_slug": "charlie-morley"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Wake Up to Sleep: 5 Powerful Practices to Transform Stress and Trauma for Peaceful Sleep and Mindful Dreams",
+      "slug": "wake-up-to-sleep",
+      "author": "Charlie Morley",
+      "asin": "1401963218",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Charlie's five-part guide to better sleep, drawn from his work teaching military veterans. It gathers more than twenty breath, body, relaxation and dreaming techniques, from yoga nidra and coherent breathing to lucid dreaming methods for working with nightmares.",
+      "subjects": [
+        "dreamwork",
+        "breathwork",
+        "mindfulness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1401963218.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Transforming Trauma-Affected Sleep",
+      "url": "https://www.collegeofpsychicstudies.co.uk/workshops/meditation-training/stress-and-trauma-affected-sleep/?id=6647",
+      "description": "A one-day in-person workshop at the College of Psychic Studies in London, based on Charlie's book Wake Up to Sleep. It teaches the Mindfulness of Dream and Sleep approach: sleep awareness, yoga nidra, coherent breathing and qigong, work with nightmares and lucid dreaming. Open to all.",
+      "price": "£130.00",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "image": "https://www.collegeofpsychicstudies.co.uk/a/files/product-thumb/798x502/1780063853-6647.jpg",
+      "subjects": [
+        "dreamwork",
+        "breathwork",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/charlie-morley.json",
+    "left_out": [],
+    "flags": [
+      "Book: US paperback EAN 9781401963217 from the Barnes & Noble link on https://www.charliemorley.com/wakeuptosleep (his page's own Amazon link is the UK edition, 1788176235), converted to ISBN-10 1401963218; not confirmed elsewhere. The page says the techniques are 'proven to help reduce anxiety and improve sleep quality in 87% of participants' and to reduce the symptoms of stress-affected sleep 'by up to 70%': stress, sleep and trauma wording, no disease cure, so kept.",
+      "Workshop: the College page calls the approach 'non-pathologising'; one participant quote speaks of 'treatment of trauma and PTSD', which is a student's word, not Charlie's claim. A human may want to look.",
+      "With this workshop the listing has 8 offerings."
+    ]
+  },
+  "images_final": true
+}

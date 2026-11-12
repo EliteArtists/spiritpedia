@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "joao-palma"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "MBSR – Mindfulness Based Stress Reduction",
+      "url": "https://www.budadharma.org/mbsr-mindfulness-based-stress-reduction/",
+      "description": "João's eight-week MBSR course in Lisbon, taught in Portuguese: eight evening sessions of two and a half hours plus a six-hour retreat day. Participants learn guided mindfulness meditation and mindful movement and work with stress and difficult emotions, with audio practices and a course manual for home practice.",
+      "price": "280€ / 240€ / 200€ (sliding scale, excl. VAT)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    },
+    {
+      "title": "Formação Profissional de Professores de MBSR (Fase 1 – Qualificação)",
+      "url": "https://www.budadharma.org/formacao-profissional-mbsr/",
+      "description": "A six-day residential training at the Seminário da Silva in Barcelos, the first phase of the MBSR teacher qualification that João started at Budadharma in 2026. It revisits the eight-week programme from the inside and trains facilitation, inquiry and the ethics of teaching mindfulness; applicants need to have done MBSR and a five-day silent retreat.",
+      "price": "890€ (excl. VAT)",
+      "product_type": "course",
+      "start_date": "2027-05-15",
+      "end_date": "2027-05-21",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.budadharma.org/wp-content/uploads/2026/08/Untitled-design8.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/joao-palma.json",
+    "left_out": [
+      "Breathworks – Mindfulness e Compaixão para a Saúde (https://www.budadharma.org/breathworks-saude/): no upcoming run is listed on the page or among Budadharma's events, so not current. Its wording would be borderline: 'Estudos clínicos mostraram que mindfulness pode melhorar os sistemas de cura natural do corpo, reduzindo a dor crónica, a ansiedade, a depressão... e a insónia' (a research claim that mindfulness reduces depression and chronic pain)."
+    ],
+    "flags": [
+      "MBSR page: says MBSR helps 'na redução de stress, dor e doença' (reducing stress, pain and illness) and carries a client testimonial about heart episodes; no specific disease and no claim to cure, so kept under the new rule. The next run is 6 Jan - 24 Feb 2027 (Wednesdays, Academia Transformar, Lisbon); entered undated as the course repeats.",
+      "Teacher training: Phase 1 dates 15-21 May 2027 at Seminário da Silva, Barcelos; DGERT-certified. Open to the general public as well as health professionals.",
+      "Prices are shown with € and no currency code."
+    ]
+  },
+  "images_final": true
+}

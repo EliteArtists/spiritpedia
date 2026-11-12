@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "dan-siegel"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Becoming Aware: A 21-Day Mindfulness Program for Reducing Anxiety and Cultivating Calm",
+      "slug": "becoming-aware",
+      "author": "Daniel J. Siegel",
+      "asin": "0143111817",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A three-week workbook that walks readers through the Wheel of Awareness practice from his earlier book Aware, one day at a time. Each day pairs guided meditation with short exercises in focusing attention, opening awareness and building kind intention.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "consciousness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0143111817.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/dan-siegel.json",
+    "left_out": [
+      "Personality & Wholeness in Therapy, The Developing Mind, The Mindful Therapist, Pocket Guide to Interpersonal Neurobiology: left out as clinician books (scope), not for health reasons; not reopened.",
+      "Innovations in Psychotherapy 2026 (10-13 Nov 2026): starts before 16 Nov 2026; The Mindful Therapist (8 Dec 2026): professional therapy event (scope rule), not a health exclusion; not restored.",
+      "Mindsight Institute 'Transforming Anxiety & Stress by Integrating the Embodied Brain' ($449.00, https://mindsightinstitute.com/sales/msi_c_002131_transforminganxiety_organic-1254399/): a continuing-education course for mental-health practitioners that teaches the Wheel of Awareness 'for the treatment of Anxiety'; clinical training (scope rule) with treatment framing, so still out. The other Mindsight courses are clinician CE (scope)."
+    ],
+    "flags": [
+      "Book: ISBN-10 0143111817 from the Amazon link on his own page https://drdansiegel.com/book/becoming-aware/, not confirmed elsewhere. The subtitle names anxiety; the page describes mindfulness practice for calm with no treatment claim, so it passes the new rule."
+    ]
+  }
+}

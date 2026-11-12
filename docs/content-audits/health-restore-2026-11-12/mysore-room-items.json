@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "mysore-room"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rest Ritual",
+      "url": "https://www.mysoreroom.com/class-types",
+      "description": "The studio's own evening class in Kuala Lumpur, held on Tuesday and Thursday nights, for winding down after the working day. A gentle stretch for the neck, shoulders, back and hips is followed by guided breathwork and a closing sound bath; it is open to every level and can also be joined live online.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "sound-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/69c7dfccda7b5308a98da054/t/69edf1800d7cda50fe336b33/1777201536800/MysoreRoom_Logo_Main-01.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mysore-room.json",
+    "left_out": [
+      "Wellness Zone (red light therapy, infrared sauna, cold plunge, https://www.mysoreroom.com/wellness-zone): claims to balance hormones in menopause and thyroid conditions and to aid weight loss; treatment claims, and not spiritual practice. Still out."
+    ],
+    "flags": [
+      "Rest Ritual is described on the class-types page (which covers all the studio's classes; no other item on the listing uses that URL). The page frames it on healthy sleep and mental health in the city; allowed wellbeing wording. Price: the class is booked with the studio's passes and memberships (drop in MYR 108 on https://www.mysoreroom.com/schedule-prices-1), so 'Contact for pricing' is used here."
+    ]
+  }
+}

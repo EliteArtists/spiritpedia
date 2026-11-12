@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "orlaith-osullivan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Holding Space for Anxiety",
+      "url": "https://www.orlaithosullivan.com/holding-space-for-anxiety",
+      "description": "A self-paced, four-part mindfulness course on turning towards worry with care instead of running from it. It holds over two hours of short videos, worksheets and practice resources, plus recordings of two live practice sessions.",
+      "price": "€40",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/568a4c3f69492ea07bd4ed04/t/6015498f4f4ce571ffc23b97/1612007826234/course+alternate+-+squarespace.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/orlaith-osullivan.json",
+    "left_out": [
+      "Calm: mindfulness for tweens (6-week course): the page gives no dates, price or booking, so it isn't clearly running (same as Flourish and the other undated courses); left out on that, not on health."
+    ],
+    "flags": [
+      "Holding Space for Anxiety: price €40.00 from the page's shop block; the course is hosted on the Profi platform after purchase. Wellbeing framing (worry, anxiety), no claim to treat."
+    ]
+  },
+  "images_final": true
+}

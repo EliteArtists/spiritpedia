@@ -1,0 +1,71 @@
+{
+  "healer": {
+    "healer_slug": "sura-kim"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation for Anxiety",
+      "url": "https://courses.suraflow.org/courses/meditation-for-anxiety",
+      "description": "A short self-paced online course of about four hours of video on working with anxiety through meditation and energy awareness. It covers seven mindful tools, boundaries, self-compassion through metta practice and moving from a victim mindset to an empowered one, with guided meditations and a beginner's ebook.",
+      "price": "$67",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nGSqzw4dB_LxCDC_PsGiHOu0dbyHYp7_Esbis6qWyTwhA=s900",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Stress Mastery: 21 Days of Freedom",
+      "url": "https://courses.suraflow.org/courses/stress-mastery",
+      "description": "A three-week online programme combining meditation, coaching and simple energy tools for handling everyday stress. Each week brings teachings, guided practices, journal prompts and worksheets, with a year of streaming access.",
+      "price": "$97",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nGSqzw4dB_LxCDC_PsGiHOu0dbyHYp7_Esbis6qWyTwhA=s900",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "life-coaching",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "RESILIENCE Executive Retreats",
+      "url": "https://suraflow.org/executive-retreats/",
+      "description": "Private, custom retreats for business leaders in the Pacific Northwest, booked on request as a half day, a full day or a weekend. They combine meditation coaching, relaxation practices, time in nature and practical workshops on meeting pressure calmly.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "life-coaching"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_nGSqzw4dB_LxCDC_PsGiHOu0dbyHYp7_Esbis6qWyTwhA=s900"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sura-kim.json",
+    "left_out": [
+      "Insight Timer courses 'Advanced Chakra Healing For Women' and 'Learn How To Manifest With Energy': on Insight Timer, which we never fetch.",
+      "Beginner Sura Flow Energy Practitioner Training (began 15 Oct 2025) and the 7-week Energy Healer Practitioner Program (began 10 Sep 2026): both dated and already started; out on the date rule.",
+      "Blog posts ('How to Manage Stress and Anxiety with Meditation', 'Does Meditation Reverse Aging?' and others): articles rather than free practices; not added. ALL-IN Concierge Executive Stress Program: a wellness package of massage, nutrition and fitness from a team, not her teaching.",
+      "The listing reaches the 10-offering cap with these three."
+    ],
+    "flags": [
+      "Meditation for Anxiety speaks of releasing anxiety as 'an energetic state'; it names no disorder and makes no claim to treat one. Kept under the new rule.",
+      "RESILIENCE Executive Retreats: custom corporate retreats with no dates or price; mainly stress relief and leadership, closer to coaching than spiritual teaching. A human may prefer to drop it."
+    ]
+  },
+  "images_final": true
+}

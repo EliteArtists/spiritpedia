@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "elizabeth-pyjov"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Freedom from the Inner Critic: 4-Part Happiness Program",
+      "url": "https://www.happinessangha.com/event/freedom-from-the-inner-critic-4-week-meditation-series-with-elizabeth-pyjov-2e785",
+      "description": "Four prerecorded 90-minute sessions on easing harsh self-judgement through meditation and self-compassion practice. They teach ways of working with thoughts, emotions and stress and of connecting with inner strength and peace.",
+      "price": "$425",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://cdn.prod.website-files.com/659f180b0098e6c8929b9a27/6ac94258b07c59d9dd165362_Elizabeth-Pyjov-Headshot-Light.jpeg"
+    },
+    {
+      "title": "Freedom That Starts With You: How to Stop Patterns and Family Secrets from Repeating Themselves",
+      "url": "https://www.happinessangha.com/event/freedom-that-starts-with-you-how-to-stop-patterns-and-family-secrets-from-repeating-themselves",
+      "description": "A programme of guided ancestor meditations and structured daily practices over Thanksgiving week for noticing family patterns and unspoken stories and choosing what to carry forward. Participants work with whatever they know of their family line.",
+      "price": "$325 (early registration $265)",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-30",
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "conscious-relationships"
+      ],
+      "image": "https://cdn.prod.website-files.com/659f180b0098e6c8929b9a27/6ac94258b07c59d9dd165362_Elizabeth-Pyjov-Headshot-Light.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/elizabeth-pyjov.json",
+    "left_out": [],
+    "flags": [
+      "Freedom That Starts With You: the original note said 17-22 Nov 2026; her events page now shows 22-30 Nov 2026, which starts after 16 Nov. Its 'transform pain and anxiety from past generations' is emotional-healing language; no claim to treat.",
+      "Freedom from the Inner Critic: prerecorded, no date on the page ('Take as a Past Program' on her category page); the blurb welcomes 'anyone who is anxious, stressed'. Wellbeing language only."
+    ]
+  },
+  "images_final": true
+}

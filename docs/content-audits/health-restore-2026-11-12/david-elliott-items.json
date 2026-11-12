@@ -1,0 +1,54 @@
+{
+  "healer": {
+    "healer_slug": "david-elliott"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dealing with Grief and Loss",
+      "url": "https://www.davidelliott.com/dealing-with-grief-and-loss/",
+      "description": "A guided breathwork meditation for moving through loss of many kinds: a death, a relationship, a pet or a chapter of life. It invites you to make room for the feelings that come with grief, including sadness that may have been carried down the generations.",
+      "price": "$20.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://cdn11.bigcommerce.com/s-2c163/images/stencil/500x659/products/985/708/griefloss-final03__47589.1583706810.jpg?c=2"
+    },
+    {
+      "title": "Freedom From Anxiety",
+      "url": "https://www.davidelliott.com/freedom-from-anxiety/",
+      "description": "A guided breathwork meditation for times of anxiety, overwhelm or panic. Through conscious breathing and attention to where these feelings are held in the body, it teaches staying present with them rather than being carried away, and is meant to be returned to whenever anxiety starts to build.",
+      "price": "$20.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://cdn11.bigcommerce.com/s-2c163/images/stencil/500x659/products/1043/854/Freedom_From_Anxiety__35401.1768956363.png?c=2"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/david-elliott.json",
+    "left_out": [
+      "Omega 'The Healer Training: Levels 1-5' (Aug 2027) and Men's Retreat (30 Jul–1 Aug 2027): Omega pages, which we never fetch (eomega.org).",
+      "Other MP3s/CDs (I'm Safe, Sexual Healing Meditation, Clearing Sexual Abuse Energy Out of the Body, Cleanse Meditation, Fertility, Breathwork & Psychedelics, Entity Energy Release): not checked; the listing reaches the 10-offering cap with these two."
+    ],
+    "flags": [
+      "His robots.txt sets Crawl-delay: 10 for a group that names Claude's agents (not Disallow: /); requests were spaced 10 s or more apart.",
+      "Freedom From Anxiety speaks of 'new possibilities for healing' through breath; no condition treated. Kept under the new rule."
+    ]
+  },
+  "images_final": true
+}

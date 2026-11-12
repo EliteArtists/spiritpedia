@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-community-of-washington"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "True Refuge Companions",
+      "url": "https://imcw.org/programs/true-refuge-companions/",
+      "description": "A free volunteer programme pairing people who are ageing, ill, dying, caring for someone or bereaved with an experienced insight meditator. Companions meet at home, by phone or online for sessions of up to an hour to sit together, talk over the practice and listen.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "mindfulness"
+      ],
+      "image": "https://imcw.org/wp-content/uploads/2022/05/Visit-Insight-Meditation-Community-of-Washington.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/insight-meditation-community-of-washington.json",
+    "left_out": [
+      "MBSR and Mindful Self-Compassion courses (https://imcw.org/programs/mbsr-msc/): the page describes both 8-week courses but shows no dates, price or teacher, and IMCW's course list loads only by script from a third-party events API, so I could not confirm a current run. The wording (stress, anxiety, pain; 'research shows that self-compassion can ... reduce anxiety and depression') would pass the new rule; the owner may add it as an undated offering."
+    ],
+    "flags": [
+      "True Refuge Companions is offered to the IMCW community by trained volunteers under teacher Mary Aubry; the page says Companions are not counsellors and will encourage people to seek professional or medical help when needed. No treatment claim."
+    ]
+  },
+  "images_final": true
+}

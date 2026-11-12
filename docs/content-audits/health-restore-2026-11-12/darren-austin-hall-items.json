@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "darren-austin-hall"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sound Medicine",
+      "url": "https://www.sourceresonanceacademy.com/sound-medicine-course",
+      "description": "A self-paced online video course, filmed in the Scottish Highlands, introducing sound healing and the use of one's own voice for balance and vitality. It covers vocal toning, a chakra toning practice, a full voice activation and deep-listening meditation, and ends with a sound journey with crystal bowls and shruti box.",
+      "price": "$88 CAD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/Tb5rHgOdq5JH2DRpxfPQ/media/6721bc3254b8fc0759ddb043.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/darren-austin-hall.json",
+    "left_out": [
+      "The Journey of Love & Sexuality lecture series: still has no page of its own (its Enroll button on darrenaustinhall.com/courses goes to a sign-up form widget), so not restored."
+    ],
+    "flags": [
+      "Sound Medicine: framed as 'self-healing' with sound and the voice (emotional balance, energy, chakras); it names Apollo as god of medicine and music but makes no claim to cure or treat a condition. Kept under the new rule."
+    ]
+  },
+  "images_final": true
+}

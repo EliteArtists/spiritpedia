@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "teresa-blythe"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "A Healing Prayer for Yourself and Others (Healing and Wholeness meditation)",
+      "url": "https://teresablythe.net/wp-content/uploads/2012/03/Healing-and-Wholeness-meditation.pdf",
+      "description": "A one-page guided prayer from Teresa Blythe's 50 Ways to Pray resources. After grounding and quieting the analytical mind, the pray-er invites God's light to move through the whole body and then extends that light to others who are hurting.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "self-healing"
+      ],
+      "image": "https://teresablythe.net/wp-content/uploads/2021/12/dec-2021-head-shots-4.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/teresa-blythe.json",
+    "left_out": [
+      "'Healing Prayer' video: videos are handled separately, not restored here."
+    ],
+    "flags": [
+      "Healing and Wholeness meditation: a Christian visualization prayer; its imagery has the light moving through the organs and 'the lymph system, making the body strong against invaders'. It is prayer imagery with no claim to cure or treat and no advice about medical care. Kept under the new rule; a human may want to look.",
+      "Linked from teresablythe.net/50-ways-to-pray/resources/ (a PDF, dated 2012 in its upload path, still served)."
+    ]
+  },
+  "images_final": true
+}

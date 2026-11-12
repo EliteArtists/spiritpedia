@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "hari-kirtana-das"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing the Mind: How to Lead Guided Meditations",
+      "url": "https://harikirtana.spiffy.co/checkout/guided-meditation-for-yoga-teachers",
+      "description": "A recorded workshop for yoga teachers on leading guided meditations, joining thoughtful scripting and voice work with yoga philosophy so that sessions stay with students after class. Registered with Yoga Alliance for continuing education.",
+      "price": "$20",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "https://hari-kirtana.com/wp-content/uploads/2024/01/hkd_blueshirt.webp"
+    },
+    {
+      "title": "Meditation Beyond Mindfulness: Mantra Meditation E-book and Daily Practice Guide",
+      "url": "https://harikirtana.spiffy.co/checkout/ebook-meditation",
+      "description": "A short e-book on mantra meditation: what mantras mean, how sound affects the mind and emotions, three Sanskrit mantras and their purpose, and how to keep a daily practice going through distraction and doubt.",
+      "price": "$14",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga",
+        "spirituality"
+      ],
+      "image": "https://hari-kirtana.com/wp-content/uploads/2024/01/hkd_blueshirt.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/hari-kirtana-das.json",
+    "left_out": [],
+    "flags": [
+      "Both from https://hari-kirtana.com/selfpaced/ (titles, prices and blurbs). Their buy links are on harikirtana.spiffy.co, whose robots.txt disallows all crawlers, so those checkout pages were not opened; the original plan's Sanskrit glossary uses the same kind of link.",
+      "'Healing the Mind' is a teaching skill title, and the e-book's 'reduce stress' is wellbeing language; no claim to treat."
+    ]
+  },
+  "images_final": true
+}

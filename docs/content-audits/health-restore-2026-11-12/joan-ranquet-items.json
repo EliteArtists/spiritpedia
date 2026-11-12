@@ -1,0 +1,55 @@
+{
+  "healer": {
+    "healer_slug": "joan-ranquet"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Energy Healing for Animals: A Hands-On Guide for Enhancing the Health, Longevity and Happiness of Your Pets",
+      "slug": "energy-healing-for-animals",
+      "author": "Joan Ranquet",
+      "asin": "1604076712",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide to using energy work with dogs, cats and horses, covering pet Reiki, massage, acupressure, chakras, Healing Touch and feng shui for the home. Joan draws on her years as an animal communicator to show owners how to support their animals' comfort, calm and wellbeing.",
+      "subjects": [
+        "energy-medicine",
+        "reiki"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1604076712.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Emotional Freedom Technique for Animals and Their Humans: Creating Harmonious Relationships through Tapping",
+      "slug": "emotional-freedom-technique-for-animals-and-their-humans",
+      "author": "Joan Ranquet",
+      "asin": "1644118076",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An introduction to EFT tapping adapted for animals, with maps of the tapping points on dogs, cats and horses. It gives sample sequences for behaviour and emotional difficulties, for the bond between animal and owner, and for end-of-life care.",
+      "subjects": [
+        "eft-tapping",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1644118076.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/joan-ranquet.json",
+    "left_out": [
+      "All CWALU courses (EFT for You + Your Animals, Energy Healing for Animals Fundamentals, Introduction to Animal Chakras, Animal Communication Fundamentals, Animal Communication Level 1, Animal Medical Intuition): cwalu.com's robots.txt now says 'Disallow: /' for ClaudeBot, anthropic-ai and Claude-Web, so the site was skipped (nothing fetched beyond robots.txt).",
+      "Shift courses Advanced Animal Communication & Energetic Healing and Telepathic Communication & Energy Healing With Your Animals: on The Shift Network, which we never fetch."
+    ],
+    "flags": [
+      "Energy Healing for Animals: ASIN 1604076712 linked from her own page (joanranquet.com/ehfa-book/, ISBN 9781604076714 in its Bookshop link), not confirmed elsewhere. Its blurb promises help with animals' 'behavior issues, pain relief, anxiety, and overall well-being'; no disease named, kept under the new rule.",
+      "Emotional Freedom Technique for Animals and Their Humans: ASIN 1644118076 linked from her own page (joanranquet.com/eft-book/, ISBN 9781644118078), not confirmed elsewhere. The blurb calls EFT 'a hands-on tool for treating behavioral, emotional, and health challenges in animals'; no condition named, kept as borderline. Her earlier plan says it was co-written with Ellie Laks; her own page names only Joan, so no co-author is set.",
+      "The listing's existing CWALU offerings point at cwalu.com, which now blocks Claude's agents in robots.txt; a human may want to know for future checks."
+    ]
+  },
+  "images_final": true
+}

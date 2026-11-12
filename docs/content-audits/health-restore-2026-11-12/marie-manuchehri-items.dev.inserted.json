@@ -1,0 +1,31 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "70456c3a-6015-4279-868e-3e353398755e",
+      "slug": "upgrade-your-multisensory-intuition",
+      "title": "Upgrade Your Multisensory Intuition"
+    },
+    {
+      "table": "courses",
+      "id": "32283960-0b27-411f-b9ac-a984686b8434",
+      "slug": "power-sessions",
+      "title": "Power Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "349d0dd1-4e85-4d4b-ad5a-a229b902fedf",
+      "slug": "the-healing-field",
+      "title": "The Healing Field"
+    },
+    {
+      "table": "free_resources",
+      "id": "1d3ef2be-4a68-4807-bc5e-3acf9b12755b",
+      "slug": "when-love-changes-form",
+      "title": "When Love Changes Form"
+    }
+  ],
+  "at": "2026-11-12T16:52:25.052Z"
+}

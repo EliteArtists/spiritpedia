@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "saskia-lightstar"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Cancer Misfit: A Guide to Life After Cancer Treatment",
+      "slug": "the-cancer-misfit",
+      "author": "Saskia Lightstar",
+      "asin": "1788174003",
+      "store": "amazon.co.uk",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written from her own experience of breast cancer, this is a companion for the time after treatment ends, when the fear and loss of identity often remain. Saskia writes about grief for the old self, fear of recurrence and rebuilding confidence and self-acceptance, with practices for steadying the mind and emotions.",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1788174003.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/saskia-lightstar.json",
+    "left_out": [
+      "A Meditation For Chemo (free audio, https://www.saskialightstar.com/a-meditation-for-chemo): offered to people going through chemotherapy as something to 'help me heal from the inside out'; in a cancer context that reads as a healing claim about the disease, so still out (borderline; it does not suggest stopping treatment).",
+      "A Full Body Massage For Healing Everything (single audio journey): 'healing everything' is a blanket healing claim; still out, and the single downloads are covered by the shop link already on the listing.",
+      "The Lies That Have Held You Back (100-day programme): no longer among her online programmes (site sitemap lists only the two already on the listing); not found, so not restored.",
+      "Insight Timer course 'You Can Soothe Your Own Pain From Within': Insight Timer is never fetched, so it could not be checked."
+    ],
+    "flags": [
+      "Book: ISBN-13 9781788174008 from the Waterstones link on her page https://www.saskialightstar.com/cancer-misfit-book, converted to ISBN-10 1788174003 (the same number is in her amazon.co.uk link); a UK edition, so the amazon.co.uk store is kept. Not confirmed elsewhere; cover left to the ingest.",
+      "The book page promises help 'lifting the weight of depression' and easing anxiety after cancer treatment; emotional support for survivors, no claim to treat cancer or replace care, so it passes the new rule. A human may wish to check."
+    ]
+  }
+}

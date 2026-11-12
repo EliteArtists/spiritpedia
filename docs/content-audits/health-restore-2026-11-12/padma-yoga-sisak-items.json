@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "padma-yoga-sisak"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditacija – vodič za početnike (Meditation: a beginner's guide)",
+      "url": "https://yogasisak.com/o-yogi/meditacija-vodic-za-pocetnike/",
+      "description": "A free guide in Croatian to starting a daily meditation practice: when and where to sit, choosing a posture and a point of focus such as a mantra, an image or counting the breath. It also covers what to do when the mind wanders or discomfort comes, and how to notice progress.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yogasisak.com/wp-content/uploads/2012/03/MG_0643-Pano-1024x499.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/padma-yoga-sisak.json",
+    "left_out": [
+      "'Yoga i zdravlje' (yoga and health) page: still left out; it claims yoga poses strengthen the immune system, speed recovery from illness and prevent high and low blood pressure."
+    ],
+    "flags": [
+      "Meditation guide: says meditation teaches us to handle stress and that less stress improves overall health; general wellbeing language, no claim to treat a condition. Kept under the new rule."
+    ]
+  },
+  "images_final": true
+}

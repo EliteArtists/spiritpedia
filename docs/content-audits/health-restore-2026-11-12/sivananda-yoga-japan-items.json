@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-japan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "ヨーガヘルス個人セッション (Yoga Health one-to-one sessions)",
+      "url": "https://sivanandajp.org/yoga-therapy/",
+      "description": "Private counselling at the Tokyo centre or online that draws on yoga and Ayurveda to look at a person's habits, way of life and balance of body, mind and spirit. A free 30-minute taster is followed, for those who want it, by a 90-minute intake session and a 60-minute follow-up with practical advice for daily practice.",
+      "price": "全2回で12,000円（フォローアップ付き）; 30分の体験セッションは無料 (members only)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "image": "https://sivanandajp.org/wp-content/uploads/2026/07/SYVC_JP_header.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sivananda-yoga-japan.json",
+    "left_out": [
+      "SYHET Sivananda Yoga Health Educator Training (https://sivanandajp.org/syhet-2/): the current two-year cohort began in January 2026, and it is an IAYT yoga-therapy training covering pathology and disease management (therapy scope); out on the date rule and scope.",
+      "やさしいヨガ (gentle yoga): described on https://sivanandajp.org/yogadetail/, which the listing already uses for its one-month pass; no page of its own, so not added. It is open to seniors and people convalescing, no cure claim.",
+      "呼吸と回復のヨガ (breath and recovery yoga, ¥500, on https://sivanandajp.org/yogatherapy-2/): passes the new rule and the page says it complements, not replaces, medical care, but the page looks out of date (its session offer ran 'until the end of September') and the class appears to be the same ¥500 gentle class now on the timetable; not added to avoid a duplicate."
+    ],
+    "flags": [
+      "Yoga Health sessions: the page speaks of facing the root causes of one's present state of health through yoga and Ayurveda, as holistic support; no condition named and no cure claim. Sessions are for members only (the annual membership is already on the listing).",
+      "Title and price kept in Japanese as published, with an English gloss, as for the listing's other items."
+    ]
+  }
+}

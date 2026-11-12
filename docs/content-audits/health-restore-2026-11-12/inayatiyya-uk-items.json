@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "inayatiyya-uk"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "The Healing Order",
+      "url": "https://inayatiyya.org.uk/activities-of-the-sufi-order/the-healing-order/",
+      "description": "The healing activity of the Inayatiyya, founded by Hazrat Inayat Khan around 1925, offers spiritual healing through meditation and prayer to anyone who asks for it. Members meet in groups across the country to hold a distant Healing Service, and workshops, courses and retreats teach the attunement behind the work.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism",
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://inayatiyya.org.uk/wp-content/uploads/2026/01/DSC07641-Medium.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/inayatiyya-uk.json",
+    "left_out": [
+      "Inayatiyya Healing Arts Silent Retreat, Dorset (17-24 Sep 2026): already held.",
+      "Vigils for peace and healing (Zoom): the latest listed (15 Jul 2026) has passed; none upcoming."
+    ],
+    "flags": [
+      "The Healing Order is kept as a free practice: names are put on a prayer healing list on request (with the person's permission) and groups offer distant healing through prayer. Spiritual healing only; no claim to cure or treat any condition."
+    ]
+  },
+  "images_final": true
+}

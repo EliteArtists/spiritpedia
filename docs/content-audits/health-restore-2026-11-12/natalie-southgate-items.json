@@ -1,6 +1,11 @@
 {
   "healer": {
-    "healer_slug": "natalie-southgate"
+    "healer_slug": "natalie-southgate",
+    "update": {
+      "image_urls": [
+        "https://www.chakradance.com/wp-content/uploads/2022/07/Nat-website--768x768.png"
+      ]
+    }
   },
   "videos": [],
   "books": [],
@@ -41,5 +46,6 @@
     "flags": [
       "'Health check' here means chakra balance, not medical health; the page makes no claim to treat any condition."
     ]
-  }
+  },
+  "images_final": true
 }

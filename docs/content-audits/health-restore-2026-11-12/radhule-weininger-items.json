@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "radhule-weininger"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Individual Meditation Sessions",
+      "url": "https://www.radhuleweiningerphd.com/personal-meditations",
+      "description": "One-to-one meetings of an hour, on Zoom, Skype or in person in Santa Barbara, to set up a meditation practice suited to the student's life. Radhule draws on Theravada and Tibetan practice and usually suggests about ten meetings, with self-compassion as a thread through the work.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ef3f4f45e9c8709a01416b1/e2e37315-081f-4805-9ceb-c15321466ace/RADHULE+WEININGER%402x.png?format=1500w"
+    },
+    {
+      "title": "Effortless Mindfulness and Field of Care Meditation",
+      "url": "https://www.mindfulheartprograms.org/special-events",
+      "description": "A one-hour in-person meditation class in Summerland, California, led by Radhule with Carla Tomson for Mindful Heart Programs. It offers time for quiet, relaxation and connection with inner guidance; donations are welcome.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-20",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6283f91ef9aeae392a6975bc/cbf2fdfb-2e18-4519-84d9-c8e3f85ba36a/Artboard+15+copy+9.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/radhule-weininger.json",
+    "left_out": [],
+    "flags": [
+      "Individual Meditation Sessions: the page names anxiety, depression and 'seeking to heal from physical illness' among the reasons people come, and lists 'addressing health problems ... that might interfere with your practice'. She offers support in setting up a meditation practice, not treatment, so kept under the new rule; but she is also a practising psychotherapist (original plan), so a human may want to look. No price on the page; bookings by email.",
+      "Field of Care class: 'Friday, Nov. 20, 11 a.m.-12 p.m., in-person only' at The Sacred Space, Summerland, on the Mindful Heart Programs special-events page (no page of its own; registration is on The Sacred Space's site, which the page names without a link). Read as 2026 (20 Nov 2026 is a Friday and the page's newsletters run to October 2026). The page says it is 'to cultivate healing with peacefulness, relaxation'; no medical claim. Co-led with Carla Tomson.",
+      "The special-events page also lists the 21 Nov half-day retreat already on the listing (under its essencemedspasb.com link); this item uses the special-events page itself, which no other item uses.",
+      "The sessions image is a stock photo (unsplash) from the page; the class has no image."
+    ]
+  }
+}

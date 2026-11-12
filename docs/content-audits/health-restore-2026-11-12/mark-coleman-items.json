@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "mark-coleman"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "You Are Not Your Fault: Meeting ADHD with Mindfulness, Wisdom, and Compassion (Online)",
+      "url": "https://markcoleman.org/event/you-are-not-your-fault/",
+      "description": "A three-hour online half-day retreat, hosted by New York Insight Meditation Center, for people who struggle with focus, follow-through and emotional sensitivity. Mark uses mindfulness, self-compassion and forgiveness practice to meet these patterns, and the shame that often comes with them, with more kindness; registrants receive the recording.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://markcoleman.org/wp-content/uploads/2025/12/AdobeStock_254763536_1500x1000.jpg"
+    },
+    {
+      "title": "Leading with Mindfulness & Wisdom: A Regenerative Training for Environmental Professionals",
+      "url": "https://markcoleman.org/event/leading-with-mindfulness-wisdom/",
+      "description": "A six-month programme for people working on the environmental crisis, taught with Kristin Barker and Bonnie Duran. It combines Buddhist teaching, nature-based practice and a peer cohort, with two five-night retreats (Mount Madonna Center and Garrison Institute) and monthly online sessions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-01-20",
+      "end_date": "2027-06-22",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://markcoleman.org/wp-content/uploads/2026/08/Leading-with-Mindfulness.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mark-coleman.json",
+    "left_out": [
+      "You Are Not Your Fault at Esalen (13-15 Nov 2026, https://markcoleman.org/event/making-friends-with-adhd/): starts before 16 Nov 2026.",
+      "Meditations for ADHD (Waking Up app pack): inside an app subscription with no standalone price or page of his own; not restored (same reason as his other Waking Up packs)."
+    ],
+    "flags": [
+      "ADHD half-day: names ADHD and executive-function challenges; the page offers mindfulness and self-compassion for living with them, no claim to treat ADHD, so it passes the new rule. Price not shown on his page; the host's page (nyimc.org) answered with HTTP 406, so it was treated as a refusal, not retried and not used.",
+      "Leading with Mindfulness & Wisdom: registration is on Spirit Rock's site (https://courses.spiritrock.org/sp/leading-with-mindfulness-wisdom/, linked from his page, never opened), so the item uses his own event page and 'Contact for pricing'. Framed around burnout and ecological grief, allowed.",
+      "The ADHD event's page image is a stock photo (AdobeStock file name), so no image is set for it; the Leading with Mindfulness image is from his own event page."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "nicholas-pearson"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Crystal Healing for the Heart: Gemstone Therapy for Physical, Emotional, and Spiritual Well-Being",
+      "slug": "crystal-healing-for-the-heart",
+      "author": "Nicholas Pearson",
+      "asin": "1620556561",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Nicholas looks at the heart as both an organ and a spiritual centre, linking its four chambers to the four elements and the heart chakra. Exercises and meditations with more than 60 stones work on emotional strength, will, forgiveness and relationships.",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing",
+        "self-healing"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1620556561.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/nicholas-pearson.json",
+    "left_out": [
+      "Holy Gems & Lapidary Medicine in History (College of Psychic Studies, https://www.collegeofpsychicstudies.co.uk/workshops/learning-about-crystals/holy-gems-and-healing-crystals/?id=6775): the page dates it Sundays 15 and 22 November 2026, so it starts before 16 Nov. Not a health reason: it is a history class.",
+      "Crystals for Psychic Self-Defense (ISBN 9781644116715 on https://theluminouspearl.com/books/crystals-for-psychic-self-defense/): passes the new rule (psychic protection; 'EMF pollution' and 'geopathic stress' are named without a medical claim), but the listing reaches its 10-book cap with Crystal Healing for the Heart."
+    ],
+    "flags": [
+      "Crystal Healing for the Heart: ISBN-10 1620556561 from the amazon.com link on https://theluminouspearl.com/books/crystal-healing-for-the-heart/ (EAN 9781620556566 on the same page), not confirmed elsewhere. The subtitle says 'Gemstone Therapy for Physical ... Well-Being' and the book covers the physical heart's anatomy, but it makes no claim to treat heart disease; an endorsement on the page speaks of 'dis-ease', not the author. Borderline wording kept under the new rule.",
+      "With this book the listing has 10 books (its cap)."
+    ]
+  }
+}

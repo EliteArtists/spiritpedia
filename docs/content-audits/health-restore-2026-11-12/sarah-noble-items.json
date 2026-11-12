@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "sarah-noble"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Inner Child Readings",
+      "url": "https://sarahnoble.com/innerchild/",
+      "description": "One-to-one readings in which Sarah uses oracle cards, intuition, energy work and simple somatic practices to listen to the younger parts of a client that are asking to be seen. Clients leave with practices for continuing that relationship with their inner child after the session.",
+      "price": "$150",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://sarahnoble.com/wp-content/uploads/2023/02/Copy-of-Untitled-1080-%C3%97-1350-px.png",
+      "subjects": [
+        "shadow-work",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sarah-noble.json",
+    "left_out": [
+      "'Intuitive Healing Sessions' wording on the Work with me page: not a separate item; the existing 'Intuitive Sessions' offering (https://sarahnoble.com/akashicrecords/) already covers that page, so nothing to add.",
+      "Inner Child Reading in person (https://sarahnoble.com/inner-child-reading-in-person/): not opened; the online reading page is used."
+    ],
+    "flags": [
+      "Price $150 is shown on https://sarahnoble.com/akashicrecords/ ('BOOK YOUR READING HERE $150' under Inner Child Readings); the /innerchild/ page itself shows no price. Framing is healing childhood wounding (emotional healing, allowed); no medical claim."
+    ]
+  },
+  "images_final": true
+}

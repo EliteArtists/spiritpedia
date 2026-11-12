@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "tara-mandala"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Machig Labdrön's Longevity Sadhana",
+      "url": "https://www.taramandala.org/programs-2/16961/events/machig-labdrons-longevity-sadhana-2/",
+      "description": "An online weekend on Zoom in which Lama Tsultrim Allione transmits a longevity practice she received in Machig Labdrön's cave in Bhutan in 2017. It includes a guru yoga of Machig Labdrön and the practice of eight-armed Ushnishavijaya with breath, mantra and visualisation; previous sadhana and Vajrayana experience is recommended.",
+      "price": "$355 Standard Tuition; $265 Community Supported Tuition",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/07/Machig-Labdrons-Longevity-Sadhana1-500x500.png"
+    },
+    {
+      "title": "Facing the Fear of Death Through Feeding Your Demons",
+      "url": "https://www.taramandala.org/programs-2/17011/facing-the-fear-of-death-fyd/",
+      "description": "A two-hour online session with Lopön Robin Gayle on how our relationship with death changes through life and how speaking openly about fear of mortality can ease it. It ends with a guided Feeding Your Demons meditation, the five-step practice Lama Tsultrim Allione adapted from an ancient Tibetan practice.",
+      "price": "Standard Tuition: $40; Community Supported: $25",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "death-the-afterlife",
+        "shadow-work",
+        "meditation"
+      ],
+      "image": "https://taramandala.secure.retreat.guru/wp-content/uploads/sites/157/2026/05/Feeding-your-demons-500x500.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tara-mandala.json",
+    "left_out": [],
+    "flags": [
+      "Longevity Sadhana: the page says the practice retrieves life force 'lost or stolen due to trauma' and 'revitalizes and reinforces the body's life force, thereby increasing longevity'. Read as a traditional Vajrayana long-life practice, not a claim to treat a disease; kept under the new rule.",
+      "Facing the Fear of Death: led by Lopön Robin Gayle, a psychotherapist, but it is a Buddhist Feeding Your Demons session, not therapy; the page carries Tara Mandala's disclaimer that its teachers are not offering mental health services. Kept.",
+      "The calendar links /events/<slug>; both redirect to the /programs-2/<id>/ URLs used here. With these two the listing has 6 offerings."
+    ]
+  }
+}

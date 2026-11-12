@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "donna-lozito"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Class Recording: The Healing Path of Grief & Loss",
+      "url": "https://donnalozito.com/portfolio/class-recording-healing-grief-and-loss/",
+      "description": "A half-hour recorded class in which Donna talks about heartbreak and loss as part of every life and how to move through grief. Listeners are invited to share their own experience; the video link is emailed after purchase.",
+      "price": "$49.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "death-the-afterlife"
+      ],
+      "image": "https://donnalozito.com/wp-content/uploads/2024/02/earth.png"
+    },
+    {
+      "title": "Intuitive Energy Healing Sessions",
+      "url": "https://donnalozito.com/intuitive-energy-healing/",
+      "description": "One-to-one sessions by Zoom or phone that look at the habits and patterns shaping a person's life. Donna draws on guidance from the client's higher self, spirit guides, animal companions living and passed, and ancestors to help them see their purpose more clearly.",
+      "price": "60 minutes = $255.00; 30 minutes = $160.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "mediumship-spirits",
+        "soul-purpose"
+      ],
+      "image": "https://donnalozito.com/wp-content/uploads/2024/02/earth.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/donna-lozito.json",
+    "left_out": [
+      "Homeopathy for Animals and Homeopathy for People consultations, Gemmotherapy, Fullscript supplements: remedy and consultation services for health; still out under the README homeopathy rules (her profile already carries the medical-care note)."
+    ],
+    "flags": [
+      "Intuitive Energy Healing page mentions how 'past traumas' shape the present and 'holistic healing'; emotional and spiritual healing only, no condition named, so it passes the new rule.",
+      "The Grief & Loss recording says it discusses the nature of trauma; allowed under the new rule."
+    ]
+  }
+}

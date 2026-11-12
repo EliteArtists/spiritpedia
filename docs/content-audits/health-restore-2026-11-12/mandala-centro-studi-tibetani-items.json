@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "mandala-centro-studi-tibetani"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Riduci lo stress: percorso di Mindfulness (MBSR) con Luca Del Bo",
+      "url": "https://centromandala.it/eventi/mbrs-per-migliorare-la-qualita-della-vita/",
+      "description": "A Mindfulness-Based Stress Reduction course at the centre led by Luca Del Bo (Tenzin Lodro), a trained MBSR instructor who has practised Tibetan and vipassana meditation since 1998. A free introductory meeting on 13 January 2027 opens a series of in-person group meetings on noticing thoughts, emotions and body sensations without judgement.",
+      "price": "180€ (first meeting free)",
+      "product_type": "course",
+      "start_date": "2027-01-13",
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://yt3.ggpht.com/l_Hg92PizOKeSetWqGBKokk8Usb-ti-mqfUIz6ZtfOUEI1qyddA3ssSX59fGo62QVrTIITQW=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Consapevolezza di sé ed equilibrio psico-corporeo",
+      "url": "https://centromandala.it/benessere/",
+      "description": "A weekly Tuesday-morning class with Marina Marcucci that follows the four seasons with simple exercises in rhythm, movement and body awareness. It aims to restore balance and vitality and keep the body supple and at ease; the first lesson is a free trial.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "https://yt3.ggpht.com/l_Hg92PizOKeSetWqGBKokk8Usb-ti-mqfUIz6ZtfOUEI1qyddA3ssSX59fGo62QVrTIITQW=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mandala-centro-studi-tibetani.json",
+    "left_out": [],
+    "flags": [
+      "MBSR page: says in general terms that MBSR is used in healthcare and for psychological distress; this course itself makes no claim to treat. It gives both 'six monthly' and 'seven weekly' meetings, so only the start date (13 Jan 2027) is set.",
+      "Benessere class: led by Marina Marcucci, not one of the centre's lamas; repeating, so undated; no price on the page."
+    ]
+  },
+  "images_final": true
+}

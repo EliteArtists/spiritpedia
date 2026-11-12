@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "tanya-carroll-richardson"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Grief, Grace, and Healing: Oracle Deck & Guidebook",
+      "slug": "grief-grace-and-healing-oracle-deck",
+      "author": "Tanya Carroll Richardson",
+      "asin": "1647229766",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A 64-card oracle deck with a 176-page guidebook for anyone living through loss, whether a death, a divorce or another sudden change. The cards carry prompts and gentle messages for moving through grief at one's own pace.",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1647229766.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Forever in My Heart: A Grief Journal",
+      "slug": "forever-in-my-heart",
+      "author": "Tanya Carroll Richardson",
+      "asin": "1612436021",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A journal for writing through grief after losing someone close, published by Ulysses Press in 2016.",
+      "subjects": [
+        "self-healing",
+        "death-the-afterlife"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1612436021.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tanya-carroll-richardson.json",
+    "left_out": [],
+    "flags": [
+      "ISBNs from the amazon.com links on her own pages (oracle-decks and books pages; Amazon not opened), not confirmed elsewhere. Forever in My Heart's Barnes & Noble link on her page carries EAN 9781612436029, which matches ISBN-10 1612436021.",
+      "Both are about grief (emotional healing), allowed under the new rule; no claim to treat a condition."
+    ]
+  },
+  "images_final": true
+}

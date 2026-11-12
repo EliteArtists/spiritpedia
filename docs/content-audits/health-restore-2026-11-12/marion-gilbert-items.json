@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "marion-gilbert"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Somatic Enneagram Module 3 Online (November 2026)",
+      "url": "https://www.somaticenneagram.com/module-3-online-november-20-2026",
+      "description": "A three-day Zoom training with Marion Gilbert on telling the essence of who we are apart from the defensive habits of personality. Through talks, group work and practice it looks at blind spots, fight, flight and freeze, and calming the nervous system through somatic self-awareness.",
+      "price": "$600",
+      "image": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/sites/2148641808/images/5b2f9249f91b735d089c484c8dbae385.jpg",
+      "product_type": "course",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "consciousness",
+        "self-healing",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marion-gilbert.json",
+    "left_out": [
+      "Advanced Inward Turn 1, Egypt (9–12 Dec 2026, Transcend Egypt): transcendegypt.com now answers 404 for every page tried (the Somatic Enneagram page, the advanced-inward_turn page from its sitemap, and /events), so it could not be checked; not retried."
+    ],
+    "flags": [
+      "Module 3 (Nov 2026): the page speaks of navigating 'loss, anxiety, achievement, and trauma', calming hyperarousal and supporting clients' healing; nervous-system and emotional language for a practitioner-friendly training, no claim to treat a medical condition. Kept under the new rule.",
+      "The plan already lists the July 2027 Module 3 (a different page and date); this is the November 2026 run."
+    ]
+  },
+  "images_final": true
+}

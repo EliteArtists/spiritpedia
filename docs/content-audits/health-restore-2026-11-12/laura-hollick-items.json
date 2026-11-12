@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "laura-hollick"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Heal Your Core Wound with Soul Art",
+      "url": "https://www.soulartstudio.com/heal-your-core-wound-with-soul-art/",
+      "description": "A free guided creative ritual from Laura, with a downloadable journal, sent after signing up for her newsletter. It uses drawing, movement and journaling to explore an old emotional wound and turn it into a source of strength; no art experience is needed.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "self-healing",
+        "shadow-work",
+        "spirituality"
+      ],
+      "image": "https://www.soulartstudio.com/wp-content/uploads/2020/12/produced-by-soul-art-studio-light.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/laura-hollick.json",
+    "left_out": [
+      "Heal with Art 12-Week Journey (https://soulartschool.com/hwa/, the 'Heal with Art' page): session 7, 'Heal Your Body', is offered to people 'dealing with mystery symptoms, chronic illness, skin issues ... or any body dis-ease' to 'make space for healing energy to enter your cells'. That reads as a healing offer for chronic illness, so still out under the new rule (the rest of the course is emotional healing, which would be allowed)."
+    ],
+    "flags": [
+      "Heal Your Core Wound: the page says the core wound 'creates symptoms of chaos, dis-ease, lack, overwhelm, depression, insecurity' and that healing it is 'a spiritual experience'. Depression is named as a symptom of an emotional wound, with no promise to cure it; kept as emotional and spiritual healing, but a human may want to look.",
+      "Sign-up needed: the ritual is sent after joining her newsletter (the page is an opt-in page). /heal/ on soulartstudio.com redirects to this URL."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "kristof-lambregts"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Individual Sound Healing and Private Sound Baths",
+      "url": "https://www.akshara.be/1-op-1-soundhealing/",
+      "description": "One-to-one sessions with Kristof at his practice in Brecht: a 75-minute sound massage with singing bowls and tuning forks placed on or near the body, or a private or duo sound bath of 75 or 120 minutes, which can also be held online. Both are offered as a way to release tension, rest deeply and meditate.",
+      "price": "Sound massage €75; sound bath €75 (75 min) or €120 (120 min), duo €130 or €190",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.akshara.be/wp-content/uploads/2025/07/individueel-7.webp",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kristof-lambregts.json",
+    "left_out": [
+      "Insight Timer courses 'Hyperventilation Relief' and 'The Power Of Sound: Relieve Stress And Soothe Anxiety': Insight Timer is never fetched, so I could not check the course pages; the titles themselves would pass the new rule. The listing's 'Kristof Lambregts on Insight Timer' resource already points to them.",
+      "Sound massage and private/duo sound bath are two offers on the same page; entered as one offering because item URLs must be unique real pages."
+    ],
+    "flags": [
+      "The page (in Dutch) lists muscle pain, local tension and 'chronische pijn of plaatselijke klachten' (chronic pain or local complaints) among what the sound massage suits; pain relief through practice, no disease named, so kept under the new rule.",
+      "Prices are shown in euros without a currency code, so the € sign only."
+    ]
+  },
+  "images_final": true
+}
