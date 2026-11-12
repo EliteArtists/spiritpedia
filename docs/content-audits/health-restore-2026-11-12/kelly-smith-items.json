@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "kelly-smith"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "25 Hour Yoga Nidra Teacher Training",
+      "url": "https://www.yogaforyouonline.com/yoganidratt",
+      "description": "A self-paced online training in leading yoga nidra, in eight modules: foundations and history, sleep and the brain, the koshas and sankalpa, Kelly's 'blueprint' for building a class, sample classes and scripts, and teaching groups and individuals. Monthly live office hours with Kelly, a reviewed final project and a certificate worth 25 Yoga Alliance continuing-education hours; open to non-teachers too.",
+      "price": "$397",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://static.wixstatic.com/media/9763a1_746fb1529e8a4b138ce166b85c9bf230~mv2.jpg"
+    },
+    {
+      "title": "Nervous System Regulation Meditation Script Bundle",
+      "url": "https://www.yogaforyouonline.com/product-page/nervous-system-regulation-meditation-script-bundle",
+      "description": "A PDF of seven meditation scripts written by Kelly for teachers and coaches to read aloud, including a nervous system reset, a body scan, an overwhelm reset and short breath-based practices for settling. Commercial use in classes, sessions and recordings is included.",
+      "price": "$13.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/9763a1_746fb1529e8a4b138ce166b85c9bf230~mv2.jpg"
+    },
+    {
+      "title": "Prenatal Meditation Script Bundle",
+      "url": "https://www.yogaforyouonline.com/product-page/prenatal-meditation-script-bundle",
+      "description": "A PDF of nine guided meditation scripts for pregnancy, 5 to 20 minutes long, written by Kelly for teachers and wellness professionals to lead: connecting and breathing with the baby, body love, self-care, and practices for stress, worry, fatigue and restless nights.",
+      "price": "$15.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/9763a1_746fb1529e8a4b138ce166b85c9bf230~mv2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kelly-smith.json",
+    "left_out": [
+      "Older Yoga Nidra Teacher Training page (/yoga-nidra-teacher-training, 20 hours): says '2024/2025 Trainings Coming Soon' with a waitlist, so stale; the current 25-hour course page is used instead.",
+      "Labour and delivery bundle: the only page found (/laborprep, titled 'Labor and Delivery playlist redirect') is a hidden bonus page for the Meditation Mama bundle, not a shop product."
+    ],
+    "flags": [
+      "Yoga Nidra training: the old page cited 'proven benefits of anxiety, PTSD'; the current page speaks of burnout recovery, the nervous system and 'profound healing' through rest. No claim to cure or treat; kept under the new rule.",
+      "Nervous System Regulation bundle: aimed at teachers 'whose students are stressed, anxious, or burned out' and mentions vagus-nerve and trauma-informed practice; no treatment claim.",
+      "Prenatal bundle: script titles include 'Prenatal Anxiety' and 'Prenatal Insomnia'; wellbeing language only. The description words them as worry and restless nights.",
+      "With these three the listing has 6 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

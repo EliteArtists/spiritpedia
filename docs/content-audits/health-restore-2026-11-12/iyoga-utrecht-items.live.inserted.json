@@ -1,0 +1,25 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "af2cae1a-7273-4705-9f4d-ef0cf708a69c",
+      "slug": "back-care-les",
+      "title": "Back Care Les"
+    },
+    {
+      "table": "courses",
+      "id": "fafde83b-8d7a-48ef-bb97-48941ff09a65",
+      "slug": "special-needs-lessen",
+      "title": "Special Needs lessen"
+    },
+    {
+      "table": "courses",
+      "id": "91ab624f-b4a7-493b-8742-64ebf01a028c",
+      "slug": "zwangerschapsyoga",
+      "title": "Zwangerschapsyoga"
+    }
+  ],
+  "at": "2026-11-12T18:15:37.498Z"
+}

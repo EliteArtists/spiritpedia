@@ -1,0 +1,55 @@
+{
+  "healer": {
+    "healer_slug": "centro-zen-anshin"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zen e Danza – workshop con Annamaria Gyoetsu Epifanìa",
+      "url": "https://anshin.it/arti-e-discipline/lo-zen-e-la-danza",
+      "description": "Workshops led by Annamaria Gyoetsu Epifanìa, dancer and Zen nun at the centre, that bring Zen practice into movement: everyday gesture, breath and nature become ways of dancing with full presence. She draws on the teaching of Dainin Katagiri and her teacher Shohaku Okumura.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "image": "https://anshin.it/images/2017/zen_e_danza/zed.jpg"
+    },
+    {
+      "title": "Ascolto Consapevole – percorsi individuali",
+      "url": "https://anshin.it/arti-e-discipline/ascolto-consapevole",
+      "description": "One-to-one 'mindful listening' sessions with Annamaria Gyoetsu Epifanìa, described as a path of self-knowledge: close, non-judging attention to everyday gesture, sensation and what one's experience needs to say. The first meeting is an orientation session by appointment.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://anshin.it/images/2017/ascolto_consapevole/n-SPIRITUAL-628x314.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/centro-zen-anshin.json",
+    "left_out": [
+      "Tai Chi – Qi Gong: the page says doctors recognise tai chi's 'curative' properties, that it prevents degenerative diseases and osteoporosis and strengthens the immune system: disease and immunity claims, still out.",
+      "Danza Creativa – Danzaterapia: lists 'prevenzione e cura di eventuali disturbi posturali' (prevention and treatment of postural disorders) among its aims, a treatment claim, so left out under the new rule (otherwise a creative dance class with relaxation and improvisation)."
+    ],
+    "flags": [
+      "Zen e Danza: the page describes the workshops but gives no dates or price, so it goes in undated with 'Contact for pricing'.",
+      "Ascolto Consapevole: individual sessions opening 'a contact with what in us suffers'; framed as a Zen-rooted method of self-knowledge rather than therapy, with no health claim (an opening Hippocrates quote speaks of inner strength as the source of health). A human may want to check it sits on the right side of the therapy scope rule. No price; first meeting by phone appointment.",
+      "Both are taught by Annamaria Gyoetsu Epifanìa, who co-leads the centre with Guglielmo Doryu Cappelli (as the original plan's bio says).",
+      "With these two the listing has 5 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

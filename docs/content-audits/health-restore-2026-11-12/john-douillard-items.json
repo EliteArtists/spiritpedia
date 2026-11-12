@@ -1,0 +1,26 @@
+{
+  "healer": {
+    "healer_slug": "john-douillard"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/john-douillard.json",
+    "left_out": [
+      "lifespa.com: its robots.txt has a group for ClaudeBot with 'Disallow: /', so his own site was skipped (blocked) and nothing was read there.",
+      "Eat Wheat: its subtitle claims 'A Scientific and Clinically-Proven Approach to Safely Bringing Wheat and Dairy Back Into Your Diet', a claim to resolve food intolerance; still out. Its ISBNs were seen only in search results, not on a page I read.",
+      "Perfect Health for Kids: Ten Ayurvedic Health Secrets Every Parent Must Know (PRH page, ISBN 9781556434778): the description covers spotting 'signs of imminent illness' in children and stocking 'useful natural medicines' at home; read as home treatment of children's illness, so left out under the no-replacing-medical-care rule.",
+      "The Colorado Cleanse: detox programme; only on his own (blocked) site, so not checked.",
+      "The 3-Season Diet and The Yoga Body Diet: diet books, outside scope (left out on review, 12 Nov 2026)"
+    ],
+    "flags": [
+      "The 3-Season Diet: ISBN 9780609805435 from https://www.penguinrandomhouse.com/books/42408/the-3-season-diet-by-john-douillard-author-of-body-mind-and-sport/ (Harmony, 2001), converted to ISBN-10 0609805436; not confirmed elsewhere. Weight-loss and diet framing, no disease named; kept under the new rule.",
+      "The Yoga Body Diet: ISBN 9781605290706 from https://www.penguinrandomhouse.com/books/592904/the-yoga-body-diet-by-kristen-schultz-dollard-and-dr-john-douillard/ (2010; the page shows the ebook format with that ISBN), converted to ISBN-10 160529070X; not confirmed elsewhere. Co-authored with Kristen Schultz Dollard. Wellness and weight framing, no cure claim.",
+      "Both publisher pages were found by web search (PRH's own /search path is disallowed by its robots.txt)."
+    ]
+  }
+}

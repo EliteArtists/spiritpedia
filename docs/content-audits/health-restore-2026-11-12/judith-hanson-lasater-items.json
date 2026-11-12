@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "judith-hanson-lasater"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Mysterious Shoulder Joint: Anatomy, Asana and Therapeutics (Minneapolis)",
+      "url": "https://www.judithhansonlasater.com/complete-calendar/2027/9/26/the-mysterious-shoulder-joint-minneapolis-mn",
+      "description": "A three-day in-person workshop at Devanadi Yoga in Minneapolis on the anatomy and movement of the shoulder. Each day opens with anatomy study, moves into active asana to put it into practice, and closes with restorative 'quiet practice'; open to yoga teachers and committed students, with 18 continuing-education hours.",
+      "price": "$550",
+      "product_type": "course",
+      "start_date": "2027-09-24",
+      "end_date": "2027-09-26",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/546cd855e4b05a70ad838417/f9b33505-fde5-43ac-aa67-cfe316f33e0b/Judith_HauptDark.png?format=1500w"
+    },
+    {
+      "title": "The Pelvis Is Everything: A 3-Day Immersion (Petaluma)",
+      "url": "https://www.judithhansonlasater.com/complete-calendar/2027/6/10/the-pelvis-is-everything-a-3-day-immersion-petaluma-ca",
+      "description": "A three-day in-person immersion with Judith in Petaluma, California, built on her long-running workshop about the pelvis and its place in asana practice. Booking is through the host studio, linked from her calendar page.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2027-06-10",
+      "end_date": "2027-06-12",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/546cd855e4b05a70ad838417/f9b33505-fde5-43ac-aa67-cfe316f33e0b/Judith_HauptDark.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/judith-hanson-lasater.json",
+    "left_out": [
+      "Lasater.yoga Graceful Aging series (Osteoporosis; Pelvic Floor Resilience) and similar: taught by yoga therapist Mary Richards with Lizzie Lasater, not by Judith; the osteoporosis page also frames the class around reducing fracture risk after a diagnosis. Left out (not her own teaching).",
+      "Menopause Is Not a Mistake (online) and its free class: dated May 2026, past."
+    ],
+    "flags": [
+      "CAP: the original plan had 8 offerings, so these two would bring the listing to 10 (the cap). Please check live before inserting; if live already holds 9 or 10, keep only The Mysterious Shoulder Joint.",
+      "The Mysterious Shoulder Joint: subtitle says 'therapeutics' and the host page mentions students with rotator-cuff 'dysfunction'; it is an anatomy and asana study with no claim to cure or treat. Price and details from the host page https://devanadiyoga.com/training/judith-lasater/ ('Cost - Regular Students: $550 ($650 after July 26, 2027)'; no currency code shown). Calendar URL slug says 9/26 but the event runs 24-26 Sept 2027.",
+      "The Pelvis Is Everything (Petaluma): her calendar page gives only title, dates (10-12 June 2027) and a Mindbody booking link (not opened), so the description is short and the price is 'Contact for pricing'."
+    ]
+  },
+  "images_final": true
+}

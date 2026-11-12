@@ -1,0 +1,65 @@
+{
+  "healer": {
+    "healer_slug": "iyoga-utrecht"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Back Care Les",
+      "url": "https://www.iyogautrecht.nl/lessen/back-care/",
+      "description": "A weekly Thursday-evening Iyengar yoga class, in the studio and online, focused on the back and spine: students learn Iyengar techniques and props to care for their own back, whether they have back pain or simply want to look after their spine. Anyone with an injury is asked to tell the teacher beforehand.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2020/03/unnamed-4.jpg"
+    },
+    {
+      "title": "Special Needs lessen",
+      "url": "https://www.iyogautrecht.nl/lessen/special-needs/",
+      "description": "Semi-private Iyengar yoga classes for up to eight people who need the poses adapted, for example while recovering from injury or living with a long-term condition. The first class is an intake; each student then works on a personal sequence in a 5- or 10-week series, and the studio is wheelchair accessible.",
+      "price": "€ 25,- per class; € 105,- for 5; € 195,- for 10",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2021/02/Special-needs-scaled-e1731077014816.jpg"
+    },
+    {
+      "title": "Zwangerschapsyoga",
+      "url": "https://www.iyogautrecht.nl/lessen/zwangerschapsyoga/",
+      "description": "An ongoing weekly Iyengar yoga class for pregnant women, held on Wednesdays in the studio and online at the same time. Small groups work on strength, suppleness, breathing and relaxation with props, from the 13th week of pregnancy, and the cards can also be used for classes after the birth.",
+      "price": "€ 20,- per class; € 175,- for 10",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.iyogautrecht.nl/wp-content/uploads/2021/02/Zwangerschapsyoga.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/iyoga-utrecht.json",
+    "left_out": [
+      "Billy Konrad & Tobias Lotan, Iyengar Yoga & Osteopathy (11-13 Dec 2026 and 12-14 Mar 2027): led by visiting teachers, not the school's own teachers, so left out under the own-teacher rule (not for health)."
+    ],
+    "flags": [
+      "Back Care: the page says yoga can be an effective, natural way to reduce back pain and help prevent it; pain relief through practice, no cure claim. No price on the page (the studio's general class cards apply), so 'Contact for pricing'.",
+      "Special Needs: the page names conditions (rheumatism, MS, Parkinson's, spinal injury) as people who come to practise in an adapted way, and says the classes may even help an injury heal; no claim to cure or treat a disease. Kept under the new rule; a human may want to look.",
+      "Zwangerschapsyoga: says Iyengar yoga often prevents or eases common pregnancy discomforts and notes that a local midwifery practice recommends the class (it works alongside medical care). Prices shown with the euro sign, no currency code.",
+      "With these three the listing has 7 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "tias-little"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "SATYA 2 | Pumping the Prana | In-Person & Livestream Online Immersion",
+      "url": "https://prajnayoga.com/class/satya-2-pumping-the-prana-in-person-livestream-online-immersion/",
+      "description": "The second five-day module of Tias Little's SATYA (Sensory Awareness Training for Yoga Attunement), held in Santa Fe and livestreamed. It goes into the shoulder girdle, SATYA with breath and pranayama, and how to sequence the gentle non-weight-bearing movements with asana for one's own practice and teaching, with dharma practice on working with the hindrances. SATYA 1 is required first.",
+      "price": "$1,150 + tax (livestream); $1,498 + tax (in person)",
+      "product_type": "course",
+      "start_date": "2027-06-19",
+      "end_date": "2027-06-23",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://prajnayoga.com/wp-content/uploads/2026/01/SATYA_2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tias-little.json",
+    "left_out": [
+      "Building Better Bones (November 6-class online series, 6-24 Nov 2026): already started on 6 Nov, before 16 Nov.",
+      "Afternoons with Tias & Surya: Sacral Balancing (13 Nov 2026): dated before 16 Nov.",
+      "SATYA 3 | Healing the Subtle Body (16-20 Oct 2027): the page teaches students to 'address head trauma through SATYA' and to work with TMJ strain and 'muscular-skeletal strain and dysfunction' as a 'therapeutic modality' with clients: claims to treat medical conditions, so still out."
+    ],
+    "flags": [
+      "SATYA 2: the page mentions myofascial release, lymphatic drainage, 'visceral manipulation' and learning 'how to heal the body through savasana and SATYA'; bodywork-style language but no disease named and no cure claim. Kept under the new rule; a human may want to look. Its 'When' line says 'June 19 - 23, 2026' while the header and early-bird dates say 2027; 2027 used. Tuition shown as after-early-bird prices ('$1,150 + tax' livestream, '$1,498 + tax' in person, no currency code).",
+      "With this item the listing has 5 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

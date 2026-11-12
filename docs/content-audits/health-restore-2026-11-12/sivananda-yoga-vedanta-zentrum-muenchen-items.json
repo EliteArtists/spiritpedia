@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-zentrum-muenchen"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga für Schwangere",
+      "url": "https://muenchen.sivananda.yoga/yoga-fuer-schwangere/",
+      "description": "A weekly evening class at the Munich centre for pregnant women, with classical Sivananda postures adapted for pregnancy, breathing exercises and relaxation, guided by a qualified teacher. Recommended from the fourth month; the centre asks for a doctor's confirmation before joining.",
+      "price": "22 €, ermäßigt 15 €",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://muenchen.sivananda.yoga/wp-content/uploads/2022/11/fortgeschrittene-yogastellung.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sivananda-yoga-vedanta-zentrum-muenchen.json",
+    "left_out": [
+      "Zweijährige Yogalehrer-Ausbildung: the Munich site only links out to sivananda.at (the Tyrol ashram runs it), so it is not the Munich centre's own offering.",
+      "Gesundheit und Hatha Yoga ('Hatha Yoga Inspirationen', live online with Swami Sivadasananda): enrolment goes to the Reith (Tyrol) ashram office, so it is run by the network rather than the Munich centre; the current block (28 Oct to 1 Dec 2026) has also started. No cure claim on the page (theme: rest and better sleep).",
+      "Ayurveda ('Ayurveda-Kochen mit S. K. Kamlesh'): the page is for a 2022 course, past.",
+      "Kinderyoga: originally left out as outside the core offer, not for health; not reopened."
+    ],
+    "flags": [
+      "Yoga für Schwangere: the page lists benefits such as easing pregnancy stress and strengthening the body, and asks for a doctor's confirmation before joining (it supports medical care). No claim to cure or treat. The page text says Wednesdays 18.00-19.30 while its meta description says Fridays; the description leaves the day out.",
+      "Price shown as '22 €, ermäßigt: 15 €' with no currency code."
+    ]
+  },
+  "images_final": true
+}

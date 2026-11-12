@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-birmingham"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar Yoga for Back Problems",
+      "url": "https://www.iyengaryoga.uk.com/classes/medical-class",
+      "description": "A weekly Thursday-morning Iyengar yoga class for new and existing students who have back problems, taught by Andrew Hall with other teachers from the school assisting. It runs for most of the year at the school in Acocks Green, Birmingham, on a drop-in basis.",
+      "price": "£15 per class",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.iyengaryoga.uk.com/wp-content/themes/iyengar/img/og-logo-iyb.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/iyengar-yoga-birmingham.json",
+    "left_out": [
+      "Jayne Orton's work with a football club's injured players (teachers page): a biographical mention, not an item."
+    ],
+    "flags": [
+      "Iyengar Yoga for Back Problems: the page calls it 'a Therapy class for new or existing students with serious or non-specific back problems'. It is a practice class with no claim to cure or treat and nothing about medical care; kept under the new rule. Its URL is /classes/medical-class (the 'medical class' in the original note); it is the same page as the 'therapy classes', so one item covers both.",
+      "Price shown as '£15 drop per class' with no currency code."
+    ]
+  },
+  "images_final": true
+}

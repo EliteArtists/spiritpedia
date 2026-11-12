@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "irma-starspirit-turtle-woman"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Fire in the Eyes: The Eyeshine of the Totem Shapeshifter Intensive",
+      "url": "https://myemail.constantcontact.com/Invite-to-an-In-Person-Live-Intensive.html?soid=1142354850105&aid=76xhn_5WzEs",
+      "description": "An in-person afternoon intensive with Irma on meeting one's totem animal and nature guides in the Indigenous medicine way: fire reading, journeying, shapeshifting through movement, gazing and tracking energy, and recapitulation to release and restore one's energy. Hosted by Recuerdo Wellness; bring a blindfold, candles, a small altar and a journal.",
+      "price": "$225",
+      "product_type": "course",
+      "start_date": "2026-11-29",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2023-10/IrmaStarSpiritTurtleWoman_2023.jpg"
+    },
+    {
+      "title": "Candle Fire Readings and Online Healings",
+      "url": "https://www.shamanicfirereiki.com/readingshealings.html",
+      "description": "One-to-one sessions with Irma, currently online only: candle-fire and crystal readings about ancestry, guides and allies, and shamanic healings such as soul retrieval, past-life regression, Vogel wand and Chumpi stone work, cord cutting, Karuna Reiki and distance healing for relatives. She also offers one-to-one classes on a subject of the client's choosing.",
+      "price": "$180 to $222",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2023-10/IrmaStarSpiritTurtleWoman_2023.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/irma-starspirit-turtle-woman.json",
+    "left_out": [
+      "In-person healings, egg limpias and plant-medicine limpias: marked 'Currently not available' on the page; not described in the item."
+    ],
+    "flags": [
+      "Fire in the Eyes (29 Nov 2026, 12:30-5:00 pm EST): the flyer's 'gazing techniques diagnostics' and 'cellular and personal healing' are energy-work language; no disease named, no cure claim, nothing about medical care. Kept under the new rule. Registration is by email to the sponsor (Yaqui Rodriquez, Recuerdo Wellness); the venue address is not given. Found on her site's home page (its 'Info' link is a conta.cc short link; the flyer URL is the one the original plan used for the same flyer series).",
+      "Readings/Healings: Reiki is said to help 'the body's pains', and the plant-medicine limpia (not currently offered) is 'sometimes used for people with ailments'; spiritual and energy healing, no cure claim. Prices from her rates page https://www.shamanicfirereiki.com/rates1.html (online sessions $180 to $222; no currency code). The site's other rates page (rates.html) is Judith Grasshopper's and was not used.",
+      "Shamanic Fire Reiki is shared with Judith Grasshopper; the Readings/Healings page sits in the site's StarSpirit (Irma) section."
+    ]
+  },
+  "images_final": true
+}

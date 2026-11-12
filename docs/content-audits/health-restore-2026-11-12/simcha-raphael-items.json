@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "simcha-raphael"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Bereavement Groups and Workshops: Exploring the Grief Journey",
+      "url": "https://www.daatinstitute.net/bereavement-groups-and-workshops/",
+      "description": "Experiential grief workshops and groups offered from time to time by Simcha's DA'AT Institute, exploring loss from personal, family and cultural angles through discussion, sharing, reflection, meditation and group process. Open both to mourners and to people who work with the dying and bereaved; dates are given on request.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "http://www.daatinstitute.net/wp-content/uploads/2013/08/DAAThero2b1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/simcha-raphael.json",
+    "left_out": [
+      "Bereavement counselling, grief counselling, hospice support, past life therapy and transpersonal psychotherapy: one-to-one counselling and psychotherapy services; still left out under the scope rule (therapy is not spiritual teaching), not the health rule.",
+      "Exploring the Bereavement Journey (New York Open Center professional workshop): dated April 2018, past."
+    ],
+    "flags": [
+      "Bereavement Groups and Workshops: grief and 'a journey of healing of grief' (emotional healing, allowed under the new rule); no cure claim. The page says the groups run 'in conjunction with' the institute's bereavement counselling and gives no dates or price ('Call or email for details'), so it goes in undated with 'Contact for pricing'.",
+      "With this item the listing has 4 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

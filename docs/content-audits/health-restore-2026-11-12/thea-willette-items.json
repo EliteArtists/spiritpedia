@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "thea-willette"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Free Quantum-Touch eBook and Energy Share Session",
+      "url": "https://theawillette.kit.com/quantum-touchebook",
+      "description": "A free introductory eBook from Thea on what Quantum-Touch is, how she understands life-force energy, and simple ways for beginners to start working with it. It comes with a recorded energy-share session to listen to with eyes closed.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://embed.filekitcdn.com/e/3FGSc2hiWet7xUQZMP8Bfe/613D2wyGVZZgYey7Pjzr9B"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/thea-willette.json",
+    "left_out": [
+      "Motherhood and fertility items (Fertility Meditation Guide, Breathing Beauties: Conceive with Ease, HELD 8-week programme, Supported Mama, Quantum Healing for Birth guide, 7-Day Fertility Meal Guide): the motherhood page tells how, offered fertility treatment, she 'knew there had to be another way' and conceived after changing approach, and says 'Your body already knows how to conceive'. That reads as an alternative to medical fertility care, so all of it stays out under the no-replacing-medical-care rule, despite the page's disclaimer. The meal guide is also another business's (ndelish.com)."
+    ],
+    "flags": [
+      "eBook: the opt-in page offers 'relief ... from physical discomfort, emotional heaviness' for those for whom 'nothing has quite worked', and speaks of the body's 'natural ability to restore and rebalance'. No disease named, no cure claim, nothing about medication or doctors; kept under the new rule. It is an email opt-in."
+    ]
+  },
+  "images_final": true
+}

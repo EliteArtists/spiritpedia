@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "robin-rose-bennett"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Green Witch Path of Herbal Medicine & EarthSpirit Wisdom Apprenticeship (2027)",
+      "url": "https://www.robinrosebennett.com/apprenticeships",
+      "description": "A year-long apprenticeship with Robin Rose built on four seasonal residential weekends at Dharmakaya Wellness Center (January, April, June and September 2027) with monthly Zoom gatherings between them. It covers herbal medicine, earth-based ritual and craft, with guest teachers, meals, lodging and supplies included and a certificate at the end; entry is by application and interview.",
+      "price": "$5,000",
+      "product_type": "course",
+      "start_date": "2027-01-29",
+      "end_date": "2027-09-26",
+      "subjects": [
+        "plant-medicine",
+        "shamanism",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/620e63b3eef0db3969699504/t/6219ac541115a775a5b9bba0/1645849684505/WWLogo-Cauldron-000000-Black-300px.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/robin-rose-bennett.json",
+    "left_out": [
+      "Herbal consultations (Saturday clinic): the page quotes a client saying 'The herbs helped me to get drug free' and 'Doctors only prescribe medications to block symptoms'. That suggests stopping medication, so it stays out.",
+      "The Green Witch's Apothecary ($499): no page for it found on her own site (the events list links only to old and outside events), and the Shift Network is off limits; not restored.",
+      "The Gift of Healing Herbs: 'home remedies', and her site leans towards herbs in place of medicine (left out on review, 12 Nov 2026)"
+    ],
+    "flags": [
+      "Book: ISBN-13 9781583947623 from her own book page (https://www.robinrosebennett.com/books-meditations-shop/p/the-gift-of-healing-herbs-plant-medicines-and-home-remedies-for-a-vibrantly-healthy-life, IndieBound link), converted to ISBN-10 1583947620, which matches the Amazon link on that page (Amazon not opened). Not confirmed elsewhere. Cover from the same page.",
+      "Book, borderline: the subtitle says 'Home Remedies' and the page says it is for 'readers who want to take charge of their health'. It names no disease and makes no cure claim, and its own page says nothing about medication. Kept under the new rule, but her site elsewhere (blog post titles such as an herbal 'alternative for antibiotics', and the clinic testimonial above) leans towards herbs in place of medicine, so a human should look before inserting.",
+      "Apprenticeship: the page says 'I first turned to the plants for help with my health problems' (her own story) and notes there is no legal licence for herbalists in the US; no cure claim. Price as published ('$5,000', no currency code); $1,650 deposit, balance due by 29 Dec 2026."
+    ]
+  },
+  "images_final": true
+}

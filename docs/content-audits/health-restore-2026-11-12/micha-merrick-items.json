@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "micha-merrick"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Herbal Healing Ritual Sessions (womb, fertility, prenatal and postnatal)",
+      "url": "https://www.michamerrick.com/healing-1",
+      "description": "One-to-one ritual sessions with Micha built around warm herbal poultice bundles, listening, sound and Thai-style bodywork: a Womb Ritual for reclaiming the womb space after loss or through life transitions, a Herbal Fertility ritual for conscious conception, a Prenatal session for relaxation before birth, and a Postnatal session for mothers with their newborn. Sessions run 90 to 120 minutes and are booked by email.",
+      "price": "$200.00 to $280.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "plant-medicine",
+        "self-healing",
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/61526b2d7118357220f42a05/00ba7e65-d12a-4e8f-88e7-ff7d4bc7f6dd/IMG_8316_jpg.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/micha-merrick.json",
+    "left_out": [
+      "Birth doula services: one sentence on her Healing page ('available for a limited number of Birth Doula clients'), with no page or price of its own."
+    ],
+    "flags": [
+      "The four session pages were read: Womb Ritual Session ($220.00, https://www.michamerrick.com/healing-1/p/womb-ritual-session-emez4: 'Heal and integrate after abortion, miscarriage, trauma or loss. Find nourishing support for painful cycles or menopausal transitions'), Herbal Fertility Session ($220.00, .../herbal-fertility-sessions: 'A ritual to open the portal to conscious conception'), Prenatal Session ($200.00, .../prenatal-thai-adn9h: 'ease common discomforts of pregnancy'), Postnatal Healing Session ($280.00, .../postnatal-healing-ritual-sessions-msnz7: 'abdominal healing and breastfeeding support'). Support and emotional-healing language; none claims to treat infertility or any condition, and none suggests replacing medical or midwife care. Kept under the new rule.",
+      "Following the brief (sessions are one item), the four are one offering on her Healing page; the prices range is from the four product pages. Each also has its own page if the owner prefers four items. The plan's existing Herbal Clearing Ritual item uses its Esalen URL, so there is no URL clash.",
+      "Reproductive-health sessions make up a large part of her one-to-one work (noted in the original plan's flags)."
+    ]
+  },
+  "images_final": true
+}

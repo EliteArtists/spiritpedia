@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "eileen-strong"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Emotional Freedom Technique (EFT) sessions",
+      "url": "https://www.eileenstrongcoaching.com/emotional-freedom-technique",
+      "description": "One-to-one EFT ('tapping') sessions with Eileen, in person in Derbyshire or by phone or video call. She uses tapping on the body's energy points to work with stuck emotions, fears and phobias (flying, driving, spiders, stage nerves) and the emotional side of physical pain; clients need not describe a painful memory aloud.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "eft-tapping",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfileImages/UnitedKingdom/EileenStrong2017.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/eileen-strong.json",
+    "left_out": [
+      "Cancer Support (Cancer Touch Therapy, Hydrotherm 'Tranquil Sea' massage, 'Spa-Ritual Mind-Body Connect'): spa and massage treatments for people with cancer and chronic illness; bodywork rather than spiritual teaching, and the page praises 'complementary and alternative medicine' and recounts doing massage when a GP's permission never came. Left out.",
+      "Health coaching, massage therapy and Hopi ear candling: lifestyle coaching and bodywork, outside the directory's scope (not reopened for the health rule)."
+    ],
+    "flags": [
+      "EFT page: says tapping 'sends calming signals to the part of the brain ... involved in all anxiety disorders' and that EFT 'can also be very helpful for physical pain' through its emotional charge; fears and phobias are the examples. No claim to cure or treat a disease and nothing about medication; kept under the new rule. No price on the page.",
+      "With this item the listing has 7 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

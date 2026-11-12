@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "lorelei-chang"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Qigong for Grief",
+      "url": "https://www.dancenlight.org/workshops/workshops/qigong-for-releasing-grief/",
+      "description": "A qigong workshop with Lorelei for moving heavy emotions and tension out of the body, built on breathing, a lung-clearing patting routine, the lung form of Double Phoenix Five Element Qigong and a closing sound meditation. It draws on the five-element pairing of heart (fire) and lung (metal); the full form is also on her DVD.",
+      "price": "$55 plus tax ($35 plus tax for current students)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "breathwork",
+        "sound-healing"
+      ],
+      "image": "http://www.dancenlight.org/data/workshops/workshops/qigong-for-releasing-grief/dsNRAxpQ.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lorelei-chang.json",
+    "left_out": [
+      "White Crane & Acupressure for brain healing: 'brain healing' in the title reads as a claim to treat; not opened (dancenlight.org has a 60-second Crawl-delay), left out.",
+      "Qigong for Eyes, Ears, Nose, Head & Hands: its summary on the workshops list names migraine and headaches as problems the exercises help; borderline, not opened, left out.",
+      "Shiatsu treatments: hands-on bodywork sold as treatment, outside the directory's scope; not reopened."
+    ],
+    "flags": [
+      "Qigong for Grief: emotional healing (grief) only; no cure claim. The page gives no date (it mentions practising by the ocean at sunset and under moonlight, so it may have been a one-off outdoor workshop); it is still on her workshops list with a live price, so it goes in undated. A human may want to confirm it is still offered.",
+      "Prices as published: '$35 plus tax (For currently registered students)', '$55 plus tax (For others)'; no currency code.",
+      "With this item the listing has 7 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}
