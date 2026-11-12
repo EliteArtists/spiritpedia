@@ -4,6 +4,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   AUDIT_TABLES,
+  cannotTell,
   describeImageCheck,
   isPlaceholderImage,
   pickShard,
@@ -80,4 +81,18 @@ test('the Inbox line turns amber when overdue, cut short or failed', () => {
   const failed = { ran_at: '2026-10-27T07:00:00Z', error: 'healers: timeout' };
   assert.equal(describeImageCheck(failed, new Date('2026-10-27T08:00:00Z')).stale, true);
   assert.equal(describeImageCheck(null), null);
+});
+
+test("can't tell: no answer, or refused at the image and at robots.txt", () => {
+  assert.equal(cannotTell({ status: null }), true);
+  assert.equal(cannotTell({ status: 403, definitive: false }, 403), true);
+  assert.equal(cannotTell({ status: 403, definitive: false }, null), true);
+  assert.equal(cannotTell({ status: 500, definitive: false }, 503), true);
+});
+
+test('still broken: a 404, or a refusal from a host that answers robots.txt', () => {
+  assert.equal(cannotTell({ status: 404, definitive: true }, 403), false);
+  assert.equal(cannotTell({ status: 403, definitive: false }, 200), false);
+  assert.equal(cannotTell({ status: 403, definitive: false }, 404), false);
+  assert.equal(cannotTell({ status: 403, definitive: false }), false);
 });

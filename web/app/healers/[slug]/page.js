@@ -544,7 +544,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Books & Literature"
           subtitle="The Curated Archive"
           items={books}
-          renderItem={(book) => <BookCard book={book} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(book) => <BookCard book={book} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
           itemWidthClass="w-[200px]"
         />
 
@@ -553,7 +553,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Free Resources"
           subtitle="No Cost, No Catch"
           items={freeResources}
-          renderItem={(item) => <FreeResourceCard item={item} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(item) => <FreeResourceCard item={item} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4d · Courses (product_type = 'course') */}
@@ -561,7 +561,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Courses & Programmes"
           subtitle="Go Deeper"
           items={courseOfferings}
-          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(item) => <OfferingCard item={item} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4e · Retreats (product_type = 'retreat') */}
@@ -569,7 +569,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Retreats & Events"
           subtitle="Live Experiences"
           items={retreatOfferings}
-          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(item) => <OfferingCard item={item} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4f · Downloads (product_type = 'download') */}
@@ -577,7 +577,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Downloads & Audio"
           subtitle="Take It With You"
           items={downloadOfferings}
-          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(item) => <OfferingCard item={item} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
         />
 
         {/* 4g · Memberships (product_type = 'membership') */}
@@ -585,7 +585,7 @@ export default async function HealerProfile({ params, searchParams }) {
           title="Memberships"
           subtitle="Ongoing Journey"
           items={membershipOfferings}
-          renderItem={(item) => <OfferingCard item={item} from={fromHealer} fromTitle={healer.name} />}
+          renderItem={(item) => <OfferingCard item={item} healerPhotos={healer.image_urls} from={fromHealer} fromTitle={healer.name} />}
         />
       </div>
     </main>

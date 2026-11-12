@@ -47,7 +47,7 @@ function OfferingCta({ productType }) {
 // The favourite heart is a sibling of the <a>, not a child — a button inside an
 // anchor is invalid nesting. `group` therefore lives on the wrapper so the card's
 // hover effects still reach into the link.
-export default function OfferingCard({ item, healerName, from, fromTitle }) {
+export default function OfferingCard({ item, healerName, healerPhotos, from, fromTitle }) {
   return (
     <div className="group relative h-full">
       <a
@@ -63,7 +63,9 @@ export default function OfferingCard({ item, healerName, from, fromTitle }) {
             src={item.image_url}
             alt={item.title}
             className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            fallbackEmoji="🎓"
+            // A dead image: the teacher's photo, then the neutral tile.
+            fallbackSrc={healerPhotos || item.healers?.image_urls}
+            fallbackNeutral
             fallbackClassName="w-full h-full flex items-center justify-center text-5xl"
           />
           {item.price && (

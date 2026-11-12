@@ -1,4 +1,5 @@
 import { supabase } from '@/utils/supabase';
+import CardImage from '@/components/CardImage';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
@@ -61,7 +62,7 @@ export default async function BookDetail({ params, searchParams }) {
   // falls back to the free-text author.
   const authorSlugs = bookAuthorSlugs(book);
   const { data: healerRows } = authorSlugs.length
-    ? await supabase.from('healers').select('name, healer_slug').in('healer_slug', authorSlugs)
+    ? await supabase.from('healers').select('name, healer_slug, image_urls').in('healer_slug', authorSlugs)
     : { data: [] };
   const authors = authorSlugs
     .map((s) => (healerRows || []).find((h) => h.healer_slug === s))
@@ -86,18 +87,16 @@ export default async function BookDetail({ params, searchParams }) {
       <div className="max-w-4xl mx-auto px-6 pt-20 pb-12 grid grid-cols-1 md:grid-cols-[280px_1fr] gap-10 items-start">
         {/* Left column — cover + shelf actions */}
         <div>
-          {hasCover ? (
-            <img
-              referrerPolicy="no-referrer"
-              src={book.mock_cover_url}
-              alt={book.title}
-              className="w-full rounded-xl object-cover shadow-2xl"
-            />
-          ) : (
-            <div className="bg-[#111827] w-full h-[380px] rounded-xl flex items-center justify-center text-gray-600 text-sm">
-              No cover available
-            </div>
-          )}
+          {/* A dead or missing cover: the author's photo, then the neutral tile
+              (owner, 12 Nov 2026). */}
+          <CardImage
+            src={hasCover ? book.mock_cover_url : null}
+            alt={book.title}
+            className="w-full rounded-xl object-cover shadow-2xl"
+            fallbackSrc={authors[0]?.image_urls}
+            fallbackNeutral
+            fallbackClassName="w-full h-[380px] rounded-xl shadow-2xl flex items-center justify-center"
+          />
 
           <div className="mt-4">
             <WantToReadButton bookSlug={book.slug} />

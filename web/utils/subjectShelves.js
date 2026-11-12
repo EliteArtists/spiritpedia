@@ -19,8 +19,8 @@ export const SHELVES = {
 // Only what the cards read, plus the author's name through the healer_id
 // relation (the page no longer has every healer's name to hand them).
 const COLUMNS = {
-  courses: 'id, slug, title, description, image_url, price, product_type, healers (name)',
-  free_resources: 'id, slug, title, description, image_url, resource_type, healers (name)',
+  courses: 'id, slug, title, description, image_url, price, product_type, healers (name, image_urls)',
+  free_resources: 'id, slug, title, description, image_url, resource_type, healers (name, image_urls)',
 };
 
 // The shelf's live rows for a subject, ordered by id. `columns` is the cards'

@@ -9,7 +9,7 @@ import { useFavorite } from '../utils/useFavorite.js';
 
 // Oversized book cover with a hover/click synopsis popover and a persistent
 // "Want to Read" favorite toggle. Rendered card-less on the homepage canvas.
-export default function BookCard({ book, variant, from, fromTitle }) {
+export default function BookCard({ book, variant, healerPhotos, from, fromTitle }) {
   const [open, setOpen] = useState(false);
   // Saved by slug, the same as the book page's Want to Read button — until
   // October 2026 this card saved the numeric id and the page the slug, so the
@@ -41,7 +41,9 @@ export default function BookCard({ book, variant, from, fromTitle }) {
           src={hasCover ? book.mock_cover_url : null}
           alt={book.title}
           className="w-full aspect-[2/3] object-cover rounded-xl shadow-2xl transition-transform duration-300 hover:scale-105 cursor-pointer"
-          fallbackEmoji="📖"
+          // A dead cover: the author's photo, then the neutral tile.
+          fallbackSrc={healerPhotos || book.healers?.image_urls}
+          fallbackNeutral
           fallbackClassName="w-full aspect-[2/3] rounded-xl bg-slate-800 flex items-center justify-center text-6xl shadow-2xl cursor-pointer"
         />
 

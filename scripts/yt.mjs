@@ -1,21 +1,26 @@
 // Read a YouTube channel or video through the Data API (scripts/lib/youtube.mjs).
 // This is how helpers read channels: never the channel pages themselves.
 //
-//   node scripts/yt.mjs channel <@handle | UC… id | channel, user, @ or video URL> [--uploads 25] [--json]
+//   node scripts/yt.mjs channel <@handle | UC… id | channel, user, @ or video URL> [--uploads 25 | --top 25] [--json]
 //   node scripts/yt.mjs video <id or URL> [<id or URL> …] [--json]
 //
 // Prints the channel's title, handle, subscribers (null if hidden), video
 // count, country, avatar (a yt3.googleusercontent.com URL the ingest accepts),
 // description and, with --uploads, its latest uploads with date, length and
-// views. Run from the repo root. The key is never printed.
+// views; with --top, its most-viewed uploads (owner, 12 Nov 2026: videos are
+// chosen from each teacher's most-viewed, within the subject and quality
+// rules), read from up to its latest 500 uploads (about 20 quota units). Run
+// from the repo root. The key is never printed.
 
-import { getChannel, getUploads, getVideos, parseRef } from './lib/youtube.mjs';
+import { getChannel, getTopUploads, getUploads, getVideos, parseRef } from './lib/youtube.mjs';
 
 const [cmd, ...rest] = process.argv.slice(2);
 const json = rest.includes('--json');
 const ui = rest.indexOf('--uploads');
 const nUploads = ui >= 0 ? Number(rest[ui + 1]) || 25 : 0;
-const refs = rest.filter((a, i) => !a.startsWith('--') && !(ui >= 0 && i === ui + 1));
+const ti = rest.indexOf('--top');
+const nTop = ti >= 0 ? Number(rest[ti + 1]) || 25 : 0;
+const refs = rest.filter((a, i) => !a.startsWith('--') && !(ui >= 0 && i === ui + 1) && !(ti >= 0 && i === ti + 1));
 
 const mmss = (s) => (s == null ? '?' : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`);
 
@@ -23,8 +28,8 @@ try {
   if (cmd === 'channel' && refs[0]) {
     const c = await getChannel(refs[0]);
     if (!c) { console.log(`No channel found for ${refs[0]}`); process.exit(2); }
-    const uploads = nUploads ? await getUploads(c, nUploads) : [];
-    if (json) { console.log(JSON.stringify({ ...c, latest: uploads }, null, 2)); process.exit(0); }
+    const uploads = nTop ? await getTopUploads(c, nTop) : nUploads ? await getUploads(c, nUploads) : [];
+    if (json) { console.log(JSON.stringify({ ...c, [nTop ? 'top' : 'latest']: uploads }, null, 2)); process.exit(0); }
     console.log(`${c.title} (${c.id}) ${c.handle || ''}\n${c.url}`);
     console.log(`Subscribers: ${c.subscribersHidden ? 'hidden' : c.subscribers.toLocaleString('en-GB')} | videos ${c.videos} | country ${c.country || '-'} | since ${c.published?.slice(0, 10)}`);
     console.log(`Avatar: ${c.avatar}`);

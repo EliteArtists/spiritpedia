@@ -104,3 +104,10 @@ export async function getUploads(channel, n = 25) {
   }
   return getVideos(ids);
 }
+
+// A channel's most-viewed uploads, up to `n`, from its latest `scan` uploads
+// (the API has no "most viewed" list without search.list, which costs 100).
+export async function getTopUploads(channel, n = 25, scan = 500) {
+  const all = await getUploads(channel, scan);
+  return all.sort((a, b) => b.views - a.views).slice(0, n);
+}

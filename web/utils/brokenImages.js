@@ -154,7 +154,7 @@ export function describeImageCheck(run, now = new Date()) {
     `${run.checked ?? 0} checked`,
   ];
   if (run.skipped) parts.push(`${run.skipped} skipped (out of time)`);
-  if (run.undetermined) parts.push(`${run.undetermined} behind a bot check`);
+  if (run.undetermined) parts.push(`${run.undetermined} can't tell (a bot check, or the host refuses us)`);
   if (run.recovered) parts.push(`${run.recovered} cleared`);
   const stale = hours > 26 || Boolean(run.skipped);
   if (hours > 26) parts.push('overdue');
@@ -243,6 +243,27 @@ export const MIN_FAILURES = 2;
 // worse than having no audit at all. With it, HEAD agreed with GET on all 14.
 export const AUDIT_USER_AGENT =
   'Mozilla/5.0 (compatible; SpiritpediaImageAudit/1.0; +https://www.spiritpedia.co)';
+
+// WHEN THE AUDIT CAN'T TELL (owner, 12 Nov 2026).
+//
+// 78 rows in the queue on 12 Nov 2026 sat on hosts whose firewalls drop any
+// request that names itself a bot: at the image, and at robots.txt too. The
+// visitor's browser is served those images; only we are refused. Counting
+// them as broken brought the same rows back every week, so a failure is now
+// "can't tell" (undetermined: silent, counted on the Inbox status line) when
+//   - nothing came back at all (a dropped connection or a timeout), or
+//   - the image was refused (anything but 404 or 410) and so was the host's
+//     robots.txt: no answer, 401, 403, 429 or 5xx.
+// A 404 or 410 is still broken on the first pass, and a refusal from a host
+// whose robots.txt answers normally is still a soft failure.
+//   failure: { status } from the image check; robotsStatus: robots.txt's
+//   status (null for no answer), or undefined when it wasn't asked.
+export function cannotTell(failure, robotsStatus) {
+  if (failure.status === null || failure.status === undefined) return true;
+  if (failure.definitive) return false;
+  if (robotsStatus === undefined) return false;
+  return robotsStatus === null || [401, 403, 429].includes(robotsStatus) || robotsStatus >= 500;
+}
 
 // VIDEO THUMBNAILS ARE COVERED since migration 0028 (see videoThumbnail). A
 // video with no YouTube id in platform_url has no thumbnail to check and is

@@ -1,4 +1,5 @@
 import { supabase } from '@/utils/supabase';
+import CardImage from '@/components/CardImage';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import BackButton from '@/components/BackButton';
@@ -42,7 +43,7 @@ export default async function FreeResourceDetail({ params, searchParams }) {
   // not the UUID id.
   const { data: resource, error } = await supabase
     .from('free_resources')
-    .select('*, healers (name, healer_slug)')
+    .select('*, healers (name, healer_slug, image_urls)')
     .eq('slug', slug)
     .single();
 
@@ -103,16 +104,16 @@ export default async function FreeResourceDetail({ params, searchParams }) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start max-w-4xl mx-auto px-6 py-10">
         {/* Left column */}
         <div>
-          {resource.image_url ? (
-            <img
-              referrerPolicy="no-referrer"
-              src={resource.image_url}
-              alt={resource.title}
-              className="w-full rounded-2xl object-cover max-h-[400px]"
-            />
-          ) : (
-            <div className="bg-gradient-to-br from-violet-900 to-[#0a0f1d] w-full h-[300px] rounded-2xl" />
-          )}
+          {/* A dead image: the teacher's photo, then the neutral tile (owner,
+              12 Nov 2026). */}
+          <CardImage
+            src={resource.image_url}
+            alt={resource.title}
+            className="w-full rounded-2xl object-cover max-h-[400px]"
+            fallbackSrc={resource.healers?.image_urls}
+            fallbackNeutral
+            fallbackClassName="w-full h-[300px] rounded-2xl flex items-center justify-center"
+          />
         </div>
 
         {/* Right column */}

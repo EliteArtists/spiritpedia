@@ -9,6 +9,7 @@ import {
   NOT_AN_IMAGE,
   PROBLEMS,
   SHARDS,
+  cannotTell,
   isPlaceholderImage,
   pickShard,
   shardOf,
@@ -129,7 +130,42 @@ async function checkUrl(url) {
   if (get.status !== null && get.status < 400) return classify(url, get);
 
   const status = get.status ?? head.status;
-  return { ok: false, status, definitive: DEFINITIVE_STATUSES.has(status) };
+  const failure = { ok: false, status, definitive: DEFINITIVE_STATUSES.has(status) };
+  // Refused or unanswered: ask the host's robots.txt before calling it broken
+  // (cannotTell in utils/brokenImages.js; owner, 12 Nov 2026).
+  const robots = status === null || failure.definitive ? undefined : await robotsStatus(url);
+  return cannotTell(failure, robots) ? { ok: true, undetermined: true } : failure;
+}
+
+// robots.txt's status for the image's host, once per host per run (null for
+// no answer). Only the status is read; it says whether the host answers us.
+const robotsSeen = new Map();
+function robotsStatus(url) {
+  let origin;
+  try {
+    origin = new URL(url).origin;
+  } catch {
+    return Promise.resolve(null);
+  }
+  if (!robotsSeen.has(origin)) {
+    robotsSeen.set(origin, (async () => {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
+      try {
+        const res = await fetch(`${origin}/robots.txt`, {
+          redirect: 'follow',
+          headers: { 'User-Agent': AUDIT_USER_AGENT },
+          signal: controller.signal,
+        });
+        return res.status;
+      } catch {
+        return null;
+      } finally {
+        clearTimeout(timer);
+      }
+    })());
+  }
+  return robotsSeen.get(origin);
 }
 
 // A 200 IS NOT A PICTURE, which is the whole of Job 2.
@@ -293,6 +329,7 @@ function spreadByHost(list) {
 }
 
 export async function GET(request) {
+  robotsSeen.clear();
   const secret = process.env.CRON_SECRET;
   if (!secret) {
     return NextResponse.json({ error: 'cron_secret_not_set' }, { status: 503 });
