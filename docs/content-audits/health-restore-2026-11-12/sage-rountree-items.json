@@ -1,0 +1,23 @@
+{
+  "healer": {
+    "healer_slug": "sage-rountree"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sage-rountree.json",
+    "left_out": [
+      "The Athlete's Guide to Recovery: left out on review, 12 Nov 2026: sports performance, fitness scope."
+    ],
+    "flags": [
+      "Restored under the 12 Nov rule: 'recovery' here means rest between training sessions, not recovery from an illness, and the book page makes no claim to treat any condition.",
+      "ISBN 9781538181478 (converted to 1538181479) from her own page sagerountree.com/athletes-guide-to-recovery-second-edition/ (Bookshop.org and Barnes & Noble links; her Amazon review link carries the same ASIN), not confirmed elsewhere.",
+      "This is a sports-performance title rather than spiritual teaching, like her other athlete books already listed; a human may prefer to keep it off.",
+      "Her listing will hold 9 books after this (cap 10)."
+    ]
+  }
+}

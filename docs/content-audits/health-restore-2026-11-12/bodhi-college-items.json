@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "bodhi-college"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meeting illness, loss, and death with awareness and care",
+      "url": "https://bodhi-college.org/events/191-meeting-illness-loss-and-death-with-awareness-and-care/region-UK/",
+      "description": "A six-week online course on Tuesday evenings with Yuka Nakamura and Rebecca Crane on meeting illness, death and loss, in ourselves and in others, through practice. Drawing on early Buddhist teachings, it combines talks, guided practices, small-group reflection and discussion, including how to step into the role of carer. Open to new and experienced practitioners.",
+      "price": "Basic rate £139; standard rate £159; supporter rate £179",
+      "product_type": "course",
+      "start_date": "2027-01-19",
+      "end_date": "2027-02-23",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "image": "https://bodhi-college.org/wp-content/uploads/bodhi-fb2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/bodhi-college.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the 12 Nov rule: the course names illness, death and grief as life themes for practice and makes no claim to treat any condition.",
+      "Co-led: Yuka Nakamura is named core faculty on bodhi-college.org/courses/; Rebecca Crane is a 2022 graduate of the college's teacher training (per the course page), not named as core faculty.",
+      "Listing will hold 8 offerings after this (cap 10)."
+    ]
+  },
+  "images_final": true
+}

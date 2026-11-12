@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "erin-rose-ward"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "1:1 Mentorship",
+      "url": "https://www.erinroseward.com/mentorship",
+      "description": "Private 90-minute sessions with Erin Rose Ward, shaped to each person, working through the body, the psyche and spirit. She draws on yogic wisdom and practice, breathwork and meditation, her 360 Emergence movement practice and personal ritual, alongside somatic and depth-psychology tools. Single sessions, a three-session package and a three-month mentorship are offered, with a free introductory call.",
+      "price": "$300 per session; 3 sessions $750; 3-month mentorship $6,000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/651b9c6e8d7ef93792f61f21/66b7adb9-02e7-432e-95f6-5566b2304908/HEIDI_ahrlingphotography-124.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/erin-rose-ward.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the 12 Nov rule: the page speaks of healing 'what pains you' (emotional healing) with no claim to treat a condition.",
+      "Borderline scope: the page lists 'Somatic therapy' and 'Depth Psychology' among the tools, next to yogic practice, breathwork, meditation and ritual; it is one-to-one mentoring, not a psychotherapy training, but a human may want to judge it.",
+      "Prices as published on the page ($300, $750, $6,000, no currency code shown)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "ruthie-lindsey"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "There I Am: The Journey from Hopelessness to Healing",
+      "slug": "there-i-am",
+      "author": "Ruthie Lindsey",
+      "asin": "198210791X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Ruthie Lindsey's memoir, published by Simon & Schuster, about the years of pain and loss that followed a teenage accident and how she slowly found her way back to joy and wonder. It is the story behind the somatic and self-acceptance work she teaches now, and asks readers to let go of the stories of brokenness they tell about themselves.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/198210791X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/ruthie-lindsey.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the 12 Nov rule: a memoir of living through chronic pain; her book page (ruthielindsey.com/book) frames healing as inner and emotional and makes no claim to cure or treat a condition.",
+      "ASIN 198210791X is the hardcover link (Simon & Schuster affiliate) on her own book page, matching ISBN 9781982107918 on the same page; not confirmed elsewhere. The old plan's 1982107928 is the paperback (9781982107925, also linked there).",
+      "No cover read from her page (the only candidate image could not be identified as the cover); the ingest builds one from the ASIN."
+    ]
+  },
+  "images_final": true
+}
