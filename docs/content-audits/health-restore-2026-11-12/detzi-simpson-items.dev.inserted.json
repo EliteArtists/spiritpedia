@@ -1,0 +1,25 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "0c74f9de-acc7-423c-a666-c13850473125",
+      "slug": "reiki-healing-treatment",
+      "title": "Reiki Healing Treatment"
+    },
+    {
+      "table": "courses",
+      "id": "76ef40f9-6132-47e5-b5e9-961c84642f27",
+      "slug": "crystal-chakra-balance",
+      "title": "Crystal Chakra Balance"
+    },
+    {
+      "table": "courses",
+      "id": "a0325748-30a7-40a8-a85f-e06f8d8273d2",
+      "slug": "tuning-fork-sound-healing",
+      "title": "Tuning Fork Sound Healing"
+    }
+  ],
+  "at": "2026-11-12T17:58:59.804Z"
+}

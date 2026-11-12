@@ -1,0 +1,21 @@
+{
+  "healer": {
+    "healer_slug": "jo-ann-levitt"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jo-ann-levitt.json",
+    "left_out": [
+      "Prayers for the Pandemic: left out on review, 12 Nov 2026: pandemic subject (off-topic filter) and its text couldn't be read."
+    ],
+    "flags": [
+      "ASIN 1796098728 from the Amazon link on https://joannlevitt.com/books/ (the link's slug reads 'Prayers-Pandemic-Non-Believers', so the full title may carry a subtitle about believers and non-believers); not confirmed elsewhere. Title written as her page shows it.",
+      "Health: her page describes the book only as capturing the moods and feelings of living through the 2020 COVID-19 pandemic; no cure, treatment or anti-vaccine claim on the page. The excerpt (https://joannlevitt.com/books/prayers-excerpt/) is an embedded flipbook whose text could not be read, so the book's inside was not checked: a human may want to glance at it before inserting."
+    ]
+  }
+}

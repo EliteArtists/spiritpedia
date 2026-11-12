@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "amy-secada"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Prayer in Motion: Monthly Online Somatic Dance Ceremony",
+      "url": "https://amysecada.com/dance",
+      "description": "A 90-minute live online gathering held each month, in which Amy leads somatic dance, breathwork, movement mantras and chakra activation as a group ritual. No dance experience is needed; the focus is on reconnecting with the body, ancestral movement and community.",
+      "price": "$33.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "breathwork",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5559fc04e4b0384b6ca15056/t/663fee61b785e73ce4983f13/1715465830363/DOTC_design.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/amy-secada.json",
+    "left_out": [],
+    "flags": [
+      "Prayer in Motion: the page promises to 'release energetic blockages and trauma from the body' and speaks of 'the healing power of moving in community'; emotional and energy-healing wording, no medical claim, so kept under the 12 Nov rule. Repeating monthly (next session shown: Sunday 22 Nov 2026), so undated; the per-session shop page (/store/p/dotc-live-experience-66) is tied to one date, so the /dance page is used. Price shown as '$33.00' with no currency code."
+    ]
+  },
+  "images_final": true
+}

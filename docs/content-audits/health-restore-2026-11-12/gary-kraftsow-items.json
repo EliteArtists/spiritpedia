@@ -1,0 +1,74 @@
+{
+  "healer": {
+    "healer_slug": "gary-kraftsow"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Pranayama Unlocked: A Practice-Based Intensive",
+      "url": "https://yogainternational.com/ecourse/pranayama-unlocked-a-practice-based-intensive/",
+      "description": "A 10.5-hour on-demand course on Yoga International in which Gary teaches a range of prāṇāyāma techniques and ways of linking āsana with the breath. It includes seven breath-centred āsana classes, technique practicums and the three orientations of breath: inner, outer and secret.",
+      "price": "$199",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://brooklyn.gaia.com/v1/assets-render/49f3351c-f8dc-4aa7-aee8-26504078bde6?hash=a96a1e518e67960cb82ce07dc3f0ed1ef08c22f69a549f2d9a1e61c43e052ecd&w=760&fm=webp&q=93"
+    },
+    {
+      "title": "Yoga Therapy for Anxiety: Manage Symptoms and Enhance Well-Being",
+      "url": "https://yogainternational.com/ecourse/anxiety/",
+      "description": "An on-demand course of about five hours on Yoga International with two full practices, one for the body's response to anxious times and one for the mind's. Gary explains the Viniyoga approach to adapting āsana, breathwork, chanting, mantra and meditation, and the yogic view of thought, mood and self-concept.",
+      "price": "$129",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://brooklyn.gaia.com/v1/assets-render/fa9600e5-a544-49d3-bde4-f4da3b1d69e4?hash=2276b067f8b0a6e658efc37a437cffff029b407340eae22ebc8e825c556e9498&w=760&fm=webp&q=93"
+    },
+    {
+      "title": "Yoga Therapy for Better Sleep",
+      "url": "https://yogainternational.com/ecourse/yoga-therapy-for-better-sleep/",
+      "description": "A five-hour on-demand course on Yoga International with an energising morning sequence, a calming evening sequence and practices for midday and for bed. Gary sets out the yogic view of sleep and how to combine āsana, prāṇāyāma, chanting, guided relaxation and meditation into a personal routine.",
+      "price": "$129",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://brooklyn.gaia.com/v1/assets-render/67ca71ee-8fd1-46a8-b699-4b61d16b8429?hash=a13ffaf2bbacde79496c04c6d7e6afd98c7efab1f28f936010e3910cf622041e&w=760&fm=webp&q=93"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gary-kraftsow.json",
+    "left_out": [
+      "Shift Network courses (Sacred Breath, Deepening Your Sacred Breath Practice, Multidimensional Yoga, Dissolve the Knot of the Heart): theshiftnetwork.com is on the never-fetch list, so their current pages could not be checked.",
+      "Yoga International 'Yoga Therapy for Depression' (https://yogainternational.com/ecourse/yoga-therapy-for-depression/): its page says one practice 'addresses the anatomical and physiological symptoms of depression', a treatment claim for a medical condition.",
+      "Yoga International 'Yoga Therapy for the Neck and Shoulders': its page covers diagnoses and pathologies, 'general treatment goals' and condition-specific strategies, i.e. treatment of physical conditions.",
+      "Yoga International 'Healing Addiction: A Yogic Perspective': led by Nikki Myers, with Gary as one of two guest teachers, so not his own course.",
+      "Viniyoga Therapist Training and anything further: the listing reaches the 10-offering cap with the three items in this plan."
+    ],
+    "flags": [
+      "Prices are Yoga International's a-la-carte prices ($199, $129, $129) read from the course pages' own page data (https://yogainternational.com/page-data/ecourse/<slug>/page-data.json, the data the page renders from); the site renders in JavaScript, so the visible price layout and any currency code could not be seen. A Black Friday 20% coupon was running.",
+      "Pranayama Unlocked: the original note said its description named hypertension, depression and anxiety; the current page text names none of them.",
+      "Yoga Therapy for Anxiety: the page says 'yoga is not a substitute for medical care' and offers it as a complementary resource for managing symptoms; anxiety is allowed wellbeing language under the 12 Nov rule.",
+      "Yoga Therapy for Better Sleep: subtitled on the page as tools for sleeplessness and insomnia, and quotes Gary that poor sleep is a causal factor in disease; it offers practices for better sleep without claiming to treat a disease, so kept. A human may want to look.",
+      "With these three the listing has 10 offerings (the cap)."
+    ]
+  },
+  "images_final": true
+}

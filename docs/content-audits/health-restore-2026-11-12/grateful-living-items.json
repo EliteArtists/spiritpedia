@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "grateful-living"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Grateful Grief: A Guide for Living with Loss (on demand)",
+      "url": "https://grateful.org/product/grateful-grief-on-demand/",
+      "description": "A self-guided course of six sessions, each with an hour-long teaching video, on living gratefully alongside grief and loss. Led by Grateful Living's Joe Primo and Sheryl Chard, with conversations with guests such as Francis Weller and David Whyte, and lifetime access to the materials.",
+      "price": "$175",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "death-the-afterlife",
+        "mindfulness"
+      ],
+      "image": "https://yt3.ggpht.com/EXGHbL8ZmJbqLoMisxboFHGMwNdoG7-fN2wPXUX2H3KyB1SyzeugqNCcalceUnF2inBCubEtMA=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/grateful-living.json",
+    "left_out": [],
+    "flags": [
+      "Grateful Grief: grief and loss framing only (emotional and spiritual), no medical or treatment claim; allowed under the 12 Nov rule. Taught by the organisation's CEO (Joe Primo, a former hospice chaplain) and Director of Education (Sheryl Chard) with guest speakers. Price shown as '$175' with no currency code. With it the listing has 6 offerings."
+    ]
+  },
+  "images_final": true
+}

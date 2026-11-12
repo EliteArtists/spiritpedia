@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "aleya-dao"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Higher-Dimensional Merge Walk-In Master Class Intensive",
+      "url": "https://www.aleyadao.com/catalog/products/Master-Class-Series/718/Higher-Dimensional-Merge-Walk-In-Master-Class-Intensive/41230.html",
+      "description": "A two-hour recorded master class, in audio and video, from Aleya's Master Class Series. She describes what she calls walk-ins and higher-dimensional merges, and teaches energetic practices for grounding, rebuilding one's support structures and releasing patterns inherited from a previous soul.",
+      "price": "$89.00 USD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "consciousness",
+        "spirituality"
+      ],
+      "image": "https://www.aleyadao.com/dynamic/images/products/thumbs/cr500x500smallcup-Square.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/aleya-dao.json",
+    "left_out": [
+      "Wise Fire - Peri-Menopause and Menopause Master Class: dated 14 Nov 2026, before 16 Nov 2026.",
+      "Body Galactic Roots - Hybrid (https://www.aleyadao.com/catalog/products/Master-Class-Series/718/Body-Galactic-Roots-Hybrid/35427.html): its page says 'your body may not be as responsive to particular foods or medicines the ways others do', which indirectly casts doubt on medication, so left out.",
+      "Energy Healing Downloads and individual 'issue' meditations: sold as single low-priced tracks spread over several shop categories (some, such as 'Prepare for Surgery', touch on medical events); not listed as offerings."
+    ],
+    "flags": [
+      "Higher-Dimensional Merge Walk-In Master Class: the page has no health claim (it mentions 'your body starts reacting in new ways' only as a sign of the shift it describes). The subject, walk-in souls and a body's 'previous inhabitant', is unusual; a human may want to look before inserting. With it the listing has 7 offerings."
+    ]
+  },
+  "images_final": true
+}

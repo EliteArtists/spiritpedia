@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "shai-tubali"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Llewellyn's Complete Book of Meditation: A Comprehensive Guide to Effective Techniques for Calming Your Mind and Spirit",
+      "slug": "llewellyns-complete-book-of-meditation",
+      "author": "Shai Tubali",
+      "asin": "0738772062",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Shai Tubali's guide to thirty-five meditation techniques from traditions around the world, from Zazen and Dzogchen to Sufi whirling, dhikr and Ramana Maharshi's self-inquiry, plus one method of his own. Each comes with its history, cultural setting and clear instructions for practising at home.",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "chakra-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738772062.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/shai-tubali.json",
+    "left_out": [],
+    "flags": [
+      "ISBN from https://www.llewellyn.com/product.php?ean=9780738772066 (ISBN-13 9780738772066 converted to ISBN-10 0738772062), not confirmed elsewhere. Llewellyn names Shai Tubali PhD as sole author (January 2023).",
+      "Health: the publisher's blurb says meditation brings reduced stress, decreased pain, improved sleep and fewer age-related memory problems; wellbeing benefits of practice, no claim to cure or treat a disease, so kept under the 12 Nov rule."
+    ]
+  },
+  "images_final": true
+}

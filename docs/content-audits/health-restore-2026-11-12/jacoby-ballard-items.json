@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "jacoby-ballard"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "A Queer Dharma: Yoga and Meditations for Liberation",
+      "slug": "a-queer-dharma",
+      "author": "Jacoby Ballard",
+      "asin": "1623176514",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Jacoby Ballard reads the Brahma Viharas, the heart teachings shared by yoga and Buddhism, through a queer lens, with practices for working with anger, self-compassion, lovingkindness and grounding. Drawing on years of teaching queer and trans yoga classes, in schools and in prisons, he also looks at how mainstream yoga meets questions of justice, capitalism and cultural appropriation.",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623176514.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jacoby-ballard.json",
+    "left_out": [],
+    "flags": [
+      "ISBN from https://jacobyballard.net/book/ (its 'Get the book' link to indiebound.org/book/9781623176518; ISBN-13 converted to ISBN-10 1623176514), not confirmed elsewhere.",
+      "Health: the blurb speaks of embodied healing from trauma and social injustice and of grounding the nervous system; emotional and collective healing, no medical claim, so kept under the 12 Nov rule."
+    ]
+  },
+  "images_final": true
+}

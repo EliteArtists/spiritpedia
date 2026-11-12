@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "roel-crabbe"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Awaken the Healer Within: 8 Shamanic Tools for Self-Healing",
+      "url": "https://www.roelcrabbe.com/course/awaken-healer-within-course/",
+      "description": "A recorded online course in three modules, teaching eight shamanic practices: rattle, drum and sound work for calming tension, clearing and calling back one's energy, and first steps in the shamanic journey to meet a spirit ally. Open to beginners, with lifetime access.",
+      "price": "147 € incl. VAT / $163 incl. VAT, or 3 payments of 57 € / $63",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "self-healing",
+        "sound-healing"
+      ],
+      "image": "https://www.roelcrabbe.com/wp-content/uploads/2023/01/roel3.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/roel-crabbe.json",
+    "left_out": [],
+    "flags": [
+      "Awaken the Healer Within: the page speaks of calming the nervous system and transforming stress and anxiety through shamanic practice; wellbeing wording allowed under the 12 Nov rule, no medical claim. His teacher bio on the page says shamanism 'saved' him from teenage depression and addiction (his own story, not a claim about the course); a human may want to glance at it. Price as published: 170€ struck through, 147 € incl. VAT / $163 incl. VAT, or three monthly payments. With it the listing has 8 offerings."
+    ]
+  },
+  "images_final": true
+}

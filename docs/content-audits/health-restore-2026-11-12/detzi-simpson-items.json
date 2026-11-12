@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "detzi-simpson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki Healing Treatment",
+      "url": "https://www.thepeacefulsoul.co.uk/reiki",
+      "description": "A hands-on or hands-near Reiki session of 35 to 55 minutes at The Peaceful Soul in Mapperley, Nottingham, received lying fully clothed. Detzi is a Reiki Master and teacher in both Western and traditional Japanese Reiki.",
+      "price": "from £35",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.thepeacefulsoul.co.uk/_next/image?url=%2Fimages%2FReiki-treatment-sml-file-scaled.jpg&w=3840&q=75&dpl=dpl_GpvvCxooM6cRCtS9z53mbMyLjyuv"
+    },
+    {
+      "title": "Crystal Chakra Balance",
+      "url": "https://www.thepeacefulsoul.co.uk/crystal-chakra-balance",
+      "description": "A session in which crystals chosen for the client are laid on or near the seven chakras, with a crystal pendulum or quartz point used to cleanse and rebalance them and a selenite wand swept through the aura, while Reiki flows throughout.",
+      "price": "From £35",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.thepeacefulsoul.co.uk/_next/image?url=%2Fimages%2FCrystal-healing-on-heart.jpg&w=3840&q=75&dpl=dpl_GpvvCxooM6cRCtS9z53mbMyLjyuv"
+    },
+    {
+      "title": "Tuning Fork Sound Healing",
+      "url": "https://www.thepeacefulsoul.co.uk/tuning-fork-healing",
+      "description": "A sound healing session in which twelve tuned steel forks are placed on the 'shu points' of twelve meridians, drawn from the acupuncture map of Chinese medicine, to rebalance and energise the body's energy flow. Detzi offers it for tiredness, low mood or lack of motivation and often pairs it with a calmer treatment such as Reiki.",
+      "price": "£32",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": "https://www.thepeacefulsoul.co.uk/_next/image?url=%2Fimages%2Ftuning-fork-photo.jpg&w=3840&q=75&dpl=dpl_GpvvCxooM6cRCtS9z53mbMyLjyuv"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/detzi-simpson.json",
+    "left_out": [
+      "Foot Reflexology (https://www.thepeacefulsoul.co.uk/foot-reflexology) and Facial Reflexology / Dien Chan (https://www.thepeacefulsoul.co.uk/facial-reflexology): both list as benefits 'helps maintain good health and prevent disease' and 'promotes recovery from illness, infection and injury', which are treatment claims (each page adds that it is not an alternative to conventional medicine).",
+      "Foot Massage (https://www.thepeacefulsoul.co.uk/foot-massage): a pampering massage with no spiritual teaching or energy work; not a health reason."
+    ],
+    "flags": [
+      "These are one-to-one treatments booked through Fresha at her Nottingham practice, listed as sessions like the existing Shamanic Healing Sessions item; her treatments are one of her main ways of working.",
+      "Reiki: the page says many people find it helps with stress, sleep and anxiety (allowed wording).",
+      "Tuning Fork Sound Healing: offered for those 'fatigued, low in mood or who need energy and motivation' and marked not suitable for anyone with anxiety; energy-healing wording with no disease named, so kept. A human may want to look.",
+      "With these three the listing has 9 offerings."
+    ]
+  },
+  "images_final": true
+}

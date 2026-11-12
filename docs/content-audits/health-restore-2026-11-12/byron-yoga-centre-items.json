@@ -1,0 +1,73 @@
+{
+  "healer": {
+    "healer_slug": "byron-yoga-centre"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "4 Day Yoga and the Nervous System Teacher Training",
+      "url": "https://www.byronyoga.com/4-day-yoga-and-the-nervous-system/",
+      "description": "A 25-hour residential training at the Byron Bay centre for qualified yoga teachers on teaching with the nervous system in mind. It covers nervous system theory, Ayurvedic views of resilience, trauma-sensitive language and co-regulation, sequencing for deep rest, and peer teaching with feedback.",
+      "price": "from $1,590 (early bird from $1,490)",
+      "product_type": "course",
+      "start_date": "2027-02-25",
+      "end_date": "2027-02-28",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    },
+    {
+      "title": "6 Day Remedial Yoga Teacher Training",
+      "url": "https://www.byronyoga.com/6-day-remedial-yoga-training/",
+      "description": "A 50-hour residential training, developed by the late Maria Kirsten and now led by Bec Isaacs, on adapting yoga to the individual. It draws on the Krishnamacharya and Viniyoga lineage, breath-centred āsana, the five koshas and the Yamas and Niyamas, with modifications for beginners, older students and those with injuries.",
+      "price": "from $2,660 (early bird from $2,150)",
+      "product_type": "course",
+      "start_date": "2027-07-17",
+      "end_date": "2027-07-22",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    },
+    {
+      "title": "Weekend Women's Yoga Retreat",
+      "url": "https://www.byronyoga.com/3-day-weekend-womens-health-yoga-retreat/",
+      "description": "A three-day retreat for women held at the solstices and equinoxes, with daily yoga and meditation, seasonal ritual, yin yoga and a session on yoga for the moon and life cycles. Each one has its own seasonal theme, and the stay includes accommodation, vegetarian meals and a massage.",
+      "price": "from $1,150 (Summer Solstice retreat from $1,200)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.byronyoga.com/wp-content/uploads/2025/05/BYC_logo_oneline_black-300px-1.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/byron-yoga-centre.json",
+    "left_out": [
+      "4 Day Trauma-Aware Yoga Teacher Training (https://www.byronyoga.com/4-day-trauma-aware-yoga-teacher-training/): its page says the course helps students with 'trauma related health concerns such as ... adrenal and chronic fatigue to use yoga to progress their recovery', a recovery claim for a medical condition.",
+      "4 Day Restorative Yoga Teacher Training (https://www.byronyoga.com/4-day-restorative-yoga-teacher-training/): its page says restorative yoga can 'assist those working with ... conditions such as high blood pressure, adrenal and chronic fatigue', a treatment claim (blood pressure is named in the rule).",
+      "4 Day Yoga for Seniors Teacher Training: the page publishes no dates of its own (waiting list); it is offered only as part of the 10-day Remedial & Seniors package of 17-26 July 2027, so not added separately.",
+      "Trauma-Aware 2.0 and Sacred Women's Retreats pages: not opened (kept the requests to what was needed under the 10-second crawl delay)."
+    ],
+    "flags": [
+      "robots.txt sets Crawl-delay: 10; every request to www.byronyoga.com was spaced at least 11 seconds apart and none followed redirects.",
+      "Prices as published with no currency code (Australian site). Images are the centre's logo, as on the existing items.",
+      "Yoga and the Nervous System: speaks of nervous system dysregulation, burnout, stress and 'therapeutic sequencing for mental health'; allowed wellbeing language, no medical claim. Its page also shows a waiting list for later dates.",
+      "Remedial Yoga: about adapting postures for injuries and limitations and an 'intro to yoga for mental health and the polyvagal theory'; no claim to treat a condition. The page notes its founder died of cancer in 2021 (memorial text, not a claim).",
+      "Women's Retreat: the URL still says 'womens-health', but the current page speaks only of women's wellness, life cycles and seasonal ritual; no fertility or menopause claims. Held three times a year (11-13 Dec 2026, 5-7 Mar 2027, 18-20 Jun 2027), so undated.",
+      "With these three the listing has 7 offerings."
+    ]
+  },
+  "images_final": true
+}

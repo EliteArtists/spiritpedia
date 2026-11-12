@@ -1,0 +1,73 @@
+{
+  "healer": {
+    "healer_slug": "samadhi-yoga-ashram"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "200 Hour Ayurveda Yoga Teacher Training in Rishikesh",
+      "url": "https://samadhiyogaashram.com/200-hour-ayurveda-yoga-teacher-training.php",
+      "description": "A 25-day residential teacher training at the ashram in Laxman Jhula that pairs classical yoga (āsana, prāṇāyāma, meditation, philosophy and teaching method) with the foundations of Ayurveda: the three doshas, Prakriti, daily routine, the sattvic diet and seasonal living. Courses start each month.",
+      "price": "From $599 (6-sharing) to $1,399 (private room), all inclusive",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ayurveda",
+        "meditation"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/200-hour-ayurveda-yttc-detail1.webp"
+    },
+    {
+      "title": "Prenatal Yoga Teacher Training (85 Hour) in Rishikesh",
+      "url": "https://samadhiyogaashram.com/prenatal-yoga-teacher-training.php",
+      "description": "An 85-hour residential training in prenatal yoga, open to teachers and to expectant mothers in their second and third trimesters. It covers safe āsana variations, gentle prāṇāyāma, prenatal Yoga Nidra, mantra and meditation, breathing for labour and sattvic Ayurvedic nutrition; courses run each month.",
+      "price": "$590 (2-sharing) / $640 (private), all inclusive",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://samadhiyogaashram.com/images/pre-natal/pre-natal-banner-rishikesh.webp"
+    },
+    {
+      "title": "Reiki Training in Rishikesh (Level I to Master)",
+      "url": "https://samadhiyogaashram.com/reiki-training-in-rishikesh.php",
+      "description": "Usui Reiki training at the ashram in three stages: Level I (self-healing, hand positions, chakras and aura cleansing), Level II (symbols and distance healing) and the Master level with its attunement. The course also covers Reiki's history, lineage and principles, and levels can be combined in one visit.",
+      "price": "From USD 135 (INR 10,800) for Level I, USD 200 (INR 13,500) for Level II, USD 449 (INR 31,500) for Master; without stay and food",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "image": "https://samadhiyogaashram.com/images/yoga/reiki-course-detail1.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/samadhi-yoga-ashram.json",
+    "left_out": [
+      "Ayurveda retreat (https://samadhiyogaashram.com/7-days-basic-ayurveda-course.php, now a 5-day Ayurveda retreat with Panchakarma): the page offers prescribed Panchakarma treatment for 'current symptoms', says 'until the root cause is treated, the symptoms keep returning', and presents itself to people who 'had simply run out of options with conventional medicine'. That reads as treatment and as an alternative to medical care, so left out.",
+      "Marma therapy, naturopathy and the 'therapeutic yoga' strands named on the teachers page: no course pages of their own (the Reiki page mentions a free naturopathy mud bath only as an extra).",
+      "Ayurveda retreat in Bali: the Bali campus is separate and was not opened."
+    ],
+    "flags": [
+      "All three are held monthly (dated cohorts through 2027), so they go in undated. Fees are shown on the pages as 'last updated: 10 Nov 2026'.",
+      "200 Hour Ayurveda YTT: the page mentions herbal remedies, herbal therapies and Panchakarma as subjects taught, and carries a medical disclaimer that the programmes 'do not replace conventional medical care'. No claim to cure or treat a disease, so kept; a human may want to look.",
+      "Prenatal YTT: says the practices 'ease common pregnancy discomforts (back pain, swelling, anxiety)' (pain relief through practice) and asks expectant mothers for written clearance from their obstetrician. Kept.",
+      "Reiki training: lists 'healing for specific problems' and says Level III 'offers advanced symbols and practices for chronic and deeper spiritual healing'. Energy-healing wording, no disease named; kept, but 'chronic' is borderline: a human may want to look.",
+      "With these three the listing has 8 offerings."
+    ]
+  },
+  "images_final": true
+}
