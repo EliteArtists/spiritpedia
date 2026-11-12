@@ -1,0 +1,22 @@
+{
+  "healer": {
+    "healer_slug": "melissa-kim-corter"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/melissa-kim-corter.json",
+    "left_out": [
+      "The Glass Child Workshop: left out on review, 12 Nov 2026: listing already has 10 offerings on live (cap)."
+    ],
+    "flags": [
+      "OFFERINGS CAP: the original plan already had 10 offerings (two of them Shift Network courses). Check the live count before inserting; if the listing is at 10, this item must wait or replace one.",
+      "Now readable in full: the page frames the glass child as an emotional and psychological pattern of invisibility, taught through depth psychology, shadow work and shamanic practice. It does not mention illness in the family or any treatment claim, so it is no longer a health concern. It is a self-paced workshop for individuals, not a therapy training.",
+      "Image: the dry run did not accept the page's og:image (static.wixstatic.com) and put in the healer's YouTube avatar instead; a human may want a better image."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "healer": {
+    "healer_slug": "lisa-marie-haley"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lisa-marie-haley.json",
+    "left_out": [
+      "Astrology & Herbal Wellness Consultation: left out on review, 12 Nov 2026: herbal remedies for physical wellbeing, as with other herbal-remedy items."
+    ],
+    "flags": [
+      "OFFERINGS CAP: the original plan had 9 offerings, so this makes 10. Check the live count before inserting.",
+      "Borderline wording kept: the page speaks of constitution, 'physical well-being' and 'plant medicine' (herbalism, not psychoactive plants). It states the session cannot diagnose or treat a medical condition, is not a substitute for care from a licensed professional, and tells clients to consult their physician or pharmacist about medication interactions and pregnancy. No cure or treatment claim, so kept.",
+      "Her bio on the page calls her a naturopathic doctor and certified clinical homeopath; not used in the description."
+    ]
+  }
+}

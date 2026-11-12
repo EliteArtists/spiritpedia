@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "common-ground-meditation-center"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mindfulness and Depression Community Group",
+      "url": "https://www.commongroundmeditation.org/calendar/event/mindfulness-and-depression-community-group-soonest",
+      "description": "A free peer-led group at the Minneapolis centre and on Zoom, meeting on the first and third Sunday afternoons of each month. People with their own experience of depression who practise mindfulness meditation share their experience and support one another; there is no registration, just drop in.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://cdn.sanity.io/images/4tyz2xuc/production/e60165d53716314e58e5bfedb688fcc80029ebc3-2592x1944.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/common-ground-meditation-center.json",
+    "left_out": [],
+    "flags": [
+      "Condition named without a claim: the page says the group uses mindfulness 'to welcome even the most difficult experiences' and states plainly that the co-facilitators are not licensed therapists or spiritual counsellors. No promise to treat depression and nothing about medication or care, so kept under the new rule.",
+      "Peer-led by trained lay volunteers within the centre's own Peer-Led Community Groups programme, like the Sitting and Check-In group already on the listing; not a visiting teacher.",
+      "Repeating (first and third Sundays), so undated. The '-soonest' URL is the one the centre's own programme page links to."
+    ]
+  },
+  "images_final": true
+}

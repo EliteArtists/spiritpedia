@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "sakya-thubten-ling"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "How to Meditate: A Beginner's Buddhist Guide",
+      "url": "https://www.stl.org.uk/resources-articles/how-to-meditate/",
+      "description": "The centre's free beginner's guide to sitting meditation. It walks through the Seven Point Posture used in Buddhist meditation step by step, from the legs and spine to the hands, mouth and gaze, with advice on fitting short sessions into the day.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.stl.org.uk/wp-content/uploads/2018/06/Med-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sakya-thubten-ling.json",
+    "left_out": [],
+    "flags": [
+      "Borderline health wording kept: the page lists among meditation's benefits that it 'helps with depression and anxiety' and 'relaxes and strengthens your body and mind'. It is a short benefit line, not a treatment programme, and nothing about medication or medical care; the description leaves it out. A human may prefer to leave this item out because depression is named.",
+      "The page also contains an off-topic line about weight ('I'm going to eat less and move more'); not used.",
+      "Image is one of the posture photos in the article (Med-1.jpg); the page has no og:image."
+    ]
+  },
+  "images_final": true
+}

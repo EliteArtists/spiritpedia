@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "steve-wolf"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sleep & Breathe Deeply: Yoga Nidra for Deep Sleep",
+      "url": "https://awasepublishing.com/product-sleep-cd.php",
+      "description": "A recording from Steve's Awase Publishing with two guided practices: a twenty-minute seated breath meditation for any time of day, and a fifty-minute yoga nidra for bedtime set to soft music and nature sounds. It is sold as a CD from his publishing site and as a download through other stores.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://awasepublishing.com/images/cd-cover-sleep.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/steve-wolf.json",
+    "left_out": [],
+    "flags": [
+      "Restored from his own publisher page (awasepublishing.com) rather than Bandcamp: stevewolf1.bandcamp.com's robots.txt now has a ClaudeBot group with 'Disallow: /', so it was not fetched. The existing listing's other albums link to Bandcamp; a human may want to look at that.",
+      "Sleep-framed album (allowed wording). The page quotes a reviewer who has 'lived with insomnia for years' and now sleeps longer, and says regular meditation brings 'better sleep patterns, and improved overall health'. No cure or treatment claim and nothing about medication; kept.",
+      "No price is shown on the page (a PayPal button only), so 'Contact for pricing'."
+    ]
+  },
+  "images_final": true
+}

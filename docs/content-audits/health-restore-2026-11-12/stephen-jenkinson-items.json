@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "stephen-jenkinson"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Trembling, Still: The Awful Clarity of a Mind in Eclipse",
+      "slug": "trembling-still",
+      "author": "Stephen Jenkinson",
+      "asin": "1645024539",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A journal kept from the day of his Parkinson's diagnosis in January 2024 to an epilogue in July 2025. The former palliative-care director who wrote Die Wise turns his attention to his own decline, writing about fear, grief, awe and what the soul is asked to do when illness arrives.",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "cover": "https://orphanwisdom.com/wp-content/uploads/2026/04/TremblingStill_cover_v2.jpeg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/stephen-jenkinson.json",
+    "left_out": [],
+    "flags": [
+      "ISBN from https://orphanwisdom.com/store/order-trembling-still-the-awful-clarity-of-a-mind-in-eclipse/ (hardcover, ISBN 978-1-64502-453-8, converted to ISBN-10 1645024539), not confirmed elsewhere. The publisher's site (chelseagreen.com) answered 403, so it was skipped and not retried.",
+      "Publisher mismatch on his own site: the book page says Chelsea Green Publishing, while the store page's details say Sounds True. The ISBN prefix 978-1-64502 matches Chelsea Green.",
+      "Memoir of illness (a condition named without any claim to cure or treat it), allowed under the new rule. His site also features a podcast interview titled 'Parkinson's, Ibogaine Therapy & the Art of Letting Go'; the book's own description does not mention ibogaine or any treatment, and the interview is not included.",
+      "Cover: the publisher-style cover from his own site (orphanwisdom.com og:image), not an Amazon-hosted image; images_final set so the dry run keeps it."
+    ]
+  },
+  "images_final": true
+}
