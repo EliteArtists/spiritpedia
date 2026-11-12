@@ -1,0 +1,55 @@
+{
+  "healer": {
+    "healer_slug": "lisa-campion"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Sacred Reparenting: A Spiritual and Intuitive Guide to Healing from Toxic Parents",
+      "slug": "sacred-reparenting",
+      "author": "Lisa Campion",
+      "asin": "1648488684",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her fifth book, published by Reveal Press (New Harbinger), offers a spiritual route through the after-effects of a difficult upbringing. Meditations, journaling, ancestral practices and intuitive exercises help readers care for the inner child, set boundaries and build a relationship with what she calls the Divine Parent.",
+      "subjects": [
+        "self-healing",
+        "shadow-work",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1648488684.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Sacred Reparenting: Healing from Toxic Parents (Kripalu)",
+      "url": "https://kripalu.org/experiences/sacred-reparenting-healing-toxic-parents",
+      "description": "A weekend programme at Kripalu built on her book Sacred Reparenting. Through meditation, light hands-on energy work, writing exercises and work in small groups, participants tend the wounds of a hard childhood, with care taken around trauma.",
+      "price": "$380 tuition (accommodation extra)",
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2018-12/017-Kripalu_TMP_handsonheart.jpg?itok=3lI0_wQX",
+      "product_type": "retreat",
+      "start_date": "2027-02-19",
+      "end_date": "2027-02-21",
+      "subjects": [
+        "self-healing",
+        "meditation",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lisa-campion.json",
+    "left_out": [
+      "Online Psychic Reiki Levels I–IV, Energy Management for Empaths (free class), Daily Reiki Blessings and Psychic Self Defense Boot Camp: all on community.lisacampion.com, whose robots.txt now gives ClaudeBot and anthropic-ai 'Disallow: /'; site skipped, not checked."
+    ],
+    "flags": [
+      "Sacred Reparenting: ISBN-13 978-1-64848-868-9 from her press kit (lisacampion.com/wp-content/uploads/Media_Kit_Sacred_Reparenting.pdf), converted to ISBN-10 1648488684; not confirmed elsewhere. Publication 1 December 2026, so it may still be a pre-order on Amazon when inserted. No cover found: cover left to the ingest.",
+      "community.lisacampion.com is now robots-blocked for Claude's agents; the listing's existing offerings and free resources there (Mastering Your Psychic Ability, Awakening Your Psychic Abilities, etc.) may need a human look."
+    ]
+  },
+  "images_final": true
+}

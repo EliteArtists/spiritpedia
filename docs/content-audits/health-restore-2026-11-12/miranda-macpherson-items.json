@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "miranda-macpherson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Transforming Power of Ego Relaxation",
+      "url": "https://mirandamacpherson.com/shop/video/transformingpowerofegorelaxation/",
+      "description": "A self-paced online programme in nine modules, each with a recorded teaching of about an hour, an inquiry practice, meditation and journaling prompts. It works through her 'Pillars of Awakening', such as trust, humility, willingness and patience, as ways of relaxing the ego rather than fighting it.",
+      "price": "$99.00",
+      "image": "https://mirandamacpherson.com/wp-content/uploads/2025/05/Transforming-power-thumbnail-1-1.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/miranda-macpherson.json",
+    "left_out": [
+      "The Way of Grace ($997) and The Restorative Grace of Ego Relaxation ($297): sold on The Shift Network, which we never fetch; the listing also reaches the 10-offering cap with this course."
+    ],
+    "flags": [
+      "Module 2 is titled 'Cultivating Trust – resolve anxiety and access loving goodness': wellbeing wording, no condition treated; kept under the new rule."
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "healer": {
+    "healer_slug": "jeffrey-thompson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Delta Sleep System 3.0",
+      "url": "https://scientificsounds.com/product/delta-sleep-system-3-0/",
+      "description": "A download of two long soundtracks for deep rest and sleep, combining 3D audio, ambient music and embedded brainwave pulses in the delta range. It is the newest version of his sleep series, meant to be played in bed with headphones or speakers.",
+      "price": "$19.97 USD",
+      "image": "https://yt3.googleusercontent.com/KMZWKvVTzPlamDCbyyYR0LXgILjsjdoogzpLuGlCkhb9kpqjta9MJi9QuJfj8xlWHfOcY8LgAM4=s900",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Healing Mind System",
+      "url": "https://scientificsounds.com/product/healing-mind-system/",
+      "description": "Two soundtracks that blend soothing music with inaudible pulses matching the brainwave pattern he associates with deep rest and renewal. The first can play in the background during the day; the second is aimed at emotional balance and calm.",
+      "price": "$19.97 USD",
+      "image": "https://yt3.googleusercontent.com/KMZWKvVTzPlamDCbyyYR0LXgILjsjdoogzpLuGlCkhb9kpqjta9MJi9QuJfj8xlWHfOcY8LgAM4=s900",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Ultimate Nap",
+      "url": "https://scientificsounds.com/product/ultimate-nap/",
+      "description": "Three short musical programmes of 10, 20 and 30 minutes with embedded brainwave pulses, designed to take the listener into a restful nap and back out again with soft chimes. It grew out of a rest programme he made for hospital nurses on short breaks.",
+      "price": "$12.97 USD",
+      "image": "https://yt3.googleusercontent.com/KMZWKvVTzPlamDCbyyYR0LXgILjsjdoogzpLuGlCkhb9kpqjta9MJi9QuJfj8xlWHfOcY8LgAM4=s900",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jeffrey-thompson.json",
+    "left_out": [
+      "Shift courses Behavioral Psychoacoustics and Next-Level Behavioral Psychoacoustics: on The Shift Network, which we never fetch.",
+      "Sleep Enhancement, Anxiety, Physical Healing and Pain music bundles (and the Neurological Imbalance category): each is presented as a brain 're-training' protocol for a named condition (chronic insomnia, the 'condition of Anxiety' and addiction, chronic pain, neurological conditions), a claim to treat; left out under the new rule.",
+      "Bio-Tuning sessions and practitioner training, sound chairs and tables, consultations and the 'How To Use Our Sounds for Healing' webinar: no own page for them found in the site map, and the plan describes them as health treatment; not restored."
+    ],
+    "flags": [
+      "Prices: the store shows prices by visitor location (euros to us); the USD prices here come from the same product pages with ?currency=USD, matching the listing's existing USD prices.",
+      "Ultimate Nap page calls the system 'clinically proven' and says napping can 'improve our overall health'; no condition named. Delta Sleep System 3.0 carries an 'insomnia' tag but its text speaks only of sleep and rest. Healing Mind System speaks of 'physical and emotional healing' with a medical disclaimer. Kept under the new rule; a human may want to look, given how much of his catalogue is condition-led."
+    ]
+  }
+}

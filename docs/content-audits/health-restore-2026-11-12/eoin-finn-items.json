@@ -34,5 +34,6 @@
       "The challenge leans towards flexibility and fitness (hamstrings, sports science) rather than spiritual teaching; a human may prefer to leave it out.",
       "Dry run: the ingest's own fetch of blissology.com fails (robots.txt 'unreachable', socket closed) though curl reads the site, so the offering image is set to null and the dry run also reports the healer's existing photos as unusable ('no usable profile photo'). Nothing was retried; a human may want to check his photos on live before inserting."
     ]
-  }
+  },
+  "images_final": true
 }

@@ -1,0 +1,47 @@
+{
+  "healer": {
+    "healer_slug": "sufi-center-minnesota"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sufi Healing Circle (Dhikr)",
+      "url": "https://suficentermn.org/event/dhikr-2/2026-11-22/",
+      "description": "A weekly Sunday-afternoon gathering of dhikr, the Sufi practice of remembrance, in which the community invokes the divine light together in chant and prayer. Everyone is welcome to register and stay for tea afterwards.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge-330x56.webp"
+    },
+    {
+      "title": "Divine Qualities Series",
+      "url": "https://suficentermn.org/event/divine-qualities-series/2026-11-19/",
+      "description": "A free weekly Zoom class led by Maryam Shamsa Jennie Woodard that works through the 99 Divine Names one at a time, with reading, recitation and a forgiveness practice. It runs for about a year with ongoing enrolment, and each class is recorded for those registered.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://suficentermn.org/wp-content/uploads/2023/10/SUfi-MNlarge-330x56.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sufi-center-minnesota.json",
+    "left_out": [
+      "Prayer Circle (weekly, Mondays on Zoom): passes the health rule, but these two take the listing to the 5 free-resource cap; its page is also a two-line notice with a Zoom link."
+    ],
+    "flags": [
+      "Both URLs are dated occurrence pages of weekly events (as for the listing's other three); the site has no working undated page for them (/event/dhikr-2/ is a 404 and the series page is empty without JavaScript).",
+      "Divine Qualities Series: the page still gives a 'starting December 4' schedule with December and January dates, while the site calendar carries it every Thursday in November 2026; it is described as an ongoing year-long series.",
+      "Dhikr page speaks of the divine light that will 'open, clean and heal our body, mind, heart and spirit': spiritual framing, no condition named."
+    ]
+  }
+}

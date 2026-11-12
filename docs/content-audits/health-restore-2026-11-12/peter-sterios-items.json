@@ -6,20 +6,6 @@
   "books": [],
   "courses": [
     {
-      "title": "Yoga for Pain Relief",
-      "url": "https://levityoga.com/painrelief",
-      "description": "An eight-episode online course drawn from his book Gravity & Grace, sent all at once with a digital workbook. It first softens the holding patterns the body forms under stress, then uses gravity and breath to rebuild mobility and strength, working region by region from hands and feet to head and neck.",
-      "price": "$97.00 (sale; was $197.00)",
-      "image": null,
-      "product_type": "course",
-      "start_date": null,
-      "end_date": null,
-      "subjects": [
-        "yoga",
-        "breathwork"
-      ]
-    },
-    {
       "title": "G&G2 | MARMA Ball Therapy (download, 35m)",
       "url": "https://levityoga.com/product/marma-ball-therapy35m/",
       "description": "A 35-minute video download from the Gravity & Grace 2 series using two tennis balls for self-massage on marma, the pressure points of Indian tradition. Lying on the balls lets gravity do the work of finding and releasing held muscular tension.",
@@ -43,11 +29,13 @@
       "Online Workshop – The Healing Power of Yoga (levityoga.com/product/online-workshop-jun-2025/): a live Zoom workshop dated 28 June 2025, not marked as a replay; past.",
       "Yoga Anytime 7-Day Pain Free Challenge: no URL in the plan or on his site; not searched further.",
       "Transforming Pain immersion: not found on his current site.",
-      "'Practices for Migraine Relief': a video; videos are handled separately."
+      "'Practices for Migraine Relief': a video; videos are handled separately.",
+      "Yoga for Pain Relief: its page asks 'Tired of taking pain medications?', which reads as replacing medical care (left out on review, 12 Nov 2026)."
     ],
     "flags": [
       "Yoga for Pain Relief: pain relief through practice is allowed, but the page asks 'Struggling with chronic pain...? Tired of taking pain medications?'. It does not tell anyone to stop medication; worth a human glance.",
       "Images set to null: levityoga.com images fail the ingest image check (noted in the original plan)."
     ]
-  }
+  },
+  "images_final": true
 }

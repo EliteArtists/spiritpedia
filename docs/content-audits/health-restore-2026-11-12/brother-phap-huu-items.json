@@ -1,0 +1,80 @@
+{
+  "healer": {
+    "healer_slug": "brother-phap-huu"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Calm in the Storm: Zen Ways to Cultivate Stability in an Anxious World",
+      "slug": "calm-in-the-storm",
+      "author": "Brother Phap Huu",
+      "asin": "0938077554",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Jo Confino, a guide to staying steady and compassionate amid the pressures and crises of the present day. Stories, mindfulness practices and reflections from the Plum Village tradition help readers respond with clarity rather than fear.",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0938077554.01._SCLZZZZZZZ_.jpg",
+      "co_authors": []
+    },
+    {
+      "title": "Being with Busyness: Zen Ways to Transform Overwhelm and Burnout",
+      "slug": "being-with-busyness",
+      "author": "Brother Phap Huu",
+      "asin": "1952692873",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Jo Confino, the first of their books on meeting busyness, overwhelm and burnout with mindfulness and compassion. It also offers ways of honest, loving communication for stressful moments at work and at home.",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1952692873.01._SCLZZZZZZZ_.jpg",
+      "co_authors": []
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Calm in the Storm Q&R, Part One (The Way Out Is In, Episode 97)",
+      "url": "https://plumvillage.org/podcast/calm-in-the-storm-qr-part-one-episode-97",
+      "description": "A podcast episode in which Brother Phap Huu and Jo Confino answer listeners' questions drawn from their book Calm in the Storm. They talk about balancing kindness and anger, supporting young people and caring for oneself while serving others.",
+      "image": "https://plumvillage.org/wp-content/uploads/2025/12/Graphic-2_Ep-97.jpg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Calm in the Storm Q&R, Part Two (The Way Out Is In, Episode 101)",
+      "url": "https://plumvillage.org/podcast/calm-in-the-storm-qr-part-two-episode-101",
+      "description": "The second question-and-response episode on Calm in the Storm, with Brother Phap Huu and Jo Confino. They take questions on anxious thoughts, raising children in uncertain times, meeting other people's anger and working with fear.",
+      "image": "https://plumvillage.org/wp-content/uploads/2026/03/Graphic-2_Ep-101.jpg",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/brother-phap-huu.json",
+    "left_out": [],
+    "flags": [
+      "Both books: ISBN-13 taken from the publisher's page (parallax.org) and converted to ISBN-10; not confirmed elsewhere (Amazon not opened). Co-author Jo Confino is not a Spiritpedia listing, so no co_authors.",
+      "Book titles and blurbs name anxiety, overwhelm and burnout (the blurb calls them 'modern diseases' figuratively); wellbeing language, no treatment claim. Kept under the new rule.",
+      "Episode 101 mentions questions on 'managing fears and hypochondria'; no treatment claim. Kept."
+    ]
+  }
+}

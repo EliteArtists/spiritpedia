@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "mindfulness-northwest"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Self-Compassion for Shame: Returning Home to Yourself",
+      "url": "https://mindfulnessnorthwest.com/events/self-compassion-for-shame-online-feb-1-27-catherine/",
+      "description": "An eight-week live online course with Catherine Duffy, built on Chris Germer's curriculum, for people who have already taken Mindful Self-Compassion. Weekly Monday classes and an all-day online retreat work with self-criticism, self-forgiveness and the parts of ourselves we keep hidden.",
+      "price": "$415 - $625 (sliding scale)",
+      "product_type": "course",
+      "start_date": "2027-02-01",
+      "end_date": "2027-03-22",
+      "image": "https://mindfulnessnorthwest.com/wp-content/uploads/2026/08/MSC-for-Shame.png",
+      "subjects": [
+        "mindfulness",
+        "self-healing",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mindfulness-northwest.json",
+    "left_out": [
+      "Intro to Self-Compassion for Shame (free 1-hour online workshop, 11 Jan 2027, https://mindfulnessnorthwest.com/events/intro-to-self-compassion-for-shame-online-jan-11-27-catherine/): a doorway to the 8-week course, which links to it; left out to keep room under the 10-offering cap (the listing now has 9).",
+      "Mindfulness for Healthcare Professionals (https://mindfulnessnorthwest.com/programs/healthcare/): no current run ('We are in the process of completing our 2027 Calendar'), and the page's research list claims 'Improved immune system function' and 'Reduced symptoms and risk of many chronic diseases (high blood pressure, heart disease, asthma...)', a treatment claim under the new rule. Its continuing-education notes are credit details for existing courses, not separate offerings."
+    ],
+    "flags": []
+  }
+}

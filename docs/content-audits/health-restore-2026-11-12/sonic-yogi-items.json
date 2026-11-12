@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "sonic-yogi"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Heal Through the Power of Sound & Frequency",
+      "url": "https://sonicyogi.com/course",
+      "description": "A ten-day course in the Insight Timer app, with a lesson and a meditation each day, on the science of sound as therapy. It looks at frequency, brainwaves and entrainment and how they relate to relaxation, meditation and states of consciousness.",
+      "price": "Price not shown (course in the Insight Timer app)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://images.zoogletools.com/s:bzglfiles/u/259779/3d73a22a8be773fed02bb13deeea22009678d081/original/sonicyogilogo-1000pixels.jpeg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+    },
+    {
+      "title": "Release Stress Through Sound and Frequency",
+      "url": "https://sonicyogi.com/course-two",
+      "description": "A twelve-day course in the Insight Timer app that follows on from the first, combining sound frequency with breath rhythms to release held stress and tension. It looks at where unconscious stress comes from and uses frequency-based practices as a way into deeper meditation.",
+      "price": "Price not shown (course in the Insight Timer app)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "breathwork",
+        "meditation"
+      ],
+      "image": "https://images.zoogletools.com/s:bzglfiles/u/259779/3d73a22a8be773fed02bb13deeea22009678d081/original/sonicyogilogo-1000pixels.jpeg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sonic-yogi.json",
+    "left_out": [],
+    "flags": [
+      "Both items use the teacher's own course pages on sonicyogi.com (the Insight Timer pages were not fetched, by rule); neither page shows a price, so none is given.",
+      "Release Stress Through Sound and Frequency speaks of stress, trauma and 'chronic' stress patterns; wellbeing language, no claim to treat a condition. Kept.",
+      "The site's blog (not used) has posts on gut health, candida and mental health; the two course pages themselves make no medical claims."
+    ]
+  }
+}

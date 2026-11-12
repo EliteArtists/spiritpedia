@@ -1,0 +1,19 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "42ac8d41-8b28-4087-9779-ae1041189f4c",
+      "slug": "soul-retrieval-ceremony",
+      "title": "Soul Retrieval Ceremony"
+    },
+    {
+      "table": "courses",
+      "id": "abc82b74-9a84-42f5-b91a-0e9ea8171651",
+      "slug": "shamanic-initiation-ceremony",
+      "title": "Shamanic Initiation Ceremony"
+    }
+  ],
+  "at": "2026-11-12T16:36:40.282Z"
+}

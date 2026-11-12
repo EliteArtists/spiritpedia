@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "aaron-michael-pyne"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy Healing Sessions with the Elven Wizard",
+      "url": "https://www.aaronmichaelpyne.com/sessions/",
+      "description": "Private sessions of 60 to 75 minutes by Zoom or phone, with in-person sessions on request. Aaron guides the client into a meditative journey and works with their energy body, drawing on Reiki, breathwork, light language and past-life work, then offers steps for integrating what came up.",
+      "price": "Single session $199 (new clients $155); three sessions $555; five sessions $888; Tree of Life Mentorship $2222",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "reiki",
+        "self-healing"
+      ],
+      "image": "https://www.aaronmichaelpyne.com/wp-content/uploads/2025/09/Aaron-Pyne-the-Mead-Wizard-1.webp"
+    },
+    {
+      "title": "Avatar Flow Movement Training",
+      "url": "https://www.aaronmichaelpyne.com/avatar-flow-movement/",
+      "description": "A training of five sessions, in person or over Zoom, in which Aaron helps students find their own way of moving that expresses their mythic 'Avatar' self. He describes it as drawing on yoga, martial arts, dance and qi gong without following any one of them.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "image": "https://www.aaronmichaelpyne.com/wp-content/uploads/2026/03/Aaron-Pyne-the-Green-Elven-Wizard-Logo-2026-1-1024x441.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/aaron-michael-pyne.json",
+    "left_out": [
+      "Inner Realms Journey for Youth Mental Health (https://innerrealmsjourney.com/youth-mental-health/): a programme sold to schools and organisations (access passes, facilitated groups, staff training), not to individuals; the kids' free trial already on the listing covers the same journeys. Not a health reason: the page talks of stress, resilience and well-being without treatment claims."
+    ],
+    "flags": [
+      "Energy Healing Sessions: the page says sessions 'can assist with releasing physical pain and ailments' and 'improving sleep', that clients report 'relief from physical pain', and that '3 sessions or more are recommended for major health, emotional, and spiritual challenges'. No disease is named, so I kept it as energy-healing wording, but 'ailments' and 'major health challenges' sit close to a treatment claim: a human should look before inserting.",
+      "Avatar Flow Movement: the page says the methods can 'transform our limitations, trauma, pain, ancestral wounds' (allowed wording). No price is published; enquiry form only."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d8559ee7-f9db-4835-a9e4-aa6fc99170b5",
+      "slug": "point-of-light-meditation",
+      "title": "Point of Light Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "34c7a2c2-9778-4a5b-9861-acb2b348f040",
+      "slug": "yoga-nidra",
+      "title": "Yoga Nidra"
+    },
+    {
+      "table": "free_resources",
+      "id": "878c02d8-8ee2-48b2-b857-61238522ae17",
+      "slug": "dosha-quiz",
+      "title": "Dosha Quiz"
+    },
+    {
+      "table": "free_resources",
+      "id": "7105ed47-847a-4395-a728-6bb331084534",
+      "slug": "sumptuous-sleep",
+      "title": "Sumptuous Sleep"
+    }
+  ],
+  "at": "2026-11-12T16:37:27.702Z"
+}

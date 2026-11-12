@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "tricycle"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Freeing the Mind When the Body Hurts",
+      "url": "https://learn.tricycle.org/p/freeing-the-mind-when-the-body-hurts",
+      "description": "A self-paced online course with Vidyamala Burch in six units built on her BE AWARE method: being present, acceptance, wonder, living with change, connection and engagement. Each unit mixes teaching, meditation and contemplative exercises for meeting pain and difficulty with mindfulness and kindness.",
+      "price": "$159 (or 3 payments of $53)",
+      "image": "https://uploads.teachablecdn.com/attachments/MkzWIDsWTlKhxACZKYS1_Course+image+no+text.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Mindful Grieving",
+      "url": "https://learn.tricycle.org/p/mindful-grieving",
+      "description": "Recordings of a three-part workshop with psychologist Sameet Kumar on bringing Buddhist teachings and practice to the inner journey of grief. The sessions cover opening to pain, living with loss and meeting suffering with lovingkindness.",
+      "price": "By donation (suggested $30; a free option is offered)",
+      "image": "https://uploads.teachablecdn.com/attachments/lGKYObebQv23BtqhGoA0_Copy+of+Mindful+Grieving+Event+image+%283%29.png",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "self-healing",
+        "death-the-afterlife"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tricycle.json",
+    "left_out": [],
+    "flags": [
+      "Freeing the Mind When the Body Hurts: Vidyamala Burch's course grows from her Mindfulness-based Pain and Illness Management programme; the page speaks of living with pain through mindfulness and makes no claim to cure or treat a condition. Kept under the new rule; a human may want to look.",
+      "Mindful Grieving: the teacher is a clinical psychologist working in cancer and palliative care; the workshop itself is Buddhist teaching on grief, no treatment claim. Kept."
+    ]
+  }
+}

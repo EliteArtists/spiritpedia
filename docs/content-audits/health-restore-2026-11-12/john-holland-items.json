@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "john-holland"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Wheels of Light",
+      "url": "https://johnholland.com/store/streaming-online-courses/wheels-of-light",
+      "description": "A two-hour recorded webinar on the chakras: what each centre does, how to notice when they are out of balance, and how they connect with psychic and mediumistic ability. It includes his own chakra exercises using sound, colour, breath and thought.",
+      "price": "$19.99 (rental)",
+      "image": "https://johnholland.com/de/cache/apps/store/94/w600_WheelsofLightrev_2.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "mediumship-spirits",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/john-holland.json",
+    "left_out": [
+      "Audio downloads 'Healing Relaxation - Guided Meditation for the Body and Soul', 'Healing Relaxation for Body & Mind' and 'The Healing Touch of the Heart' ($9.90 each, /store/meditations-workshops-audio): pass the new health rule (relaxation and emotional healing, no cure claims) but the listing already has 9 offerings; Wheels of Light takes it to the cap of 10."
+    ],
+    "flags": [
+      "Price read from the rental page on johnholland.vhx.tv (linked from his store page): 'Rent $19.99'."
+    ]
+  }
+}

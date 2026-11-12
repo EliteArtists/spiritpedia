@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "keith-horan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Pain Acceptance Meditation",
+      "url": "https://www.keithhoran.com/pain-acceptance-meditation/",
+      "description": "A short mindfulness practice, written out in full on his site, for turning gently towards physical pain or discomfort instead of away from it. It moves from settling with the breath to exploring the sensation with curiosity and kindness, noticing the emotions and thoughts that come with it.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://www.keithhoran.com/wp-content/uploads/2021/07/people-woman-travel-2591874-768x512-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/keith-horan.json",
+    "left_out": [
+      "Podcast (keithhoran.com/meditation-podcast/, on Spotify and Apple): passes the new rule (stress and anxiety in his own words), but the listing reaches the 5 free-resource cap with the pain meditation; the page also shows only a one-line description without its embeds.",
+      "Sleep Meditation (keithhoran.com/sleep-meditation/, a 10-minute practice to fall asleep) and the Insight Timer track 'Sleep Well': pass the new rule, but the cap is reached; Insight Timer not fetched."
+    ],
+    "flags": [
+      "Pain Acceptance Meditation is a 2021 post; the practice is the text on the page (any audio sits behind the cookie blocker and was not loaded). It names pain and discomfort with no claim to treat a condition."
+    ]
+  }
+}

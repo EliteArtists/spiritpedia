@@ -1,0 +1,25 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "f889ac05-7234-46c7-b91d-cfc8cdc71f68",
+      "slug": "7-steps-to-healing-your-heart",
+      "title": "7 Steps to Healing Your Heart"
+    },
+    {
+      "table": "free_resources",
+      "id": "9f90f389-9fa4-4f74-94fa-b5b704e144bc",
+      "slug": "meditation-for-grief-and-loss",
+      "title": "Meditation for Grief and Loss"
+    },
+    {
+      "table": "free_resources",
+      "id": "cb0a886c-5ab1-44a9-a452-77243146c477",
+      "slug": "meditation-before-sleep-for-beginners",
+      "title": "Meditation Before Sleep for Beginners"
+    }
+  ],
+  "at": "2026-11-12T16:39:29.974Z"
+}

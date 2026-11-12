@@ -1,0 +1,31 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "books",
+      "id": 2469,
+      "slug": "the-art-of-transforming-nightmares",
+      "title": "The Art of Transforming Nightmares"
+    },
+    {
+      "table": "books",
+      "id": 2470,
+      "slug": "mindful-dreaming",
+      "title": "Mindful Dreaming"
+    },
+    {
+      "table": "courses",
+      "id": "dc4a3dad-28e6-43c6-b9b5-878f13a35759",
+      "slug": "yoga-nidra-for-lucid-dreaming-healing-blissful-sleep",
+      "title": "Yoga Nidra for Lucid Dreaming, Healing, & Blissful Sleep"
+    },
+    {
+      "table": "courses",
+      "id": "28e83edc-6a0b-4d41-9066-ae3d782146e5",
+      "slug": "reunite-with-lost-loved-ones",
+      "title": "Reunite With Lost Loved Ones"
+    }
+  ],
+  "at": "2026-11-12T16:40:21.462Z"
+}

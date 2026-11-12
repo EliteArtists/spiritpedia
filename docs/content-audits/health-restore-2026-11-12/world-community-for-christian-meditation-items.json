@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "world-community-for-christian-meditation"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation—A Healing Response to Trauma",
+      "url": "https://wccm.org/offerings/a-healing-response-to-trauma/",
+      "description": "A self-paced online course in two sections on how meditation can support recovery from trauma, with first-hand accounts, talks by Laurence Freeman and contributions from psychiatrists and others who work with trauma survivors. The second section looks at running trauma-informed meditation groups for refugees and asylum seekers.",
+      "price": "$59.99",
+      "image": "https://wccm.org/wp-content/uploads/2022/10/Lilly.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Meditation, Wellbeing and More",
+      "url": "https://wccm.org/offerings/meditation-wellbeing/",
+      "description": "An online course with Jim Green in six sections, each made of short essays, a time of personal reflection, a meditation period and pointers for further reading. It asks what wellbeing really means and how a meditation practice leads beyond the self.",
+      "price": "$34.99",
+      "image": "https://wccm.org/wp-content/uploads/2020/12/meditation-image.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/world-community-for-christian-meditation.json",
+    "left_out": [],
+    "flags": [
+      "A Healing Response to Trauma: speaks of meditation helping to heal trauma 'in the body, mind, and spirit', with psychiatrists among the presenters; trauma healing through practice, no claim to treat a medical condition and no advice to replace care. Kept under the new rule.",
+      "Meditation, Wellbeing and More: one section is titled 'Addiction and Poverty' (reflective, about attachment); no treatment claim."
+    ]
+  }
+}

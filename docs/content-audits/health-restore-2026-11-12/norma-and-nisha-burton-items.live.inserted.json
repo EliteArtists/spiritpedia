@@ -1,0 +1,31 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "1da39b0b-da33-4a15-be5f-abc9d5f4ef45",
+      "slug": "healing-the-rejection-wound",
+      "title": "Healing the Rejection Wound"
+    },
+    {
+      "table": "courses",
+      "id": "9a740318-ceb4-4cd3-b801-69bbc1932e18",
+      "slug": "breakthrough-session-2",
+      "title": "Breakthrough Session"
+    },
+    {
+      "table": "courses",
+      "id": "87601599-fab1-47c2-8fd2-2438542a84be",
+      "slug": "the-journey-to-completion",
+      "title": "The Journey to Completion"
+    },
+    {
+      "table": "free_resources",
+      "id": "407781ae-05c0-4536-8156-9161611edf48",
+      "slug": "navigating-the-nightmares",
+      "title": "Navigating the Nightmares"
+    }
+  ],
+  "at": "2026-11-12T16:39:57.555Z"
+}

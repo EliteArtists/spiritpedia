@@ -1,0 +1,25 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "643b4048-eb4a-4fdb-9f24-9ff582e83e50",
+      "slug": "in-person-mindfulness-based-stress-reduction",
+      "title": "(In-person) Mindfulness-Based Stress Reduction"
+    },
+    {
+      "table": "free_resources",
+      "id": "03b664b5-8a42-412e-9fc4-2455aa6778e8",
+      "slug": "mindful-support-nurturing-the-heart",
+      "title": "Mindful Support: Nurturing the Heart"
+    },
+    {
+      "table": "free_resources",
+      "id": "5b6f60b3-df8e-4d29-9ec7-484c4cf1e7ff",
+      "slug": "recovery-dharma-insightla",
+      "title": "Recovery Dharma @ InsightLA"
+    }
+  ],
+  "at": "2026-11-12T16:40:01.799Z"
+}

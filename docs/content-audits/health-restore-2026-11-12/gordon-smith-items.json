@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "gordon-smith"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Where Two Worlds Meet",
+      "slug": "where-two-worlds-meet",
+      "author": "Gordon Smith",
+      "asin": "1401975615",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A novel about ten-year-old Dill, who moves with his grieving parents to his grandmother's country cottage after his sister dies. Learning to talk with the animals of the valley, he comes to understand the cycles of life and death and helps bring his family back to life.",
+      "subjects": [
+        "death-the-afterlife",
+        "mediumship-spirits"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1401975615.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Healing Spirits Oracle",
+      "slug": "the-healing-spirits-oracle",
+      "author": "Gordon Smith",
+      "asin": "178817870X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A deck of 48 cards with a guidebook, its messages presented as guidance from different levels of the spirit world. It is meant for questions about life purpose, fear, inner healing and spiritual growth.",
+      "subjects": [
+        "mediumship-spirits",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/178817870X.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gordon-smith.json",
+    "left_out": [
+      "Healing Spirits Meditations: an audio sold through Hay House and Audible UK only, with no page of his own and no ISBN on his site (Hay House not fetched)."
+    ],
+    "flags": [
+      "Where Two Worlds Meet: ISBN from gordonsmithmedium.com/where-two-worlds-meet (US edition 9781401975616 in its Bookshop and Barnes & Noble links, converted to 1401975615), not confirmed elsewhere. Grief and a child's death from cancer are the story's subject; no health claim.",
+      "The Healing Spirits Oracle: ISBN from gordonsmithmedium.com/oracle (9781788178709 in its retailer links, converted to 178817870X), not confirmed elsewhere. The blurb mentions 'physical wellbeing' and 'help with healing' in general terms; no condition named.",
+      "Where Two Worlds Meet: a different book of the same title by Suzanne Giesemann is already on Spiritpedia (id 1169); this is Gordon Smith's 2024 novel, a different ASIN."
+    ]
+  }
+}

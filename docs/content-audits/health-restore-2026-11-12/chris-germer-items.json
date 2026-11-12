@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "chris-germer"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Mindful Self-Compassion for Burnout: Tools to Help You Heal and Recharge When You're Wrung Out by Stress",
+      "slug": "mindful-self-compassion-for-burnout",
+      "author": "Kristin Neff, Christopher Germer",
+      "asin": "1462550223",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Written with Kristin Neff for people worn down by work and caring for others. Each chapter tells the story of someone stretched to their limit, then offers a short practice drawn from the Mindful Self-Compassion programme.",
+      "subjects": [
+        "mindfulness",
+        "self-healing",
+        "meditation"
+      ],
+      "co_authors": [
+        "kristin-neff"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1462550223.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/chris-germer.json",
+    "left_out": [
+      "Mindfulness and Psychotherapy; Wisdom and Compassion in Psychotherapy: professional psychotherapy texts, left out under the therapy scope rule (not the health rule).",
+      "Mindful Self-Compassion for Burnout video: videos are handled separately."
+    ],
+    "flags": [
+      "ISBN 9781462550227 (paperback, 23 Sep 2024) from https://www.guilford.com/books/Mindful-Self-Compassion-for-Burnout/Neff-Germer/9781462550227, converted to ISBN-10 1462550223; not confirmed elsewhere.",
+      "Co-written with Kristin Neff (kristin-neff is on Spiritpedia); listed with her as co-author."
+    ]
+  }
+}

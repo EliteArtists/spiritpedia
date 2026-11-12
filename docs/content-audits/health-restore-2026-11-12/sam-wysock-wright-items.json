@@ -1,0 +1,57 @@
+{
+  "healer": {
+    "healer_slug": "sam-wysock-wright"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation for Anxiety",
+      "url": "https://soma-meditation.com/meditation-for-anxiety",
+      "description": "A free guide on his site to using mantra-based Vedic meditation as a twice-daily practice for an anxious mind, with four short affirmations for difficult moments. It explains why effortless techniques can suit anxious people better than concentration, and says plainly that meditation goes alongside professional care, not instead of it.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://soma-meditation.com/images/og/og-card.jpg?v=2"
+    },
+    {
+      "title": "Meditation for Sleep",
+      "url": "https://soma-meditation.com/meditation-for-sleep",
+      "description": "A free guide arguing that better nights start with a daytime practice: two daily Vedic meditation sittings that lower the stress carried into the evening. It compares this with bedtime sleep meditations and advises keeping any medical care in place.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://soma-meditation.com/images/og/og-card.jpg?v=2"
+    },
+    {
+      "title": "Affirmations for Grief and Missing Someone",
+      "url": "https://soma-meditation.com/affirmations-for-grief",
+      "description": "Two short sets of affirmations to say at night, one for missing someone and one for honouring what you have come through. They lean towards gratitude for the love rather than letting go, and the page points to bereavement support for anyone who needs more.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "self-healing",
+        "death-the-afterlife"
+      ],
+      "image": "https://soma-meditation.com/images/og/og-card.jpg?v=2"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sam-wysock-wright.json",
+    "left_out": [],
+    "flags": [
+      "Meditation for Sleep: its FAQ answers 'Can meditation help with insomnia?' with 'Yes', framed as easing the stress loop and to be used alongside a GP or CBT-i; kept under the new rule (sleep, no claim to cure), but a human may want to look.",
+      "Both the anxiety and sleep pages cite meditation research (JAMA Internal Medicine) and say the studies did not test his method; they state that meditation is not a substitute for medical care.",
+      "These three take the listing to the 5 free-resource cap."
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "healer": {
+    "healer_slug": "natalie-southgate"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Chakra Health Check",
+      "url": "https://www.chakradance.com/chakra-health-check/",
+      "description": "A free self-assessment that shows which of the seven chakras seem balanced, over-active or depleted, sent with an ebook on the major chakras. It suggests simple practices for bringing each centre back into balance.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://nataliesouthgate.com/wp-content/uploads/2026/06/healthcheck_graphic-1.png"
+    },
+    {
+      "title": "Prayer for Healing Meditation",
+      "url": "https://www.chakradance.com/request-prayer-for-healing/",
+      "description": "A free downloadable guided meditation, danced or done sitting still, that opens the heart chakra and sends wishes for peace and healing out to people affected by world events. Natalie suggests setting up a quiet sacred space before pressing play.",
+      "image": "https://www.chakradance.com/wp-content/uploads/2023/10/Global-Prayer-for-Healing.png",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/natalie-southgate.json",
+    "left_out": [
+      "Kids Chakra Health Check: offered on /free/ with no page of its own, and the listing reaches the 5 free-resource cap with these two."
+    ],
+    "flags": [
+      "'Health check' here means chakra balance, not medical health; the page makes no claim to treat any condition."
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "libby-barnett"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Distant Reiki Sessions",
+      "url": "https://www.reikienergy.com/reiki-class-descriptions/individual-sessions/",
+      "description": "One-to-one Reiki sessions with Libby held at a distance by phone or Zoom, in half-hour or hour-long slots. She offers them as a way to relax deeply and find balance during times of change, loss or crisis.",
+      "price": "$55 (half hour); $95 (one hour)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://www.reikienergy.com/wp-content/uploads/2024/08/Libby-at-Kripalu-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/libby-barnett.json",
+    "left_out": [
+      "Book 'Reiki Energy Medicine: Bringing Healing Touch into Home, Hospital, and Hospice' (with Maggie Babb): still left out. The back cover on https://www.reikienergy.com/about-libby/about-libbys-reiki-book/ says 'All conditions of physical disease are rooted in this energy system' and presents Reiki as a tool 'to maximize patient care and minimize recovery time' in hospitals: a claim to treat medical conditions under the new rule. The owner may decide otherwise (ISBN 0892816333 in the Amazon link on her home page)."
+    ],
+    "flags": [
+      "Distant Reiki Sessions: the page (titled 'Individual Treatment Session') lists 'sooth pain' and 'promote healing' among what sessions can help with (allowed wellbeing wording), and carries a client testimonial saying a niece came off life support two days after distant Reiki was sent. The testimonial is the client's, not Libby's claim, but a human may want to look.",
+      "Prices are the 'reduced rates' shown on the page (regular $65 and $125); no currency code is shown, so none added."
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "kristel-kernaghan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki Master & Instructor Class - Level 4",
+      "url": "https://www.divineclarity.com/workshops/reikimaster2026",
+      "description": "A weekend that completes the Usui Reiki training with the Master attunement, the master symbols, Antahkarana and the Violet Breath. It also covers how to give attunements and structure Reiki classes, for those who want to teach; attend at the Winnipeg centre or live online.",
+      "price": "$675 + GST",
+      "image": "http://static1.squarespace.com/static/5b3e6edfa2772c105de0d0f7/5b3e7350562fa74c3a2c83f2/6996f4e117ac5b4e9f8cf261/1771501097556/Level+4+-+Reiki+Certification+DCA.JPEG?format=1500w",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Combined Reiki Levels 1 & 2 Certification Workshop",
+      "url": "https://www.divineclarity.com/workshops/reikjan2027",
+      "description": "A two-day beginners' certification in Usui Reiki, taking Levels 1 and 2 together: history and principles, attunements, giving Reiki to yourself and others, the three Level 2 symbols and distance Reiki. Teaching mixes talks, guided meditation and hands-on practice.",
+      "price": "$499.99 + GST",
+      "image": "http://static1.squarespace.com/static/5b3e6edfa2772c105de0d0f7/5b3e7350562fa74c3a2c83f2/6aa06104d320a31d141e0690/1792516364032/Level+1+%26+2+-+Reiki+Certification+DCA.JPEG?format=1500w",
+      "product_type": "course",
+      "start_date": "2027-01-30",
+      "end_date": "2027-01-31",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kristel-kernaghan.json",
+    "left_out": [
+      "Alleviating Anxiety workshop: dated 12 Nov 2026, before 16 Nov, so out on the date rule (it would pass the new health rule)."
+    ],
+    "flags": [
+      "Reiki Levels 1 & 2 page does not name the teacher. Her own healing page lists her as a Certified Reiki Master & Instructor and the Level 4 page's testimonial names her as the teacher; a human may want to confirm she teaches Levels 1 & 2.",
+      "Reiki Levels 1 & 2 page says Reiki supports 'the body's natural healing processes' and 'works harmoniously alongside traditional medicine', and Level 2 includes 'emotional and mental healing, including addictions and patterns'. No disease named and no claim to cure; kept under the new rule.",
+      "Prices as published ('$675 + GST', '$499.99 + GST'); the pages show no currency code (Winnipeg, Canada)."
+    ]
+  }
+}

@@ -61,5 +61,6 @@
       "Prices from the shop pages, which show '€' (EUR in the page data); no code written.",
       "Dry run: Wix images (static.wixstatic.com) refuse the ingest's robots check (403), so the offerings fall back to her photo, and it proposes removing 2 of her profile photos as unusable ('Healer changes: image_urls'). Check that photo change before inserting."
     ]
-  }
+  },
+  "images_final": true
 }

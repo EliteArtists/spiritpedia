@@ -127,4 +127,35 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
 
 ## 4. Progress
 
-(filled in below as the restore runs)
+**Videos (done, dev and live):**
+- **Live:** 885 videos on 305 listings (dev 797 on 281, plus the 24 retried below).
+- **How they were chosen:**
+  - left-out titles first, matched on each channel's uploads through the YouTube Data API;
+  - then the channel's most-viewed wellbeing titles, up to as many as were left out (at most 10 per listing).
+- **Filtered out (31):**
+  - cure or treatment words;
+  - news, politics and promo;
+  - psychedelics and medical intuition;
+  - repeated or empty titles.
+- **Not done (94 listings):** 54 have no YouTube channel on the listing, 12 have a channel that wasn't found, and 28 have no matching or wellbeing titles.
+- **Logs:** plans `docs/content-audits/health-restore-2026-11-12/*-videos.json`; the method `videos.mjs` and `videos-tidy.mjs`.
+
+**My slip, fixed:**
+- **What happened:** the first top-ups ran the ingest's existing-photo check, which dropped photos it couldn't fetch because the host refuses our checker. That changed the photo lists of 73 listings (70 on dev, 3 on live).
+- **The fix:** all 73 are back exactly as they were (`photos-reverted.log.json`). The ingest now drops a photo only when it's certainly dead (404 or 410, not an image, too small, a Google thumbnail), the same can't-tell rule as the audit.
+
+**Offerings, books, free resources:** helpers re-read each item's real page, then each plan was dry-run and inserted on dev, then live.
+
+| Batches | Listings | Plans | Offerings | Free | Books |
+| :-- | --: | --: | --: | --: | --: |
+| 01–03 | 76 | 50 | 76 | 32 | 8 |
+
+- **Commonest reasons still out:**
+  - the item is only on Insight Timer, which is never fetched;
+  - the page still makes a cure or treatment claim (immunity, blood pressure, "cure insomnia", disease prevention);
+  - past or closed;
+  - the 10-item cap;
+  - the site blocks us (robots.txt naming ClaudeBot, 429 or a Cloudflare challenge: skipped, never retried).
+- **Taken out on review:** Peter Sterios's "Yoga for Pain Relief" ("Tired of taking pain medications?").
+
+**Remaining:** batches 04–25 (about 525 listings) are being researched three at a time, and go in as each batch finishes.

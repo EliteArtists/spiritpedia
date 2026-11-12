@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "annemaree-rowley"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Deep Relaxation Classes (Yoga Nidra)",
+      "url": "https://coolcalmandcollected.com.au/relaxation-classes/",
+      "description": "Extended Yoga Nidra sessions of 45 minutes to an hour and a half, held through the year in Melbourne for groups, individuals, workplaces, homes and conferences. Guided deep relaxation rests between waking and sleep, for easing stress, strain and pain.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://coolcalmandcollected.com.au/wp-content/uploads/2016/05/Annemaree.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/annemaree-rowley.json",
+    "left_out": [
+      "The 'Anxiety and stress' page: an article, not an offering or free resource; it also frames anxiety disorders, panic attacks and depression with 'believe you can get well and you will be well', which reads close to a treatment claim. Not restored."
+    ],
+    "flags": [
+      "Deep Relaxation Classes: the page shows no price or dates ('held throughout the year'); relaxation 'to manage stress, strain and pain' is wellbeing language, kept under the new rule."
+    ]
+  }
+}

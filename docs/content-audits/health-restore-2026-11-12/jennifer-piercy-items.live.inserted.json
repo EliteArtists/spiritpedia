@@ -1,0 +1,25 @@
+{
+  "env": "live",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8ef54f2d-eda4-4101-b78f-6c8b55f2b38d",
+      "slug": "healing-darkness",
+      "title": "Healing Darkness"
+    },
+    {
+      "table": "courses",
+      "id": "f3d07109-1518-4b0a-adab-d5f1429ee4cd",
+      "slug": "melatonin-magic",
+      "title": "Melatonin Magic"
+    },
+    {
+      "table": "courses",
+      "id": "8c976570-f4e8-43ab-ace8-5de92cd5ba40",
+      "slug": "bone-deep-sleep",
+      "title": "Bone Deep Sleep"
+    }
+  ],
+  "at": "2026-11-12T16:40:34.627Z"
+}

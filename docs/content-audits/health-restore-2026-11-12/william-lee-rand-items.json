@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "william-lee-rand"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Holy Fire III Online Karuna Reiki",
+      "url": "https://www.reiki.org/class/holy-fire-iii-online-karuna-reiki-1242026-2026-12-04",
+      "description": "A three-day live online class taught by Rand from Southfield for Reiki masters of any lineage. Students receive both levels of Karuna Reiki with the Holy Fire III World Peace energy, practise with the nine symbols, chant and tone, and qualify to teach the class online or in person.",
+      "price": "$1375.00",
+      "product_type": "course",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "image": "https://www.reiki.org/sites/default/files/class/wlrclasses_karunareiki.png",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "New Year's Cleanse: Great Energy Healing Experience",
+      "url": "https://www.academyofloveandlight.us/pages/New-years-cleanse-great-energy-healing-experience",
+      "description": "A five-hour online event to open the new year, starting with Rand's introduction to energy healing and a Holy Fire Reiki session, followed by energy transmissions from Brett Bevell, Alexandra Marquardt and Hethyrre. The recording stays available for a month afterwards.",
+      "price": "Pay what you can: $24, $36 or $44",
+      "product_type": "course",
+      "start_date": "2027-01-03",
+      "end_date": "2027-01-03",
+      "image": "https://www.reiki.org/sites/default/files/flex-blocks/flexblockicon_greatenergyhealing350_january2027.png",
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/william-lee-rand.json",
+    "left_out": [
+      "Distant healing request (https://www.reiki.org/content/request-personal-reiki-healing): a form asking for 'the illness or situation' so ICRT staff can send distant Reiki; a staff service, not Rand's own teaching or a free resource.",
+      "Reiki vitamins: a supplement product, not a teaching item; not opened.",
+      "Reiki Booster Webinar Recording: still out (its page says a hand position strengthens the immune system)."
+    ],
+    "flags": [
+      "The New Year's Cleanse is hosted on Brett Bevell's Academy of Love and Light (Thinkific) and linked from reiki.org; Rand gives the keynote and the first session, three other teachers lead the rest. 'Cleanse' here means an energy-field cleanse, not a detox claim. Brett Bevell may also be a Spiritpedia listing.",
+      "reiki.org also lists further Holy Fire III Karuna Reiki classes taught by Rand (online 22 Jan, 19 Feb and 12 Mar 2027; Southfield and Glastonbury in spring 2027); only the 4-6 Dec class the original plan left out is restored here."
+    ]
+  }
+}

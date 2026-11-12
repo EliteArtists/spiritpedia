@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "gena-davis"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation and Prayer for Healing",
+      "url": "https://www.genadavis.org/shop/p/meditation-and-prayer-for-healing",
+      "description": "A free recorded meditation and prayer from Gena Davis's shop, offered for the healing of oneself and of all in need of it. Listeners are invited to set an intention of service for the highest good.",
+      "image": "http://static1.squarespace.com/static/6149c1531237be7017d98173/614a02f00a059a02d7689680/6154ab82a2dfa975f82cc1a1/1632938888393/Plumerias.jpg?format=1500w",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gena-davis.json",
+    "left_out": [
+      "How Babies Do Yoga, Naturally: left out for scope (children's yoga), not health; not restored."
+    ],
+    "flags": [
+      "Meditation and Prayer for Healing: listed at $0.00 in her shop (a free download); spiritual healing through prayer, no claim to cure or treat. Kept."
+    ]
+  }
+}

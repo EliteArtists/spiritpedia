@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "katrina-bos"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Pranayama Meditation Library",
+      "url": "https://satyayogaacademy.org/meditation-library",
+      "description": "A free page of guided pranayama videos on the Satya Yoga Academy site, Katrina's Kundalini yoga school. The breath meditations cover anxiety, sleep, burnout, inner perfection and balancing the elements, each meant to be practised seated in a quiet place.",
+      "image": "https://assets.cdn.filesafe.space/JCWVKNfed0ALHp1o5Gk3/media/683a1f6328db047b42848d4c.jpeg",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "breathwork",
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/katrina-bos.json",
+    "left_out": [
+      "Audio Meditations page (https://satyayogaacademy.org/audio-meditations): every title links out to her Insight Timer tracks, which the existing 'Katrina Bos on Insight Timer' resource already covers; left out as a duplicate.",
+      "Divine Feminine in Intimacy course and the 300-hour Sacred Anatomy training: the listing already has 10 offerings (the cap), so not added; not a health reason any more."
+    ],
+    "flags": [
+      "Meditation Library titles include 'Meditation for Anxiety', 'Meditation for Insomnia' and 'Meditation for Burnout' and the page says pranayamas are 'meant to heal us from the inside out': wellbeing wording, allowed under the new rule; no cure or treatment claim."
+    ]
+  }
+}
