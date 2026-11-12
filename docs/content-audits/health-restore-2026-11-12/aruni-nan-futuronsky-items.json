@@ -17,7 +17,8 @@
         "yoga",
         "mindfulness",
         "self-healing"
-      ]
+      ],
+      "image": null
     }
   ],
   "free_resources": [],
@@ -28,8 +29,9 @@
     "left_out": [],
     "flags": [
       "Kripalu page speaks of healing from grief and moving from heartbreak to wholeness; no disease or medical-care claim, so it passes the 12 Nov rule.",
-      "Kripalu's og:image for this page is a generic 'shamanism' banner, so no image is given (the ingest picks one).",
+      "Kripalu's og:image for this page is a generic 'shamanism' banner that the ingest picked up; set to null instead.",
       "Price shown as 'Tuition: $350' per person plus required accommodations; no currency code on the page."
     ]
-  }
+  },
+  "images_final": true
 }

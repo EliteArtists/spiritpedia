@@ -148,7 +148,7 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
 
 | Batches | Listings | Plans | Offerings | Free | Books |
 | :-- | --: | --: | --: | --: | --: |
-| 01–10, 12 | 275 | 169 | 201 | 60 | 39 |
+| 01–12 | 300 | 179 | 208 | 63 | 40 |
 
 - **Commonest reasons still out:**
   - the item is only on Insight Timer, which is never fetched;
@@ -163,4 +163,4 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
   - Jeannie O'Neill's prenatal certification (the store page says Yoga Farm's educators teach it).
 - **For you to look at (kept):** Saskia Lightstar's *The Cancer Misfit* (life after treatment: grief, fear of recurrence, no cure claim); Mark Coleman's ADHD half-day (mindfulness and self-compassion, no treatment claim).
 
-**Remaining:** batch 11 and batches 13–25 (about 340 listings) are being researched three at a time, and go in as each batch finishes.
+**Remaining:** batches 13–25 (about 315 listings) are being researched three at a time, and go in as each batch finishes.

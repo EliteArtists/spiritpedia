@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "the-school-of-contemplative-life"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation before Sleep",
+      "url": "https://schoolofcontemplativelife.com/meditation-before-sleep/",
+      "description": "A short guide to Christian meditation at the end of the day: preparing a quiet space, an evening prayer drawing on Julian of Norwich, then settling the breath with a simple prayer word and letting the day's thoughts pass while resting in God's presence.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://schoolofcontemplativelife.com/wp-content/uploads/image-15.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/the-school-of-contemplative-life.json",
+    "left_out": [],
+    "flags": [
+      "The guide is framed around winding down for sleep with prayer; no health claim of any kind, so it passes the 12 Nov rule.",
+      "This brings the listing to 5 free resources (the cap; plan count, live not re-counted)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "mary-paffard"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Calm Adrenals",
+      "url": "https://www.maryyoga.com/podcast/calm-adrenals",
+      "description": "A recorded vinyasa class from Mary's studio, active but calming, for days when you feel stressed and stretched thin. A practice guide can be downloaded to read before the first session.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/63758d49861c142544752035/644c3bd80509310e683bfca8/644c3bd80509310e683bfcad/1685484396671/image-asset.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mary-paffard.json",
+    "left_out": [],
+    "flags": [
+      "The episode's 'Adrenals fried?' is a casual way of saying stressed; no claim to treat any condition, so it passes the 12 Nov rule.",
+      "This brings the listing to 5 free resources (the cap; plan count, live not re-counted)."
+    ]
+  },
+  "images_final": true
+}
