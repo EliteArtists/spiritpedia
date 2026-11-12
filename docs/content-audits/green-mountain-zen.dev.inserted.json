@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1443,
+    "healer_slug": "green-mountain-zen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "106ca6b7-3716-49b9-9797-fd02b21b7044",
+      "slug": "sesshin-meditation-retreat",
+      "title": "Sesshin (Meditation Retreat)"
+    },
+    {
+      "table": "courses",
+      "id": "a3d5af51-414f-42b8-930a-e390af58d152",
+      "slug": "membership-and-training-paths",
+      "title": "Membership and training paths"
+    },
+    {
+      "table": "free_resources",
+      "id": "af1eec46-41f7-4da2-86cb-005e8c468a21",
+      "slug": "shinko-roshis-sesshin-dharma-talks",
+      "title": "Shinko Roshi's sesshin dharma talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "a924ea83-dd5d-433e-ad4e-f2191ccaa5f1",
+      "slug": "introduction-to-zen",
+      "title": "Introduction to Zen"
+    }
+  ],
+  "at": "2026-11-12T13:53:43.785Z"
+}

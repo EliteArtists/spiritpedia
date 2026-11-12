@@ -1,0 +1,101 @@
+{
+  "healer": {
+    "healer_slug": "ananda-sangha-bangalore",
+    "location_source": "https://anandabangalore.org/contact-us",
+    "create": {
+      "name": "Ananda Sangha Bangalore",
+      "bio": "Ananda Sangha Bangalore teaches the path of Kriya Yoga as Paramhansa Yogananda gave it, within the global Ananda movement that his disciple Swami Kriyananda founded in 1968. The Bangalore group's spiritual directors are Nayaswami Haridas and Nayaswami Roma, under Ananda's worldwide leaders Nayaswamis Jyotish and Devi.\n\nIts ashram and main centre occupies the first floor of a building in Basavanagudi, in the south of the city, and is open to visitors at weekends. In-person classes are held there, with parallel batches online. Students follow a four-stage course: lessons in meditation and Yogananda's Energization Exercises, then the art and science of raja yoga, then a stage on the relationship of guru and disciple, and finally preparation for Kriya initiation itself. A one-day Learn to Meditate class introduces the Hong-Sau concentration technique for those who want a shorter start.\n\nAlongside the course, the centre runs weekly group meditations on Thursdays and Saturdays, Sunday satsangs, chanting workshops and Bhagavad Gita study, as well as a Sunday school for children, choir practice, retreats and pilgrimages. Its website gathers guided Energization Exercise practice and recorded talks by Kriyananda and Ananda's senior teachers.",
+      "tier": "local_hero",
+      "entity_type": "school",
+      "availability": "local_online",
+      "city": "Bengaluru, Karnataka",
+      "country": "India",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://anandabangalore.org/",
+      "booking_url": "https://anandabangalore.org/path-of-kriya-yoga",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "bangalore@anandaindia.org",
+      "image_urls": [
+        "https://anandabangalore.org/wp-content/uploads/2021/08/1st-floor-hall-way-2-1-650x433.jpg",
+        "https://anandabangalore.org/wp-content/uploads/2025/07/Group-Meditations-at-Ananda-Bangalore-650x432.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Path of Kriya Yoga course (Levels 1–4)",
+      "url": "https://anandabangalore.org/path-of-kriya-yoga",
+      "description": "A staged course at the Basavanagudi centre and online: first meditation and the Energization Exercises, then raja yoga in theory and practice, then the guru–disciple relationship, and lastly preparation for Kriya initiation. Upcoming batches include Level 1 in person on 5 December 2026 and Level 2 online from 22 November 2026.",
+      "price": "Level 1: INR 1200/-; Level 2: INR 2900/-",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Paramhansa Yogananda's Energization Exercises",
+      "url": "https://anandabangalore.org/paramhansa-yoganandas-energization-exercises",
+      "description": "An introduction to Yogananda's set of 39 Energization Exercises and their principles of will, tension and relaxation, with a guided practice led by Nayaswami Gyandev.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Satsangs and inspiration: recorded talks",
+      "url": "https://anandabangalore.org/inspiration",
+      "description": "A gathering of recorded talks: Swami Kriyananda on the Bhagavad Gita and in question-and-answer sessions, and satsangs by Ananda's senior Nayaswamis.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "yoga-school",
+    "rank": 2016,
+    "hub": null,
+    "tier_evidence": "No own YouTube channel linked; the talks page links Ananda playlists → 0 readable → local_hero.",
+    "email": "yes",
+    "email_source": "https://anandabangalore.org/contact-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Lead from Ananda Sangha India's list of centres (anandaindia.org). Facts from the centre's own site (robots.txt allows us).",
+      "SITE APPEARS COMPROMISED: the home page's healing-prayers paragraph carries an injected spam link to 888casino-online.org ('888 Casino good.'). Plan held for the owner; the centre may want to be told.",
+      "Health rule: healing prayers (offered for physical and emotional need) and 'reduce tension and stress' wording left out; items describe only the practice.",
+      "Only one paid item; the home page lists Sunday Satsang, Chanting Workshop and Bhagavad Gita Workshops but they have no pages of their own, so they appear only in the bio.",
+      "Lineage note: Swami Kriyananda (died 2013) lost a 1998 sexual-harassment lawsuit; from general knowledge, no source opened. Nothing found about current leadership.",
+      "Possible future listings: Nayaswami Haridas and Nayaswami Roma (spiritual directors).",
+      "No Spiritpedia teachers named on the site; teachers file has no links."
+    ],
+    "left_out": [
+      "Healing Prayers: health framing.",
+      "Sunday Satsang, Chanting Workshop, Bhagavad Gita Workshops: no page URL of their own.",
+      "Activities photo galleries (retreats, pilgrimages, Sunday school): galleries of past events, not offerings."
+    ],
+    "held": "Home page carries an injected casino spam link (888casino-online.org) inside the healing-prayers text: the site looks compromised. Owner to decide whether to list now or after it is cleaned.",
+    "dropped": "Dropped by the owner (12 Nov 2026): its site carries injected casino spam (hacked)"
+  }
+}

@@ -5,7 +5,7 @@
     "create": {
       "name": "Satchidananda Ashram–Yogaville",
       "bio": "Satchidananda Ashram–Yogaville is the residential ashram and world headquarters of Integral Yoga, founded by Sri Swami Satchidananda, the Sivananda disciple who opened Woodstock in 1969 and taught in the United States from 1966 until his death in 2002. It stands on some 750 acres beside the James River in Buckingham County, central Virginia, with a teaching academy, monastery, library, guest housing and the Light Of Truth Universal Shrine (LOTUS), a lotus-shaped interfaith temple opened in 1986 with altars for the world's faiths. His interred remains lie at the Chidambaram shrine on the grounds, and monastics, ministers and lay residents carry the teaching on.\n\nThe Integral Yoga Academy has trained teachers for over fifty years; its 200-hour course now combines an online first part with a residential fortnight at the ashram and leads to Integral Yoga Level I certification, and it also runs meditation and advanced trainings, including one at the Coimbatore institute in India. Guests can come for silent retreats with daily postures, breathing, deep relaxation, meditation and philosophy, for weekend workshops on chanting, qigong or the mind, or for the 28-day Living Yoga Training of practice and service in community. Weekly satsangs and kirtan concerts are streamed on its YouTube channel.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "school",
       "availability": "local_online",
       "city": "Buckingham, Virginia",
@@ -189,7 +189,8 @@
       "Live, Laugh, Love! Free Laugha Yoga Workshop (13 Feb 2027): 'healing laughter' framing; borderline, left out.",
       "Sounds of the Soul (Amir Vahab), Qigong & Tai Chi weekend, Reclaiming Your Attention: guest-led weekends; kept the list to the ashram's own core programmes.",
       "Ministers' memorial services and celebration-of-life videos: not teaching."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (12 Nov 2026): the Integral Yoga headquarters ashram founded by Swami Satchidananda. By count: local_hero."
   },
   "images_final": true
 }

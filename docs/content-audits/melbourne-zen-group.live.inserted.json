@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1408,
+    "healer_slug": "melbourne-zen-group"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "caece01a-72e6-4ca8-99cb-633d8fa96061",
+      "slug": "orientation-and-weekly-group-meditation",
+      "title": "Orientation and weekly group meditation"
+    },
+    {
+      "table": "courses",
+      "id": "e3a22479-61a2-400f-8e58-bc128cc943ee",
+      "slug": "residential-sesshin-with-subhana-barzaghi-roshi-and-aladdin-jones-sensei",
+      "title": "Residential sesshin with Subhana Barzaghi Roshi and Aladdin Jones Sensei"
+    },
+    {
+      "table": "courses",
+      "id": "1b910d91-c9a3-4b38-b26f-1f3cade1bd8a",
+      "slug": "dokusan-with-kirk-fisher-roshi",
+      "title": "Dokusan with Kirk Fisher Roshi"
+    },
+    {
+      "table": "courses",
+      "id": "a35ad26b-fd0d-4161-8205-52ab924b961e",
+      "slug": "membership-14",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "c4428112-2104-40af-ac30-fba9f13350d8",
+      "slug": "mzg-teisho-collection",
+      "title": "MZG teisho collection"
+    },
+    {
+      "table": "free_resources",
+      "id": "0cb9e897-3137-4da2-b6c5-124cae281c34",
+      "slug": "online-weekday-sittings",
+      "title": "Online weekday sittings"
+    }
+  ],
+  "at": "2026-11-12T13:55:35.869Z"
+}

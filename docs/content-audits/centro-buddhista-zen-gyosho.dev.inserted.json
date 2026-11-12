@@ -1,0 +1,70 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1454,
+    "healer_slug": "centro-buddhista-zen-gyosho"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 10004,
+      "slug": "huineng1",
+      "title": "Huineng1"
+    },
+    {
+      "table": "videos",
+      "id": 10005,
+      "slug": "huineng2",
+      "title": "Huineng2"
+    },
+    {
+      "table": "videos",
+      "id": 10006,
+      "slug": "huineng3",
+      "title": "Huineng3"
+    },
+    {
+      "table": "videos",
+      "id": 10007,
+      "slug": "huineng4",
+      "title": "Huineng4"
+    },
+    {
+      "table": "videos",
+      "id": 10008,
+      "slug": "m-hongaku-zazen-e-insegnamenti-5-febbraio-2021",
+      "title": "M Hongaku Zazen e Insegnamenti 5 Febbraio 2021"
+    },
+    {
+      "table": "videos",
+      "id": 10009,
+      "slug": "mhongaku-zazen-e-insegnamenti-12-febbraio-2021",
+      "title": "M.Hongaku Zazen e Insegnamenti 12 Febbraio 2021"
+    },
+    {
+      "table": "videos",
+      "id": 10010,
+      "slug": "le-qualita-del-bodhisattva",
+      "title": "Le qualità del Bodhisattva"
+    },
+    {
+      "table": "videos",
+      "id": 10011,
+      "slug": "zen-e-fotografia",
+      "title": "Zen e Fotografia"
+    },
+    {
+      "table": "courses",
+      "id": "48d9d408-8853-42ac-8b40-2d4bfd142efc",
+      "slug": "la-pratica-dello-zen-zazen-il-lunedi-e-il-venerdi",
+      "title": "La pratica dello Zen – zazen il lunedì e il venerdì"
+    },
+    {
+      "table": "free_resources",
+      "id": "be296c1a-2b45-425b-86ce-75c81016ac21",
+      "slug": "conversazioni-di-dharma-il-sutra-di-hui-neng",
+      "title": "Conversazioni di Dharma – Il Sutra di Hui Neng"
+    }
+  ],
+  "at": "2026-11-12T14:02:35.819Z"
+}

@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1418,
+    "healer_slug": "tempio-zen-orazen-sokuzen-ji"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d18fa992-fdcc-40bd-be64-91dfceaa7755",
+      "slug": "le-serate-di-meditazione-zen-al-tempio",
+      "title": "Le serate di meditazione Zen al tempio"
+    },
+    {
+      "table": "courses",
+      "id": "5c785ff4-4c67-4434-a044-1c1bbe4f0328",
+      "slug": "taiji-zen",
+      "title": "Taiji Zen"
+    },
+    {
+      "table": "free_resources",
+      "id": "45f90244-1174-4115-8037-39c51a8ad816",
+      "slug": "zazen",
+      "title": "Zazen"
+    },
+    {
+      "table": "free_resources",
+      "id": "b90a5369-90d7-47bb-a733-deb643a9699b",
+      "slug": "la-filosofia-zen",
+      "title": "La filosofia Zen"
+    }
+  ],
+  "at": "2026-11-12T14:02:47.529Z"
+}

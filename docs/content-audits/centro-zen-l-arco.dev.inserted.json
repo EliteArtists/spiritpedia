@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1455,
+    "healer_slug": "centro-zen-l-arco"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "781e13ab-6573-4bad-bdfc-8c47c6cee226",
+      "slug": "pratica-zen-serale",
+      "title": "Pratica Zen serale"
+    },
+    {
+      "table": "free_resources",
+      "id": "24990315-7109-4289-b61b-aa6609d964b3",
+      "slug": "meditazione-la-pratica-dello-zazen",
+      "title": "Meditazione – la pratica dello zazen"
+    },
+    {
+      "table": "free_resources",
+      "id": "cf4e2c81-22f4-4f58-b644-4d2c854a0981",
+      "slug": "discorsi-di-dharma",
+      "title": "Discorsi di Dharma"
+    },
+    {
+      "table": "free_resources",
+      "id": "67cdf93e-b68d-4513-9b71-8afa5370591c",
+      "slug": "il-kesa-abito-zen",
+      "title": "Il Kesa, abito Zen"
+    }
+  ],
+  "at": "2026-11-12T14:02:45.100Z"
+}

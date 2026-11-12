@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "the-astana-inayatiyya",
+    "location_source": "https://inayatiyya.org/astanarva/",
+    "create": {
+      "name": "The Astana (Inayatiyya)",
+      "bio": "The Astana serves as the headquarters for the Inayatiyya across North America and Oceania. It occupies a red-brick townhouse with a walled garden courtyard on East Cary Street in Richmond, Virginia. The Inayatiyya is the Sufi order founded on the teachings of Hazrat Inayat Khan, the Indian musician and mystic who brought his message of love, harmony and beauty to the West in 1910, and the Astana is where its current head, Pir Zia Inayat Khan, lives and teaches.\n\nThe name means a threshold, a word used in India for a place where Sufis gather to study and keep company, and that is the spirit of the house. Pir Zia gives classes there on chosen evenings along with occasional trainings and special programmes, while the order's wider calendar of online courses, meditation series and the two-year Suluk Academy is open to students anywhere in the world. Its teaching draws on meditation, the remembrance practice of zikr, breath, silence, music and the contemplation of nature, and on Universal Worship, a service honouring the scriptures of many faiths. Visitors who wish to come outside scheduled programmes are asked to arrange it with the house in advance.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Richmond, Virginia",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://inayatiyya.org/astanarva/",
+      "booking_url": "https://inayatiyya.org/event-calendar/",
+      "youtube_url": "https://www.youtube.com/@inayatiyya",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "astana@inayatiyya.org",
+      "image_urls": [
+        "https://inayatiyya.org/wp-content/uploads/2017/09/Astana-Gateway.jpg",
+        "https://inayatiyya.org/wp-content/uploads/2017/09/Astana-Courtyard.jpg",
+        "https://inayatiyya.org/wp-content/uploads/2018/08/meditationroom.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Spirit of Guidance - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=c_PJCwyCv7E",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "The Practice of Zikr - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=0E9efdH7hBQ",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "The Power of Silence - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=WpJAVRYHxKA",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Roses - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=kj2elGf2iSQ",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Light & Darkness - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=8jC0H65UQoc",
+      "subjects": [
+        "mysticism",
+        "meditation"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "The Rising Sun - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=MJ9bqx82mgg",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Find Your Voice - Nature Meditations with Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=fRKSVvjS6i8",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Coltrane & the Mysticism of Sound",
+      "url": "https://www.youtube.com/watch?v=_e0Z-FwKDY0",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Book Launch - Pir Zia Inayat Khan - Tears from the Mother of the Sun",
+      "url": "https://www.youtube.com/watch?v=MFan_mw8zNo",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Inayatiyya"
+    },
+    {
+      "title": "Overlapping Spheres  How We Create the Atmosphere - Pir Zia Inayat Khan",
+      "url": "https://www.youtube.com/watch?v=rmyu66cK8Q0",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Inayatiyya"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 1872,
+    "hub": null,
+    "tier_evidence": "YouTube 3,680 subscribers on the Inayatiyya channel @inayatiyya, which the Astana page links (YouTube Data API, 11 Nov 2026); Facebook/Instagram not read → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://inayatiyya.org/astanarva/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "The lead's own domain astanarva.org redirects to the Astana page on the parent site inayatiyya.org, so the website, calendar and channel are the Inayatiyya's. The Inayatiyya itself is not on Spiritpedia; the lead session may prefer one listing named 'Inayatiyya' with the Astana as its headquarters.",
+      "Teachers file is empty: Pir Zia Inayat Khan, named as the Astana's primary teacher, is not on Spiritpedia (worth a teacher lead).",
+      "No offerings: every programme on the calendar after 12 Nov is an online Inayatiyya-wide programme, not an Astana event, or began before 12 Nov (Descending into Light from 11 Oct; Global Meditation Series from 12 Oct; Virtual Khanqah from 25 Sep). Universal Worship 'Gathering in Unity' (21 Nov, $65 / $45 limited income) is for ministers only and was left out.",
+      "Photos are the building's gateway, courtyard and meditation room from the Astana page (600px, 600px, 456x500).",
+      "Pages carry Cloudflare's passive JS script (cdn-cgi/challenge-platform) but returned normal 200 content; no challenge was served. Crawl-delay 10 respected.",
+      "Email is the Astana's own inbox, shown in plain text; no contact form on the page."
+    ],
+    "left_out": [
+      "Light, Magnetism, and the Healing Power of Nature (healing series; health rule, and began September).",
+      "Sufi Healing Service for the World (health rule).",
+      "Google Photos album link."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): astanarva.org redirects to the Inayatiyya's own site, and its videos and calendar are the Inayatiyya's. One listing named \"Inayatiyya\" (with the Astana as its headquarters) may be better. Which?",
+    "dropped": "Dropped by the owner (12 Nov 2026): covered by the Inayatiyya listings"
+  }
+}

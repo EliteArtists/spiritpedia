@@ -42,7 +42,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://zencenterspokane.org/wp-content/uploads/2026/11/20261101_JPALLEN_IMG_1590-1024x767.jpg"
     },
     {
       "title": "Semi-annual hybrid retreats",
@@ -55,7 +56,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://zencenterspokane.org/wp-content/uploads/2026/11/20261101_JPALLEN_IMG_1590-1024x767.jpg"
     }
   ],
   "free_resources": [
@@ -68,7 +70,8 @@
       "subjects": [
         "meditation",
         "non-duality"
-      ]
+      ],
+      "image": "https://zencenterspokane.org/wp-content/uploads/2026/11/20261101_JPALLEN_IMG_1590-1024x767.jpg"
     },
     {
       "title": "For newcomers",
@@ -78,7 +81,8 @@
       "resource_type": "practice",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://zencenterspokane.org/wp-content/uploads/2026/11/20261101_JPALLEN_IMG_1590-1024x767.jpg"
     }
   ],
   "sprint": {
@@ -105,6 +109,8 @@
       "Calendar page is empty (embedded calendar only).",
       "Beginners' talks hosted on Mountain Lamp's site: not opened separately."
     ],
-    "held": "Only image is a group portrait of members in the zendo; the site has no logo or photo of the room alone. Owner to decide whether this photo is acceptable for an Organisation listing."
-  }
+    "held_until": "Only image is a group portrait of members in the zendo; the site has no logo or photo of the room alone. Owner to decide whether this photo is acceptable for an Organisation listing.",
+    "released": "Owner, 12 Nov 2026: the group/statue photo is fine."
+  },
+  "images_final": true
 }

@@ -3144,7 +3144,9 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    teacher list, national Iyengar associations), Buddhist, Vedanta and Sufi networks.
    robots.txt first; lists are names only, each listing researched from its own site; no
    commercial directories.
-3. **Single names** the owner adds, and **recording artists who teach** (sound healing,
+3. **Single names** the owner adds (queued 12 Nov 2026: Pir Zia Inayat Khan, head of the Inayatiyya; Geoff Dawson,
+   Ordinary Mind Zen Melbourne; Gabriella Giubilaro, founder of the Istituto Iyengar Yoga Firenze; Shirley Daventry
+   French, co-founder of the Iyengar Yoga Centre of Victoria), and **recording artists who teach** (sound healing,
    for example) when they teach classes, courses or retreats of their own.
 4. **Parked** (owner): **Quantum-Touch** from rank 361 (10 Nov 2026; ranks 141–360 done,
    yield about 1 in 40); **Omega's "unsure" names** (11 Nov 2026; about 586 left, about 1

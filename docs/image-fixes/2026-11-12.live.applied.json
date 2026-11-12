@@ -1,0 +1,45 @@
+{
+  "env": "live",
+  "fixes": [
+    {
+      "at": "2026-11-12T13:46:29.654Z",
+      "table": "courses",
+      "id": "e1d0d2ed-066a-4578-beb2-b37ea55ad8ed",
+      "healer_slug": "michael-harner",
+      "title": "Michael Harner's Shamanic Journey Solo and Double Drumming™ (MP3, All Tracks)",
+      "column": "image_url",
+      "before": "https://d24rugpqfx7kpb.b-cdn.net/FSSMV/7463227AB812DB60070258D7AE8C7235/logo4store-rev.pnge",
+      "after": "https://www.shamanism.org/wp-content/uploads/2025/07/Michael-Harner-Seated.jpg"
+    },
+    {
+      "at": "2026-11-12T13:46:29.924Z",
+      "table": "courses",
+      "id": "894994d5-9f1a-4367-b678-fd678b5e1ea6",
+      "healer_slug": "juha-penttila",
+      "title": "The Body as a Foundation for Mindfulness and Insight",
+      "column": "image_url",
+      "before": "https://gaiahouse.co.uk/wp-content/uploads/placeholder.gif",
+      "after": "https://nirodha.fi/wp-content/uploads/2020/11/juha-e1544520028738.jpg"
+    },
+    {
+      "at": "2026-11-12T13:46:30.143Z",
+      "table": "courses",
+      "id": "c6f3c658-42d1-4dca-86fe-f8b7eac6a16e",
+      "healer_slug": "juha-penttila",
+      "title": "A Natural Deepening; Following the Beautiful Breath",
+      "column": "image_url",
+      "before": "https://gaiahouse.co.uk/wp-content/uploads/placeholder.gif",
+      "after": "https://nirodha.fi/wp-content/uploads/2020/11/juha-e1544520028738.jpg"
+    },
+    {
+      "at": "2026-11-12T13:46:30.432Z",
+      "table": "courses",
+      "id": "6b0f809e-2cdc-442f-a6a2-f860bcf81e87",
+      "healer_slug": "bernat-font",
+      "title": "Right Attitude and Open Awareness",
+      "column": "image_url",
+      "before": "https://gaiahouse.co.uk/wp-content/uploads/placeholder.gif",
+      "after": "https://dharma.cat/wp-content/uploads/2024/10/foto-portada-2-edited.jpg"
+    }
+  ]
+}

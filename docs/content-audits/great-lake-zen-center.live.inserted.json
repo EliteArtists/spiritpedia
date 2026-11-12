@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1410,
+    "healer_slug": "great-lake-zen-center"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "a11a9ff5-bbf1-4c3b-9a19-64e802ccc751",
+      "slug": "practice-schedule-2",
+      "title": "Practice Schedule"
+    },
+    {
+      "table": "free_resources",
+      "id": "4bc4fdba-2f83-479c-9c0a-a4e97cafd975",
+      "slug": "what-is-zen-3",
+      "title": "What Is Zen?"
+    }
+  ],
+  "at": "2026-11-12T13:55:40.462Z"
+}

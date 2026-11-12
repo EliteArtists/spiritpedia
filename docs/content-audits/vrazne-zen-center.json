@@ -59,8 +59,8 @@
       "description": "A silent winter retreat of sitting, chanting, walking and bowing at the temple, joined for one, two or three weeks, with George Hazlbauer, Knud Rosenmayr and Dušan Silváši (all JDPSN) each leading a week. Vegetarian meals; prior Kwan Um retreat experience required.",
       "price": "One week: 6 200 CZK (250 EUR) / 4 700 CZK (190 EUR) / 4 200 CZK (170 EUR)",
       "product_type": "retreat",
-      "start_date": "2027-01-16",
-      "end_date": "2027-02-05",
+      "start_date": null,
+      "end_date": null,
       "subjects": [
         "meditation"
       ],
@@ -93,8 +93,11 @@
     "left_out": [
       "Work weekends (Oct and Nov 2026) and the 2026 summer retreats: past.",
       "Family retreat and other 2027 events: not read; dates unknown.",
-      "Fundraising videos (2018): appeals, not teaching."
+      "Fundraising videos (2018): appeals, not teaching.",
+      "Winter retreat dates: the page gives no year, so it is listed undated (owner, 12 Nov 2026)."
     ],
-    "held": "Held by the lead session (11 Nov 2026): thin (one retreat whose year is inferred, and two 2019 videos of visiting teachers), in a village that needs a place alias. List it, or skip?"
-  }
+    "held_until": "Held by the lead session (11 Nov 2026): thin (one retreat whose year is inferred, and two 2019 videos of visiting teachers), in a village that needs a place alias. List it, or skip?",
+    "released": "Owner, 12 Nov 2026: list it as it is (thin)."
+  },
+  "images_final": true
 }

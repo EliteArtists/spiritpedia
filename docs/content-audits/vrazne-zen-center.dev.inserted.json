@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1445,
+    "healer_slug": "vrazne-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 9991,
+      "slug": "dharma-talk-by-zen-master-soeng-hyang-barbara-rhodes-olomouc-2019",
+      "title": "Dharma talk by Zen Master Soeng Hyang (Barbara Rhodes), Olomouc 2019"
+    },
+    {
+      "table": "videos",
+      "id": 9992,
+      "slug": "dharma-talk-by-zen-master-dae-bong-sunim-chon-mun-sunim-jdpsn-2019-03-12",
+      "title": "Dharma Talk by Zen Master Dae Bong Sunim & Chon Mun Sunim JDPSN / 2019-03-12"
+    },
+    {
+      "table": "courses",
+      "id": "19836c90-294d-4a74-85e0-7ed5f594258d",
+      "slug": "winter-three-week-retreat-in-vrazne",
+      "title": "Winter three-week retreat in Vrážné"
+    }
+  ],
+  "at": "2026-11-12T13:53:53.349Z"
+}

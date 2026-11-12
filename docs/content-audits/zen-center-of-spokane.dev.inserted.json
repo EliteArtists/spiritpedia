@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1440,
+    "healer_slug": "zen-center-of-spokane"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "88e0f837-6447-4b66-a71b-496daacd03e3",
+      "slug": "weekly-zazen-and-monthly-teisho",
+      "title": "Weekly zazen and monthly teisho"
+    },
+    {
+      "table": "courses",
+      "id": "383b83c6-d370-4bb8-8e83-efbafdec0ed7",
+      "slug": "semi-annual-hybrid-retreats",
+      "title": "Semi-annual hybrid retreats"
+    },
+    {
+      "table": "free_resources",
+      "id": "9bbfa16a-9b0e-40ca-9c3a-b8b344ef7e20",
+      "slug": "dharma-talks-teisho",
+      "title": "Dharma talks (teisho)"
+    },
+    {
+      "table": "free_resources",
+      "id": "ddf8be48-c7eb-4799-a11d-97c4c0bc18dd",
+      "slug": "for-newcomers-3",
+      "title": "For newcomers"
+    }
+  ],
+  "at": "2026-11-12T13:53:23.352Z"
+}

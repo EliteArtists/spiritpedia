@@ -8,7 +8,7 @@
       "tier": "local_hero",
       "entity_type": "organisation",
       "availability": "local_online",
-      "city": "San Pantaleo, Olbia, Sardinia",
+      "city": "Olbia",
       "country": "Italy",
       "subjects": [
         "meditation",
@@ -80,13 +80,16 @@
       "The email is in plain text on /individual-retreats/ (its link is malformed, missing mailto:); a contact form is on /contact-3/.",
       "Photos: a man on the terrace overlooking the valley (1600x1200), a sunset over the rocks (1024x768) and candles at a meditation (816x599); all from 2010 to 2017.",
       "Private property: visits by appointment only.",
-      "Roshan practises the 'Keys to the Heart' method (releasing suppressed emotions); not included under the health rule."
+      "Roshan practises the 'Keys to the Heart' method (releasing suppressed emotions); not included under the health rule.",
+      "Lead session, 12 Nov 2026: city set to Olbia (San Pantaleo is a village in the Olbia municipality) so Near You finds it."
     ],
     "left_out": [
       "Outreach workshops and Milan events (no dates or prices seen).",
       "Donations.",
       "WWOOF volunteering."
     ],
-    "held": "Held by the lead session (11 Nov 2026): thin (two items). List it, or skip?"
-  }
+    "held_until": "Held by the lead session (11 Nov 2026): thin (two items). List it, or skip?",
+    "released": "Owner, 12 Nov 2026: list it as it is (thin)."
+  },
+  "images_final": true
 }

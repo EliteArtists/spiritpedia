@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "e-vam-institute",
+    "location_source": "https://evaminstitute.org/contact-e-vam-institute/",
+    "create": {
+      "name": "E-Vam Institute",
+      "bio": "E-Vam Institute is a Tibetan Buddhist centre on Lygon Street in Princes Hill, in Melbourne's inner north, founded in 1982 by Traleg Kyabgon Rinpoche IX. Rinpoche, born in eastern Tibet in 1955 and enthroned as a small child as supreme abbot of Thrangu Monastery, trained in exile at Rumtek and Sarnath and came to Australia in 1980, where he taught for some thirty years until his death in 2012. The institute keeps his approach alive, with study, contemplation and practice rooted mainly in the Kagyu and Nyingma schools of Tibetan Buddhism, alongside courses that look at other traditions. Its sister property, Maitripa Centre, is a retreat place in the mountain ash forest outside Healesville.\n\nMuch of the programme draws on recordings of Rinpoche's own teachings. A quarterly Meditation and Teachings series gives full days of meditation, recorded talks and live discussion, a Chenrezig practice is held on the first Thursday of each month, and people under thirty-five meet for a monthly one-day urban retreat. Longer retreats at Maitripa in November and at Easter combine shamatha meditation, Tara and Chenrezig practices and yoga, and can also be joined online. The Akshara bookshop sells Rinpoche's books, and several of his talk series are free to download.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "founded_year": 1982,
+      "availability": "local_online",
+      "city": "Melbourne, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://evaminstitute.org/",
+      "booking_url": "https://evaminstitute.org/whats-on/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@evaminstitute.org",
+      "image_urls": [
+        "https://evaminstitute.org/wp-content/uploads/2019/09/Gompa-570x285.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "November Retreat 2026",
+      "url": "https://evaminstitute.org/event/november-retreat-2025/",
+      "description": "A four-day retreat at Maitripa Centre near Healesville and online, with shamatha meditation, Chenrezig and Green Tara practices, Indo-Tibetan yoga, guided meditation and recorded teachings by Traleg Kyabgon Rinpoche on the Four Immeasurables, plus study groups led by Traleg Khandro. Vegetarian meals included.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-18",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Annual Easter Retreat",
+      "url": "https://evaminstitute.org/event/annual-easter-retreat/",
+      "description": "The institute's yearly Easter retreat at Maitripa Centre and online, keeping Traleg Rinpoche's retreat format: sitting and walking meditation, morning and evening Tara and Chenrezig practices, yoga and his recorded teachings. Partial attendance is possible.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-03-25",
+      "end_date": "2027-03-29",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Associate Membership",
+      "url": "https://evaminstitute.org/membership-associate-membership/",
+      "description": "Entry-level membership with a discount on courses and the bookshop, the quarterly Meditation and Teachings series, support for beginning the Ngondro preliminary practices and guidance on solo retreats; members are asked to help at working bees.",
+      "price": "Annual fee for Associate Membership is $269 for single membership and $405 for family membership",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "A Series of Four Talks on the Four Brahmaviharas",
+      "url": "https://evaminstitute.org/wp-content/uploads/2024/12/Final-4-infinties-PDF-TKR-website.pdf",
+      "description": "Four talks by Traleg Kyabgon Rinpoche, free as a PDF, on cultivating the four boundless qualities of love, compassion, joy and equanimity, on the cushion and in everyday life.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Religion and Spirituality",
+      "url": "https://evaminstitute.org/wp-content/uploads/2025/02/Religion-Spirituality-PDF-TKR-3-talks.pdf",
+      "description": "Three talks by Traleg Kyabgon Rinpoche, free as a PDF, on whether Buddhism should be called a religion, a spiritual path or both, and the many meanings of each word.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 2076,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its own site; Instagram and Facebook not fetched → no readable followers → local_hero",
+    "email": "yes",
+    "email_source": "https://evaminstitute.org/whats-on/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email: the contact page's address is hidden behind a JavaScript link (not decoded). info@evaminstitute.org appears in plain text as the organiser email in the events page's structured data, and that is what is used. There is no contact form (only a search box). Owner may want to confirm.",
+      "Base: 673 Lygon Street, Princes Hill VIC 3054, an inner-north suburb about 3 km from Melbourne's city centre (the brief prefers places outside city centres; this one is close).",
+      "Retreat prices: not shown on the event pages (tickets at checkout; Easter tickets 'soon to be released').",
+      "November retreat URL slug says 2025 but the page is the 2026 retreat (18-22 Nov 2026).",
+      "Easter retreat: the event dates are 25-29 March 2027; the page text also says 'concludes ... Monday 29th April', an apparent typo.",
+      "Photo: its own gompa (meditation hall), 570 x 285, the largest size linked from the site (checked). Thin photo; owner may want a larger one.",
+      "Founder Traleg Kyabgon Rinpoche IX died in 2012; the bio says so. Traleg Khandro leads study groups on the November retreat.",
+      "No hub links: no living teacher there is on Spiritpedia. Teachers file written with an empty list.",
+      "Found via the Buddhist Council of Victoria member directory (names and links only)."
+    ],
+    "left_out": [
+      "Meditation and Teachings Series (10 Oct-19 Dec), Under 35s urban retreats (series from June) and Chenrezig puja (series from June): the event entries started before 12 Nov 2026; mentioned in the bio only.",
+      "Wheel of Times newsletters: news, not teachings.",
+      "Maitripa Centre (its own site): not opened."
+    ],
+    "held": "Held by the lead session (11 Nov 2026): the only email is in the events page's hidden structured data (not published under the contact rule), the contact page hides its address behind JavaScript, and there is no form. List it (with which contact), or skip?",
+    "dropped": "Dropped by the owner (12 Nov 2026): contact rule (only email in hidden page data, no form)"
+  }
+}

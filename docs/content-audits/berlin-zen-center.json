@@ -5,7 +5,7 @@
     "create": {
       "name": "Zen Zentrum Berlin (Chong Hye Sah)",
       "bio": "The Zen Zentrum Berlin, known by its Korean temple name Chong Hye Sah, opened in the spring of 1990 in the Wedding district of the city. It is the headquarters of the Kwan Um Zen School in Germany and, since 2008, has also been the head temple of the Kwan Um School across Europe. Its practice follows Zen Master Seung Sahn, the Korean teacher who founded the school, and its guiding teacher is Zen Master Gu Ja (Namhee Chon), who joins evening sittings and gives kong-an interviews.\n\nMorning practice of bowing, chanting and sitting runs on weekdays from 5:30, and on two evenings a week there is a longer sitting, with dharma talks on the first and third Tuesday and interviews on alternate Fridays. Newcomers start with a short introduction to Korean Zen meditation, offered without booking before the evening session, and many sittings can also be followed on Zoom. Up to six students can live in the temple and train there, joining the daily schedule and a monthly retreat. Weekend retreats with authorised teachers and an online beginners' course in German and English complete the programme.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "founded_year": 1990,
       "availability": "worldwide",
@@ -174,7 +174,8 @@
       "Kido and memorial ceremony, Sangha-Café: not offerings.",
       "Zen days in Dresden: another centre of the German school.",
       "Kong-an interviews and dharma talks: part of the regular practice."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (12 Nov 2026): head temple of the Kwan Um School of Zen in Europe. By count: local_hero."
   },
   "images_final": true
 }

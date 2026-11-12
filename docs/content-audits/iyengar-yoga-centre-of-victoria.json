@@ -5,7 +5,7 @@
     "create": {
       "name": "Iyengar Yoga Centre of Victoria",
       "bio": "The Iyengar Yoga Centre of Victoria is a non-profit society that has taught the Iyengar method in Greater Victoria since 1978, when Shirley Daventry French and her husband Derek set it up to bring visiting teachers to the city. Classes began at the local YM-YWCA, B.K.S. Iyengar himself visited in 1984, and several of the centre's founding teachers, including Leslie Hogya, Marlene Miller and Shirley Daventry French herself, were in the first group of Canadians authorised to assess and certify Iyengar teachers in the 1990s. Today it has its own studio on Fort Street in downtown Victoria, with hardwood floors, rope walls and a full stock of props.\n\nA team of around fifteen certified and apprentice teachers runs term-based classes from an introductory level through Levels 1 to 4, along with pranayama, restorative sessions and classes for students over 55. Free introductory classes welcome complete newcomers, and every class and workshop can be paid for on a pay-what-you-can basis. Members can use the studio for their own practice on Sunday afternoons. Weekend workshops, teacher intensives and online sessions with senior guests from India and North America run through the year, and the centre publishes newsletters and practice articles on its site.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "school",
       "availability": "local_online",
       "city": "Victoria, British Columbia",
@@ -154,7 +154,8 @@
       "Past workshops (solstice, summer enrichment, teacher intensives).",
       "Restorative class as its own item: shares the classes page URL.",
       "Free introductory classes: described on the classes page, which is already used for the term classes item."
-    ]
+    ],
+    "tier_override": "Raised to luminary by the owner on editorial stature (12 Nov 2026): one of Canada's oldest Iyengar centres (1978), visited by B.K.S. Iyengar. By count: local_hero."
   },
   "images_final": true
 }

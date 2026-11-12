@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1447,
+    "healer_slug": "fazal-manzil"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "6d84ce35-75ce-4c38-8005-cb16b29f6e62",
+      "slug": "zikr-first-and-third-tuesdays",
+      "title": "Zikr (first and third Tuesdays)"
+    },
+    {
+      "table": "free_resources",
+      "id": "99291c59-5db0-4da5-a31a-e9532e1b0d07",
+      "slug": "evening-meditation-first-and-third-thursdays",
+      "title": "Evening Meditation (first and third Thursdays)"
+    }
+  ],
+  "at": "2026-11-12T13:54:28.044Z"
+}

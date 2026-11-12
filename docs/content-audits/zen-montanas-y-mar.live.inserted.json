@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1407,
+    "healer_slug": "zen-montanas-y-mar"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 10009,
+      "slug": "charla-maestro-daniel-terragno-3er-encuentro-zen-latinoamericano",
+      "title": "Charla Maestro Daniel Terragno- 3er encuentro Zen Latinoamericano"
+    },
+    {
+      "table": "videos",
+      "id": 10010,
+      "slug": "daniel-terragno-lay-zen-meditation-practice-waking-up-to-who-and-what-we-are-pt-1",
+      "title": "Daniel Terragno Lay Zen Meditation Practice: Waking Up to Who and What We Are pt. 1"
+    },
+    {
+      "table": "videos",
+      "id": 10011,
+      "slug": "bajo-la-luz-de-curauma-entrevista-a-daniel-terragno-budismo-zen",
+      "title": "BAJO LA LUZ DE CURAUMA - Entrevista a Daniel Terragno, Budismo Zen"
+    },
+    {
+      "table": "courses",
+      "id": "52ca6913-6a93-48d2-aa7a-88b1a8360f88",
+      "slug": "weekly-zazen-in-providencia",
+      "title": "Weekly zazen in Providencia"
+    },
+    {
+      "table": "courses",
+      "id": "8d9f7d4c-0ca6-44e7-8a29-2e50d2fc077e",
+      "slug": "sesshin-de-verano-2027",
+      "title": "Sesshin de Verano 2027"
+    },
+    {
+      "table": "free_resources",
+      "id": "0a7b0d05-c637-4bda-b159-372a415fcccf",
+      "slug": "charlas-y-teishos",
+      "title": "Charlas y teishos"
+    }
+  ],
+  "at": "2026-11-12T13:55:33.111Z"
+}

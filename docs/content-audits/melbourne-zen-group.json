@@ -43,7 +43,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     },
     {
       "title": "Residential sesshin with Subhana Barzaghi Roshi and Aladdin Jones Sensei",
@@ -56,7 +57,8 @@
       "subjects": [
         "meditation",
         "qi-gong"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     },
     {
       "title": "Dokusan with Kirk Fisher Roshi",
@@ -69,7 +71,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     },
     {
       "title": "Membership",
@@ -81,7 +84,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     }
   ],
   "free_resources": [
@@ -94,7 +98,8 @@
       "subjects": [
         "meditation",
         "non-duality"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     },
     {
       "title": "Online weekday sittings",
@@ -104,7 +109,8 @@
       "resource_type": "meditation",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://mzg.org.au/wp-content/uploads/2014/10/mzg-website-header.jpg"
     }
   ],
   "sprint": {
@@ -132,6 +138,8 @@
       "Merri Creek litter clean-up (14 Nov) and end-of-year get-together: community events.",
       "Talks by Susan Murphy on Zen Open Circle's site and Sydney Zen Centre podcasts: other groups' resources."
     ],
-    "held": "Only image on the site is a header photo of a Kuan Yin statue in a garden, not clearly the group's dojo or logo. Owner to decide whether it is acceptable."
-  }
+    "held_until": "Only image on the site is a header photo of a Kuan Yin statue in a garden, not clearly the group's dojo or logo. Owner to decide whether it is acceptable.",
+    "released": "Owner, 12 Nov 2026: the group/statue photo is fine."
+  },
+  "images_final": true
 }

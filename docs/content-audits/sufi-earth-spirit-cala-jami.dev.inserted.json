@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1448,
+    "healer_slug": "sufi-earth-spirit-cala-jami"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7027c001-936b-4d85-9fba-01d6320b2892",
+      "slug": "membership-of-sufi-earth-spirit",
+      "title": "Membership of Sufi Earth Spirit"
+    },
+    {
+      "table": "free_resources",
+      "id": "6503d31a-a85d-491f-aeb0-cea560802ef0",
+      "slug": "daily-morning-meditations-at-cala-jami",
+      "title": "Daily morning meditations at Cala Jami"
+    }
+  ],
+  "at": "2026-11-12T13:54:31.446Z"
+}

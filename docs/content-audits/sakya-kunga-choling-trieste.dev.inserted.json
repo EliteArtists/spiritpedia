@@ -1,0 +1,22 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1451,
+    "healer_slug": "sakya-kunga-choling-trieste"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "0f39ebf2-c496-45e2-b294-19c0e77e872b",
+      "slug": "wednesday-teachings-and-guided-meditation",
+      "title": "Wednesday teachings and guided meditation"
+    },
+    {
+      "table": "free_resources",
+      "id": "5981bcfa-003d-4945-963d-9869f61f5dfd",
+      "slug": "weekly-online-practice-and-teaching-on-zoom",
+      "title": "Weekly online practice and teaching on Zoom"
+    }
+  ],
+  "at": "2026-11-12T13:55:28.103Z"
+}

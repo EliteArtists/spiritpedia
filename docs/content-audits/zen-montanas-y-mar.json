@@ -36,7 +36,8 @@
       "subjects": [
         "meditation",
         "non-duality"
-      ]
+      ],
+      "channel": "Felipe Sepulveda"
     },
     {
       "title": "Daniel Terragno Lay Zen Meditation Practice: Waking Up to Who and What We Are pt. 1",
@@ -44,14 +45,16 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "channel": "The Karma Yoga Foundation"
     },
     {
       "title": "BAJO LA LUZ DE CURAUMA - Entrevista a Daniel Terragno, Budismo Zen",
       "url": "https://www.youtube.com/watch?v=Lx-PCrQqAEs",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "channel": "Escuela de Periodismo PUCV"
     }
   ],
   "books": [],
@@ -66,7 +69,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://www.zenmontanasymar.org/wp-content/uploads/2018/09/san-francisco-de-mostazal-6.jpg"
     },
     {
       "title": "Sesshin de Verano 2027",
@@ -79,7 +83,8 @@
       "subjects": [
         "meditation",
         "spiritual-awakening"
-      ]
+      ],
+      "image": "https://www.zenmontanasymar.org/wp-content/uploads/2026/10/flores-original.jpeg"
     }
   ],
   "free_resources": [
@@ -92,7 +97,8 @@
       "subjects": [
         "meditation",
         "non-duality"
-      ]
+      ],
+      "image": "https://www.zenmontanasymar.org/wp-content/uploads/2018/01/IMG_2818.jpg"
     }
   ],
   "sprint": {
@@ -119,6 +125,8 @@
       "Talk 'Práctica Zen y la incertidumbre' (CdJbhEcYnag): oEmbed 401.",
       "Biblioteca: empty directory listing."
     ],
-    "held": "Only image of the community is a group photo of the teacher and four members; the site has no logo or photo of its practice place. Owner to decide whether this is acceptable."
-  }
+    "held_until": "Only image of the community is a group photo of the teacher and four members; the site has no logo or photo of its practice place. Owner to decide whether this is acceptable.",
+    "released": "Owner, 12 Nov 2026: the group/statue photo is fine."
+  },
+  "images_final": true
 }

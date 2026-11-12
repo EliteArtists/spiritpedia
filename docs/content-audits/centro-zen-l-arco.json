@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "centro-zen-l-arco",
+    "location_source": "https://www.romazen.it/attivita/dove.htm",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Centro Zen L'Arco",
+      "bio": "Centro Zen L'Arco, also called Zenmon Ji or the Temple of the Zen Gate, is a Soto Zen centre on Piazza Dante in the heart of Rome. It is a religious association affiliated with the San Francisco Zen Center, the community founded by Shunryu Suzuki, and a member of both the Italian and the European Buddhist Unions. Its abbot, Dario Doshin Girolami, began practising in 1986, was ordained a monk by Zenkei Blanche Hartman and completed his training at Tassajara, City Center and Green Gulch before receiving Dharma transmission from Eijun Linda Cutts; he was formally installed as abbot in 2019. He has taught meditation inside Rome's Rebibbia prison since 2008, leads seminars at La Sapienza university and is the author of a book on Soto Zen and koans.\n\nThe core of the centre's life is zazen, accompanied by walking meditation and sutra chanting, with Tuesday evenings set aside for experienced practitioners and Wednesday evenings for beginners. Study of Buddhist teaching runs alongside, as do traditional arts linked to Zen such as the tea ceremony, formal meals and sewing the Buddha's robe, and the centre holds lay ordinations and both city and residential retreats. Online meditation cycles and seminar series with the abbot appear on its events page, and its website keeps his written Dharma talks.",
+      "availability": "local_online",
+      "city": "Rome",
+      "country": "Italy",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.romazen.it/",
+      "booking_url": "https://www.romazen.it/attivita/orari.htm",
+      "youtube_url": "https://www.youtube.com/@centrozenlarco",
+      "contact_email": "info@romazen.it",
+      "image_urls": [
+        "https://yt3.ggpht.com/sgdQiKxrWolMlZvBDb_h95InANGYtmgOkqtHPvuM-tziE_o1FHUpM7uU2tkl_CLFoEHKl6-vmnk=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Pratica Zen serale",
+      "url": "https://www.romazen.it/attivita/orari.htm",
+      "description": "Evening zazen at the Piazza Dante centre: Tuesdays from 8 to 10 pm for experienced practitioners and Wednesdays from 8 to 9.30 pm for beginners. Ring the centre on weekday afternoons for details before a first visit.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.romazen.it/img/testata.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditazione – la pratica dello zazen",
+      "url": "https://www.romazen.it/pratica/meditazione.htm",
+      "description": "An essay by the abbot on zazen: how the word Zen goes back to Sanskrit dhyana, how the Buddhist term bhavana points to simply being present, and why the Soto school holds that sitting itself is awakening.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.romazen.it/img/testata.png"
+    },
+    {
+      "title": "Discorsi di Dharma",
+      "url": "https://www.romazen.it/insegnante/discorsi.htm",
+      "description": "Written talks by Dario Doshin Girolami on koans such as Baizhang's fox, zazen as presence of mind, the begging bowl, and Zen in karate and tai chi, together with Italian versions of talks by Shunryu Suzuki.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.romazen.it/img/testata.png"
+    },
+    {
+      "title": "Il Kesa, abito Zen",
+      "url": "https://www.romazen.it/pratica/kisa.htm",
+      "description": "An introduction to the kesa, the patched robe worn by Buddhist monks: the story of its rice-field pattern, how it was once sewn from discarded cloth, and what it stands for in Zen practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.romazen.it/img/testata.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "rank": 1973,
+    "tier_evidence": "YouTube 296 subscribers (@centrozenlarco, UCDTYFkjdLM7E9NiSAPQ9FIg, Data API, 12 Nov 2026, linked from romazen.it); Instagram/Facebook never fetched → ~0.3k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.romazen.it/attivita/attivita.html",
+    "contact_form_url": null,
+    "flags": [
+      "Owner said yes on 12 Nov 2026 'without videos' (14 of its 15 videos have embedding turned off); planned with no videos, items only from romazen.it.",
+      "Thin: 4 items (1 offering, 3 free resources). The site is an older static site; the events page lists the November 2026 'Mente Zen' online cycle as current.",
+      "Photo: only the YouTube channel's logo avatar (yt3.ggpht.com) is usable. romazen.it's own images are all under 300 px or a header banner, and the gallery photos sit on s3-eu-west-1.amazonaws.com, whose robots.txt refused us (403), so none were used.",
+      "Possible editorial-stature override: affiliated with San Francisco Zen Center (Branching Streams); abbot is co-president of Religions for Peace Italia and coordinates the EBU chaplaincy network. Tier not raised.",
+      "Reb Anderson (reb-anderson) is on Spiritpedia and appears in the abbot's biography and installation photos as one of his teachers, but the site doesn't name him as teaching at L'Arco; not linked. Dario Doshin Girolami is not on Spiritpedia; teachers file empty. Possible future listing: Dario Doshin Girolami.",
+      "Health rule: recent channel videos include anger management with a doctor and a Zen approach to illness and death; not used (no videos). A 2025 university seminar cycle on suffering and death is past and left out.",
+      "Tai chi page (taichi/taichi.htm) linked from the home page returns 404.",
+      "Availability local_online: in-person evenings plus online Zoom cycles with the abbot."
+    ],
+    "left_out": [
+      "All videos, per the owner's decision.",
+      "Mente Zen online cycle (Wednesdays of November 2026): already under way; registration is a Zoom link, not a page on its own site.",
+      "Past events: Lo Zen e la Bibbia seminars (Mar–Apr 2026), book presentation (7 May), interfaith conference (23–24 Jun 2026), Né morte né paura (2025), retreats and Zen a porte aperte (2019–24).",
+      "Books Lo Zen Soto e i Koan and Buddha dentro: Italian editions with no ISBN on any page we opened, so left out (Amazon never opened).",
+      "La Via Interiore documentary page: it is a YouTube film (video, excluded).",
+      "Gallery photos on Amazon S3 (robots.txt refused).",
+      "La pratica della felicità PDF: 2014 seminar flyer."
+    ]
+  },
+  "images_final": true
+}

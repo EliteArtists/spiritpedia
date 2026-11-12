@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "tempio-zen-orazen-sokuzen-ji",
+    "location_source": "https://www.orazen.it/contatti/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Tempio Zen OraZen Sokuzen-ji",
+      "bio": "OraZen is the Soto Zen temple of the Veneto region, based in Padua and affiliated to the Il Cerchio network of Carlo Tetsugen Serra, who founded the Enso-ji temple in Milan and the Sanboji mountain monastery near Berceto. Its practice hall was formally opened in October 2017 by Tetsujyo Deguchi, abbot of Toshoji in Tokyo, the Japanese monastery founded by Harada Daiun Sogaku, whose line the network follows. The temple is run as a non-profit cultural association, with Serra as its spiritual guide, the Dharma teacher Tetsuko Koren Montemurro in charge and the monk Eko Maragno as coordinator.\n\nPractice centres on zazen, sitting simply in the shikantaza manner, held on weekday evenings in a bright wooden-floored hall in the Madonna Pellegrina and Santa Croce area of the city. Monday evenings are meant for people who already sit, while Thursday evenings welcome complete newcomers, and a yearly membership card covers every activity. Over recent years the temple has also run short introductory courses, half-day zenkai with Koren Montemurro, seminar cycles and a winter gathering, and Roberto Daito Galli teaches Taiji Zen there, a blend of still and moving meditation drawn from his long training in tai chi and Zen.",
+      "availability": "local",
+      "city": "Padua",
+      "country": "Italy",
+      "founded_year": 2017,
+      "subjects": [
+        "meditation",
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "website_url": "https://www.orazen.it/",
+      "booking_url": "https://www.orazen.it/attivita/zazen-3/",
+      "youtube_url": null,
+      "contact_email": "info@orazen.it",
+      "image_urls": [
+        "https://www.orazen.it/wp-content/uploads/2018/06/foto-meditazione-orazen.jpg",
+        "https://www.orazen.it/wp-content/uploads/2017/09/OraZen_LR04.jpg",
+        "https://www.orazen.it/wp-content/uploads/2017/09/OraZen_LR07.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Le serate di meditazione Zen al tempio",
+      "url": "https://www.orazen.it/2023/08/29/meditaione-zen-del-lunedi-e-del-giovedi/",
+      "description": "Weekly zazen evenings at the Padua temple from 8 to 9.30 pm: Mondays for people with some sitting experience, Thursdays open to first-timers. Come a quarter of an hour early, barefoot practice in loose dark clothes; cushions are provided. Taking part requires the temple's yearly membership card.",
+      "price": "€40 EUR (annual membership card)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.orazen.it/wp-content/uploads/2023/08/IMG_1191-scaled.jpg"
+    },
+    {
+      "title": "Taiji Zen",
+      "url": "https://www.orazen.it/attivita/zen-taiji/",
+      "description": "Tai chi classes at OraZen with Roberto Daito Galli, who lived for a year at Toshoji in Tokyo and remains a student of Tetsugen Serra. The emphasis is on meditation, both seated and in movement, with the martial side of the form treated as an expression of vital energy.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "meditation"
+      ],
+      "image": "https://www.orazen.it/wp-content/uploads/2017/01/IMG-20160405-WA0011.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zazen",
+      "url": "https://www.orazen.it/attivita/zazen-3/",
+      "description": "The temple's introduction to zazen: sitting without aims or expectations, letting go of knowing, in the silent-illumination style called shikantaza. It also explains why this is not the same as holding the mind in a fixed trance-like state.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://www.orazen.it/wp-content/uploads/2018/03/Zazen-la-meditazione.jpg"
+    },
+    {
+      "title": "La filosofia Zen",
+      "url": "https://www.orazen.it/zen/cose-lo-zen-filosofia-religione-o-stile-di-vita/",
+      "description": "A short essay tracing the word Zen from Sanskrit dhyana through Chinese chan, and presenting Zen as a direct way of practice open to anyone, handed down through an unbroken chain of teachers rather than through doctrine.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.orazen.it/wp-content/uploads/2017/08/FILOSOFIA-ZEN.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "rank": 1962,
+    "tier_evidence": "No YouTube channel of its own: the channel linked from orazen.it is @monasterozen ('Maestro Tetsugen', UCBYMwEtT1X1N7krpXUcviHQ, 1,280 subscribers, Data API, 12 Nov 2026), Il Cerchio's older network channel, so not counted; Facebook never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.orazen.it/contatti/",
+    "contact_form_url": "https://www.orazen.it/contatti/",
+    "flags": [
+      "Owner said yes on 12 Nov 2026 to sister temples of Il Cerchio as own listings; none of Il Cerchio's items reused (Il Cerchio plan items are all on monasterozen.it or its own channel).",
+      "Tier counts unreadable/zero: the only YouTube channel linked from orazen.it is Il Cerchio's @monasterozen (Milan and Berceto footage), so youtube_url left null and no videos taken.",
+      "Thin: 4 items (2 offerings, 2 free resources), no videos. Site's calendar and news show weekly zazen continuing into December 2026.",
+      "Health rule: the temple hosts the Scuola Zen di Shiatsu and a Zen Shiatsu treatment centre; all shiatsu left out and not mentioned in the bio.",
+      "Taiji Zen page is undated; it says Roberto Daito Galli still teaches at OraZen, but no current timetable is published.",
+      "Teachers (Tetsugen Serra, Koren Montemurro, Eko Maragno, Roberto Daito Galli) are not on Spiritpedia; teachers file empty.",
+      "Regional: Padua (Veneto), where Spiritpedia has few listings.",
+      "Price written as €40 EUR from 'tessera associativa annuale di euro 40' on the Zazen page; it is a membership card fee, not a per-class price.",
+      "Address differs slightly across sites (Via Beata Eustochio 2A/2B); only the city is used."
+    ],
+    "left_out": [
+      "Zen Shiatsu school and treatments: health claims.",
+      "Dated news items (beginners' courses Nov 2025 and May 2026, zenkai Mar 2025, seminars 2024, winter festival 2024): all past.",
+      "Books on the publications page (La lampada nascosta, L'incertezza è zen, Urban Zen): Italian titles with no ISBN read and not authored by the temple itself.",
+      "Videos on @monasterozen: Il Cerchio's channel, not OraZen's.",
+      "MindfulZen and Urban Zen: separate projects/sites, not read.",
+      "Single-date calendar pages (evento/...?instance_id=): dated instances, covered by the weekly-evenings item."
+    ]
+  },
+  "images_final": true
+}
