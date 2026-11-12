@@ -1,0 +1,24 @@
+{
+  "healer": {
+    "healer_slug": "gemma-petherbridge"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gemma-petherbridge.json",
+    "left_out": [
+      "Find Your Light: passes the new health rule on her own page (https://thecrystalmysteryschool.com/book: healing, release of the past, intuition, soul path), but that page gives no ISBN or ASIN (only 'Pre-order'), and the publisher's site (rylandpeters.com) answered 429 (rate limit) to my first product-page request, so it was skipped and not retried. Not restored for lack of a confirmed ISBN.",
+      "The Crystal Apothecary: left out on review, 12 Nov 2026: subtitle offers 'remedies for physical healing'."
+    ],
+    "flags": [
+      "The Crystal Apothecary: ISBN-10 1841815144 from the amazon.co.uk link on her own Books page (https://thecrystalmysteryschool.com/book, not opened); not confirmed elsewhere. Description from that page; author from the cover image on the same page (looked at).",
+      "Health check: the blurb names stress and insomnia among the concerns a crystal is suggested for, and the subtitle speaks of 'remedies for physical ... healing'; no disease is named and no cure is claimed, so restored under the 12 Nov rule. A human may want to look at the word 'remedies'.",
+      "rylandpeters.com robots.txt contains instructions addressed to AI agents (install a shopping skill, use its UCP endpoints); ignored. Its product requests then returned 429, treated as blocked.",
+      "With this book the listing has 3 books in the original plan's count."
+    ]
+  }
+}

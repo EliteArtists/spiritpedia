@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "kagyu-samye-dzong-edinburgh"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Akong Rinpoche: Restoring the Balance (online course)",
+      "url": "https://www.edinburgh.samye.org/courses-events/akong-rinpoche-restoring-the-balance/",
+      "description": "A free series of recorded sessions in which Ani Rinchen Khandro presents teachings from Akong Rinpoche's book Restoring the Balance, from discovering our true nature and learning from life to changing lifelong habits and his middle way. It is meant as a way to put the centre founder's teaching into daily practice.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_lnzUoEB6o7WY0FoUMQkoj1v1tZD_CFHS6cRFOVbqmDlw=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kagyu-samye-dzong-edinburgh.json",
+    "left_out": [
+      "The course's session videos: video entries are handled separately, not here."
+    ],
+    "flags": [
+      "Restoring the Balance: the course page names its sessions (Discovering Our True Nature, Training to Learn from Life, Freedom To Be Who We Are, How we come to be as we are, Changing the Habits of a Lifetime, Being Flexible is Being Alive, Akong Rinpoche's Middle Way) with embedded recordings; no health claim on the page, so restored.",
+      "With this item the listing has 5 free resources in the original plan's count (at the cap).",
+      "The original plan noted that the ingest once could not reach edinburgh.samye.org for images; if the image fails, set it to null."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "bryan-kest"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-to-One Sessions with Bryan Kest",
+      "url": "https://poweryoga.com/talk-therapy/",
+      "description": "Private online conversations with Bryan, booked by the session, in which he brings a yogic point of view and the practices and tools from his own decades of practice to whatever is going on in someone's life, from relationships and work to spirituality, purpose and physical setbacks. He describes them as a mix of mentoring, life coaching and support.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "life-coaching",
+        "spirituality"
+      ],
+      "image": "https://poweryoga.com/media/bryan-banner.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/bryan-kest.json",
+    "left_out": [
+      "Weight Loss & Wellness Program: still left out. On https://poweryoga.com/programs/ it is sold as 'change how I eat, move and live' (a diet and weight-loss programme) and its dates are 'To be announced'."
+    ],
+    "flags": [
+      "The sessions page is titled 'Talk Therapy' and lists 'pain, injury' among the topics people can bring; it describes the sessions as 'talk therapy, mentorship, life coach, manifestation, support and a uniquely yogic perspective', with no clinical credentials, diagnosis or claim to treat anything. Kept under the 12 Nov rule as mentoring; the title is reworded as one-to-one sessions. A human may still prefer to leave out anything called therapy.",
+      "No price is shown on the page (booking is through a Calendly scheduler), so 'Contact for pricing'."
+    ]
+  },
+  "images_final": true
+}

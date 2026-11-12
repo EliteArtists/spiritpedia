@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "tanya-murphy"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The 10 Types of Rest Every Woman With ADHD Needs",
+      "url": "https://www.restinhispresence.com/challenge-page/10typesofrest",
+      "description": "A self-paced class from Tanya in 19 steps on ten kinds of rest, what tends to get in the way of each, and how to make room for them in a way that suits a busy, distractible mind. It comes with course notes, guided meditations for rest, a private discussion forum and a closing self-check quiz, with a certificate on completion.",
+      "price": "$19.99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/3a2c9f_f925d1893dde484f85dee5617d0c2f3e~mv2.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tanya-murphy.json",
+    "left_out": [
+      "Coaching/mentoring listings under ADHD, anxiety, menopause, sleep and related filters: on https://www.restinhispresence.com/courses these are only filter labels; the page lists no coaching or mentoring programme of its own (only the two classes, one already listed), so there is nothing to restore."
+    ],
+    "flags": [
+      "10 Types of Rest: names ADHD (a condition) and says its meditations help 'soothe fatigue'; no claim to cure or treat, so kept under the 12 Nov rule.",
+      "Price shown as '$19.99' with no currency code on the page; copied as published.",
+      "Course image is the programme's own cover photo (a smiling woman, looks like a stock photo), not a photo of Tanya."
+    ]
+  },
+  "images_final": true
+}

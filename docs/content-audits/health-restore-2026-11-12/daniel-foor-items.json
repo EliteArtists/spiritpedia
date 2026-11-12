@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "daniel-foor"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rituals for Healing Trauma",
+      "url": "https://ancestralmedicine.org/online-course/rituals-for-healing-trauma/",
+      "description": "A self-paced course of four recorded lessons, plus a bonus teaching, in which Daniel brings ritual and ancestral practice to the work of healing from trauma: drawing support from the Earth and the spirits, sacred boundaries and ritual safety, soul fragmentation and return, and honest, fierce speech. Each lesson includes a guided practice, and the course is offered alongside, not instead of, other forms of support.",
+      "price": "Standard $75 USD; Reduced $64 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "https://ancestralmedicine.org/wp-content/uploads/2022/12/rituals-for-healing-trauma-course-ancestral-medicine-sq-512.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/daniel-foor.json",
+    "left_out": [
+      "Possession, Addiction, and Belonging (https://ancestralmedicine.org/online-course/possession-addiction-and-belonging/): passes the new health rule (addiction named, no claim to treat it), but the page frames much of the course around 'charismatic dictators', 'genocide, hazardous nationalism, or ethnic cleansing' and says it will be 'unflinching in our acknowledgement of the political'. Left out on the same political-framing ground the original plan used for Inhabiting the Times and The Mob & the Medicine; the owner may decide otherwise ($145 / $115 / $85 USD)."
+    ],
+    "flags": [
+      "Rituals for Healing Trauma: trauma healing through ritual, allowed under the 12 Nov rule. The page says it 'complements clinical approaches' and psychotherapy and, in its FAQ, that it 'is not a replacement for ... professional medical advice'; it names professionals in the healing arts among its audience but is open to anyone, so not a clinician-only training.",
+      "Price: the page shows Standard 75 USD and Reduced 64 USD; a bundle price on the page (204 USD with Animist Psychology) was valid only to 31 March 2025, so not used.",
+      "With this course the listing has 5 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

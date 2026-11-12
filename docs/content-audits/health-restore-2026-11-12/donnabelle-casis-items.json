@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "donnabelle-casis"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Reiki Sessions and Training",
+      "url": "https://sonorouslight.com/reiki/",
+      "description": "Donnabelle gives Reiki sessions in the Usui/Tibetan and Holy Fire III Karuna traditions, at her studio in Easthampton, Massachusetts or at a distance, with a written follow-up after each one. She also teaches small Reiki classes from Level I and II up to Master/Teacher, with attunements, hands-on practice and a class manual.",
+      "price": "Reiki Session $150 (60 minutes); Reiki Level I class $300; Reiki Level II class $400",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/donnabelle-casis.json",
+    "left_out": [
+      "Sound therapy, Biofield Tuning and sound baths (https://sonorouslight.com/sound-healing/): still left out. The page says sound 'can help promote physical health' and that with Biofield Tuning 'most presenting symptoms can be resolved within three sessions. Long-term conditions may take longer', which reads as a claim to treat conditions. The monthly public sound bath at Wistariahurst Museum ($30) is on the same page, so it has no clean page of its own."
+    ],
+    "flags": [
+      "Reiki page now carries a disclaimer that Reiki 'is not a substitute for professional medical, psychological, legal, or mental health care' and involves no diagnosis or treatment; the session wording is about stress, balance and nervous-system calm. Its opening says blocked energy 'can lead to stress or illness' and that Reiki supports 'the body's natural ability to heal'; no disease named and no cure claim, so restored under the 12 Nov rule.",
+      "Prices shown with '$' and no currency code; copied as published. The 90-minute 'Resonance Reset' ($250) on the same page blends Reiki with Biofield Tuning and is not priced in the item.",
+      "Reiki Level III (Master/Teacher, $1250) is marked 'TBA 2026'; the class prices are those published for Levels I and II.",
+      "Image omitted: the page's images are 300 px or a logo; the ingest can find one."
+    ]
+  },
+  "images_final": true
+}

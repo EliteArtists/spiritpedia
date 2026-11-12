@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "walt-opie"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beyond Letting Go: The Four Right Efforts in Recovery",
+      "url": "https://ims.dharma.org/courses/Beyond-Letting-Go",
+      "description": "An online daylong mini-retreat with IMS, co-led by Walt and Dalila Bothwell, on the four sides of Right Effort from the Eightfold Path: preventing and letting go of unwholesome states, and cultivating and sustaining wholesome ones. Through meditation, reflection and community it looks at how this practice supports people in recovery from addiction, whether new to it or long on the path.",
+      "price": "$50, $100 or $150 (choose your rate)",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/b6cb3d_b91a9c406e2d4d7590fd10a1f0e25a05~mv2.jpg"
+    },
+    {
+      "title": "Insight Recovery Sangha",
+      "url": "https://ims.dharma.org/courses/insight-recovery-sangha-2026",
+      "description": "A monthly evening gathering on Zoom through IMS Online for anyone working with strong cravings or addiction, facilitated by Walt and Dalila Bothwell. Each meeting combines meditation, a short dharma talk on recovery and candid sharing, with an emphasis on seeing into the nature of craving; it is not a 12-step group.",
+      "price": "Free, $5 or $10 a month (choose your rate)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://static.wixstatic.com/media/b6cb3d_b91a9c406e2d4d7590fd10a1f0e25a05~mv2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/walt-opie.json",
+    "left_out": [],
+    "flags": [
+      "Both items are Buddhist addiction-recovery programmes. The pages speak of easing the suffering of craving and supporting 'healing and steady presence on the path of recovery'; no claim to cure or treat, nothing about medication or medical care, so restored under the 12 Nov rule (recovery sanghas have been kept elsewhere in this restore). Both are co-led by Walt with Dalila Bothwell; the sangha page says guest teachers may join 'over time', but Walt is a named regular facilitator.",
+      "Insight Recovery Sangha repeats monthly (third Tuesday, 6:30 to 7:45 pm ET), so it goes in undated; its current page is the 2026 edition (next dates 17 Nov and 15 Dec 2026) and its URL ends '-2026', so it may need swapping for a 2027 page in January.",
+      "Prices shown with '$' and no currency code on both pages; copied as published (tiers Scholarship / Sustainer / Benefactor; the sangha also has a free tier).",
+      "With these two the listing has 4 offerings in the original plan's count; the Sacramento sit in the original plan was a single dated evening (12 Nov 2026) and has now passed."
+    ]
+  },
+  "images_final": true
+}

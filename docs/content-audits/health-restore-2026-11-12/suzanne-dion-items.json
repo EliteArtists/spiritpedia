@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "suzanne-dion"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Trauma Awareness in Coaching",
+      "url": "https://deepcoachinginstitute.com/trauma-awareness-in-coaching/",
+      "description": "A nine-week live online course from the Deep Coaching Institute, taught by Suzanne with Mark Drax, for coaches, spiritual directors and others in the helping professions. It covers how unresolved trauma shows up in clients and in the practitioner, the difference between trauma-aware and trauma-focused work, holding steady presence when someone is triggered, and knowing when to refer a client on to mental-health professionals. Sessions are recorded and carry 16 ICF continuing-education units.",
+      "price": "$690 ($525 if registered by 31 December 2026)",
+      "product_type": "course",
+      "start_date": "2027-01-13",
+      "end_date": "2027-03-10",
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "https://deepcoachinginstitute.com/wp-content/uploads/2025/03/Trauma-Awareness-social-post-640x384-1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/suzanne-dion.json",
+    "left_out": [
+      "Coaching for relational abuse recovery: on her coaching page (https://suzannedion.com/coaching/), which the original plan already uses for Enneagram Coaching; no page of its own, so not added (no made-up URL parts)."
+    ],
+    "flags": [
+      "Trauma Awareness in Coaching: linked from her home page (https://suzannedion.com/, a 'Trauma Course 2027' banner) and the course page names 'INSTRUCTORS: Mark Drax and Suzanne Dion'. Trauma healing is allowed under the 12 Nov rule; the course is professional development for coaches and others (it lists executive and life coaches, consultants, therapists and spiritual directors), not clinician-only or a psychotherapy training, and it teaches when to refer clients to mental-health professionals rather than replacing them. A human may still judge it too close to clinical scope.",
+      "Price shown as '$690 [$525 for registrations made by December 31, 2026 ...]' with no currency code; copied as published. Dated: Wednesdays 13 January to 10 March 2027.",
+      "With this course the listing has 6 offerings in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

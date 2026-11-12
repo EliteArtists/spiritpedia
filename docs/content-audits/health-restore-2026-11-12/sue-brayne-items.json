@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "sue-brayne"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Sex, Meaning and the Menopause",
+      "slug": "sex-meaning-and-the-menopause",
+      "author": "Sue Brayne",
+      "asin": "0826423019",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Built from interviews with more than seventy women and men, this book gives a frank account of how sex, intimacy and relationships change around the menopause, and what that time of life can come to mean for the people going through it.",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0826423019.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sue-brayne.json",
+    "left_out": [
+      "Death and dying resource pages (https://suebrayne.co.uk/death-and-dying/): still left out. They are practical end-of-life care information rather than a practice, and include pages on pain control, drug-induced hallucinations, medical terminology and advance directives (whether to be resuscitated or receive treatment), which touches on declining medical care."
+    ],
+    "flags": [
+      "Sex, Meaning and the Menopause: ISBN-10 0826423019 from the amazon.co.uk link on her own Books page (https://suebrayne.co.uk/writer/, not opened), not confirmed elsewhere. Description from her own page; menopause named with no claim to treat anything, so kept under the 12 Nov rule. It is more about relationships and life stage than spiritual practice; a human may judge the fit.",
+      "With this book the listing has 4 books in the original plan's count."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "marie-mbouni"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Healing the Five Wounds of the Heart: Free Yourself from the Bonds of the Past",
+      "slug": "healing-the-five-wounds-of-the-heart",
+      "author": "Dr. Marie Mbouni",
+      "asin": "1950253430",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Marie names five emotional wounds most of us take on in childhood (abandonment, betrayal, separation, denial and judgment) and shows how they keep replaying in adult life. Drawing on her work as a shamanic and energy healer, she offers ways to meet present situations differently and so move towards a more whole-hearted life.",
+      "subjects": [
+        "self-healing",
+        "shamanism",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1950253430.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marie-mbouni.json",
+    "left_out": [
+      "Spiritual Healing Lessons From Iboga: still left out. It is a Shift Network course (theshiftnetwork.com is never fetched, so its current page could not be read) and centres on iboga, a psychedelic medicine, with the original sales page naming trauma, anxiety and insomnia."
+    ],
+    "flags": [
+      "Healing the Five Wounds of the Heart: ISBN-13 9781950253432 from the publisher's page (https://hierophantpublishing.com/books/healing-the-five-wounds-of-the-heart/, its bookshop.org link), converted to ISBN-10 1950253430; not confirmed elsewhere. Author shown there as Dr. Marie Mbouni; cover from the same page (looked at).",
+      "Health check: the publisher's blurb speaks of recovering from emotional trauma and reaching 'wholeness, ease, and good health'; the wounds are emotional (abandonment, betrayal, separation, denial, judgment). No disease named, no claim to cure or treat, and nothing on that page or her own site (home, Meet Marie) about stopping or replacing medical care, so restored under the 12 Nov rule. She is a former anaesthesiologist; a human may want a look.",
+      "This is her only book; the listing had 0 books."
+    ]
+  },
+  "images_final": true
+}
