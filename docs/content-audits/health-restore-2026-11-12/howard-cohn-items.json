@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "howard-cohn"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Teacher Interviews",
+      "url": "https://www.missiondharma.org/book-teacher-time.html",
+      "description": "One-to-one meditation interviews and dharma mentoring with Howard Cohn, the guiding teacher of Mission Dharma, booked through the sangha's website. They are for students who want closer support with their practice than the Tuesday-night sittings give.",
+      "price": "Contact for pricing (sliding scale fee)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/hXVdqFAvCxP0PCzhy9QRoVm5MZIR49H78z20TkgTeVNgd0DPw_UArR-USVDft0Gam9h5d18v5w=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/howard-cohn.json",
+    "left_out": [
+      "Counselling: his counselling practice is therapy (scope rule, not the health rule); not listed.",
+      "Mission Dharma Small Group Mentoring (https://www.missiondharma.org/mission-dharma-mentoring-group.html): led by Mary Davis, not Howard Cohn, and dated 'January 21 - March 18' with no year; out."
+    ],
+    "flags": [
+      "The original plan said there was no separate page for dharma mentoring; Mission Dharma has two pages for it (private-teacher-interviews.html and book-teacher-time.html, same text, the second with booking). The booking page is used. The page says 'there is a sliding scale fee for my private work' but gives no figures.",
+      "The page mentions that his counselling services are listed elsewhere on the site; this item is only the meditation interviews and mentoring."
+    ]
+  },
+  "images_final": true
+}

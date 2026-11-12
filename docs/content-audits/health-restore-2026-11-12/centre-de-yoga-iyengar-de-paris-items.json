@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-de-paris"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Cours SEP (yoga pour les élèves atteints de sclérose en plaques)",
+      "url": "https://centreiyengar-paris.fr/cours-de-yoga/descriptif-des-niveaux/",
+      "description": "A weekly Iyengar class at the centre for students living with multiple sclerosis or other neurological conditions who are still independent. Using props, it works on joint mobility, muscle firmness and stability, relaxation and first steps in pranayama. A doctor's certificate that yoga is not contraindicated and the teacher's agreement are required.",
+      "price": "34 € (tarif des cours d'1h30, pas de tarif réduit)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://centreiyengar-paris.fr/wp-content/uploads/3-2-niveaux-cours-de-yoga.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/centre-de-yoga-iyengar-de-paris.json",
+    "left_out": [
+      "Cours individualisé (46 € a session): described on the same levels page as the MS class, so it would share that URL; one item per URL, so left out.",
+      "Classes for pregnant women: named only in the price list on /cours-de-yoga/ (already the URL of the existing classes item) with no page or description of their own; left out."
+    ],
+    "flags": [
+      "Cours SEP names multiple sclerosis but makes no claim to cure or treat it: it requires a doctor's certificate, and the page says the class builds mobility, stability, energy and confidence; kept under the 12 Nov rule. Owner may still prefer not to list a condition-specific class.",
+      "The URL is the centre's levels page (descriptif-des-niveaux), which describes all classes; the MS class has no page of its own. Price comes from /cours-de-yoga/ ('Sclérose en plaques : Tarif des cours d'1h30 mais de pas de tarif réduit'; a 1h30 class is 34 €)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "zen-center-of-denver"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zen of Recovery: Recovery Group",
+      "url": "https://zencenterofdenver.org/recovery-group/",
+      "description": "A weekly Monday-evening gathering at the zendo that opens with twenty-five minutes of meditation and moves into a group conversation about recovery from drugs and alcohol. It is led by an assistant teacher of the centre, is not an AA meeting, and welcomes anyone working with addiction, grief or other kinds of suffering.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/09/recovery-group.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Guided Healing Meditations",
+      "url": "https://zencenterofdenver.org/healing-practices-guided-meditations/",
+      "description": "Five short recorded meditations from the centre's teachers Karin Ryuku Kempe and Peggy Metta Sheehan: metta, a 'soft butter' relaxation, awareness of the breath and two body scans. They can be played free on the centre's website.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://zencenterofdenver.org/wp-content/uploads/2025/09/guided-meditation.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/zen-center-of-denver.json",
+    "left_out": [
+      "MBSR and Mindfulness Classes (https://zencenterofdenver.org/mbsr-and-mindfulness-classes/): the only series shown is the Fall 2026 MBSR course, already at week 6 (retreat day 14 Nov, week 6 on 18 Nov), and no later series is published; the page also calls it a secular course 'highly effective at helping manage stress, pain and illness'. Still out (already started; no future date)."
+    ],
+    "flags": [
+      "Zen of Recovery: the page names substance addiction, eating disorders, anxiety, depression and suicide among the suffering people bring, and says the group supports 'healing and recovery'; peer support with meditation, no claim to cure or treat, so kept under the 12 Nov rule. Owner may still prefer to leave a recovery group off. No price published (weekly, undated).",
+      "Guided Healing Meditations: the menu calls the page 'Guided Healing Meditations', the page heading is 'Guided Meditations'; the recordings are standard metta, breath and body-scan practices with no health claim."
+    ]
+  },
+  "images_final": true
+}

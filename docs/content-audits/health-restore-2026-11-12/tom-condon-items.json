@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "tom-condon"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Natural Self Confidence",
+      "url": "https://www.thechangeworks.com/cwproducts/natural_self_confidence.html",
+      "description": "A guided hypnosis recording by Carol Erickson and Tom Condon in their 'Multi-Evocation' style, which layers several voices. It leads the listener into a natural setting to find a sense of confidence, personal power and self-esteem and to work towards their goals. The authors recommend it to newcomers to their audio programmes.",
+      "price": "$9.95 / $14.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "https://www.thechangeworks.com/images/tom1.jpg"
+    },
+    {
+      "title": "Self Hypnosis",
+      "url": "https://www.thechangeworks.com/cwproducts/self_hypnosis.html",
+      "description": "A guided trance recording by Carol Erickson and Tom Condon that takes the listener to an imagined place of their own choosing. It is meant as a relaxing time out for easing stress, setting new goals, strengthening inner resources and finding fresh perspectives.",
+      "price": "$9.95 / $14.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "https://www.thechangeworks.com/images/tom1.jpg"
+    },
+    {
+      "title": "Quick Stress Busters",
+      "url": "https://www.thechangeworks.com/cwproducts/quick_stress_busters.html",
+      "description": "Four short guided trances by Carol Erickson and Tom Condon for moments of rest in a busy day: an imagined tropical resort, a mountain meadow, a deeply peaceful inner state, and a neck-and-shoulder massage in 3-D sound. Each stands alone and serves as an introduction to their recordings.",
+      "price": "$9.95 / $14.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "https://www.thechangeworks.com/images/tom1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tom-condon.json",
+    "left_out": [
+      "Deep Sleep (https://www.thechangeworks.com/cwproducts/deepsleep.html): the page is built around insomnia and quotes a review calling it 'A perfect substitute for sleeping pills'; that suggests replacing medication, so still out.",
+      "Rapid Pain Control (https://www.thechangeworks.com/cwproducts/rapid_pain_control.html): offered as a 'drug-free adjunct to conventional treatment of pain', including 'chronic pain that drugs can't touch'; a treatment claim for chronic pain, so still out (borderline).",
+      "Sensible Weight Loss (https://www.thechangeworks.com/cwproducts/weight_loss1_2.html): a programme to help listeners lose weight and with compulsive eating; a health-treatment programme, still out.",
+      "Smoking-cessation programme named in the hypnosis page's heading: no product page linked from it, not looked for further.",
+      "Creativity, Intuition and Easy Learning recordings on the same hypnosis page: not health items in the original notes, so not checked here."
+    ],
+    "flags": [
+      "The three restored recordings are co-authored with Carol Erickson (L.C.S.W., M.F.C.C.); Tom Condon is named on each page. They are hypnosis audio rather than spiritual teaching in the narrow sense; listed under life coaching like his other items. Pages are old (footer copyright 1997-2011 or 1997-2019), but the products are still offered with prices.",
+      "Price shown on each page as '$9.95 / $14.95' (probably download / CD; the page doesn't say which). The pages have no product images; the dry run picked the site's navigation-bar banner (images/navbar2010.jpg), so each item uses the healer's own photo (images/tom1.jpg, from the original plan) and images_final is set to true so the ingest keeps it.",
+      "Offerings after this plan: 6 of 10 if the original 3 are still live."
+    ]
+  },
+  "images_final": true
+}

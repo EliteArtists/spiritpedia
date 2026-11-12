@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "russ-hudson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing Relationships Using The Enneagram",
+      "url": "https://russhudson.com/product/healing-relationships-using-the-enneagram/",
+      "description": "A video-on-demand class in which Russ Hudson explains the Enneagram's Harmonic groups, one of its triads of three types. He shows how each group tends to meet conflict and difficulty, and how knowing this can help in our relationships.",
+      "price": "$ 97.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://russhudson.com/wp-content/uploads/2022/05/Healing-Relationships-Using-the-Enneagram-800.jpg"
+    },
+    {
+      "title": "Temperament, Environment and the Patterns That Bind Us",
+      "url": "https://russhudson.com/product/temperament-environment-and-the-patterns-that-bind-us/",
+      "description": "A three-part video-on-demand series on Enneagram type as temperament and how childhood surroundings shape the patterns each type carries into adult relationships and self-image. It looks at how each type learns to cope with its emotions, how stress and hard experiences affect each pattern, and how to meet them from presence and compassion.",
+      "price": "$ 247.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "spirituality",
+        "consciousness"
+      ],
+      "image": "https://russhudson.com/wp-content/uploads/2022/10/Temperament-Environment-and-the-Patterns-That-Bind-Us.jpg"
+    },
+    {
+      "title": "Love and Hate: Object Relations and the Enneagram in Key Relationships",
+      "url": "https://russhudson.com/product/love-and-hate-object-relations-and-the-enneagram-in-key-relationships/",
+      "description": "A video-on-demand class linking the nine Enneagram points to object relations, the idea that each picture we hold of ourselves comes paired with a picture of the other and a repeating emotional tone. It explores why we keep meeting the same difficulties in close relationships, with a first look at attachment theory.",
+      "price": "$ 97.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "consciousness",
+        "shadow-work"
+      ],
+      "image": "https://russhudson.com/wp-content/uploads/2022/05/Love-and-Hate.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/russ-hudson.json",
+    "left_out": [],
+    "flags": [
+      "Temperament, Environment and the Patterns That Bind Us: the page says it examines how stress and trauma affect each type and will interest psychotherapists, counsellors and coaches; it is Enneagram teaching about the nine types, not therapy, and makes no claim to treat anything, so kept under the 12 Nov rule.",
+      "Love and Hate was first left out as psychotherapy theory (object relations, attachment). It is a class on the Enneagram that borrows those ideas, taught by a spiritual teacher to a general audience, so restored; owner may disagree under the scope rule.",
+      "Healing Relationships: 'healing' is only in the title; the page is about the Enneagram's Harmonic groups and conflict.",
+      "russhudson.com sets Crawl-delay: 10; I waited at least 10 seconds between my requests. To stop the dry run fetching the three product pages at once, images_final is set to true here: each image is the og:image I read from its product page.",
+      "Prices copied as shown ('$ 97.00'); no currency code on the page. Offerings after this plan: 7 of 10 if the original 4 are still live."
+    ]
+  },
+  "images_final": true
+}

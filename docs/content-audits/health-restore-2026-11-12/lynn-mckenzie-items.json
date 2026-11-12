@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "lynn-mckenzie"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Chakra Power Codes",
+      "url": "https://chakra.lynnmckenzie.com/chakra-power-codes",
+      "description": "A home-study programme of eight audio recordings that work through the seven major chakras plus the earth star and soul star. Each lesson describes a chakra's qualities and leads a clearing and attunement meditation, with the aim of opening intuitive gifts such as clairvoyance and deepening spiritual growth.",
+      "price": "$397",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "image": "https://assets.cdn.filesafe.space/LKLirkygUsur1vymGHSV/media/659c38d544f920c227ab203a.png"
+    },
+    {
+      "title": "Crystal Healing for Animals",
+      "url": "https://animal.lynnmckenzie.com/crystal-healing-for-animals",
+      "description": "Four one-hour downloadable audio classes with a study guide and transcripts on using crystals in energy work with animal companions. They cover how to choose, cleanse and programme crystals, the properties of many stones, and how crystals relate to an animal's chakras.",
+      "price": "$297",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine"
+      ],
+      "image": "https://assets.cdn.filesafe.space/LKLirkygUsur1vymGHSV/media/63ada92fad0ddc420fed42a0.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lynn-mckenzie.json",
+    "left_out": [
+      "Healing and Understanding Your Animal Companions Through the Chakras (https://animal.lynnmckenzie.com/healing-through-chakras, $497): the page says energy imbalances 'manifest as dis-ease' and promises to teach 'how you can often reverse issues that have already manifested on the physical plane' in animals; a claim to treat physical illness, so still out."
+    ],
+    "flags": [
+      "The Chakra Power Codes: the page says the chakras hold keys to physical, emotional, mental and spiritual imbalances and lists 'Improved health and serenity' among buyers' reports; general energy-healing wording with no disease named or cure claimed, so kept under the 12 Nov rule. Price is the one-payment offer ('Regularly $597'; or 3 payments of $147); no currency code on the page.",
+      "Crystal Healing for Animals (borderline, kept): the page speaks of healing animals 'on a physical, emotional, mental and spiritual level' and quotes buyers whose pets 'feel better'; no condition named, no claim to cure, and nothing about replacing veterinary care. Owner may prefer to drop it. Price is the one-payment offer ('Regularly $497'); no currency code.",
+      "Offerings after this plan: 7 of 10 if the original 5 are all still live."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "european-institute-of-applied-buddhism"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ohne Schlamm kein Lotus - Weg der Heilung . No Mud No Lotus - Path of Healing",
+      "url": "https://www.eiab.eu/courses-1/ohne-schlamm-kein-lotus---weg-der-heilung-.---no-mud-no-lotus---path-of-healing/k2647-1",
+      "description": "A residential retreat in German and English, led by the EIAB monastics Thầy Pháp Ấn and Sister Song Nghiêm, on meeting suffering instead of running from it. Using the lotus that grows from mud as its image, it offers practical exercises and guided and silent meditations for transforming pain, fear and grief into understanding and calm.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-19",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_lt2vt9pFUhLDwFQdZc-rvt4nQQYjxav8Okuamr1bzW7Uo=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/european-institute-of-applied-buddhism.json",
+    "left_out": [
+      "ONLINE-Kurs: Kranich Qi Gong – Gesundheit für Lunge und Herz (K2646-6): runs 10–15 Nov 2026 (already started), is led by an outside teacher (Zhi Zhang, booked on zhang.at) and says qigong helps 'regulate our immune system' (immunity claim). Still out.",
+      "Gesund in Geist und Körper – Stress-Abbau durch Meditation, Qigong, Tiefenentspannung und Physiotherapie (K2649-4, 3–6 Dec 2026): the page says its qigong for lungs, heart, stomach, kidneys and bowel strengthens 'Selbstheilungs- und Abwehrkräfte' (self-healing and immune defences), and frames the course as physiotherapy; an immunity/treatment claim, so still out."
+    ],
+    "flags": [
+      "No Mud No Lotus names pain and illness among forms of suffering and speaks of transforming and easing pain; this is emotional and spiritual healing in the Plum Village sense, with no claim to cure or treat, so kept under the 12 Nov rule. Price is on the registration form, not the page.",
+      "Not in the original left-out notes, so not checked: the same course list carries 'Komme zu dir zurück und heile dich – Meditation zur Heilung / Be Still and Heal' (K2650-1) and later 2027 courses with healing in the title; owner may want them looked at in a later pass."
+    ]
+  },
+  "images_final": true
+}

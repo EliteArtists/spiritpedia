@@ -1,0 +1,72 @@
+{
+  "healer": {
+    "healer_slug": "upaya-zen-center"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "CHAPLAINCY (2028) – Cohort 21, 1st year (Hybrid)",
+      "url": "https://www.upaya.org/program/chaplaincy-2028-cohort-21-1st-year-hybrid/",
+      "description": "The first year of Upaya's two-year Buddhist chaplaincy training, taken online or in a hybrid format. Students attend core periods, intensives and a sesshin each year, meet mentors monthly, complete readings, volunteer chaplaincy hours and a final project, and receive lay vows (Jukai) in the second year. Places are by application.",
+      "price": "Tier 1 - $13,200; Tier 2 - $15,200; Tier 3 - $17,200",
+      "product_type": "course",
+      "start_date": "2028-01-01",
+      "end_date": "2028-12-31",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2017/12/Chaplaincy-cohort-8-grad-byMyoshin-e1670433296427.jpg"
+    },
+    {
+      "title": "BEING WITH DYING: Professional Training Program for Clinicians in Compassionate Care of the Seriously Ill and Dying (In Person 2027)",
+      "url": "https://www.upaya.org/program/being-with-dying-in-person-2027/",
+      "description": "A week-long residential training at Upaya, founded by Roshi Joan Halifax, for physicians, nurses and other clinicians who accompany people through serious illness and dying. It teaches contemplative practices for attention, presence, ethical clarity and self-care, and explores the spiritual and existential side of grief, dying and death. Places are by application.",
+      "price": "Program Fee (Members) $2,400; Program Fee (Non-Members) $2,900",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-14",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2026/02/cropped-DSC01629-scaled-1.jpeg"
+    },
+    {
+      "title": "G.R.A.C.E.: Training in Cultivating Compassion-based Interactions (In Person September 2027)",
+      "url": "https://www.upaya.org/program/g-r-a-c-e-training-in-cultivating-compassion-based-interactions-in-person-september-2027/",
+      "description": "A weekend training at Upaya in G.R.A.C.E., Roshi Joan Halifax's five-step practice (Gather attention, Recall intention, Attune, Consider, Engage and end) for bringing compassion into meetings with others. It is open to clinicians, caregivers, chaplains, teachers and anyone in a helping role; an online version runs the same weekend.",
+      "price": "Program Fee (Members) $711; Program Fee (Non-Members) $790",
+      "product_type": "retreat",
+      "start_date": "2027-09-10",
+      "end_date": "2027-09-12",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2023/02/GRACE-2023-Roshi-Tony-Cynda-Wendy.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/upaya-zen-center.json",
+    "left_out": [
+      "TENDING THE INNER PRACTICE: A Physician Circle (Online 2026-2027) (https://www.upaya.org/program/tending-the-inner-practice-a-physician-circle-online-2026-2027/): the cohort began on 26 Sep 2026 and registration is closed. Still out (started).",
+      "G.R.A.C.E. online version (same weekend, $390): same programme as the in-person item; one kept to avoid a near-duplicate.",
+      "Inner Practice of Medicine (2027): left out on review, 12 Nov 2026: physician-only, clinical scope."
+    ],
+    "flags": [
+      "Clinical framing (owner may decide): Being with Dying, Inner Practice of Medicine and G.R.A.C.E. are professional trainings for clinicians and caregivers with CME credits through the University of New Mexico School of Medicine. They teach contemplative practice for the people giving care and make no claim to cure or treat patients, so they pass the 12 Nov rule; Inner Practice of Medicine is open only to MD/DO physicians and medical students.",
+      "Being with Dying: the social-action overview page gives $2,800 for non-members (and 2026 dates); the 2027 programme page gives $2,900, which is used.",
+      "Chaplaincy 2028: the first-year page; it is a two-year programme (tuition shown per two years, $6,600 a year online). Prices have no currency code on the page.",
+      "Courses after this plan: 8 of 10 if the 4 in the original plan are all still live (ROHATSU in person 2026 starts 1 Dec 2026)."
+    ]
+  },
+  "images_final": true
+}
