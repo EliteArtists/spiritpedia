@@ -1,0 +1,25 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c02c3d90-c17d-4fe7-bb02-1a9816ed71e2",
+      "slug": "spiritual-mentoring",
+      "title": "Spiritual Mentoring"
+    },
+    {
+      "table": "courses",
+      "id": "653d2c22-4f27-48ba-a7ab-9511596cf681",
+      "slug": "become-your-own-healer",
+      "title": "Become your own healer"
+    },
+    {
+      "table": "free_resources",
+      "id": "d09dcb0f-f488-4138-b9db-02654ab98183",
+      "slug": "living-differently-a-pathway-to-embrace-and-transform-pain",
+      "title": "Living Differently: A Pathway to Embrace and Transform Pain"
+    }
+  ],
+  "at": "2026-11-12T17:29:00.638Z"
+}

@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "judy-wilkins-smith"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Coaching Sessions",
+      "url": "https://judywilkins-smith.com/private-coaching-sessions/",
+      "description": "One-to-one coaching in which Judy uses systemic work and constellations to look at the family and ancestral patterns behind a client's relationships, self-esteem and choices. Sessions also work on communication and on building love, joy and a sense of abundance.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "shadow-work",
+        "conscious-relationships",
+        "life-coaching"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lPgnEzMk9wjG8Muy-sXOEsAKlTp_5OeBB2c3NPXVLJnA=s900"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/judy-wilkins-smith.json",
+    "left_out": [
+      "Meditations Duo ($34.99, https://judywilkins-smith.com/product/meditations-duo/): a bundle of the Meditation of the Mother and Meditation of the Father, both already on the listing; left out as a duplicate, not for health (its 'multigenerational trauma meditations' wording is allowed now)."
+    ],
+    "flags": [
+      "Private Coaching Sessions: the page asks about 'emotional patterns and physical habits and addictions you'd like to resolve' and offers to 'find the gifts in trauma and heal'. No cure or treatment claim and no advice about medical care, so kept under the new rule; the description leaves addiction out. No price published."
+    ]
+  }
+}

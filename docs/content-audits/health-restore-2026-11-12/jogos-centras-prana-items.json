@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "jogos-centras-prana"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Individualūs jogos užsiėmimai (individual yoga classes)",
+      "url": "https://www.pranajoga.lt/individualus-jogos-uzsiemimai",
+      "description": "One-to-one Sivananda yoga lessons at the centre in Kaunas. The teacher builds the session around the student's level, physical condition and goals, from a safe introduction to yoga to deeper work on asanas, breathing and relaxation.",
+      "price": "40 €",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.pranajoga.lt/sites/default/files/images/galerija/img_0257.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jogos-centras-prana.json",
+    "left_out": [
+      "Jogos kursai sveikai nugarai (yoga for a healthy back): the home page still links https://pranajoga.lt/ivykiai/joga-sveikai-nugarai, but that page returns 404 and the seminars page no longer lists it, so it isn't current. Not a health reason."
+    ],
+    "flags": [
+      "Individual classes: the page says lessons are adapted to the student's 'sveikatos būklę' (health condition) and suit people with 'specifinių fizinių ar sveikatos iššūkių' (specific physical or health challenges); it makes no claim to treat anything. Kept under the new rule. Price 'Individuali pamoka: 40 €' from https://www.pranajoga.lt/jogos-uzsiemimu-ir-gyvu-grupiniu-meditaciju-tvarkarastis (the page the individual-classes page links for prices)."
+    ]
+  },
+  "images_final": true
+}

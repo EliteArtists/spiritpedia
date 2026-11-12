@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "wild-heart-meditation-center"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "What Becomes of the Broken Hearted? A New Year's Eve Meditation Retreat with Mikey Noechel and Matty Finn",
+      "url": "https://www.wildheartmeditationcenter.org/events/befriendchange2026-azgg2",
+      "description": "A residential New Year retreat at the WJ Kelly Retreat Center in Bay St. Louis, Mississippi, led by two teachers in the Theravada Insight tradition. Through guided and silent sitting, walking meditation and dharma talks, it looks at how heartbreak and loss can open the heart rather than close it; beginners are welcome.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-29",
+      "end_date": "2027-01-02",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/6182ee8b83f1f124f9acee35/t/6ad1b577ae48757ac4246387/1792128375853/Untitled+%28Instagram+Post+%2845%29%29+%281%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/wild-heart-meditation-center.json",
+    "left_out": [
+      "Recovery Dharma group: listed under 'Our friends' on https://www.wildheartmeditationcenter.org/weeklyprogramming as a peer-led group, so not the centre's own offering, and that page is already used by the Weekly Programming free resource. Not a health reason: the page speaks of 'liberation from addiction' through mindfulness, with no treatment claim."
+    ],
+    "flags": [
+      "Broken Hearted retreat: about heartbreak and emotional pain, no health claim. The page uses strong language ('let the heart break wide f***ing open'); the description doesn't repeat it.",
+      "Registration is on https://www.floweringlotus.org/what-becomes-of-the-broken-hearted (Flowering Lotus); neither page shows the registration fee, only that teachers are paid by dana (about half the registration cost suggested). Co-leader Matty Finn was not checked against the centre's team page."
+    ]
+  },
+  "images_final": true
+}

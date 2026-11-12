@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "cynthia-james"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Self-Care Mastery",
+      "url": "https://www.cynthiajames.net/self-care-mastery-course/",
+      "description": "A self-paced course in five modules, with fifteen short videos from Cynthia, worksheets and guided meditations on purpose, health, money and relationships. It moves from looking honestly at present habits and self-imposed limits to a written plan for daily self-care.",
+      "price": "$197",
+      "product_type": "course",
+      "subjects": [
+        "self-healing",
+        "life-coaching",
+        "soul-purpose"
+      ],
+      "image": "https://www.cynthiajames.net/wp-content/uploads/2016/12/woman-sitting-on-beach-sunset.jpg",
+      "start_date": null,
+      "end_date": null
+    },
+    {
+      "title": "Freedom Coach Training",
+      "url": "https://www.cynthiajames.net/coaching-counseling/coach-training/",
+      "description": "A six-month certification for people who already coach or counsel, teaching the emotional integration methods Cynthia developed. It runs from an online weekend intensive through seven weekly evening lessons, mentoring with a certified Freedom Coach and a closing session with her.",
+      "price": "$2497",
+      "product_type": "course",
+      "start_date": "2027-01-22",
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "https://www.cynthiajames.net/wp-content/uploads/2021/05/freedomcoachingconsciousnurturing.jpg",
+      "end_date": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/cynthia-james.json",
+    "left_out": [],
+    "flags": [
+      "Self-Care Mastery: the sales page opens with statistics on stress-related physical symptoms (headache, fatigue, upset stomach) and includes a 'Health' meditation; no cure or treatment claim, so kept under the new rule.",
+      "Freedom Coach Training: the page says 'NEXT SESSION BEGINNING JANUARY 2027' and lists a schedule without a year (webinar 16 January, weekend intensive 22-24 January, Monday lessons 25 January to 1 March); start_date 2027-01-22 is the intensive, read from those lines (22 Jan 2027 is a Friday and 25 Jan 2027 a Monday, which fits). Applicants must already have a coaching or counselling background; the page speaks of helping clients 'heal old wounds' and free themselves 'from past wounds, abuse, and emotional traumas' (emotional healing, allowed wording). Earlier plan quoted 'release their inner trauma faster', which is not on the current page."
+    ]
+  }
+}

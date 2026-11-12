@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "ken-cohen"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Honoring the Medicine: The Essential Guide to Native American Healing",
+      "slug": "honoring-the-medicine",
+      "author": "Kenneth S. Cohen",
+      "asin": "0345435133",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A wide survey of Native American healing ways and the outlook behind them, from the Four Winds and the medicine wheel to the vision quest, the sweat lodge, smudging and chanting. Cohen draws on years of learning from Native elders and sets the ceremonies within a view of life as one web of people, animals, plants and land.",
+      "subjects": [
+        "shamanism",
+        "ancient-wisdom",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0345435133.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Qigong Healing Consultations",
+      "url": "https://www.qigonghealing.com/consultations",
+      "description": "Fifty-minute private sessions at his studio near Boulder, Colorado, mostly given to learning qigong exercises and meditations chosen for the client, with a shorter part of hands-off External Qi Healing on a table. He offers them for personal growth and spiritual development alongside, not instead of, a client's own health care.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "qi-gong",
+        "energy-medicine"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.eomega.org/sites/default/files/media/Ken%20Cohen%20bio-NEW_600x600.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/ken-cohen.json",
+    "left_out": [],
+    "flags": [
+      "Honoring the Medicine: ISBN-13 9780345435132 (paperback, Random House) from https://www.penguinrandomhouse.com/books/29426/honoring-the-medicine-by-kenneth-s-cohen/9780345435132/, converted to ISBN-10 0345435133; not confirmed elsewhere. The blurb speaks of Native medicine 'healing the body', herbal remedies and 'true stories of miraculous healing' but names no disease and makes no cure claim, so kept under the new rule; a human may want to look.",
+      "Qigong Healing Consultations: the page says sessions are designed 'in coordination with your physician, acupuncturist, or other health care providers', that therapeutic passes can 'reduce pain', and that sessions 'are not intended to diagnose, prevent, or treat any physical or mental disease'. Kept as practice-based pain relief with the page's own disclaimer. The page still carries a 2025 sabbatical note ('limited availability until late summer or autumn'); no price published."
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "healer": {
+    "healer_slug": "cuong-lu"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Basisjaar: Driejarige Boeddhistische Psychologie (first year of the three-year Buddhist psychology training)",
+      "url": "https://www.mindonly.nl/opleidingen/basisjaar",
+      "description": "The first year of Mind Only's three-year online training in applied Buddhist psychology, led by Cuong Lu over nine weekends. It studies Vasubandhu's eight aspects of consciousness and the 51 mental formations, and how the mind builds the sense of self, with talks, discussion, questions and periods of silence plus home practice.",
+      "price": "Tarief Particulier: €2989; Tarief Zakelijk: €3889 (incl. €500 inschrijfgeld)",
+      "product_type": "course",
+      "start_date": "2028-02-05",
+      "end_date": "2028-12-03",
+      "subjects": [
+        "meditation",
+        "consciousness",
+        "mindfulness"
+      ],
+      "image": "https://www.mindonly.nl/uploads/_t1340/1.-Schema-opleiding-Mind-Only-digitaal.jpg"
+    },
+    {
+      "title": "Dieet: Leegte in Verzadigdheid (retreat)",
+      "url": "https://www.mindonly.nl/opleidingen/dieet-leegte-in-verzadigheid-2",
+      "description": "A six-day silent retreat with Cuong Lu at the No Word Zen Practice Center in Magnac-Laval, France, on the Buddha's four kinds of nourishment: food, emotions, desire and consciousness. Days of sitting and walking meditation, Dharma talks and work practice explore how digesting in the mind goes with digesting in the body.",
+      "price": "Particulier € 995; Bedrijf: € 1.396 (meals and shared room included)",
+      "product_type": "retreat",
+      "start_date": "2028-03-18",
+      "end_date": "2028-03-25",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/T7K17anTrG4DefDg9bYn_Cuong_Lu_2023_square.jpg"
+    },
+    {
+      "title": "Cuong Lu Teachings: Membership voor 1 jaar",
+      "url": "https://clteachings.nl/membership-voor-1-jaar",
+      "description": "A year's membership of Cuong Lu Teachings, his online library of more than 200 recorded Dutch-language lessons, with two live streams a year and monthly guidance from him and his students. Part of each payment helps people who cannot afford the courses.",
+      "price": "€179 per persoon (12 maanden)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://import.cdn.thinkific.com/478758/T7K17anTrG4DefDg9bYn_Cuong_Lu_2023_square.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/cuong-lu.json",
+    "left_out": [],
+    "flags": [
+      "Basisjaar: its learning goals include 'discovering the true causes of trauma, depression and burn-out' and it is aimed partly at therapists, psychologists and psychiatrists; it teaches Buddhist psychology of mind, not therapy, with no cure claim, so it passes the new rule. Next group (group 9) is online, from 5-6 Feb 2028 to 2-3 Dec 2028 (the page says 'start januari 2028' but the first weekend listed is in February).",
+      "Dieet retreat: the page offers 'a new chance' to those who have tried and failed to eat less; weight and eating framing, no disease claim. Its date line reads 'Maandag 18 Maart 2028 ... t/m zaterdag 25 Maart 2028', but 18 March 2028 is a Saturday, so the dates may be wrong on the page.",
+      "Membership page (clteachings.nl, robots.txt read; allows us) pitches the lessons as help to transform stress, anxiety and inner pain; allowed wording. The home page says the library has 200+ free talks, while the membership gives a year's access to all lessons; title kept as published."
+    ]
+  },
+  "images_final": true
+}

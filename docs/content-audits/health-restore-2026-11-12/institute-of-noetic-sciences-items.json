@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "institute-of-noetic-sciences"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness Meditation with IMMI",
+      "url": "https://noetic.org/experience/mindfulness-meditation-with-immi/",
+      "description": "A self-paced, six-module introduction to mindfulness meditation for beginners, developed by IONS research director Helané Wahbeh and colleagues. Each module of about an hour combines video teaching, guided exercises such as breath awareness and body scans, reflection questions and a home practice, including ways of being with difficult emotions and thoughts.",
+      "price": "$79",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "conscious-science"
+      ],
+      "image": "https://noetic.org/wp-content/uploads/2021/03/IMMI-featured-iStock-139961392.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/institute-of-noetic-sciences.json",
+    "left_out": [
+      "Spontaneous Remission Bibliography (https://noetic.org/science/spontaneous-remission-bibliography/, not opened): a research catalogue of medically documented remissions of disease; disease-focused, not a practice, so not restored.",
+      "ConnectIONS Live: Biofield Therapy & Energy Healing: a video, handled separately."
+    ],
+    "flags": [
+      "IMMI page says the course is designed to help reduce stress and that research found it improved mood, anxiety, pain and sleep quality, and that mindfulness benefits people with health or mental-health diagnoses; wellbeing wording with no claim to treat a condition, so it passes the new rule. 'Intervention' is the research name of the programme.",
+      "The course page's image is an iStock photo (file name), so no image is set; the ingest will choose one.",
+      "noetic.org robots.txt Crawl-delay 10 honoured for my requests."
+    ]
+  },
+  "images_final": true
+}

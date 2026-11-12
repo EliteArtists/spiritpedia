@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "purple-valley-yoga"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "De-Stress Program (Ayurveda & Wellness, 5 days)",
+      "url": "https://yogagoa.com/de-stress-program-ayurveda/",
+      "description": "A five-day Ayurvedic stay at Purple Valley in Goa built around rest and calming the nervous system rather than intensive cleansing. Each day pairs gentle personalised Ayurvedic treatments and light vegetarian meals with yoga, breathing practice or guided meditation and quiet time.",
+      "price": "Winter (October – April): £700 standard room, £750 garden view; Monsoon (July – August): £560 / £600",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.ggpht.com/EtLePk72ZHLwnMhrtx3RCK7NfvI19WxyAkIvS1mwL-Cyi_BLWK9MmywvogZnKh8QpZ_8Xtxv2Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Mini Rejuvenation Retreat (Ayurveda & Wellness, 3 days)",
+      "url": "https://yogagoa.com/mini-rejuvenation-program-ayurveda/",
+      "description": "A short three-day Ayurvedic retreat at the Goa centre for slowing down and resting. Personalised treatments for relaxation and gentle cleansing sit alongside simple vegetarian meals and daily yoga or meditation.",
+      "price": "Winter (October – April): £420 standard room, £450 garden view; Monsoon (July – August): £330 / £360",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.ggpht.com/EtLePk72ZHLwnMhrtx3RCK7NfvI19WxyAkIvS1mwL-Cyi_BLWK9MmywvogZnKh8QpZ_8Xtxv2Q=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Full Rejuvenation Retreat (Ayurveda & Wellness, 7 or 14 days)",
+      "url": "https://yogagoa.com/full-rejuvenation-program-ayurveda/",
+      "description": "A longer Ayurvedic stay of one or two weeks drawing on the Rasayana tradition of renewal. Two personalised Ayurvedic bodywork sessions a day are combined with light vegetarian food, rest and afternoon yoga or meditation, aiming at balance of the doshas and lasting vitality.",
+      "price": "Winter (October – April): 7 days £940 / £1,010, 14 days £1,660 / £1,800; Monsoon (July – August): 7 days £750 / £800, 14 days £1,330 / £1,440 (standard / garden view room)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://yt3.ggpht.com/EtLePk72ZHLwnMhrtx3RCK7NfvI19WxyAkIvS1mwL-Cyi_BLWK9MmywvogZnKh8QpZ_8Xtxv2Q=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/purple-valley-yoga.json",
+    "left_out": [
+      "Panchakarma program (https://yogagoa.com/panchakarma-program-ayurveda/, described on the Ayurveda overview page): sold as eliminating toxins and strengthening digestion and immunity; an immunity claim, still out.",
+      "Ayurvedic Hut single treatments: no page of their own found on the site now."
+    ],
+    "flags": [
+      "The Ayurveda overview page (https://yogagoa.com/ayurveda-retreats/) lists 'stronger immunity' among general benefits and names an Ayurvedic physician on the team; the three programme pages restored here speak only of stress, relaxation, gentle detox and rejuvenation, with no disease claim. A human may wish to check.",
+      "Prices are per programme as published, in pounds (the pages show £ but no currency code); rates include room, daily treatments, meals, yoga and meditation."
+    ]
+  },
+  "images_final": true
+}

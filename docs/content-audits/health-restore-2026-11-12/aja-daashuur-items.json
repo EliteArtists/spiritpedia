@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "aja-daashuur"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "SPIRIT GUIDES: A Meditation of Intentional Connection",
+      "url": "https://www.thespiritguidecoach.com/meditation-library/spirit-guides-sound-journey",
+      "description": "A recorded guided sound journey from Aja's meditation library. It leads the listener into another dimension to meet their own spirit guides, ask them questions and receive their messages of clarity and love.",
+      "price": "$11.11",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "meditation",
+        "sound-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/56d4a17b2eeb815c06d97486/6094a8c79a1de75cb804b0eb/60dc9834a3e9d91f756ef727/1792173763740/4.jpg?format=1500w"
+    },
+    {
+      "title": "Future Life Progression Workshop",
+      "url": "https://www.thespiritguidecoach.com/meditation-library/future-life-progression",
+      "description": "A recorded workshop in which Aja uses sound, vibration and channelled messages to guide listeners into a light trance. There they picture and connect with their future selves as a way of shaping the life and world they want to move towards.",
+      "price": "$33.33",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "manifestation",
+        "sound-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/56d4a17b2eeb815c06d97486/6094a8c79a1de75cb804b0eb/621d237cf3107a698508a783/1646076800920/001.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/aja-daashuur.json",
+    "left_out": [
+      "Sacred Space Clearings packages (https://www.thespiritguidecoach.com/sacred-space-clearings): the page says negative spirits attached to people and homes lead to 'emotional distress, physical ailments' and offers clearing and spell work to address them; attributing physical illness to spirits and selling their removal reads as an indirect treatment claim, so still out (borderline)."
+    ],
+    "flags": [
+      "Future Life Progression page says life's unknowns can bring anxiety, anger and depression; no claim to treat them, so it passes. The page still mentions a bonus live Zoom call on '3/13' from an earlier year; the recording itself is still sold.",
+      "SPIRIT GUIDES page says guides' wisdom can reveal truths hidden beneath our trauma; emotional and spiritual healing, allowed."
+    ]
+  },
+  "images_final": true
+}

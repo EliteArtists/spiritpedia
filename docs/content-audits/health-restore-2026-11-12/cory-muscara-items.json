@@ -1,0 +1,68 @@
+{
+  "healer": {
+    "healer_slug": "cory-muscara"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Opening The Heart: An 8-Week Intensive",
+      "url": "https://corymuscara.com/heart/",
+      "description": "A self-paced eight-week course, begun from his own experience of a sudden opening of the heart, on releasing the old fears and beliefs that guard it. Weekly recorded teachings move through lovingkindness, tonglen, working with fear and protective parts, somatic release and surrender, with daily half-hour meditations and recorded question-and-answer sessions.",
+      "price": "$795",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "shadow-work"
+      ],
+      "image": "https://corymuscara.com/wp-content/uploads/2024/10/Screenshot-2024-10-13-at-2.39.33%E2%80%AFPM.png"
+    },
+    {
+      "title": "Masterclass: Mastering Stress and Anxiety",
+      "url": "https://corymuscara.com/masterclass-stress/",
+      "description": "A recorded 90-minute masterclass in which Cory shares the practices he relies on for meeting stress and anxiety, from mindset and embodiment tools to meditation. It comes with a resource page of meditations and reading for going further.",
+      "price": "$50",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://corymuscara.com/wp-content/uploads/2021/08/Copy-of-Untitled-36.png"
+    },
+    {
+      "title": "Habits, Cravings, and Addictions: A 21-Day Course",
+      "url": "https://corymuscara.com/cravings/",
+      "description": "A recorded three-week course of short daily teachings and guided meditations on what cravings are really asking for, from sugar and screens to alcohol and overwork. Rather than fighting urges with willpower, it teaches students to stay present with them and meet the underlying need in kinder ways, with a set of practices for difficult moments.",
+      "price": "$200 (or 3 x $75)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://corymuscara.com/wp-content/uploads/2025/07/Cravings-Course-Website-4.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/cory-muscara.json",
+    "left_out": [
+      "5 Free Meditations To Help You Sleep (https://corymuscara.com/sleep-lp/): an email sign-up page dated 2018 whose copy says better sleep relieves depression and may reduce inflammation; out (old page and health claims). No '7-Day Sleep Challenge' page was found on his site now."
+    ],
+    "flags": [
+      "Opening The Heart: the page carries a testimonial from someone with stage 4 breast cancer saying the course helped her trust her body to heal; Cory makes no cure claim himself, and the course is framed on relationships and emotional healing ('healing stuck pain'), so it is kept under the new rule. A human may prefer to leave it out because of that testimonial. Week 2 draws on Internal Family Systems; the course is a meditation and heart practice, not therapy.",
+      "Cravings course: the page says anyone facing a significant addiction should seek professional support and keep a therapist as a resource; it encourages, not replaces, care. Kept.",
+      "Mastering Stress and Anxiety mentions 'the latest technologies and therapies' among his tools; no condition claim. Kept.",
+      "robots.txt Crawl-delay 10 honoured on corymuscara.com."
+    ]
+  },
+  "images_final": true
+}

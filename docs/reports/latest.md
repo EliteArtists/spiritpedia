@@ -148,7 +148,7 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
 
 | Batches | Listings | Plans | Offerings | Free | Books |
 | :-- | --: | --: | --: | --: | --: |
-| 01–03 | 76 | 50 | 76 | 32 | 8 |
+| 01–09 | 225 | 146 | 184 | 54 | 34 |
 
 - **Commonest reasons still out:**
   - the item is only on Insight Timer, which is never fetched;
@@ -156,6 +156,11 @@ See section 4 for progress. The order: items in live listings now (dev, then liv
   - past or closed;
   - the 10-item cap;
   - the site blocks us (robots.txt naming ClaudeBot, 429 or a Cloudflare challenge: skipped, never retried).
-- **Taken out on review:** Peter Sterios's "Yoga for Pain Relief" ("Tired of taking pain medications?").
+- **Taken out on review:**
+  - Peter Sterios's "Yoga for Pain Relief" ("Tired of taking pain medications?");
+  - Schuyler Grant's two extra Commune courses (the cap is 2 per teacher);
+  - *Physicians of the Heart* (its authors weren't read from a page);
+  - Jeannie O'Neill's prenatal certification (the store page says Yoga Farm's educators teach it).
+- **For you to look at (kept):** Saskia Lightstar's *The Cancer Misfit* (life after treatment: grief, fear of recurrence, no cure claim); Mark Coleman's ADHD half-day (mindfulness and self-compassion, no treatment claim).
 
-**Remaining:** batches 04–25 (about 525 listings) are being researched three at a time, and go in as each batch finishes.
+**Remaining:** batches 10–25 (about 380 listings) are being researched three at a time, and go in as each batch finishes.

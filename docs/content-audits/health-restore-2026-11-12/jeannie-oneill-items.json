@@ -4,23 +4,7 @@
   },
   "videos": [],
   "books": [],
-  "courses": [
-    {
-      "title": "Kundalini Prenatal Yoga - 100 HR Certification (Self-Paced)",
-      "url": "https://www.yogafarm.us/prenatal",
-      "description": "A self-paced online 100-hour training in pre- and postnatal yoga from Yoga Farm Ithaca, drawing on Kundalini yoga, Ayurveda and hatha yoga. Modules follow each trimester and the postnatal months, with kriyas, breath, sound and meditation for pregnancy and birth, and weekly office hours with the educators.",
-      "price": "$699",
-      "product_type": "course",
-      "start_date": null,
-      "end_date": null,
-      "subjects": [
-        "yoga",
-        "breathwork",
-        "ayurveda"
-      ],
-      "image": "https://images.squarespace-cdn.com/content/v1/64becd243709e14755210a25/45ebcd81-21cf-48a8-947e-cd8b1b4869f5/yoga+farm+elements+%2811%29.jpg?format=1500w"
-    }
-  ],
+  "courses": [],
   "free_resources": [],
   "sprint": {
     "sprint": "health-restore-2026-11-12",
@@ -28,7 +12,8 @@
     "restored_from": "docs/content-audits/jeannie-oneill.json",
     "left_out": [
       "LIVE - Teaching Breath and Nervous System Regulation: the only dates in the store are October 2026 (https://www.yogafarm.us/store/p/breath-and-nervous-system-regulation-october-2026-pif), so it has passed. Not a health reason.",
-      "'Kundalini Fusion for the First Trimester': a video; videos are handled separately."
+      "'Kundalini Fusion for the First Trimester': a video; videos are handled separately.",
+      "Kundalini Prenatal 100-hour certification: left out on review, 12 Nov 2026: the store page names Yoga Farm's educators as teachers, not Jeannie."
     ],
     "flags": [
       "Kundalini Prenatal certification: pregnancy is not a condition and the page calls its practices 'supportive tools, not guarantees or prescriptions'; no treatment claim, so kept. The page features Jeannie (her own account of her Kundalini training) but the store page says it is 'taught by Masterful women educators of Yoga Farm Ithaca'; the original plan left out trainings led mainly by other Yoga Farm educators, so a human may want to confirm she leads this one.",

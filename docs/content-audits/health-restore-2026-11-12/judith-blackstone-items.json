@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "judith-blackstone"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Trauma and the Unbound Body: The Healing Power of Fundamental Consciousness",
+      "slug": "trauma-and-the-unbound-body",
+      "author": "Judith Blackstone",
+      "asin": "B079GRWM75",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Judith describes how the effects of past trauma can stay held in the body and offers step-by-step Realization Process practices for releasing them. The work rests on attuning to fundamental consciousness, a subtle field of awareness she presents as whole and unharmed.",
+      "subjects": [
+        "self-healing",
+        "non-duality",
+        "consciousness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/B079GRWM75.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/judith-blackstone.json",
+    "left_out": [
+      "Realization Process therapy training: a training for psychotherapists, so it stays out under the scope rule (therapy is not spiritual teaching), not the health rule."
+    ],
+    "flags": [
+      "Trauma and the Unbound Body: ASIN B079GRWM75 from the amazon.com 'Order from Amazon' link under the book on https://realizationprocess.org/books-and-cds/ ; the link's slug says it is the Kindle edition (no print ISBN on her page). Not confirmed elsewhere. The blurb promises to 'heal trauma' and free the body of trauma 'once and for all', and speaks of physical and emotional pain held in the fascia: trauma healing, allowed under the new rule; no disease named.",
+      "With this book the listing has 7 books."
+    ]
+  },
+  "images_final": true
+}

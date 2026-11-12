@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "richard-moss"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Second Miracle: Intimacy, Spirituality, and Conscious Relationships",
+      "slug": "the-second-miracle",
+      "author": "Richard Moss",
+      "asin": "0890877653",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Moss argues that spiritual maturity shows itself in our capacity for intimacy and conscious relationship. The book looks at deepening connection with oneself, with others and with life as a whole, at the ego's fear of losing itself, and at how the quality of our attention changes what is possible.",
+      "subjects": [
+        "conscious-relationships",
+        "consciousness",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0890877653.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/richard-moss.json",
+    "left_out": [
+      "How Shall I Live?: Where Spiritual Healing and Conventional Medicine Meet (ASIN 0890874182, from the Amazon link on https://richardmoss.com/books/): his books page gives only the title and a used-copy link, with no description, and I found no other page I could read that says what the book contains, so it could not be described or checked against the health rule. Left out as unverified."
+    ],
+    "flags": [
+      "The Second Miracle: ASIN 0890877653 from the Amazon link on https://richardmoss.com/books/ (Amazon not opened); author and subtitle from the same page. His page says a new paperback, e-book and audiobook edition is being prepared, so the ASIN is the old edition and may change. The blurb mentions 'healing early childhood trauma' (emotional healing, allowed under the new rule)."
+    ]
+  }
+}
