@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "justin-von-bujdoss"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "End of Life Care and Bardo Support",
+      "url": "https://www.yangtiyoga.com/service-page/end-of-life-care-and-bardo-support",
+      "description": "One-to-one online sessions in which Lama Justin von Bujdoss offers pastoral care to people meeting death, whether their own or a loved one's, with Vajrayana teaching on the bardo as the frame. They are also open to practitioners who want to prepare for death as part of their path.",
+      "price": "From $108 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/justin-von-bujdoss.json",
+    "left_out": [
+      "Spiritual Care Clinic as a whole (yangtiyoga.com/spiritual-care-clinic): a team service that includes IFS counselling, a licensed clinical social worker, Sowa Rigpa diet guidance and energy-healing sessions that open with 'your chief medical concern', mostly led by other practitioners; only Lama Justin's own End of Life Care and Bardo Support service is restored.",
+      "Vajrayana Supervision/Mentorship ($100): by request, for chaplains and caregivers; not added."
+    ],
+    "flags": [
+      "Restored from the Spiritual Care Clinic note: his own pastoral session (one of the clinic's services) on its own service page; it mentions a terminal diagnosis but makes no health claim.",
+      "Price shown as 'From 108 US dollars' / 'From $108'.",
+      "Image null: the page's images are on static.wixstatic.com, which answered our robots.txt request with 403 earlier in the sprint."
+    ]
+  },
+  "images_final": true
+}

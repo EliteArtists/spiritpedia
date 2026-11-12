@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "lou-redmond"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Find Your Truth",
+      "slug": "find-your-truth",
+      "author": "Lou Redmond",
+      "asin": "B06VVP1W83",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Lou Redmond's account of his own search for a meaningful life, told through the best and worst decisions he made along the way. Alongside the story he sets out the steps he took and how readers can apply them, from turning struggles into passions to finding work that matters.",
+      "subjects": [
+        "soul-purpose",
+        "spiritual-awakening"
+      ],
+      "co_authors": [],
+      "cover": null
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lou-redmond.json",
+    "left_out": [],
+    "flags": [
+      "ASIN B06VVP1W83 (Kindle edition) from the 'Order on Amazon' link on louredmond.com/find-your-truth and /findyourtruthbook (link not opened), not confirmed elsewhere. Title as given on his pages; the Amazon link's URL slug reads 'Find Your Truth: Letting Go of Addiction…', a subtitle not read on any non-Amazon page, so it is not used.",
+      "Restored under the 12 Nov rule: the subtitle names addiction but nothing claims to cure or treat it; his own pages present it as a story of awakening and finding life's purpose.",
+      "No cover: his book pages show no cover image (the large image is a background graphic), and Amazon images are not used. cover: null."
+    ]
+  },
+  "images_final": true
+}

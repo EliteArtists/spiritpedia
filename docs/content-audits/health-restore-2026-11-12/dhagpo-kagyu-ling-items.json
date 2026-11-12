@@ -1,0 +1,21 @@
+{
+  "healer": {
+    "healer_slug": "dhagpo-kagyu-ling"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/dhagpo-kagyu-ling.json",
+    "left_out": [
+      "Menla weekend (5-6 Dec 2026): left out on review, 12 Nov 2026: the site doesn't show Lama Trinlé is a resident lama (visiting teachers stay out)."
+    ],
+    "flags": [
+      "The page says the practice, done regularly, pacifies emotions and the causes of illness: a traditional statement of the practice's benefits, not a claim to cure a condition; our description leaves it out.",
+      "Taught by Lama Trinlé as part of the centre's own programme (the same Menla teaching ran in March 2026). The site has no teacher page saying whether he is resident, so a human may want to confirm he is one of Dhagpo's own lamas rather than a visitor."
+    ]
+  }
+}

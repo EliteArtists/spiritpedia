@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "cassandra-vieten"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Mindful Motherhood: Practical Tools for Staying Sane During Pregnancy and Your Child's First Year",
+      "slug": "mindful-motherhood",
+      "author": "Cassandra Vieten",
+      "asin": "1572246294",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Cassandra Vieten's guide to bringing mindfulness into pregnancy, birth and a baby's first year. Short ten-minute meditations and gentle yoga poses are spread through the book, for parents to use whenever a spare moment comes and the changes feel overwhelming.",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "co_authors": [],
+      "cover": "https://cassandravieten.com/wp-content/uploads/2026/03/413j2FgnYaL._SY445_SX342_FMwebp_.webp"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/cassandra-vieten.json",
+    "left_out": [],
+    "flags": [
+      "ISBN-10 1572246294 from the Amazon link on cassandravieten.com/books/ (link not opened), not confirmed elsewhere. Title, author and description read on that page.",
+      "Restored under the 12 Nov rule: pregnancy and 'staying sane' are named but nothing claims to cure or treat a condition.",
+      "Cover is the image on her own books page (checked by eye: Mindful Motherhood cover). cassandravieten.com carries Crawl-delay: 10; pages and the cover were fetched at least 11 seconds apart, so images_final is set."
+    ]
+  },
+  "images_final": true
+}

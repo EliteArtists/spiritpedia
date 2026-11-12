@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "julie-skon"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "1:1 Trauma-Informed Life & Healing Coaching",
+      "url": "https://www.julieskon.com/coaching",
+      "description": "Weekly one-to-one coaching sessions with Julie Skon, offered as three-, six- or twelve-month packages and starting with a free 30-minute call. Sessions combine space to process what you are carrying with structure and accountability, with themes such as trauma healing through a mind-body lens, grief and life transitions, goals and leadership.",
+      "price": "$2,100 (3 months, 12 sessions); $4,100 (6 months, 24 sessions); $7,800 (1 year, 48 sessions)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/6ae241deff57ad514cabf8da/t/6ae53eb9ea3de3513a520f46/1793408697382/Julie+Skon+small.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/julie-skon.json",
+    "left_out": [],
+    "flags": [
+      "Coaching packages restored under the 12 Nov health rule: the page speaks of trauma healing, grief and stress but makes no claim to cure or treat a condition; it is coaching, not psychotherapy. Her plan already flagged that coaching is her main work; a human may want to check the fit.",
+      "Prices as published on julieskon.com/coaching ('$' with no currency code; sliding-scale spots by request). Item image is the page's og:image (her photo on Squarespace)."
+    ]
+  },
+  "images_final": true
+}

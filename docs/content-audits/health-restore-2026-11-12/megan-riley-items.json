@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "megan-riley"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Practice Information & Tips",
+      "url": "https://aycutrecht.com/information/",
+      "description": "Megan Riley's practical notes for students of the Mysore room in Utrecht: what to bring, when to arrive and finish, and how to keep the space quiet and tidy. She also covers rest on moon days, practising around the menstrual cycle, eating before practice, and staying home when unwell.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://aycutrecht.com/wp-content/uploads/2017/05/image1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/megan-riley.json",
+    "left_out": [],
+    "flags": [
+      "Restored under the 12 Nov rule: the page mentions menstruation, menopause, pregnancy and illness as practical practice advice, with no claim to treat any condition.",
+      "No image on the page (its og:image is a WordPress blank); the ingest may find none."
+    ]
+  },
+  "images_final": true
+}
