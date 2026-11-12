@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "faye-li-yip"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "From Pole to Flow: Tai Chi & Qigong Insights 2026",
+      "url": "https://deyinevents.com/tai_chi_qigong_training_with_masters_tary_and_faye",
+      "description": "A two-day weekend seminar in Wallington, Surrey. Saturday covers Ba Fa Wu Bu, the Yang style routine of eight hand methods and five footwork directions, for a better feel for internal energy, balance and body mechanics. On Sunday Master Faye teaches Wu Qin Xi, the Five Animal Frolics of Health Qigong, moving through the tiger, deer, bear, monkey and crane forms. Days can be booked singly or together.",
+      "price": "Non-member: £75 Saturday, £65 Sunday, £130 both days; BHQA/Deyin member: £70, £60, £120",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "image": "https://yipadmin.taichilink.uk/webpics/banners/Nov%20Seminar%20-%202026%20-%20Surrey.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/faye-li-yip.json",
+    "left_out": [],
+    "flags": [
+      "The event page (URL names 'Masters Tary and Faye') says Master Faye teaches the Sunday Wu Qin Xi day; it doesn't name who teaches Saturday's Ba Fa Wu Bu. Master Tary Yip is her husband and co-founder of the institute, not a guest teacher.",
+      "The page calls Wu Qin Xi 'one of the oldest medical Qigong systems' and 'a holistic practice for health and longevity'; no claim to cure or treat a condition, so restored under the new rule. The description here leaves that wording out."
+    ]
+  },
+  "images_final": true
+}
