@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "katharine-chestnut"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Breathe Calmly, Feel Calmly Meditation",
+      "url": "https://katharinechestnut.com/breathe-calmly-fell-calmly-meditation/",
+      "description": "A short free guided breathing meditation for slowing the breath so the mind can settle, set to gentle music, to help you come back to your day steadier and less stressed. The page links to the recording.",
+      "featured": false,
+      "resource_type": "meditation",
+      "image": "https://katharinechestnut.com/wp-content/uploads/2021/08/Breathe-Calmly-Meditation-IG.png",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "mindfulness"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/katharine-chestnut.json",
+    "left_out": [
+      "Insight Timer courses 'Codependency: Stop Losing Yourself In Relationships', 'Reflect, Heal, And Prepare For The New Year' and 'The Relax & Restore Breathwork Series': Insight Timer may not be fetched, so their pages and current state could not be checked; not restored. ('Reflect, Heal...' is also seasonal.)",
+      "Codependency YouTube series: videos, handled separately."
+    ],
+    "flags": [
+      "The Breathe Calmly page is a post on her own site whose recording plays on Insight Timer (insig.ht short link); the page itself has no player.",
+      "The page says the music 'contains alpha waves designed to lower stress, reduce anxiety'; wellbeing language, no condition claim, kept."
+    ]
+  }
+}

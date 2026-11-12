@@ -1,0 +1,80 @@
+{
+  "healer": {
+    "healer_slug": "renee-vos-de-wael"
+  },
+  "videos": [
+    {
+      "title": "Meditation for Rest, Anxiety, Stress, And Emotional Healing",
+      "url": "https://www.youtube.com/watch?v=7M95kdgRVOg",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    },
+    {
+      "title": "Break Up Grief A Deer Meditation for a Broken Heart",
+      "url": "https://www.youtube.com/watch?v=Ek8amIS3rG8",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    },
+    {
+      "title": "Heal Your Pet With Your Hands — A Guided Chakra Meditation That Actually Works",
+      "url": "https://www.youtube.com/watch?v=bQi2y0YIHic",
+      "subjects": [
+        "meditation",
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    },
+    {
+      "title": "Praying Mantis: Calm Anxiety Through Stillness | Meditation",
+      "url": "https://www.youtube.com/watch?v=GL0_RqAwKyM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    },
+    {
+      "title": "Grieving a Beloved Pet: A Heartfelt Journey Through Loss and Healing",
+      "url": "https://www.youtube.com/watch?v=U72RiN8rhJY",
+      "subjects": [
+        "death-the-afterlife",
+        "self-healing"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    },
+    {
+      "title": "Start Your Day with Love & Connection  Morning Meditation with Your Pet",
+      "url": "https://www.youtube.com/watch?v=3HjUnbe6jk0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Sagittarius Way: Animal Communication"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "7M95kdgRVOg": 22,
+      "Ek8amIS3rG8": 32,
+      "bQi2y0YIHic": 76,
+      "GL0_RqAwKyM": 73,
+      "U72RiN8rhJY": 150,
+      "3HjUnbe6jk0": 92
+    },
+    "left_out_notes": [
+      "YouTube: titles naming anxiety, stress, grief, broken hearts, emotional health or healing pets (e.g. 'Meditation for Rest, Anxiety, Stress, And Emotional Healing', 'Break Up Grief', 'Heal Your Pet With Your Hands') and a sub-2-minute clip left out."
+    ]
+  },
+  "images_final": true
+}

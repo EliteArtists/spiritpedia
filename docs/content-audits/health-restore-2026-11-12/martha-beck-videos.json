@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "martha-beck"
+  },
+  "videos": [
+    {
+      "title": "The Gathering Room: Together We Heal",
+      "url": "https://www.youtube.com/watch?v=54tJU6UED-o",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Martha Beck"
+    },
+    {
+      "title": "The Gathering Room: Letting Rest Do the Work",
+      "url": "https://www.youtube.com/watch?v=56QfQaNmpmc",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Martha Beck"
+    },
+    {
+      "title": "The Gathering Room: What Lies Beyond Anxiety?",
+      "url": "https://www.youtube.com/watch?v=bqBgIBv6dSc",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Martha Beck"
+    },
+    {
+      "title": "Bewildered: How Not Anxious?",
+      "url": "https://www.youtube.com/watch?v=l74oXaDBgkc",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Martha Beck"
+    },
+    {
+      "title": "Bewildered: Why So Anxious?",
+      "url": "https://www.youtube.com/watch?v=EYz815pgY1k",
+      "subjects": [
+        "soul-purpose",
+        "life-coaching"
+      ],
+      "channel": "Martha Beck"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "54tJU6UED-o": 5779,
+      "56QfQaNmpmc": 5275,
+      "bqBgIBv6dSc": 4346,
+      "l74oXaDBgkc": 3701,
+      "EYz815pgY1k": 3631
+    },
+    "left_out_notes": [
+      "Video 'The Gathering Room: How to Heal Your Heart' (20.5K views) left out as borderline health wording; interviews framed on anxiety and childhood trauma (Diary of a CEO, Chris Williamson, Mayim Bialik, CNN) left out."
+    ]
+  },
+  "images_final": true
+}

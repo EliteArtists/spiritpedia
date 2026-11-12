@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "sarina-stone"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Six Healing Sounds Guided Qigong Meditation Instruction Video Download",
+      "url": "https://www.sarinastone.com/shop/p/six-healing-sounds-guided-qigong-meditation-instruction-video-download",
+      "description": "A video lesson in the Taoist Six Healing Sounds, adding postures and a sound for each organ to the Inner Smile practice. It is the second of three linked meditations, between the Inner Smile and the Microcosmic Orbit.",
+      "price": "$14.95",
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/67197e268b27b1267649f495/1787923268956/six+healing+soudns+video+.png?format=1500w",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "sound-healing",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Tao of Beauty Guided QiGong Meditation MP3",
+      "url": "https://www.sarinastone.com/shop/p/tao-of-beauty-guided-qigong-meditation-mp3",
+      "description": "A short daily guided qigong visualisation on holding an image of self-love and inner beauty. She pairs it with her three core practices (Microcosmic Orbit, Inner Smile and the healing sounds) and suggests sixty days of practice.",
+      "price": "$9.95",
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/671993e98b27b126764a0953/1787923286699/beauty+.png?format=1500w",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Basic Medical Qigong Online Certification Course",
+      "url": "https://www.sarinastone.com/shop/p/basic-medical-quigong-online-certification-course",
+      "description": "A mostly self-study certification for practitioners and teachers who want to share three foundational Taoist meditations: the Microcosmic Orbit, the Inner Smile and the Six Healing Sounds. It includes four hours of one-to-one video consultation with a certified instructor and a certificate on completion.",
+      "price": "$450 (course deposit)",
+      "image": "http://static1.squarespace.com/static/665a7a286142956851dd3e71/665b4f1c22e4684b25241b56/67364d365b0aa72cf775abde/1787928842462/BASIC+MEDIAL+QUIGONG.jpg?format=1500w",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "qi-gong",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sarina-stone.json",
+    "left_out": [
+      "5 Element Organs Elixir QiGong video courses: the lung course says the exercises turn 'many physical ailments' into health and links unreleased stress to asthma and lung disease; treatment claims.",
+      "Tao of Cleansing MP3: says it flushes toxins from the organs and ties toxic thoughts to lowered immune response; immunity claim.",
+      "World Link remote healing MP3: sold as a 'MUST' for people with an ill loved one and for healthcare providers; read as remote treatment of illness (borderline).",
+      "Women's Tao Sexual Health practices and sexual energy packages: sold on balancing hormones and use a jade egg; hormonal-health claim.",
+      "Taoist Healing Massage and Pain Relief pages, Chi Nei Tsang course: not re-checked (Chi Nei Tsang was sold with a 'Constipation Cure' video).",
+      "Six Healing Sounds MP3 and the combined Inner Smile & Six Healing Sounds MP3: duplicates of the video lesson."
+    ],
+    "flags": [
+      "Basic Medical Qigong: 'Medical' is in the title and it is aimed at natural health practitioners, but the page claims only to improve health and lower stress. A human may prefer it out given the earlier note that her brand leans medical.",
+      "Basic Medical Qigong price: the page lists '$450' as the course deposit due on enrolment."
+    ]
+  }
+}

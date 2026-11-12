@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "mary-rose-freeth"
+  },
+  "videos": [
+    {
+      "title": "Embrace Healing Through Empowering Meditations ✨",
+      "url": "https://www.youtube.com/watch?v=9_bC6WVbR3Q",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "MeTime Meditations with Mary Rose Freeth"
+    },
+    {
+      "title": "5-Minute Peaceful Reset: Release Tension & Find Calm ✨ Meditation",
+      "url": "https://www.youtube.com/watch?v=ROxrB5GH5NQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "MeTime Meditations with Mary Rose Freeth"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "9_bC6WVbR3Q": 609,
+      "ROxrB5GH5NQ": 603
+    },
+    "left_out_notes": [
+      "Videos titled for stress or overthinking (Mindfulness for Stress and Overthinking, Golden Glow: Let Go of Stress) left out."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,77 @@
+{
+  "healer": {
+    "healer_slug": "sue-morter"
+  },
+  "videos": [
+    {
+      "title": "How Energy Shapes Your Mind, Body & Healing",
+      "url": "https://www.youtube.com/watch?v=B2WzY4vBhus",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dr Sue Morter"
+    },
+    {
+      "title": "When Your Nervous System is Dysregulated",
+      "url": "https://www.youtube.com/watch?v=RfR8WIhvumY",
+      "subjects": [
+        "energy-medicine",
+        "spiritual-awakening"
+      ],
+      "channel": "Dr Sue Morter"
+    },
+    {
+      "title": "The Love Inside Grief: with Dr. Laura Berman",
+      "url": "https://www.youtube.com/watch?v=0AoYElhOkJE",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Dr Sue Morter"
+    },
+    {
+      "title": "Frequency & Healing -- with Dr. Eric Pearl",
+      "url": "https://www.youtube.com/watch?v=GwTYUQGmloM",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "channel": "Dr Sue Morter"
+    },
+    {
+      "title": "Healing At The Core: The Story Beneath The Suffering",
+      "url": "https://www.youtube.com/watch?v=xZmV2O86YjQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dr Sue Morter"
+    },
+    {
+      "title": "Sound as a Path to Healing: with Jonathan and Andi Goldman",
+      "url": "https://www.youtube.com/watch?v=Swa0rrOIeD8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dr Sue Morter"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "B2WzY4vBhus": 22824,
+      "RfR8WIhvumY": 14935,
+      "0AoYElhOkJE": 6630,
+      "GwTYUQGmloM": 7918,
+      "xZmV2O86YjQ": 6108,
+      "Swa0rrOIeD8": 5012
+    },
+    "left_out_notes": [
+      "Videos 'How Energy Shapes Your Mind, Body & Healing', 'When Your Nervous System is Dysregulated', 'The Love Inside Grief', 'Frequency & Healing', 'Healing At The Core', 'Sound as a Path to Healing': healing or condition framing, borderline."
+    ]
+  },
+  "images_final": true
+}

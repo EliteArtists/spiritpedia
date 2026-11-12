@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "jeannie-oneill"
+  },
+  "videos": [
+    {
+      "title": "Kundalini for Resilience",
+      "url": "https://www.youtube.com/watch?v=XyO6EF7eFn8",
+      "subjects": [
+        "yoga",
+        "ayurveda"
+      ],
+      "channel": "Yoga Farm Ithaca"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "XyO6EF7eFn8": 167
+    },
+    "left_out_notes": [
+      "Kundalini Prenatal 100-hour certification and 'Kundalini Fusion for the First Trimester' video: pregnancy-focused, left out as condition-adjacent."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "matthew-sockolov"
+  },
+  "videos": [
+    {
+      "title": "Mindfulness of Thoughts for Anxiety",
+      "url": "https://www.youtube.com/watch?v=Vr0jQQZSzBc",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "One Mind Dharma"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Vr0jQQZSzBc": 205
+    },
+    "left_out_notes": [
+      "Videos titled for anxiety or a racing mind (health rule)."
+    ]
+  },
+  "images_final": true
+}

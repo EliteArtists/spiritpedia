@@ -1,0 +1,68 @@
+{
+  "healer": {
+    "healer_slug": "rick-hanson"
+  },
+  "videos": [
+    {
+      "title": "How to Heal the Emotional Baggage You've Been Carrying with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=4PST1PITAPo",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "How to Heal What's Been Missing in Your Life with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=AFnhGo9s1Lw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "How to Use Anxiety - and Not Be Used by It! with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=Mgo4eu-E-V4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Letting Go of Old Baggage for a Better Future, with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=CSKjxwUoHDg",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Rick Hanson"
+    },
+    {
+      "title": "Why It’s So Hard to Set - and Keep - Healthy Boundaries with Rick Hanson",
+      "url": "https://www.youtube.com/watch?v=A0yBRwOR3FQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Rick Hanson"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "4PST1PITAPo": 8193,
+      "AFnhGo9s1Lw": 11110,
+      "Mgo4eu-E-V4": 7120,
+      "CSKjxwUoHDg": 6755,
+      "A0yBRwOR3FQ": 5042
+    },
+    "left_out_notes": [
+      "Videos on anxiety, 'healing emotional baggage', 'heal what's been missing', rumination, boundaries: condition or therapy framing."
+    ]
+  },
+  "images_final": true
+}

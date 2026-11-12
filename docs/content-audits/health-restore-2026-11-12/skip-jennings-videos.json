@@ -1,0 +1,77 @@
+{
+  "healer": {
+    "healer_slug": "skip-jennings"
+  },
+  "videos": [
+    {
+      "title": "Feeling Overwhelmed? Try This Simple Breathing Reset",
+      "url": "https://www.youtube.com/watch?v=VnyAwsRfSsA",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Skip Jennings"
+    },
+    {
+      "title": "Powerful Healing Affirmations | Restore Your Mind, Body & Spirit with Positive Energy",
+      "url": "https://www.youtube.com/watch?v=JyuL4mBmor8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Skip Jennings"
+    },
+    {
+      "title": "A Sacred Ceremony for Healing, Spirit & New Beginnings",
+      "url": "https://www.youtube.com/watch?v=JMl0VrLIyFg",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Skip Jennings"
+    },
+    {
+      "title": "Guided Body Scan Meditation to Release Stress and Reconnect with Your Body",
+      "url": "https://www.youtube.com/watch?v=JVr3cmOucnQ",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Skip Jennings"
+    },
+    {
+      "title": "From Trauma to Transformation: Why Spiritual Retreats in Bali Change Lives",
+      "url": "https://www.youtube.com/watch?v=rjNiN-w_YeA",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Skip Jennings"
+    },
+    {
+      "title": "Breathe to Heal: 4 Daily Breathing Practices",
+      "url": "https://www.youtube.com/watch?v=mh12XPOoDNw",
+      "subjects": [
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Skip Jennings"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "VnyAwsRfSsA": 1013,
+      "JyuL4mBmor8": 736,
+      "JMl0VrLIyFg": 706,
+      "JVr3cmOucnQ": 648,
+      "rjNiN-w_YeA": 339,
+      "mh12XPOoDNw": 92
+    },
+    "left_out_notes": [
+      "YouTube videos framed on stress, healing or trauma (Breathe to Heal, From Trauma to Transformation, Guided Body Scan to Release Stress, Powerful Healing Affirmations, Feeling Overwhelmed breathing reset) and a plant-based eating video."
+    ]
+  },
+  "images_final": true
+}

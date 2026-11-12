@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "rod-owens"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Resiliency Through Change and Grief with Lama Rod in Australia",
+      "url": "https://www.lamarod.com/australia",
+      "description": "Lama Rod Owens's first teaching visit to Australia, at the Abbotsford Convent in Melbourne: a weekend of meditation, breathwork, gentle movement, grief practice and teachings on Ma Tara, in person or by livestream. A separate gathering on the Friday is for First Nations people and people of colour.",
+      "price": "$345.00 AUD in person (virtual $242.00 AUD)",
+      "image": "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Medicine Buddha: A Weekly Gathering with Lama Rod",
+      "url": "https://www.lamarod.com/deity",
+      "description": "A free weekly Monday evening practice on Zoom in which Lama Rod Owens and fellow practitioners chant and visualise the Medicine Buddha. The page also links a recording archive, mantra instructions and an introductory practice text.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://yt3.googleusercontent.com/Sb6I7gfExlFuA3PrZBYlYY842zWGqZ9CFcRLctGmIzb2I1IdFaFdwtduV4og3rSuKcS9TWoM=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/rod-owens.json",
+    "left_out": [
+      "Basic Grief Practice (guided meditation): only an embedded player on lamarod.com/resources, which holds many items; no page of its own.",
+      "Chenrezig's Ring of Fire: left out originally for having no page of its own (not a health reason); lamarod.com/Chenrezig now exists but still shows a February 2025 date, so not restored."
+    ],
+    "flags": [
+      "Medicine Buddha gathering uses the deity-practices page (lamarod.com/deity), which also describes Chenrezig and Ma Tara; no other item uses that URL.",
+      "Resiliency weekend subject 'death-the-afterlife' chosen for its grief and ancestor practice; swap if a human prefers."
+    ]
+  }
+}

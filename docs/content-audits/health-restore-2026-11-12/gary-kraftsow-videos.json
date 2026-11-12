@@ -1,0 +1,67 @@
+{
+  "healer": {
+    "healer_slug": "gary-kraftsow"
+  },
+  "videos": [
+    {
+      "title": "A Breathing Practice for Relaxation",
+      "url": "https://www.youtube.com/watch?v=0D4KMrQhdts",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Yoga Therapy for Neck & Shoulders",
+      "url": "https://www.youtube.com/watch?v=lhlb8fSlm7o",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "American Viniyoga Institute"
+    },
+    {
+      "title": "Yoga Therapy for Anxiety",
+      "url": "https://www.youtube.com/watch?v=ayzuleVpe4c",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "American Viniyoga Institute"
+    },
+    {
+      "title": "Yoga Therapy For Better Sleep",
+      "url": "https://www.youtube.com/watch?v=5wCSxBmz5uA",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "American Viniyoga Institute"
+    },
+    {
+      "title": "Nikki Myers + Gary Kraftsow + Seane Corn - Healing Addiction:  A Yogic Perspective",
+      "url": "https://www.youtube.com/watch?v=pEaXLyGcYAw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "American Viniyoga Institute"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "0D4KMrQhdts": 8378,
+      "lhlb8fSlm7o": 9322,
+      "ayzuleVpe4c": 2709,
+      "5wCSxBmz5uA": 2121,
+      "pEaXLyGcYAw": 1044
+    },
+    "left_out_notes": [
+      "Videos: A Breathing Practice for Relaxation (oEmbed 401); Yoga Therapy for Neck & Shoulders, Yoga Therapy for Anxiety, Yoga Therapy For Better Sleep, Healing Addiction, Yoga Therapy for Depression PROMO (condition-named); short promos under ~2 minutes; programme info calls and a multi-teacher roundtable."
+    ]
+  }
+}

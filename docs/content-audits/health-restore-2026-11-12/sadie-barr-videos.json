@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "sadie-barr"
+  },
+  "videos": [
+    {
+      "title": "Straw Breathing for Fear & Anxiety",
+      "url": "https://www.youtube.com/watch?v=w-YQG856AMQ",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Sadie Barr"
+    },
+    {
+      "title": "Emotional constipation & how to get unstuck",
+      "url": "https://www.youtube.com/watch?v=EZS6tqDZA5g",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "channel": "Sadie Barr"
+    },
+    {
+      "title": "Programming Positivity",
+      "url": "https://www.youtube.com/watch?v=shptGEArVb4",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "channel": "Sadie Barr"
+    },
+    {
+      "title": "The Truth About Trauma Work",
+      "url": "https://www.youtube.com/watch?v=DG2h9UEkHeY",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "channel": "Sadie Barr"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "w-YQG856AMQ": 228,
+      "EZS6tqDZA5g": 102,
+      "shptGEArVb4": 103,
+      "DG2h9UEkHeY": 51
+    },
+    "left_out_notes": [
+      "YouTube: Straw Breathing (Calm Anxiety) and Straw Breathing for Fear & Anxiety (condition named); Emotional constipation & how to get unstuck (condition word in title); Programming Positivity (kept the list at 12)."
+    ]
+  },
+  "images_final": true
+}

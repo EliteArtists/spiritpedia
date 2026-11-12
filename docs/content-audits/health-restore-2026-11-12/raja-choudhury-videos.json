@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "raja-choudhury"
+  },
+  "videos": [
+    {
+      "title": "How The 10 MahaVidyas Help You Overcome Fear & Anxiety",
+      "url": "https://www.youtube.com/watch?v=H-VOeyaA9lQ",
+      "subjects": [
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "channel": "Just Shreem"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "H-VOeyaA9lQ": 34356
+    },
+    "left_out_notes": [
+      "'Master These 3 Tantric Energies to Heal Your Body Completely' (healing claim in title)."
+    ]
+  },
+  "images_final": true
+}

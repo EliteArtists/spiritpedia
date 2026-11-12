@@ -1,0 +1,62 @@
+{
+  "healer": {
+    "healer_slug": "jennifer-piercy"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing Darkness",
+      "url": "https://www.sacredsleepyoga.com/product/healing-darkness/",
+      "description": "A recorded rest practice that lets the eyes settle like the setting sun and welcomes the quiet of natural darkness into the whole body. A downloadable track from Jennifer's Sacred Sleep Yoga shop.",
+      "price": "$10.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.sacredsleepyoga.com/wp-content/uploads/2020/04/1500x1500-pixel1-600x600.jpg",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Melatonin Magic",
+      "url": "https://www.sacredsleepyoga.com/product/melatonin-magic/",
+      "description": "A bedtime visualisation with the night sky and the North Star, to be practised in low light before or in bed as a way into deep rest. A downloadable recording.",
+      "price": "$10.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.sacredsleepyoga.com/wp-content/uploads/2020/04/1500x1500-pixel1-600x600.jpg",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Bone Deep Sleep",
+      "url": "https://www.sacredsleepyoga.com/product/bone-deep-sleep/",
+      "description": "A short yoga nidra for sleep that moves breath awareness through the eyes, heart, belly and bones, setting aside outside demands. A downloadable recording.",
+      "price": "$10.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://www.sacredsleepyoga.com/wp-content/uploads/2020/04/1500x1500-pixel1-600x600.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jennifer-piercy.json",
+    "left_out": [],
+    "flags": [
+      "These three were noted as free in the batch, but they are $10.00 recordings in her shop, so they go in as offerings (downloads). Price shown as '$10.00' with no code on the pages (the original plan wrote USD).",
+      "Melatonin Magic says it helps 'nourish your own natural melatonin production'; a body-function line, no condition named, kept. Its description here leaves that out."
+    ]
+  }
+}

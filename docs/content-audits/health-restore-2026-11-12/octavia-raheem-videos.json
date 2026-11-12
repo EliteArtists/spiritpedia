@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "octavia-raheem"
+  },
+  "videos": [
+    {
+      "title": "REST PRACTICE with Octavia F. Raheem | Deep Release for Back Support & Stability",
+      "url": "https://www.youtube.com/watch?v=9Sl1p8WpFOo",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Devoted To Rest® with Octavia F. Raheem"
+    },
+    {
+      "title": "REST PRACTICE with Octavia F. Raheem | Guided Shoulder Release",
+      "url": "https://www.youtube.com/watch?v=K4WGI8Oul-4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Devoted To Rest® with Octavia F. Raheem"
+    },
+    {
+      "title": "REST PRACTICE with Octavia F. Raheem | Throat and Heart Chakra Healing",
+      "url": "https://www.youtube.com/watch?v=qxRvmwJFJeo",
+      "subjects": [
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Devoted To Rest® with Octavia F. Raheem"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "9Sl1p8WpFOo": 180,
+      "K4WGI8Oul-4": 74,
+      "qxRvmwJFJeo": 114
+    },
+    "left_out_notes": [
+      "Videos 'Deep Release for Back Support & Stability', 'Guided Shoulder Release' and 'Throat and Heart Chakra Healing': body-part or healing framing (strict health rule)."
+    ]
+  },
+  "images_final": true
+}

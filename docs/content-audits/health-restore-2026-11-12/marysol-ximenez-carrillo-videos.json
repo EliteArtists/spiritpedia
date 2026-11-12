@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "marysol-ximenez-carrillo"
+  },
+  "videos": [
+    {
+      "title": "Sound Healing for STRESS RELIEF & RELAXATION & INSOMNIA | Healing Music | Light Codes",
+      "url": "https://www.youtube.com/watch?v=AlBI6llqt48",
+      "subjects": [
+        "meditation",
+        "sound-healing",
+        "self-healing"
+      ],
+      "channel": "Marysol The Magical Sound of your Soul"
+    },
+    {
+      "title": "Sleep and Relaxation Meditation | 17 - Minute Meditation + Extended Music | Fall Asleep Easily",
+      "url": "https://www.youtube.com/watch?v=wjtfFehW6l8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Marysol The Magical Sound of your Soul"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "AlBI6llqt48": 917,
+      "wjtfFehW6l8": 597
+    },
+    "left_out_notes": [
+      "YouTube 'Sound Healing for STRESS RELIEF & RELAXATION & INSOMNIA' and 'Sleep and Relaxation Meditation ... Fall Asleep Easily': named for a condition or sleep problem."
+    ]
+  },
+  "images_final": true
+}

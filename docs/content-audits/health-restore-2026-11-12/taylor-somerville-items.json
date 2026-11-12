@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "taylor-somerville"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Breathing through Stress (on-demand class series)",
+      "url": "https://wwwsymmetrylive.vhx.tv/breathing-through-stress",
+      "description": "A series of recorded breathwork classes, mostly around twenty minutes each, from Symmetry's live sessions. Each pairs a guided breath session with simple techniques to use in daily life for meeting pressure more calmly.",
+      "price": "Included in the Symmetry Breathing On Demand subscription",
+      "image": "https://vhx.imgix.net/wwwsymmetrylive/assets/08397ff7-9e1a-4ef0-bf7d-bc29e05319f3.png?auto=format%2Ccompress&fit=crop&h=720&q=75&w=1280",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/taylor-somerville.json",
+    "left_out": [
+      "3 Stress Busting Tips webinar (mailchi.mp/a5b7835eb503/buststress): mailchi.mp's robots.txt disallows all crawlers, so not fetched.",
+      "Symmetry's Tools For Improved Sleep: named on symmetry.live/resources with no link of its own.",
+      "Stress Regulation course: no page of its own (the resources page sends it to /contact); corporate.",
+      "Stress assessment quiz (scoreapp): a quiz, not a practice or course."
+    ],
+    "flags": [
+      "Breathing through Stress is a collection inside the Symmetry Breathing On Demand subscription already on the listing; a human may consider it a near-duplicate.",
+      "mailchi.mp's robots.txt (User-agent: * Disallow: /) also covers the listing's two existing free resources (Five Pillars of Breath, Free Breath Awareness Session)."
+    ]
+  }
+}

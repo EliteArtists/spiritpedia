@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "linda-star-wolf"
+  },
+  "videos": [
+    {
+      "title": "Shamanic Conversations with Star Wolf; Soulful Recovery and Soul Return",
+      "url": "https://www.youtube.com/watch?v=G9sLf_5rVRY",
+      "subjects": [
+        "shamanism",
+        "breathwork"
+      ],
+      "channel": "Venus Rising Association for Transformation"
+    },
+    {
+      "title": "Shamanic Conversations with Star Wolf: Shakti Rising",
+      "url": "https://www.youtube.com/watch?v=W_MqnQBqdKQ",
+      "subjects": [
+        "shamanism",
+        "breathwork"
+      ],
+      "channel": "Venus Rising Association for Transformation"
+    },
+    {
+      "title": "Venus Rising Healing Arts Sanctuary",
+      "url": "https://www.youtube.com/watch?v=1DlRFnxEedI",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Venus Rising Association for Transformation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "G9sLf_5rVRY": 280,
+      "W_MqnQBqdKQ": 131,
+      "1DlRFnxEedI": 286
+    },
+    "left_out_notes": [
+      "Videos 'Shamanism & Soulful Recovery' and 'From Codependency To Co-Creation' left out (recovery/codependency framing); 'Shamanic Shakti Rising' (1HW6qUmLz5w) failed oEmbed (401)."
+    ]
+  }
+}

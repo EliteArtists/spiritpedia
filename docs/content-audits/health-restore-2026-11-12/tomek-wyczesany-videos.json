@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "tomek-wyczesany"
+  },
+  "videos": [
+    {
+      "title": "CLC - Stress and Anxiety Relief",
+      "url": "https://www.youtube.com/watch?v=WIoevZq1Gko",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Tomek Wyczesany, Ph.D."
+    },
+    {
+      "title": "CLC - Evening & Night Protocol for Better Sleep",
+      "url": "https://www.youtube.com/watch?v=8BWBQWFbTvU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tomek Wyczesany, Ph.D."
+    },
+    {
+      "title": "CLC - Grounding and Healing",
+      "url": "https://www.youtube.com/watch?v=YA4bezv6Uak",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Tomek Wyczesany, Ph.D."
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "WIoevZq1Gko": 304,
+      "8BWBQWFbTvU": 304,
+      "YA4bezv6Uak": 232
+    },
+    "left_out_notes": [
+      "YouTube 'CLC - Stress and Anxiety Relief', 'CLC - Evening & Night Protocol for Better Sleep' and 'CLC - Grounding and Healing' left out (condition or borderline health wording)."
+    ]
+  },
+  "images_final": true
+}

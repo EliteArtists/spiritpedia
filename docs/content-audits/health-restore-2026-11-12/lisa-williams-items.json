@@ -1,0 +1,80 @@
+{
+  "healer": {
+    "healer_slug": "lisa-williams"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Psychic Healing: 21 Days of Transformation and Growth",
+      "url": "https://thepsychicmediumtrainingacademy.com/psychic-healing--21-days-of-transformation-and-growth",
+      "description": "A three-lesson on-demand course from her training academy on intention, manifestation and setting goals that fit who you are. Lessons move from getting clear on what you want, to making a plan, to stepping into it, drawing on intuition and support from loved ones in spirit.",
+      "price": "$147.00",
+      "image": "https://assets.cdn.filesafe.space/zL5E4NUWlQH0qclbPhmO/media/6579e9ce0e46a825cc278608.jpeg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "Life Goes On: Grief, Forgiveness, and the Art of Letting Go",
+      "url": "https://thepsychicmediumtrainingacademy.com/grief-forgiveness-art-of-letting-go",
+      "description": "A 75-minute recorded workshop on moving through loss of every kind, from a loved one or a pet to a life that turned out differently. She talks about forgiving others, including those who have passed, and oneself, and about letting go of old regrets.",
+      "price": "$22.00",
+      "image": "https://assets.cdn.filesafe.space/zL5E4NUWlQH0qclbPhmO/media/654aa50ba7c5f40c9841088f.png",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Paws of Love: Pet Healing and Animal Communication",
+      "url": "https://thepsychicmediumtrainingacademy.com/paws-of-love",
+      "description": "A 75-minute recorded workshop on connecting with animals, sending loving energy to pets and reaching pets who have died. Part of the proceeds goes to a charity that pairs service dogs with veterans.",
+      "price": "$47.00",
+      "image": "https://assets.cdn.filesafe.space/zL5E4NUWlQH0qclbPhmO/media/654d02a581a583e2b2a148cb.png",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mediumship-spirits",
+        "energy-medicine"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Spiritual Toolkit",
+      "url": "https://lisawilliams.com/freegift",
+      "description": "A free set of guided meditations, breathing exercises, journaling prompts and simple energy practices, sent by email. It is meant for settling stress, balancing the chakras and strengthening intuition and the link with one's higher self.",
+      "image": "https://assets.cdn.filesafe.space/ZrHQdcr22HJ7WkqkAU7h/media/67bf3c732d5335c835952a40.png",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "chakra-healing",
+        "breathwork"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lisa-williams.json",
+    "left_out": [
+      "Life Among the Dead (book): its blurb on lisawilliams.com/books still lists 'Diagnosing disease' among her abilities, a medical claim; the only link is a Kindle ASIN (B00556TGIG).",
+      "Sacred Soul Mastery: no longer on the academy's courses page.",
+      "VASA Brain Coherence workshop ($97, with Barry): its Enroll link goes to vasa.lisawilliams.com rather than a page of its own; not checked further."
+    ],
+    "flags": [
+      "The earlier HEALTH flag on this listing still stands (About page: 'cancer clients achieve remarkable health breakthroughs'; a testimonial: 'no evidence of disease'). None of it is in these items.",
+      "Psychic Healing: 'healing' here is about intention and manifestation; the page mentions three live group calls but the course is sold on demand."
+    ]
+  }
+}

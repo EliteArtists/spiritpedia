@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "amy-robeson"
+  },
+  "videos": [
+    {
+      "title": "Ancestral Healing in the Akashic Records",
+      "url": "https://www.youtube.com/watch?v=91sJ9tonuwY",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Amy Robeson"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "91sJ9tonuwY": 2612
+    },
+    "left_out_notes": [
+      "Videos on sleep, the womb and dated monthly downloads (health rule / not evergreen)."
+    ]
+  },
+  "images_final": true
+}

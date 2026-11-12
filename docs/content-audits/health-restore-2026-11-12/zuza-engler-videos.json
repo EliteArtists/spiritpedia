@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "zuza-engler"
+  },
+  "videos": [
+    {
+      "title": "Invitation to \"Moving Out of Anxiety and Overwhelm\"",
+      "url": "https://www.youtube.com/watch?v=XvOOAzAzPm4",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Zuza Engler :: Moving with Life"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "XvOOAzAzPm4": 111
+    },
+    "left_out_notes": [
+      "Moving Out of Anxiety & Overwhelm masterclass and its YouTube invitation video: condition-named."
+    ]
+  },
+  "images_final": true
+}

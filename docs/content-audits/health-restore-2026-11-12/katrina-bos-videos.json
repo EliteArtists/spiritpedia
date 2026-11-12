@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "katrina-bos"
+  },
+  "videos": [
+    {
+      "title": "Kundalini Yoga Healing Meditation",
+      "url": "https://www.youtube.com/watch?v=6gO2rI1p6xA",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Katrina Bos"
+    },
+    {
+      "title": "Embrace Your Inner Goddess: A Chakra Healing Journey",
+      "url": "https://www.youtube.com/watch?v=J44nbkD-7lk",
+      "subjects": [
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Katrina Bos"
+    },
+    {
+      "title": "How to Heal Suppressed Feminine Energy: The Wounded Feminine",
+      "url": "https://www.youtube.com/watch?v=a7s2N5eqPHE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Katrina Bos"
+    },
+    {
+      "title": "Why Healing Yourself Is the Most Important Journey",
+      "url": "https://www.youtube.com/watch?v=4qa8F_7AB2w",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Katrina Bos"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "6gO2rI1p6xA": 412,
+      "J44nbkD-7lk": 21,
+      "a7s2N5eqPHE": 210,
+      "4qa8F_7AB2w": 638
+    },
+    "left_out_notes": [
+      "YouTube videos 'Kundalini Yoga Healing Meditation', 'Embrace Your Inner Goddess: A Chakra Healing Journey' and 'How to Heal Suppressed Feminine Energy' (healing framing, left out to be safe)."
+    ]
+  },
+  "images_final": true
+}

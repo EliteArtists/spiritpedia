@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "sherianna-boyle"
+  },
+  "videos": [
+    {
+      "title": "Tone Your Vagus Nerve",
+      "url": "https://www.youtube.com/watch?v=zEbCn9oqKIA",
+      "subjects": [
+        "manifestation",
+        "channelled-teachings"
+      ],
+      "channel": "Sherianna Boyle"
+    },
+    {
+      "title": "Navigating Overwhelm",
+      "url": "https://www.youtube.com/watch?v=wML5kL7Q2Yw",
+      "subjects": [
+        "manifestation",
+        "channelled-teachings"
+      ],
+      "channel": "Sherianna Boyle"
+    },
+    {
+      "title": "Thriving From Anxiety - Episode 1",
+      "url": "https://www.youtube.com/watch?v=dccM40wEl9w",
+      "subjects": [
+        "manifestation",
+        "channelled-teachings"
+      ],
+      "channel": "Sherianna Boyle"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "zEbCn9oqKIA": 79,
+      "wML5kL7Q2Yw": 15,
+      "dccM40wEl9w": 1422
+    },
+    "left_out_notes": [
+      "Videos 'Trauma', 'Tone Your Vagus Nerve', 'Navigating Overwhelm' and podcast episodes where she interviews guests (Mary Sise, Pooja Chilukuri, Bernadette Logue, Bradley Nelson, Matt Kahn, Mark Anthony); shorts under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

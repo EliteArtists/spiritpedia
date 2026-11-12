@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "shefali-tsabary"
+  },
+  "videos": [
+    {
+      "title": "How Do You Survive Grief and Find a Way Forward?",
+      "url": "https://www.youtube.com/watch?v=NjfkUF3rR0U",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Dr. Shefali"
+    },
+    {
+      "title": "The Pain Beneath Sibling Rivalry and Bullying",
+      "url": "https://www.youtube.com/watch?v=LyF_-9UCI4c",
+      "subjects": [
+        "conscious-relationships",
+        "spiritual-awakening"
+      ],
+      "channel": "Dr. Shefali"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "NjfkUF3rR0U": 1929,
+      "LyF_-9UCI4c": 1412
+    },
+    "left_out_notes": [
+      "Raising Conscious Daughters (book and $47 course): subtitle 'in an Anxious World' names a condition; left out as borderline.",
+      "How Do You Survive Grief and Find a Way Forward? (video): grief framing, borderline."
+    ]
+  },
+  "images_final": true
+}

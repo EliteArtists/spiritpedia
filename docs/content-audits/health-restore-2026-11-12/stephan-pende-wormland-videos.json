@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "stephan-pende-wormland"
+  },
+  "videos": [
+    {
+      "title": "Mindfulness and Kindness",
+      "url": "https://www.youtube.com/watch?v=HR5waKLee0U",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Stephan Pende Wormland"
+    },
+    {
+      "title": "Healing power of presence",
+      "url": "https://www.youtube.com/watch?v=brULuQx2GDc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Stephan Pende Wormland"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "HR5waKLee0U": 386,
+      "brULuQx2GDc": 210
+    },
+    "left_out_notes": [
+      "Professional Supervision (for therapists) and Lectures (themes include 'mindfulness in medicine and psychotherapy', 'burnout prophylaxis', and a 'Healing Power of Mind' transcript on visualisation healing the body): clinical or health framing."
+    ]
+  },
+  "images_final": true
+}

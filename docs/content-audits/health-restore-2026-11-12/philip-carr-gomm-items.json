@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "philip-carr-gomm"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tarot Therapy: How to Use the Tarot for Healing & Development",
+      "url": "https://philipcarr-gomm.teachable.com/p/tarot-therapy-training",
+      "description": "A self-paced online course taught with Steve Hounsome in seven lessons, each built around one of seven inner tarot mentors met through guided meditation. It uses the cards as a tool for reflection, personal growth and emotional healing, and comes with bonus material, a certificate and access to a monthly members' group on Zoom.",
+      "price": "£205",
+      "image": "https://uploads.teachablecdn.com/attachments/7072297d5bd44c32bf37f34682d728b5.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/philip-carr-gomm.json",
+    "left_out": [
+      "The Sleep Clinic (artoflivingwell.org.uk/p/the-sleep-clinic): the page's own description says it will 'cure insomnia', a cure claim for a medical condition under the new rule.",
+      "How to Stay Sane in an Insane World (£15, fees go to Doctors Without Borders): passes the new health rule, left out only because the listing already has 9 offerings and Tarot Therapy takes it to the 10 cap.",
+      "Trauma & Creativity (onlinevents.co.uk, with John Wilson): run by another organisation and the listing is at the 10-offering cap; not fetched.",
+      "Sacred Nature Healing Meditations: an audio album of four meditations with no ISBN on his page, so not a book."
+    ],
+    "flags": [
+      "Tarot Therapy's page also offers instalments (3 x £69 or 3 x $93) and a one-time $276 USD; the plan uses the UK one-time price as shown (£205)."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "glorify"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Prayers for Anxiety to Soothe Your Soul",
+      "url": "https://www.glorify.global/app/blog/prayers-for-anxiety-to-soothe-your-soul",
+      "description": "A free blog guide to praying through worry, drawing on Bible passages such as Matthew 6:34 on staying with today, followed by three short prayers built on well-known scriptures.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.glorify.global/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fktl0y5fs%2Fproduction%2Fbc0ec7b51351335b895f9fc0a37bb2e705c62fbb-2560x1707.jpg&w=3840&q=75&dpl=dpl_Bb1Tdc1dmxsPaY42nfBmmeSJU9Ku"
+    },
+    {
+      "title": "Prayers For Peaceful Sleep",
+      "url": "https://www.glorify.global/app/blog/prayers-for-peaceful-sleep",
+      "description": "Three free bedtime prayers, each resting on a verse (Matthew 7:7, Psalm 3:5, Matthew 11:28), for ending the day in gratitude and handing its weight over to God before sleep.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.glorify.global/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fktl0y5fs%2Fproduction%2F41166521c31c1f32556951e90936f266ca6e50c5-2560x1448.jpg&w=3840&q=75&dpl=dpl_Bb1Tdc1dmxsPaY42nfBmmeSJU9Ku"
+    },
+    {
+      "title": "4 Prayers For Anger Management And Peace",
+      "url": "https://www.glorify.global/app/blog/4-prayers-for-anger-management-and-peace",
+      "description": "Four free Christian prayers for different kinds of anger, from frustration at things outside your control to resentment towards others, with a closing prayer on righteous anger.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.glorify.global/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fktl0y5fs%2Fproduction%2F9eb131df58520dda7ae6d8ad400e82a9b1ec0c51-2560x1922.jpg&w=3840&q=75&dpl=dpl_Bb1Tdc1dmxsPaY42nfBmmeSJU9Ku"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/glorify.json",
+    "left_out": [
+      "Other sleep and anxiety posts (e.g. 'Hopeful Bible Verses for Depression and Anxiety', 'Anxiety in Teens', sleep-tip and insomnia articles): not added; three prayer posts chosen to keep free resources at 5, and the tip articles are general advice rather than practice."
+    ],
+    "flags": []
+  }
+}

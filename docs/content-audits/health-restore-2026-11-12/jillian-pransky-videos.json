@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "jillian-pransky"
+  },
+  "videos": [
+    {
+      "title": "REDUCE STRESS & ANXIETY: A RELAXING & RESTORATIVE YOGA PRACTICE WITH JILLIAN PRANSKY",
+      "url": "https://www.youtube.com/watch?v=znJk_2FGG3I",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Jillian Pransky | Yoga · Meditation · Relaxation"
+    },
+    {
+      "title": "GENTLE YOGA TO NOURISH YOUR PSOAS AND SUPPORT DIGESTION WITH JILLIAN PRANSKY",
+      "url": "https://www.youtube.com/watch?v=0U4comK46Ns",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jillian Pransky | Yoga · Meditation · Relaxation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "znJk_2FGG3I": 980,
+      "0U4comK46Ns": 767
+    },
+    "left_out_notes": [
+      "YouTube videos naming conditions or body systems (e.g. 'REDUCE STRESS & ANXIETY', 'NOURISH YOUR PSOAS AND SUPPORT DIGESTION', '90-second nervous system practice'), Shorts and clips under 2 minutes, and the election-season meditation (topical)"
+    ]
+  }
+}

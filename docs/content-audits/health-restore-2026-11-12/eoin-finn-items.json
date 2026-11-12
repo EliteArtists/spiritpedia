@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "eoin-finn"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The 10-Day Lower Back and Hamstring Challenge",
+      "url": "https://blissology.com/the-10-day-lower-back-and-hamstring-challenge/",
+      "description": "A free ten-day online challenge built on three one-minute holds of the standing forward fold each day, streamed inside Blissology On Demand with a daily email and a group to practise alongside. Eoin pairs it with the stretching science from his book Yoga Optimized.",
+      "price": "Free",
+      "product_type": "course",
+      "start_date": "2027-01-04",
+      "end_date": "2027-01-13",
+      "image": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/eoin-finn.json",
+    "left_out": [
+      "'Yoga and Mind-Body Medicine' 500-hour module (blissology.com/teacher-training/500hour/yogaandmindbodymedicine/): no current run, the page says 'Inquire for the next training' and its last dated runs (Bali Dec 2024, Victoria 2025) have passed. Its framing (becoming 'a true healer', integrative medicine) is also borderline.",
+      "'The Art of Longevity: The Most Overlooked Biohack' blog post: an article, not an offering or free resource; the video is handled separately."
+    ],
+    "flags": [
+      "The challenge is free and dated, so it is entered as a dated offering with price 'Free' (free resources carry no dates). The page gives 'January 4-13, 2027' at the top but still says 'Starting October 19' further down (left over from an earlier round); dates taken from the headline and 'We begin on January 4, 2027'.",
+      "The challenge leans towards flexibility and fitness (hamstrings, sports science) rather than spiritual teaching; a human may prefer to leave it out.",
+      "Dry run: the ingest's own fetch of blissology.com fails (robots.txt 'unreachable', socket closed) though curl reads the site, so the offering image is set to null and the dry run also reports the healer's existing photos as unusable ('no usable profile photo'). Nothing was retried; a human may want to check his photos on live before inserting."
+    ]
+  }
+}

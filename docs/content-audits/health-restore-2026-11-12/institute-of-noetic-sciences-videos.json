@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "institute-of-noetic-sciences"
+  },
+  "videos": [
+    {
+      "title": "ConnectIONS Live: Biofield Therapy & Energy Healing",
+      "url": "https://www.youtube.com/watch?v=vjLbrkhhxd0",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Institute of Noetic Sciences"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "vjLbrkhhxd0": 4189
+    },
+    "left_out_notes": [
+      "ConnectIONS Live: Biofield Therapy & Energy Healing video, Spontaneous Remission Bibliography: health framing."
+    ]
+  },
+  "images_final": true
+}

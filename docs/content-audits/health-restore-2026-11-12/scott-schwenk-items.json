@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "scott-schwenk"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Abundant Joy",
+      "url": "https://www.onecommune.com/abundant-joy-with-scott-schwenk",
+      "description": "A seven-day course on Commune that moves through the body's seven energy centres with breathwork, mantra, affirmation and meditation. Each day has a talk, a breath pattern and a long breathwork session, with the aim of loosening habits of scarcity and worry.",
+      "price": "$199",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lWWXRqE7vh_aOWuLBBsQAEjHbcD7iF7-TQL1U_ByOF5jU=s900",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "chakra-healing",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Living from the Heart",
+      "url": "https://www.onecommune.com/living-from-the-heart-with-scott-schwenk",
+      "description": "A ten-day meditation course on Commune for all levels, built around twenty-minute daily sits that centre attention in what he calls the Deep Heart. Days cover mantra, compassion, self-acceptance and healing, with longer optional practices.",
+      "price": "$199",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_lWWXRqE7vh_aOWuLBBsQAEjHbcD7iF7-TQL1U_ByOF5jU=s900",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/scott-schwenk.json",
+    "left_out": [
+      "Waking Up in Love, the Somatic Healing workshops, Healing Your Lineage, Summer Soma Sessions and Resetting the Nervous System: all on scottschwenk.com, whose robots.txt now gives ClaudeBot and anthropic-ai 'Disallow: /', so the site was skipped and none could be checked.",
+      "Commune 'Ecstatic Breathwork': still out (its page claims to reduce inflammation and boost immunity); not re-fetched."
+    ],
+    "flags": [
+      "scottschwenk.com's robots.txt names ClaudeBot and anthropic-ai with 'Disallow: /' (Claude-User is allowed). Under README §18.4 that blocks the whole site; the listing's existing offerings all point there and may need a human look.",
+      "Living from the Heart lists the general benefits of meditation (stress, anxiety, sleep, pain) and has a day on physical healing; no disease claim."
+    ]
+  }
+}

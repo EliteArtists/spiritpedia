@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "justin-michael-williams"
+  },
+  "videos": [
+    {
+      "title": "How to Break Your Phone Addiction | Digital Detox w/ Justin Michael Williams",
+      "url": "https://www.youtube.com/watch?v=4_pRrwI7Fyw",
+      "subjects": [
+        "meditation",
+        "shadow-work"
+      ],
+      "channel": "Justin Michael Williams"
+    },
+    {
+      "title": "How to Do Somatic Healing | Inspiration Session with Justin Michael Williams & Wendy Haines",
+      "url": "https://www.youtube.com/watch?v=9nEY2842i2A",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Justin Michael Williams"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "4_pRrwI7Fyw": 354,
+      "9nEY2842i2A": 615
+    },
+    "left_out_notes": [
+      "YouTube 'How to Break Your Phone Addiction' (addiction framing) and 'How to Do Somatic Healing' (borderline healing claim)."
+    ]
+  },
+  "images_final": true
+}

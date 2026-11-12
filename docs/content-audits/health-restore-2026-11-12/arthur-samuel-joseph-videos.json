@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "arthur-samuel-joseph"
+  },
+  "videos": [
+    {
+      "title": "The Jeff Emig Story - Conquering Stuttering with Vocal Awareness",
+      "url": "https://www.youtube.com/watch?v=Hxt-thu3TIU",
+      "subjects": [
+        "life-coaching",
+        "breathwork"
+      ],
+      "channel": "VocalAwareness"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Hxt-thu3TIU": 11973
+    },
+    "left_out_notes": [
+      "Video 'The Jeff Emig Story - Conquering Stuttering with Vocal Awareness': condition-named."
+    ]
+  }
+}

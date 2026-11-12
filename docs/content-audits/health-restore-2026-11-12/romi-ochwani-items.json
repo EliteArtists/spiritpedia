@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "romi-ochwani"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditate on Self: Heal, Empower & Awaken Within",
+      "url": "https://www.byconsciousness.com/challenge-page/1dffa611-283f-4b08-b19e-79c8148b8c03",
+      "description": "A self-paced programme in seven steps from Romi Ochwani combining meditation, breathwork, energy awareness and journaling. It is aimed at beginners and experienced meditators who want a steady daily practice and a clearer sense of themselves.",
+      "price": "$25.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "self-healing"
+      ],
+      "image": "https://yt3.googleusercontent.com/Yvz7SL7kNE28Ce7QpMhVxAlQhzmIHwPyXWQSzCQGLKMALTXAekYvHK-gzWpyR5aCOzuQhMDRyw=s900"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "After Trauma: A Three-Part Educational Series on Healing",
+      "url": "https://www.byconsciousness.com/challenge-page/051c0e19-2aa8-4642-a721-74a3f66b9317",
+      "description": "A free three-part interview series in which Romi Ochwani talks with a psychologist about what trauma is, how it shows up in the body and in reactive patterns, and how a sense of safety supports recovery. It is offered as education, not as care.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "self-healing",
+        "consciousness"
+      ],
+      "image": "https://yt3.googleusercontent.com/Yvz7SL7kNE28Ce7QpMhVxAlQhzmIHwPyXWQSzCQGLKMALTXAekYvHK-gzWpyR5aCOzuQhMDRyw=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/romi-ochwani.json",
+    "left_out": [
+      "Insight Timer course 'Awaken To Your True Self: A Journey Of Healing And Self-Discovery' and the Portuguese gratitude/forgiveness course: Insight Timer is never fetched, so not verified."
+    ],
+    "flags": [
+      "After Trauma is an educational interview with a psychologist (Marina) and says it is not a substitute for mental health care; kept as education, but a human may see it as therapy-adjacent."
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "jaime-tan"
+  },
+  "videos": [
+    {
+      "title": "3 Breath Techniques to REDUCE STRESS + ANXIETY",
+      "url": "https://www.youtube.com/watch?v=izkfYu-2p2E",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "A Moment Of Ease For Your Anxiety - Ocean Of Relaxation Meditation",
+      "url": "https://www.youtube.com/watch?v=thtxMPuinbw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    },
+    {
+      "title": "Yoga Nidra for Inner Peace and Healing",
+      "url": "https://www.youtube.com/watch?v=d1pfrlFplVA",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Jaime Tan - Enlightened Spoon"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "izkfYu-2p2E": 1582,
+      "thtxMPuinbw": 269,
+      "d1pfrlFplVA": 878
+    },
+    "left_out_notes": [
+      "Videos and free download titled for anxiety or sleep problems ('3 Breath Techniques to REDUCE STRESS + ANXIETY', 'A Moment Of Ease For Your Anxiety', 'Not sleeping so well?' sleep meditation sign-up) and 'Yoga Nidra for Inner Peace and Healing' (borderline)."
+    ]
+  },
+  "images_final": true
+}

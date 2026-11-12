@@ -306,11 +306,15 @@ const healerJob = (async () => {
     return;
   }
   if (!create) {
-    // An existing healer: drop photos that are unusable (a Google thumbnail,
-    // a dead link, too small); find one if none is left.
+    // An existing healer: drop photos that are certainly unusable (a Google
+    // thumbnail, a 404 or 410, not an image, too small); find one if none is
+    // left. A photo we can't check (robots.txt, an off-limits host, a refusal
+    // or no answer) stays: visitors' browsers load it (owner, 12 Nov 2026,
+    // the audit's can't-tell rule; a top-up plan once dropped 73 such lists).
     const current = healer?.image_urls || [];
     const good = [];
-    for (const u of current) if ((await probeImage(u)).ok) good.push(u);
+    const dead = (p) => /^(Google thumbnail|HTTP 404|HTTP 410|not an image|too small)/.test(p.why || '');
+    for (const u of current) { const p = await probeImage(u); if (p.ok || !dead(p)) good.push(u); }
     if (good.length === 0) {
       const found = (healer?.youtube_url && await pageImage(healer.youtube_url, { shareOnly: true }))
         || (healer?.website_url && await pageImage(healer.website_url, { shareOnly: true }));

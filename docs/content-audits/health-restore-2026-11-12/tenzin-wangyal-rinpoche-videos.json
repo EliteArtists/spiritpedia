@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "tenzin-wangyal-rinpoche"
+  },
+  "videos": [
+    {
+      "title": "The Pain of Expectation",
+      "url": "https://www.youtube.com/watch?v=tJSGgbjAjgQ",
+      "subjects": [
+        "meditation",
+        "dreamwork"
+      ],
+      "channel": "Ligmincha International"
+    },
+    {
+      "title": "All Is Good — every moment, no matter how painful, can be our teacher",
+      "url": "https://www.youtube.com/watch?v=COyypbkVKLs",
+      "subjects": [
+        "meditation",
+        "dreamwork"
+      ],
+      "channel": "Ligmincha International"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "tJSGgbjAjgQ": 5032,
+      "COyypbkVKLs": 33900
+    },
+    "left_out_notes": [
+      "Turning Pain Into the Path (YouTube, 92K views): 'pain' in the title (health rule).",
+      "Guided Healing Meditation (YouTube): borderline healing framing, left out."
+    ]
+  },
+  "images_final": true
+}

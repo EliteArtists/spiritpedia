@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "keith-parker"
+  },
+  "videos": [
+    {
+      "title": "How Astrology Reveals the Soul’s Path & Deeper Purpose | Steven Forrest",
+      "url": "https://www.youtube.com/watch?v=0N1zp5WZ55s",
+      "subjects": [
+        "energy-medicine",
+        "consciousness"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "How Sound Healing Rewires the Brain & Expands Consciousness | Tom Kenyon",
+      "url": "https://www.youtube.com/watch?v=Fj4m3Acdy8k",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "channel": "FIELD DYNAMICS"
+    },
+    {
+      "title": "Active Dreaming: How to Work with Dreams for Healing & Guidance | Robert Moss",
+      "url": "https://www.youtube.com/watch?v=XxP-kavPBYM",
+      "subjects": [
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Maya Medicine & Womb Healing | Rosita Arvigo on Abdominal Massage & Ancestral Wisdom",
+      "url": "https://www.youtube.com/watch?v=RVcsaz1hUqs",
+      "subjects": [
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "0N1zp5WZ55s": 5238,
+      "Fj4m3Acdy8k": 5081,
+      "XxP-kavPBYM": 1433,
+      "OKpCoZFSm_I": 1377,
+      "RVcsaz1hUqs": 927
+    },
+    "left_out_notes": [
+      "YouTube episodes led by guests or on health topics (mental health, fermentation and gut health, red light therapy, sleep science, distance healing)."
+    ]
+  },
+  "images_final": true
+}

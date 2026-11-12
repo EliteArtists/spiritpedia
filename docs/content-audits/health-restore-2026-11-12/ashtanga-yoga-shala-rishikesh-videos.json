@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "ashtanga-yoga-shala-rishikesh"
+  },
+  "videos": [
+    {
+      "title": "Humming Bee Breath || Bhramari Pranayama || Yoga for Stress, Anxiety, Insomnia || Yoga For Calm Mind",
+      "url": "https://www.youtube.com/watch?v=Xjt0CUNMIg4",
+      "subjects": [
+        "breathwork",
+        "yoga"
+      ],
+      "channel": "Ashtanga Yoga Shala Rishikesh"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Xjt0CUNMIg4": 158
+    },
+    "left_out_notes": [
+      "YouTube video on Bhramari pranayama titled for stress, anxiety and insomnia: health rule."
+    ]
+  },
+  "images_final": true
+}

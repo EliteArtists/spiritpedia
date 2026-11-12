@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "charlie-morley"
+  },
+  "videos": [
+    {
+      "title": "Healing While You Sleep: The Awesome Power of Lucid Dreaming with Charlie Morley",
+      "url": "https://www.youtube.com/watch?v=2We9dJUdpnw",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Charlie Morley - Lucid Dreaming Teacher"
+    },
+    {
+      "title": "Sleep Paralysis: The Science",
+      "url": "https://www.youtube.com/watch?v=Hw7NFoKOIu4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Charlie Morley - Lucid Dreaming Teacher"
+    },
+    {
+      "title": "What is Mindfulness of Dream & Sleep?",
+      "url": "https://www.youtube.com/watch?v=SuDISllu6VI",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Charlie Morley - Lucid Dreaming Teacher"
+    },
+    {
+      "title": "Lucid dream Healing",
+      "url": "https://www.youtube.com/watch?v=EuTZPJP8UuU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Charlie Morley - Lucid Dreaming Teacher"
+    },
+    {
+      "title": "Dr. David Hamilton's Lucid Dream Healing",
+      "url": "https://www.youtube.com/watch?v=02fNwh_tFgA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Charlie Morley - Lucid Dreaming Teacher"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "2We9dJUdpnw": 8114,
+      "Hw7NFoKOIu4": 103391,
+      "SuDISllu6VI": 8120,
+      "EuTZPJP8UuU": 5230,
+      "02fNwh_tFgA": 2053
+    },
+    "left_out_notes": [
+      "Wake Up to Sleep (book) and the Transforming Trauma-Affected Sleep workshop (6 Dec 2026, College of Psychic Studies): framed around trauma, stress-affected sleep and anxiety.",
+      "Videos about PTSD, depression, trauma, nightmares or 'healing while you sleep' (including the TEDxSanDiego talk 'Embracing Nightmares' and 'Healing While You Sleep'); promo and under-2-minute clips."
+    ]
+  },
+  "images_final": true
+}

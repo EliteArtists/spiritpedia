@@ -1,0 +1,100 @@
+{
+  "healer": {
+    "healer_slug": "sherianna-boyle"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Emotional Detox: 7 Steps to Release Toxicity and Energize Joy",
+      "slug": "emotional-detox",
+      "author": "Sherianna Boyle",
+      "asin": "1507207182",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "The first book of her series, setting out the seven steps of her Cleanse Method for meeting difficult feelings in the body instead of thinking them over. It explains what an emotional cleanse is and how to practise one in daily life. Editions exist in Chinese, Turkish and German.",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1507207182.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Emotional Detox for Anxiety: 7 Steps to Release Toxicity and Energize Joy",
+      "slug": "emotional-detox-for-anxiety",
+      "author": "Sherianna Boyle",
+      "asin": "1507212100",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A follow-up that applies the seven-step Cleanse Method to anxious feelings, seeing anxiety as emotion that has not yet been allowed to move through. Short practices help readers let go of negative patterns and make room for calmer habits.",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1507212100.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Four Gifts of Anxiety: Embrace the Power of Your Anxiety and Transform Your Life",
+      "slug": "the-four-gifts-of-anxiety",
+      "author": "Sherianna Boyle",
+      "asin": "1440582947",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book of exercises and meditations that reframes anxious feelings as carrying four strengths: resilience, hope, empathy and purpose. Readers learn to turn worry into a prompt for growth and steadier self-trust.",
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1440582947.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Moon Detox Events",
+      "url": "https://www.sheriannaboyle.com/moondetox",
+      "description": "Four two-hour live Zoom gatherings a year, one per season, that pair a guided emotional cleanse led by Sherianna with seasonal and birth-chart astrology from her co-host Carmen. Each session closes with intention-setting and manifestation practices, and a week of replay access is included.",
+      "price": "$77 per event",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "astrology",
+        "manifestation",
+        "self-healing"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2026-10/Sherianna%20Boyle.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "7 Simple Questions to Help You Release Anxiety and Increase Joy",
+      "url": "https://www.sheriannaboyle.com/releaseanxiety",
+      "description": "A free downloadable guide of seven short questions for moving out of anxious, stuck or overwhelmed feelings towards a calmer sense of freedom. It is given in exchange for an email address.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2026-10/Sherianna%20Boyle.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sherianna-boyle.json",
+    "left_out": [
+      "The Conscious Parent's Guide to Childhood Anxiety and The Everything Parent's Guide to Overcoming Childhood Anxiety: parenting guides for children diagnosed with anxiety ('with proper care and treatment... overcome paralyzing anxiety'); clinical treatment framing, and not spiritual teaching.",
+      "Emotional Detox Podcast: mostly interviews with guests, so not her own teaching (scope, not health).",
+      "'Reduce Triggers - Emotional Detox Tips' and 'Which Emotional Detox Book Do I Start With?': no page found on her site (likely videos or the /quiz page, which is only a results menu); videos are handled separately.",
+      "Emotional Detox Now and the Emotional Detox Deck: left out originally for reasons other than health; not part of this restore."
+    ],
+    "flags": [
+      "Books: ASINs are the amazon.com links on her own book pages (sheriannaboyle.com/emotionaldetox, /detoxanxiety, /fourgifts); not confirmed elsewhere. The Emotional Detox for Anxiety ASIN matches the ISBN-13 9781507212103 on the same page.",
+      "Emotional Detox for Anxiety: subtitle as on her own book page (sheriannaboyle.com/detoxanxiety).",
+      "Moon Detox: next dates 3 Jan, 4 Apr, 1 Aug and 7 Nov 2027; listed undated as a repeating seasonal series. Co-led with an astrologer named only as Carmen."
+    ]
+  }
+}

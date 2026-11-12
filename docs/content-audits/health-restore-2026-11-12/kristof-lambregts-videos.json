@@ -1,0 +1,92 @@
+{
+  "healer": {
+    "healer_slug": "kristof-lambregts"
+  },
+  "videos": [
+    {
+      "title": "Deep Sleep Sound Bath – Tibetan Bowls & Rain for Inner Calm",
+      "url": "https://www.youtube.com/watch?v=DSPd_uR_BBM",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Live Sound Healing For Deep Relaxation And Stress Relief",
+      "url": "https://www.youtube.com/watch?v=DVxcJKc1eZc",
+      "subjects": [
+        "meditation",
+        "sound-healing",
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Vagus Nerve Stimulating Soundhealing - Tibetan bowls - Koshi Chimes - Ocean waves",
+      "url": "https://www.youtube.com/watch?v=s7L-ejq_UHc",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Nervous System Regulation | Singing Bowls for Deep Relaxation",
+      "url": "https://www.youtube.com/watch?v=ppfpFshf1-U",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Akshara Soundhealing"
+    },
+    {
+      "title": "Sound Healing",
+      "url": "https://www.youtube.com/watch?v=kkZuudMKXdA",
+      "subjects": [
+        "sound-healing",
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Are Your Chakras Out of Balance? | 7 Chakra Sound Healing Session",
+      "url": "https://www.youtube.com/watch?v=_XK4uMzp9tA",
+      "subjects": [
+        "sound-healing",
+        "chakra-healing",
+        "self-healing"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Gentle Yoga to Ease Tension",
+      "url": "https://www.youtube.com/watch?v=_V8HP9t4-CU",
+      "subjects": [
+        "yoga"
+      ],
+      "skip": "unavailable on YouTube"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "DSPd_uR_BBM": 1865,
+      "DVxcJKc1eZc": 543,
+      "s7L-ejq_UHc": 2691,
+      "ppfpFshf1-U": 158,
+      "kkZuudMKXdA": 102,
+      "_XK4uMzp9tA": 252,
+      "_V8HP9t4-CU": 43
+    },
+    "left_out_notes": [
+      "YouTube: Deep Sleep Sound Bath, Stress Relief, Vagus nerve, Nervous System Regulation, Grief and Healing & Recovery titles (condition or borderline framing); Sound Healing Explained, the 7 Chakra session, Gentle Yoga and others fail oEmbed (embedding disabled)."
+    ]
+  },
+  "images_final": true
+}

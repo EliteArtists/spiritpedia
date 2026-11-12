@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "frits-evelein"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Je zelfgenezend vermogen versterken",
+      "url": "https://fritsevelein.com/courses/je-zelfgenezend-vermogen-versterken/",
+      "description": "A Dutch-language online course by Frits Evelein in which each lesson pairs a short talk with his music and a guided visualisation. It works on feeling at home and connected in the body through the link between the Higher Self and the body's own capacity for balance.",
+      "price": "€33.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    },
+    {
+      "title": "M42 Self-healing and Self-Sustainebility",
+      "url": "https://fritsevelein.com/product/m42-self-healing-and-self-sustainebility/",
+      "description": "An album of thirteen tracks of Frits Evelein's Music from Source with a guided sequence of light visualisations through the body, from creating a sacred space to quiet integration. It is offered as energetic support for the body's natural balance.",
+      "price": "€20,00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "self-healing",
+        "meditation"
+      ],
+      "image": "https://fritsevelein.com/wp-content/uploads/2021/07/Dia2-.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/frits-evelein.json",
+    "left_out": [
+      "Energizing Your Self-Sustaining & Self-Healing Abilities (fritsevelein.com/courses/selfhealing/): the page says 'This course is currently closed'; not current. (A student review on it also credits a similar method with healing an autoimmune disease.)",
+      "Insight Timer tracks titled for anxiety or self-healing: Insight Timer is never fetched, so not verified."
+    ],
+    "flags": [
+      "Both restored items speak of activating the body's self-healing ability and 'Divine DNA' with energy and sound; no disease is named and no cure is claimed, so kept as energy and sound healing under the new rule. The M42 Dutch twin (product/m42-zelf-genezend-en-zelf-herstellend-vermogen/) was not added to avoid a duplicate.",
+      "Product title spelling 'Self-Sustainebility' is copied as published."
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "mahip-rathore"
+  },
+  "videos": [
+    {
+      "title": "Nonduality Meditation if you struggle with Attention",
+      "url": "https://www.youtube.com/watch?v=y-D8575H_Qo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Mahip Rathore (MindfulnessWithMahip)"
+    },
+    {
+      "title": "8 Minutes Mindfulness exercise to unwind after a stressful day",
+      "url": "https://www.youtube.com/watch?v=gFCyfBoUYmQ",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Mahip Rathore (MindfulnessWithMahip)"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "y-D8575H_Qo": 35,
+      "gFCyfBoUYmQ": 9
+    },
+    "left_out_notes": [
+      "'Nonduality Meditation if you struggle with Attention' and '8 Minutes Mindfulness exercise to unwind after a stressful day': borderline condition framing, left out."
+    ]
+  },
+  "images_final": true
+}

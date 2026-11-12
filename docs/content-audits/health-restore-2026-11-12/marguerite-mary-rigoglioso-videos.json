@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "marguerite-mary-rigoglioso"
+  },
+  "videos": [
+    {
+      "title": "Feeling More Anxious Lately? Helpful Insights",
+      "url": "https://www.youtube.com/watch?v=HhIXWP7v_Po",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Marguerite Rigoglioso"
+    },
+    {
+      "title": "Do You Fear Abandonment? with Marguerite, Rigoglioso, Ph.D.",
+      "url": "https://www.youtube.com/watch?v=PbeIKQwSmdQ",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "channel": "Marguerite Rigoglioso"
+    },
+    {
+      "title": "The Marys Are Here: Star Wisdom & Sacred Healing with Marguerite & Laura Eisenhower",
+      "url": "https://www.youtube.com/watch?v=rckFys_tr9k",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Marguerite Rigoglioso"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "HhIXWP7v_Po": 419,
+      "PbeIKQwSmdQ": 482,
+      "rckFys_tr9k": 4012
+    },
+    "left_out_notes": [
+      "Video 'The 5 Things You Need to Be Immune to the Negative Energies Sweeping the Earth': 'immune' in the title, left out under the strict rule.",
+      "Video 'Feeling More Anxious Lately?' and 'Do You Fear Abandonment?': condition/emotional-health wording, left out under the strict rule."
+    ]
+  },
+  "images_final": true
+}

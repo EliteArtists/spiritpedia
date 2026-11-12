@@ -2676,9 +2676,10 @@ node scripts/ingest.mjs <plan.json> --env dev --rollback    # delete exactly wha
     face), else their official site's share image.
   - **Videos:** no image (YouTube supplies the thumbnail); each is confirmed
     still on YouTube (oEmbed), and one that isn't is left out.
-  - **An existing healer's photos:** unusable ones (Google thumbnails, dead
-    links, too small) are dropped; if none is left, one is found as for a
-    new healer.
+  - **An existing healer's photos:** certainly unusable ones (Google
+    thumbnails, 404 or 410, not an image, too small) are dropped; one it
+    can't check (robots.txt, an off-limits host, a refusal or no answer)
+    stays (12 Nov 2026); if none is left, one is found as for a new healer.
 - **Amazon:** never fetched. Each ISBN-10 ASIN is checked on Open Library
   (`openlibrary.org/isbn/<isbn>.json`): not found there is unsolved, any
   other failure and every Kindle `B0…` ASIN is listed for a human to confirm.

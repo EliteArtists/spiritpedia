@@ -1,0 +1,48 @@
+{
+  "healer": {
+    "healer_slug": "barry-goldstein"
+  },
+  "videos": [
+    {
+      "title": "Music for Stress and Anxiety Relief 24/7-  A Musical Journey To Cosmic Consciousness",
+      "url": "https://www.youtube.com/watch?v=c5hSwGbhzIA",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Barry Goldstein - The Sound of Relaxation"
+    },
+    {
+      "title": "The Most Relaxing  Music: Ambiology: A Musical and Visual Journey to Deep Relaxation",
+      "url": "https://www.youtube.com/watch?v=iQMTH66y60E",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Barry Goldstein - The Sound of Relaxation"
+    },
+    {
+      "title": "Music For Sleep- Ambiology 6:Genesis (listen for 10 Minutes to Wind Down",
+      "url": "https://www.youtube.com/watch?v=qRt1hbRKw8U",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Barry Goldstein - The Sound of Relaxation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "c5hSwGbhzIA": 59260,
+      "iQMTH66y60E": 45421,
+      "qRt1hbRKw8U": 35892
+    },
+    "left_out_notes": [
+      "Interviews titled 'How Sound HEALS Your Body', 'Heal Your Soul' and 'From Rock Producer to Healing Music' (health-claim framing)."
+    ]
+  }
+}

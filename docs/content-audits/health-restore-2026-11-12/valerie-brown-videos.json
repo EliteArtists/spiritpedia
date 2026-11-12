@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "valerie-brown"
+  },
+  "videos": [
+    {
+      "title": "Healing Distress for Black, Indigenous, and People of Color and for Us All - Live Stream Recording",
+      "url": "https://www.youtube.com/watch?v=b9_5VQlyCrA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Valerie Brown, JD, MA, PCC"
+    },
+    {
+      "title": "Mental Health & Well-Being Global Summit. Valerie Brown — MHS 24 Upgrade",
+      "url": "https://www.youtube.com/watch?v=ff_0pSVPDx4",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Valerie Brown, JD, MA, PCC"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "b9_5VQlyCrA": 86,
+      "ff_0pSVPDx4": 70
+    },
+    "left_out_notes": [
+      "Videos with condition-led titles (Mental Health & Well-Being Global Summit) and a film trailer; event-recording titles kept as published."
+    ]
+  },
+  "images_final": true
+}

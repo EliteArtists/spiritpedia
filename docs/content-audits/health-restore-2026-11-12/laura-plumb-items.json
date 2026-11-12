@@ -1,0 +1,78 @@
+{
+  "healer": {
+    "healer_slug": "laura-plumb"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Point of Light Meditation",
+      "url": "https://lauraplumb.com/product/point-light-meditation/",
+      "description": "A guided audio meditation drawn from Swami Rama's 61-point relaxation, moving awareness point by point through the chakras and marma points of the body. Laura Plumb offers it for deep relaxation and letting go of stress.",
+      "price": "$5.00",
+      "image": "https://yt3.googleusercontent.com/AupZphdpHfkAwoP4OndkninzrWB1QNXnIt26ortj43y9YbYAk1Z-QAAdVv9yb6pKcrxxiU0E7Q=s900",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ayurveda",
+        "yoga"
+      ]
+    },
+    {
+      "title": "Yoga Nidra",
+      "url": "https://lauraplumb.com/product/yoga-nidra/",
+      "description": "A guided Yoga Nidra recording in which the listener stays aware while the body and mind settle into deep rest. Laura Plumb presents it from the yoga and Ayurveda traditions as a regular practice for relaxation and release of tension.",
+      "price": "$5.00",
+      "image": "https://yt3.googleusercontent.com/AupZphdpHfkAwoP4OndkninzrWB1QNXnIt26ortj43y9YbYAk1Z-QAAdVv9yb6pKcrxxiU0E7Q=s900",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dosha Quiz",
+      "url": "https://lauraplumb.com/dosha-quiz-free/",
+      "description": "A free online questionnaire on frame, sleep, digestion, temperament and mind that points to a person's mix of Vata, Pitta and Kapha. The results lead to a page of Ayurvedic suggestions for that type.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ayurveda"
+      ],
+      "image": "https://yt3.googleusercontent.com/AupZphdpHfkAwoP4OndkninzrWB1QNXnIt26ortj43y9YbYAk1Z-QAAdVv9yb6pKcrxxiU0E7Q=s900"
+    },
+    {
+      "title": "Sumptuous Sleep",
+      "url": "https://lauraplumb.com/sumptuous-sleep/",
+      "description": "Laura Plumb's free page on rest from an Ayurvedic view: sleep and ojas, the hours that suit each dosha, and an evening ritual. It links a candle-gazing practice, a guided meditation and alternate-nostril breathing.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ayurveda",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://yt3.googleusercontent.com/AupZphdpHfkAwoP4OndkninzrWB1QNXnIt26ortj43y9YbYAk1Z-QAAdVv9yb6pKcrxxiU0E7Q=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/laura-plumb.json",
+    "left_out": [
+      "Class 'Ayurveda Jyotish - Intro to Medical Astrology' (lauraplumb.com/product/ayurveda-jyotish-intro-to-medical-astrology/): the page presents reading a birth chart for potential health issues and prescribing remedies including herbal treatments and gemstone therapy; reads as diagnosing and treating, so still out under the new rule.",
+      "Ayurveda Integrative Nutrition training: the listing now has 10 offerings (the limit); the graduates' retreat page is a past event."
+    ],
+    "flags": [
+      "Sumptuous Sleep mentions that ojas 'promotes strong immunity' in passing; kept, as it makes no claim that the page's practices treat a condition.",
+      "Dosha Quiz asks about symptoms such as high blood pressure and joint pain to find a dosha; kept (naming, no claim)."
+    ]
+  }
+}

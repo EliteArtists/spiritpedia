@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "emma-estrela"
+  },
+  "videos": [
+    {
+      "title": "Wim Hof Method In Nature",
+      "url": "https://www.youtube.com/watch?v=cboFkXEg9Ew",
+      "subjects": [
+        "breathwork",
+        "dreamwork"
+      ],
+      "channel": "Emma Estrela"
+    },
+    {
+      "title": "How Burnout Led Me to an Unexpected Path | My Story",
+      "url": "https://www.youtube.com/watch?v=6ZXCmI9p7zA",
+      "subjects": [
+        "breathwork",
+        "dreamwork"
+      ],
+      "channel": "Emma Estrela"
+    },
+    {
+      "title": "From Stress to Stillness - Life After Burnout",
+      "url": "https://www.youtube.com/watch?v=raZXUwAtytE",
+      "subjects": [
+        "breathwork",
+        "dreamwork"
+      ],
+      "channel": "Emma Estrela"
+    },
+    {
+      "title": "Healing Burnout; One Waterfall at a Time",
+      "url": "https://www.youtube.com/watch?v=oYkVNqkozXA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Emma Estrela"
+    },
+    {
+      "title": "Unlock Your Body's Natural Healing Powers with the Wim Hof Method!",
+      "url": "https://www.youtube.com/watch?v=JJ7h_XRackU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Emma Estrela"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "cboFkXEg9Ew": 3618,
+      "6ZXCmI9p7zA": 758,
+      "raZXUwAtytE": 2351,
+      "oYkVNqkozXA": 2581,
+      "JJ7h_XRackU": 127359
+    },
+    "left_out_notes": [
+      "Video 'Wim Hof Method - EPILEPSY PTSD (controversial...)' and the menstrual-period short: name conditions.",
+      "Burnout videos ('How Burnout Led Me to an Unexpected Path', 'From Stress to Stillness - Life After Burnout', 'Healing burnout...'): borderline condition framing."
+    ]
+  },
+  "images_final": true
+}

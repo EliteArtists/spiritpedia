@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "mellissa-seaman"
+  },
+  "videos": [
+    {
+      "title": "Empath, Luna, Sola, or Baro: Which One Explains Your Burnout?",
+      "url": "https://www.youtube.com/watch?v=OqqrAEPL6ck",
+      "subjects": [
+        "soul-purpose",
+        "channelled-teachings"
+      ],
+      "channel": "Mellissa Seaman"
+    },
+    {
+      "title": "Inside a Life-Changing Energy Healing Session",
+      "url": "https://www.youtube.com/watch?v=vh3izwu5H8M",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Mellissa Seaman"
+    },
+    {
+      "title": "How to Handle Emotional Clients on Sales Calls (Without Pressure or Manipulation)",
+      "url": "https://www.youtube.com/watch?v=IYsAbE--p9U",
+      "subjects": [
+        "soul-purpose",
+        "channelled-teachings"
+      ],
+      "channel": "Mellissa Seaman"
+    },
+    {
+      "title": "Growing Pains: Why it hurts when you get everything you’ve ever wanted.",
+      "url": "https://www.youtube.com/watch?v=epktWWtI7lo",
+      "subjects": [
+        "soul-purpose",
+        "channelled-teachings"
+      ],
+      "channel": "Mellissa Seaman"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "OqqrAEPL6ck": 81,
+      "vh3izwu5H8M": 34,
+      "IYsAbE--p9U": 31,
+      "epktWWtI7lo": 21
+    },
+    "left_out_notes": [
+      "Videos on menopause, burnout, sales calls and marketing."
+    ]
+  },
+  "images_final": true
+}

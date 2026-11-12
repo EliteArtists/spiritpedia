@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "james-bae"
+  },
+  "videos": [
+    {
+      "title": "Drubpon Pema Rigdzin - Vajrayana Healing Methods, Ritual Healing",
+      "url": "https://www.youtube.com/watch?v=nGhyfWSXdTQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Buddhist Yoga"
+    },
+    {
+      "title": "The Contemporary Landscape of Buddhist Healing - Pierce Salguero, PHD",
+      "url": "https://www.youtube.com/watch?v=BCDcULgeiek",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Buddhist Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "nGhyfWSXdTQ": 679,
+      "BCDcULgeiek": 267
+    },
+    "left_out_notes": [
+      "Dharma of Grieving page and caregiver burnout meditations: framed on grief and compassion fatigue.",
+      "TraumaBuddhistYogaTherapy video and his trauma-informed yoga therapy trainings: trauma treatment framing."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,61 @@
+{
+  "healer": {
+    "healer_slug": "john-holland"
+  },
+  "videos": [
+    {
+      "title": "SOUL SURVIVAL | Discover Healing Power For Your Past, Present & Future",
+      "url": "https://www.youtube.com/watch?v=612xu4zPgAg",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "johnhollandpsychic"
+    },
+    {
+      "title": "Awaken Your Psychic Strengths",
+      "url": "https://www.youtube.com/watch?v=YrQPvoMIEvU",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Answers From The Light | Spiritual Insights & Wisdom with 4 Master Teachers",
+      "url": "https://www.youtube.com/watch?v=pYW-MAqN1uk",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "johnhollandpsychic"
+    },
+    {
+      "title": "Is Your Child Psychic?",
+      "url": "https://www.youtube.com/watch?v=jgPDbTqM2TE",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "johnhollandpsychic"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "612xu4zPgAg": 1681,
+      "YrQPvoMIEvU": 14108,
+      "pYW-MAqN1uk": 1294,
+      "jgPDbTqM2TE": 2249
+    },
+    "left_out_notes": [
+      "Wheels of Light webinar (framed around the balance of body and mind) and the 'Healing Relaxation' / 'Healing Touch' audio downloads: borderline health wording.",
+      "Videos: short clips under 2 minutes, promos, a talk with 4 master teachers and 'SOUL SURVIVAL | Discover Healing Power' (healing framing); 'Awaken Your Psychic Strengths' failed oEmbed (401)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "chris-niebauer"
+  },
+  "videos": [
+    {
+      "title": "Anxiety and Depression are Clues not Punishment",
+      "url": "https://www.youtube.com/watch?v=-cdu110YQm0",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Chris Niebauer, Ph.D."
+    },
+    {
+      "title": "How Materialism is behind Anxiety and Depression...",
+      "url": "https://www.youtube.com/watch?v=tO_sBrQVse4",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Chris Niebauer, Ph.D."
+    },
+    {
+      "title": "Does the myth of Materialism cause depression and anxiety?",
+      "url": "https://www.youtube.com/watch?v=WcLWUIhL6JM",
+      "subjects": [
+        "non-duality",
+        "consciousness"
+      ],
+      "channel": "Chris Niebauer, Ph.D."
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "-cdu110YQm0": 259,
+      "tO_sBrQVse4": 364,
+      "WcLWUIhL6JM": 489
+    },
+    "left_out_notes": [
+      "Videos on anxiety and depression ('Anxiety and Depression are Clues not Punishment', 'How Materialism is behind Anxiety and Depression...', 'Materialism and Anxiety'): condition-named."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "light-watkins"
+  },
+  "videos": [
+    {
+      "title": "Why Burnout Happens and How to Overcome It | Healthcare Keynote Speaker Light Watkins",
+      "url": "https://www.youtube.com/watch?v=L8g4DQCrzcc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Light Watkins"
+    },
+    {
+      "title": "What Actually Heals Loneliness (It's Simpler Than You Think) | Michael Trainer & Light Watkins",
+      "url": "https://www.youtube.com/watch?v=eF2c_6CjFIA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Light Watkins"
+    },
+    {
+      "title": "How to Set Healthy Boundaries Without Feeling Guilty",
+      "url": "https://www.youtube.com/watch?v=5HWq5V8eTUE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Light Watkins"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "L8g4DQCrzcc": 135,
+      "eF2c_6CjFIA": 284,
+      "5HWq5V8eTUE": 187
+    },
+    "left_out_notes": [
+      "YouTube '7 Days to Stress Free (and No More Anxiety!)' and Insights with Light '5 Minute MEDITATION For ANXIETY': condition-named titles.",
+      "Several burnout-framed keynote clips (e.g. 'Why Burnout Happens and How to Overcome It'): burnout framing left out as borderline, and most are short promotional clips under ~3 minutes."
+    ]
+  },
+  "images_final": true
+}

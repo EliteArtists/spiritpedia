@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "judy-ramsey"
+  },
+  "videos": [
+    {
+      "title": "Healing Compassion Fatigue Full Course",
+      "url": "https://www.youtube.com/watch?v=JmA4VGzX43I",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Heart2HeartwithJudyRamsey"
+    },
+    {
+      "title": "Program Overview: Healing Compassion Fatigue",
+      "url": "https://www.youtube.com/watch?v=1i5irtV27bw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Heart2HeartwithJudyRamsey"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "JmA4VGzX43I": 168,
+      "1i5irtV27bw": 9
+    },
+    "left_out_notes": [
+      "Video 'Healing Compassion Fatigue Full Course' and 'Program Overview: Healing Compassion Fatigue': borderline condition name."
+    ]
+  },
+  "images_final": true
+}

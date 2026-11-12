@@ -1,0 +1,61 @@
+{
+  "healer": {
+    "healer_slug": "buddhist-library-and-meditation-centre"
+  },
+  "videos": [
+    {
+      "title": "Ven  Dr  Mahinda Thero - Breaking Free form Stress and Anxiety",
+      "url": "https://www.youtube.com/watch?v=Z9iR7SMlAjY",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Library"
+    },
+    {
+      "title": "Managing Stress - A Buddhist Perspective, with Rod Lee",
+      "url": "https://www.youtube.com/watch?v=N4ValYnCej0",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Library"
+    },
+    {
+      "title": "DOOM & GLOOM: A Buddhist Survival Guide, Part 1, Bhante Akaliko",
+      "url": "https://www.youtube.com/watch?v=AemQBGP1Ehk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Library"
+    },
+    {
+      "title": "Guided Relaxation and Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=8UaFhnX4aF4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddhist Library"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Z9iR7SMlAjY": 4777,
+      "N4ValYnCej0": 127,
+      "AemQBGP1Ehk": 371,
+      "8UaFhnX4aF4": 190
+    },
+    "left_out_notes": [
+      "Talks framed on stress and anxiety ('Breaking Free from Stress and Anxiety', 'Managing Stress') left out under the health rule; 'Doom & Gloom' and a fundraising talk left out."
+    ]
+  },
+  "images_final": true
+}

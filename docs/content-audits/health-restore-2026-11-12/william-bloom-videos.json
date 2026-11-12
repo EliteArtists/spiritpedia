@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "william-bloom"
+  },
+  "videos": [
+    {
+      "title": "An Energy Healing Strategy for Victims of Rape & Abuse",
+      "url": "https://www.youtube.com/watch?v=SwZ0fibGBsQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "William Bloom"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "SwZ0fibGBsQ": 523
+    },
+    "left_out_notes": [
+      "Video 'An Energy Healing Strategy for Victims of Rape & Abuse' (trauma topic); 'Polyvagal Theory and the Soul's Journey' (Scientific and Medical Network channel); Findhorn and Watkins channel videos; clips under ~2 minutes (Dying – no one gets stuck, Bouncy Meditation, Happinez Festival, short introductions, book promo); Glastonbury Morris dance clip."
+    ]
+  },
+  "images_final": true
+}

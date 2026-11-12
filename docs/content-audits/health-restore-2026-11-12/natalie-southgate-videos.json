@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "natalie-southgate"
+  },
+  "videos": [
+    {
+      "title": "The pain in my body saved me",
+      "url": "https://www.youtube.com/watch?v=6sXPhP7WDqk",
+      "subjects": [
+        "chakra-healing",
+        "meditation"
+      ],
+      "channel": "Natalie Southgate"
+    },
+    {
+      "title": "The healing trap we don't see",
+      "url": "https://www.youtube.com/watch?v=SPfyWFl4dHY",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Natalie Southgate"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "pKRW0CawCOQ": 583,
+      "6sXPhP7WDqk": 528,
+      "SPfyWFl4dHY": 391
+    },
+    "left_out_notes": [
+      "Videos 'What if your symptoms are trying to tell you something?', 'The pain in my body saved me' and 'The healing trap we don't see' (body symptoms and pain)."
+    ]
+  },
+  "images_final": true
+}

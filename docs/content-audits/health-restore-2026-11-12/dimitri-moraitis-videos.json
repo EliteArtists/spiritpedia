@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "dimitri-moraitis"
+  },
+  "videos": [
+    {
+      "title": "Meditation to Clear Pain & Blockages (Blue White Fire)",
+      "url": "https://www.youtube.com/watch?v=j2EoOq6Ksco",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Spiritual Arts Institute"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "j2EoOq6Ksco": 1468
+    },
+    "left_out_notes": [
+      "Videos titled around anxiety, worry, healing rays or negative-energy cleansing (health rule)."
+    ]
+  },
+  "images_final": true
+}

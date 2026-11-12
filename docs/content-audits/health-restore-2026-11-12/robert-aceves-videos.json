@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "robert-aceves"
+  },
+  "videos": [
+    {
+      "title": "¿No puedes dormir? Este cuento Zen te llevará al sueño | El Despertar de Tessho",
+      "url": "https://www.youtube.com/watch?v=xwiGkynR2Bw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Robert Aceves - Coach de Vida y Meditación"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "xwiGkynR2Bw": 561
+    },
+    "left_out_notes": [
+      "YouTube and Insight Timer tracks titled for anxiety, insomnia ('¿No puedes dormir?'), addiction or self-healing during sleep (health claims)."
+    ]
+  },
+  "images_final": true
+}

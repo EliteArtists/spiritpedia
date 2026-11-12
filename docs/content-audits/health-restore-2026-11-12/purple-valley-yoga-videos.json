@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "purple-valley-yoga"
+  },
+  "videos": [
+    {
+      "title": "Yoga and Knee Pain/Injury/Relief Exercises",
+      "url": "https://www.youtube.com/watch?v=S6g7M2FDFgA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Purple Valley Ashtanga Yoga"
+    },
+    {
+      "title": "An Introduction to Ayurveda - The Three Doshas (Vata, Pitta, Kapha)",
+      "url": "https://www.youtube.com/watch?v=XozF9VBLEfU",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Purple Valley Ashtanga Yoga"
+    },
+    {
+      "title": "Yoga and Sacroiliac Joint (SI) Pain/Injury",
+      "url": "https://www.youtube.com/watch?v=FUtygQuJqzQ",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Purple Valley Ashtanga Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "S6g7M2FDFgA": 194515,
+      "XozF9VBLEfU": 789612,
+      "FUtygQuJqzQ": 60489
+    },
+    "left_out_notes": [
+      "Videos 'Yoga and Knee Pain/Injury/Relief Exercises' and 'An Introduction to Ayurveda - The Three Doshas' left out under the health rule; strength and tips clips left out as fitness."
+    ]
+  },
+  "images_final": true
+}

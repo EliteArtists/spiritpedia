@@ -1,0 +1,61 @@
+{
+  "healer": {
+    "healer_slug": "linda-hall"
+  },
+  "videos": [
+    {
+      "title": "Deeply Relaxing Meditation On Managing Anxiety About Health, Anxiety & Stress Relief, Mental Health",
+      "url": "https://www.youtube.com/watch?v=r3-es5PFFQ4",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Linda Hall Meditation"
+    },
+    {
+      "title": "Deeply Relaxing Body Scan Meditation, Release Stress, Manage Anxiety, Improve Mental Health",
+      "url": "https://www.youtube.com/watch?v=0FbmqLUk4jg",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Linda Hall Meditation"
+    },
+    {
+      "title": "Deeply Relaxing Body Scan Meditation, Release All Stress, Let Go Of Negative Energy, Natural Healing",
+      "url": "https://www.youtube.com/watch?v=U1nEoWX7lhg",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Linda Hall Meditation"
+    },
+    {
+      "title": "Deeply Relaxing, Healing & Replenishing Meditation, Restore Your Energy and Inner Well-Being",
+      "url": "https://www.youtube.com/watch?v=bv984Z58x6s",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Linda Hall Meditation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "r3-es5PFFQ4": 1613,
+      "0FbmqLUk4jg": 26143,
+      "U1nEoWX7lhg": 7242,
+      "bv984Z58x6s": 2246
+    },
+    "left_out_notes": [
+      "YouTube: most uploads are titled for anxiety, mental health or healing (e.g. Managing Anxiety About Health, Improve Mental Health, Natural Healing, Healing & Replenishing); left out under the strict rule."
+    ]
+  },
+  "images_final": true
+}

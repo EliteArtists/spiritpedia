@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "upaya-zen-center"
+  },
+  "videos": [
+    {
+      "title": "Nonviolence and Our Moral Imperative with Roshi Joan Halifax",
+      "url": "https://www.youtube.com/watch?v=FPDSoPpI7jA",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Upaya Zen Center"
+    },
+    {
+      "title": "A Zen and Indigenous Perspective on Spirituality and Governance",
+      "url": "https://www.youtube.com/watch?v=w4yhXIyhoao",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Upaya Zen Center"
+    },
+    {
+      "title": "The Measure of Our Humanity: Possibility with Rebecca Solnit",
+      "url": "https://www.youtube.com/watch?v=SbwJ8AV2Et8",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Upaya Zen Center"
+    },
+    {
+      "title": "A Raging River: Grief and the Human Condition",
+      "url": "https://www.youtube.com/watch?v=C06HK4ewhJM",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Upaya Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "FPDSoPpI7jA": 4672,
+      "w4yhXIyhoao": 1378,
+      "SbwJ8AV2Et8": 3929,
+      "C06HK4ewhJM": 1034
+    },
+    "left_out_notes": [
+      "Talks centred on politics or activism left out ('Nonviolence and Our Moral Imperative', 'A Zen and Indigenous Perspective on Spirituality and Governance', Rebecca Solnit's 'Possibility'); grief talk 'A Raging River' left out as borderline."
+    ]
+  },
+  "images_final": true
+}

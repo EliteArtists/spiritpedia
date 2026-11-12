@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "jason-shulman"
+  },
+  "videos": [
+    {
+      "title": "Awakening with Jason Shulman: The Healing Nature of Enlightenment with Shelah Stein",
+      "url": "https://www.youtube.com/watch?v=rdoT65apgNg",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "The Foundation for Nonduality"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "rdoT65apgNg": 647
+    },
+    "left_out_notes": [
+      "'Spirituality & Cancer' interview (health)."
+    ]
+  },
+  "images_final": true
+}

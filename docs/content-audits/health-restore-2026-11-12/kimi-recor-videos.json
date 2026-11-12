@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "kimi-recor"
+  },
+  "videos": [
+    {
+      "title": "7-Minute Breathwork Meditation for Anxiety Relief",
+      "url": "https://www.youtube.com/watch?v=u0SD_bN5Ls4",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "frequency with kimi"
+    },
+    {
+      "title": "a dreamy sound bath to relieve anxiety",
+      "url": "https://www.youtube.com/watch?v=7mjB6_XR5tg",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "frequency with kimi"
+    },
+    {
+      "title": "432hz - relaxing sonic bath in the poppy fields // no talking //dreamy vibezzzz",
+      "url": "https://www.youtube.com/watch?v=XY4dEbT_cFE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "frequency with kimi"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "u0SD_bN5Ls4": 143,
+      "7mjB6_XR5tg": 309,
+      "XY4dEbT_cFE": 190
+    },
+    "left_out_notes": [
+      "YouTube '7-Minute Breathwork Meditation for Anxiety Relief', 'a dreamy sound bath to relieve anxiety' and the grief/anger/loss breathwork video: condition-led titles."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "plum-village"
+  },
+  "videos": [
+    {
+      "title": "Communities of Resistance | Sister True Dedication | 11 June 2026 (Clean Audio) ",
+      "url": "https://www.youtube.com/watch?v=2cJ3P0IrJhw",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Inner Change for Systems Change",
+      "url": "https://www.youtube.com/watch?v=b7v2aalKZv4",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Finding a Way Out: Mindfulness, Community & Healing in Challenging Times | Sister True Dedication",
+      "url": "https://www.youtube.com/watch?v=JMBNnn4y7SU",
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Plum Village Band | A Musical Prayer for Peace and Healing | A Prayer for Land",
+      "url": "https://www.youtube.com/watch?v=Yk-wmymcVNc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Plum Village"
+    },
+    {
+      "title": "Monastic-Led Deep Relaxation: Embodying Mother Earth | Br. Thien Duc",
+      "url": "https://www.youtube.com/watch?v=PzUnBzwnKZ4",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "channel": "Plum Village"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "2cJ3P0IrJhw": 17793,
+      "b7v2aalKZv4": 16618,
+      "JMBNnn4y7SU": 39505,
+      "Yk-wmymcVNc": 38713,
+      "PzUnBzwnKZ4": 24357
+    },
+    "left_out_notes": [
+      "Talks on 'Resistance', 'Systems Change', ancestral trauma, grief and healing left out under the political and health rules."
+    ]
+  },
+  "images_final": true
+}

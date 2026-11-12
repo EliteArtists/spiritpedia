@@ -1,0 +1,58 @@
+{
+  "healer": {
+    "healer_slug": "tibetisches-zentrum-hamburg"
+  },
+  "videos": [
+    {
+      "title": "#015 | Deep Sleep - Sanft Einschlafen mit der Resonanz des Atems",
+      "url": "https://www.youtube.com/watch?v=ZlS0-s2uTm4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tibetisches Zentrum e.V."
+    },
+    {
+      "title": "Meditation mit Wolfgang Trescher \"Mit stabilem Geist durch die Multikrise“ 30.10.26 | 19 - 20:30 h",
+      "url": "https://www.youtube.com/watch?v=3a6StdDI8K4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tibetisches Zentrum e.V."
+    },
+    {
+      "title": "Vortrag und Meditation mit Heike Schmick zum Thema \"Umgang mit Stress\" am 02.10.26 | 19 - 20:30 h",
+      "url": "https://www.youtube.com/watch?v=EzozjAd4xsA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Tibetisches Zentrum e.V."
+    },
+    {
+      "title": "Stress und der Umgang damit | Podcast Folge 2",
+      "url": "https://www.youtube.com/watch?v=_3jWlwNIUGM",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "skip": "unavailable on YouTube"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "ZlS0-s2uTm4": 327,
+      "3a6StdDI8K4": 1674,
+      "EzozjAd4xsA": 1288,
+      "_3jWlwNIUGM": 767
+    },
+    "left_out_notes": [
+      "Videos on stress, fears and worries, 'Deep Sleep', 'Multikrise' (health rule, borderline) and dated livestream placeholders."
+    ]
+  },
+  "images_final": true
+}

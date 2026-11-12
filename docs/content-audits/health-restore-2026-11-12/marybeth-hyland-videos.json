@@ -1,0 +1,62 @@
+{
+  "healer": {
+    "healer_slug": "marybeth-hyland"
+  },
+  "videos": [
+    {
+      "title": "Breathing Meditation With Horses | Calm Your Nervous System",
+      "url": "https://www.youtube.com/watch?v=xIbFnFJvxHo",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Healing with Horses Tai Chi Meditation with Relaxing ASMR Sounds",
+      "url": "https://www.youtube.com/watch?v=dTmJ9OPufy8",
+      "subjects": [
+        "meditation",
+        "tai-chi",
+        "self-healing"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Healing with Horses Guided Meditation to Release Family Energy",
+      "url": "https://www.youtube.com/watch?v=IT9sDdfQmLU",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    },
+    {
+      "title": "Tai Chi with Horses for Healthy Boundaries and Stress Release",
+      "url": "https://www.youtube.com/watch?v=JJrczZwdm20",
+      "subjects": [
+        "tai-chi",
+        "self-healing"
+      ],
+      "channel": "MaryBeth and James | Healing With Horses"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "xIbFnFJvxHo": 54,
+      "dTmJ9OPufy8": 45,
+      "IT9sDdfQmLU": 41,
+      "JJrczZwdm20": 40
+    },
+    "left_out_notes": [
+      "YouTube videos titled for anxiety relief, calming the nervous system, family energy healing and bodily recovery: health-claim rule."
+    ]
+  },
+  "images_final": true
+}

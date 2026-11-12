@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "francie-la-flow"
+  },
+  "videos": [
+    {
+      "title": "The Vagus Nerve and Your Voice: How Humming Calms Your Nervous System",
+      "url": "https://www.youtube.com/watch?v=RvcE59yb5tI",
+      "subjects": [
+        "sound-healing",
+        "yoga"
+      ],
+      "channel": "Francie La Flow"
+    },
+    {
+      "title": "Tryambakam (Mahamrityunjaya Mantra) · We Pray for Healing · Live at BaliSpirit Festival 2026",
+      "url": "https://www.youtube.com/watch?v=Hjgnv_gTLrs",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Francie La Flow"
+    },
+    {
+      "title": "Women's Health, Healing & Empowerment & the 3V Connection – Voice, V@gina, Vagus Nerve",
+      "url": "https://www.youtube.com/watch?v=aTNz_kADnYo",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Francie La Flow"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "RvcE59yb5tI": 113,
+      "Hjgnv_gTLrs": 62,
+      "aTNz_kADnYo": 53
+    },
+    "left_out_notes": [
+      "Video The Vagus Nerve and Your Voice: How Humming Calms Your Nervous System: physiological framing, left out as borderline.",
+      "Videos Women's Health, Healing & Empowerment & the 3V Connection and Tryambakam (Mahamrityunjaya Mantra) · We Pray for Healing: health framing."
+    ]
+  },
+  "images_final": true
+}

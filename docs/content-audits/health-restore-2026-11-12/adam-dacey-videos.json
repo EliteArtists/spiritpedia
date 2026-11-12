@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "adam-dacey"
+  },
+  "videos": [
+    {
+      "title": "The Power of Meditation: Reducing Stress and Headaches Naturally",
+      "url": "https://www.youtube.com/watch?v=zROlZ4EIAn0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "OnlineMeditation"
+    },
+    {
+      "title": "Meditate Instead of Vape: The Healthiest Switch You'll Ever Make",
+      "url": "https://www.youtube.com/watch?v=_kReGxGcn9c",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "OnlineMeditation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "zROlZ4EIAn0": 134,
+      "_kReGxGcn9c": 119
+    },
+    "left_out_notes": [
+      "Video 'The Power of Meditation: Reducing Stress and Headaches Naturally' (names a condition).",
+      "Video 'Meditate Instead of Vape' (addiction framing)."
+    ]
+  },
+  "images_final": true
+}

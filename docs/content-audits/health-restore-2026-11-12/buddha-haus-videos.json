@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "buddha-haus"
+  },
+  "videos": [
+    {
+      "title": "Zeit, Sexsucht, das Todlose, Jhanafaktoren - F&A - Tag 8 Video 5 - Osterkurs 21 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=Hm8DTvyfE9M",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Gebefreudigkeit, Berufung, Warum Schmerz? - F&A - Tag 9 Video 5 - Osterkurs 2021 - R. Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=u1U44aPUJNU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    },
+    {
+      "title": "Mit Liebe heilen - Metta Scan - Tag 7 Video 3 - Osterkurs 2021 - Roland Nyanabodhi",
+      "url": "https://www.youtube.com/watch?v=-P5Bnil5r_Y",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Buddha-Haus Metta Vihara"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Hm8DTvyfE9M": 807,
+      "u1U44aPUJNU": 896,
+      "-P5Bnil5r_Y": 2166
+    },
+    "left_out_notes": [
+      "Videos with 'Sexsucht', 'Warum Schmerz?' and 'Mit Liebe heilen' in the title: condition or healing framing."
+    ]
+  },
+  "images_final": true
+}

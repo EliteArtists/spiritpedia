@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "chris-germer"
+  },
+  "videos": [
+    {
+      "title": "A Comprehensive Overview of Self-Compassion in Therapy",
+      "url": "https://www.youtube.com/watch?v=ZNgM50KfGgI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Working with Difficult Emotions (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=cD1sW115w5w",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    },
+    {
+      "title": "Mindfulness of Emotions in the Body (Audio Meditation)",
+      "url": "https://www.youtube.com/watch?v=oIDm915KF1s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Christopher Germer, Ph.D."
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "ZNgM50KfGgI": 42075,
+      "cD1sW115w5w": 46230,
+      "oIDm915KF1s": 25821
+    },
+    "left_out_notes": [
+      "Mindful Self-Compassion for Burnout (book and video): burnout is condition-framed.",
+      "Videos on compassion in therapy (keynotes, 'Self-Compassion in Therapy' overview): therapy-focused."
+    ]
+  },
+  "images_final": true
+}

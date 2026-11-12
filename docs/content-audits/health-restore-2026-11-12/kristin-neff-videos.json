@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "kristin-neff"
+  },
+  "videos": [
+    {
+      "title": "Self-Compassion for Stress and Burnout | Self-Compassion Practice Guided by Dr. Kristin Neff",
+      "url": "https://www.youtube.com/watch?v=9CxbofRXt9o",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Dr. Kristin Neff"
+    },
+    {
+      "title": "Soften, Soothe, Allow | Self-Compassion Practice Guided by Dr. Kristin Neff",
+      "url": "https://www.youtube.com/watch?v=t24v0CtNSkA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Dr. Kristin Neff"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "9CxbofRXt9o": 21613,
+      "t24v0CtNSkA": 55116
+    },
+    "left_out_notes": [
+      "Mindful Self-Compassion for Burnout (book) and 'Self-Compassion for Stress and Burnout' / caregiving practices: burnout is condition-framed.",
+      "YouTube Q&As on health conditions, anxiety, shame and imposter syndrome; Texas Longhorns video (about a coach)."
+    ]
+  },
+  "images_final": true
+}

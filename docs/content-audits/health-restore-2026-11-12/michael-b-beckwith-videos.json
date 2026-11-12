@@ -1,0 +1,62 @@
+{
+  "healer": {
+    "healer_slug": "michael-b-beckwith"
+  },
+  "videos": [
+    {
+      "title": "Reclaiming the Power of Your Intuition with Mory Fontanez",
+      "url": "https://www.youtube.com/watch?v=58AfcxkkGSA",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Michael Bernard Beckwith"
+    },
+    {
+      "title": "Music as Medicine: How Sound Heals Grief with Jeralyn Glass",
+      "url": "https://www.youtube.com/watch?v=sSoSgc0aS2Q",
+      "subjects": [
+        "sound-healing",
+        "death-the-afterlife",
+        "self-healing"
+      ],
+      "channel": "Michael Bernard Beckwith"
+    },
+    {
+      "title": "Life Question of the Week, 9.11.26",
+      "url": "https://www.youtube.com/watch?v=AFB1MgdiEAo",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Michael Bernard Beckwith"
+    },
+    {
+      "title": "Plug The Leaks: Healing The Leaky Soul Syndrome w/ Michael B. Beckwith",
+      "url": "https://www.youtube.com/watch?v=GG0pJZn2c7I",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Michael Bernard Beckwith"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "58AfcxkkGSA": 3483,
+      "sSoSgc0aS2Q": 3100,
+      "AFB1MgdiEAo": 3678,
+      "GG0pJZn2c7I": 5213
+    },
+    "left_out_notes": [
+      "Videos left out: 'Condition Remission' (title), 'The Healing Power of Your Voice' and 'Music as Medicine: How Sound Heals Grief' (guest-led interviews with health framing), guest interview episodes where a guest is the main speaker, Spanish/Portuguese-only and Life Question of the Week dated Q&As.",
+      "Video \"Meditation For Peace & Releasing Worry\": removed in review (strict health rule: worry framing)."
+    ]
+  },
+  "images_final": true
+}

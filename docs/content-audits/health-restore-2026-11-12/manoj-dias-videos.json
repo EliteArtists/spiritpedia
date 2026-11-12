@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "manoj-dias"
+  },
+  "videos": [
+    {
+      "title": "Befriending Anxiety Meditation by Manoj Dias | Anxiety",
+      "url": "https://www.youtube.com/watch?v=UD0hFs0yuAE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "gentle—noise"
+    },
+    {
+      "title": "Healing Sleep Meditation Practice by Manoj Dias | Meditation Before Sleep",
+      "url": "https://www.youtube.com/watch?v=EZYSbbYHRqk",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "gentle—noise"
+    },
+    {
+      "title": "Overcoming Anxiety | A Talk by Manoj Dias",
+      "url": "https://www.youtube.com/watch?v=UVAH9Obkr3E",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "gentle—noise"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "UD0hFs0yuAE": 14416,
+      "EZYSbbYHRqk": 44892,
+      "UVAH9Obkr3E": 7862
+    },
+    "left_out_notes": [
+      "Videos titled for anxiety ('Befriending Anxiety', anxiety talk) and 'Healing Sleep Meditation Practice': condition or healing wording."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "rob-bell"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Handling Your Fire: Passion, Burnout, Routines and Resilience",
+      "url": "https://robbell.com/audio/handling-your-fire-passion-burnout-routines-and-resilience/",
+      "description": "A six-hour audiobook in which Rob Bell talks through what he has learned about giving yourself to the work you love without being left depleted. He works through four themes, passion, burnout, routines and resilience, with stories from his own life.",
+      "price": "Contact for pricing",
+      "image": "https://robbell.com/wp-content/uploads/2022/03/HYF_01.jpeg",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/rob-bell.json",
+    "left_out": [
+      "Something to Say, Something to Write and Grabbin' the Bag: left out originally for scope (communication, writing, money), not for health; not restored."
+    ],
+    "flags": [
+      "Audio download price is not shown on the page, so 'Contact for pricing' (as for his other audiobook)."
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "mountain-stream-meditation"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing and Awakening: Daylong Retreat with Ken Bradford",
+      "url": "https://www.mtstream.org/nc-daily-schedule/2026/12/5-daylong-ken-bradford",
+      "description": "An in-person daylong at the Nevada City Insight Center that joins emotional healing with spiritual awakening, through mindfulness, tonglen, nondual presence, guided inquiry and dialogue. Pre-registration needed; it runs only with at least eight people.",
+      "price": "Sliding scale $50 / $80 / $108 / $150",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "non-duality"
+      ],
+      "image": "http://static1.squarespace.com/static/57474200859fd0d6f666823b/t/6a03fafcabafa91709c62659/1778645756129/Logo+round+thumbnail+%282+x+2+in%29+%283%29.png?format=1500w"
+    },
+    {
+      "title": "Sound Healing Meditation with Miyu Tamamura",
+      "url": "https://www.mtstream.org/nc-daily-schedule/2026/12/3-sound-healing",
+      "description": "An in-person evening of meditation with crystal bowls at Mountain Stream, held most months on a Thursday. Offered for a suggested donation shared between the musician and the centre.",
+      "price": "Suggested donation $15 - $30",
+      "product_type": "course",
+      "start_date": "2026-12-03",
+      "end_date": "2026-12-03",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/57474200859fd0d6f666823b/t/695bd97da5a2e3762a4cc1ee/1764772648118/Miyu+2500px+wide.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mountain-stream-meditation.json",
+    "left_out": [
+      "Room to Breathe recovery sangha (weekly, Fridays): passes the new health rule (peer-led Buddhist approach to addiction recovery, no medical claim), but it is peer-led rather than taught and has only one dated page per meeting, no standing page; not restored.",
+      "Sound healing video ('Resonance - Sound of Stillness', mtstream.org/resonance-sound-of-stillness): a video page, handled separately."
+    ],
+    "flags": [
+      "The sound healing evening repeats monthly but the site has only a dated page per evening; the 3 Dec 2026 evening is listed as a dated item and will drop off after that day. A later month's page could replace it.",
+      "Ken Bradford's daylong speaks of releasing 'emotional wounds & trauma' and managing stress; emotional healing, allowed under the new rule."
+    ]
+  }
+}

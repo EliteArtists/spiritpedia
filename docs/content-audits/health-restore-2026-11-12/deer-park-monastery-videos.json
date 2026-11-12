@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "deer-park-monastery"
+  },
+  "videos": [
+    {
+      "title": "Peace is Every Bite: How Food Choices Shape Personal & Planetary Health Feat Dr. Walter Willett",
+      "url": "https://www.youtube.com/watch?v=Q5gaI11HZB8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Deer Park Monastery"
+    },
+    {
+      "title": "The Light of Healing | Sister Snow | 2024-6-16",
+      "url": "https://www.youtube.com/watch?v=LHCfxo5iSEQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Deer Park Monastery"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "CjDo2ic4Dic": 5215,
+      "Q5gaI11HZB8": 4902,
+      "LHCfxo5iSEQ": 2000
+    },
+    "left_out_notes": [
+      "Talks on AI, war and a brain-and-meditation science talk left out as off-topic, political-leaning or health-framed."
+    ]
+  },
+  "images_final": true
+}

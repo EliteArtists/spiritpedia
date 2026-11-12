@@ -1,0 +1,65 @@
+{
+  "healer": {
+    "healer_slug": "joan-buckley"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing with Archangel Raphael",
+      "url": "https://www.joanbuckley.com/product-page/healing-with-archangel-raphael",
+      "description": "A recorded event with a twenty-minute guided journey to Archangel Raphael's Emerald Healing Temple and a forty-five-minute healing session, aimed at releasing old beliefs and emotional pain to make room for the new.",
+      "price": "€33.33",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://yt3.googleusercontent.com/r1zLHyCq9bxP2RpZ2qG661PSyWBl-OJGyurQwZ1LW9I80ZeCJY0XGhfK5IT95qxUn2Sny5kWkw=s900",
+      "subjects": [
+        "channelled-teachings",
+        "energy-medicine",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Nervous System Reset",
+      "url": "https://www.joanbuckley.com/product-page/nervous-system-reset",
+      "description": "A one-hour activation and meditation, as video and downloadable audio, working with crystalline light to settle the body and energy field during intense times and to receive guidance from your future self.",
+      "price": "€22.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://yt3.googleusercontent.com/r1zLHyCq9bxP2RpZ2qG661PSyWBl-OJGyurQwZ1LW9I80ZeCJY0XGhfK5IT95qxUn2Sny5kWkw=s900",
+      "subjects": [
+        "channelled-teachings",
+        "meditation",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Angelic First Aid",
+      "url": "https://www.joanbuckley.com/product-page/angelic-first-aid",
+      "description": "A nine-minute angelic meditation with Archangels Michael, Raphael, Metatron and Sandalphon to clear, balance and ground your energy when you feel overwhelmed, or as a short daily practice.",
+      "price": "€9.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://yt3.googleusercontent.com/r1zLHyCq9bxP2RpZ2qG661PSyWBl-OJGyurQwZ1LW9I80ZeCJY0XGhfK5IT95qxUn2Sny5kWkw=s900",
+      "subjects": [
+        "channelled-teachings",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/joan-buckley.json",
+    "left_out": [],
+    "flags": [
+      "Healing with Archangel Raphael says the healing session works 'at all levels: physical, mental, emotional and spiritual'; no condition named or cure claimed, kept under the new rule.",
+      "Prices from the shop pages, which show '€' (EUR in the page data); no code written.",
+      "Dry run: Wix images (static.wixstatic.com) refuse the ingest's robots check (403), so the offerings fall back to her photo, and it proposes removing 2 of her profile photos as unusable ('Healer changes: image_urls'). Check that photo change before inserting."
+    ]
+  }
+}

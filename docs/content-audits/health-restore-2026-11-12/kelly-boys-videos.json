@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "kelly-boys"
+  },
+  "videos": [
+    {
+      "title": "Falling back asleep after a middle of the night wakeup (6 minute NSDR practice)",
+      "url": "https://www.youtube.com/watch?v=xa5FYBhDlpo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Kelly Boys"
+    },
+    {
+      "title": "20 Minute NSDR for Lymphatic Health (Legs elevated!)",
+      "url": "https://www.youtube.com/watch?v=QA8Ju4ZutZE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Kelly Boys"
+    },
+    {
+      "title": "How to fall asleep with Non Sleep Deep Rest",
+      "url": "https://www.youtube.com/watch?v=xmORW6Wta5A",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Kelly Boys"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "xa5FYBhDlpo": 13076,
+      "QA8Ju4ZutZE": 11376,
+      "xmORW6Wta5A": 8806
+    },
+    "left_out_notes": [
+      "20 Minute NSDR for Lymphatic Health (video): health claim.",
+      "Falling back asleep after a middle of the night wakeup / How to fall asleep with NSDR (videos): close to insomnia; borderline, left out."
+    ]
+  },
+  "images_final": true
+}

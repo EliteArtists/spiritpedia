@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "sonia-choquette"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Year-Long Private Mentoring with Sonia",
+      "url": "https://www.soniachoquette.net/mentoring",
+      "description": "A one-year, one-to-one mentoring programme with Sonia, entered by application. It works on intuition, connection with spirit guides, soul purpose and clearing old emotional patterns, and can prepare students to begin or deepen a professional intuitive practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "soul-purpose",
+        "spiritual-awakening"
+      ],
+      "image": "https://yt3.googleusercontent.com/azfSa89ZU7H-TSuLf0vQkbw-El1Lr8mx_aXQA9he_poGeBmkthvIzEZFFpXYinlFs11S9NTEfC4=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sonia-choquette.json",
+    "left_out": [
+      "Memoirs Waking Up in Paris and Walking Home: pass the new health rule, but the listing already has 10 books (the cap).",
+      "Deep Sleep Guided Meditation (Calm Anxiety, Stress & Worry): a video; videos are handled separately."
+    ],
+    "flags": [
+      "Mentoring page says physical health will improve as body, mind and spirit come into balance; general wellbeing, no condition named. No price published (application form), so 'Contact for pricing'."
+    ]
+  }
+}

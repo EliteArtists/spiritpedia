@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "dakota-earth-cloud-walker"
+  },
+  "videos": [
+    {
+      "title": "Pray Rain | A Collective Healing Meditation for the Earth",
+      "url": "https://www.youtube.com/watch?v=Po-yxucC4nA",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Dakota Earth Cloud Walker"
+    },
+    {
+      "title": "Plant, Nurture, Bloom | Chakra Healing & Spirit Guide Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=pq4G2NZWDYk",
+      "subjects": [
+        "meditation",
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Dakota Earth Cloud Walker"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Po-yxucC4nA": 3034,
+      "pq4G2NZWDYk": 1308
+    },
+    "left_out_notes": [
+      "Videos titled for healing (Pray Rain, Plant Nurture Bloom chakra healing) and short shorts/trailers."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "drikung-kyobpa-choling"
+  },
+  "videos": [
+    {
+      "title": "Vajravidharan Healing Ceremony",
+      "url": "https://www.youtube.com/watch?v=Y20vF6usq-Q",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Drikungkc"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Y20vF6usq-Q": 58
+    },
+    "left_out_notes": [
+      "Vajravidharan Healing Ceremony video: healing ritual."
+    ]
+  },
+  "images_final": true
+}

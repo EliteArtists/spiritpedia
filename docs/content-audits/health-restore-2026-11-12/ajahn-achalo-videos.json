@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "ajahn-achalo"
+  },
+  "videos": [
+    {
+      "title": "From Trauma to Love - 10,000 Joys, 10,000 Sorrows (Chapter 1, Part 3)",
+      "url": "https://www.youtube.com/watch?v=085fv-PeUcw",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ajahn Achalo Bhikkhu"
+    },
+    {
+      "title": "Painting Phra Buddha Metta",
+      "url": "https://www.youtube.com/watch?v=27FqlHisYbs",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ajahn Achalo Bhikkhu"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "085fv-PeUcw": 344,
+      "27FqlHisYbs": 7257
+    },
+    "left_out_notes": [
+      "Autobiography reading episodes including 'From Trauma to Love' and short monastery-life clips."
+    ]
+  },
+  "images_final": true
+}

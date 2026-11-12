@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "maureen-hancock"
+  },
+  "videos": [
+    {
+      "title": "S1 Intuitive Nutrition | Eating Clean 101",
+      "url": "https://www.youtube.com/watch?v=9vboC-CluH8",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "Maureen Hancock"
+    },
+    {
+      "title": "S1 C2 Lesson 1 Addressing the Stress",
+      "url": "https://www.youtube.com/watch?v=Z2utiFus3Ok",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "Maureen Hancock"
+    },
+    {
+      "title": "Meridian Stretches",
+      "url": "https://www.youtube.com/watch?v=-sv-U2UgxMA",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "Maureen Hancock"
+    },
+    {
+      "title": "Intuition Nutrition- Gut Health",
+      "url": "https://www.youtube.com/watch?v=WoMJTdpsTys",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Maureen Hancock"
+    },
+    {
+      "title": "LIVE Reading by Maureen Hancock at Postcard From Heaven Show",
+      "url": "https://www.youtube.com/watch?v=ReMIC2ssuJU",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "Maureen Hancock"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "9vboC-CluH8": 846,
+      "Z2utiFus3Ok": 1095,
+      "-sv-U2UgxMA": 1424,
+      "WoMJTdpsTys": 323,
+      "ReMIC2ssuJU": 4020
+    },
+    "left_out_notes": [
+      "Videos 'S1 Intuitive Nutrition | Eating Clean 101', 'S1 C2 Lesson 1 Addressing the Stress' and 'Meridian Stretches': health/nutrition framing; live-reading clips, promos and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

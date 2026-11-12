@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "linda-howe"
+  },
+  "videos": [
+    {
+      "title": "Health and the Akashic Records with Dr. Linda Howe",
+      "url": "https://www.youtube.com/watch?v=rAt5jnmfuf8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "DrLindaHowe"
+    },
+    {
+      "title": "Why the Akashic Records?",
+      "url": "https://www.youtube.com/watch?v=mOR6boTP9kQ",
+      "subjects": [
+        "akashic-records",
+        "soul-purpose"
+      ],
+      "channel": "DrLindaHowe"
+    },
+    {
+      "title": "The Akashic Records: Gateway to Ancestral Healing with The Shift Network 2023",
+      "url": "https://www.youtube.com/watch?v=BXvAKz_sspU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "DrLindaHowe"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "rAt5jnmfuf8": 6690,
+      "mOR6boTP9kQ": 2070,
+      "BXvAKz_sspU": 4379
+    },
+    "left_out_notes": [
+      "Healing Through the Akashic Records (book) and Akashic Records Level II: Advanced Healing Practitioner (class): healing-led titles; borderline under the health rule, left out.",
+      "Videos 'Health and the Akashic Records' and 'Transforming Our Relationship with Trauma through the Akashic Records': condition-named."
+    ]
+  },
+  "images_final": true
+}

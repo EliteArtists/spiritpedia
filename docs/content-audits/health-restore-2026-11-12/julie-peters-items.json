@@ -1,0 +1,48 @@
+{
+  "healer": {
+    "healer_slug": "julie-peters"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Guided Meditation for Womb Healing",
+      "url": "https://www.juliepeters.ca/meditations/guided-meditation-for-womb-healing",
+      "description": "A gentle free meditation for slowing down and listening to the energy of the womb space, whether or not a physical uterus is there. Julie frames the body as something that holds messages if we pay attention.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef40f5b68c2913bece6beb/61ba14e36d779c321947b865/6610736fd825dd04ad4e3029/1712354291660/?format=1500w"
+    },
+    {
+      "title": "Gentle Self-Affirming Sleep Meditation for Anxiety and Stress",
+      "url": "https://www.juliepeters.ca/meditations/gentle-self-affirming-sleep-meditation-for-anxiety-and-stress",
+      "description": "A free bedtime meditation of kind reminders that you are doing okay and that mistakes are allowed, moving from love for others towards love for yourself as you drift off.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/60ef40f5b68c2913bece6beb/61ba14e36d779c321947b865/622b8b7f04030d2e081ae773/1647021229183/Julie_Figure_Love_1+smaller.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/julie-peters.json",
+    "left_out": [
+      "WANT: 8 Steps to Recovering Desire, Passion, and Pleasure After Sexual Assault: passes the new health rule (a memoir and guide to recovery after trauma), but her book page (juliepeters.ca/wantbook) gives no ISBN, ASIN or publisher link, and no publisher page was found; not restored.",
+      "Intuitive Somatic Counselling sessions: counselling/therapy, a scope rule rather than the health rule; still out.",
+      "Her other condition-named tracks ('Mindfulness Meditation for Chronic Pain', 'Healing Meditation for Injury, Surgery or Illness', 'Gut Medicine' SIBO/IBS tracks, 'Energy Magic Spell for Pain, Sickness or Sadness'): not added; the listing is held to 5 free resources, and the illness and gut tracks would need a closer look for treatment claims."
+    ],
+    "flags": [
+      "Both meditation pages send listeners to Spirituality & Health magazine or Insight Timer for the audio; the pages themselves carry the description and links.",
+      "Her meditations library includes several tracks aimed at chronic pain, illness, surgery and gut conditions (SIBO, IBS); a human may want to check her listing as a whole against the new health rule."
+    ]
+  }
+}

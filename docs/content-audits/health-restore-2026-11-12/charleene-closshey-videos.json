@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "charleene-closshey"
+  },
+  "videos": [
+    {
+      "title": "AUTUMN LEAVES 🍂 Crystal Singing Bowls 432 Hertz + Nature Sounds to Relax & Sleep",
+      "url": "https://www.youtube.com/watch?v=5_n0M1RCZkw",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Charleene Closshey"
+    },
+    {
+      "title": "4 Minute Full Moon CRYSTAL SINGING BOWLS (432 Hertz) | Find Balance, Relieve Stress ✨🌕✨",
+      "url": "https://www.youtube.com/watch?v=795ek42Bq6s",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Charleene Closshey"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "5_n0M1RCZkw": 324700,
+      "795ek42Bq6s": 187112
+    },
+    "left_out_notes": [
+      "The Anxiety Antidote masterclass and sleep-and-stress pages: condition-named.",
+      "Music-only videos and videos with condition words in the title (anxiety relief, overthinking, stress relief)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "whitney-freya"
+  },
+  "videos": [
+    {
+      "title": "How to Paint to CREATE Dreams Come True . Easy Painting for Nervous System Regulation",
+      "url": "https://www.youtube.com/watch?v=3SE_PZ3pWxQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Whitney Freya"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "3SE_PZ3pWxQ": 3130
+    },
+    "left_out_notes": [
+      "Video 'How to Paint to CREATE Dreams Come True . Easy Painting for Nervous System Regulation': borderline health framing."
+    ]
+  },
+  "images_final": true
+}

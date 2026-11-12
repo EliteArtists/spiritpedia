@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "catherine-shainberg"
+  },
+  "videos": [
+    {
+      "title": "The Sun Drop - if you're overwhelmed by too much to do",
+      "url": "https://www.youtube.com/watch?v=cvE4FG7rQtg",
+      "subjects": [
+        "dreamwork",
+        "mysticism"
+      ],
+      "channel": "School of Images"
+    },
+    {
+      "title": "Lindsey Curtis - Mistress of Emotions",
+      "url": "https://www.youtube.com/watch?v=vKHhnVJ0vAc",
+      "subjects": [
+        "dreamwork",
+        "mysticism"
+      ],
+      "channel": "School of Images"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "cvE4FG7rQtg": 1557,
+      "vKHhnVJ0vAc": 231
+    },
+    "left_out_notes": [
+      "DreamBirth book, programmes and videos: conception, pregnancy and childbirth framing (health).",
+      "Exercise videos named for anxiety, contractions or fire danger; practitioner promo videos and clips by other SOI teachers."
+    ]
+  },
+  "images_final": true
+}

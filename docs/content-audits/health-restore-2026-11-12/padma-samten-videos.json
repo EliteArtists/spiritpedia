@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "padma-samten"
+  },
+  "videos": [
+    {
+      "title": "25/10/25 | Retiro Os Cinco Elementos e o Processo de Cura do Corpo, Fala e Mente - CEBB Mendjila #02",
+      "url": "https://www.youtube.com/watch?v=jEvIme6Eh60",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Lama Padma Samten"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "jEvIme6Eh60": 444
+    },
+    "left_out_notes": [
+      "Retreat 'Os Cinco Elementos e o Processo de Cura do Corpo, Fala e Mente' (healing framing) and a talk on mental health."
+    ]
+  },
+  "images_final": true
+}

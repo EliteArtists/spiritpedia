@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "wendy-de-rosa"
+  },
+  "videos": [
+    {
+      "title": "Racial Justice & Root Chakra Healing",
+      "url": "https://www.youtube.com/watch?v=7TDAYW8r06s",
+      "subjects": [
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Wendy De Rosa"
+    },
+    {
+      "title": "Clear Money Blocks | Root Chakra & Abundance Healing (Ep.14)",
+      "url": "https://www.youtube.com/watch?v=Md-8Pa1jXNM",
+      "subjects": [
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Wendy De Rosa"
+    },
+    {
+      "title": "What is an Intuitive Healer and Why Take Healer Training?",
+      "url": "https://www.youtube.com/watch?v=ZcBjXg9NKlE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Wendy De Rosa"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "7TDAYW8r06s": 1320,
+      "Md-8Pa1jXNM": 5442,
+      "ZcBjXg9NKlE": 4344
+    },
+    "left_out_notes": [
+      "Videos 'Energy Healing, Abandonment and the Root Chakra', 'Why Empaths So Easily Attract Narcissists' and 'How Over-sensitvity and Hyper-vigilance Begins': borderline psychological/condition framing, left out."
+    ]
+  },
+  "images_final": true
+}

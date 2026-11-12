@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "eric-zimmer"
+  },
+  "videos": [
+    {
+      "title": "Anxiety, Beauty, and the Unknown: A Map to Emotional Resilience with David Whyte | The One You Feed",
+      "url": "https://www.youtube.com/watch?v=4BOss7dNFr8",
+      "subjects": [
+        "mindfulness",
+        "life-coaching"
+      ],
+      "channel": "TheOneYouFeedPod"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "4BOss7dNFr8": 16923
+    },
+    "left_out_notes": [
+      "Podcast episodes and videos with condition-named titles (anxiety, depression, addiction, trauma, chronic illness, memory loss) left out under the health rule."
+    ]
+  },
+  "images_final": true
+}

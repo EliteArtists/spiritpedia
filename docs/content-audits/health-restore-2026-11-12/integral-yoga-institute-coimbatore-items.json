@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "integral-yoga-institute-coimbatore"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga Nidra Training Program",
+      "url": "https://www.integralyogaindia.org/yoga-nidra-training-program/",
+      "description": "Group or one-to-one sessions in Yoga Nidra, the yogic relaxation practice, at the Integral Yoga Institute in Coimbatore. The practice is taught as a way to let go of mental, emotional and muscular tension and rest deeply.",
+      "price": "Contact for pricing",
+      "image": "https://www.integralyogaindia.org/wp-content/uploads/2025/03/yoga-nidra-scaled.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/integral-yoga-institute-coimbatore.json",
+    "left_out": [
+      "Yoga for Special Child teacher training (Sonia Sumar method): no cure claim, but it trains teachers to evaluate children and 'work with specific syndromes and disorders'; therapy-led (scope rule), and the page gives no current dates ('conducted once annually').",
+      "Healthy Heart, Yoga Therapy and Counselling, Prenatal/Postnatal: no longer linked from the site's menus on 12 Nov 2026; not found.",
+      "Blog posts on sleep and stress relief: on reading, the sleep post is a general promotion of the institute's classes rather than a practice, and the stress post is an article; not free resources."
+    ],
+    "flags": []
+  }
+}

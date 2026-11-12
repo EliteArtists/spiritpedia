@@ -1,0 +1,89 @@
+{
+  "healer": {
+    "healer_slug": "clare-johnson"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Art of Transforming Nightmares",
+      "slug": "the-art-of-transforming-nightmares",
+      "author": "Clare R. Johnson",
+      "asin": "0738762903",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A hands-on guide to working with bad dreams, recurring nightmares and sleep paralysis, with forty-five practices and a quiz to find your sleeper-dreamer type. Clare presents frightening dreams as material for growth and creativity. Published by Llewellyn.",
+      "subjects": [
+        "dreamwork",
+        "shadow-work"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0738762903.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mindful Dreaming",
+      "slug": "mindful-dreaming",
+      "author": "Clare R. Johnson",
+      "asin": "1573247340",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her practical guide to mindful and lucid dreaming, with exercises and case studies on reading the symbolic language of dreams and waking up within them. Published in the UK as Dream Therapy and in the US and Canada by Conari Press.",
+      "subjects": [
+        "dreamwork",
+        "mindfulness"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1573247340.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Yoga Nidra for Lucid Dreaming, Healing, & Blissful Sleep",
+      "url": "https://deep-lucid-dreaming-video-courses.teachable.com/p/yoga-nidra-for-lucid-dreaming-healing-blissful-sleep",
+      "description": "A video and audio course in which Clare guides the old practice of yoga nidra towards wake-induced lucid dreaming, inner guidance and restful sleep. Six hour-long audio journeys are yours to download and keep.",
+      "price": "$157",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/OPqte7LeQ9CAAwrghixA_tiger+dream.jpg"
+    },
+    {
+      "title": "Reunite With Lost Loved Ones",
+      "url": "https://deep-lucid-dreaming-video-courses.teachable.com/p/reunite-with-lost-loved-ones",
+      "description": "A video lesson on death and grief with three guided meditations for meeting loved ones, people or animals, who have died, in relaxed and lucid states. Made for anyone grieving who wants a continuing bond.",
+      "price": "$34",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/5AB68PJeRwiqlN53zuQM_sunrise.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/clare-johnson.json",
+    "left_out": [
+      "Heal Your Body (Teachable): sold on physical healing, with a bonus workshop 'Lucid Dream Healing of Physical Illness' and a practice said to transform the body 'on a cellular level'; a claim to treat illness (new health rule).",
+      "Sleep Monsters & Superheroes: no ASIN or ISBN found on her pages read (unchanged)."
+    ],
+    "flags": [
+      "Books: ASINs from the Amazon links on her own book pages (deepluciddreaming.com/the-art-of-transforming-nightmares/ and /dream-therapy-mindful-dreaming/); the Nightmares ISBN-10 matches the Llewellyn link on the same page (9780738762906). Not confirmed elsewhere; Amazon not opened.",
+      "Mindful Dreaming is the US edition of Dream Therapy; its full subtitle ('...for Happiness, Health, and Positive Change') is left off.",
+      "The Art of Transforming Nightmares names PTSD, night terrors and sleep paralysis in endorsements; the book itself offers dreamwork tools, not treatment. Kept under the new rule.",
+      "Yoga Nidra course lists 'send healing energy to specific health issues' among its practices; no disease named or cure claimed, kept. Worth a look.",
+      "Prices written as '$157' and '$34' because the Teachable pages show only '$' (the original plan wrote USD)."
+    ]
+  }
+}

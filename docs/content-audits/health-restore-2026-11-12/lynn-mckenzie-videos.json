@@ -1,0 +1,57 @@
+{
+  "healer": {
+    "healer_slug": "lynn-mckenzie"
+  },
+  "videos": [
+    {
+      "title": "Animal Communication & Healing Miracles",
+      "url": "https://www.youtube.com/watch?v=Bws4azGy4kM",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Lynn McKenzie Animal Communicator, Healer & Psychic"
+    },
+    {
+      "title": "Animal Healing (With Short Demo)",
+      "url": "https://www.youtube.com/watch?v=8YG7HSUXUno",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Lynn McKenzie Animal Communicator, Healer & Psychic"
+    },
+    {
+      "title": "Demo Energy Healing Session for Animals",
+      "url": "https://www.youtube.com/watch?v=wAwBZZbO0NU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Lynn McKenzie Animal Communicator, Healer & Psychic"
+    },
+    {
+      "title": "Your Animal Communication, Healing & Psychic Questions Answered...",
+      "url": "https://www.youtube.com/watch?v=pYALR8unqbo",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Lynn McKenzie Animal Communicator, Healer & Psychic"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Bws4azGy4kM": 2865,
+      "8YG7HSUXUno": 1619,
+      "wAwBZZbO0NU": 4005,
+      "pYALR8unqbo": 1565
+    },
+    "left_out_notes": [
+      "Videos 'Animal Communication & Healing Miracles', 'Animal Healing (With Short Demo)', Q&A sessions on 'healing', and short book clips under ~2 minutes."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "kagyu-samye-dzong-edinburgh"
+  },
+  "videos": [
+    {
+      "title": "Akong RInpoche: Restoring the Balance - Session 1",
+      "url": "https://www.youtube.com/watch?v=FPvlK74JCh8",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Kagyu Samye Dzong Edinburgh"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "FPvlK74JCh8": 228
+    },
+    "left_out_notes": [
+      "'Akong Rinpoche: Restoring the Balance' course and videos left out as possibly health-framed (borderline)."
+    ]
+  },
+  "images_final": true
+}

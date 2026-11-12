@@ -1,0 +1,95 @@
+{
+  "healer": {
+    "healer_slug": "sarah-hall"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Psychic Protection with Archangel Michael",
+      "url": "https://sarahhall.com/product/psychic-protection-with-archangel-michael/",
+      "description": "A guided meditation download that calls on Archangel Michael to clear heavy or fearful energy and surround you with protection. It can also be played to clear the feel of a room.",
+      "price": "$7.77",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "meditation",
+        "energy-medicine"
+      ],
+      "image": "https://users.insighttimer.com/U0Q4j5Z1P9k0b9B0Q8x0q4r2v9E7B2M0B9L6K8N2v1E9a1G8K7D0u8w4J3k3b7v7u3f9W9S2X7E8C9Z3E8Q8k9V4u1n6k2U3V2c3/pictures/square_large.jpeg"
+    },
+    {
+      "title": "5 Minute Meditation for Energy Cleansing with Archangel Michael",
+      "url": "https://sarahhall.com/product/5-minute-meditation-for-energy-cleansing-with-archangel-michael/",
+      "description": "A short daily guided practice using aura combing with Archangel Michael to release cords and stuck energy when you feel drained, worried or stressed. Also usable as a space clearing.",
+      "price": "$4.44",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "channelled-teachings",
+        "energy-medicine"
+      ],
+      "image": "https://users.insighttimer.com/U0Q4j5Z1P9k0b9B0Q8x0q4r2v9E7B2M0B9L6K8N2v1E9a1G8K7D0u8w4J3k3b7v7u3f9W9S2X7E8C9Z3E8Q8k9V4u1n6k2U3V2c3/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Healing with Jesus",
+      "url": "https://sarahhall.com/product/healing-with-jesus/",
+      "description": "A guided meditation journey with Jesus as a loving teacher, centred on forgiveness, love and seeing your life as an expression of God's love.",
+      "price": "$7.77",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://users.insighttimer.com/U0Q4j5Z1P9k0b9B0Q8x0q4r2v9E7B2M0B9L6K8N2v1E9a1G8K7D0u8w4J3k3b7v7u3f9W9S2X7E8C9Z3E8Q8k9V4u1n6k2U3V2c3/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Guided Meditation for Deep, Healing Sleep with the Angels",
+      "url": "https://sarahhall.com/product/guided-meditation-for-deep-healing-sleep-with-the-angels/",
+      "description": "A bedtime guided meditation that invites the angels' presence as you drift into rest, set over music tuned to 432 Hz and 528 Hz. Meant to make sleep a restful, soulful time.",
+      "price": "$7.77",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "channelled-teachings"
+      ],
+      "image": "https://users.insighttimer.com/U0Q4j5Z1P9k0b9B0Q8x0q4r2v9E7B2M0B9L6K8N2v1E9a1G8K7D0u8w4J3k3b7v7u3f9W9S2X7E8C9Z3E8Q8k9V4u1n6k2U3V2c3/pictures/square_large.jpeg"
+    },
+    {
+      "title": "Guided Angel Meditation for Pregnancy",
+      "url": "https://sarahhall.com/product/guided-angel-meditation-for-pregnancy/",
+      "description": "A guided meditation for those who are pregnant, hoping to be, or supporting a partner, focused on bonding with the soul of the coming child and receiving the angels' support while preparing for parenthood.",
+      "price": "$7.77",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "channelled-teachings"
+      ],
+      "image": "https://users.insighttimer.com/U0Q4j5Z1P9k0b9B0Q8x0q4r2v9E7B2M0B9L6K8N2v1E9a1G8K7D0u8w4J3k3b7v7u3f9W9S2X7E8C9Z3E8Q8k9V4u1n6k2U3V2c3/pictures/square_large.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/sarah-hall.json",
+    "left_out": [],
+    "flags": [
+      "Prices are written without USD because the product pages show only '$' (the original plan wrote '$7.77 USD').",
+      "Deep, Healing Sleep page calls 528 Hz 'the frequency of miraculous healing' and speaks of healing 'body, mind, and spirit' in sleep; no disease named, so kept under the new rule. Worth a look.",
+      "Pregnancy meditation speaks of 'divine healing energy' supporting physical preparation for parenthood; no medical claim, kept.",
+      "Dry run: the ingest could not reach sarahhall.com (robots.txt 'unreachable', socket closed) though curl reads it, so the product images fell back to her photo, and it proposes removing 1 of her 3 profile photos as unusable ('Healer changes: image_urls'). Check that photo change before inserting."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "kristyn-rose-foster"
+  },
+  "videos": [
+    {
+      "title": "Yoga Nidra for Sleep and Insomnia",
+      "url": "https://www.youtube.com/watch?v=Q9PUxB1fpDg",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Kristyn Rose | Yoga Nidra & Deep Rest"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Q9PUxB1fpDg": 638996
+    },
+    "left_out_notes": [
+      "YouTube and Insight Timer tracks titled for insomnia, deep sleep, falling asleep, nervous system healing or vagus nerve: health-claim rule."
+    ]
+  },
+  "images_final": true
+}

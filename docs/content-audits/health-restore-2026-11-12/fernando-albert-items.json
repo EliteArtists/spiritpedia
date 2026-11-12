@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "fernando-albert"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Soul Retrieval Ceremony",
+      "url": "https://meditatewithfernando.com/product/soul-retrieval-ceremony/",
+      "description": "A distance session in which Fernando makes a shamanic journey to the Lower World on the client's behalf, looking for parts of the self felt to have been lost through hard experiences in this or earlier lives. Some preparation is asked beforehand, and he reports back on what he found.",
+      "price": "$99.95",
+      "image": "https://meditatewithfernando.com/wp-content/uploads/2020/08/Soul-Retrieval-ceremony-1300x731.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Shamanic Initiation Ceremony",
+      "url": "https://meditatewithfernando.com/product/shamanic-initiation-ceremony/",
+      "description": "A personalised three-part ceremony and mentorship for people who feel called to the shamanic path. Through a shared journey into the elemental world, students are introduced to the spirits of the earth as a foundation for longer-term practice.",
+      "price": "$995.00",
+      "image": "https://meditatewithfernando.com/wp-content/uploads/2025/06/Shamanic-Initiation-1300x731.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/fernando-albert.json",
+    "left_out": [
+      "Basic Healing ($12.45) and Complete Healing ($24.95): distance healings whose pages promise white light to 'your physical body, main organs, and main systems' and say finding emotional sources 'usually eliminates' physical pain; read as a physical treatment claim (owner may decide otherwise).",
+      "Pet Daily Healing: claims physical recovery for animals and to 'guarantee results'; left out on the same ground.",
+      "Free Healing List (meditatewithfernando.com/free-healing-list/): distance healing said to lead 'often' to 'complete pain removal'; left out on the same ground.",
+      "The listing now has 10 offerings with these two, so no room for more."
+    ],
+    "flags": [
+      "Under the new rule the distance-healing items are borderline rather than clear: they name no disease but promise physical effects from remote healing. A human may prefer to restore them."
+    ]
+  }
+}

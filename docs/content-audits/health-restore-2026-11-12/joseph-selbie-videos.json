@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "joseph-selbie"
+  },
+  "videos": [
+    {
+      "title": "My Story of Miraculous Healing: The Physics Behind the Power of Emotion, Mind, and Spirit",
+      "url": "https://www.youtube.com/watch?v=WlG5ULHFMaA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Joseph Selbie"
+    },
+    {
+      "title": "Stories of Instant and Miraculous Healing - Quantum Realm - with Joseph Selbie",
+      "url": "https://www.youtube.com/watch?v=cJTc0Eq8_NY",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Joseph Selbie"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "WlG5ULHFMaA": 388,
+      "cJTc0Eq8_NY": 43
+    },
+    "left_out_notes": [
+      "Videos 'My Story of Miraculous Healing…' and 'Stories of Instant and Miraculous Healing…': health claims."
+    ]
+  },
+  "images_final": true
+}

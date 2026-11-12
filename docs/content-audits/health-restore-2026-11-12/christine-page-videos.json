@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "christine-page"
+  },
+  "videos": [
+    {
+      "title": "Solar Eclipse Healing and Activation of Serpent Energies",
+      "url": "https://www.youtube.com/watch?v=7e_3WhZMSkM",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dr. Christine Page"
+    },
+    {
+      "title": "The Healing Power of Focused Imagination",
+      "url": "https://www.youtube.com/watch?v=rtNItMbLsDc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dr. Christine Page"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "7e_3WhZMSkM": 733,
+      "rtNItMbLsDc": 658
+    },
+    "left_out_notes": [
+      "Healing into Wholeness section, its seminar 'Healthily Surfing the Waves of Change' and its YouTube playlist: health framing."
+    ]
+  },
+  "images_final": true
+}

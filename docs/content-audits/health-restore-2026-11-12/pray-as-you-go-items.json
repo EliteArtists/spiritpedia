@@ -1,0 +1,44 @@
+{
+  "healer": {
+    "healer_slug": "pray-as-you-go"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Mental Health Awareness Exercises",
+      "url": "https://prayasyougo.org/series/mental-health-awareness-exercises-5",
+      "description": "A free series of guided prayer exercises for becoming still and bringing a particular mental health struggle before God, offered as comfort and companionship rather than advice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://prayasyougo.org/cdn-cgi/image/width=1200,height=630,quality=95,fit=crop,gravity=center/https://cdn.prayasyougo.org/series/images/918c3e94-5e7b-40ea-8b18-e6417dec190d.jpg"
+    },
+    {
+      "title": "The Gift of Sleep",
+      "url": "https://prayasyougo.org/prayer/the-gift-of-sleep-2524",
+      "description": "A free bedtime Examen in the Ignatian tradition that hands memory, understanding and will over to God for the night, seeing sleep as a gift received rather than achieved. Set to quiet music.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "spirituality",
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://prayasyougo.org/cdn-cgi/image/width=1200,height=630,quality=95,fit=crop,gravity=center/https://cdn.prayasyougo.org/prayers/images/cc9264b8-5392-48a3-8858-ce58809bc935.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/pray-as-you-go.json",
+    "left_out": [
+      "Mental Health category page (prayasyougo.org/category/mental-health-corner-17): an index page; its one series is listed instead."
+    ],
+    "flags": []
+  }
+}

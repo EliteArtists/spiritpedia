@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "anand-mehrotra"
+  },
+  "videos": [
+    {
+      "title": "Why is Letting Go Intelligent?  ANAND MEHROTRA",
+      "url": "https://www.youtube.com/watch?v=HXoIYVn2DKg",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Anand Mehrotra"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "HXoIYVn2DKg": 8610
+    },
+    "left_out_notes": [
+      "Video 'Your Mind Won't Stop? Try This Ancient Practice to End Negative Spirals' (borderline mental-health framing)."
+    ]
+  },
+  "images_final": true
+}

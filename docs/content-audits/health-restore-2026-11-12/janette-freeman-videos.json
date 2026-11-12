@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "janette-freeman"
+  },
+  "videos": [
+    {
+      "title": "Stressed?  How Meditation Helps in a Few Simple Breaths",
+      "url": "https://www.youtube.com/watch?v=gkCrKNijuuY",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Dr. Janette Marie Freeman"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "gkCrKNijuuY": 42
+    },
+    "left_out_notes": [
+      "YouTube 'Stressed? How Meditation Helps in a Few Simple Breaths' (stress framing, borderline) and narrations of the I AM Discourses (reading another author's text)."
+    ]
+  },
+  "images_final": true
+}

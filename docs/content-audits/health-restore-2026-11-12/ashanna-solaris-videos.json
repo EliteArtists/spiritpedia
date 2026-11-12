@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "ashanna-solaris"
+  },
+  "videos": [
+    {
+      "title": "How Forgiveness Heals Us with Ashanna Solaris & Dana Dharma Devi, Founders of Clarity Breathwork",
+      "url": "https://www.youtube.com/watch?v=3Y6wn-h5chg",
+      "subjects": [
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Clarity Breathwork"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "3Y6wn-h5chg": 151
+    },
+    "left_out_notes": [
+      "Video 'How Forgiveness Heals Us…': 'heals' title, left out as borderline."
+    ]
+  }
+}

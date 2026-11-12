@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "sivananda-yoga-vedanta-center-ho-chi-minh-city"
+  },
+  "videos": [
+    {
+      "title": "Làm thế nào duy trì sức khoẻ tinh thần bằng các phương pháp Yoga cổ điển? (Giảm sợ hãi,lo âu,Stress)",
+      "url": "https://www.youtube.com/watch?v=7OEFuqk681g",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Sivananda Yoga Vietnam"
+    },
+    {
+      "title": "Stress là gì ?",
+      "url": "https://www.youtube.com/watch?v=RgzEXPMHMXo",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Sivananda Yoga Vietnam"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "7OEFuqk681g": 1017,
+      "RgzEXPMHMXo": 182
+    },
+    "left_out_notes": [
+      "Channel videos on fear, anxiety, stress and the epidemic, and the kitchari recipe: health rule or not teaching."
+    ]
+  },
+  "images_final": true
+}

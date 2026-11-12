@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "claudia-silas"
+  },
+  "videos": [
+    {
+      "title": "Panic & Anxiety Attack Relief - Meditation",
+      "url": "https://www.youtube.com/watch?v=LLlbupvRh0o",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Claudia Silas"
+    },
+    {
+      "title": "Coping With Guilt and Shame - Meditation",
+      "url": "https://www.youtube.com/watch?v=SzX6ymqd6WM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Claudia Silas"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "LLlbupvRh0o": 21,
+      "SzX6ymqd6WM": 45
+    },
+    "left_out_notes": [
+      "Insight Timer and YouTube 'Panic & Anxiety Attack Relief' and 'Coping With Guilt And Shame' (name conditions)."
+    ]
+  },
+  "images_final": true
+}

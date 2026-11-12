@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "john-douillard"
+  },
+  "videos": [
+    {
+      "title": "Flower Essences for Advanced Healing with David Dalton | Dr. John Douillard's LifeSpa",
+      "url": "https://www.youtube.com/watch?v=IhOeD0aBRns",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Oral Health + Mastic Gum with Logan Wright | Dr. John Douillard's LifeSpa",
+      "url": "https://www.youtube.com/watch?v=B1dTXfqiGHk",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Hormone Imbalances & Chronic Stress with Dr. Sonya Jensen | Dr. John Douillard's LifeSpa",
+      "url": "https://www.youtube.com/watch?v=y6LuXcUDRO0",
+      "subjects": [
+        "ayurveda",
+        "breathwork"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Grounding and Earthing: The Lost Healing Method for Sleep and More | Dr. John Douillard's LifeSpa",
+      "url": "https://www.youtube.com/watch?v=uHmGaM9UNqU",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "John Douillard"
+    },
+    {
+      "title": "Chronic Pain & Fascia: The Importance of Lymphatic Drainage & Rolfing | Dr. John Douillard's LifeSpa",
+      "url": "https://www.youtube.com/watch?v=4bQyQ0S3v84",
+      "subjects": [
+        "ayurveda",
+        "breathwork"
+      ],
+      "channel": "John Douillard"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "IhOeD0aBRns": 1985,
+      "B1dTXfqiGHk": 1792,
+      "y6LuXcUDRO0": 709,
+      "uHmGaM9UNqU": 577,
+      "4bQyQ0S3v84": 385
+    },
+    "left_out_notes": [
+      "Most popular YouTube videos (left-side sleeping, oil pulling, lymph detox, brain detox, digestive enzymes, gallbladder, menopause, tinnitus etc.): health or condition topics."
+    ]
+  },
+  "images_final": true
+}

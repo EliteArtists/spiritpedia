@@ -1,0 +1,63 @@
+{
+  "healer": {
+    "healer_slug": "glynis-mccants"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing By The Numbers",
+      "url": "https://www.glynishasyournumber.com/ezcart/details.cfm?Product_ID=NewCD",
+      "description": "An affirmation CD from numerologist Glynis McCants with affirmations for each of the numbers 1 to 9. It also covers themes such as easing self-criticism, letting go of anger, love and prosperity.",
+      "price": "$22.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "manifestation"
+      ],
+      "image": "https://www.glynishasyournumber.com/ezcart/images/HEADER2015.jpg"
+    },
+    {
+      "title": "Healing Affirmations To Overcome Grief",
+      "url": "https://www.glynishasyournumber.com/ezcart/details.cfm?Product_ID=OvercomingGriefCd",
+      "description": "A CD set Glynis McCants made after a death in her own family, with affirmations for grieving at your own pace, being patient with yourself and holding on to happy memories. She also shares stories about signs from loved ones who have died.",
+      "price": "$24.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "mediumship-spirits"
+      ],
+      "image": "https://www.glynishasyournumber.com/ezcart/images/HEADER2015.jpg"
+    },
+    {
+      "title": "Affirmations To Attract Healthy Love",
+      "url": "https://www.glynishasyournumber.com/ezcart/details.cfm?Product_ID=HealthyLoveAffirmationCds",
+      "description": "A CD set of seven love affirmations that listeners repeat along with Glynis McCants for fifteen minutes a day. It is aimed at changing old patterns around relationships and opening to a healthy partnership.",
+      "price": "$22.95",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "conscious-relationships",
+        "manifestation"
+      ],
+      "image": "https://www.glynishasyournumber.com/ezcart/images/HEADER2015.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/glynis-mccants.json",
+    "left_out": [
+      "Healing Affirmations For Your Body CD set ($22.95): sold against fears of 'family diseases such as cancer' with the promise that daily affirmations 'build a stronger body'; read as a physical-health claim, so still out (borderline)."
+    ],
+    "flags": [
+      "Healing Affirmations For Your Body left out as borderline: a human may judge it allowed (it does not claim to cure cancer)."
+    ]
+  }
+}

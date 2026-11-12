@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "james-bae"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Doorways of the Heart: A Tibetan Yoga New Year Retreat",
+      "url": "https://kripalu.org/experiences/tibetan-yoga-grief-resilience-and-empowerment",
+      "description": "A New Year retreat at Kripalu in which Dr. James Bae teaches Tibetan Buddhist yoga and meditation for times of loss and change. The six bardos of the Tibetan Book of the Dead serve as a map for moving through grief, alongside community ritual and daily Kripalu yoga classes.",
+      "price": "$405 tuition, plus accommodation",
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-08/IMG_9285_sunset_winter_hero.jpg?itok=fmPPmCUU",
+      "product_type": "retreat",
+      "start_date": "2027-01-01",
+      "end_date": "2027-01-04",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "death-the-afterlife"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/james-bae.json",
+    "left_out": [
+      "Acupuncture and Chinese medicine clinic services: medical treatment, still out.",
+      "Dharma of Grieving page and caregiver meditations (drjamesbae.com/grief-%26-dharma): the page is an outline with headings ('Coming Soon!' for the caregiver meditations) and one embedded video by another speaker; no free practice of his own to link.",
+      "Trauma-informed Buddhist yoga therapy trainings: therapy-led (scope rule), not restored. The TraumaBuddhistYogaTherapy video is a video, handled separately."
+    ],
+    "flags": [
+      "Kripalu's page shows tuition $405 with no currency code, plus required accommodation (from $109 a night)."
+    ]
+  }
+}

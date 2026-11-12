@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "dan-harris"
+  },
+  "videos": [
+    {
+      "title": "Sometimes Your Anxiety Is Correct, Not Irrational | Josh Johnson",
+      "url": "https://www.youtube.com/watch?v=bRtwYPVefIg",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "10% Happier"
+    },
+    {
+      "title": "How to Actually Regulate Your Emotions | Dr. Marc Brackett",
+      "url": "https://www.youtube.com/watch?v=yRlaL3IAmdY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "10% Happier"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "bRtwYPVefIg": 105765,
+      "yRlaL3IAmdY": 23154
+    },
+    "left_out_notes": [
+      "Video 'Why Meditate? Dan Harris Explains Why Everyone Should Try Meditation & Mindfulness for Mental Health' (his most-viewed, 1.39M views): left out as borderline because the title names mental health.",
+      "Video 'Help Anxiety with Meditation... Joseph Goldstein & Dan Harris': names a condition."
+    ]
+  },
+  "images_final": true
+}

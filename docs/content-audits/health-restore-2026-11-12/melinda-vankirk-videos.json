@@ -1,0 +1,101 @@
+{
+  "healer": {
+    "healer_slug": "melinda-vankirk"
+  },
+  "videos": [
+    {
+      "title": "Move to Meditate Yoga - Soothe the Nervous System Hatha Yoga",
+      "url": "https://www.youtube.com/watch?v=Vq_41vxQGbo",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Hatha for Mental Fatigue",
+      "url": "https://www.youtube.com/watch?v=m27r8YWW5tM",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Overcome the Winter Blues",
+      "url": "https://www.youtube.com/watch?v=zvcGxP-qZW8",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga - Manifest Better Health",
+      "url": "https://www.youtube.com/watch?v=xueywkRsuHk",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Episode 17 - Law of Attraction & Manifesting Mindset for Better Health",
+      "url": "https://www.youtube.com/watch?v=KurTW-YMAQo",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Episode 18 - Burnout, Inner Child Work, and Finding Spirit",
+      "url": "https://www.youtube.com/watch?v=_W-Gj5WTHqE",
+      "subjects": [
+        "yoga",
+        "human-design"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Episode 12 - Soothing the Nervous System",
+      "url": "https://www.youtube.com/watch?v=RuE6ETdI_QI",
+      "subjects": [
+        "yoga",
+        "human-design"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    },
+    {
+      "title": "Move to Meditate Yoga | Hatha Yoga for Mental Focus",
+      "url": "https://www.youtube.com/watch?v=CB58X5S9Ts4",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "LIT Lotus Wellbeing"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Vq_41vxQGbo": 166,
+      "m27r8YWW5tM": 67,
+      "zvcGxP-qZW8": 57,
+      "xueywkRsuHk": 58,
+      "KurTW-YMAQo": 45,
+      "_W-Gj5WTHqE": 37,
+      "RuE6ETdI_QI": 21,
+      "CB58X5S9Ts4": 33
+    },
+    "left_out_notes": [
+      "YouTube videos with condition framing: 'Soothe the Nervous System', 'Hatha for Mental Fatigue', 'Overcome the Winter Blues', 'Manifest Better Health', 'Law of Attraction & Manifesting Mindset for Better Health', 'Burnout, Inner Child Work, and Finding Spirit', 'Soothing the Nervous System'."
+    ]
+  },
+  "images_final": true
+}

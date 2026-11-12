@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "john-siddique"
+  },
+  "videos": [
+    {
+      "title": "Meditation: 'Mental Health Support' - John Siddique",
+      "url": "https://www.youtube.com/watch?v=8iKJbJcjdmQ",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "John Siddique"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "8iKJbJcjdmQ": 1037
+    },
+    "left_out_notes": [
+      "Exam Success Meditation video and Insight Timer/store items titled for sleep or anxiety: health-claim rule."
+    ]
+  },
+  "images_final": true
+}

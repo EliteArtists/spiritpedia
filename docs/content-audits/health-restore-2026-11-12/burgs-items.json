@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "burgs"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Anxiety Programme",
+      "url": "https://theartofmeditation.org/the-anxiety-programme",
+      "description": "A self-paced online course of fifteen lessons that looks at anxiety from an energetic point of view. Burgs draws on meditation, chi kung, breathing exercises and energy work for settling into inner stillness and bringing the mind back to a calm, coherent state.",
+      "price": "£60",
+      "image": "http://static1.squarespace.com/static/602ea9acfe29fd724d687ce1/t/61644063fe485102344e9a97/1633960039205/unsplash-image-KMn4VEeEPR8.jpg?format=1500w",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "qi-gong"
+      ]
+    },
+    {
+      "title": "Level 2: Healing Meditation",
+      "url": "https://theartofmeditation.org/online-level-2-healing-meditation",
+      "description": "The second level of his Art of Meditation training as a self-paced online course of fifteen lessons, following on from the Level 1 foundation. It deepens daily practice and trains the mind towards steadier insight and wellbeing.",
+      "price": "£160",
+      "image": "http://static1.squarespace.com/static/602ea9acfe29fd724d687ce1/t/616441648d4f9b7c6176e587/1669198870440/unsplash-image-8__IZFB9AD8.jpg?format=1500w",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/burgs.json",
+    "left_out": [
+      "The Art of Self-Healing: the 2026 run (March to June) is over and the next is '2027 TBD'.",
+      "Reset Weekend Retreat (21–22 Nov 2026): the page says 'RETREAT FULL - JOIN THE WAITING LIST'.",
+      "Residential Internal Alchemy Reset Retreat (Portugal, £600): dates 'TBC 2027'."
+    ],
+    "flags": [
+      "Level 2 asks for a Level 1 foundation retreat first, a requirement the page says was waived during the pandemic."
+    ]
+  }
+}

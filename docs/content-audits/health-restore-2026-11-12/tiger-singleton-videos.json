@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "tiger-singleton"
+  },
+  "videos": [
+    {
+      "title": "Why we Suffer Emotionally & How to Heal (Spiritual Wisdom)",
+      "url": "https://www.youtube.com/watch?v=1ED5rJxvNlA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Tigmonk (Tiger Singleton)"
+    },
+    {
+      "title": "Find Stillness. Heal Fear. Be Love (Meditative Talk)",
+      "url": "https://www.youtube.com/watch?v=BZkCKZv6oIk",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Tigmonk (Tiger Singleton)"
+    },
+    {
+      "title": "Relationship Problems? The PERFECT MIRROR for Real Healing (Learn & Grow)",
+      "url": "https://www.youtube.com/watch?v=-H7CNtOfSnk",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Tigmonk (Tiger Singleton)"
+    },
+    {
+      "title": "The Ego Is the Devil (The Real Root of Corruption, Abuse, and Power)",
+      "url": "https://www.youtube.com/watch?v=uza2sRwqAT4",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "channel": "Tigmonk (Tiger Singleton)"
+    },
+    {
+      "title": "Meeting Your Deepest Pain; The Only Way Out is Through",
+      "url": "https://www.youtube.com/watch?v=HZcMzmuuqBo",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "channel": "Tigmonk (Tiger Singleton)"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "1ED5rJxvNlA": 200,
+      "BZkCKZv6oIk": 196,
+      "-H7CNtOfSnk": 165,
+      "uza2sRwqAT4": 174,
+      "HZcMzmuuqBo": 355
+    },
+    "left_out_notes": [
+      "YouTube videos 'Why Am I So Afraid All The Time?', 'Why we Suffer Emotionally & How to Heal', 'Find Stillness. Heal Fear. Be Love', 'Relationship Problems? The PERFECT MIRROR for Real Healing' and 'The Ego Is the Devil (... Abuse ...)' (healing or condition-adjacent framing, left out to be safe)."
+    ]
+  },
+  "images_final": true
+}

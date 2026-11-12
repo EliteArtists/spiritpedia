@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "claire-creighton"
+  },
+  "videos": [
+    {
+      "title": "The Rose Oracle 🌹 a meditation journey for heart healing",
+      "url": "https://www.youtube.com/watch?v=PQktKAUb9WU",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Claire Creighton"
+    },
+    {
+      "title": "Shh!! 'Quieten your Mind' meditation ~ do this daily to combat stress!! 😍🌟✨️",
+      "url": "https://www.youtube.com/watch?v=MC6yWeH91G0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Claire Creighton"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "PQktKAUb9WU": 32,
+      "MC6yWeH91G0": 138
+    },
+    "left_out_notes": [
+      "YouTube 'The Rose Oracle ... a meditation journey for heart healing' and 'Quieten your Mind meditation ... to combat stress' left out as borderline wellbeing/condition wording."
+    ]
+  },
+  "images_final": true
+}

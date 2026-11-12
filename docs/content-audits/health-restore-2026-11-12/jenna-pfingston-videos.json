@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "jenna-pfingston"
+  },
+  "videos": [
+    {
+      "title": "Menstrual Cycle Meditation",
+      "url": "https://www.youtube.com/watch?v=2OGSY3aQjI4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Jenna Pfingston"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "2OGSY3aQjI4": 206858
+    },
+    "left_out_notes": [
+      "Video 'Menstrual Cycle Meditation' (her most viewed): bodily-cycle framing, left out as borderline under the health rule."
+    ]
+  },
+  "images_final": true
+}

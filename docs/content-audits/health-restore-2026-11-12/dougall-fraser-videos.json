@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "dougall-fraser"
+  },
+  "videos": [
+    {
+      "title": "How to STOP a PANIC attack!",
+      "url": "https://www.youtube.com/watch?v=AUmb17_P8W4",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Dougall Fraser"
+    },
+    {
+      "title": "Emma Mumford | Manifesting Secrets | Dougall Fraser",
+      "url": "https://www.youtube.com/watch?v=QJpjRGjIwA0",
+      "subjects": [
+        "energy-medicine",
+        "spirituality"
+      ],
+      "channel": "Dougall Fraser"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "AUmb17_P8W4": 202,
+      "QJpjRGjIwA0": 819
+    },
+    "left_out_notes": [
+      "Videos 'How to STOP a PANIC attack!': condition-named. Podcast interviews with guests (Mel Robbins, Emma Mumford and others), Japan travel videos and pick-a-card readings: not his teaching or not evergreen."
+    ]
+  },
+  "images_final": true
+}

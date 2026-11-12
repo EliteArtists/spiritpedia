@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "ramsay-taum"
+  },
+  "videos": [
+    {
+      "title": "The Sacred Path of Aloha: Ancient Hawaiian Wisdom for Healing Trauma...",
+      "url": "https://www.youtube.com/watch?v=ZzBvMUZ-LnY",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "LEI Produxns"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "ZzBvMUZ-LnY": 27
+    },
+    "left_out_notes": [
+      "Greater Good Radio and other long podcast episodes: kept to the best-viewed teaching talks; 'Why Isn't Your Healing Working?' left out as borderline."
+    ]
+  },
+  "images_final": true
+}

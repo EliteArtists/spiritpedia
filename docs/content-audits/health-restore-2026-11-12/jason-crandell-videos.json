@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "jason-crandell"
+  },
+  "videos": [
+    {
+      "title": "Instability and Love: A Conversation About Family, Addiction, and Recovery",
+      "url": "https://www.youtube.com/watch?v=JcpRSMz2kbc",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Evening Breathwork for Relaxation & Sleep:  3 Pranayama Techniques That Calm the Nervous System",
+      "url": "https://www.youtube.com/watch?v=8xrLquUdjSc",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Jason Crandell Yoga"
+    },
+    {
+      "title": "Yoga Philosophy for Teachers: 5 Powerful Lessons to Stay Inspired & Avoid Burnout",
+      "url": "https://www.youtube.com/watch?v=BEu-8RS3xd0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Jason Crandell Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "JcpRSMz2kbc": 1780,
+      "8xrLquUdjSc": 2959,
+      "BEu-8RS3xd0": 2561
+    },
+    "left_out_notes": [
+      "Videos on hamstrings, flexibility science and 'Instability and Love: ... Addiction, and Recovery': borderline condition or recovery framing."
+    ]
+  },
+  "images_final": true
+}

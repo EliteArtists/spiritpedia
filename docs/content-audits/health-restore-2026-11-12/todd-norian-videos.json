@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "todd-norian"
+  },
+  "videos": [
+    {
+      "title": "Soothe Yourself with Twists",
+      "url": "https://www.youtube.com/watch?v=s5KOF91ExEw",
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "channel": "Ashaya Yoga"
+    },
+    {
+      "title": "Blankets of Grace, Special Holiday Edition: Practices to Relax and Renew",
+      "url": "https://www.youtube.com/watch?v=NDzwTh23xkk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Ashaya Yoga"
+    },
+    {
+      "title": "Look Behind the Veil: The Power of Setting Healthy Self-Boundaries",
+      "url": "https://www.youtube.com/watch?v=CXklmyoFdWU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Ashaya Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "s5KOF91ExEw": 1345,
+      "NDzwTh23xkk": 447,
+      "CXklmyoFdWU": 403
+    },
+    "left_out_notes": [
+      "Introduction to Ashaya Yoga Therapy manuals and therapeutic clips (knee, biceps tendonitis, lower back): condition framing.",
+      "Soothe Yourself with Twists and Transforming Pain Into Beauty videos: descriptions or titles name anxiety or pain."
+    ]
+  },
+  "images_final": true
+}

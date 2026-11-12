@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "grace-bryant"
+  },
+  "videos": [
+    {
+      "title": "A Peek into Sex-Education, Racism & Parenting with Aaron Johnson & Grace Bryant",
+      "url": "https://www.youtube.com/watch?v=c6JZYQGqzvs",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Be Whole Be Happy"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "c6JZYQGqzvs": 101
+    },
+    "left_out_notes": [
+      "YouTube: 'A Cure for Anxiety: Coping vs Letting Go' (condition in title), interviews on sex education and racism, and a retreat share video left out."
+    ]
+  },
+  "images_final": true
+}

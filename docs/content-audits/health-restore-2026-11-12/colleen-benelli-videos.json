@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "colleen-benelli"
+  },
+  "videos": [
+    {
+      "title": "Rest & Receive in the Tree of Life - A Reiki Experience",
+      "url": "https://www.youtube.com/watch?v=AbCfNVHJwb8",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "Reiki Lifestyle"
+    },
+    {
+      "title": "Part 1: Brett Bevell. Ultra-Psychic Reiki for Healing with the Rainbow Sphere",
+      "url": "https://www.youtube.com/watch?v=c59z4Ie5hmA",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "channel": "Reiki Lifestyle"
+    },
+    {
+      "title": "Reiki Journey: Reset Your Nervous System & Vagus Nerve",
+      "url": "https://www.youtube.com/watch?v=6ThhsM-fly8",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "Reiki Lifestyle"
+    },
+    {
+      "title": "Reiki Journey Meditation for Chakra Healing, Ancestral Clearing, and Divine Guidance",
+      "url": "https://www.youtube.com/watch?v=SS0Q6avT4qU",
+      "subjects": [
+        "meditation",
+        "reiki",
+        "chakra-healing"
+      ],
+      "channel": "Reiki Lifestyle"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "AbCfNVHJwb8": 2103,
+      "c59z4Ie5hmA": 797,
+      "6ThhsM-fly8": 613,
+      "SS0Q6avT4qU": 575
+    },
+    "left_out_notes": [
+      "Videos where Robyn alone or guests lead (e.g. Animal Reiki Healing Guided Journey, Understanding Animal Reiki, guest interviews); 'Guided Meditation: Healing for Laurelle Gaia' (healing for a named person)."
+    ]
+  },
+  "images_final": true
+}

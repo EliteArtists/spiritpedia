@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "lee-wolak"
+  },
+  "videos": [
+    {
+      "title": "Mastering the Mind Talk Series, Week 9, Becoming Unshakable",
+      "url": "https://www.youtube.com/watch?v=DuX96W3hsyY",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Rev. Lee Wolak"
+    },
+    {
+      "title": "Stop Adding to the Pain",
+      "url": "https://www.youtube.com/watch?v=IBDtzKtZHSk",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Rev. Lee Wolak"
+    },
+    {
+      "title": "Mastering the Mind Talk Series, Week 7, The Power of Letting Go",
+      "url": "https://www.youtube.com/watch?v=QEimJNB_AUE",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Rev. Lee Wolak"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "DuX96W3hsyY": 309,
+      "wscLHOzGxxw": 193,
+      "IBDtzKtZHSk": 253,
+      "QEimJNB_AUE": 119,
+      "3qgItJgQSzk": 117
+    },
+    "left_out_notes": [
+      "Videos with healing or condition titles: 'Personal Healing Meditation', 'Meditation Emotional and Physical Healing', 'Meditation A Journey into Cellular Regeneration', 'Spiritual Healing Meditation', 'Meditation Overcoming Crisis', 'Mastering the Mind Talk Series, Week 5, Freedom From Anxiety', 'Walking in the Light | Guided Meditation for Spiritual Clarity, Healing & Inner Peace'."
+    ]
+  },
+  "images_final": true
+}

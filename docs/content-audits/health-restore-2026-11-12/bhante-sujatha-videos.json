@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "bhante-sujatha"
+  },
+  "videos": [
+    {
+      "title": "Healing Our Inner Turmoil",
+      "url": "https://www.youtube.com/watch?v=0TnDuTB65f8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Bhante Sujatha The Lovingkindness Monk"
+    },
+    {
+      "title": "Mindfully observing our emotions",
+      "url": "https://www.youtube.com/watch?v=go70h_kh8q4",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Bhante Sujatha The Lovingkindness Monk"
+    },
+    {
+      "title": "What causes you stress?",
+      "url": "https://www.youtube.com/watch?v=ZnjpYXnyhOY",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bhante Sujatha The Lovingkindness Monk"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "0TnDuTB65f8": 108,
+      "go70h_kh8q4": 1189,
+      "ZnjpYXnyhOY": 1061
+    },
+    "left_out_notes": [
+      "YouTube 'Healing Our Inner Turmoil' left out as borderline on the health-claim rule; fundraising and Sinhala-language videos left out as not English teaching."
+    ]
+  },
+  "images_final": true
+}

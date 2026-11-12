@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "andrea-menard"
+  },
+  "videos": [
+    {
+      "title": "Listen to your Exhaustion - Messages from the Patchwork Grandmothers with Grandmother Wind",
+      "url": "https://www.youtube.com/watch?v=exMDNhHlD2A",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Andrea Menard"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "exMDNhHlD2A": 164
+    },
+    "left_out_notes": [
+      "'Listen to your Exhaustion' video: borderline wellbeing framing, left out."
+    ]
+  },
+  "images_final": true
+}

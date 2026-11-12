@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "barre-center-for-buddhist-studies"
+  },
+  "videos": [
+    {
+      "title": "October 7 - Relaxing the Body First in Setting up the Holding Environment",
+      "url": "https://www.youtube.com/watch?v=ST-M5NkejFU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Barre Center for Buddhist Studies"
+    },
+    {
+      "title": "The Dharma of Healthy Attachment",
+      "url": "https://www.youtube.com/watch?v=F2l6krVEPAw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Barre Center for Buddhist Studies"
+    },
+    {
+      "title": "MARCH 10: Letting Go, Letting Be and Being With",
+      "url": "https://www.youtube.com/watch?v=2IWJy889_10",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Barre Center for Buddhist Studies"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "ST-M5NkejFU": 305,
+      "F2l6krVEPAw": 261,
+      "2IWJy889_10": 187
+    },
+    "left_out_notes": [
+      "Daily Sit talks with titles about ageing bodies, pain, grief and loss left out under the health rule."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,48 @@
+{
+  "healer": {
+    "healer_slug": "paul-levy"
+  },
+  "videos": [
+    {
+      "title": "Dreaming the Virus to Heal the World   Paul Levy   Part 1",
+      "url": "https://www.youtube.com/watch?v=-lLeB1fU_Fk",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Paul Levy's Awaken in the Dream"
+    },
+    {
+      "title": "Dreaming the Virus to Heal the World  Part 2   Paul Levy",
+      "url": "https://www.youtube.com/watch?v=coLLBOieWaE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Paul Levy's Awaken in the Dream"
+    },
+    {
+      "title": "Ancestral Healing Summit",
+      "url": "https://www.youtube.com/watch?v=aAGYkUq-rG8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Paul Levy's Awaken in the Dream"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "-lLeB1fU_Fk": 2910,
+      "coLLBOieWaE": 1525,
+      "aAGYkUq-rG8": 1044
+    },
+    "left_out_notes": [
+      "COVID-era videos (see flag); clips under ~2 minutes; Substack writing and live Q&A videos (Substack off limits)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "beth-bradford"
+  },
+  "videos": [
+    {
+      "title": "A Meditation for When Hope Feels Depleted | Lectio Divina on Isaiah 43",
+      "url": "https://www.youtube.com/watch?v=GHbKvp6Gwzk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Beth Bradford"
+    },
+    {
+      "title": "Beyond 'Positive Vibes Only': How to Accept Pain and Find Gratitude",
+      "url": "https://www.youtube.com/watch?v=o2jCB6UF6U4",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Beth Bradford"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "GHbKvp6Gwzk": 7,
+      "o2jCB6UF6U4": 7
+    },
+    "left_out_notes": [
+      "YouTube 'A Meditation for When Hope Feels Depleted' and 'Beyond Positive Vibes Only: How to Accept Pain...': left out as borderline emotional-difficulty framing."
+    ]
+  }
+}

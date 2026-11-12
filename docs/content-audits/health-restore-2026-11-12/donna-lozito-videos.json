@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "donna-lozito"
+  },
+  "videos": [
+    {
+      "title": "Help Save a Wild Mustang Named Uno",
+      "url": "https://www.youtube.com/watch?v=NybBwRIiNBk",
+      "subjects": [
+        "homeopathy",
+        "mediumship-spirits"
+      ],
+      "channel": "Donna Lozito (Whispers of the Spirit)"
+    },
+    {
+      "title": "Animal Communication: Boris Explains Why He Isn't Feeling Well",
+      "url": "https://www.youtube.com/watch?v=-x03LDbBou0",
+      "subjects": [
+        "homeopathy",
+        "mediumship-spirits"
+      ],
+      "channel": "Donna Lozito (Whispers of the Spirit)"
+    },
+    {
+      "title": "Animal Communication and Energy Healing",
+      "url": "https://www.youtube.com/watch?v=FLoo3jhFi_c",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Donna Lozito (Whispers of the Spirit)"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "NybBwRIiNBk": 84,
+      "-x03LDbBou0": 30,
+      "FLoo3jhFi_c": 43
+    },
+    "left_out_notes": [
+      "Videos under ~2 minutes, the 'Help Save a Wild Mustang' appeal updates, and 'Boris Explains Why He Isn't Feeling Well' (health wording)."
+    ]
+  },
+  "images_final": true
+}

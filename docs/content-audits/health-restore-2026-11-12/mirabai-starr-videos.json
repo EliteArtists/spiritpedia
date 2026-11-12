@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "mirabai-starr"
+  },
+  "videos": [
+    {
+      "title": "Ordinary Mysticism Scavenger Hunt Invitation to those in Grief",
+      "url": "https://www.youtube.com/watch?v=4vJ1AOxRrsI",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Mirabai Starr"
+    },
+    {
+      "title": "Unraveling the Myths of Grief FREE Event July 18-21",
+      "url": "https://www.youtube.com/watch?v=o9clDHXlxtI",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Mirabai Starr"
+    },
+    {
+      "title": "Holy Lament: The Transformational Path of Loss & Longing",
+      "url": "https://www.youtube.com/watch?v=5Bt5tVqNSW0",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Mirabai Starr"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "4vJ1AOxRrsI": 397,
+      "o9clDHXlxtI": 457,
+      "5Bt5tVqNSW0": 1629
+    },
+    "left_out_notes": [
+      "Grief-titled videos (e.g. 'Grief is an invitation to transformation', 'The Teachings of Grief', 'Loss & Longing: Grief as a Spiritual Path'): left out under the condition rule."
+    ]
+  },
+  "images_final": true
+}

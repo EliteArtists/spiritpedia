@@ -1,0 +1,62 @@
+{
+  "healer": {
+    "healer_slug": "insightla"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "(In-person) Mindfulness-Based Stress Reduction",
+      "url": "https://insightla.org/event/in-person-mindfulness-based-stress-reduction-2027/2027-01-26-18-00/",
+      "description": "The eight-week MBSR course taught by Christiane Wolf at the Santa Monica Meditation Center, meeting on Tuesday evenings with a daylong at the Benedict Canyon Retreat House. Students learn mindfulness practices for meeting stress and difficulty in daily life.",
+      "price": "$650 (with CEs $735)",
+      "image": "https://insightla.org/wp-content/uploads/2023/03/insightla-mbsr-flower.jpg",
+      "product_type": "course",
+      "start_date": "2027-01-26",
+      "end_date": "2027-03-23",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mindful Support: Nurturing the Heart",
+      "url": "https://insightla.org/event/mindful-support/",
+      "description": "A weekly guided meditation on Monday evenings with JD Lloyd, in person in Santa Monica and on Zoom, practising relaxation, a calm mind and loving-kindness. Offered by donation and open to newcomers; registration is needed.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2023/03/MSC-Retreat-JD-1750-%C3%97-1750-px.jpg"
+    },
+    {
+      "title": "Recovery Dharma @ InsightLA",
+      "url": "https://insightla.org/event/in-person-recovery-dharma-insightla/",
+      "description": "A peer-led weekly meeting at the Santa Monica Meditation Center for people in recovery from addiction, built on Buddhist principles. Each meeting has a guided meditation, a reading or speaker and open sharing, by donation.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://insightla.org/wp-content/uploads/2024/04/buddha-at-the-canyon1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/insightla.json",
+    "left_out": [
+      "Unwinding Anxiety (MBHC) and 'Stress': not found among InsightLA's current event links on 12 Nov 2026, so not verified.",
+      "Mindful Support and Recovery Dharma use their undated event pages (both 200), since they repeat weekly."
+    ],
+    "flags": [
+      "MBSR page reports that students use fewer medications and medical visits (research outcomes, not advice to stop care); kept as mainstream mindfulness training. Course carries psychology CE credits.",
+      "Recovery Dharma names alcoholism and addiction; it is a peer-led Buddhist recovery sangha with no claim to cure or treat; kept. A human may judge it out of scope (peer-led, no teacher)."
+    ]
+  }
+}

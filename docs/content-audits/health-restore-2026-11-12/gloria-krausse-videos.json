@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "gloria-krausse"
+  },
+  "videos": [
+    {
+      "title": "When Burnout Isn’t Exhaustion, but Internal Strain",
+      "url": "https://www.youtube.com/watch?v=VFkRqf-YEoI",
+      "subjects": [
+        "quantum-touch",
+        "human-design"
+      ],
+      "channel": "Human Design with Gloria"
+    },
+    {
+      "title": "When Rest Doesn’t Always Restore",
+      "url": "https://www.youtube.com/watch?v=gF_y_iS9FbA",
+      "subjects": [
+        "quantum-touch",
+        "human-design"
+      ],
+      "channel": "Human Design with Gloria"
+    },
+    {
+      "title": "Burnout Isn’t About Doing Too Much; It’s About Doing What Isn’t Necessary",
+      "url": "https://www.youtube.com/watch?v=IRUHA_7gH4U",
+      "subjects": [
+        "quantum-touch",
+        "human-design"
+      ],
+      "channel": "Human Design with Gloria"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "VFkRqf-YEoI": 37,
+      "gF_y_iS9FbA": 14,
+      "IRUHA_7gH4U": 10
+    },
+    "left_out_notes": [
+      "YouTube videos with 'Burnout' in the title (3): condition-framed."
+    ]
+  },
+  "images_final": true
+}

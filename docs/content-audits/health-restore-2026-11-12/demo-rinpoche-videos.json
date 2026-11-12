@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "demo-rinpoche"
+  },
+  "videos": [
+    {
+      "title": "Buddhist Healing - Part One of The Corona Virus Prayer - Demo Rinpoche",
+      "url": "https://www.youtube.com/watch?v=C4Ls7vysHo4",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Jewel Heart Channel"
+    },
+    {
+      "title": "Buddhist Healing: A Guided Medicine Buddha Meditation",
+      "url": "https://www.youtube.com/watch?v=mTOdLhzLOko",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Jewel Heart Channel"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "C4Ls7vysHo4": 947,
+      "mTOdLhzLOko": 7754
+    },
+    "left_out_notes": [
+      "Buddhist Healing parts 3 and 4 of 'The Coronavirus Prayer' and the Medicine Buddha Workshop: health framing."
+    ]
+  },
+  "images_final": true
+}

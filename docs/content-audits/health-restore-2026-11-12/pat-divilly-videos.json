@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "pat-divilly"
+  },
+  "videos": [
+    {
+      "title": "You're Not Depressed  You're Frozen",
+      "url": "https://www.youtube.com/watch?v=SVL_hfy-Pzg",
+      "subjects": [
+        "breathwork",
+        "shadow-work"
+      ],
+      "channel": "Pat Divilly- Journey The Breath"
+    },
+    {
+      "title": "The Truth About Why Anxiety Keeps Returning",
+      "url": "https://www.youtube.com/watch?v=FMsao-SGD5g",
+      "subjects": [
+        "breathwork",
+        "shadow-work"
+      ],
+      "channel": "Pat Divilly- Journey The Breath"
+    },
+    {
+      "title": "Feeling Anxious About Change? Try This 10-Minute Practice",
+      "url": "https://www.youtube.com/watch?v=2rBlvgXoqCM",
+      "subjects": [
+        "breathwork",
+        "shadow-work"
+      ],
+      "channel": "Pat Divilly- Journey The Breath"
+    },
+    {
+      "title": "Your Mouth Breathing Is Destroying Your Sleep",
+      "url": "https://www.youtube.com/watch?v=kTOTlIL2tQs",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Pat Divilly- Journey The Breath"
+    },
+    {
+      "title": "Feeling Overwhelmed? Try This 7-Minute Breathing Reset",
+      "url": "https://www.youtube.com/watch?v=3HKqA0kMA_8",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Pat Divilly- Journey The Breath"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "SVL_hfy-Pzg": 373,
+      "FMsao-SGD5g": 360,
+      "2rBlvgXoqCM": 319,
+      "kTOTlIL2tQs": 105,
+      "3HKqA0kMA_8": 325
+    },
+    "left_out_notes": [
+      "Videos 'You're Not Depressed You're Frozen', 'The Truth About Why Anxiety Keeps Returning', 'Feeling Anxious About Change?', 'Your Mouth Breathing Is Destroying Your Sleep' and 'Feeling Overwhelmed? Try This 7-Minute Breathing Reset': condition-named or borderline titles."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "nola-bloom"
+  },
+  "videos": [
+    {
+      "title": "34. Microcosmic Orbit Meditation 🌙 Taoist Energy Circulation for Healing & Balance",
+      "url": "https://www.youtube.com/watch?v=wItaoXKQpCs",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Nola Bloom"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "wItaoXKQpCs": 1705
+    },
+    "left_out_notes": [
+      "Videos titled for the womb, nervous system balance, sleep or healing, and the oracle deck promo clip (product video)."
+    ]
+  },
+  "images_final": true
+}

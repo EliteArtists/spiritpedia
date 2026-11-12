@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "cambridge-zen-center"
+  },
+  "videos": [
+    {
+      "title": "The most important Zen practice to manage emotions - by Zen Master Bon Yeon",
+      "url": "https://www.youtube.com/watch?v=d0BcSReAek0",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "Zen Master Bon Haeng on Emotions and Stories",
+      "url": "https://www.youtube.com/watch?v=UiiKc0d12sE",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Cambridge Zen Center"
+    },
+    {
+      "title": "How can I deal with anxiety? Answer by Zen Master Bon Yeon",
+      "url": "https://www.youtube.com/watch?v=ciVWgyEHp8w",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "Cambridge Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "d0BcSReAek0": 4612,
+      "UiiKc0d12sE": 2557,
+      "ciVWgyEHp8w": 1596
+    },
+    "left_out_notes": [
+      "YouTube videos with condition words in the title (chronic sadness, past trauma, anger at my body): health rule."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "joseph-le-page"
+  },
+  "videos": [
+    {
+      "title": "Shanti as a journey of health and healing",
+      "url": "https://www.youtube.com/watch?v=v6cyU1NOEdA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Integrative Yoga"
+    },
+    {
+      "title": "Meditation for the perfect health",
+      "url": "https://www.youtube.com/watch?v=wewSXCxg-Ns",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Integrative Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "v6cyU1NOEdA": 359,
+      "wewSXCxg-Ns": 217
+    },
+    "left_out_notes": [
+      "Pranayama, Asana and Mudra for Women's Health and 'Meditation for the perfect health' videos: health framing."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "eileen-rose-miles"
+  },
+  "videos": [
+    {
+      "title": "You Are Ready to Move On | 24 Minute Meditation to Let Go of Pain",
+      "url": "https://www.youtube.com/watch?v=Ft8J1TRQ1hE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Eileen Rose Miles"
+    },
+    {
+      "title": "Your Anxious Thoughts Aren’t the Truth | 17 Minute Anxiety Meditation",
+      "url": "https://www.youtube.com/watch?v=xfSkyKJEBUM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Eileen Rose Miles"
+    },
+    {
+      "title": "10 Minute Breathwork for Anxiety and Stress",
+      "url": "https://www.youtube.com/watch?v=HkutTVtkw5c",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Eileen Rose Miles"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Ft8J1TRQ1hE": 50,
+      "xfSkyKJEBUM": 127,
+      "HkutTVtkw5c": 67
+    },
+    "left_out_notes": [
+      "Chaos to Calm: Anxiety Relief Course ($59) and the 'Anxiety' videos: health rule (anxiety).",
+      "Empowered Birth Meditation Bundle and the pregnancy affirmations video: pregnancy/birth items, borderline under the health rule, left out.",
+      "'You Are Ready to Move On | 24 Minute Meditation to Let Go of Pain' video: names pain."
+    ]
+  },
+  "images_final": true
+}

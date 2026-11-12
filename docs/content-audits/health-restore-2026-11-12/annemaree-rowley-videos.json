@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "annemaree-rowley"
+  },
+  "videos": [
+    {
+      "title": "Neck & Shoulders",
+      "url": "https://www.youtube.com/watch?v=QBw1gr8lk-I",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Annemaree Rowley"
+    },
+    {
+      "title": "cool, calm and collected welcome video",
+      "url": "https://www.youtube.com/watch?v=gREPR6vTUww",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Annemaree Rowley"
+    },
+    {
+      "title": "cool, calm and collected retreats and tours",
+      "url": "https://www.youtube.com/watch?v=iqdJ-0yxeHk",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Annemaree Rowley"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "QBw1gr8lk-I": 735,
+      "NDV3Vac_h9o": 3233,
+      "gREPR6vTUww": 2290,
+      "iqdJ-0yxeHk": 789
+    },
+    "left_out_notes": [
+      "Pages and items framed around anxiety, stress and pain (the 'anxiety and stress' page, relaxation classes 'to manage stress, strain and pain').",
+      "YouTube 'Neck & Shoulders' (borderline physical-relief framing), tour promo and welcome videos."
+    ]
+  },
+  "images_final": true
+}

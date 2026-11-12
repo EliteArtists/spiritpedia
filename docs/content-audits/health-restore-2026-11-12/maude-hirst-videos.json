@@ -1,0 +1,42 @@
+{
+  "healer": {
+    "healer_slug": "maude-hirst"
+  },
+  "videos": [
+    {
+      "title": "5 minute reset Anxiety - Calm",
+      "url": "https://www.youtube.com/watch?v=LqbYSHimm20",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Maude Hirst"
+    },
+    {
+      "title": "World mental health day",
+      "url": "https://www.youtube.com/watch?v=88rR4ZEIaaY",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Maude Hirst"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "LqbYSHimm20": 207,
+      "88rR4ZEIaaY": 265,
+      "p3iu_V5B7SU": 135,
+      "h_mM9pPbYio": 6065
+    },
+    "left_out_notes": [
+      "YouTube: '5 minute reset Anxiety - Calm' and 'World mental health day' (condition-named), Shorts and clips under 2 minutes, channel trailer, testimonial and anniversary videos."
+    ]
+  },
+  "images_final": true
+}

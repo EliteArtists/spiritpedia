@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "sadhvi-bhagawati-saraswati"
+  },
+  "videos": [
+    {
+      "title": "You'll Start Losing Interest In Everything And That's The Sign",
+      "url": "https://www.youtube.com/watch?v=e1vTm4G5PFo",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sadhviji"
+    },
+    {
+      "title": "The Goddess Has Never Been Asleep. Have You? | The True Meaning of  Navratri",
+      "url": "https://www.youtube.com/watch?v=Ii17UE2CyXM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Sadhviji"
+    },
+    {
+      "title": "Stay Calm and Let the Universe Deliver What You Deserve",
+      "url": "https://www.youtube.com/watch?v=ZyKCStXqhEI",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Sadhviji"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "e1vTm4G5PFo": 60161,
+      "Ii17UE2CyXM": 2739,
+      "ZyKCStXqhEI": 2132
+    },
+    "left_out_notes": [
+      "Videos 'The Kind of Stillness That Makes You Immune to Anxiety', the David Perlmutter brain and memory-loss interview and 'Do You Really Need Meat for Protein?': condition-named or under-length/diet."
+    ]
+  },
+  "images_final": true
+}

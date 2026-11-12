@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "oscar-miro-quesada"
+  },
+  "videos": [
+    {
+      "title": "2025Oct Bob Vetter Healing Summit Interview with Oscar Miro Quesada",
+      "url": "https://www.youtube.com/watch?v=q61DkFnnUW8",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Oscar Miro-Quesada"
+    },
+    {
+      "title": "2023 Ancestral Healing Summit with The Shift Network",
+      "url": "https://www.youtube.com/watch?v=45hNV8mlWQk",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Oscar Miro-Quesada"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "q61DkFnnUW8": 94,
+      "45hNV8mlWQk": 440
+    },
+    "left_out_notes": [
+      "YouTube: '2025Oct Bob Vetter Healing Summit Interview' (healing framing); short clips under 3 minutes; weekly Link-Up recordings led by other teachers."
+    ]
+  },
+  "images_final": true
+}

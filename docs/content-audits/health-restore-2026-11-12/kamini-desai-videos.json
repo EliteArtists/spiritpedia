@@ -1,0 +1,71 @@
+{
+  "healer": {
+    "healer_slug": "kamini-desai"
+  },
+  "videos": [
+    {
+      "title": "NSDR / Yoga Nidra  with Kamini Desai - Healing Recharge",
+      "url": "https://www.youtube.com/watch?v=FR0sD3WoiC8",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "I AM Education"
+    },
+    {
+      "title": "Healing on the Human Journey - Yoga Nidra / NSDR",
+      "url": "https://www.youtube.com/watch?v=lAtUHj2M97E",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "I AM Education"
+    },
+    {
+      "title": "NSDR / Yoga Nidra with Kamini Desai - Manage Unhelpful Habits & Impulses",
+      "url": "https://www.youtube.com/watch?v=hIkNWA4YsvE",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "I AM Education"
+    },
+    {
+      "title": "The Origin of Stress",
+      "url": "https://www.youtube.com/watch?v=i5A95Bvi_D8",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "I AM Education"
+    },
+    {
+      "title": "I AM Yoga Therapy for Stress, Anxiety and Pain",
+      "url": "https://www.youtube.com/watch?v=IP6VZf4DnHU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "I AM Education"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "FR0sD3WoiC8": 43878,
+      "lAtUHj2M97E": 9495,
+      "hIkNWA4YsvE": 6226,
+      "i5A95Bvi_D8": 1125,
+      "IP6VZf4DnHU": 738
+    },
+    "left_out_notes": [
+      "Videos 'Healing Recharge', 'Healing on the Human Journey', 'Manage Unhelpful Habits & Impulses', yoga therapy and back-pain clips, and all Shorts/app adverts."
+    ]
+  }
+}

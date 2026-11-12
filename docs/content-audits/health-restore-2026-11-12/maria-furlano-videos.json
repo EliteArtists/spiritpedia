@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "maria-furlano"
+  },
+  "videos": [
+    {
+      "title": "Simple Qigong & Acupressure Routine for Chest & Shoulder Relief",
+      "url": "https://www.youtube.com/watch?v=V7GRmeVCQnY",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Maria Furlano - The Art Of Tuning In"
+    },
+    {
+      "title": "Burnout Exhaustion: The Qi Connection Nobody Talks About | Ep 113",
+      "url": "https://www.youtube.com/watch?v=ZyBJG22U7is",
+      "subjects": [
+        "qi-gong",
+        "energy-medicine"
+      ],
+      "channel": "Maria Furlano - The Art Of Tuning In"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "V7GRmeVCQnY": 20,
+      "ZyBJG22U7is": 99
+    },
+    "left_out_notes": [
+      "Videos 'Simple Qigong & Acupressure Routine for Chest & Shoulder Relief' (relief of pain) and 'Burnout Exhaustion: The Qi Connection' (borderline condition): health-claim rule."
+    ]
+  }
+}

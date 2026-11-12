@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "cyndi-dale"
+  },
+  "videos": [
+    {
+      "title": "What Western Doctors Don't Tell You About Healing",
+      "url": "https://www.youtube.com/watch?v=KAzDNZIM5uM",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Cyndi Dale"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "KAzDNZIM5uM": 618
+    },
+    "left_out_notes": [
+      "Own site: Freeing Yourself from Energetic Depression & Anxiety (condition-named); Energetic Healing for Covid-19 free audio (condition-named)."
+    ]
+  },
+  "images_final": true
+}

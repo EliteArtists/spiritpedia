@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "bandar-utama-buddhist-society"
+  },
+  "videos": [
+    {
+      "title": "Practical Dhamma in Dealing with Crises - Dhamma Talk by Dr. Wong Teck Wee",
+      "url": "https://www.youtube.com/watch?v=zRx4CN5frY0",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "BUBS"
+    },
+    {
+      "title": "Believing Your Social Media? - Dhamma Talk by Bro. Ananda Fong",
+      "url": "https://www.youtube.com/watch?v=TQ0PD9L79FE",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "BUBS"
+    },
+    {
+      "title": "Healing Sorrow Through Dhamma Practice - Dhamma Talk by Ven. Ajahn Mettiko",
+      "url": "https://www.youtube.com/watch?v=HCG9t6j6pSk",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "BUBS"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "zRx4CN5frY0": 709,
+      "0BUskl6oIbY": 437,
+      "TQ0PD9L79FE": 516,
+      "HCG9t6j6pSk": 1934
+    },
+    "left_out_notes": [
+      "Talks 'Facing Cancer with Buddhist Teachings' and 'Practical Dhamma in Dealing with Crises' left out under the health rule; 'Right AI & Mindfulness' and 'Believing Your Social Media?' left out as off-topic."
+    ]
+  },
+  "images_final": true
+}

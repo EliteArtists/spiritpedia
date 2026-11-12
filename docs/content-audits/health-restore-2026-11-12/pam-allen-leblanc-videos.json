@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "pam-allen-leblanc"
+  },
+  "videos": [
+    {
+      "title": "Healthcare Reiki – A New Approach to Wellness with Tracey Sullivan",
+      "url": "https://www.youtube.com/watch?v=6zXHmqww6JY",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "channel": "Pam Allen-LeBlanc"
+    },
+    {
+      "title": "Spirit Release, Mental Health, and Holy Fire® Reiki with Jennifer Taylor",
+      "url": "https://www.youtube.com/watch?v=HOX_FR8riQ8",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "channel": "Pam Allen-LeBlanc"
+    },
+    {
+      "title": "Journey with Brett Bevell and His Reiki Divine Healing Card Deck",
+      "url": "https://www.youtube.com/watch?v=53oGYfk607w",
+      "subjects": [
+        "reiki",
+        "self-healing"
+      ],
+      "channel": "Pam Allen-LeBlanc"
+    },
+    {
+      "title": "Reiki, Alignment, and the Nervous System with Dr. Kate Flynn",
+      "url": "https://www.youtube.com/watch?v=q8Jq0JOp7BI",
+      "subjects": [
+        "reiki"
+      ],
+      "channel": "Pam Allen-LeBlanc"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "6zXHmqww6JY": 294,
+      "HOX_FR8riQ8": 285,
+      "53oGYfk607w": 151,
+      "q8Jq0JOp7BI": 146
+    },
+    "left_out_notes": [
+      "Videos on pet hospice, end-of-life care, the nervous system and Reiki business"
+    ]
+  },
+  "images_final": true
+}

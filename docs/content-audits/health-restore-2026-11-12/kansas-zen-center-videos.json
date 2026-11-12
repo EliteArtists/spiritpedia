@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "kansas-zen-center"
+  },
+  "videos": [
+    {
+      "title": "How do you live with your pain?",
+      "url": "https://www.youtube.com/watch?v=UWVMnow1DJo",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "channel": "kansaszencenter"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "UWVMnow1DJo": 301
+    },
+    "left_out_notes": [
+      "YouTube talk 'How do you live with your pain?': health rule."
+    ]
+  },
+  "images_final": true
+}

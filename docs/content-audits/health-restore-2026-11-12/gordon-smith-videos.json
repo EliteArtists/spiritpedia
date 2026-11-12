@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "gordon-smith"
+  },
+  "videos": [
+    {
+      "title": "How To Calm Your Mind",
+      "url": "https://www.youtube.com/watch?v=e1UjOEpxrw0",
+      "subjects": [
+        "mediumship-spirits",
+        "death-the-afterlife"
+      ],
+      "channel": "Gordon Smith Medium"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "e1UjOEpxrw0": 11805
+    },
+    "left_out_notes": [
+      "Healing Spirits Oracle and Healing Spirits Meditations: 'healing' framing, borderline; left out."
+    ]
+  },
+  "images_final": true
+}

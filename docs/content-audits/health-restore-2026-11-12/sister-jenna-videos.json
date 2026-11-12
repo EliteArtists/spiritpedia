@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "sister-jenna"
+  },
+  "videos": [
+    {
+      "title": "Better Health with Viome",
+      "url": "https://www.youtube.com/watch?v=TtFIK0NZLDc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "Overcoming Depression with #SisterJenna #AmericaMeditating #Wiseish",
+      "url": "https://www.youtube.com/watch?v=ME19Vw618qs",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "America Meditating Radio"
+    },
+    {
+      "title": "Victory over Depression with Sister Jenna #AmericaMeditating",
+      "url": "https://www.youtube.com/watch?v=WrVL85PCcO0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "America Meditating Radio"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "TtFIK0NZLDc": 5220,
+      "ME19Vw618qs": 1211,
+      "WrVL85PCcO0": 1097
+    },
+    "left_out_notes": [
+      "Viome promotion and 'Better Health with Viome' video (health product).",
+      "Positive Friday - Stress Free Living video and the 'age of anxiety' Medium article (borderline condition wording)."
+    ]
+  },
+  "images_final": true
+}

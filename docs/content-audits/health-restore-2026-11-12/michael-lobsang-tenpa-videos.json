@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "michael-lobsang-tenpa"
+  },
+  "videos": [
+    {
+      "title": "On Healing the World: Reading the Two Medicine Buddha Sutras",
+      "url": "https://www.youtube.com/watch?v=140FHKkRc0M",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Michael Lobsang Tenpa – Meditations and Talks"
+    },
+    {
+      "title": "Guided Meditation on Medicine Buddha: Breathing and Cells",
+      "url": "https://www.youtube.com/watch?v=oZwZUKUZllw",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Michael Lobsang Tenpa – Meditations and Talks"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "140FHKkRc0M": 256,
+      "oZwZUKUZllw": 13300
+    },
+    "left_out_notes": [
+      "YouTube 'On Healing the World: Reading the Two Medicine Buddha Sutras' and Insight Timer tracks with 'Medicine Buddha' or 'healing' in the title (medical wording rule)."
+    ]
+  },
+  "images_final": true
+}

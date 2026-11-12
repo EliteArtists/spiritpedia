@@ -1,0 +1,54 @@
+{
+  "healer": {
+    "healer_slug": "maude-hirst"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Members Club for the Mind",
+      "url": "https://maude-hirst-s-school.teachable.com/p/the-members-club-for-the-mind",
+      "page": "https://maudehirst.co.uk/membership",
+      "description": "Maude's online membership, begun in lockdown, with a weekly-updated library of recorded meditation, breathwork and yoga classes and, at the premium level, a live weekly group check-in. It is pitched at easing anxiety, sleeping better and building self-confidence.",
+      "price": "5-day free trial, then £25/month (Basic) or £40/month (Premium)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "yoga"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/8DBHHVgLSEy3yG5MaEqy_unnamed+%282%29+-+Copy.jpg"
+    },
+    {
+      "title": "EnergyRise app",
+      "url": "https://maudehirst.co.uk/meditationapp",
+      "description": "Maude's own meditation app for iPhone and iPad, with ten-minute guided meditations for different moods and short personal articles, meant to make a daily practice easy to keep on the go.",
+      "price": "Free to download; EnergyRise Pro £7.99 monthly or £59.99 annual",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5cf92969c9c0a30001b0302b/647b4133-b181-4e4d-9d78-5b1718485bc7/Asset+2.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/maude-hirst.json",
+    "left_out": [
+      "Meditation for ADHD (maudehirst.co.uk/meditation-for-adhd, £25): presents meditation as ADHD support that 'minimises impulsivity' and links an ADHD supplement brand; a treatment framing for a medical condition (new health rule).",
+      "Back to School Anxiety Toolkit: no page found on her site (not in its sitemap).",
+      "Meditation with Maude (Teachable): her Teachable school now shows only The Members Club for the Mind; no separate course page found ('Meditation with Maude' is the App Store subtitle of EnergyRise)."
+    ],
+    "flags": [
+      "EnergyRise prices are from its App Store page (apps.apple.com/gb/app/energyrise/id1537002161), which shows '£' only; the app's last update there is version 1.1, 17 Oct 2022, so it may be little maintained.",
+      "Members Club prices are from the Teachable page, which shows '£' only; it also lists an annual plan with no price shown and 'Theta Healing' and 'Healing Meditation' classes (spiritual healing, no condition claim)."
+    ]
+  }
+}

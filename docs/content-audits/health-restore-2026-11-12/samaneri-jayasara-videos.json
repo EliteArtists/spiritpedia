@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "samaneri-jayasara"
+  },
+  "videos": [
+    {
+      "title": "Working Skillfully with Pain in Meditation ~ Samaneri Jayasara",
+      "url": "https://www.youtube.com/watch?v=qNWrcjp6gGU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Samaneri Jayasāra - Wisdom of the Masters"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "qNWrcjp6gGU": 20710
+    },
+    "left_out_notes": [
+      "'Working Skillfully with Pain in Meditation' video: names pain (health-claim rule)."
+    ]
+  },
+  "images_final": true
+}

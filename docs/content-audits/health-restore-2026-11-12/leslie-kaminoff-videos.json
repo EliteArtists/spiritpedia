@@ -1,0 +1,57 @@
+{
+  "healer": {
+    "healer_slug": "leslie-kaminoff"
+  },
+  "videos": [
+    {
+      "title": "My 2 Cents about \"How Yoga Can Wreck your Body,\" by Leslie Kaminoff",
+      "url": "https://www.youtube.com/watch?v=Gc9HnNgKCeY",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "YogaAnatomy"
+    },
+    {
+      "title": "Great Healing can come from Simple Tools - Apanasana, by Leslie Kaminoff",
+      "url": "https://www.youtube.com/watch?v=1ezrsIb6C_I",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "YogaAnatomy"
+    },
+    {
+      "title": "Emotions - Back Pain - Yoga : What do they have in common? by Leslie Kaminoff",
+      "url": "https://www.youtube.com/watch?v=aFCs9r7Agtk",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "YogaAnatomy"
+    },
+    {
+      "title": "How To Work With Your Pain? Know Your Pain - Leslie Kaminoff [YogaAnatomy.net]",
+      "url": "https://www.youtube.com/watch?v=fJzRgFobcIo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "YogaAnatomy"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Gc9HnNgKCeY": 23297,
+      "1ezrsIb6C_I": 22068,
+      "aFCs9r7Agtk": 18831,
+      "fJzRgFobcIo": 7792
+    },
+    "left_out_notes": [
+      "Videos with condition titles (Plantar Fasciitis, Know Your Pain, hypermobility, 'How Yoga Can Wreck your Body') and clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

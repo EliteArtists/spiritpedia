@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "debra-busemeyer-baker"
+  },
+  "videos": [
+    {
+      "title": "Healing Meditation 10 22 24",
+      "url": "https://www.youtube.com/watch?v=UqrkdnpzFGo",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Healing Debra"
+    },
+    {
+      "title": "Healing Meditation 1 20 26 Messages from your body",
+      "url": "https://www.youtube.com/watch?v=3ghPTUT9JZY",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Healing Debra"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "UqrkdnpzFGo": 40,
+      "3ghPTUT9JZY": 13
+    },
+    "left_out_notes": [
+      "YouTube 'Healing Meditation 11 3 26 Grateful for our bodies' and '4 28 26 my body': body-focused titles, left out under the strict health rule."
+    ]
+  },
+  "images_final": true
+}

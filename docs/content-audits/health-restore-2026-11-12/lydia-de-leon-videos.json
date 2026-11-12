@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "lydia-de-leon"
+  },
+  "videos": [
+    {
+      "title": "Sacred Convos Episode 2: Is Your Home Making You Sick?",
+      "url": "https://www.youtube.com/watch?v=jna6g18QpJI",
+      "subjects": [
+        "sacred-geometry",
+        "ancient-wisdom"
+      ],
+      "channel": "Geophilia Lydia & Arturo"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "jna6g18QpJI": 221
+    },
+    "left_out_notes": [
+      "Video 'Sacred Convos Episode 2: Is Your Home Making You Sick?': names illness in the title.",
+      "Video 'Architecture as Environmental Medicine': medical framing."
+    ]
+  },
+  "images_final": true
+}

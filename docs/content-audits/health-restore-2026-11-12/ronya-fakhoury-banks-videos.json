@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "ronya-fakhoury-banks"
+  },
+  "videos": [
+    {
+      "title": "Reducing Anxiety & Restlessness in the Modern World",
+      "url": "https://www.youtube.com/watch?v=jpKAFbKk6S4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ronya Banks"
+    },
+    {
+      "title": "Automatic Negative Thoughts",
+      "url": "https://www.youtube.com/watch?v=rpuT3EkaDVE",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ronya Banks"
+    },
+    {
+      "title": "Working with Feeling Overwhelmed",
+      "url": "https://www.youtube.com/watch?v=StSeo_vXUeU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ronya Banks"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "jpKAFbKk6S4": 42,
+      "rpuT3EkaDVE": 32,
+      "StSeo_vXUeU": 32
+    },
+    "left_out_notes": [
+      "Videos 'Reducing Anxiety & Restlessness in the Modern World', 'Automatic Negative Thoughts' and 'Feeling Overwhelmed?': condition-led or borderline under the health rule."
+    ]
+  },
+  "images_final": true
+}

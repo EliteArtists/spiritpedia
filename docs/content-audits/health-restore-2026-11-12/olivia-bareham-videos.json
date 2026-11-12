@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "olivia-bareham"
+  },
+  "videos": [
+    {
+      "title": "End of Life - Coconut Diet",
+      "url": "https://www.youtube.com/watch?v=DjYNeqGJPbM",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "channel": "Olivia Bareham"
+    },
+    {
+      "title": "Sacred Crossings - Home Funeral for  Infant",
+      "url": "https://www.youtube.com/watch?v=nCE45uqIHuA",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "channel": "Olivia Bareham"
+    },
+    {
+      "title": "Gabe's Home Funeral by Sacred Crossings",
+      "url": "https://www.youtube.com/watch?v=1hGOEuTYk60",
+      "subjects": [
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "channel": "Olivia Bareham"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "DjYNeqGJPbM": 4261,
+      "nCE45uqIHuA": 26826,
+      "1hGOEuTYk60": 28769
+    },
+    "left_out_notes": [
+      "Video 'End of Life - Coconut Diet': diet at end of life, health framing. Video 'Sacred Crossings - Home Funeral for Infant': left out as sensitive. Short clips under 2 minutes."
+    ]
+  },
+  "images_final": true
+}

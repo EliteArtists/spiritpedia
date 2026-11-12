@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "magnolia-grove-monastery"
+  },
+  "videos": [
+    {
+      "title": "Higher Power From Within I Sr. Man Nghiem I May 8th 2026",
+      "url": "https://www.youtube.com/watch?v=MwW3wXVhajY",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Magnolia Grove Monastery Plum Village"
+    },
+    {
+      "title": "Transformation and Healing | Sr. Trì Nghiêm | 08.31.2025 | Healing is Every Breath Retreat",
+      "url": "https://www.youtube.com/watch?v=b11WJb3ErDE",
+      "subjects": [
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Magnolia Grove Monastery Plum Village"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "MwW3wXVhajY": 1362,
+      "b11WJb3ErDE": 519
+    },
+    "left_out_notes": [
+      "'Higher Power From Within' talk left out as possibly recovery-framed; 'Healing is Every Breath' retreat talks left out under the health rule."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,78 @@
+{
+  "healer": {
+    "healer_slug": "george-thompson"
+  },
+  "videos": [
+    {
+      "title": "Knee Pain? The Ultimate Guide to Bulletproofing your Knees",
+      "url": "https://www.youtube.com/watch?v=zUxpcCI4-gc",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "Beginner Tai Chi Walking to Stop Anxiety",
+      "url": "https://www.youtube.com/watch?v=CGfx6zA81c4",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "Feeling Anxious? Do This 2-Minute Practice",
+      "url": "https://www.youtube.com/watch?v=fJY3kB3394o",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "Tai Chi For Better Sleep (Beginner Night Routine)",
+      "url": "https://www.youtube.com/watch?v=MeVgN5FelE4",
+      "subjects": [
+        "meditation",
+        "tai-chi"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "Tai Chi Walking: Everything You Need to Know (Beginner to Advanced)",
+      "url": "https://www.youtube.com/watch?v=tlJVU9gk2PY",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "George Thompson"
+    },
+    {
+      "title": "Tai Chi Walking: Beginner Tutorial for Strong Knees & Better Balance",
+      "url": "https://www.youtube.com/watch?v=QggILgYziqA",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "George Thompson"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "zUxpcCI4-gc": 6393,
+      "CGfx6zA81c4": 5816,
+      "fJY3kB3394o": 4369,
+      "MeVgN5FelE4": 4958,
+      "tlJVU9gk2PY": 381135,
+      "QggILgYziqA": 15928
+    },
+    "left_out_notes": [
+      "Videos with health or condition framing left out: 'Control your cravings with this ancient wisdom', 'Knee Pain? The Ultimate Guide...', 'Beginner Tai Chi Walking to Stop Anxiety', 'Feeling Anxious? Do This 2-Minute Practice', 'Tai Chi For Better Sleep', 'I've been struggling...' and similar; performance-only tai chi clips and travel vlogs also left out; Ken Cohen interview left out (Cohen is the main speaker)."
+    ]
+  },
+  "images_final": true
+}

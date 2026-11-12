@@ -1,0 +1,76 @@
+{
+  "healer": {
+    "healer_slug": "taylor-somerville"
+  },
+  "videos": [
+    {
+      "title": "Letting Go with the Breath | Calming Breath Session",
+      "url": "https://www.youtube.com/watch?v=y_l_Q-N3QdU",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Breathing through Stress",
+      "url": "https://www.youtube.com/watch?v=JXZgeZrZjYs",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Beyond Burnout: Assessing Stress Before it takes over",
+      "url": "https://www.youtube.com/watch?v=ghuvG6_ANqU",
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Journey of the Breath 12-31-20",
+      "url": "https://www.youtube.com/watch?v=xRT2l4mOtlA",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Breathing to calm the mind and body",
+      "url": "https://www.youtube.com/watch?v=oZUShrauIBs",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    },
+    {
+      "title": "Learn the 2-4-6 breathing method to instantly calm the mind and the body.",
+      "url": "https://www.youtube.com/watch?v=jJ5gCzy24wY",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Symmetry"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "y_l_Q-N3QdU": 68,
+      "JXZgeZrZjYs": 692,
+      "ghuvG6_ANqU": 34,
+      "xRT2l4mOtlA": 125,
+      "oZUShrauIBs": 209,
+      "jJ5gCzy24wY": 195
+    },
+    "left_out_notes": [
+      "YouTube: stress-, burnout- and anxiety-titled videos; 'Letting Go with the Breath' (its description promises release from pain); testimonials; Shorts and clips under 2 minutes; sessions led by another coach."
+    ]
+  },
+  "images_final": true
+}

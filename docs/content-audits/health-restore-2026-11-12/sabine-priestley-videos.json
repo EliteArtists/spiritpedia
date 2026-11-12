@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "sabine-priestley"
+  },
+  "videos": [
+    {
+      "title": "Channeled Art & Quantum Talks With Sïrï & Sabine Channeling & 30 T Cells",
+      "url": "https://www.youtube.com/watch?v=X3u-9qRFtCc",
+      "subjects": [
+        "consciousness",
+        "conscious-science"
+      ],
+      "channel": "Sabine Priestley"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "X3u-9qRFtCc": 18
+    },
+    "left_out_notes": [
+      "Siri & Sabine co-hosted videos (one titled with '30 T Cells', a health reference)."
+    ]
+  },
+  "images_final": true
+}

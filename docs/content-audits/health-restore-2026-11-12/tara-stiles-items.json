@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "tara-stiles"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Strala Online 25+Hour Training: Healing and Teaching Support for Trauma and Stress with Tai Chi and Qigong",
+      "url": "https://stralayoga.com/blog/healing-for-trauma-and-stress-with-taichi-and-qigong-2027/",
+      "description": "An online Strala training with Mike Taylor and Tara Stiles that matches tai chi and qigong philosophy and practices to the stages of stress and hard life experience, for personal practice and for teachers and caregivers. It opens on 6 February 2027, is recorded for self-paced study, and leads to a Strala certificate.",
+      "price": "$700",
+      "image": "https://stralayoga.com/wp-content/uploads/2026/02/Screenshot-2025-04-30-at-9.56.20%E2%80%AFAM-930x444.png",
+      "product_type": "course",
+      "start_date": "2027-02-06",
+      "end_date": null,
+      "subjects": [
+        "tai-chi",
+        "qi-gong",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Yoga for Anxiety Series",
+      "url": "https://practice.stralayoga.com/p/yoga-for-anxiety-series",
+      "description": "An on-demand series of Strala practices led by Tara Stiles for moments when life feels too fast or too much. The classes use soft, easy movement and breath to bring attention back to the present.",
+      "price": "$80",
+      "image": "https://uploads.teachablecdn.com/attachments/4SD3R2mqTKuZEsYCRQ4y_strala+site+4.jpeg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tara-stiles.json",
+    "left_out": [
+      "Strala back-pain training (stralayoga.com/blog/prevention-and-healing-support-for-back-pain/, $895): led by Mike Taylor and sold to 'prevent and heal both chronic and acute back pain and injury'; reads as a treatment claim for a physical condition, so still out.",
+      "De-Stress Collection (practice.stralayoga.com/p/de-stress-bouquet): fine under the new rule, but the listing now has 10 offerings (the limit); its price is also unclear on the page."
+    ],
+    "flags": [
+      "Trauma and stress training is co-led by Mike Taylor and mentions '5RT (5 Rewrite Therapy)'; kept as tai chi and qigong teaching with no cure claim. The early-bird $300 closed on 9 Nov 2026, so the standard $700 is used. Start date only (self-paced after 6 Feb 2027)."
+    ]
+  }
+}

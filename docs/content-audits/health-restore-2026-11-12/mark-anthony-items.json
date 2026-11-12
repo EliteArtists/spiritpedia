@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "mark-anthony"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Never Letting Go: Heal Grief with Help from the Other Side",
+      "slug": "never-letting-go",
+      "author": "Mark Anthony",
+      "asin": "0738727210",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Mark Anthony's book for people mourning a loved one, drawing on his work as a medium. He describes the signs and contact he believes come from those who have died and offers ways of living with loss.",
+      "subjects": [
+        "death-the-afterlife",
+        "mediumship-spirits"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0738727210.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Grief Management",
+      "url": "https://www.afterlifefrequency.com/grief-management/",
+      "description": "A free page on Mark Anthony's site about living through bereavement, with suggestions such as turning to faith and community, meditation and prayer, uplifting activities and grief support groups. It frames grief as something to move through rather than get over.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://www.afterlifefrequency.com/wp-content/uploads/2021/05/the-afterlife-frequency-mark-anthony-194x300.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mark-anthony.json",
+    "left_out": [
+      "Videos 'From Grief to Growth' and 'Helping Parents Heal': videos are handled separately."
+    ],
+    "flags": [
+      "Never Letting Go: ISBN-10 0738727210 from the amazon.com link on the author's own site (afterlifefrequency.com), not confirmed elsewhere; Amazon was not opened. The site also links an audiobook ASIN B07YX2MXL9 (not used)."
+    ]
+  }
+}

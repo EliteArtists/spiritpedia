@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "dharma-gates"
+  },
+  "videos": [
+    {
+      "title": "Chan Training - Deep Lay Practice, Healing the Mind through Service with Rebecca Li",
+      "url": "https://www.youtube.com/watch?v=V01RiBj34oc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Dharma Gates"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "V01RiBj34oc": 368
+    },
+    "left_out_notes": [
+      "Video 'Chan Training - Deep Lay Practice, Healing the Mind through Service with Rebecca Li' left out as borderline (healing wording)."
+    ]
+  },
+  "images_final": true
+}

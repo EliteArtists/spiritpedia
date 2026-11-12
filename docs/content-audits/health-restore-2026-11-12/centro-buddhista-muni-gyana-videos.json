@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "centro-buddhista-muni-gyana"
+  },
+  "videos": [
+    {
+      "title": "Tristezza, Depressione Cambia il pensiero, cambia te stesso Geshe Sherab 20260625",
+      "url": "https://www.youtube.com/watch?v=iF1Cs-QzO-o",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Muni Gyana"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "iF1Cs-QzO-o": 106
+    },
+    "left_out_notes": [
+      "'Tristezza, Depressione: Cambia il pensiero, cambia te stesso' (condition-named)."
+    ]
+  },
+  "images_final": true
+}

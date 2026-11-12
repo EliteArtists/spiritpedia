@@ -1,0 +1,52 @@
+{
+  "healer": {
+    "healer_slug": "nina-rao"
+  },
+  "videos": [
+    {
+      "title": "The Sound Medicine of Sacred Vedic and Kirtan Chanting",
+      "url": "https://www.youtube.com/watch?v=lIPMp7NFu1M",
+      "subjects": [
+        "spirituality",
+        "sound-healing"
+      ],
+      "channel": "Nina Rao"
+    },
+    {
+      "title": "Peace of Mind   A Refuge From Trauma @ Symphony Space Nina Rao  - Amma Sita Ram",
+      "url": "https://www.youtube.com/watch?v=CM_AK5U2sXc",
+      "subjects": [
+        "spirituality",
+        "sound-healing"
+      ],
+      "channel": "Nina Rao"
+    },
+    {
+      "title": "Kirtan from Kripalu Center for Yoga and Health",
+      "url": "https://www.youtube.com/watch?v=7JZ8xS52MHk",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Nina Rao"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "lIPMp7NFu1M": 2480,
+      "CM_AK5U2sXc": 2563,
+      "7JZ8xS52MHk": 3974
+    },
+    "left_out_notes": [
+      "Traditional Vedic Chanting and Devotional Kirtan as Sound Medicine (Shift Network talk) and video 'The Sound Medicine of Sacred Vedic and Kirtan Chanting': 'medicine' framing, borderline.",
+      "Video 'Peace of Mind A Refuge From Trauma' and invitation to a Sound Healing Retreat at an Ayurveda Healing Center: condition or healing framing."
+    ]
+  },
+  "images_final": true
+}

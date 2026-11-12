@@ -1,0 +1,62 @@
+{
+  "healer": {
+    "healer_slug": "lynne-goldberg"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "7 Steps to Healing Your Heart",
+      "url": "https://lynnegoldbergmeditation.com/heal-your-heart-course/",
+      "description": "A self-paced on-demand course in seven steps that uses mindfulness, gratitude and forgiveness practices to let go of grudges and old hurt. It comes with twelve months of access and is run through Omega.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://lynnegoldbergmeditation.com/wp-content/themes/lynne/assets/img/og-lynne.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Meditation for Grief and Loss",
+      "url": "https://lynnegoldbergmeditation.com/2026/10/30/meditation-for-grief-and-loss/",
+      "description": "Lynne tells how a run of losses first led her to meditation and offers simple ways to sit with grief, using the breath as a place to rest attention without trying to make the pain smaller.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://lynnegoldbergmeditation.com/wp-content/themes/lynne/assets/img/og-lynne.jpg"
+    },
+    {
+      "title": "Meditation Before Sleep for Beginners",
+      "url": "https://lynnegoldbergmeditation.com/2026/10/28/meditation-before-sleep-for-beginners/",
+      "description": "A short written practice for lying in bed: soften the eyes and jaw, feel the pillow and the breath, and keep returning to those sensations when the mind runs ahead to tomorrow.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://lynnegoldbergmeditation.com/wp-content/themes/lynne/assets/img/og-lynne.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lynne-goldberg.json",
+    "left_out": [
+      "Other journal posts ('Grief and Sleep', 'Sleep Meditation for Menopause'): not added; two posts chosen, the clearest practices."
+    ],
+    "flags": [
+      "7 Steps to Healing Your Heart uses her own course page (eomega.org is never fetched, so Omega's page was not opened); she sends sign-up to Omega and publishes no price on her page, so 'Contact for pricing'. The original plan noted Omega's member price as $35 USD.",
+      "The two free resources are journal posts that teach a practice in writing; a human may judge them articles rather than free resources.",
+      "Dry run proposes removing 1 of her profile photos as unusable ('Healer changes: image_urls'); check that photo change before inserting."
+    ]
+  }
+}

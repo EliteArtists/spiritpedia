@@ -1,0 +1,61 @@
+{
+  "healer": {
+    "healer_slug": "stephen-procter"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Meditation for Stress & Anxiety",
+      "url": "https://midlmeditation.com/meditation-for-anxiety",
+      "description": "A free MIDL practice page on retraining habitual chest breathing into slow belly breathing over a few weeks, with written steps, a video and a guided audio. It frames stress and anxiety as an alarm to understand rather than fight.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/b68ec804-ba42-4194-b405-d1f19739ecf6/06-d6d4bb3.jpg"
+    },
+    {
+      "title": "Meditation Skill 00: Diaphragmatic Breathing",
+      "url": "https://midlmeditation.com/meditation-skill-00",
+      "description": "The opening skill of the MIDL system: twenty minutes a day lying on the floor, learning to breathe from the belly so the body can settle before mindfulness of breathing. Includes video instructions and a guided recording.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://img1.wsimg.com/isteam/ip/b68ec804-ba42-4194-b405-d1f19739ecf6/06-d6d4bb3.jpg"
+    },
+    {
+      "title": "MIDL Meditation for Anxiety (PDF)",
+      "url": "https://img1.wsimg.com/blobby/go/b68ec804-ba42-4194-b405-d1f19739ecf6/downloads/midl-meditation-4-anxiety.pdf?ver=1794177277863",
+      "description": "A free PDF book from Stephen's library on using the experience of stress and anxiety as a path into mindfulness meditation, gathering the breathing and relaxation skills taught on the MIDL site.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.googleusercontent.com/7OWfNVKzgy_Z1ACQE91F8-QEJZiyg5PmfDlSEGMB6VrvfxZT6kpJgXZpsKJDqIJIGXZbAH26Sw=s900"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/stephen-procter.json",
+    "left_out": [
+      "Meditation for OCD page (midlmeditation.com/meditation-for-ocd): says stillness meditation 'can weaken OCD', a claim to treat a condition (new health rule).",
+      "60 min Softening Meditation for Anxiety session: sits on the private-sessions page already listed (one URL, one item).",
+      "Introductory workshop week 1 ('How to lower stress and anxiety'): part of the Nov 2026 series that started 1/2 Nov, dated and passed."
+    ],
+    "flags": [
+      "The listing now has 8 free resources (the brief's cap is 5); a human may want to trim.",
+      "The PDF URL is the site's own download link (GoDaddy file store, with a ?ver= value from the page), not an HTML page."
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "healer": {
+    "healer_slug": "satchidananda-ashram-yogaville"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Relax and Rejuvenate with Avi Gordon",
+      "url": "https://www.yogaville.org/yoga-programs/11718/relax-and-rejuvenate-2020",
+      "description": "A weekend at Yogaville led by Avi Gordon of the Integral Yoga Teachers Association, built around restorative yoga, guided meditation, a morning of Tai Chi and a guided hike. Sessions with Swami Vidyananda and others offer yogic tools for meeting everyday stress.",
+      "price": "Contact for pricing",
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2025/05/Relax-and-Rejuvenate.jpg",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "tai-chi"
+      ]
+    },
+    {
+      "title": "Somatic & Spiritual Smiles: Uniting Yogic Wisdom and Western Psychology for Inner Joy",
+      "url": "https://www.yogaville.org/yoga-programs/12343/somatic-spiritual-smiles-uniting-yogic-wisdom-and-western-psychology-for-inner-joy/",
+      "description": "A weekend retreat at Yogaville with Integral Yoga teacher Sampada (Sam) Desai that pairs yoga psychology with gentle somatic movement, breathwork and laughter practice. Participants learn simple body-based ways to ease stress and build a daily routine at home.",
+      "price": "$775.00",
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2026/10/spiritual-smiles.png",
+      "product_type": "retreat",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Live, Laugh, Love! Free Laugha Yoga Workshop",
+      "url": "https://www.yogaville.org/yoga-programs/12271/live-laugh-love-free-laugha-yoga-workshop/",
+      "description": "A free day-long workshop at Yogaville on 13 February 2027 with Bharata Wingham, who has led Laugha Yoga there since 1997. The day mixes laughter games, laughter breathing, meditation and a guided deep relaxation; lunch and lodging are extra.",
+      "price": "Free (optional lunch $15)",
+      "product_type": "course",
+      "start_date": "2027-02-13",
+      "end_date": "2027-02-13",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://yogaville.secure.retreat.guru/wp-content/uploads/sites/83/2026/09/Live-Laugh-Love.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/satchidananda-ashram-yogaville.json",
+    "left_out": [
+      "The Calm Circuit: Neuro-Yoga Practices for Healing (29-31 Jan 2027, $349): the page says the practices support 'immune function, and reduced inflammation'; a claim on the not-allowed list, so still out.",
+      "Relax and Rejuvenate: the page shows no price, so 'Contact for pricing'."
+    ],
+    "flags": [
+      "Somatic & Spiritual Smiles is led by a licensed counsellor and draws on 'evidence-based mental health principles'; kept as a yoga retreat (no cure or treatment claim).",
+      "Laugha Yoga workshop mentions laughter 'recognized as a therapeutic practice'; no claim to treat a condition; kept. Free, but entered as a dated offering (13 Feb 2027) so it drops off after the day."
+    ]
+  }
+}

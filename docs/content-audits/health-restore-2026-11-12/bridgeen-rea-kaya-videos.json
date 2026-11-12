@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "bridgeen-rea-kaya"
+  },
+  "videos": [
+    {
+      "title": "Practices to help with Corona virus fear and panic #1",
+      "url": "https://www.youtube.com/watch?v=UWruIosv0Vo",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Immeasurable Minds"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "UWruIosv0Vo": 797
+    },
+    "left_out_notes": [
+      "YouTube 'Practices to help with Corona virus fear and panic' (names a condition and the pandemic)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "orlaith-osullivan"
+  },
+  "videos": [
+    {
+      "title": "💤 Why Sleep is your Friend 💤",
+      "url": "https://www.youtube.com/watch?v=9NlZnkLw-8U",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Orlaith O'Sullivan: Mindfulness & Happiness"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "9NlZnkLw-8U": 29,
+      "elf4ZFWIz98": 373
+    },
+    "left_out_notes": [
+      "YouTube 'Why sleep is your friend' and the Happy Senses Festival clips: exam/sleep framing or under two minutes."
+    ]
+  },
+  "images_final": true
+}

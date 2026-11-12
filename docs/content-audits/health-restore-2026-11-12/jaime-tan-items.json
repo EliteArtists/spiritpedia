@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "jaime-tan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Guided Sleep Meditation (iRest Yoga Nidra)",
+      "url": "https://www.subscribepage.com/enlightenedspoon-meditation",
+      "description": "A free guided meditation for bedtime in the iRest Yoga Nidra style, sent by email after signing up. It is meant to help busy, stretched people rest and reconnect with themselves before sleep.",
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_njn5n1MZaa_HCtby5OpEokaYmG1S8MO5YSPQ3jFxSSlPA=s900",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jaime-tan.json",
+    "left_out": [
+      "Anxiety- and sleep-titled videos and 'Yoga Nidra for Inner Peace and Healing': videos are handled separately."
+    ],
+    "flags": [
+      "Sign-up also opts people into her monthly email tips, as the page says."
+    ]
+  }
+}

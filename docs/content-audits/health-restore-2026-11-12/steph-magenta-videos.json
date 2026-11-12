@@ -1,0 +1,60 @@
+{
+  "healer": {
+    "healer_slug": "steph-magenta"
+  },
+  "videos": [
+    {
+      "title": "Die Healthy! Longevity, Fitness, Nutrition, Sleep & Breath with guest Paul Winsper",
+      "url": "https://www.youtube.com/watch?v=TkYtQ2Uvvl8",
+      "subjects": [
+        "meditation",
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Steph Magenta Breathwork"
+    },
+    {
+      "title": "Abuse in Breathwork: My personal response.",
+      "url": "https://www.youtube.com/watch?v=TGGcNGzGq4A",
+      "subjects": [
+        "breathwork"
+      ],
+      "channel": "Steph Magenta Breathwork"
+    },
+    {
+      "title": "Simon Borg Olivier presents on the critical importance of healthy and functional breathing",
+      "url": "https://www.youtube.com/watch?v=CneXcktPGaw",
+      "subjects": [
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Steph Magenta Breathwork"
+    },
+    {
+      "title": "Dr Daniel Foor joins Seven Directions® to discuss decolonizing healing and why it matters.",
+      "url": "https://www.youtube.com/watch?v=Mu9ggAeUNYQ",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Steph Magenta Breathwork"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "TkYtQ2Uvvl8": 273,
+      "TGGcNGzGq4A": 2973,
+      "CneXcktPGaw": 2555,
+      "Mu9ggAeUNYQ": 362
+    },
+    "left_out_notes": [
+      "YouTube 'Die Healthy! Longevity...' (health framing), 'Abuse in Breathwork' (personal statement, not teaching), short clips under 2 minutes, and guest-led interviews."
+    ]
+  },
+  "images_final": true
+}

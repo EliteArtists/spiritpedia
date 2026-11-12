@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "rae-calnan"
+  },
+  "videos": [
+    {
+      "title": "Why You Can't Think Your Way to Healing | The Body Holds the Key",
+      "url": "https://www.youtube.com/watch?v=lGoINFun0Cc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Radiant Angel Energy"
+    },
+    {
+      "title": "Her Late Son Gave Her a Message About Grief",
+      "url": "https://www.youtube.com/watch?v=-EU3zSaEk14",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Radiant Angel Energy"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "lGoINFun0Cc": 180,
+      "-EU3zSaEk14": 108
+    },
+    "left_out_notes": [
+      "Videos: podcast interviews where a guest is the main speaker, the Perimenopause episode (condition-named) and burnout/chronic fatigue episode (condition-named), upcoming premieres."
+    ]
+  },
+  "images_final": true
+}

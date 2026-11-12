@@ -1,0 +1,57 @@
+{
+  "healer": {
+    "healer_slug": "steven-webb"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Inner Peace Meditations",
+      "url": "https://innerpeacemeditations.com/",
+      "description": "Steven's free library of more than a hundred short guided meditations, most around ten minutes, sorted by need: busy minds, stress, sleep, self-compassion and more. Taught from his own life with tetraplegia, in plain words.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://innerpeacemeditations.com/assets/artwork/struggling-with-the-mirror-body-acceptance-meditation-3b968633-960.webp"
+    },
+    {
+      "title": "Stillness in the Storms Podcast",
+      "url": "https://stillnessinthestorms.com/",
+      "description": "A free podcast of short, honest talks on meeting anger, grief, worry, pain and tiredness with meditation and Buddhist-inspired wisdom, each episode labelled with its length and theme.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://stillnessinthestorms.com/assets/artwork/your-hands-are-full-why-youre-not-failing-at-meditation-dc689ca4-960.webp"
+    },
+    {
+      "title": "Stressed to Calm in 5 Minutes",
+      "url": "https://innerpeacemeditations.com/episode/stressed-to-calm-in-5-minutes-includes-wave-sounds",
+      "description": "A very short seated practice with wave sounds: arms up on a big breath, two slow deep breaths, then letting the breath find its own rhythm. Made for the moments just before something you are tense about.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "https://innerpeacemeditations.com/assets/artwork/stressed-to-calm-in-5-minutes-includes-wave-sounds-d48209c4-960.webp"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/steven-webb.json",
+    "left_out": [],
+    "flags": [
+      "The podcast has an early episode titled 'How 5 Minutes Meditation Can Help with Depression' (stillnessinthestorms.com/episode/9-...); not opened. The podcast as a whole is wellbeing talk, so it is listed; a human may want to check that one episode.",
+      "'Stressed to Calm in 5 Minutes' is one episode of Inner Peace Meditations, so both the library and the episode are listed (different URLs)."
+    ]
+  }
+}

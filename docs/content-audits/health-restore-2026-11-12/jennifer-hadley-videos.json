@@ -1,0 +1,58 @@
+{
+  "healer": {
+    "healer_slug": "jennifer-hadley"
+  },
+  "videos": [
+    {
+      "title": "Prayer for Healing At All Levels",
+      "url": "https://www.youtube.com/watch?v=0WnlWsjomys",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Jennifer Hadley"
+    },
+    {
+      "title": "Prayer for Freeing the Mind From Pain",
+      "url": "https://www.youtube.com/watch?v=SSCgU61F94g",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "channel": "Jennifer Hadley"
+    },
+    {
+      "title": "Mark Anthony Lord:  The Work That Heals Us | ACIM",
+      "url": "https://www.youtube.com/watch?v=M96yzWJ4kdU",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Jennifer Hadley"
+    },
+    {
+      "title": "Prayer for Healing the Hurt",
+      "url": "https://www.youtube.com/watch?v=VQErkgWWf10",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Jennifer Hadley"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "0WnlWsjomys": 58,
+      "SSCgU61F94g": 87,
+      "M96yzWJ4kdU": 529,
+      "VQErkgWWf10": 494
+    },
+    "left_out_notes": [
+      "Videos 'Prayer for Healing At All Levels', 'Prayer for Freeing the Mind From Pain' and short clips under two minutes; an Alan Cohen interview (guest is the main speaker)."
+    ]
+  },
+  "images_final": true
+}

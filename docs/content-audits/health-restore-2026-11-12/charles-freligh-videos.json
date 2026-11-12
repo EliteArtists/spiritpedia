@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "charles-freligh"
+  },
+  "videos": [
+    {
+      "title": "Anxiety Reframe: A Guide to What is Meaningful in Life",
+      "url": "https://www.youtube.com/watch?v=VjGhIQ6_Z2s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Second Arrow"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "VjGhIQ6_Z2s": 529
+    },
+    "left_out_notes": [
+      "YouTube 'Anxiety Reframe: A Guide to What is Meaningful in Life': condition-named."
+    ]
+  },
+  "images_final": true
+}

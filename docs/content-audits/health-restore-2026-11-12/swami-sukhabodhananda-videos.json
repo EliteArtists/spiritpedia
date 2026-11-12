@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "swami-sukhabodhananda"
+  },
+  "videos": [
+    {
+      "title": "Stop Worrying, Start Living | Karma Yoga Explained Beautifully | Gita Wisdom| Swami Sukhabodhananda",
+      "url": "https://www.youtube.com/watch?v=j--lNerqx6c",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Prasanna trust"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "j--lNerqx6c": 4981
+    },
+    "left_out_notes": [
+      "Videos with hurt, pain, suffering or diet in the title, and clips under about 2 minutes, left out."
+    ]
+  },
+  "images_final": true
+}

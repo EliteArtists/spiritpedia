@@ -1,0 +1,61 @@
+{
+  "healer": {
+    "healer_slug": "mindful"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "A Body Scan Meditation to Prepare Mind and Body for Sleep",
+      "url": "https://www.mindful.org/a-body-scan-meditation-to-help-you-sleep/",
+      "description": "A free guided body scan led by mindfulness educator Diana Winston, for evenings when it is hard to wind down. Attention moves slowly through the body to let the day's tension settle before sleep. Script and audio on Mindful's site.",
+      "image": "https://www.mindful.org/content/uploads/Diana-Winston-12MM.jpg",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "A Meditation for Easing Pain and Inviting Joy",
+      "url": "https://www.mindful.org/a-meditation-for-easing-pain-and-inviting-joy/",
+      "description": "A gentle guided practice from teacher Vanessa Hutchinson-Szekely, shaped by her own long spell of back pain. It invites resting with discomfort through breath and soft attention rather than fighting it, and leaves room for moments of joy. Free script and audio.",
+      "image": "https://www.mindful.org/content/uploads/12MM_Vanessa-Hutchinson-Szekely_A-Meditation-for-Easing-Pain-and-Inviting-Joy.jpg",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "A Meditation to Bring Comfort and Kindness to Pain and Illness",
+      "url": "https://www.mindful.org/a-meditation-to-bring-comfort-and-kindness-to-pain-and-illness/",
+      "description": "A free imaginative meditation from teacher Juliana Sloane for people living with ongoing pain or illness. It uses relaxation and visualisation to meet discomfort with patience and self-compassion. Script and audio on Mindful's site.",
+      "image": "https://www.mindful.org/content/uploads/12MM_Juliana-Sloane_A-Meditation-to-Bring-Comfort-and-Kindness-to-Pain-Illness.jpg",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mindful.json",
+    "left_out": [
+      "All shop courses (Mindfulness for Healthcare, Practical Mindfulness for Healthcare Providers, Healthy Mind Healthy Life, Working with Overwhelm, Building Resilience, Find Calm, Nourish Resilience): shop.mindful.org answered 429 (rate limited) on the first request, so that site was skipped.",
+      "Free resources: the listing now has 5 (the cap) with these three; other sleep and pain practices on mindful.org not added."
+    ],
+    "flags": [
+      "The pain-and-illness meditation says such practices 'have been shown to be very supportive for symptom management'; no cure or treatment claim. Its teacher is also described as a hypnotherapist.",
+      "These three practices are by guest teachers on Mindful's site (Diana Winston, Vanessa Hutchinson-Szekely, Juliana Sloane), as with the listing's other free resources."
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "sara-clark"
+  },
+  "videos": [
+    {
+      "title": "Pranayama Meditation for Anxiety w/ Shape Magazine",
+      "url": "https://www.youtube.com/watch?v=IYmm__dYo9s",
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "channel": "Sara Clark Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "IYmm__dYo9s": 195
+    },
+    "left_out_notes": [
+      "YouTube 'Pranayama Meditation for Anxiety w/ Shape Magazine': condition-named."
+    ]
+  },
+  "images_final": true
+}

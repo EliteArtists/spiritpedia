@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "damien-echols"
+  },
+  "videos": [
+    {
+      "title": "Answering questions - dealing with pain and healing yourself.",
+      "url": "https://www.youtube.com/watch?v=VotuPd6NE3I",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Damien Echols"
+    },
+    {
+      "title": "Answering questions - magick for the physically disabled.",
+      "url": "https://www.youtube.com/watch?v=HWNuhXOIT8Q",
+      "subjects": [
+        "hermeticism",
+        "meditation"
+      ],
+      "channel": "Damien Echols"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "VotuPd6NE3I": 22683,
+      "HWNuhXOIT8Q": 11718,
+      "_AQSQeC1keM": 30808
+    },
+    "left_out_notes": [
+      "'Answering questions - dealing with pain and healing yourself', 'magick for the physically disabled' and 'Thank you, psychedelics' videos: condition or drug framing."
+    ]
+  },
+  "images_final": true
+}

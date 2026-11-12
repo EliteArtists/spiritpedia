@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "yehuda-ashkenazi"
+  },
+  "videos": [
+    {
+      "title": "Awaken Healing, Yehuda Ashkenazi",
+      "url": "https://www.youtube.com/watch?v=X9BwjknD5iA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Yehuda Ashkenazi"
+    },
+    {
+      "title": "Awaken Healing, The Yehuda Ashkenazi Project",
+      "url": "https://www.youtube.com/watch?v=iRdkZyiJFoA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Yehuda Ashkenazi"
+    },
+    {
+      "title": "Healing, Yehuda Ashkenazi",
+      "url": "https://www.youtube.com/watch?v=Bv3vnEZkWmA",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Yehuda Ashkenazi"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "X9BwjknD5iA": 35805,
+      "ngmFUQlrYuM": 14388,
+      "iRdkZyiJFoA": 12666,
+      "Bv3vnEZkWmA": 8946
+    },
+    "left_out_notes": [
+      "YouTube videos 'Awaken Healing' and 'Remote and Spontaneous Healing' left out under the health rule; music videos (The Yehuda Ashkenazi Project) left out as music-only; Elul meditations led by Michael Berg left out."
+    ]
+  },
+  "images_final": true
+}

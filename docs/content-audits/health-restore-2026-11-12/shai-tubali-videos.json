@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "shai-tubali"
+  },
+  "videos": [
+    {
+      "title": "The Secret to Letting Go: How a Flexible Heart Transforms Pain into Freedom",
+      "url": "https://www.youtube.com/watch?v=bAv8-bKLh3s",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "channel": "Dr Shai Tubali"
+    },
+    {
+      "title": "How to Calm Yourself Down After an Argument | Shai Tubali, Ph.D.",
+      "url": "https://www.youtube.com/watch?v=uuzZuVp0H34",
+      "subjects": [
+        "consciousness",
+        "meditation"
+      ],
+      "channel": "Dr Shai Tubali"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "bAv8-bKLh3s": 8183,
+      "uuzZuVp0H34": 20507
+    },
+    "left_out_notes": [
+      "YouTube 'O Fim da Depressão' / The End of Depression (129k views) and 'The Secret to Letting Go... Transforms Pain into Freedom': condition-named titles."
+    ]
+  },
+  "images_final": true
+}

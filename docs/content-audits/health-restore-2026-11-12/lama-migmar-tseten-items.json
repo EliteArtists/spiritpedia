@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "lama-migmar-tseten"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dakini's Heart-Essence Chöd: A Buddhist Healing Ritual",
+      "url": "https://kripalu.org/experiences/buddhist-healing-ritual-dakinis-heart-essence-chod-and-empowerments",
+      "description": "A weekend at Kripalu in which Khenpo Lama Migmar leads the Vajrayogini Chöd of the Naropa lineage, with mantra, mudra, offerings and empowerments. Participants mostly rest and receive; no prior training is needed.",
+      "price": "Tuition: $350 per person, plus required accommodations",
+      "product_type": "retreat",
+      "start_date": "2026-11-27",
+      "end_date": "2026-11-29",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation",
+        "mysticism"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-10/meditation%20bowl.jpg?itok=i6mi0OfQ"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lama-migmar-tseten.json",
+    "left_out": [
+      "Vajrayogini Healing Chod (practice text, mangalamstudio.com/dharma-texts/): a practice manual that needs empowerment from a lineage holder, a scope reason unchanged by the new health rule.",
+      "Mangalam Akasha Rasayana Yoga: no page found on lamamigmar.net or mangalamstudio.com (not in either site's links or sitemap)."
+    ],
+    "flags": [
+      "Kripalu's page says the ritual is 'renowned for its power to alleviate physical, emotional, and mental suffering' and is 'suitable for everyone, including those managing mild or chronic health conditions'. It names no disease and makes no cure claim, so it passes the new rule, but it is the nearest call in this listing: a human may want to look.",
+      "Dated 27-29 Nov 2026, so it drops off soon after insert."
+    ]
+  }
+}

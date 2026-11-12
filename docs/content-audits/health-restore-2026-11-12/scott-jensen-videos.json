@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "scott-jensen"
+  },
+  "videos": [
+    {
+      "title": "Proper Pelvic Position Prevents Pain",
+      "url": "https://www.youtube.com/watch?v=-jOoW7odrUs",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    },
+    {
+      "title": "Build Your Strength, Alleviate Aches and Pains with Yi Jin Jing",
+      "url": "https://www.youtube.com/watch?v=gqjgy1NIfks",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    },
+    {
+      "title": "From Trauma to Recovery",
+      "url": "https://www.youtube.com/watch?v=DY2mhyuTpNU",
+      "subjects": [
+        "qi-gong",
+        "tai-chi"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    },
+    {
+      "title": "The Healing & Longevity Path Of 10,000 Victories Tai Chi",
+      "url": "https://www.youtube.com/watch?v=k--RANyUrzg",
+      "subjects": [
+        "tai-chi",
+        "self-healing"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    },
+    {
+      "title": "Qigong Mysticism vs. Western Medical Science",
+      "url": "https://www.youtube.com/watch?v=FeBsV67kvTw",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "-jOoW7odrUs": 1003,
+      "gqjgy1NIfks": 685,
+      "DY2mhyuTpNU": 241,
+      "k--RANyUrzg": 168,
+      "FeBsV67kvTw": 132
+    },
+    "left_out_notes": [
+      "Videos 'Proper Pelvic Position Prevents Pain', 'Build Your Strength, Alleviate Aches and Pains with Yi Jin Jing', 'From Trauma to Recovery', 'Healing Miracle of Tai Chi' and 'Qigong Mysticism vs. Western Medical Science': health or medical framing."
+    ]
+  },
+  "images_final": true
+}

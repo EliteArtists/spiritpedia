@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "open-circle-center"
+  },
+  "videos": [
+    {
+      "title": "Lynn Marie Lumiere: When Nervous System Is too Activated during Meditation",
+      "url": "https://www.youtube.com/watch?v=BILjqXazepM",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Open Circle"
+    },
+    {
+      "title": "Approaching Strong Emotions — Shakti Caterina Maggi (5/6)",
+      "url": "https://www.youtube.com/watch?v=gdjDBXIKo5U",
+      "subjects": [
+        "non-duality",
+        "spiritual-awakening"
+      ],
+      "channel": "Open Circle"
+    },
+    {
+      "title": "Lynn Marie Lumiere: Empowered Embodiment—Relationship between Healing and Awakening",
+      "url": "https://www.youtube.com/watch?v=cVJ009-OTDc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Open Circle"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "BILjqXazepM": 286,
+      "gdjDBXIKo5U": 263,
+      "cVJ009-OTDc": 246
+    },
+    "left_out_notes": [
+      "Videos titled around healing, the nervous system or psychotherapy training left out under the health and therapy rule."
+    ]
+  },
+  "images_final": true
+}

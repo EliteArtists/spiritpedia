@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "sara-auster"
+  },
+  "videos": [
+    {
+      "title": "Sara Auster SOUND BATH for Immediate Stress Relief",
+      "url": "https://www.youtube.com/watch?v=hxYxtMqj2YE",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Sara Auster"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "hxYxtMqj2YE": 3738
+    },
+    "left_out_notes": [
+      "Video 'SOUND BATH for Immediate Stress Relief': condition-style framing, left out under the strict health rule."
+    ]
+  },
+  "images_final": true
+}

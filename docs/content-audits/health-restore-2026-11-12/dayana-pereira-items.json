@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "dayana-pereira"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Three Free Somatic Sessions",
+      "url": "https://dayana.io/free-sessions",
+      "description": "Three free sessions from Dayana Pereira: a talk on how stress and hard experiences settle in the body, a Feldenkrais-inspired body-awareness lesson, and an eight-minute daily check-in practice to return to.",
+      "featured": false,
+      "resource_type": "mini_course",
+      "subjects": [
+        "mindfulness",
+        "breathwork"
+      ],
+      "image": "https://dayana.io/api/og?title=Free%20Sessions"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/dayana-pereira.json",
+    "left_out": [
+      "Individual sessions (dayana.io/sessions): sold on reducing chronic pain and 'faster, more supported recovery' from injury or surgery, after a health-history intake; reads as treating physical conditions (and is bodywork rather than spiritual teaching), so still out.",
+      "Performance sessions for golf and tennis (dayana.io/performance): sports performance coaching; out of scope, not a health matter.",
+      "DailyOM course 'The Feldenkrais Way to Heal the Body': dailyom.com's robots.txt header prohibits any robot or automated retrieval without written permission, so the site was treated as blocked and not fetched."
+    ],
+    "flags": [
+      "Session 1 is titled 'What Trauma Does to the Body'; it explains stress physiology and makes no treatment claim; kept."
+    ]
+  }
+}

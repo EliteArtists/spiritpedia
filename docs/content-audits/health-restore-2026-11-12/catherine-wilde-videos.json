@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "catherine-wilde"
+  },
+  "videos": [
+    {
+      "title": "Forest Yoga Adventure  - Yoga for Kids",
+      "url": "https://www.youtube.com/watch?v=BcFjrUgcHH0",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Soul Care Mom"
+    },
+    {
+      "title": "Finding Mental and Emotional Peace as a Mother - Soul Care Mom Podcast",
+      "url": "https://www.youtube.com/watch?v=HxJt_qX54PI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Soul Care Mom"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "BcFjrUgcHH0": 1173,
+      "HxJt_qX54PI": 141
+    },
+    "left_out_notes": [
+      "Most YouTube videos are parenting advice or podcast episodes; Breath Awareness Meditation to Reduce Stress for Moms and sleep tips left out under the health-claim rule; Shorts skipped."
+    ]
+  },
+  "images_final": true
+}

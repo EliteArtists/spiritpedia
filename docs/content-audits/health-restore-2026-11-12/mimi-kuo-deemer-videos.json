@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "mimi-kuo-deemer"
+  },
+  "videos": [
+    {
+      "title": "Bone Marrow Cleanse Qigong Practice",
+      "url": "https://www.youtube.com/watch?v=HbWfnlolF9M",
+      "subjects": [
+        "qi-gong"
+      ],
+      "channel": "Mimi Kuo-Deemer"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "HbWfnlolF9M": 358095
+    },
+    "left_out_notes": [
+      "Video 'Bone Marrow Cleanse Qigong Practice' (357k views): 'cleanse' framing reads as a body-detox claim, left out to be safe."
+    ]
+  },
+  "images_final": true
+}

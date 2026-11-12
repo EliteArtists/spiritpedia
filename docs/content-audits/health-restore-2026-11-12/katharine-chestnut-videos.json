@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "katharine-chestnut"
+  },
+  "videos": [
+    {
+      "title": "Codependency: Why You Keep Losing Yourself in Others (And How to Stop)",
+      "url": "https://www.youtube.com/watch?v=Llj14BIKzUI",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Katharine Chestnut"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Llj14BIKzUI": 3
+    },
+    "left_out_notes": [
+      "Codependency YouTube series and the Insight Timer course 'Codependency: Stop Losing Yourself In Relationships' (condition-style framing, borderline)."
+    ]
+  },
+  "images_final": true
+}

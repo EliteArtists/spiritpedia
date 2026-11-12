@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "guru-singh"
+  },
+  "videos": [
+    {
+      "title": "Psychic Clearing with Guru Singh",
+      "url": "https://www.youtube.com/watch?v=ueg15Q68haY",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Guru Singh | Kundalini University"
+    },
+    {
+      "title": "FREE Kundalini Yoga Class: Harmonizing Body and Mind for Healing & Expansion",
+      "url": "https://www.youtube.com/watch?v=nhIr-R7jhAI",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Guru Singh | Kundalini University"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "ueg15Q68haY": 259,
+      "nhIr-R7jhAI": 2429
+    },
+    "left_out_notes": [
+      "How To Cope with Depression (video), 'Psychic Clearing', 'Healing & Expansion' class: condition-named or borderline."
+    ]
+  },
+  "images_final": true
+}

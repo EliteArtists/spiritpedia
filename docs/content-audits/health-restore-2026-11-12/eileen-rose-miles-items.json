@@ -1,0 +1,65 @@
+{
+  "healer": {
+    "healer_slug": "eileen-rose-miles"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Chaos to Calm: Anxiety Relief Course",
+      "url": "https://www.eileenrose.me/store/p/chaos-to-calm",
+      "description": "A self-paced digital course that uses meditation and mindfulness to meet anxious thoughts with curiosity instead of avoidance. Eileen draws on her own experience to teach practical tools for worry, 'what ifs' and low self-worth.",
+      "price": "$59",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/68d560fa0bfe7b6fff083053/68d5610c0bfe7b6fff0833b5/68d6dd094b5a3503289644f4/1788086193772/3.png?format=1500w"
+    },
+    {
+      "title": "Empowered Birth Meditation Bundle",
+      "url": "https://www.eileenrose.me/store/p/empowered-birth",
+      "description": "Ten guided meditations and affirmation tracks for pregnancy and labour, from breath and body-scan practices to visualisations for trust and surrender. Meant to help a birthing parent feel calm, centred and ready.",
+      "price": "$50",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/68d560fa0bfe7b6fff083053/68d5610c0bfe7b6fff0833b5/68d6c732b684d435601f028b/1788086158019/7.png?format=1500w"
+    },
+    {
+      "title": "Corporate Meditation Sessions",
+      "url": "https://www.eileenrose.me/store/p/corporate",
+      "description": "Meditation and mindset sessions for workplace teams, covering the basics of meditation, breathing techniques, working with the inner critic and desk yoga. Aimed at helping staff stay focused and calm under pressure.",
+      "price": "$155",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "breathwork"
+      ],
+      "image": "http://static1.squarespace.com/static/68d560fa0bfe7b6fff083053/68d5610c0bfe7b6fff0833b5/68e3e1b6f9144c303144b9be/1788090606059/4.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/eileen-rose-miles.json",
+    "left_out": [
+      "'Anxiety' and pregnancy-affirmation videos: videos, handled separately."
+    ],
+    "flags": [
+      "Prices as shown on the store pages ('$59.00', '$50.00', '$155.00', no currency code); the original plan wrote USD.",
+      "Corporate sessions page says they 'improve mental health' and 'decrease anxiety'; wellbeing language, no condition treated, kept."
+    ]
+  }
+}

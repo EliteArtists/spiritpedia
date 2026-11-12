@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "renee-rotkopf"
+  },
+  "videos": [
+    {
+      "title": "Amazing Deep Sleep Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=HAvNXylV7Fo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Renee Rotkopf"
+    },
+    {
+      "title": "New Moon Aquarius 2024 - 8:19:24, 4.07 PM",
+      "url": "https://www.youtube.com/watch?v=ZBqBOBcBXio",
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "channel": "Renee Rotkopf"
+    },
+    {
+      "title": "The Wedding Party Gay Pride NYC",
+      "url": "https://www.youtube.com/watch?v=fdal2U9sMxE",
+      "subjects": [
+        "astrology",
+        "life-coaching"
+      ],
+      "channel": "Renee Rotkopf"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "HAvNXylV7Fo": 293,
+      "ZBqBOBcBXio": 2,
+      "fdal2U9sMxE": 73
+    },
+    "left_out_notes": [
+      "Videos 'Amazing Deep Sleep Guided Meditation' (sleep-titled), 'New Moon Aquarius 2024' (dated) and 'The Wedding Party Gay Pride NYC' (campaign, not teaching)."
+    ]
+  },
+  "images_final": true
+}

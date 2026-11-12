@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "mountain-stream-meditation"
+  },
+  "videos": [
+    {
+      "title": "Ken Bradford Dharma Talk Monday 12/16/2024 Letting Go Into Openness: Dying Before You Die 01:16:17",
+      "url": "https://www.youtube.com/watch?v=_o1qjmdGUEk",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Mountain Stream Meditation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "_o1qjmdGUEk": 139
+    },
+    "left_out_notes": [
+      "Sound Healing Meditation evenings and video: healing-framed."
+    ]
+  },
+  "images_final": true
+}

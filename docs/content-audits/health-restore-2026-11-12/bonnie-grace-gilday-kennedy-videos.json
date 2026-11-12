@@ -1,0 +1,43 @@
+{
+  "healer": {
+    "healer_slug": "bonnie-grace-gilday-kennedy"
+  },
+  "videos": [
+    {
+      "title": "Sound Healing Chakra Meditation",
+      "url": "https://www.youtube.com/watch?v=nMmnhFcMPLA",
+      "subjects": [
+        "meditation",
+        "sound-healing",
+        "chakra-healing"
+      ],
+      "channel": "Bonnie Grace Gilday-Kennedy"
+    },
+    {
+      "title": "The Akashic Masters: Being of Service from the Heart. Letting go of Co-dependency.",
+      "url": "https://www.youtube.com/watch?v=r-MqiiubXXA",
+      "subjects": [
+        "akashic-records",
+        "channelled-teachings"
+      ],
+      "channel": "Bonnie Grace Gilday-Kennedy"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "nMmnhFcMPLA": 496,
+      "r-MqiiubXXA": 82
+    },
+    "left_out_notes": [
+      "Video 'Sound Healing Chakra Meditation' (would have been a free resource): its description promises to clear anxious or sad energy, borderline under the health-claim rule.",
+      "Video 'The Akashic Masters: Being of Service from the Heart. Letting go of Co-dependency.': names a psychological condition."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "renee-trudeau"
+  },
+  "videos": [
+    {
+      "title": "How Can You Release Anxiety (+ 3 ways to begin)? (Live Inside Out Blog 6/13)",
+      "url": "https://www.youtube.com/watch?v=mk0eVKaEY_A",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Renee Trudeau"
+    },
+    {
+      "title": "What Do You Need to Heal Right Now? (Live Inside Out Blog 5/2)",
+      "url": "https://www.youtube.com/watch?v=XabrYV9xdkM",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Renee Trudeau"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "mk0eVKaEY_A": 604,
+      "XabrYV9xdkM": 381
+    },
+    "left_out_notes": [
+      "3 Ways to Quell Your Anxiety & Feel More Peace and Feel It, to Heal It (videos): condition-named or healing framing."
+    ]
+  },
+  "images_final": true
+}

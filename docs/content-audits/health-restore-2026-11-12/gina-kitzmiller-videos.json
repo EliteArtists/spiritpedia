@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "gina-kitzmiller"
+  },
+  "videos": [
+    {
+      "title": "Soul Walk: Navigating Grief, Intuition, and Motherhood After Loss with Gina Kitzmiller",
+      "url": "https://www.youtube.com/watch?v=R1wwAQbPjks",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "The Karuna Life Podcast"
+    },
+    {
+      "title": "Healing After Betrayal, Addiction & Divorce: Reclaiming Power with Meredith Beardmore",
+      "url": "https://www.youtube.com/watch?v=1X8H47TAZwo",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "The Karuna Life Podcast"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "R1wwAQbPjks": 16,
+      "1X8H47TAZwo": 76
+    },
+    "left_out_notes": [
+      "Podcast guest conversations on YouTube (betrayal/addiction/divorce, craniosacral therapy, Emotion Code, etc.): guest-led or condition-framed; only her solo episodes and a guided meditation kept.",
+      "'Soul Walk: Navigating Grief, Intuition, and Motherhood After Loss' episode: grief/loss framing, left out to be safe."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "eoin-finn"
+  },
+  "videos": [
+    {
+      "title": "Inhale Prana, Exhale Trauma: A 25-minute routine to start the New Year!",
+      "url": "https://www.youtube.com/watch?v=693RXkPRm2E",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Blissology Yoga"
+    },
+    {
+      "title": "The Art of Longevity: The Most Overlooked Biohack | Blissology Podcast Ep. 5",
+      "url": "https://www.youtube.com/watch?v=mtrcC9IwK88",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Blissology Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "693RXkPRm2E": 161,
+      "mtrcC9IwK88": 735
+    },
+    "left_out_notes": [
+      "Videos 'Inhale Prana, Exhale Trauma' and 'The Art of Longevity: The Most Overlooked Biohack' (also a blog post): condition/longevity framing."
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "healer": {
+    "healer_slug": "amy-robeson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sacred Crystal Awakening",
+      "url": "https://theamyrobeson.com/sacredcrystalawakening/",
+      "description": "An online crystal course on choosing, cleansing and protecting stones, building crystal grids for manifestation and working with crystalline energy even without the stone at hand. Each lesson comes with a downloadable guided healing or activation, and higher tiers add more lessons and group support.",
+      "price": "$197 (Foundation; regular $297; higher tiers to $997)",
+      "image": "https://theamyrobeson.com/wp-content/uploads/2019/09/SCA_Top_Header_Banner_with_text_1900x1200.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "manifestation",
+        "chakra-healing"
+      ]
+    },
+    {
+      "title": "Light Language Magik Self Study",
+      "url": "https://theamyrobeson.com/lightlanguagemagik-self-study/",
+      "description": "A self-paced programme in five modules on awakening and using one's own light language, spoken and written, for self-healing, manifesting and communication with guides. It includes downloadable activations and a chakra series in light language.",
+      "price": "$888 (or 6 monthly payments of $178)",
+      "image": "https://theamyrobeson.com/wp-content/uploads/2020/01/page-thumbnail.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "chakra-healing",
+        "self-healing"
+      ]
+    },
+    {
+      "title": "Awakening Bundles 2nd Edition",
+      "url": "https://theamyrobeson.com/awakeningbundles2/",
+      "description": "Themed sets of two to five recorded guided healings and activations for use in personal meditation, on subjects such as ancestral patterns, money, past lives and opening the heart. Each bundle is bought separately.",
+      "price": "$80 to $160 per bundle",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "self-healing",
+        "energy-medicine"
+      ],
+      "image": "https://theamyrobeson.com/wp-content/uploads/2020/11/Title.png"
+    },
+    {
+      "title": "Meet Your Spirit Guides",
+      "url": "https://theamyrobeson.com/meet-your-spirit-guides/",
+      "description": "A short recorded masterclass on meeting and working with your spirit guides, with a bonus class on protecting and clearing your energy. Aimed at beginners who want a first, practical connection with guidance.",
+      "price": "$37 (normally $97)",
+      "image": "https://theamyrobeson.com/wp-content/uploads/2020/04/meet_your_spirit_guides_preview_comrpessed.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "mediumship-spirits"
+      ]
+    },
+    {
+      "title": "Ascend",
+      "url": "https://theamyrobeson.com/ascend/",
+      "description": "A self-paced course of eleven video sessions working with nine goddess energies, among them Mother Mary and Kuan Yin, through channelled healings, guided meditations and activations. Bonuses include moon ceremony audios and crystal light-body activations.",
+      "price": "$197 (special sale; retail $1,997)",
+      "image": "https://theamyrobeson.com/wp-content/uploads/2018/05/Ascend-Yoast-SEO.png",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "spiritual-awakening",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/amy-robeson.json",
+    "left_out": [
+      "DNA Awakening Accelerator: its page says the DNA activation 'allows you to heal and prevent dis-ease' and heals 'on a cellular level', a disease-prevention claim.",
+      "The listing now has 10 offerings with these five."
+    ],
+    "flags": [
+      "Sacred Crystal Awakening lists 'Heal physically' and, among energies to release, anxiety and depression; it also teaches crystal elixir 'remedies' for all bodies including the physical. No disease named; borderline under the new rule.",
+      "Light Language Magik: a testimonial describes relief from health problems after a brain injury; the course copy itself speaks of spiritual, emotional and mental healing.",
+      "Prices are shown as sale or 'value' figures with countdown discounts; the plan gives the sale price shown on 12 Nov 2026."
+    ]
+  }
+}

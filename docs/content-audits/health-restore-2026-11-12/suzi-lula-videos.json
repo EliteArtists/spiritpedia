@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "suzi-lula"
+  },
+  "videos": [
+    {
+      "title": "The 5-Minute I AM Love Meditation to Reset Your Nervous System",
+      "url": "https://www.youtube.com/watch?v=s_64u_Hcq40",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Suzi Lula"
+    },
+    {
+      "title": "You Were Never Broken: Healing Your Inner Child With Compassion, with TJ Woodward",
+      "url": "https://www.youtube.com/watch?v=lteMqXiNDkM",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Suzi Lula"
+    },
+    {
+      "title": "Inner Child Healing: A Guided Meditation to Reconnect With Yourself",
+      "url": "https://www.youtube.com/watch?v=gPBOS2rIm5Y",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Suzi Lula"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "s_64u_Hcq40": 168,
+      "lteMqXiNDkM": 2456,
+      "gPBOS2rIm5Y": 276
+    },
+    "left_out_notes": [
+      "Videos with 'heal', 'anxiety' or 'nervous system' in the title (inner child healing, calm anxiety, nervous-system reset) left out under the health rule; Shorts left out."
+    ]
+  },
+  "images_final": true
+}

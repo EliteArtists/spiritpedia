@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "ziva-meditation"
+  },
+  "videos": [
+    {
+      "title": "83. Healing Pain Through the Subconscious with Jim Curtis | Part 1",
+      "url": "https://www.youtube.com/watch?v=5y2-IGjNedI",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Ziva Meditation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "5y2-IGjNedI": 17654
+    },
+    "left_out_notes": [
+      "Episodes on mushrooms, mitochondria, functional medicine, perimenopause, trauma reversal, fitness and money"
+    ]
+  },
+  "images_final": true
+}

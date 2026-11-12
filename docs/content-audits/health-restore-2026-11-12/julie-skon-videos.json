@@ -1,0 +1,59 @@
+{
+  "healer": {
+    "healer_slug": "julie-skon"
+  },
+  "videos": [
+    {
+      "title": "8 Min Somatic Stress Release Meditation",
+      "url": "https://www.youtube.com/watch?v=eR3_yrYZFpo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "SOS Somatic Meditation for Stress Release and Anxiety Relief | Julie Skon",
+      "url": "https://www.youtube.com/watch?v=k8YtDnobInE",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "Day 1 | Zen in Ten | 5 Minute Meditation Challenge for Stress Release",
+      "url": "https://www.youtube.com/watch?v=xcVhZoL4GCs",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    },
+    {
+      "title": "10 Minute Root Chakra Healing Meditation",
+      "url": "https://www.youtube.com/watch?v=u9F8vh5C_4g",
+      "subjects": [
+        "meditation",
+        "chakra-healing",
+        "self-healing"
+      ],
+      "channel": "Heal Wildly Meditations with Julie Skon"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "eR3_yrYZFpo": 664,
+      "k8YtDnobInE": 354,
+      "xcVhZoL4GCs": 284,
+      "u9F8vh5C_4g": 235
+    },
+    "left_out_notes": [
+      "YouTube: 8 Min Somatic Stress Release, sleep and healing titles (stress/sleep framing), and the 30-day challenge clips under ~2 minutes or covered by the playlist."
+    ]
+  },
+  "images_final": true
+}

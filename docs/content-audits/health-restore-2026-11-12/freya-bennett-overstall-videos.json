@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "freya-bennett-overstall"
+  },
+  "videos": [
+    {
+      "title": "Stress Relieving Study Break",
+      "url": "https://www.youtube.com/watch?v=R_4LnhEUvyM",
+      "subjects": [
+        "qi-gong",
+        "yoga"
+      ],
+      "channel": "Freya Bennett-Overstall"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "R_4LnhEUvyM": 104
+    },
+    "left_out_notes": [
+      "Online class video library (rentals) left out: descriptions name conditions and recovery from illness or surgery.",
+      "YouTube 'Stress Relieving Study Break' left out (stress-titled)."
+    ]
+  },
+  "images_final": true
+}

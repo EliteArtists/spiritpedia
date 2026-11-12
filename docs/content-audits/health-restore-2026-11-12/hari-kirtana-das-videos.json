@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "hari-kirtana-das"
+  },
+  "videos": [
+    {
+      "title": "How Yoga Affects Your Mental Health - with Sara Sheikh",
+      "url": "https://www.youtube.com/watch?v=IsrCnHSCoUA",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Hari-kirtana das"
+    },
+    {
+      "title": "Can Yoga Heal the Planet?",
+      "url": "https://www.youtube.com/watch?v=ZzdmQM7bIjk",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Hari-kirtana das"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "IsrCnHSCoUA": 206,
+      "ZzdmQM7bIjk": 166
+    },
+    "left_out_notes": [
+      "Videos on politics, social justice, cultural appropriation and mental health; Shorts and clips under two minutes; Gita Satsang classes #102, #104, #106, #107, #108 (oEmbed 401)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "tony-samara"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sleep Well",
+      "url": "https://www.tonysamara.com/sleep-well",
+      "description": "An online course of ten bedtime meditations from Tony Samara, each opening with a short talk and followed by a guided practice. The lessons cover letting go of the day's distractions, kindness to oneself and settling into deep, peaceful rest.",
+      "price": "From €44.85 EUR",
+      "image": "https://www.tonysamara.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiNngyYTZ2Y3hqdnN4cWlscGl3OWRkM2xyYnd2ZSIsImRvbWFpbiI6Ind3dy50b255c2FtYXJhLmNvbSJ9.VDv_SFD-XYwUmy-g7fwLUmgQifkltuii14eNkNLJjl8",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/tony-samara.json",
+    "left_out": [
+      "Durma Bem (Portuguese) and Dobro spite (Croatian) versions of Sleep Well: the same course in other languages; only the English one added, to avoid near-duplicates.",
+      "Detox Body, Mind and Soul and Guide to a Healthier Way of Eating: no longer found in the site's sitemap on 12 Nov 2026.",
+      "Meditation for Living a Fulfilling Life (free PDF): its description says meditation can 'decrease blood pressure, control pain'; blood pressure is on the not-allowed list, so still out (borderline)."
+    ],
+    "flags": [
+      "Sleep Well's page text is built by script; description and two offer prices (€44.85 and €49.50 EUR) taken from the page's own structured data. Its blurb says the meditations 'assist your body's healing during the vital hours of sleep' (wellbeing language, no condition named); kept.",
+      "Meditation for Living a Fulfilling Life left out as borderline; a human may judge a passing 'decrease blood pressure' acceptable."
+    ]
+  }
+}

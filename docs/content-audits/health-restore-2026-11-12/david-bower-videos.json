@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "david-bower"
+  },
+  "videos": [
+    {
+      "title": "5 reasons your healing isn't happening",
+      "url": "https://www.youtube.com/watch?v=0NZxbtxhf_E",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "David Bower | The Lemurian Way"
+    },
+    {
+      "title": "HOW TO HEAL Any Relationship with LIGHT",
+      "url": "https://www.youtube.com/watch?v=kGNVRdpGvXw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "David Bower | The Lemurian Way"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "0NZxbtxhf_E": 1481,
+      "kGNVRdpGvXw": 1160
+    },
+    "left_out_notes": [
+      "Videos with healing framing were not needed and left out: 5 reasons your healing isn't happening; HOW TO HEAL Any Relationship with LIGHT."
+    ]
+  }
+}

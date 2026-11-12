@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "center-for-contemporary-mysticism"
+  },
+  "videos": [
+    {
+      "title": "Tom Holmes - Tuning the Heart of the Healer",
+      "url": "https://www.youtube.com/watch?v=B-9WvNLTSBg",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Center for Contemporary Mysticism"
+    },
+    {
+      "title": "Jeffery Olsen - Choosing Joy: Embracing Life After Tragic Loss",
+      "url": "https://www.youtube.com/watch?v=1js8evxBA84",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Center for Contemporary Mysticism"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "B-9WvNLTSBg": 299,
+      "1js8evxBA84": 868
+    },
+    "left_out_notes": [
+      "'Tom Holmes - Tuning the Heart of the Healer' and 'Jeffery Olsen - Choosing Joy: Embracing Life After Tragic Loss' left out as borderline healing/grief framing."
+    ]
+  },
+  "images_final": true
+}

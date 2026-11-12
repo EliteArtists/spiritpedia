@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "roger-jahnke"
+  },
+  "videos": [
+    {
+      "title": "Tai Chi Easy - Level I Fast Movement - First Steps for Aging Mastery",
+      "url": "https://www.youtube.com/watch?v=TvBpbpu04zo",
+      "subjects": [
+        "tai-chi"
+      ],
+      "channel": "The Tai Chi And Qigong Way"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "TvBpbpu04zo": 1541
+    },
+    "left_out_notes": [
+      "Free 'Tai Chi Easy for Aging Mastery' YouTube playlist (description makes fall-risk health claims)."
+    ]
+  },
+  "images_final": true
+}

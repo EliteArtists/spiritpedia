@@ -1,0 +1,41 @@
+{
+  "healer": {
+    "healer_slug": "jethavanarama-buddhist-monastery"
+  },
+  "videos": [
+    {
+      "title": "Live Long, Well and Wisely",
+      "url": "https://www.youtube.com/watch?v=_IaGcbHkcNc",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Jethavanarama Buddhist Monastery"
+    },
+    {
+      "title": "The reality of human emotions",
+      "url": "https://www.youtube.com/watch?v=gtT-SO03CFs",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Jethavanarama Buddhist Monastery"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "_IaGcbHkcNc": 7715,
+      "gtT-SO03CFs": 4376
+    },
+    "left_out_notes": [
+      "'Live Long, Well and Wisely' left out as borderline health framing; Shorts left out."
+    ]
+  },
+  "images_final": true
+}

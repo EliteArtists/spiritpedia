@@ -1,0 +1,58 @@
+{
+  "healer": {
+    "healer_slug": "karen-frances-mccarthy"
+  },
+  "videos": [
+    {
+      "title": "Meditations for Mediumship",
+      "url": "https://www.youtube.com/watch?v=I94zm8KPxjk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Karen Frances McCarthy PhD | Mediumship"
+    },
+    {
+      "title": "Edgar Cayce Trance Healing Practice",
+      "url": "https://www.youtube.com/watch?v=bhrUfAVnJKw",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Karen Frances McCarthy PhD | Mediumship"
+    },
+    {
+      "title": "Is Edgar Cayce's Healing REALLY Effective for Spiritual Growth",
+      "url": "https://www.youtube.com/watch?v=jct1cotpHFE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Karen Frances McCarthy PhD | Mediumship"
+    },
+    {
+      "title": "Healing Practice for Imbolc",
+      "url": "https://www.youtube.com/watch?v=ALw3fshCdrc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Karen Frances McCarthy PhD | Mediumship"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "I94zm8KPxjk": 139,
+      "bhrUfAVnJKw": 388,
+      "jct1cotpHFE": 943,
+      "ALw3fshCdrc": 172
+    },
+    "left_out_notes": [
+      "Video 'Love After Life: Q&A - Is mediumship a cure for grief?' (uses 'cure').",
+      "Videos 'Edgar Cayce Trance Healing Practice', 'Is Edgar Cayce's Healing REALLY Effective for Spiritual Growth' and 'Healing Practice for Imbolc' (borderline healing claims)."
+    ]
+  },
+  "images_final": true
+}

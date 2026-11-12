@@ -1,0 +1,70 @@
+{
+  "healer": {
+    "healer_slug": "lauren-walker"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Energy to Heal: Find Lasting Freedom From Stress and Trauma Through Energy Medicine Yoga",
+      "slug": "the-energy-to-heal",
+      "author": "Lauren Walker",
+      "asin": "0738769495",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Lauren Walker's third book builds an Energy Medicine Yoga programme around the five elements, with step-by-step practices for working through the stress and painful experiences that stay held in the body. It combines yoga postures with energy work so readers can respond to triggers more calmly and build resilience. Published by Llewellyn.",
+      "subjects": [
+        "energy-medicine",
+        "yoga",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0738769495.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Energy to Heal",
+      "url": "https://emyoga.thinkific.com/courses/the-energy-to-heal-public",
+      "description": "A week-by-week online course that follows the five elements of her book of the same name, starting from a foundational template practice. Each week pairs yoga postures with tapping, acupressure holds, tracing of energy pathways, breathwork and organ sounds, aimed at releasing the emotional hold of stress and past trauma.",
+      "price": "$347.00",
+      "image": "https://m.media-amazon.com/images/P/0738769495.01._SCLZZZZZZZ_.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "yoga",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Release Your Stress in 5 Easy Ways (free masterclass)",
+      "url": "https://www.energymedicineyoga.net/energy-to-heal-masterclass",
+      "description": "A free hour-long recorded class teaching five simple Energy Medicine Yoga moves to settle the body's stress response. It explains how stress and trauma show up in the body and how energy practices can bring it back to balance.",
+      "image": null,
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "energy-medicine",
+        "yoga"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lauren-walker.json",
+    "left_out": [
+      "Shift Network courses (Energy Medicine Yoga for Healing; 5 Element Star; Embody Joy): theshiftnetwork.com is never fetched, so their current pages could not be checked.",
+      "Five element practices from The Energy to Heal ($25 each): no current page found on emyoga.thinkific.com/collections.",
+      "EMYoga Cancer Support PDF, prenatal and Ageless bundles, Yoga Nidra 'Meditation for Healing': not found on her current site or course catalogue; the 2020 and 2022 webinar series are past.",
+      "The Energy Medicine Yoga Prescription: still left out (blurb matches 'hundreds of health complaints' to practices; not re-checked, as it is a treatment claim)."
+    ],
+    "flags": [
+      "The Energy to Heal: ISBN-13 9780738769493 from llewellyn.com, converted to ISBN-10 0738769495; not confirmed elsewhere. A praise quote on Llewellyn's page mentions PTSD; the blurb itself is about stress and trauma.",
+      "The masterclass page is an opt-in sign-up (free); it mentions toning the vagus nerve to calm the stress response."
+    ]
+  }
+}

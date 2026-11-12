@@ -1,0 +1,69 @@
+{
+  "healer": {
+    "healer_slug": "victoria-ucele"
+  },
+  "videos": [
+    {
+      "title": "YOGA AUDIO CLASS: Regain health, energy & equilibrium with Yin & Restorative Yoga",
+      "url": "https://www.youtube.com/watch?v=4yn-W4lNZ6Q",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "channel": "Ucele Yoga"
+    },
+    {
+      "title": "Yin yoga for sleep",
+      "url": "https://www.youtube.com/watch?v=4vzHVg2Hw-o",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Ucele Yoga"
+    },
+    {
+      "title": "Twists for Emotional Release | Yin Yang Yoga | 46 minute class",
+      "url": "https://www.youtube.com/watch?v=KrwXmP3D3fU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Ucele Yoga"
+    },
+    {
+      "title": "RELAX TO THE MAX I Progressive Muscle Relaxation",
+      "url": "https://www.youtube.com/watch?v=ZeyWkIjcpOk",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Ucele Yoga"
+    },
+    {
+      "title": "Yin Yang Yoga for Sleep & Relaxation | 45 minute class",
+      "url": "https://www.youtube.com/watch?v=zBd8mlvZE5g",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Ucele Yoga"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "4yn-W4lNZ6Q": 67,
+      "4vzHVg2Hw-o": 91,
+      "KrwXmP3D3fU": 44,
+      "ZeyWkIjcpOk": 91,
+      "zBd8mlvZE5g": 40
+    },
+    "left_out_notes": [
+      "Videos 'Regain health, energy & equilibrium', 'Yin Yang Yoga for Sleep & Relaxation', 'Twists for Emotional Release', the neck-and-shoulder tension clip and the Bubbling Spring acupuncture-point clip: health-leaning wording or under ~2 minutes / very short."
+    ]
+  },
+  "images_final": true
+}

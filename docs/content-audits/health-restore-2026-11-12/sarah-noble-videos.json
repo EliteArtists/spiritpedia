@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "sarah-noble"
+  },
+  "videos": [
+    {
+      "title": "Ep. 266 How Being of Service Heals You and the World",
+      "url": "https://www.youtube.com/watch?v=P-7TYg29JxI",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Sarah Noble - Awakened Embodied Empowered"
+    },
+    {
+      "title": "Episode 257: Past Life Healing for Transformation in This Lifetime",
+      "url": "https://www.youtube.com/watch?v=XwIQBMchnts",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Sarah Noble - Awakened Embodied Empowered"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "P-7TYg29JxI": 6,
+      "XwIQBMchnts": 6,
+      "tdmKeYZVpRc": 5
+    },
+    "left_out_notes": [
+      "Videos 'Ep. 266 How Being of Service Heals You and the World' and 'Episode 257: Past Life Healing for Transformation in This Lifetime': 'heal/healing' in titles, left out to be safe."
+    ]
+  },
+  "images_final": true
+}

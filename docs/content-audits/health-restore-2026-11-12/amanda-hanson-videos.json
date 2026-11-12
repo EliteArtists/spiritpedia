@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "amanda-hanson"
+  },
+  "videos": [
+    {
+      "title": "Women's Health Was Never A Priority | Marina Gerner | Things Your Mother Never Told You",
+      "url": "https://www.youtube.com/watch?v=NQA7dTH8Tuc",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Midlife Muse"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "NQA7dTH8Tuc": 339
+    },
+    "left_out_notes": [
+      "The Spirituality of Menopause (video and podcast episode): names a medical condition."
+    ]
+  },
+  "images_final": true
+}

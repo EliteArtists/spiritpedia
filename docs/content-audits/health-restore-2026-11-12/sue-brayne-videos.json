@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "sue-brayne"
+  },
+  "videos": [
+    {
+      "title": "Wanda Sellar: Medical Astrology",
+      "url": "https://www.youtube.com/watch?v=rqSnYfEmKu4",
+      "subjects": [
+        "astrology",
+        "death-the-afterlife"
+      ],
+      "channel": "Sue Brayne: Celebrating Astrology"
+    },
+    {
+      "title": "Your Soul's Evolutionary Journey with Steven Forrest",
+      "url": "https://www.youtube.com/watch?v=SdsDgtmDawM",
+      "subjects": [
+        "astrology",
+        "death-the-afterlife"
+      ],
+      "channel": "Sue Brayne: Celebrating Astrology"
+    },
+    {
+      "title": "Practical ways to reduce fear, anxiety, and stress in these uncertain times",
+      "url": "https://www.youtube.com/watch?v=mdHtMg5BFb0",
+      "subjects": [
+        "astrology",
+        "death-the-afterlife"
+      ],
+      "channel": "Sue Brayne: Celebrating Astrology"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "rqSnYfEmKu4": 2664,
+      "SdsDgtmDawM": 10276,
+      "mdHtMg5BFb0": 990
+    },
+    "left_out_notes": [
+      "Wanda Sellar: Medical Astrology (video): medical.",
+      "How Astrology Can Help with Loss and Grief (video): grief framing, borderline, left out.",
+      "Wise Wild Women podcast episodes on helplessness and hopelessness: emotional-condition framing."
+    ]
+  },
+  "images_final": true
+}

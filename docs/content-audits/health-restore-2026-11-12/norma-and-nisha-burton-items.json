@@ -1,0 +1,81 @@
+{
+  "healer": {
+    "healer_slug": "norma-and-nisha-burton"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing the Rejection Wound",
+      "url": "https://healingrejection.luciddreaminglucidliving.com/",
+      "description": "A self-paced course of sixteen lessons from Nisha and Norma Burton on the stories people carry about belonging and worth. It traces those patterns back to their roots and helps students write a new one, with a workbook and a guided meditation.",
+      "price": "$47",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work",
+        "self-healing",
+        "conscious-relationships"
+      ],
+      "image": null
+    },
+    {
+      "title": "Breakthrough Session",
+      "url": "https://breakthroughsession.luciddreaminglucidliving.com/",
+      "description": "A 90-minute online session taught by Nisha and Norma Burton together, looking at a person's own dreams, shadow material or altered-state experiences. It comes with a recording, a written practice plan and two weeks of email support.",
+      "price": "$697",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "shadow-work"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/zpaLY9cT7JqFjnmijeJM/media/692df8cf1f60a1f2596fcb89.png"
+    },
+    {
+      "title": "The Journey to Completion",
+      "url": "https://path.journeytocompletion.com/",
+      "description": "Norma Burton's twelve-week live cohort on Zoom, limited to twelve people, working with shadow patterns and old wounds. It draws on Jungian depth psychology and the Huichol teachings she studied, with weekly three-hour sessions and a private community.",
+      "price": "$2,000",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shadow-work",
+        "self-healing",
+        "shamanism"
+      ],
+      "image": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/zpaLY9cT7JqFjnmijeJM/media/69606fcf9c38cb8ceca92f0e.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Navigating the Nightmares",
+      "url": "https://nightmareguide.luciddreaminglucidliving.com/",
+      "description": "A free guide from the Burtons on understanding nightmares and sleep paralysis, with grounding practices, a four-step protocol for sleep paralysis and ways to use lucid dreaming to re-enter and change a frightening dream.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "dreamwork",
+        "shadow-work"
+      ],
+      "image": null
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/norma-and-nisha-burton.json",
+    "left_out": [
+      "Norma's one-to-one sessions on normaburton.com (60 and 90 minute, couples): the pages carry only a booking widget, no readable description or price.",
+      "Free guides 'Herb Guide' and 'Dreamwork & Attachment Styles': the listing would pass five free resources (four already in plus Navigating the Nightmares); not a health exclusion.",
+      "Free live workshop 'Dream Alchemy': a dated one-off event (unchanged from the original plan)."
+    ],
+    "flags": [
+      "The Journey to Completion calls itself 'a proven psycho-therapeutic methodology' combined with sacred traditions; kept as spiritual shadow work under the new health rule, but a human may judge it therapy-led (scope rule). Cohort is repeating ('next cohort begins in March'), so undated.",
+      "Breakthrough Session names psychedelic experiences among the material clients may bring; it offers no substances."
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "healer": {
+    "healer_slug": "ajahn-anan"
+  },
+  "videos": [
+    {
+      "title": "Body Pain, Worry, and Sleepiness - Ways to Work With | Retreat Day 6 | 16 July 2026",
+      "url": "https://www.youtube.com/watch?v=SEfkNqCn1Rs",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Ajahn Anan Dhamma"
+    },
+    {
+      "title": "Assisted Dying and Parental Care | Retreat Day 5 Q&A",
+      "url": "https://www.youtube.com/watch?v=nOYT0-eEQbk",
+      "subjects": [
+        "death-the-afterlife"
+      ],
+      "channel": "Ajahn Anan Dhamma"
+    },
+    {
+      "title": "From Devastation Towards The Wisdom of Letting Go | Friday Dhamma | 6 June 2025",
+      "url": "https://www.youtube.com/watch?v=CR_RdYcMvHs",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ajahn Anan Dhamma"
+    },
+    {
+      "title": "A Cool, Calm Heart Draws Near to Nibbāna | Friday Dhamma | 06 Sep 2024",
+      "url": "https://www.youtube.com/watch?v=c391Fhkig3k",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Ajahn Anan Dhamma"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "SEfkNqCn1Rs": 1941,
+      "nOYT0-eEQbk": 803,
+      "CR_RdYcMvHs": 2368,
+      "c391Fhkig3k": 1949
+    },
+    "left_out_notes": [
+      "YouTube: 'Body Pain, Worry, and Sleepiness' and 'Assisted Dying and Parental Care' (condition-related titles); retreat Q&A clips and talks by other monks on the channel."
+    ]
+  },
+  "images_final": true
+}

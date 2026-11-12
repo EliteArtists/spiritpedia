@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "jilani-cordelia"
+  },
+  "videos": [
+    {
+      "title": "Ya Jabbar | Healer of Fractured Existence | 13 January 2026 | Jilani and Salik",
+      "url": "https://www.youtube.com/watch?v=RAP3FO4VDDs",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Jilani and Salik Dances of Universal Peace"
+    },
+    {
+      "title": "Healing through the Elements | 19 April 2024 | Songs of One Breath | Jilani Cordelia",
+      "url": "https://www.youtube.com/watch?v=QZxnZU0gYNE",
+      "subjects": [
+        "breathwork",
+        "self-healing"
+      ],
+      "channel": "Jilani and Salik Dances of Universal Peace"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "RAP3FO4VDDs": 42,
+      "QZxnZU0gYNE": 98
+    },
+    "left_out_notes": [
+      "YouTube 'Ya Jabbar | Healer of Fractured Existence' (healing wording in title) and Portuguese-language sessions."
+    ]
+  },
+  "images_final": true
+}

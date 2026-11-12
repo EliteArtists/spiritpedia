@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "matthew-fox"
+  },
+  "videos": [
+    {
+      "title": "The Desert Fathers and Hildegard of Bingen on Acedia",
+      "url": "https://www.youtube.com/watch?v=AKFaw1axQSY",
+      "subjects": [
+        "mysticism",
+        "spirituality"
+      ],
+      "channel": "Matthew Fox"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "AKFaw1axQSY": 865
+    },
+    "left_out_notes": [
+      "Video 'The Desert Fathers and Hildegard of Bingen on Acedia': acedia is often equated with depression, left out as borderline."
+    ]
+  },
+  "images_final": true
+}

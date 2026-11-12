@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "carole-westerman"
+  },
+  "videos": [
+    {
+      "title": "The Art of Deep Rest at Omega Institute",
+      "url": "https://www.youtube.com/watch?v=khBjUhZrtVU",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Carole Westerman"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "khBjUhZrtVU": 109
+    },
+    "left_out_notes": [
+      "Nervous System Reset with Tapping, Ear Massage & Havening (NzYMylDVrT4): havening is a trauma-therapy technique; borderline, left out."
+    ]
+  },
+  "images_final": true
+}

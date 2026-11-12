@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "rachel-boucher"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Yoga Nidra With Sufi Poets",
+      "url": "https://rachel-boucher.thinkific.com/courses/yoga-nidra-sufi-poets",
+      "description": "Two downloadable Yoga Nidra tracks, about 39 minutes in all, that bring the poetry of Rumi and Hafiz into a guided rest between waking and sleep. Gentle binaural tones run underneath; Rachel Boucher offers them for unwinding and inner stillness.",
+      "price": "Contact for pricing",
+      "image": "https://users.insighttimer.com/44twaMDdhQWyyunQwiLSjmicScW2/pictures/square_large.jpeg",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mysticism"
+      ]
+    },
+    {
+      "title": "Seasonal Yoga Nidra",
+      "url": "https://rachel-boucher.thinkific.com/courses/YN-seasons",
+      "description": "Four guided Yoga Nidra recordings, one for each season, each between 26 and 36 minutes and built around that season's imagery. They are meant for deep rest, easing tension and keeping in step with the year's rhythms.",
+      "price": "$25.00",
+      "image": "https://users.insighttimer.com/44twaMDdhQWyyunQwiLSjmicScW2/pictures/square_large.jpeg",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/rachel-boucher.json",
+    "left_out": [
+      "Insight Timer tracks 'Health Affirmations' and 'Healing Affirmations': Insight Timer is never fetched, so not verified (and the listing already has 4 free resources)."
+    ],
+    "flags": [
+      "Yoga Nidra With Sufi Poets: the Thinkific page shows no price, so 'Contact for pricing'."
+    ]
+  }
+}

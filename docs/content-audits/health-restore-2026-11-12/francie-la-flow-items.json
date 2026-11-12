@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "francie-la-flow"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Heal Your Voice Collection",
+      "url": "https://www.pureflow.yoga/heal-your-voice-collection/",
+      "description": "Francie's self-paced bundle of voice work: the Heal Your Voice course, Sacred Sounds: Mantra as Medicine, the monthly Vocal Flow practice library, the seven-day Sing Your Heart Open, guided audios and a songbook, with lifetime access. Built for anyone wanting to sing or speak more freely, trained or not.",
+      "price": "$497",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.pureflow.yoga/wp-content/uploads/2026/07/heal-your-voice-course.jpg",
+      "subjects": [
+        "sound-healing",
+        "self-healing",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Compassionate Inquiry Sessions",
+      "url": "https://www.pureflow.yoga/compassionate-inquiry/",
+      "description": "One-to-one sessions in Gabor Maté's Compassionate Inquiry approach, online or in person, exploring the patterns, beliefs and body sensations beneath stress, overwhelm and old wounds. Offered as a four-session journey or monthly.",
+      "price": "$500 USD for four sessions, or $150 USD a month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "image": "https://www.pureflow.yoga/wp-content/uploads/2026/06/Journal-writing-scaled.jpg",
+      "subjects": [
+        "self-healing",
+        "shadow-work"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/francie-la-flow.json",
+    "left_out": [
+      "Heal Your Voice and Sacred Sounds: Mantra as Medicine as separate items: they have no public pages of their own (the Heal Your Voice pages are the member library); both are inside the Collection.",
+      "Vagus-nerve and 'Women's Health' items: videos, handled separately."
+    ],
+    "flags": [
+      "The listing now has 12 offerings (the brief's cap is 10); the Collection also bundles Sing Your Heart Open and the Vocal Flow Library, already listed on their own.",
+      "Compassionate Inquiry is a somatic, trauma-informed method from Gabor Maté; the page names anxiety, burnout and relational trauma without any treatment claim, so it passes the new health rule. It is close to therapy, though (scope rule): a human may prefer to leave it out.",
+      "Collection price shows '$497' with no currency code on the page; the Compassionate Inquiry page shows 'USD'."
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "kim-chestney"
+  },
+  "videos": [
+    {
+      "title": "Turning Your Pain Into Power: A Shift Network Feature with Alkemia Earth + Kim Chestney",
+      "url": "https://www.youtube.com/watch?v=h6xBDeteMHY",
+      "subjects": [
+        "consciousness",
+        "spiritual-awakening"
+      ],
+      "channel": "Kim Chestney"
+    },
+    {
+      "title": "Healing With Your Higher Power: A Shift Network Feature with Vanessa Cordorniu + Kim Chestney",
+      "url": "https://www.youtube.com/watch?v=DO2wvD7_6mI",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Kim Chestney"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "h6xBDeteMHY": 125,
+      "DO2wvD7_6mI": 4094
+    },
+    "left_out_notes": [
+      "'Turning Your Pain Into Power' and 'Healing With Your Higher Power' (Shift Network features on her channel): condition or healing framing."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "healer": {
+    "healer_slug": "rodger-kamenetz"
+  },
+  "videos": [
+    {
+      "title": "HEALING IMAGES IN DREAMS  AYA 12 16 21",
+      "url": "https://www.youtube.com/watch?v=KFQCBU9U7ik",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Rodger Kamenetz"
+    },
+    {
+      "title": "THE SPIRIT OF POETRY IN A TIME OF TRAUMA",
+      "url": "https://www.youtube.com/watch?v=i2CXfBaG4w8",
+      "subjects": [
+        "dreamwork",
+        "mysticism"
+      ],
+      "channel": "Rodger Kamenetz"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "KFQCBU9U7ik": 225,
+      "i2CXfBaG4w8": 32
+    },
+    "left_out_notes": [
+      "Videos: 'Healing Images in Dreams' and 'The Spirit of Poetry in a Time of Trauma' (healing/trauma framing, borderline under the health rule); poetry readings and clips under ~2 minutes."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "marie-diamond"
+  },
+  "videos": [
+    {
+      "title": "Feng Shui on a Budget",
+      "url": "https://www.youtube.com/watch?v=Y_fFLz99QRo",
+      "subjects": [
+        "law-of-attraction",
+        "manifestation"
+      ],
+      "skip": "unavailable on YouTube"
+    },
+    {
+      "title": "Your home is a magnet for stress, lack of money, lack of sleep and lack of romance",
+      "url": "https://www.youtube.com/watch?v=dOUV1zjXMWw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Marie Diamond. Feng shui & Manifestation"
+    },
+    {
+      "title": "Your Home is a Magnet for Wealth, Health and Love.",
+      "url": "https://www.youtube.com/watch?v=W7kB-IEL1SE",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Marie Diamond. Feng shui & Manifestation"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "Y_fFLz99QRo": 25709,
+      "dOUV1zjXMWw": 144141,
+      "W7kB-IEL1SE": 5006
+    },
+    "left_out_notes": [
+      "Video 'Feng Shui on a Budget' failed oEmbed (401); dowsing video (health framing); dated launches and TV clips."
+    ]
+  },
+  "images_final": true
+}

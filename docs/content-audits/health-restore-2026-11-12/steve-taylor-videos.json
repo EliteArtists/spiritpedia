@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "steve-taylor"
+  },
+  "videos": [
+    {
+      "title": "The Calm Center Online Course: Session 1",
+      "url": "https://www.youtube.com/watch?v=1inqpW29CL8",
+      "subjects": [
+        "spiritual-awakening",
+        "consciousness"
+      ],
+      "channel": "Steve Taylor"
+    },
+    {
+      "title": "The Calm Center Online Course: Session 2",
+      "url": "https://www.youtube.com/watch?v=u90uBlcjRXM",
+      "subjects": [
+        "spiritual-awakening",
+        "consciousness"
+      ],
+      "channel": "Steve Taylor"
+    },
+    {
+      "title": "Fierce Grace 5: Religion and Spirituality - are they the same? Is religion damaging or healthy?",
+      "url": "https://www.youtube.com/watch?v=Z3cHdF2c_9U",
+      "subjects": [
+        "self-healing"
+      ],
+      "channel": "Steve Taylor"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos",
+    "note": "Videos left out under the old health rule, put back under the new one (owner, 12 Nov 2026): titles matching the left-out notes first, then the channel's most-viewed wellbeing titles (YouTube Data API views).",
+    "views": {
+      "1inqpW29CL8": 855,
+      "u90uBlcjRXM": 578,
+      "Z3cHdF2c_9U": 389
+    },
+    "left_out_notes": [
+      "Videos 'Ego madness: can it be healed?' and 'Transformation through adversity': condition or healing framing; 'Become the Sky' and 'The meaning': under two minutes; his Fierce Grace interviews where the guest is the main speaker."
+    ]
+  },
+  "images_final": true
+}
