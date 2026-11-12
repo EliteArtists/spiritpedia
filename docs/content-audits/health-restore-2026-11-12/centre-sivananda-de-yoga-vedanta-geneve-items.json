@@ -1,0 +1,64 @@
+{
+  "healer": {
+    "healer_slug": "centre-sivananda-de-yoga-vedanta-geneve"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "La psychologie du yoga, la voie vers une santé mentale rayonnante",
+      "url": "https://www.sivananda.ch/calendrier/la-psychologie-du-yoga-la-voie-vers-une-sante-mentale-rayonnante/",
+      "description": "Two Saturday-afternoon workshops at the Geneva centre on Raja Yoga as a psychology of the mind, drawn from Patanjali's Yoga Sutras: how thoughts, habits and conditioning shape experience, the kleshas as roots of suffering, and practical methods for concentration and steadiness. Each workshop can be booked alone or as a full day with the morning asana and pranayama class and a vegetarian lunch.",
+      "price": "from 29 CHF; full day 60 CHF",
+      "product_type": "course",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": null
+    },
+    {
+      "title": "Yoga prénatal (prenatal yoga class)",
+      "url": "https://www.sivananda.ch/femmes-enceintes/",
+      "description": "A weekly Sivananda class for pregnant women on Tuesday evenings at the Geneva centre, teaching variations of the postures suited to pregnancy. Women can join from the twelfth week without previous yoga experience; the centre asks them to consult their doctor before starting.",
+      "price": "29 frs per class; 4-class card 80 frs",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2018/08/yoga-fuer-schwangere.jpg"
+    },
+    {
+      "title": "Yoga doux / séniors (gentle yoga class)",
+      "url": "https://www.sivananda.ch/sans-inscription-prealable/doux-seniors/",
+      "description": "A slower, gentle Sivananda class built on simple postures and on releasing tension. It suits beginners, older students, people with reduced mobility and anyone coming back to practice after a break, and needs no advance booking.",
+      "price": "10 frs per class; 10-class card 90 frs",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.sivananda.ch/wp-content/uploads/2019/06/pranayama-jetdeau-P1080644.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/centre-sivananda-de-yoga-vedanta-geneve.json",
+    "left_out": [],
+    "flags": [
+      "La psychologie du yoga: the title speaks of 'santé mentale' and the page of rising above depression, agitation and fear through Raja Yoga; this is classical yoga philosophy with no claim to treat a condition, so kept. The page's day plan labels part 2 '14 novembre', but its header and booking say 21 and 28 November 2026; the latter are used.",
+      "La psychologie du yoga: the only image on the page is an iStock photo (iStock_000007216505XSmall), so image is set to null.",
+      "Yoga prénatal: the page tells women to consult their doctor first (supports medical care). Schedule 'Mardi 19h00 – 20h30'. Image is the page's own share image (wp-content/uploads/2018/08/yoga-fuer-schwangere.jpg); could not tell whether it is a stock photo, owner may check.",
+      "Doux / séniors: no class time is shown in the page HTML (the timetable is script-built); the class is listed in the site's own menu under 'Sans inscription préalable'. Prices as published ('1 cours : 10 frs')."
+    ]
+  },
+  "images_final": true
+}

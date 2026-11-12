@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "barre-center-for-buddhist-studies"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Sensory Basis of Self: Trauma- and Dissociation-Informed Work with the Early Buddhist Teachings",
+      "url": "https://www.buddhistinquiry.org/classes/2027-the-sensory-basis-of-self-trauma-and-dissociation-informed-work-with-the-early-buddhist-teachings/",
+      "description": "A one-day online programme with Bhikkhunī Dhammadinnā on how the early Buddhist teachings about the six sense domains, mindfulness of the body and not-self meet what is known of trauma and dissociation. With talks, guided practice and open discussion, it asks how the path can support integration rather than more distance from experience. Open to practitioners of every level and to clinicians.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": "2027-01-09",
+      "end_date": "2027-01-09",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.buddhistinquiry.org/wp-content/uploads/2026/09/97528895.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/barre-center-for-buddhist-studies.json",
+    "left_out": [
+      "Reinvigorating Clinical Practice Through Embodied Inquiry and the Neuroscience of Connection (20 Apr – 25 May 2027): a professional course for psychotherapists, psychologists, counsellors and psychiatrists in practice (therapy-led, scope rule)."
+    ],
+    "flags": [
+      "The Sensory Basis of Self: Buddhist teaching with a trauma-informed lens; no claim to treat, so kept under the 12 Nov rule. Sessions are not recorded; cameras on is required.",
+      "buddhistinquiry.org has Crawl-delay: 10; fetches were spaced 11 seconds apart."
+    ]
+  },
+  "images_final": true
+}

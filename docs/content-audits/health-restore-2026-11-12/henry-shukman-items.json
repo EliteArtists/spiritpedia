@@ -1,0 +1,56 @@
+{
+  "healer": {
+    "healer_slug": "henry-shukman"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Original Love",
+      "slug": "original-love",
+      "author": "Henry Shukman",
+      "asin": "0063356104",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Henry Shukman's guide to meditation, built around four stages he calls 'inns', moving from mindful attention and support through absorption to awakening. Mixing teaching with stories from his own life and from his students, it puts love, rather than original sin, at the root of human life and of spiritual practice.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/0063356104.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "One Blade of Grass",
+      "slug": "one-blade-of-grass",
+      "author": "Henry Shukman",
+      "asin": "1640092625",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Henry Shukman's memoir of a life shaped by Zen, from a sudden awakening as a young man and the unsettled years after it to long training with Zen teachers. Written with a poet's ear, it makes Zen practice and its insights clear to general readers.",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1640092625.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/henry-shukman.json",
+    "left_out": [],
+    "flags": [
+      "Original Love: ASIN 0063356104 from the Amazon link on henryshukman.com/writing/original-love (link not opened); the page also shows ISBN-13 9780063356108. Not confirmed elsewhere. The page lists 'reducing stress, anxiety, and depression' among the book's benefits; our description leaves that out and makes no claim.",
+      "One Blade of Grass: ASIN 1640092625 from the Amazon link on henryshukman.com/writing/one-blade-of-grass (not opened); the page shows ISBN-13 9781640092624. A memoir in which meditation helped him recover from depression, anxiety and chronic eczema: a memoir of illness, allowed under the 12 Nov rule; our description is neutral.",
+      "Titles are given as on his own pages (no subtitles were read on a non-Amazon page).",
+      "henryshukman.com's robots.txt carries 'crawl-delay: 30'; the two pages were fetched 31 seconds apart."
+    ]
+  },
+  "images_final": true
+}

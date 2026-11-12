@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "marisa-la-fata"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Healing Our Relationships: From Codependency to Authenticity (podcast)",
+      "url": "https://podcasts.apple.com/us/podcast/healing-our-relationships-from-codependency-to-authenticity/id1823817283",
+      "description": "Marisa La Fata's weekly podcast on the relationship with others and with oneself, drawing on Toltec teachings such as The Four Agreements, her own long recovery and conversations with spiritual teachers. Episodes look at patterns like people-pleasing and self-abandonment and offer reflective practices for meeting them with compassion.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "conscious-relationships",
+        "spirituality"
+      ],
+      "image": null
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marisa-la-fata.json",
+    "left_out": [
+      "Shamanic Breathwork information page (/shamanic-breathwork): an explanation of the method with no booking or price (her breathwork retreat is already listed), and it says addictions are sometimes transformed in the process."
+    ],
+    "flags": [
+      "The podcast is framed around codependency and addiction recovery and 'trauma-awareness'; emotional healing in her own words, no claim to treat a condition, so kept under the 12 Nov rule.",
+      "Podcast URL is the Apple Podcasts show linked from her home page (podcasts.apple.com robots.txt allows us). Latest episodes seen are dated 11 May to 23 Jun (season 2); no autumn 2026 episode was shown, owner may check it is still running."
+    ]
+  },
+  "images_final": true
+}

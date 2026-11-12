@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "chinmaya-mission-toronto"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "BMI Chart (Body-Mind-Intellect)",
+      "url": "https://chinmayatoronto.org/bmi-chart/",
+      "description": "Swami Chinmayananda's Body-Mind-Intellect chart, a one-page diagram of Vedanta for daily life. It shows how the perceiver, feeler and thinker get caught up in objects, emotions and thoughts through body, mind and intellect, and how going beyond the vasanas leads to the true Self.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality",
+        "spirituality"
+      ],
+      "image": "https://chinmayatoronto.org/wp-content/themes/twentyseventeen-child/assets/images/header.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/chinmaya-mission-toronto.json",
+    "left_out": [
+      "Healthy Body Healthy Mind (https://chinmayatoronto.org/healthy-body-healthy-mind/): a two-day retreat held 16-17 August 2025, so past; not a health-rule exclusion now."
+    ],
+    "flags": [
+      "The original plan left the 'BMI Chart' page out as a health page, but BMI here means Body-Mind-Intellect, Swami Chinmayananda's Vedanta chart; nothing health-related on it.",
+      "Free resource cap: this brings the listing to 5 of 5 free resources (per its plan); please check live."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "kathleen-duggan"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Private Shamanic Healing Session",
+      "url": "https://www.shamanichealingandteaching.com/service-page/private-shamanic-healing-session-3",
+      "description": "A 90-minute session with Kathleen Duggan, offered online worldwide, that opens with a consultation and works with her helping spirits through practices such as soul retrieval, power-animal retrieval, ancestral healing and extraction. It ends with guidance on integrating the session and on self-care.",
+      "price": "165 US dollars",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://kripalu.org/sites/default/files/2026-05/portraitkripalu.JPG"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kathleen-duggan.json",
+    "left_out": [
+      "Shamanic Healing Session for Children: the page says anxiety, headaches and depression can potentially be healed and carries testimonials about children with autism improving (treatment claims for children)."
+    ],
+    "flags": [
+      "Private Shamanic Healing Session: among 'common reasons people give' the page lists healing trauma and 'chronic pain that doctors can't diagnose'. That names a condition without a cure claim and does not advise against medical care, so the item is kept under the 12 Nov rule; owner may judge.",
+      "Offerings on this listing would be 8 of 10."
+    ]
+  },
+  "images_final": true
+}

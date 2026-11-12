@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "anamika-neitlich"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Beautiful Language of the Heart: Where evolution is inviting us to go",
+      "slug": "the-beautiful-language-of-the-heart",
+      "author": "Anamika",
+      "asin": "B0DTJHCGXB",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Anamika follows Vaughn, who has nonspeaking autism, as he comes out of long isolation to find his own gifts and ways of communicating beyond speech. She uses his journey to look at connection, self-discovery and growing through pain, themes she sees in every life. A companion documentary is free to watch on her website.",
+      "subjects": [
+        "spirituality",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0DTJHCGXB.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/anamika-neitlich.json",
+    "left_out": [
+      "Companion documentary (anamika.com/beautiful-language-heart): a film, not a teaching item; videos are handled separately. Mentioned in the book description instead."
+    ],
+    "flags": [
+      "ASIN B0DTJHCGXB (Kindle edition) is the Amazon link on her own book page https://anamika.com/book-the-beautiful-language-of-the-heart (not opened); not confirmed elsewhere. Description and author ('Anamika', on the cover and in the page's author meta) from that page.",
+      "Health rule: the book names a condition (nonspeaking autism) but makes no claim to cure or treat it; kept under the 12 Nov rule.",
+      "Cover is the front cover image on her own book page (780x1135, looked at: title, subtitle, 'Anamika', foreword by Sarah Ferguson)."
+    ]
+  },
+  "images_final": true
+}

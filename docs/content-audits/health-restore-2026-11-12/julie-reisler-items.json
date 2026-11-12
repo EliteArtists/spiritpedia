@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "julie-reisler"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Hungry For More",
+      "url": "https://juliereisler.com/hungryformore/",
+      "description": "A self-paced online course with lifetime access on finding real fulfilment instead of reaching for food. Across eight modules built on her '6 H's of Hunger' (heart, hope, hugs, happiness, healing, holism), Julie Reisler uses worksheets, videos and guided meditations to work on beliefs, habits and self-compassion; a bonus module covers the seven chakras.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "chakra-healing",
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/julie-reisler.json",
+    "left_out": [
+      "Free 'Heal Your Thyroid' meditation (https://juliereisler.com/thyroid/): the page offers help to 'heal your thyroid' and with 'autoimmune disease recovery', a claim to treat a disease; health rule."
+    ],
+    "flags": [
+      "Health rule: Hungry For More is about emotional eating and includes a bonus 'mini-course on weight'; no disease is named and no claim to treat one, so kept under the 12 Nov rule. A testimonial on the page mentions a primary-care wellness programme; not used.",
+      "No price on the course page (enrol button only), so 'Contact for pricing'.",
+      "juliereisler.com robots.txt has Crawl-delay: 60; every request was spaced at least 61 seconds apart (timed sleeps). images_final is set so the dry run does not fetch there; the page's only image (og:image) is a 470x65 text banner, so image is null."
+    ]
+  },
+  "images_final": true
+}

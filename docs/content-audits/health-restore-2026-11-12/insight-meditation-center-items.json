@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "insight-meditation-center"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Buddhism and Recovery Support Group",
+      "url": "https://www.insightmeditationcenter.org/buddhism-and-recovery-support-group/",
+      "description": "A free, peer-led group on Zoom for people in recovery from any kind of addiction. Each meeting opens with a period of sitting meditation, then a talk or reading on the Dharma and recovery, then open sharing. Everyone in recovery is welcome.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.insightmeditationcenter.org/wp-content/uploads/2019/08/20190710-DSCF8565-Pano.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/insight-meditation-center.json",
+    "left_out": [
+      "Support Group for Persons with Life Threatening Illnesses and Chronic Health Challenges (https://www.insightmeditationcenter.org/life-threatening-illnesses-and-chronic-health-challenges/): passes the 12 Nov health rule (no claim to treat), but the listing has 4 of 5 free resources, so only one group fits; the recovery group was chosen as it includes meditation and Dharma teaching."
+    ],
+    "flags": [
+      "Free resource cap: this brings the listing to 5 of 5 free resources (per its plan); please check live.",
+      "The group's own page says weekly on Sunday evenings; IMC's Support Groups page says the second Sunday of the month (facilitator Jennifer Lemas). The description gives no frequency.",
+      "Peer-led by volunteers, not by an IMC teacher; it is one of IMC's own listed programmes."
+    ]
+  },
+  "images_final": true
+}

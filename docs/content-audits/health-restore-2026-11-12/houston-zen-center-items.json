@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "houston-zen-center"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Home for the Holidays, Home in Yourself",
+      "url": "https://houstonzen.org/events-calendar/2026/11/22/home-for-the-holidays-home-in-yourself",
+      "description": "A two-hour live online workshop in Mindful Self-Compassion skills for the holiday season, led by Wade Maggert and Jo Sullivan of Houston Zen Center. It covers staying grounded when old family patterns surface, meeting yourself with kindness instead of self-criticism, and knowing your own needs and limits.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/523901f9e4b08b04ff30cc5f/t/6ad13a983596857994c55493/1792096920256/Wade_Jo-LongPortrait-WEB.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Living Lotus Recovery",
+      "url": "https://houstonzen.org/living-lotus-recovery",
+      "description": "A weekly Friday evening meeting at Houston Zen Center that joins Zen practice with a 12-Step recovery meeting. It starts with brief meditation instruction and a sitting period, followed by the meeting; people in any kind of recovery are welcome and no Zen experience is needed.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/523901f9e4b08b04ff30cc5f/t/5814feff9de4bb2370ee9b8b/1477771007947/building420x236.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/houston-zen-center.json",
+    "left_out": [],
+    "flags": [
+      "Home for the Holidays: one co-leader, Wade Maggert, is a psychotherapist (LCSW) and Somatic Experiencing practitioner; the workshop itself is a public Mindful Self-Compassion class, not a clinical training, so kept. No price is shown on the page (registration link only).",
+      "Living Lotus Recovery: founded by Daniel Zamora and Jo Sullivan; no fee shown, listed as a free resource. Health rule: names recovery, no treatment claim; kept under the 12 Nov rule.",
+      "Image for the workshop is the page's og:image (Jo Sullivan and Wade Maggert in front of the centre); http changed to https."
+    ]
+  },
+  "images_final": true
+}

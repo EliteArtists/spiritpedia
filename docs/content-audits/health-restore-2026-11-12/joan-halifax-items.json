@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "joan-halifax"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "G.R.A.C.E.: Training in Cultivating Compassion-based Interactions (Online September 2027)",
+      "url": "https://www.upaya.org/program/g-r-a-c-e-training-in-cultivating-compassion-based-interactions-online-september-2027/",
+      "description": "A weekend intensive on Zoom built around G.R.A.C.E., the five-step practice Roshi Joan Halifax developed for meeting others with compassion in demanding moments. Drawing on contemplative practice, ethics, neuroscience and social psychology, it is meant for clinicians, chaplains, carers, teachers and anyone in a helping role. She teaches it with Tony Back, Cynda Hylton Rushton and Wendy Lau.",
+      "price": "$390",
+      "product_type": "course",
+      "start_date": "2027-09-10",
+      "end_date": "2027-09-12",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2023/02/GRACE-2023-Roshi-Tony-Cynda-Wendy.jpeg"
+    },
+    {
+      "title": "Being with Dying: Professional Training Program for Clinicians in Compassionate Care of the Seriously Ill and Dying (In Person 2027)",
+      "url": "https://www.upaya.org/program/being-with-dying-in-person-2027/",
+      "description": "Upaya's week-long residential training in Santa Fe for physicians, nurses, chaplains and others who care for people who are seriously ill or dying, founded by Roshi Joan Halifax and refined over many years. Through contemplative practice, reflection, dialogue and case work it looks at the spiritual, ethical and emotional side of end-of-life care and at how carers can stay present without burning out. Places are by application.",
+      "price": "$2,400 (members) / $2,900 (non-members), plus $200 application fee; lodging extra",
+      "product_type": "retreat",
+      "start_date": "2027-05-07",
+      "end_date": "2027-05-14",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://www.upaya.org/wp-content/uploads/2026/02/cropped-DSC01629-scaled-1.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/joan-halifax.json",
+    "left_out": [
+      "G.R.A.C.E. in-person version (same dates, Santa Fe): the same programme; the online page is listed.",
+      "Inner Practice of Medicine (in person 2027): for physicians only and built on Dr Wendy Lau's book; Roshi Joan is one of four faculty, not the lead."
+    ],
+    "flags": [
+      "Both are trainings for clinicians and carers with CME credits (15 and 50); they are contemplative trainings in compassion and end-of-life care with no claim to treat anything, and the Being with Dying page says it is 'not a retreat from medicine'. Kept under the 12 Nov rule; owner may judge the clinical audience.",
+      "Being with Dying: the programme page gives 7–14 May 2027; the overview page (/social-action/being-with-dying/) still shows 2026 dates in its fee box and $2,800 for non-members, against $2,900 on the 2027 programme page. The programme page's figures are used.",
+      "G.R.A.C.E. online fee '$390'; CME credits cost $200 extra. Prices shown with '$' only."
+    ]
+  },
+  "images_final": true
+}

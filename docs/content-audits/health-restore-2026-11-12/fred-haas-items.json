@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "fred-haas"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Recovery Life Coaching",
+      "url": "https://www.fredhaascoaching.com/liferecovery-coaching",
+      "description": "Monthly telephone coaching packages for people in recovery, with weekly calls plus email and check-in support between sessions. Fred Haas works as a trained recovery and intuitive life coach, helping clients clarify what they want and stay accountable to it. A free 45-minute first call is offered.",
+      "price": "$250 to $550 USD a month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching"
+      ],
+      "image": "https://yt3.googleusercontent.com/ytc/AIdro_klkJPayOQ6axCRC4uRXy0sb2GGIAt4KQfNV1VJ2lkZPg=s900-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/fred-haas.json",
+    "left_out": [
+      "Lightwork and Activation Sessions: left out on review, 12 Nov 2026: 'heal our bodies' and 'activate DNA' read as physical healing claims."
+    ],
+    "flags": [
+      "Health rule: his intuitive site's home page says the sessions help 'heal our bodies' on an energetic level, and the pricing page says Marconics 'creates spontaneous healing as directed by our Higher Selves' and 'activates DNA'; no disease or condition is named, so kept under the 12 Nov rule (energy healing allowed). Borderline wording, please check.",
+      "Recovery Life Coaching is secular recovery coaching (addiction recovery is implied by the site's name and his recovery work; the coaching pages name no condition and make no treatment claim). It is coaching, not therapy, but a human may judge it outside Spiritpedia's scope.",
+      "fredhaasintuitive.com and fredhaascoaching.com are separate Wix sites of his; both robots.txt files allow us. Prices read from each site's booking page (shows 'US dollars')."
+    ]
+  },
+  "images_final": true
+}

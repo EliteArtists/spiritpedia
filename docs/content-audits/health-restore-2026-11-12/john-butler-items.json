@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "john-butler"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Mystic Love",
+      "slug": "mystic-love",
+      "author": "John Butler",
+      "asin": "0993041078",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Forty years of John Butler's letters to Christine, written after a vision of spiritual unity at 47 and through long years of living alone. The letters follow unreturned love, loneliness and loss as they slowly give way to a sense of oneness. He offers it as a book of hope for anyone grieving, bereaved or longing for love.",
+      "subjects": [
+        "mysticism",
+        "spiritual-awakening",
+        "conscious-relationships"
+      ],
+      "cover": "https://spiritualunfoldment.co.uk/wp-content/uploads/2026/07/Mystic-Love-Cover-Front.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mystic Love (audiobook)",
+      "url": "https://spiritualunfoldment.co.uk/product/mystic-love-audiobook/",
+      "description": "The full text of Mystic Love read by John Butler himself, about 34 hours in all, delivered as a download through the BookFunnel app. The letters trace a lifetime of love, loss and loneliness opening into spiritual union.",
+      "price": "£14.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "spiritual-awakening"
+      ],
+      "image": "https://spiritualunfoldment.co.uk/wp-content/uploads/2026/10/Mystic-Love-Audiobook-Bookfunnel.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/john-butler.json",
+    "left_out": [],
+    "flags": [
+      "ISBN: 9780993041075 is the product SKU for the paperback ('Perfect Bound') in the shop page's product data at https://spiritualunfoldment.co.uk/product/mystic-love/ (not shown as visible text); converted to ISBN-10 0993041078. Not confirmed elsewhere (Open Library and Amazon not fetched); please check the Amazon link works.",
+      "Health rule: the blurb names depression as part of his life story, with no claim to treat it; kept under the 12 Nov rule.",
+      "Prices shown on his shop as £ with no currency code: paperback £20.00, audiobook £14.99."
+    ]
+  },
+  "images_final": true
+}

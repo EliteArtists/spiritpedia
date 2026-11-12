@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "jamye-price"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Elven Codes and Faerie Light (Light Language audio)",
+      "url": "https://jamyeprice.com/store/product/elven-codes-and-faerie-light/",
+      "description": "A short Light Language transmission set to music, about five to ten minutes long, which Jamye Price offers as a way to connect with nature and with joy through what she calls elven and faerie energies. Sold as a download or on CD.",
+      "price": "$10.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "sound-healing"
+      ],
+      "image": "https://jamyeprice.com/store/wp-content/uploads/2015/10/elemental-codes-light-language-healing-jamye-price.jpg"
+    },
+    {
+      "title": "Sacred Relationship (Light Language audio)",
+      "url": "https://jamyeprice.com/store/product/sacred-relationship/",
+      "description": "A recording by Jamye Price with a 20-minute Light Language transmission and a 20-minute channelled guided meditation in English. It centres on balancing the inner masculine and feminine and on letting go of old hurts that stand in the way of balanced relationships.",
+      "price": "$20.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "conscious-relationships"
+      ],
+      "image": "https://jamyeprice.com/store/wp-content/uploads/2015/10/sacred-relationship-jamye-price-light-language1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jamye-price.json",
+    "left_out": [
+      "Learn Crystalline Soul Healing ($1295 USD): the current class began 25 Sep 2026 with weekly sessions to 14 Nov 2026 (started); no later date published.",
+      "Light Language Audio 'Health Series' (Releasing HIV, Releasing Allergies, Thyroid Support, Teeth Gums & Jaw, Mother's Milk and others): claims to heal medical conditions.",
+      "Aligning with Your True Power (LOVE) audio: its page carries testimonials about no longer needing allergy pills, weaker glasses and a healed toothache (suggests replacing medical care)."
+    ],
+    "flags": [
+      "The shop's Light Language Audio page is headed 'Audio Programs for Health, Wellness, Learning and More' and lists disease-named titles such as 'Releasing HIV'. Only two product pages with no health claim are used; their 'You may also like' boxes still link to other titles (e.g. Insomnia No More, Mother's Milk). Owner may want to look at the shop as a whole before inserting.",
+      "Prices as published ('$ 10.00', '$ 20.00'), no currency code on the page."
+    ]
+  },
+  "images_final": true
+}

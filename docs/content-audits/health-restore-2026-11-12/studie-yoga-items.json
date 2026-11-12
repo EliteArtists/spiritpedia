@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "studie-yoga"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Ayurvedic lifestyle analysis (Ayurvedisk livsstilsanalyse)",
+      "url": "https://studieyoga.dk/book-en-ayurvedisk-konsultation/",
+      "description": "A course of three meetings with the studio's Ayurveda practitioner, who trained with NAYA Ayurveda: a long first session that maps your constitution and present balance, a personal profile with recommendations, and a follow-up to fine-tune them. The work is on daily rhythm, food and habits, aiming at steadier energy, better rest and more calm. Single sessions can be booked afterwards.",
+      "price": "3495 kr",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ayurveda",
+        "yoga"
+      ],
+      "image": "https://studieyoga.dk/wp-content/uploads/42P5242-scaled.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/studie-yoga.json",
+    "left_out": [
+      "Yoga-massage (875 kr / 975 kr, https://studieyoga.dk/hvad-er-yoga-massage/): a massage treatment (classical massage, Abhyanga and assisted stretches), not teaching; left out on scope, not health. Owner may decide otherwise.",
+      "Ayurveda information pages (De 3 doshaer, Ayurvediske opskrifter, Ayurveda – vejen til balance): background reading, not offerings or practices."
+    ],
+    "flags": [
+      "Ayurvedic lifestyle analysis: the pages speak of sleep, digestion, stress, nervous-system unrest and 'hormonal imbalances' as things the guidance can support, in wellbeing terms; no claim to treat a disease, so kept under the 12 Nov rule.",
+      "Price as published: '3495kr incl. moms' for the three-session course (single follow-up sessions 975 kr); no currency code on the page. Booking is by email (info@studieyoga.dk).",
+      "The practitioner is the studio's own teacher writing in the first person ('Om mig'); she is not named on that page."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,55 @@
+{
+  "healer": {
+    "healer_slug": "thomas-moore"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Dark Nights of the Soul: A Guide to Finding Your Way Through Life's Ordeals",
+      "slug": "dark-nights-of-the-soul",
+      "author": "Thomas Moore",
+      "asin": "1592401333",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Moore sees the hard stretches of life, such as grief, the end of a relationship, illness, ageing or a lingering sense of emptiness, as passages of the soul rather than problems to be fixed quickly. Drawing on myth, religion and the arts, he offers ways to live through these times and find meaning in them.",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1592401333.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Care of the Soul in Medicine: Healing Guidance for Patients, Families, and the People Who Care for Them",
+      "slug": "care-of-the-soul-in-medicine",
+      "author": "Thomas Moore",
+      "asin": "1401925642",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Moore's reflections on bringing soul into modern health care, written for patients, families, doctors and nurses alike. He looks at the emotional and spiritual side of being ill, at keeping dignity and humanity in hospitals, and at how carers can attend to the whole person as well as to the illness.",
+      "subjects": [
+        "spirituality"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1401925642.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/thomas-moore.json",
+    "left_out": [
+      "Soul Therapy (book): no ISBN on a page we may read; his own page links only harpercollins.com, which refused us (403) on 6 Nov 2026 and is not retried. It is also a training manual for therapists and other helpers."
+    ],
+    "flags": [
+      "Dark Nights of the Soul: ISBN-13 9781592401338 from the Penguin Random House link on his Books page (thomasmooresoul.com/books), confirmed on that PRH page (Avery, 2005); converted to ISBN-10 1592401333, not confirmed elsewhere. His page frames it around depression and anxiety from the soul's point of view; no claim to treat, so kept.",
+      "Care of the Soul in Medicine: ISBN-13 9781401925642 (Hay House paperback, 2011) from the PRH page his Books page links; converted to ISBN-10 1401925642, not confirmed elsewhere. The book argues for attention to soul alongside medicine, not instead of it; kept, owner may judge.",
+      "Covers are the Amazon image-CDN pattern used in earlier plans (not opened). Books on this listing would be 8 of 10."
+    ]
+  },
+  "images_final": true
+}

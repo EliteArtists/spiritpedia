@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "iyoga-iyengar-yoga-centrum-antwerpen"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Gezond ouder worden (gentle Iyengar classes for healthy ageing)",
+      "url": "https://iyoga.be/iyengar",
+      "description": "A gentler form of the centre's general Iyengar class, with the poses offered at a less demanding level and more use of chairs, ropes and blocks so the body still gets the full work. It runs three times a week, in the Antwerp studio and live online at the same time, taught by Ann Brosens and Ilythyia De Ligniere.",
+      "price": "20€ (90-minute drop-in class); 5 x 90min card 90€",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5580062ae4b06c3bc95626d4/1439453877564-DAJUUG5B0YR1K4QFIHFJ/DSC_1569-zw.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/iyoga-iyengar-yoga-centrum-antwerpen.json",
+    "left_out": [
+      "'Gezond ademen' (Saturday breathing class): its description is on the same /iyengar page as the item above, so only one item from that page; it has no page of its own.",
+      "'Immuunsysteem' theme class: held on 2 Nov 2026 (passed) and framed around the immune system."
+    ],
+    "flags": [
+      "The /iyengar page is the centre's general page on Iyengar yoga with its class descriptions; it also tells the story of B.K.S. Iyengar working with Queen Elisabeth after a stroke and says the method is known for its therapeutic value. The class item itself makes no health claim; owner may want to glance at the page.",
+      "Schedule from /lessen-prijzen (Mon 13:30 with Ilythyia, Fri 9:00 and 10:30 with Ann, hybrid); price from /prijzen ('90min , 1 jaar geldig, 20€')."
+    ]
+  },
+  "images_final": true
+}

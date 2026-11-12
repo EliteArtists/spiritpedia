@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "stephanie-red-feather"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Embodiment How-To Manual and Workbook",
+      "url": "https://www.bluestartemple.org/embodimentmanual",
+      "description": "A downloadable workbook of more than 50 pages by Stephanie Red Feather on embodiment, which she describes as giving your spirit a home. It explains why people leave their bodies, what spiritual bypass is and how to return, with self-assessments, journaling questions and practices to come back to over time.",
+      "price": "$25.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "image": "https://static.wixstatic.com/media/dba464_54fb9109f7014e36937d8de3cbbcbcf3~mv2.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/stephanie-red-feather.json",
+    "left_out": [
+      "Shamanic Breathwork sessions (/shamanicbreathwork): the page says breathwork reaches what 'many other therapies can't come close to' and that it can help when blocked by addictions; read as setting it in place of therapy, so left out under the caller's even-indirect rule.",
+      "Embodiment manual plus 45-minute coaching session: a separate product page for the same manual; one item kept."
+    ],
+    "flags": [
+      "Embodiment manual: the page lists 'feelings of depression' and 'frequent injuries or accidents' among signs of disembodiment; no claim to treat, so kept under the 12 Nov rule.",
+      "Item URL is the manual's information page, which shows the price ($25.00); the shop's product page is /product-page/the-embodiment-how-to-manual-and-workbook."
+    ]
+  },
+  "images_final": true
+}

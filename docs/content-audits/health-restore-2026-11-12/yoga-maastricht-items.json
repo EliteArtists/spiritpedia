@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "yoga-maastricht"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zwangerschapsyoga (pregnancy yoga)",
+      "url": "https://www.yogamaastricht.nl/de-lessen/zwangerschap-en-postnatale-yoga/",
+      "description": "A weekly Iyengar-based pregnancy class on Thursday evenings, open from the 14th week, using props so each pose can be held safely and ending with about ten minutes of deep relaxation. The same page covers a quarterly partner evening and a postnatal programme taught within the studio's restorative classes.",
+      "price": "€14,50 per les (proefles €10, tweede les gratis)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "image": "https://www.yogamaastricht.nl/nieuw/wp-content/uploads/2020/01/zwangerschapsyoga.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/yoga-maastricht.json",
+    "left_out": [
+      "Melanie Tillema's breast-cancer programme: mentioned only in her biography on https://www.yogamaastricht.nl/de-leraren/ (specialised since 2017); no class or page of its own, so nothing to list.",
+      "Postnatal yoga: no separate class (it runs inside the restorative classes) and it shares the pregnancy page's URL, so it is described in that item rather than listed apart."
+    ],
+    "flags": [
+      "Health rule: the page lists physical aims (pelvic floor, circulation, and for postnatal work milk production) and says most insurers reimburse the classes; no disease is named and no claim to treat one, so kept under the 12 Nov rule.",
+      "Price as published in euros (no currency code on the page); a one-off €25 registration fee applies to non-members."
+    ]
+  },
+  "images_final": true
+}

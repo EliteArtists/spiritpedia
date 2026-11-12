@@ -1,0 +1,51 @@
+{
+  "healer": {
+    "healer_slug": "john-stuart-reid"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sound Therapy 101 – PDF Download",
+      "url": "https://soundmadevisible.com/product/sound-therapy-101-pdf-download/",
+      "description": "An introductory article by John Stuart Reid on the history of healing with sound and on present-day research, which also sets out how sound therapy, music therapy and music medicine differ. He begins with his own experience during acoustic experiments in the King's Chamber of the Great Pyramid in 1997, the event that started his study of sound.",
+      "price": "€4.69",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "conscious-science"
+      ],
+      "image": "https://cymascope.com/wp-content/uploads/2021/03/JSR-headshot_blur.png"
+    },
+    {
+      "title": "The Therapeutic Power of Vocal Sound – PDF Download",
+      "url": "https://soundmadevisible.com/product/the-therapeutic-power-of-vocal-sound/",
+      "description": "A short downloadable paper by John Stuart Reid on the human voice: its acoustic reach, its use in healing practice for oneself and others, and the way voiced sound turns thought and feeling into something others can hear.",
+      "price": "€9.39",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing"
+      ],
+      "image": "https://cymascope.com/wp-content/uploads/2021/03/JSR-headshot_blur.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/john-stuart-reid.json",
+    "left_out": [
+      "Sound Therapy 201 – PDF Download: its page says sound and music reduce chronic inflammation, lower blood pressure and boost the immune response (claims to treat medical conditions)."
+    ],
+    "flags": [
+      "Sound Therapy 101: the page tells how his back-injury pain left him during sound experiments in the Great Pyramid ('seemingly miraculously healed') and names music medicine as a discipline; pain relief and a personal story, no claim to treat a disease, so kept. Owner may judge.",
+      "Prices: the shop runs a multi-currency switcher and showed euros to us ('€ 4.69', '€ 9.39'; the Sound Therapy 201 page showed '$ 10.00' in the same session). The earlier items from this shop are in USD; owner may prefer the USD prices.",
+      "The shop's product URLs answer with a same-host 307 redirect adding '?v=…'; the redirect was followed once on the same host. Item URLs are the canonical product URLs."
+    ]
+  },
+  "images_final": true
+}

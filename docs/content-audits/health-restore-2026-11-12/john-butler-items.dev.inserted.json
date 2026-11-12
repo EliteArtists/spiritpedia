@@ -1,0 +1,19 @@
+{
+  "env": "dev",
+  "healer": null,
+  "rows": [
+    {
+      "table": "books",
+      "id": 2475,
+      "slug": "mystic-love",
+      "title": "Mystic Love"
+    },
+    {
+      "table": "courses",
+      "id": "95d94da4-fd3a-440d-842b-bc158cce041a",
+      "slug": "mystic-love-audiobook",
+      "title": "Mystic Love (audiobook)"
+    }
+  ],
+  "at": "2026-11-12T18:30:46.693Z"
+}

@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "kim-newing"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sacred Birthing (Empowered Birthing Course)",
+      "url": "https://mamagoddess.simplero.com/products/111355-Sacred-Birthing",
+      "description": "Kim Newing's self-paced programme for expectant mothers who want to prepare for birth spiritually as well as practically, staying connected with their guides, with Source and with their baby through pregnancy and labour. Her Programs page lists it among her audio and video programmes as the Empowered Birthing Course.",
+      "price": "AUD 99",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kim-newing.json",
+    "left_out": [
+      "Perimenopause free guide: not found on her current site (not in the mamagoddess.com.au or Simplero sitemaps, not on the Programs or home page)."
+    ],
+    "flags": [
+      "Sacred Birthing is a pregnancy programme; its page makes no medical claim and does not advise against medical care. Kept under the 12 Nov rule; owner may judge.",
+      "The Programs page links the course to a Simplero cart URL (disallowed by robots.txt, not opened); the product page used here is allowed and shows 'AUD 99'.",
+      "The product page's og:image is another product's artwork (Devotional Depths), so the image is set to null (the dry run would otherwise pick it up)."
+    ]
+  },
+  "images_final": true
+}
