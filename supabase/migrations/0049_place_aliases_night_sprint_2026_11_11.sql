@@ -1,7 +1,7 @@
 -- 0049 — Place aliases for the night sprint of 11–12 Nov 2026.
 --
 -- These new listings publish a place that isn't in places (a village or a
--- hamlet under 5,000, or, for Lismore, a town that places lacks). Each points
+-- hamlet under 5,000, with a plain spelling for Vrážné, or, for Lismore, a town that places lacks). Each points
 -- at the nearest town of 5,000+ in the same country and state, as in 0033 and
 -- 0043, except New Lebanon, New York, which points at Pittsfield,
 -- Massachusetts (13 km; owner, 12 Nov 2026: the state line doesn't matter to
@@ -25,6 +25,8 @@ INSERT INTO public.place_aliases (name, country_code, region, place_id, note) VA
 ('doonan', 'AU', 'queensland', 2146997, 'Noosa hinterland locality (Way of the Forest); nearest town of 5,000+ is Tewantin (6 km)'),
 ('ridgeland', 'US', 'wisconsin', 5262634, 'Dunn County village (Hay River KTC); nearest town of 5,000+ is Menomonie (36 km)'),
 ('kuttolsheim', 'FR', '', 2967437, 'Alsace village (Sakya Tsechen Ling); nearest town of 5,000+ is Wasselonne (7 km)'),
+('vrážné', 'CZ', '', 3070325, 'Moravian village (Vrážné Zen Center, going in on 12 Nov); nearest town of 5,000+ is Moravská Třebová (15 km)'),
+('vrazne', 'CZ', '', 3070325, 'Moravian village (Vrážné Zen Center, going in on 12 Nov); nearest town of 5,000+ is Moravská Třebová (15 km)'),
 ('conway', 'US', 'massachusetts', 4938378, 'Franklin County town (Tsegyalgar East); nearest town of 5,000+ is Greenfield (12 km)')
 ON CONFLICT (name, country_code, region) DO UPDATE
   SET place_id = EXCLUDED.place_id, note = EXCLUDED.note;
@@ -34,7 +36,7 @@ UPDATE public.healers
 SET place_id = public.resolve_place(city, country)
 WHERE city IS NOT NULL AND place_id IS NULL;
 
--- Check: aliases loaded (up by 14 on what each database had); listings with a
+-- Check: aliases loaded (up by 16 on what each database had); listings with a
 -- town; of those, still without a place (on dev before any new insert: 1, only
 -- Salmon, Idaho).
 SELECT
