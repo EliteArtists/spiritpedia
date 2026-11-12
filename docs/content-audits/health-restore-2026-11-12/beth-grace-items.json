@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "beth-grace"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Shamanic Energy Therapy",
+      "url": "https://bethgracefengshui.com/shamanic-energy-therapy/",
+      "description": "Sessions held in person or remotely, using what Beth learned in three years of training in Celtic shamanism. She guides clients inward to the energetic root of feeling stuck, so they can release it and move forward.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "energy-medicine"
+      ],
+      "image": "https://bethgracefengshui.com/wp-content/uploads/2026/05/IMG_8222-1568x1176.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/beth-grace.json",
+    "left_out": [],
+    "flags": [
+      "'Therapy' here is energetic and spiritual (Celtic shamanic energy work); the page makes no medical claim. No price on the page."
+    ]
+  },
+  "images_final": true
+}

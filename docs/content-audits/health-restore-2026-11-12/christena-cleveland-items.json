@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "christena-cleveland"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mothered by God: A Luxurious, Healing and Empowering Spiritual Bath",
+      "url": "https://www.christenacleveland.com/ebooks/p/mothered-by-god-a-luxurious-healing-and-empowering-spiritual-bath",
+      "description": "A 90-minute recorded teaching in which Christena explores the Mothering God: how this image of the divine differs from patriarchal ideas of God and from our human parents, and some of its traditional names. It closes with a guided meditation.",
+      "price": "$39.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mysticism",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/60ac22fca10c68151cc59d61/60ac45bec8acd1795ff1db4b/6268d937eeb4040f2fd50601/1651038538243/Untitled+%28Instagram+Post%29+%28Instagram+Story%29+%282%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/christena-cleveland.json",
+    "left_out": [],
+    "flags": [
+      "'Healing' in the title is spiritual and emotional; the page makes no medical claim."
+    ]
+  },
+  "images_final": true
+}

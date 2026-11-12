@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "zoe-kanat"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Monthly Rest Offering",
+      "url": "https://www.zoekanat.com/rest-shop/p/monthly-rest-offering",
+      "description": "A yoga nidra recording to download and keep, with a short audio introduction and a different theme each month. It can be used before sleep or as a rest during the day.",
+      "price": "$15 AUD",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5e73d13f232bcc33db307096/60d21ae4f1a6085a056ddeb7/685bb00622419c70c6526b5d/1788001453910/Zoe+0448.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/zoe-kanat.json",
+    "left_out": [
+      "An older product page with the same title (/rest-shop/p/monthly-rest-offering-1, a previous month's theme): same item, listed once."
+    ],
+    "flags": [
+      "The page offers it to anyone finding it hard to fall or stay asleep: sleep wording, allowed under the new rule; no claim to treat insomnia as a condition."
+    ]
+  },
+  "images_final": true
+}

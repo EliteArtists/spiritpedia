@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "lisa-thompson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Love That Remains Healing Companion",
+      "url": "https://www.mysticmanta.com/through-loss",
+      "description": "A home-study kit from Lisa for people grieving someone they love. It brings together five guided meditations, a daily energy-reset routine, a chakra toolkit for grief and a printable journal for noting signs from the person who has died, framed around staying connected to them at the soul level.",
+      "price": "Contact for pricing",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "death-the-afterlife",
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://theshiftnetwork.com/sites/files/faculty/crop/LisaThompson.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/lisa-thompson.json",
+    "left_out": [],
+    "flags": [
+      "Price not shown on the page itself; the buy button goes to a ThriveCart checkout (drlisathompson.thrivecart.com), whose robots.txt answered 403, so it was not opened. The old plan's $47 could not be confirmed, so 'Contact for pricing' is used.",
+      "Page talks of lifting the weight of grief and calming the nervous system: emotional healing, allowed under the new rule; no medical claim."
+    ]
+  },
+  "images_final": true
+}

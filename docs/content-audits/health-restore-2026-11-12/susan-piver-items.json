@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "susan-piver"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Wisdom of a Broken Heart: How to Turn the Pain of a Breakup into Healing, Insight, and New Love",
+      "slug": "the-wisdom-of-a-broken-heart",
+      "author": "Susan Piver",
+      "asin": "1416593160",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Susan draws on the world's wisdom traditions and her own experience to present the end of a relationship as a chance for emotional and spiritual growth, with practices, meditations and exercises for the hardest days.",
+      "subjects": [
+        "conscious-relationships",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1416593160.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/susan-piver.json",
+    "left_out": [],
+    "flags": [
+      "ASIN 1416593160 from the Amazon link on her own books page (openheartproject.com/books/); not confirmed elsewhere; Amazon not opened.",
+      "openheartproject.com sets Crawl-delay: 30; my two fetches there were more than 30 s apart."
+    ]
+  },
+  "images_final": true
+}

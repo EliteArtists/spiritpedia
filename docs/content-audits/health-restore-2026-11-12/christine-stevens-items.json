@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "christine-stevens"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "How to Play Drums for Healing",
+      "url": "https://upbeat.teachable.com/p/drums-for-healing",
+      "description": "A recorded course, made at a yoga studio in Encinitas, California, that teaches techniques on four drums (buffalo, ocean, djembe and frame drum) for meditation, sound healing and self-care. It includes practice videos, a guidebook, bonus sound-meditation tracks and a 30-minute sound healing session from Christine.",
+      "price": "$97.50",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "https://uploads.teachablecdn.com/attachments/qfitEafLQfSR5ty2oRpJ_Christine+Stevens-singing+across+drum.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/christine-stevens.json",
+    "left_out": [],
+    "flags": [
+      "The page cites her 2024 study on using drums, voice and bowls to reduce stress, pain and fatigue: pain and stress relief through practice, allowed; no disease named and no treatment claim.",
+      "Price is the full price; a two-payment option ($48.75 each) is also shown."
+    ]
+  },
+  "images_final": true
+}

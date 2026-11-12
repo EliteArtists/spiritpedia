@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "banafsheh-sayyad"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sacred Dance for Freedom",
+      "url": "https://danceofoneness.org/course/sacred-dance-for-freedom/",
+      "description": "A seven-module recorded course, about ten and a half hours long, in which Banafsheh teaches whirling, shaking and other Dance of Oneness rituals as a way of living from love and joy. Students keep lifelong access to the recordings and bonus material.",
+      "price": "$349",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "image": "https://danceofoneness.org/wp-content/uploads/2022/03/Embodying-the-Divine-through-Sacred-Dance.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/banafsheh-sayyad.json",
+    "left_out": [
+      "Shift Network versions of her courses: theshiftnetwork.com is never fetched."
+    ],
+    "flags": [
+      "The course page says the practice can help ease aches and pains and reduce stress: pain relief through practice, allowed under the new rule; it names no disease.",
+      "Registration on this page is handled by The Shift Network; the page itself is on her own site.",
+      "This brings her offerings to 10, the cap."
+    ]
+  },
+  "images_final": true
+}

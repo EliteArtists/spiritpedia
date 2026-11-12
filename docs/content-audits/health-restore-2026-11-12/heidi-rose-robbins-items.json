@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "heidi-rose-robbins"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Poetry and the Page: Writing as a Healing Path",
+      "url": "https://www.esalen.org/workshops/poetry-and-the-page-writing-as-a-healing-path-051727",
+      "description": "A five-day writing workshop at Esalen led by Heidi. Participants fill notebooks with poems and prose from her prompts, share some of their work aloud and draw on the Big Sur landscape; no experience of writing poetry is needed.",
+      "price": "From $1276 (all-inclusive)",
+      "product_type": "retreat",
+      "start_date": "2027-05-17",
+      "end_date": "2027-05-21",
+      "subjects": [
+        "soul-purpose",
+        "spirituality"
+      ],
+      "image": "https://cdn.prod.website-files.com/602d8561ae2fe6ec8347c903/6ae12f6a543d8e33efb8e741_Heidi-Rose-Robbins-2027--Portrait.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/heidi-rose-robbins.json",
+    "left_out": [],
+    "flags": [
+      "The Esalen description speaks of exploring pain and fear through writing: emotional, allowed; no medical claim.",
+      "Price is Esalen's lowest all-inclusive rate shown (bunk bed); other room types cost more."
+    ]
+  },
+  "images_final": true
+}

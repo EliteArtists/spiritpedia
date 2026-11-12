@@ -1,0 +1,49 @@
+{
+  "healer": {
+    "healer_slug": "michelle-cassandra-johnson"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Intuitive Healing Sessions",
+      "url": "https://www.michellecjohnson.com/intuitive-healing",
+      "description": "Fifty-minute one-to-one sessions over Zoom that combine coaching with intuitive and spiritual work. Michelle opens with meditation to connect with guides, then works with the client's question through ritual, signs, altars and connection with ancestors and the natural world.",
+      "price": "$125",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mediumship-spirits"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/571c98c4-8928-4f92-8d71-813cb64455aa/_DSC9637.jpg"
+    },
+    {
+      "title": "Shamanic Healing Sessions",
+      "url": "https://www.michellecjohnson.com/shamanic-offerings",
+      "description": "Fifty-minute sessions drawing on the shamanic lineages Michelle has studied, including Celtic, Kabbalistic, Hoodoo and bee and nature-based traditions. A session may include journeying to meet helpers and guides through drumming and song, yoga nidra, dream practice and divination.",
+      "price": "$150.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6080f595ea818528046a5e05/571c98c4-8928-4f92-8d71-813cb64455aa/_DSC9637.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/michelle-cassandra-johnson.json",
+    "left_out": [],
+    "flags": [
+      "Her Healing Arts overview page (/healing) contrasts this work with her former clinical social work and says she does not believe symptoms are what need treating; neither item page carries that wording, and neither suggests replacing medical or therapeutic care. Worth a look given her clinical background (scope flag in the original plan).",
+      "Intuitive Healing: $125 is the single-session price; a three-session package is $333.00 on the same page."
+    ]
+  },
+  "images_final": true
+}

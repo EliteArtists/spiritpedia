@@ -1,0 +1,21 @@
+{
+  "healer": {
+    "healer_slug": "mary-sise"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mary-sise.json",
+    "left_out": [
+      "Tapping the Panic Out of Pandemic: left out on review, 12 Nov 2026: pandemic subject (off-topic filter) and the blurb couldn't be read (Amazon is never fetched)."
+    ],
+    "flags": [
+      "ASIN B08BR3XRSR (Kindle edition) from the Amazon link on her own Meet Mary page (marysise.com/home-1-1); her page names her as the author. Not confirmed elsewhere; Amazon not opened.",
+      "The book's own blurb could not be read (Amazon is never fetched); her pages describe it only as a guide for uncertain times. A human may want to check the blurb for any immunity or vaccine claims before it goes live."
+    ]
+  }
+}

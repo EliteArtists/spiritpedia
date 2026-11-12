@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "harshada-wagner"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Free 45-Minute Healing Meditation",
+      "url": "https://www.fakiri.org/meditation/",
+      "description": "A free recorded guided meditation of about 45 minutes, streamed from the page on Harshada's approach to meditation. The page sets it within his view of practice as a personal remedy suited to each person's needs.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://fakiri.org/brand/meditation.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/harshada-wagner.json",
+    "left_out": [],
+    "flags": [
+      "The page frames meditation as healing in an emotional and spiritual sense (energy, trauma, clarity); no medical claim.",
+      "www.fakiri.org serves no robots.txt (404 page), so nothing is restricted."
+    ]
+  },
+  "images_final": true
+}
