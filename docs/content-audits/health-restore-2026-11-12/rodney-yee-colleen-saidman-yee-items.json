@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "rodney-yee-colleen-saidman-yee"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Simple Self-Care with Rodney Yee & Colleen Saidman Yee",
+      "url": "https://www.onecommune.com/simple-self-care-with-rodney-yee-colleen-saidman-yee",
+      "description": "A five-day video course on Commune with short daily practices of 5, 15 or 30 minutes, joining gentle yoga, breathwork, restorative poses, meditation, self-massage and essential oils. Each day takes one area of everyday wellbeing, such as stress, rest or mood, with ten extra practices led by Colleen.",
+      "price": "$99",
+      "product_type": "course",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "self-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/64407de27daf8675033e635a/f1f35447-dd88-4e2b-ac1d-673f24e1852b/Colleen-and-Rodney_hero.jpg",
+      "start_date": null,
+      "end_date": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/rodney-yee-colleen-saidman-yee.json",
+    "left_out": [
+      "Urban Zen Integrative Therapy (UZIT) training: no page for it on yogashanti.com (its training sitemap lists only the 300-hour teacher training) or on their own sites, and it is the Urban Zen Foundation's clinical programme for hospitals and caregivers (yoga therapy, Reiki, essential oils, clinical hours). Left out as therapy outside scope and with no current page, not for health wording."
+    ],
+    "flags": [
+      "Simple Self-Care: the Commune page sells it on easing stress, improving sleep, relieving pain, supporting digestion and lifting mood, and speaks of 'yoga therapy' used with patients; no disease is named and there is no cure claim, so kept under the new rule. This is the listing's first Commune course in its plan (Commune cap of 2 respected)."
+    ]
+  },
+  "images_final": true
+}

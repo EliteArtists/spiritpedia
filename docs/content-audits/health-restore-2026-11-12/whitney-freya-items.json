@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "whitney-freya"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "I AM the Unstoppable Dream",
+      "url": "https://whitneyfreyastudio.com/p/be-unstoppable",
+      "description": "A self-paced online programme built on her book 30 Days to Unstoppable, moving through seven steps tied to seven laws of the universe with guided meditations, sacred-geometry drawing and a large mandala painting. It includes monthly studio Zoom calls and a community of participants.",
+      "price": "$399 (or 3 payments of $133/month)",
+      "image": "https://uploads.teachablecdn.com/attachments/tkJJKkzxTx2h1ZZNyZw2_IAUD+for+Teach.jpg",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/whitney-freya.json",
+    "left_out": [],
+    "flags": [
+      "Its page calls it a course to 'ease anxiety about the state of our world': wellbeing wording only, not repeated in the description. With it the listing has 9 offerings in its plan."
+    ]
+  },
+  "images_final": true
+}

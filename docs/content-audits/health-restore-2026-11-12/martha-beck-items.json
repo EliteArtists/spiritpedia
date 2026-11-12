@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "martha-beck"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Beyond Anxiety: Curiosity, Creativity, and Finding Your Life's Purpose",
+      "slug": "beyond-anxiety",
+      "author": "Martha Beck",
+      "asin": "0593656385",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Beck describes how the mind can lock into a spiral of worry and offers simple exercises for stepping out of it. She then turns to curiosity and creative play as the way to stay out, linking them to a sense of purpose, closeness with others and care for the wider world.",
+      "subjects": [
+        "soul-purpose",
+        "mindfulness",
+        "life-coaching"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0593656385.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/martha-beck.json",
+    "left_out": [
+      "The Four-Day Win (https://marthabeck.com/shop/four-day-win/): a weight-loss and dieting book ('End your diet war and achieve thinner peace'); left out as outside scope (no Spiritpedia subject fits a diet book), not under the health rule."
+    ],
+    "flags": [
+      "Beyond Anxiety: ASIN 0593656385 from the amazon.com link on her own page https://marthabeck.com/beyond-anxiety/ (Amazon not opened), which matches the ISBN-13 9780593656389 in her Bookshop.org link; author and subtitle from the same page. Anxiety in the title and blurb is allowed under the new rule; no cure claim. This makes nine books on the listing."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,31 @@
+{
+  "healer": {
+    "healer_slug": "centre-de-yoga-iyengar-lyon-croix-rousse"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Les bienfaits du Yoga Iyengar",
+      "url": "https://www.yogaiyengar-lyon.com/blog/les-bienfaits-du-yoga-iyengar.html",
+      "description": "An article in French from the centre on what regular Iyengar practice develops: mobility, stability, balance, body awareness, steady attention and calmer breathing, with props used to adapt each pose. It stresses patience and regular practice and makes no medical promises.",
+      "resource_type": "practice",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.yogaiyengar-lyon.com/images/studio/cours-yoga-iyengar-lyon-croix-rousse-3.jpg",
+      "featured": false
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/centre-de-yoga-iyengar-lyon-croix-rousse.json",
+    "left_out": [],
+    "flags": [
+      "Les bienfaits du Yoga Iyengar: the current article no longer leads with back problems; it mentions reducing stress once and has its own section saying Iyengar yoga is not presented as a medical treatment and does not replace medical advice or follow-up. Kept under the new rule. Article in French."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,47 @@
+{
+  "healer": {
+    "healer_slug": "teja-bell"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "The Three Centers in QigongDharma",
+      "url": "https://www.tejabell.com/https-www-tejabell-com-wp-content-uploads-2025-10-the-three-centers-in-qigongdharma-pdf/",
+      "description": "A short teaching essay, with a PDF, on the lower, middle and upper dantian, which he calls hara, heart and head, and the central channel joining them. It explains how standing practice and gentle movement bring the three into balance, and closes with a poem.",
+      "resource_type": "download",
+      "subjects": [
+        "qi-gong",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "featured": false,
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    },
+    {
+      "title": "A Reflection on Trauma-Sensitivity, Meditation, and QigongDharma, Part 1: The Invitation",
+      "url": "https://www.tejabell.com/part-1-invitation/",
+      "description": "The opening essay of a series for people who find that sitting still makes them more agitated rather than calmer. Teja explains why that can happen and offers gentle movement and natural breathing as other ways into present-moment awareness, at the reader's own pace.",
+      "resource_type": "practice",
+      "subjects": [
+        "qi-gong",
+        "mindfulness",
+        "meditation"
+      ],
+      "featured": false,
+      "image": "https://www.tejabell.com/wp-content/uploads/2021/11/Artboard-120.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/teja-bell.json",
+    "left_out": [],
+    "flags": [
+      "The Three Centers: the essay links the lower dantian to the 'enteric nervous system ... regulating digestion, immunity, and mood' as physiology, with no claim to treat anything; kept under the new rule.",
+      "Trauma-sensitivity series: Part 1 is used; parts 2 to 5 (Understanding, Practice and later parts) are listed on https://www.tejabell.com/resources/ as separate pages and were not added, to keep within the free-resource cap. Trauma wording is allowed under the new rule; no therapy or medical claims on the page."
+    ]
+  },
+  "images_final": true
+}

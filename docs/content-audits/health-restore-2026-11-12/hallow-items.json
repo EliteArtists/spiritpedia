@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "hallow"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Prayers for Sleep",
+      "url": "https://hallow.com/blog/prayers-for-sleep/",
+      "description": "A free guide on Hallow's blog for turning the last minutes of the day into prayer. It gathers Bible verses about rest, prayers of saints such as Ignatius of Loyola and John Henry Newman, and points to the app's read-aloud Bible stories for bedtime.",
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mysticism",
+        "spirituality"
+      ],
+      "image": "https://hallow.com/wp-content/uploads/2021/09/38_l-1.png",
+      "featured": false
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/hallow.json",
+    "left_out": [
+      "Hallow's Sleep section itself (hallow.com/sleep/): its robots.txt disallows /sleep/, so it was not opened; the free blog guide above is used instead."
+    ],
+    "flags": [
+      "Prayers for Sleep: a Christian prayer guide for bedtime; it mentions racing thoughts and feeling anxious at night, with no health claim. The page also promotes the app's paid Bible stories (read by Fr. Mike Schmitz and others)."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "mary-beth-larue"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "1-on-1 Somatic Work",
+      "url": "https://marybethlarue.com/oneononesomatic",
+      "description": "Private sessions on Zoom in which Mary Beth uses body awareness, gentle embodied practice and attention to the nervous system to help a client slow down and notice long-held patterns. Clients choose single sessions or a package of four or six.",
+      "price": "Single 60-minute session $180.00; 90-minute Deep Dive $275.00; 4-Session Package $680.00; 6-Session Package $990.00",
+      "product_type": "course",
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://images.squarespace-cdn.com/content/v1/6414ba754f06a5160536f403/7420f4b5-32e7-4115-8ca6-88ecfade1aaf/MarthaKirby_4325+%281%29.jpg"
+    },
+    {
+      "title": "The Embodied Return",
+      "url": "https://marybethlarue.com/embodiedimmersion",
+      "description": "A six-week live online group for women, meeting on Thursdays for 75-minute recorded calls. Each week pairs a short teaching on the nervous system with guided somatic practice, journaling and sharing, moving from feeling safe in the body towards living with more presence day to day.",
+      "price": "$599.00",
+      "product_type": "course",
+      "start_date": "2027-01-21",
+      "end_date": "2027-02-25",
+      "subjects": [
+        "self-healing",
+        "mindfulness",
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6414ba754f06a5160536f403/3cf08569-bc20-4229-a4ce-66a15f1b803b/MarthaKirby_4310.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/mary-beth-larue.json",
+    "left_out": [],
+    "flags": [
+      "1-on-1 Somatic Work: the page names 'motherhood, recovery, grief, burnout, perimenopause' among transitions people come with; no cure or treatment claim, so kept under the new rule. The original plan's question stands: she presents somatic work for women alongside yoga and says it is not therapy, but a human may want to confirm her work is not mainly therapy.",
+      "The Embodied Return: the dates on the page have no year ('Thursday, January 21' to 'Thursday, February 25'); 21 January falls on a Thursday in 2027, and the 2026 cohort has its own page (embodiedreturncalls2026), so 2027-01-21 to 2027-02-25 is used. The page says 'This isn't therapy.' A human may want to confirm the year."
+    ]
+  },
+  "images_final": true
+}

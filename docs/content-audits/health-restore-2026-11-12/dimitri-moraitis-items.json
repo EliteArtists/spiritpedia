@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "dimitri-moraitis"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Direct Divine Light Healing Program",
+      "url": "https://spiritualarts.org/courses/direct-divine-light-healing-program/",
+      "description": "A three-year certification at the Spiritual Arts Institute, open to those who have finished the Seven Spiritual Arts Program. Students learn the institute's way of channelling Divine Light for others, working with the aura and its subtle bodies, angelic helpers and distant healing, as part of their own spiritual growth.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "subjects": [
+        "energy-medicine",
+        "chakra-healing",
+        "mysticism"
+      ],
+      "image": "https://spiritualarts.org/wp-content/uploads/2021/07/8AtM9Gg.jpeg",
+      "start_date": null,
+      "end_date": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/dimitri-moraitis.json",
+    "left_out": [
+      "The Healing Power of Your Aura: How to Use Spiritual Energy for Physical Health and Well-Being (https://spiritualarts.org/bookstore/books/healing-power-of-your-aura/): still out under the new rule. The publisher's own page says it gives 'specific healing meditations for more than 80 types of physical conditions from headaches to cancer' and explains 'how disappointment can cause a heart attack and frustration can cause liver disorders': a claim to treat diseases."
+    ],
+    "flags": [
+      "Direct Divine Light Healing Program: the page calls it 'a full-spectrum aura therapy', lists 'mental, emotional, physical, astral, absentee, and soul healing' and says it suits doctors, nurses and massage therapists. No disease is named and there is no cure claim on this page, so kept as energy healing; but the same institute's aura-healing book makes cancer and heart-attack claims, so a human may want to look. No price or dates published."
+    ]
+  },
+  "images_final": true
+}

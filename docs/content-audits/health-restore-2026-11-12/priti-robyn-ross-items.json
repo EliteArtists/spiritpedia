@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "priti-robyn-ross"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Alchemy of Balance: Science and Soulful Strategies to Calm Stress",
+      "url": "https://kripalu.org/experiences/alchemy-balance-science-and-soulful-strategies-calm-stress",
+      "description": "A New Year retreat at Kripalu in Stockbridge, Massachusetts, joining breathwork, relaxation, movement and self-inquiry with what neuroscience says about stress and awe. Priti teaches her 7 Gateways to Whole-Life Balance and helps each guest shape simple daily rituals to carry home.",
+      "price": "Tuition: $399 (accommodation extra)",
+      "product_type": "retreat",
+      "start_date": "2027-01-01",
+      "end_date": "2027-01-04",
+      "subjects": [
+        "yoga",
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2026-07/Webupdates%20%281000%20x%20500%20px%29.png?itok=RbJW_hJJ"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/priti-robyn-ross.json",
+    "left_out": [
+      "Yoga therapy sessions (https://lifeasyoga.com/pages/services, anchor #yogatherapy only): no page of its own (it shares the services page with the coaching item already listed, and a made-up fragment is not allowed), and the text offers to bring yoga into a client's 'healing protocol' for cancer patients and people with life-threatening illness, alongside their medical treatment: treatment of disease, still out under the new rule."
+    ],
+    "flags": [
+      "The Alchemy of Balance: Kripalu's page says the retreat helps 'interrupt chronic stress patterns' and teaches 'how stress affects mood, sleep, immunity, and overall health'. That is stress education, not a claim to treat a disease, so kept under the new rule. Price on the page: 'Tuition: $399' plus minimum accommodation (weekday $109 / weekend $129 a night)."
+    ]
+  },
+  "images_final": true
+}

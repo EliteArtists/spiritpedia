@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "gen-kelsang-wangpo"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Peaceful Through Meditation - A Mini Retreat",
+      "url": "https://www.meditationintexas.org/courses-events/2026/peaceful",
+      "description": "A Saturday-morning mini retreat at the Kadampa Meditation Center Texas in Dallas, where Gen Kelsang Wangpo guides three meditations on setting aside worries and finding inner peace in the busy holiday season. Open to beginners and experienced meditators alike.",
+      "price": "$25 General Admission ($20 concessions; member discounts)",
+      "image": "http://static1.squarespace.com/static/692ce3efa3fb2e7e55b3e547/692ce3f5a3fb2e7e55b3e68d/6ae94b234217866313da90c5/1793674881849/KMC-2026-peaceful.jpg?format=1500w",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/gen-kelsang-wangpo.json",
+    "left_out": [],
+    "flags": [
+      "Subtitled 'De-Stressing During The Holiday Season' on its page; stress wording only, no claim."
+    ]
+  },
+  "images_final": true
+}

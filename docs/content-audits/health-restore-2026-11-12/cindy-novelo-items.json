@@ -1,0 +1,50 @@
+{
+  "healer": {
+    "healer_slug": "cindy-novelo"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mentorship & Coaching",
+      "url": "https://www.cindynovelo.com/wellbeing/mentor-coach",
+      "description": "One-to-one mentoring by phone or video over six weeks to six months, starting with a free discovery call. Cindy helps clients build daily habits and new ways of seeing their situation, with attention to body, relationships, happiness and spiritual life, drawing on her own path through hard times.",
+      "price": "Discovery package $765; Foundation package $895; Expansion package $1695",
+      "product_type": "course",
+      "subjects": [
+        "life-coaching",
+        "self-healing",
+        "spirituality"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "https://images.squarespace-cdn.com/content/v1/5af77ed02714e54335825837/1528671313504-F8R17DMU7O2ABWWNSBIT/Website-Banner-Image-Coaching.jpg"
+    },
+    {
+      "title": "Healing Sound Bath Journey",
+      "url": "https://www.cindynovelo.com/events/healing-sound-bath-journey-november-2026",
+      "description": "A monthly 75-minute session at Bluestem Yoga in Lawrence, Kansas. Cindy opens with a short guided meditation and gentle movement, then plays a 45-minute soundscape of singing bowls, chimes, voice and viola while the group rests.",
+      "price": "$45 ($35 for Bluestem Yoga members)",
+      "product_type": "course",
+      "start_date": "2026-11-22",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5af77ed02714e54335825837/5afb5e05575d1fc4d1a961ac/6a91eee622ee754c01b75b65/1790459108801/Meditation+Booklet+Cover+Image.boost.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/cindy-novelo.json",
+    "left_out": [],
+    "flags": [
+      "Mentorship & Coaching: the page tells of her ovarian cancer diagnosis as personal background and offers help to 'manage your health and your life'; it makes no cure or treatment claim and does not suggest dropping medical care, so kept under the new rule. Prices are on https://www.cindynovelo.com/awaken-mentoring-offerings (each shown with a 'decisive action incentive' discount: $75, $100 and $200 off).",
+      "Healing Sound Bath Journey: monthly, each month on its own dated page; the November page (Sunday 22 November 2026) is used with its date. The December one is at https://www.cindynovelo.com/events/healing-sound-bath-journey-december-2026 (20 December). This item will need a new URL each month, or could be dropped once November passes."
+    ]
+  },
+  "images_final": true
+}

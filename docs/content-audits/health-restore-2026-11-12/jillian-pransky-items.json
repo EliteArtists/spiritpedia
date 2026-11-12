@@ -1,0 +1,39 @@
+{
+  "healer": {
+    "healer_slug": "jillian-pransky"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "The Power of the Pause: 90 Seconds to Calm, Reset, & Reconnect",
+      "slug": "the-power-of-the-pause",
+      "author": "Jillian Pransky",
+      "asin": "1454959126",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Pransky teaches a short pause practice, built on her Land, Arrive, Relax and Listen, Attend, Respond method, for stepping out of reactive habits and meeting each moment with more presence. She draws on Buddhist and yoga teachings, neuroscience and stories from three decades of teaching, with practices short enough for a busy day.",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1454959126.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jillian-pransky.json",
+    "left_out": [
+      "Restorative Ease for Chronic Stress & Illness ($349.00, https://www.jillianpransky.com/training-courses-catalog/p/restorative-ease-for-chronic-stress-illness): still out under the new rule. It is a yoga-therapy training on 'tailoring practice for people living with disease', with 'therapeutic setups ... for chronic illness', and says restorative yoga can be used alongside medical 'protocols, treatments, and procedures to enhance their effectiveness': a claim about treating disease, though framed as complementary rather than a replacement."
+    ],
+    "flags": [
+      "The Power of the Pause: author and ISBN-13 9781454959120 from the Bookshop.org and Barnes & Noble links on her own page https://www.jillianpransky.com/power-of-the-pause, converted to ISBN-10 1454959126 (the same ASIN the original plan had); not confirmed elsewhere. The page speaks of easing anxiety, regulating the nervous system and 'chronic pain' as one of the situations it helps with; no cure claim, so kept under the new rule.",
+      "Restorative Ease left out as a judgement call: it never suggests replacing medical care, so a human may prefer to keep it with a plain description."
+    ]
+  },
+  "images_final": true
+}

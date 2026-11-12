@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "matthew-sockolov"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Practicing Mindfulness: 75 Essential Meditations to Reduce Stress, Improve Mental Health, and Find Peace in the Everyday",
+      "slug": "practicing-mindfulness-75-essential-meditations",
+      "author": "Matthew Sockolov",
+      "asin": "1641521716",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guidebook of 75 mindfulness and loving-kindness practices, starting with five-minute meditations and building step by step towards a steadier daily practice. It also has practices for particular situations and emotions, with advice on wandering thoughts and common obstacles; no meditation experience is assumed.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://cdn2.penguin.com.au/covers/400/9781641521710.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/matthew-sockolov.json",
+    "left_out": [],
+    "flags": [
+      "ISBN from https://www.penguin.com.au/books/practicing-mindfulness-9781641521710 (Callisto imprint, paperback, 11 September 2018: ISBN-13 9781641521710, converted to ISBN-10 1641521716), not confirmed elsewhere. Author and title confirmed on his own page https://oneminddharma.com/book/.",
+      "Subtitle and blurb speak of reducing stress, relieving anxiety and mental wellbeing; no claim to cure or treat a condition, so the book passes the 12 Nov rule.",
+      "The listing then has 2 books (plan count)."
+    ]
+  }
+}

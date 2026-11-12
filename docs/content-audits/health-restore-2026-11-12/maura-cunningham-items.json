@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "maura-cunningham"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy Healing & Insight Sessions",
+      "url": "https://www.pravahahealing.com/sessions",
+      "description": "Her main one-to-one work: a session that begins with a conversation about your intentions, moves into hands-on or distance energy healing while you rest, and ends with sharing the intuitive insights that came up. First sessions run 90 minutes, in person or on Zoom.",
+      "price": "$250.00 (90 minutes); $200.00 (60 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "reiki",
+        "mediumship-spirits"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5e30742cbc70f54135962c65/cb22cd85-a32f-43db-a8e1-79b11114ad11/3073Office_1.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/maura-cunningham.json",
+    "left_out": [],
+    "flags": [
+      "Her home page lists relieving physical or emotional pain and sleeping easily among the benefits, and says blocks may show as ailments that do not respond to traditional treatment; it also says the work goes with medical therapy and is not a substitute for it. Kept under the new rule (no disease named, no advice to replace care); the description repeats none of it.",
+      "Prices are from her Gift / Purchase page (pravahahealing.com/gift-certificates)."
+    ]
+  },
+  "images_final": true
+}

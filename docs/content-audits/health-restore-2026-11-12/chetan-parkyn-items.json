@@ -1,0 +1,53 @@
+{
+  "healer": {
+    "healer_slug": "chetan-parkyn"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Karma Clearing by Design with Chetan Parkyn",
+      "url": "https://evolutionaryhumandesign.com/karma-clearing-with-chetan-parkyn/",
+      "description": "A private programme with Chetan that works through guided meditation, a love-history clearing and a destiny-path clearing, read against your own Human Design chart, to bring old personal and ancestral patterns into awareness. It runs as a preparatory Zoom call, then either a full in-person day or two half-day Zoom sessions, followed by two integration mentoring calls.",
+      "price": "$7,200 (or $3,500 down and 3 monthly payments of $1,500)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "human-design",
+        "shadow-work",
+        "soul-purpose"
+      ],
+      "image": "https://evolutionaryhumandesign.com/wp-content/uploads/2024/10/Karma-Clearing-Updated-with-Trademark-A.png"
+    },
+    {
+      "title": "Karma Clearing by Design: Group Training with Chetan Parkyn and Carola Eastwood",
+      "url": "https://evolutionaryhumandesign.com/karma-clearing-by-design/",
+      "description": "A three-day small-group training in which Chetan and Carola guide participants through the karma clearing process, starting from each person's own Human Design chart, with sessions on love history and destiny path opened and closed by guided meditation. It also introduces the method to practitioners who want to offer it to their own clients, and registration includes five online mentoring sessions.",
+      "price": "$1997 (or $797 down and 5 monthly payments of $340)",
+      "product_type": "retreat",
+      "start_date": "2027-01-21",
+      "end_date": "2027-01-23",
+      "subjects": [
+        "human-design",
+        "shadow-work",
+        "soul-purpose"
+      ],
+      "image": "https://evolutionaryhumandesign.com/wp-content/uploads/2026/02/KC-Website-and-Email-Banner-2026-scaled.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/chetan-parkyn.json",
+    "left_out": [
+      "Private Healing page (nav item): not part of this restore (it was left out unopened, not on a health reading of its page)."
+    ],
+    "flags": [
+      "Karma Clearing pages speak of healing ancestral wounds and generational trauma and of past-life memories; no disease, condition or medical-care claim on either page, so both pass the 12 Nov rule.",
+      "The private programme's price is now $7,200 in full (the old note said the same); the group training is a separate page, dated 21 to 23 January 2027, 'Southern California, location TBD', co-led with Carola Eastwood; prices shown with $ only.",
+      "With these two the listing has 8 offerings (plan count; live not re-counted)."
+    ]
+  }
+}

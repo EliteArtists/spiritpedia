@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "aruni-nan-futuronsky"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Grief, Loss, and Renewal: Savoring Life's Lessons",
+      "url": "https://kripalu.org/experiences/grief-loss-and-renewal-savoring-lifes-lessons",
+      "description": "A weekend retreat at Kripalu in which Aruni guides people living with grief and loss through mindfulness meditation, body-centred movement and journaling. The sessions use yoga on and off the mat as a way to meet difficult emotions, with daily yoga classes and meals included in the stay.",
+      "price": "$350 tuition plus accommodation",
+      "product_type": "retreat",
+      "start_date": "2027-03-05",
+      "end_date": "2027-03-07",
+      "subjects": [
+        "yoga",
+        "mindfulness",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/aruni-nan-futuronsky.json",
+    "left_out": [],
+    "flags": [
+      "Kripalu page speaks of healing from grief and moving from heartbreak to wholeness; no disease or medical-care claim, so it passes the 12 Nov rule.",
+      "Kripalu's og:image for this page is a generic 'shamanism' banner, so no image is given (the ingest picks one).",
+      "Price shown as 'Tuition: $350' per person plus required accommodations; no currency code on the page."
+    ]
+  }
+}

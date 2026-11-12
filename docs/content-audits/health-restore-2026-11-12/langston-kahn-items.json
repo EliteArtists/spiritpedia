@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "langston-kahn"
+  },
+  "videos": [],
+  "books": [
+    {
+      "title": "Deep Liberation: Shamanic Tools for Reclaiming Wholeness in a Culture of Trauma",
+      "slug": "deep-liberation",
+      "author": "Langston Kahn",
+      "asin": "1623174929",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Kahn sets out his Deep Liberation Process, a body-based way of working with the fear-based stories people carry, from painful experiences and absorbed oppression to old beliefs and emotional habits. Drawing on shamanic traditions, he gives practices for grounding, boundaries, tending the energy body, shadow work and caring for one another in community.",
+      "subjects": [
+        "shamanism",
+        "shadow-work",
+        "energy-medicine"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623174929.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/langston-kahn.json",
+    "left_out": [
+      "Deep Liberation Sessions (https://langstonkahn.com/deep-liberation-sessions/): still out under the new rule. Besides trauma and anxiety (allowed), the page promises to 'clear addictions at their root', to transform 'anxiety, depression' and to catch the body's cues 'before they become illness', and says clients who spent years in psychotherapy changed after one session: claims to treat addiction and depression."
+    ],
+    "flags": [
+      "Deep Liberation (North Atlantic Books, 2021): author, subtitle and paperback ISBN-13 9781623174927 from https://www.northatlanticbooks.com/shop/deep-liberation/, converted to ISBN-10 1623174929; not confirmed elsewhere. The publisher's subtitle reads 'Shamanic Tools for…' (the original plan had 'Teachings'). Trauma in the subtitle and blurb is allowed under the new rule; no cure claim."
+    ]
+  },
+  "images_final": true
+}

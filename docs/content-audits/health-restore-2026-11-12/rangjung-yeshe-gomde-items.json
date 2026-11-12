@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "rangjung-yeshe-gomde"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Alles in Bewegung bringen: Gesunder Körper, Gesunder Geist",
+      "url": "https://gomde.eu/event/alles-in-bewegung-bringen-gesunder-koerper-gesunder-geist/",
+      "description": "A weekend seminar at Gomde that pairs Buddhist meditation and mindfulness, guided by Lama Thierry, with gentle movement drawn from yoga, dance and the Feldenkrais method, led by Cecilia Pla. Days alternate meditation, mindful movement and tonglen practice, and a Medicine Buddha practice may be added for the Medicine Buddha day on 14 February. Open to beginners, with no experience of meditation or yoga needed.",
+      "price": "Empfohlene Spende: 240 Euro",
+      "product_type": "retreat",
+      "start_date": "2027-02-12",
+      "end_date": "2027-02-14",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/rangjung-yeshe-gomde.json",
+    "left_out": [],
+    "flags": [
+      "The page speaks of letting go of stress, supporting physical and mental wellbeing and a health-conscious daily life; no disease or treatment claim, so it passes the 12 Nov rule.",
+      "Co-led by Cecilia Pla (movement) with Lama Thierry, the centre's teacher; the seminar is the centre's own, held at Gomde."
+    ]
+  }
+}

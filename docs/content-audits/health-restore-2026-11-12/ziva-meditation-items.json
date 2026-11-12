@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "ziva-meditation"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Abundant Sleep",
+      "url": "https://zivameditation.com/pages/abundant",
+      "description": "A set of three guided audios meant for bedtime, the night and waking: one to settle into sleep, one playing affirmations and questions about money through the night, and a morning activation. It aims to loosen old fears and beliefs about money while the listener rests.",
+      "price": "$250",
+      "product_type": "download",
+      "subjects": [
+        "manifestation",
+        "law-of-attraction",
+        "meditation"
+      ],
+      "start_date": null,
+      "end_date": null,
+      "image": "http://zivameditation.com/cdn/shop/files/Website_Block_Portrait_4_x_5_in.png?v=1786383040"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/ziva-meditation.json",
+    "left_out": [
+      "Free Masterclass (https://zivameditation.com/pages/free-masterclass): a live session on Thursday 12 November 2026, before 16 November. The page also quotes a testimonial that pain was gone in a month after 'injections, acupuncture, massage' had failed.",
+      "Manifesting Sleep ($47, https://zivameditation.com/pages/sleep, the sleep course the site now links as its sleep page): testimonials say it 'helped cure my insomnia, reducing my anxiety and tremors' and contrast it with years of sleeping only with 'medication'; a cure claim with an indirect hint at dropping medication, so left out."
+    ],
+    "flags": [
+      "Abundant Sleep: a money-mindset audio set ($250); the page talks about deeper sleep, less financial anxiety and 'healing frequencies' but makes no cure or treatment claim, so kept under the new rule. The original plan noted that Ziva's courses page called its courses 'sunsetting' in 2026, so this offering may not last."
+    ]
+  },
+  "images_final": true
+}

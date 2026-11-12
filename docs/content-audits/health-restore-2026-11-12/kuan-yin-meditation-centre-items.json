@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "kuan-yin-meditation-centre"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Sun Face Moon Face",
+      "url": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/06/Sun-Face-Moon-Face.m4a",
+      "description": "A recorded talk shared on the centre's Zen page about our sense of time and timelessness. It looks at meeting ageing, sickness and death by discovering a whole life in one bright, clear moment fully lived.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "death-the-afterlife",
+        "spirituality"
+      ],
+      "image": "https://www.kuanyinmeditationcentre.org/wp-content/uploads/2025/02/IMG_4446-cropped-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/kuan-yin-meditation-centre.json",
+    "left_out": [],
+    "flags": [
+      "Linked from the centre's Zen page (kuanyinmeditationcentre.org/zen-events/) as a direct .m4a file, like the listing's other free talks. Its blurb speaks of 'spiritual remedies for relieving suffering amidst ageing, sickness and death': spiritual, not medical. The speaker is not named on the page."
+    ]
+  },
+  "images_final": true
+}

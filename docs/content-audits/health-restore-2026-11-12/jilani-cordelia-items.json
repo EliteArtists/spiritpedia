@@ -1,0 +1,35 @@
+{
+  "healer": {
+    "healer_slug": "jilani-cordelia"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sufi SoulWork Sessions",
+      "url": "https://www.jilanicordelia.com/sufi-soulwork/",
+      "description": "Individual and group SoulWork, a spiritual psychology from the Ruhaniat Sufi stream, which Jilani has been empowered to lead. A session opens with breath and gentle movement to settle into calm alertness, then a guided meditation connecting with the witnessing Conscious Self and the High Self, sometimes meeting the inner parts formed in childhood. Groups run on retreats and online; individual sessions are usually monthly or fortnightly.",
+      "price": "£65 per individual session (reduced prices may be available)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "shadow-work",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/jilani-cordelia.json",
+    "left_out": [],
+    "flags": [
+      "The page speaks of balancing the nervous system and of healing wounded parts; no disease, condition or medical-care claim, so it passes the 12 Nov rule.",
+      "The page calls SoulWork 'a form of spiritual psychology' drawing on transpersonal and integrative psychology (parts work); it is one offering among her Sufi teaching, not her main work, so the therapy scope rule does not apply to the listing. A human may want to look.",
+      "Price shown as '£65' with no currency code."
+    ]
+  }
+}

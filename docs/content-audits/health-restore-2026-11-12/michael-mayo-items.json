@@ -1,0 +1,34 @@
+{
+  "healer": {
+    "healer_slug": "michael-mayo"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy Healing: Single Session or 3 Pack",
+      "url": "https://www.mediummichaelmayo.com/service-page/energy-healing-single-session-or-3-pack",
+      "description": "An online energy healing session over Zoom, 30 to 60 minutes long, in a style Michael learned from Charlie Goldsmith and from trance-healing study with Eileen Davies. He tries a series of techniques while checking in with you as you go, with a follow-up check-in a few days later; it can be booked singly or as a pack of three.",
+      "price": "$150 USD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/michael-mayo.json",
+    "left_out": [],
+    "flags": [
+      "Borderline, kept: the session page sells 'energy healing that gets results', rating 'your current discomfort' 0 to 10 and aiming for 'the maximum possible relief', with a no-change-no-charge refund. It names no disease or condition, and both the page and his disclosure (https://www.mediummichaelmayo.com/energy-healing-disclosure) say it does not diagnose, treat, cure or prevent any disease and tell clients to keep up medical and mental-health care. A human may judge the results promise differently.",
+      "Price shown as '$150' / '150 US dollars' for a single session; the 3-pack price is not shown on the page.",
+      "The page's image is an Unsplash stock photo, so no image is given."
+    ]
+  }
+}

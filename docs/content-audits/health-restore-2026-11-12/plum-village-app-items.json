@@ -1,0 +1,33 @@
+{
+  "healer": {
+    "healer_slug": "plum-village-app"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Trauma Informed Practices on the App",
+      "url": "https://plumvillage.app/an-interview-with-jo-ann-rosen-trauma-informed-practices-on-the-app/",
+      "description": "An interview on the app's blog introducing its free 'Trauma Informed Practice' folder of meditations, made with the EMBRACE sangha in the Plum Village tradition. It explains an invitational, trauma-sensitive way of practising mindfulness and why practising with a sangha matters.",
+      "image": "https://plumvillage.app/wp-content/uploads/2026/04/pv-app-blog-5.png",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/plum-village-app.json",
+    "left_out": [],
+    "flags": [
+      "The post is the app team's interview with Jo-ann Rosen (EMBRACE sangha, author of Unshakable); the folder it introduces is the app's own, made with her sangha. It points readers to a sangha, a Dharma teacher or a mental health professional; no treatment claim. A human may judge whether an interview counts as the app's own resource."
+    ]
+  },
+  "images_final": true
+}

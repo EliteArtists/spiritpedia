@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "julian-daizan-skinner"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Learn Meditation for Wellbeing: Counting the Breath",
+      "url": "https://zenways.org/learn-basic-sitting-in-zazen/",
+      "description": "Step-by-step instructions, adapted from Daizan's book Practical Zen for Health, Wealth and Mindfulness, for the beginner's 'counting the breath' meditation: posture on a chair, kneeling, cross-legged or lying down, then counting breaths from one to ten, followed by a few minutes of free writing. The page also links a free guided recording of the practice in several languages.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/julian-daizan-skinner.json",
+    "left_out": [],
+    "flags": [
+      "The page says this beginner style suits people looking for stress reduction, better sleep or ways to deal with pain; that is wellbeing wording with no claim to treat a condition, so it passes the 12 Nov rule."
+    ]
+  }
+}

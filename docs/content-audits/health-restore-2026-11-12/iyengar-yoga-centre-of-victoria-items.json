@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "iyengar-yoga-centre-of-victoria"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Iyengar Yoga and Aging Workshop IN STUDIO",
+      "url": "https://iyengaryogacentre.ca/iyengar-yoga-and-aging-workshop-instudio/",
+      "description": "A two-hour Saturday morning workshop for all levels at the centre's Fort Street studio, taught by Claudia MacDonald. It looks at Iyengar yoga practice as we grow older.",
+      "price": "$45",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/iyengar-yoga-centre-of-victoria.json",
+    "left_out": [],
+    "flags": [
+      "Only the title frames it around ageing (the calendar entry calls it 'Yoga and Healthy Aging Workshop'); neither page makes any health claim, so it passes the 12 Nov rule.",
+      "Both the workshop page and its calendar entry (https://iyengaryogacentre.ca/event/yoga-and-healthy-aging-workshop-in-studio-45/2026-12-05/) are thin: date, time (10:30 to 12:30), $45 and the teacher's name only, so the description stays short."
+    ]
+  }
+}

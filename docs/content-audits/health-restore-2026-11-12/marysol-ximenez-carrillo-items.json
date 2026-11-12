@@ -1,0 +1,37 @@
+{
+  "healer": {
+    "healer_slug": "marysol-ximenez-carrillo"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Portal of your Sacred Heart",
+      "url": "https://marysol.vision/the-portal-of-your-sacred-heart-on-demand/",
+      "description": "A four-week course first given live in December 2024 and now sold as recordings: four two-hour sessions of guided journeys, channelled messages and sung sound-healing transmissions, plus a daily oracle-card reading. It centres on the heart, self-love and letting go of old patterns and beliefs.",
+      "price": "€444",
+      "product_type": "download",
+      "subjects": [
+        "sound-healing",
+        "channelled-teachings",
+        "self-healing"
+      ],
+      "image": "https://marysol.vision/wp-content/uploads/2024/10/The-Portal-of-your-Sacred-Heart-KN.jpeg",
+      "start_date": null,
+      "end_date": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/marysol-ximenez-carrillo.json",
+    "left_out": [
+      "Calming your Mind – Activating your Higher Mind (https://marysol.vision/product/calming-your-mind-activating-your-higher-mind/): a live online event dated Saturday 7 November 2026, before 16 November; not a health reason (the page's mention of anxiety is allowed now)."
+    ],
+    "flags": [
+      "The Portal of your Sacred Heart: the Week 3 Winter Solstice session includes a clearing by guest Patrice Krysztofiak, billed as 'a Medical Medium and Energy Channeler'. The course pages make no cure or treatment claim, so kept under the new rule; a human may want to look at the 'Medical Medium' billing. Price shown as '444,00 €' (shop page) and '444 Euros' (course page)."
+    ]
+  },
+  "images_final": true
+}
