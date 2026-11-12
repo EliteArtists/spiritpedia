@@ -1,0 +1,52 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1493,
+    "healer_slug": "don-reed-simmons"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11173,
+      "slug": "loving-kindness-meditation",
+      "title": "Loving Kindness Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 11174,
+      "slug": "temple-of-sound-2011-don-simmons-meditation-flying-mystics-concert",
+      "title": "Temple of Sound 2011 ~ Don Simmons meditation ~ Flying Mystics concert"
+    },
+    {
+      "table": "videos",
+      "id": 11175,
+      "slug": "the-4-stages-of-breathing",
+      "title": "The 4 Stages of Breathing"
+    },
+    {
+      "table": "videos",
+      "id": 11176,
+      "slug": "mediation-and-sound-therapy-teacher-don-simmons-a-candid-conversation",
+      "title": "Mediation and Sound Therapy Teacher | Don Simmons| A Candid Conversation"
+    },
+    {
+      "table": "courses",
+      "id": "a095522c-3bd6-494d-9a7b-b4dead97824e",
+      "slug": "intuitive-readings-2",
+      "title": "Intuitive Readings"
+    },
+    {
+      "table": "courses",
+      "id": "9fb6f38a-4927-4a44-8b2d-47426ed40cda",
+      "slug": "sound-therapy-sessions",
+      "title": "Sound Therapy Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "113bb8fe-d6fb-4470-b09e-6589b53ca0a9",
+      "slug": "sacred-sound-ministry",
+      "title": "Sacred Sound Ministry"
+    }
+  ],
+  "at": "2026-11-12T23:38:34.929Z"
+}

@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "eva-payne",
+    "location_source": "https://www.evapayne.com/",
+    "create": {
+      "name": "Eva Payne",
+      "bio": "Eva Payne is an American author, retreat leader and meditation guide whose work centres on what she calls living in flow. She holds a master's degree in leadership and management and has studied the idea of flow since 2015, a path she says began during a hard stretch of her own life. Long before that, in 1998, she founded a non-profit summer camp for children and teenagers affected by HIV or AIDS, and she has spoken from stages since her late teens, first as co-host of a local morning show and later at school assemblies.\n\nShe is the mother of six and runs Flow Life from Colorado. Her two books, The Flow Life Funnel and The Magic in Flow, set out principles for turning inner wishes into outward choices, built around her own acronyms for love, self, fear and flow. She offers coaching through discovery calls, an online community on Skool with short grounding and breath practices, and talks on courage, intuition and mindfulness. She also hosts the podcast Ideas To Human Better, whose episodes range from life after death to synchronicity. In recent years she has added plant-medicine work, and her Flow Life Retreat is now the main focus of her site.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "online",
+      "city": null,
+      "country": "United States",
+      "subjects": [
+        "life-coaching",
+        "meditation",
+        "spirituality"
+      ],
+      "website_url": "https://www.evapayne.com/",
+      "booking_url": "https://calendly.com/flowlife",
+      "youtube_url": "https://www.youtube.com/@ideastohumanbetter",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "acolorflowlife@gmail.com",
+      "image_urls": [
+        "https://lh7-us.googleusercontent.com/sitesv-images-rt/APXyLQflHn66uep-IUrWE16XvLY_pYsSUwFsOfek-GMh7hHmMaFCZGk2whQNA38TvfJguOVpWVJ8vitrNITybWQCRko32inZke0Nl_KNVLIJdAEasjNc7_3dMgZ6NMwwBqCR7Vz0o-vDbyzU8BdI4XK7H4_cWfv_CCX-fiM97j6j8xvx1iJ8afz-85wu6k96ElHpYqadsl1is9BaT38xKpOe_4_FNBWTyk3asINWEj1DVP0=w1280"
+      ]
+    }
+  },
+  "no_public_base": "Her site footer gives only 'Flow Life, Colorado, USA'; no town is published. Recent short videos promote events in Los Angeles and a retreat in Joshua Tree.",
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Gratitude and Gifts Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=AQgQVpE1yuk",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Live in Flow - Eva Payne, The Flow Life Funnel",
+      "url": "https://www.youtube.com/watch?v=ITIuGO6TClU",
+      "subjects": [
+        "life-coaching",
+        "spirituality"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "title": "The Flow Life Funnel: Outwardly Live What You Inwardly Desire",
+      "slug": "the-flow-life-funnel",
+      "author": "Eva Payne",
+      "asin": "1736339311",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her first book, built on eight principles for living with more ease and purpose, and for organising work and daily life around what people need to thrive.",
+      "subjects": [
+        "life-coaching",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "The Magic in Flow",
+      "slug": "the-magic-in-flow",
+      "author": "Eva Payne",
+      "asin": "B09NR8D3ZN",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her second book, continuing her teaching on how to live in a state of flow.",
+      "subjects": [
+        "life-coaching",
+        "spirituality"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "title": "Discovery call and flow coaching",
+      "url": "https://calendly.com/flowlife",
+      "description": "A first call to talk through where you feel stuck and how coaching or mentoring with Eva might help you find more flow in daily life.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "life-coaching"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3055,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/eva-payne.json",
+    "hub": null,
+    "held": "Psychedelics: her home page leads with the Flow Life Retreat and psilocybin ('When coaching, therapy, and/or education is not enough ... psilocybin'), her about page says she now facilitates plant-medicine work, her Skool community card offers 'Psychedelic or Life Transition Integration Tools', and her YouTube channel includes 'Why I Started a Mushroom Retreat in the US' and 'Heroic Dose of Psilocybin at a Womens Retreat'. Held for the owner per the brief.",
+    "tier_evidence": "YouTube @ideastohumanbetter 862 subscribers (YouTube Data API, 12 Nov 2026); other platforms not fetched -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.evapayne.com/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 3 source(s)",
+    "flags": [
+      "Held (psychedelics) - see sprint.held. Also the earlier skip noted condition-named testimonial titles ('Healing Depression & Anxiety through Earth's Medicine', 'Healing After Breast Cancer'); not seen in this top-25 list but likely still on the channel.",
+      "Photo is from her Google Sites page (lh7-us.googleusercontent.com); that host returns 400 for robots.txt, so the ingest may refuse it. YouTube avatar is the podcast logo, so not usable. If refused, hold for a photo.",
+      "flowliferetreat.com and skool.com not opened; retreats and the community are described from her own site only and not listed as items.",
+      "Most of her channel is podcast interviews with guests (Maren Muter, Sean Stone, Paul Johnson, Laura Dawn); only two solo videos kept.",
+      "The Magic in Flow ASIN B09NR8D3ZN is the Kindle ASIN her about page links to; The Flow Life Funnel ASIN 1736339311 from her own Amazon link. Amazon not opened.",
+      "Earlier record noted a media-page conversation with Elena Danaan; not checked this time."
+    ],
+    "left_out": [
+      "Flow Life Retreat and psilocybin journeys (psychedelics).",
+      "Flow Life Skool community (offers psychedelic integration tools).",
+      "Psychedelic videos ('My Journey Back to Psychedelics', 'Why I Started a Mushroom Retreat in the US', 'Heroic Dose of Psilocybin at a Womens Retreat', 'Psychedelics Awaken To Our Truth', retreat promos).",
+      "Guest-led podcast episodes; mommyrave.com party promos (off topic); Camp Flow Life adult camp (not teaching).",
+      "Free Wheel of Life Assessment (Google Drive file, not opened)."
+    ]
+  }
+}

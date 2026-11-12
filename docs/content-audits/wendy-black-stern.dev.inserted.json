@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1463,
+    "healer_slug": "wendy-black-stern"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6eef94ed-741b-4c53-8383-9c848d2c3714",
+      "slug": "meet-the-wave-somatic-grief-surf-writing-retreat",
+      "title": "Meet the Wave: Somatic Grief, Surf & Writing Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "0d14cb3e-ccee-4e41-9601-c768f92f3ece",
+      "slug": "mindful-grieving-ytt-maui-immersion",
+      "title": "Mindful Grieving YTT — Maui Immersion"
+    },
+    {
+      "table": "courses",
+      "id": "bae7b6db-7e29-4b4c-8e16-c5ed8e2f1337",
+      "slug": "yoga-somatic-foundations",
+      "title": "Yoga & Somatic Foundations"
+    },
+    {
+      "table": "courses",
+      "id": "e0e775fa-04c4-4c94-8672-1d38a170021e",
+      "slug": "one-on-one-somatic-grief-support",
+      "title": "One-on-One Somatic Grief Support"
+    }
+  ],
+  "at": "2026-11-12T23:02:48.587Z"
+}

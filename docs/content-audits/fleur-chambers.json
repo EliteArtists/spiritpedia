@@ -1,0 +1,165 @@
+{
+  "healer": {
+    "healer_slug": "fleur-chambers",
+    "location_source": null,
+    "create": {
+      "name": "Fleur Chambers",
+      "bio": "Fleur Chambers is an Australian meditation teacher and author, and the creator of The Happy Habit, which brings together a meditation app, short online courses and illustrated self-help books. She says her offerings have been downloaded more than four million times across 45 countries.\n\nHer approach grew out of about ten years of living with chronic pain. Told there was no medical answer for her condition, she chose to look for what the pain could teach her, and she now argues that happiness is not a life without discomfort but the ability to stay connected to yourself while it is there. Much of her recent teaching is framed around the nervous system: small practices for the moments when stress, guilt or overwhelm actually arrive, rather than long sessions of stillness.\n\nHer courses include twenty micro-meditations for everyday moments, seven guided walking meditations, and a short programme for people who habitually give too much. She has written two books, Ten Pathways and Wholehearted Confidence. In 2022 The Happy Habit became a social enterprise that gives half its profits to grassroots projects in clean water, climate action and education, and she reports that it has helped fund clean drinking water for some 80,000 people. She is also the mother of three teenage sons.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "online",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "website_url": "https://www.thehappyhabit.com.au/",
+      "booking_url": "https://www.thehappyhabit.com.au/store",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "fleur@thehappyhabit.com.au",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/feb7035e-eafb-42dc-aab0-9bb9e755c7a7/TRP_9862.jpg",
+        "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/de11d127-cc34-4465-859f-1a3c75cb41d5/IMG_9126-1.JPEG"
+      ]
+    },
+    "no_public_base": "Her site names no town; it is a .com.au site with prices in AUD and an Acknowledgement of Country, so country Australia. An earlier plan said Melbourne but no source on her current pages states it."
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Ten Pathways: Discover Inner Happiness and Transform Your Life",
+      "slug": "ten-pathways",
+      "author": "Fleur Chambers",
+      "asin": "B0B2W3Y43X",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An illustrated guide to ten ways of finding a steadier kind of happiness, drawn from her own decade with chronic pain and from meditation practice.",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0B2W3Y43X.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Wholehearted Confidence: Live, Love and Contribute",
+      "slug": "wholehearted-confidence",
+      "author": "Fleur Chambers",
+      "asin": "0645867047",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Treats confidence as self-trust rather than something to be earned, with gentle practices for questioning old stories and feeling more at ease in one's own skin.",
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0645867047.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Happy Habit app (full subscription)",
+      "url": "https://www.thehappyhabit.com.au/app",
+      "description": "Her meditation app, free to download, with a paid tier that opens hundreds of guided meditations, short challenges, music, journaling exercises, sleep and focus tracks, and courses.",
+      "price": "$5 a month or $49 a year",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "http://static1.squarespace.com/static/632e99efa411570b0f1dd57a/t/656968af10eba512f80a7b22/1701406906833/Group+5%401x.png?format=1500w"
+    },
+    {
+      "title": "In the Moment",
+      "url": "https://www.thehappyhabit.com.au/in-the-moment",
+      "description": "Twenty audio micro-meditations, each under seven minutes, for the moments in a day when stress, regret, restlessness or a racing mind show up.",
+      "price": "$44.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/1701409430597-C9TC9ZE1O16EWEL3081S/Fleur+Chambers+photo.jpeg"
+    },
+    {
+      "title": "Walk Yourself Home",
+      "url": "https://www.thehappyhabit.com.au/walkyourselfhome",
+      "description": "Seven guided walking meditations of under twenty minutes each, every one paired with a question to reflect on while you walk.",
+      "price": "$33 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/c3baa815-cbd9-43e3-86e3-26a9875f81da/TRP_0496.jpg"
+    },
+    {
+      "title": "The Overgiver's Reset",
+      "url": "https://www.thehappyhabit.com.au/reset",
+      "description": "Five short practices for people who habitually say yes and look after everyone else, aimed at noticing the reflex in the body before it takes over.",
+      "price": "$39 AUD",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/632e99efa411570b0f1dd57a/ed0b9682-6b09-468d-a3b6-c1fbb7f00f8a/In+The+Moment+image+for+header+on+sales+page.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Nervous System Reset (free guided meditation)",
+      "url": "https://www.thehappyhabit.com.au/nervoussystem",
+      "description": "A free guided meditation for settling the body during a busy season, streamed on the page.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/632e99efa411570b0f1dd57a/t/674cf7e86d3dc06fbdc0da9d/1713138236319/quino-al-JFeOy62yjXk-unsplash.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3056,
+    "restored_from": "docs/content-audits/insight-timer-sprint-1/skipped/fleur-chambers.json",
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from her site; Instagram not fetched; Insight Timer followers not counted -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.thehappyhabit.com.au/about",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Health restore: the old skip cited chronic pain, ADHD, autism and perimenopause topics (Insight Timer bio, not opened) and sleep/ADHD tracks in her app. Her own pages make no cure or treatment claim: chronic pain is her own story, and the sleep/ADHD tracks are practice routines that name a condition, which the new rule allows. Listed.",
+      "Home page line 'Because movement is medicine' is a slogan, not a claim; noted only.",
+      "Base: no town published (see no_public_base); the dropped plan's 'Melbourne' was not confirmed and is not used. Bio says 'Australian' from the site's .com.au/AUD/Acknowledgement of Country; owner may prefer to drop that word.",
+      "Ten Pathways ASIN B0B2W3Y43X is the Kindle ASIN her own page links to; Wholehearted Confidence 0645867047 from her amazon.co.uk/.com.au links (ISBN 9780645867046 on the page). Amazon not opened.",
+      "In the Moment price shows as $44.00 in the page's product data (currency not stated beside it; other items say AUD).",
+      "Two photos looked at: her at home with a laptop (TRP_9862) and signing books in a bookshop (IMG_9126-1); a third candidate (2.jpg) looks like a stock image and was not used."
+    ],
+    "left_out": [
+      "Insight Timer profile and courses: Insight Timer is never opened.",
+      "Free first chapters of both books (email opt-ins) and the Wholehearted Confidence audiobook page: not separately listed.",
+      "Care live session, North Star Habits, Calm Waters, Self-Leadership course, Whole Without Apology waitlist, free identity masterclass and free video pages: not opened (limited fetching); may be added later.",
+      "Thank-you and download pages (/reflex, /thank-you-*), test store products."
+    ]
+  },
+  "images_final": true
+}

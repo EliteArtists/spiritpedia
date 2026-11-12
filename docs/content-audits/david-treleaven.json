@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "david-treleaven",
+    "location_source": null,
+    "no_public_base": "His own site says only that he is originally from Toronto, Canada, and that all one-to-one work is online; no current home city is published.",
+    "create": {
+      "name": "David Treleaven",
+      "bio": "David Treleaven is a Canadian-born writer and educator who trains meditation and yoga teachers, coaches and other practitioners to offer mindfulness in a way that is safe for people living with trauma. His interest began in 2006 after a difficult experience on a silent meditation retreat, which led him to research how meditation and traumatic stress interact and to write his doctoral dissertation on the subject. He went on to found Trauma-Sensitive Mindfulness, the approach and community he has led since 2016.\n\nHis teaching looks at both sides of practice: how sustained inward attention can sometimes bring up overwhelm or dissociation, and how simple adjustments, such as grounding, choice, resourcing and self-compassion, let people stay with practice and draw on its benefits. He offers a two-part online certification course for mindfulness teachers, a free hour-long introductory webinar and a podcast with guests from the meditation world, and he leads talks and workshops for organisations online and in person. His book Trauma-Sensitive Mindfulness (W. W. Norton, 2018) has been translated into ten languages, and a companion workbook for mindfulness teachers followed in 2025.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "self-healing"
+      ],
+      "website_url": "https://davidtreleaven.com/",
+      "booking_url": "https://davidtreleaven.com/tsm-training/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@davidtreleaven.com",
+      "image_urls": [
+        "https://davidtreleaven.com/wp-content/uploads/2024/08/David-Treleaven-Home.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [
+    {
+      "title": "Trauma-Sensitive Mindfulness: Practices for Safe and Transformative Healing",
+      "slug": "trauma-sensitive-mindfulness",
+      "author": "David A. Treleaven",
+      "asin": "0393709787",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "His 2018 book on why meditation practised without awareness of trauma can sometimes stir up distress, and how teachers can adapt practice around five principles covering attention, arousal, relationship, dissociation and social context. It mixes history, case stories and practical guidance.",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0393709787.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Complete Trauma-Sensitive Mindfulness Teacher Training",
+      "url": "https://davidtreleaven.com/trauma-sensitive-mindfulness-complete/",
+      "description": "A self-paced, two-part online certification course for mindfulness teachers, coaches and others who guide practice: a five-module foundation followed by a ten-module advanced course. It covers recognising when practice is overwhelming someone and adapting instruction so it stays safe and supportive.",
+      "price": "$1,397",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://m.media-amazon.com/images/P/0393709787.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Truth About Mindfulness and Trauma",
+      "url": "https://davidtreleaven.com/the-truth-about-mindfulness-and-trauma/",
+      "description": "A free, on-demand training of about an hour for anyone who practises or teaches mindfulness. He explains common pitfalls, how to notice when someone is struggling, and a simple practice for checking safety and steadiness in the moment.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://davidtreleaven.com/wp-content/uploads/2025/03/mindfulness-and-trauma.jpg"
+    },
+    {
+      "title": "The Trauma-Sensitive Mindfulness Podcast",
+      "url": "https://davidtreleaven.com/podcast/",
+      "description": "His interview series on meditation, mindfulness and traumatic stress, with guests including Sharon Salzberg, Dan Siegel, Diana Winston, Oren Jay Sofer and Thomas Hübl.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://davidtreleaven.com/wp-content/uploads/2020/09/big-arrow-01.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3009,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/david-treleaven.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of his own found (one web search, 12 Nov 2026); no social accounts linked from his site; podcast audience not counted → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://davidtreleaven.com/work-with-david/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): trauma-sensitive mindfulness for meditation and yoga teachers passes as trauma-healing wellbeing work; no disease-cure or medical-replacement claims found. Scope judgement: his publisher (Norton UK) calls him a psychotherapist and his course offers APA continuing-education credits, but the course is aimed at mindfulness teachers and coaches, not clinician-only; the owner may judge it too clinical.",
+      "Email info@davidtreleaven.com is a business inbox (mailto on every page, and named on /work-with-david/).",
+      "Book ISBN-10 0393709787 converted from ISBN-13 9780393709780 on the W. W. Norton UK page (wwnorton.co.uk/books/9780393709780-trauma-sensitive-mindfulness), not confirmed elsewhere; US edition preferred but not checked. Cover not checked.",
+      "Sharon Salzberg, Tara Brach, Dan Siegel and others appear on his site only as podcast guests or endorsers; no links implied.",
+      "Tier: 0 readable; he is a known author in the mindfulness field (book in 10 languages, endorsed by Jon Kabat-Zinn and Tara Brach): possible editorial-stature override for the owner.",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "Internal Family Systems (IFS) for Trauma-Sensitive Practitioners: a psychotherapy-method training (always out).",
+      "One-to-One Mentorship: integrates IFS, Sensorimotor Psychotherapy and Somatic Experiencing (psychotherapy methods).",
+      "Organisational trainings: custom bookings, no public page per item.",
+      "The Trauma-Sensitive Mindfulness Workbook (Norton, 2025): its Norton UK page returned 500, so no ISBN from a page we opened; we fetched nothing more from wwnorton.co.uk.",
+      "Videos: none of his own found on YouTube."
+    ]
+  },
+  "images_final": true
+}

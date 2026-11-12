@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "smiling-mind",
+    "location_source": "https://www.smilingmind.com.au/contact-us",
+    "create": {
+      "name": "Smiling Mind",
+      "bio": "Smiling Mind is a free mindfulness and wellbeing app made by an Australian not-for-profit of the same name, based in Collingwood, Melbourne. The organisation has been running for more than twelve years with a small team of around twenty people drawn from psychology, research, software and communications, and its practices are written by psychologists and wellbeing practitioners. Everything in the app is free, and the charity is funded by donations, partners and its school work.\n\nThe app holds more than 700 guided sessions arranged into collections and pathways for adults, families and children, from short breathing and body-scan meditations to sleep practices and activities for big emotions. Users can search by need or age, build a daily routine with reminders and look back over how often they practise. The content is organised around five skills the organisation calls mental fitness: living mindfully, thinking flexibly, connecting with others, acting with purpose and resting the body. Smiling Mind also runs a programme for primary schools with classroom lessons and short meditations, and has a hub of practices for women and girls.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "founded_year": null,
+      "availability": "worldwide",
+      "city": "Collingwood, Victoria",
+      "country": "Australia",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://www.smilingmind.com.au/",
+      "booking_url": "https://www.smilingmind.com.au/smiling-mind-app",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@smilingmind.com.au",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5a2f40a41f318d38ccf0c819/48bc0071-d295-42a7-aa8f-bb890b63f4eb/SmilingMind_Primary_Logo_RGB_Black.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Smiling Mind App",
+      "url": "https://www.smilingmind.com.au/smiling-mind-app",
+      "description": "The free app itself: over 700 guided sessions in collections and pathways for adults and children, searchable by need or age, with a routine builder, reminders and a log of practice.",
+      "price": "Free",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a2f40a41f318d38ccf0c819/1557799213295-LN1NYYCYOFCM44ZDIJW6/Asset+6SM_OurApp.png"
+    },
+    {
+      "title": "Smiling Mind Primary School Program",
+      "url": "https://www.smilingmind.com.au/smiling-mind-for-schools",
+      "description": "A whole-school programme for Australian primary schools with 120 classroom lessons across years 1 to 6, short meditations and brain breaks for the youngest classes, training for teachers and take-home material for families.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a2f40a41f318d38ccf0c819/4bc9840c-a363-4e15-9df4-f2b6ea335a82/iStock-539233431.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Sink Into Sleep",
+      "url": "https://www.smilingmind.com.au/better-sleep",
+      "description": "A guided bedtime meditation on the organisation's sleep page for settling the body and easing a busy mind before sleep, alongside tips and a worry-box activity for children.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a2f40a41f318d38ccf0c819/49ae037e-0b31-4b4e-b8ed-44c6fa4bc11b/iStock-1468616190.jpg"
+    },
+    {
+      "title": "The STOP Technique",
+      "url": "https://www.smilingmind.com.au/womens-mental-health",
+      "description": "A short guided practice for pausing, breathing and checking in with yourself, shared on the women's wellbeing page.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a2f40a41f318d38ccf0c819/e9e38b5e-828c-4d72-b2be-dfcf31297e66/iStock-2185408172.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3031,
+    "restored_from": "docs/content-audits/night-sprint-2026-11-09/skipped/smiling-mind.json",
+    "tier_evidence": "No follower counts read: its site links Instagram, Facebook, LinkedIn and X (never fetched) and no YouTube channel; the home page says it is 'trusted by millions of parents and educators' and the app page lists 700+ sessions → local_hero. Possible override by published user numbers.",
+    "email": "yes",
+    "email_source": "https://www.smilingmind.com.au/contact-us",
+    "contact_form_url": "https://www.smilingmind.com.au/contact-us",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health rule (new): its pages speak of stress, sleep, anxiety and big emotions, and of building skills 'before mental ill-health arises'. That is prevention and wellbeing wording, not a claim to cure or treat a condition, so it is now in; the earlier skip called it a mental-health rather than contemplative app. Owner may still judge it too clinical for scope (psychologist-designed 'mental fitness').",
+      "Brand inbox: info@smilingmind.com.au (site footer and contact page).",
+      "Base: the contact page gives Collingwood, Victoria (an inner Melbourne suburb); recorded as published for the owner to map to Melbourne.",
+      "No founding year stated (only '12+ years'); left null.",
+      "Thin on items for an app: two offerings and two free practices on its own site; no YouTube channel linked."
+    ],
+    "left_out": [
+      "Body Scan and Body Scan for Kids: on the same page as the app offering (/smiling-mind-app).",
+      "Generation GOAT collection (in the app, tied to a Sony Pictures film) and the Educator Online Shop: promotional or school-supplies items.",
+      "Secondary school programme and Learning Hub: school products; one school item kept.",
+      "What is Mindfulness page: redirects to an http address, not followed."
+    ]
+  },
+  "images_final": true
+}

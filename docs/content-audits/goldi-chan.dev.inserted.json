@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1483,
+    "healer_slug": "goldi-chan"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "af580620-c438-4bc4-8740-3ceb8f61a645",
+      "slug": "energy-healing-sessions-in-person-and-at-a-distance",
+      "title": "Energy healing sessions, in person and at a distance"
+    },
+    {
+      "table": "courses",
+      "id": "d5b01301-3700-4b59-b064-dbdca0508104",
+      "slug": "quantum-touch-level-4-becoming-whole",
+      "title": "Quantum-Touch Level 4: Becoming Whole"
+    },
+    {
+      "table": "courses",
+      "id": "0e1e6987-c7e0-450f-99e9-2feef2c7a085",
+      "slug": "quantum-touch-level-2-becoming-supercharged-2",
+      "title": "Quantum-Touch Level 2: Becoming Supercharged"
+    },
+    {
+      "table": "free_resources",
+      "id": "0fdc6e4d-279a-473c-889c-5564525dc150",
+      "slug": "free-quantum-touch-taster-workshop-fo-tan",
+      "title": "Free Quantum-Touch taster workshop (Fo Tan)"
+    }
+  ],
+  "at": "2026-11-12T23:20:46.863Z"
+}

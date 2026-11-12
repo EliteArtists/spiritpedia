@@ -1,0 +1,151 @@
+{
+  "healer": {
+    "healer_slug": "bea-walker",
+    "location_source": "https://holisticbea.com/ (the site's own description: 'based in Los Angeles')",
+    "create": {
+      "name": "Bea Walker",
+      "bio": "Bea Walker is a Los Angeles yoga and meditation teacher and holistic coach who works mainly with women living with anxiety. She has spoken openly about her own long experience of anxiety, and says that breathwork, meditation, yoga, Ayurveda and body-based practices were what slowly helped her feel steady again. She went on to train as a holistic health and mindset coach, a registered yoga teacher, a sound healer and a meditation teacher certified through Chopra, and she makes clear on her site that she is not a therapist.\n\nHer sessions are online. In one-to-one coaching she combines conversation with breathing, somatic and nervous-system practices that clients can use day to day, and she also offers private meditation lessons for beginners and for people wanting to deepen a practice, as well as energy sessions centred on the chakras. She has written The Anxiety Journal, a downloadable workbook of reflection prompts, affirmations and calming practices, and she records short guided meditations for sleep, gratitude and relaxation on her YouTube channel and on Insight Timer. Her blog, Holistic Bea, mixes seasonal recipes and rituals with pieces on yoga, meditation and stress, and she runs wellness sessions for workplaces.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "website_url": "https://holisticbea.com/",
+      "booking_url": "https://holisticbea.com/coaching",
+      "youtube_url": "https://www.youtube.com/@holisticbea",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/IYeoIL9dGMrY3eTgwYk_jfbrBQjtR5mY76TRDXjoZaNu7mhzo3KK7SzDG9eTYLXdE9g31d_m9WY=s800-c-k-c0x00ffffff-no-rj",
+        "https://images.squarespace-cdn.com/content/v1/5ec5833924d92c3e9addcf03/06e04757-de42-40a0-8922-224b8d670260/TESTshoot_164_RT.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Full Body Relaxation Meditation | Progressive Muscle Relaxation for Sleep",
+      "url": "https://www.youtube.com/watch?v=RykwBissSsM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bea Walker"
+    },
+    {
+      "title": "Lucky Girl Affirmations | Manifest Abundance, Love & Good Fortune",
+      "url": "https://www.youtube.com/watch?v=1BWzcEM2TTg",
+      "subjects": [
+        "manifestation"
+      ],
+      "channel": "Bea Walker"
+    },
+    {
+      "title": "Start Your Day with Gratitude | 6-Minute Guided Morning Meditation",
+      "url": "https://www.youtube.com/watch?v=2TTyEv9u74g",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bea Walker"
+    },
+    {
+      "title": "Settle Down Before Sleep | Guided Meditation for Deep Relaxation",
+      "url": "https://www.youtube.com/watch?v=Pkl7lAks5S8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Bea Walker"
+    },
+    {
+      "title": "8-Minute Guided Meditation for Anxiety Relief | Calm Your Mind & Body",
+      "url": "https://www.youtube.com/watch?v=x6Ee_fXX2wo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Bea Walker"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Anxiety Reset: Individual Coaching",
+      "url": "https://holisticbea.com/coaching",
+      "description": "Hour-long one-to-one video sessions that pair coaching with breathing, somatic and nervous-system practices. The aim is to ease stress and anxious thinking in the moment and to leave clients with simple tools for daily life.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "breathwork",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec5833924d92c3e9addcf03/t/68167917db9d165ae9a7e651/1746303255616/TESTshoot_93_RS_RT.jpg?format=1500w"
+    },
+    {
+      "title": "1:1 Guided Meditation Sessions",
+      "url": "https://holisticbea.com/guided-meditation-sessions",
+      "description": "Private online meditation lessons with a Chopra-certified teacher, for complete beginners or for people who want to deepen an existing practice. Sessions focus on finding a way of meditating that is easy to keep up.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec5833924d92c3e9addcf03/t/68167917db9d165ae9a7e651/1746303255616/TESTshoot_93_RS_RT.jpg?format=1500w"
+    },
+    {
+      "title": "The Anxiety Journal",
+      "url": "https://holisticbea.com/anxiety-journal",
+      "description": "A downloadable, fillable workbook of more than 100 pages. It explains how the nervous system responds to stress and gathers regulation practices, an emotions wheel, reflection questions, journal pages and daily affirmations.",
+      "price": "$19.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/5ec5833924d92c3e9addcf03/t/6a6a71a6ee0be16754781e89/1785360806186/Amxiety+journal-1.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3003,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/bea-walker.json",
+    "hub": null,
+    "tier_evidence": "YouTube @holisticbea 3 subscribers (YouTube Data API, 12 Nov 2026); Instagram @holisticbea_ and Facebook not read (off limits); Insight Timer not opened → ~3 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://holisticbea.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): anxiety and nervous-system wording passes; she states she is not a therapist. Her blog carries immune-boosting-herb, depression and many recipe/nutrition posts, none listed. Anxious to Aligned (group programme) is left out because its page offers 'a gentle holistic alternative to medication'.",
+      "Base 'Los Angeles' comes from her own site's description meta text (home page), not from body text; her blog posts also follow Southern California produce.",
+      "Counts unreadable for Instagram (main account); YouTube channel is tiny (3 subscribers, 5 videos, all Sept 2026).",
+      "No email published; contact form only.",
+      "Photo 1 is her YouTube avatar (same shoot as the site photos, clearly her); photo 2 from her own site (images.squarespace-cdn.com, robots 404 = no rules).",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "Anxious to Aligned (8-week group programme, waitlist): its page pitches it as 'a gentle holistic alternative to medication' (health rule, replacing medical care).",
+      "Energetic Alignment sessions: share the /guided-meditation-sessions (and /coaching) page URL with items already listed.",
+      "Sisters in Sadhana course: page is empty (no results).",
+      "Corporate wellness: custom workplace sessions, not a public offering.",
+      "Blog posts (immune herbs, depression, recipes): not listed."
+    ]
+  },
+  "images_final": true
+}

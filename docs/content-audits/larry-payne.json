@@ -1,0 +1,152 @@
+{
+  "healer": {
+    "healer_slug": "larry-payne",
+    "location_source": "https://www.samata.com/meet-larry",
+    "create": {
+      "name": "Dr. Larry Payne",
+      "bio": "Larry Payne is a Los Angeles yoga teacher and author who has taught since 1980, when he opened the Samata Yoga Center there. He came to yoga at the end of the 1970s as an advertising executive troubled by back pain and stress, studied in eleven countries and trained in India, and later took master's and doctoral degrees in fitness education with a focus on hatha yoga. He led the International Association of Yoga Therapists as its first president, helped start the yoga curriculum at UCLA's medical school and set up the yoga therapy certificate at Loyola Marymount University. He lives in Los Angeles, and his archive includes a 1987 tribute film to T. Krishnamacharya and a 1986 routine taught by T.K.V. Desikachar.\n\nThrough Samata International he now teaches mostly online over Zoom: group classes with Yonetta Asin, private sessions and Prime of Life Yoga, a training for teachers and keen students that adapts practice for people over fifty. He co-wrote Yoga for Dummies with Georg Feuerstein and has written several other guides, among them Chair Yoga for Dummies, Yoga After 50 for Dummies and a manual on the business of teaching yoga. Samata also sells his earlier practice programmes as streaming videos and DVDs.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Los Angeles, California",
+      "country": "United States",
+      "subjects": [
+        "yoga"
+      ],
+      "website_url": "https://www.samata.com/",
+      "booking_url": "https://www.samata.com/group-yoga-classes",
+      "youtube_url": "https://www.youtube.com/@larrypayneyoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@samata.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/63180cf24e039977b07376c7/2390b2c0-5385-47aa-a4df-b81ae9fd73da/Meet-Larry-Payne.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What is Yoga Therapy?",
+      "url": "https://www.youtube.com/watch?v=QRQ4yg4F6yo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Samata International Yoga & Health Center"
+    },
+    {
+      "title": "Part 1: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986",
+      "url": "https://www.youtube.com/watch?v=_1k_Mb2xFGM",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Samata International Yoga & Health Center"
+    },
+    {
+      "title": "Part 2: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986",
+      "url": "https://www.youtube.com/watch?v=loRYThtBClo",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Samata International Yoga & Health Center"
+    },
+    {
+      "title": "Part 3: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986",
+      "url": "https://www.youtube.com/watch?v=pmgz_kY2VDA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Samata International Yoga & Health Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Group Yoga Classes",
+      "url": "https://www.samata.com/group-yoga-classes",
+      "description": "Live group classes with Larry Payne and Yonetta Asin, joined on Zoom or in person. Single classes can be booked, or a series of eight at the usual rate.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63180cf24e039977b07376c7/b586c123-d94f-447c-af34-d69feba94b5b/CdEJmaGVIAAvNQK.jfif"
+    },
+    {
+      "title": "Classic Beginner's Yoga for Men & Women",
+      "url": "https://www.samata.com/dvds/p/classic-beginners-yoga-for-men-women",
+      "description": "A gentle first yoga programme filmed in Malibu, in a 15-minute and a 28-minute version, with audio files of both routines for practice anywhere. It is sold as a DVD or as streaming video.",
+      "price": "$24.95 (DVD)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/63180cf24e039977b07376c7/6333b273ddcca609c66e6a40/63347db652d6432f75ed4b6c/1787816014662/Clsassoc-Beginners-Yoga-DVD-1.jpg?format=1500w"
+    },
+    {
+      "title": "Tribute to Prof. T. Krishnamacharya",
+      "url": "https://www.samata.com/dvds/p/krishnamacharya-tribute",
+      "description": "An 80-minute archive film with footage of Indra Devi and T.K.V. Desikachar, a slide presentation on Krishnamacharya's life and photographs of him practising postures at 84. Part of the proceeds goes to the Krishnamacharya Yoga Mandiram.",
+      "price": "$24.95 (DVD)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/63180cf24e039977b07376c7/6333b273ddcca609c66e6a40/633467617ba62c27afa2b236/1787816005613/Tribute+DVD+1+%282500x2500%29.jpg?format=1500w"
+    },
+    {
+      "title": "Common Lower Back Problems",
+      "url": "https://www.samata.com/dvds/p/common-lower-back-problems",
+      "description": "Two lower-back yoga routines, of 15 and 30 minutes, drawn from his years of work with back clients. The page advises against it for acute back problems.",
+      "price": "$24.95 (DVD)",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/63180cf24e039977b07376c7/6333b273ddcca609c66e6a40/6335d625e287394309980a39/1787816108293/CommonLowerBack-DVD1.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3072,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/larry-payne.json",
+    "hub": null,
+    "tier_evidence": "YouTube @larrypayneyoga ('Samata International Yoga & Health Center') 832 subscribers (YouTube Data API, 12 Nov 2026); Instagram @larrypayneyoga and Facebook not fetched → 832 readable → local_hero",
+    "tier_override": null,
+    "email": "yes",
+    "email_source": "https://www.samata.com/contact-us",
+    "contact_form_url": "https://www.samata.com/contact-us",
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): yoga for back care and for people over fifty passes as practice. His private Yoga Therapy Rx plan (reduce stress, 'eliminate pain', improve mental health) is pain relief through practice in wellbeing words, but the page frames it as a rehabilitation programme with assessment, food advice and claims about immune power, so it is left out as clinical therapy (therapy leads: list only the practice they lead). Owner may wish to add it back.",
+      "Possible editorial-stature override: co-author of Yoga for Dummies and founding president of the International Association of Yoga Therapists; tier left at local_hero.",
+      "Photo: the only usable photo shows him standing over a student lying on a mat (two people); his YouTube avatar is the Samata logo. Owner may want a solo headshot.",
+      "Brand inbox: info@samata.com (Samata International).",
+      "Common Lower Back Problems names lumbar strain, sciatica and disc problems as what its routines address; kept as a practice routine naming a condition (borderline).",
+      "Videos: his channel's most-viewed are mostly short clips of other teachers' anniversary greetings and promotional testimonials; the four listed are his own teaching (an explainer and the 1986 Desikachar routine in three parts). All pass oEmbed.",
+      "Name: 'Dr. Larry Payne' as his site styles him (Ph.D.); slug without title."
+    ],
+    "left_out": [
+      "Books (Yoga for Dummies, Yoga After 50 for Dummies, Chair Yoga for Dummies, The Business of Teaching Yoga): no ISBN on his own product pages; publisher pages not opened. Yoga Rx (sold on treating illnesses such as heart disease, diabetes and asthma) and Chair Yoga for Dummies (blurb claims lower blood pressure and inflammation) would be out on the health rule anyway; Yoga Therapy & Integrative Medicine is a clinical text.",
+      "Private Yoga Therapy (Yoga Therapy Rx Wellness Plan): clinical therapy framing (see flags).",
+      "Prime of Life Yoga teacher training: all 2026 dates (Jan–Oct 2026) have passed; no 2027 dates published.",
+      "Restorative Health for Women (claims to stimulate the endocrine system and hormone release), Immune Booster and Weight Management videos: health-claim or fitness framing.",
+      "Events: none listed ('stay tuned').",
+      "YouTube anniversary clips by other teachers, testimonials, the Smithsonian medical yoga symposium talk (clinical) and promo trailers."
+    ]
+  },
+  "images_final": true
+}

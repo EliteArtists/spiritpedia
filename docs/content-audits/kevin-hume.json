@@ -1,0 +1,169 @@
+{
+  "healer": {
+    "healer_slug": "kevin-hume",
+    "location_source": "https://www.perthmeditation.com.au/",
+    "create": {
+      "name": "Kevin Hume",
+      "bio": "Kevin Hume is a meditation and mindfulness teacher in Perth, Western Australia. He first learned to meditate in 1992 with Eric Harrison of the Perth Meditation Centre and started teaching in 2002, after a career as a media adviser in public life in New South Wales and New Zealand. In 2007 he set up the Sydney Meditation Centre, and in 2019 he moved back to Perth, where he now runs Perth Meditation Courses & Coaching from a studio in Northbridge. He has also presented radio series for ABC Radio on meditation across six spiritual traditions and on science and the Buddha.\n\nHis teaching is non-sectarian: he draws on Buddhist and other contemplative traditions alongside current research, and keeps the practices simple enough to use in a busy day. Students begin with a six-week introductory course and can go on to advanced and masters courses that explore emotional awareness, energy and sound, and the search for meaning. He also gives private sessions for individuals and couples, runs a six-week course for people who want to teach meditation, and sells his own guided meditations on CD and as downloads. Classes are held seated on chairs in small groups.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Perth, Western Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.perthmeditation.com.au/",
+      "booking_url": "https://www.perthmeditation.com.au/consultations/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kevin@perthmeditation.com.au",
+      "image_urls": [
+        "https://www.perthmeditation.com.au/wp-content/uploads/2015/07/kevin-hume2-e1441254678585.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Traffic Light Meditation",
+      "url": "https://www.youtube.com/watch?v=YxKpUgwrhcQ",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Sydney Meditation Centre"
+    },
+    {
+      "title": "Lotus",
+      "url": "https://www.youtube.com/watch?v=2KpF17BYwUI",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Sydney Meditation Centre"
+    },
+    {
+      "title": "Breath Meditation",
+      "url": "https://www.youtube.com/watch?v=wRQPswjavbI",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Sydney Meditation Centre"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "First Steps: Introduction to Meditation",
+      "url": "https://www.perthmeditation.com.au/course-information/",
+      "description": "A six-session beginners' course in Northbridge that explains how meditation works and gives two practices each week: a body-based relaxation and a new technique to try. Course notes and guided recordings come with it, and advanced and masters courses follow on.",
+      "price": "$600 per person",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2015/07/kevin-hume2-e1441254678585.jpg"
+    },
+    {
+      "title": "Learn to Teach Meditation and Mindfulness",
+      "url": "https://www.perthmeditation.com.au/meditation-teacher-training/",
+      "description": "Six Saturday classes for experienced meditators who want to teach. Participants look at which techniques suit which audiences, write and present their own guided scripts, and work through real teaching scenarios.",
+      "price": "$750",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2020/02/kevin-in-action.jpg"
+    },
+    {
+      "title": "Private Meditation Courses & Coaching",
+      "url": "https://www.perthmeditation.com.au/consultations/",
+      "description": "One-to-one, couples and small-group meditation tuition at his Northbridge studio, usually over four to eight hour-long sessions shaped around the person's own aims, such as calmer sleep, steadier emotions and clearer focus.",
+      "price": "$200.00 AUD single session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2019/06/northbridge.jpg"
+    },
+    {
+      "title": "First Steps in the Journey to Peace of Mind CD",
+      "url": "https://www.perthmeditation.com.au/product/first-steps-in-the-journey-to-peace-of-mind/",
+      "description": "A CD of guided meditations voiced by Kevin Hume to go with his beginners' course, for practice at home.",
+      "price": "$25.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2015/07/cd-kh-first.png"
+    },
+    {
+      "title": "Loving Kindness mp3",
+      "url": "https://www.perthmeditation.com.au/product/loving-kindness-mp3/",
+      "description": "A downloadable guided loving-kindness meditation recorded by Kevin Hume.",
+      "price": "$3.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2015/08/loving-kindness.png"
+    },
+    {
+      "title": "Flow of Chi (Chakras) mp3",
+      "url": "https://www.perthmeditation.com.au/product/flow-of-chi-chakras-mp3/",
+      "description": "A downloadable guided practice that moves attention through the body's energy centres, recorded by Kevin Hume.",
+      "price": "$5.99",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "image": "https://www.perthmeditation.com.au/wp-content/uploads/2015/08/flow-of-chi.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3021,
+    "restored_from": "docs/content-audits/americas-oceania-sprint-1/skipped/kevin-hume.json",
+    "tier_evidence": "YouTube: the Sydney Meditation Centre channel he founded has 6 subscribers (YouTube Data API, 12 Nov 2026); no other accounts linked from his site → under 100k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.perthmeditation.com.au/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Regional: based in Northbridge, Perth (Western Australia).",
+      "Health rule: his pages use wellbeing wording (stress, sleep, pain management, anxiety, improved health) and say private clients are often referred by GPs and specialists; read as wellbeing through practice, not a claim to treat a condition. The home page also quotes a 2003 TIME article saying studies show meditation boosting immune systems; that is a quoted press line, not an item, and nothing in the plan repeats it.",
+      "Videos come from the Sydney Meditation Centre channel, which he founded (his own site embeds them); the channel is small and from 2015.",
+      "Secular, non-sectarian meditation that draws on Buddhist and other traditions; the earlier sprint thought it more coaching than spiritual teaching, owner may wish to confirm."
+    ],
+    "left_out": [
+      "More Steps (advanced) and Further Steps (masters) courses: they share the course-information page URL with First Steps.",
+      "Healing mp3 and Anxieties Release mp3: not needed; the chosen downloads are clearer practice items.",
+      "Workplace, military, first-responder and elite-athlete programmes: corporate or specialist performance work rather than public teaching.",
+      "The Good Life video (1:52, under the ~2-minute floor); What is Stress? and Emotional Literacy (under 2 minutes).",
+      "Term dates on the course schedule (September 2026) have passed, so courses are listed undated."
+    ]
+  },
+  "images_final": true
+}

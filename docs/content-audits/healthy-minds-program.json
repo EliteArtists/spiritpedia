@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "healthy-minds-program",
+    "location_source": null,
+    "no_public_base": "Humin's own pages (app, about, contact) publish no headquarters city or address; it names only its research partnership with the Center for Healthy Minds at UW–Madison, which is not its stated base.",
+    "create": {
+      "name": "Healthy Minds Program",
+      "bio": "The Healthy Minds Program is a free meditation app made by Humin, a non-profit founded in 2014 by the neuroscientist Richard J. Davidson and known until 2026 as Healthy Minds Innovations. Its lessons follow a framework of four trainable skills that Humin's contemplative scientist Cortland Dahl set out in 2016: awareness, connection, insight and purpose. Each skill is taught through short talks and guided sittings, from calm attention and kindness towards others to noticing patterns of thought and acting from one's values.\n\nUsers move along a step-by-step path that holds up to 600 days of practice, choosing the length of each sitting, and there are no adverts or charges; donations keep it free. The guides include Davidson and Dahl alongside a health coach, a health educator, a designer of mindfulness technology and a contemplative-education advocate. The app is secular and grounded in research: Humin says it has been used in more than fifty studies with groups such as teachers, carers, healthcare staff and firefighters. Humin also sells short self-paced online courses that build on the same skills.",
+      "tier": "local_hero",
+      "entity_type": "app",
+      "availability": "worldwide",
+      "founded_year": 2014,
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://www.humin.org/wellbeing-tools/app",
+      "booking_url": "https://www.humin.org/wellbeing-tools/app",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "support@humin.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "The Science of Flourishing Course",
+      "url": "https://www.humin.org/wellbeing-tools/course/flourishing",
+      "description": "A self-paced online course in six modules, with 29 videos and over four hours of material, on the four skills behind the app. It combines short lessons on the research with practices for calm attention, warmer relationships and self-understanding. Access lasts one year.",
+      "price": "$49.99 (listed down from $150), single purchase with one year's access",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Transform Your Phone Habits",
+      "url": "https://www.humin.org/wellbeing-tools/course/transform-your-phone-habits",
+      "description": "A four-module self-paced course on using a phone with more intention. Videos, guided practices and nightly reflections help participants notice what prompts automatic scrolling and try small daily changes, with optional reminder texts.",
+      "price": "$19 (listed down from $94), single purchase with one year's access",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Healthy Minds Program app",
+      "url": "https://www.humin.org/wellbeing-tools/app",
+      "description": "The free app itself, for iPhone and Android, with guided meditations and short talks arranged as a path through awareness, connection, insight and purpose. There are no adverts, and sitting lengths can be chosen.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3061,
+    "restored_from": "docs/content-audits/night-sprint-2026-11-09/skipped/healthy-minds-program.json",
+    "hub": null,
+    "tier_evidence": "YouTube @healthymindsinnovations ('joinhumin') 1 subscriber, 0 videos (YouTube Data API, 12 Nov 2026); Instagram @joinhumin, Facebook, TikTok and LinkedIn not fetched (off limits) → 1 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.humin.org/wellbeing-tools/course/flourishing",
+    "contact_form_url": "https://www.humin.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore, borderline (owner to decide): the app page's headline results panel claims user results of '-24% Depression reduction' and '-16% Loneliness reduction' from its research, and a testimonial there calls it 'almost as good as the best therapist I had'. This reads as a research claim that the app reduces depression rather than a cure claim; the rest of the page is stress, calm, focus and kindness wording. Held for the owner's call.",
+      "No usable image: every image on humin.org is served from cdn.prod.website-files.com (Webflow), whose robots.txt answered 403 on 12 Nov 2026, so the ingest refuses them; the YouTube channel avatar is a default letter 'j'. The App Store icon (mzstatic) is not on its own site and was not used.",
+      "Brand inbox: support@humin.org (mailto on the Flourishing course page, for course questions); the contact page has a form.",
+      "The Flourishing course page lists the needs it 'supports', including Mood & Depression Support and Addiction & Habit Change; the Phone Habits course lists Sleep Support and Anxiety & Stress Support. Kept as support wording, not treatment claims; owner may prefer to drop the Flourishing course.",
+      "Published user numbers: Humin says the app delivers its training 'to millions worldwide' (about page) → possible override by published user numbers.",
+      "Founder Richard J. Davidson is not on Spiritpedia; Cortland Dahl (an app guide and Humin's Chief Contemplative Officer) is listed as cortland-dahl. Apps are not hubs, so no link made.",
+      "Secular, science-framed practice rather than a named contemplative tradition (the earlier skip's scope point); kept as a meditation app.",
+      "Dry run (dev, 12 Nov 2026): plan parses; unsolved images only (no photo for the app or its items), as expected for the hold."
+    ],
+    "left_out": [
+      "Born to Flourish (book, ISBN 9781668066232 on humin.org's book page): the page does not name its authors (only the Simon & Schuster link's URL names Richard J. Davidson), and it belongs to its authors rather than the app; simonandschuster.com not opened.",
+      "Free Emotional Styles Quiz: a questionnaire, not a practice.",
+      "Sample practice 'The Calm Presence of Awareness' (MP3 on the Webflow CDN, whose robots.txt refuses us).",
+      "Organisations, education and researcher services (business and institutional offers)."
+    ],
+    "held": "Held for the owner (12 Nov 2026): no usable image (Webflow CDN refuses our robots.txt request; YouTube avatar is a default letter), and the app page carries a '-24% Depression reduction' research claim (health rule, borderline)."
+  }
+}

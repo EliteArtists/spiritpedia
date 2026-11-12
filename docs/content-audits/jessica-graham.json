@@ -1,0 +1,159 @@
+{
+  "healer": {
+    "healer_slug": "jessica-graham",
+    "location_source": "https://yourwildawakening.com/wild-awakening-about-faq/",
+    "no_public_base": "Neither site states a current home city. The older Wild Awakening pages (about 2017) tie their work to the Los Angeles mindfulness community and an LA book launch, and their YouTube channel lists the US, but nothing current confirms a base.",
+    "create": {
+      "name": "Jessica Graham",
+      "bio": "Jessica Graham is a meditation teacher, author and coach who founded Wild Awakening, a secular project built on meditation, mindfulness and self-inquiry. Drawn to meditation even as a child, they began studying it seriously in 2008 and were soon teaching. They name Shinzen Young and Adyashanti among the teachers who matter most to them, and they describe a run of awakening experiences that changed how they saw themselves and led them to guide others.\n\nThey see awakening as an open-ended process rather than a finish line, and their private spiritual guidance sessions are shaped around each person, combining meditation and mindfulness practice with writing exercises and work on old trauma and grief. Their YouTube channel, run as the Wild Awakening Collective, holds guided practices on positivity, self-love, working with thoughts and emotions, cravings and easing anxiety, alongside longer talks on awareness and the body.\n\nGraham is also an actor and filmmaker who has won awards for that work. They have written two books: Good Sex (2017), which brings meditation into intimacy and relationships, and Being (Sick) Enough (North Atlantic Books, 2025), a memoir about living with invisible illness and the effects of childhood trauma. They use they/them pronouns.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spiritual-awakening"
+      ],
+      "website_url": "https://jessicagraham.com/",
+      "booking_url": "https://yourwildawakening.com/wild-awakening-spirituality/",
+      "youtube_url": "https://www.youtube.com/@wildawakening",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/1EdVkmIC-snKOhHzIvCjHohBLjWyHSiWviTpn6qKNigEIr1QZkoThgiKu0mxriQC4210v-w4mg=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "8-Minute Positivity Boost Meditation",
+      "url": "https://www.youtube.com/watch?v=7PUwvxMrs-s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Overcome Cravings:  Guided Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=j1DHkwKZOtM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Guided Mindfulness Meditation: Self Love",
+      "url": "https://www.youtube.com/watch?v=hVA9kHkvd6s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Focus on Self - Guided Meditation",
+      "url": "https://www.youtube.com/watch?v=F_cOJ4VyhaM",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Meditate Now - A 5-minute guided meditation",
+      "url": "https://www.youtube.com/watch?v=hiCxAGR5E-Q",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Guided Mindfulness Meditation: Working with Thoughts and Emotions",
+      "url": "https://www.youtube.com/watch?v=jX6FY7ITAEo",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Mindfulness of the Mind, Part 1",
+      "url": "https://www.youtube.com/watch?v=UDteRgpQbbk",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Anxiety Relief: 8 Minute Mindfulness Meditation",
+      "url": "https://www.youtube.com/watch?v=nImEgGk1Dvc",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Effortless Awareness",
+      "url": "https://www.youtube.com/watch?v=amfS7BtzYkk",
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "The Body Aware",
+      "url": "https://www.youtube.com/watch?v=yUWkP64PLz4",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Wild Awakening: Adventures in Spirituality",
+      "url": "https://yourwildawakening.com/wild-awakening-spirituality/",
+      "description": "Private one-to-one spiritual guidance tailored to the individual, using meditation, mindfulness, writing exercises and trauma and grief resolution to support insight and awakening. Begins with a free introductory session by application.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spiritual-awakening"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3018,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/jessica-graham.json",
+    "hub": null,
+    "tier_evidence": "YouTube @wildawakening: 18,600 subscribers (Data API, 12 Nov 2026) → local_hero",
+    "email": "no",
+    "email_source": null,
+    "contact_form_url": "https://yourwildawakening.com/contact/",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): trauma and grief resolution is wellbeing wording; no cure, disease-treatment or medical-replacement claims found. Being (Sick) Enough is a chronic-illness memoir (PRH page), not a treatment programme. A testimonial on the spirituality page calls the sessions 'a therapeutic experience unlike any other I have tried. And I have tried them all.' Read as praise, not a better-than-therapy claim; owner may judge otherwise.",
+      "Sex-centred content: the channel's most-viewed videos (self-pleasure, orgasm, 'better sex' meditations) and the Good Sex book and sex/intimacy coaching are left out; owner to decide whether the listing suits Spiritpedia at all given that this is most of their public profile.",
+      "Their current site jessicagraham.com is still a 'Coming soon' page (trauma resolution support and couples coaching by Google Form); the spirituality-session page is on the older yourwildawakening.com, last visibly updated around 2017. The offering may be stale.",
+      "YouTube channel description points to weekly live classes at lu.ma/wildawakening (now luma.com, robots open); the calendar showed no upcoming events on 12 Nov 2026, so no class item.",
+      "Pronouns: they/them per YouTube and the publisher; the older Wild Awakening pages use she/her.",
+      "Tier: 18,600 YouTube subscribers; the old skip noted 18.6K too.",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "Trauma resolution support (1:1, application form on jessicagraham.com): therapy-type service.",
+      "Couples coaching and Sex & Creativity / Sex & Intimacy sessions: sex and relationship coaching, not a spiritual practice.",
+      "Good Sex: Getting Off without Checking Out (2017): sex-centred; owner may add it (PRH page lists ISBN 9781623172343, not opened).",
+      "Being (Sick) Enough (North Atlantic Books, 2025): memoir; ISBN 9798889840008 on the PRH page has no ISBN-10 form and no ASIN was seen.",
+      "Videos: all sex and pleasure practices, 'Overcome Craving and Quit Smoking' (addiction programme wording), 'Good Sex Tip' clips."
+    ],
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "held": "Owner to decide: most-viewed videos, a book and coaching are sex-centred (left out); jessicagraham.com is a 'coming soon' page and the sessions page dates from about 2017."
+  }
+}

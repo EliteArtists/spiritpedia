@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "amanda-huggins",
+    "location_source": null,
+    "no_public_base": "Her own site publishes no home city; the Kids & Family page says only that in-person family sessions are available to residents of the Mid-Hudson Valley, New York (a region, not a town), and outside sources disagree (Oakland, California; New York, NY).",
+    "create": {
+      "name": "Amanda Huggins",
+      "bio": "Amanda Huggins is an American coach, author and energy worker whose teaching grew out of her own years of struggling with anxiety and self-doubt. She completed 400 hours of yoga teacher training in 2014 and has taught meditation since 2016, the year she opened a holistic coaching practice that joined coaching with body-based, mindset and soul work. She later trained in energy healing and the chakras, naming the author Cyndi Dale as her main teacher and writing chapters for one of Dale's chakra books, and she apprenticed in coaching with Melanie Klein.\n\nShe now calls her work integrative healing: one-to-one sessions that begin with energy work, in which she connects with a client's energy and guides, and end with practical coaching on next steps. She also teaches children emotional regulation, grounding and simple meditation, working alongside their parents over Zoom. Her self-paced online courses look at anxious attachment and self-love after a relationship ends, at moving from a scarcity mindset towards abundance, and at a mind, body and soul approach to anxious thoughts. Her book Anxiety to Empowerment, published by Llewellyn in 2024, collects exercises, journal prompts and meditations for understanding anxious patterns.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "self-healing",
+        "energy-medicine",
+        "meditation"
+      ],
+      "website_url": "https://amandahugginscoaching.com/",
+      "booking_url": "https://amandahugginscoaching.com/courses/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://amandahugginscoaching.com/wp-content/uploads/2022/07/Amanda-Huggins-Coaching-Approach-image-header.jpg",
+        "https://amandahugginscoaching.com/wp-content/uploads/2022/05/Amanda-Huggins-Coaching-My-Journey-Image.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Healing the Heart",
+      "url": "https://amandahugginscoaching.com/courses/healing-the-heart/",
+      "description": "A self-paced course, once called Relationship Anxiety 101, for people working through an anxious attachment style or the end of a relationship. Six video lessons with journal prompts look at anxious patterns, anger and sadness, self-worth and boundaries, and ways to self-soothe, closing with a self-love meditation.",
+      "price": "$197",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "conscious-relationships",
+        "meditation"
+      ],
+      "image": "https://amandahugginscoaching.com/wp-content/uploads/2022/07/Amanda-Huggins-Coaching-Featured-Image-Course-2.jpg"
+    },
+    {
+      "title": "Abundance in Action",
+      "url": "https://amandahugginscoaching.com/courses/abundance-in-action/",
+      "description": "A self-paced course on noticing scarcity thinking and limiting beliefs and practising a more abundant outlook. It runs in three parts, each pairing a journaling exercise with a meditation, and comes bundled with her introductory anxiety course.",
+      "price": "$97",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "image": "https://amandahugginscoaching.com/wp-content/uploads/2022/07/Amanda-Huggins-Coaching-Featured-Image-Course-1.jpg"
+    },
+    {
+      "title": "Holistic Anxiety Management 101",
+      "url": "https://amandahugginscoaching.com/courses/holistic-anxiety-management-101/",
+      "description": "Her introductory self-paced course on working with anxious thoughts through mind, body and soul. Five video lessons with journal prompts move from understanding anxious patterns to processing thoughts and self-empowerment, with a bonus meditation for relaxation.",
+      "price": "$75",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://amandahugginscoaching.com/wp-content/uploads/2022/07/Amanda-Huggins-Coaching-Featured-Image-Course-3.jpg"
+    },
+    {
+      "title": "Kids & Family Coaching",
+      "url": "https://amandahugginscoaching.com/kids-and-families/",
+      "description": "Weekly online sessions in which she teaches children to name and settle their emotions with grounding, visualisation and mindfulness tools, plus a monthly session with the parents. It runs for at least three months.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://amandahugginscoaching.com/wp-content/uploads/2022/04/Amanda-Huggins-Coaching-Design-logo-colored-transparent.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3001,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/amanda-huggins.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of her own found; Instagram @itsamandahuggins and TikTok not fetched (off limits); her Anxiety Talks podcast page now returns 404 (12 Nov 2026) → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://amandahugginscoaching.com/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): anxiety coaching and energy healing pass as wellbeing work, but her Services page (all 1:1 sessions) carries a client testimonial that he had tried medicine, psychiatrists and therapists and nothing worked until her, and the home page (website_url) has a testimonial calling her a better approach to mental health than countless therapists. The session items are left out for that; the home page itself stays as website_url. Owner may prefer to drop her.",
+      "Counts unreadable for her main accounts (Instagram, TikTok); tier 0 readable.",
+      "No email published; contact form only.",
+      "Book Anxiety to Empowerment (Llewellyn, 2024) is named in the bio but not listed: its ISBN appears only on retailer pages and issuu (issuu refused our robots.txt with a 403), not on a page we opened that allows us.",
+      "Base: only a region (Mid-Hudson Valley, NY) for in-person family sessions; left null.",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "Integrative Healing Sessions ($300), Life Coaching + Integrative Healing (from $4,000) and the Anxiety Therapeutics container ($1,500): all on /services/, which carries a 'tried medicine, psychiatrists, therapists… nothing did the trick' testimonial (health rule, replacing medical care).",
+      "RECLAIM: a group course that began in March 2023 (dated, past).",
+      "Anxiety to Empowerment (book): no ISBN from a page we may open.",
+      "Root Chakra (Llewellyn's Chakra Essentials): edited by Cyndi Dale; she contributed chapters only.",
+      "Anxiety Talks podcast: page now 404.",
+      "Video ANvvOSvbTDs (Spiritual Psychology School channel, 306 views): she is a guest; too slight."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "nigel-meadows",
+    "location_source": "https://www.nigelmeadows.com/events",
+    "create": {
+      "name": "Nigel Meadows",
+      "bio": "Nigel Meadows is a breathwork facilitator and sound healer who works in Manchester. He came to conscious connected breathing and sound through his own search for healing, later trained and qualified in both, and has spent more than fifteen years guiding people through them. Breath is the centre of his work: a continuous, circular breathing pattern that can lead into deep relaxation, emotional release and a stronger sense of presence, supported by the sound of crystal alchemy bowls, Tibetan bowls, gongs and drums.\n\nHe offers one-to-one sessions that open with a consultation and combine breathwork with a sound journey, along with sound-only sessions and longer breathwork courses. Around Manchester he leads weekly group classes, sound baths, half-day mini retreats and seasonal gatherings that weave together movement, breath and sound, and he takes the same format to venues in Yorkshire. For people who want to guide others, he runs Breath of Life, an eight-month facilitator training with live online sessions, supervised practice and a four-day intensive in Manchester that covers technique, facilitation skills, ethics and self-inquiry.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local",
+      "city": "Manchester",
+      "country": "United Kingdom",
+      "subjects": [
+        "breathwork",
+        "sound-healing"
+      ],
+      "website_url": "https://www.nigelmeadows.com/",
+      "booking_url": "https://www.nigelmeadows.com/services",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "nigel@nigelmeadows.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/63aee624f43d94744c690be4/1630140c-2c09-47ff-aeb2-d30f4345abbf/portrare+2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Breathwork and Sound Healing Sessions",
+      "url": "https://www.nigelmeadows.com/services",
+      "description": "One-to-one sessions that begin with a consultation and then pair guided conscious connected breathing with a sound journey on crystal alchemy bowls, gongs, drums and Tibetan bowls. Single sessions and packages of three or six are available, and lower-income clients are invited to ask about pricing.",
+      "price": "£75.00 single session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "sound-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63aee624f43d94744c690be4/c57d84d8-aa88-49dc-836d-1d0a30676ac4/IMG_4581.JPG"
+    },
+    {
+      "title": "Breath of Life Breathwork Facilitator Training",
+      "url": "https://www.nigelmeadows.com/breathwork-facilitator-training",
+      "description": "An eight-month experiential training for people who want to guide others through breathwork, including conscious connected breathing. It runs through 22 live sessions, supported one-to-one and group practice and a four-day in-person intensive in Manchester, and entry is by application.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/63aee624f43d94744c690be4/5ef6e8dc-928a-4bd7-9517-bf201fbbbf11/ChatGPT+Image+Aug+23%2C+2026+at+08_33_39+AM.png"
+    },
+    {
+      "title": "Resonant Presence: An Alchemy Morning Retreat",
+      "url": "https://dandelion.events/e/z7830",
+      "description": "A three-hour morning in Manchester that moves from gentle guided movement and a cup of cacao into a steady, unforced breathwork session and then a full crystal-bowl sound immersion. No experience is needed.",
+      "price": "£27 super Early Bird (regular £45)",
+      "product_type": "retreat",
+      "start_date": "2026-12-20",
+      "end_date": "2026-12-20",
+      "subjects": [
+        "breathwork",
+        "sound-healing"
+      ],
+      "image": "https://r2.dandelion.events/2026/10/19/10/17/08/ea0ffad7-6e06-4360-8abe-bcc16b13024b/049cbc3c-9ac8-4087-bb99-d86e37cc551b.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3026,
+    "restored_from": "docs/content-audits/uk-europe-sprint-1/skipped/nigel-meadows.json",
+    "tier_evidence": "YouTube: the @nigelmeadows2527 channel his site links no longer resolves (YouTube Data API, 12 Nov 2026: no channel found); Instagram linked but never fetched; no readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.nigelmeadows.com/services",
+    "contact_form_url": "https://www.nigelmeadows.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Base: his site gives no 'based in' line; Manchester is taken from his weekly classes, events and training intensive, all held in Manchester (events and training pages). Owner may wish to confirm.",
+      "Thin: three items (sessions, facilitator training, one dated mini retreat) and no videos; his YouTube channel and the one embedded video (QtSBxj9VjCE, oEmbed 404) are gone.",
+      "Health rule: the home-page FAQ lists reasons people book, including 'relief from anxiety and depression symptoms' and 'better management of chronic pain'; this is a general FAQ line, not an item, and the plan repeats no such wording. Kept as wellbeing wording, flagged as borderline.",
+      "The About page writes his email as nigel@nigelmneadows.com (a typo); the services page has the correct mailto nigel@nigelmeadows.com, which is used.",
+      "Resonant Presence is booked through Dandelion under his event name Settle In Sound; ceremonial cacao is part of it (not a psychedelic).",
+      "Only one photo used (the About page portrait); other site photos show a practitioner at work but I could not be sure it is the same man.",
+      "Regional: Manchester (and events in Yorkshire)."
+    ],
+    "left_out": [
+      "Myofascial Energetic Release bodywork: hands-on bodywork therapy, out of scope.",
+      "FIX contrast therapy classes (sauna and cold plunge): fitness venue classes.",
+      "Weekly RESET (The Health Lab) and Somatic Unwind & Sound (The Lowry Hotel) classes and the Sunday Rituals: booked through the venues' own timetables, not pages of his.",
+      "Scent & Sound (15 Nov 2026) and Yorkshire Reset (6 Dec 2026): no booking URL on his page.",
+      "Ancoats Sound Bath (27 Oct 2026), Sunday Ritual (25 Oct and 8 Nov 2026) and the Man's Space meet (30 Oct 2026): dates passed.",
+      "Session packages (3 and 6 sessions, Deeper Dive) and gift card: same session item, no separate page URLs found."
+    ]
+  },
+  "images_final": true
+}

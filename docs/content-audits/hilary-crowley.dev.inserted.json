@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1494,
+    "healer_slug": "hilary-crowley"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fac01960-fc0e-4592-acdd-2b54bcdb6d96",
+      "slug": "remote-energy-healing-sessions",
+      "title": "Remote Energy Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "5739cc64-037b-45d2-babb-3747f77f8c82",
+      "slug": "in-person-energy-healing-sessions",
+      "title": "In-Person Energy Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "55f7e362-412d-41de-8568-d92760ac8eea",
+      "slug": "your-wisdom-within-a-journey-of-intuition-and-self-trust-2",
+      "title": "Your Wisdom Within: A Journey of Intuition and Self-Trust"
+    }
+  ],
+  "at": "2026-11-12T23:38:38.674Z"
+}

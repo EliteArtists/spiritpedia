@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1464,
+    "healer_slug": "amanda-huggins"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "4f9d99c8-2576-4a27-b1c1-9b7b408363c7",
+      "slug": "healing-the-heart",
+      "title": "Healing the Heart"
+    },
+    {
+      "table": "courses",
+      "id": "42e4b693-cb06-4ce2-96ec-85f49687baab",
+      "slug": "abundance-in-action",
+      "title": "Abundance in Action"
+    },
+    {
+      "table": "courses",
+      "id": "6bd406b7-ecf4-4cf8-8208-2543bf3e0131",
+      "slug": "holistic-anxiety-management-101",
+      "title": "Holistic Anxiety Management 101"
+    },
+    {
+      "table": "courses",
+      "id": "381e60d6-a2a7-4293-bfb1-0b09b873cb45",
+      "slug": "kids-family-coaching",
+      "title": "Kids & Family Coaching"
+    }
+  ],
+  "at": "2026-11-12T23:11:32.974Z"
+}

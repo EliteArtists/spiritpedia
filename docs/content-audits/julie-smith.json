@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "julie-smith",
+    "location_source": "https://julie-smith.net/contact/",
+    "create": {
+      "name": "Julie Smith",
+      "bio": "Julie Smith is a meditation teacher who works mainly with busy professionals, drawing on more than twenty years in corporate management before she began teaching. She studied Eastern philosophy and meditation across Asia, Europe and North America, from Nepal and Thailand to Scotland, and names the Buddhist scholar and contemplative teacher B. Alan Wallace as her principal teacher. She is also a board member of a charity, the Contemplative Consciousness Network, that brings meditation and science together.\n\nHer teaching is plain and non-religious, aimed at people who want to calm a busy mind, sleep better, ease stress and avoid burnout so they have more energy for work and family. She runs membership-based evening classes on Zoom in two streams, a one-hour foundation class for newer meditators and a two-hour advanced class for those who already practise regularly, with recordings so members can catch up. She also gives private sessions online or at Violet Hill Studios in Maida Vale, London, and offers a one-week personal retreat near the coastal town of Denia in Spain, built around a programme that helps guests fix a daily meditation habit. Newcomers can start with a free five-part video series that covers getting started, common obstacles and a guided relaxation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "London",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://julie-smith.net/",
+      "booking_url": "https://julie-smith.net/private-sessions/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "julie@julie-smith.net",
+      "image_urls": [
+        "https://julie-smith.net/wp-content/uploads/2018/08/julie-smith-photo-compressor.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Interactive Online Meditation Classes",
+      "url": "https://julie-smith.net/classes/",
+      "description": "Monthly membership for live evening meditation classes on Zoom: a one-hour Foundation class for newer meditators and a two-hour Advanced class for regular practitioners, up to three classes a month, with recordings. Members can change level or cancel at any time.",
+      "price": "Foundation £15–£35 pm; Advanced £30–£60 pm",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Private Meditation Sessions",
+      "url": "https://julie-smith.net/private-sessions/",
+      "description": "One-to-one meditation tuition tailored to the student's aims, held on Zoom, at the student's home or workplace, or at a studio in St John's Wood, London, by arrangement. Single hours or courses of three, six or eight sessions.",
+      "price": "£100.00 GBP (1 hour, my location); £125.00 GBP (1 hour, your location); £300.00 GBP (3 week course); £600.00 GBP (6 week course); £800.00 GBP (8 week course)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Personal Work/Life Balance Retreat in Spain",
+      "url": "https://julie-smith.net/wfh_in_spain/",
+      "description": "A one-week personal meditation retreat in Denia on Spain's Mediterranean coast, with a programme tailored to each guest to build a daily meditation habit, followed by two online group classes and two check-in calls. Booked for any available week from September to June.",
+      "price": "Individual £1490; couples £2490 (standard prices)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Success Through Stillness: Discover Meditation",
+      "url": "https://julie-smith.net/start-here/",
+      "description": "A free series of five short videos: how to get started and stay motivated, the three biggest obstacles to meditating, a guided relax-and-release meditation, practical tips, and how long to sit and how to re-centre during the day. Access by email sign-up.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3019,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/julie-smith.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel linked from her site; social links are Facebook, LinkedIn and Twitter (never fetched) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://julie-smith.net/contact/",
+    "contact_form_url": "https://julie-smith.net/contact/",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): her pages sell meditation on burnout, stress, anxiety and sleep (wellbeing wording, allowed). No disease-cure or medical-replacement claims found. The Peaceful Sleep System promises better sleep 'GUARANTEED' (money back); left out because its order button shows no price ('[paypal code]'), not for health reasons.",
+      "Stale site: the class page lists dates for 2023 only, the 15 Min Mornings course is for 2022 and the latest blog post is from the end of 2021. The site may not reflect current work; owner may want to confirm she still teaches before inserting.",
+      "Base: the contact page gives London class venue (Violet Hill Studios, Maida Vale) and +44 phone numbers, so London is used. The lead mentions Valencia, Spain; her retreat is in Denia (Valencia region) and may be her home, but the site does not say she lives there.",
+      "Spain retreat page carries an early-bird deadline with no year ('book before 16 February') and a COVID travel-rule refund note (booking policy, not a COVID item); standard prices used.",
+      "Two different phone numbers appear (footer and contact page); not used.",
+      "B. Alan Wallace is named as her teacher only; no link implied.",
+      "One photo only: headshot from the About page; the other site photo shows her with another person.",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "15 Min Mornings course (2022 dates), workshops Beating Burnout, Overcoming Insomnia, Revive Your Energy, Accelerate Towards Your Goals, Build Resilience (past or undated events).",
+      "Slovenia Retreat (listed under Previous Retreats).",
+      "Peaceful Sleep System (no visible price; broken order button).",
+      "3 Day Taster and Wellbeing & Resilience 10 Day online courses (registration pages not read; likely past dates).",
+      "Corporate talks (bespoke bookings)."
+    ],
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "held": "Site looks stale: class dates run only to 2023, latest blog post 2021; base uncertain (London class venue vs Valencia in the lead)."
+  }
+}

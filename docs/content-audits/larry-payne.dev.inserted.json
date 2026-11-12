@@ -1,0 +1,58 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1490,
+    "healer_slug": "larry-payne"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11146,
+      "slug": "what-is-yoga-therapy",
+      "title": "What is Yoga Therapy?"
+    },
+    {
+      "table": "videos",
+      "id": 11147,
+      "slug": "part-1-vintage-tkv-desikachars-yoga-routine-for-soccer-and-football-with-larry-payne-1986",
+      "title": "Part 1: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986"
+    },
+    {
+      "table": "videos",
+      "id": 11148,
+      "slug": "part-2-vintage-tkv-desikachars-yoga-routine-for-soccer-and-football-with-larry-payne-1986",
+      "title": "Part 2: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986"
+    },
+    {
+      "table": "videos",
+      "id": 11149,
+      "slug": "part-3-vintage-tkv-desikachars-yoga-routine-for-soccer-and-football-with-larry-payne-1986",
+      "title": "Part 3: Vintage TKV Desikachar's Yoga Routine for Soccer and Football - with Larry Payne, 1986"
+    },
+    {
+      "table": "courses",
+      "id": "01b8d3ff-f7b8-4d47-aeaf-36befed86e11",
+      "slug": "group-yoga-classes",
+      "title": "Group Yoga Classes"
+    },
+    {
+      "table": "courses",
+      "id": "2b7f8481-6aff-4dbe-beea-911df3688962",
+      "slug": "classic-beginners-yoga-for-men-women",
+      "title": "Classic Beginner's Yoga for Men & Women"
+    },
+    {
+      "table": "courses",
+      "id": "11032eea-165b-4824-98a2-cd0e846f6fbe",
+      "slug": "tribute-to-prof-t-krishnamacharya",
+      "title": "Tribute to Prof. T. Krishnamacharya"
+    },
+    {
+      "table": "courses",
+      "id": "ebcc035b-4a7d-40da-abdc-99c41975f2c8",
+      "slug": "common-lower-back-problems",
+      "title": "Common Lower Back Problems"
+    }
+  ],
+  "at": "2026-11-12T23:37:42.827Z"
+}

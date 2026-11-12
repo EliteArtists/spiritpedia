@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1457,
+    "healer_slug": "nigel-meadows"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a7d607c1-070d-4508-b1cf-5f1445dc46b4",
+      "slug": "breathwork-and-sound-healing-sessions",
+      "title": "Breathwork and Sound Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "00e6d8e1-e5da-42fc-a5d2-29d0f5dffff4",
+      "slug": "breath-of-life-breathwork-facilitator-training",
+      "title": "Breath of Life Breathwork Facilitator Training"
+    },
+    {
+      "table": "courses",
+      "id": "fb6808bf-2400-4b87-a58b-ed49d1c1f85e",
+      "slug": "resonant-presence-an-alchemy-morning-retreat",
+      "title": "Resonant Presence: An Alchemy Morning Retreat"
+    }
+  ],
+  "at": "2026-11-12T23:02:06.142Z"
+}

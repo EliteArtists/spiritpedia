@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "wendy-black-stern",
+    "location_source": "https://centerforsomaticgrieving.com/about",
+    "create": {
+      "name": "Wendy Black Stern",
+      "bio": "Wendy Black Stern is a yoga teacher and grief guide in Boulder, Colorado, who set up the Center for Somatic Grieving. Her work grew out of the death of her son, Noah; in 2012 she started the Grief Support Network, a nonprofit offering community to the bereaved, and later built the Center to carry that work further. She has practised and taught yoga for more than twenty-five years, holds certification in Phoenix Rising Yoga Therapy, and draws on teachers such as Ram Dass and Shiva Rea.\n\nAt the Center she treats grief as something to be felt and tended rather than fixed, using yoga, breath, meditation, journaling and circle sharing to help people notice where loss lives in the body. She leads small retreats on Maui, including one that pairs grief practice with surfing and writing, online group journeys, and one-to-one sessions by Zoom. For yoga teachers, coaches, death doulas and others who hold space for loss, she runs a 200-hour Mindful Grieving yoga teacher training, offered online or as a Maui immersion, with a self-paced foundations course as the first step.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Boulder, Colorado",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "website_url": "https://centerforsomaticgrieving.com/",
+      "booking_url": "https://centerforsomaticgrieving.com/one-on-one-somatic-grief-support",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6543bc6c0836e50ebff10e41/13d1aaf5-6532-4c5d-8280-585c5c76adc2/202310-Maui-Wendy-28.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meet the Wave: Somatic Grief, Surf & Writing Retreat",
+      "url": "https://centerforsomaticgrieving.com/meeting-the-wave",
+      "description": "Six days on Maui for a small group carrying loss, combining yoga, meditation and circle time with time in the ocean and writing practice, led by Wendy.",
+      "price": "Save with Pay in Full $3,950",
+      "product_type": "retreat",
+      "start_date": "2026-12-08",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "yoga",
+        "death-the-afterlife",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6543bc6c0836e50ebff10e41/dd5db2a2-2f31-4fae-869c-dd2a0e313f3d/CENTER+FOR+SOMATIC+GRIEVING+%28500+x+120+px%29+%282%29.png?format=1500w"
+    },
+    {
+      "title": "Mindful Grieving YTT — Maui Immersion",
+      "url": "https://centerforsomaticgrieving.com/ytt-maui",
+      "description": "The 200-hour Mindful Grieving yoga teacher training taught as eight days on Maui followed by two live online weekends, for yoga teachers, coaches, death doulas and others who support people through loss. 2027 dates are to be announced; a waitlist is open.",
+      "price": "Training Only — $3,600 paid in full",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "death-the-afterlife"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6543bc6c0836e50ebff10e41/dd5db2a2-2f31-4fae-869c-dd2a0e313f3d/CENTER+FOR+SOMATIC+GRIEVING+%28500+x+120+px%29+%282%29.png?format=1500w"
+    },
+    {
+      "title": "Yoga & Somatic Foundations",
+      "url": "https://centerforsomaticgrieving.com/yoga-somatic-foundations",
+      "description": "A 50-hour self-paced course in yoga philosophy, somatic awareness and leading safe asana practice, the prerequisite for the Mindful Grieving teacher training.",
+      "price": "$499, one-time",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6543bc6c0836e50ebff10e41/dd5db2a2-2f31-4fae-869c-dd2a0e313f3d/CENTER+FOR+SOMATIC+GRIEVING+%28500+x+120+px%29+%282%29.png?format=1500w"
+    },
+    {
+      "title": "One-on-One Somatic Grief Support",
+      "url": "https://centerforsomaticgrieving.com/one-on-one-somatic-grief-support",
+      "description": "Private sessions with Wendy that combine listening, guided meditation and Phoenix Rising yoga practices to help a person notice and move with grief held in the body. A free discovery call comes first.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "death-the-afterlife"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/6543bc6c0836e50ebff10e41/dd5db2a2-2f31-4fae-869c-dd2a0e313f3d/CENTER+FOR+SOMATIC+GRIEVING+%28500+x+120+px%29+%282%29.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3034,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/wendy-black-stern.json",
+    "tier_evidence": "No YouTube channel found; Instagram and Facebook linked but never fetched; no readable counts → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://centerforsomaticgrieving.com/contact-us",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Health rule (new): grief support through yoga, breath and meditation is wellbeing wording; nothing claims to treat a condition. Her site mentions 'grief therapy' and 'yoga therapy' training (Phoenix Rising Yoga Therapy, not psychotherapy); the teacher training is for yoga teachers, coaches and doulas, not clinician-only.",
+      "Thin: four offerings, no videos, books or free resources on her own site (the free guide is an email opt-in on systeme.io).",
+      "Listing named for Wendy, as the Center's founder and lead teacher; the Center's other facilitators are not listed.",
+      "No email published; contact form used."
+    ],
+    "left_out": [
+      "Mindful Grieving 6-Month Program ($1799): this round began 16 Sep 2026.",
+      "Mindful Grieving YTT — Live Virtual Cohort ($3650): module 1 was 7–8 Nov 2026, so it has started.",
+      "Awakening Through Grief Retreat on Maui (26 Apr to 1 May 2026): passed; Bali retreat is a waitlist with no dates.",
+      "The Mindful Grieving Journey: Child Loss Support: not opened; may share the programme's dates.",
+      "Free guide 'Create a Container for Your Grief': email opt-in on another host."
+    ]
+  },
+  "images_final": true
+}

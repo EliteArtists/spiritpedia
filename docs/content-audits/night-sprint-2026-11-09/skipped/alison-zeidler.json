@@ -1,5 +1,1 @@
-{
-  "name": "Alison Zeidler",
-  "rank": 83,
-  "reason": "Health rule: her own site (alisonzeidler.com) presents her mainly as a reflexologist and Muscle Tuner specialist and sells its sessions and workshops on burnout, anxiety, pain relief, headaches and sleep (home and sessions pages; a menopause package; even the Quantum-Touch workshop blurb promises pain relief), so too little would pass the strict energy-healing-only rule."
-}
+{ "name": "Alison Zeidler", "rank": 3036, "reason": "Health-restore re-check (12 Nov 2026): her own site is unreachable. https://alisonzeidler.com/ now fails the TLS check (the server presents a *.squarespace.com certificate that does not cover her domain, so the Squarespace site looks disconnected); under the brief, a failed https is treated as unreachable with no fallback to http, and no other address for her was used. Without her own site there is no bio, offering, contact or photo source, so she is skipped ('no own site' under the Quantum-Touch section). On the merits, the earlier record (rank 83) found her presenting mainly as a reflexologist and Muscle Tuner specialist; the new rule would allow burnout, anxiety, sleep and pain-relief wording, but a practice led by reflexology bodywork may still fall under the brief's skip for practitioners who present mainly as massage-type therapy. Owner may re-run if her site returns." }

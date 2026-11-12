@@ -1,0 +1,164 @@
+{
+  "healer": {
+    "healer_slug": "tirzah-firestone",
+    "location_source": "https://www.tirzahfirestone.com/about",
+    "create": {
+      "name": "Rabbi Dr. Tirzah Firestone",
+      "bio": "Rabbi Dr. Tirzah Firestone is a teacher of Jewish mysticism, an author and a Jungian psychotherapist in the Jewish Renewal movement. She grew up in an Orthodox family in St. Louis, left home young to explore many spiritual paths, and later returned to Judaism, receiving rabbinic ordination from Rabbi Zalman Schachter-Shalomi in 1992. She founded Congregation Nevei Kodesh, the Jewish Renewal community in Boulder, Colorado, where she is now rabbi emerita, and holds a master's in counselling and a doctorate in depth psychology from Pacifica Graduate Institute.\n\nHer teaching joins Kabbalah, the divine feminine in Jewish tradition and Jungian thought with practical work on inherited family patterns. She leads classes, Shabbatons, retreats and workshops for communities on themes such as the Shechinah, the tzaddik and the bodhisattva, and ancestral healing through text study, guided imagery and ritual, and offers self-paced video courses on ancestral wisdom. Her books include the spiritual memoir With Roots in Heaven, The Receiving, on Jewish women mystics, and Wounds into Wisdom, on how Jewish families carry and transform trauma across generations. She has also recorded an album of Jewish chants for meditation and prayer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Boulder, Colorado",
+      "country": "United States",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.tirzahfirestone.com/",
+      "booking_url": "https://www.tirzahfirestone.com/calendar",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@tirzahfirestone.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/62a6c37f2d694e01aa7679ea/bea65fbc-6c89-462e-b733-0f2f2a94ffeb/D31A6558%2B-%2BVersion%2B2%2B%281%29.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Wounds Into Wisdom: Healing Intergenerational Jewish Trauma! R' Firestone interviewed by Rav Shmuly",
+      "url": "https://www.youtube.com/watch?v=uxGPKeMyZHI",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Valley Beit Midrash"
+    }
+  ],
+  "books": [
+    {
+      "title": "Wounds into Wisdom: Healing Intergenerational Jewish Trauma",
+      "slug": "wounds-into-wisdom",
+      "author": "Tirzah Firestone",
+      "asin": "1948626829",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Drawing on interviews with survivors and their descendants, neuroscience and Jewish teaching, she looks at how persecution and loss echo through later generations and how families can turn that inheritance into meaning. The paperback edition carries a foreword by Gabor Maté and a readers' guide.",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1948626829.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Receiving: Reclaiming Jewish Women's Wisdom",
+      "slug": "the-receiving",
+      "author": "Tirzah Firestone",
+      "asin": "0060082712",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Through the lives of seven historical Jewish holy women, she traces the feminine thread in Kabbalah and asks what a woman's path to God looks like.",
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0060082712.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "With Roots in Heaven: One Woman's Passionate Journey into the Heart of Her Faith",
+      "slug": "with-roots-in-heaven",
+      "author": "Tirzah Firestone",
+      "asin": "1958972215",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her memoir of leaving a strict Orthodox home at seventeen, years of spiritual searching, and her return to Judaism as a rabbi, reissued by Monkfish in 2024 with a new foreword.",
+      "subjects": [
+        "spirituality",
+        "mysticism"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1958972215.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Jewish Ancestral Healing Workshops & Retreats",
+      "url": "https://www.tirzahfirestone.com/ancestral-healing",
+      "description": "Workshops, retreats and talks she brings to communities on the family stories and patterns we inherit, working through Hebrew texts, exercises, ritual and depth psychology. Communities can contact her office to arrange one.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62a6c37f2d694e01aa7679ea/b92027b3-2e9c-46b4-a20b-b4d734809ee6/Screen+Shot+2022-08-01+at+5.16.08+PM.png"
+    },
+    {
+      "title": "Spiritual Leadership Classes",
+      "url": "https://www.tirzahfirestone.com/spiritual-leadership",
+      "description": "Experiential classes for communities on Jewish mysticism, including a study of the Shechinah as the feminine face of God and a comparison of the tzaddik and the bodhisattva through texts and practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mysticism",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62a6c37f2d694e01aa7679ea/4306d86d-8b9f-4368-a6a1-e7c6b0b16d98/ben-ostrower-566321-unsplash.jpg"
+    },
+    {
+      "title": "Ashreynu",
+      "url": "https://www.tirzahfirestone.com/ashreynu",
+      "description": "An album of fifteen Jewish chants for meditation and prayer sung by Rabbi Tirzah with Lisa Antosofsky and Sheldon Sands, ordered by email.",
+      "price": "$18 for one cd",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/62a6c37f2d694e01aa7679ea/976d25ec-aab8-4e0e-9cb1-8045ffabce23/IMG_4117.jpeg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3028,
+    "restored_from": "docs/content-audits/pipelines-sprint-1/skipped/tirzah-firestone.json",
+    "tier_evidence": "No own YouTube channel found; Instagram, Facebook and X linked but never fetched; no readable counts (12 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.tirzahfirestone.com/ancestral-healing",
+    "contact_form_url": "https://www.tirzahfirestone.com/contact",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Possible editorial-stature override: a widely published Jewish Renewal rabbi and award-winning author (Wounds into Wisdom: 2020 Nautilus Gold). Not raised.",
+      "Base: Boulder, Colorado, from her About and Spiritual Leadership pages (founding rabbi, now emerita, of Congregation Nevei Kodesh in Boulder); her calendar runs on Mountain Time. No explicit 'lives in' line.",
+      "Health rule (new): Wounds into Wisdom and the ancestral-healing work are about healing inherited trauma, which is wellbeing wording; nothing claims to treat a condition. She is also a psychotherapist whose private practice is full; that practice is not listed.",
+      "Books: ISBN-13s from her own book pages (bookshop.org and B&N links: 9781948626828, 9780060082710; bookshop.org ean 9781958972212), converted to ISBN-10; the Amazon links on her pages show the same ISBN-10s, not opened. Not confirmed elsewhere. No covers set.",
+      "Only one video: an interview on the Valley Beit Midrash channel where she is the main speaker; she has no channel of her own.",
+      "Her self-paced ancestral-healing video courses are hosted by The Shift Network (affiliate links on her ancestral-healing page, never fetched); left out rather than linking affiliate redirects. Owner may wish to link her to The Shift Network hub."
+    ],
+    "left_out": [
+      "The Alchemy of Heartbreak (Wednesdays 11 Nov to 16 Dec 2026, $360): started 11 Nov 2026.",
+      "What Do We Do with Our Tears? (CAC, 13 Nov 2026): she is a special guest, and the event is not hers.",
+      "Reb Zalman's Fragments of a Future Scroll (JCCSF, 3 Dec 2026): hosted by JCCSF, her role not stated on her page.",
+      "Five Shift Network on-demand courses (Ancestral Wisdom for Walking the Path of the Holy Being, Ancient Mystic Wisdom to Repair Personal & Ancestral Wounds, Find Healing & Resilience in Ancestral Wisdom, Wellsprings of Wisdom, Wounds into Wisdom): theshiftnetwork.com is never fetched and her links are affiliate redirects.",
+      "The Woman's Kabbalah (Sounds True audio): no ISBN on her page; soundstrue.com is names only.",
+      "Wisdom Circle for practitioners: its page returns 404.",
+      "Personal consultations: her private practice is full (waitlist) and is psychotherapy."
+    ]
+  },
+  "images_final": true
+}

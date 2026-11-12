@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1480,
+    "healer_slug": "eric-jacquet"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "3adc7906-f198-4bb1-a05a-eabf7f8d2f57",
+      "slug": "energy-healing-sessions-energetique-magnetisme",
+      "title": "Energy healing sessions (Énergétique & magnétisme)"
+    },
+    {
+      "table": "courses",
+      "id": "154c1750-860b-408b-924d-81122bf373e4",
+      "slug": "reiki-and-quantum-touch-trainings-and-workshops",
+      "title": "Reiki and Quantum-Touch trainings and workshops"
+    },
+    {
+      "table": "courses",
+      "id": "00fd35e1-6254-4ea9-86c8-c55c58126d57",
+      "slug": "quantum-touch-level-4-formerly-level-2-online",
+      "title": "Quantum-Touch Level 4 (formerly Level 2) online"
+    }
+  ],
+  "at": "2026-11-12T23:20:14.194Z"
+}

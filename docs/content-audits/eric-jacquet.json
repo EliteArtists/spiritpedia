@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "eric-jacquet",
+    "location_source": "https://www.lumieredeguerison.fr/les-soins",
+    "create": {
+      "name": "Eric Jacquet",
+      "bio": "Eric Jacquet is a Quantum-Touch instructor and Reiki master based in Palaiseau, in the Essonne south of Paris, where he runs his practice under the name Lumière de guérison. He spent many years working in computing before, as he tells it, a meeting in 2011 set him on a spiritual path and towards healing work, and he says that awakening brought him calm and a clearer judgement.\n\nHe trained in Quantum-Touch levels 1 and 2, Self-Created Health and Supercharging, and in the Usui, Karuna and Shamballa forms of Reiki, which he now teaches. He also holds certificates in therapeutic hypnosis and in an eye-movement technique, and has attended workshops with Serge Boutboul.\n\nHe gives energy sessions at his practice, at clients' homes around Paris, and at a distance by phone or video, aimed at stress, fatigue, emotional difficulties and physical pain. His site states plainly that these sessions never take the place of medical treatment and that anyone with a health problem should see a doctor first. His trainings cover every Reiki degree and the Quantum-Touch levels, alongside guided workshops for developing energetic sensitivity, mostly in Palaiseau and sometimes near Bourges and Auxerre, with some Quantum-Touch classes held over Zoom.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Palaiseau",
+      "country": "France",
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "energy-medicine"
+      ],
+      "website_url": "https://www.lumieredeguerison.fr/",
+      "booking_url": "https://www.lumieredeguerison.fr/les-soins",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "eric.lumieredeguerison@gmail.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfilePictures/EricJacquet2026.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy healing sessions (Énergétique & magnétisme)",
+      "url": "https://www.lumieredeguerison.fr/les-soins",
+      "description": "Hour-long hands-on energy sessions in Palaiseau, at home in the Paris area, or at a distance by phone or video, for stress, tiredness, emotional strain and physical pain. Packages of several sessions and an eight-week follow-up by phone are also offered. Sessions are in French.",
+      "price": "€90 per session (€100 at home)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "reiki",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/EricJacquet2026.png"
+    },
+    {
+      "title": "Reiki and Quantum-Touch trainings and workshops",
+      "url": "https://www.lumieredeguerison.fr/les-formations",
+      "description": "Initiations in every degree of Usui and Karuna Reiki up to master level, Quantum-Touch classes, and guided group workshops for sensing energy, giving and receiving healing, and a two-day course on affirming one's inner light. Held mainly in Palaiseau, sometimes near Bourges or Auxerre. Taught in French.",
+      "price": "Varies by course (two-day course €180)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "quantum-touch"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/EricJacquet2026.png"
+    },
+    {
+      "title": "Quantum-Touch Level 4 (formerly Level 2) online",
+      "url": "https://www.lumieredeguerison.fr/d-tails-et-inscription/formation-quantum-touch-r-niveau-4-anciennement-niveau-2-en-virtuel-visio-via-zoom",
+      "description": "A two-day Quantum-Touch class taught live over Zoom, building on Level 1. Taught in French.",
+      "price": "See website",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "quantum-touch"
+      ],
+      "image": "https://quantumtouch.com/images/ProfilePictures/EricJacquet2026.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3054,
+    "restored_from": "docs/content-audits/night-sprint-2026-11-09/skipped/eric-jacquet.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts (no YouTube channel linked from his site; Instagram/Facebook not fetched) -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.lumieredeguerison.fr/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore: his sessions page lists pain, emotional problems, fatigue and stress (wellbeing wording, fine), plus addictions and excess weight; it also states clearly that sessions never replace medical treatment. Under the new rule the energy sessions are listed and the hypnosis packages are left out.",
+      "His trainings page repeats generic Quantum-Touch marketing that the method can 'heal injuries, heal burns' and 'balance organs and glands'. Those claims are not used; the training item has a neutral description. Owner may want to judge this.",
+      "Photo is the Quantum-Touch profile picture (quantumtouch.com, allowed by the brief); his own site is Wix (static.wixstatic.com images not usable). Profile read once; its text not copied.",
+      "Site is in French; all items are taught in French (noted in descriptions).",
+      "The Level 4 online class page shows the dates (12-13 December 2026) but no price; registration form is open.",
+      "QT profile lists him as certified instructor (level 1); his own site also advertises Level 4 classes."
+    ],
+    "left_out": [
+      "Hypnosis sessions (confidence and stress package; four-to-five-session 'pose d'anneau' virtual gastric band for weight loss; addiction work): weight loss is diet-related and addiction work is condition-led.",
+      "Chronic physical pain two-session package: folded into the general sessions item (one item per URL).",
+      "Geobiology / house energy clearing (Nettoyage énergétique): not a teaching item.",
+      "Past dated events (Reiki Karuna practitioner 10-11 Oct 2026, QT Level 4 and Level 1 at L'Haÿ-les-Roses in Sept-Oct 2026, older salons).",
+      "Insight Timer: never opened."
+    ]
+  },
+  "images_final": true
+}

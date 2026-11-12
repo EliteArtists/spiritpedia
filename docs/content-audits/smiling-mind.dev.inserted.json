@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1460,
+    "healer_slug": "smiling-mind"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "6732d502-8449-4c2c-98bf-cd96d36e3d41",
+      "slug": "smiling-mind-app",
+      "title": "Smiling Mind App"
+    },
+    {
+      "table": "courses",
+      "id": "ab85bdd7-2c0d-4a6e-9e64-26dea49fb8a1",
+      "slug": "smiling-mind-primary-school-program",
+      "title": "Smiling Mind Primary School Program"
+    },
+    {
+      "table": "free_resources",
+      "id": "5125673b-37f3-4421-abf4-59c13479feba",
+      "slug": "sink-into-sleep",
+      "title": "Sink Into Sleep"
+    },
+    {
+      "table": "free_resources",
+      "id": "04ac7060-8501-4d3a-b0d2-9e59895fe86e",
+      "slug": "the-stop-technique",
+      "title": "The STOP Technique"
+    }
+  ],
+  "at": "2026-11-12T23:02:22.596Z"
+}

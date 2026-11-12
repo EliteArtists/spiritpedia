@@ -1,0 +1,109 @@
+{
+  "healer": {
+    "healer_slug": "hilary-crowley",
+    "location_source": "https://www.hilarycrowley.com/inperson-sessions",
+    "create": {
+      "name": "Hilary Crowley",
+      "bio": "Hilary Crowley is an American energy healer, intuitive and author based in coastal New Hampshire. For more than twenty years she has worked as the resident energy practitioner within Whole Life Health Care, a family practice in Newington, alongside doctors, therapists and other holistic practitioners, an experience she drew on for her book The Power of Energy Medicine, which won a Silver Nautilus award in 2022. Outside her healing work she is a foster parent and an educational advocate for children in New Hampshire, and she has spoken about foster care at TEDx Portsmouth.\n\nHer sessions combine gentle hands-on or distance energy work with unhurried conversation and intuitive guidance, aimed at helping people through times of change, emotional strain or feeling out of balance. She sees clients in person at her office in Newington and remotely by Zoom or phone. She also teaches intuition and self-trust, returning regularly to the Kripalu Center in Massachusetts for weekend programmes on listening to inner guidance and setting energetic boundaries. Her podcast, The Good Energy Healing Show, features conversations about intuition, personal growth and wellbeing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Newington, New Hampshire",
+      "country": "United States",
+      "subjects": [
+        "energy-medicine",
+        "self-healing",
+        "spirituality"
+      ],
+      "website_url": "https://www.hilarycrowley.com/",
+      "booking_url": "https://www.hilarycrowley.com/remote-sessions",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/684dbcad71d8d91e1a41f941/b1380b2d-bf1e-46fd-9061-e585ff59ab9a/DSC_0449-Edit.jpg",
+        "https://images.squarespace-cdn.com/content/v1/684dbcad71d8d91e1a41f941/367aed6a-1ac9-4298-befd-860a7163ac1f/DSC_0678-Edit.jpg",
+        "https://kripalu.org/sites/default/files/styles/headshot_medium_2x/public/2022-06/Hilary-Crowley_2025.jpg?itok=MnJKN6cp"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Remote Energy Healing Sessions",
+      "url": "https://www.hilarycrowley.com/remote-sessions",
+      "description": "Private sessions of one to two hours by Zoom or phone, joining subtle energy work with relaxed conversation and intuitive guidance. They are meant for times of transition, emotional stress or feeling disconnected.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/684dbcad71d8d91e1a41f941/t/68937ff333167255891caf0b/1754497011597/Hilary+Crowley+Favicon+%28600+x+300+px%29+%282%29.png?format=1500w"
+    },
+    {
+      "title": "In-Person Energy Healing Sessions",
+      "url": "https://www.hilarycrowley.com/inperson-sessions",
+      "description": "Hour-long one-to-one sessions at her office in Newington, New Hampshire, guided by conversation and gentle energy work with time for stillness and reflection. No preparation is needed.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "http://static1.squarespace.com/static/684dbcad71d8d91e1a41f941/t/68937ffd7b96d70faf112df2/1754497021473/Hilary+Crowley+Favicon+%28600+x+300+px%29+%282%29.png?format=1500w"
+    },
+    {
+      "title": "Your Wisdom Within: A Journey of Intuition and Self-Trust",
+      "url": "https://kripalu.org/experiences/your-wisdom-within-journey-intuition-and-self-trust",
+      "description": "A weekend programme at Kripalu in Stockbridge, Massachusetts, using experiential practices to quiet the mind, strengthen inner knowing and set healthy energetic boundaries. Victoria Jean Randall joins as a guest.",
+      "price": "$349 tuition, plus required accommodation",
+      "product_type": "retreat",
+      "start_date": "2027-03-12",
+      "end_date": "2027-03-14",
+      "subjects": [
+        "spirituality",
+        "energy-medicine",
+        "self-healing"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2025-09/Hand%2520on%2520heart%2520banner%2520Winter%25202025.jpg?itok=jFsbfEzu"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3118,
+    "restored_from": "docs/content-audits/pipelines-sprint-1/skipped/hilary-crowley.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel linked from her site; Instagram @hilary_crowley_ not fetched (off limits); podcast audience not counted → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.hilarycrowley.com/speaking",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): her own session pages are written in wellbeing terms (transition, emotional stress, balance) and pass. She works inside a family medical practice and Kripalu bills her as a 'medical intuitive'; nothing on her pages claims to cure or treat a disease, but the setting is clinical, so the owner may want a look.",
+      "Regional: Newington, New Hampshire (seacoast New Hampshire, near Portsmouth). Newington is a small town (well under 5,000 people); her book page calls the practice a family medical centre in Portsmouth. Recorded as published on the In-Person Sessions page; owner may prefer Portsmouth.",
+      "Contact: no email published; the contact form sits on the Speaking page (her site's 'Contact Hilary' link points to /speaking#contacthilary, which is the site's own anchor, not one we made up).",
+      "Photos: two from her own Squarespace site (images.squarespace-cdn.com has no robots.txt, 404) and her Kripalu presenter headshot (kripalu.org robots allows /sites/); all looked at and the same woman.",
+      "Kripalu programme: Kripalu is a hub; she is the named presenter, so this is her own programme, not a guest slot. Kripalu says she returns in September 2027 (no page yet).",
+      "Dry run not run: the ingest dry run is refused by this session's permission system; all three images were downloaded with curl (200) and looked at."
+    ],
+    "left_out": [
+      "The Power of Energy Medicine: Your Natural Prescription for Resilient Health (book): no ISBN on a page we may open (her site links only to Amazon and Bookshop.org); its blurb also cites cancer cases, so the owner should check it before any listing.",
+      "The Good Energy Healing Show (podcast): on Spotify and Apple Podcasts only; not a resource type we list.",
+      "TEDx Portsmouth talk on foster care: not spiritual teaching.",
+      "Speaking keynotes for healthcare and business audiences: corporate talks, not public offerings."
+    ]
+  },
+  "images_final": true
+}

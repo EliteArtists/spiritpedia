@@ -1,0 +1,120 @@
+{
+  "healer": {
+    "healer_slug": "goldi-chan",
+    "location_source": "https://www.aquamarine-energy.com/contact",
+    "create": {
+      "name": "Goldi S.H. Chan",
+      "bio": "Goldi Chan is a Hong Kong energy-healing teacher who runs Aquamarine Energy Healing, a small studio in Fo Tan, Sha Tin, where she teaches Quantum-Touch and gives healing sessions. She describes herself as a psychotherapist, energy teacher and integrative healer, and says she has spent years studying different energy methods and helping people with physical and emotional discomfort, from long-standing pain to stress.\n\nShe is a certified Quantum-Touch instructor for Levels 1 and 2 and trains new Level 1 instructors. Her other credentials include master-teacher status in Angelic Reiki and in the Egyptian-rooted Living Light Energy (Sekhem), instructor levels in Magnified Healing, crystal singing-bowl teaching, Akashic Records reading, NLP and hypnotherapy, as well as training in integral psychotherapy. She belongs to the Association for Transpersonal Psychology and the Association for Humanistic Psychology.\n\nHer two-day Quantum-Touch classes run in Cantonese in groups of four to eight, mixing demonstrations with plenty of hands-on practice, and she offers free taster workshops for newcomers. She also gives sessions at her studio and at a distance by phone or video call. Her site states clearly that Quantum-Touch is not a medical technique and should never replace a doctor's diagnosis, treatment or advice.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Hong Kong",
+      "country": "Hong Kong",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "reiki"
+      ],
+      "website_url": "https://www.aquamarine-energy.com/",
+      "booking_url": "http://wa.me/85266141416",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "goldi.chan@gmail.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/uploads/profiles/International/thumbnail_goldichan_3.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy healing sessions, in person and at a distance",
+      "url": "https://www.aquamarine-energy.com/%E9%81%99%E8%B7%9D%E7%99%82%E7%99%92",
+      "description": "Quantum-Touch and energy healing sessions at her studio in Fo Tan, or at a distance: a short phone or WhatsApp video chat followed by a thirty-minute session while the receiver rests somewhere quiet. Conducted in Cantonese.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/uploads/profiles/International/thumbnail_goldichan_3.jpg"
+    },
+    {
+      "title": "Quantum-Touch Level 4: Becoming Whole",
+      "url": "https://www.aquamarine-energy.com/%E9%87%8F%E5%AD%90%E8%A7%B8%E7%99%82-level-4",
+      "description": "Two-day advanced class for those who have finished Level 1, centred on heart energy, deeper perception, chakras and new hands-on techniques. Taught in Cantonese at her Fo Tan studio on 20 and 27 November 2026.",
+      "price": "HK$4,350",
+      "product_type": "course",
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-27",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": "https://quantumtouch.com/images/uploads/profiles/International/thumbnail_goldichan_3.jpg"
+    },
+    {
+      "title": "Quantum-Touch Level 2: Becoming Supercharged",
+      "url": "https://www.aquamarine-energy.com/%E9%87%8F%E5%AD%90%E8%A7%B8%E7%99%82-level-2",
+      "description": "Two-day class for graduates of an in-person Level 1, working with breath to raise energy, the twelve-colour meditation, the meeting-point technique and manifestation. Small groups of four to eight, taught in Cantonese on 11 and 18 December 2026.",
+      "price": "HK$4,350",
+      "product_type": "course",
+      "start_date": "2026-12-11",
+      "end_date": "2026-12-18",
+      "subjects": [
+        "quantum-touch",
+        "manifestation"
+      ],
+      "image": "https://quantumtouch.com/images/uploads/profiles/International/thumbnail_goldichan_3.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Free Quantum-Touch taster workshop (Fo Tan)",
+      "url": "https://www.aquamarine-energy.com/event-details/free-quantum-touch-workshop",
+      "description": "A free introductory session at her studio with a demonstration and a chance to feel the energy for yourself; date to be announced, places reserved by WhatsApp.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "quantum-touch"
+      ],
+      "image": "https://quantumtouch.com/images/uploads/profiles/International/thumbnail_goldichan_3.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3059,
+    "restored_from": "docs/content-audits/night-sprint-2026-11-09/skipped/goldi-chan.json",
+    "hub": null,
+    "tier_evidence": "No YouTube channel or readable follower counts on her site -> local_hero",
+    "email": "yes",
+    "email_source": "https://quantumtouch.com/en/practitioners/practitioner-4398",
+    "contact_form_url": "https://www.aquamarine-energy.com/contact",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email is from the Quantum-Touch profile (her own site gives only a contact form and WhatsApp +852 6614 1416).",
+      "Health restore: her site carries a full medical disclaimer (not a medical technique; never replaces a doctor's diagnosis or treatment; does not diagnose or treat any illness). Under the new rule she is listed, with the claim-bearing items left out. But the home page testimonials are dominated by pain and injury stories, including one saying physiotherapy, chiropractic and acupuncture had failed for sciatica and QT worked 'faster than painkillers' (indirect 'where medicine failed'). Owner may still judge the site too claim-led.",
+      "Her About page lists chronic pain, post-surgical discomfort, bone problems and 'hard-to-explain illnesses' among what she helps with; the energy-healing page says over-reliance on medicines can let self-healing 'fall asleep'. Neither is used.",
+      "She also presents as a psychotherapist (integral psychotherapy, ISPTI) and hypnotherapist; no psychotherapy items are listed.",
+      "Site is in Chinese (Cantonese teaching); descriptions note the language. Item URLs are percent-encoded Chinese slugs.",
+      "Photo is the Quantum-Touch profile picture (her own site is Wix). Profile read once; text not copied.",
+      "Level 2 syllabus includes a 'longevity and cellular anti-ageing' module; not mentioned in the description.",
+      "Country set to 'Hong Kong' as in two existing plans."
+    ],
+    "left_out": [
+      "Quantum-Touch Level 1 (17/24 Nov, 7/14 Dec 2026, 2/9 Jan 2027, HK$3,500): the page says the class shows how to speed wound healing and even correct the spine, and invites people with pain conditions; injury-repair claim, so left out under the QT health rule.",
+      "Energy healing essay page (能量療癒): an article rather than an item, with the medicines remark noted in flags.",
+      "Shop page: not opened.",
+      "Student testimonials page (學員課後感想): not an item."
+    ]
+  },
+  "images_final": true
+}

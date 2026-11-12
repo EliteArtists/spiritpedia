@@ -1,0 +1,118 @@
+{
+  "healer": {
+    "healer_slug": "fallon-stone",
+    "location_source": null,
+    "no_public_base": "Her site, Here & Awake, publishes no city or region; all sessions are online. (An earlier lead gave Massachusetts, not from her own pages.)",
+    "create": {
+      "name": "Fallon Stone",
+      "bio": "Fallon Stone is an intuitive guide and mentor who runs Here & Awake, an online practice centred on spiritual readings, energy work and depth-oriented mentoring. She also has a clinical background: she studied psychology at Western New England University and clinical social work at Simmons University, and she trained in body-centred psychotherapy and in mindfulness, which shapes the attentive, body-aware way she works.\n\nHer one-hour spiritual reading and healing sessions are held by video. After a short conversation about what the client wants help with, she gives a channelled reading from the client's guides and teachers, sometimes adding energy clearing or simple somatic practices; clients have also come to her for Akashic Records readings. Her three-month mentorships pair six fortnightly sessions with reflections in between, using deep listening, visualisation, parts work and subtle-energy practices to bring old patterns into awareness, with a separate track for practitioners who want to develop their intuition. She also sells recorded hypnosis and meditation audios and shares free meditations on Insight Timer, and she leads workshops and group circles for women from time to time.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "channelled-teachings",
+        "akashic-records",
+        "energy-medicine"
+      ],
+      "website_url": "https://hereandawake.com/",
+      "booking_url": "https://hereandawake.com/spiritualreading/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://hereandawake.com/wp-content/uploads/2022/08/5a6e940b10919424ed1cca4be450bd2a.jpg",
+        "https://hereandawake.com/wp-content/uploads/2022/12/IMG_9842.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Spiritual Reading & Healing Session",
+      "url": "https://hereandawake.com/spiritualreading/",
+      "description": "A one-hour video session that opens with a short talk about what you want support with and then moves into a channelled reading from your guides and teachers. It may include energy clearing or simple somatic practices.",
+      "price": "$175 for 1 hour",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "channelled-teachings",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Personal + Professional Mentorship",
+      "url": "https://hereandawake.com/mentorship/",
+      "description": "Six fortnightly one-to-one video sessions over about three months, with reflections shared between sessions. The personal track works with emotional and energetic patterns through listening, visualisation, parts work and subtle-energy practices; the professional track helps practitioners develop their intuition.",
+      "price": "$1,170 (or 3 payments of $390)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "energy-medicine",
+        "self-healing",
+        "spiritual-awakening"
+      ]
+    },
+    {
+      "title": "Frequency Upgrade Meditation",
+      "url": "https://hereandawake.com/product/frequency-upgrade-meditation/",
+      "description": "A recorded meditation and self-hypnosis that guides the listener out of everyday self-focus into a sense of open possibility, ending with a visualisation of living as your fullest self. Designed for daily listening.",
+      "price": "$11.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "manifestation"
+      ]
+    },
+    {
+      "title": "Anxiety Clearing Hypnosis",
+      "url": "https://hereandawake.com/product/anxiety-clearing-hypnosis/",
+      "description": "A recorded self-hypnosis that leads into deep relaxation and then offers suggestions for a calmer, steadier way of responding. It can be replayed as often as you like.",
+      "price": "$11.00",
+      "product_type": "download",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "self-healing",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3013,
+    "restored_from": "docs/content-audits/insight-timer-sprint-1/skipped/fallon-stone.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel linked; Insight Timer (her free meditations) not opened; no social links on her site → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://hereandawake.com/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): anxiety-clearing hypnosis passes as wellbeing. Borderline kept: the Spiritual Reading page lists 'Health challenges' among topics a reading may support (no cure or treatment claim); owner may prefer to drop that item.",
+      "Therapy lead: she is a licensed psychotherapist (named on the Nervous System Rewired page), but her own site sells no clinical therapy; only readings, mentorship and audios are listed.",
+      "Photos: the dark-haired woman in a brown hat appears in the 'Meet your facilitator' section and on the home page; taken to be her, not certain (no caption).",
+      "No email; contact form only.",
+      "Insight Timer meditations are linked from /meditations/ but not opened (never fetched).",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; images were checked with curl instead."
+    ],
+    "left_out": [
+      "Nervous System Rewired ($444): pitched to people who 'struggle with chronic illness, pain and fatigue' and to empaths who 'struggle more with physical illness' (health rule: treating conditions).",
+      "Womb Immersion ($111): out of stock.",
+      "Free meditations: hosted on Insight Timer (not opened)."
+    ],
+    "held": "Photo identity not certain (helper couldn't confirm the photo shows her); needs a photo checked against her own site."
+  }
+}

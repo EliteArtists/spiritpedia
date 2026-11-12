@@ -1,0 +1,99 @@
+{
+  "healer": {
+    "healer_slug": "celia-roberts",
+    "location_source": "https://biyome.com.au/contact/",
+    "create": {
+      "name": "Celia Roberts",
+      "bio": "Celia Roberts is an Australian yoga and meditation teacher who founded BIYOME, her BioMedical Institute of Yoga and Meditation, at a retreat centre she opened in 2014 in the hills of Upper Brookfield on the western edge of Brisbane. She holds a degree in biomedical science and is registered as a senior yoga teacher and yoga therapist, with further study in Ayurveda, meditation, counselling and integrative medicine. Before BIYOME she co-founded an earlier yoga and integrative medicine institute, ran by-donation community yoga in Japan and Australia, and served as a volunteer with Yoga Australia, including chairing its 2016 conference.\n\nHer teaching sets classical yoga and Vedic and Buddhist meditation beside current research, and her school trains yoga, meditation and Ayurveda teachers at levels from short intensives up to 1,000 hours, both at the centre and online. She says she has mentored more than a thousand teachers over the last decade. Alongside the trainings she leads weekly yoga classes during school terms and a monthly half-day meditation retreat at the Upper Brookfield sanctuary, exploring themes such as self-inquiry, mantra and acceptance.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Brisbane, Queensland",
+      "country": "Australia",
+      "subjects": ["yoga", "meditation", "ayurveda"],
+      "website_url": "https://biyome.com.au/",
+      "booking_url": "https://biyome.com.au/meditation-classes-brisbane/",
+      "youtube_url": null,
+      "instagram_url": null, "facebook_url": null, "twitter_url": null, "tiktok_url": null,
+      "contact_email": "contact@biyome.com.au",
+      "image_urls": [
+        "https://biyome.com.au/wp-content/uploads/elementor/thumbs/Celia-Roberts-practicing-yog-pose-p9p3crzrak6sk8fe92hkldu5fm1g5hywh0nitthsvk.jpg",
+        "https://biyome.com.au/wp-content/uploads/elementor/thumbs/Celia-Roberts-studying-yoga-and-meditation-p9p3cilde7txc4t1ryfawg7jhrbs0ixl3q4o11vqls.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness for a Meaningful Life: Monthly Meditation Retreats",
+      "url": "https://biyome.com.au/meditation-classes-brisbane/",
+      "description": "A monthly Friday-morning meditation gathering at the Upper Brookfield sanctuary, each session built around one theme such as self-inquiry, mantra or acceptance. Sessions can be booked one at a time or as a pack of five to use within a year.",
+      "price": "$148 per session; $588 for 5",
+      "product_type": "course",
+      "start_date": null, "end_date": null,
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "Yoga Classes at Upper Brookfield",
+      "url": "https://biyome.com.au/yoga-classes-brisbane/",
+      "description": "Term-time yoga classes on Tuesday and Thursday mornings that Celia teaches for all levels. Postures sit alongside meditation and short discussions of the science of practice and compassion.",
+      "price": "$33 single class",
+      "product_type": "course",
+      "start_date": null, "end_date": null,
+      "subjects": ["yoga", "meditation"]
+    },
+    {
+      "title": "330MTT Meditation Teacher Training",
+      "url": "https://biyome.com.au/course-pages/330mtt/",
+      "description": "A 330-hour meditation teacher training at the centre, joining three meditation intensives with home study and a daily practice log over about nine months. It covers the philosophy, psychology and physiology of meditation and how to adapt practices for different groups.",
+      "price": "$4,758 upfront until 30 November 2026; $5,058 from 1 December 2026",
+      "product_type": "course",
+      "start_date": null, "end_date": null,
+      "subjects": ["meditation", "mindfulness"]
+    },
+    {
+      "title": "OL330MTT Meditation Teacher Training (Online)",
+      "url": "https://biyome.com.au/online-course-pages/ol330mtt/",
+      "description": "The online version of the 330-hour meditation teacher training, studied remotely with recorded content, written assessments and live Zoom practice sessions. It suits students outside Queensland who want a registered meditation teaching qualification.",
+      "price": "$3,808 upfront until 30 November 2026; $4,048 from 1 December 2026",
+      "product_type": "course",
+      "start_date": null, "end_date": null,
+      "subjects": ["meditation", "mindfulness"]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3103,
+    "restored_from": "docs/content-audits/americas-oceania-sprint-1/skipped/celia-roberts.json",
+    "hub": null,
+    "held": "Psychedelics (brief rule): her institute's own menu carries a 200-hour Clinical Certification in Psychedelic-Assisted Psychotherapy (https://biyome.com.au/course-pages/200pap/) and a Medicine-Assisted Therapy page offering psychiatry and medicine-assisted therapy under an authorised prescriber psychiatrist (https://biyome.com.au/medicine-assisted-therapy/); her About page lists psychedelic-assisted therapy training among BIYOME's core qualifications. Held for the owner, who has left such teachers out before. The yoga and meditation items here pass the 12 Nov health rule.",
+    "tier_evidence": "No readable follower counts: no YouTube channel linked from biyome.com.au; Instagram, Facebook and LinkedIn not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://biyome.com.au/contact/",
+    "contact_form_url": "https://biyome.com.au/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Held: psychedelic-assisted psychotherapy training and a medicine-assisted therapy clinical service sit in BIYOME's main menu (see sprint.held).",
+      "Brand inbox: contact@biyome.com.au is the institute's general address.",
+      "Listed as an individual (the lead is Celia Roberts); BIYOME itself could be a School listing later if the owner prefers.",
+      "Base: the institute is in Upper Brookfield, a semi-rural suburb of Brisbane; recorded as Brisbane, Queensland.",
+      "Meditation teacher training pages say the course explores how meditation can support people living with depression and chronic pain; worded as support, not treatment, so kept under the 12 Nov rule.",
+      "Course prices are shown with '$' only; the pages don't name the currency (Australian institute), so no code added.",
+      "Counts unreadable for her main accounts (Instagram, Facebook); tier 0 readable.",
+      "Dry run not run: the ingest dry run (node scripts/ingest.mjs … --env dev) was refused by this session's permission system; both images were downloaded with curl (200, 600×600) and looked at."
+    ],
+    "left_out": [
+      "200PAP Clinical Certification Program in Psychedelic-Assisted Psychotherapy: psychedelics and a clinician training.",
+      "Medicine-Assisted Therapy (psychiatry and medicine-assisted therapy service): psychedelics and clinical care.",
+      "650-hour Yoga Therapy and other yoga-therapy trainings: therapy trainings for allied-health careers; not checked in detail.",
+      "Private Consultations (yoga therapy): clinical therapy service.",
+      "Metaphysical Sound Healing with Tuning Forks (28–29 Nov 2026, $555): the page doesn't say who leads it; may be a visiting teacher.",
+      "Dated monthly meditation retreats (5 Feb, 7 May, 4 Jun 2027): they share the meditation-classes page URL with the five-pack, so only one item is kept.",
+      "Blog articles (meditation reflections): articles rather than practices."
+    ]
+  }
+}

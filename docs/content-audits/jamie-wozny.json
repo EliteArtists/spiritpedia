@@ -38,6 +38,60 @@
   ],
   "videos": [
     {
+      "title": "Letting Go of Your Addiction to Suffering So You Can Be Free",
+      "url": "https://www.youtube.com/watch?v=6RK91bhbdeI",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
+      "title": "💕 How Asking Myself What I Need Changed My Life 💕 | Self Love & Healing",
+      "url": "https://www.youtube.com/watch?v=A-_OS3tMReA",
+      "subjects": [
+        "self-healing",
+        "spirituality"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
+      "title": "Quick Quantum Manifestation Meditation | Align With Your Desires Fast (5 Min Guided Meditation)",
+      "url": "https://www.youtube.com/watch?v=FI_0geZ7T84",
+      "subjects": [
+        "manifestation",
+        "meditation"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
+      "title": "✨ Activate Goddess Energy | Heart Chakra Healing Meditation 💕",
+      "url": "https://www.youtube.com/watch?v=cH9u-GovjHs",
+      "subjects": [
+        "chakra-healing",
+        "meditation"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
+      "title": "Healing & Calming Meditation Just for Your Pet 🐾",
+      "url": "https://www.youtube.com/watch?v=VoBFbM7EDq8",
+      "subjects": [
+        "meditation",
+        "energy-medicine"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
+      "title": "🎶🩷 Self Love Sound Bath Meditation | Heal Your Energy & Rewire Your Mind 🩷🎶",
+      "url": "https://www.youtube.com/watch?v=PNATAVWk85U",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Divinely Human By Jamie Wozny"
+    },
+    {
       "title": "Higher Self Devotion Activation | Guided Meditation & Energy Transmission",
       "url": "https://www.youtube.com/watch?v=8OvsoqL2D5A",
       "subjects": [
@@ -88,52 +142,6 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ],
-      "channel": "Divinely Human By Jamie Wozny"
-    },
-    {
-      "title": "Clairvoyance Meditation | Activate Your Psychic Seeing",
-      "url": "https://www.youtube.com/watch?v=N4-xG9Cw3SA",
-      "subjects": [
-        "meditation",
-        "spirituality"
-      ],
-      "channel": "Divinely Human By Jamie Wozny"
-    },
-    {
-      "title": "Clairaudience Activation Meditation | Clear & Open Your Psychic Hearing",
-      "url": "https://www.youtube.com/watch?v=OYZXvbEHO1s",
-      "subjects": [
-        "meditation",
-        "spirituality"
-      ],
-      "channel": "Divinely Human By Jamie Wozny"
-    },
-    {
-      "title": "Self Love Medicine Meditation  | An energetic UPgrade | Feel The LOVE",
-      "url": "https://www.youtube.com/watch?v=6WBwQb_0ZBo",
-      "subjects": [
-        "meditation",
-        "self-healing"
-      ],
-      "channel": "Divinely Human By Jamie Wozny"
-    },
-    {
-      "title": "Activate Your Purpose and Abundance | Reiki Meditation",
-      "url": "https://www.youtube.com/watch?v=_pdMmljGw-w",
-      "subjects": [
-        "reiki",
-        "soul-purpose",
-        "meditation"
-      ],
-      "channel": "Divinely Human By Jamie Wozny"
-    },
-    {
-      "title": "Find Your Center: A Guided Presence Meditation",
-      "url": "https://www.youtube.com/watch?v=ktDkr8tQIFA",
-      "subjects": [
-        "meditation",
-        "mindfulness"
       ],
       "channel": "Divinely Human By Jamie Wozny"
     }
@@ -255,24 +263,26 @@
     }
   ],
   "sprint": {
-    "sprint": "pipelines-2",
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3064,
+    "restored_from": "docs/content-audits/jamie-wozny.json",
     "hub": "insight-timer",
-    "rank": 247,
+    "earlier_sprint": "pipelines-2 (rank 247)",
     "hub_url": "https://insighttimer.com/jamiewozny1488",
-    "tier_evidence": "Insight Timer 6.6k followers (queue entry, read 1 Nov 2026); YouTube @DivinelyHumanByJamieWozny 1.99K subscribers (channel header, 5 Nov 2026); YouTube @animalhealingwithjamiewozny 14 subscribers (channel header, 5 Nov 2026); Instagram not readable without login → ~8.6k total → local_hero",
+    "tier_evidence": "YouTube @divinelyhumanbyjamiewozny 1,990 subscribers (YouTube Data API, 12 Nov 2026); Insight Timer 6.6k followers (queue entry, read 1 Nov 2026); YouTube @animalhealingwithjamiewozny 14 subscribers (channel header, 5 Nov 2026); Instagram not fetched → ~8.6k total → local_hero",
     "email": "yes",
     "email_source": "https://www.jamiewozny.com/live-events",
     "contact_form_url": "https://www.jamiewozny.com/contact",
-    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
     "flags": [
-      "Parked entry: her own site now has a contact form (/contact) and a clickable mailto address.",
+      "Health restore (owner's 12 Nov rule), re-checked on her site 12 Nov 2026: the earlier hold is lifted. Her self-love, feminine-power, manifestation, Reiki and animal-communication work passes; her own story of anxiety, burnout and chronic illness on the about page is a personal account. Still left out: The Medicine You Are, sold as '4 Months to Freedom From Chronic Emotional & Physical Symptoms' (flare-ups, exhaustion), and the 1:1 Soul Sanctuary sessions ('Miraculous Healing', listing healing of anxiety or physical symptoms). Owner may still prefer to skip her, since 'The Medicine You Are' heads her site menu.",
       "Email jamie@jamiewozny.com is published on her live-events page as her PayPal payment address (clickable mailto); her contact page has a form only. Owner may prefer the form.",
-      "Health rule borderline: her current flagship group programme 'The Medicine You Are' is framed around chronic emotional and physical symptoms, her 1:1 sessions page lists anxiety and physical symptoms, and about six of her 30 latest YouTube videos are about chronic pain, illness and physical healing. Those items are left out; the rest of her work (self-love, feminine power, manifestation, Reiki, animal communication) is clean, so she is listed. Owner may decide to skip.",
       "Base: her corporate/speaking page says in-person sessions are in the Los Angeles area; no city of residence stated as such.",
       "Course URLs for Abundance Codes matched to its button by page order (the momence link right after the Insight Timer buttons); Live Your Bold Truth's URL names the course.",
       "Reiki and Animal Communication certifications are sold through The DEN Meditation's site (a Los Angeles studio she teaches with); URLs copied from her page, not opened.",
       "Books: ASINs from Amazon links on her own books page (https://www.jamiewozny.com/jamiesbooks), not confirmed elsewhere; Amazon not opened; no cover found (cover null).",
-      "Video durations checked on each watch page (all 9 minutes or more); titles are on her own channel."
+      "Videos re-picked by view count (YouTube Data API, 12 Nov 2026): her six most-viewed evergreen teaching videos plus six of the earlier picks; all pass oEmbed. Left out from the top list: Shorts and dance clips, 'Healing Physical Symptoms | Quantum Meditation' and 'Sacred Medicine Activation | ... Heals the Body' (health rule), two co-led lives with guests (@reikirachael143, @KundaliniKendall), a 2016 promo and a speaker reel."
     ],
     "left_out": [
       "The Medicine You Are (4-month group programme): framed as freedom from chronic emotional and physical symptoms (health rule).",
@@ -280,8 +290,10 @@
       "YouTube videos on chronic pain, illness, physical healing and 'Don't Stop at the Diagnosis' (health rule); 41-second workshop teaser (too short); animal-channel psychic readings and testimonials.",
       "Radiant Light (poetry): only an a.co short link on her site, no ASIN or ISBN readable without opening Amazon.",
       "Insight Timer audio courses (Insight Timer content, not copied); other momence/arketa video courses whose links could not be matched to titles with certainty.",
-      "Awaken the Lion(ess) live activation: date not confirmed on the page read."
+      "Awaken the Lion(ess) live activation: date not confirmed on the page read.",
+      "Earlier video picks dropped for lower views: Clairvoyance Meditation, Clairaudience Activation Meditation, Self Love Medicine Meditation, Activate Your Purpose and Abundance, Find Your Center."
     ],
-    "held": "Lead, 5 Nov 2026: held for the owner. Her flagship programme (The Medicine You Are) and 1:1 sessions are framed around chronic emotional and physical symptoms (health rule, borderline)."
-  }
+    "earlier_hold": "Lead, 5 Nov 2026: held for the owner. Her flagship programme (The Medicine You Are) and 1:1 sessions are framed around chronic emotional and physical symptoms (health rule, borderline)."
+  },
+  "images_final": true
 }
