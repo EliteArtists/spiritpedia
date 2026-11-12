@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "healing-vibrations"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Guided Bedtime Body Scan Meditation For Sleep And Anxiety",
+      "url": "https://insighttimer.com/healingvibrationsmedia/guided-meditations/guided-bedtime-body-scan-meditation-for-sleep-and-anxiety",
+      "description": "A gentle, voice-guided body scan practice designed to ease the body into deep relaxation before sleep, using crystal singing bowls alongside spoken guidance to calm anxiety.",
+      "image": null,
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "slug": "guided-bedtime-body-scan-meditation-for-sleep-and-anxiety"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "owner-removed",
+    "note": "Removed by the owner on 31 Oct 2026 under the old health rule; passes the new one (12 Nov 2026). Row from owner-fixes-2026-10-31.live.log.json. No image: Insight Timer is never fetched, so the card shows the teacher's photo."
+  },
+  "images_final": true
+}

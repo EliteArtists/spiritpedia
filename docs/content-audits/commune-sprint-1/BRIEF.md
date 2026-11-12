@@ -1,5 +1,7 @@
 # Commune sprint 1: research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You research public information for teachers with a current
 course on Commune (onecommune.com, a video-course platform), so
 they can be listed on Spiritpedia (a directory of spiritual teachers) with a

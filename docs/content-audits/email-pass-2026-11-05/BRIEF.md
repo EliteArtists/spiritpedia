@@ -1,5 +1,7 @@
 # Email pass (5 Nov 2026): research brief
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 Spiritpedia is a directory of spiritual teachers. Before outreach starts,
 every living listing needs a way to be contacted. You look up a **published**
 contact route for listings that have no `contact_email`. This is research

@@ -17,6 +17,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { UA, timed, decode, probeImage, pageImage, amazonCover, publisherLogo } from './lib/images.mjs';
+import { healthHits } from './lib/health.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -549,6 +550,11 @@ if (already.length) say(`Skipped ${already.length} already in or removed by thei
 if (args.includes('--verbose')) already.forEach((n) => say(`  - ${n}`));
 const otherNotes = notes.filter((n) => !n.startsWith('skip '));
 if (otherNotes.length) { say('Notes:'); otherNotes.forEach((n) => say(`  - ${n}`)); }
+const health = healthHits(plan);
+if (health.length) {
+  say('Health check (README §18.4: out only if it claims to cure or treat a disease or condition, or to replace medical care):');
+  health.forEach(([where, title, words]) => say(`  - ${where} "${title}": ${words.join(', ')}`));
+}
 if (unsolved.length) { say('UNSOLVED (find these, or set the image to null for none):'); unsolved.forEach((u) => say(`  - ${u}`)); }
 if (problems.length) { say('PROBLEMS (need a decision):'); problems.forEach((p) => say(`  - ${p}`)); }
 

@@ -1,5 +1,7 @@
 # Sprint C (South Africa, India, Singapore, Dubai; city first): research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You find and research living teachers whose published base is in or beside
 one of these cities, where Spiritpedia has nobody or almost nobody (regional
 coverage report, 3 Nov 2026; owner, 4 Nov 2026): Johannesburg, Pretoria,

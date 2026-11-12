@@ -11,9 +11,13 @@ already approved. Read README §20, §18.4, §18.7 and
 `docs/content-audits/night-sprint-2026-11-09/BRIEF.md` first, and the memory
 index. All standing rules apply (robots.txt in its own command, blocked means
 skip, never decode emails, never fetch the never-fetch list, original bios,
-health rule, no questions overnight).
+health rule (narrow since 12 Nov 2026, README §18.4), most-viewed videos,
+no questions overnight).
 
-1. **Target:** 100+ new listings. **Sources, in order** (README §18.7 queue):
+1. **Target:** 100+ new listings. **First, before any other source** (owner,
+   12 Nov 2026): re-research the listings skipped or held under the old health
+   rule, from `docs/content-audits/night-sprint-2026-11-09/leads/health-restore.json`
+   (front of the queue), under the new rule. **Then, in order** (README §18.7 queue):
    YouTube channels read through the Data API (`node scripts/yt.mjs`), then
    lineage and association centre lists (yoga, Buddhist, Vedanta, Sufi
    networks), then anything else the queue names. Parked queues stay parked.

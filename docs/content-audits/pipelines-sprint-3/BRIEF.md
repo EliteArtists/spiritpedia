@@ -1,5 +1,7 @@
 # Pipelines sprint 3 (IMS, Sounds True, Kripalu, Esalen and Omega lists): research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You research public information for teachers named on lists saved on
 6 Nov 2026 (`docs/content-audits/lead-sources-2026-11-06/`), so they can be
 listed on Spiritpedia (a directory of spiritual teachers) with a full page:

@@ -1,0 +1,30 @@
+{
+  "healer": {
+    "healer_slug": "iyanla-vanzant"
+  },
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Working Through Anxiety",
+      "url": "https://insighttimer.com/iyanla/guided-meditations/working-through-anxiety",
+      "description": "A 14-minute guided meditation and visualization set to original music, designed to help listeners move through anxiety and fear by connecting with a sense of divine support. It's well suited for coaches, teachers, or anyone seeking a calming tool they can also share with clients or students. It streams free on Insight Timer with no subscription required.",
+      "image": null,
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "slug": "working-through-anxiety"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "owner-removed",
+    "note": "Removed by the owner on 31 Oct 2026 under the old health rule; passes the new one (12 Nov 2026). Row from owner-fixes-2026-10-31.live.log.json. No image: Insight Timer is never fetched, so the card shows the teacher's photo."
+  },
+  "images_final": true
+}

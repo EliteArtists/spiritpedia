@@ -1,110 +1,130 @@
-# Morning, 12 Nov 2026: broken images, then the night's decisions
+# Broken images, the new health rule, and what the old one cost (12 Nov 2026)
 
-**Migration 0049 is ready to run** (dev, then live).
-- **New Lebanon** points to Pittsfield, as you asked.
-- **Vrážné** is added, because it went in today.
-- **Check row:** aliases go up by 16 (15 places, plus a plain spelling of Vrážné). Listings with a town but no place: 1 on dev (Salmon, Idaho); live may differ.
+## 1. The counts: what the old health rule cost
 
-**Live now has 1,404 listings** (1,388 last night + 16 today). Admin → Ops is synced: 72 held plans, 0 on dev only.
+**How this was counted:**
+- I read every plan, skip, drop, held file and title screen in `docs/content-audits/` (all sprints since October). That is 1,412 plans, 2,064 skips and 3 title screens.
+- A wide word net picked out 3,355 entries that might be health-related.
+- Helpers read each one against the new rule. Each entry was marked:
+  - health the **only** reason, or health **plus another** reason that keeps it out on its own (already started, closed, no page, not on Amazon, no contact route, too thin, blocked);
+  - **passes** the new rule, **to check** (it names a condition with no cure or treat claim, or the note is too short to tell), or **fails** (a cure or treatment claim, or replacing medical care).
+- **Item counts are approximate**, because notes like "13 videos" were counted as 13.
 
-## 1. Broken images (the morning job)
+### Items left out of listings that are live
 
-The live queue had **102** rows. It now has **93**.
+**892 live listings** had 3,697 items left out for health reasons:
 
-**Fixed (4 offerings).** Each now shows the teacher's own photo, under your standing OK:
-- Michael Harner, *Shamanic Journey Solo and Double Drumming*: the store logo is gone (404), and there's nothing on its page. Now uses his photo from shamanism.org.
-- Juha Penttilä, two Gaia House retreats, and Bernat Font, one: Gaia House's page image is a placeholder GIF. Now uses their own sites' photos.
-- Log: `docs/image-fixes/2026-11-12.live.applied.json`. Each change can be undone with `--rollback`.
+| | Items |
+| :-- | --: |
+| Passes the new rule (wellbeing wording only) | **1,413** |
+| To check (names a condition, no cure claim found) | **1,408** |
+| Fails (a cure or treatment claim) | 320 |
+| Out for another reason as well | 556 |
 
-**Healthy again, rows cleared (5):** these load again, so I took them off the queue.
-- the Wayne Dyer audio offering;
-- the photos of Francie La Flow, Rose Cole, Chris Niebauer and Prashanti Paz.
+**By type** (passes / to check):
+- videos 714 / 466
+- offerings 391 / 665
+- books 60 / 75
+- free resources 86 / 45
+- notes covering several types 162 / 153
 
-The script suggested new photos for Francie, Rose and Prashanti. Their current photos work, so I changed nothing.
+**Restorable:** 2,821 items in 779 listings, of which 1,413 clearly pass.
 
-**Not changed:**
-- **Miracles Mastermind (Joe Vitale):** the only image found is a Zero Limits banner, not this programme. Skipped, as on 27 Oct.
+**Listings that never went in:** held and dropped plans left out another 369 restorable items. Those plans aren't live and wait on your other decisions.
 
-**Videos for you to remove (2):** YouTube no longer has them.
-- Michael Sealey, "Wind and Rain Relaxation Two Hours…": https://www.youtube.com/watch?v=j3NU4sMcVEQ
-- Wim Hof, "Brain over Body Michigan Study": https://www.youtube.com/watch?v=YficWbO6nMw
+### Practitioners, channels, apps and schools skipped or held
 
-Delete them in Admin → the teacher → Content, or tell me to.
+**Skipped in research for health: 658.**
+- **351** were also out for another reason (mostly no contact route, too thin, or blocked).
+- **307** were out for health alone:
+  - passes: 37 (wellbeing-led work such as grief, trauma healing, anxiety, burnout, self-healing qigong);
+  - to check: 189 (56 condition-named, 42 medical roles, 65 mainly therapy, 21 mainly fitness or bodywork, 5 other);
+  - fails: 81 (disease-cure claims, or replacing medical care).
 
-**Really broken, no fix found (about 13).** Each needs an image from you, or the item removed:
-- **Karina Grant, 9 offerings:** the image URL now returns a web page.
-- **The Untethered Soul Lecture Series (Michael Singer) and Ask Pema (2026):** both 404.
-- **Barbara Brennan, *Seeds of the Spirit 2001*:** the "image" is the product page (403).
-- **5 books with no cover:** they still point to a "no cover" placeholder (Ra Uru Hu ×2, Dan Brulé, Terence McKenna, Florence Scovel Shinn).
+**Taken out by the title screen before research: 157.**
+- **The roles:** 73 medical (doctor, naturopath, medical qigong), 67 therapists or psychologists, 15 nutrition and similar, 2 posture.
+- **What the screen did:** it took them out by role, with no research.
 
-Michael Singer's, Pema Chödrön's and Karina Grant's own photos are Google thumbnails, so I didn't use them as fallbacks.
+**Held or dropped with health as a reason: 7.**
+- **Health was the only reason (3):** Jamie Wozny (held), Julie E. Brent and J. Brown (dropped).
+- **Health plus another reason (4):** Dr. Miles Neale and Catherine Andrews (held), Amy Belair and NgalSo (dropped).
+- **What happens to them:** your earlier decisions on these stand unless you say otherwise.
 
-**Hosts that refuse our checker (78: 36 teacher photos, 27 offerings, 10 free resources, 5 books):**
-- **What happens:** these sites' firewalls drop any request that names itself a bot, at robots.txt or at the image. Our ingest and the daily audit both name themselves (SpiritpediaIngest and SpiritpediaImageAudit). The audit logs the drop as a failure, so the rows come back every week.
-- **Visitors:** they get the images. The website shows these as plain links to the image, which the visitor's browser loads.
-- **Sites:** mostly small WordPress sites. Also ymaa.com (8, blocks Claude), dharma.org (5) and Google Drive (2).
-- **No retries:** under your rule I didn't try any of them another way.
+**Owner removals under the old rule (4):**
+- **Back in now (2):** Iyanla Vanzant's "Working Through Anxiety" and Healing Vibrations' "Guided Bedtime Body Scan Meditation For Sleep And Anxiety". Both pass the new rule, so I re-added them on dev and live.
+- **Staying out (2):** Jillian's "Reiki for Clearing Depression…" and "REIKI FOR WEIGHT LOSS". Both read as treating a condition.
 
-**Proposal, for your OK:** have the daily audit count a refused robots.txt or a dropped connection as "can't tell", as it already does for bot-check pages. These rows would leave the Inbox, and real 404s would still be caught.
+### Did video selection avoid popular wellbeing titles? Yes.
 
-**Worth a look while there:** some older offerings break today's health rule:
-- Marisa Cranfill's YoQi titles, such as "Stress & Anxiety Relief", "Boost the Immune System" and "Six Healing Sounds";
-- Karina Grant's "Permission to Reset Anxiety", "Sleep" and "Brain Healing".
+I took every 18th live teacher with a YouTube channel (40 teachers) and read their 15 most-viewed uploads through the YouTube Data API. That gave 435 videos over 90 seconds.
 
-They went in before the rule. Remove them?
+| Most-viewed videos | Count | On Spiritpedia |
+| :-- | --: | --: |
+| Wellbeing titles (stress, anxiety, sleep, healing, grief, calm…) | 63 | **7 (11%)** |
+| Every other title | 372 | 124 (33%) |
 
-## 2. The night's decisions, done
+The 56 wellbeing titles we passed over belong to 24 of the 40 teachers. Some of the most-viewed:
+- Melinda Quesenberry, "Heal Relationship Anxiety…" (131k views);
+- David Gandelman, "Vipassana for Sleep" (20k views);
+- Liza Colpa, "…Singing Bowl Meditation for Sleep & Relaxation" (12k views).
 
-**Photos accepted, on dev and live (4):** Zen Center of Spokane, Zen Montañas y Mar, Melbourne Zen Group, Green Mountain Zen.
+Overall, we list only 30% of these teachers' most-viewed videos, because helpers picked from the latest uploads.
 
-**Thin, listed as they are, on dev and live (8):**
-- Great Lake Zen Center
-- Vrážné Zen Center (the retreat is undated)
-- Inayatiyya UK
-- Fazal Manzil
-- Sufi Earth Spirit (Cala Jami): city set to Olbia, since San Pantaleo is a village in that municipality and Olbia lets Near You find it
-- Phuntsok Choeling
-- Ewam Choden
-- Sakya Künga Chöling
+**The list by listing:** `docs/reports/2026-11-12-health-audit-by-listing.md`. It covers all 892 listings with counts, and every health-only skip with its reason.
 
-**Il Cerchio's sister temples and Centro Zen L'Arco, researched this morning, on dev and live (4):**
+## 2. Live items that clearly break the new rule (report only: you decide)
 
-| Listing | V/B/O/F | Notes |
-| :-- | :-- | :-- |
-| [Tempio Zen OraZen Sokuzen-ji](https://www.spiritpedia.co/healers/tempio-zen-orazen-sokuzen-ji) | 0/0/2/2 | No channel of its own (the linked one is Il Cerchio's old channel). Shiatsu left out |
-| [Ten Shin – Tempio Zen di Napoli](https://www.spiritpedia.co/healers/ten-shin-tempio-zen-di-napoli) | 9/0/2/1 | Its calligraphy course left out: this year's course began on 27 Sep |
-| [Centro Buddhista Zen Gyosho](https://www.spiritpedia.co/healers/centro-buddhista-zen-gyosho) | 8/0/1/1 | Site partly stale (weekly zazen is the only current item). A photo may show its pre-2019 premises. Shiatsu and counselling left out |
-| [Centro Zen L'Arco](https://www.spiritpedia.co/healers/centro-zen-l-arco) | 0/0/1/3 | No videos, as you said. The photo is its channel's logo |
+I checked every live title, description and bio for disease words: 105 hits. These are the ones that clearly claim to cure or treat a disease or condition:
 
-- **L'Arco teacher link:** Reb Anderson is on Spiritpedia and is named as one of L'Arco's abbot's teachers, but not as teaching there. Not linked, under the guests rule.
-- **L'Arco tier:** it's affiliated with San Francisco Zen Center. A possible stature raise, not made.
+**Videos:**
+- **Karina Grant:** "Healing arthritis naturally", "Overcome chronic fatigue…", "Joannas Quantum-Touch testimonial pain relief fibromyalgia", "Quantum-Touch helps Anne and her Raynaud's disease…"
+- **Lee Holden:** "60 Sec Immunity Boost", "9-Minute Arthritis Relief Qi Gong Routine", "7-Min Natural Blood Pressure Control", "How to Lower Cholesterol Naturally"
+- **Julie Schiffman:** "Releasing Inflammation", "Releasing Hypertension/High Blood Pressure", "Tapping Support for IBS…"
+- **Immune-system titles:**
+  - Jeffrey Chand, "Immuni Qi… Immune System";
+  - Mindful Movement, "Strengthen your Immune System…";
+  - The Shift Network, "Qigong to Rejuvenate Your Immune System";
+  - Dawson Church, "Boost Your Immune System Naturally";
+  - Wim Hof, "Influencing the Immune System";
+  - Dr Paul Lam, "…Improve Immunity".
+- **COVID titles:**
+  - Wim Hof, "Wim Hof's take on Coronavirus";
+  - Tony Robbins, "Unmasking The Science You Aren't Hearing On TV | COVID-19…" (also reads as conspiracy);
+  - Lynne McTaggart, "A live intention to limit the spread of the Coronavirus";
+  - Patrick McKeown, "Coronavirus (Covid19) Recovery Breathing Exercises".
+- **Others:**
+  - Donna Eden, "Lower Your Blood Pressure…";
+  - Bruce Lipton, "Cancer is a Symptom".
 
-**Dropped (18), moved to `night-sprint-2026-11-09/dropped/` with your reasons:**
-- E-Vam Institute and Ramana Maharshi Foundation UK (contact rule)
-- Ananda Sangha Bangalore (hacked site)
-- the 3 Kriya Yoga network plans
-- The Astana
-- all 11 WCCM national communities, including Singapore and Canada (WCCM stays one listing)
+**Offerings:**
+- Patrick McKeown, "OA Breathing For Diabetes Course";
+- FibroClear (EFT for fibromyalgia);
+- Julie Schiffman's "Arthritis…" and "Tapping for Digestive Issues (IBS)" masterclasses;
+- Marisa Cranfill, "YoQi: Qigong Flow to Boost the Immune System" (you said keep Marisa's; listed only so you have the full picture).
 
-**Still held, until a photo turns up (9):**
-- no usable photo: Brussels Zen Center, Dhargyey, Iyengar Wellington, Dorje Chang, Tapas Yoga HK, Garchen;
-- teacher or guru portraits only: Chinmaya Mission Houston, Ananda Sangha Delhi, Tara Institute.
+**Books:**
+- Lynne McTaggart, *The Cancer Handbook*;
+- Dawson Church, *EFT for Fibromyalgia*;
+- Patrick McKeown, *Asthma-Free Naturally* ("drug-free");
+- Leia Cohen, *Battle the Flu: How to Boost Your Immunity…*;
+- Dr Paul Lam, *Tai Chi for Diabetes Handbook*;
+- *The Way of the Iceman* (blurb: "boosts the immune system, reduces inflammation").
 
-**Raised to Luminary on dev and live:** Providence Zen Center, Berlin Zen Center, Iyengar Yoga Centre of Victoria, Satchidananda Ashram–Yogaville. Each plan has `tier_override` with your reason: "on editorial stature (12 Nov 2026)".
+**Free resources:**
+- Gary Craig's "Health Articles & Videos" (EFT for cancer, arthritis, asthma) and "Impossible" Healings (kidney failure, vision loss).
 
-**Queued** (README §18.7, single names): Pir Zia Inayat Khan, Geoff Dawson, Gabriella Giubilaro, Shirley Daventry French.
+**Borderline, probably fine:**
+- Dr Paul Lam's Tai Chi for Arthritis lessons and handbook (an evidence-based programme, "easing joint pain");
+- Jeffrey Chand's neck-and-arthritis routines;
+- Healing Vibrations' "…Sleep Music for Anxiety | Hypertension";
+- Hahnemann's and Vithoulkas's homeopathy classics (historic texts, under the homeopathy note).
 
-**Guests stay unlinked,** as you said; the rule is unchanged.
+**Fine:** bios that tell a teacher's own illness (Anita Moorjani, Donna Eden, Louise Hay), astrology's Cancer, and "mind virus" titles.
 
-## 3. Checks and rule slips
+## 3. Restore
 
-- **Checks:**
-  - every insert ran one at a time, dev then live;
-  - all 16 have inserted logs for both;
-  - four random new or raised pages return 200 on live.
-- **My slip, image check:** before I knew these hosts refuse our bot identity, I loaded 3 of the queued photos (laurenrainbow.com, joanranquet.com, kisetsu.es) with plain curl, a different identity from our checker's. All three returned 200. I stopped there and fetched nothing else from those hosts.
-- **My slip, insert loop:** the first insert command for the 12 released plans failed because zsh didn't split the list. Nothing was inserted, and the rerun was clean.
-- **Helper:**
-  - read yt3.ggpht.com's robots.txt (400), then used the two channel avatars;
-  - priced OraZen's weekly evenings from its membership fee, published on another of its pages;
-  - took a few bio details from photos (for example, "a wooden-floored hall").
+See section 4 for progress. The order: items in live listings now (dev, then live); the skipped listings as the first job of tonight's sprint.
+
+## 4. Progress
+
+(filled in below as the restore runs)

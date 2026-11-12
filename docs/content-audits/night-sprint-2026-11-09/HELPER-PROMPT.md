@@ -11,13 +11,14 @@ Your leads are ranks {A}–{B} in docs/content-audits/night-sprint-2026-11-09/le
 First, read docs/content-audits/night-sprint-2026-11-09/BRIEF.md in full, and follow it exactly. In case anything is unclear, the key points are:
 
 - **centre** → an Organisation listing, plus docs/content-audits/<centre-slug>-teachers.json linking only Spiritpedia teachers whom the centre's own site (or the teacher's own site) names as teaching there, with the evidence URL for each.
-- **app** → an App listing: describe the practice content only, never sleep, anxiety, stress or therapy claims. Skip apps that are mainly therapy or clinical. Headspace and Insight Timer are already listed.
+- **app** → an App listing: describe the practice content; sleep, stress and anxiety wording is fine, never a claim to treat a disease or condition. Skip apps that are mainly therapy or clinical. Headspace and Insight Timer are already listed.
 - **yoga-school** → a School listing from a lineage or association's own centre list (names only; the school's own site is the source).
 - **individual** → a person's listing from their own website.
 - **YouTube channel pages are never fetched** (consent redirect): never youtube.com/@…, /channel/… or /c/…, consent.youtube.com or m.youtube.com. Read channels, subscribers, avatars and uploads with scripts/yt.mjs (the Data API section below). Check each video with oEmbed.
 - **Required in every plan:**
   - a published email (sprint.email_source = the page URL) or a contact form (sprint.contact_form_url);
-  - the strict health rule;
+  - the health rule (README §18.4, owner, 12 Nov 2026): wellbeing wording (stress, anxiety, sleep, pain relief through practice, relaxation, emotional and spiritual healing) is allowed; leave out only claims to cure or treat a disease or condition, or to replace medical care;
+  - videos: the teacher's most-viewed, from `node scripts/yt.mjs channel <ref> --top 25`, within the subject and quality rules;
   - no conspiracy- or political-centred content;
   - a base (city and country, or no_public_base with the reason), with location_source;
   - 1–3 images you have looked at;

@@ -104,7 +104,7 @@ The list to pick up from. Each points to where the detail lives.
       `docs/content-audits/shift-sprint-1/`). The rest of the 477 after
       review, from rank 117 (Judith Orloff, Ken Cohen, Sarah McCrum, Tyler
       Odysseus…), with the same brief and tools (`BRIEF.md`, `sprint.mjs`,
-      `review.py`). Titles with "Medical" need the health-claim check.
+      `review.py`). Titles need the health check (§18.4).
     - **Insight Timer:** the hub, the 38 linked teachers and sprint 1 (97
       new teachers, ranks 1–116) are live
       (`docs/content-audits/insight-timer-sprint-1/`, report in
@@ -2775,6 +2775,23 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   `docs/reports/2026-11-11-sprint-decisions-admin-routine.md`.
 - **Contact** (owner, 11 Nov 2026): a Cloudflare-only email with no contact
   form, or a phone number or address alone, fails the contact rule: out.
+- **Health rule** (owner, 12 Nov 2026; replaces the strict rule used from
+  October to 12 Nov 2026, which left out far too much). **Allowed:** wellbeing
+  language in the teacher's own words: stress, anxiety, sleep, pain relief
+  through practice, relaxation, emotional and spiritual healing. **Not
+  allowed:** claims to cure or treat diseases or medical conditions (e.g.
+  cancer, immunity, chronic illness), or advice to replace medical care. Only
+  an item making such a claim is left out; a teacher is skipped only when
+  their work is mainly that. Naming a condition without such a claim is fine.
+  Therapy-led work (psychotherapy, counselling) is a separate scope rule.
+  `scripts/ingest.mjs` lists the words to check (`scripts/lib/health.mjs`);
+  `review.py` uses the same list. The audit of what the old rule cost, and the
+  restore: `docs/reports/2026-11-12-health-rule-audit.md`. The discovery
+  emails' title filter (`readsAsHealthClaim`) stays broad until the solicitor
+  answers (§ legal questions).
+- **Videos are the teacher's most-viewed** (owner, 12 Nov 2026), within the
+  subject and quality rules: `node scripts/yt.mjs channel <ref> --top 25`
+  lists them by YouTube view count.
 - **At most 3 subjects per item**, each an existing slug in `subjects` (42,
   §17.3), most relevant first. Older rows have more; new rows don't.
 - **Amazon links** are stored as `https://www.amazon.com/dp/{ASIN}` (the US
@@ -3120,11 +3137,11 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
      (`scripts/link-hub.mjs`).
    - Apps: genuine meditation, prayer and contemplative apps, each with a website and a
      contact route. Headspace stays. Calm is allowed. As with Insight Timer, the listing
-     describes the meditation and leaves out sleep, anxiety and therapy claims.
+     describes the meditation; sleep and anxiety wording is fine, never a claim to treat a condition (§18.4).
 2. **Quantum-Touch sprint:** Quantum-Touch practitioners worldwide.
    - Read the official practitioner directory's robots.txt and terms first.
-   - The health rule applies strictly: list the energy-healing work, never pain-relief
-     or condition claims.
+   - The health rule (§18.4): energy-healing work and pain relief through practice are
+     fine; never a claim to cure or treat a disease or condition.
 3. **Pipelines sprint 3's queue** continues from rank 312 (ranks 1–311, IMS included,
    were done in sprint 3): Sounds True (title-screened, names only) alternating with
    Kripalu and Esalen past faculty.

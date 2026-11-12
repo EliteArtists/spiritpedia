@@ -1,5 +1,7 @@
 # Hubs sprint 2 (Hollyhock, Findhorn, Evolving Wisdom, The Shift Network): research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You research public information for teachers on the **current** faculty of
 Hollyhock (hollyhock.ca, Cortes Island, BC), the Findhorn Foundation
 (findhorn.org, Scotland), Evolving Wisdom (evolvingwisdom.com) or The Shift

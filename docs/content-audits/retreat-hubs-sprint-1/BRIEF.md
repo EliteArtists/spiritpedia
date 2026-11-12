@@ -1,5 +1,7 @@
 # Retreat-centre hubs sprint 1: research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You research public information for teachers on the current faculty of
 Kripalu Center for Yoga & Health (kripalu.org), Esalen Institute (esalen.org)
 or 1440 Multiversity (1440.org): someone with an upcoming programme there, so

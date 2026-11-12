@@ -1,5 +1,7 @@
 # UK & Europe sprint 1 (Sprint A): research brief (one teacher at a time)
 
+> **Health rule superseded on 12 Nov 2026** (owner): wellbeing wording is allowed; only claims to cure or treat a disease or condition, or to replace medical care, stay out. See README §18.4. The strict rule below is kept as a record of this sprint.
+
 You research public information for living teachers whose published base is in
 the UK, Ireland or Western Europe, found through UK and European centres (Gaia
 House, Samye Ling, Findhorn, Sharpham Trust, Plum Village), Insight Timer

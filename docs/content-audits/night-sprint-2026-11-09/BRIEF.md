@@ -53,8 +53,8 @@ You research public information so each lead can be listed on Spiritpedia, a dir
 ## Kind: app
 
 - **Find the app's own website** (web search). In scope are meditation, prayer, contemplative, spiritual-practice, astrology and tarot apps. **Health rule:**
-  - The bio and items describe the meditation or practice only. **Never** sleep, anxiety, stress, depression, therapy or other condition claims, even where the app markets itself on them (owner, 9 Nov 2026: Calm and Headspace are allowed on these terms, as with Insight Timer).
-  - **Skip** an app that is mainly therapy, clinical or condition-led (for example one that treats insomnia or offers therapists) or medical.
+  - The health rule (README §18.4, owner, 12 Nov 2026): sleep, stress and anxiety wording is fine; never a claim to treat a disease or condition.
+  - **Skip** an app that is mainly therapy or clinical (for example one that offers therapists or treats insomnia as a medical condition).
   - Headspace and Insight Timer are already listed: skip them as duplicates.
 - **Plan:** `create.entity_type` "app", `availability` "worldwide". Add the company's headquarters city and country if its own site publishes them (else `no_public_base` with the reason). `founded_year` if published.
   - **Bio:** what the practice content is, its teachers or tradition, how it's used, and who makes it. Own words, no hype, no store-rating claims.
@@ -78,11 +78,10 @@ You research public information so each lead can be listed on Spiritpedia, a dir
 - **Their own website is required** for the listing: bio, offerings, contact and photo. Find it on the profile page or through a web search, and confirm it names them and Quantum-Touch.
   - **No own website → skip** ("no own site"). A practitioner page on someone else's site doesn't count.
   - If the profile page publishes an email or website, you may use it, but flag "from the Quantum-Touch profile".
-- **Health rule, applied strictly (owner):**
-  - List the energy-healing work only: sessions, Quantum-Touch workshops and classes, distance sessions.
-  - **Never** pain relief, posture or bone alignment, or any condition, illness or injury, in the bio, the items or the subjects.
-  - Leave out any item that names a condition or promises relief.
-  - **Skip** a practitioner whose site is mainly about pain, injury or illness, or who presents themselves mainly as a medical, chiropractic, massage-therapy or physiotherapy practice.
+- **Health rule (README §18.4, owner, 12 Nov 2026):**
+  - Energy-healing sessions, workshops, classes and distance sessions, and pain relief through the practice, are fine.
+  - Leave out any item that claims to cure or treat a disease or condition (arthritis, inflammation, injury repair…) or to replace medical care.
+  - **Skip** a practitioner whose site is mainly such claims, or who presents themselves mainly as a medical, chiropractic, massage-therapy or physiotherapy practice.
 - **Plan:** `entity_type` "individual". `subjects` start with `quantum-touch`, then 1–2 of energy-medicine, reiki, self-healing and the like.
   - **Base:** city and country from their own site or the profile. City only: never a street, postcode or region code ("Noord Holland, 1816 NX" → the town if published, else leave it null and flag).
   - Availability `local_online` when they see people in person and also offer distance sessions.
@@ -144,7 +143,8 @@ don't write a plan. Write
 `docs/content-audits/night-sprint-2026-11-09/skipped/<slug>.json`:
 `{ "name": "...", "rank": N, "reason": "plain sentence" }`.
 Also skip anyone whose work is mainly medical or clinical treatment, or sold on
-conditions, where almost nothing passes the health-claim rule; anyone with no
+claims to cure or treat disease, where almost nothing passes the health rule
+(README §18.4); anyone with no
 published email and no contact form (README §18.4); anyone who has died or no
 longer teaches; and a brand or music project rather than a teacher. Couples who
 teach as one stay one listing (the better-known partner, or the couple's name).
@@ -216,8 +216,8 @@ Item shapes (exactly these keys):
 - **Bio: original wording, always** (README §18.4). Two short paragraphs,
   120–220 words, plain British English (Spiritpedia's house style, even for American teachers), written in your own words from your
   research (training, lineage, what they teach, how they teach, where, books).
-  Calm and specific, no hype ("world's leading", "renowned"), no health claims,
-  no list of conditions they treat, no "diagnose". Never copy or lightly edit
+  Calm and specific, no hype ("world's leading", "renowned"), no claim to cure
+  or treat a disease, no list of conditions they treat, no "diagnose". Never copy or lightly edit
   text from the hub, their site or anywhere else: read, close the page,
   then write. Mention a hub or Sounds True only if natural and only if their own site supports it.
 - **Bio check (required):** save the sources you drew on in your work folder
@@ -317,32 +317,31 @@ it's them, flag it. No usable photo → skip the teacher.
 - **Evergreen only.** No dated events that have passed. A future-dated retreat
   or course may go in with `start_date` / `end_date` (YYYY-MM-DD). Repeating
   ones go in undated.
-- **No health claims, applied strictly.** Leave out any item whose title or
-  description names a medical condition or promises to treat, heal or cure one
-  (pain, cancer, autoimmune, anxiety, depression, trauma *treatment*, PTSD,
-  insomnia, diabetes, thyroid, fertility, menopause symptoms, weight loss,
-  immunity, addiction recovery, "reverse", "cure"…). Retreat centres and their teachers
-  often frame work around conditions (pain, anxiety, eyesight, bones, grief
-  therapy): those items stay out, and a teacher whose work is mainly that is
-  skipped. Psychotherapy (IFS, MBCT, trauma therapy) is not spiritual teaching:
-  skip a teacher whose work is mainly therapy.
-  **Anything "medical"** (Medical Intuition, Medical Qigong…) is left out and
-  noted in `left_out`. "Relaxation", "rest", "sleep as a practice", "calm",
-  "energy", "balance", "emotional wellbeing" are fine. When borderline, leave
-  it out and flag it.
-- **No condition-named items** at all, even educational ones.
+- **Health rule (owner, 12 Nov 2026; README §18.4).** Wellbeing language in
+  the teacher's own words is **allowed**: stress, anxiety, sleep, pain relief
+  through practice, relaxation, emotional and spiritual healing (grief, trauma
+  healing, burnout, nervous-system calm, energy and sound healing). **Not
+  allowed:** a claim to cure or treat a disease or medical condition (cancer,
+  immunity, chronic illness, diabetes, arthritis, blood pressure…), anything
+  against vaccines, or advice to replace or stop medical care. Leave out only
+  an item that makes such a claim, note it in `left_out`, and skip a teacher
+  only when their work is mainly such claims. A condition named without a
+  claim to cure or treat it (a memoir of illness, astrology's Cancer, "yoga in
+  menopause") is fine. Popular wellbeing titles are welcome.
+  Psychotherapy (IFS, MBCT, trauma therapy) is still not spiritual teaching:
+  skip a teacher whose work is mainly therapy (a scope rule, not the health
+  rule).
 - **Look over the titles on their YouTube channel** (and blog) as a whole: if it is
-  mainly condition-led (medical intuition, chronic pain, PTSD, "staying healthy
-  during COVID"…) or carries conspiracy or partisan political commentary, skip
-  the teacher under the health or conspiracy rule, even if the items you'd pick
-  are clean.
+  mainly disease-cure claims or carries conspiracy or partisan political
+  commentary, skip the teacher under the health or conspiracy rule, even if
+  the items you'd pick are clean.
 - **Max 3 subjects per item.**
 - **Videos**: YouTube only, from the teacher's own channel first; talks or
   interviews on other channels only when the teacher is the main speaker and
   it's teaching. No Shorts, no music-only, nothing under ~2 minutes. Each must
   pass oEmbed:
   `https://www.youtube.com/oembed?format=json&url=https://www.youtube.com/watch?v=ID`
-  → 200 (else leave out). Pick the most-viewed evergreen teaching videos (the
+  → 200 (else leave out). Pick the most-viewed evergreen teaching videos (owner, 12 Nov 2026: `node scripts/yt.mjs channel <ref> --top 25` lists them by YouTube view counts; wellbeing titles included; the
   channel's /videos page HTML has ytInitialData with view counts). Up to 12.
   Copy titles as they are, minus hashtags and trailing "| Channel name".
 - **Books**: authored or co-authored by them. **Never open amazon.com or any
@@ -352,7 +351,7 @@ it's them, flag it. No usable photo → skip the teacher.
   openlibrary.org** (since 4 Nov it serves us a human-verification page, so
   it is blocked). Flag each book "ISBN from <page>, not confirmed elsewhere"
   (owner, 5 Nov 2026: such books are kept). US edition preferred. No books
-  whose title or blurb is a health claim. Up to 10, best known first.
+  whose title or blurb claims to cure or treat a disease. Up to 10, best known first.
   Oracle/tarot decks count only with an ISBN on the teacher's or publisher's
   page. No cover found →
   `"cover": null` and a flag.
@@ -434,7 +433,7 @@ Each lead is a **target city** (`target_city`, `target_country`). Find **one** p
 - **Teachers:** write `docs/content-audits/<school-slug>-teachers.json` as for centres (`{ "hub", "links": [{ "teacher", "role", "evidence" }] }`).
   - Link only teachers already on Spiritpedia (the dev names file) whom the school's own site names as teaching or founding there.
   - Put the school's other named lead teachers in a flag starting "Possible future listings:" (names only).
-- **Health and fitness rule:** leave out therapeutic, injury or condition-led items (yoga therapy for back pain and the like), prenatal medical claims and weight loss. Skip a school sold mainly as fitness or therapy.
+- **Health and fitness rule:** the health rule (README §18.4): leave out only claims to cure or treat a disease or condition; back-care and gentle classes in wellbeing terms are fine. Skip a school sold mainly as fitness or therapy.
 - `sprint.kind` "yoga-school"; `sprint.rank` the lead's rank. A skipped city gets `skipped/yoga-<city>.json` with the reason.
 
 ## Kind: channel (owner, 10 Nov 2026; leads from rank 601)
