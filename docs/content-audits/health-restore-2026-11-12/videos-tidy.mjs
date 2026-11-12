@@ -17,7 +17,7 @@ const healers = new Map(JSON.parse(fs.readFileSync(process.argv[2], 'utf8')).map
 // ("Day 6") that say nothing about the content.
 const OUT_TOO = /psychedel|ayahuasca|psilocybin|ketamine|mdma|plant medicine|medical intuit|diagnos|symptom|corporate|\bupdate\b|welcome to|true crime|murder|suicide/i;
 const BARE = /^\W*(day|week|part|episode|ep\.?|session)\s*\d+\W*$/i;
-const OFF_TOPIC = /\bnews\b|election|politic|trump|biden|harris|disclosure|\bufo|alien|vaccin|pandemic|lockdown|\bwar\b|israel|gaza|ukraine|russia|climate|el ni[ñn]o|\bAI\b|artificial intelligence|court|elon|government|economy|stock|crypto|podcast trailer|trailer|teaser|promo|announcement|giveaway|live stream test/i;
+const OFF_TOPIC = /\bnews\b|election|politic|trump|biden|harris|disclosure|\bufo|alien|vaccin|pandemic|covid|corona ?virus|lockdown|\bwar\b|israel|gaza|ukraine|russia|climate|el ni[ñn]o|\bAI\b|artificial intelligence|court|elon|government|economy|stock|crypto|podcast trailer|trailer|teaser|promo|announcement|giveaway|live stream test/i;
 const SUBJECTS = [
   [/meditat|guided|sleep|relax|body scan|nidra/i, 'meditation'],
   [/mindful/i, 'mindfulness'],

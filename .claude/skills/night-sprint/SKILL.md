@@ -17,7 +17,13 @@ no questions overnight).
 1. **Target:** 100+ new listings. **First, before any other source** (owner,
    12 Nov 2026): re-research the listings skipped or held under the old health
    rule, from `docs/content-audits/night-sprint-2026-11-09/leads/health-restore.json`
-   (front of the queue), under the new rule. **Then, in order** (README §18.7 queue):
+   (front of the queue), under the new rule. Each lead's `test` says how to
+   judge it: give it to the helper with the lead (title-screen medical roles
+   only if their work is spiritual; therapy or fitness leads only for the
+   spiritual practice they lead). Any item top-up plans in
+   `docs/content-audits/health-restore-2026-11-12/` without an
+   `.live.inserted.json` go in (dev, then live) before new listings.
+   **Then, in order** (README §18.7 queue):
    YouTube channels read through the Data API (`node scripts/yt.mjs`), then
    lineage and association centre lists (yoga, Buddhist, Vedanta, Sufi
    networks), then anything else the queue names. Parked queues stay parked.

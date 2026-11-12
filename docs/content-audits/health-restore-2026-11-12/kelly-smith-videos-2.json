@@ -1,0 +1,38 @@
+{
+  "healer": {
+    "healer_slug": "kelly-smith"
+  },
+  "videos": [
+    {
+      "title": "15 Minute|| Immune System Support Meditation",
+      "url": "https://www.youtube.com/watch?v=KyWdoeAVf6A",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Mindful in Minutes || Kelly Smith "
+    },
+    {
+      "title": "Freeform|| Your Immune System + Meditation",
+      "url": "https://www.youtube.com/watch?v=ji4SM6Gy6_s",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "channel": "Mindful in Minutes || Kelly Smith "
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos-2",
+    "note": "Second pass (owner, 12 Nov 2026): practice routines that name a condition, with no cure or treatment claim; most-viewed first (YouTube Data API views).",
+    "views": {
+      "KyWdoeAVf6A": 1467,
+      "ji4SM6Gy6_s": 158
+    }
+  },
+  "images_final": true
+}

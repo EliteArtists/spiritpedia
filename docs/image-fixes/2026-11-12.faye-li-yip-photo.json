@@ -1,0 +1,38 @@
+[
+ {
+  "env": "dev",
+  "healer_slug": "faye-li-yip",
+  "why": "Owner, 12 Nov 2026: replace the theshiftnetwork.com photo with one from a host we may use. Thumbnail of her own video \"24 Step Simplified Tai Ji Quan by Master Faye Yip\" on the Deyin Taijiquan Institute channel (her own site has only photos under 180px).",
+  "before": {
+   "image_url": null,
+   "image_urls": [
+    "https://theshiftnetwork.com/sites/files/faculty/crop/FayeYip.jpg"
+   ]
+  },
+  "after": {
+   "image_url": null,
+   "image_urls": [
+    "https://i.ytimg.com/vi/IWUTAZF8yVw/maxresdefault.jpg"
+   ]
+  },
+  "status": 200
+ },
+ {
+  "env": "live",
+  "healer_slug": "faye-li-yip",
+  "why": "Owner, 12 Nov 2026: replace the theshiftnetwork.com photo with one from a host we may use. Thumbnail of her own video \"24 Step Simplified Tai Ji Quan by Master Faye Yip\" on the Deyin Taijiquan Institute channel (her own site has only photos under 180px).",
+  "before": {
+   "image_url": null,
+   "image_urls": [
+    "https://theshiftnetwork.com/sites/files/faculty/crop/FayeYip.jpg"
+   ]
+  },
+  "after": {
+   "image_url": null,
+   "image_urls": [
+    "https://i.ytimg.com/vi/IWUTAZF8yVw/maxresdefault.jpg"
+   ]
+  },
+  "status": 200
+ }
+]

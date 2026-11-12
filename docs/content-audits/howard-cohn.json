@@ -22,7 +22,7 @@
       "facebook_url": null,
       "twitter_url": null,
       "tiktok_url": null,
-      "contact_email": "sf.mission.dharma@gmail.com",
+      "contact_email": null,
       "image_urls": [
         "https://yt3.googleusercontent.com/hXVdqFAvCxP0PCzhy9QRoVm5MZIR49H78z20TkgTeVNgd0DPw_UArR-USVDft0Gam9h5d18v5w=s900-c-k-c0x00ffffff-no-rj"
       ]
@@ -153,8 +153,8 @@
     "rank": 22,
     "hub_url": "https://www.dharma.org/teacher/howard-cohn/",
     "tier_evidence": "YouTube @missiondharma 469 subscribers (channel header, 6 Nov 2026; Mission Dharma, the sangha he founded and leads); YouTube @meditationhowardcohn 162 subscribers (channel header, 6 Nov 2026) → ~631 total → local_hero",
-    "email": "yes",
-    "email_source": "https://www.missiondharma.org/contact.html",
+    "email": "removed",
+    "email_source": null,
     "contact_form_url": "https://www.missiondharma.org/contact.html",
     "bio_check": "OK: no 8-word runs against 10 source(s)",
     "flags": [
@@ -165,7 +165,8 @@
       "Only one usable photo: Mission Dharma's teacher-page headshot is 174×220 px, below the minimum.",
       "He has an MA in counselling psychology and a private counselling and mentoring practice; the counselling side is not listed (therapy), the dharma teaching is the main work.",
       "Book ISBN-10 from the Amazon link on his own book page (missiondharma.org/howies-book.html, not opened), not confirmed elsewhere; cover not checked.",
-      "Video titles carry talk dates; they are regular weekly dharma talks, kept as evergreen teaching."
+      "Video titles carry talk dates; they are regular weekly dharma talks, kept as evergreen teaching.",
+      "Owner, 12 Nov 2026: the email had been decoded from Cloudflare protection; removed on dev and live (contact form kept where there is one)."
     ],
     "left_out": [
       "Spirit Rock retreats Nov 2026–Jan 2027 on his schedule page: spiritrock.org is off limits (not opened) and Spirit Rock is not a hub here.",

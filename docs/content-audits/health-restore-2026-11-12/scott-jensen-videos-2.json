@@ -1,0 +1,28 @@
+{
+  "healer": {
+    "healer_slug": "scott-jensen"
+  },
+  "videos": [
+    {
+      "title": "How Can Tai Chi Help with Parkinson's Disease?",
+      "url": "https://www.youtube.com/watch?v=erp0WlTuPSk",
+      "subjects": [
+        "tai-chi",
+        "qi-gong"
+      ],
+      "channel": "10,000 Victories Kung Fu, Tai Chi, Qigong, Xingyi"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos-2",
+    "note": "Second pass (owner, 12 Nov 2026): practice routines that name a condition, with no cure or treatment claim; most-viewed first (YouTube Data API views).",
+    "views": {
+      "erp0WlTuPSk": 1001
+    }
+  },
+  "images_final": true
+}

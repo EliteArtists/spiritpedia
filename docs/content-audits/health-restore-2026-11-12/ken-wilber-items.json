@@ -1,0 +1,36 @@
+{
+  "healer": {
+    "healer_slug": "ken-wilber"
+  },
+  "videos": [],
+  "courses": [],
+  "free_resources": [],
+  "books": [
+    {
+      "title": "Grace and Grit: Spirituality and Healing in the Life and Death of Treya Killam Wilber",
+      "slug": "grace-and-grit",
+      "author": "Ken Wilber",
+      "asin": "1611808499",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Ken Wilber's account of the five years he shared with his wife, Treya Killam Wilber, from her diagnosis to her death, woven together with passages from her own journals. Alongside the story of their marriage, he reflects on how people meet suffering, what healing and wholeness can mean, and the practice of letting go.",
+      "subjects": [
+        "spirituality",
+        "death-the-afterlife"
+      ],
+      "co_authors": [],
+      "cover": "https://m.media-amazon.com/images/P/1611808499.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/ken-wilber.json",
+    "left_out": [],
+    "flags": [
+      "Owner, 12 Nov 2026: Grace and Grit in. ISBN 9781611808490 (ISBN-10 1611808499) and the blurb read on penguinrandomhouse.com/books/190438/grace-and-grit-by-ken-wilber/."
+    ]
+  },
+  "images_final": true
+}

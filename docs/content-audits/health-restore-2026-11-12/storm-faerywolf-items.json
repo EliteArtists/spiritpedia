@@ -1,0 +1,32 @@
+{
+  "healer": {
+    "healer_slug": "storm-faerywolf"
+  },
+  "videos": [],
+  "courses": [],
+  "books": [],
+  "free_resources": [
+    {
+      "title": "Spells",
+      "url": "https://faerywolf.com/spells/",
+      "description": "A free collection of short spells, charms and rites from Storm's witchcraft practice, from communicating with nature spirits and a grounding charm to spells for money, memory, protection and sleep, each with simple instructions.",
+      "resource_type": "practice",
+      "subjects": [
+        "spirituality",
+        "shamanism"
+      ],
+      "featured": false,
+      "image": null
+    }
+  ],
+  "images_final": true,
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "items",
+    "restored_from": "docs/content-audits/storm-faerywolf.json",
+    "left_out": [],
+    "flags": [
+      "Owner, 12 Nov 2026: spells page in, as a whole (it includes 'The Stone of Healing', which says it is no substitute for medical care)."
+    ]
+  }
+}

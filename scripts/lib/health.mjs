@@ -6,7 +6,7 @@
 // decide it: "Jupiter in Cancer" is astrology, and a memoir of surviving
 // cancer claims nothing. The same list is in night-sprint-2026-11-09/review.py.
 
-export const DISEASE_WORDS = /\b(cure[sd]?|curing|incurable|treat(?:s|ed|ing|ment)?|reverse[sd]?|heal(?:s|ed|ing)? (?:your |the )?(?:body|disease|illness)|cancer\w*|tumou?r\w*|immun\w*|autoimmun\w*|diabet\w*|thyroid|lyme|covid\w*|coronavirus|vaccin\w*|arthrit\w*|alzheimer\w*|parkinson\w*|dementia|asthma|autis\w*|hypertension|blood pressure|cholesterol|infertil\w*|disease\w*|chronic (?:illness|fatigue|disease)|fibromyalgia|lupus|multiple sclerosis|ibs|crohn\w*|inflammat\w*|medication|instead of (?:a |your )?doctor|stop (?:your|taking) \w+)\b/i;
+export const DISEASE_WORDS = /\b(cure[sd]?|curing|incurable|treat(?:s|ed|ing|ment)?|reverse[sd]?|heal(?:s|ed|ing)? (?:your |the )?(?:body|disease|illness)|cancer\w*|tumou?r\w*|immun\w*|autoimmun\w*|diabet\w*|thyroid|lyme|covid\w*|corona ?virus|pandemic|vaccin\w*|arthrit\w*|alzheimer\w*|parkinson\w*|dementia|asthma|autis\w*|hypertension|blood pressure|cholesterol|infertil\w*|disease\w*|chronic (?:illness|fatigue|disease)|fibromyalgia|lupus|multiple sclerosis|ibs|crohn\w*|inflammat\w*|medication|instead of (?:a |your )?doctor|stop (?:your|taking) \w+)\b/i;
 
 // [where, title, words] for each place the words appear in a plan.
 export function healthHits(plan) {

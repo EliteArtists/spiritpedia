@@ -235,3 +235,47 @@ About half the listings got nothing back. The commonest reasons:
 - **The ingest dry run:** it fetches item pages for images without honouring Crawl-delay. Later helpers supplied their own images on such sites.
 
 **My slip:** my commit loop skipped the last plan of batch 18 (Jeralyn Glass). It was inserted on dev and live at the time; its files are committed now.
+
+## 5. Your decisions (12 Nov, evening) and what was done
+
+**0050:** run on dev and live (aliases 141, with town 954, without a place 1: Salmon, Idaho). Nothing more to do.
+
+**1. Live items that broke the narrow rule: 20 removed on dev and live** (each logged in `content_removals`, and in `docs/content-audits/health-restore-2026-11-12/narrow-rule-removed.{dev,live}.json`):
+- **13 COVID, coronavirus and pandemic videos:**
+  - Wim Hof;
+  - Tony Robbins (2, including "Post-Pandemic Life");
+  - Lynne McTaggart;
+  - Patrick McKeown;
+  - James Nestor (3);
+  - Donna Eden;
+  - 3 that I put back today (Demo Rinpoche and two others).
+- **The rest:** Bruce Lipton's "Cancer is a Symptom"; *The Cancer Handbook*; *Asthma-Free Naturally*; OA Breathing for Diabetes; FibroClear; Gary Craig's "Impossible" Healings and Health Articles & Videos.
+- **My slip:** the 3 coronavirus videos I restored today got past my filter because it caught "pandemic" but not "corona virus" spelt as two words. The ingest's word list, the sprint `review.py` and the video filter now catch "corona virus" and "pandemic".
+
+**2. "To check" items and practitioners:**
+- **Items:** the 25 restore batches already covered every "to check" item (helpers judged each one on its real page with this same test).
+- **Videos:** my first video pass had dropped every title with a health word. A second pass (`videos-2.mjs`) put back **16 practice routines on 15 listings**, such as immune meditations, yoga for coeliac disease, tai chi and Parkinson's, and Neti for immunity. Three were dropped on review: a guest's PEMF device video, a guest-led Reiki video, and "Viral Qigong", which reads as COVID-era.
+- **Practitioners:** `leads/health-restore.json` now holds **287** (ranks 3001–3287), the front of tonight's queue:
+  - the 205 already there;
+  - **86** skipped as mainly therapy or fitness, now added: they're judged by the same test, but listed only for spiritual practice they lead;
+  - the **68** title-screen medical roles, marked "only if their work is spiritual".
+
+  Each lead carries its `test`.
+
+**3. Your list:**
+- **Added on dev and live:** *Grace and Grit* (ISBN and blurb from Penguin Random House) and Storm Faerywolf's Spells page.
+- **Staying out:** Daniel Foor's talk and Michelle Clare's Medical Intuitive course.
+- **Kept:** everything under "Kept, worth a look".
+
+**4. Asha Carolyn Young and Constantina Vaseliades:**
+- **Asha:** her "Remote energy healing sessions" item is removed. Its page has the kidney and cancer testimonials and the medication-monitoring line. Her site now blocks us, so her Quantum-Touch workshop couldn't be re-read; it stays.
+- **Constantina:** I read all 4 of her live item pages and none makes a cancer claim (the claims are on other pages of her site), so nothing was removed.
+
+**5. Emails decoded from Cloudflare:** removed on dev and live, and from the plan files.
+- **Amrit Yoga Institute and Howard Cohn:** listings keep their contact forms.
+- **Chitra Sukhu:** no form, and both her sites now block us, so her listing keeps only its consultation booking link.
+- **Still in git history:** the emails remain in older commits of the plan files.
+
+**6. Faye Li Yip:** her photo is now the thumbnail of her own video "24 Step Simplified Tai Ji Quan by Master Faye Yip" (YouTube image host), on dev and live. Her institute's site has only photos under 180 px, and its YouTube picture is the logo. Logged in `docs/image-fixes/2026-11-12.faye-li-yip-photo.json`.
+
+**7. Most-viewed videos:** the standing rule for every sprint (README §18.4, the sprint brief, the helper prompt and the sprint skill). Your rulings above are in README §18.4 too.

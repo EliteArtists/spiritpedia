@@ -22,7 +22,7 @@
       "facebook_url": null,
       "twitter_url": null,
       "tiktok_url": null,
-      "contact_email": "admissions@amrityoga.org",
+      "contact_email": null,
       "image_urls": [
         "https://amrityoga.org/wp-content/uploads/2023/01/amritji.jpg"
       ]
@@ -230,20 +230,21 @@
     "rank": 255,
     "hub_url": "https://insighttimer.com/amrityogainstitute",
     "tier_evidence": "Insight Timer 5.8k followers (queue entry, read 1 Nov 2026); YouTube @AmritYoga 35.4K subscribers (channel header, 5 Nov 2026); Facebook/Instagram/X not readable without login → ~41.2k total → local_hero",
-    "email": "yes",
-    "email_source": "https://amrityoga.org/contact-us/",
+    "email": "removed",
+    "email_source": null,
     "contact_form_url": "https://amrityoga.org/contact-us/",
     "bio_check": "OK: no 8-word runs against 19 source(s)",
     "flags": [
       "Listed as a school (entity_type school), not an individual: the queue entry is the institute's own Insight Timer channel. Owner may prefer to hold organisations until the organisations shelf rule applies.",
       "Possible overlap: Kamini Desai (Amrit Desai's daughter) is already on Spiritpedia (kamini-desai) and leads several of the institute's programmes; she is mentioned in the bio.",
-      "Email admissions@amrityoga.org is an organisation inbox, shown via Cloudflare email protection (decoded, clickable mailto) on the contact page; the same page has a contact form.",
+      "Email [email removed] is an organisation inbox, shown via Cloudflare email protection (decoded, clickable mailto) on the contact page; the same page has a contact form.",
       "Base: Salt Springs, Florida (campus address on the contact page, recorded at town level only); Salt Springs is a small community (likely under 5,000 people), please map it.",
       "Regional: north-central Florida (Marion County, near Ocala), outside the big coastal cities.",
       "Only one photo: a 400px headshot of the founder, Gurudev Shri Amritji (Yogi Amrit Desai), from the institute's site; other site images are icons, logos or a blurred class photo.",
       "Tier: the founder is a well-known figure in American yoga (editorial stature could be argued); not raised, owner decides.",
       "For the owner's awareness: Amrit Desai left Kripalu in 1994 after admitting sexual relationships with students; this is public history, not mentioned in the bio.",
-      "YouTube titles copied as shown (some contain double spaces where the channel uses them); the channel also posts very short clips, which were left out."
+      "YouTube titles copied as shown (some contain double spaces where the channel uses them); the channel also posts very short clips, which were left out.",
+      "Owner, 12 Nov 2026: the email had been decoded from Cloudflare protection; removed on dev and live (contact form kept where there is one)."
     ],
     "left_out": [
       "I AM Yoga Nidra Advanced Training (Sep 2027) and the on-demand Yoga Nidra Certification: pages describe protocols for PTSD, trauma, addiction, depression, anxiety and insomnia (health rule).",

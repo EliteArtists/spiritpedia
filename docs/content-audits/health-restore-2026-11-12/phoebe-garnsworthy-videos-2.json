@@ -1,0 +1,28 @@
+{
+  "healer": {
+    "healer_slug": "phoebe-garnsworthy"
+  },
+  "videos": [
+    {
+      "title": "Meditation to Feel Healthy and Heal Your Body",
+      "url": "https://www.youtube.com/watch?v=JX5O2Mj0tKM",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Phoebe Garnsworthy"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos-2",
+    "note": "Second pass (owner, 12 Nov 2026): practice routines that name a condition, with no cure or treatment claim; most-viewed first (YouTube Data API views).",
+    "views": {
+      "JX5O2Mj0tKM": 1401
+    }
+  },
+  "images_final": true
+}

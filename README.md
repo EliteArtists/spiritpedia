@@ -2784,14 +2784,20 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
   cancer, immunity, chronic illness), or advice to replace medical care. Only
   an item making such a claim is left out; a teacher is skipped only when
   their work is mainly that. Naming a condition without such a claim is fine.
+  Owner's rulings (12 Nov 2026): practice routines that name a condition stay
+  in (arthritis, immune or blood pressure qigong, Tai Chi for Diabetes); COVID,
+  coronavirus and pandemic items stay out; a cancer book or talk that claims
+  to work on the disease stays out. A medical role (doctor, psychiatrist) is
+  listed only for spiritual work they lead, such as a doctor who teaches
+  meditation.
   Therapy-led work (psychotherapy, counselling) is a separate scope rule.
   `scripts/ingest.mjs` lists the words to check (`scripts/lib/health.mjs`);
   `review.py` uses the same list. The audit of what the old rule cost, and the
   restore: `docs/reports/2026-11-12-health-rule-audit.md`. The discovery
   emails' title filter (`readsAsHealthClaim`) stays broad until the solicitor
   answers (§ legal questions).
-- **Videos are the teacher's most-viewed** (owner, 12 Nov 2026), within the
-  subject and quality rules: `node scripts/yt.mjs channel <ref> --top 25`
+- **Videos are the teacher's most-viewed** (owner, 12 Nov 2026: the standing
+  rule for every sprint), within the subject and quality rules: `node scripts/yt.mjs channel <ref> --top 25`
   lists them by YouTube view count.
 - **At most 3 subjects per item**, each an existing slug in `subjects` (42,
   §17.3), most relevant first. Older rows have more; new rows don't.

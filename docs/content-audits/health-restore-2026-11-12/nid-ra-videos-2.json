@@ -1,0 +1,28 @@
+{
+  "healer": {
+    "healer_slug": "nid-ra"
+  },
+  "videos": [
+    {
+      "title": "Guided Meditation for Healing Body Safety",
+      "url": "https://www.youtube.com/watch?v=SWPi-sBezkw",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "channel": "Nid's Nidra"
+    }
+  ],
+  "books": [],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "health-restore-2026-11-12",
+    "kind": "videos-2",
+    "note": "Second pass (owner, 12 Nov 2026): practice routines that name a condition, with no cure or treatment claim; most-viewed first (YouTube Data API views).",
+    "views": {
+      "SWPi-sBezkw": 19
+    }
+  },
+  "images_final": true
+}

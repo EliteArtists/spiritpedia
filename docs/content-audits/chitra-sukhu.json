@@ -22,7 +22,7 @@
       "facebook_url": null,
       "twitter_url": null,
       "tiktok_url": null,
-      "contact_email": "chitra@vedicmystery.com",
+      "contact_email": null,
       "image_urls": [
         "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/sites/53839/images/65oTvc9zSUKNahkTbSgq_IMG_9296.jpg",
         "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2150624416/settings_images/N5Nfr43ZRK2CR21AfEjw_IMG_2008.jpg",
@@ -191,17 +191,18 @@
     "rank": 33,
     "hub_url": "https://theshiftnetwork.com/shift_teacher/73152",
     "tier_evidence": "YouTube 880 (@ChitraSukhu channel header, 4 Nov 2026); Instagram, Facebook and X not readable without logging in (not opened) → under 1k counted → local_hero",
-    "email": "yes",
-    "email_source": "https://www.chitrasukhu.com/contact-page",
+    "email": "removed",
+    "email_source": null,
     "contact_form_url": null,
     "bio_check": "OK: no 8-word runs against 13 source(s)",
     "flags": [
       "No Shift mention on own site: listed without the link. Identity with the Shift list's Chitra Sukhu ('Ascend the 7 Layers of Consciousness') not confirmed on her site, but the name is rare and her teaching on states of consciousness fits.",
       "Regional: Atlanta, Georgia (her biography page says she lives there when not travelling).",
-      "Email chitra@vedicmystery.com is Cloudflare-protected on her contact page (decoded); vedicmystery.com is her own online school.",
+      "Email [email removed] is Cloudflare-protected on her contact page (decoded); vedicmystery.com is her own online school.",
       "Her YouTube avatar is a painted collage, so not used; photos are from her own site (consultation and biography pages).",
       "Spiritual consultation uses divination cards for practical questions; kept, as it is a spiritual consultation.",
-      "Several sites describe her as Mario Van Peebles's wife; not used."
+      "Several sites describe her as Mario Van Peebles's wife; not used.",
+      "Owner, 12 Nov 2026: the email had been decoded from Cloudflare protection; removed on dev and live (contact form kept where there is one)."
     ],
     "left_out": [
       "Online LIVE Yoga Nidra Teacher Training (Level 1, $699 USD): its page sells it for dealing with stress, addiction, trauma, depression and insomnia: health rule.",

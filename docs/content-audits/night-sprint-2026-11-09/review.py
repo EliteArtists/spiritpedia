@@ -8,7 +8,7 @@ import datetime
 TODAY = (datetime.date.today() + datetime.timedelta(days=3)).isoformat()  # a few days' margin for the live insert
 # The health rule since 12 Nov 2026 (README §18.4): words that may mean a claim
 # to cure or treat a disease; the same list as scripts/lib/health.mjs.
-bad = re.compile(r'\b(cure[sd]?|curing|incurable|treat(?:s|ed|ing|ment)?|reverse[sd]?|heal(?:s|ed|ing)? (?:your |the )?(?:body|disease|illness)|cancer\w*|tumou?r\w*|immun\w*|autoimmun\w*|diabet\w*|thyroid|lyme|covid\w*|coronavirus|vaccin\w*|arthrit\w*|alzheimer\w*|parkinson\w*|dementia|asthma|autis\w*|hypertension|blood pressure|cholesterol|infertil\w*|disease\w*|chronic (?:illness|fatigue|disease)|fibromyalgia|lupus|multiple sclerosis|ibs|crohn\w*|inflammat\w*|medication|instead of (?:a |your )?doctor|stop (?:your|taking) \w+)\b', re.I)
+bad = re.compile(r'\b(cure[sd]?|curing|incurable|treat(?:s|ed|ing|ment)?|reverse[sd]?|heal(?:s|ed|ing)? (?:your |the )?(?:body|disease|illness)|cancer\w*|tumou?r\w*|immun\w*|autoimmun\w*|diabet\w*|thyroid|lyme|covid\w*|corona ?virus|pandemic|vaccin\w*|arthrit\w*|alzheimer\w*|parkinson\w*|dementia|asthma|autis\w*|hypertension|blood pressure|cholesterol|infertil\w*|disease\w*|chronic (?:illness|fatigue|disease)|fibromyalgia|lupus|multiple sclerosis|ibs|crohn\w*|inflammat\w*|medication|instead of (?:a |your )?doctor|stop (?:your|taking) \w+)\b', re.I)
 for f in sorted(glob.glob('docs/content-audits/*.json')):
     if '.inserted' in f: continue
     try: d = json.load(open(f))
