@@ -3,9 +3,9 @@
 -- These new listings publish a place that isn't in places (a village or a
 -- hamlet under 5,000, or, for Lismore, a town that places lacks). Each points
 -- at the nearest town of 5,000+ in the same country and state, as in 0033 and
--- 0043. New Lebanon, New York, points at Rensselaer (34 km): Pittsfield,
--- Massachusetts, is nearer (13 km) but in another state. Accented names also
--- get a plain spelling. Distances are approximate. The listing keeps its own
+-- 0043, except New Lebanon, New York, which points at Pittsfield,
+-- Massachusetts (13 km; owner, 12 Nov 2026: the state line doesn't matter to
+-- a user). Distances are approximate. The listing keeps its own
 -- town; only place_id uses the alias.
 --
 -- Run order (dev first, then live): this whole file, after 0048. Safe to run
@@ -14,7 +14,7 @@
 INSERT INTO public.place_aliases (name, country_code, region, place_id, note) VALUES
 ('villeneuve-sur-bellot', 'FR', '', 3009481, 'Seine-et-Marne village (Maison de l''Inspir); nearest town of 5,000+ is La Ferté-sous-Jouarre (18 km)'),
 ('porcupine ridge', 'AU', 'victoria', 2160885, 'locality near Daylesford (Stream Entering Monastery); nearest town of 5,000+ is Kyneton (24 km)'),
-('new lebanon', 'US', 'new york', 5133667, 'Columbia County town (Inayatiyya Hudson Valley Center); nearest New York town of 5,000+ is Rensselaer (34 km)'),
+('new lebanon', 'US', 'new york', 4947459, 'Columbia County town (Inayatiyya Hudson Valley Center); nearest town of 5,000+ is Pittsfield, Massachusetts (13 km; owner, 12 Nov 2026)'),
 ('buckingham', 'US', 'virginia', 4758495, 'Buckingham County (Satchidananda Ashram Yogaville); nearest town of 5,000+ is Farmville (31 km)'),
 ('colville', 'NZ', '', 2179103, 'Coromandel settlement (Mahamudra Centre); nearest town of 5,000+ is Whitianga (31 km)'),
 ('upper moutere', 'NZ', '', 2184361, 'Tasman village (Chandrakirti); nearest town of 5,000+ is Motueka (15 km)'),
@@ -34,7 +34,9 @@ UPDATE public.healers
 SET place_id = public.resolve_place(city, country)
 WHERE city IS NOT NULL AND place_id IS NULL;
 
--- Check: aliases loaded; listings with a town; of those, still without a place.
+-- Check: aliases loaded (up by 14 on what each database had); listings with a
+-- town; of those, still without a place (on dev before any new insert: 1, only
+-- Salmon, Idaho).
 SELECT
   (SELECT count(*) FROM public.place_aliases) AS aliases,
   (SELECT count(*) FROM public.healers WHERE city IS NOT NULL) AS with_town,
