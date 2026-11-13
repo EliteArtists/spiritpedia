@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "san-antonio-zen-center",
+    "location_source": "https://www.sanantoniozen.org/getting-started",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "San Antonio Zen Center",
+      "bio": "San Antonio Zen Center grew out of a small sitting group formed in October 2003 to share zazen in the Soto line of Shunryu Suzuki, encouraged by the teachers and students of Austin Zen Center and still close to the Houston and San Francisco centres. Today it meets in a red-brick zendo on West Woodlawn Avenue, near San Pedro Springs Park in the middle of the city. Its guiding teacher, Rev. Karen DeCotis, a San Antonio native who began Zen practice in 1986 with Sojun Mel Weitsman, taught and directed a Dharma centre in Bozeman, Montana, before coming home in 2024; lay teachers and practice leaders also offer talks and one-to-one practice discussion.\n\nMorning and evening sittings run through the week, each closing with a short chanting service, and the Saturday programme combines two periods of zazen, a morning ceremony, temple cleaning, a Dharma talk and tea with discussion. All regular sittings can also be joined on Zoom. Newcomers are encouraged to begin with the monthly beginner's instruction, and longer sittings, including a five-day Rohatsu sesshin in December, deepen the practice. Following the principle of dana, nothing is charged for services or retreats, and the centre depends on the generosity of those who practise there.",
+      "availability": "local_online",
+      "city": "San Antonio, Texas",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.sanantoniozen.org/",
+      "booking_url": "https://www.sanantoniozen.org/programs",
+      "youtube_url": null,
+      "contact_email": "info@sanantoniozen.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/c93cabac-b4d5-47db-80f5-b39b8b5c6715/IMG_0425.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/1556825694730-UMIGQ3UEGLZ0QALXI8DY/image-asset.png",
+        "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/1f34e43f-7099-4bda-bf58-1eb7fc653e17/IMG_0424.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://www.sanantoniozen.org/",
+      "description": "A five-day non-residential retreat marking the Buddha's awakening, with days of zazen alternating with walking meditation, some teaching and chanting, from early morning to late afternoon. Suitable for beginners as well as experienced practitioners; registration details to follow.",
+      "price": "By donation (dana)",
+      "product_type": "retreat",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/5ccb4155fb22a536ee336417/t/61f709cbdffc2a0d77ce98f8/1643579851377/Logo_2.png?format=1500w"
+    },
+    {
+      "title": "Beginner's Meditation Instruction",
+      "url": "https://www.sanantoniozen.org/programs",
+      "description": "A two-hour introduction to Zen meditation and to the centre, taught by a senior member, usually on the first Saturday of the month. Sign up by phone or email.",
+      "price": "By donation (dana)",
+      "product_type": "course",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/f16898cb-b77b-4ba6-bd34-9610ab7a0887/Recovery+Groups+San+Antonio.png.png"
+    },
+    {
+      "title": "Weekly Schedule: Zazen and Saturday Programme",
+      "url": "https://www.sanantoniozen.org/calendar",
+      "description": "Early-morning zazen on Mondays and Thursdays, evening sittings from Monday to Thursday, and a Saturday morning of sitting and walking meditation, ceremony, temple cleaning, a Dharma talk and tea. All regular sittings are also on Zoom.",
+      "price": "By donation (dana)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/c93cabac-b4d5-47db-80f5-b39b8b5c6715/IMG_0425.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "San Antonio Zen Center Dharma Talks",
+      "url": "https://www.sanantoniozen.org/dharma-talks-1",
+      "description": "Recorded Saturday Dharma talks from the centre's teachers and practice leaders, published as a podcast on the main listening apps.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/c93cabac-b4d5-47db-80f5-b39b8b5c6715/IMG_0425.jpg"
+    },
+    {
+      "title": "Starting a Meditation Practice",
+      "url": "https://www.sanantoniozen.org/getting-started",
+      "description": "A first-visit guide covering what happens in the zendo, seating options including benches and chairs, joining on Zoom, the chant book and a glossary of Zen terms.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5ccb4155fb22a536ee336417/1f34e43f-7099-4bda-bf58-1eb7fc653e17/IMG_0424.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3390,
+    "tier_evidence": "No YouTube channel linked (podcast only, listener counts not public); no readable follower counts → local_hero by default",
+    "email": "yes",
+    "email_source": "https://www.sanantoniozen.org/about-sazc",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "SFZC check: the site says the centre arose with guidance from Austin Zen Center and keeps 'ties' with Houston and San Francisco Zen Centers; it is an independent 501(c)3, not an SFZC branch; kept under the batch note.",
+      "Guiding teacher Rev. Karen DeCotis and practice leaders are not on Spiritpedia: teachers file empty.",
+      "email_source: info@sanantoniozen.org is printed in the footer of every page fetched (cited: about-sazc); same address on the SZBA page.",
+      "Rohatsu item uses the home page URL (the programs page URL is taken by beginner's instruction); registration details not yet published.",
+      "Prices: the about page says nothing is charged for services or retreats (dana); 'By donation (dana)' is my wording.",
+      "Getting-started page has a COVID section (no masks required, stay home if unwell); not used in the plan.",
+      "Images: building front and altar photos are the centre's own; the 640px altar image is an older about-page asset."
+    ],
+    "left_out": [
+      "Meditation and Recovery (Friday 12-step style group): recovery from addiction, left out under the health rule's spirit; owner may include it as a peer group.",
+      "Body Signals mindfulness class (ended 9 Nov) and Council Practice (10 Nov): past.",
+      "Saturday Dharma talk rota: individual talks; Ryushin Andrea Thach listed as guest teacher.",
+      "Dharma talk 'Zen and the Art of Anti-Racism' on the blog: political rule; blog talks not listed individually.",
+      "Bodhisattva Ceremony (28 Nov) and work morning (21 Nov): ceremonies and temple care, not teaching programmes."
+    ]
+  },
+  "images_final": true
+}

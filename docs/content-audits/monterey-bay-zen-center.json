@@ -1,0 +1,129 @@
+{
+  "healer": {
+    "healer_slug": "monterey-bay-zen-center",
+    "location_source": "https://www.montereybayzencenter.org/contact",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Monterey Bay Zen Center",
+      "bio": "Monterey Bay Zen Center is a Soto Zen sangha on California's central coast, practising in the line of Shunryu Suzuki without a temple building of its own. It began in Carmel in 1988, when Sobun Katherine Thanas, then teaching at Tassajara, agreed to lead a weekly sitting; she remained its teacher until her death in 2012, latterly also serving as abbot of Santa Cruz Zen Center. Today a teaching council of four Dharma teachers, with Shogen Danielson and Robert Reese as guiding teachers, shares the work with two ordained practice leaders.\n\nThe community sits in two borrowed spaces: an arts gallery in Carmel that becomes a zendo on Tuesday evenings, and a small zendo in McGowan House beside St James Church in Monterey. The week holds morning zazen on Mondays and Thursdays, a noon sitting on Wednesdays, an informal Friday lunchtime group and the main Tuesday evening of zazen, service and a Dharma talk, with some sessions also open on Zoom. Free meditation instruction is given early each month, monthly half-day zazenkai offer a short retreat, and the sangha holds classes, sesshin and lay ordination. Practice is free, supported by donations and membership.",
+      "availability": "local_online",
+      "city": "Monterey, California",
+      "country": "United States",
+      "founded_year": 1988,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.montereybayzencenter.org/",
+      "booking_url": "https://www.montereybayzencenter.org/zazen-instruction",
+      "youtube_url": null,
+      "contact_email": "mbzc.info@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/1550444332238-UW7GMH9ISMY5TJL2E0XB/McGowan+House+Setup.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/1550444233514-WP2ONBLHRFHKIR35FYAZ/Cherry+Center+Empty.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/32decbb4-4075-49d9-ba7d-e6391f996796/Guy+Riina+-+zendo+light+and+shadow+IMG_4159+%2810%29.JPG"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zazenkai 2026 — Monthly Sittings",
+      "url": "https://www.montereybayzencenter.org/events-1/2024/6/23/zazenkai-monthly-retreats-339b6",
+      "description": "A monthly half-day sitting at the McGowan House zendo with zazen, walking meditation, a short talk, a closing service and sometimes light work practice, suited to beginners and experienced sitters alike. The November sitting is led by practice leader Guy Riina; attendees are asked to stay for the whole schedule.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5c66f405778897086f20e8b8/5c6777adf4e1fcbaed748194/69598a6fa7dc22506d71fd9c/1793903780194/rutpratheep-nilpechr-XfqGNQhD5n4-unsplash+X.jpg?format=1500w"
+    },
+    {
+      "title": "Weekly Groups & Meditation Offerings",
+      "url": "https://www.montereybayzencenter.org/groups-hybrid",
+      "description": "The regular week of practice: Monday and Thursday morning zazen with chanting, Wednesday noon sitting with a reading and discussion, Friday's Brown Bag Zen and Tuesday evening zazen, service and Dharma talk, with practice discussion available with the teachers. Some sessions are also open on Zoom.",
+      "price": "Supported by donations",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/dff07405-6e6b-477f-95e9-c8b103f5b8b9/banner.jpeg?format=1500w"
+    },
+    {
+      "title": "Membership",
+      "url": "https://www.montereybayzencenter.org/membership",
+      "description": "Contributing membership, paid monthly or yearly, that keeps the sangha's two practice places, its teachers, sesshin and scholarships going, renewing a programme first set up by the founding teacher.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/dff07405-6e6b-477f-95e9-c8b103f5b8b9/banner.jpeg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zazen Instruction",
+      "url": "https://www.montereybayzencenter.org/zazen-instruction",
+      "description": "An outline of how zazen and walking meditation are practised in the sangha, what to expect at the first-Tuesday instruction in Carmel, and links to further video and printed guidance on posture.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/dff07405-6e6b-477f-95e9-c8b103f5b8b9/banner.jpeg?format=1500w"
+    },
+    {
+      "title": "Online Sutra Book (chants)",
+      "url": "https://www.montereybayzencenter.org/online-sutra-book-chants",
+      "description": "The texts chanted at morning zazen, including the Heart Sutra, the Metta Sutta and short daily verses, with a downloadable PDF chant book for home practice.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c66f405778897086f20e8b8/dff07405-6e6b-477f-95e9-c8b103f5b8b9/banner.jpeg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3377,
+    "tier_evidence": "No YouTube channel of its own linked from montereybayzencenter.org (13 Nov 2026); Facebook feed page not counted → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.montereybayzencenter.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Email: mbzc.info@gmail.com is the 'Email Us!' link on the contact page (a general Gmail inbox).",
+      "Base: the postal address is a PO box in Monterey; practice happens in Monterey (McGowan House) and Carmel-by-the-Sea (Carl Cherry Center). Monterey used.",
+      "Affiliation: founded by a San Francisco Zen Center-trained teacher and part of the Suzuki lineage, but an independent non-profit, not an SFZC branch.",
+      "Teachers file empty: Shogen Danielson, Robert Reese, Sara Hunsaker, Patricia Wolff and founder Katherine Thanas are not on Spiritpedia.",
+      "Photo 1 shows a robed teacher at the McGowan House altar (captioned 'McGowan House Setup'); photo 2 is small (300x225), the Carmel gallery set up as zendo; photo 3 is the zendo window (captioned 'Zendo Light & Shadow').",
+      "Weekly groups share one page, so they are one item (no fragments)."
+    ],
+    "left_out": [
+      "Videos: the two embedded on the instruction page come from Berkeley Zen Center's and Soto-Net's channels, not the centre's own.",
+      "Ordinary Recovery (Buddhism and the 12 steps): recovery-group scope, and on the same page as the weekly groups.",
+      "Becoming Yourself class (October), Ceremony of the Hungry Ghosts (27 Oct), Jukai (18 Jul): past.",
+      "Statement on systemic racism and covid protocol pages: political and pandemic rules."
+    ]
+  },
+  "images_final": true
+}

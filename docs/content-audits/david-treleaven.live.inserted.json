@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1450,
+    "healer_slug": "david-treleaven"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2534,
+      "slug": "trauma-sensitive-mindfulness",
+      "title": "Trauma-Sensitive Mindfulness: Practices for Safe and Transformative Healing"
+    },
+    {
+      "table": "courses",
+      "id": "53b20e98-7ed8-4ebd-9cc2-06f2d1ea22f6",
+      "slug": "the-complete-trauma-sensitive-mindfulness-teacher-training",
+      "title": "The Complete Trauma-Sensitive Mindfulness Teacher Training"
+    },
+    {
+      "table": "free_resources",
+      "id": "41c63a5c-5ade-432a-9e47-5412950d95eb",
+      "slug": "the-truth-about-mindfulness-and-trauma",
+      "title": "The Truth About Mindfulness and Trauma"
+    },
+    {
+      "table": "free_resources",
+      "id": "e1c57d7c-1ac2-4e4d-a9ff-5246be9372e0",
+      "slug": "the-trauma-sensitive-mindfulness-podcast",
+      "title": "The Trauma-Sensitive Mindfulness Podcast"
+    }
+  ],
+  "at": "2026-11-13T04:12:00.217Z"
+}

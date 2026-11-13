@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1550,
+    "healer_slug": "bird-haven-zendo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "604e21ec-e29d-4ab7-9612-515018172b11",
+      "slug": "bhz-monday-zazenkai",
+      "title": "BHZ Monday Zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "710e2412-9dd2-4478-af11-1067f9b117ea",
+      "slug": "bhz-friday-zazenkai",
+      "title": "BHZ Friday Zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "adb23981-7958-45c2-91f0-37c014002292",
+      "slug": "dokusan-and-practice-discussion-2",
+      "title": "Dokusan and practice discussion"
+    },
+    {
+      "table": "free_resources",
+      "id": "5191f7de-dc0b-4c02-bd6c-aaade745f57d",
+      "slug": "bhz-zoom-zendo",
+      "title": "BHZ Zoom Zendo"
+    }
+  ],
+  "at": "2026-11-13T03:44:42.137Z"
+}

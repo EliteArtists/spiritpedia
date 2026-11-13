@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "confluence-zen-center-stl",
+    "location_source": "https://www.confluencezen.org/about/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Confluence Zen Center STL",
+      "bio": "Confluence Zen Center STL is a small Soto Zen sangha that sits in a house at the edge of Maplewood, in the St. Louis area of Missouri. Its teacher, Rev. Daigaku Rummé, was born in Iowa in 1950 and ordained in 1978 by Sekkei Harada Roshi, under whom he trained for over twenty-seven years at Hosshin-ji, a monastery in Fukui, Japan. He later worked for the Soto Zen Buddhism International Center in San Francisco and directed its North America office while serving as head priest of Zenshuji in Los Angeles, before settling in St. Louis in 2015. He has translated books by Harada Roshi and, more recently, Inoue Gien Roshi's commentary on Keizan's Denkoroku.\n\nZazen is held early on Monday, Tuesday and Thursday mornings and on Monday evenings, each closing with a short sutra service. Sundays follow a monthly rotation of sitting, walking meditation and service, with a Dharma talk and tea on one Sunday and shared work on another, and most months include a full one-day sitting with an oryoki meal and dokusan. Newcomers are pointed to a monthly Beginner's Night on a Tuesday evening, which teaches zendo forms and how to sit before a period of zazen and time for questions.",
+      "availability": "local",
+      "city": "St. Louis, Missouri",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.confluencezen.org/",
+      "booking_url": "https://www.confluencezen.org/new-to-czc/",
+      "youtube_url": "https://www.youtube.com/@confluencezencenter-qi6tl",
+      "contact_email": "confluencezen@gmail.com",
+      "image_urls": [
+        "https://www.confluencezen.org/wp-content/uploads/2023/12/daigaku-speech-01-768x1024.jpeg",
+        "https://www.confluencezen.org/wp-content/uploads/2023/12/Book-Daigaku-translated-1024x731.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Formless Record of the Transmission of Illumination",
+      "url": "https://www.youtube.com/watch?v=FJEQ78jzwhg",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Confluence Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginner's Night",
+      "url": "https://www.confluencezen.org/new-to-czc/",
+      "description": "A monthly evening, usually the first Tuesday, for people new to Zen or to the centre: an introduction to zendo etiquette and sitting posture, two short periods of zazen with walking meditation, a chant and time for questions. Check the calendar for the date.",
+      "price": "$10 suggested donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.confluencezen.org/wp-content/uploads/2023/12/daigaku-speech-01-768x1024.jpeg"
+    },
+    {
+      "title": "One-Day Sitting",
+      "url": "https://www.confluencezen.org/3-day-sitting-schedule/",
+      "description": "A monthly full day of zazen and kinhin from 8 am, with sutra services, a Dharma talk, lunch, work practice and dokusan with the teacher in the afternoon. Participants need not stay for the whole schedule.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.confluencezen.org/wp-content/uploads/2023/12/daigaku-speech-01-768x1024.jpeg"
+    },
+    {
+      "title": "Sunday Practice",
+      "url": "https://www.confluencezen.org/sunday-practice-schedule/",
+      "description": "Sunday mornings of two zazen periods with walking meditation and a service, rotating through the month between a Dharma talk with tea, work practice and the one-day sitting.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.confluencezen.org/wp-content/uploads/2023/12/daigaku-speech-01-768x1024.jpeg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Weekday Zazen",
+      "url": "https://www.confluencezen.org/practice-schedule/",
+      "description": "Morning zazen on Monday, Tuesday and Thursday and an evening sitting on Monday, each followed by a short sutra service, with the chant for each day listed.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.confluencezen.org/wp-content/uploads/2023/12/daigaku-speech-01-768x1024.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3350,
+    "tier_evidence": "YouTube 15 subscribers (@confluencezencenter-qi6tl, UCBrsfTHQQOGISyPrFDP4XFg, Data API, 13 Nov 2026, found via oEmbed of the video embedded on confluencezen.org); Facebook linked but never fetched → ~0k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.confluencezen.org/about/",
+    "contact_form_url": "https://www.confluencezen.org/contact-us/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Teachers file empty: Daigaku Rummé is not on Spiritpedia.",
+      "SZBA listing gives the website as a malformed 'http//www.confluencezen.org'; the site was reached at confluencezen.org (redirects to www).",
+      "YouTube: the centre's channel has one video (a 2023 book talk by Daigaku); it was not linked from the site, only embedded, and was found via oEmbed.",
+      "Founded year not stated on the site (the teacher moved to St. Louis in 2015).",
+      "In-person only as far as the pages read show; no online sittings mentioned.",
+      "Photos: Daigaku Rummé giving a talk (2023) and the cover of his translation (book cover, owner may prefer another).",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200).",
+      "Lead session removed the free article 'What Is It That Must Be Done in Zen Practice?' (articles aren't a free-resource type)."
+    ],
+    "left_out": [
+      "Fall study group and second study class in January: announced only as image flyers, no readable dates.",
+      "Zen in Stillness / Zen in Activity recordings: hosted on Facebook (not fetched).",
+      "Kwan Um interview with Daigaku: on another organisation's site.",
+      "Translated books (Essence of Zen, Unfathomable Depths, The Formless Record...): no ISBN on a page we opened."
+    ]
+  },
+  "images_final": true
+}

@@ -23,11 +23,7 @@
       "twitter_url": null,
       "tiktok_url": null,
       "contact_email": "paris@sivananda.net",
-      "image_urls": [
-        "https://sivanandaparis.org/wp-content/uploads/2018/08/DSC06861-1.jpg",
-        "https://sivanandaparis.org/wp-content/uploads/2018/07/DSC01110-1.jpg",
-        "https://sivanandaparis.org/wp-content/uploads/2018/07/DSC06833.jpg"
-      ]
+      "image_urls": []
     }
   },
   "teaches_at": [],
@@ -142,6 +138,7 @@
       "Cooking classes, spiritual festivals, Bharatanatyam dance workshop: not core yoga teaching or already started.",
       "Photos of Swami Sivananda and Swami Vishnudevananda and posed single-person shots: not the school's building or rooms."
     ],
-    "held": "Ingest dry run (10 Nov 2026): sivanandaparis.org answered the ingest's robots.txt request with HTTP 502, so every image was refused (the same robots.txt returned 200 to a plain curl earlier). Not retried, per the blocked-means-skip rule. Owner to decide whether to retry later or drop."
+    "held": "Ingest dry run (10 Nov 2026): sivanandaparis.org answered the ingest's robots.txt request with HTTP 502, so every image was refused (the same robots.txt returned 200 to a plain curl earlier). Not retried, per the blocked-means-skip rule. Owner to decide whether to retry later or drop.",
+    "retried": "13 Nov 2026 (README §18.7 retry queue): the ingest dry run still could not load the listing's photo (UNSOLVED); still held."
   }
 }

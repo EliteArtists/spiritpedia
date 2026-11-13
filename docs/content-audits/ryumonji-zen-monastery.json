@@ -1,0 +1,125 @@
+{
+  "healer": {
+    "healer_slug": "ryumonji-zen-monastery",
+    "location_source": "https://www.ryumonji.org/contact-us",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Ryumonji Zen Monastery",
+      "bio": "Ryumonji, the Dragon Gate Temple, is a Soto Zen training monastery in the hills of north-east Iowa near Dorchester, registered as a temple with the Soto school's headquarters in Japan. Its founding abbot, Shoken Winecoff Roshi, studied with Dainin Katagiri Roshi in Minneapolis from 1976, received Dharma transmission from him in 1989 and then spent three years training at Zuioji and Shogoji in Japan. In 2000 a forty-acre farm was given for the monastery, and volunteers and practitioners built it up over the following years: a timber-framed Buddha Hall, an entry gate and bell tower, a kitchen and guest building, and a monks' hall with study quarters completed in 2013. Many of Shoken's Dharma heirs now lead sanghas across the Midwest and beyond.\n\nThe public are welcome to sit on Sunday mornings, when zazen is followed by the Heart Sutra and a Dharma talk with discussion, and on Thursday evenings, and a Tuesday book group studies Zen texts; all three can be joined on Zoom. Monthly weekend sesshin bring silent sitting, oryoki meals and work practice, and residential Winter and Summer Ango offer a fuller taste of monastic life. There are no fees; offerings of dana are customary. Recorded talks are shared on SoundCloud.",
+      "availability": "local_online",
+      "city": "Dorchester, Iowa",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.ryumonji.org/",
+      "booking_url": "https://www.ryumonji.org/contact-us",
+      "youtube_url": "https://www.youtube.com/channel/UCmuIhc3JtZs0NEyxWEm3J3g",
+      "contact_email": "office@ryumonji.org",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nYKwrEBb1zCPbaQOycJlIkNQzidyEBl6okhea17xwk7w=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Tour the Ryumonji Zen Monastery - Dragon Gate Temple",
+      "url": "https://www.youtube.com/watch?v=4Wk-m7AzkOg",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Ryumonji Zen Monastery - Dragon Gate Temple"
+    },
+    {
+      "title": "Twentieth Anniversary of the Founding of Ryumonji Zen Monastery",
+      "url": "https://www.youtube.com/watch?v=bvZ1IV16Lws",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Ryumonji Zen Monastery - Dragon Gate Temple"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Regular Practice: Sunday and Thursday Zazen, Tuesday Book Group",
+      "url": "https://www.ryumonji.org/regular-practice",
+      "description": "Public practice at the monastery and on Zoom: Sunday mornings of zazen, the Heart Sutra and a Dharma talk with discussion; Thursday evenings of zazen, chanting of Dogen's Fukanzazengi and tea; and a weekly Tuesday evening group reading Zen texts together. Orientation is available for newcomers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nYKwrEBb1zCPbaQOycJlIkNQzidyEBl6okhea17xwk7w=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Sesshin and Ango",
+      "url": "https://www.ryumonji.org/sesshin-ango",
+      "description": "Monthly weekend sesshin from Friday evening to Sunday lunch, with many periods of zazen, formal oryoki meals, work practice, a Dharma talk and noble silence, plus residential Winter and Summer Ango practice periods for those who have attended at least one weekend sesshin. Dormitory housing is provided; register through the office.",
+      "price": "No fees; free-will dana customarily offered",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nYKwrEBb1zCPbaQOycJlIkNQzidyEBl6okhea17xwk7w=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ryumonji Online Resources: Sutras and Dharma Talks",
+      "url": "https://www.ryumonji.org/online-resources",
+      "description": "Downloadable chant texts for home and virtual practice, including the Heart Sutra, Fukanzazengi and a virtual chant book, with a link to recorded Sunday Dharma talks streamed free on SoundCloud.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nYKwrEBb1zCPbaQOycJlIkNQzidyEBl6okhea17xwk7w=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3389,
+    "tier_evidence": "YouTube 86 subscribers (Data API, 13 Nov 2026; channel found from the tour video embedded on ryumonji.org); SoundCloud and Facebook linked but never fetched → local_hero",
+    "email": "yes",
+    "email_source": "https://www.ryumonji.org/sesshin-ango",
+    "contact_form_url": "https://www.ryumonji.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Webflow site: every site photo is on cdn.prod.website-files.com, whose robots.txt returned 403 earlier this run, so none used. The only image is the YouTube channel avatar (a gilded Kannon statue, looked at; not confirmed as Ryumonji's own statue).",
+      "SZBA lists shoken@oneota.net; the monastery's own site gives office@ryumonji.org, used here.",
+      "Founding abbot Shoken Winecoff Roshi and Vice-Abbot Eido Espe are not on Spiritpedia: teachers file empty. Possible future individual listing for Shoken Winecoff.",
+      "Several Dharma heirs listed on the teachers page lead other SZBA centres (e.g. Prairie Mountain, rank 3386); they are not linked here because they teach elsewhere.",
+      "Only two videos on the centre's channel (tour, 20th anniversary); both are about the monastery rather than teaching talks.",
+      "Sesshin and Ango dates are only in a calendar image on the home page (Webflow host, not fetched); items left undated.",
+      "Regular practice: no price published ('Contact for pricing'); the sesshin page says there are no fees.",
+      "Dry run: Dorchester, Iowa is not in places (small town); a place alias is needed for Near You (README §18.4)."
+    ],
+    "left_out": [
+      "Books by Shoken Winecoff (Zen Seeds for Fallow Ground; Passing Through The Dragon Gate): no ISBN from a page opened this run.",
+      "Video 'Shoken (2017)': on Jack Ross's channel, not the monastery's.",
+      "Takuhatsu, news and gallery pages: not fetched or no teaching items.",
+      "Health & Safety section of the sesshin guidelines (infection control): not used."
+    ]
+  },
+  "images_final": true
+}

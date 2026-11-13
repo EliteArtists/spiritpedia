@@ -1,0 +1,117 @@
+{
+  "healer": {
+    "healer_slug": "tara-meditation-centre",
+    "location_source": "https://tarameditationcentre.org.au/contacts/",
+    "create": {
+      "name": "Tara Meditation Centre",
+      "bio": "Tara Meditation Centre is a non-profit Tibetan Buddhist centre in the middle of Bunbury, on Western Australia's south-west coast, affiliated with the FPMT. It started in the homes of two students of Lama Yeshe and Lama Zopa Rinpoche, Glenda Lee and May Mills; both later took ordination, May returning to serve the centre as Ven Chodron and Glenda going on to lead an FPMT centre in Mongolia. The centre now occupies its own premises in Clifton Street, and its teachings are led by Venerable Thubten Chokyi, a senior Western nun who previously taught at Vajrayana Institute and Chenrezig Institute.\n\nThe weekly timetable joins Buddhism with yoga. Guided meditations on Wednesdays and Sundays introduce simple techniques for calming the mind and easing stress, Venerable Chokyi teaches introductory courses and FPMT's Discovering Buddhism series, and touring geshes visit for longer teachings. During school terms the centre also runs hatha, gentle, yin and men's yoga classes that drop-in students can join. Members receive discounts on teachings, books and yoga, and can borrow from the library.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Bunbury, Western Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "yoga"
+      ],
+      "website_url": "https://tarameditationcentre.org.au/",
+      "booking_url": "https://tarameditationcentre.org.au/program/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "welcome@hmt.org.au",
+      "image_urls": [
+        "https://tarameditationcentre.org.au/wp-content/uploads/2016/12/HMT-Building.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Guided Meditation",
+      "url": "https://tarameditationcentre.org.au/meditation/",
+      "description": "Weekly guided sessions on Wednesday morning and evening and on Sunday, teaching simple ways to settle the mind and handle stress; the Wednesday morning class adds gentle stretching. Not held in the school holidays.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://tarameditationcentre.org.au/wp-content/uploads/2016/12/HMT-Building-1024x440-581x250.jpg"
+    },
+    {
+      "title": "Teachings in Tibetan Buddhism",
+      "url": "https://tarameditationcentre.org.au/current-teaching/",
+      "description": "Introductory and intermediate courses with Venerable Chokyi, from Meditation 101 and Buddhism in a Nutshell to FPMT's fourteen-unit Discovering Buddhism programme on the stages of the path.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://tarameditationcentre.org.au/wp-content/uploads/2016/12/HMT-Building-1024x440-581x250.jpg"
+    },
+    {
+      "title": "Tara Yoga",
+      "url": "https://tarameditationcentre.org.au/yoga/",
+      "description": "Term-time drop-in yoga classes for all levels, including hatha, gentle, yin and restorative, and men's yoga, with mats and props provided.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://tarameditationcentre.org.au/wp-content/uploads/2016/12/HMT-Building-1024x440-581x250.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://tarameditationcentre.org.au/membership/",
+      "description": "Yearly membership that funds the centre and visiting teachers, giving discounts on teachings, books and yoga classes and use of the library.",
+      "price": "Single Membership $144 p/a; Family Membership $216 p/a; Concession or Subsequent family member $72 p/a",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://tarameditationcentre.org.au/wp-content/uploads/2016/12/HMT-Building-1024x440-581x250.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3321,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://tarameditationcentre.org.au/contacts/",
+    "contact_form_url": "https://tarameditationcentre.org.au/contact-us2/",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Lead's website hmt.org.au now redirects (301) to tarameditationcentre.org.au; the email is still welcome@hmt.org.au (general inbox, brand inbox).",
+      "Lead name 'Tara Meditation Center' — the centre spells it 'Tara Meditation Centre'; slug follows its own spelling.",
+      "Regional: Bunbury, Western Australia.",
+      "No videos or free resources found; one photo (the building).",
+      "Prices for classes are not published on the pages read: 'Contact for pricing'.",
+      "Teachers file empty: Venerable Thubten Chokyi is not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "16 Guidelines for Life series (Rob Wollaston): no current dates (0 events found).",
+      "Yoga workshops (Spring Yin, Rest & Rejuvenate): dated flyers only, not opened.",
+      "Four Breathing Exercises for Meditation: hosted on SoundCloud, not on the centre's own site."
+    ]
+  },
+  "images_final": true
+}

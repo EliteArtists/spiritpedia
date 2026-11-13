@@ -1,0 +1,238 @@
+{
+  "healer": {
+    "healer_slug": "buddha-eye-temple",
+    "location_source": "https://www.buddhaeye.org/our-temple",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Buddha Eye Temple / Butsugenji",
+      "bio": "Buddha Eye Temple, also called Butsugenji or Buddha Eye Zen Community Temple, is a Soto Zen temple on Garfield Street in west Eugene, Oregon. Established in 2002, it is a formally registered temple of the Japanese Soto school. Its founder was Joshin Keira Roshi, a Japanese priest who trained at Sojiji and later led Shurinji in Sendai, and who died in 2023. The abbot today is his Dharma heir Ejo Patrick McMullen, ordained in 1995 and trained at Daijoji monastery in Japan, who also helps run the Soto school's North American office. Further Dharma teachers and senior students teach alongside him.\n\nThe temple keeps a monastic rhythm open to everyone: its gate opens before dawn on weekdays for zazen, chanting and an oryoki breakfast, with midday and evening services, and visitors may simply spend time in the hall or garden during the day. Tuesday and Thursday evenings add zazen and seasonal classes, and the Sunday assembly brings sitting, chanting, a Dharma talk and an introduction to meditation, with free childcare. Teachers offer sanzen and practice discussion, sesshin are held through the year, and every programme is free. Sunday talks are streamed and archived on its YouTube channel.",
+      "availability": "local_online",
+      "city": "Eugene, Oregon",
+      "country": "United States",
+      "founded_year": 2002,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.buddhaeye.org/",
+      "booking_url": "https://www.buddhaeye.org/jump-in",
+      "youtube_url": "https://www.youtube.com/@buddhaeye",
+      "contact_email": "office@buddhaeye.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1793998042891-K9ITIXPDZJMTIE2XO8H4/87c7c466-3efb-1e38-6d89-9e907faf20c0.jpeg",
+        "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1695854760824-Q14HAV43DF0YO6TBZWXN/altar.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Caring for Ancestors Continued",
+      "url": "https://www.youtube.com/watch?v=zuW4eLCIcGw",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "\"Introduction To The Diamond Sutra, Part 1\" - April 1st, 2021 - Head Teacher Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=xAswgd6Ke2U",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Genjo Koan Lecture Series, Part 1 - September 22nd, 2022 - Abbot Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=gkaVk6WuJ78",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Experience Of The Wild - July 10th, 2022 - Abbot Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=zy0D4lE8r5E",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "\"What's So Great About The Great Vehicle, Part 1\" - February 21st, 2021 - Head Teacher Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=FMnSF9UGJSg",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "\"Introduction To The Diamond Sutra, Part 2\" - April 8th, 2021 - Head Teacher Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=gQ_o-Z1HdX8",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Siddartha's Journey to the Bodhi Tree, Part 1 of 5",
+      "url": "https://www.youtube.com/watch?v=X12c4ylLofU",
+      "subjects": [
+        "ancient-wisdom",
+        "spiritual-awakening"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Discipline is not What You Think",
+      "url": "https://www.youtube.com/watch?v=yi3ut-kePSQ",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Prajna and the Path of Devotion - January 8th, 2023 - Dharma Teacher Myobun Esther Tishman",
+      "url": "https://www.youtube.com/watch?v=NqtOlfFzcW0",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "Genjo Koan Lecture Series, Part 3 - October 6th, 2022 - Abbot Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=Cvn4EcCcrC8",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "The Diamond that Cuts Through Delusion, Part 1 - September 7, 2025 - Abbot Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=Bs-bn7wCWb0",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    },
+    {
+      "title": "There Are Not Two Gates, Part 1 - July 6, 2025 - Abbot Ejo McMullen",
+      "url": "https://www.youtube.com/watch?v=j3zkGSSePFc",
+      "subjects": [
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddha Eye Zen Community Temple"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sunday Morning Assembly",
+      "url": "https://www.buddhaeye.org/main-blog/sunday-assembly",
+      "description": "The temple's main weekly gathering: zazen with an introduction to meditation from 9 am, then chanting, a Dharma talk and community time, with childcare for young children. No registration is needed.",
+      "price": "Offered free of charge",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/5a95a15a9772ae270ef28b29/5af5c67988251bace4ec9d04/64fa4822513f111d468a08ce/1755530564510/unnamed+-+2025-08-18T082111.956.jpg?format=1500w"
+    },
+    {
+      "title": "Daily Schedule: weekday zazen and services",
+      "url": "https://www.buddhaeye.org/daily-schedule",
+      "description": "Weekday mornings from 5 am with zazen, walking meditation, chanting and an oryoki breakfast, a midday and an evening service, and Tuesday and Thursday evening zazen followed by classes. The temple is also open during the day for quiet sitting or sutra copying.",
+      "price": "Offered free of charge",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1584838274796-YAHWL8EZ0DWG8MZ2RTSY/Asset%2B4%402x.png?format=1500w"
+    },
+    {
+      "title": "Sanzen and Practice Discussion with the temple's teachers",
+      "url": "https://www.buddhaeye.org/teachers",
+      "description": "Formal one-to-one meetings with the abbot or a lineage holder during early-morning zazen or on set afternoons, and practice discussions with the temple's Dharma teachers and elders by appointment.",
+      "price": "Offered free of charge",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1584838274796-YAHWL8EZ0DWG8MZ2RTSY/Asset%2B4%402x.png?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talks",
+      "url": "https://www.buddhaeye.org/dharmatalks",
+      "description": "Weekly Sunday talks from the temple, each summarised on the site and streamed and archived on its YouTube channel, from series on caring for ancestors to the Buddha's path to awakening.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1584838274796-YAHWL8EZ0DWG8MZ2RTSY/Asset%2B4%402x.png?format=1500w"
+    },
+    {
+      "title": "Jump In: getting started at Buddha Eye",
+      "url": "https://www.buddhaeye.org/jump-in",
+      "description": "A newcomer's guide to the temple: the Sunday introduction to zazen, the seasonal practice schedule, working with a teacher and how to stay in touch.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5a95a15a9772ae270ef28b29/1584838274796-YAHWL8EZ0DWG8MZ2RTSY/Asset%2B4%402x.png?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3345,
+    "tier_evidence": "YouTube 536 subscribers (@buddhaeye, UCBhpYCuEGwoDfrTHV4uhfbg, Data API, 13 Nov 2026, linked from buddhaeye.org); Instagram/Facebook never fetched → ~0.5k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.buddhaeye.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "SZBA's website link is malformed ('http//www.buddhaeye.org'); the domain was read from the SZBA page text. Web search was unavailable (usage limit) at this point.",
+      "Teachers file empty: Ejo McMullen and Myobun Esther Tishman are not on Spiritpedia.",
+      "Videos: 12 of the most-viewed talks by the abbot and the temple's Dharma teacher (Data API top 25); a higher-viewed talk by Genjo Mark Yorke (role not stated on the site) and a short New Year message and ordination clip were left out.",
+      "Photos: the temple gate and grounds (Nov 2026 bulletin) and the altar (site images).",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Classes such as Founding a Bodhisattva Life: the programme guide is on Mailchimp (not opened).",
+      "Dharma Kids childcare: not a practice offering.",
+      "Sutra book PDF: not opened."
+    ]
+  },
+  "images_final": true
+}

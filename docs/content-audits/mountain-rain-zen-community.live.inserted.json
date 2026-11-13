@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1500,
+    "healer_slug": "mountain-rain-zen-community"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "1257f6e2-2965-4978-9246-12d1a2746304",
+      "slug": "rohatsu-sesshin-4",
+      "title": "Rohatsu Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "4b806322-b767-4add-8323-d023089f9d01",
+      "slug": "sunday-half-day-retreats",
+      "title": "Sunday Half-Day Retreats"
+    },
+    {
+      "table": "courses",
+      "id": "21f1f41b-f640-474e-a3ba-95864245b845",
+      "slug": "weekly-practice-sessions",
+      "title": "Weekly Practice Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "8a38267e-3866-4573-9b35-2456708ca19f",
+      "slug": "becoming-a-member",
+      "title": "Becoming a Member"
+    },
+    {
+      "table": "free_resources",
+      "id": "68fa8bbe-3af3-4c05-bd8c-1d37e40d5383",
+      "slug": "mountain-rain-zen-dharma-podcast",
+      "title": "Mountain Rain Zen Dharma Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "694de012-5de3-4aaf-90d1-a3aebdb5aaba",
+      "slug": "how-to-sit-zazen",
+      "title": "How to Sit Zazen"
+    },
+    {
+      "table": "free_resources",
+      "id": "f3138c31-36d3-476d-bc31-5cc511b3f7fd",
+      "slug": "mrzc-chants",
+      "title": "MRZC Chants"
+    }
+  ],
+  "at": "2026-11-13T04:14:39.546Z"
+}

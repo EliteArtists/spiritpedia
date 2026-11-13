@@ -1,0 +1,204 @@
+{
+  "healer": {
+    "healer_slug": "land-of-joy",
+    "location_source": "https://landofjoy.co.uk/contact-us/",
+    "create": {
+      "name": "Land of Joy",
+      "bio": "Land of Joy is a volunteer-run residential retreat centre of the FPMT, set in Greenhaugh Hall in the Northumberland National Park in north-east England. It was founded in 2010 under the guidance of Lama Zopa Rinpoche and held its first retreat in May 2015, after years of work buying and restoring the house, its outbuildings, walled garden and woodland. A renovated coach house now holds personal retreat rooms and a protector room, and three wooden huts in the woods above the valley serve longer solitary retreats.\n\nThe centre's year is built around group retreats, from introductory and non-Buddhist weekends to tantric practice, led by FPMT teachers. Practitioners can also come for personal retreats, including work on the preliminary practices, with meals supplied by the resident team, or stay in a hut for anything from one week to three months if they have an established practice. Neighbours are invited to a free evening meditation twice a month in the main gompa. Stays follow a generosity model in which guests choose what to give, and an online library gathers teachings and puja guidance.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Greenhaugh",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://landofjoy.co.uk/",
+      "booking_url": "https://landofjoy.co.uk/retreat-programme/",
+      "youtube_url": "https://www.youtube.com/@landofjoyretreatcentre9226",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@landofjoy.co.uk",
+      "image_urls": [
+        "https://landofjoy.co.uk/wp-content/uploads/2021/08/Our-History.jpg",
+        "https://landofjoy.co.uk/wp-content/uploads/2026/02/f131277c-210e-4cbf-ae14-322c3c7c1bbe-2.jpg",
+        "https://landofjoy.co.uk/wp-content/uploads/2026/02/PHOTO-2025-04-03-13-46-45-2-2.jpg"
+      ],
+      "founded_year": 2010
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Torma Making Workshop (part two): How to Make Deity Tormas and Food Offerings",
+      "url": "https://www.youtube.com/watch?v=jXxwlvqEIBs",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "Torma Making Workshop (part one): An Introduction to Tormas",
+      "url": "https://www.youtube.com/watch?v=qloS4SARtMQ",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "Tenzin Ösel Hita Public Talk at Land of Joy",
+      "url": "https://www.youtube.com/watch?v=6VMDAn0Niu4",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "Inside Land of Joy",
+      "url": "https://www.youtube.com/watch?v=8bUzZK5OwA4",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "Medicine Buddha Mini Retreat with Ven Lozang Yönten - Day 1 Session One",
+      "url": "https://www.youtube.com/watch?v=i0Zstcyafes",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "Bodhicharyavatara with Ven Lozang Yönten: Session 1",
+      "url": "https://www.youtube.com/watch?v=mDOi3EPQ1zU",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "The 37 Practices of a Bodhisattva with Ven Lozang Yönten - Day 1 Session One",
+      "url": "https://www.youtube.com/watch?v=4AcYiGoI7jY",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    },
+    {
+      "title": "A Daily Practice of 4 Arm Chenrezig",
+      "url": "https://www.youtube.com/watch?v=mCSM9sM5DIY",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Land of Joy Retreat Centre"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Individual/Personal Retreat",
+      "url": "https://landofjoy.co.uk/personal-stay/",
+      "description": "A self-directed retreat in the centre's private rooms, following your own practice schedule in quiet grounds, with lunch and supper provided by the team on site. Guests choose what to give under the centre's generosity model.",
+      "price": "Generosity model (you choose what to give)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://landofjoy.co.uk/wp-content/uploads/2026/02/Main-Website-Logo.png"
+    },
+    {
+      "title": "Private Retreat Huts",
+      "url": "https://landofjoy.co.uk/personal-stay/private-retreat-hut/",
+      "description": "Three woodland huts for solitary retreats of one week to three months, without internet or phone. Applicants need a settled daily practice, a clear retreat plan and a teacher or senior student to support them.",
+      "price": "Generosity model (you choose what to give)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://landofjoy.co.uk/wp-content/uploads/2026/02/Main-Website-Logo.png"
+    },
+    {
+      "title": "Preliminary Practice Retreats",
+      "url": "https://landofjoy.co.uk/personal-stay/preliminary-practice-retreats/",
+      "description": "Guidance and space for completing Tibetan Buddhist preliminaries, such as refuge or mandala offerings, in the huts or other retreat rooms, booked as a personal retreat.",
+      "price": "Generosity model (you choose what to give)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://landofjoy.co.uk/wp-content/uploads/2026/02/Main-Website-Logo.png"
+    },
+    {
+      "title": "Wednesday Night Meditation",
+      "url": "https://landofjoy.co.uk/community-programme/wednesday-meditations/",
+      "description": "An evening group meditation in the main gompa for people living nearby, where experienced meditators introduce a range of methods. No booking is needed.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://landofjoy.co.uk/wp-content/uploads/2026/02/Main-Website-Logo.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Practice & Retreat Resource Library",
+      "url": "https://landofjoy.co.uk/resources/practice-and-retreat/",
+      "description": "An online collection of videos, audio, texts and guidance from teachers connected with the centre, grouped by teacher and by theme, including puja and lam-rim resources.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://landofjoy.co.uk/wp-content/uploads/2026/02/Main-Website-Logo.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3326,
+    "hub": null,
+    "tier_evidence": "YouTube 757 subscribers (YouTube Data API, 13 Nov 2026); Facebook not fetched → ~0.8k → local_hero",
+    "email": "yes",
+    "email_source": "https://landofjoy.co.uk/",
+    "contact_form_url": "https://landofjoy.co.uk/contact-us/",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "info@landofjoy.co.uk is the general inbox (brand inbox).",
+      "Greenhaugh is a small village (postal town Hexham), Northumberland: recorded as published; may need mapping. Regional: Northumberland National Park.",
+      "Wednesday meditation page says both 'every Wednesday' and '1st and 3rd Wednesday of each month'; the description avoids stating the frequency, the bio says twice a month.",
+      "Group retreats are all led by visiting FPMT teachers (Ven Mary, Andy Wistreich, Alison Murdoch & Anna Colao, Roy Sutherwood); left out under the batch's guest-teacher rule, though they are the centre's main programme. Owner may want them added.",
+      "Teachers file empty: no resident teacher; visiting teachers are not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Emptiness in Everyday Life (5-8 Nov), Kalachakra Guru Yoga Nearing Retreat (from 14 Nov), Developing Our Capacity to Love (Jan 2027), Mahamudra: Nature of Mind Retreat (Jan-Feb 2027): guest-led and/or started.",
+      "Woodland Working Weeks: volunteering, not teaching.",
+      "Short tour videos (under 5 minutes) except one."
+    ]
+  },
+  "images_final": true
+}

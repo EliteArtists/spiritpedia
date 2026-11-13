@@ -1,0 +1,119 @@
+{
+  "healer": {
+    "healer_slug": "all-beings-zen-sangha",
+    "location_source": "https://www.allbeingszen.org/about/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "All Beings Zen Sangha",
+      "bio": "All Beings Zen Sangha is a small Soto Zen community in Washington, DC, started in 2004 by a handful of Zen students and now serving practitioners across the District, Maryland and Virginia. It belongs to the lineage of Shunryu Suzuki and is one of the Branching Streams sanghas affiliated with San Francisco Zen Center. Dairyu Michael Wenger, a San Francisco priest based at Dragon's Leap Temple, gave the group its name and has supported it from the start. Its resident priest and abiding teacher is Rev. Inryu Bobbi Ponce-Barger, who took lay vows in 2005, was ordained as a priest in 2013 and received Dharma transmission from Wenger in 2017.\n\nThe sangha sits in a modest urban zendo in Adams Morgan, a short walk from Woodley Park, and every session is also open on Zoom. Early zazen with a short service runs on Monday, Wednesday and Friday mornings, and a fuller Thursday evening programme adds walking meditation, chanting and, often, a talk. Newcomers need no experience, there are no fees, and the group keeps going on donations. Individual practice meetings with the teacher, sesshin and occasional retreats round out its life, and recordings of the teacher's talks are kept on its website.",
+      "availability": "local_online",
+      "city": "Washington, DC",
+      "country": "United States",
+      "founded_year": 2004,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.allbeingszen.org/",
+      "booking_url": "https://www.allbeingszen.org/zazen/weekly-sitting/",
+      "youtube_url": null,
+      "contact_email": "markstone1924@gmail.com",
+      "image_urls": [
+        "https://www.allbeingszen.org/wp-content/uploads/2015/07/11010301_10153359897451772_4141612845795995035_n.jpg",
+        "https://www.allbeingszen.org/wp-content/uploads/2026/10/IMG_1150-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly zazen (in person and on Zoom)",
+      "url": "https://www.allbeingszen.org/zazen/weekly-sitting/",
+      "description": "Forty minutes of seated meditation with a brief service on Monday, Wednesday and Friday mornings, and a longer Thursday evening session with walking meditation and chanting. Join at the Adams Morgan zendo or online.",
+      "price": "There are no fees for meditation sessions, workshops or retreats (dāna welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.allbeingszen.org/wp-content/uploads/2016/09/img_4028-1-1024x768.jpg"
+    },
+    {
+      "title": "Dokusan: practice meetings with the resident teacher",
+      "url": "https://www.allbeingszen.org/zazen/a-guide-to-dokusan-and-practice-discussion-with-abzs/",
+      "description": "Short one-to-one meetings with Rev. Inryu Ponce-Barger to talk through your meditation and how it meets daily life, offered during weekly zazen, at retreats or by phone on request. The page explains the forms and what to expect.",
+      "price": "There are no fees for meditation sessions, workshops or retreats (dāna welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.allbeingszen.org/wp-content/uploads/2015/07/11010301_10153359897451772_4141612845795995035_n.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Inryū Sensei's Dharma Talks",
+      "url": "https://www.allbeingszen.org/inryus-dharma-talks/",
+      "description": "An archive of video and audio recordings of talks by the sangha's teacher from 2021 onwards, on themes such as the Sandokai, the ox-herding pictures, death poems and practice during Rohatsu sesshin.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.allbeingszen.org/wp-content/uploads/2024/08/IMG_5673-768x1024.jpeg"
+    },
+    {
+      "title": "Loving Kindness Meditation",
+      "url": "https://www.allbeingszen.org/frequently-used-chants/loving-kindness-meditation-2/",
+      "description": "The full text of the loving-kindness chant the sangha recites, wishing safety and happiness to every kind of being, near or far, seen or unseen.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.allbeingszen.org/wp-content/uploads/2015/07/11010301_10153359897451772_4141612845795995035_n.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3332,
+    "tier_evidence": "No YouTube channel or other public account linked from allbeingszen.org (13 Nov 2026); Instagram/Facebook never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.allbeingszen.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email: markstone1924@gmail.com is the personal address of the sangha's contact person (Shinren), published as a mailto link on its own Contact page; the SZBA list also gives inryu@allbeingszen.org (not used, as the centre's own site doesn't publish it).",
+      "Branching Streams: an independent sangha affiliated with San Francisco Zen Center, not an SFZC branch (about page); kept under the batch note, owner may judge.",
+      "Photo: the site has no clear photo of its own zendo. First image is its teacher giving a Dharma talk (at Empty Nest Temple, per the caption, 960x720, a little soft); second is a group of sangha members on a peace walk (home page, Oct 2026). Owner may prefer a different image.",
+      "Teachers file empty: resident teacher Inryu Bobbi Ponce-Barger and guiding teacher Dairyu Michael Wenger are not on Spiritpedia. Possible future listings: Inryu Bobbi Ponce-Barger.",
+      "Political check: the talks archive includes one 2024 talk titled around a call for ceasefire; the archive as a whole is Dharma teaching, so the page was kept as a free resource. Owner may judge.",
+      "The home page publishes a Zoom link and password for sittings; not copied.",
+      "Thin: 4 items (2 offerings, 2 free resources); no YouTube channel (talk videos are self-hosted mp4 files).",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Dated posts (evening practices, book group, Tassajara week, peace walk): past or one-off dates.",
+      "Chant pages other than loving-kindness: text-only liturgy pages, kept to one.",
+      "Videos: no YouTube channel linked from the site."
+    ]
+  },
+  "images_final": true
+}

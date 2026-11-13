@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "hayagriva-buddhist-centre",
+    "location_source": "https://hayagriva.org.au/about-us/",
+    "create": {
+      "name": "Hayagriva Buddhist Centre",
+      "bio": "Hayagriva Buddhist Centre is a Gelug Tibetan Buddhist centre in Kensington, an inner suburb of Perth in Western Australia, and part of the FPMT network founded by Lama Thubten Yeshe and Lama Zopa Rinpoche. It has run for more than thirty years as a volunteer-led, non-profit association. Its teacher today is Venerable Drolkar, an Australian nun who studied with Lama Zopa Rinpoche for over three decades and has long worked within FPMT.\n\nEach Sunday the centre holds a guided meditation followed by a drop-in Discovering Buddhism class, in which Venerable Drolkar works through FPMT's lam-rim modules one by one, most recently the wisdom of emptiness, with time for questions and no need to have attended earlier sessions. A Tuesday morning meditation, Tara pujas and occasional practice workshops round out the week, and everything is offered by donation so that cost keeps no one away. Members help meet running costs and receive library access, shop discounts and a vote at the annual meeting, and recordings of past teachings are shared on its website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Perth, Western Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://hayagriva.org.au/",
+      "booking_url": "https://hayagriva.org.au/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "welcome@hayagriva.org.au",
+      "image_urls": [
+        "https://hayagriva.org.au/wp-content/uploads/2024/06/IMG_0886-2.jpg",
+        "https://hayagriva.org.au/wp-content/uploads/2023/03/IMG_E0682.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Discovering Buddhism",
+      "url": "https://hayagriva.org.au/series/discovering-buddhism/",
+      "description": "A weekly Sunday class with Venerable Drolkar that takes FPMT's lam-rim course one module at a time, each lasting about four to eight weeks. Newcomers can join at any session, and there is plenty of room for questions.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Sunday Meditation",
+      "url": "https://hayagriva.org.au/series/sunday-meditation-2/",
+      "description": "A guided group meditation at the Kensington centre at ten o'clock every Sunday morning, open to all.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Tuesday Morning Meditation",
+      "url": "https://hayagriva.org.au/series/tuesday-morning-meditation-2/",
+      "description": "A weekly midweek meditation session held at the centre on Tuesday mornings.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Membership",
+      "url": "https://hayagriva.org.au/membership/",
+      "description": "Monthly or annual membership that keeps the volunteer-run centre open, with lower suggested donations at events, library use, shop discounts and voting rights.",
+      "price": "Individual: $15 monthly or $155 annually; Concession: $10 monthly or $105 annually; Family: $20 monthly or $230 annually",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Current and Past Recordings",
+      "url": "https://hayagriva.org.au/resources2/",
+      "description": "Links to recordings of teachings given at the centre over its thirty-plus years, current and historical, together with useful links to FPMT and the Lama Yeshe Wisdom Archive.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3320,
+    "hub": null,
+    "tier_evidence": "YouTube unreadable (node scripts/yt.mjs found no channel for the handle linked on the site, @hayagrivabuddhistcentre1140, 13 Nov 2026); Facebook not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://hayagriva.org.au/",
+    "contact_form_url": "https://hayagriva.org.au/contact-us/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "welcome@hayagriva.org.au is the centre's general inbox (brand inbox, mailto in the site footer).",
+      "No videos: the YouTube handle linked from the site returned no channel through the Data API; youtube_url left null. Owner may want to check the handle.",
+      "Base: Kensington is a Perth suburb; city given as Perth, Western Australia.",
+      "Teachers file empty: Venerable Drolkar is not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Tibetan Medicine with Dr Barry Clark (diet and nutrition, five-point weight-loss programme, private consultations): guest-led and health-focused.",
+      "Workshop: Daily Practice through the 7 Limb Prayer (14 Nov 2026): not after 14 Nov.",
+      "In Depth Meditation Training (Online): FPMT's online programme, not the centre's own."
+    ],
+    "held": "Photos (hayagriva.org.au) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
+  }
+}

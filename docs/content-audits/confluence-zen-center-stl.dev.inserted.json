@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1553,
+    "healer_slug": "confluence-zen-center-stl"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11551,
+      "slug": "the-formless-record-of-the-transmission-of-illumination",
+      "title": "The Formless Record of the Transmission of Illumination"
+    },
+    {
+      "table": "courses",
+      "id": "4da80df0-d439-4855-8596-e8740725f348",
+      "slug": "beginners-night",
+      "title": "Beginner's Night"
+    },
+    {
+      "table": "courses",
+      "id": "73858254-8887-42b5-97cc-c4a50eca7c34",
+      "slug": "one-day-sitting",
+      "title": "One-Day Sitting"
+    },
+    {
+      "table": "courses",
+      "id": "5a5b0582-e8ba-4122-81f5-d561616fa9a0",
+      "slug": "sunday-practice",
+      "title": "Sunday Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "462a1f8e-edce-44bd-9a05-aafb55ec0bc0",
+      "slug": "weekday-zazen",
+      "title": "Weekday Zazen"
+    }
+  ],
+  "at": "2026-11-13T03:45:02.008Z"
+}

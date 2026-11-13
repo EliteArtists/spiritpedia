@@ -1,0 +1,144 @@
+{
+  "healer": {
+    "healer_slug": "richmond-zen",
+    "location_source": "https://www.richmondzen.org/welcome/newcomers",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Richmond Zen",
+      "bio": "Richmond Zen is a lay-led Soto Zen sangha in Richmond, Virginia, practising in the line of Shunryu Suzuki and meeting in the zendo of Ekoji Buddhist Sangha on Grove Avenue. An independent non-profit and a member of the Branching Streams network, it is guided by Josho Pat Phelan Roshi, abbess of Chapel Hill Zen Center, who visits regularly to give talks and individual practice guidance. Its head priest, Eden Kevin Heffernan, has practised Zen for more than three decades, led the group as a lay leader from 1999, was ordained in 2018 and trained at Tassajara; he is also a campus minister for Buddhist students at a local university.\n\nThe sangha sits together four times a week: Sunday mornings with walking meditation, chanting and Dharma study, Wednesday evenings, and early Tuesday and Friday mornings. Newcomers can join an orientation with meditation instruction twice a month, and on the first Sunday of each month a zazenkai offers a half-day or full day of sitting, oryoki meals and work practice. A monthly Zoom class on the Bodhisattva precepts returns in 2027, seasonal practice intensives and outdoor sittings by the James River deepen the year, and the group runs entirely on donations.",
+      "availability": "local_online",
+      "city": "Richmond, Virginia",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.richmondzen.org/",
+      "booking_url": "https://www.richmondzen.org/welcome/newcomers",
+      "youtube_url": null,
+      "contact_email": "zazen@richmondzen.org",
+      "image_urls": [
+        "https://www.richmondzen.org/wp-content/uploads/2026/09/PXL_20260621_174021690-scaled.jpg",
+        "https://www.richmondzen.org/wp-content/uploads/2014/07/IMG_2500.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Zazen Schedule",
+      "url": "https://www.richmondzen.org/about/weekly-schedule",
+      "description": "Regular group sitting at the Ekoji zendo: Sunday mornings with two periods of zazen, walking meditation, chanting and Dharma study; Wednesday evenings with two periods and chanting; and short early-morning sittings on Tuesdays and Fridays.",
+      "price": "Free (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2019/11/IMG_0015-scaled.jpg"
+    },
+    {
+      "title": "Newcomer Orientation and Meditation Instruction",
+      "url": "https://www.richmondzen.org/welcome/newcomers",
+      "description": "An introduction for first-time visitors, held twice a month, covering a sustainable sitting posture, attention to the breath, working with distracting thoughts and the forms used in the zendo. Sign up by email with the head priest.",
+      "price": "Free (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2021/10/cropped-cropped-PXL_20211004_121255311-1.jpg"
+    },
+    {
+      "title": "Zazenkai",
+      "url": "https://www.richmondzen.org/zazenkai",
+      "description": "A monthly meditation intensive on the first Sunday, offered as a half day or a full day: sitting and walking meditation, chant services, oryoki meals and work practice. Everyone is welcome to join any part of the schedule; register by email.",
+      "price": "Free (donations welcome)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2014/07/IMG_2500.jpg"
+    },
+    {
+      "title": "Precepts Study Class",
+      "url": "https://www.richmondzen.org/recommended-resources/precepts-study",
+      "description": "A Zoom class on the second Monday evening of each month exploring ethical conduct in Buddhism and the Sixteen Bodhisattva Precepts as handed down by Dogen, with a reading list including talks by the guiding teacher. The class resumes in January 2027 and is open to all.",
+      "price": "Free (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2019/08/IMG_20190812_165040.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "How to Practice Zazen (illustrated instructions)",
+      "url": "https://www.richmondzen.org/wp-content/uploads/2014/08/How-to-Practice-Zazen-illustrated.pdf",
+      "description": "An illustrated PDF guide to Zen meditation, recommended to newcomers before their first visit, with a companion sheet on alternative sitting postures on the centre's resources page.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2026/09/PXL_20260621_174021690-scaled.jpg"
+    },
+    {
+      "title": "Richmond Zen Chant Book",
+      "url": "https://www.richmondzen.org/wp-content/uploads/2014/08/RZG-Chant-Book.pdf",
+      "description": "The sangha's chant book used at services, free to download for home practice.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.richmondzen.org/wp-content/uploads/2026/09/PXL_20260621_174021690-scaled.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3388,
+    "tier_evidence": "No YouTube channel or readable follower counts found on the site (newsletter only) → local_hero by default",
+    "email": "yes",
+    "email_source": "https://www.richmondzen.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Guiding teacher Josho Pat Phelan (Chapel Hill Zen Center) and head priest Eden Kevin Heffernan are not on Spiritpedia: teachers file empty.",
+      "Affiliation: member of Branching Streams (SFZC's affiliate network) but an independent 501(c)3, not an SFZC branch; kept under the batch note.",
+      "Base: meets at Ekoji Buddhist Sangha, 3411 Grove Ave, Richmond (a shared space); postal address is a PO box.",
+      "Prices: the home page says Richmond Zen is supported entirely by donations; 'Free (donations welcome)' is my wording.",
+      "Zazenkai registration is by email to a named member's personal address (not used as the contact).",
+      "No videos: no YouTube channel linked from the site.",
+      "Head priest also teaches yoga (RYT-200); not in the bio.",
+      "Precepts class: the events page says the next meeting was 9 Nov; the precepts-study page says the class resumes in January 2027; start_date left null rather than inferring the second Monday."
+    ],
+    "left_out": [
+      "Fall 2026 Practice Intensive (27 Sep - 25 Oct) and Trust in Mind class: past.",
+      "Boundless Zendo outdoor sit (24 Oct): past.",
+      "Monday noon Silent Meditation Gathering: discontinued.",
+      "Mountains & Waters / Climate Links and difference + unity pages: activism and identity resources, not used (political rule).",
+      "Visiting teachers (Taigen Leighton, Hosan Alan Senauke and others): guests, not linked."
+    ]
+  },
+  "images_final": true
+}

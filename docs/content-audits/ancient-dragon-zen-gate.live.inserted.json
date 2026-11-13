@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1425,
+    "healer_slug": "ancient-dragon-zen-gate"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7d00585f-4290-484a-919a-017c8d743878",
+      "slug": "weekly-meditation-programmes-onsite-hybrid-and-online",
+      "title": "Weekly meditation programmes (onsite, hybrid and online)"
+    },
+    {
+      "table": "courses",
+      "id": "9b2ff888-d49a-4ea3-99c1-253635b3b250",
+      "slug": "five-day-rohatsu-sesshin",
+      "title": "Five-Day Rohatsu Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "2e34a812-8ba0-4541-83b3-fc641d46302d",
+      "slug": "dokusan-and-practice-discussion",
+      "title": "Dokusan and Practice Discussion"
+    },
+    {
+      "table": "free_resources",
+      "id": "5023ebf4-462d-4f7e-a4cf-420b2aeb5c93",
+      "slug": "ancient-dragon-zen-gate-dharma-podcast-library",
+      "title": "Ancient Dragon Zen Gate Dharma Podcast Library"
+    },
+    {
+      "table": "free_resources",
+      "id": "c4d69bd2-49f8-46c1-b1d2-662e88b33e5e",
+      "slug": "online-video-dharma-talks",
+      "title": "Online Video Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "2eff2f4e-101f-4688-b8b4-5d8bc886dbdf",
+      "slug": "chants",
+      "title": "Chants"
+    }
+  ],
+  "at": "2026-11-13T04:10:28.470Z"
+}

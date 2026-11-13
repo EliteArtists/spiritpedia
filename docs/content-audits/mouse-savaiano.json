@@ -1,0 +1,114 @@
+{
+  "healer": {
+    "healer_slug": "mouse-savaiano",
+    "location_source": "https://www.mkehealingarts.com/",
+    "create": {
+      "name": "Mouse Savaiano",
+      "bio": "Mouse Savaiano runs MKE Healing Arts, a small healing practice in Mequon, just north of Milwaukee, Wisconsin, and also works with people over Zoom. A licensed massage therapist by training, they have practised Usui Reiki for more than twenty years and teach it as a Reiki Master Teacher, with one path for people who want to use Reiki for themselves and their families and another for those preparing to offer it professionally. Their own meditation practice began at 26 with mala beads and Sanskrit chanting and has since widened to breath-focused sitting and guided practice.\n\nMuch of their teaching now follows the shamanic path. They introduce students to drum-led journeying, in which people meet power animals and helping spirits, and offer ongoing guidance and a year-long mentorship in ritual, ceremony and healing work for those who want to go further. Their spiritual guidance sessions are for people at a turning point, such as a change of career, a relationship ending or children leaving home, and draw on helping spirits and, at times, mediumship. The studio also hosts full-moon gatherings and a monthly drum circle, and the website shares free drum-journey recordings and a guided meditation.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Mequon, Wisconsin",
+      "country": "United States",
+      "subjects": [
+        "shamanism",
+        "reiki",
+        "meditation"
+      ],
+      "website_url": "https://www.mkehealingarts.com/",
+      "booking_url": "https://www.mkehealingarts.com/shamanicstudies",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "INFO@MKEHealingArts.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Learning to Journey: Introduction to Shamanic Journeying",
+      "url": "https://www.mkehealingarts.com/shamanicstudies",
+      "description": "A starting course in shamanic journeying, held over four one-hour sessions in person in Mequon or remotely. Students learn to enter a journey with the drum, meet their helping spirits and work with clear intention and safe guidelines. It is the first step before their shamanic guidance sessions and year-long mentorship.",
+      "price": "$360",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "shamanism"
+      ]
+    },
+    {
+      "title": "Spiritual Guidance Sessions",
+      "url": "https://www.mkehealingarts.com/spiritualguidance",
+      "description": "One-hour sessions on Zoom or in person for people facing a life transition who want spiritual support and clarity. Mouse works with helping spirits and, at times, mediumship to offer insight and practical next steps. Single sessions, a four-session pack and a monthly year-long option are offered.",
+      "price": "$135 single session; $440 for 4 sessions; $1,380 for 12 sessions",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "mediumship-spirits"
+      ]
+    },
+    {
+      "title": "Study Usui Reiki Ryoho",
+      "url": "https://www.mkehealingarts.com/reikihealing",
+      "description": "Usui Reiki training in two tracks: a personal path for using Reiki on yourself and loved ones, and a professional mastery series for those who want to become Reiki Masters and offer sessions to the public. Taught by Mouse as a Reiki Master Teacher.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Videos and Meditations",
+      "url": "https://www.mkehealingarts.com/videosmeditations",
+      "description": "Free recordings on the MKE Healing Arts site, including a fifteen-minute guided cord-cutting meditation, shamanic drum recordings for journeying with a call back, and the first day of a 21-day Reiki meditation.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "shamanism"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3247,
+    "restored_from": "docs/content-audits/insight-timer-sprint-1/skipped/mouse-savaiano.json",
+    "hub": null,
+    "held": "No usable photo: every image on mkehealingarts.com is hosted on static.wixstatic.com, which refuses our robots.txt request, and no YouTube channel or other allowed host with a photo of Mouse was found (Insight Timer is never used). Everything else passes; owner to supply a photo or drop.",
+    "tier_evidence": "No readable follower counts: no YouTube channel found; Instagram and Facebook not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.mkehealingarts.com/",
+    "contact_form_url": "https://www.mkehealingarts.com/mousesavaiano",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): listed for Reiki teaching, shamanic journeying, spiritual guidance and free meditations; the massage services (the old skip's reason: sold for back pain, arthritis, migraines and fibromyalgia) are left out. The home page mission line speaks of a life free from pain, which reads as wellbeing wording, not a claim to treat a condition.",
+      "Pronouns: the site refers to Mouse as 'their' in the shamanic mentorship copy; the bio uses they/them. Please confirm.",
+      "Regional: Mequon, Wisconsin (Milwaukee area).",
+      "Email is the practice's general inbox (INFO@MKEHealingArts.com), published on every page footer.",
+      "The Reiki page also introduces another practitioner (Kelsey); only Mouse's own offerings are listed.",
+      "Counts unreadable for main accounts; tier 0 readable.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check; images were checked with curl instead (all 200). The lead session should run it."
+    ],
+    "left_out": [
+      "Massage Services, Thai bodywork CEU classes and the wellness package: massage therapy, out of scope (and the old record found the massage page sold on conditions).",
+      "Shamanic Guidance ($120 per 90-minute session) and Shamanic Mentorship ($300/month for a year): same page URL as Learning to Journey (/shamanicstudies); one item kept per URL.",
+      "Reiki sessions: same page as the Reiki training item.",
+      "Meditation for Every Day: a course not yet launched (sign-up list only).",
+      "Usui Reiki Level III (22 Nov), Sisters of the Moon and the drum circle: events with no page of their own; the drum circle is music, not a journey circle.",
+      "Reiki with Kelsey: led by another practitioner."
+    ]
+  }
+}

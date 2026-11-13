@@ -1,0 +1,215 @@
+{
+  "healer": {
+    "healer_slug": "vajrayana-institute",
+    "location_source": "https://vajrayana.com.au/contact/",
+    "create": {
+      "name": "Vajrayana Institute",
+      "bio": "Vajrayana Institute is a Tibetan Buddhist centre in Ashfield, in Sydney's inner west, belonging to the FPMT network that Lama Thubten Yeshe and Lama Zopa Rinpoche started. Its community dates from the early 1980s, when it met in Newtown under Ven. Roger Kunsang, before moving to its present house with a stupa garden, gompa, library and bookshop. Since 2003 its resident teacher has been Geshe Ngawang Samten, a Lharampa geshe of Sera Monastery who previously taught Gelug philosophy in Sarnath.\n\nThe centre runs its programme on donations rather than fees. Four guided meditation sessions each week, led by Wai Cheong Kok, Alan Marsh and Venerable Jampa Dekyi, mix breath-focused and analytical meditation and are open to beginners, in the gompa and over Zoom. Alongside them come study courses with Geshe Samten, weekend lam-rim retreats with optional stays on site, and pujas. Members support the work and receive access to Vajrayana TV, its on-demand teaching library, while hundreds of past talks are free to hear on its website and YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Sydney, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://vajrayana.com.au/",
+      "booking_url": "https://vajrayana.com.au/meditate/",
+      "youtube_url": "https://www.youtube.com/@vajrayanainstitute",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "spc@vajrayana.com.au",
+      "image_urls": [
+        "https://vajrayana.com.au/wp-content/uploads/2020/01/About_us.jpeg",
+        "https://vajrayana.com.au/wp-content/uploads/2020/02/Vajrayana-LogoArtboard-5Regular.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Way of Shamatha Retreat with Alan Wallace (1/26)",
+      "url": "https://www.youtube.com/watch?v=7Xyikn0_IWU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "The Way of Shamatha Retreat with Alan Wallace (2/26)",
+      "url": "https://www.youtube.com/watch?v=1o-_HpALs9s",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "The Way of Shamatha Retreat with Alan Wallace (3/26)",
+      "url": "https://www.youtube.com/watch?v=bgX_kaM8NiM",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "Ancient Wisdom for Modern Times Retreat   Day 1 Session 1",
+      "url": "https://www.youtube.com/watch?v=kQ-WV3t3ow8",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "Discovering Buddhism -  Samsara and Nirvana - Session 1",
+      "url": "https://www.youtube.com/watch?v=CuQaer0_tww",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "Discovering Buddhism - All About Karma p1",
+      "url": "https://www.youtube.com/watch?v=4Ka8D7gPExY",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "Discovering Buddhism - How to Develop Bodhichitta - Session 1",
+      "url": "https://www.youtube.com/watch?v=omuwXxYj0sY",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Vajrayana Institute"
+    },
+    {
+      "title": "Death & Rebirth P1",
+      "url": "https://www.youtube.com/watch?v=0mbwiNfKqOM",
+      "subjects": [
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "channel": "Vajrayana Institute"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Lam Rim Retreat",
+      "url": "https://vajrayana.com.au/lam-rim-small-scope-retreat/",
+      "description": "A two-day weekend retreat led by senior teacher Wai Cheong Kok on the opening contemplations of the graduated path, such as precious human life, impermanence, refuge and karma, with guided sessions, short talks and discussion. Lunch is included and rooms at the centre can be booked separately.",
+      "price": "$200",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2026/08/Untitled-11-August-2026-at-15.20.35-2-4-1024x576.png"
+    },
+    {
+      "title": "Monday Meditation",
+      "url": "https://vajrayana.com.au/monday-meditation/",
+      "description": "An evening group sit with Wai Cheong Kok combining breath awareness with analytical meditation, suited to newcomers and regular meditators, at the centre or streamed.",
+      "price": "By donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2022/12/Advanced-meditation2-1-1.png"
+    },
+    {
+      "title": "Sunday Meditation",
+      "url": "https://vajrayana.com.au/sunday-meditation/",
+      "description": "A Sunday morning guided session with Venerable Jampa Dekyi, held in Ashfield and on Zoom, joining calm breathing practice with reflective meditation.",
+      "price": "By Donation (Suggested: $10 per class)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2022/02/meditation-PPKN2DM.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://vajrayana.com.au/membership/",
+      "description": "Monthly or yearly membership at several levels, which keeps the donation-based programme going and brings a welcome pack of books, a bookshop discount, library use and access to Vajrayana TV.",
+      "price": "Snow Lion $10 per month; Dharmachakra $20 per month; Family $30 per month; Triple Gem $40 per month; Wish Fulfilling Jewel $90 per month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2023/06/Become-Member.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Listen to Teachings",
+      "url": "https://vajrayana.com.au/resources/",
+      "description": "An archive of audio recordings from past courses at the centre, most of them by Geshe Samten, on texts such as the Heart Sutra, Nagarjuna's Precious Garland and Shantideva's ninth chapter.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2021/05/Ven-Dekyi-768x576.jpeg"
+    },
+    {
+      "title": "Learn to Meditate",
+      "url": "https://vajrayana.com.au/meditate/",
+      "description": "An introduction to meditation with three short guided recordings, one for inner calm and two for loving kindness towards oneself and others.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://vajrayana.com.au/wp-content/uploads/2020/01/whats_on-1024x421.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3312,
+    "hub": null,
+    "tier_evidence": "YouTube 3,470 subscribers (YouTube Data API, 13 Nov 2026); Facebook/Instagram not fetched → ~3.5k → local_hero",
+    "email": "yes",
+    "email_source": "https://vajrayana.com.au/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "spc@vajrayana.com.au is the centre's general inbox (brand inbox); FPMT's list gives office@vajrayana.com.au.",
+      "The site still calls Lama Zopa Rinpoche the 'current spiritual director'; the bio doesn't repeat that.",
+      "Base is the suburb Ashfield; city given as Sydney, New South Wales. Owner may prefer 'Ashfield'.",
+      "Most-viewed videos are B. Alan Wallace's shamatha retreat recorded by the centre (he is a visiting teacher, not on Spiritpedia).",
+      "Teachers file empty: Geshe Ngawang Samten (resident), Ven. Jampa Dekyi, Wai Cheong Kok and Alan Marsh are not on Spiritpedia (possible future listings).",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Observation & Reflection: A Weekend of Iyengar Yoga with Henryk Liskiewicz (21-22 Nov): guest-led.",
+      "Wednesday and Friday meditations: kept two of the four weekly sessions to avoid near-duplicates.",
+      "Vajrayana TV (members-only streaming), covered by the membership item.",
+      "Most YouTube uploads are multi-part series; kept the most-viewed parts."
+    ]
+  },
+  "images_final": true
+}

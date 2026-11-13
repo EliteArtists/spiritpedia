@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "upright-noble-zen",
+    "location_source": "https://uprightnoble.wordpress.com/",
+    "create": {
+      "name": "Upright Noble Zen",
+      "bio": "Upright Noble Zen is a small Zen community in Anchorage, Alaska, that practises both in person and online. It is led by Dana Kojun Lederhos-Hull, a Zen teacher based in the city who spent fourteen years in full-time monastic training and has led retreats in California, the Pacific Northwest, British Columbia and Alaska. In 2012 she became the first dharma successor of Jan Chozen Bays and Hogen Bays, teachers in the line of Taizan Maezumi, and she belongs to the Soto Zen Buddhist Association and the White Plum Asanga. The group describes itself as a place where committed practitioners and curious newcomers of any faith or none can explore Zen together.\n\nThe heart of the week is the Sunday evening programme at the Anchorage Pioneer Schoolhouse, also streamed on Zoom: two periods of sitting, a dharma talk, a short check-in and closing chants. Online zazen with the Heart Sutra runs early on five mornings a week, with further online sittings on Tuesday and Thursday evenings. Silent one-day zazenkai and multi-day sesshin are held through the year, mainly in person, and more than a hundred short talks by Kojun can be heard free as a podcast.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Anchorage, Alaska",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://uprightnoble.wordpress.com/",
+      "booking_url": "https://uprightnoble.wordpress.com/sunday-evening-program/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "anchoragemeditation@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zen Retreat: Zazenkai and Sesshin",
+      "url": "https://uprightnoble.wordpress.com/retreats/",
+      "description": "Silent one-day and multi-day retreats with long periods of zazen, chanting, mindful meals and sometimes a talk and private interview with the teacher, held in person with an online option mainly for people outside Anchorage. Some prior practice with the group is generally expected.",
+      "price": "Suggested contribution $40 to $60 per day in person ($30 to $50 if online)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Sunday Evening Program",
+      "url": "https://uprightnoble.wordpress.com/sunday-evening-program/",
+      "description": "The community's main weekly gathering at the Anchorage Pioneer Schoolhouse and on Zoom: two sitting periods, usually a dharma talk and check-in, and closing chants. Recommended as the first event for newcomers.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Morning and Evening Sitting Schedule",
+      "url": "https://uprightnoble.wordpress.com/morning-sitting-schedule/",
+      "description": "Open Zoom sittings at dawn from Sunday to Thursday with Heart Sutra chanting, and evening sittings on Tuesdays and Thursdays closing with the Song of Zazen.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Dharma Talks",
+      "url": "https://uprightnoble.wordpress.com/dharma-talks/",
+      "description": "A page pointing to Kojun's podcast of more than 130 short dharma talks, free to stream on several listening platforms.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3402,
+    "held": "No usable photo: the site's only image is a Creative Commons photo of Anchorage from Wikimedia Commons (credited on the home page), not the community; there is no logo, own photo or YouTube channel.",
+    "tier_evidence": "No YouTube channel or social accounts linked from uprightnoble.wordpress.com (talks are on Spotify) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://uprightnoble.wordpress.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Email anchoragemeditation@gmail.com is the group's general inbox (mailto on the contact page); one page misspells it as 'anchoragemediation', not used.",
+      "Regional: Anchorage, Alaska.",
+      "Lineage: White Plum (Maezumi line) through Jan Chozen Bays and Hogen Bays; listed by SZBA.",
+      "Thin: four items, two of them free schedule and podcast pages; retreat dates are given only loosely ('early January of 2027').",
+      "Teachers file empty: Dana Kojun Lederhos-Hull is not on Spiritpedia (Jan Chozen Bays could be a future listing)."
+    ],
+    "left_out": [
+      "Retreat 9-10 Oct 2026: past; the next is only 'early January 2027', so the retreat item is undated.",
+      "Podcast on Spotify: not opened; listed only through the site's own Dharma Talks page."
+    ]
+  }
+}

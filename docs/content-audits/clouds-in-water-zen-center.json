@@ -1,0 +1,127 @@
+{
+  "healer": {
+    "healer_slug": "clouds-in-water-zen-center",
+    "location_source": "https://www.cloudsinwater.org/contact",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Clouds in Water Zen Center",
+      "bio": "Clouds in Water Zen Center is a Soto Zen temple in St. Paul, Minnesota, tracing its line to Dainin Katagiri Roshi, the Japanese teacher who settled in Minnesota in 1972 after a decade alongside Shunryu Suzuki in San Francisco. The sangha began meeting in Minneapolis in 1994, spent many years in rented rooms in Lowertown St. Paul, and in 2015 bought a building of its own on Farrington Street in the Rondo neighbourhood. Sosan Theresa Flynn, who has practised Soto Zen since 1992 and received Dharma transmission from Joen Snyder O'Neal in 2012, serves as Guiding Teacher, with several priests and lay teachers alongside her.\n\nThe heart of the week is a Sunday morning gathering of zazen, a Dharma talk and tea, with an orientation for newcomers beforehand. Early-morning sitting and chanting runs on several weekdays, and most sessions can be joined in person or by Zoom. A two-hour Getting Started in Zen workshop introduces zazen and home practice, sesshin and shorter retreats run through the year, and practitioners can arrange one-to-one meetings with teachers on a dana basis. Recorded Dharma talks are shared as a podcast, and an inability to pay never bars anyone from taking part.",
+      "availability": "local_online",
+      "city": "St. Paul, Minnesota",
+      "country": "United States",
+      "founded_year": 1994,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.cloudsinwater.org/",
+      "booking_url": "https://www.cloudsinwater.org/meditation-schedule",
+      "youtube_url": null,
+      "contact_email": "info@cloudsinwater.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/65deaeac3d5863025c36ebce/039bbab3-8a03-4f26-92ce-08f20a38281b/DSC_8579-1.jpg",
+        "https://images.squarespace-cdn.com/content/v1/65deaeac3d5863025c36ebce/79899cd2-ff14-41a5-bf54-ab3e095676ab/DSC_7427-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sunday Community Gathering",
+      "url": "https://www.cloudsinwater.org/meditation-schedule",
+      "description": "A weekly Sunday morning of zazen, a short opening chant and a Dharma talk, followed by tea in the community room. An orientation and introduction to meditation is offered in person beforehand, and the sitting and talk can also be joined on Zoom.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Getting Started in Zen (Zoom)",
+      "url": "https://www.cloudsinwater.org/getting-started-in-zen",
+      "description": "A two-hour introductory workshop covering zazen, basic Buddhist teaching, building a home practice and practising with a community, with time for questions. This session is held online only.",
+      "price": "Contact for pricing",
+      "product_type": "workshop",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-09",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "108 Bows of Repentance, Refuge and Gratitude",
+      "url": "https://www.cloudsinwater.org/events-1",
+      "description": "An annual Thanksgiving-morning bowing service of 108 bows, led by Sosan and Jinzu, in person and on Zoom. People of all abilities are invited to bow in whatever way they can.",
+      "price": "By donation",
+      "product_type": "event",
+      "start_date": "2026-11-26",
+      "end_date": "2026-11-26",
+      "subjects": [
+        "spirituality",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talks from Clouds in Water",
+      "url": "https://www.cloudsinwater.org/dharma-talks",
+      "description": "Recorded Sunday Dharma talks by the centre's teachers and priests, now published as a podcast, with downloadable talks from 2024 and 2025 listed on the page.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Early Morning Meditation and Chanting",
+      "url": "https://www.cloudsinwater.org/meditation-schedule",
+      "description": "Tuesday to Thursday morning sitting, walking meditation and chanting from 6:30 am Central time, open to join in person or on Zoom at any point.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3349,
+    "tier_evidence": "No YouTube channel linked from cloudsinwater.org (the only YouTube link is a music mix for a concert); talks are a podcast on RSS.com; 13 Nov 2026 → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cloudsinwater.org/contact",
+    "contact_form_url": "https://www.cloudsinwater.org/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Teachers file empty: Sosan Theresa Flynn, MyoOn Susan Hagler and Koji Acquaviva are not on Spiritpedia.",
+      "Ethics: the history page says founder Dosho Mike Port was separated from the community in 2004 for ethical misconduct. This concerns a past leader, not current leadership, so not held; owner may wish to review.",
+      "Framing: the centre states a mission that includes ending systemic oppression and lists social-justice, affinity and Palestine/Israel pages; those were left out of items and the bio. Owner may decide whether this fits.",
+      "Prices: programmes are by dana or donation with no one turned away; no amounts on the pages read, so 'Contact for pricing'.",
+      "Photos: two sangha photos from the home page (two members talking; a member with tea outdoors). No teacher portrait chosen.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Rohatsu Sesshin (30 Nov - 6 Dec 2026): its 'Learn More & Register' page returned 404, so no working item URL.",
+      "Half-day Retreat (14 Nov 2026) and Getting Started in Zen in-person (11 Nov): not after 14 Nov.",
+      "Tiny Temple Concert Series ($45): fundraising music concerts, not a practice offering.",
+      "Election support evenings, BIPOC sitting groups, Queer Dharma retreats, racial-awareness and social-justice groups: political or identity-group items.",
+      "Videos: no YouTube channel."
+    ],
+    "held": "Strong social-justice mission with a Palestine/Israel page on its site (political items left out of the plan). Owner decides whether the centre is too politics-led to list."
+  }
+}

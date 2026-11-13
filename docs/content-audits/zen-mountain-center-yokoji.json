@@ -1,0 +1,218 @@
+{
+  "healer": {
+    "healer_slug": "zen-mountain-center-yokoji",
+    "location_source": "https://zmc.org/contact",
+    "create": {
+      "name": "Yokoji Zen Mountain Center",
+      "bio": "Yokoji Zen Mountain Center is a year-round Zen training temple set on 160 wild acres in the San Jacinto Mountains above Mountain Center, Southern California. Taizan Maezumi Roshi founded it in 1982 as the summer retreat site of the Zen Center of Los Angeles, and several of his successors trained here before it became a full-time centre in 1995. The name means sunlight temple, fitting for a community that lives off the grid on solar and wind power and draws its water from its own wells.\n\nThe abbot, Charles Tenshin Fletcher Roshi, grew up in Manchester and moved to Los Angeles in 1979 to train with Maezumi, who gave him dharma transmission in the White Plum line in 1994. He is a certified overseas teacher of the Soto school and co-wrote the introductory book Way of Zen. In keeping with his lineage he teaches both koan study and shikantaza.\n\nVisitors can start with the Sunday morning programme of zazen instruction, sitting, a dharma talk and lunch. The calendar runs a sesshin nearly every month, from weekend introductions to week-long retreats, plus two month-long training periods a year. Guests may stay a few nights and follow the daily schedule, longer-term residents can train for months, and Tenshin Roshi's talks go out as a free monthly podcast.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Mountain Center, California",
+      "country": "United States",
+      "founded_year": 1982,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://zmc.org/",
+      "booking_url": "https://zmc.org/events",
+      "youtube_url": "https://www.youtube.com/@zmcorgyokoji",
+      "instagram_url": null,
+      "facebook_url": "https://www.facebook.com/yokojizmc",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "zmc@zmc.org",
+      "image_urls": [
+        "https://zmc.org/images/about-buddha-hall-steps.jpg",
+        "https://zmc.org/perch/resources/zendo-h1800px.jpeg",
+        "https://zmc.org/images/tenshin.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Zen Meditation Instruction (How to Meditate)",
+      "url": "https://www.youtube.com/watch?v=5GSMRUl9UPo",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Zen Meditation Instruction: Forms",
+      "url": "https://www.youtube.com/watch?v=9joXVivBQ7k",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Zen Meditation Instruction: Service",
+      "url": "https://www.youtube.com/watch?v=mF-6qOWnb5w",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Welcome to Yokoji Zen Mountain Center",
+      "url": "https://www.youtube.com/watch?v=F8EE2uNdIy4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Zen Meditation Instruction: Private Interview",
+      "url": "https://www.youtube.com/watch?v=O0nX2kk7Fto",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Yokoji Zen Mountain Center: A Short Film",
+      "url": "https://www.youtube.com/watch?v=wMDXiHEkyYU",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Reflections on Sesshin",
+      "url": "https://www.youtube.com/watch?v=xiqF7V3uAfY",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "Yokoji",
+      "url": "https://www.youtube.com/watch?v=S2HDI-jmR50",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    },
+    {
+      "title": "How Do You Practice at Yokoji?",
+      "url": "https://www.youtube.com/watch?v=1KEUgpdKk1g",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Yokoji Zen Mountain Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Sesshin (Rohatsu)",
+      "url": "https://zmc.org/events",
+      "description": "A seven-day residential silent retreat of zazen, chanting services, formal meals and work practice, with daily dharma talks and private interviews. First-timers should first attend a Sunday programme or a weekend Beginner's Mind Sesshin; experienced sitters may join part-time.",
+      "price": "Members: $400.00 Non-members: $550.00",
+      "product_type": "retreat",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-22",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    },
+    {
+      "title": "Beginner's Mind Sesshin",
+      "url": "https://zmc.org/beginners-mind-sesshin",
+      "description": "A weekend retreat for newcomers that teaches the basics of zazen and lets them sit alongside experienced practitioners; no previous Zen experience is needed.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-22",
+      "end_date": "2027-01-24",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    },
+    {
+      "title": "Stay at Yokoji",
+      "url": "https://zmc.org/stay",
+      "description": "Overnight stays of up to three nights (six for members) following the daily schedule, with free afternoons to sit, read or hike; contact the office before applying.",
+      "price": "Overnight rates Members $ 50 Non-members $ 100",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://zmc.org/membership",
+      "description": "Annual membership with private interviews with the teachers, the quarterly journal, one free night a month and half-price lodging; higher pledge levels include free sesshin and extra overnight stays.",
+      "price": "Friend of Yokoji Annual pledge $1,200 for individuals. $1,800 for families. Temple Guardian Annual pledge $3,600 for individuals. $5,400 for families.",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Yokoji Podcast",
+      "url": "https://zmc.org/podcast",
+      "description": "Monthly dharma talks by Tenshin Roshi on koans from the Blue Cliff Record, Dogen and the Precious Mirror Samadhi, free to stream or download.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    },
+    {
+      "title": "Zazen (Zen Meditation)",
+      "url": "https://zmc.org/zazen",
+      "description": "A video and written guide to sitting postures, counting and following the breath, and the two practices of koan and shikantaza.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://zmc.org/images/yokoji-logo-fancy.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3410,
+    "tier_evidence": "YouTube @zmcorgyokoji: 8,340 subscribers, 38 videos (YouTube Data API, 13 Nov 2026); Facebook linked, not fetched → local_hero",
+    "email": "yes",
+    "email_source": "https://zmc.org/events",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "possible editorial-stature override: founded by Taizan Maezumi Roshi; long-established White Plum training centre; top video 806k views.",
+      "Email zmc@zmc.org appears as plain text on the events and contact pages (the mailto links are HTML-entity encoded; not decoded, the plain-text address was used).",
+      "Lineage: Tenshin Roshi received inka from Genpo Merzel in 2006 (abbot page); owner may want to note given Merzel's history.",
+      "robots.txt Crawl-delay 2 respected (2 s between requests).",
+      "Event items on the shared events page use #anchors; none used. Only the Rohatsu sesshin takes the events URL; New Year's Sesshin (29 Dec-1 Jan, same page) left out.",
+      "Beginner's Mind Sesshin price not on its page: 'Contact for pricing'.",
+      "SZBA lists Hojin Jody Kimmel (abbot of Fire Lotus, rank 3404) among Yokoji's affiliated teachers; not stated on zmc.org, so not linked.",
+      "Teachers file empty: Tenshin Fletcher, Jokai Blackwell, Chigen Bartholomew not on Spiritpedia.",
+      "Photo of Tenshin Roshi from the site's abbot image (images/tenshin.jpg)."
+    ],
+    "left_out": [
+      "Book 'Way of Zen' (Fletcher and Scott, St Martin's Press 2001): no ISBN on a page opened; left out.",
+      "Fall One Month Intensive (started 25 Oct) and Sangha Work Weekend (14 Nov): not after 14 Nov.",
+      "New Year's Sesshin and Sunday Schedule: same events page URL as the Rohatsu item.",
+      "Videos: talks with unnamed speakers (2008 'zen talk' series), dharma combat ceremonies of students, fundraising appeal, fire/flood tours."
+    ]
+  },
+  "images_final": true
+}

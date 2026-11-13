@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1527,
+    "healer_slug": "de-tong-ling-retreat-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "8f397847-c085-4937-8428-c477e2ac1630",
+      "slug": "mindfulness-ethics-one-pointed-calm-abiding",
+      "title": "Mindfulness, Ethics & One-Pointed Calm Abiding"
+    },
+    {
+      "table": "courses",
+      "id": "84a5b794-16d7-4d26-8c12-b16427fddc10",
+      "slug": "individual-retreat",
+      "title": "Individual Retreat"
+    },
+    {
+      "table": "courses",
+      "id": "85b68080-2f1b-424f-b091-9fa5364e13ee",
+      "slug": "member-mandala",
+      "title": "Member Mandala"
+    }
+  ],
+  "at": "2026-11-13T03:36:57.058Z"
+}

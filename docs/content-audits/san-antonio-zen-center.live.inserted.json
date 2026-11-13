@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1514,
+    "healer_slug": "san-antonio-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "78c892c1-78a1-4851-99ca-8b1da7bcbc3e",
+      "slug": "rohatsu-sesshin-6",
+      "title": "Rohatsu Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "62f90be2-9060-44df-9e9e-13a286031d2c",
+      "slug": "beginners-meditation-instruction",
+      "title": "Beginner's Meditation Instruction"
+    },
+    {
+      "table": "courses",
+      "id": "72d57ed5-62f6-40b1-b5de-b7796aab9cc3",
+      "slug": "weekly-schedule-zazen-and-saturday-programme",
+      "title": "Weekly Schedule: Zazen and Saturday Programme"
+    },
+    {
+      "table": "free_resources",
+      "id": "f55dd7cb-c93d-4fea-9d96-9a63e8e0de92",
+      "slug": "san-antonio-zen-center-dharma-talks",
+      "title": "San Antonio Zen Center Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "f4364531-d61a-4be1-b9d5-3930c95deae7",
+      "slug": "starting-a-meditation-practice",
+      "title": "Starting a Meditation Practice"
+    }
+  ],
+  "at": "2026-11-13T04:15:28.143Z"
+}

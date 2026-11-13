@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "pooja-arora",
+    "location_source": "https://redefinewellness.asia/contact-form/",
+    "create": {
+      "name": "Pooja Arora",
+      "bio": "Pooja Arora is a Reiki Master Teacher in Singapore and one of the two founders, with Shirley Tay, of ReDefine Wellness, a holistic wellbeing academy with a studio on Beach Road. Before this work she trained as an engineer, took an MBA and spent more than twelve years in international marketing at firms including Procter & Gamble and Unilever. She qualified as an Usui Reiki Master Teacher with The Reiki Center in Singapore, served as president of The Usui Reiki Association in 2019, and is also a certified Kundalini Yoga and meditation teacher and a Silva Method instructor.\n\nHer main teaching is the Usui Reiki path, which she leads from first level to teacher training. Students take Reiki 1, 2 and 3 as weekend or weekday workshops in small groups, receive attunements and practise on one another, and those who go on can join a six-month Master Teacher programme of three modules with study and teaching assignments in between. She also hosts a free online introduction to Reiki once a month for people who want to understand the practice before committing. Alongside Reiki she works as a hypnotherapist and regression therapist and trains therapists, work that is not part of this listing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Singapore",
+      "country": "Singapore",
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "meditation"
+      ],
+      "website_url": "https://redefinewellness.asia/",
+      "booking_url": "https://redefinewellness.asia/courses/usui-reiki-workshops/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "pooja.arora@redefinewellness.asia",
+      "image_urls": [
+        "https://redefinewellness.asia/wp-content/uploads/2021/03/Pooja-Arora.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Usui Reiki 1",
+      "url": "https://redefinewellness.asia/courses/reiki-1/",
+      "description": "The foundation Usui Reiki workshop: an attunement, self-treatment and treating others, with plenty of supervised practice. Taught by Pooja over a weekend or three weekday mornings at the Beach Road studio.",
+      "price": "$600.00",
+      "product_type": "course",
+      "start_date": "2027-04-17",
+      "end_date": "2027-04-18",
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Usui Reiki 2",
+      "url": "https://redefinewellness.asia/courses/reiki-2/",
+      "description": "The second-degree attunement and three Reiki symbols, with practice in directing Reiki and sending it at a distance. For students who have completed Reiki 1 in the Usui lineage.",
+      "price": "$650.00",
+      "product_type": "course",
+      "start_date": "2027-07-31",
+      "end_date": "2027-08-01",
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Usui Reiki 3",
+      "url": "https://redefinewellness.asia/courses/reiki-3/",
+      "description": "The Master's symbol and the attunement process for students who want to complete the Reiki levels without yet teaching. Offered on more than one date through the year; a lump-sum rate covers all three levels.",
+      "price": "$900.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Reiki Master Teacher Training",
+      "url": "https://redefinewellness.asia/reiki-teachers-training/",
+      "description": "A six-month programme of three two-day modules with homework between them, covering how to teach each Reiki level, give attunements and prepare your own course material. Open by agreement to students who have completed Reiki 3.",
+      "price": "S$900 each module or S$2500 if paid in one lump-sum",
+      "product_type": "course",
+      "start_date": "2027-04-29",
+      "end_date": "2027-11-26",
+      "subjects": [
+        "reiki"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3213,
+    "restored_from": "docs/content-audits/africa-asia-sprint-1/skipped/pooja-arora.json",
+    "hub": null,
+    "tier_evidence": "Only company accounts linked from the studio site (Instagram redefinewellnessasia, Facebook redefinewellness, LinkedIn, Pinterest), never fetched and not hers personally; no personal accounts found -> 0 -> local_hero",
+    "email": "yes",
+    "email_source": "https://redefinewellness.asia/courses/reiki-2/",
+    "contact_form_url": "https://redefinewellness.asia/contact-form/",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Health restore, owner's call: the old skip (africa-asia-sprint-1) judged ReDefine Wellness mainly therapy. Under the new rule she is listed for her Usui Reiki teaching only (4 items, all taught by her per the course pages). Much of the site is therapy (clinics, hypnotherapy, regression, inner child and family constellation work, therapist training) and many of its other spiritual pages carry disease-prevention or healing claims, so the listing is thin and rests on one strand of her work.",
+      "Kind: ReDefine Wellness is a multi-teacher academy co-founded by Pooja Arora and Shirley Tay; it could instead be listed as an Organisation, but most of its catalogue fails the health or therapy rules, so the plan lists Pooja as an individual for the Reiki courses she teaches.",
+      "Currency: the Reiki 1-3 pages show prices as '$' without a code (the studio is in Singapore); written exactly as published. The Master Teacher page states S$.",
+      "Reiki 1 and Reiki 2 pages each list a single upcoming date, so they carry dates; they may recur.",
+      "Photo: only one, a wide banner (1839 x 857) with her portrait on the right of a white background; the face itself is roughly 450 px across. Looked at; clearly one person, labelled Pooja-Arora on the teachers page. A tighter crop may be needed.",
+      "Email: pooja.arora@redefinewellness.asia is published as text on the Reiki 2 and Reiki 3 pages; the studio inbox info@redefinewellness.asia is on the contact page.",
+      "Base: Singapore, from the studio addresses on the contact page."
+    ],
+    "left_out": [
+      "Silva Method courses (Silva Life System and others): the Silva Life System page promises sleeping without drugs (replacing medication) and managing pain; Silva Ultra for Holistic Healing not opened.",
+      "Therapy clinics (Heal Your Body, Pain Management, Sleep Clinic, Fears & Phobias, Stress Management) and personal therapy: clinical services; Heal Your Body is framed on resolving disease.",
+      "Therapist trainings (Integrated Clinical Hypnotherapy, Transpersonal Regression Therapy, Inner Child Integration Therapy): therapy training.",
+      "Kundalini Yoga classes, Ascend Reiki and Sound Healing courses: the Kundalini and gong class is listed under Shirley Tay and the other classes name no teacher, and Ascend Reiki and Sound Healing are not shown as hers; several of their pages also carry disease claims.",
+      "Chakra Meditation, Sound Meditation and Holistic Health Retreat: pages frame the practice as preventing illness, removing toxins or reversing disease; not taught by her by name.",
+      "Free monthly online Reiki introduction talk: no page of its own was opened."
+    ],
+    "held": "Thin (Reiki courses only), and her studio ReDefine Wellness is a multi-teacher academy whose catalogue is mostly therapy or disease claims; only photo is a wide banner. Owner decides: list her, list the studio as an Organisation, or drop."
+  }
+}

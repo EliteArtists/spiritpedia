@@ -1,0 +1,51 @@
+[
+ {
+  "rank": 3301,
+  "kind": "individual",
+  "name": "Pir Zia Inayat Khan",
+  "note": "Owner's single name (12 Nov 2026, README §18.7 item 3): head of the Inayatiyya. The owner dropped The Astana Inayatiyya organisation plan (night-sprint-2026-11-09/dropped/the-astana-inayatiyya.json); this is his own listing as a teacher, not the organisation.",
+  "found_via": "README §18.7 queue"
+ },
+ {
+  "rank": 3302,
+  "kind": "individual",
+  "name": "Geoff Dawson",
+  "note": "Owner's single name: Ordinary Mind Zen Melbourne (the centre was skipped earlier: night-sprint-2026-11-09/skipped/ordinary-mind-zen-melbourne.json; read its reason). List him as a teacher; the centre's own site is a fine source.",
+  "found_via": "README §18.7 queue"
+ },
+ {
+  "rank": 3303,
+  "kind": "individual",
+  "name": "Gabriella Giubilaro",
+  "note": "Owner's single name: founder of the Istituto Iyengar Yoga Firenze.",
+  "found_via": "README §18.7 queue"
+ },
+ {
+  "rank": 3304,
+  "kind": "individual",
+  "name": "Shirley Daventry French",
+  "note": "Owner's single name: co-founder of the Iyengar Yoga Centre of Victoria (BC).",
+  "found_via": "README §18.7 queue"
+ },
+ {
+  "rank": 3305,
+  "kind": "individual",
+  "name": "Krishna Kaur",
+  "note": "Retry on another day (README §18.7 item 5): her own site krishnakaur.org gave HTTP 500 on 10 Nov 2026 (pipelines-sprint-3/skipped/krishna-kaur.json). Try it once; if it still fails, skip.",
+  "found_via": "README §18.7 retry queue"
+ },
+ {
+  "rank": 3306,
+  "kind": "individual",
+  "name": "La Sarmiento",
+  "note": "Retry on another day: lasarmiento.com failed to connect on 10 Nov 2026 (pipelines-sprint-3/skipped/la-sarmiento.json). Try once; if it fails, skip.",
+  "found_via": "README §18.7 retry queue"
+ },
+ {
+  "rank": 3307,
+  "kind": "individual",
+  "name": "Bakara Wintner",
+  "note": "Retry on another day: shopeverydaymagic.com answered 429 on 10 Nov 2026; bakaraw.com is hijacked spam, never use it (pipelines-sprint-3/skipped/bakara-wintner.json). Try once, slowly; a 429 or block again means skip.",
+  "found_via": "README §18.7 retry queue"
+ }
+]

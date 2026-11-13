@@ -1,0 +1,198 @@
+{
+  "healer": {
+    "healer_slug": "rubin-naiman",
+    "location_source": "https://drnaiman.com/services/individual-consultations/",
+    "create": {
+      "name": "Dr. Rubin Naiman",
+      "bio": "Rubin Naiman is an American psychologist who has spent most of the past 35 years on sleep and dreams, and whose writing and teaching regard night as a spiritual as well as a physical matter. Born in Europe and raised in New York and on a farm in South Jersey, he went to Rutgers meaning to become a rabbi, later earned a doctorate in clinical psychology, and is an ordained minister. He ran a private practice for four decades, led sleep programmes at Canyon Ranch and Miraval in Tucson, and is a clinical assistant professor at the Andrew Weil Center for Integrative Medicine.\n\nNow retired from clinical practice, he offers consultations by video worldwide that teach transpersonal ways of understanding sleep and dreaming, including dreamwork, drawing on Jungian and archetypal ideas. His books bring sleep science together with contemplative and sacred views of night: Healing Night explores sleeping, dreaming and awakening as states of consciousness, Hush is a nightly reader of short bedtime contemplations, and The Yoga of Sleep is an audio programme of guided practices such as a mindful surrender to sleep. He teaches at retreat centres, including the Sivananda Ashram in the Bahamas, and lives in Tucson, Arizona.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Tucson, Arizona",
+      "country": "United States",
+      "subjects": [
+        "dreamwork",
+        "consciousness",
+        "spirituality"
+      ],
+      "website_url": "https://drnaiman.com/",
+      "booking_url": "https://drnaiman.com/services/individual-consultations/",
+      "youtube_url": "https://www.youtube.com/@rubinnaiman",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_noe5tGhR2WCvcHiNcIoBbuOUhyfIoGu1KL2Ui4nTrivzVH=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What is Sleep?",
+      "url": "https://www.youtube.com/watch?v=GgE29mTEgOw",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Rhythms of Morning",
+      "url": "https://www.youtube.com/watch?v=vUJoJn4MPCg",
+      "subjects": [
+        "consciousness",
+        "mindfulness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Dr. Rubin Naiman's Art of Dreams, Tubac, AZ  March 2018",
+      "url": "https://www.youtube.com/watch?v=8YoZQB-z0yo",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Q & A with Sleep Expert, Dr. Rubin Naiman",
+      "url": "https://www.youtube.com/watch?v=ns3F1BGWq-M",
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Jacob's Ladder: Healing Our REM Sleep and Dreams",
+      "url": "https://www.youtube.com/watch?v=moUhiZryC7A",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Nightwatch",
+      "url": "https://www.youtube.com/watch?v=Vv3kF2hHYes",
+      "subjects": [
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Rubin Naiman, PhD - Experiencing Sleep Spiritually",
+      "url": "https://www.youtube.com/watch?v=iWA8H5xjS7Q",
+      "subjects": [
+        "spirituality",
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    },
+    {
+      "title": "Dr Rubin Naiman  The Practice of Sleeping Together",
+      "url": "https://www.youtube.com/watch?v=l1bC1Jffh_8",
+      "subjects": [
+        "conscious-relationships",
+        "consciousness"
+      ],
+      "channel": "Rubin Naiman"
+    }
+  ],
+  "books": [
+    {
+      "title": "Healing Night: The Science and Spirit of Sleeping, Dreaming, and Awakening",
+      "slug": "healing-night",
+      "author": "Rubin R. Naiman",
+      "asin": "1502549816",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A look at sleeping, dreaming and waking as states of consciousness, setting sleep science beside reflections on the sacred character of night and offering practices for restful sleep and richer dreaming.",
+      "subjects": [
+        "dreamwork",
+        "consciousness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1502549816.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Hush: A Book of Bedtime Contemplations",
+      "slug": "hush-a-book-of-bedtime-contemplations",
+      "author": "Rubin R. Naiman",
+      "asin": "0615979424",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A bedside reader of one hundred short spiritual reflections, one for each night, meant to be read slowly before sleep rather than studied.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0615979424.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Yoga of Sleep",
+      "slug": "the-yoga-of-sleep",
+      "author": "Rubin R. Naiman",
+      "asin": "B004G8ZLWO",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A two-CD audio programme that joins sleep research with wisdom traditions, with five guided practices for the hours around sleep, among them a mindful surrender to sleep and a practice for waking.",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "consciousness"
+      ],
+      "cover": null
+    }
+  ],
+  "courses": [
+    {
+      "title": "Consciousness consultations and dreamwork",
+      "url": "https://drnaiman.com/services/individual-consultations/",
+      "description": "One-to-one video sessions, offered worldwide, in which he teaches transpersonal and spiritual ways of understanding sleep and dreams and works with clients' dreams. Fees are given on enquiry, with a sliding scale available.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "dreamwork",
+        "consciousness"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3086,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/rubin-naiman.json",
+    "hub": null,
+    "tier_evidence": "YouTube @rubinnaiman 386 subscribers (YouTube Data API, 12 Nov 2026); Instagram, Facebook, Bluesky, LinkedIn not fetched → ~0.4k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://drnaiman.com/contact/",
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule), medical-role check: a retired clinical psychologist and clinical assistant professor of medicine (sleep medicine fellow). He does lead spiritual work of his own: his current consultations are described as teaching transpersonal and spiritual perspectives on sleep and dreams, with dreamwork, and his books Hush and Healing Night are explicitly spiritual. Listed for that work only; clinical and professional services left out. The consultations are titled 'Clinical Consciousness Consultations' on his page; owner may judge them too clinical.",
+      "Healing Night's blurb on his site mentions sleep disorders and practices for sleep disturbances; kept as sleep wellbeing, not a disease claim. Owner may disagree.",
+      "Book ISBNs/ASINs (1502549816, 0615979424, B004G8ZLWO) from Amazon links on his own Books & CDs page, not confirmed elsewhere. The Yoga of Sleep is an audio CD programme, not a printed book.",
+      "Upcoming: The Art of Sleep, Sivananda Ashram Bahamas, 14–18 May 2027 (on his home page) — the ashram's presenter page shows no programme page or price, so not listed.",
+      "Name kept as 'Dr.' as he presents (Dr. Naiman); post-nominals dropped.",
+      "The ingest could not reach drnaiman.com's robots.txt from Node (socket error, 12 Nov 2026) although curl read it (200, allows all), so his site photo and The Yoga of Sleep cover (set to null) were not accepted on the dry run; the YouTube avatar (a real photo of him) is first."
+    ],
+    "left_out": [
+      "Healthy Sleep (with Andrew Weil): blurb sells strategies for managing insomnia and sleep apnea (health rule).",
+      "Healing Sleep and Dreams (PESI video series): a training for mental health professionals on sleep in addiction treatment (clinician-only).",
+      "For Professionals trainings and speaking (clinician/corporate).",
+      "The Art of Sleep, Sivananda Ashram Bahamas (May 2027): no programme page with details found.",
+      "Videos: 'Dreams and Waking Life' (under 2 minutes), Cape Cod Institute promo clips and an untitled 2025 clip."
+    ]
+  },
+  "images_final": true
+}

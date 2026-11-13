@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1490,
+    "healer_slug": "maitreya-instituut"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "ac8a86c6-91c3-44cf-9021-b6971891a764",
+      "slug": "mahamudra-practicing-being-a-buddha",
+      "title": "Mahāmudrā: practicing being a buddha"
+    },
+    {
+      "table": "courses",
+      "id": "ae9fcff0-d821-4bc5-bcc4-392d49de15f8",
+      "slug": "startersprogramma",
+      "title": "Startersprogramma"
+    },
+    {
+      "table": "courses",
+      "id": "2575db60-56cc-4216-97eb-b780aad3ba5f",
+      "slug": "studieprogrammas",
+      "title": "Studieprogramma's"
+    },
+    {
+      "table": "courses",
+      "id": "a1134faf-ef27-4852-9ffa-6aac3c2f27eb",
+      "slug": "vaste-donateur-worden",
+      "title": "Vaste donateur worden"
+    },
+    {
+      "table": "free_resources",
+      "id": "9759cd17-01cc-4057-a561-cea2f0b715cf",
+      "slug": "mini-cursus-boeddhisme-in-20-paginas",
+      "title": "Mini-cursus boeddhisme in 20 pagina's"
+    }
+  ],
+  "at": "2026-11-13T04:14:03.490Z"
+}

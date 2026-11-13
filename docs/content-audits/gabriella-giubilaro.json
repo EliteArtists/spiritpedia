@@ -1,0 +1,83 @@
+{
+  "healer": {
+    "healer_slug": "gabriella-giubilaro",
+    "location_source": "https://www.istitutoiyengaryogafirenze.it/contatti/",
+    "create": {
+      "name": "Gabriella Giubilaro",
+      "bio": "Gabriella Giubilaro is a senior teacher of Iyengar Yoga based in Florence, where she founded the Istituto Iyengar Yoga Firenze. She took up yoga in Florence in 1973 under Dona Holleman and, after completing a doctorate in physics, chose to give her working life to the method of B.K.S. Iyengar. From the early 1980s she has travelled to Pune most years to study with Iyengar and with his children Geeta and Prashant, and she holds the Junior Advanced level of certification. She has run her own Florence studio since 1987.\n\nShe still teaches a full week at the institute on Via San Gervasio: studio classes, an advanced group, classes for older students shared with colleagues, and online sessions in Italian and English that include pranayama and a class for teachers. Her teaching is known for clear, practical instruction that helps each student work intelligently with their own body. She trains Iyengar teachers on residential weekends at the Montauto farm near Rapolano Terme in Tuscany, leads summer intensives there with guest senior teachers, and gives seminars across Europe and further afield, from Scandinavia and Ireland to Brazil, Argentina, Dubai and China.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Florence",
+      "country": "Italy",
+      "subjects": [
+        "yoga",
+        "breathwork"
+      ],
+      "website_url": "https://www.istitutoiyengaryogafirenze.it/team/gabriella-giubilaro/?lang=en",
+      "booking_url": "https://www.istitutoiyengaryogafirenze.it/seminars/gabriella-giubilaro-complete-list/?lang=en",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@istitutoiyengaryogafirenze.it",
+      "image_urls": [
+        "https://www.istitutoiyengaryogafirenze.it/wp-content/uploads/2021/10/img-20260715-wa0011.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Teachers Training Workshop – Level 2 & 3 – Montauto",
+      "url": "https://www.istitutoiyengaryogafirenze.it/seminars/in-presence-training-workshop-for-teachers/?lang=en",
+      "description": "Two residential weekends for certified Iyengar teachers at a Tuscan farm near Rapolano Terme, taught in Italian and English. The work rounds off the postures of each level and begins preparation for its assessment, with special attention to observing and adjusting students.",
+      "price": "€ 360 (€ 140 for the classes and € 220 for accommodation and food)",
+      "product_type": "course",
+      "start_date": "2027-04-23",
+      "end_date": "2027-05-30",
+      "subjects": [
+        "yoga"
+      ],
+      "image": "https://www.istitutoiyengaryogafirenze.it/wp-content/uploads/2022/12/20250524_172715.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "individual",
+    "rank": 3303,
+    "hub": null,
+    "tier_evidence": "No readable follower counts of her own (13 Nov 2026): no personal site, YouTube channel or social accounts found; the institute's channel (398 subscribers, Data API, 11 Nov 2026) and its Facebook/Instagram are the school's, not counted → local_hero",
+    "email": "yes",
+    "email_source": "https://www.istitutoiyengaryogafirenze.it/contatti/",
+    "contact_form_url": "https://www.istitutoiyengaryogafirenze.it/contatti/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "No personal website found (one web search, 13 Nov 2026): everything comes from the institute she founded (istitutoiyengaryogafirenze.it, robots.txt open), her team page and her seminar list there. Website set to her team page on that site.",
+      "Email is the institute's office inbox (brand inbox), published on its contact page with a contact form; her own listed contact is a phone number only.",
+      "Possible editorial-stature override: founder of one of Italy's longest-standing Iyengar schools, Junior Advanced certified, teaching internationally; tier left at local_hero by count.",
+      "Photo: the featured image of the institute's page 'Gabriella's seminars, in presence & online' (1600x1200), an older woman teaching in a Centro Montauto T-shirt; taken to be her from the page context, but no captioned headshot exists to compare. A second Montauto class photo was not used (group shot).",
+      "Possible duplicate items: the Montauto teacher weekends, the Seligman intensive and the free trial classes are also items on the Istituto Iyengar Yoga Firenze school listing; she should be linked to that hub as founder (evidence: https://www.istitutoiyengaryogafirenze.it/seminari/gabriella-giubilaro-cristina-costa-rosana-seligman/ names her as its founder).",
+      "Regional: Florence, Italy.",
+      "Item counts: she is the institute's founder and resident teacher, so each of its programmes she leads counts (owner, 4 Nov 2026).",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026 and not worked around; images were checked by hand instead (each returned 200 with an image type)."
+    ],
+    "left_out": [
+      "Her travelling seminars (Bern, Dubai, Guangzhou, Paris, Brazil, Rosario, Grosseto, Gothenburg, Dublin, Berlin, Krakow, Strasbourg, Milan): hosted by other studios; Bern starts 14 Nov 2026, not after it.",
+      "Workshop for the Heart, Parts I and II (online, 22 Nov 2026 and 6 Jun 2027): run through another organisation (iyengaryogatherapeutics.com) and framed around the heart; health rule.",
+      "Montauto with Cristina Costa (24-30 Jun 2027) and with Edwin Bryant (2-8 Jul 2027): no page of their own found, only lines on the seminar list.",
+      "Garth McLean workshop for neurological conditions (Mar 2027): not hers, and health rule.",
+      "Videos: the institute's YouTube channel has no video of her teaching (10 uploads, all other teachers)."
+    ],
+    "held": "Photo identity not confirmed: the only photo is the featured image of the institute's seminars page (an older teacher in a Centro Montauto Iyengar T-shirt), with no caption naming her. Owner to confirm the photo. Items repeating the Istituto Iyengar Yoga Firenze listing were removed; she is to be linked to it as founder (gabriella-giubilaro-founder-link in sprint).",
+    "founder_link": {
+      "hub": "istituto-iyengar-yoga-firenze",
+      "teacher": "gabriella-giubilaro",
+      "role": "founder"
+    }
+  }
+}

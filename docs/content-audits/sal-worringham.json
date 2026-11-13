@@ -1,0 +1,101 @@
+{
+  "healer": {
+    "healer_slug": "sal-worringham",
+    "location_source": "https://www.thewillowclinic.com/contact",
+    "create": {
+      "name": "Sal Worringham",
+      "bio": "Sal Worringham teaches yoga and meditation from The Willow Clinic, a pair of treatment and practice rooms at the bottom of her garden in the Surrey village of Wonersh, near Guildford, and online over Zoom. She has kept a daily sadhana of yoga, breathwork, mantra, meditation and study for around thirty years and has led meditation groups for more than twenty-five of them. Her yoga training is in the Akhanda tradition, completed partly in London and partly at Anand Prakash Ashram in Rishikesh, with further hours in yin and hatha yoga.\n\nHer weekly Akhanda yoga classes, one in a village hall and one live online, combine postures, pranayama, philosophy themes, mantra, meditation and relaxation, and are open to all ages, with chair options. Her meditation groups, several each week in person and a fortnightly session on Zoom, are run as a small sangha: guided practice, unscripted and led in the moment, followed by gentle shared enquiry into what is arising. She has studied Compassionate Inquiry with Gabor Maté and attended workshops with Tara Brach and Jack Kornfield. The group also gathers for equinox and solstice rituals, outings such as meditation and drumming at Glastonbury Tor, and a residential retreat.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Wonersh",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "yoga",
+        "mindfulness"
+      ],
+      "website_url": "https://www.thewillowclinic.com/",
+      "booking_url": "https://www.thewillowclinic.com/meditation-groups",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "thewillowclinic42@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Meditation Groups",
+      "url": "https://www.thewillowclinic.com/meditation-groups",
+      "description": "Small weekly and fortnightly meditation groups at The Willow Clinic in Wonersh, plus a fortnightly live session on Zoom that is also recorded. Each meets as a community for guided meditation and gentle shared enquiry into present experience.",
+      "price": "£15 per session (in person); £10 per session (Zoom)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Akhanda Yoga Classes",
+      "url": "https://www.thewillowclinic.com/akhanda-yoga",
+      "description": "A Saturday morning class in Blackheath Village Hall near Guildford and a Monday afternoon class live on Zoom, with recordings available for a week. Classes weave postures, breathwork, a philosophy theme, mantra, meditation and relaxation, and chair options are offered.",
+      "price": "£15 per class (in person); £10 per class (Zoom)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation",
+        "breathwork"
+      ]
+    },
+    {
+      "title": "The Story Keeper Women's Retreat",
+      "url": "https://www.thewillowclinic.com/events",
+      "description": "A residential weekend for women at Florence House in East Sussex, the group's fourth retreat there. Earlier retreats in this setting combined meditation, yoga, breathwork, affirmation work and fire ceremonies.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-04-09",
+      "end_date": "2027-04-12",
+      "subjects": [
+        "meditation",
+        "yoga"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3248,
+    "restored_from": "docs/content-audits/insight-timer-sprint-1/skipped/sal-worringham.json",
+    "hub": null,
+    "held": "No usable photo: every image on thewillowclinic.com is hosted on static.wixstatic.com, which refuses our robots.txt request, and no YouTube channel or other allowed host with a photo of her was found (her guided meditations are on Insight Timer, which is never used). Owner to supply a photo or drop.",
+    "tier_evidence": "No readable follower counts: no YouTube channel found; Insight Timer not opened; Instagram and Facebook not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.thewillowclinic.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): the old skip was about her Bowen and therapy sessions being sold as clinic treatment and an about-page testimonial on anxiety, depression and trauma. Under the new rule those are client words and wellbeing wording; she is listed only for her yoga, meditation groups and retreat, and the Bowen, EFT and one-to-one therapeutic sessions are left out (therapy scope).",
+      "Base: Wonersh, Surrey (a village of under 5,000, about 10 minutes from Guildford), from her contact page. Regional: Surrey outside London.",
+      "Email is a Gmail inbox for the clinic (thewillowclinic42@gmail.com), published for general enquiries and yoga sign-ups; appointments are by phone. No contact form.",
+      "The Story Keeper retreat (9 to 12 April 2027): the events page does not say who leads it, and the page also mentions events with fellow practitioners; owner may want to drop it if it is co-led.",
+      "Counts unreadable for main accounts; tier 0 readable.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check; images were checked with curl instead (all 200). The lead session should run it."
+    ],
+    "left_out": [
+      "Bowen Therapy, EFT and 121 Compassionate Enquiry / Therapeutic Energy Work (/therapies): therapy and treatment sessions, out of scope.",
+      "Noticeboard events on 31 Oct and 28 Nov: no description or page of their own.",
+      "Insight Timer meditations: Insight Timer is never used."
+    ]
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "healer": {
+    "healer_slug": "valerie-mason-john",
+    "location_source": "https://www.valeriemason-john.com/about/",
+    "create": {
+      "name": "Valerie (Vimalasara) Mason-John",
+      "bio": "Valerie Mason-John, whose Buddhist name is Vimalasara, is a senior teacher in the Triratna Buddhist Community, which ordained them, and chairs the Vancouver centre of Triratna in Canada. They have practised Buddhism for more than thirty years and draw on their own history of abuse and addiction in their teaching. They have also worked as a foreign correspondent, playwright and performer, and they use the pronouns they and them.\n\nTheir teaching joins the Buddha's teachings on craving and the mind with plain, practical mindfulness for people caught in habits and painful emotions. With Paramabandhu Groves they wrote Eight Step Recovery, a Buddhist path through addictive and compulsive behaviour that now has peer meetings on several continents, and their book Detox Your Heart offers meditations for working with anger, hatred and fear. They co-edited Afrikan Wisdom, a collection of Black voices on Buddhism and liberation, have written eleven books in all including poetry and a novel, lead retreats in North America and elsewhere, teach on online platforms, and speak widely on mindfulness and compassion.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "website_url": "https://www.valeriemason-john.com/",
+      "booking_url": "https://www.valeriemason-john.com/retreats/",
+      "youtube_url": "https://www.youtube.com/@valeriemasonjohn",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_kROJlbKAphjYjEKETkXlQ31XZqlOy2kX-wy9G80q08xkk=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Vimalasara aka Valerie Mason-John- How I Came To Write The Book",
+      "url": "https://www.youtube.com/watch?v=lMPvROW4EN8",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    },
+    {
+      "title": "Vimalasara aka Valerie Mason-John- The Four Basic Needs Of The Heart",
+      "url": "https://www.youtube.com/watch?v=LbHAyyEhEUc",
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    },
+    {
+      "title": "Vimalasara aka Valerie Mason-John- The Buddha's Teachings",
+      "url": "https://www.youtube.com/watch?v=faX2wG-tk5A",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    },
+    {
+      "title": "Vimalasara aka Valerie Mason-John- The Precious Birth",
+      "url": "https://www.youtube.com/watch?v=FMKdDKuiQqU",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    },
+    {
+      "title": "Mindfulness for Everyone",
+      "url": "https://www.youtube.com/watch?v=q5rjyEn1V1c",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    },
+    {
+      "title": "First Aid Kit for the Mind",
+      "url": "https://www.youtube.com/watch?v=XZO7BwmpzIw",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Valerie MASON-JOHN"
+    }
+  ],
+  "books": [
+    {
+      "title": "Eight Step Recovery: Using the Buddha's Teachings to Overcome Addiction",
+      "slug": "eight-step-recovery",
+      "author": "Valerie Mason-John, Paramabandhu Groves",
+      "asin": "1909314021",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A Buddhist path in eight steps for anyone caught in compulsive or addictive habits, drawing on the Buddha's account of how the mind clings and craves. The expanded edition adds guidance on running peer meetings.",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1909314021.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Detox Your Heart: Meditations for Emotional Trauma",
+      "slug": "detox-your-heart",
+      "author": "Valerie Mason-John",
+      "asin": "1614293872",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Meditations and reflections for meeting anger, hatred and fear with awareness, written out of the author's own years of abuse and struggle.",
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1614293872.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Afrikan Wisdom: New Voices Talk Black Liberation, Buddhism, and Beyond",
+      "slug": "afrikan-wisdom",
+      "author": "Valerie Mason-John (editor)",
+      "asin": "1623175623",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An anthology, edited by Mason-John, of teachers and writers of African descent on Buddhist practice, healing and freedom.",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1623175623.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3089,
+    "restored_from": "docs/content-audits/pipelines-sprint-2/skipped/valerie-mason-john.json",
+    "hub": null,
+    "tier_evidence": "YouTube @valeriemasonjohn 658 subscribers (YouTube Data API, 12 Nov 2026); Instagram, Facebook, X, LinkedIn not fetched → ~0.7k readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.valeriemason-john.com/contact/",
+    "bio_check": "OK: no 8-word runs against 5 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): addiction recovery here is Buddhist practice (Eight Step Recovery, a peer path like the 12 steps), which I have treated as spiritual teaching rather than a medical claim, and trauma healing is wellbeing. But their own About page also calls the work 'Buddhist addiction treatment', and MBAR is sold as an accredited addiction programme; those items are left out. Owner may judge addiction recovery itself a condition claim and drop them or the Eight Step book.",
+      "Thin on offerings: their courses (Befriending the Inner Critic, First Aid Kit for the Mind, MBAR) are on valerie-mason-john.mykajabi.com, whose robots.txt disallows ClaudeBot and anthropic-ai (not fetched), and every retreat on the Retreats page dates from January–May 2026 (past). Listing rests on 3 books and 6 short videos.",
+      "Videos are short (2–4 minutes) book-related clips from 2014 and 2023–25; the most-viewed list is mostly older performance clips, left out.",
+      "Afrikan Wisdom (Black liberation and Buddhism): kept as a dharma anthology; owner may see it as political.",
+      "Photo is the YouTube avatar (a real photo of them); the site's only portrait is a wide stage banner.",
+      "Base: Vancouver from 'chairperson of the Triratna Vancouver Buddhist Centre in British Columbia' on the About page.",
+      "Book ISBNs from their own Books page (ISBN-10s printed there; Afrikan Wisdom from the Amazon link there), not confirmed elsewhere. They also co-founded Healing and Insight and teach on Worldwide Insight; Kevin Griffin co-teaches some retreats."
+    ],
+    "left_out": [
+      "Mindfulness Based Addiction Recovery (MBAR) course and Train the Trainer, Compassionate Inquiry and professional trainings, trauma counselling and coaching: addiction-treatment framing, clinician trainings or therapy.",
+      "Befriending the Inner Critic (started 3 Nov 2026) and First Aid Kit for the Mind course: dated/started, and on a Kajabi host that blocks Claude's agents.",
+      "Retreats: We Recover Together (Jan 2026), Afrikan Healing & Wisdom (Feb 2026), The Truth of Addiction (Mar 2026), The Truth of Buddhist Recovery (Mar 2026), The Dharma of Recovery (May 2026): all past.",
+      "First Aid Kit for the Mind (book): no ISBN on a page we opened.",
+      "Poetry, novel, plays and older anthologies: not spiritual teaching.",
+      "Insight Timer course and RoundGlass courses: never-fetch / not opened."
+    ]
+  },
+  "images_final": true
+}

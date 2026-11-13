@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1534,
+    "healer_slug": "stone-creek-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "cfad5719-eb23-4236-abb9-f2700cfdd380",
+      "slug": "introduction-to-zen-practice",
+      "title": "Introduction to Zen Practice"
+    },
+    {
+      "table": "courses",
+      "id": "31ee99af-87ad-4493-a225-a5c4eb6f2d3b",
+      "slug": "dokusan-practice-discussion",
+      "title": "Dokusan (Practice Discussion)"
+    },
+    {
+      "table": "courses",
+      "id": "a3bedb59-97a1-4473-ad69-43ecad7b1062",
+      "slug": "membership-22",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "73526164-bf64-4bc4-976d-972c6d9827e3",
+      "slug": "stone-creek-dharma-talks",
+      "title": "Stone Creek Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "b6065719-5f08-44ac-b28b-dad97b300575",
+      "slug": "weekly-schedule",
+      "title": "Weekly Schedule"
+    }
+  ],
+  "at": "2026-11-13T04:30:08.905Z"
+}

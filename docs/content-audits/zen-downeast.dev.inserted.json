@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1570,
+    "healer_slug": "zen-downeast"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "907b8488-5520-4d81-9ddd-16ac76ea5086",
+      "slug": "one-day-retreat-zazenkai-at-morgan-bay-zendo",
+      "title": "One-day retreat (zazenkai) at Morgan Bay Zendo"
+    },
+    {
+      "table": "free_resources",
+      "id": "794d1bb4-a560-4201-af4c-554841e3ab20",
+      "slug": "daily-and-weekly-practice-on-zoom",
+      "title": "Daily and Weekly Practice on Zoom"
+    },
+    {
+      "table": "free_resources",
+      "id": "0427f0ff-3565-4760-9b14-078e3c37f861",
+      "slug": "dogen-studies",
+      "title": "Dogen Studies"
+    },
+    {
+      "table": "free_resources",
+      "id": "3d068105-a483-4dc4-b374-8c04a10e3bb2",
+      "slug": "zen-downeast-liturgy-book",
+      "title": "Zen DownEast Liturgy Book"
+    },
+    {
+      "table": "free_resources",
+      "id": "b2b4e0c6-8187-40d3-8fc4-bba77449f5ba",
+      "slug": "zazen-instruction-4",
+      "title": "Zazen Instruction"
+    }
+  ],
+  "at": "2026-11-13T04:30:25.159Z"
+}

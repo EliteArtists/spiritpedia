@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "kristy-arbon",
+    "location_source": null,
+    "no_public_base": "Her own site (kristyarbon.com) gives no city or country; she teaches online, and the only place-name found (St. Louis) came from her Insight Timer profile in an earlier sprint, which we do not open.",
+    "create": {
+      "name": "Kristy Arbon",
+      "bio": "Kristy Arbon teaches mindfulness and self-compassion meditation through her online project, HeartWorks. In 2012 she joined Kristin Neff and Christopher Germer, the two developers of the Mindful Self-Compassion programme, in founding the Center for Mindful Self-Compassion, and she later designed the live online version of its eight-week course. She is a certified Mindful Self-Compassion teacher, belongs to the professional training institute of the UC San Diego Center for Mindfulness, and has completed David Treleaven's advanced trauma-sensitive mindfulness training, and has led self-compassion workshops and retreats in the United States, Singapore, Bhutan, Brazil, New Zealand and Australia.\n\nHer own curriculum, Somatic Self-Compassion, grounds kindness towards oneself in the body: noticing sensation, settling and rousing the nervous system, movement, ritual and the felt sense of connection with others. She teaches it as a year-long weekly practice cycle that students can begin at any point, and as a self-paced course for meditation teachers, yoga instructors and others who hold contemplative spaces. Her site also offers a large free library of guided practices, from lovingkindness and compassionate body scans to short awareness meditations on sound, breath and touch, alongside articles and practices on the inner critic, shame, boundaries and living spiritually.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "website_url": "https://kristyarbon.com/",
+      "booking_url": "https://kristyarbon.com/heartworks-approach-support-study-practice/",
+      "youtube_url": "https://www.youtube.com/@kristyarbontraining",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "kristy@heartworks.training",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nwP_pslVbR0TPnMWx2WR3t5njbpRsC4TfwkIEpmURdUYs=s800-c-k-c0x00ffffff-no-rj",
+        "https://kristyarbon.com/wp-content/uploads/2017/05/IMG_2389-2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Somatic Self-Compassion Practice Cycle Week 1: What is Somatic Self-Compassion?",
+      "url": "https://www.youtube.com/watch?v=UAP-AIrrX7E",
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "channel": "Kristy Arbon"
+    },
+    {
+      "title": "Mindful Self Compassion with Kristy Arbon",
+      "url": "https://www.youtube.com/watch?v=SQIVC59wIvo",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Healthy North Coast"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Somatic Self-Compassion Weekly Practice Cycle",
+      "url": "https://kristyarbon.com/event/ssc-weekly-practice-cycle-2023/",
+      "description": "A year-long online subscription with a weekly video taking you through the fifteen topics of her Somatic Self-Compassion curriculum, supported by weekly emails. You can join at any point and set your own pace.",
+      "price": "US$10 to $50 per month (you choose)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://kristyarbon.com/wp-content/uploads/2018/12/SSCONforeventspage1.jpg"
+    },
+    {
+      "title": "Somatic Self-Compassion Teaching and Learning Course: Embodied Trauma-Informed Contemplative Teaching",
+      "url": "https://kristyarbon.com/event/ssctlc/",
+      "description": "A self-paced video course for meditation and yoga teachers, coaches and anyone who holds contemplative spaces, going deeper into the Somatic Self-Compassion material. Weekly talks and guided practices come with an audio library and companion notes; it does not certify you to teach.",
+      "price": "$120 to $400 (you choose)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://kristyarbon.com/wp-content/uploads/2019/09/ETICT.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mindful Self-Compassion Meditations",
+      "url": "https://kristyarbon.com/msc-meditations/",
+      "description": "Fifteen guided recordings from the Mindful Self-Compassion tradition, including lovingkindness, affectionate breathing, a compassionate body scan and walking practices, from nine to fifty-one minutes long.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nwP_pslVbR0TPnMWx2WR3t5njbpRsC4TfwkIEpmURdUYs=s800-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      "title": "Meditations to Cultivate Awareness",
+      "url": "https://kristyarbon.com/meditations-cultivate-awareness/",
+      "description": "More than thirty short guided practices on sound, breath, touch and bodily sensation, most between five and twenty minutes, for building steady, kindly attention.",
+      "featured": false,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://yt3.ggpht.com/ytc/AIdro_nwP_pslVbR0TPnMWx2WR3t5njbpRsC4TfwkIEpmURdUYs=s800-c-k-c0x00ffffff-no-rj"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3218,
+    "restored_from": "docs/content-audits/americas-oceania-sprint-1/skipped/kristy-arbon.json",
+    "hub": null,
+    "tier_evidence": "YouTube @kristyarbontraining 786 subscribers (YouTube Data API, 13 Nov 2026); no other accounts linked from the pages read -> ~0.8k -> local_hero",
+    "email": "yes",
+    "email_source": "https://kristyarbon.com/somatic-self-compassion-training/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore: the old skip judged her site therapeutic because of meditation categories named for anxiety, anger, trauma and poor health. Under the 12 Nov rule these are wellbeing practices with no claim to treat a condition, and she teaches mindfulness and self-compassion meditation, so she is listed.",
+      "Her Somatic Self-Compassion page quotes Bessel van der Kolk that talk therapy alone is not enough for stress-related problems; it is a quoted view, not a claim that her course replaces care. Kept; owner may wish to look.",
+      "Kristin Neff (kristin-neff) and Chris Germer (chris-germer), her co-founders of the Center for Mindful Self-Compassion, are already on Spiritpedia; no link is made, as the Center is not a hub.",
+      "No public base: her own site gives no location; city and country left null.",
+      "Both courses are self-paced with rolling enrolment (the pages show a running window of 27 Jul 2025 to 28 Jul 2027); listed undated. Prices are pay-what-you-choose ranges as published; the second shows '$' without a code.",
+      "Photos: her YouTube avatar (800 px, a clear headshot) and a seated meditation photo from her own site (3600 px, credited to photographer Abby Gillardi). Same short dark hair and glasses, so very likely her, but the second photo is not captioned with her name.",
+      "Videos: her channel shows no public uploads through the API but its Week 1 video (embedded on her site) is public and passes oEmbed; the 2015 talk is on the Healthy North Coast channel with her as the speaker. A third embed (MPKJImcbak4) fails oEmbed (403) and is left out.",
+      "She is on Insight Timer and Aura per her site; never opened."
+    ],
+    "left_out": [
+      "Video MPKJImcbak4 (embedded on her site): oEmbed 403.",
+      "Mindful Self-Compassion 8-week course page (/msc-training/): describes the programme generally and links to the Center for Mindful Self-Compassion; no course of hers with its own date or price.",
+      "Articles: not resources."
+    ]
+  },
+  "images_final": true
+}

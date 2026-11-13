@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1548,
+    "healer_slug": "austin-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "122e57d4-6080-4715-a7c5-7475ba82c03e",
+      "slug": "beginners-zazen-instruction",
+      "title": "Beginner's Zazen Instruction"
+    },
+    {
+      "table": "courses",
+      "id": "0effca38-dbf9-4ba6-ad53-3da0f3e2c23a",
+      "slug": "rohatsu-sesshin-3",
+      "title": "Rohatsu Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "ccdcf57d-19bf-46c1-9d96-120eeab69b8f",
+      "slug": "practice-discussion-and-dokusan",
+      "title": "Practice Discussion and Dokusan"
+    },
+    {
+      "table": "free_resources",
+      "id": "21a12110-a504-414a-b8d7-a1fdf53b85e7",
+      "slug": "austin-zen-center-dharma-talks",
+      "title": "Austin Zen Center Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "e26a17d0-1535-49ad-b1f0-30e57ef2a059",
+      "slug": "chants-for-services",
+      "title": "Chants for Services"
+    }
+  ],
+  "at": "2026-11-13T03:44:28.854Z"
+}

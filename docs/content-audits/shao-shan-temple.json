@@ -1,0 +1,111 @@
+{
+  "healer": {
+    "healer_slug": "shao-shan-temple",
+    "location_source": "https://www.shaoshantemple.org/home/history",
+    "create": {
+      "name": "Shao Shan Temple",
+      "bio": "Shao Shan Temple is a small Soto Zen temple in the woods of Woodbury, in northern Vermont, registered with the Soto school of Japan. Rev. Taihaku Priest, who trained at Hokyoji monastery in Fukui and received transmission from Tanaka Shinkai Roshi, built it from 1997 and opened it in 2000; she served as its abbot and for some years as president of the Soto Zen Buddhist Association, and died in 2021. Her dharma heir Rev. Kenzan Seidenberg, ordained by her in 2008 and recognised by the Soto school as an international teacher, is now abbot in residence.\n\nThe temple keeps a weekly rhythm of early-morning zazen with a short service, some sittings joined online, a Wednesday dharma discussion, Friday evening sitting and a Saturday programme with a talk. Through the year there are one-day zazenkai, weekend sesshin and the week-long Rohatsu sesshin in December, a precepts ceremony, seasonal ceremonies at the solstices and equinoxes, a monthly family programme and a summer camp. Newcomers begin with an introductory morning, and all public programmes are offered without a fee, supported by donations.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Woodbury, Vermont",
+      "country": "United States",
+      "founded_year": 1997,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.shaoshantemple.org/",
+      "booking_url": "https://www.shaoshantemple.org/programs/introduction",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://www.shaoshantemple.org/programs/retreats",
+      "description": "The temple's week of intensive sitting and walking meditation in early December, marking the Buddha's enlightenment. Like the other retreats it is meant for people who already practise at the temple regularly.",
+      "price": "Offered freely without fees (donations welcome)",
+      "product_type": "retreat",
+      "start_date": "2026-12-02",
+      "end_date": "2026-12-07",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Introduction to Shao Shan Temple",
+      "url": "https://www.shaoshantemple.org/programs/introduction",
+      "description": "An hour-long first visit for everyone new to the temple: an outline of its programmes, meditation instruction, a short tour and time for questions. Advance registration through the contact form is appreciated.",
+      "price": "Offered freely without fees (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Study Group",
+      "url": "https://www.shaoshantemple.org/programs/study-group",
+      "description": "Zazen followed by discussion of a chosen Buddhist text or theme, drawing on many traditions, held online. Weekly attendance is not required, and newcomers attend an introduction first.",
+      "price": "Offered freely without fees (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Chants",
+      "url": "https://www.shaoshantemple.org/resources/chants",
+      "description": "Texts and audio recordings of the chants used at the temple, among them the dedication verse, the robe verse, the Kannon chant and the three refuges, for learning at home.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3394,
+    "held": "No usable photo: every image on the site is hosted on lh7-us.googleusercontent.com, which refused us (403) after one download; under the run rule that host is blocked, and there is no YouTube channel or other own-host image.",
+    "tier_evidence": "No YouTube channel or social accounts linked from shaoshantemple.org → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.shaoshantemple.org/contact-us",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Email is shown only as 'info(at) shaoshantemple.org' (written-out obfuscation), not used; the contact page embeds a Google Form, used as the contact route.",
+      "Base: the site says the temple is in Woodbury, Vermont; its postal address is East Calais. Woodbury is a small village (under 5,000), please map.",
+      "Regional: northern Vermont.",
+      "robots.txt on shaoshantemple.org returns 404 (Google Sites, no rules); lh7-us.googleusercontent.com robots.txt returned 400, and its images then returned 403.",
+      "Founder Rev. Taihaku Priest died in 2021; the temple continues under Rev. Kenzan Seidenberg.",
+      "Teachers file empty: Kenzan Seidenberg and Taihaku Priest are not on Spiritpedia.",
+      "Retreats require prior practice at the temple (stated on the retreats page)."
+    ],
+    "left_out": [
+      "Zazenkai, weekend sesshin and Winter Mini-Practice Period: share the retreats page URL with Rohatsu.",
+      "Family Program, ceremonies and summer camp: no dated pages of their own beyond general descriptions.",
+      "Images: refused host (see held)."
+    ]
+  }
+}

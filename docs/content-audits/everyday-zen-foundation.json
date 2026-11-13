@@ -1,0 +1,126 @@
+{
+  "healer": {
+    "healer_slug": "everyday-zen-foundation",
+    "location_source": "https://everydayzen.org/about/",
+    "no_public_base": "The about page says Everyday Zen is based in the San Francisco Bay Area and has no building or physical home; no city is published (its SZBA listing gives a Muir Beach address, not used).",
+    "create": {
+      "name": "Everyday Zen Foundation",
+      "bio": "The Everyday Zen Foundation is a Soto Zen community founded and guided by Zoketsu Norman Fischer, a poet and Zen priest who served as co-abbot of San Francisco Zen Center in the late 1990s. It practises in the line of Dogen and Shunryu Suzuki Roshi, but deliberately has no temple or property: rooted in the San Francisco Bay Area, it borrows space from partner organisations for retreats and seminars, and since the pandemic much of its life happens on Zoom. A loose family of affiliated sanghas, from California and the Pacific Northwest to Canada, Boston and Mexico, practise in the same spirit.\n\nThe idea is that practice belongs in ordinary life rather than in a special place. Members can sit together online every morning, join a weekly metta sitting, a Sunday sharing circle and a long-running Dharma seminar, and come to monthly all-day sittings, an annual practice period and a spring sesshin with Norman and senior teachers. Precepts classes prepare those who wish to make a formal commitment. Beyond traditional Zen, the foundation's work has reached into Jewish and Christian meditation, care for the dying, conflict resolution, business and the arts. Hundreds of Norman's talks are free to stream or download on a suggested-donation basis.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://everydayzen.org/",
+      "booking_url": "https://everydayzen.org/programs/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Everyday Zen Daily Sitting (Zoom)",
+      "url": "https://everydayzen.org/events/",
+      "description": "A half-hour of zazen together on Zoom every morning, with one session on Pacific time and another early on Eastern time. Open to anyone, with no registration.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Weekly Metta Sitting",
+      "url": "https://everydayzen.org/series/metta-sitting/",
+      "description": "A short loving-kindness sitting held online each Monday morning, Pacific time, using the community's regular Zoom room.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Everyday Caring",
+      "url": "https://everydayzen.org/series/everyday-caring-2/",
+      "description": "A weekly Sunday gathering after morning zazen, hosted by two senior members, where practitioners share and talk through the difficulties of the present moment. Held on Zoom; a donation of about $10 is suggested.",
+      "price": "Suggested donation $10",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Zen Training and Core Practice",
+      "url": "https://everydayzen.org/programs/",
+      "description": "The foundation's main path of study: a weekly Dharma seminar, monthly all-day sittings, study groups, sesshin and a yearly practice period, held in person and on Zoom. Students are encouraged to sit daily, meet a teacher in practice interview and, in time, receive the precepts.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Everyday Zen Teachings Archive",
+      "url": "https://everydayzen.org/featured-teachings/",
+      "description": "A large searchable archive of recorded talks, mostly by Norman Fischer, on Dogen, the sutras, koans, the precepts, early Buddhism and Jewish meditation, plus guided meditations. Free to stream or download, with a suggested donation.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3361,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked from its site; no social accounts fetched; no readable counts → 0 → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://everydayzen.org/contact/",
+    "bio_check": "OK: no 8-word runs against 12 source(s)",
+    "flags": [
+      "Possible editorial-stature override: founder Zoketsu Norman Fischer is a former San Francisco Zen Center co-abbot and widely published author; tier left at local_hero.",
+      "Possible future listing: Norman Fischer (not on Spiritpedia); no hub links, teachers file written with an empty list.",
+      "Not a branch of San Francisco Zen Center (independent foundation), though its founder is a senior SFZC teacher.",
+      "Contact is the contact page's form (script-rendered). The SZBA listing's aol.com address and an organiser's gmail on one event page were not used.",
+      "robots.txt has Crawl-delay: 10; requests were spaced 10 s apart.",
+      "Base: no city published; city and country left null with no_public_base."
+    ],
+    "left_out": [
+      "Introductory Precepts Class 2026–27 (starts 16 Nov 2026): registration closed on 9 Nov.",
+      "Bay Area Sesshin 2026 (18–24 May 2026) and Practice Period 2026: past.",
+      "Poetry reading with Norman Fischer and Kit Robinson (17 Nov 2026): organised by Mangalam Research Center at another venue, not the foundation's programme.",
+      "Norman Fischer's books (including The Great Road, Shambhala, Dec 2026): his own, not the foundation's; no ISBN pages opened.",
+      "Videos: no YouTube channel is linked from the site; none searched for."
+    ],
+    "held": "No usable image: every photo on everydayzen.org (including the logo) is served from s3.us-west-1.amazonaws.com, whose robots.txt answers HTTP 403 (13 Nov 2026), so the ingest would refuse them; not retried. No YouTube channel linked. Owner to decide on an image."
+  }
+}

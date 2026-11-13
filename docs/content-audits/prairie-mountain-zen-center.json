@@ -1,0 +1,112 @@
+{
+  "healer": {
+    "healer_slug": "prairie-mountain-zen-center",
+    "location_source": "https://www.prairiemountain.org/about-us",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Prairie Mountain Zen Center",
+      "bio": "Prairie Mountain Zen Center is a small Soto Zen sangha serving Longmont and Fort Collins on Colorado's Front Range. Its founder and teacher, Rev. Jodo Cliff Clusin, spent twelve years practising with Dainin Katagiri Roshi in Minneapolis before moving to Boulder in 1989, and began offering Soto practice under the Prairie Mountain name after his ordination as a priest by Shoken Winecoff Roshi in 1995. The name joins the wide plains and the foothills, an image of life's many details held within a single view. A Fort Collins group has met weekly since 2002, and a board of directors now guides the community.\n\nPractice is offered online and in person. Sitting periods with walking meditation run early on Monday to Wednesday mornings, with an optional chanting service, and Sunday mornings add a Dharma talk and discussion. On Thursday evenings Cliff gives zazen instruction before a short sitting, while Tuesday evenings bring people together in person at a church in Fort Collins. One-day sittings with an oryoki lunch and private interviews are held every other month, and occasional sesshin and study classes deepen the practice. Visitors to the home zendo in Longmont first attend a short orientation.",
+      "availability": "local_online",
+      "city": "Longmont, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.prairiemountain.org/",
+      "booking_url": "https://www.prairiemountain.org/orientation",
+      "youtube_url": null,
+      "contact_email": "info@pmzc.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One Day Sitting",
+      "url": "https://www.prairiemountain.org/sittings",
+      "description": "A day of practice in Fort Collins and on Zoom, from an opening tea through several periods of zazen and walking meditation, the Heart Sutra before an oryoki lunch, a quiet rest and a closing tea, with the chance of a private interview with Rev. Clusin. Partial attendance is fine; register by email.",
+      "price": "By donation",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Weekly Schedule: Zazen, Dharma Talks and Instruction",
+      "url": "https://www.prairiemountain.org/schedule",
+      "description": "The regular week: early-morning zazen with an optional service on Monday to Wednesday, a Sunday morning of sitting followed by a Dharma talk and discussion, Thursday evening zazen instruction with Rev. Jodo Cliff Clusin, and a drop-in Tuesday evening sitting in Fort Collins. Most sessions are on Zoom as well as in person.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Zendo Orientation",
+      "url": "https://www.prairiemountain.org/orientation",
+      "description": "A short orientation to the Longmont zendo, needed before attending there in person; offered on Thursday afternoons and Sunday mornings by RSVP, or at another time by arrangement.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Information for Newcomers",
+      "url": "https://www.prairiemountain.org/information-for-newcomers",
+      "description": "A guide to the five forms of Soto practice at the centre (meditation, bowing, chanting, sutra study and meeting the teacher), with practical answers on joining by Zoom, wandering thoughts, walking meditation and how zazen differs from mindfulness.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3386,
+    "held": "No usable photo: the site is on Wix and every image is on static.wixstatic.com, which refuses our robots.txt request; no YouTube channel or other allowed host found. Owner to supply a photo or drop.",
+    "tier_evidence": "No YouTube channel or readable follower counts found (site links only Zoom and a Mailchimp list) → local_hero by default",
+    "email": "yes",
+    "email_source": "https://www.prairiemountain.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Held for a photo (see held).",
+      "SZBA lists cliff@prairiemountain.org; the centre's own site gives info@pmzc.org, used here.",
+      "Founder Rev. Jodo Cliff Clusin is not on Spiritpedia: teachers file empty. Shoken Winecoff (Ryumonji, his ordaining teacher and named as guiding teacher on SZBA) is not linked: the centre's own site does not name him as teaching there.",
+      "Longmont zendo is in the teacher's home; address given only after orientation. City from the about page.",
+      "About page still mentions 'during the pandemic, please join us via Zoom'; not used.",
+      "Weekly schedule and orientation: no price published ('Contact for pricing'); one-day sitting is 'by donation' as published.",
+      "Talks page (podcast) renders by script and showed no talks to fetch; no videos.",
+      "Sesshin: none currently scheduled. The 'Fall 2026 class' page actually describes a 2022 class by Rev. Chikyo Ryunin Ewan Magie; left out."
+    ],
+    "left_out": [
+      "Fall 2026 class page (Zen and Poetry): text refers to September 2022, no current dates; left out.",
+      "Sesshin: no dates scheduled.",
+      "DEI resources and SZBA DEI pages: not teaching items.",
+      "Chants PDF: hosted on filesusr.com (Wix), not checked."
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "healer": {
+    "healer_slug": "great-tree-zen-temple-daijuji",
+    "location_source": "https://www.greattreetemple.org/",
+    "create": {
+      "name": "Great Tree Zen Women's Temple",
+      "bio": "Great Tree Zen Women's Temple, also known as Daijuji, is a Soto Zen temple in the hills outside Asheville, North Carolina, with an address in the small community of Alexander. Its founder and abbess, Rev. Teijo Munnich, studied with Dainin Katagiri from 1975 until his death in 1990, was ordained as a priest in 1981 and trained at Hokyoji in Minnesota, Tassajara and Hosshinji in Japan. She first imagined a residential practice place for women in 1983; the temple was incorporated as a church in the early 2000s and opened at its present site in 2005. Rev. Chimyo Atkinson, ordained by Teijo and given Dharma transmission in 2015 after training periods in Japan and Iowa, also teaches there.\n\nResidential training is for women, while everything else is open to people of every gender. The weekly round includes early-morning zazen on Zoom, a short tonglen practice, Thursday evening sitting and Saturday morning zazen with a talk, in the hall or online. Monthly full-moon gatherings, an introduction to Zen on Zoom and a family meditation morning sit alongside sesshin of two to five days, spring and autumn practice periods and residencies. Events are offered by donation, and the temple shares its chant book and many recorded talks freely.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "founded_year": 2005,
+      "city": "Alexander, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://www.greattreetemple.org/",
+      "booking_url": "https://www.greattreetemple.org/activities",
+      "youtube_url": "https://www.youtube.com/@greattreezenwomenstemple8798",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@greattreetemple.org",
+      "image_urls": [
+        "https://www.greattreetemple.org/homeSlide24.png",
+        "https://www.greattreetemple.org/homeSlide22.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Oryoki Instruction at Great Tree Zen Temple",
+      "url": "https://www.youtube.com/watch?v=n5avmXnVhIU",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "channel": "Great Tree Zen Women's Temple"
+    },
+    {
+      "title": "What Did Buddha Awaken To? - w/ Teijo",
+      "url": "https://www.youtube.com/watch?v=BrnZd0oa0nU",
+      "subjects": [
+        "spiritual-awakening",
+        "ancient-wisdom"
+      ],
+      "channel": "Great Tree Zen Women's Temple"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Zazen, Tonglen and Saturday Lectures",
+      "url": "https://www.greattreetemple.org/activities",
+      "description": "The temple's regular week: early zazen on Zoom on Wednesdays, a half-hour tonglen practice on Thursday mornings, Thursday evening sitting and Saturday morning zazen followed by a talk, in the hall or online. Monthly full-moon ceremonies and a Zoom introduction to Zen are also held.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.greattreetemple.org/_next/image?url=%2Fsess2.jpg&w=1080&q=75"
+    },
+    {
+      "title": "Sesshin at Great Tree",
+      "url": "https://www.greattreetemple.org/practices/sesshin",
+      "description": "Retreats of two to five days with zazen, work practice, formal oryoki meals and optional private interviews with the teacher, joined at the temple or on Zoom. Upcoming dates include a Rohatsu sesshin in early December.",
+      "price": "By donation (suggested fee; scholarships available)",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.greattreetemple.org/_next/image?url=%2Fsess3.jpg&w=1200&q=75"
+    },
+    {
+      "title": "Practice Periods",
+      "url": "https://www.greattreetemple.org/practices/practicePeriods",
+      "description": "A four-week winter practice period and longer spring and autumn periods, in person or on Zoom, built around a weekly early-morning sitting and study group and a personal commitment to regular practice.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.greattreetemple.org/_next/image?url=%2FpracFlyer1.png&w=1200&q=75"
+    },
+    {
+      "title": "Women's Residency",
+      "url": "https://www.greattreetemple.org/practices/residency",
+      "description": "Residential training for women who want to live at the temple and follow its schedule of meditation, study and work. Applicants attend a five-day sesshin first, then apply and interview.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.greattreetemple.org/_next/image?url=%2Fres2.jpg&w=1200&q=75"
+    },
+    {
+      "title": "Family Practice",
+      "url": "https://www.greattreetemple.org/famActivities",
+      "description": "A monthly Sunday family meditation with a short sitting, a teaching and activities such as storytelling, movement and crafts, plus an annual family retreat and festive gatherings. All ages are welcome.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://www.greattreetemple.org/_next/image?url=%2FfamPrac2.jpg&w=2048&q=75"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Great Tree Chant Book",
+      "url": "https://www.greattreetemple.org/chants.pdf",
+      "description": "The temple's book of Soto Zen chants and scriptures used in its services, free to download as a PDF.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.greattreetemple.org/homeSlide24.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3366,
+    "hub": null,
+    "tier_evidence": "YouTube 423 subscribers (@greattreezenwomenstemple8798, Data API, 13 Nov 2026); no other readable counts → local_hero",
+    "email": "yes",
+    "email_source": "https://www.greattreetemple.org/activities",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Name: the site calls it Great Tree Zen Women's Temple; SZBA lists 'Great Tree Zen Temple / Daijuji'. Slug kept from the lead.",
+      "Videos: most of the channel's uploads are talks by visiting teachers (Shohaku Okumura and others) and were left out under the guest-teacher rule; only two videos led by the temple itself are listed.",
+      "Founded year 2005 is when the temple opened at its present site (about page); the founder's vision dates from 1983 and the church status from 2003–04.",
+      "Photos are slides from the home page (altar in the hall; practitioners bowing).",
+      "No hub links: Teijo Munnich and Chimyo Atkinson are not on Spiritpedia; teachers file written with an empty list. Possible future listing: Teijo Munnich.",
+      "The site's internal links use #fragments; item URLs use the page paths only.",
+      "Regional: Alexander, North Carolina (village near Asheville; may need a place alias)."
+    ],
+    "left_out": [
+      "November Sesshin (13–15 Nov 2026): starts before 14 Nov.",
+      "Rohatsu Sesshin (4–9 Dec 2026): registration is on bookwhen.com; covered by the undated sesshin page.",
+      "Talks by visiting speakers (Saturday lectures by guests, most YouTube uploads): guest-led.",
+      "Poetry & Pie (21 Nov 2026, at Urban Dharma): community event at another venue.",
+      "Tibetan Book of the Dead PDF: a text by others."
+    ]
+  },
+  "images_final": true
+}

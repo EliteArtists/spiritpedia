@@ -1,0 +1,141 @@
+{
+  "healer": {
+    "healer_slug": "two-arrows-zen",
+    "location_source": "https://twoarrowszen.org/contact/",
+    "create": {
+      "name": "Two Arrows Zen",
+      "bio": "Two Arrows Zen is a Zen centre in Utah with two places to practise: a city zendo on G Street in the Avenues district of Salt Lake City and a retreat zendo in Torrey, close to Capitol Reef National Park. Its founders are a married couple, Diane Musho Hamilton Roshi, a mediator and author on Zen and conflict, and Michael Mugaku Zimmerman Roshi, a former Chief Justice of the Utah Supreme Court. They ordained together in 2003, received dharma transmission from Genpo Merzel in 2006 and later inka from Sidney Musai Walter. The centre sits in the White Plum lineage, with Soto transmission and a strong Rinzai influence, and it marked twenty years of practice in 2026.\n\nBesides sitting, study and ritual, Two Arrows gives time to communication, relationships and emotional maturity so that what is learned on the cushion carries into ordinary and civic life. Zimmerman leads weekday morning sittings in Salt Lake City and Hamilton a Thursday evening sit, service and talk, while a Sunday morning programme meets at Artspace City Center. Week-long sesshin in Torrey bring together people on site and online, an urban Rohatsu sesshin runs each December, online study courses fill the year, and recorded talks are free on the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Salt Lake City, Utah",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://twoarrowszen.org/",
+      "booking_url": "https://twoarrowszen.org/upcoming/upcoming-programs-and-events/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://twoarrowszen.org/wp-content/uploads/2022/09/Torrey_Zendo_by_DMH_2-1.jpeg",
+        "https://twoarrowszen.org/wp-content/uploads/2022/09/Artspace_Zendo_Altar_2022.jpg",
+        "https://twoarrowszen.org/wp-content/uploads/2022/09/Zendo_night-02.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Winter Sesshin in Torrey 2026",
+      "url": "https://twoarrowszen.org/events/winter-sesshin-torrey-2026/",
+      "description": "A silent week of intensive zazen with Diane Musho Hamilton Roshi at the Torrey zendo, joined by online participants, with short talks, interviews for newer students, work practice and walks in the desert. All meals are included and participants stay for the whole retreat.",
+      "price": "$959 for Two Arrows Zen Members; $1079 General Admission",
+      "product_type": "retreat",
+      "start_date": "2026-11-29",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Rohatsu Sesshin 2026 with Mugaku Roshi",
+      "url": "https://twoarrowszen.org/events/rohatsu-sesshin-slc-2026/",
+      "description": "A four-day city retreat at the G Street zendo in Salt Lake City marking the Buddha's awakening, sitting from early morning to late afternoon with services, private interviews with Michael Mugaku Zimmerman Roshi, shared work and meals.",
+      "price": "$419 Two Arrows Zen Members; $469 General Admission",
+      "product_type": "retreat",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Sunday Wake Up: Meditation, Clarity, & Community",
+      "url": "https://twoarrowszen.org/events/sunday-wake-up/",
+      "description": "A weekly Sunday morning gathering at Artspace City Center with tea, a period of sitting, a talk by Diane Musho Hamilton Roshi or a senior student and open discussion, suitable for beginners and seasoned sitters. Once a month it runs longer with extra sitting.",
+      "price": "$10 per week at the door, or a Two Arrows Zen Membership",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    },
+    {
+      "title": "Thursday Evening Sit and Dharma Talk",
+      "url": "https://twoarrowszen.org/events/thursday-sit-dharma-talk/",
+      "description": "Weekly evening practice at the G Street zendo with the Dragon Heart Sangha: a period of zazen, a Zen service and a talk by Musho Roshi or senior practitioners, with a sangha potluck on the first Thursday of the month.",
+      "price": "Monthly membership; newcomers attend free for their first month",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Dharma Talk Audio",
+      "url": "https://twoarrowszen.org/teachers/audio/",
+      "description": "Recorded talks by the two founding teachers, grouped as an introduction to Zen, continuous practice, attention, emotions and feelings, and meditation.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Daily Meditation",
+      "url": "https://twoarrowszen.org/upcoming/daily-meditation/",
+      "description": "Two periods of weekday morning zazen with walking meditation at the G Street zendo, led by Mugaku Roshi with a short Friday talk, open to anyone for either or both sittings.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3399,
+    "tier_evidence": "No YouTube channel or social accounts linked from twoarrowszen.org → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://twoarrowszen.org/contact/",
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "No email is published (the contact page says to use its form); contact form used.",
+      "Lineage note for the owner: the founders received transmission from Dennis Genpo Merzel, who left his role after a 2011 misconduct controversy; the allegations concern him, not Two Arrows' current teachers, so the plan is not held.",
+      "Diane Musho Hamilton has written several Shambhala books and is a possible future individual listing; she also runs Real LIFE facilitation programmes (a separate organisation, not listed here).",
+      "Base: the mailing address and G Street zendo are in Salt Lake City; the Torrey retreat zendo is a second site.",
+      "Regional: Salt Lake City and Torrey, Utah.",
+      "Founded year left null: the site celebrates twenty years of practice in 2026 but gives no single founding year.",
+      "Teachers file empty: Diane Musho Hamilton and Michael Mugaku Zimmerman are not on Spiritpedia."
+    ],
+    "left_out": [
+      "Zen Study & Practice: The Book of Living and Dying (started 12 Sep) and 20 Years of Practice weekend: already under way or past.",
+      "1000 Years of Practice art evening (21 Nov) and Sit-A-Thon (22 Nov): fundraising events.",
+      "Membership: the /join/membership/ page returned 404.",
+      "Diane Musho Hamilton's books: the founder's own books, not centre items."
+    ],
+    "held": "Photos (twoarrowszen.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+  }
+}

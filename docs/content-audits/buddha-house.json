@@ -1,0 +1,168 @@
+{
+  "healer": {
+    "healer_slug": "buddha-house",
+    "location_source": "https://buddhahouse.org/contact/",
+    "create": {
+      "name": "Buddha House",
+      "bio": "Buddha House, Centre for Advanced Buddhist Studies, is a Tibetan Buddhist centre of the FPMT network in Magill, a suburb in Adelaide's east, set in a restored church more than a century old. It began in 1981 after Lama Thubten Yeshe gave three evenings of teachings in Adelaide; when local students asked for a place to keep learning, he agreed that a centre should start and chose its name himself. Its resident teacher, Venerable Thubten Dondrub, was born in Adelaide, has been a monk for decades and is known in FPMT circles for leading lam-rim retreats, including the November course at Kopan Monastery.\n\nThe weekly timetable mixes meditation and study: a beginners' class on breath awareness, Sunday lam-rim meditations led by experienced students, a Buddhist mind-science course, and multi-week study of texts such as Shantideva's Guide to the Bodhisattva's Way of Life, alongside day courses with Gen Dondrub and visits from FPMT geshes. Meditation sessions cost a small donation in the gompa and are free when streamed online. Membership brings reduced fees, library borrowing and shop discounts.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Adelaide, South Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://buddhahouse.org/",
+      "booking_url": "https://buddhahouse.org/events/",
+      "youtube_url": "https://www.youtube.com/@buddhahouse469",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://buddhahouse.org/wp-content/uploads/2023/01/slide-3-buddha-house-magill-exterior.webp",
+        "https://buddhahouse.org/wp-content/uploads/2023/01/slide-2-meditation-at-buddha-house.webp",
+        "https://buddhahouse.org/wp-content/uploads/2022/07/slide-4-buddha-and-arhats-statues-altar-compressed.webp"
+      ],
+      "founded_year": 1981
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Ven. Robina Courtin - \"Karma\"",
+      "url": "https://www.youtube.com/watch?v=as_GNufZgfU",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Buddha House"
+    },
+    {
+      "title": "Ven. Robina Courtin - \"Constant Craving\"",
+      "url": "https://www.youtube.com/watch?v=h25PUVXLvvs",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Buddha House"
+    },
+    {
+      "title": "Ven Robina Courtin - \"Death and Rebirth\" (Day 1, morning session)",
+      "url": "https://www.youtube.com/watch?v=exClwmn1kZE",
+      "subjects": [
+        "death-the-afterlife",
+        "ancient-wisdom"
+      ],
+      "channel": "Buddha House"
+    },
+    {
+      "title": "Ven. Robina Courtin - \"Understanding Emptiness\" (Session 1)",
+      "url": "https://www.youtube.com/watch?v=M7P1nFG8vVw",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Buddha House"
+    },
+    {
+      "title": "Ven. Robina Courtin - \"Courageous Compassion\" (Part 1)",
+      "url": "https://www.youtube.com/watch?v=R0jTm3p7Tmo",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Buddha House"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "A Buddhist Approach to Death & Dying with Gen Dondrub",
+      "url": "https://buddhahouse.org/event/a-buddhist-approach-to-death-dying-with-gen-dondrub/",
+      "description": "A one-day course of talks and guided meditations with the resident teacher on how Buddhism understands dying, impermanence and the continuity of mind, and how to prepare calmly for one's own death and support others. Meals and teas are included for those attending in person.",
+      "price": "In person: Waged $85, Members & Concession $70; Online: $50",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": "2026-11-15",
+      "subjects": [
+        "death-the-afterlife",
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://buddhahouse.org/wp-content/uploads/2023/01/slide-3-buddha-house-magill-exterior.webp"
+    },
+    {
+      "title": "Lam Rim Meditation",
+      "url": "https://buddhahouse.org/event/lam-rim-meditation-45/2026-11-15/",
+      "description": "A Sunday morning hour in which experienced students guide a meditation on a different stage of the path each week. Some familiarity with Mahayana ideas helps but is not required.",
+      "price": "Recommended Donation $5.",
+      "product_type": "course",
+      "start_date": "2026-11-15",
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://buddhahouse.org/wp-content/uploads/2023/01/slide-3-buddha-house-magill-exterior.webp"
+    },
+    {
+      "title": "Learn to Meditate",
+      "url": "https://buddhahouse.org/event/learn-to-meditate-45/2026-11-16/",
+      "description": "A Monday evening class for all levels that starts from simple attention to the breath, held in the gompa and also streamed.",
+      "price": "Small donation in person; free online",
+      "product_type": "course",
+      "start_date": "2026-11-16",
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://buddhahouse.org/wp-content/uploads/2023/01/slide-3-buddha-house-magill-exterior.webp"
+    },
+    {
+      "title": "Become a Member",
+      "url": "https://buddhahouse.org/membership/",
+      "description": "Yearly membership, paid annually or monthly, with library borrowing, reduced fees for teachings and retreats, a shop discount and voting rights. Higher Bodhisattva levels include free entry to courses.",
+      "price": "Lotus: Waged $180 per year, Concession $120 per year (higher levels listed on page)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://buddhahouse.org/wp-content/uploads/2023/01/slide-3-buddha-house-magill-exterior.webp"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3315,
+    "hub": null,
+    "tier_evidence": "YouTube 377 subscribers (YouTube Data API, 13 Nov 2026); Facebook not fetched → ~0.4k → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://buddhahouse.org/contact/",
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "No email on the centre's own pages; FPMT's centre list (fpmt.org/centers/australia/) publishes info@buddhahouse.org (not used).",
+      "The centre also runs a hospice/care service (hospice@ address on the FPMT list); the centre itself is mainly a teaching centre, so kept.",
+      "Recurring classes use their dated instance URLs (15 and 16 Nov 2026) as start_date.",
+      "Base: Magill is an Adelaide suburb; city given as Adelaide, South Australia.",
+      "Videos are all 2016 talks by visiting teacher Ven. Robina Courtin (the channel's only content); she is not on Spiritpedia.",
+      "Teachers file empty: resident teacher Ven. Thubten Dondrub is not on Spiritpedia (possible future listing).",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Bodhisattva's Way of Life – Chapter 6 and Buddhist Mind Science: started before 14 Nov 2026.",
+      "Meditation in Recovery and Medicine Buddha Support Group: support-group framing (therapy/health scope).",
+      "\"Let's talk about ... Anxiety and Depression\" videos (most-viewed): names a medical condition in a talk series; left out as borderline under the health rule.",
+      "Online meditation streams (Facebook, not fetched)."
+    ]
+  },
+  "images_final": true
+}

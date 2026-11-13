@@ -1,0 +1,103 @@
+{
+  "healer": {
+    "healer_slug": "ranjit-deora",
+    "location_source": "https://www.charlottemeditation.com/contact",
+    "create": {
+      "name": "Ranjit Deora",
+      "bio": "Ranjit Deora, known to his students as Guru Ranjit, is a meditation teacher who founded Charlotte Meditation, a studio in Charlotte, North Carolina. He grew up in Udaipur in India, where his mother, a daily practitioner, gave him his first lessons in meditation. As a young man he travelled through India and Nepal, spending time at Buddhist monasteries and sacred places to absorb their silence, and he later trained in Zero Point Meditation under Dhirendra Brahmachari. He has been guiding students for more than thirty years.\n\nIn his teaching, meditation is a return to a quiet that is already present rather than an effort to stop thinking, and he favours awareness over striving. Most of his work is one-to-one: personal sessions in the Charlotte studio or online that combine conversation, breathing and emotional awareness. He also trains new mindfulness teachers over ten weeks, leads laughter yoga for groups and workplaces, and has run programmes for companies and universities. With senior instructor Angela Gala he co-founded Youth Meditation, a non-profit that brings mindfulness into schools and families around Charlotte.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Charlotte, North Carolina",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "breathwork"
+      ],
+      "website_url": "https://www.charlottemeditation.com/",
+      "booking_url": "https://www.charlottemeditation.com/private-guided-mindfulness-sessions",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@charlottemeditation.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness Meditation: 8-week private programme",
+      "url": "https://www.charlottemeditation.com/private-guided-mindfulness-sessions",
+      "description": "Eight weekly one-to-one hours with him, in the Charlotte studio or online, learning breathing, awareness of emotional patterns and a daily practice of stillness. Single follow-up sessions are $120 for those who have finished a programme.",
+      "price": "$950",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": null
+    },
+    {
+      "title": "Mindfulness Meditation Teacher Training",
+      "url": "https://www.charlottemeditation.com/mindfulness-meditation-teacher-training",
+      "description": "A ten-week certification taught one to one in weekly hour-long sessions, mainly in the Charlotte studio with an online option. Trainees deepen their own practice, learn to guide breathing and awareness sessions, and co-teach and observe classes with the studio's team.",
+      "price": "$1695",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": null
+    },
+    {
+      "title": "Laughter Yoga sessions",
+      "url": "https://www.charlottemeditation.com/laughter-yoga",
+      "description": "Group sessions of guided laughter exercises, deep breathing and light movement for teams and community groups, with longer formats that add breathwork and an introduction to mindfulness meditation.",
+      "price": "From $500",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "breathwork",
+        "mindfulness"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3084,
+    "restored_from": "docs/content-audits/americas-oceania-sprint-1/skipped/ranjit-deora.json",
+    "hub": null,
+    "held": "No usable photo: every image on charlottemeditation.com is served from irp.cdn-website.com, whose robots.txt returned 403 (12 Nov 2026), so the ingest would refuse them; no photo of him was identified on the pages anyway, and no YouTube channel of his was found. Held for the owner (a photo from him, or drop).",
+    "tier_evidence": "No readable follower counts: no YouTube channel found; Instagram @clt_meditation (studio account) not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.charlottemeditation.com/contact",
+    "contact_form_url": "https://www.charlottemeditation.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): his own pitch is stress, anxiety, sleep and inner calm (wellbeing). The 'Meditation Therapy' programme page, in the studio's own copy, sells the work as 'a solution for physical and mental healing' that relieves depression; that item is left out.",
+      "Home page (website_url) carries client testimonials saying he helped with depression and anxiety more than any therapist or other treatment and that other therapies did not last; these are clients' words and the teacher's own copy does not repeat them, so the remaining items stay (owner's testimonial rule).",
+      "Studio email info@charlottemeditation.com is a brand inbox.",
+      "Charlotte Meditation also has a senior instructor (Angela Gala); listed as Ranjit, the founder, as in the lead. Possible future organisation listing.",
+      "Regional: Charlotte, North Carolina."
+    ],
+    "left_out": [
+      "Meditation Therapy 8-week programme ($950): sold as relieving depression and as 'a solution for physical and mental healing' (health rule).",
+      "Mindfulness for parents and teens and Youth Meditation (non-profit school programme): not fetched; thin on detail.",
+      "Corporate mindfulness programmes: business service.",
+      "Blog posts on perimenopause, trauma and parents: articles, not items."
+    ]
+  }
+}

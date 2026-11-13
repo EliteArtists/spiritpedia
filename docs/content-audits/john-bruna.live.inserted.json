@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1479,
+    "healer_slug": "john-bruna"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11296,
+      "slug": "free-will-is-a-skill-john-bruna-tedxcsulb",
+      "title": "Free will is a skill | John Bruna | TEDxCSULB"
+    },
+    {
+      "table": "books",
+      "id": 2554,
+      "slug": "the-wisdom-of-a-meaningful-life",
+      "title": "The Wisdom of a Meaningful Life: The Essence of Mindfulness"
+    },
+    {
+      "table": "courses",
+      "id": "a6574ed3-ec15-4b22-a4a0-78a16b0145f6",
+      "slug": "the-wisdom-of-a-meaningful-life-course",
+      "title": "The Wisdom of a Meaningful Life Course"
+    },
+    {
+      "table": "courses",
+      "id": "8a19215b-5227-45f6-b365-06bc4ff12c16",
+      "slug": "28-day-meditation-training-with-live-sessions",
+      "title": "28-Day Meditation Training with Live Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "98ea8e5d-9f44-43f7-a0cb-7d63ffb5448c",
+      "slug": "four-keys-of-living-mindfully",
+      "title": "Four Keys of Living Mindfully"
+    },
+    {
+      "table": "courses",
+      "id": "bc749b2c-6258-42af-a7fc-e083163e3e00",
+      "slug": "individual-sessions-2",
+      "title": "Individual Sessions"
+    },
+    {
+      "table": "free_resources",
+      "id": "a58562d7-9cf9-4eca-91d1-fbb7548ae03c",
+      "slug": "john-bruna-on-insight-timer",
+      "title": "John Bruna on Insight Timer"
+    }
+  ],
+  "at": "2026-11-13T04:13:33.589Z"
+}

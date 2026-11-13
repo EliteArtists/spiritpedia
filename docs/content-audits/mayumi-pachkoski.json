@@ -1,0 +1,106 @@
+{
+  "healer": {
+    "healer_slug": "mayumi-pachkoski",
+    "location_source": "https://beautywithinskincare.com/level2-registration-page/",
+    "create": {
+      "name": "Mayumi Pachkoski",
+      "bio": "Mayumi Pachkoski is an energy healer and certified Quantum-Touch instructor who works from her own salon, Beauty Within Skin Care, in Lutherville, just north of Baltimore, Maryland. A licensed esthetician with close to twenty years in holistic skin care, she came to energy work alongside her facial practice and now teaches Quantum-Touch at both the introductory Level 1 and the advanced Level 4, which the method once called Level 2.\n\nHer hour-long energy sessions, in person or at a distance, draw on whatever suits the person in front of her: Quantum-Touch breath and life-force techniques, Reiki, Access Bars, methods adapted from hypnotherapy, and calming practices from Japanese wellness traditions. People come to her for stress, feeling stuck, relationship strain or a sense of lost direction, and she frames the work as complementary rather than a replacement for medical care. Her Quantum-Touch workshops run in short afternoon segments over two weeks, both at the salon and live online, and are aimed at bodyworkers, Reiki practitioners, estheticians and anyone wanting a structured grounding in energy healing; massage therapists can earn continuing-education hours for Level 1.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Lutherville, Maryland",
+      "country": "United States",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "reiki"
+      ],
+      "website_url": "https://beautywithinskincare.com/",
+      "booking_url": "https://beautywithinskincare.com/energy_healing-page/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mayumi@beautywithinskincare.com",
+      "image_urls": [
+        "https://quantumtouch.com/images/ProfilePictures/MayumiPachkoski2026.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Energy Healing Sessions",
+      "url": "https://beautywithinskincare.com/energy_healing-page/",
+      "description": "One-hour sessions in her Lutherville salon or at a distance, combining Quantum-Touch, Reiki, Access Bars and calming Japanese practices around what the client brings, such as stress, feeling stuck or relationship strain.",
+      "price": "$280",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "reiki"
+      ],
+      "image": null
+    },
+    {
+      "title": "Quantum-Touch Level 1 Workshop",
+      "url": "https://beautywithinskincare.com/level1-registration-page/",
+      "description": "The foundation Quantum-Touch training, taught in four afternoon segments in person or live online: breath and body-awareness techniques for focusing life-force energy, hands-on practice and self-healing methods. Massage therapists can claim continuing-education hours.",
+      "price": "$450 in person; $350 virtual",
+      "product_type": "course",
+      "start_date": "2026-11-18",
+      "end_date": "2026-12-03",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine"
+      ],
+      "image": null
+    },
+    {
+      "title": "Quantum-Touch Level 4: Becoming Heart-Conscious",
+      "url": "https://beautywithinskincare.com/level2-registration-page/",
+      "description": "The advanced workshop for those who have done Level 1, in four afternoon segments in person or online, reviewing the core techniques and working with heart and brain coherence, past experiences and manifestation.",
+      "price": "$550 in person",
+      "product_type": "course",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-17",
+      "subjects": [
+        "quantum-touch",
+        "energy-medicine",
+        "manifestation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3095,
+    "restored_from": "docs/content-audits/night-sprint-2026-11-09/skipped/mayumi-pachkoski.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel found; socials not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://beautywithinskincare.com/energy_healing-page/",
+    "contact_form_url": "https://beautywithinskincare.com/contact-page/",
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): her energy sessions are sold on stress, nervous-system calm, feeling stuck and manifestation, with a disclaimer that they don't replace medical or psychiatric treatment; the Level 1 page teaches 'pain relief and structural support' (pain relief allowed; 'structural support' kept as borderline). No disease claims found.",
+      "Scope: her business is first a licensed esthetician's salon (acne, scarring, pigmentation, anti-ageing facials). Only her Quantum-Touch and energy-healing work is listed; the facials are left out. Owner earlier judged this borderline.",
+      "Her sessions page claims one hour of her work equals 46 hours of a regular Reiki session (not a health claim, but an unusual one).",
+      "Photo is her Quantum-Touch profile photo (quantumtouch.com, allowed host); flag 'from the Quantum-Touch profile'. Her own site has only a press graphic and photos with a client.",
+      "Base: the salon is at a Lutherville, Maryland address (site says 'near Towson and Baltimore'); Lutherville is a suburb, so please map it.",
+      "Level 4 virtual price not shown on the page text I read; in-person regular price used."
+    ],
+    "left_out": [
+      "Holistic facial menu (acne, acne scars, pigmentation, anti-ageing facials, herbal peel): cosmetic skin care, not spiritual practice.",
+      "Repeat-student prices for both workshops (noted only)."
+    ]
+  },
+  "images_final": true
+}

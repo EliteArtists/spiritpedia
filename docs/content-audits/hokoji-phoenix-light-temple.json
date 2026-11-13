@@ -1,0 +1,131 @@
+{
+  "healer": {
+    "healer_slug": "hokoji-phoenix-light-temple",
+    "location_source": "https://www.hokojitaos.org/contact-1",
+    "create": {
+      "name": "Hokoji | Phoenix Light Temple",
+      "bio": "Hokoji, the Phoenix Light Temple, is a small non-residential Zen temple in the hills at Arroyo Seco, north of Taos in New Mexico. It was started in 1983 by Kobun Chino Otogawa Roshi together with his student Bob Watkins and a circle of friends, and its zendo was formally opened in 1986. Kobun, a Japanese Soto priest who came to California in 1967 to help Shunryu Suzuki at Tassajara and later led Haiku Zendo and Jikoji, shaped the temple's easy-going 'family-style' approach, in which people sit within their own physical and mental means with nothing to achieve. The sangha now looks after the property itself, and the old house serves for retreat meals, solo retreats, study and tea.\n\nThe zendo opens for zazen with walking meditation and a Dharma discussion on Thursday evenings, where the guiding teacher introduces newcomers to the forms, and for a shorter sitting on Tuesday mornings. Once a month the Tuesday becomes a half-day of sitting, and occasional full days include an oryoki lunch. Multi-day sesshin are held through the year with service, interviews with the teacher, work practice and oryoki meals, and an online group shared with two sister temples meets every other Monday to study Kobun's teaching on formless practice.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "founded_year": 1983,
+      "city": "Arroyo Seco, New Mexico",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://www.hokojitaos.org/",
+      "booking_url": "https://www.hokojitaos.org/retreats",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "hokojitaos@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/7dab7bcf-2de6-4b7a-8eb1-454de6e9b9fa/_DSC11652.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/1568999863249-LF4Z833PQ73L8PUHWV9G/_DSC3148.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Thursday Evening Meditation",
+      "url": "https://www.hokojitaos.org/thursday-evening-meditation",
+      "description": "Two periods of shikantaza-style zazen with walking meditation between, followed by a discussion of Buddhist teaching in the line of Hokoji's founder. Newcomers get a short introduction to the zendo forms if they let the teacher know in advance.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/f092ca9c-0a29-4c1e-8521-530539fe988a/Teddy.jpeg"
+    },
+    {
+      "title": "Tuesday Morning Meditation",
+      "url": "https://www.hokojitaos.org/tue-morn-meditation",
+      "description": "A quiet half-hour of zazen and a short walking period early every Tuesday, with the zendo door closed once the bell rings. On the first Tuesday of the month it becomes a half-day sitting.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/f092ca9c-0a29-4c1e-8521-530539fe988a/Teddy.jpeg"
+    },
+    {
+      "title": "Half-Day Meditation",
+      "url": "https://www.hokojitaos.org/halfday-meditation",
+      "description": "A morning of four sitting periods with walking meditation and a Dharma discussion, a step up from the weekly sittings and a good preparation for retreat. Occasional full-day sittings with an oryoki lunch need registration.",
+      "price": "Donation",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/12a1a98e-6f79-413c-b78b-d359f2f693c5/Zazen+Morning+2_12282023.jpg"
+    },
+    {
+      "title": "Kobun's Way of Formless Practice (Online Group)",
+      "url": "https://www.hokojitaos.org/onlinegroup",
+      "description": "A Zoom study group shared with two sister temples, meeting every other Monday evening to explore Kobun Chino's teaching on the Platform Sutra, the Heart Sutra and related texts, with optional zazen beforehand.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "mysticism"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/3ec7cbe6-5d6b-41be-833f-75601bf1117b/kobun-chino-sitting.jpg"
+    },
+    {
+      "title": "Sesshin at Hokoji",
+      "url": "https://www.hokojitaos.org/retreats",
+      "description": "Multi-day silent retreats, including seven-day sesshin, with sitting and walking meditation, chanting, interviews with the teacher, work practice and vegetarian oryoki meals. Registration is required.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/5c97e418a5682794a1efa2b8/1568836917359-UE38EMVORSZGNYCW8F5C/sangha.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3369,
+    "hub": null,
+    "tier_evidence": "No YouTube or social accounts linked from its site; no readable counts → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.hokojitaos.org/contact-1",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Guiding teacher is named only as 'Ian' on the site (SZBA lists Bu-tan Stan White as temple priest; not used). No hub links; teachers file written with an empty list.",
+      "No videos or free resources of its own found (the oryoki manual link was not opened).",
+      "Email hokojitaos@gmail.com is the temple's gmail inbox.",
+      "Home page notes the first-Sunday half-day sitting is on hold; the first-Tuesday half-day continues.",
+      "Regional: Arroyo Seco, New Mexico (village near Taos; may need a place alias)."
+    ],
+    "left_out": [
+      "Full-day zazenkai: next date to be announced.",
+      "Reading list, zendo etiquette and oryoki pages: guidance pages, not resources of their own.",
+      "Kobun Chino Otogawa: founder, died 2002."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,209 @@
+{
+  "healer": {
+    "healer_slug": "zen-fields",
+    "location_source": "https://zenfields.org/about/",
+    "create": {
+      "name": "Zen Fields",
+      "bio": "Zen Fields is a Soto Zen sangha in central Iowa, run as a non-profit and centred on the college town of Ames, where it sits in the Quaker Friends Meeting House on South Maple Avenue. Its teachers also travel to Pure Land of Iowa, a shared Buddhist practice space in Clive, so that students in both places can sit and meet a teacher close to home.\n\nTwo married priests lead it, both recognised by the Soto school as international Zen teachers. Daishin Eric McCabe studied ecology and world religions at Bucknell, apprenticed for fifteen years with Patricia Dai-En Bennage Roshi, trained in Japanese monasteries and with Thich Nhat Hanh in France, and is currently acting head priest at the Zen centre in Omaha, Nebraska. Jisho Sara Siebert came to Zen through her work against violence towards women and girls and trained with Gengo Akiba Roshi.\n\nThe weekly rhythm includes early online zazen three mornings a week, Monday sitting with shared reading, a Thursday guided meditation circle and a family programme mixing meditation, song and art. Half-day sits, an intro course and a December Rohatsu sesshin fill out the year, and Daishin's dharma talks and short teachings on shikantaza reach a wide audience on YouTube.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Ames, Iowa",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://zenfields.org/",
+      "booking_url": "https://zenfields.org/schedule/",
+      "youtube_url": "https://www.youtube.com/@zenfields7563",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "daishin@zenfields.org",
+      "image_urls": [
+        "https://zenfields.org/wp-content/uploads/2022/10/Daishin-4-scaled.jpg",
+        "https://zenfields.org/wp-content/uploads/2021/11/zenfieldslogo512w.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "What is Shikantaza 1 (6 minutes)",
+      "url": "https://www.youtube.com/watch?v=zk4WBPnGHmw",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "What is Shikantaza 2  (3 minutes)",
+      "url": "https://www.youtube.com/watch?v=n2XSOXjSQUA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Shikantaza Guided Practice",
+      "url": "https://www.youtube.com/watch?v=BH1kQY3hj_4",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "What is Shikantaza?  A question.",
+      "url": "https://www.youtube.com/watch?v=5WLC3qtsMwA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Trikaya - A Brief Description",
+      "url": "https://www.youtube.com/watch?v=HLntS6bcxvE",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Shikantaza 3",
+      "url": "https://www.youtube.com/watch?v=Jh0mCiUt5s0",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "How to do Zazen Correctly",
+      "url": "https://www.youtube.com/watch?v=AUdeIzW0Hn8",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Shikantaza 4 (2 minutes)",
+      "url": "https://www.youtube.com/watch?v=rvroHDY2u08",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Intro to Fujita Issho",
+      "url": "https://www.youtube.com/watch?v=jEDUUnb6jxg",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Zen Fields"
+    },
+    {
+      "title": "Soto Zen Morning Service - 3 refuges, Heart Sutra, Jizo Sama Mantra, and Dedication",
+      "url": "https://www.youtube.com/watch?v=y-1Uc30bqMA",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Zen Fields"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://zenfields.org/schedule/",
+      "description": "A weekend sesshin marking the Buddha's awakening, held at a retreat centre in Newton, Iowa, from Friday evening to Sunday lunchtime, with periods of sitting and walking meditation. Register through the site's events form.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Private Classes with Daishin McCabe",
+      "url": "https://zenfields.org/contact/",
+      "description": "One-to-one sessions tailored to the student, covering meditation or yoga instruction, spiritual counselling or Japanese calligraphy; Daishin can travel to teach at home.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Join Zen Fields as a Member",
+      "url": "https://zenfields.org/join-zen-fields-as-a-member/",
+      "description": "A yearly offering that keeps the sangha's retreats low-cost; members can take part in the annual board meeting, receive event news and join the members' discussion forum.",
+      "price": "Make a yearly donation of $25.",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Instructions for Zen Meditation",
+      "url": "https://zenfields.org/learn/meditation-instructions-video/",
+      "description": "Video instruction in seated Zen meditation from the sangha's teacher, with follow-on micro-meditation pages.",
+      "featured": true,
+      "resource_type": "meditation",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Zen Fields YouTube Talks",
+      "url": "https://zenfields.org/learn/youtube/",
+      "description": "A selection of Daishin McCabe's short dharma talks and guided practices, on topics such as the trikaya, mindful breathing, the precepts and dropping the sense of a separate doer.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3408,
+    "tier_evidence": "YouTube @zenfields7563: 1,780 subscribers, 554 videos (Data API, 13 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://zenfields.org/schedule/",
+    "contact_form_url": "https://zenfields.org/contact/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email daishin@zenfields.org is published on the schedule page as the sign-up address for a retreat; the contact page asks people to use its form, so both are given.",
+      "A second personal email for Jisho Siebert (half-day sits) is on the schedule page; not used.",
+      "Base: Ames, Iowa (Friends Meeting House, 121 S. Maple Ave); also practises at Pure Land of Iowa, Clive. Regional: central Iowa.",
+      "Daishin also teaches trauma-sensitive yoga in hospital mental-health settings and works as a hospital chaplain; not described as a listing offer. The TCTSY video was left out under the health rule.",
+      "Rohatsu Sesshin price not published; 'Contact for pricing'. It shares the schedule page URL with other programmes, so only this one item uses that URL.",
+      "Founded year not stated; null.",
+      "Teachers file empty: Daishin McCabe and Jisho Siebert are not on Spiritpedia.",
+      "Possible future individual listing: Daishin McCabe (channel 1,780 subscribers)."
+    ],
+    "left_out": [
+      "Videos: 'Trauma Center Trauma Sensitive Yoga (TCTSY)' (clinical theme), 'The Mind that Abides Nowhere: Zen Perspective on Immigration' (political), conversations with Imam Jaily and Shankar Subramaniam (guest-led), Reirin Gumbel's guided meditation (guest teacher), and sub-minute shorts.",
+      "Half Day of Zen (last 2026 date 24 Oct), Intro to Zen (last 2026 date 26 Sept), Nothing to Throw Away retreat (18 Apr): past.",
+      "Family Program 21 Nov and the weekly classes: on the shared schedule page URL; one item per URL kept.",
+      "Morning Meditation ($5 suggested), Guided Meditation ($10 suggested) and Zazen with Discussion: same schedule page URL."
+    ],
+    "held": "Photos (zenfields.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "healer": {
+    "healer_slug": "zen-center-north-shore",
+    "location_source": "https://www.zencenternorthshore.org/contact",
+    "create": {
+      "name": "Zen Center North Shore",
+      "bio": "Zen Center North Shore is a Soto Zen community serving the North Shore of Boston and the wider New England region, now based in a sangha house in Amesbury, Massachusetts. Myozen Joan Amaral started it in 2012 as the Marblehead Zen Center, meeting at first in a church there; it moved to Beverly in 2014, took its present name in 2016 and later bought its Amesbury home.\n\nJoan came east from San Francisco Zen Center after six years of training at Tassajara and received dharma transmission from Zenkei Blanche Hartman, in the Shunryu Suzuki line. A former modern dancer, she also completed chaplaincy training at the Sati Center and once taught meditation in the San Francisco county jail. Her teaching links sitting practice with self-care, creativity and ordinary, untidy daily life.\n\nThe daily schedule of zazen, walking meditation and chanting runs in person from Tuesday to Sunday, with Monday mornings online, and every period is also open on Zoom without charge. Newcomers can join a Saturday introduction class or a free one-to-one Zoom introduction, and a lunchtime Community Zen session meets weekly at the Beverly Public Library. Monthly day-long sits and longer sesshin, with oryoki meals and time with the teacher, round out the year.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Amesbury, Massachusetts",
+      "country": "United States",
+      "founded_year": 2012,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://www.zencenternorthshore.org/",
+      "booking_url": "https://www.zencenternorthshore.org/practice-schedule",
+      "youtube_url": "https://www.youtube.com/@zencenternorthshore5396",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@zencenternorthshore.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/6372bceb140a59057df6d362/6704b03d-0153-4329-9ac5-818391a2ddc6/IMG_8021.JPG",
+        "https://images.squarespace-cdn.com/content/v1/6372bceb140a59057df6d362/418457fc-0ef2-4d5a-bad6-5d71927005a8/IMG_4831.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Welcome to Zen Center North Shore",
+      "url": "https://www.youtube.com/watch?v=ly9fG5ia5nc",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Oryoki Tutorial for Monthly Sesshin (Zen Center North Shore)",
+      "url": "https://www.youtube.com/watch?v=SOnlJgivOQc",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Monthly Sesshin",
+      "url": "https://www.zencenternorthshore.org/monthly-sesshin",
+      "description": "An evening and a full day of silent zazen with walking meditation, oryoki meals, a dharma talk from the guiding teacher and a chance to meet her one to one. Register by email and say whether you need overnight housing; online sitters can join the morning period on Zoom.",
+      "price": "suggested donation is $50 or whatever you can afford",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Private Meditation Instruction with Myozen Joan Amaral",
+      "url": "https://www.zencenternorthshore.org/practice-schedule",
+      "description": "One-to-one meditation instruction with the founder and guiding teacher, arranged by email or phone, with a donation to the teacher at whatever level suits you.",
+      "price": "Donation; the amount is entirely up to you",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Intro to Zen",
+      "url": "https://www.zencenternorthshore.org/intro-to-zen",
+      "description": "Ways in for beginners: a Saturday morning class on Zen basics in Amesbury, Community Zen sessions, and a free individual Zoom introduction with a senior student.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Chants and Texts",
+      "url": "https://www.zencenternorthshore.org/chants-and-texts",
+      "description": "The centre's full service chant book and texts for the precepts, full moon ceremony and robe chant, readable online or as PDF downloads.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Community Zen at the Beverly Public Library",
+      "url": "https://www.zencenternorthshore.org/community-zen",
+      "description": "A weekly midday drop-in led by Joan Amaral: silent sitting, then a class with posture instruction, guided grounding meditation and time for questions.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3405,
+    "tier_evidence": "YouTube @zencenternorthshore5396: 14 subscribers, 3 videos (Data API, 13 Nov 2026) → local_hero",
+    "email": "yes",
+    "email_source": "https://www.zencenternorthshore.org/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Lineage: Joan Amaral trained at SFZC and Tassajara, but ZCNS is an independent centre (founded by her in 2012), not an SFZC branch; kept under the batch note.",
+      "Mission statement centres social and racial justice alongside zazen; listing describes practice only, social-justice group and BIPOC committee not listed as items. Owner may wish to review under the no-political rule.",
+      "Base: practice home at 21 Woodman Rd, Amesbury (contact page); SZBA list still gives a Beverly PO box. City only.",
+      "About page says the Amesbury house was bought 'In October of 2026'; date not repeated in the bio.",
+      "Calendar is script-rendered and no dated events could be read, so no dated offerings.",
+      "Photos: two ordination/ceremony photos and an altar photo from the site; people are participants, not individually named.",
+      "Teachers file empty: Joan Amaral not on Spiritpedia.",
+      "Regional: Amesbury / North Shore of Boston."
+    ],
+    "left_out": [
+      "Video 'Ending The Violence (Dharma Talk 11/06/2023)': possible political theme; left out.",
+      "Recovery sangha, social justice group, meditation-in-schools and Big Brothers Big Sisters pages: community programmes, not listed as items.",
+      "Monthly hikes: no own page with details."
+    ],
+    "held": "Its mission statement centres social justice (held for consistency with Clouds in Water, 13 Nov). Owner decides whether the centre is too politics-led to list."
+  }
+}

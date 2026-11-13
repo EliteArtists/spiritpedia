@@ -1,0 +1,138 @@
+{
+  "healer": {
+    "healer_slug": "zen-center-of-new-york-city",
+    "location_source": "https://zcnyc.org/about/",
+    "create": {
+      "name": "Zen Center of New York City / Fire Lotus Temple",
+      "bio": "Fire Lotus Temple, the Zen Center of New York City, is a residential Zen temple in a brick building on State Street in Boerum Hill, Brooklyn. It serves as the city house of the Mountains and Rivers Order, whose main training centre is Zen Mountain Monastery in the Catskills, and it follows the same Soto-rooted way of training while drawing much of its strength from a lay sangha living and working in the city.\n\nIts abbot, Jody Hojin Kimmel, Sensei, lives in the temple and is also the Order's Director of Training. She entered full-time monastic life at the monastery in 1990, studied first with John Daido Loori and later with Geoffrey Shugen Arnold, Roshi, from whom she received dharma transmission in 2017. A trained painter and sculptor, she has made brush, clay and other art practice a regular strand of temple life.\n\nNewcomers are asked to begin with the Sunday morning programme, which combines liturgy, zazen and a talk and includes first-time meditation instruction. After that, anyone may join the weekday dawn and evening sittings without booking. The calendar adds half-day sits, art mornings, an all-night vigil for the Buddha's awakening, residential stays and recorded temple talks, with programmes priced on a sliding scale.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Brooklyn, New York",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://zcnyc.org/",
+      "booking_url": "https://zcnyc.org/programs/",
+      "youtube_url": null,
+      "instagram_url": "https://www.instagram.com/firelotustemple/",
+      "facebook_url": "https://www.facebook.com/ZCNYC",
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "zcnyc@dharma.net",
+      "image_urls": [
+        "https://zcnyc.org/wp-content/uploads/2024/08/homepage-hero-01.jpg",
+        "https://zcnyc.org/wp-content/uploads/2024/10/1-heart-of-brooklyn.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Half-Day Sit with MRO Staff",
+      "url": "https://zcnyc.org/programs/4894/half-day-sit-november-2026/",
+      "description": "A three-hour morning of silent zazen at the temple, suited both to people new to meditation and to longer-standing students who want to deepen their sitting. First-timers at an Order sit are asked to contact the office before registering.",
+      "price": "Prices $10.00 to $100.00 – The program price is $35.",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Buddha's Enlightenment Vigil (ZCNYC) with Jody Hojin Kimmel, Sensei",
+      "url": "https://zcnyc.org/programs/4870/buddhas-enlightenment-vigil-zcnyc-2026/",
+      "description": "An all-night silent sitting marking the Buddha's awakening, opening with a shared potluck supper and the three refuges and closing with a dawn service. Participants sit, rest or take breaks as they wish; doors close at 11pm.",
+      "price": "Suggested donation – $10.00 - $100.00",
+      "product_type": "retreat",
+      "start_date": "2026-12-04",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Still Moving Brush with Jody Hojin Kimmel, Sensei",
+      "url": "https://zcnyc.org/programs/4930/still-moving-brush/",
+      "description": "A morning of ink-brush practice led by the abbot, approaching each stroke as stillness in motion. No previous experience is needed and materials are supplied; the doors open an hour early for informal zazen.",
+      "price": "$25.00 to $75.00 – The program price is $40.",
+      "product_type": "course",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-12",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
+    },
+    {
+      "title": "Morning Mind is Kanzeon, Evening Mind is Kanzeon: Exploring Liturgy & Chanting",
+      "url": "https://zcnyc.org/programs/4932/morning-mind-is-kanzeon-evening-mind-is-kanzeon-12192026/",
+      "description": "An informal morning with Hojin Sensei and the temple residents combining zazen with sutra chanting, exploring how the voice and liturgy support sitting practice.",
+      "price": "$5.00 to $25.00",
+      "product_type": "course",
+      "start_date": "2026-12-19",
+      "end_date": "2026-12-19",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Recent Temple Talks",
+      "url": "https://zcnyc.org/podcast/",
+      "description": "Audio recordings of dharma talks given at the temple, mostly by Hojin Sensei, on koans, liturgy and ceremonies such as jukai, linked to the wider monastery podcast.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Beginning Instruction and Daily Zazen",
+      "url": "https://zcnyc.org/welcome/",
+      "description": "The Sunday morning programme with first-time zazen instruction, followed by open weekday dawn and evening sittings with no booking needed.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3404,
+    "tier_evidence": "No YouTube channel linked on zcnyc.org (videos on Vimeo); Facebook and Instagram linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://zcnyc.org/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "Email zcnyc@dharma.net is the temple office inbox (mailto on every page).",
+      "Editorial: city branch of the Mountains and Rivers Order / Zen Mountain Monastery (zmm.org), a well-known US Zen order; the owner may want ZMM itself as a future listing and a stature override.",
+      "Vigil page shows 'December 4 to 5, 2025' in its date box but the 2026 slug and the title line 'December 4 - 5, 2026'; dated 2026 here.",
+      "Founded year not stated on the pages read; left null.",
+      "Teachers file empty: Jody Hojin Kimmel and Geoffrey Shugen Arnold are not on Spiritpedia.",
+      "Instagram and Facebook URLs are taken from the site's footer links; not fetched."
+    ],
+    "left_out": [
+      "Trans Day of Remembrance ceremony: activist/political theme, left out under the batch note.",
+      "BIAPOC retreat at Zen Mountain Monastery (13-15 Nov) and Contemplating Buddha zazenkai (14 Nov): not after 14 Nov.",
+      "Fall art series: already under way.",
+      "Noble Path Talks page: second talks page; one talks resource kept."
+    ],
+    "held": "Photos (zcnyc.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+  }
+}

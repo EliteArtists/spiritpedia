@@ -134,6 +134,7 @@
       "Videos: no YouTube links or embeds on quantumlife.ca.",
       "Blog posts: not reviewed for items."
     ],
-    "held": "The ingest could not load the photo: its robots.txt request to www.quantumlife.ca failed with a socket error (UND_ERR_SOCKET, 10 Nov 2026), so every image is unsolved, though curl read the same robots.txt (HTTP 200, no Crawl-delay) and the photo earlier that day. Not retried, per the brief; the owner can rerun the dry run later or decide."
+    "held": "The ingest could not load the photo: its robots.txt request to www.quantumlife.ca failed with a socket error (UND_ERR_SOCKET, 10 Nov 2026), so every image is unsolved, though curl read the same robots.txt (HTTP 200, no Crawl-delay) and the photo earlier that day. Not retried, per the brief; the owner can rerun the dry run later or decide.",
+    "retried": "13 Nov 2026 (README §18.7 retry queue): the ingest dry run still could not load the listing's photo (UNSOLVED); still held."
   }
 }

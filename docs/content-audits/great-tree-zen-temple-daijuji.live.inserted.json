@@ -1,0 +1,58 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1466,
+    "healer_slug": "great-tree-zen-temple-daijuji"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11217,
+      "slug": "oryoki-instruction-at-great-tree-zen-temple",
+      "title": "Oryoki Instruction at Great Tree Zen Temple"
+    },
+    {
+      "table": "videos",
+      "id": 11218,
+      "slug": "what-did-buddha-awaken-to-w-teijo",
+      "title": "What Did Buddha Awaken To? - w/ Teijo"
+    },
+    {
+      "table": "courses",
+      "id": "93a8fd48-106e-4d76-9b7a-0953129239de",
+      "slug": "weekly-zazen-tonglen-and-saturday-lectures",
+      "title": "Weekly Zazen, Tonglen and Saturday Lectures"
+    },
+    {
+      "table": "courses",
+      "id": "d2601370-4b64-4236-a4bb-34fa6945fe10",
+      "slug": "sesshin-at-great-tree",
+      "title": "Sesshin at Great Tree"
+    },
+    {
+      "table": "courses",
+      "id": "aa0c297b-8c78-4ffb-992d-3604f8f91780",
+      "slug": "practice-periods",
+      "title": "Practice Periods"
+    },
+    {
+      "table": "courses",
+      "id": "e54b8576-5baf-490c-870b-525225c847ec",
+      "slug": "womens-residency",
+      "title": "Women's Residency"
+    },
+    {
+      "table": "courses",
+      "id": "24b9cb2d-b8fb-4c5c-bcae-3aa77234bbbe",
+      "slug": "family-practice",
+      "title": "Family Practice"
+    },
+    {
+      "table": "free_resources",
+      "id": "7eb9e899-8018-4a2a-afe8-565212d52620",
+      "slug": "great-tree-chant-book",
+      "title": "Great Tree Chant Book"
+    }
+  ],
+  "at": "2026-11-13T04:12:50.251Z"
+}

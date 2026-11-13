@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1526,
+    "healer_slug": "buddha-house"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11416,
+      "slug": "ven-robina-courtin-karma",
+      "title": "Ven. Robina Courtin - \"Karma\""
+    },
+    {
+      "table": "videos",
+      "id": 11417,
+      "slug": "ven-robina-courtin-constant-craving",
+      "title": "Ven. Robina Courtin - \"Constant Craving\""
+    },
+    {
+      "table": "videos",
+      "id": 11418,
+      "slug": "ven-robina-courtin-death-and-rebirth-day-1-morning-session",
+      "title": "Ven Robina Courtin - \"Death and Rebirth\" (Day 1, morning session)"
+    },
+    {
+      "table": "videos",
+      "id": 11419,
+      "slug": "ven-robina-courtin-understanding-emptiness-session-1",
+      "title": "Ven. Robina Courtin - \"Understanding Emptiness\" (Session 1)"
+    },
+    {
+      "table": "videos",
+      "id": 11420,
+      "slug": "ven-robina-courtin-courageous-compassion-part-1",
+      "title": "Ven. Robina Courtin - \"Courageous Compassion\" (Part 1)"
+    },
+    {
+      "table": "courses",
+      "id": "ff505d2c-8674-4731-82eb-e6667eabf458",
+      "slug": "a-buddhist-approach-to-death-dying-with-gen-dondrub",
+      "title": "A Buddhist Approach to Death & Dying with Gen Dondrub"
+    },
+    {
+      "table": "courses",
+      "id": "73fdf2ea-eafb-4d42-9053-2c7cff103831",
+      "slug": "lam-rim-meditation",
+      "title": "Lam Rim Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "e7101167-d542-46a8-9a34-b216dd083a96",
+      "slug": "learn-to-meditate-3",
+      "title": "Learn to Meditate"
+    },
+    {
+      "table": "courses",
+      "id": "f5d737f3-cd99-432b-bb79-43e65ba25c97",
+      "slug": "become-a-member-2",
+      "title": "Become a Member"
+    }
+  ],
+  "at": "2026-11-13T03:36:45.389Z"
+}

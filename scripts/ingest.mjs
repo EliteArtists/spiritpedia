@@ -335,7 +335,9 @@ const healerJob = (async () => {
       || (create.website_url && await pageImage(create.website_url, { shareOnly: true }));
     if (found) { kept.push(found); decisions.push(`healer photo: ${found}`); }
   }
-  create.image_urls = kept.slice(0, 3);
+  // With nothing usable the plan keeps its own list (the insert stops on the
+  // unsolved photo anyway), so a failed check never erases the helper's photos.
+  if (kept.length) create.image_urls = kept.slice(0, 3);
   healerPhoto = kept[0] || null;
   if (kept.length === 0) unsolved.push(`healer "${create.name}": no profile photo on their YouTube channel or site`);
 })();

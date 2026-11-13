@@ -1,0 +1,121 @@
+{
+  "healer": {
+    "healer_slug": "two-rivers-zen-community",
+    "location_source": "https://www.tworiverszen.org/",
+    "create": {
+      "name": "Two Rivers Zen Community",
+      "bio": "Two Rivers Zen Community is a Soto Zen sangha that now meets entirely online, with its roots in Hawley, in north-eastern Pennsylvania. It was co-founded by Seiso Paul Cooper Roshi and a group of his students, among them Myoki Marcia Nehemiah, who began practising with him in 2011, received lay entrustment in 2020 and has been the community's guiding teacher since 2023. Lay practice leaders help run sittings and classes, and the community traces its practice back to Dogen and the Japanese Soto school.\n\nThe Zoom zendo is open every morning of the week for a short period of zazen, with a longer Sunday sitting and service. On Wednesday evenings a sitting is followed by text study that rotates through the month, from Robert Aitken's Zen Master Raven to the Heart Sutra and Dogen's essay on being-time. Each month brings a full-moon bodhisattva precepts ceremony and a half-day silent sit, and the year includes full-day zazenkai, a Rohatsu day in December and seasonal ango practice periods. Newcomers are offered a short one-to-one orientation, and practitioners can meet the teacher privately for dokusan. Support is by dana rather than fees.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "city": "Hawley, Pennsylvania",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.tworiverszen.org/",
+      "booking_url": "https://www.tworiverszen.org/zooming-zazen",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "marcia@mailhosts.net",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Winter Ango",
+      "url": "https://www.tworiverszen.org/special-events/winter-ango",
+      "description": "A three-month online practice period in which participants take on extra zazen, study and work practice to deepen their commitment, running from early December to the end of February.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": "2026-12-06",
+      "end_date": "2027-02-28",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Full-Day Rohatsu",
+      "url": "https://www.tworiverszen.org/special-events/event-two-w7zrh-s4xbg-nypkl-eaxd2",
+      "description": "A day of online zazenkai honouring the Buddha's awakening, with silent sitting, walking meditation, ceremony and time together as a sangha.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-12-06",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Wednesday Evening Dharma",
+      "url": "https://www.tworiverszen.org/wednesday-evening-dharma",
+      "description": "Half an hour of zazen on Zoom followed by a class on a Zen text, with a different text and facilitator each week of the month, from Aitken's Zen Master Raven to the Heart Sutra and Dogen's Uji.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Zooming Zazen",
+      "url": "https://www.tworiverszen.org/zooming-zazen",
+      "description": "The daily online sitting schedule with Zoom links and simple etiquette for practising together on screen, including the monthly extended Sunday sit.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "The Bodhisattva Precepts",
+      "url": "https://www.tworiverszen.org/bodhisattva-precepts",
+      "description": "The full text of the sixteen bodhisattva precepts as the community recites them: the refuges, the three pure precepts and the ten grave precepts with their commentary.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3400,
+    "held": "No usable photo: the community is online only with no zendo of its own; the site's images are AI-generated artwork, nature shots and a portrait of the guiding teacher, none clearly the centre, and there is no logo or YouTube channel.",
+    "tier_evidence": "No YouTube channel or social accounts linked from tworiverszen.org → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.tworiverszen.org/about-two-rivers",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Email marcia@mailhosts.net is the guiding teacher's own address, published for newcomer orientation; no general centre inbox or form.",
+      "Base: the site's title gives Hawley, PA (and the dana address is there); the SZBA list gives Honesdale. Online-only community; Hawley is a small borough, please map.",
+      "Availability worldwide: all practice is on Zoom.",
+      "Prices: the site asks for dana and lists no fees, so 'Contact for pricing'.",
+      "Teachers file empty: Myoki Marcia Nehemiah and Seiso Paul Cooper are not on Spiritpedia.",
+      "Ango and zazenkai event URLs are Squarespace auto-slugs (event-two-…); kept as published."
+    ],
+    "left_out": [
+      "Ryaku Fusatsu and Simply Silent Sitting monthly events: repeat with long auto-generated URLs; covered by Zooming Zazen.",
+      "Full-day zazenkai (Feb and Apr 2027) and later ango periods: kept to the nearest dated items.",
+      "Photos: none usable (see held)."
+    ]
+  }
+}

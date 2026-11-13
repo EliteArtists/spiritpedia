@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "cara-barker",
+    "location_source": "https://www.carabarker.com/contact",
+    "create": {
+      "name": "Cara Barker",
+      "bio": "Cara Lee Barker is an American Jungian analyst, author and artist based in Kirkland, Washington. She first trained as a nurse, serving in an army nursing programme during the Vietnam era and going on to qualify as a nurse practitioner, then took a doctorate in clinical psychology and studied expressive arts and the body-centred Hakomi method with Ron Kurtz. Her post-doctoral training was at the C.G. Jung Institute in Zurich, and she has taught in the psychology department at Seattle University.\n\nShe calls her approach the Way of Soul: learning to trust the guidance that turns up in dreams, in the body, in meaningful coincidences and in creative work, so that loss and upheaval can become a doorway to a fuller life. She leads Way of Soul retreats of three to five days, set up by a sponsoring group at home or abroad, which combine meditation and mindful creative practice with rest. Her books include Heart-Led Living, a guide to finding direction through dreams, body signals and synchronicity, Nightlight, World Weary Woman and The Love Project. Her site also gathers a set of Love Projects, among them one named for Sandy Hook sibling survivors, and she paints; a retrospective of her art was shown in Kirkland in 2016.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Kirkland, Washington",
+      "country": "United States",
+      "subjects": [
+        "dreamwork",
+        "spirituality",
+        "mindfulness"
+      ],
+      "website_url": "https://www.carabarker.com/",
+      "booking_url": "https://www.carabarker.com/consultation-retreats",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "dr.carabarker@gmail.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/568c5f42df40f37b331ffaeb/206d9e38-599a-49d8-be7f-25d74554d061/Barker_Cara_717-_R5_5841-Ludeman+Photographic-Headshot-Sammamish-2_%282%29-Edit-Sammamish-Ludeman+Photographic-2.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "The Spotlight Network on Heart Led Living by Dr  Cara Barker",
+      "url": "https://www.youtube.com/watch?v=4yi57ilYoUI",
+      "subjects": [
+        "dreamwork",
+        "spirituality"
+      ],
+      "channel": "The Spotlight Network"
+    },
+    {
+      "title": "Dr. Cara Barker - Coming Home Description Video 1-1",
+      "url": "https://www.youtube.com/watch?v=_2j5nisZ9uA",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Chris Bowen"
+    },
+    {
+      "title": "Dr. Cara Barker - Coming Home Description Video 2-1",
+      "url": "https://www.youtube.com/watch?v=56Jj5AO_NzU",
+      "subjects": [
+        "spirituality"
+      ],
+      "channel": "Chris Bowen"
+    }
+  ],
+  "books": [
+    {
+      "title": "Heart-Led Living: The 4 Cornerstones to Building a Better Life",
+      "slug": "heart-led-living",
+      "author": "Cara Barker",
+      "asin": "B0CW1GC7FV",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A practical guide for times of change, built around four foundations for deciding what comes next. Through stories and exercises it shows readers how to draw guidance from their dreams, the signals of the body and chance events that feel meaningful.",
+      "subjects": [
+        "dreamwork",
+        "soul-purpose"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B0CW1GC7FV.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Nightlight: Soul Calling, Body Listening, Heart Speaking",
+      "slug": "nightlight-soul-calling-body-listening-heart-speaking",
+      "author": "Cara Barker",
+      "asin": "B09PF8SQW3",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book for readers worn down by a turbulent world who are looking for rest and inner steadiness. She invites them to find their own small light in dark times by listening to the soul, the body and the heart.",
+      "subjects": [
+        "spirituality",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B09PF8SQW3.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "The Way of Soul Retreats",
+      "url": "https://www.carabarker.com/consultation-retreats",
+      "description": "Private retreats of three, four or five days that she leads for a group whose sponsor handles bookings and logistics, in the United States or abroad. Days combine meditation, mindfulness brought into creative activity, rest and renewal.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/568c5f42df40f37b331ffaeb/206d9e38-599a-49d8-be7f-25d74554d061/Barker_Cara_717-_R5_5841-Ludeman+Photographic-Headshot-Sammamish-2_%282%29-Edit-Sammamish-Ludeman+Photographic-2.jpg?format=1000w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3285,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/cara-barker.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts (13 Nov 2026): no YouTube channel of her own found (her site's videos are on The Spotlight Network, B.E.P. Talks and a channel named Chris Bowen); no social accounts linked from her site except a LinkedIn video (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.carabarker.com/contact",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): earlier skipped as a Jungian analyst with a clinical practice (search only, 10 Nov). Her own site (read 13 Nov 2026) shows meditation and mindfulness retreats and soul-centred books beside the analytic consultations; she is listed for the retreats and books only. Thin-ish: one offering, two books, three videos. Owner may judge her mainly therapy.",
+      "Retreats are private, organised by a sponsoring group; no public dates or prices.",
+      "Coming Home videos: a 2010 series embedded on her own Videos page but uploaded by a channel named Chris Bowen (apparently the producer, not a re-upload channel); she is the only speaker. Owner may prefer to drop them.",
+      "Book ASINs are the Amazon links on her own home page (B0CW1GC7FV for Heart-Led Living, B09PF8SQW3 for Nightlight, the latter a Kindle edition); not confirmed elsewhere; Amazon pages not opened. Covers are screenshots hosted on her own site.",
+      "Name: her site calls her 'Dr. Cara Lee Barker'; listed as Cara Barker (as in the queue). Owner may prefer 'Dr. Cara Barker'.",
+      "Gmail address used as published on her own Contact page.",
+      "Regional: Kirkland, Washington; probably few Spiritpedia teachers there.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check (13 Nov 2026); the lead session should run it. All images were fetched or HEAD-checked with curl (200) instead."
+    ],
+    "left_out": [
+      "Consultation (Jungian analysis, here and abroad): clinical analysis, out of scope.",
+      "'The Art of Healing: An Art Therapy Approach to Mental Health' (B.E.P. Talks video, 7A2zzvuS-wk): framed as therapy for mental health; out of scope.",
+      "Coming Home Description Videos 2-2, 3-2, 4-1, 4-2, 5-1, 5-2: parts of the same series; kept the two most-viewed parts, 1-1 and 2-1.",
+      "World Weary Woman (Inner City Books), The Love Project and The Artist as Poet: named on her site but no ISBN or ASIN on a page we opened.",
+      "Keynotes and the 2016 art show: not offerings (the art show is past).",
+      "Love Projects (In the Name of Our Children, Sandy Hook Sibling Survivors, Young Girls in Need and others): charitable projects, not teaching offerings."
+    ]
+  },
+  "images_final": true
+}

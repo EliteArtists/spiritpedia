@@ -1,0 +1,140 @@
+{
+  "healer": {
+    "healer_slug": "missouri-zen-center",
+    "location_source": "https://missourizencenter.org/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Missouri Zen Center",
+      "bio": "Missouri Zen Center is a small Soto Zen temple in a white clapboard house in Webster Groves, a suburb of St. Louis. Its founder and abbot, Rosan Osamu Yoshida, came to Zen through a university meditation group in Tokyo, sat with teachers in New York and Nebraska, and was ordained and later given Dharma transmission by Dainin Katagiri; he also trained at Zuioji in Japan and taught comparative religion at Toyo University. The centre began in 1979 and became a non-profit the following year, and it has offered zazen in the St. Louis area ever since.\n\nThe sangha meets for regular zazen and chanting, and holds weekend sesshins with formal oryoki meals, work practice and a Dharma talk. A Monday Beginner's Night introduces Buddhism and sitting meditation, followed by a period of zazen and questions with the abbot. The temple keeps a lending library of more than a thousand Buddhist books, and its teaching rests on three themes the founder champions: the awakened way, a global ethic shared across religions, and voluntary simplicity. Translations, a zazen manual and a bilingual blog of talks are free on its website.",
+      "availability": "local",
+      "city": "Webster Groves, Missouri",
+      "country": "United States",
+      "founded_year": 1980,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://missourizencenter.org/",
+      "booking_url": "https://missourizencenter.org/firstTimeVisitors.html",
+      "youtube_url": null,
+      "contact_email": "info@missourizencenter.org",
+      "image_urls": [
+        "https://missourizencenter.org/images/220SpringWithRabbit.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginner's Night",
+      "url": "https://missourizencenter.org/firstTimeVisitors.html",
+      "description": "A Monday evening class for newcomers and students of religion: a short introduction to Buddhism and sitting from a student teacher, twenty minutes of zazen with the abbot, then his explanation of Zen and time for questions. Attendees are asked to register by email two days ahead.",
+      "price": "a donation of $5-10 is suggested",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://missourizencenter.org/MZC.gif"
+    },
+    {
+      "title": "Sesshins",
+      "url": "https://missourizencenter.org/events.html",
+      "description": "Weekend retreats running from Friday evening to Sunday, with many periods of zazen broken by walking meditation, formal oryoki meals with chanting, work practice, a Dharma talk and at times a private interview with the teacher, all held in silence. Dates are posted on the centre's calendar.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://missourizencenter.org/MZC.gif"
+    },
+    {
+      "title": "Membership",
+      "url": "https://missourizencenter.org/aboutUs.html",
+      "description": "Members support the house, grounds and daily sitting schedule, and may borrow from the centre's library of Buddhist books and videos; membership also sustains the abbot's classes and the monthly retreats.",
+      "price": "$25 per month donation",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://missourizencenter.org/MZC.gif"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mechanics of Zazen & Kinhin",
+      "url": "https://missourizencenter.org/howTo.html",
+      "description": "Step-by-step guidance on entering the zendo, sitting posture, eyes and breathing, working with thoughts and the form of slow walking meditation, introduced by a passage from Dogen's Fukanzazengi.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://missourizencenter.org/MZC.gif"
+    },
+    {
+      "title": "Document Downloads",
+      "url": "https://missourizencenter.org/downloads.html",
+      "description": "Free PDFs from the centre, including the abbot's translation of Dogen's Fukanzazengi, a manual of zazen, the Sunday service text and a welcome leaflet.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://missourizencenter.org/MZC.gif"
+    },
+    {
+      "title": "MZC Here-Now",
+      "url": "https://missourizencenter.org/mzcherenow/",
+      "description": "The centre's blog of short Dharma reflections drawn from talks at the temple, many in both English and Japanese, linking Buddhist teaching with daily life and care for the natural world.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "image": "https://missourizencenter.org/mzcherenow/wp-content/uploads/2026/10/DSC04747-edited-1024x502.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3376,
+    "tier_evidence": "No YouTube or other social account linked from missourizencenter.org (13 Nov 2026) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://missourizencenter.org/firstTimeVisitors.html",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Name: SZBA lists it as 'Missouri Zen Center / Buppozan Zengenji'; the site does not use the temple name, so the listing keeps 'Missouri Zen Center'.",
+      "founded_year: the site gives 1979 (founded) and 1980 (non-profit); 1980 used, as on the history section.",
+      "Abbot Rosan Yoshida is described in the present tense on the About page, but most of the main site looks unchanged for years; only the blog (Oct-Nov 2026 posts signed 'Ekan') shows current activity. The owner may want to confirm who leads it now.",
+      "Availability 'local': no online sittings are mentioned.",
+      "Photo: only one usable image (the centre's house, 310x413); the founder's portrait and blog images were not used.",
+      "Teachers file empty: Rosan Yoshida is not on Spiritpedia.",
+      "robots.txt is empty (no rules)."
+    ],
+    "left_out": [
+      "Videos: no YouTube channel linked from the site.",
+      "Calendar: an embedded Google Calendar, not read; no dated items.",
+      "Global Ethic and Voluntary Simplicity pages: the founder's interfaith and lifestyle advocacy, kept out of items."
+    ]
+  },
+  "images_final": true
+}

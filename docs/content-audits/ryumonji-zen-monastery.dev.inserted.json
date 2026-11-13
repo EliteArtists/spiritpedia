@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1562,
+    "healer_slug": "ryumonji-zen-monastery"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11588,
+      "slug": "tour-the-ryumonji-zen-monastery-dragon-gate-temple",
+      "title": "Tour the Ryumonji Zen Monastery - Dragon Gate Temple"
+    },
+    {
+      "table": "videos",
+      "id": 11589,
+      "slug": "twentieth-anniversary-of-the-founding-of-ryumonji-zen-monastery",
+      "title": "Twentieth Anniversary of the Founding of Ryumonji Zen Monastery"
+    },
+    {
+      "table": "courses",
+      "id": "cb273145-cba4-494c-a400-34c7fb3312ef",
+      "slug": "regular-practice-sunday-and-thursday-zazen-tuesday-book-group",
+      "title": "Regular Practice: Sunday and Thursday Zazen, Tuesday Book Group"
+    },
+    {
+      "table": "courses",
+      "id": "9f201abc-212b-441c-9507-15e3b2e41009",
+      "slug": "sesshin-and-ango",
+      "title": "Sesshin and Ango"
+    },
+    {
+      "table": "free_resources",
+      "id": "cee8ba8e-aafb-479e-b676-34249bc1af86",
+      "slug": "ryumonji-online-resources-sutras-and-dharma-talks",
+      "title": "Ryumonji Online Resources: Sutras and Dharma Talks"
+    }
+  ],
+  "at": "2026-11-13T04:08:29.908Z"
+}

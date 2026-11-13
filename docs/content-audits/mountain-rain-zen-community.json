@@ -1,0 +1,153 @@
+{
+  "healer": {
+    "healer_slug": "mountain-rain-zen-community",
+    "location_source": "https://www.mountainrainzen.org/about/find-us",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Mountain Rain Zen Community",
+      "bio": "Mountain Rain Zen Community is a largely lay Soto Zen sangha in Vancouver, practising the forms of Shunryu Suzuki's lineage while drawing on other Buddhist schools. Its founding teacher is Zoketsu Norman Fischer, the former San Francisco Zen Center abbot who has led retreats in the city since 1987. Since 2017 its guiding teachers have been Kate McCandless (Myoshin) and Michael Newton (Shinmon), a couple who began sitting as students in Japan in 1983, practised Soto Zen in Kyoto with Shohaku Okumura and later received priest ordination and transmission from Fischer. A circle of priests, lay teachers and practice leaders shares the teaching.\n\nThe sangha has two homes in East Vancouver: a zendo on Wall Street and Bright Stream Temple (Koryuji) on Sherbrooke Street. Weekday mornings bring an informal online sitting, and on Sunday mornings and Wednesday evenings there is zazen with a talk or a Dharma seminar, with beginners' instruction beforehand and Zoom access. Sunday half-day retreats, an autumn practice period and residential sesshin deepen the practice, alongside a group for young adults, a sitting group for racialised people and a Dharma podcast of the teachers' talks.",
+      "availability": "local_online",
+      "city": "Vancouver, British Columbia",
+      "country": "Canada",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.mountainrainzen.org/",
+      "booking_url": "https://www.mountainrainzen.org/weekly-practice",
+      "youtube_url": null,
+      "contact_email": "info@mountainrainzen.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1407548079637-19W859FA5UKQ4E872ZKJ/mrzc-zltar-and-sitting.jpg",
+        "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1700604111863-73IEV2R5UY89COZSGN25/BrightStreamZendo.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://www.mountainrainzen.org/events/2026/11/28/rohatsu",
+      "description": "A six-day residential sesshin at Loon Lake Retreat Centre near Maple Ridge, led by the guiding teachers to close the autumn practice period and mark the Buddha's awakening: about six hours of zazen a day, walking meditation, daily talks, formal oryoki meals, tea, private interviews and work practice. A non-residential online option and subsidies are offered.",
+      "price": "Student centre / Thunder Inn (shared dormitory 3-4 people): $830; Johnson / Pan Abode (shared room 2 people): $915; Johnson / Pan Abode (single room): $1,045; Online (Non-Residential, Off-Site) from CA$100.00",
+      "product_type": "retreat",
+      "start_date": "2026-12-12",
+      "end_date": "2026-12-18",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/537a8950e4b0e00f9812dec6/537aa3a1e4b09a4c092737bb/6928ba4574947532d0e91e86/1794244290883/75356825_10212215499421516_3504396084619247616_n+%281%29.jpg?format=1500w"
+    },
+    {
+      "title": "Sunday Half-Day Retreats",
+      "url": "https://www.mountainrainzen.org/retreats",
+      "description": "Held about eight times a year, these Sunday mornings give a taste of retreat: periods of zazen and walking meditation, a Dharma talk, a chanting service, temple cleaning and a simple vegetarian lunch. No registration is needed and people may come for part of the morning.",
+      "price": "By donation",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1782878805565-9IKKHGQHOQEZDGUOTVFC/Screen+Shot+2026-06-30+at+9.06.22+PM.png"
+    },
+    {
+      "title": "Weekly Practice Sessions",
+      "url": "https://www.mountainrainzen.org/weekly-practice",
+      "description": "The weekly round at the Wall Street zendo, Bright Stream Temple and on Zoom: informal online zazen on weekday mornings, Sunday morning sitting with a talk and service, and Wednesday evening sitting with a teacher-led Dharma seminar. Newcomers can receive instruction before the Sunday and Wednesday sessions.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1703879238594-ON2S8PS6HHBGHRZUJD1E/water+basin.jpg"
+    },
+    {
+      "title": "Becoming a Member",
+      "url": "https://www.mountainrainzen.org/membership",
+      "description": "Calendar-year membership of the sangha, renewed each spring, with members choosing how much to contribute towards its two practice places and programmes.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1791913661211-RWTGT2U2Z9OZU2OEEJ08/p1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mountain Rain Zen Dharma Podcast",
+      "url": "https://www.mountainrainzen.org/podcast",
+      "description": "Recorded Dharma talks by the guiding teachers and the sangha's practice leaders, including the current practice period series, with an archive searchable by speaker and theme and feeds on the main podcast apps.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1791913661211-RWTGT2U2Z9OZU2OEEJ08/p1.jpg"
+    },
+    {
+      "title": "How to Sit Zazen",
+      "url": "https://www.mountainrainzen.org/resources/how-to-sit-zazen",
+      "description": "Basic instructions for sitting on a cushion, bench or chair, posture, gaze, the hand mudra and attention to the breath, with advice on keeping a short, steady home practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1791913661211-RWTGT2U2Z9OZU2OEEJ08/p1.jpg"
+    },
+    {
+      "title": "MRZC Chants",
+      "url": "https://www.mountainrainzen.org/resources/chants",
+      "description": "The sangha's chant texts for services and retreats, available to read or download for practice at home.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/537a8950e4b0e00f9812dec6/1407400488162-T92HKYC9SHRKGMRI8J52/image-asset.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3378,
+    "tier_evidence": "No YouTube channel linked from mountainrainzen.org (13 Nov 2026); Instagram and Facebook linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.mountainrainzen.org/about/find-us",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "flags": [
+      "Teachers file empty: Norman Fischer (founding teacher), Kate McCandless and Michael Newton are not on Spiritpedia. Possible future listing: Norman Fischer (also guiding teacher of Kannon Do, rank 3372).",
+      "Rohatsu prices: the room fees are shown with a plain '$' (Canadian site; the oryoki and online fees say CA$); written exactly as published.",
+      "Founding year not given on the pages read (the SZBA entry says 2002), so founded_year is left out.",
+      "Photo 1 is the Wall Street zendo with people sitting (captioned on the practice page); photo 2 is Bright Stream Temple's zendo (captioned in the image).",
+      "Weekly sessions share one page, so they are one item (no fragments).",
+      "robots.txt output was read through 'head -60', which cut off only its last line (the Sitemap line); all User-agent groups were read."
+    ],
+    "left_out": [
+      "2026 practice period (14 Oct-20 Dec): already under way.",
+      "Zen Arts slow-stitching event (14 Nov): not after 14 Nov; solstice, New Year and fundraiser events: community gatherings.",
+      "Collective Liberation, ZenYU and engaged Buddhist practice pages: affinity and activist groups, kept to the core programme.",
+      "Videos: no YouTube channel linked from the site."
+    ]
+  },
+  "images_final": true
+}

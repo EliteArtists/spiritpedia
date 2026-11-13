@@ -24,10 +24,7 @@
       "twitter_url": null,
       "tiktok_url": null,
       "contact_email": "shaktishalaantigua@gmail.com",
-      "image_urls": [
-        "https://antiguayoga.com/wp-content/uploads/2023/05/195A9717-1536x1024.jpg",
-        "https://antiguayoga.com/wp-content/uploads/2022/01/Shakti-Shala-Antigua-Team-570x380.jpeg"
-      ]
+      "image_urls": []
     }
   },
   "teaches_at": [],
@@ -102,6 +99,7 @@
       "Weekly free meditation and monthly kirtan, sound and breathwork events: mentioned on the about page only, no own pages.",
       "Power Vinyasa and Rocket classes are not listed separately (covered by the classes item)."
     ],
-    "held": "The ingest's own robots.txt request to antiguayoga.com fails with a dropped connection (UND_ERR_SOCKET, 10 Nov 2026) while plain curl gets 200, so the site appears to refuse our ingest; every image fails. Not retried under any other identity. Images listed are the ones I looked at."
+    "held": "The ingest's own robots.txt request to antiguayoga.com fails with a dropped connection (UND_ERR_SOCKET, 10 Nov 2026) while plain curl gets 200, so the site appears to refuse our ingest; every image fails. Not retried under any other identity. Images listed are the ones I looked at.",
+    "retried": "13 Nov 2026 (README §18.7 retry queue): the ingest dry run still could not load the listing's photo (UNSOLVED); still held."
   }
 }

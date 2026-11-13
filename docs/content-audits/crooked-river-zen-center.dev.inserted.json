@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1534,
+    "healer_slug": "crooked-river-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "66c62e88-6ae3-4d8b-8baa-6b15406d50a3",
+      "slug": "weekly-zen-practice",
+      "title": "Weekly Zen Practice"
+    },
+    {
+      "table": "courses",
+      "id": "2256b29f-9ee3-4ffb-a9bc-debb325088bb",
+      "slug": "sesshin-3",
+      "title": "Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "58ce931f-984e-4f25-854f-af474975573e",
+      "slug": "zazenkai-4",
+      "title": "Zazenkai"
+    },
+    {
+      "table": "free_resources",
+      "id": "a068e10f-f89b-445e-a4d3-233b55926825",
+      "slug": "crooked-river-zen-center-dharma-talks-podcast",
+      "title": "Crooked River Zen Center Dharma Talks (podcast)"
+    }
+  ],
+  "at": "2026-11-13T03:38:47.787Z"
+}

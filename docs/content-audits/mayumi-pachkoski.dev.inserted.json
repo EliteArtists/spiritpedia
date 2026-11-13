@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1502,
+    "healer_slug": "mayumi-pachkoski"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "826e05e4-23cb-4a36-a743-fe0f81b5e37a",
+      "slug": "energy-healing-sessions-2",
+      "title": "Energy Healing Sessions"
+    },
+    {
+      "table": "courses",
+      "id": "cb8a4ae3-0f7a-42dc-8f07-602e4fabbc76",
+      "slug": "quantum-touch-level-1-workshop",
+      "title": "Quantum-Touch Level 1 Workshop"
+    },
+    {
+      "table": "courses",
+      "id": "acd49e67-2cf0-47fe-b610-63c593e7e16c",
+      "slug": "quantum-touch-level-4-becoming-heart-conscious-4",
+      "title": "Quantum-Touch Level 4: Becoming Heart-Conscious"
+    }
+  ],
+  "at": "2026-11-12T23:43:18.632Z"
+}

@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "bright-way-zen",
+    "location_source": "https://brightwayzen.org/contact-us/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Bright Way Zen",
+      "bio": "Bright Way Zen is a Soto Zen sangha on the west side of the Portland, Oregon area, with its in-person zendo on SW Barnes Road and a busy online practice it calls the Cloud Zendo. Its guiding teacher and director is Rev. Domyo Burk, a former wildlife biologist who began Zen practice at Portland's Dharma Rain Zen Center in 1996, was ordained by Gyokuko Carlson in 2001 and received Dharma transmission from her in 2010. She counts both Dharma Rain founders, Gyokuko and Kyogen Carlson, as her teachers, and she also writes and presents the Zen Studies Podcast as a separate project.\n\nWeekly practice centres on Tuesday evening zazen followed by a study class and a Sunday morning of chanting, sitting and study, with newcomers offered a short introduction to zazen half an hour before either. Mornings through the week add further sittings, and study circles, a book group and a metta group meet regularly. One-day retreats ending in mondo, a formal question-and-answer ceremony on a shared text, are held through the year, along with longer sesshin, practice intensives with the teacher and a term-student programme. Programmes carry a suggested donation that anyone may adjust, and recordings of talks are posted on the website.",
+      "availability": "local_online",
+      "city": "Portland, Oregon",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://brightwayzen.org/",
+      "booking_url": "https://brightwayzen.org/meetings-placeholder/weekly-schedule/",
+      "youtube_url": null,
+      "contact_email": "info@brightwayzen.org",
+      "image_urls": [
+        "https://brightwayzen.org/wp-content/uploads/2019/09/2019-03-17-Sangha-Pic.jpg",
+        "https://brightwayzen.org/wp-content/uploads/2014/07/Preceptees-and-Domyo-For-Slider1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tuesday Evening Zazen and Study",
+      "url": "https://brightwayzen.org/meetings-placeholder/weekly-schedule/",
+      "description": "A weekly evening of chanting, zazen, a social break and an hour-long class, in the zendo and online. Newcomers can arrive half an hour early for an introduction to zazen and the practice space.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://brightwayzen.org/wp-content/uploads/2022/05/Instagram-Neutral-Blurred-Background-Title-Post-Template.png"
+    },
+    {
+      "title": "One Day Retreat with Mondo",
+      "url": "https://brightwayzen.org/one-day-retreats/",
+      "description": "A silent day of sitting, chanting, work practice and a silent meal that closes with mondo, a formal question-and-answer ceremony on a shared text; the November 2026 text is Hongzhi's Silent Illumination. Join in person or online, ideally for the whole day.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-28",
+      "end_date": "2026-11-28",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://brightwayzen.org/wp-content/uploads/2022/10/18.png"
+    },
+    {
+      "title": "Sesshin",
+      "url": "https://brightwayzen.org/practice/zazen-zen-meditation/meditation-retreats/sesshin-meditation-retreats/",
+      "description": "Multi-day silent retreats with long days of seated meditation, described here as intensive training in how we use the body-mind, with a link to the sangha's upcoming sesshin dates.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://brightwayzen.org/wp-content/uploads/2024/05/IMG_5920-scaled.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Recordings of Bright Way Zen Talks",
+      "url": "https://brightwayzen.org/resources/audio-video/dharma-talks-audio/",
+      "description": "An archive of recent talks by Domyo Burk and senior students, each with a short summary and links to video and podcast audio, on topics such as forgiveness, Dogen's Fukanzazengi and not picking and choosing.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://brightwayzen.org/wp-content/uploads/2021/08/16.png"
+    },
+    {
+      "title": "Start a Zazen Practice",
+      "url": "https://brightwayzen.org/how-to-begin/start-a-zazen-practice/",
+      "description": "Practical encouragement for building a home sitting habit, favouring a few minutes daily over long sessions put off, with links to zazen instructions and to the sangha's online sittings.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://brightwayzen.org/wp-content/uploads/2013/07/DH-Zazen-Kisei.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3343,
+    "tier_evidence": "No YouTube channel linked from brightwayzen.org (talk videos are on Vimeo); Facebook linked but never fetched; 13 Nov 2026 → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://brightwayzen.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "Teachers file empty: Domyo Burk is not on Spiritpedia. Possible future listing: Domyo Burk (Zen Studies Podcast).",
+      "Possible editorial-stature override: the guiding teacher hosts the widely heard Zen Studies Podcast (a separate project). Tier not raised.",
+      "Prices: the site uses a 'suggested donation' policy that anyone may adjust; no amounts were shown on the pages read, so 'Contact for pricing'.",
+      "Photos: sangha group at a 2019 event and a 2014 precepts ceremony with Domyo Burk (site images). Older photos; owner may prefer newer ones.",
+      "Home page carries a 2020 'Black Lives Matter' image; not an item, noted only.",
+      "Base: zendo address SW Barnes Road, Portland, OR (contact page); mailing address is in Beaverton.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Introduction to Zen Meditation Workshop (14 Nov 2026): not after 14 Nov.",
+      "Term student closing retreat (19 Dec): registered students only.",
+      "Bodhisattva Action Circle (climate group): activist-leaning, left out under the political rule.",
+      "Zen Mind, Neurodiverse Mind group, book and metta groups: kept to the core programme.",
+      "Zen Living (book by Domyo Burk): no ISBN on a page we opened.",
+      "Zen Studies Podcast: a separate project of the teacher, not the centre's.",
+      "Videos: talks are on Vimeo, no YouTube channel linked."
+    ]
+  },
+  "images_final": true
+}

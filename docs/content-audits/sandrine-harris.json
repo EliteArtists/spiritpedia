@@ -1,0 +1,110 @@
+{
+  "healer": {
+    "healer_slug": "sandrine-harris",
+    "location_source": "https://www.sandrineharris.com/",
+    "create": {
+      "name": "Sandrine Harris",
+      "bio": "Sandrine Harris is a somatic educator and meditation guide based in western Massachusetts, where she sees people in person at a practice in Great Barrington and also works online. A former professional dancer, she began leading creative movement classes for adults in Prague in 1999 and took up meditation herself in 2006. She later qualified in Somatic Experiencing and the Feldenkrais Method, registered as a somatic movement educator, trained as a death doula, and studied Nonviolent Communication; among the meditation teachers she names is Sharon Salzberg. Until 2022 she co-led a 200-hour training for mindfulness facilitators.\n\nHer offerings go out under the name Emergent Nature. The main one since 2023 is MARROW, a multi-day group process that weaves somatic awareness, free movement, rest, creative mark-making and several styles of meditation, which she has led at Kripalu and Omega in the United States and in Australia, England, Scotland and Austria. She also runs weekend meditation retreats, trauma-sensitive mindfulness groups, seasonal walks and rituals outdoors, and a gentle floor-to-standing dance class called Kinesoma that is open to every body. Her approach is slow, sensory and earth-connected, inviting people to listen to the body and to the living world around them.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Great Barrington, Massachusetts",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "self-healing"
+      ],
+      "website_url": "https://www.sandrineharris.com/",
+      "booking_url": "https://www.sandrineharris.com/group-experiences-embodiment-somatics-meditation",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sandrine@sandrineharris.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/621ec3cda619d11f32bfa4c3/36703df8-3d1a-46b6-9c7f-ed7ae361839f/IMG_2809.jpeg?format=1000w",
+        "https://images.squarespace-cdn.com/content/v1/621ec3cda619d11f32bfa4c3/8f4ae741-5780-4f65-8176-807bf180fcfe/Me+dancing+by+Theo+Coulombe.jpg?format=1000w"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Moving Through Stillness: Somatic Meditations to Support Your New Year Transition",
+      "url": "https://kripalu.org/experiences/moving-through-stillness-somatic-meditations-support-your-new-year-transition",
+      "description": "A weekend retreat at Kripalu in Stockbridge, Massachusetts, to close the year with meditation, guided movement and quiet reflection. Sessions mix contemplative practice, writing and body awareness, with Kripalu's daily yoga classes and meals included in the stay. Some meditation experience helps, but newcomers are welcome and chairs are provided.",
+      "price": "Tuition: $350 per person, plus required accommodation",
+      "product_type": "retreat",
+      "start_date": "2026-12-27",
+      "end_date": "2026-12-29",
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://kripalu.org/sites/default/files/styles/og_image/public/2020-01/WinterLabyrinth_hero.jpg?itok=onvZMz0O"
+    },
+    {
+      "title": "MARROW",
+      "url": "https://www.sandrineharris.com/marrow",
+      "description": "Her signature group process, held as a multi-day retreat at centres in the United States and abroad. Participants explore somatic awareness, unscripted movement, rest, journaling, embodied mark-making and different forms of meditation, often outdoors. No previous experience is needed.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "self-healing"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/621ec3cda619d11f32bfa4c3/d543c798-86e6-412f-9706-858b3def5104/Sandrine+Harris+-+Marrow+2024.png"
+    },
+    {
+      "title": "Group Experiences: Mindfulness, Meditative Movement and Kinesoma",
+      "url": "https://www.sandrineharris.com/group-experiences-embodiment-somatics-meditation",
+      "description": "Her regular classes and workshops, online and in person: trauma-sensitive mindfulness meditation, embodiment for daily life, seasonal walks and rituals in nature, and the Kinesoma movement class. Kinesoma starts gently on the floor and builds into moving around the room, with no dance background required.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/621ec3cda619d11f32bfa4c3/96b26ce9-64c0-4cb8-8c50-9f9a9c6adc64/Sandrine+Harrris+-+retreat+2018.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3243,
+    "restored_from": "docs/content-audits/retreat-hubs-sprint-1/skipped/sandrine-harris.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of her own found (her videos are on Vimeo); Instagram @emergentnature and Facebook not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sandrineharris.com/contact",
+    "contact_form_url": "https://www.sandrineharris.com/contact",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): listed only for her meditation retreats, MARROW and group meditation and movement classes. Her private sessions page and site menu are framed around trauma and chronic pain (Somatic Experiencing, Pain Reprocessing Therapy, medical qigong); those therapy and pain-treatment items are left out. Owner may judge her work as still mainly therapy.",
+      "Base: her own site gives Great Barrington, MA as the place she sees clients in person (home page) and says she lives in Massachusetts on Stockbridge Munsee Mohican land; Great Barrington used. Regional: western Massachusetts (Berkshires), a small town.",
+      "The Kripalu retreat is a hub programme she leads herself (Kripalu's own page names her as presenter).",
+      "Counts unreadable for her main accounts (Instagram, Facebook); tier 0 readable.",
+      "Contact page has both the published email and a contact form at the same URL.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check; images were checked with curl instead (all 200). The lead session should run it."
+    ],
+    "left_out": [
+      "Private sessions (Somatic Experiencing, Pain Reprocessing Therapy, Feldenkrais, medical qigong): therapy scope, page framed on trauma and chronic pain.",
+      "Transforming Chronic Pain classes (pain reprocessing): treatment of a condition (health rule).",
+      "Understanding & Healing Trauma programme with a clinical psychologist, and trauma education and consulting: therapy scope.",
+      "Death doula services: not a spiritual practice offering of the kind listed.",
+      "MARROW at Omega (16 to 21 Aug 2026) and at Kripalu (22 to 25 May 2026): dated, past; eomega.org never fetched.",
+      "MARROW and Kinesoma videos: hosted on Vimeo, not YouTube.",
+      "Training Programs page: not opened (scope unclear, URL framed on chronic pain)."
+    ]
+  },
+  "images_final": true
+}

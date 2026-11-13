@@ -1,0 +1,145 @@
+{
+  "healer": {
+    "healer_slug": "ancient-dragon-zen-gate",
+    "location_source": "https://www.ancientdragon.org/contact/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Ancient Dragon Zen Gate",
+      "bio": "Ancient Dragon Zen Gate is a Soto Zen temple in Chicago's Lincoln Square, practising in the lineage of Shunryu Suzuki and belonging to Branching Streams, the network of centres affiliated with San Francisco Zen Center. It began in 2003 as a small group meeting once a week. In 2007 the scholar, translator and Zen priest Taigen Dan Leighton moved from the Bay Area to guide it, and the group took on a dedicated temple space. Leighton led the sangha until 2024, when Rev. Hogetsu Laurie Belzer became its guiding Dharma teacher; he remains involved as teacher emeritus, alongside several authorised Dharma teachers and practice leaders.\n\nThe temple has a meditation hall, a kitchen, a community room with a library and a back garden, and most programmes are hybrid, with an online zendo on Zoom. A Sunday morning programme of zazen, walking meditation, a Dharma talk and discussion is the usual starting point for beginners, with further sittings through the week, free meditation instruction by appointment, and private meetings with teachers. Monthly retreats range from half a day to five days, and the centre keeps a large podcast library of recorded talks, a chant book and a glossary of Zen terms online.",
+      "availability": "local_online",
+      "city": "Chicago, Illinois",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.ancientdragon.org/",
+      "booking_url": "https://www.ancientdragon.org/schedule/daily/",
+      "youtube_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.ancientdragon.org/wp-content/uploads/2025/06/Manjushri-wide-6-2025-scaled.jpg",
+        "https://www.ancientdragon.org/wp-content/uploads/2026/08/zendo-rohatsu.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly meditation programmes (onsite, hybrid and online)",
+      "url": "https://www.ancientdragon.org/schedule/daily/",
+      "description": "Regular zazen through the week at the Lincoln Square zendo and in the online zendo, including a Sunday morning programme with walking meditation, a Dharma talk, discussion and tea, and a Monday evening sitting with service. No registration is needed for the weekly programmes.",
+      "price": "Free (donations invited)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/01/cropped-adzg-identity.png"
+    },
+    {
+      "title": "Five-Day Rohatsu Sesshin",
+      "url": "https://www.ancientdragon.org/calendar/five-day-rohatsu-sesshin/",
+      "description": "The temple's yearly retreat marking the Buddha's awakening, held in the zendo and online at the same time. Participants may join for one day or all five, with a Tuesday evening orientation and long days of sitting through to Sunday afternoon.",
+      "price": "$75/day. A self-determined sliding scale is available to all.",
+      "product_type": "retreat",
+      "start_date": "2026-12-01",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/01/cropped-adzg-identity.png"
+    },
+    {
+      "title": "Dokusan and Practice Discussion",
+      "url": "https://www.ancientdragon.org/dokusan/",
+      "description": "Private meetings to talk over questions and experiences in Zen practice: formal dokusan with the guiding teacher or the teacher emeritus, or a less formal practice discussion with one of the temple's senior practice leaders.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/01/cropped-adzg-identity.png"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Ancient Dragon Zen Gate Dharma Podcast Library",
+      "url": "https://www.ancientdragon.org/podcast-library/",
+      "description": "A searchable archive of Dharma talks given at the temple, many hundreds of MP3 recordings by its guiding teachers, Dharma teachers and guests, playable in the browser or downloadable.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/03/headers-support.jpg"
+    },
+    {
+      "title": "Online Video Dharma Talks",
+      "url": "https://www.ancientdragon.org/online-video-dharma-talks/",
+      "description": "Recorded talks from the temple's online zendo by Taigen Dan Leighton, Douglas Floyd and Eishin Nancy Easton, on zazen and resilience and on supporting one another in practice.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/01/cropped-adzg-identity.png"
+    },
+    {
+      "title": "Chants",
+      "url": "https://www.ancientdragon.org/chants/",
+      "description": "The sangha's chant texts online, including its chant book, the Heart Sutra in English and Japanese, the Metta Sutta and the Ecosattva Vows.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.ancientdragon.org/wp-content/uploads/2018/01/cropped-adzg-identity.png"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3333,
+    "tier_evidence": "No YouTube channel linked from ancientdragon.org (13 Nov 2026); Instagram and Facebook linked but never fetched → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.ancientdragon.org/contact/",
+    "bio_check": "OK: no 8-word runs against 14 source(s)",
+    "flags": [
+      "Email: the only addresses on the site are Cloudflare-protected (never decoded); the contact page has a form, used as the contact route. The SZBA list gives info@ancientdragon.org, not used.",
+      "Branching Streams: an independent temple affiliated with San Francisco Zen Center, not an SFZC branch (about page); kept under the batch note.",
+      "Possible editorial-stature override: founding teacher Taigen Dan Leighton is a well-known author and translator of Dogen. Tier not raised.",
+      "Teachers file empty: Hogetsu Laurie Belzer and Taigen Dan Leighton are not on Spiritpedia. Tenshin Reb Anderson (on Spiritpedia) is named only as the teacher Belzer trained with as shuso, not as teaching here; not linked. Possible future listings: Taigen Dan Leighton, Hogetsu Laurie Belzer.",
+      "Photos: the zendo altar with Manjushri (2025) and a sangha group in the zendo at Rohatsu (site images). The SZBA list misspells the website as ancientdrgon.org; the real domain came from a web search and its own about page.",
+      "Rohatsu registration form encourages vaccination per one's physician's advice; a neutral note, not a health claim.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Dated calendar items in November (LGBTQIA Dharma group, Huayan study group, meditation instruction 15/16 Nov, online 'decolonizing consciousness' meditation): weekly or near-term dated sessions; the 'decolonizing' series also left out under the political rule.",
+      "The Work That Reconnects workshop: guest-led workshop.",
+      "Taigen's seminars and offerings pages: his own teaching programme, not the temple's.",
+      "Videos: no YouTube channel linked from the site."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,40 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1471,
+    "healer_slug": "hokoji-phoenix-light-temple"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c50a1090-0a0e-49be-b273-d40d9e2f7746",
+      "slug": "thursday-evening-meditation-3",
+      "title": "Thursday Evening Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "0dc35166-9d05-47d5-816f-2f2efb64c86c",
+      "slug": "tuesday-morning-meditation",
+      "title": "Tuesday Morning Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "68d70ca0-f805-40f3-96f6-283dc0a3d3a7",
+      "slug": "half-day-meditation",
+      "title": "Half-Day Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "a765cf8b-eb60-4163-be0f-8fb6c06e1028",
+      "slug": "kobuns-way-of-formless-practice-online-group",
+      "title": "Kobun's Way of Formless Practice (Online Group)"
+    },
+    {
+      "table": "courses",
+      "id": "19c8d086-0159-46ef-b2cb-c709cb88c543",
+      "slug": "sesshin-at-hokoji",
+      "title": "Sesshin at Hokoji"
+    }
+  ],
+  "at": "2026-11-13T04:13:06.070Z"
+}

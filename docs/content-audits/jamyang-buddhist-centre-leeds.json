@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "jamyang-buddhist-centre-leeds",
+    "location_source": "https://jamyangleeds.co.uk/",
+    "create": {
+      "name": "Jamyang Buddhist Centre Leeds",
+      "bio": "Jamyang Buddhist Centre Leeds is a Tibetan Buddhist centre in Holbeck, Leeds, founded in 1996 and affiliated with the FPMT, the network begun by Lama Thubten Yeshe and Lama Zopa Rinpoche. Besides study and practice in the Mahayana tradition, it presents itself as a community wellbeing hub, with a vegetarian café, a shop with Dharma supplies and second-hand goods, a lending library and rooms that local groups can hire. In 2025 it welcomed its first resident teacher, Geshe Rinchen Wangyal, who trained at Drepung Losel Ling and the Institute of Buddhist Dialectics and later studied philosophy and religion at the University of Winchester.\n\nGeshe Rinchen now teaches three weekly classes online: a drop-in Saturday morning session on core Buddhist ideas for newcomers, a Tuesday class on Madhyamaka texts for more experienced students, and the three-year Discovering Buddhism course on Thursdays. In the centre itself volunteers lead lunchtime meditations, pujas and secular wellbeing sessions, and Jamyang Leeds also hosts FPMT's In-Depth Meditation Training. A single monthly membership covers almost all of its classes, meditations and workshops.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Leeds",
+      "country": "United Kingdom",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://jamyangleeds.co.uk/",
+      "booking_url": "https://jamyangleeds.co.uk/whats-on",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "smile@jamyangleeds.co.uk",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/5207c29c-111d-4414-82b2-1a071b3fb9cd/Screenshot+2025-03-25+at+18.34.02.png",
+        "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/15b786e0-31b5-4487-9e58-ba898459b3ac/Screenshot+2025-03-25+at+18.27.48.png"
+      ],
+      "founded_year": 1996
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Saturday Mornings with Geshe Rinchen",
+      "url": "https://jamyangleeds.co.uk/saturday-mornings-with-geshe-rinchen",
+      "description": "A weekly online drop-in class with the resident geshe, each week on a different basic Buddhist theme and how it applies to daily life, with time for questions. Aimed at beginners and those refreshing their understanding.",
+      "price": "Included in membership (£35 a month)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/53dafb39-2635-4a30-a977-76e1e6b3d4f6/Saturday+Mornings+with+Geshe+Rinchen++%281%29.jpg"
+    },
+    {
+      "title": "Buddhism for Intermediate Students",
+      "url": "https://jamyangleeds.co.uk/buddhism-intermediate",
+      "description": "A Tuesday evening online class with Geshe Rinchen for students with some grounding, currently reading Tsongkhapa's commentary on the Middle Way and the philosophy of emptiness.",
+      "price": "Included in membership (£35 a month)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/8ae058d6-7963-4ebe-8d72-e603a221b2ec/Buddhism+for+Intermediate++Students+with+Geshe+Rinchen+%284%29.jpg"
+    },
+    {
+      "title": "Discovering Buddhism",
+      "url": "https://jamyangleeds.co.uk/discovering-buddhism",
+      "description": "FPMT's three-year, fourteen-module course on the graduated path, taught online on Thursday evenings by Geshe Rinchen. Students can join at any point.",
+      "price": "Included in membership (£35 a month)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/4515ad8a-3c16-413f-8e6d-f88b30ad8c8d/Discovering+Buddhism+2026+-+2029+%282%29.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://jamyangleeds.co.uk/become-a-member",
+      "description": "One monthly fee gives access to nearly the whole weekly programme, including weekend workshops; retreats, visiting teachers and the In-Depth Meditation Training are paid separately.",
+      "price": "£35 a month",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/67dfc62b7abfd831a9c9e4b2/455b5caa-c186-44dd-8105-3fd6512ae522/Screenshot+2025-04-15+at+15.40.13.png"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3325,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked; Facebook/Instagram not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://jamyangleeds.co.uk/contact",
+    "contact_form_url": "https://jamyangleeds.co.uk/contact",
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "smile@jamyangleeds.co.uk is the centre's general inbox (brand inbox).",
+      "Lead's site www.jamyangleeds.co.uk redirects to jamyangleeds.co.uk (robots read for both).",
+      "The centre markets itself strongly as a 'wellbeing hub' (therapy room, room hire, wellbeing outreach); its Buddhist programme is still its core, so kept. Health rule: only teaching items listed.",
+      "Class prices: membership page says £35 a month covers classes; per-class donations for non-members not read.",
+      "Geshe Rinchen now lives at his monastery in India and teaches online (from Sept 2026), so the three classes are online.",
+      "Photos are site images of the hall (Geshe teaching; a group session); the site's other images are a treatment room and café.",
+      "Possible duplicate confusion: Jamyang Buddhist Centre London (jamyang.co.uk) is a separate FPMT centre.",
+      "Teachers file empty: Geshe Rinchen Wangyal and Ven. Losang Gendun are not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "FPMT In-Depth Meditation Training (Ven. Losang Gendun, joint programme of 12 centres, £45): not the centre's own teacher.",
+      "Wellbeing outreach, therapy room, café, room and hall hire: not teaching.",
+      "Lunchtime meditations and Vipassana sessions: no own page (calendar only)."
+    ]
+  },
+  "images_final": true
+}

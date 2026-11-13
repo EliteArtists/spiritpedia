@@ -1,0 +1,155 @@
+{
+  "healer": {
+    "healer_slug": "pamtingpa-center",
+    "location_source": "https://tonasketbuddhist.org/",
+    "create": {
+      "name": "Pamtingpa Center",
+      "bio": "Pamtingpa Center is a small Tibetan Buddhist centre of the FPMT on rural land outside Tonasket, in north-central Washington State. Su Ianniello started it as a study group in 2003, and with a handful of fellow students it became a registered non-profit and FPMT affiliate in 2009. Lama Zopa Rinpoche consecrated the land in 2010, Yangsi Rinpoche chose the site for its Enlightenment Stupa, finished in 2013, and a meditation hall followed in 2018 and a community room in 2024. Its early teachers included Venerable Yarphel, who led lam-rim study.\n\nToday the centre's regular teacher is Venerable Tenzin Denison, whose Wednesday evening series works through the graduated path with a short teaching followed by guided meditation on the theme, open to newcomers and long-time practitioners, in the hall and on Zoom. Sunday mornings are given to Chenrezig practice and mantra recitation, and a book group meets online. All classes are free, supported by donations, and recordings of past series are posted on its website and YouTube channel.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Tonasket, Washington",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://tonasketbuddhist.org/",
+      "booking_url": "https://tonasketbuddhist.org/classes/ongoing/",
+      "youtube_url": "https://www.youtube.com/@pamtingpacenter8490",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "pamtingpa@gmail.com",
+      "image_urls": [
+        "https://tonasketbuddhist.org/wp-content/uploads/2024/10/stupa-with-clouds.jpg",
+        "https://tonasketbuddhist.org/wp-content/uploads/2024/12/IMG_6349.jpg"
+      ],
+      "founded_year": 2003
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Practicing the Path Part 1",
+      "url": "https://www.youtube.com/watch?v=0xTV-KcfQPc",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Pamtingpa Center"
+    },
+    {
+      "title": "Precious Human Rebirth",
+      "url": "https://www.youtube.com/watch?v=_I6SRV5OCV0",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Pamtingpa Center"
+    },
+    {
+      "title": "Inspiring Lam Rim Talk",
+      "url": "https://www.youtube.com/watch?v=rK1K_FWJRbE",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Pamtingpa Center"
+    },
+    {
+      "title": "Practicing the Path - Karma",
+      "url": "https://www.youtube.com/watch?v=BgI3qDXSOKU",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Pamtingpa Center"
+    },
+    {
+      "title": "Venerable Tenzin's Talk on \"Practicing the Path Part 3",
+      "url": "https://www.youtube.com/watch?v=jc7wawHCSfQ",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Pamtingpa Center"
+    },
+    {
+      "title": "Practicing the Path Part 2",
+      "url": "https://www.youtube.com/watch?v=pJxPqA9goFw",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Pamtingpa Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Weekly Wednesday Evening Classes with Venerable Tenzin Denison",
+      "url": "https://tonasketbuddhist.org/classes/ongoing/",
+      "description": "A weekly class on practising the graduated path to enlightenment: Venerable Tenzin gives a teaching and then leads a meditation on the same topic. Suitable for newcomers and experienced Buddhists, in person or on Zoom.",
+      "price": "Free (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://tonasketbuddhist.org/wp-content/uploads/2025/08/WhatsApp-Image-2025-08-05-at-11.49.31_9deb5fc6.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "2026 Recordings",
+      "url": "https://tonasketbuddhist.org/2026-2/",
+      "description": "Audio recordings of this year's teaching series at the centre, including a run of talks on deepening a caring heart.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://tonasketbuddhist.org/wp-content/uploads/2024/10/stupa-with-clouds.jpg"
+    },
+    {
+      "title": "Approaching the Buddhist Path with Venerable Tenzin",
+      "url": "https://tonasketbuddhist.org/approaching-the-buddhist-path-series-ven-tenzin/",
+      "description": "Recordings of a guided reading, led by Venerable Tenzin, of the first volume of The Library of Wisdom and Compassion by the Dalai Lama and Thubten Chodron.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://tonasketbuddhist.org/wp-content/uploads/2024/10/stupa-with-clouds.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3324,
+    "hub": null,
+    "tier_evidence": "YouTube 17 subscribers (YouTube Data API, 13 Nov 2026); Facebook not fetched → ~0k → local_hero",
+    "email": "yes",
+    "email_source": "https://tonasketbuddhist.org/",
+    "contact_form_url": "https://tonasketbuddhist.org/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "pamtingpa@gmail.com is the centre's general inbox (brand inbox), shown on its pages.",
+      "Regional: Tonasket, Washington (small rural town in Okanogan County).",
+      "Wednesday class series began 16 Sept 2026 but is a repeating weekly drop-in class, so listed undated.",
+      "The site still says it follows 'the spiritual direction of Lama Zopa Rinpoche'; the bio refers to him only in the past (consecration of the land in 2010).",
+      "Teachers file empty: Venerable Tenzin Denison is not on Spiritpedia; Yangsi Rinpoche is on its teachers page as a lineage teacher, not on Spiritpedia either.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Chenrezig Practice (Global Mani Retreat): Sundays through 1 November only, now over.",
+      "Book club (Pema Chödrön's books): October dates passed.",
+      "Mandala Offering with Venerable Tharchin, Exploring Impermanence with Venerable Yangchen, Venerable Rene day retreat: past guest events."
+    ]
+  },
+  "images_final": true
+}

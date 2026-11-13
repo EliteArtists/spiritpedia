@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1551,
+    "healer_slug": "bright-way-zen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "000f6d1d-3c32-4b88-a08d-bd47bec2101e",
+      "slug": "tuesday-evening-zazen-and-study",
+      "title": "Tuesday Evening Zazen and Study"
+    },
+    {
+      "table": "courses",
+      "id": "fda9d7f3-0088-427f-a2a9-79277fa1f889",
+      "slug": "one-day-retreat-with-mondo",
+      "title": "One Day Retreat with Mondo"
+    },
+    {
+      "table": "courses",
+      "id": "6347172e-00e0-49b1-8455-2267214380aa",
+      "slug": "sesshin-5",
+      "title": "Sesshin"
+    },
+    {
+      "table": "free_resources",
+      "id": "f9c3fe91-e65f-40a7-8425-d4de5979ba0a",
+      "slug": "recordings-of-bright-way-zen-talks",
+      "title": "Recordings of Bright Way Zen Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "91e0c7ae-27fc-4baa-9042-8b6796ef040c",
+      "slug": "start-a-zazen-practice",
+      "title": "Start a Zazen Practice"
+    }
+  ],
+  "at": "2026-11-13T03:44:46.316Z"
+}

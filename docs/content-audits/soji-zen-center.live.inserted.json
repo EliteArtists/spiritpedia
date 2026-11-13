@@ -1,0 +1,28 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1533,
+    "healer_slug": "soji-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "494619e2-3f2a-4a93-9b6d-f0075509b988",
+      "slug": "one-day-retreat-zazenkai",
+      "title": "One-Day Retreat (Zazenkai)"
+    },
+    {
+      "table": "free_resources",
+      "id": "d495022a-9402-44bd-973a-c7f88267db74",
+      "slug": "virtual-zendo",
+      "title": "Virtual Zendo"
+    },
+    {
+      "table": "free_resources",
+      "id": "40cec6a1-5e0c-42d9-838e-27b80fcc2dd3",
+      "slug": "dharma-talks-by-shuzen-roshi",
+      "title": "Dharma Talks by Shuzen Roshi"
+    }
+  ],
+  "at": "2026-11-13T04:27:23.341Z"
+}

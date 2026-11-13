@@ -1,0 +1,195 @@
+{
+  "healer": {
+    "healer_slug": "vicky-carter",
+    "location_source": "https://www.vickycarter.co.uk/contact/",
+    "create": {
+      "name": "Vicky Carter",
+      "bio": "Vicky Carter is a Reiki Master Teacher in Harborne, Birmingham, who has worked with people one to one since the late 1990s. She was already practising as a counsellor when she received her first Reiki attunement in 2003, an experience she describes as opening a gentler, more spiritual side of her work, and she went on through each degree to become a Reiki Master Teacher in 2007. She teaches in the Usui Shiki Ryoho system and holds the Reiki principles as a daily discipline as well as a method of hands-on healing.\n\nFrom her room in Harborne she gives Reiki sessions in person and sends distance Reiki by arrangement, and she trains students through First, Second and Third Degree to Master Teacher level in small weekend groups of about six. Her calendar also includes a monthly evening of yoga nidra, full-day yoga nidra and chakra workshops, and day retreats on sensing subtle energy and on slowing down, most with an organic lunch. Her background in counselling, including years in schools, a hospice and a secure hospital, shapes the calm, unhurried way she holds a group, though her therapy services are not part of this listing.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Birmingham",
+      "country": "United Kingdom",
+      "subjects": [
+        "reiki",
+        "energy-medicine",
+        "meditation"
+      ],
+      "website_url": "https://www.vickycarter.co.uk/",
+      "booking_url": "https://www.vickycarter.co.uk/reiki-workshops/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "vicky@vickycarter.co.uk",
+      "image_urls": [
+        "https://www.vickycarter.co.uk/wp-content/uploads/2026/05/Vicky-Carter-1.jpg",
+        "https://www.vickycarter.co.uk/wp-content/uploads/2026/05/Vicky-Carter-2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "First Degree Reiki",
+      "url": "https://www.vickycarter.co.uk/product/reiki-first-degree-begin-your-journey-into-reiki-healing/",
+      "description": "A two-day weekend introduction to Usui Reiki for up to six people, with attunements, hands-on practice in giving and receiving, and time for meditation and reflection. No previous experience is needed; several weekends a year.",
+      "price": "£185.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Second Degree Reiki",
+      "url": "https://www.vickycarter.co.uk/product/reiki-second-degree-deepening-your-reiki-practice/",
+      "description": "Two days on the Reiki symbols, distant healing and working with the chakras, leading to practitioner level. Open to students at least six months after their First Degree.",
+      "price": "£295.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "chakra-healing"
+      ]
+    },
+    {
+      "title": "Third Degree Reiki – Reiki Master",
+      "url": "https://www.vickycarter.co.uk/product/reiki-third-degree-reiki-master/",
+      "description": "The Master attunement over one weekend in a group of six, with heart-centred meditations, shared practice and teaching on offering Reiki at times of grief and at the end of life. Requires First and Second Degree, with six months since the second.",
+      "price": "£385.00",
+      "product_type": "course",
+      "start_date": "2027-05-22",
+      "end_date": "2027-05-23",
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Reiki Master Teacher Training",
+      "url": "https://www.vickycarter.co.uk/product/reiki-master-teacher-training/",
+      "description": "Individual mentoring for Reiki Masters who want to teach and attune others, shaped around each student's pace. Dates and fees are agreed after an initial conversation.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki"
+      ]
+    },
+    {
+      "title": "Reiki Energy Healing sessions",
+      "url": "https://www.vickycarter.co.uk/reiki/",
+      "description": "Hands-on Usui Reiki in her quiet treatment room in Harborne, aimed at deep rest, balance and a clearer mind. Sessions run for 75 or 90 minutes.",
+      "price": "£70 (75 minutes); £85 (90 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Distance Reiki Healing",
+      "url": "https://www.vickycarter.co.uk/distance-reiki-healing/",
+      "description": "Reiki sent at an agreed time to you or to someone you name, wherever they are, with the choice of staying on a video call or resting privately. A short conversation afterwards is offered.",
+      "price": "£65 (60 minutes)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "reiki",
+        "energy-medicine"
+      ]
+    },
+    {
+      "title": "Monthly Yoga Nidra – Deep Rest & Relaxation",
+      "url": "https://www.vickycarter.co.uk/product/monthly-yoga-nidra-deep-rest-relaxation/",
+      "description": "An hour of guided yoga nidra in a small group on the first Wednesday evening of each month. You lie down and are led into deep, aware rest; no yoga experience is needed.",
+      "price": "£15.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Yoga Nidra Workshop",
+      "url": "https://www.vickycarter.co.uk/product/a-day-of-deep-rest-yoga-nidra-workshop/",
+      "description": "A full Saturday for six people given over to yoga nidra, breath work, visualisation and setting an intention. Held on several dates through the year.",
+      "price": "£85.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Chakra Cleansing & Energy Flow Workshop",
+      "url": "https://www.vickycarter.co.uk/product/chakra-cleansing-energy-flow-workshop/",
+      "description": "A day exploring the seven main chakras through meditation and energy practices, with a light organic lunch, for up to eight people. Runs on more than one Saturday a year.",
+      "price": "£125.00",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "chakra-healing",
+        "energy-medicine",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Awakening Your Inner Awareness",
+      "url": "https://www.vickycarter.co.uk/product/awakening-your-inner-awareness-developing-sensitivity-to-energy/",
+      "description": "An experiential day retreat on noticing subtle energy, trusting intuition, and grounding and protecting your own energy, opening with a grounding meditation. Eight places, vegetarian organic lunch included.",
+      "price": "£125.00",
+      "product_type": "retreat",
+      "start_date": "2027-11-27",
+      "end_date": "2027-11-27",
+      "subjects": [
+        "energy-medicine",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3209,
+    "restored_from": "docs/content-audits/uk-europe-sprint-2/skipped/vicky-carter.json",
+    "hub": null,
+    "tier_evidence": "No social or video account links found in her site's pages (home page checked for Facebook, Instagram, YouTube, TikTok, X and LinkedIn links); no counts readable -> 0 -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.vickycarter.co.uk/contact/",
+    "contact_form_url": "https://www.vickycarter.co.uk/contact/",
+    "bio_check": "OK: no 8-word runs against 18 source(s)",
+    "flags": [
+      "Health restore: the old skip (uk-europe-sprint-2) judged her practice mainly therapy. Under the new rule she is listed for her Reiki teaching and sessions, yoga nidra and energy workshops only; counselling, hypnotherapy, life coaching, burnout support, massage, lymphatic drainage and facials are left out.",
+      "Base: her site gives Harborne, Birmingham (a district of Birmingham); recorded as Birmingham.",
+      "Her Reiki pages list relief from anxiety and low mood and release of pain among clients' experiences; kept as wellbeing wording under the 12 Nov rule. The Distance Reiki page mentions illness and recovery as times Reiki can feel supportive, without a claim to treat them; kept.",
+      "No videos, books or free resources found; the listing rests on her own offerings (10).",
+      "Two photos from her own site, same person (1000 px and 800 px, looked at).",
+      "No YouTube or other social account could be confirmed from her site; tier evidence is 0."
+    ],
+    "left_out": [
+      "Counselling, hypnotherapy, life coaching, burnout support programme and somatic therapy: clinical or therapy services.",
+      "Holistic, therapeutic and pregnancy massage, manual lymphatic drainage, facials: bodywork, not spiritual practice.",
+      "Rest, Restore, Reconnect day retreat (7 Aug 2027, £195.00): built around a self-regulation workshop and therapeutic massage; left out to keep the listing to its practice items and within 10 offerings.",
+      "The Art of Slowing Down – A Cosy November Retreat (13 Nov 2026): starts within the sprint's margin.",
+      "Advanced Empathy, Self-Care and Vision Board workshops: personal-development workshops, not opened.",
+      "Reiki and counselling combined sessions: include counselling."
+    ],
+    "held": "Photos (vickycarter.co.uk) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), which counts as a refusal. Owner to supply a photo or retry another day."
+  }
+}

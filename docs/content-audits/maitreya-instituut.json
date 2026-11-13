@@ -1,0 +1,135 @@
+{
+  "healer": {
+    "healer_slug": "maitreya-instituut",
+    "location_source": "https://www.maitreya.nl/nl/maitreya-loenen",
+    "create": {
+      "name": "Maitreya Instituut",
+      "bio": "The Maitreya Instituut is a Tibetan Buddhist study and retreat centre in the Gelug tradition, part of the FPMT network, with its main house at Loenen in the Netherlands and a city branch in Amsterdam. It grew out of courses organised by Paula de Wijs and Jan-Paul and Margot Kool after they met Lama Thubten Yeshe in Asia, and became a foundation in December 1979. After moves from Bruchem to Maasbommel and then Emst, it settled at Loenen, while the Amsterdam centre on the Brouwersgracht opened in 1998. Since 1992 its resident teacher has been Geshe Sonam Gyaltsen, a monk-scholar from Ganden Monastery, and the Dutch monk Ven. Losang Gendun teaches in Amsterdam.\n\nThe institute offers a graded path of study: short introductions such as Buddhism in a Nutshell and Learning to Meditate, FPMT's fourteen-module Discovering Buddhism and the multi-year Basic Program, both with certificates. Around these run guided meditations, pujas, creative workshops such as thangka drawing, open days in Amsterdam, a monthly drop-in evening in Loenen, and retreats lasting from a weekend to several weeks. Most teaching is in Dutch, with some programmes in English, and regular donors help keep it going.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Loenen",
+      "country": "Netherlands",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.maitreya.nl/nl",
+      "booking_url": "https://www.maitreya.nl/nl/programma",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "loenen@maitreya.nl",
+      "image_urls": [
+        "https://www.maitreya.nl/public/data/image/extrafields/1530a74fa56ac61c4c0143c57eb2556d5ba3a231-maniewiel-tuin-loenen-2019-2.jpg"
+      ],
+      "founded_year": 1979
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mahāmudrā: practicing being a buddha",
+      "url": "https://www.maitreya.nl/nl/programma/mah%C4%81mudr%C4%81-practicing-being-a-buddha",
+      "description": "A week-long, largely silent retreat at Loenen with Ven. Losang Gendun on recognising the nature of mind, opening each morning with the Ganden Lha Gyema prayer. Meant for practitioners already familiar with the lam-rim and with some stability in meditation.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-30",
+      "end_date": "2026-12-06",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.maitreya.nl/public/files/images/Actief%20op%20website/Maitreya%20Instituut/Loenen/signal-2026-10-24-19-20-05-26poster%20Practicing%20being%20a%20buddha.jpg"
+    },
+    {
+      "title": "Startersprogramma",
+      "url": "https://www.maitreya.nl/nl/beginners-starters-programma",
+      "description": "Ways in for newcomers: open days in Amsterdam, a drop-in introduction evening in Loenen on the first Wednesday of each month, and short courses on Buddhism and learning to meditate, alongside guided meditations.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://www.maitreya.nl/public/data/image/extrafields/1530a74fa56ac61c4c0143c57eb2556d5ba3a231-maniewiel-tuin-loenen-2019-2.jpg"
+    },
+    {
+      "title": "Studieprogramma's",
+      "url": "https://www.maitreya.nl/nl/studieprogramma-s",
+      "description": "The institute's FPMT study path in Amsterdam and Loenen, from introductory courses through the fourteen-module Discovering Buddhism to the multi-year Basic Program, with discussion and meditation built into each course and a certificate for those who complete the longer programmes.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://www.maitreya.nl/public/data/image/extrafields/1530a74fa56ac61c4c0143c57eb2556d5ba3a231-maniewiel-tuin-loenen-2019-2.jpg"
+    },
+    {
+      "title": "Vaste donateur worden",
+      "url": "https://www.maitreya.nl/nl/lidmaatschappen",
+      "description": "Regular supporter scheme with three levels by yearly or monthly gift, helping fund teachers, translators, study materials and the two centres.",
+      "price": "Vriend: € 60,00 tot € 150,00 per jaar; Dharmabeschermer: € 150,00 tot € 330,00 per jaar; Djindak: € 330,00 per jaar of meer",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://www.maitreya.nl/public/data/image/extrafields/1530a74fa56ac61c4c0143c57eb2556d5ba3a231-maniewiel-tuin-loenen-2019-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Mini-cursus boeddhisme in 20 pagina's",
+      "url": "https://www.maitreya.nl/nl/mini-cursus-boeddhisme-in-20-paginas",
+      "description": "A free short course on the institute's website: twenty linked pages in Dutch on core Buddhist themes, from the four noble truths and karma to rebirth, compassion and emptiness.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.maitreya.nl/public/data/image/extrafields/1530a74fa56ac61c4c0143c57eb2556d5ba3a231-maniewiel-tuin-loenen-2019-2.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3328,
+    "hub": null,
+    "tier_evidence": "No YouTube channel linked on the pages read; Facebook/Instagram/X not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.maitreya.nl/nl",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 15 source(s)",
+    "flags": [
+      "One listing for the institute (Loenen main house plus Amsterdam branch), per the lead note; base is Loenen. amsterdam@maitreya.nl is the Amsterdam branch inbox.",
+      "loenen@maitreya.nl is a branch inbox (brand inbox), shown in the site footer.",
+      "Loenen is a village (Apeldoorn municipality, Gelderland): recorded as published; may need mapping. Regional: Veluwe.",
+      "Possible editorial-stature override: one of the oldest FPMT centres in Europe (1979).",
+      "Site is mainly Dutch; item titles kept in Dutch where the page is Dutch; prices for courses not read (Contact for pricing).",
+      "Only one usable photo (prayer-wheel garden at Loenen); the other images are event flyers or generic.",
+      "Possible confusion with Fondazione Maitreya (Italy), already on Spiritpedia: a different organisation.",
+      "Teachers file empty: Geshe Sonam Gyaltsen and Ven. Losang Gendun are not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "City weekend with Ven. Gendun (14-15 Nov, Amsterdam): not after 14 Nov.",
+      "H.E. Jhado Rinpoche – 37 Practices of Bodhisattvas & Amitāyus: guest teacher.",
+      "Thangka drawing workshop (29 Nov): creative workshop, page not opened.",
+      "Conferentiecentrum Bosoord: venue hire."
+    ]
+  },
+  "images_final": true
+}

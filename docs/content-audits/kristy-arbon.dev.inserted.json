@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1512,
+    "healer_slug": "kristy-arbon"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11301,
+      "slug": "somatic-self-compassion-practice-cycle-week-1-what-is-somatic-self-compassion",
+      "title": "Somatic Self-Compassion Practice Cycle Week 1: What is Somatic Self-Compassion?"
+    },
+    {
+      "table": "videos",
+      "id": 11302,
+      "slug": "mindful-self-compassion-with-kristy-arbon",
+      "title": "Mindful Self Compassion with Kristy Arbon"
+    },
+    {
+      "table": "courses",
+      "id": "e278deb5-c9b5-4af3-8e93-4b718bad6583",
+      "slug": "somatic-self-compassion-weekly-practice-cycle",
+      "title": "Somatic Self-Compassion Weekly Practice Cycle"
+    },
+    {
+      "table": "courses",
+      "id": "c2a020d2-472b-4b52-85ce-1f29fa03a5c3",
+      "slug": "somatic-self-compassion-teaching-and-learning-course-embodied-trauma-informed-contemplative-teaching",
+      "title": "Somatic Self-Compassion Teaching and Learning Course: Embodied Trauma-Informed Contemplative Teaching"
+    },
+    {
+      "table": "free_resources",
+      "id": "10eac7d7-0196-428f-bd62-b2fd8361e5f4",
+      "slug": "mindful-self-compassion-meditations",
+      "title": "Mindful Self-Compassion Meditations"
+    },
+    {
+      "table": "free_resources",
+      "id": "e5a503b3-1f0b-4bb3-8b5d-abdcfbf3409f",
+      "slug": "meditations-to-cultivate-awareness",
+      "title": "Meditations to Cultivate Awareness"
+    }
+  ],
+  "at": "2026-11-13T00:10:31.860Z"
+}

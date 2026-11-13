@@ -1,0 +1,167 @@
+{
+  "healer": {
+    "healer_slug": "santa-cruz-zen-center",
+    "location_source": "https://sczc.org/contact",
+    "create": {
+      "name": "Santa Cruz Zen Center / Jorinzan Gyokuon-ji",
+      "bio": "Santa Cruz Zen Center, whose temple name Jorinzan Gyokuon-ji is rendered as Warm Jewel Temple, is a Soto Zen sangha in the Shunryu Suzuki line, set in a group of houses on Mission Hill a short walk from downtown Santa Cruz, California. It began in 1970, when Kobun Chino Otogawa, then assisting Suzuki at Tassajara, started leading sitting and talks for a local group in a rented church hall. Members later turned a School Street living room into a zendo, incorporated as a nonprofit and held their first seven-day sesshin in 1976. Katherine Thanas was its first abbot; Rev. Patrick Teverbaugh is now practice leader, with Gene Bush and Cathy Toldi as emeritus leaders.\n\nThe temple keeps a daily zazen schedule with a dharma talk on Wednesday evenings, a monthly Introduction to Zen class, and retreats of one to seven days, among them the December Rohatsu sesshin. Weekly and monthly groups read Suzuki, Dogen and the Lotus Sutra, several with a Zoom option, and a full-moon ceremony each month renews the bodhisattva precepts. Anyone can ask for a private meeting with a teacher, and recent talks are shared as a podcast.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Santa Cruz, California",
+      "country": "United States",
+      "founded_year": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://sczc.org/",
+      "booking_url": "https://sczc.org/sit",
+      "youtube_url": "https://www.youtube.com/@santacruzzencenter8308",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "contact@sczc.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5bea117ea9e02864942e883e/1550720874430-O2DDCWNSFM55SELYNXYD/016.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5bea117ea9e02864942e883e/1554926420516-4VLEH7I443HX6RYHRS2C/0-5.jpg",
+        "https://images.squarespace-cdn.com/content/v1/5bea117ea9e02864942e883e/1552791796185-I3BJKI8K2ONVXC7ZJ1GH/994A3574.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Oryoki at Santa Cruz Zen Center",
+      "url": "https://www.youtube.com/watch?v=yFZfa7GtRYM",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Santa Cruz Zen Center"
+    },
+    {
+      "title": "2022 01 12 Eugene Bush Traces of Sangha Santa Cruz Zen Center",
+      "url": "https://www.youtube.com/watch?v=LWApgRiCkNY",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Santa Cruz Zen Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://sczc.org/combined-events-list/2023/11/16/rohatsu-w9w8w-3l6ck",
+      "description": "Seven days of sitting together to mark the Buddha's awakening, with a daily dharma talk, a work period and formal oryoki meals, closing with an enlightenment ceremony on the last evening. Participants are asked to come for at least two days in a row where they can.",
+      "price": "Suggested donation $35 daily for Sustaining Members, $40 daily for all others",
+      "product_type": "retreat",
+      "start_date": "2026-12-03",
+      "end_date": "2026-12-09",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/5c6f10a1fa0d6026f10ffcc9/6af11a93f70b335d95f4362d/1794189504827/rohatsu+sesshin.jpg?format=1500w"
+    },
+    {
+      "title": "Ongoing Classes and Study Groups",
+      "url": "https://sczc.org/ongoing-classes-groups",
+      "description": "Drop-in groups that meet weekly or monthly: a Monday morning dharma study with Rev. Patrick Teverbaugh reading Shunryu Suzuki, a Lotus Sutra reading circle, a group on practising with ageing, and a Zen and art gathering. Several can be joined in the Sangha House or on Zoom.",
+      "price": "Suggested donation $10 for sustaining members (>$50/mo) and $13 for contributing members and others",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/t/643f2e423124ed5ae538c0b2/1770350555227/trust+in+mind.png?format=1500w"
+    },
+    {
+      "title": "Practice Discussion (Dokusan)",
+      "url": "https://sczc.org/dokusan",
+      "description": "One-to-one meetings with any of the centre's teachers or practice leaders to talk over one's sitting and daily life, arranged by appointment in person, by phone or by video call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/t/6771d7670009f906c4b7d709/1770350555227/emptyzendo.jpg?format=1500w"
+    },
+    {
+      "title": "Membership",
+      "url": "https://sczc.org/threewheels",
+      "description": "Regular monthly, quarterly or yearly giving that sustains the temple. Members can vote for the board, use the library and the sangha support network, and sustaining members pay reduced fees for classes and sesshin.",
+      "price": "Contributing member: $49 or less monthly; sustaining member: $50 or more monthly",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/t/6771d7670009f906c4b7d709/1770350555227/emptyzendo.jpg?format=1500w"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Santa Cruz Zen Center Dharma Talks Podcast",
+      "url": "https://sczc.org/podcast",
+      "description": "Recordings of Wednesday evening and sesshin talks by Patrick Teverbaugh and other teachers and practice leaders, on Dogen, the Heart Sutra, koans, poetry and everyday practice.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/t/6379858c8035e220caee289d/1772699231696/Dharma+Talks.png?format=1500w"
+    },
+    {
+      "title": "Zazen at Santa Cruz Zen Center",
+      "url": "https://sczc.org/sit",
+      "description": "A short guide to the temple's style of just sitting: posture, breath, hand position and the attitude of shikantaza, with notes on walking meditation, sesshin and the monthly beginners' class.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5bea117ea9e02864942e883e/t/6771d7670009f906c4b7d709/1770350555227/emptyzendo.jpg?format=1500w"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3392,
+    "tier_evidence": "YouTube @santacruzzencenter8308 58 subscribers (YouTube Data API, 13 Nov 2026); no other accounts read → 58 → local_hero",
+    "email": "yes",
+    "email_source": "https://sczc.org/contact",
+    "contact_form_url": "https://sczc.org/contact",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Email contact@sczc.org is a general centre inbox (mailto on the contact and about pages).",
+      "Name kept as on the SZBA list; slug santa-cruz-zen-center.",
+      "Affiliation: Suzuki Roshi lineage via Kobun Chino and Katherine Thanas; an independent nonprofit, not a San Francisco Zen Center branch.",
+      "YouTube channel found from a video embedded on sczc.org/aboutus (Data API); small and mostly short clips, only two kept.",
+      "Photos are on images.squarespace-cdn.com (robots.txt 404) and are served as WebP: the zendo with one sitter, the zendo with a group sitting, and the ancestor tablets on the altar.",
+      "Founded year left null: the group began in 1970 and incorporated soon after, but no single founding year is stated.",
+      "Teachers file empty: Patrick Teverbaugh, Gene Bush, Cathy Toldi and Katherine Thanas are not on Spiritpedia.",
+      "Availability local_online: in-person temple; several groups and talks have a Zoom option."
+    ],
+    "left_out": [
+      "Videos: altar clip (1:40) under two minutes; densho, han and Heart Sutra chant clips are sound or liturgy rather than teaching; directions video.",
+      "Hungry Ghosts United recovery group and Awakening Together inclusivity series: the recovery group is not the centre's own teaching; the series URL is a long repeating-event link.",
+      "Earth Care Group and Dayenu Interfaith Climate Action Circle: activism-centred, left out under the political rule.",
+      "Half Day Sit (21 Nov), Dogen class and Koan Group: event links repeat or share generic URLs; kept to the core programme.",
+      "Podcast talk on immigration and trans rights: not listed separately (podcast listed as a whole)."
+    ]
+  },
+  "images_final": true
+}

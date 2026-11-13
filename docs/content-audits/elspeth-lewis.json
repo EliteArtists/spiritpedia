@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "elspeth-lewis",
+    "location_source": "https://pausetobe.co.uk/about/",
+    "create": {
+      "name": "Elspeth Lewis",
+      "bio": "Elspeth Lewis is a mindfulness coach and sound bath practitioner in Edinburgh who works with adults, teenagers, groups and workplaces, in person and online, under the name Pause to Be. She trained as a mindfulness teacher in 2019 with Shamash Alidina, then added Acceptance and Commitment Training, including its adolescent form with Russ Harris and the DNA-v youth model with Louise Hayes and Joseph Ciarrochi. In 2023 she qualified with the Sound Healing Academy to hold group sound baths, and she keeps a daily formal practice of her own alongside regular retreats.\n\nHer coaching teaches simple, practical skills: mindful breathing, the body scan, gentle mindful movement, and ways of meeting difficult thoughts and feelings with acceptance rather than struggle, so that people can find more calm and clarity and act on what matters to them. She leads evening and weekend sound baths in Corstorphine and Swanston that open with breathing and a short meditation. Her book Smooth Sailing with Your Teen brings mindful parenting to the years of adolescence, and she contributed chapters to two community collections by mindfulness teachers. She has also designed a deck of values cards for mindful goal-setting.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Edinburgh",
+      "country": "United Kingdom",
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "sound-healing"
+      ],
+      "website_url": "https://pausetobe.co.uk/",
+      "booking_url": "https://pausetobe.co.uk/mindfulness-coaching/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "elspeth@pausetobe.co.uk",
+      "image_urls": [
+        "https://pausetobe.co.uk/wp-content/uploads/2023/04/Elspeth-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Mindful Parenting for Teens - Tips from Author",
+      "url": "https://www.youtube.com/watch?v=u1QdHI-1Y4w",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "channel": "Mindfulness | Shamash Alidina"
+    }
+  ],
+  "books": [
+    {
+      "title": "Smooth Sailing with Your Teen: Mindful Parenting on the Journey to Adulthood",
+      "slug": "smooth-sailing-with-your-teen",
+      "author": "Elspeth Lewis",
+      "asin": "1739336410",
+      "store": "amazon.co.uk",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her guide for parents of teenagers, drawing on mindfulness to bring more ease and understanding to family life through adolescence and into adulthood.",
+      "subjects": [
+        "mindfulness",
+        "conscious-relationships"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1739336410.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mindfulness for Challenging Times",
+      "slug": "mindfulness-for-challenging-times",
+      "author": "Elspeth Lewis (co-author)",
+      "asin": "B088NNGNSB",
+      "store": "amazon.co.uk",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A community collection in which 26 mindfulness teachers each share ways of meeting difficulty with presence; Elspeth is one of the contributors.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B088NNGNSB.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Mindfulness for Transformation",
+      "slug": "mindfulness-for-transformation",
+      "author": "Elspeth Lewis (co-author)",
+      "asin": "B08QNK1S7W",
+      "store": "amazon.co.uk",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A second collection written by graduates of a mindfulness teacher training, each contributing a chapter; Elspeth is among the authors.",
+      "subjects": [
+        "mindfulness"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/B08QNK1S7W.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Mindfulness Coaching",
+      "url": "https://pausetobe.co.uk/mindfulness-coaching/",
+      "description": "One-to-one or group coaching online or in Edinburgh, for individuals and organisations. Sessions teach mindful breathing, the body scan, mindful movement and acceptance-based skills for everyday stress, starting with a free fifteen-minute call.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation",
+        "life-coaching"
+      ],
+      "image": "https://pausetobe.co.uk/wp-content/uploads/2023/01/cropped-cropped-Pause-To-Be-e1680170748652.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3249,
+    "restored_from": "docs/content-audits/uk-europe-sprint-1/skipped/elspeth-lewis.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts: no YouTube channel of her own found (her videos are on Vimeo); Instagram, Facebook and X not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://pausetobe.co.uk/contact/",
+    "contact_form_url": "https://pausetobe.co.uk/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): mindfulness and ACT coaching for stress is wellbeing work, so she is listed. Both sound bath pages (group sound baths on /my-courses/ and private sound baths) say the vibrations support the immune system and lower blood pressure, and the private page adds cellular healing, so every sound bath item is left out; the bio mentions that she holds sound baths without any claim. Owner may still find her thin (1 offering, 3 books, 1 video).",
+      "ACT here is Acceptance and Commitment Training taught as mindfulness coaching, not psychotherapy; the coaching page says it helps people 'struggling with anxiety, stress, and other mental health issues' (wellbeing wording, kept).",
+      "Books: ISBN/ASIN from the Amazon link on her own page https://pausetobe.co.uk/my-books/, not confirmed elsewhere. The Mindfulness for Transformation ASIN (B08QNK1S7W) is matched by its position on the page (third link, URL carries no title). The two collections are multi-author community anthologies she contributed a chapter to; owner may prefer to drop them. Store set to amazon.co.uk as her links are UK.",
+      "Video: an interview on Shamash Alidina's channel about her book (35 min, 73 views); she is the main guest. Her own videos are on Vimeo.",
+      "Counts unreadable for main accounts; tier 0 readable.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check; images were checked with curl instead (all 200). The lead session should run it."
+    ],
+    "left_out": [
+      "Group sound baths (Inner Stillness 10 Jan, Imbolc 31 Jan, Heart Resonance 14 Feb, on /my-courses/) and Private Sound Baths: pages claim support for the immune system, lower blood pressure and cellular healing (health rule).",
+      "Values Cards: sold on Etsy, not a teaching item.",
+      "Her own mindfulness videos: hosted on Vimeo, not YouTube."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,105 @@
+{
+  "healer": {
+    "healer_slug": "soji-zen-center",
+    "location_source": "https://sojizencenter.com/contact/",
+    "create": {
+      "name": "Soji Zen Center",
+      "bio": "Soji Zen Center is a Zen sangha in Drexel Hill, Pennsylvania, started by Roshi Jules Shuzen Harris in 2005. Harris trained with John Daido Loori and Dennis Genpo Merzel before receiving dharma transmission, and in 2019 inka, from Roshi Pat Enkyo O'Hara of the Village Zendo in New York; no African-American man had received Soto transmission before him, and he started Soji so that the dharma would be open to people whatever their race or means. The centre belongs to the White Plum lineage, which draws on both Soto and Rinzai Zen. Since Harris's death in 2023 the sangha has been led by his dharma heir, Sensei John Ango Gruber, together with Sensei Annalisa Rakugo Castaldo and Sensei Anthony Nentetsu Yuschak.\n\nPractice rests on zazen, liturgy and the study of Buddhist texts. Sunday mornings bring a service, three periods of sitting and a dharma talk, and on Tuesday evenings there is sitting with the chance of a private interview; both run in person and on Zoom, with online morning sittings twice a week as well. A monthly one-day retreat, occasional workshops and a disability affinity group fill out the year, and a large archive of Harris's recorded talks can be heard free on the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Drexel Hill, Pennsylvania",
+      "country": "United States",
+      "founded_year": 2005,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://sojizencenter.com/",
+      "booking_url": "https://sojizencenter.com/calendar/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "sojizencenter@gmail.com",
+      "image_urls": [
+        "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_1933-1.jpg",
+        "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_1857n-scaled.jpg",
+        "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_20150831_183814022-1-scaled.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-Day Retreat (Zazenkai)",
+      "url": "https://sojizencenter.com/calendar/",
+      "description": "The centre's monthly day of silent practice, running from mid-morning to late afternoon with periods of zazen, open both at the Drexel Hill zendo and online. The calendar lists each date and how to register.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_1933-1.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Virtual Zendo",
+      "url": "https://sojizencenter.com/project/529/",
+      "description": "Zoom links and guidance for sitting with the sangha online: Sunday service with zazen and a talk, and shorter morning and evening sittings during the week, with the sutra book to chant along.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_1933-scaled.jpg"
+    },
+    {
+      "title": "Dharma Talks by Shuzen Roshi",
+      "url": "https://sojizencenter.com/teachings/",
+      "description": "An archive of recorded talks by the founder, Roshi Jules Shuzen Harris, on koans from the Mumonkan, Dogen's Genjokoan, the four seals and practice in daily life, playable or downloadable as audio.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://sojizencenter.com/wp-content/uploads/2020/05/IMG_1933-1.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3395,
+    "tier_evidence": "No YouTube channel linked; Facebook and X linked but never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://sojizencenter.com/contact/",
+    "contact_form_url": "https://sojizencenter.com/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Email sojizencenter@gmail.com is the centre's general inbox (mailto on the contact page).",
+      "Base: the contact page now gives Drexel Hill, PA; the SZBA list still shows an older Lansdowne address. Drexel Hill is an unincorporated community, please map.",
+      "Lineage: White Plum (Soto and Rinzai elements), listed by SZBA; founder Jules Shuzen Harris died in 2023.",
+      "Thin on offerings: only the monthly one-day retreat has a usable page (the calendar); free resources carry the listing. Total 3 items.",
+      "Nentetsu Sensei is a licensed psychotherapist and some workshops pair ACT therapy with Zen; the centre itself is a Zen practice centre, not a therapy service.",
+      "Photos: the Manjushri altar (two shots) and the temple bell in the zendo, all from sojizencenter.com.",
+      "Teachers file empty: Jules Shuzen Harris, John Ango Gruber, Annalisa Rakugo Castaldo, Anthony Nentetsu Yuschak and Pat Enkyo O'Hara are not on Spiritpedia (O'Hara could be a future listing).",
+      "The about page quotes the founder on 'the healing qualities of the mind'; not used in the listing."
+    ],
+    "left_out": [
+      "Acting Buddha workshop (14 Nov 2026): starts on 14 Nov, not after it; also therapy-centred (ACT).",
+      "Sunday programme and Tuesday sittings: share the calendar URL with the one-day retreat; covered by the Virtual Zendo resource.",
+      "Zen Beyond Mindfulness (Harris, 2019): a book by the late founder, not a centre item; ISBN not taken from a publisher page.",
+      "Video fznUmDbcgHs embedded on the teachings page: on a third-party channel (kubut618), not the centre's own."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1529,
+    "healer_slug": "pamtingpa-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11421,
+      "slug": "practicing-the-path-part-1",
+      "title": "Practicing the Path Part 1"
+    },
+    {
+      "table": "videos",
+      "id": 11422,
+      "slug": "precious-human-rebirth",
+      "title": "Precious Human Rebirth"
+    },
+    {
+      "table": "videos",
+      "id": 11423,
+      "slug": "inspiring-lam-rim-talk",
+      "title": "Inspiring Lam Rim Talk"
+    },
+    {
+      "table": "videos",
+      "id": 11424,
+      "slug": "practicing-the-path-karma",
+      "title": "Practicing the Path - Karma"
+    },
+    {
+      "table": "videos",
+      "id": 11425,
+      "slug": "venerable-tenzins-talk-on-practicing-the-path-part-3",
+      "title": "Venerable Tenzin's Talk on \"Practicing the Path Part 3"
+    },
+    {
+      "table": "videos",
+      "id": 11426,
+      "slug": "practicing-the-path-part-2",
+      "title": "Practicing the Path Part 2"
+    },
+    {
+      "table": "courses",
+      "id": "5a1eaedf-6911-4eba-b5b1-d20a2183b86e",
+      "slug": "weekly-wednesday-evening-classes-with-venerable-tenzin-denison",
+      "title": "Weekly Wednesday Evening Classes with Venerable Tenzin Denison"
+    },
+    {
+      "table": "free_resources",
+      "id": "e990bb48-acfa-4649-b441-d054c98b171a",
+      "slug": "2026-recordings",
+      "title": "2026 Recordings"
+    },
+    {
+      "table": "free_resources",
+      "id": "42f4343e-e580-4b67-be3e-f2bdd60f4d67",
+      "slug": "approaching-the-buddhist-path-with-venerable-tenzin",
+      "title": "Approaching the Buddhist Path with Venerable Tenzin"
+    }
+  ],
+  "at": "2026-11-13T03:37:06.264Z"
+}

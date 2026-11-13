@@ -1,0 +1,173 @@
+{
+  "healer": {
+    "healer_slug": "susie-sands",
+    "location_source": null,
+    "no_public_base": "Her site gives only Westchester County, New York (a county, not a town).",
+    "create": {
+      "name": "Susie Sands",
+      "bio": "Susie Sands is a sound and energy healer from Westchester County, New York, who trained in sound healing with Jeralyn Glass. She plays crystal alchemy singing bowls, quartz bowls blended with metals, gemstones and minerals, whose layered overtones she uses to lead people into deep rest and inward attention. She also describes herself as a channel for spirit, and some of her sessions include talking through life questions.\n\nHer one-to-one work starts with a conversation about what a person is carrying, after which she shapes a sound bath meditation for them and suggests ways to keep practising at home. She also records personal sound healing tracks of around a quarter of an hour that clients can return to, with a voice-note exchange afterwards, and builds group programmes for events and workplaces, in person or online, on themes such as inner peace, energy clearing and grounding, and balance. Her YouTube channel holds recordings of the live sound meditations she has led online, including sessions for Insight Timer.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "sound-healing",
+        "meditation",
+        "energy-medicine"
+      ],
+      "website_url": "https://www.sshealing.com/",
+      "booking_url": "https://www.sshealing.com/services",
+      "youtube_url": "https://www.youtube.com/@susiesands14",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "Susie.Sands14@gmail.com",
+      "image_urls": [
+        "https://yt3.ggpht.com/ytc/AIdro_nVAI4j8xue8pMFzEDbqp07C3SfbvkL2bKT7YDGKhnS6w=s800-c-k-c0x00ffffff-no-rj"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Healing Light Meditation with Susie Sands",
+      "url": "https://www.youtube.com/watch?v=B7kJjHqezPs",
+      "subjects": [
+        "meditation",
+        "sound-healing"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Surrender - Sound Healing Meditation with Susie Sands - Instagram Live",
+      "url": "https://www.youtube.com/watch?v=4Ol-dCkwd9E",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Floating into Peacefulness with Crystal Alchemy Sound Bowls",
+      "url": "https://www.youtube.com/watch?v=Tuyycy4bds4",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Insight Timer Live Recording 12/15/2020",
+      "url": "https://www.youtube.com/watch?v=o3jydr9aS6g",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Heart Chakra - Sound Healing Meditation with Susie Sands - Instagram Live",
+      "url": "https://www.youtube.com/watch?v=o4TscMBBpxE",
+      "subjects": [
+        "sound-healing",
+        "chakra-healing"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Insight Timer Sound Healing and Meditation- this video was recorded live 11/10 (11/11 for some)",
+      "url": "https://www.youtube.com/watch?v=3-uO30NrL9I",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Insight Timer Live Recording 12/08/2020",
+      "url": "https://www.youtube.com/watch?v=t1uFPXFxeX8",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Reset with Crystal Alchemy Bowls",
+      "url": "https://www.youtube.com/watch?v=jEKmJMxubmM",
+      "subjects": [
+        "sound-healing"
+      ],
+      "channel": "Susie Sands"
+    },
+    {
+      "title": "Insight Timer Live Recording 12/01/2020",
+      "url": "https://www.youtube.com/watch?v=NM9JoyAkJzY",
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "channel": "Susie Sands"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Custom Sound Healing Recording and 1:1 Sessions",
+      "url": "https://www.sshealing.com/services",
+      "description": "A personal crystal-bowl recording of about fifteen minutes made for one listener, with a voice-memo exchange afterwards; private sound bath sessions shaped after an opening conversation are booked through her.",
+      "price": "$108 (recording); 1:1 session rates begin at $250",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "energy-medicine"
+      ],
+      "image": null
+    },
+    {
+      "title": "Group & Corporate Sound Baths",
+      "url": "https://www.sshealing.com/groupandcorporateofferings",
+      "description": "Crystal singing bowl sessions for groups and workplaces, in person or online, built around a chosen theme such as inner peace, clearing and grounding, or balance and manifesting.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "sound-healing",
+        "meditation"
+      ],
+      "image": null
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3088,
+    "restored_from": "docs/content-audits/insight-timer-sprint-1/skipped/susie-sands.json",
+    "hub": null,
+    "tier_evidence": "YouTube @susiesands14 98 subscribers (YouTube Data API, 12 Nov 2026); Instagram not fetched → ~0.1k → local_hero",
+    "email": "yes",
+    "email_source": "https://www.sshealing.com/",
+    "contact_form_url": "https://www.sshealing.com/",
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): her home page and 'Why Sound Healing?' page, in her own copy, list depression, chronic pain and supporting the immune system among sound healing's benefits. The service and group pages listed here do not repeat those claims, and her main pitch is sound bath meditation and relaxation, so she is listed with neither claim page linked except the home page as website_url. Owner may prefer to drop her, as the old skip did.",
+      "Activity uncertain: site footer © 2020, the Upcoming Events page is empty and all YouTube uploads are from 2020; the services page still shows prices.",
+      "Site is on Wix (static.wixstatic.com refuses our robots.txt), so the only photo is her YouTube avatar (a real photo of her with her bowls).",
+      "Domain sshealing.com came from our 1 Nov content-run report; confirmed on the site, which names her.",
+      "Base: only 'Westchester County, New York' published; left null and availability set to worldwide (she also offers virtual sessions). Mapping to a town needs the owner.",
+      "She trained with Jeralyn Glass, who is already on Spiritpedia (health-restore batch 18).",
+      "Old skip mentioned Insight Timer tracks; not opened (never-fetch)."
+    ],
+    "left_out": [
+      "Why Sound Healing? page: claims on depression and immune support (health rule).",
+      "1:1 sessions as a separate item: same /services URL as the custom recording, so combined in one item.",
+      "Video 'Sound Bowls with Susie Sands - a two minute experience' (promo length)."
+    ]
+  },
+  "images_final": true
+}

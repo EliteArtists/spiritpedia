@@ -1,0 +1,186 @@
+{
+  "healer": {
+    "healer_slug": "kannon-do-zen-meditation-center",
+    "location_source": "https://kannondo.org/contact/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Kannon Do Zen Meditation Center",
+      "bio": "Kannon Do is a Soto Zen temple in Mountain View, California, serving Silicon Valley in the line of Shunryu Suzuki. Its roots lie in Haiku Zendo, a converted garage in Los Altos where Suzuki gave the evening talks later gathered into Zen Mind, Beginner's Mind. Les Kaye, an IBM engineer whom Suzuki ordained in 1971, looked after that zendo, moved the community to Mountain View in 1978 under its present name, and served as abbot for four decades; he died in September 2026. The current temple on Rock Street opened in 2006, and Zoketsu Norman Fischer, a former abbot of San Francisco Zen Center, is now its guiding teacher.\n\nThe centre is non-residential and run by volunteers, with no membership needed to take part. Zazen is held early each weekday morning, at noon and in the evening, and on Saturdays a longer morning programme combines sitting, walking meditation, a short service, a shared breakfast and temple cleaning. Wednesday evenings bring meditation and a Dharma talk, with most sessions also open on Zoom. Practice periods, one-day and half-day sittings and a long-running podcast of talks round out its programme.",
+      "availability": "local_online",
+      "city": "Mountain View, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://kannondo.org/",
+      "booking_url": "https://kannondo.org/i-am-new/introduction-to-practice/",
+      "youtube_url": "https://www.youtube.com/channel/UC7VMeqxY7C1FD0LnRvAKrzQ",
+      "contact_email": "info@kannondo.org",
+      "image_urls": [
+        "https://kannondo.org/wp-content/uploads/2024/03/Kannon-Do-interior.jpg",
+        "https://kannondo.org/wp-content/uploads/2024/03/kannon-Do.jpg",
+        "https://kannondo.org/wp-content/uploads/2015/03/meditaion2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Les Kaye - Zen is Not a Search Engine",
+      "url": "https://www.youtube.com/watch?v=9-X9j67bvok",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Kannon Do Zen Meditation Center"
+    },
+    {
+      "title": "Les Kaye - Sound of Stone",
+      "url": "https://www.youtube.com/watch?v=OhNtq5Zemig",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "channel": "Kannon Do Zen Meditation Center"
+    },
+    {
+      "title": "\"A Radical World View\" Dharma Talk with Les Kaye",
+      "url": "https://www.youtube.com/watch?v=YYlTAhENSAU",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Kannon Do Zen Meditation Center"
+    },
+    {
+      "title": "Les Kaye - The Transient Nature of Values",
+      "url": "https://www.youtube.com/watch?v=viTFHr1cXZ0",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Kannon Do Zen Meditation Center"
+    },
+    {
+      "title": "Travis Marsot - Non Duality",
+      "url": "https://www.youtube.com/watch?v=b2ZfLTZZ-Qw",
+      "subjects": [
+        "non-duality",
+        "meditation"
+      ],
+      "channel": "Kannon Do Zen Meditation Center"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Half-Day Meditation Retreat led by Misha Shungen Merrill",
+      "url": "https://kannondo.org/event/half-day-meditation-retreat-led-by-misha-merrill/",
+      "description": "A morning of sitting, walking and mindful eating in the zendo, led by affiliate teacher Misha Shungen Merrill, followed by lunch and an afternoon of work practice preparing the temple and grounds. Those wishing to attend are asked to get in touch with the organiser beforehand.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/2020/02/misha-merrel-1.jpg"
+    },
+    {
+      "title": "Saturday Mornings",
+      "url": "https://kannondo.org/saturday-mornings/",
+      "description": "The weekly Saturday programme: two early periods of zazen with walking meditation between, a brief chanting service, a vegetarian potluck breakfast, temple cleaning and a final sitting. Newcomers can come at 9 am for an in-person introduction to sitting.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/2024/03/Kannon-Do-interior.jpg"
+    },
+    {
+      "title": "Wednesday Nights",
+      "url": "https://kannondo.org/wednesday-nights/",
+      "description": "A weekly evening of meditation followed by a Dharma talk and questions, held in the zendo and on Zoom. First-time sitters are invited to arrive twenty minutes early for instruction.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/2024/03/Kannon-Do-interior.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Kannon Do Zen Meditation Center Podcasts",
+      "url": "https://kannondo.org/podcasts/",
+      "description": "More than three hundred recorded Dharma talks from the centre's weekly lectures, given by its teachers, priests and practice leaders, each downloadable as an MP3 or available through podcast apps.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/spotify.png"
+    },
+    {
+      "title": "Introduction to Practice",
+      "url": "https://kannondo.org/i-am-new/introduction-to-practice/",
+      "description": "Illustrated guidance on zendo etiquette, sitting postures on a cushion or chair, the hand mudra, breathing and walking meditation, also offered as a printable tri-fold PDF.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/2024/03/Kannon-Do-interior.jpg"
+    },
+    {
+      "title": "Meditation at Home",
+      "url": "https://kannondo.org/i-am-new/meditation-at-home/",
+      "description": "Practical advice for keeping a daily sitting practice at home: choosing a quiet place, how long to sit, ways of keeping time, and the value of steady commitment and a regular hour.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://kannondo.org/wp-content/uploads/2017/10/buddha-with-incense-250x300.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3372,
+    "tier_evidence": "YouTube 101 subscribers (Data API, 13 Nov 2026; channel linked from kannondo.org/contact/); Facebook and Meetup linked but never fetched → ~101 total → local_hero",
+    "email": "yes",
+    "email_source": "https://kannondo.org/contact/",
+    "contact_form_url": "https://kannondo.org/contact/",
+    "bio_check": "OK: no 8-word runs against 17 source(s)",
+    "flags": [
+      "Les Kaye, abbot emeritus, died on 5 September 2026 (kannondo.org/about-kannon-do/les-kaye/); the bio says so.",
+      "Guiding teacher Norman Fischer, affiliate teachers Misha Merrill, Kathie Fischer, Jaune Evans and Neal Shorstein, and Les Kaye are not on Spiritpedia: teachers file empty. Possible future listing: Norman Fischer (Everyday Zen Foundation).",
+      "Affiliation: founded as an affiliate of Suzuki's San Francisco centre (Haiku Zendo), but now an independent volunteer-run temple, not an SFZC branch; kept under the batch note.",
+      "founded_year left null: the site gives several dates (sitting group 1964, Haiku Zendo 1966, renamed Kannon Do 1978).",
+      "Saturday and Wednesday programmes: no price is published; the site says no membership or registration is required.",
+      "Half-day retreat (21 Nov) includes an afternoon of work practice preparing for Les Kaye's funeral; registration is by email to a named organiser (not used as the contact)."
+    ],
+    "left_out": [
+      "2026 Practice Period (31 Oct-13 Dec) and its Norman Fischer talks: already under way.",
+      "Online Dharma Talk with Norman Fischer, 14 Nov: not after 14 Nov.",
+      "Full Moon Ceremony and Board meeting: community events, not teaching programmes.",
+      "Videos: race and systemic-racism talks (political rule), the March 2020 coronavirus discussion (pandemic rule), guest speaker talks (David Chadwick, Marc Lesser and others) and sangha members' talks; kept to the abbot and the practice leader."
+    ]
+  },
+  "images_final": true
+}

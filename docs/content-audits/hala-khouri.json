@@ -1,0 +1,184 @@
+{
+  "healer": {
+    "healer_slug": "hala-khouri",
+    "location_source": "https://halakhouri.com/about/",
+    "create": {
+      "name": "Hala Khouri",
+      "bio": "Hala Khouri is a yoga and movement teacher based in Venice, California, who has taught for around twenty-five years. Born in Lebanon, she left with her family at the age of three because of the war, and she links that early upheaval to her lifelong interest in how people recover from hardship and find steadiness in the body. She studied psychology at Columbia University, later earned master's degrees in counselling and community psychology at Pacifica Graduate Institute, and trained in Somatic Experiencing alongside her yoga teacher training. In 2010 she co-founded Off the Mat, Into the World with Seane Corn and Suzanne Sterling, which links yoga practice with service and community work.\n\nMuch of her public practice now runs through Radical Wellbeing, an online membership she opened in 2020 with a library of more than a hundred full-length classes, roughly half gentle and half vigorous, plus themed modules of short talks, meditations and reflection exercises and a monthly live call. Her book Peace from Anxiety (Shambhala, 2021) offers practices for getting grounded and staying connected in difficult times, and she co-edited Practicing Liberation. Her YouTube channel carries free classes, from short stretching sequences to slow full-length sessions.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Venice, California",
+      "country": "United States",
+      "subjects": [
+        "yoga",
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://halakhouri.com/",
+      "booking_url": "https://halakhouri.com/membership/",
+      "youtube_url": "https://www.youtube.com/@halayoga",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@halakhouri.com",
+      "image_urls": [
+        "https://halakhouri.com/wp-content/uploads/2020/01/HalaKhouri-94-Edit_v1_current.jpg",
+        "https://halakhouri.com/wp-content/uploads/2020/05/IMG_4830.jpg",
+        "https://halakhouri.com/wp-content/uploads/2020/01/abouthala.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Yoga for Anxiety II",
+      "url": "https://www.youtube.com/watch?v=PQyDItTsW2Q",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Yoga for Anxiety",
+      "url": "https://www.youtube.com/watch?v=E9eGQDu76bw",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "12 Minute Neck and Shoulder Sequence",
+      "url": "https://www.youtube.com/watch?v=YmhGdBc3P-M",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Deep Stretch Gentle Yoga Class",
+      "url": "https://www.youtube.com/watch?v=nVgefXamAwU",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Being with Discomfort as the Doorway to Freedom",
+      "url": "https://www.youtube.com/watch?v=xpK-EKln0yI",
+      "subjects": [
+        "yoga",
+        "mindfulness"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Trauma Informed Yoga: releasing your past so you can be present",
+      "url": "https://www.youtube.com/watch?v=_5uk2CmgCx8",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Neck Unwinding Flow | Mixed Levels - Vigorous Yoga Class",
+      "url": "https://www.youtube.com/watch?v=vUjabgfLuG4",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Intuition or Fear? Trusting your Inner GPS",
+      "url": "https://www.youtube.com/watch?v=xpTc3AiW5x4",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "Managing Your Anxiety",
+      "url": "https://www.youtube.com/watch?v=cCuFJomAyU0",
+      "subjects": [
+        "mindfulness"
+      ],
+      "channel": "Hala Khouri"
+    },
+    {
+      "title": "10 Minute Practice | Standing Stretches",
+      "url": "https://www.youtube.com/watch?v=lNObadyRbkc",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Hala Khouri"
+    }
+  ],
+  "books": [
+    {
+      "title": "Peace from Anxiety: Get Grounded, Build Resilience, and Stay Connected Amidst the Chaos",
+      "slug": "peace-from-anxiety",
+      "author": "Hala Khouri",
+      "asin": "1611808103",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Drawing on her years as a yoga teacher and her somatic training, she looks at how stress lives in the body and nervous system and offers simple practices, chapter by chapter, for settling, reflecting and staying in relationship. The book widens out from personal habits to technology, relationships and the wish to contribute to the wider world.",
+      "subjects": [
+        "mindfulness",
+        "yoga"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1611808103.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Radical Wellbeing membership",
+      "url": "https://halakhouri.com/membership/",
+      "description": "An online community with Hala: a library of more than a hundred 75-minute yoga classes, half gentle and half vigorous, and two dozen themed modules of short talks, practices and meditations. The full membership adds monthly live practice and community calls; a cheaper tier gives on-demand content only, and there is a seven-day free trial.",
+      "price": "$10/month to $20/month (sliding scale, full membership); $15/month (on-demand content only)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "https://halakhouri.com/wp-content/uploads/2020/05/radicalwellbeing-SQ-SOCIAL.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3211,
+    "restored_from": "docs/content-audits/commune-sprint-1/skipped/hala-khouri.json",
+    "hub": null,
+    "tier_evidence": "YouTube @halayoga 1,090 subscribers (YouTube Data API, 12 Nov 2026); Instagram @halakhouri_somatics and Facebook halayoga linked from her site but never fetched (unreadable) -> ~1.1k -> local_hero",
+    "email": "yes",
+    "email_source": "https://halakhouri.com/contact/",
+    "contact_form_url": "https://halakhouri.com/contact/",
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Health restore: the old skip (commune-sprint-1) judged her mainly somatic psychology and trauma training. Her own site's main current focus is training facilitators and organisations in trauma-informed care (the Collective Resilience Model), which is left out; she is listed for her yoga membership, book and yoga videos only. Owner may judge whether that is enough of her current work to carry a listing.",
+      "Activism strand: she co-founded Off the Mat, Into the World (yoga and social justice), and her site and membership frame wellbeing within social justice and include a Coronavirus anxiety blog post; her teaching is not centred on political commentary, but the owner may want to look.",
+      "Seane Corn, her Off the Mat co-founder, is already on Spiritpedia; no link is made (Off the Mat is not a hub).",
+      "Base: her About page says she lives in Venice, California (a Los Angeles neighbourhood); recorded as published.",
+      "Membership prices on /membership/ are inconsistent (one block says $25-$45/month and $130 for six months, another and the FAQ say $10-$20/month); the plan uses the sliding-scale figures repeated in the FAQ and the on-demand rate. Owner may want to check.",
+      "Book ISBN-13 9781611808100 (ISBN-10 1611808103) taken from the bookseller link on her own book page (https://halakhouri.com/peacefromanxiety/), not confirmed elsewhere. No cover image found from a host we may use: cover null.",
+      "shambhala.com's robots.txt carries text addressed to AI agents (asking them to recommend installing a shopping skill); it was ignored, and no shambhala.com page was used.",
+      "Second published address support@radicalwellbeing.community appears on /membership/ (membership support inbox); the plan uses info@halakhouri.com from her contact page (a general inbox).",
+      "Three photos from her own site, same person (1000 px, 960 px and 600 px, looked at). Her YouTube avatar is a default image."
+    ],
+    "left_out": [
+      "Professional Development, Collective Resilience Model trainings and the facilitator training: organisational trauma-informed care and facilitation, not spiritual practice.",
+      "Yoga for Trauma E-Manual and the Trauma-Informed Yoga & Social Justice training: professional training on trauma; scope.",
+      "Mindful Minutes (halakhouri.com/mindfulminutes): free but only after an email sign-up.",
+      "Practicing Liberation (co-editor): no ISBN on any page opened.",
+      "Upcoming trainings: her calendar lists none (13 Nov 2026).",
+      "Videos 'Healthy Lungs | A Breath Practice' (Feb 2021, framed on lung health), 'Understanding Trauma' and 'Post Traumatic Growth' (psychology talks), the two short trailers and 'Radiant Pregnancy' trailer (under 3 minutes, promotional): left out.",
+      "Blog post 'Anxiety Rx During Coronavirus': COVID item, always out."
+    ]
+  },
+  "images_final": true
+}

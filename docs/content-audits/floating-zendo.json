@@ -1,0 +1,117 @@
+{
+  "healer": {
+    "healer_slug": "floating-zendo",
+    "location_source": "https://floatingzendo.org/contact/",
+    "create": {
+      "name": "Floating Zendo",
+      "bio": "Floating Zendo is a lay Soto Zen sangha in San José, California, at the southern end of the San Francisco Bay. It has practised since 1999 under its founding teacher, Angie Boissevain Sensei, a student of Kobun Chino Otogawa who helped him establish Jikoji retreat centre in the Santa Cruz Mountains. The name reflects that the group has never had a zendo of its own and has met in borrowed rooms; today its in-person sittings are held at the San José Friends Meeting House. Since Angie stepped back from a fixed teaching schedule in 2019, her Dharma heirs Carolyn Dille and John Lowney have carried the teaching alongside other senior students.\n\nThe main weekly gathering is online on Tuesday evenings: half an hour of zazen, a short service, then a talk and discussion, with speakers rotating through the month and a recorded talk by Kobun or Angie on some weeks. Once a month the sangha meets in person for a Saturday morning of sitting, walking meditation and a short talk, and it also gathers for longer sittings and an annual sesshin, usually at Jikoji, with silent practice, oryoki meals and talks. Members can learn to sew a rakusu, and recordings of Angie's talks are free to download.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "worldwide",
+      "founded_year": 1999,
+      "city": "San Jose, California",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://floatingzendo.org/",
+      "booking_url": "https://floatingzendo.org/practice/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "secretary@floatingzendo.org",
+      "image_urls": [
+        "https://floatingzendo.org/wp-content/uploads/2015/08/AltarwFlowers.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Tuesday Evening Zen Practice (Online)",
+      "url": "https://floatingzendo.org/practice/",
+      "description": "A weekly Zoom gathering on Tuesday evenings with silent zazen, a short Soto Zen service and a Dharma talk with discussion. Talks rotate among the sangha's teachers through the month. Beginners are welcome and can ask for individual instruction.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://floatingzendo.org/wp-content/uploads/2015/08/AltarwFlowers.jpg"
+    },
+    {
+      "title": "Saturday Zen Practice in San José",
+      "url": "https://floatingzendo.org/zen-meditation-on-saturdays/",
+      "description": "A monthly in-person morning at the San José Friends Meeting House, usually on the fourth Saturday, with several periods of sitting and walking meditation, a service and a short talk. Some Saturdays run as full days with lunch and an afternoon talk.",
+      "price": "Donation",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://floatingzendo.org/wp-content/uploads/2015/08/AltarwFlowers-300x174.jpg"
+    },
+    {
+      "title": "Sesshin",
+      "url": "https://floatingzendo.org/about-sesshin/",
+      "description": "The sangha's week-long silent retreat, usually held at Jikoji Zen Center near Los Gatos, with long periods of zazen, work practice, oryoki meals and afternoon talks. Participants may attend for a day or two if they cannot stay the whole week.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://floatingzendo.org/wp-content/uploads/2015/08/AltarwFlowers.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Floating Zendo Dharma Talks",
+      "url": "https://floatingzendo.org/resources-2/dharma-talks/",
+      "description": "Audio recordings of talks by founding teacher Angie Boissevain, shared under a Creative Commons licence and free to listen to or download.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://floatingzendo.org/wp-content/uploads/2015/08/AltarwFlowers.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3362,
+    "hub": null,
+    "tier_evidence": "No YouTube or social accounts linked from its site; no readable counts → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://floatingzendo.org/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 8 source(s)",
+    "flags": [
+      "Only one photo: the altar set up for practice (from the Saturday practice page). The site header is artwork and the other images are tiny.",
+      "No hub links: Angie Boissevain, Carolyn Dille and John Lowney are not on Spiritpedia; teachers file written with an empty list. Possible future listing: Angie Boissevain.",
+      "Site's home page says 'Modified November 14, 2023' and lists a 'SESSHIN 2020' page; weekly and monthly programmes are described as current.",
+      "Email secretary@floatingzendo.org is the sangha's published contact (teacher@floatingzendo.org also published).",
+      "Regional: San José, California (South Bay)."
+    ],
+    "left_out": [
+      "SESSHIN 2020 page: past.",
+      "Written talk posts from 2020–21 (blog): older posts, not itemised.",
+      "Angie Boissevain's poetry books: hers, not the sangha's; no ISBN pages opened.",
+      "Sewing rakusu and service pages: practice guidance for members, not separate offerings."
+    ]
+  },
+  "images_final": true
+}

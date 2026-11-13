@@ -1,0 +1,22 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1537,
+    "healer_slug": "zen-heart-sangha"
+  },
+  "rows": [
+    {
+      "table": "free_resources",
+      "id": "7368ea23-13a8-42b3-8179-f938a7310b38",
+      "slug": "monday-evening-zazen-and-talk",
+      "title": "Monday Evening Zazen and Talk"
+    },
+    {
+      "table": "free_resources",
+      "id": "8054dbad-0ad8-4c56-a220-a4ce2498dcc3",
+      "slug": "zen-chants",
+      "title": "Zen Chants"
+    }
+  ],
+  "at": "2026-11-13T04:30:31.641Z"
+}

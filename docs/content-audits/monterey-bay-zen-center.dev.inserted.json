@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1557,
+    "healer_slug": "monterey-bay-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "fabf211a-ec60-4783-8f63-8b512b6fa550",
+      "slug": "zazenkai-2026-monthly-sittings",
+      "title": "Zazenkai 2026 — Monthly Sittings"
+    },
+    {
+      "table": "courses",
+      "id": "fb413500-d46f-4327-abc4-05f8550213b6",
+      "slug": "weekly-groups-meditation-offerings",
+      "title": "Weekly Groups & Meditation Offerings"
+    },
+    {
+      "table": "courses",
+      "id": "d7e9395b-ecfe-4140-b303-d8fda412b9c2",
+      "slug": "membership-19",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "e1be2fbd-9ed7-4f85-864c-cb4d7d7ccd98",
+      "slug": "zazen-instruction-3",
+      "title": "Zazen Instruction"
+    },
+    {
+      "table": "free_resources",
+      "id": "454e6164-a777-4756-8355-20eaccb379f2",
+      "slug": "online-sutra-book-chants",
+      "title": "Online Sutra Book (chants)"
+    }
+  ],
+  "at": "2026-11-13T04:08:00.986Z"
+}

@@ -1,0 +1,88 @@
+{
+  "healer": {
+    "healer_slug": "zen-heart-sangha",
+    "location_source": "https://www.zenheartsangha.org/participation",
+    "create": {
+      "name": "Zen Heart Sangha",
+      "bio": "Zen Heart Sangha is a lay Zen community on the San Francisco Peninsula that has sat together since 1993 in the line of Shunryu Suzuki. It has no residential temple: its weekly evening programme meets at the Peninsula School in Menlo Park and on Zoom, other gatherings take place in a teacher's home zendo, and a few affiliated students practise from Sacramento, Hawaii and New York.\n\nThe founding teacher, Misha Shungen Koun Merrill, began Zen practice in 1984, was ordained in 1988 and received transmission ten years later from Les Kaye Roshi of Kannon Do; in 2025 she was also given transmission in the Jikoji line of Kobun Houn Roshi. Now teacher emeritus, she also teaches Japanese tea ceremony. Guiding teacher Kakushin Jill Kaplan has practised with the group since its first year, took priest ordination in 2001 and received transmission from Misha in 2013; she leads the evening programme and a monthly dharma seminar and teaches the sewing of Buddhist robes.\n\nShikantaza, or just sitting, is the core of practice. Monday evenings bring zazen, a short service and a talk or discussion, and on the first and third Saturdays an online morning of sitting and study is offered. Retreat days and ceremonies punctuate the year, and every programme is given freely on a donation basis.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Menlo Park, California",
+      "country": "United States",
+      "founded_year": 1993,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.zenheartsangha.org/",
+      "booking_url": "https://www.zenheartsangha.org/participation",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "admin@zenheartsangha.org",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/66f884c4afa736225f1f205f/990de2e3-39ac-49eb-b179-69490eb4e776/zhslogo.png",
+        "https://images.squarespace-cdn.com/content/v1/66f884c4afa736225f1f205f/7b3f09c7-4991-4e7b-81ff-1e58429569f3/20240406_162028.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [],
+  "free_resources": [
+    {
+      "title": "Monday Evening Zazen and Talk",
+      "url": "https://www.zenheartsangha.org/participation",
+      "description": "Weekly evening sitting, short service and a lecture or discussion at the Peninsula School in Menlo Park and on Zoom, plus online Saturday mornings twice a month; offered on a donation basis.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/66f884c4afa736225f1f205f/76350370-4a52-4cf1-b0bd-b8d0b60c2243/Pebbles+photo+for+website.jpg"
+    },
+    {
+      "title": "Zen Chants",
+      "url": "https://www.zenheartsangha.org/zen-chants",
+      "description": "Texts of the chants used in the sangha's services, including the Heart Sutra in English and Japanese, Fukanzazengi, Genjo Koan, Sandokai and lists of male and women ancestors.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://images.squarespace-cdn.com/content/v1/66f884c4afa736225f1f205f/7939ec51-c99c-49c6-bdbf-3ae032fa3b54/unsplash-image-FITkkKxP1RU.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3409,
+    "tier_evidence": "No YouTube or social links on zenheartsangha.org → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.zenheartsangha.org/participation",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Not an SFZC branch: independent lay sangha in the Les Kaye / Kannon Do line of Suzuki Roshi (SZBA page also links sfzc.org for the lineage only). Kept under the batch note.",
+      "Email admin@zenheartsangha.org (participation page, for Zoom links); the contact page gives the guiding teacher's personal gmail for general enquiries, not used as the listing email.",
+      "Base: Menlo Park (Peninsula School, Monday programme); SZBA says 'meetings currently held virtually. Permanent location TBD' and the home page mentions Atherton. City only.",
+      "No paid offerings: all programmes are offered on dana. Rohatsu retreat 4-6 Dec is 'with MWZ at St. Francis' (joint, no own page), left out.",
+      "Jill Kaplan has a psychotherapy practice and has taught MBSR; not part of the listing.",
+      "Photos: the calligraphy logo and an uncaptioned portrait of a robed teacher from the About page (probably Jill Kaplan; Misha's own photo there is a 150 px thumbnail).",
+      "Teachers file empty: Jill Kaplan, Misha Merrill and Les Kaye are not on Spiritpedia.",
+      "Events page is an unedited Squarespace template (placeholder events); ignored."
+    ],
+    "left_out": [
+      "Monthly Japanese tea ceremony class and Dharma Seminar: details by personal email only, same participation page URL.",
+      "Calendar items led by guest speakers (Heather Iarusso, Cyrus Hiatt): guest-led.",
+      "Resources page: 2020 COVID community resources (pandemic), left out."
+    ]
+  },
+  "images_final": true
+}

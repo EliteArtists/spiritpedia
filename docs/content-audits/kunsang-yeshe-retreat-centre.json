@@ -1,0 +1,178 @@
+{
+  "healer": {
+    "healer_slug": "kunsang-yeshe-retreat-centre",
+    "location_source": "https://kunsangyeshe.com.au/drop-in-meditation-2/",
+    "create": {
+      "name": "Kunsang Yeshe Retreat Centre",
+      "bio": "Kunsang Yeshe Retreat Centre is a small Tibetan Buddhist centre in Katoomba, in the Blue Mountains west of Sydney, and part of the FPMT network begun by Lama Thubten Yeshe and Lama Zopa Rinpoche. Its name honours Kunsang Yeshe, the Lawudo Lama, a meditator of the Everest region whose rebirth Lama Zopa Rinpoche was recognised to be. Volunteers and a committee run the centre today, and its stated aim is to help people grow kinder, wiser and happier using Buddhist ideas, meditation and creativity.\n\nTwice-weekly lunchtime sits in the gompa are open to anyone without booking, and a monthly Medicine Buddha session invites people to dedicate the practice to friends, family or animals who are unwell or have died. Local students lead introductory courses on Buddhism, while visiting FPMT geshes and nuns give weekend teachings and online series, several of them recorded and shared through its audio-visual library and YouTube channel. Members receive discounts and library borrowing, and the centre hopes one day to add a residential retreat property.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Katoomba, New South Wales",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://kunsangyeshe.com.au/",
+      "booking_url": "https://kunsangyeshe.com.au/upcoming-events/",
+      "youtube_url": "https://www.youtube.com/@kunsangyesheretreatcentre1422",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "shop@kunsangyeshe.com.au",
+      "image_urls": [
+        "https://kunsangyeshe.com.au/wp-content/uploads/2022/08/KYRC-Logo-white.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Geshe Tenzin Zopa - 26 Jun 2023 | Part 1 of 2",
+      "url": "https://www.youtube.com/watch?v=LiA2mxHGBSM",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "Geshe Tenzin Zopa - 23 Jun 2023 | Part 1 of 2",
+      "url": "https://www.youtube.com/watch?v=oUuGcRlu2Cs",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "The Two Truths",
+      "url": "https://www.youtube.com/watch?v=SlqJJ0yyQS0",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "Geshe Thubten Sherab - 23 Feb 2023 | Part 1of 2",
+      "url": "https://www.youtube.com/watch?v=M7AGqPvXfFc",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "7 Point Mind Training session 1 of 4",
+      "url": "https://www.youtube.com/watch?v=1QvE-xV50Uw",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "Deepening your Shamatha Meditation 1 2 11 24",
+      "url": "https://www.youtube.com/watch?v=mvhcc_LRvDA",
+      "subjects": [
+        "meditation"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    },
+    {
+      "title": "From Dukkha to Sukkha   Geshe Sherab March 2025",
+      "url": "https://www.youtube.com/watch?v=JFyYiY-ELto",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "channel": "Kunsang Yeshe Retreat Centre"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Drop-in Meditation",
+      "url": "https://kunsangyeshe.com.au/drop-in-meditation-2/",
+      "description": "A short guided sit in the Katoomba gompa at lunchtime on Tuesdays and Thursdays. Nobody needs to book, and newcomers are welcome.",
+      "price": "Suggested donation is $10.",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://i0.wp.com/kunsangyeshe.com.au/wp-content/uploads/2024/01/KY-Banner-2024.jpg?fit=356%2C92&#038;ssl=1"
+    },
+    {
+      "title": "Medicine Buddha Healing Meditation",
+      "url": "https://kunsangyeshe.com.au/medicine-buddha-healing-meditation-2/",
+      "description": "A monthly Friday lunchtime practice of the Medicine Buddha, where those present can name people or animals who are unwell or have passed away for the dedication prayers.",
+      "price": "Suggested donation $10.",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://i0.wp.com/kunsangyeshe.com.au/wp-content/uploads/2024/01/KY-Banner-2024.jpg?fit=356%2C92&#038;ssl=1"
+    },
+    {
+      "title": "Become a Member",
+      "url": "https://kunsangyeshe.com.au/become-a-member/",
+      "description": "Annual membership that helps keep the centre running and brings reduced programme fees, use of the library and a vote at the yearly meeting. Half-year and concession rates are offered.",
+      "price": "Single: $130; Single Concession: $100; Family: $190; Family Concession: $160 (full year)",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://i0.wp.com/kunsangyeshe.com.au/wp-content/uploads/2024/01/KY-Banner-2024.jpg?fit=356%2C92&#038;ssl=1"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Audio-Visual Resources",
+      "url": "https://kunsangyeshe.com.au/audio-visual-resources/",
+      "description": "Recordings of past teaching series at the centre, including the Heart Sutra, Buddhist views on death and dying, and lojong mind training, offered freely with donations invited.",
+      "featured": true,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation",
+        "death-the-afterlife"
+      ],
+      "image": "https://i0.wp.com/kunsangyeshe.com.au/wp-content/uploads/2024/01/KY-Banner-2024.jpg?fit=356%2C92&#038;ssl=1"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3311,
+    "hub": null,
+    "tier_evidence": "YouTube 83 subscribers (YouTube Data API, 13 Nov 2026); Facebook/Instagram not fetched → ~0.1k → local_hero",
+    "email": "yes",
+    "email_source": "https://kunsangyeshe.com.au/become-a-member/",
+    "contact_form_url": "https://kunsangyeshe.com.au/contact-us-2/",
+    "bio_check": "OK: no 8-word runs against 20 source(s)",
+    "flags": [
+      "shop@kunsangyeshe.com.au is the shop/membership inbox published on the membership page (brand inbox); FPMT's centre list (fpmt.org/centers/australia/) publishes info@kunsangyeshe.com.au, which the centre's own site doesn't show.",
+      "No resident teacher at present: volunteers lead the local programme; visiting teachers (Ven. Yönten, Ven. Robina Courtin, Geshe Thubten Sherab, Geshe Tenzin Zopa) are not on Spiritpedia. Teachers file empty.",
+      "Only image is the centre's logo; the site's other images are an illustration and a photo of a site in Sikkim, not the centre.",
+      "Regional: Katoomba, Blue Mountains (NSW).",
+      "Prices copied as published; no currency stated on the pages.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Emptiness and Healing series (Ven. Yönten), Sacred Mantra and Sound Healing (Menpa Pema Gyaltsen), Monthly Teachings with Venerable Robina and In Depth Meditation Training: led by visiting/guest teachers (batch rule).",
+      "Tara Practice, Buddhism for Beginners and A First Look at Buddhism: all published dates have passed.",
+      "Most YouTube uploads are multi-part recordings; one part per series kept."
+    ]
+  },
+  "images_final": true
+}

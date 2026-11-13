@@ -1,0 +1,64 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1508,
+    "healer_slug": "toby-oliver"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11271,
+      "slug": "zero-resistance-traditional-yoga-sequence",
+      "title": "Zero Resistance Traditional Yoga Sequence"
+    },
+    {
+      "table": "videos",
+      "id": 11272,
+      "slug": "introduction-to-chair-yoga",
+      "title": "Introduction to Chair Yoga"
+    },
+    {
+      "table": "videos",
+      "id": 11273,
+      "slug": "ebr-1-sequence",
+      "title": "EBR 1 Sequence"
+    },
+    {
+      "table": "videos",
+      "id": 11274,
+      "slug": "yoga-nidra-guided-relaxation-45-minutes",
+      "title": "Yoga Nidra Guided Relaxation (45 minutes)"
+    },
+    {
+      "table": "videos",
+      "id": 11275,
+      "slug": "guided-meditation-through-the-chakras",
+      "title": "Guided Meditation Through the Chakras"
+    },
+    {
+      "table": "courses",
+      "id": "2df7515f-cd50-421b-80a4-fc6aac9db009",
+      "slug": "dru-yoga-private-lessons",
+      "title": "Dru Yoga private lessons"
+    },
+    {
+      "table": "courses",
+      "id": "b7986e68-b431-4630-b099-c330faa312a9",
+      "slug": "grief-yoga-sessions",
+      "title": "Grief Yoga sessions"
+    },
+    {
+      "table": "courses",
+      "id": "e941f458-0f1c-47b0-8cab-d2e7e5e3ba0b",
+      "slug": "traditional-yoga-meditation",
+      "title": "Traditional Yoga Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "a91f087a-5b05-4162-b7fa-48c32270d753",
+      "slug": "deep-relaxation-online-yoga-nidra-class",
+      "title": "Deep Relaxation (online yoga nidra class)"
+    }
+  ],
+  "at": "2026-11-13T00:09:56.228Z"
+}

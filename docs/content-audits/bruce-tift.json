@@ -1,0 +1,102 @@
+{
+  "healer": {
+    "healer_slug": "bruce-tift",
+    "location_source": "https://www.brucetift.com/about-bruce/",
+    "create": {
+      "name": "Bruce Tift",
+      "bio": "Bruce Tift is a Boulder-based teacher and author who has spent more than four decades practising Vajrayana Buddhism. He was a student of Chögyam Trungpa Rinpoche, holds a master's degree in psychology, and for twenty-five years taught at Naropa University in Boulder, Colorado, the town where he lives. He trained and worked as a marriage and family therapist, and his writing explores how Buddhist practice and Western psychology can sit side by side.\n\nHis book Already Free, published by Sounds True, compares two ways of approaching freedom from suffering: the developmental approach, which looks at how early experience shapes us, and what he calls the fruitional approach of Buddhism, which starts from the view that freedom is available in each moment rather than being a distant goal. He now offers occasional one-to-one consultations by phone or video for people wanting support with personal growth, drawing on awareness practice and gently questioning the habits and stories we identify with. His blog essays set out a basic Buddhist view of experience, and he has spoken about his work on podcasts including Sounds True's Insights at the Edge and Lion's Roar.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": "Boulder, Colorado",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "non-duality",
+        "spirituality"
+      ],
+      "website_url": "https://www.brucetift.com/",
+      "booking_url": "https://www.brucetift.com/psychotherapy-practice/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "bctift@msn.com",
+      "image_urls": [
+        "https://www.brucetift.com/wp-content/uploads/2018/08/Bruce.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Bruce Tift – Insights At The Edge Podcast w/Tami Simon",
+      "url": "https://www.youtube.com/watch?v=wUb_e6CICL8",
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "books": [
+    {
+      "title": "Already Free: Buddhism Meets Psychotherapy on the Path of Liberation",
+      "slug": "already-free",
+      "author": "Bruce Tift",
+      "asin": "1622034112",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A book that sets the Western developmental view of the self beside the Buddhist view that freedom is already present, and asks how each can inform the other in daily life, relationships and practice.",
+      "subjects": [
+        "spirituality",
+        "non-duality"
+      ],
+      "cover": "https://www.brucetift.com/wp-content/uploads/2018/08/already-free-cover.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "One-to-one consultation",
+      "url": "https://www.brucetift.com/psychotherapy-practice/",
+      "description": "Sixty-minute sessions by phone or video, no more often than once every four weeks, for people seeking support with personal growth. He draws on decades of Vajrayana practice and offers practices that loosen identification with old patterns.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3271,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/bruce-tift.json",
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts of his own linked from his site; no readable followers → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://www.brucetift.com/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 6 source(s)",
+    "flags": [
+      "Health restore and therapy scope: he is a licensed marriage and family therapist (about page), and the old skip (pipelines-sprint-3/skipped/bruce-tift.json, from search) called his work mainly psychotherapy. His own site now offers 'consultation' for personal growth informed by Vajrayana practice (page URL still /psychotherapy-practice/), no therapy or condition wording, plus his Buddhist book and essays. Owner to judge whether this is spiritual teaching or therapy; his old skip file is superseded by this plan.",
+      "Thin: 3 items (1 offering, 1 book, 1 video). His site has no upcoming events listed and was last designed in 2018; the contact page says he may not reply when there are no openings.",
+      "Tier 0 readable followers (no accounts linked); possible editorial-stature override (Sounds True author, 25 years Naropa faculty) for the owner.",
+      "Book ASIN 1622034112 from the Amazon link on his own book page, not confirmed elsewhere. Cover from his site.",
+      "Photo: his own site's portrait, 400 x 530 and slightly soft; only one usable photo found.",
+      "Possible future hub link: Naropa University (he taught there 25 years, per his about page).",
+      "Dry run (node scripts/ingest.mjs --env dev) not run by the helper: the permission check refused it on 13 Nov 2026; every image URL in the plan was downloaded and checked by hand (HTTP 200). The lead session should run the dry run."
+    ],
+    "left_out": [
+      "Video 'DeepeningIntimacy Session05 01' (on a third party's channel, Sabrina Corvo; looks like a re-upload of course material).",
+      "Audio interviews on his /audio-video/ page (other people's podcasts, not on YouTube).",
+      "Blog essays (articles, not practices or resources)."
+    ],
+    "held": "Thin (3 items) and therapy-led: a family therapist whose site now offers Buddhist-informed 'consultation'. Under the 12 Nov test a therapy lead is listed only for spiritual practice he leads; owner decides."
+  }
+}

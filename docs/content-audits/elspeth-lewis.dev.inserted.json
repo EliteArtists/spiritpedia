@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1506,
+    "healer_slug": "elspeth-lewis"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11260,
+      "slug": "mindful-parenting-for-teens-tips-from-author",
+      "title": "Mindful Parenting for Teens - Tips from Author"
+    },
+    {
+      "table": "books",
+      "id": 2524,
+      "slug": "smooth-sailing-with-your-teen",
+      "title": "Smooth Sailing with Your Teen: Mindful Parenting on the Journey to Adulthood"
+    },
+    {
+      "table": "books",
+      "id": 2525,
+      "slug": "mindfulness-for-challenging-times",
+      "title": "Mindfulness for Challenging Times"
+    },
+    {
+      "table": "books",
+      "id": 2526,
+      "slug": "mindfulness-for-transformation",
+      "title": "Mindfulness for Transformation"
+    },
+    {
+      "table": "courses",
+      "id": "7ca2d6e0-3fde-41a0-8822-8cdd60846ac8",
+      "slug": "mindfulness-coaching-2",
+      "title": "Mindfulness Coaching"
+    }
+  ],
+  "at": "2026-11-13T00:08:49.154Z"
+}

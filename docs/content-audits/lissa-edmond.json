@@ -1,0 +1,122 @@
+{
+  "healer": {
+    "healer_slug": "lissa-edmond",
+    "location_source": null,
+    "no_public_base": "Their own site (embodiedheartmind.com About and Psychiatric Nurse Practitioner pages) names no home town: it says only that they are licensed in New Jersey and New York and live and work on Munsee Lenape lands; the contemplative offerings are online.",
+    "create": {
+      "name": "Lissa Edmond",
+      "bio": "Lissa Edmond is an insight meditation practitioner and somatic facilitator who also works as a psychiatric nurse practitioner; this listing covers only the contemplative side of their work, offered through Embodied Heart Mind. Their own practice of dharma, meditation and mindful movement began in 2008, and they have spent more than a year in all on silent retreat. Their main path draws on Vipassana as taught in the lines of Mahasi Sayadaw and Sayadaw U Tejaniya, samadhi practice from the Pa Auk tradition, and the brahmaviharas, the four boundless qualities of the heart. Since 2025 they have been training as a retreat teacher with Insight Meditation Society and Spirit Rock.\n\nLissa has led sangha gatherings since 2016 and has helped on insight retreats since 2019, guiding mindful movement and body awareness, including online groups for BIPOC and queer practitioners. They meet students one to one for dharma mentoring on a dana basis, kept apart from any clinical work, and run an online library of more than two hundred recorded practices: guided sitting, dharma reflections, gentle yoga, qigong flows and reflective journaling. Their teaching is trauma-sensitive and inclusive, and it returns again and again to kindness, care and listening to the body.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "website_url": "https://embodiedheartmind.com/",
+      "booking_url": "https://embodiedheartmind.com/offerings/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://embodiedheartmind.com/wp-content/uploads/2021/03/lissas-blessing-profile-pic-e1615949163140.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness and Dharma Mentorship",
+      "url": "https://embodiedheartmind.com/offerings/",
+      "description": "One-to-one mentoring meetings rooted in insight meditation, offering guidance for formal sitting practice and for bringing the dharma into daily life. Held outside any clinical setting and offered for dana, so students give what they can.",
+      "price": "Dana",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ],
+      "image": "https://embodiedheartmind.com/wp-content/uploads/2026/07/embodiment-practice-with-lissa-2.png"
+    },
+    {
+      "title": "Embodied Practices Video Library",
+      "url": "https://www.practicesembodiedheartmind.com/offering_packages",
+      "description": "An online collection of more than two hundred recorded practices: guided meditation and dharma reflections, gentle and chair yoga, qigong flows and reflective journaling. Practices can be rented for a day on a give-what-you-can basis, or opened in full with a monthly membership.",
+      "price": "Contact for pricing",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "qi-gong"
+      ],
+      "image": "https://embodiedheartmind.com/wp-content/uploads/2021/03/lissas-blessing-profile-pic-e1615949163140.jpg"
+    },
+    {
+      "title": "Mindfulness & Stress Resourcing 6-Week Series",
+      "url": "https://www.practicesembodiedheartmind.com/offering_packages/997dd154-5d42-40dd-8caa-64c4d21fbe8a",
+      "description": "A recorded six-week series introducing mindfulness practice alongside an understanding of how the body responds to stress, with simple ways to meet stress and worry with care. It grew out of Lissa's doctoral project.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "mindfulness",
+        "meditation"
+      ],
+      "image": "https://embodiedheartmind.com/wp-content/uploads/2021/03/lissas-blessing-profile-pic-e1615949163140.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Integrating Mindful Movement and Embodied Practice in Daily Life",
+      "url": "https://embodiedheartmind.com/wp-content/uploads/2025/10/mindful-movement-in-daily-life.pdf",
+      "description": "A free downloadable guide from Lissa's site with ideas for weaving mindful movement and body awareness into ordinary days.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "mindfulness"
+      ],
+      "image": "https://embodiedheartmind.com/wp-content/uploads/2021/03/lissas-blessing-profile-pic-e1615949163140.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3127,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/lissa-edmond.json",
+    "hub": null,
+    "tier_evidence": "No YouTube channel or social accounts linked from their own site; nothing readable (12 Nov 2026) → 0 → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://embodiedheartmind.com/contact/",
+    "bio_check": "OK: no 8-word runs against 4 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule, therapy lead): their site leads with clinical mental-health care (psychotherapy and medication counselling for NJ and NY). Listed only for the contemplative work (dana-based dharma mentorship, the practice library, the mindfulness series); all clinical services left out. Owner may judge the clinical framing too dominant.",
+      "Tier: no readable follower counts (0).",
+      "practicesembodiedheartmind.com (the video library, linked from their own Offerings page) served a Cloudflare challenge (403) on its home page, so nothing was read there; the two library items are described from the Offerings page on embodiedheartmind.com, and their prices are not published there.",
+      "Photo is from their own site (file named as Lissa's profile picture) and carries a small site watermark.",
+      "They are an IMS/Spirit Rock retreat teacher in training (2025–28) and assist at Spirit Rock and IMS retreats; Spirit Rock not fetched, no hub links made.",
+      "Possibly linkable later to Insight Meditation Society if they become a full teacher there."
+    ],
+    "left_out": [
+      "Somatic psychotherapy and mental-health medication counselling: clinical services (scope rule).",
+      "Somatic resourcing sessions: therapy-adjacent nervous-system sessions sold from the same care-inquiry form as the clinical services; left out under the therapy scope rule.",
+      "Mindful Mat Pilates & Accessible Strength Care Package: fitness.",
+      "Spirit Rock Rainbow Sangha and BIPOC Voices drop-ins, and the Spirit Rock and IMS retreats they assist at: hub programmes on spiritrock.org / events.dharma.org (never fetched), and as assistant they don't lead them.",
+      "BIPOC Embodied Refuge (6 Dec): linked only to a Google Form, no page of its own.",
+      "Inward Bound Mindfulness teen retreat: assistant role, not their own programme.",
+      "No YouTube channel found linked from their site, so no videos."
+    ]
+  },
+  "images_final": true
+}

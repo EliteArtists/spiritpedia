@@ -1,0 +1,163 @@
+{
+  "healer": {
+    "healer_slug": "toby-oliver",
+    "location_source": "https://www.tobyyoga.com/about-toby-yoga",
+    "create": {
+      "name": "Toby Oliver",
+      "bio": "Toby Oliver teaches yoga, meditation and deep relaxation in Sheffield under the name TOBY YOGA, working from Eastview Studios on Junction Road. He came to Dru Yoga as a student more than twenty years ago and, after two years of study, qualified as a Dru teacher in 2016. He has since added a 500-hour training in Traditional Yoga, the school founded in India by Dr ALV Kumar, whose meditation follows the eight limbs set out in Patanjali's Yoga Sutras, along with Dru meditation, yoga nidra, Laughter Yoga and Grief Yoga, in which he has helped cover classes for its founder, Paul Denniston.\n\nHis sessions mix soft, flowing Dru sequences, breath work and visualisation with stillness and guided rest, and are pitched so that complete beginners can join in, on a mat or in a chair. At present he teaches Dru Yoga as private lessons and for organisations, offers Grief Yoga one to one or to groups, and holds a monthly deep relaxation class live online. He also runs meditation sessions for charities, hospices and workplaces across the UK. With his sister Kate, a psychologist, he wrote Rise and Shine, a book on building a calmer, more purposeful start to each day, which has appeared in Italian, Romanian and Polish.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "local_online",
+      "city": "Sheffield",
+      "country": "United Kingdom",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "website_url": "https://www.tobyyoga.com/",
+      "booking_url": "https://www.tobyyoga.com/contact",
+      "youtube_url": "https://www.youtube.com/@tobiasoliver488",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "toby@tobyyoga.com",
+      "image_urls": [
+        "https://images.squarespace-cdn.com/content/v1/5b083dfd372b9639a3b67939/1633787058834-9KGSSNYE5UNFIH3SD5UT/Tobias+Oliver+Headshot+-+Copy.png"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Zero Resistance Traditional Yoga Sequence",
+      "url": "https://www.youtube.com/watch?v=D_WAcYKWwio",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Tobias Oliver"
+    },
+    {
+      "title": "Introduction to Chair Yoga",
+      "url": "https://www.youtube.com/watch?v=XP9zT6XF7MA",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Tobias Oliver"
+    },
+    {
+      "title": "EBR 1 Sequence",
+      "url": "https://www.youtube.com/watch?v=AfWgGfWaj98",
+      "subjects": [
+        "yoga"
+      ],
+      "channel": "Tobias Oliver"
+    },
+    {
+      "title": "Yoga Nidra Guided Relaxation (45 minutes)",
+      "url": "https://www.youtube.com/watch?v=udzclv70Lv0",
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "channel": "Tobias Oliver"
+    },
+    {
+      "title": "Guided Meditation Through the Chakras",
+      "url": "https://www.youtube.com/watch?v=sa34JF3WqFo",
+      "subjects": [
+        "meditation",
+        "chakra-healing"
+      ],
+      "channel": "Tobias Oliver"
+    }
+  ],
+  "books": [],
+  "courses": [
+    {
+      "title": "Dru Yoga private lessons",
+      "url": "https://www.tobyyoga.com/dru-yoga-sheffield",
+      "description": "One-to-one Dru Yoga in Sheffield: gentle flowing movement, directed breathing and visualisation rooted in the yogic tradition. Toby currently teaches Dru as private lessons and for workplaces rather than open public classes.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5b083dfd372b9639a3b67939/t/5b20f377575d1fc23f4eefd4/1528886137362/TOBY+YOGA-logo+small.png?format=1500w"
+    },
+    {
+      "title": "Grief Yoga sessions",
+      "url": "https://www.tobyyoga.com/grief-yoga",
+      "description": "Gentle movement, breath and sound used as a way of being with loss, suitable on a chair or a mat and for people who have never done yoga. Offered one to one or as a one-off or regular series for a group or organisation.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5b083dfd372b9639a3b67939/t/5b20f377575d1fc23f4eefd4/1528886137362/TOBY+YOGA-logo+small.png?format=1500w"
+    },
+    {
+      "title": "Traditional Yoga Meditation",
+      "url": "https://www.tobyyoga.com/meditation",
+      "description": "Breath-focused meditation in the Traditional Yoga lineage of Dr ALV Kumar, following the eight-step path described in Patanjali's Yoga Sutras. Suitable for beginners and for people with some practice; arranged for individuals, groups and workplaces.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "yoga"
+      ],
+      "image": "http://static1.squarespace.com/static/5b083dfd372b9639a3b67939/t/5b20f377575d1fc23f4eefd4/1528886137362/TOBY+YOGA-logo+small.png?format=1500w"
+    },
+    {
+      "title": "Deep Relaxation (online yoga nidra class)",
+      "url": "https://www.tobyyoga.com/deep-relaxation",
+      "description": "A monthly live class on Zoom on the last Sunday morning, guiding you through a four-stage method of physical, mental and emotional rest. A replay stays available for a week, and a reduced rate is offered to people on low incomes.",
+      "price": "£10 per session",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ],
+      "image": "http://static1.squarespace.com/static/5b083dfd372b9639a3b67939/t/5b20f377575d1fc23f4eefd4/1528886137362/TOBY+YOGA-logo+small.png?format=1500w"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3207,
+    "restored_from": "docs/content-audits/uk-europe-sprint-2/skipped/toby-oliver.json",
+    "hub": null,
+    "tier_evidence": "YouTube @tobiasoliver488 22 subscribers (YouTube Data API, 12 Nov 2026); LinkedIn company page linked from his site but never fetched; no other accounts found -> ~22 -> local_hero",
+    "email": "yes",
+    "email_source": "https://www.tobyyoga.com/grief-yoga",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 16 source(s)",
+    "flags": [
+      "Health restore: the old skip (uk-europe-sprint-2) judged him mainly therapy; his own site leads with Dru, Traditional Yoga, Grief Yoga and meditation, so he is listed for those only. His counselling practice (Eastview Therapy) and Heal Your Life workshops are left out.",
+      "Second published address tobiasoliver@me.com appears as text on https://www.tobyyoga.com/contact; the plan uses toby@tobyyoga.com, a mailto link on the Grief Yoga page.",
+      "Currency: the Deep Relaxation page shows the price as £10 without a currency code; written exactly as published.",
+      "Most of his public class pages are undated and some news posts date from 2020-2022; the Dru page says public classes are paused (private and corporate only). The monthly online Deep Relaxation class may also be paused; worth an owner's check.",
+      "Only one photo: his own headshot (1764 px, looked at). His YouTube avatar is a default image.",
+      "His Dru Yoga directory page redirects to civi.druyoga.com, whose robots.txt answered 401 Unauthorized; treated as refusing us and not used.",
+      "YouTube channel is small (5 uploads, 2020-2021); all five pass oEmbed and are listed."
+    ],
+    "left_out": [
+      "Rise and Shine (with Kate Oliver, Piatkus): no ISBN on any page opened (his Books page links only to a linktr.ee page, never fetched).",
+      "The Magic of Meditation course (/introduction-to-meditation-course) and Dru Meditation (/dru-meditation): both pages list boosting the immune system and decreasing blood pressure among meditation's benefits (health rule).",
+      "Eastview Therapy counselling and his work as a registered therapist: clinical services.",
+      "Corporate yoga and meditation (/corporate-yoga-meditation): workplace contracts, not a public offering.",
+      "Dru Back Care course, Laughter Yoga and Heal Your Life workshops: pages not opened or returned 404 (/heal-your-life); not verified.",
+      "The Rise and Shine news posts and other blog articles: not offerings."
+    ]
+  },
+  "images_final": true
+}

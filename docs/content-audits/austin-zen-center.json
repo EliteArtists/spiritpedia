@@ -1,0 +1,132 @@
+{
+  "healer": {
+    "healer_slug": "austin-zen-center",
+    "location_source": "https://austinzencenter.org/contact-azc/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Austin Zen Center / Zenkeiji",
+      "bio": "Austin Zen Center, whose temple name is Zenkeiji, is a Soto Zen community in central Austin, Texas, teaching in the line of Shunryu Suzuki. It grew from a weekly sitting started in 1995 by two friends; a small dedicated zendo followed in 1998, dedicated by Seirin Barbara Kohn of San Francisco Zen Center, and the group incorporated as Austin Zen Center in 2000. Since 2001 it has occupied a former Quaker meeting house on Washington Square, just north of the University of Texas, and its temple name honours Zenkei Blanche Hartman, who sent Kohn to guide it. Kohn, Kosho McCall and Mako Voelkel led it in turn, and Rev. Choro Antonaccio has been guiding teacher since 2023.\n\nThe centre now spans three buildings with a zendo, residential space, classrooms and a library. Beginners can learn zazen most Saturday mornings and stay for the Saturday programme of sitting, chanting and a Dharma talk; weekly sittings, study and discussion groups are free, and there is an online zendo. Private meetings with the guiding teacher and practice leaders, a fall practice intensive and the week-long Rohatsu sesshin in December deepen the practice, and its recent talks are published as a podcast.",
+      "availability": "local_online",
+      "city": "Austin, Texas",
+      "country": "United States",
+      "founded_year": 2000,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://austinzencenter.org/",
+      "booking_url": "https://austinzencenter.org/beginners-instruction/",
+      "youtube_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://austinzencenter.org/wp-content/uploads/2026/02/mainAlter.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Beginner's Zazen Instruction",
+      "url": "https://austinzencenter.org/beginners-instruction/",
+      "description": "An hour of meditation instruction and temple orientation in the zendo, most Saturdays at 8 am and on the last Tuesday evening of each month, with time for questions. Saturday attendees can stay on for the morning programme of zazen, service and a talk.",
+      "price": "Free of charge (donations welcome)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://austinzencenter.org/wp-content/uploads/2026/02/mainAlter.jpg"
+    },
+    {
+      "title": "Rohatsu Sesshin",
+      "url": "https://austinzencenter.org/rohatsu-registration/",
+      "description": "A week of intensive sitting, walking, eating and working in silence that closes the centre's fall practice intensive and leads into its celebration of the Buddha's awakening. Participants commit to at least two days, and some prior retreat experience is advised.",
+      "price": "Member Registration $45 per day; Non-Member Registration $55 per day",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-11",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://austinzencenter.org/wp-content/uploads/2025/10/Eiheiji-Temple-in-Winter-Ango-Practice-Period-1-819x1024.png"
+    },
+    {
+      "title": "Practice Discussion and Dokusan",
+      "url": "https://austinzencenter.org/practice-discussion-2/",
+      "description": "Private meetings during the weekly zazen schedule: formal dokusan with the guiding teacher, Rev. Choro Antonaccio, or a less formal practice discussion with a lay entrusted teacher or the tanto, to talk over one's sitting and daily life.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://austinzencenter.org/wp-content/uploads/2026/02/mainAlter.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Austin Zen Center Dharma Talks",
+      "url": "https://austinzencenter.org/dharma-talks/",
+      "description": "A podcast library of Saturday Dharma talks recorded at the centre since January 2024 by its teachers and visitors, playable on the page or through the main podcast apps.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ],
+      "image": "https://austinzencenter.org/wp-content/uploads/2025/02/39341994-1697223783483-c9f354449f87c-768x768.jpg"
+    },
+    {
+      "title": "Chants for Services",
+      "url": "https://austinzencenter.org/chants-for-service/",
+      "description": "The texts the sangha chants through the week, with downloadable versions, including the Heart Sutra in Sino-Japanese, Dogen's Fukanzazengi and Genjo Koan, a list of women ancestors and the robe chant.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://austinzencenter.org/wp-content/uploads/2026/02/mainAlter.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3336,
+    "tier_evidence": "No YouTube channel linked from austinzencenter.org (13 Nov 2026); social accounts linked but never fetched → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://austinzencenter.org/contact-azc/",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email: no address is published as a link; the Rohatsu page shows an admin address with a broken space ('admin@austinzencenter.or g'), not used. The contact page has a form (WPForms), used as the contact route.",
+      "Name: kept as on the SZBA list ('Austin Zen Center / Zenkeiji'); slug austin-zen-center.",
+      "Affiliation: history names San Francisco Zen Center teachers (Blanche Hartman, Barbara Kohn) and a former head teacher now SFZC's abbot, but the centre is an independent nonprofit, not an SFZC branch; kept under the batch note.",
+      "Photo: only one usable image (the main altar, 650x375). Other site images are thumbnails or a small logo.",
+      "Teachers file empty: Choro Antonaccio and Mako Voelkel are not on Spiritpedia.",
+      "History names Devon Dederich (who lent a room in 1998), not Devon Kerns.",
+      "Crawl-delay 10 respected.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Videos: no YouTube channel linked from the site.",
+      "Fall Practice Intensive page: already under way.",
+      "Affinity groups (women's group, queer dharma, circle of men) and sponsored programmes: kept to the centre's core programme.",
+      "Next Steps class (29 Oct): past."
+    ]
+  },
+  "images_final": true
+}

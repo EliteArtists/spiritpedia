@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1530,
+    "healer_slug": "jamyang-buddhist-centre-leeds"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d5550989-4488-4b6a-a44c-89e256cddbef",
+      "slug": "saturday-mornings-with-geshe-rinchen",
+      "title": "Saturday Mornings with Geshe Rinchen"
+    },
+    {
+      "table": "courses",
+      "id": "f398ee1b-bc1e-46a0-98ea-b329c1802076",
+      "slug": "buddhism-for-intermediate-students",
+      "title": "Buddhism for Intermediate Students"
+    },
+    {
+      "table": "courses",
+      "id": "54e569ad-361e-4396-836f-1740783473ae",
+      "slug": "discovering-buddhism-2",
+      "title": "Discovering Buddhism"
+    },
+    {
+      "table": "courses",
+      "id": "cbf7b1d4-b00d-4914-ade7-e516be26cc07",
+      "slug": "membership-17",
+      "title": "Membership"
+    }
+  ],
+  "at": "2026-11-13T03:37:10.660Z"
+}

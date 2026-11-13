@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1498,
+    "healer_slug": "missouri-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "87c72685-6335-4083-9fc3-ed1e9335a89d",
+      "slug": "beginners-night-2",
+      "title": "Beginner's Night"
+    },
+    {
+      "table": "courses",
+      "id": "2fab1b7a-73e0-4506-871c-bb9c935e47f6",
+      "slug": "sesshins",
+      "title": "Sesshins"
+    },
+    {
+      "table": "courses",
+      "id": "e7dc5739-c083-4df6-9d3a-42fda520a103",
+      "slug": "membership-16",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "b6277cb0-d7e5-42f4-a068-2ffd04632563",
+      "slug": "mechanics-of-zazen-kinhin",
+      "title": "Mechanics of Zazen & Kinhin"
+    },
+    {
+      "table": "free_resources",
+      "id": "ad654e9d-3af9-4cd3-a5d3-c68a894f7d2d",
+      "slug": "document-downloads",
+      "title": "Document Downloads"
+    },
+    {
+      "table": "free_resources",
+      "id": "1803d902-a3e0-43ad-92c7-e1528c71a65b",
+      "slug": "mzc-here-now",
+      "title": "MZC Here-Now"
+    }
+  ],
+  "at": "2026-11-13T04:14:35.559Z"
+}

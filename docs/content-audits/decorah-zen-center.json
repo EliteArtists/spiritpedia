@@ -1,0 +1,94 @@
+{
+  "healer": {
+    "healer_slug": "decorah-zen-center",
+    "location_source": "https://sites.google.com/view/decorah-zen-center/home",
+    "create": {
+      "name": "Decorah Zen Center",
+      "bio": "Decorah Zen Center is a lay Soto Zen practice place in the small college town of Decorah, in north-east Iowa. It runs as a project of Ryumonji Zen Monastery in the nearby hills, and members who want to go deeper are encouraged to take part in the monastery's residential training. The officiating priest is Rev. Myoko Laura Demuth, who was ordained by Shoken Winecoff in 2013, received Dharma transmission from him in 2016 and continues to practise at Ryumonji; she directs the centre together with Lee Ekai Zook.\n\nThe centre's aim is a steady, local rhythm of sitting. Zazen is held on weekday mornings, with an extra late-afternoon sitting on Mondays and a Wednesday evening sitting followed by a Dharma talk; newcomers are asked to come a little early for a short orientation. There is no fee, and offerings are left to each person. Alongside meditation, the centre offers instruction in zazen, study of Buddhist history and texts, workshops and discussion, and it shares the texts of many of its talks freely online, from an introduction to meditation and a four-part look at the Heart Sutra to series on the precepts and the seven factors of awakening.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Decorah, Iowa",
+      "country": "United States",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "mindfulness"
+      ],
+      "website_url": "https://sites.google.com/view/decorah-zen-center/home",
+      "booking_url": "https://sites.google.com/view/decorah-zen-center/home",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "decorahzencenter@gmail.com",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Zazen at Decorah Zen Center",
+      "url": "https://sites.google.com/view/decorah-zen-center/home",
+      "description": "Sitting meditation on weekday mornings, a Monday late-afternoon sitting and a Wednesday evening sitting with a Dharma talk afterwards. First-timers are given a short orientation if they arrive early.",
+      "price": "No charge (free-will offerings appreciated)",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Introduction to Meditation",
+      "url": "https://docs.google.com/document/d/15HmARilkxHB7PwSr0cqS7JGhX4dty_TlxEAsZDu6FZ4/edit?usp=sharing",
+      "description": "The written text of a centre talk that compares several kinds of meditation, Buddhist and otherwise, to show what sets Zen sitting apart. Free to read online.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "DZC Intro to the Heart Sutra I",
+      "url": "https://docs.google.com/document/d/1iFoh2Zz-GcQXmI4zPcoFjadGnBcy7g2C9zTOZD-JyhQ/edit?usp=sharing",
+      "description": "First of four talk texts on the Heart Sutra, covering where the sutra comes from and what its full title means, word by word. Free to read online.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "ancient-wisdom",
+        "non-duality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3355,
+    "hub": null,
+    "tier_evidence": "No YouTube channel found; Facebook never fetched; no readable counts → 0 → local_hero",
+    "email": "yes",
+    "email_source": "https://sites.google.com/view/decorah-zen-center/home",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 7 source(s)",
+    "flags": [
+      "Site found by web search (Google Sites, linked from no SZBA page; SZBA gives no website).",
+      "Availability 'local': no online sittings are mentioned on the site.",
+      "No hub links: Myoko Laura Demuth is not on Spiritpedia; teachers file written with an empty list. Possible future listing: Myoko Laura Demuth.",
+      "Thin: one offering and two free talk texts (Google Docs, opened); the site links about 40 more talk texts, not opened.",
+      "Regional: Decorah, Iowa (small town, rural Midwest).",
+      "Dry run not run: the ingest dry run was refused by the permission check earlier this batch."
+    ],
+    "left_out": [
+      "About 38 further talk texts (precepts series, Seven Factors of Awakening, Practicing from the Heart): not opened, so not described.",
+      "Ryumonji Zen Monastery: the parent monastery, a separate organisation."
+    ],
+    "held": "No usable image: the site's only photos are a stock-style Buddha-face banner, a 200x266 portrait of the teacher (under 300 px) and a header image that sites.google.com refused (HTTP 403, not retried). No YouTube channel or logo found. Owner to decide whether to accept the small teacher portrait or hold."
+  }
+}

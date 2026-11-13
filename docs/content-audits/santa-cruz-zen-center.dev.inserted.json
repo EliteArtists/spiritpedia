@@ -1,0 +1,58 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1565,
+    "healer_slug": "santa-cruz-zen-center"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11600,
+      "slug": "oryoki-at-santa-cruz-zen-center",
+      "title": "Oryoki at Santa Cruz Zen Center"
+    },
+    {
+      "table": "videos",
+      "id": 11601,
+      "slug": "2022-01-12-eugene-bush-traces-of-sangha-santa-cruz-zen-center",
+      "title": "2022 01 12 Eugene Bush Traces of Sangha Santa Cruz Zen Center"
+    },
+    {
+      "table": "courses",
+      "id": "05df14ca-f996-490e-9d87-a5f80dc717dd",
+      "slug": "rohatsu-sesshin-8",
+      "title": "Rohatsu Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "bbc1dbb2-7112-4b19-b9f3-3911b23c0e52",
+      "slug": "ongoing-classes-and-study-groups",
+      "title": "Ongoing Classes and Study Groups"
+    },
+    {
+      "table": "courses",
+      "id": "832743a9-4df3-4420-a873-ac9798626c96",
+      "slug": "practice-discussion-dokusan",
+      "title": "Practice Discussion (Dokusan)"
+    },
+    {
+      "table": "courses",
+      "id": "f7c0b741-f339-40da-84db-09a87befbf96",
+      "slug": "membership-20",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "705a53d1-bd16-4950-b7b2-9f599c91690a",
+      "slug": "santa-cruz-zen-center-dharma-talks-podcast",
+      "title": "Santa Cruz Zen Center Dharma Talks Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "f23a4330-5a91-40a3-8b00-93e96dd797f0",
+      "slug": "zazen-at-santa-cruz-zen-center",
+      "title": "Zazen at Santa Cruz Zen Center"
+    }
+  ],
+  "at": "2026-11-13T04:27:03.118Z"
+}

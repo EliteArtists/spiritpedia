@@ -1,0 +1,5 @@
+{
+  "name": "La Sarmiento",
+  "rank": 3306,
+  "reason": "Retry failed: on 13 Nov 2026 https://lasarmiento.com/ (robots.txt 404, so no rules) answered 301 to http://www.lasarmiento.com/, and https://www.lasarmiento.com/robots.txt failed again with an HTTP/2 protocol error (curl 92, no response). Per the brief, no plain-http fallback and no other route was tried, so the site is treated as unreachable and there is no own source for base, contact, photo or offerings. Earlier skip: pipelines-sprint-3/skipped/la-sarmiento.json (10 Nov 2026)."
+}

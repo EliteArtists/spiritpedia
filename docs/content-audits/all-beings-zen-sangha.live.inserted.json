@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1422,
+    "healer_slug": "all-beings-zen-sangha"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "28a3ce90-f07b-48d7-93b3-278f44f44001",
+      "slug": "weekly-zazen-in-person-and-on-zoom",
+      "title": "Weekly zazen (in person and on Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "feb3b15d-6101-480d-9f14-97652e68cf78",
+      "slug": "dokusan-practice-meetings-with-the-resident-teacher",
+      "title": "Dokusan: practice meetings with the resident teacher"
+    },
+    {
+      "table": "free_resources",
+      "id": "8503ad6d-9e3a-4e67-873d-1df7a1b8fcc6",
+      "slug": "inryu-senseis-dharma-talks",
+      "title": "Inryū Sensei's Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "2939fb90-d0be-460f-872f-1cd9808bfc7d",
+      "slug": "loving-kindness-meditation-3",
+      "title": "Loving Kindness Meditation"
+    }
+  ],
+  "at": "2026-11-13T04:10:20.342Z"
+}

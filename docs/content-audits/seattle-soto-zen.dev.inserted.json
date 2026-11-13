@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1566,
+    "healer_slug": "seattle-soto-zen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "17f099b7-5ce8-49e4-88df-201d9f00512f",
+      "slug": "one-day-zazenkai-rohatsu-and-the-close-of-fall-practice-period",
+      "title": "One-day Zazenkai – Rohatsu and the close of fall practice period"
+    },
+    {
+      "table": "courses",
+      "id": "b80e0334-12a4-4190-92fd-456eda309a44",
+      "slug": "orientation-for-new-zen-practitioners",
+      "title": "Orientation for New Zen Practitioners"
+    },
+    {
+      "table": "courses",
+      "id": "1d1bdc1e-b5bf-4fa9-809b-48738d03e5b8",
+      "slug": "membership-21",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "73b982ee-2e0f-4303-a288-ede8d5d785a6",
+      "slug": "recent-dharma-talks-2",
+      "title": "Recent Dharma Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "53bc4ba4-022d-4809-9d78-faef7ff778cb",
+      "slug": "practice-with-us-online",
+      "title": "Practice with Us Online"
+    }
+  ],
+  "at": "2026-11-13T04:27:09.653Z"
+}

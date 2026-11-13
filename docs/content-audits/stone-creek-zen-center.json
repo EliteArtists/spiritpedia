@@ -1,0 +1,129 @@
+{
+  "healer": {
+    "healer_slug": "stone-creek-zen-center",
+    "location_source": "https://stonecreekzencenter.org/",
+    "create": {
+      "name": "Stone Creek Zen Center",
+      "bio": "Stone Creek Zen Center is a Soto Zen practice centre in Graton, in the western part of Sonoma County, California. Jisho Warner Roshi started it in Sebastopol in 1996 and still teaches there as abiding teacher. She trained with Dainin Katagiri, Tozen Akiyama and Shundo Aoyama in Nagoya, became the Soto Zen Buddhist Association's first LGBTQ president, and has edited several Dharma books, among them Kosho Uchiyama's Opening the Hand of Thought. Since November 2025 the head priest has been Myogen Kathryn Stark, a dharma heir in the Suzuki Roshi line and a hospice chaplain of many years, working alongside other priests and lay teachers.\n\nSitting meditation is the heart of the programme. Sunday mornings open with zazen, an informal breakfast and work practice, followed by a second sitting, a short service and a dharma talk that can also be followed on Zoom; from Monday to Thursday there are early sittings with a morning service. Newcomers can drop in for meditation instruction and an orientation on the first Saturday of each month, and anyone may arrange a private practice discussion with a teacher. Peer-led affinity groups meet through the week, and close to twenty years of recorded talks are online.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Graton, California",
+      "country": "United States",
+      "founded_year": 1996,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://stonecreekzencenter.org/",
+      "booking_url": "https://stonecreekzencenter.org/home/new-to-stone-creek/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "info@stonecreekzen.org",
+      "image_urls": [
+        "https://stonecreekzencenter.org/wp-content/uploads/2024/10/F4A4C071-310B-4281-A725-2F9C47EAA6FA_1_105_c-672x372.jpeg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Introduction to Zen Practice",
+      "url": "https://stonecreekzencenter.org/home/new-to-stone-creek/",
+      "description": "Meditation instruction and an orientation to the centre held one Saturday morning a month, open as a drop-in with no booking. Another time can be arranged by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://stonecreekzencenter.org/wp-content/uploads/2024/10/F4A4C071-310B-4281-A725-2F9C47EAA6FA_1_105_c-1024x576.jpeg"
+    },
+    {
+      "title": "Dokusan (Practice Discussion)",
+      "url": "https://stonecreekzencenter.org/practice/dokusan/",
+      "description": "A private meeting with one of the teachers to reflect on Zen practice and how it meets the rest of one's life, with no need for a particular question. Appointments are made by email.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://stonecreekzencenter.org/wp-content/uploads/2014/07/Jizo-999x576.jpg"
+    },
+    {
+      "title": "Membership",
+      "url": "https://stonecreekzencenter.org/giving-2/membership/",
+      "description": "Monthly dues that keep the centre running and support its teachers. Members join membership meetings, borrow from the library, get early registration for events such as the Tassajara sangha week and receive discounts on workshops.",
+      "price": "Monthly Membership Rate $75, $125, $200 suggested; $35 student or limited income",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://stonecreekzencenter.org/wp-content/uploads/2022/08/pexels-william-liu-13008350-672x372.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Stone Creek Dharma Talks",
+      "url": "https://stonecreekzencenter.org/category/dharma-talks/",
+      "description": "Recorded Sunday talks by the centre's current and past teachers going back to 2006, searchable by teacher, year and theme, with the full collection also kept on the Internet Archive.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ],
+      "image": "https://stonecreekzencenter.org/wp-content/uploads/2024/10/F4A4C071-310B-4281-A725-2F9C47EAA6FA_1_105_c-672x372.jpeg"
+    },
+    {
+      "title": "Weekly Schedule",
+      "url": "https://stonecreekzencenter.org/practice/weekly-schedule/",
+      "description": "The Sunday programme and weekday early-morning sittings with service, several of them open on Zoom, plus the peer-led affinity groups that meet in and around the centre.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://stonecreekzencenter.org/wp-content/uploads/2026/03/altar_3_17_2026-1038x576.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3397,
+    "tier_evidence": "No YouTube channel or social accounts linked from stonecreekzencenter.org → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://stonecreekzencenter.org/home/contact/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Email info@stonecreekzen.org is the centre's general inbox; note it is on stonecreekzen.org while the website is stonecreekzencenter.org.",
+      "Crawl-delay 20 respected (20 s between requests).",
+      "Photo: one only, the street entrance with the Stone Creek Zen Center sign (672x372, the size the site publishes).",
+      "Base: Graton is a small unincorporated town in Sonoma County (under 5,000), please map.",
+      "Head priest Myogen Kathryn Stark also leads Sonoma Valley Zen (rank 3396, skipped as too thin).",
+      "Teachers file empty: Jisho Warner, Myogen Kathryn Stark and JoE' Annette Lille are not on Spiritpedia.",
+      "Weekly practice has no fee (new-to-stone-creek page); the introduction and dokusan prices are not stated, so 'Contact for pricing'."
+    ],
+    "left_out": [
+      "Introduction to Zen and Buddhism course (22 Oct-12 Nov) and Poetry Evenings (4-18 Nov): already under way.",
+      "Yoga with Corina series (June): past.",
+      "Event calendar: rendered by script, no readable dates.",
+      "Affinity groups: peer-led, not separate items."
+    ]
+  },
+  "images_final": true
+}

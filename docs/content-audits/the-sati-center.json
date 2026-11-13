@@ -23,9 +23,7 @@
       "twitter_url": null,
       "tiktok_url": null,
       "contact_email": "karuna@sati.org",
-      "image_urls": [
-        "https://sati.org/wp-content/uploads/2026/05/cropped-sati-logo-1.png"
-      ]
+      "image_urls": []
     }
   },
   "teaches_at": [],
@@ -132,6 +130,7 @@
       "Certificate in Buddhist Spiritual Care, Eco-Chaplaincy and Ordinary Ritual: pages not opened, prices unverified.",
       "Video FkTZzfkkTEA on the chaplaincy page is from another organisation's channel (NACC)."
     ],
-    "held": "The ingest's image check could not read sati.org's robots.txt (socket closed: 'robots.txt unreachable (UND_ERR_SOCKET)'), so the centre's own logo was refused and no image is usable; not retried. Owner to decide whether to retry later or accept another image."
+    "held": "The ingest's image check could not read sati.org's robots.txt (socket closed: 'robots.txt unreachable (UND_ERR_SOCKET)'), so the centre's own logo was refused and no image is usable; not retried. Owner to decide whether to retry later or accept another image.",
+    "retried": "13 Nov 2026 (README §18.7 retry queue): the ingest dry run still could not load the listing's photo (UNSOLVED); still held."
   }
 }

@@ -1,0 +1,34 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1487,
+    "healer_slug": "lissa-edmond"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "19c5c0ce-047a-4a95-8ee4-8272a3a2d870",
+      "slug": "mindfulness-and-dharma-mentorship",
+      "title": "Mindfulness and Dharma Mentorship"
+    },
+    {
+      "table": "courses",
+      "id": "ef54409a-9d38-4084-8fd6-38965474a9d7",
+      "slug": "embodied-practices-video-library",
+      "title": "Embodied Practices Video Library"
+    },
+    {
+      "table": "courses",
+      "id": "945078c1-809c-4c12-b236-24c0eeb9834a",
+      "slug": "mindfulness-stress-resourcing-6-week-series",
+      "title": "Mindfulness & Stress Resourcing 6-Week Series"
+    },
+    {
+      "table": "free_resources",
+      "id": "2c01a33c-140f-4549-b9ed-ef176f8b05f8",
+      "slug": "integrating-mindful-movement-and-embodied-practice-in-daily-life",
+      "title": "Integrating Mindful Movement and Embodied Practice in Daily Life"
+    }
+  ],
+  "at": "2026-11-13T04:13:55.606Z"
+}

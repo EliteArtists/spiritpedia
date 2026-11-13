@@ -1,0 +1,123 @@
+{
+  "healer": {
+    "healer_slug": "zen-downeast",
+    "location_source": "https://www.zendowneast.org/",
+    "create": {
+      "name": "Zen DownEast",
+      "bio": "Zen DownEast is a small Soto Zen sangha in Maine, set up in 2012 by Diane Shoshin Fitzgerald, who leads it as Spiritual Director and resident teacher. A Maine lawyer who has practised Zen for over three decades, she was ordained a priest in 2013 and received full transmission from Melissa Myozen Blacker, Roshi, in 2017. That line joins the Soto lineage of Rev. Master Jiyu-Kennett with the koan-based Sanbo Kyodan teaching carried to the West by Robert Aitken. Two assistant teachers, Mary Awaremu Downing and Willy Kosan Heineman, both ordained by Diane, act as practice leaders.\n\nMost of the sangha's practice happens on Zoom, which suits members scattered along the coast and beyond. Sittings are held each weekday morning and on Tuesday evenings, with a weekly Dogen reading group, a monthly sutra class, periodic precepts study leading to lay vows, and a monthly EcoSattva gathering devoted to care for the earth. Willy leads a weekly in-person sitting in Norwich, Connecticut.\n\nRetreats take place in person, chiefly at the Morgan Bay Zendo in Surry on the Maine coast, from single-day zazenkai to week-long sesshin open for full or part-time attendance. Daily, weekly and day-long practice is offered free, and the liturgy book can be read or downloaded from the website.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local_online",
+      "city": "Surry, Maine",
+      "country": "United States",
+      "founded_year": 2012,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.zendowneast.org/",
+      "booking_url": "https://www.zendowneast.org/contact.html",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": null,
+      "image_urls": [
+        "https://www.zendowneast.org/uploads/1/1/8/4/118438358/photo-for-website-1_orig.jpeg",
+        "https://www.zendowneast.org/uploads/1/1/8/4/118438358/picture2.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "One-day retreat (zazenkai) at Morgan Bay Zendo",
+      "url": "https://www.zendowneast.org/retreats.html",
+      "description": "A Saturday of in-person zazen, walking meditation and a dharma talk at the Morgan Bay Zendo in Surry, with private meetings with the teacher; come for the whole day or part of it and bring a packed lunch.",
+      "price": "All daily, weekly and day-long (zazenkai) practice periods are offered free of charge, although donations to Zen DownEast of any amount are gratefully received.",
+      "product_type": "retreat",
+      "start_date": "2026-12-05",
+      "end_date": "2026-12-05",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zendowneast.org/uploads/1/1/8/4/118438358/picture2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Daily and Weekly Practice on Zoom",
+      "url": "https://www.zendowneast.org/daily-and-weekly-practice.html",
+      "description": "Weekday morning and Tuesday evening online sittings with zazen and liturgy; join for any part, and ask for the Zoom details through the contact page.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zendowneast.org/uploads/1/1/8/4/118438358/photo-for-website-1_orig.jpeg"
+    },
+    {
+      "title": "Dogen Studies",
+      "url": "https://www.zendowneast.org/dogen-studies.html",
+      "description": "A weekly drop-in reading and discussion group on the writings of Eihei Dogen, led by Diane Shoshin Fitzgerald before the Tuesday evening sitting, with a recommended reading list.",
+      "featured": false,
+      "resource_type": "workshop",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.zendowneast.org/uploads/1/1/8/4/118438358/editor/dogen-image.jpg?1521922662"
+    },
+    {
+      "title": "Zen DownEast Liturgy Book",
+      "url": "https://www.zendowneast.org/liturgy.html",
+      "description": "The sangha's sutra and service book, viewable in the browser or as a PDF download.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom"
+      ],
+      "image": "https://www.zendowneast.org/uploads/1/1/8/4/118438358/photo-for-website-1_orig.jpeg"
+    },
+    {
+      "title": "Zazen Instruction",
+      "url": "https://www.zendowneast.org/zazen-instruction.html",
+      "description": "Guidance for newcomers on posture, what to wear and bring, how long the sitting and walking periods last, and suggested reading before a first sit.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation"
+      ],
+      "image": "https://www.zendowneast.org/uploads/1/1/8/4/118438358/photo-for-website-1_orig.jpeg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3407,
+    "tier_evidence": "No YouTube or social links on zendowneast.org → 0 readable → local_hero",
+    "email": "contact form",
+    "email_source": null,
+    "contact_form_url": "https://www.zendowneast.org/contact.html",
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Contact: Weebly contact form on the contact page; the only email (on the retreats page) is Cloudflare-protected and was not decoded.",
+      "Base: SZBA lists 848 U.S. Rte 1, Pembroke, ME; the site gives no own address and says it meets online and at Morgan Bay Zendo, Surry, Maine (a separate zendo). City set to Surry; owner may prefer Pembroke from SZBA.",
+      "robots.txt disallows about.html, resources.html, dharma-audio.html, winter-practice.html and the blog; none fetched.",
+      "Photos: portrait on the teachers page taken to be Diane Shoshin Fitzgerald (first teacher listed, not captioned) and the Morgan Bay zendo interior from the retreats page.",
+      "Teachers file empty: Diane Shoshin Fitzgerald, Melissa Myozen Blacker not on Spiritpedia.",
+      "Regional: Down East Maine."
+    ],
+    "left_out": [
+      "Green Gulch five-day retreat (15-19 July 2026), co-led at an SFZC centre: past and not the centre's own programme.",
+      "March, June and September 2026 sesshin: past.",
+      "Sutra classes, EcoSattva gatherings and precepts study: details only by contact; not listed. SZBA 'Statement in Support of Compassion' page not used.",
+      "Norwich, Connecticut weekly sitting: no details beyond time and venue."
+    ]
+  },
+  "images_final": true
+}

@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1528,
+    "healer_slug": "tara-meditation-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "e3ba3e20-1d4f-4de0-b3fd-1341024c1a08",
+      "slug": "guided-meditation",
+      "title": "Guided Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "86efd054-3a4d-4e3e-a968-e446cc27f874",
+      "slug": "teachings-in-tibetan-buddhism",
+      "title": "Teachings in Tibetan Buddhism"
+    },
+    {
+      "table": "courses",
+      "id": "821b77fa-06de-4705-abed-bdd0f4ac1ba7",
+      "slug": "tara-yoga",
+      "title": "Tara Yoga"
+    },
+    {
+      "table": "courses",
+      "id": "764a6abf-750f-4049-ade4-b0edc214e2a8",
+      "slug": "membership-16",
+      "title": "Membership"
+    }
+  ],
+  "at": "2026-11-13T03:37:01.863Z"
+}

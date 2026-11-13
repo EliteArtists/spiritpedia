@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1538,
+    "healer_slug": "floating-zendo"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "a83aeee5-8b86-4f1c-8793-9d64116028a4",
+      "slug": "tuesday-evening-zen-practice-online",
+      "title": "Tuesday Evening Zen Practice (Online)"
+    },
+    {
+      "table": "courses",
+      "id": "49ca1df4-53db-4f4a-a1d3-458ee1dec1c5",
+      "slug": "saturday-zen-practice-in-san-jose",
+      "title": "Saturday Zen Practice in San José"
+    },
+    {
+      "table": "courses",
+      "id": "e9d1f674-73aa-4410-865c-2bde242cdb4f",
+      "slug": "sesshin-4",
+      "title": "Sesshin"
+    },
+    {
+      "table": "free_resources",
+      "id": "94264f24-1268-492b-9a48-8390a16de56f",
+      "slug": "floating-zendo-dharma-talks",
+      "title": "Floating Zendo Dharma Talks"
+    }
+  ],
+  "at": "2026-11-13T03:39:15.918Z"
+}

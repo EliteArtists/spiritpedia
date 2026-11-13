@@ -1,0 +1,64 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1481,
+    "healer_slug": "kevin-hume"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11302,
+      "slug": "traffic-light-meditation",
+      "title": "Traffic Light Meditation"
+    },
+    {
+      "table": "videos",
+      "id": 11303,
+      "slug": "lotus",
+      "title": "Lotus"
+    },
+    {
+      "table": "videos",
+      "id": 11304,
+      "slug": "breath-meditation",
+      "title": "Breath Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "c85530d0-d55a-495f-94a0-b13c8c10b30e",
+      "slug": "first-steps-introduction-to-meditation",
+      "title": "First Steps: Introduction to Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "c27b2c83-f608-4dd4-9c2c-2f45db07d225",
+      "slug": "learn-to-teach-meditation-and-mindfulness",
+      "title": "Learn to Teach Meditation and Mindfulness"
+    },
+    {
+      "table": "courses",
+      "id": "3679e2ba-fa02-499c-a9ba-7e5cffd03e40",
+      "slug": "private-meditation-courses-coaching",
+      "title": "Private Meditation Courses & Coaching"
+    },
+    {
+      "table": "courses",
+      "id": "883ab421-a12c-4d04-a2cd-fa7e285ea9cb",
+      "slug": "first-steps-in-the-journey-to-peace-of-mind-cd",
+      "title": "First Steps in the Journey to Peace of Mind CD"
+    },
+    {
+      "table": "courses",
+      "id": "76ce3bd9-4869-4bee-ab9b-fa580295abce",
+      "slug": "loving-kindness-mp3",
+      "title": "Loving Kindness mp3"
+    },
+    {
+      "table": "courses",
+      "id": "8ca8f9c4-0cb1-435c-b1f9-c561b0001c9f",
+      "slug": "flow-of-chi-chakras-mp3",
+      "title": "Flow of Chi (Chakras) mp3"
+    }
+  ],
+  "at": "2026-11-13T04:13:39.099Z"
+}

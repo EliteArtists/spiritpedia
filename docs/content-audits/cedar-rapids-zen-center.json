@@ -1,0 +1,113 @@
+{
+  "healer": {
+    "healer_slug": "cedar-rapids-zen-center",
+    "location_source": "https://www.cedarrapidszencenter.org/contact-us/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Cedar Rapids Zen Center",
+      "bio": "Cedar Rapids Zen Center is a small Soto Zen community in Cedar Rapids, Iowa, practising in a house on Bever Avenue in a residential neighbourhood, where a modest zendo can open into the dining room when more people come. It was founded in January 2000, and for nearly twenty-five years its resident teacher was Zuiko Redding, a Texan who had studied with Tozen Akiyama and Dainin Katagiri before ordaining in Japan in 1992 under Tsugen Narasaki; she died in April 2024. The centre's guiding teacher is now Koji Acquaviva, a priest who spent a decade training at San Francisco Zen Center's residential temples, and lay practice leaders keep the schedule running.\n\nSunday mornings bring zazen, a Dharma talk or discussion, work practice and tea, in person and on Zoom; on some Sundays the sangha listens to a recording of Zuiko's teaching or joins a talk from a sister temple. Short twenty-minute sittings run midweek, a Monday evening group reads and discusses Dharma texts, and newcomers can attend an introduction to zazen once a month. All-day sittings and three-day silent sesshin with oryoki meals deepen the practice, and the centre runs on donations and a modest membership.",
+      "availability": "local_online",
+      "city": "Cedar Rapids, Iowa",
+      "country": "United States",
+      "founded_year": 2000,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://www.cedarrapidszencenter.org/",
+      "booking_url": "https://www.cedarrapidszencenter.org/practice-opportunities/",
+      "youtube_url": null,
+      "contact_email": "crzc@cedarrapidszencenter.org",
+      "image_urls": [
+        "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-CRCZ_Logo_Color.png",
+        "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-Jizo-in-Garden-1.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Practice Opportunities: Sunday zazen and Dharma talks, sesshin and all-day sittings",
+      "url": "https://www.cedarrapidszencenter.org/practice-opportunities/",
+      "description": "Sunday mornings of zazen followed by a Dharma talk or discussion, work practice and tea, plus short weekday sittings, Monday evening Dharma study, three-day silent sesshin and less formal all-day sittings. In person and on Zoom.",
+      "price": "Donations are welcome; there is no fee",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Introduction to Zazen",
+      "url": "https://www.cedarrapidszencenter.org/getting-started/",
+      "description": "A monthly beginners' evening on the third Wednesday with a talk on Zen, sitting instruction, a short period of zazen and time for questions, plus guidance on zendo etiquette for first visits.",
+      "price": "Donations are welcome; there is no fee",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Membership",
+      "url": "https://www.cedarrapidszencenter.org/getting-involved/",
+      "description": "Membership for those who want to support the centre and take part in its life, with library borrowing and a vote at the annual meeting; a traditional membership given in work or goods is also possible by arrangement.",
+      "price": "General membership – $30; Student/Limited income/Out of Town membership – $15",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Welcome to Cedar Rapids Zen Center: What is Zen?",
+      "url": "https://www.cedarrapidszencenter.org/welcome-to-cedar-rapids-zen-center/",
+      "description": "A short introduction to Zen as meeting life as it is, with zazen described as sitting quietly in equanimity and carrying that attention off the cushion into daily life.",
+      "featured": true,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3346,
+    "tier_evidence": "No YouTube channel linked from cedarrapidszencenter.org; Facebook linked but never fetched; 13 Nov 2026 → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://www.cedarrapidszencenter.org/contact-us/",
+    "contact_form_url": null,
+    "bio_check": "OK: no 8-word runs against 10 source(s)",
+    "flags": [
+      "Teachers file empty: Koji Acquaviva (guiding teacher) and the late founding teacher Zuiko Redding are not on Spiritpedia.",
+      "Photos: the centre's logo and a stone Jizo statue in its garden (site header image); no photo of the zendo was found. Owner may judge.",
+      "The home page publishes a Zoom ID and passcode; not copied.",
+      "Thin: 4 items; no videos (no YouTube channel linked). The 'Upcoming events' page is out of date (September dates); the home page lists the November programme.",
+      "Regional: Cedar Rapids, Iowa.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Koji Acquaviva's weekend (14-15 Nov): mini retreat on 14 Nov is not after 14 Nov; the 15 Nov talk is a single Sunday talk.",
+      "Dharma Recovery group, Chanting for Peace, sangha meeting: one-off or support-group events.",
+      "Sesshin chant book and 'Currents' newsletter archive: not opened."
+    ],
+    "held": "Photos (cedarrapidszencenter.org) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
+  }
+}

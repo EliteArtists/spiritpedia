@@ -1,0 +1,124 @@
+{
+  "healer": {
+    "healer_slug": "new-york-zen-center-for-contemplative-care",
+    "location_source": "https://zencare.org/connect",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "New York Zen Center for Contemplative Care",
+      "bio": "This Soto Zen community in Manhattan joins meditation practice with care for people facing illness, ageing, grief and the end of life. It was founded in 2007 by Koshin Paley Ellison and Chodo Robert Campbell, recognised Zen teachers in the White Plum lineage who had both worked as chaplains, and who modelled it on the small neighbourhood temples they had visited in Japan. Paley Ellison, its abbot, is the author of Wholehearted and Untangled.\n\nZen practice runs alongside its training work. A daily online midday sitting with discussion runs Monday to Saturday, and on Sunday mornings and Monday and Wednesday evenings there is zazen, chanting and a Dharma talk, both at the zendo and on Zoom, with guidance for beginners twice a month. Half-day retreats, sesshin, ninety-day online practice periods, graduate-level classes on sutras and precepts and a two-year certificate programme in Soto Zen studies offer deeper study. Its care side trains chaplains, clinicians and volunteer caregivers and hosts support groups, and recorded talks by its teachers are published online.",
+      "availability": "local_online",
+      "city": "New York, New York",
+      "country": "United States",
+      "founded_year": 2007,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "death-the-afterlife"
+      ],
+      "website_url": "https://zencare.org/",
+      "booking_url": "https://zencare.org/online-zendo",
+      "youtube_url": null,
+      "contact_email": "info@zencare.org",
+      "image_urls": []
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "November Half-Day Retreat 2026",
+      "url": "https://zencare.org/events/nov-half-day-retreat-2026",
+      "description": "A Saturday morning of silent sitting and walking meditation with a Dharma talk, open to all levels, held at the zendo with limited places and also online. In-person places must be reserved when registering.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2026-11-21",
+      "end_date": "2026-11-21",
+      "subjects": [
+        "meditation"
+      ]
+    },
+    {
+      "title": "Certificate in Soto Zen Buddhist Studies",
+      "url": "https://zencare.org/certificate-in-soto-zen-buddhist-studies-new-york-zen-center",
+      "description": "A graduate-level programme of 36 credit hours combining study of Soto Zen texts, zazen and community learning, with courses online or in person and two silent retreats required. It can be completed in about two years and is open to people of any tradition or none.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "ancient-wisdom",
+        "meditation"
+      ]
+    },
+    {
+      "title": "Online & In-Person Zendo",
+      "url": "https://zencare.org/online-zendo",
+      "description": "The regular schedule of zazen: a weekday and Saturday midday sitting online with a short prompt and small-group discussion, and Sunday morning and Monday and Wednesday evening sessions with chanting and talks, at the zendo and on Zoom. Beginners receive guidance on the first and third Sundays.",
+      "price": "Offered free of charge; donations welcome",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "An introduction to Zen Meditation",
+      "url": "https://zencare.org/intro-to-zen",
+      "description": "An eight-part video course with Koshin Paley Ellison covering Zen history, posture, shikantaza, walking meditation, koans, sangha and bringing practice into daily life, free to watch for 48 hours after registering.",
+      "featured": true,
+      "resource_type": "mini_course",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Podcasts",
+      "url": "https://zencare.org/tags/podcasts",
+      "description": "Recorded Dharma talks by the centre's guiding teachers and senior students on practice, precepts, care for oneself and others, and meeting suffering with steadiness.",
+      "featured": false,
+      "resource_type": "download",
+      "subjects": [
+        "ancient-wisdom",
+        "spirituality"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3381,
+    "tier_evidence": "No YouTube channel linked from zencare.org (13 Nov 2026); other social accounts not fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://zencare.org/online-zendo",
+    "contact_form_url": "https://zencare.org/connect",
+    "bio_check": "OK: no 8-word runs against 11 source(s)",
+    "held": "No usable photo: every image on zencare.org is hosted on cdn.prod.website-files.com, whose robots.txt request returned 403 (13 Nov 2026), so the host is treated as blocked and nothing was downloaded from it; no YouTube channel is linked for an avatar. Owner to decide (e.g. a photo from another allowed source) or skip.",
+    "flags": [
+      "Scope: much of the site is contemplative-care education (chaplaincy, a Contemplative Medicine Fellowship for clinicians, support groups); the Zen practice side is substantial, so it was kept as a centre, but the owner may judge it mainly clinical-training.",
+      "Advisory council lists Sharon Salzberg (on Spiritpedia) and Sebene Selassie; advisers are not teachers there, so no links (owner's rule of 11 Nov).",
+      "Teachers file empty: founders Koshin Paley Ellison and Chodo Robert Campbell are not on Spiritpedia. Possible future listing: Koshin Paley Ellison (author of Wholehearted and Untangled).",
+      "The centre is moving to a new home (a procession on 30 Nov; 'first sit in our new zendo' on 2 Dec); the base stays New York.",
+      "Third subject death-the-afterlife reflects its end-of-life care focus; swap for spirituality if preferred.",
+      "Possible editorial-stature override: nationally known for contemplative care.",
+      "Dry run not run: plan is held with no photo."
+    ],
+    "left_out": [
+      "Contemplative Medicine Fellowship, Foundations in Contemplative Care, CPE, MA in Buddhist Spiritual Care, educator training: professional clinical and chaplaincy training.",
+      "Support groups (aging, recovery, terminal illness, caregivers, grief): care services rather than teaching programmes.",
+      "Zen Precepts and Catch Your Mind (Sept-June courses): already under way.",
+      "Rohatsu ceremony, procession and holiday party: ceremonies and community events.",
+      "Norman Fischer event on 20 Dec: guest teacher."
+    ]
+  }
+}

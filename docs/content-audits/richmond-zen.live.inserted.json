@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1509,
+    "healer_slug": "richmond-zen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "749f4d3f-33bd-4b52-a371-19a2ca91a859",
+      "slug": "weekly-zazen-schedule",
+      "title": "Weekly Zazen Schedule"
+    },
+    {
+      "table": "courses",
+      "id": "8d139a39-c1c3-4393-b2cc-ec3416b8a72c",
+      "slug": "newcomer-orientation-and-meditation-instruction",
+      "title": "Newcomer Orientation and Meditation Instruction"
+    },
+    {
+      "table": "courses",
+      "id": "09fc49a6-5bfc-46cf-8079-6399cabdbb6f",
+      "slug": "zazenkai-5",
+      "title": "Zazenkai"
+    },
+    {
+      "table": "courses",
+      "id": "f41d4bb6-8c0f-41f9-88a4-677ccb075079",
+      "slug": "precepts-study-class",
+      "title": "Precepts Study Class"
+    },
+    {
+      "table": "free_resources",
+      "id": "02b72946-08ab-4ac1-b790-ea55bf57c0b7",
+      "slug": "how-to-practice-zazen-illustrated-instructions",
+      "title": "How to Practice Zazen (illustrated instructions)"
+    },
+    {
+      "table": "free_resources",
+      "id": "706fde8b-b235-40b3-b804-ac8f735d0e0f",
+      "slug": "richmond-zen-chant-book",
+      "title": "Richmond Zen Chant Book"
+    }
+  ],
+  "at": "2026-11-13T04:15:11.325Z"
+}

@@ -1,0 +1,201 @@
+{
+  "healer": {
+    "healer_slug": "mariana-caplan",
+    "location_source": null,
+    "no_public_base": "Her own site publishes no home town: the Psychotherapy page says only that she sees people in person in Marin County, California (a county, not a town), and the About page says she spends much of her time travelling and working abroad.",
+    "create": {
+      "name": "Mariana Caplan",
+      "bio": "Mariana Caplan is an American writer, teacher and psychotherapist whose work for more than twenty-five years has sat where yoga, meditation and spiritual life meet Western psychology. Her best-known books ask hard questions of the spiritual path: Halfway Up the Mountain looks at people who claim awakening too soon, The Guru Question weighs the gifts and dangers of choosing a teacher, and Eyes Wide Open is a guide to discernment for seekers. Yoga & Psyche, from Sounds True, brings yogic practice and philosophy together with body-based trauma work, and she convened a conference of the same name.\n\nTeaching abroad since 1997, she has been on the faculty of Naropa University, Sophia University and the California Institute of Integral Studies, building graduate programmes that join psychology, yoga and meditation. Alongside a licensed clinical practice, which is not listed here, she offers spiritual guidance worldwide, which she calls spiritual friendship, and advises spiritual communities and teachers going through crisis. Her site shares a free set of recorded Yoga & Psyche practices for feeling emotion in the body and settling the nervous system. In 2023 she and her son started Soccer for World Peace, a charity that takes footballs to children in many countries.",
+      "tier": "local_hero",
+      "entity_type": "individual",
+      "availability": "worldwide",
+      "city": null,
+      "country": null,
+      "subjects": [
+        "yoga",
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "website_url": "https://marianacaplan.com/",
+      "booking_url": "https://marianacaplan.com/contact-forms-payment/",
+      "youtube_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "mc@marianacaplan.com",
+      "image_urls": [
+        "https://marianacaplan.com/wp-content/uploads/2023/12/Mariana-12-11.jpg",
+        "https://marianacaplan.com/wp-content/uploads/2019/08/Mariana-sit-blue-mask.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [
+    {
+      "title": "Discernment, Enlightenment, & Spiritual Teachers - Mariana Caplan",
+      "url": "https://www.youtube.com/watch?v=xVG8R-AyOj4",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "channel": "Buddha at the Gas Pump®"
+    },
+    {
+      "title": "Yoga, Psychology, and the Wisdom of the Body - Mariana Caplan",
+      "url": "https://www.youtube.com/watch?v=-3nuHLwgANk",
+      "subjects": [
+        "yoga",
+        "spirituality"
+      ],
+      "channel": "Buddha at the Gas Pump®"
+    },
+    {
+      "title": "Mariana Caplan - \"Everybody spiritual bypasses...\"",
+      "url": "https://www.youtube.com/watch?v=hqJ3iqJPX_s",
+      "subjects": [
+        "spirituality",
+        "shadow-work"
+      ],
+      "channel": "Conscious Life"
+    }
+  ],
+  "books": [
+    {
+      "title": "Yoga & Psyche: Integrating the Paths of Yoga and Psychology for Healing, Transformation, and Joy",
+      "slug": "yoga-and-psyche",
+      "author": "Mariana Caplan",
+      "asin": "1622036565",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her Sounds True book on bringing yogic practice and philosophy into conversation with psychology, somatic work and neuroscience. It closes with a toolbox of practices for feeling emotion in the body and steadying the nervous system.",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1622036565.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Eyes Wide Open: Cultivating Discernment on the Spiritual Path",
+      "slug": "eyes-wide-open-cultivating-discernment-on-the-spiritual-path",
+      "author": "Mariana Caplan",
+      "asin": "1591797322",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A guide for seekers on telling real spiritual growth from its imitations. She looks at common traps such as spiritual bypassing, misplaced trust in teachers and the pull of quick awakening, and at how to keep a clear head on the path.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1591797322.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Guru Question: The Perils and Rewards of Choosing a Spiritual Teacher",
+      "slug": "the-guru-question",
+      "author": "Mariana Caplan",
+      "asin": "1604070730",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "An exploration of the student and teacher bond in spiritual life. It weighs what a teacher can offer against the ways the relationship goes wrong, and asks what a student needs to bring to it.",
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1604070730.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "Halfway Up the Mountain: The Error of Premature Claims to Enlightenment",
+      "slug": "halfway-up-the-mountain",
+      "author": "Mariana Caplan",
+      "asin": "0934252912",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "Her early study of seekers and teachers who announce full awakening before they reach it. Drawing on interviews with teachers from several traditions, it looks at why this happens and what a more honest path asks.",
+      "subjects": [
+        "spiritual-awakening",
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/0934252912.01._SCLZZZZZZZ_.jpg"
+    },
+    {
+      "title": "The Way of Failure: Winning Through Losing",
+      "slug": "the-way-of-failure",
+      "author": "Mariana Caplan",
+      "asin": "1890772100",
+      "store": "amazon.com",
+      "goodreads_url": null,
+      "worldofbooks_url": null,
+      "description": "A short book on failure as a teacher rather than an enemy. She suggests that meeting loss and defeat honestly can soften pride and open a deeper kind of inner growth.",
+      "subjects": [
+        "spirituality"
+      ],
+      "cover": "https://m.media-amazon.com/images/P/1890772100.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "courses": [
+    {
+      "title": "Spiritual Guidance",
+      "url": "https://marianacaplan.com/psychotherapy/",
+      "description": "One-to-one spiritual guidance, offered worldwide online, which she describes as a form of spiritual friendship. She also advises spiritual and religious communities and teachers facing crisis.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality",
+        "spiritual-awakening"
+      ],
+      "image": "https://marianacaplan.com/wp-content/uploads/2022/11/box-spirit-2.jpg"
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "The Yoga & Psyche Method Toolbox",
+      "url": "https://marianacaplan.com/wp-content/uploads/2020/03/Ch.8-Workbook-for-Yoga-Psyche-Toolbox_Rev2.pdf",
+      "description": "A free workbook from her Yoga & Psyche book, with seven matching audio practices on her home page. The practices move from sensing emotion and sensation in the body to resourcing and pendulation, and can be used alone, in pairs or alongside yoga.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "yoga",
+        "self-healing"
+      ],
+      "image": "https://m.media-amazon.com/images/P/1622036565.01._SCLZZZZZZZ_.jpg"
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "health-restore",
+    "rank": 3283,
+    "restored_from": "docs/content-audits/pipelines-sprint-3/skipped/mariana-caplan.json",
+    "hub": null,
+    "tier_evidence": "No readable follower counts (13 Nov 2026): no YouTube channel of her own found (videos are on Buddha at the Gas Pump and Conscious Life, not her accounts); Instagram @marianacaplanyoga and Facebook yogaandpsyche not fetched (off limits) → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://marianacaplan.com/contact-forms-payment/",
+    "contact_form_url": "https://marianacaplan.com/contact-forms-payment/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "Health restore (owner's 12 Nov rule): earlier skipped as a psychotherapist (pipelines-sprint-3/skipped/mariana-caplan.json, site not opened then). Her own site does centre a licensed psychotherapy practice, but she also offers spiritual guidance worldwide, and her books are on the spiritual path; she is listed for those only. Owner may judge her mainly therapy and drop her.",
+      "The only offering, Spiritual Guidance, sits on a page titled Psychotherapy that also describes her clinical practice; no separate page exists.",
+      "Possible editorial-stature override: Sounds True author of several well-known books on the spiritual path (Halfway Up the Mountain, Eyes Wide Open); tier not raised.",
+      "Counts unreadable for her main accounts (Instagram, Facebook); 0 readable.",
+      "ISBNs from the Amazon links on her own site (marianacaplan.com/about/ and /multimedia-library/), not confirmed elsewhere; Amazon pages not opened.",
+      "Her site also shows an HTML-entity-encoded mailto (an address at realspirituality.com); not decoded or used. The plain address mc@marianacaplan.com is shown as text on the Contact page.",
+      "Photos: both from her own site (home/about and Yoga & Psyche pages); the two are taken years apart but appear to be the same woman.",
+      "Base: Marin County, California only (a county); left null.",
+      "Dry run not run: node scripts/ingest.mjs … --env dev was refused by this session's permission check (13 Nov 2026); the lead session should run it. All images were fetched or HEAD-checked with curl (200) instead."
+    ],
+    "left_out": [
+      "Psychotherapy, couples and somatic therapy sessions (Psychotherapy page): clinical therapy, out of scope.",
+      "Soccer for World Peace (charity, soccerforworldpeace.org): humanitarian work, not a teaching offering; not opened.",
+      "Proceedings of the Yoga & Psyche Conference (2014): edited academic papers, not her own book.",
+      "To Touch Is to Live: only a Kindle ASIN (B00OZ57TZ0) linked; not a spiritual-practice title.",
+      "Through a Pinhole of Light (forthcoming book on global mental health): not yet published.",
+      "BatGap's other episode (batgap.com/?p=459119) redirects to the second interview's transcript; same video."
+    ],
+    "held": "Photos (marianacaplan.com) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), which counts as a refusal. Owner to supply a photo or retry another day."
+  }
+}

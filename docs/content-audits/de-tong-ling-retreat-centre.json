@@ -1,0 +1,107 @@
+{
+  "healer": {
+    "healer_slug": "de-tong-ling-retreat-centre",
+    "location_source": "https://detongling.org/contact/",
+    "create": {
+      "name": "De-Tong Ling Retreat Centre",
+      "bio": "Set in about 1,300 acres of bush on Kangaroo Island, South Australia, De-Tong Ling is a Tibetan Buddhist retreat centre of the FPMT network. Its Tibetan name, which means place of bliss and emptiness, was given by Lama Zopa Rinpoche in 1988 after students offered him the land, and the centre opened formally in 1994 once Khensur Kangurwa Lobsang Thubten Rinpoche had blessed the site. A large stupa looks out over the sea, and the centre's teachers include the Adelaide-born monk Ven. Thubten Dondrub, who chairs its committee, and the nun Ven. Tenzin Tsapel.\n\nThe centre is built for silence. Four private retreat houses of rammed earth and mud brick, powered by the sun and fed by rainwater, host solitary retreats of any length, with a manager handling supplies so that retreatants can keep the Buddhist precepts undisturbed; longer stays require earlier retreat experience. A group retreat facility hosts several led retreats each year, among them an annual lam-rim retreat, and can be hired by other contemplative groups. Members support the land and receive discounts on retreats.",
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "availability": "local",
+      "city": "Gosse, South Australia",
+      "country": "Australia",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://detongling.org/",
+      "booking_url": "https://detongling.org/retreat/",
+      "youtube_url": "https://www.youtube.com/@detonglingretreatcentre",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "contact_email": "spc@detongling.org",
+      "image_urls": [
+        "https://detongling.org/wp-content/uploads/2020/05/hero02.jpg",
+        "https://detongling.org/wp-content/uploads/2020/05/hero03.jpg"
+      ],
+      "founded_year": 1994
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Mindfulness, Ethics & One-Pointed Calm Abiding",
+      "url": "https://detongling.org/retreat/group-retreat/",
+      "description": "A six-day residential retreat with Ven. Tenzin Tsapel, open to beginners and experienced meditators of any faith, drawing on the fourth chapter of Maitreya's Ornament for Clear Realisation. Days combine meditation instruction, guided sessions and discussion.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": "2027-01-17",
+      "end_date": "2027-01-23",
+      "subjects": [
+        "meditation",
+        "mindfulness",
+        "ancient-wisdom"
+      ],
+      "image": "https://detongling.org/wp-content/uploads/2020/05/hero02.jpg"
+    },
+    {
+      "title": "Individual Retreat",
+      "url": "https://detongling.org/retreat/individual-retreat/",
+      "description": "Solitary retreat in one of four self-contained houses in the bush, with discreet support from the centre manager for shopping and supplies. Applicants keep the five precepts and a vegetarian diet, and those planning more than a week need earlier isolated retreat experience.",
+      "price": "Contact for pricing",
+      "product_type": "retreat",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ],
+      "image": "https://detongling.org/wp-content/uploads/2020/05/hero02.jpg"
+    },
+    {
+      "title": "Member Mandala",
+      "url": "https://detongling.org/support-us/membership/",
+      "description": "Five levels of yearly membership that support the retreat land, giving access to a members' forum and, at most levels, a discount on solo and group retreats.",
+      "price": "Parasol $10 p.a.; Endless Knot $108 p.a.; Golden Fish $200 p.a.; Treasure Vase $600 p.a.; Lotus $1,108 p.a.",
+      "product_type": "membership",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "spirituality"
+      ],
+      "image": "https://detongling.org/wp-content/uploads/2020/05/hero02.jpg"
+    }
+  ],
+  "free_resources": [],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "rank": 3317,
+    "hub": null,
+    "tier_evidence": "YouTube 10 subscribers (YouTube Data API, 13 Nov 2026); Facebook/Instagram not fetched → ~0k → local_hero",
+    "email": "yes",
+    "email_source": "https://detongling.org/retreat/group-retreat/",
+    "contact_form_url": "https://detongling.org/contact/",
+    "bio_check": "OK: no 8-word runs against 13 source(s)",
+    "flags": [
+      "Thin: 3 offerings, no videos (the channel's two uploads are about 1 minute long) and no free resources.",
+      "spc@detongling.org is the retreat/programme inbox (brand inbox).",
+      "Gosse is a tiny rural locality on Kangaroo Island: recorded as published on the contact page; may need mapping. Regional: Kangaroo Island, South Australia.",
+      "founded_year 1994 is the official opening; the land was named in 1988.",
+      "The site still describes Lama Zopa Rinpoche as following his 'spiritual direction'; the bio doesn't present him as current.",
+      "Teachers file empty: Ven. Thubten Dondrub, Ven. Tenzin Tsapel, Ven. Tony Beaumont and Ven. Lozang Yeshe are not on Spiritpedia.",
+      "Ingest dry run (node scripts/ingest.mjs --env dev) was refused by the permission check on 13 Nov 2026; not worked around. Images checked by hand (HTTP 200)."
+    ],
+    "left_out": [
+      "Green Tara Retreat with Ven. Tony Beaumont (31 Oct – 5 Nov 2026): already started.",
+      "Group Retreat Facility hire: venue hire, not the centre's programme.",
+      "YouTube uploads (two clips under 2 minutes)."
+    ]
+  },
+  "images_final": true
+}

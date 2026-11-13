@@ -5,7 +5,7 @@
     "create": {
       "name": "Buddhist Society of Western Australia",
       "bio": "The Buddhist Society of Western Australia (BSWA) is a Perth-based non-profit that supports the Thai Forest tradition of Theravada Buddhism, the lineage of Ajahn Chah. Founded on Vesak Day 1973, it invited monks from Wat Nanachat in Thailand to Perth in the early 1980s, and Ajahn Jagaro and later Ajahn Brahm built up its forest monastery at Serpentine. Ajahn Brahm has served as spiritual director since the mid-1990s, and Ajahn Brahmali, Ajahn Vayama and other senior monks and nuns teach alongside him.\n\nThe society now runs a network of places. Its teaching hub is the Dhammaloka centre in Nollamara, a converted church in Perth's northern suburbs with a large Dhamma hall and library, where Friday evening talks, Saturday meditation classes and festivals are held without charge. It supports Bodhinyana Monastery for monks and Dhammasara Monastery for nuns, several hermitages, and Jhana Grove, a purpose-built retreat centre near Serpentine where members book silent retreats led by monastics. Many talks, guided meditations and retreats are streamed and archived on its YouTube channel and podcasts, and a Zoom meditation group meets weekly.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "founded_year": 1973,
       "availability": "worldwide",
@@ -114,7 +114,7 @@
     "kind": "centre",
     "rank": 5,
     "hub": null,
-    "tier_evidence": "YouTube @BuddhistSocietyWA (linked from its own site): unreadable (consent page, 9 Nov 2026); Facebook group linked but never fetched → 0 readable → local_hero",
+    "tier_evidence": "YouTube @buddhistsocietywa 223,000 subscribers (YouTube Data API, 13 Nov 2026) → luminary",
     "email": "yes",
     "email_source": "https://bswa.org/contact-us/",
     "contact_form_url": null,
@@ -137,7 +137,7 @@
       "Kalyana Friendship Group and Bodhinyana busy-bee days: social and volunteer events.",
       "Ko-fi donations and memberships: support, not teaching."
     ],
-    "held": "All three photos from bswa.org fail the ingest's image check: its robots.txt request to bswa.org ends in a socket error (UND_ERR_SOCKET) for the ingest, so the host counts as refusing it; per the brief, held rather than worked around. The dry run fell back to the YouTube channel avatar, which was not chosen or looked at by me."
+    "retried": "13 Nov 2026 (README §18.7 retry queue): the ingest dry run passed; healer image is the channel avatar, the BSWA seated-Buddha logo (looked at)."
   },
   "videos": [
     {
@@ -234,5 +234,6 @@
       ],
       "channel": "BSWA Retreats 2011-15 & Media"
     }
-  ]
+  ],
+  "images_final": true
 }

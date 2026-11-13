@@ -1,0 +1,100 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1572,
+    "healer_slug": "zen-mountain-center-yokoji"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11612,
+      "slug": "zen-meditation-instruction-how-to-meditate",
+      "title": "Zen Meditation Instruction (How to Meditate)"
+    },
+    {
+      "table": "videos",
+      "id": 11613,
+      "slug": "zen-meditation-instruction-forms",
+      "title": "Zen Meditation Instruction: Forms"
+    },
+    {
+      "table": "videos",
+      "id": 11614,
+      "slug": "zen-meditation-instruction-service",
+      "title": "Zen Meditation Instruction: Service"
+    },
+    {
+      "table": "videos",
+      "id": 11615,
+      "slug": "welcome-to-yokoji-zen-mountain-center",
+      "title": "Welcome to Yokoji Zen Mountain Center"
+    },
+    {
+      "table": "videos",
+      "id": 11616,
+      "slug": "zen-meditation-instruction-private-interview",
+      "title": "Zen Meditation Instruction: Private Interview"
+    },
+    {
+      "table": "videos",
+      "id": 11617,
+      "slug": "yokoji-zen-mountain-center-a-short-film",
+      "title": "Yokoji Zen Mountain Center: A Short Film"
+    },
+    {
+      "table": "videos",
+      "id": 11618,
+      "slug": "reflections-on-sesshin",
+      "title": "Reflections on Sesshin"
+    },
+    {
+      "table": "videos",
+      "id": 11619,
+      "slug": "yokoji",
+      "title": "Yokoji"
+    },
+    {
+      "table": "videos",
+      "id": 11620,
+      "slug": "how-do-you-practice-at-yokoji",
+      "title": "How Do You Practice at Yokoji?"
+    },
+    {
+      "table": "courses",
+      "id": "c9ee50dc-50e1-4b34-a68b-cd13e6ab8e54",
+      "slug": "sesshin-rohatsu",
+      "title": "Sesshin (Rohatsu)"
+    },
+    {
+      "table": "courses",
+      "id": "80d14b59-e4fc-4193-b9e6-804ed2ab7a19",
+      "slug": "beginners-mind-sesshin",
+      "title": "Beginner's Mind Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "153f4b49-b4b8-4168-aa90-0b296fd7c6b6",
+      "slug": "stay-at-yokoji",
+      "title": "Stay at Yokoji"
+    },
+    {
+      "table": "courses",
+      "id": "0b568c2b-f606-44ac-9b35-df5d6cd8e2dc",
+      "slug": "membership-23",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "02b7e3ce-d00f-4402-b1ee-d8a40d50c9ab",
+      "slug": "yokoji-podcast",
+      "title": "Yokoji Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "96fca825-9ea1-4122-a37f-5e8554416a0f",
+      "slug": "zazen-zen-meditation",
+      "title": "Zazen (Zen Meditation)"
+    }
+  ],
+  "at": "2026-11-13T04:30:52.956Z"
+}

@@ -1,0 +1,28 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1505,
+    "healer_slug": "sandrine-harris"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "7153d404-9366-44f8-9d20-a2ec2fbc2ccc",
+      "slug": "moving-through-stillness-somatic-meditations-to-support-your-new-year-transition",
+      "title": "Moving Through Stillness: Somatic Meditations to Support Your New Year Transition"
+    },
+    {
+      "table": "courses",
+      "id": "d64574f7-1f5d-469a-b5e9-812dcfd69eb2",
+      "slug": "marrow",
+      "title": "MARROW"
+    },
+    {
+      "table": "courses",
+      "id": "a0274f62-f6fd-4b54-8770-c7123439fdb5",
+      "slug": "group-experiences-mindfulness-meditative-movement-and-kinesoma",
+      "title": "Group Experiences: Mindfulness, Meditative Movement and Kinesoma"
+    }
+  ],
+  "at": "2026-11-13T00:08:42.789Z"
+}

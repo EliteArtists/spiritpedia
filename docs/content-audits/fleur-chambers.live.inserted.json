@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1460,
+    "healer_slug": "fleur-chambers"
+  },
+  "rows": [
+    {
+      "table": "books",
+      "id": 2542,
+      "slug": "ten-pathways",
+      "title": "Ten Pathways: Discover Inner Happiness and Transform Your Life"
+    },
+    {
+      "table": "books",
+      "id": 2543,
+      "slug": "wholehearted-confidence",
+      "title": "Wholehearted Confidence: Live, Love and Contribute"
+    },
+    {
+      "table": "courses",
+      "id": "2c58818a-3d59-4a88-ab49-87afb27f6ef7",
+      "slug": "the-happy-habit-app-full-subscription",
+      "title": "The Happy Habit app (full subscription)"
+    },
+    {
+      "table": "courses",
+      "id": "e3fa4ef2-a0ab-4f05-bc93-8a5da7ac963b",
+      "slug": "in-the-moment",
+      "title": "In the Moment"
+    },
+    {
+      "table": "courses",
+      "id": "866a9dfc-1f6a-443b-8e5c-eb8e9348716e",
+      "slug": "walk-yourself-home",
+      "title": "Walk Yourself Home"
+    },
+    {
+      "table": "courses",
+      "id": "f78a9c66-12aa-4eca-89eb-d1a40db18069",
+      "slug": "the-overgivers-reset",
+      "title": "The Overgiver's Reset"
+    },
+    {
+      "table": "free_resources",
+      "id": "761f4943-bb1c-4b96-9584-2ee3710c2687",
+      "slug": "nervous-system-reset-free-guided-meditation",
+      "title": "Nervous System Reset (free guided meditation)"
+    }
+  ],
+  "at": "2026-11-13T04:12:29.979Z"
+}

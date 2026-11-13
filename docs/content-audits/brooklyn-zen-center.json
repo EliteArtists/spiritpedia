@@ -1,0 +1,115 @@
+{
+  "healer": {
+    "healer_slug": "brooklyn-zen-center",
+    "location_source": "https://brooklynzen.org/contact/",
+    "create": {
+      "tier": "local_hero",
+      "entity_type": "organisation",
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
+      "name": "Brooklyn Zen Center",
+      "bio": "Brooklyn Zen Center is a Soto Zen community in New York City, founded in 2005 as the first centre in Shunryu Suzuki's lineage in New York. Its in-person home, Boundless Mind Temple, shares space with Christ Church Cobble Hill, in its parish building on Clinton Street, and an online zendo that began during the pandemic now serves members across many locations. Its two Dharma teachers are Sarah Dojin Emerson, who trained at Tassajara and other San Francisco Zen Center sites for a decade, and Charlie Korin Pokorny, ordained by Reb Anderson, who also teaches graduate classes for the Institute of Buddhist Studies.\n\nZazen and a short service run online on weekday mornings, and a Saturday programme at the temple adds sitting and Dharma talks, with zazen instruction for newcomers on the first Saturday of each month. Retreats are held most months, from one-day sits to three-day sesshin and a five-day Rohatsu retreat in December, and classes study Zen texts, women ancestors and the precepts. The centre places strong weight on lay practice and social engagement, running a range of engaged practice groups, uses a sliding-scale pricing model and publishes a podcast of its Dharma talks.",
+      "availability": "local_online",
+      "city": "Brooklyn, New York",
+      "country": "United States",
+      "founded_year": 2005,
+      "subjects": [
+        "meditation",
+        "ancient-wisdom",
+        "spirituality"
+      ],
+      "website_url": "https://brooklynzen.org/",
+      "booking_url": "https://brooklynzen.org/offerings/",
+      "youtube_url": null,
+      "contact_email": "info@brooklynzen.org",
+      "image_urls": [
+        "https://brooklynzen.org/wp-content/uploads/2023/07/Image02_BMT.jpeg",
+        "https://brooklynzen.org/wp-content/uploads/2023/07/Brooklyn-Zen-9_Vertical02.jpg"
+      ]
+    }
+  },
+  "teaches_at": [],
+  "videos": [],
+  "books": [],
+  "courses": [
+    {
+      "title": "Five-Day Rohatsu Sesshin & Ango Closing Ceremony",
+      "url": "https://brooklynzen.org/events/event/five-day-rohatsu-sesshin-ango-closing-ceremony-dec-9-13/",
+      "description": "A five-day retreat at Boundless Mind Temple, led by Sarah Dojin Emerson and Charlie Korin Pokorny, marking the Buddha's awakening and closing the fall practice period. A minimum of three consecutive days is asked, and first-time retreatants are asked to speak with a teacher before registering.",
+      "price": "Sliding scale (Equitable Pricing Model); no one turned away for lack of funds",
+      "product_type": "retreat",
+      "start_date": "2026-12-09",
+      "end_date": "2026-12-13",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Offerings: zazen, retreats and classes",
+      "url": "https://brooklynzen.org/offerings/",
+      "description": "An overview of the centre's regular programme: zazen in person and online with periodic instruction, retreats almost every month from one day to five days, and practice-oriented classes led by senior students or a Dharma teacher.",
+      "price": "Contact for pricing",
+      "product_type": "course",
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "spirituality"
+      ]
+    }
+  ],
+  "free_resources": [
+    {
+      "title": "Brooklyn Zen Center Podcast",
+      "url": "https://brooklynzen.org/podcast/",
+      "description": "Audio recordings of Dharma talks given at Boundless Mind Temple by the centre's teachers and guests, with short summaries, on subjects such as Dogen's teaching on Buddha-nature, koans from the Book of Serenity and the Hungry Ghost ceremony.",
+      "featured": true,
+      "resource_type": "download",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    },
+    {
+      "title": "Zen Practice",
+      "url": "https://brooklynzen.org/zen-practice/",
+      "description": "An introduction to the centre's practice: zazen as just sitting following Dogen's Fukanzazengi, a short history of Soto Zen from Bodhidharma to Suzuki Roshi, the sixteen bodhisattva precepts and the practice of dana.",
+      "featured": false,
+      "resource_type": "practice",
+      "subjects": [
+        "meditation",
+        "ancient-wisdom"
+      ]
+    }
+  ],
+  "sprint": {
+    "sprint": "night-1",
+    "kind": "centre",
+    "hub": null,
+    "rank": 3344,
+    "tier_evidence": "No YouTube channel linked from brooklynzen.org (13 Nov 2026); social accounts never fetched → 0 readable → local_hero",
+    "email": "yes",
+    "email_source": "https://brooklynzen.org/contact/",
+    "contact_form_url": "https://brooklynzen.org/contact/",
+    "bio_check": "OK: no 8-word runs against 9 source(s)",
+    "flags": [
+      "HELD: see sprint.held (co-founder misconduct findings published by the board; strong social-justice framing).",
+      "SZBA lists a Millerton, NY address; the centre's own locations page says Millerton Zendo is now an independent group (Mountain Colors Zen) and its home is Boundless Mind Temple, Brooklyn; Brooklyn used as base.",
+      "Teachers file empty: Sarah Dojin Emerson and Charlie Korin Pokorny are not on Spiritpedia. Tenshin Reb Anderson (on Spiritpedia) is named only as Pokorny's ordaining teacher; not linked.",
+      "Possible editorial-stature override: a well-known New York Zen centre. Tier not raised.",
+      "Crawl-delay 5 respected.",
+      "Dry run: the ingest dry run was refused by the permission check in this session; images were checked by download instead (200)."
+    ],
+    "left_out": [
+      "Engaged practice groups (White and Awakening, Zen Students of Color, Undoing Patriarchy and others): identity- and social-justice-centred groups, left out under the political rule (owner may judge).",
+      "Buddhist Healthy Boundaries (13-14 Nov): before 15 Nov.",
+      "Wednesday Dharma Share & Full Moon Ceremony (18 Nov): single evening event.",
+      "Podcast talks on B.R. Ambedkar and Pride: not listed individually.",
+      "Videos: no YouTube channel linked."
+    ],
+    "held": "Owner decision needed: the centre's own board published (7 Jul 2026, about page) findings of credible sexual and boundary misconduct allegations against co-founder and former senior teacher Greg Snyder, who resigned and is no longer affiliated; current teachers are not implicated. The centre also frames much of its practice around social justice ('liberatory practice', identity-based engaged practice groups). Held for the owner to decide whether to list."
+  }
+}
