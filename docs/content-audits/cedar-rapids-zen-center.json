@@ -45,7 +45,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-Jizo-in-Garden-1.jpg"
     },
     {
       "title": "Introduction to Zazen",
@@ -57,7 +58,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-Jizo-in-Garden-1.jpg"
     },
     {
       "title": "Membership",
@@ -69,7 +71,8 @@
       "end_date": null,
       "subjects": [
         "spirituality"
-      ]
+      ],
+      "image": "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-Jizo-in-Garden-1.jpg"
     }
   ],
   "free_resources": [
@@ -82,7 +85,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "image": "https://www.cedarrapidszencenter.org/wp-content/uploads/2025/01/cropped-Jizo-in-Garden-1.jpg"
     }
   ],
   "sprint": {
@@ -108,6 +112,7 @@
       "Dharma Recovery group, Chanting for Peace, sangha meeting: one-off or support-group events.",
       "Sesshin chant book and 'Currents' newsletter archive: not opened."
     ],
-    "held": "Photos (cedarrapidszencenter.org) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
-  }
+    "released": "16 Nov 2026 (owner): retried once with the ingest's new user agent (Spiritpedia/1.0 with contact details); photos load. Was held: Photos (cedarrapidszencenter.org) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
+  },
+  "images_final": true
 }

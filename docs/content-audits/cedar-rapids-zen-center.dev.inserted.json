@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1576,
+    "healer_slug": "cedar-rapids-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "21791898-c369-466a-9ec7-80344457da84",
+      "slug": "practice-opportunities-sunday-zazen-and-dharma-talks-sesshin-and-all-day-sittings",
+      "title": "Practice Opportunities: Sunday zazen and Dharma talks, sesshin and all-day sittings"
+    },
+    {
+      "table": "courses",
+      "id": "a48f0459-ee7b-4661-a237-bf4119b897e2",
+      "slug": "introduction-to-zazen",
+      "title": "Introduction to Zazen"
+    },
+    {
+      "table": "courses",
+      "id": "3a682962-c7c0-4db0-840a-ad1f48beb8f0",
+      "slug": "membership-25",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "79bb012a-13d3-4af4-8745-bcf8a792cc98",
+      "slug": "welcome-to-cedar-rapids-zen-center-what-is-zen",
+      "title": "Welcome to Cedar Rapids Zen Center: What is Zen?"
+    }
+  ],
+  "at": "2026-11-16T13:26:12.217Z"
+}

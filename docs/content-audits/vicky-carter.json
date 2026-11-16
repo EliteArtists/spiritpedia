@@ -43,7 +43,8 @@
       "end_date": null,
       "subjects": [
         "reiki"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Reiki-First-Degree-1.jpg"
     },
     {
       "title": "Second Degree Reiki",
@@ -56,7 +57,8 @@
       "subjects": [
         "reiki",
         "chakra-healing"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Reiki-Second-Degree-Training.jpg"
     },
     {
       "title": "Third Degree Reiki – Reiki Master",
@@ -68,7 +70,8 @@
       "end_date": "2027-05-23",
       "subjects": [
         "reiki"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Reiki-Third-Degree-Training.jpg"
     },
     {
       "title": "Reiki Master Teacher Training",
@@ -80,12 +83,13 @@
       "end_date": null,
       "subjects": [
         "reiki"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Reiki-Master-Teacher-Training-1.jpg"
     },
     {
       "title": "Reiki Energy Healing sessions",
       "url": "https://www.vickycarter.co.uk/reiki/",
-      "description": "Hands-on Usui Reiki in her quiet treatment room in Harborne, aimed at deep rest, balance and a clearer mind. Sessions run for 75 or 90 minutes.",
+      "description": "Hands-on Usui Reiki in her quiet room in Harborne, aimed at deep rest, balance and a clearer mind. Sessions run for 75 or 90 minutes.",
       "price": "£70 (75 minutes); £85 (90 minutes)",
       "product_type": "course",
       "start_date": null,
@@ -93,7 +97,8 @@
       "subjects": [
         "reiki",
         "energy-medicine"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/reiki-what-is-reiki.jpg"
     },
     {
       "title": "Distance Reiki Healing",
@@ -106,7 +111,8 @@
       "subjects": [
         "reiki",
         "energy-medicine"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/09/Distance-Reiki-Healing-.jpg"
     },
     {
       "title": "Monthly Yoga Nidra – Deep Rest & Relaxation",
@@ -119,7 +125,8 @@
       "subjects": [
         "yoga",
         "meditation"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Monthly-Yoga-Nidra-.jpg"
     },
     {
       "title": "Yoga Nidra Workshop",
@@ -132,7 +139,8 @@
       "subjects": [
         "yoga",
         "meditation"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Yoga-Nidra-Workshop-2.jpg"
     },
     {
       "title": "Chakra Cleansing & Energy Flow Workshop",
@@ -146,7 +154,8 @@
         "chakra-healing",
         "energy-medicine",
         "meditation"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Chakra-Cleansing-Energy-Flow-Workshop.jpg"
     },
     {
       "title": "Awakening Your Inner Awareness",
@@ -159,7 +168,8 @@
       "subjects": [
         "energy-medicine",
         "meditation"
-      ]
+      ],
+      "image": "https://www.vickycarter.co.uk/wp-content/uploads/2026/08/Awakening-Your-Inner-Awareness-1.jpg"
     }
   ],
   "free_resources": [],
@@ -190,6 +200,7 @@
       "Advanced Empathy, Self-Care and Vision Board workshops: personal-development workshops, not opened.",
       "Reiki and counselling combined sessions: include counselling."
     ],
-    "held": "Photos (vickycarter.co.uk) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), which counts as a refusal. Owner to supply a photo or retry another day."
-  }
+    "released": "16 Nov 2026 (owner): retried once with the ingest's new user agent (Spiritpedia/1.0 with contact details); photos load. Was held: Photos (vickycarter.co.uk) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), which counts as a refusal. Owner to supply a photo or retry another day."
+  },
+  "images_final": true
 }

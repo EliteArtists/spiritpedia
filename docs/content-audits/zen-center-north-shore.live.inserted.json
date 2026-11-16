@@ -1,0 +1,52 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1547,
+    "healer_slug": "zen-center-north-shore"
+  },
+  "rows": [
+    {
+      "table": "videos",
+      "id": 11651,
+      "slug": "welcome-to-zen-center-north-shore",
+      "title": "Welcome to Zen Center North Shore"
+    },
+    {
+      "table": "videos",
+      "id": 11652,
+      "slug": "oryoki-tutorial-for-monthly-sesshin-zen-center-north-shore",
+      "title": "Oryoki Tutorial for Monthly Sesshin (Zen Center North Shore)"
+    },
+    {
+      "table": "courses",
+      "id": "caca8d63-cf20-43ba-b830-5f7f10a9c963",
+      "slug": "monthly-sesshin",
+      "title": "Monthly Sesshin"
+    },
+    {
+      "table": "courses",
+      "id": "e63d37f1-bb99-45d8-bd7c-78c4789f119e",
+      "slug": "private-meditation-instruction-with-myozen-joan-amaral",
+      "title": "Private Meditation Instruction with Myozen Joan Amaral"
+    },
+    {
+      "table": "free_resources",
+      "id": "5df392f2-1030-469d-b3a7-17616cd8acfc",
+      "slug": "intro-to-zen",
+      "title": "Intro to Zen"
+    },
+    {
+      "table": "free_resources",
+      "id": "d3736211-760f-47a6-aa44-28f636eecb1a",
+      "slug": "chants-and-texts",
+      "title": "Chants and Texts"
+    },
+    {
+      "table": "free_resources",
+      "id": "507293ef-54ad-4a0f-9c33-268eb75480ba",
+      "slug": "community-zen-at-the-beverly-public-library",
+      "title": "Community Zen at the Beverly Public Library"
+    }
+  ],
+  "at": "2026-11-16T13:30:58.795Z"
+}

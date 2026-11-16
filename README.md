@@ -3171,8 +3171,12 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    commercial directories.
 3. **Single names** the owner adds (queued 12 Nov 2026: Pir Zia Inayat Khan, head of the Inayatiyya; Geoff Dawson,
    Ordinary Mind Zen Melbourne; Gabriella Giubilaro, founder of the Istituto Iyengar Yoga Firenze; Shirley Daventry
-   French, co-founder of the Iyengar Yoga Centre of Victoria), and **recording artists who teach** (sound healing,
-   for example) when they teach classes, courses or retreats of their own.
+   French, co-founder of the Iyengar Yoga Centre of Victoria; done 13 Nov: Pir Zia and Gabriella in, the other two
+   skipped), and **recording artists who teach** (sound healing, for example) when they teach classes, courses or
+   retreats of their own. **Queued 16 Nov 2026** (from the 13 Nov report, §4.9): Jim Tucker (as an author), Breath-Body-Mind
+   (Richard Brown and Patricia Gerbarg, one couple listing for their breath and meditation workshops), NDERF (as a
+   free resource), the Coyote Institute (Lewis Mehl-Madrona), the Jung Platform (Machiel Klerk; a possible hub),
+   Norman Fischer, Shodo Spring, Prague Yoga Collective.
 4. **Parked** (owner): **Quantum-Touch** from rank 361 (10 Nov 2026; ranks 141–360 done,
    yield about 1 in 40); **Omega's "unsure" names** (11 Nov 2026; about 586 left, about 1
    in 15 after screening by name); **Sounds True** (11 Nov 2026; only "unsure" chunks
@@ -3183,7 +3187,12 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    on the retry, look for a photo of both of them before using Paul's headshot), Ashram
    Sivananda Orléans and Shakti Shala Antigua (the ingest's robots.txt request failed: 502
    and a dropped connection; plans held), La Sarmiento (connection errors), Bakara
-   Wintner (429). Sivananda Ashram Bahamas goes in once a usable photo loads.
+   Wintner (429). Sivananda Ashram Bahamas goes in once a usable photo loads. **16 Nov 2026:** the
+   ingest now identifies itself honestly as `Spiritpedia/1.0 (+https://spiritpedia.co/about;
+   love@spiritpedia.co)` (owner; `scripts/lib/images.mjs`), still obeying robots.txt (a site that
+   refuses it stays refused). Six of the eight plans held for dropping the old agent went in with it;
+   Zen Fields still refuses. The socket-error plans above (Sati, Centre Sivananda Paris, Kathie and
+   Paul Scott, Shakti Shala) may load with the new agent on their next retry.
 6. **Waiting:** Ally Bogard (a photo from her); Yongey Mingyur Rinpoche (a clean contact route; decoded emails are never used);
    Aaravindha Himadra (a certain photo; use his contact form).
 7. **Out** (owner, 11 Nov 2026): Lion's Roar (phone only; out unless a contact form

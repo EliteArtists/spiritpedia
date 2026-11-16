@@ -5,7 +5,7 @@
     "create": {
       "name": "Chenrezig Institute",
       "bio": "Chenrezig Institute, also called Chenrezig Institute for Wisdom Culture, is a Tibetan Buddhist study and retreat centre set in rainforest on the Blackall Range above Eudlo, in Queensland's Sunshine Coast hinterland. Lama Thubten Yeshe and Lama Zopa Rinpoche started it in 1974, the year they led their first month-long lam-rim course in Australia, which makes it the country's earliest Tibetan Buddhist centre and the first FPMT centre outside the Indian subcontinent. A Tibetan resident teacher, Geshe Phuntsok Tsultrim of Sera Je, has guided the community since 2014, alongside resident monks and nuns and lay teachers.\n\nThe programme runs from guided meditations, centre tours and introductory courses to FPMT's Discovering Buddhism, the In-Depth Meditation Training and the Basic Program, many sessions also open on Zoom. Each January it holds a long lam-rim retreat in a line going back to 1974, and through the year it offers Medicine Buddha, Nyung Nä and Vajrasattva retreats and regular pujas. Visitors can also use its library, art studio, gardens, Dharma shop and vegetarian Big Love Cafe, and stay on site.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "availability": "local_online",
       "city": "Eudlo, Queensland",
@@ -170,7 +170,8 @@
       "Finding Freedom with Robert Gillow: not on the centre's teachers page (possible guest).",
       "Most-viewed videos 'Message from Lama Zopa Rinpoche on ... New Gompa project' and 'Our Beloved Lama Zopa Rinpoche' (fundraising/tribute, and he died in 2023), 12-hour prayer streams and Shorts.",
       "No free resource found on its own site beyond event pages."
-    ]
+    ],
+    "tier_override": "Luminary by editorial stature (owner, 16 Nov 2026)"
   },
   "images_final": true
 }

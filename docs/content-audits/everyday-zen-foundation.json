@@ -6,7 +6,7 @@
     "create": {
       "name": "Everyday Zen Foundation",
       "bio": "The Everyday Zen Foundation is a Soto Zen community founded and guided by Zoketsu Norman Fischer, a poet and Zen priest who served as co-abbot of San Francisco Zen Center in the late 1990s. It practises in the line of Dogen and Shunryu Suzuki Roshi, but deliberately has no temple or property: rooted in the San Francisco Bay Area, it borrows space from partner organisations for retreats and seminars, and since the pandemic much of its life happens on Zoom. A loose family of affiliated sanghas, from California and the Pacific Northwest to Canada, Boston and Mexico, practise in the same spirit.\n\nThe idea is that practice belongs in ordinary life rather than in a special place. Members can sit together online every morning, join a weekly metta sitting, a Sunday sharing circle and a long-running Dharma seminar, and come to monthly all-day sittings, an annual practice period and a spring sesshin with Norman and senior teachers. Precepts classes prepare those who wish to make a formal commitment. Beyond traditional Zen, the foundation's work has reached into Jewish and Christian meditation, care for the dying, conflict resolution, business and the arts. Hundreds of Norman's talks are free to stream or download on a suggested-donation basis.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "availability": "worldwide",
       "city": null,
@@ -121,6 +121,7 @@
       "Norman Fischer's books (including The Great Road, Shambhala, Dec 2026): his own, not the foundation's; no ISBN pages opened.",
       "Videos: no YouTube channel is linked from the site; none searched for."
     ],
-    "held": "No usable image: every photo on everydayzen.org (including the logo) is served from s3.us-west-1.amazonaws.com, whose robots.txt answers HTTP 403 (13 Nov 2026), so the ingest would refuse them; not retried. No YouTube channel linked. Owner to decide on an image."
+    "held": "No usable image: every photo on everydayzen.org (including the logo) is served from s3.us-west-1.amazonaws.com, whose robots.txt answers HTTP 403 (13 Nov 2026), so the ingest would refuse them; not retried. No YouTube channel linked. Owner to decide on an image.",
+    "tier_override": "Luminary by editorial stature (owner, 16 Nov 2026)"
   }
 }

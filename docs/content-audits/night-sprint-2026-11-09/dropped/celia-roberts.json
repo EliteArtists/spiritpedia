@@ -10,11 +10,18 @@
       "availability": "local_online",
       "city": "Brisbane, Queensland",
       "country": "Australia",
-      "subjects": ["yoga", "meditation", "ayurveda"],
+      "subjects": [
+        "yoga",
+        "meditation",
+        "ayurveda"
+      ],
       "website_url": "https://biyome.com.au/",
       "booking_url": "https://biyome.com.au/meditation-classes-brisbane/",
       "youtube_url": null,
-      "instagram_url": null, "facebook_url": null, "twitter_url": null, "tiktok_url": null,
+      "instagram_url": null,
+      "facebook_url": null,
+      "twitter_url": null,
+      "tiktok_url": null,
       "contact_email": "contact@biyome.com.au",
       "image_urls": [
         "https://biyome.com.au/wp-content/uploads/elementor/thumbs/Celia-Roberts-practicing-yog-pose-p9p3crzrak6sk8fe92hkldu5fm1g5hywh0nitthsvk.jpg",
@@ -32,8 +39,12 @@
       "description": "A monthly Friday-morning meditation gathering at the Upper Brookfield sanctuary, each session built around one theme such as self-inquiry, mantra or acceptance. Sessions can be booked one at a time or as a pack of five to use within a year.",
       "price": "$148 per session; $588 for 5",
       "product_type": "course",
-      "start_date": null, "end_date": null,
-      "subjects": ["meditation", "mindfulness"]
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
     },
     {
       "title": "Yoga Classes at Upper Brookfield",
@@ -41,8 +52,12 @@
       "description": "Term-time yoga classes on Tuesday and Thursday mornings that Celia teaches for all levels. Postures sit alongside meditation and short discussions of the science of practice and compassion.",
       "price": "$33 single class",
       "product_type": "course",
-      "start_date": null, "end_date": null,
-      "subjects": ["yoga", "meditation"]
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "yoga",
+        "meditation"
+      ]
     },
     {
       "title": "330MTT Meditation Teacher Training",
@@ -50,8 +65,12 @@
       "description": "A 330-hour meditation teacher training at the centre, joining three meditation intensives with home study and a daily practice log over about nine months. It covers the philosophy, psychology and physiology of meditation and how to adapt practices for different groups.",
       "price": "$4,758 upfront until 30 November 2026; $5,058 from 1 December 2026",
       "product_type": "course",
-      "start_date": null, "end_date": null,
-      "subjects": ["meditation", "mindfulness"]
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
     },
     {
       "title": "OL330MTT Meditation Teacher Training (Online)",
@@ -59,8 +78,12 @@
       "description": "The online version of the 330-hour meditation teacher training, studied remotely with recorded content, written assessments and live Zoom practice sessions. It suits students outside Queensland who want a registered meditation teaching qualification.",
       "price": "$3,808 upfront until 30 November 2026; $4,048 from 1 December 2026",
       "product_type": "course",
-      "start_date": null, "end_date": null,
-      "subjects": ["meditation", "mindfulness"]
+      "start_date": null,
+      "end_date": null,
+      "subjects": [
+        "meditation",
+        "mindfulness"
+      ]
     }
   ],
   "free_resources": [],
@@ -94,6 +117,7 @@
       "Metaphysical Sound Healing with Tuning Forks (28–29 Nov 2026, $555): the page doesn't say who leads it; may be a visiting teacher.",
       "Dated monthly meditation retreats (5 Feb, 7 May, 4 Jun 2027): they share the meditation-classes page URL with the five-pack, so only one item is kept.",
       "Blog articles (meditation reflections): articles rather than practices."
-    ]
+    ],
+    "dropped": "Owner, 16 Nov 2026: out (psychedelics)."
   }
 }

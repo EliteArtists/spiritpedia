@@ -204,6 +204,6 @@
       "Family Program 21 Nov and the weekly classes: on the shared schedule page URL; one item per URL kept.",
       "Morning Meditation ($5 suggested), Guided Meditation ($10 suggested) and Zazen with Discussion: same schedule page URL."
     ],
-    "held": "Photos (zenfields.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+    "held": "Photos (zenfields.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides. Retried 16 Nov 2026 with the new agent (Spiritpedia/1.0): still refused. Stays held (photo-less)."
   }
 }

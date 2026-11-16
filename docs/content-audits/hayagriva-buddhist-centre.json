@@ -44,7 +44,8 @@
       "subjects": [
         "ancient-wisdom",
         "meditation"
-      ]
+      ],
+      "image": "http://hayagriva.org.au/wp-content/uploads/2026/10/discovering-buddhism-banner-1800x900-1.jpg"
     },
     {
       "title": "Sunday Meditation",
@@ -56,7 +57,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://hayagriva.org.au/wp-content/uploads/2023/03/IMG_E0682.jpg"
     },
     {
       "title": "Tuesday Morning Meditation",
@@ -68,7 +70,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://hayagriva.org.au/wp-content/uploads/2023/07/FPMT-clear-3.png"
     },
     {
       "title": "Membership",
@@ -80,7 +83,8 @@
       "end_date": null,
       "subjects": [
         "spirituality"
-      ]
+      ],
+      "image": "http://hayagriva.org.au/wp-content/uploads/2026/01/20201222-DSC05601_hdr-1024x347.webp"
     }
   ],
   "free_resources": [
@@ -92,7 +96,8 @@
       "resource_type": "workshop",
       "subjects": [
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://hayagriva.org.au/wp-content/uploads/2023/07/FPMT-clear-3.png"
     }
   ],
   "sprint": {
@@ -117,6 +122,7 @@
       "Workshop: Daily Practice through the 7 Limb Prayer (14 Nov 2026): not after 14 Nov.",
       "In Depth Meditation Training (Online): FPMT's online programme, not the centre's own."
     ],
-    "held": "Photos (hayagriva.org.au) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
-  }
+    "released": "16 Nov 2026 (owner): retried once with the ingest's new user agent (Spiritpedia/1.0 with contact details); photos load. Was held: Photos (hayagriva.org.au) can't be loaded by the ingest: its robots.txt request ends in a socket error (UND_ERR_SOCKET, 13 Nov 2026), counted as a refusal. Retry another day."
+  },
+  "images_final": true
 }

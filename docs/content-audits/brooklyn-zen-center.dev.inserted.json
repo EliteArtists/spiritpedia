@@ -1,0 +1,34 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1579,
+    "healer_slug": "brooklyn-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d28d854c-363d-45af-b29f-b9954c4d662a",
+      "slug": "five-day-rohatsu-sesshin-ango-closing-ceremony",
+      "title": "Five-Day Rohatsu Sesshin & Ango Closing Ceremony"
+    },
+    {
+      "table": "courses",
+      "id": "79e9c650-6a1b-435a-b8a1-b7724aa5ef5d",
+      "slug": "offerings-zazen-retreats-and-classes",
+      "title": "Offerings: zazen, retreats and classes"
+    },
+    {
+      "table": "free_resources",
+      "id": "2331a2ac-fa84-4567-8fbd-0c8b23f7c2f7",
+      "slug": "brooklyn-zen-center-podcast",
+      "title": "Brooklyn Zen Center Podcast"
+    },
+    {
+      "table": "free_resources",
+      "id": "b6dcbc35-754d-4cbd-ba93-ebf5d3a1d922",
+      "slug": "zen-practice",
+      "title": "Zen Practice"
+    }
+  ],
+  "at": "2026-11-16T13:30:41.027Z"
+}

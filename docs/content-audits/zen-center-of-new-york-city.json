@@ -44,7 +44,8 @@
       "end_date": "2026-11-21",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2025/04/IMG_4423-scaled.jpg"
     },
     {
       "title": "Buddha's Enlightenment Vigil (ZCNYC) with Jody Hojin Kimmel, Sensei",
@@ -57,7 +58,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2025/04/IMG_4423-scaled.jpg"
     },
     {
       "title": "Still Moving Brush with Jody Hojin Kimmel, Sensei",
@@ -70,7 +72,8 @@
       "subjects": [
         "meditation",
         "mindfulness"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2025/04/IMG_4423-scaled.jpg"
     },
     {
       "title": "Morning Mind is Kanzeon, Evening Mind is Kanzeon: Exploring Liturgy & Chanting",
@@ -83,7 +86,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2025/04/IMG_4423-scaled.jpg"
     }
   ],
   "free_resources": [
@@ -96,7 +100,8 @@
       "subjects": [
         "ancient-wisdom",
         "meditation"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2024/10/Hojin-talk-on-Mothers-Day.jpg"
     },
     {
       "title": "Beginning Instruction and Daily Zazen",
@@ -106,7 +111,8 @@
       "resource_type": "practice",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://zcnyc.org/wp-content/uploads/2024/10/mudra.jpg"
     }
   ],
   "sprint": {
@@ -133,6 +139,7 @@
       "Fall art series: already under way.",
       "Noble Path Talks page: second talks page; one talks resource kept."
     ],
-    "held": "Photos (zcnyc.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
-  }
+    "released": "16 Nov 2026 (owner): retried once with the ingest's new user agent (Spiritpedia/1.0 with contact details); photos load. Was held: Photos (zcnyc.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+  },
+  "images_final": true
 }

@@ -329,7 +329,10 @@ const healerJob = (async () => {
     return;
   }
   const kept = [];
-  for (const u of create.image_urls || []) if ((await probeImage(u)).ok) kept.push(u);
+  // sprint.small_photo_ok: the owner has accepted a photo under 300 px for this
+  // listing (Decorah Zen Center, 16 Nov 2026); 150 px is still the floor.
+  const minPx = plan.sprint?.small_photo_ok ? 150 : undefined;
+  for (const u of create.image_urls || []) if ((await probeImage(u, minPx ? { minPx } : undefined)).ok) kept.push(u);
   if (kept.length === 0) {
     const found = (create.youtube_url && await pageImage(create.youtube_url, { shareOnly: true }))
       || (create.website_url && await pageImage(create.website_url, { shareOnly: true }));

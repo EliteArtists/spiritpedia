@@ -23,7 +23,9 @@
       "twitter_url": null,
       "tiktok_url": null,
       "contact_email": "decorahzencenter@gmail.com",
-      "image_urls": []
+      "image_urls": [
+        "https://sites.google.com/sitesv-images-rt/APXyLQffiAwSxdxkVKQQA3McnIlcf7WdyohuQQdpghP8U9VwZhkw9A-8MYhTfS5hHGVLS7GIy_MP4f6TGmbpZDQzBfq3weAxX9NaIXhIeSboW0P51PrlMDEnrVSpnAHDy1Q7Pm2qwEwXYwhGxingqf3M6cSfdn26yPR-V36ovnR61ij6SDySUBc715acplXEd3hy49s8qWxOBCDLVtr_sH4lRdmtU1tGH5sZ5kkq"
+      ]
     }
   },
   "teaches_at": [],
@@ -40,7 +42,8 @@
       "end_date": null,
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://sites.google.com/sitesv-images-rt/APXyLQcFvpXoPSxlGeGeF9NiZVx94W1JjmJkhmFTNwEdoZVDztKJMN3tYgJFWxou9a3968rJF1ix2ViysMtA2BClKj05NGEe7HFT0CfRrFGrOH2R0ITF1-xrGFvjx8FGUPsPOXDfcIwEQvNDMyoa_YiBLrQTM_YkfbYbkqeuRuahmAi1MMEd3FuZ5o_yluabt-C2xJSdaErYV8SQa7WJTPwOUEK4Vgm6-WvWkw=w1280"
     }
   ],
   "free_resources": [
@@ -53,7 +56,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://lh7-us.googleusercontent.com/docs/AHkbwyLLzxmTCXbskgzUO0DNl7ikFK360nZGm8ls0xwTBifbXcMVoDkGsKGfJgc7leAmW3V2oOcgEx7RZLBlcK3XXPVtRsyTmUkLx3gZcgGFYv0vSnRkfygl=w1200-h630-p"
     },
     {
       "title": "DZC Intro to the Heart Sutra I",
@@ -64,7 +68,8 @@
       "subjects": [
         "ancient-wisdom",
         "non-duality"
-      ]
+      ],
+      "image": "https://lh7-us.googleusercontent.com/docs/AHkbwyJieubisF8008hnrF8oyp4aPodgbQM2d3gewsJOuMsr4LP777yIBhYc3Ptyh4dlYd7i8MfbpOceI-XNpn8HRfwRltxaC9lNyySSsi1U_9vs2vczQh8=w1200-h630-p"
     }
   ],
   "sprint": {
@@ -89,6 +94,7 @@
       "About 38 further talk texts (precepts series, Seven Factors of Awakening, Practicing from the Heart): not opened, so not described.",
       "Ryumonji Zen Monastery: the parent monastery, a separate organisation."
     ],
-    "held": "No usable image: the site's only photos are a stock-style Buddha-face banner, a 200x266 portrait of the teacher (under 300 px) and a header image that sites.google.com refused (HTTP 403, not retried). No YouTube channel or logo found. Owner to decide whether to accept the small teacher portrait or hold."
+    "small_photo_ok": "Owner, 16 Nov 2026: the 200x266 teacher portrait is OK.",
+    "held": "Owner OK'd the 200x266 portrait (16 Nov 2026), and it passed one check, but on the insert sites.google.com answered HTTP 403 to the image. Counted as a refusal; not retried. Held until a photo from a host that allows us."
   }
 }

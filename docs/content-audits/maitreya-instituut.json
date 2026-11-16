@@ -5,7 +5,7 @@
     "create": {
       "name": "Maitreya Instituut",
       "bio": "The Maitreya Instituut is a Tibetan Buddhist study and retreat centre in the Gelug tradition, part of the FPMT network, with its main house at Loenen in the Netherlands and a city branch in Amsterdam. It grew out of courses organised by Paula de Wijs and Jan-Paul and Margot Kool after they met Lama Thubten Yeshe in Asia, and became a foundation in December 1979. After moves from Bruchem to Maasbommel and then Emst, it settled at Loenen, while the Amsterdam centre on the Brouwersgracht opened in 1998. Since 1992 its resident teacher has been Geshe Sonam Gyaltsen, a monk-scholar from Ganden Monastery, and the Dutch monk Ven. Losang Gendun teaches in Amsterdam.\n\nThe institute offers a graded path of study: short introductions such as Buddhism in a Nutshell and Learning to Meditate, FPMT's fourteen-module Discovering Buddhism and the multi-year Basic Program, both with certificates. Around these run guided meditations, pujas, creative workshops such as thangka drawing, open days in Amsterdam, a monthly drop-in evening in Loenen, and retreats lasting from a weekend to several weeks. Most teaching is in Dutch, with some programmes in English, and regular donors help keep it going.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "availability": "local",
       "city": "Loenen",
@@ -129,7 +129,8 @@
       "H.E. Jhado Rinpoche – 37 Practices of Bodhisattvas & Amitāyus: guest teacher.",
       "Thangka drawing workshop (29 Nov): creative workshop, page not opened.",
       "Conferentiecentrum Bosoord: venue hire."
-    ]
+    ],
+    "tier_override": "Luminary by editorial stature (owner, 16 Nov 2026)"
   },
   "images_final": true
 }

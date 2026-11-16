@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1580,
+    "healer_slug": "clouds-in-water-zen-center"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "d092b87d-4af2-45b7-9b12-dde5198a2681",
+      "slug": "sunday-community-gathering",
+      "title": "Sunday Community Gathering"
+    },
+    {
+      "table": "courses",
+      "id": "df112f99-3633-4df8-a9e0-dc9420eeafd1",
+      "slug": "getting-started-in-zen-zoom",
+      "title": "Getting Started in Zen (Zoom)"
+    },
+    {
+      "table": "courses",
+      "id": "4387deed-c7df-4503-a75e-81b0f8655c5a",
+      "slug": "108-bows-of-repentance-refuge-and-gratitude",
+      "title": "108 Bows of Repentance, Refuge and Gratitude"
+    },
+    {
+      "table": "free_resources",
+      "id": "7236df28-9e67-4197-87f0-8e5060c8aeed",
+      "slug": "dharma-talks-from-clouds-in-water",
+      "title": "Dharma Talks from Clouds in Water"
+    },
+    {
+      "table": "free_resources",
+      "id": "1773cf5f-22f6-4baf-8f8b-ce510e1ba9fe",
+      "slug": "early-morning-meditation-and-chanting",
+      "title": "Early Morning Meditation and Chanting"
+    }
+  ],
+  "at": "2026-11-16T13:30:47.792Z"
+}

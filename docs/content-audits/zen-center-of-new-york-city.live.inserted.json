@@ -1,0 +1,46 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1544,
+    "healer_slug": "zen-center-of-new-york-city"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "c0d4e281-1c7f-47c0-8b39-e0ce933bb800",
+      "slug": "half-day-sit-with-mro-staff",
+      "title": "Half-Day Sit with MRO Staff"
+    },
+    {
+      "table": "courses",
+      "id": "6d77469d-fedb-423b-8679-0f1bf33a2e8a",
+      "slug": "buddhas-enlightenment-vigil-zcnyc-with-jody-hojin-kimmel-sensei",
+      "title": "Buddha's Enlightenment Vigil (ZCNYC) with Jody Hojin Kimmel, Sensei"
+    },
+    {
+      "table": "courses",
+      "id": "cbb3d9f1-3e17-4e18-abd6-0bd55fb5d9a0",
+      "slug": "still-moving-brush-with-jody-hojin-kimmel-sensei",
+      "title": "Still Moving Brush with Jody Hojin Kimmel, Sensei"
+    },
+    {
+      "table": "courses",
+      "id": "75f052cf-8f01-4584-96a6-74eb5b22ec6a",
+      "slug": "morning-mind-is-kanzeon-evening-mind-is-kanzeon-exploring-liturgy-chanting",
+      "title": "Morning Mind is Kanzeon, Evening Mind is Kanzeon: Exploring Liturgy & Chanting"
+    },
+    {
+      "table": "free_resources",
+      "id": "982e76f1-5ccf-45d8-87c4-98e5cf3f0cbb",
+      "slug": "recent-temple-talks",
+      "title": "Recent Temple Talks"
+    },
+    {
+      "table": "free_resources",
+      "id": "67f43018-d01c-45a5-b453-4c85182d54f4",
+      "slug": "beginning-instruction-and-daily-zazen",
+      "title": "Beginning Instruction and Daily Zazen"
+    }
+  ],
+  "at": "2026-11-16T13:26:31.447Z"
+}

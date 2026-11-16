@@ -1,0 +1,70 @@
+{
+  "env": "live",
+  "healer": {
+    "id": 1540,
+    "healer_slug": "vicky-carter"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "508496af-fe0a-4c95-a2f2-b3feb1dce3cc",
+      "slug": "first-degree-reiki",
+      "title": "First Degree Reiki"
+    },
+    {
+      "table": "courses",
+      "id": "6a04aed7-d957-4113-ae6e-41faaac75a36",
+      "slug": "second-degree-reiki",
+      "title": "Second Degree Reiki"
+    },
+    {
+      "table": "courses",
+      "id": "153f061a-1f2f-4a46-81f3-d5d81e4f4026",
+      "slug": "third-degree-reiki-reiki-master",
+      "title": "Third Degree Reiki – Reiki Master"
+    },
+    {
+      "table": "courses",
+      "id": "7106115b-d95d-433b-a5c6-b99e6bdf8e46",
+      "slug": "reiki-master-teacher-training-2",
+      "title": "Reiki Master Teacher Training"
+    },
+    {
+      "table": "courses",
+      "id": "bf0e6b99-0381-4aeb-83fb-45285e7d393f",
+      "slug": "reiki-energy-healing-sessions",
+      "title": "Reiki Energy Healing sessions"
+    },
+    {
+      "table": "courses",
+      "id": "e718c6ab-c709-4f2a-8c85-a61c6e62df6b",
+      "slug": "distance-reiki-healing",
+      "title": "Distance Reiki Healing"
+    },
+    {
+      "table": "courses",
+      "id": "2a81e06b-7538-4a2a-a0a4-7cfd3ae93b75",
+      "slug": "monthly-yoga-nidra-deep-rest-relaxation",
+      "title": "Monthly Yoga Nidra – Deep Rest & Relaxation"
+    },
+    {
+      "table": "courses",
+      "id": "a2a1e9fd-5905-4740-b276-350b1274b654",
+      "slug": "yoga-nidra-workshop",
+      "title": "Yoga Nidra Workshop"
+    },
+    {
+      "table": "courses",
+      "id": "337fdcbd-b22d-4ccf-8536-27f4255c60ad",
+      "slug": "chakra-cleansing-energy-flow-workshop",
+      "title": "Chakra Cleansing & Energy Flow Workshop"
+    },
+    {
+      "table": "courses",
+      "id": "8f82d1e0-27ae-45ee-b336-451db78bbd7c",
+      "slug": "awakening-your-inner-awareness",
+      "title": "Awakening Your Inner Awareness"
+    }
+  ],
+  "at": "2026-11-16T13:25:56.883Z"
+}

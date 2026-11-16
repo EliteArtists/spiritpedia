@@ -1,0 +1,40 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1575,
+    "healer_slug": "hayagriva-buddhist-centre"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "40e33fe2-4c17-4cbe-b907-6e44b03023ef",
+      "slug": "discovering-buddhism-3",
+      "title": "Discovering Buddhism"
+    },
+    {
+      "table": "courses",
+      "id": "b1fb3d4c-2b97-40eb-9123-a7839c140783",
+      "slug": "sunday-meditation-2",
+      "title": "Sunday Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "49ebccf4-74f7-4b2d-9edd-eb87dc13f6b9",
+      "slug": "tuesday-morning-meditation-2",
+      "title": "Tuesday Morning Meditation"
+    },
+    {
+      "table": "courses",
+      "id": "351c461b-5f8e-4043-b884-ac72b77045fd",
+      "slug": "membership-24",
+      "title": "Membership"
+    },
+    {
+      "table": "free_resources",
+      "id": "01144fe6-9688-4220-a07b-85f063a2a891",
+      "slug": "current-and-past-recordings",
+      "title": "Current and Past Recordings"
+    }
+  ],
+  "at": "2026-11-16T13:26:05.368Z"
+}

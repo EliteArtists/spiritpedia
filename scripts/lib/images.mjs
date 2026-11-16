@@ -4,7 +4,11 @@
 // An honest name, never a browser's (owner's standing rule: no fake user
 // agents). Like the website's image audit (web/utils/brokenImages.js), some
 // hosts refuse a request with no User-Agent at all, so we send our own.
-export const UA = 'Mozilla/5.0 (compatible; SpiritpediaIngest/1.0; +https://www.spiritpedia.co)';
+// An honest identity with contact details (owner, 16 Nov 2026). It replaced
+// SpiritpediaIngest/1.0, which eight sites dropped on 13 Nov. robots.txt is
+// still obeyed: a site that refuses this agent stays refused.
+export const UA = 'Spiritpedia/1.0 (+https://spiritpedia.co/about; love@spiritpedia.co)';
+const OUR_AGENTS = ['spiritpedia', 'spiritpediaingest'];
 export const TIMEOUT_MS = 30_000;
 export const MIN_IMAGE_PX = 300; // the longer side
 
@@ -26,7 +30,7 @@ export const offLimits = (url) => { try { const u = new URL(url); return OFF_LIM
 // robots.txt request). A host is blocked when its robots.txt is refused
 // (401, 403, 406, 429, 5xx) or unreachable, when a group naming Claude's
 // agents says "Disallow: /" (owner, 5 Nov 2026), or when the group that
-// applies to us (SpiritpediaIngest, else *) disallows the path. No
+// applies to us (Spiritpedia or SpiritpediaIngest, else *) disallows the path. No
 // robots.txt (400, 404, 410) means allowed. One read per host per run.
 const CLAUDE_AGENTS = ['claudebot', 'claude-user', 'claude-web', 'anthropic-ai'];
 const robotsCache = new Map();
@@ -65,8 +69,8 @@ async function robotsFor(origin) {
   } catch (e) {
     result = { refused: `robots.txt unreachable (${e.cause?.code || e.name})` };
   }
-  // Crawl-delay from the group that applies to us (SpiritpediaIngest, else *).
-  const ours = (result.groups || []).filter((g) => g.agents.includes('spiritpediaingest'));
+  // Crawl-delay from the group that applies to us (Spiritpedia or SpiritpediaIngest, else *).
+  const ours = (result.groups || []).filter((g) => g.agents.some((a) => OUR_AGENTS.includes(a)));
   const applies = ours.length ? ours : (result.groups || []).filter((g) => g.agents.includes('*'));
   result.delay = Math.max(0, ...applies.map((g) => g.delay || 0));
   if (result.delay) nextSlot.set(origin, Date.now() + result.delay * 1000);
@@ -94,7 +98,7 @@ export async function robotsBlock(url) {
   if (rb.refused) return rb.refused;
   const named = rb.groups.filter((g) => g.agents.some((a) => CLAUDE_AGENTS.includes(a)));
   if (named.some((g) => g.rules.some((r) => !r.allow && r.path === '/'))) return "robots.txt blocks Claude's agents";
-  const ours = rb.groups.filter((g) => g.agents.includes('spiritpediaingest'));
+  const ours = rb.groups.filter((g) => g.agents.some((a) => OUR_AGENTS.includes(a)));
   const rules = (ours.length ? ours : rb.groups.filter((g) => g.agents.includes('*'))).flatMap((g) => g.rules);
   const path = u.pathname + u.search;
   const hits = rules.filter((r) => ruleMatches(r, path)).sort((a, b) => b.path.length - a.path.length || (a.allow ? -1 : 1));

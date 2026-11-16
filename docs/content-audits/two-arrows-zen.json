@@ -46,7 +46,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2023/09/Rohatsu-Sesshin-DMH-1.jpeg"
     },
     {
       "title": "Rohatsu Sesshin 2026 with Mugaku Roshi",
@@ -59,7 +60,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2023/09/Rohatsu-Sesshin-2023-MMZ-Banner.jpg"
     },
     {
       "title": "Sunday Wake Up: Meditation, Clarity, & Community",
@@ -72,7 +74,8 @@
       "subjects": [
         "meditation",
         "spirituality"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2026/09/Sunday-Wake-Up-1000-x-333-px-1.jpg"
     },
     {
       "title": "Thursday Evening Sit and Dharma Talk",
@@ -85,7 +88,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2024/05/Evening-Sit-DMH.jpg"
     }
   ],
   "free_resources": [
@@ -98,7 +102,8 @@
       "subjects": [
         "meditation",
         "ancient-wisdom"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2022/07/TAZ-Homepage-03.png"
     },
     {
       "title": "Daily Meditation",
@@ -108,7 +113,8 @@
       "resource_type": "practice",
       "subjects": [
         "meditation"
-      ]
+      ],
+      "image": "https://twoarrowszen.org/wp-content/uploads/2022/07/TAZ-Homepage-03.png"
     }
   ],
   "sprint": {
@@ -136,6 +142,7 @@
       "Membership: the /join/membership/ page returned 404.",
       "Diane Musho Hamilton's books: the founder's own books, not centre items."
     ],
-    "held": "Photos (twoarrowszen.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
-  }
+    "released": "16 Nov 2026 (owner): retried once with the ingest's new user agent (Spiritpedia/1.0 with contact details); photos load. Was held: Photos (twoarrowszen.org) can't be loaded by the ingest: the site drops requests carrying the ingest's user agent (SpiritpediaIngest/1.0; robots.txt request closed, UND_ERR_SOCKET, 13 Nov 2026; curl with the same agent fails too). Counted as a refusal; owner decides."
+  },
+  "images_final": true
 }

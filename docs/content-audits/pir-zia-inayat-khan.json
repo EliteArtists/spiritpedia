@@ -5,7 +5,7 @@
     "create": {
       "name": "Pir Zia Inayat Khan",
       "bio": "Pir Zia Inayat Khan leads the Inayatiyya, the Sufi order that grew from the work of his grandfather, the Indian musician and mystic Hazrat Inayat Khan. Born to Taj Inayat and the Sufi teacher Pir Vilayat Inayat Khan, he grew up in the United States, read Persian literature at the University of London and earned a doctorate in religion at Duke University. His father trained him in the Sufi path and named him as successor in 2000, and since 2004 he has guided the order's communities across several continents as its Pir-o-Murshid.\n\nHis teaching centres on the universalist Sufism of his lineage: meditation, breath, zikr, contemplation of nature and the shared mystical ground of the world's faiths. He founded Suluk Academy, a two-year school of Sufi study and practice offered in person and online, and he teaches retreats, weekend programmes and book events in North America, Europe and India. He works mainly from two houses, the Astana in Richmond, Virginia, and Fazal Manzil in Suresnes near Paris. His books include Mingled Waters, Saracen Chivalry, Immortality: A Traveler's Guide and Tears from the Mother of the Sun, a cycle of legends illustrated by Amruta Patil.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "individual",
       "availability": "worldwide",
       "city": "Richmond, Virginia",
@@ -234,7 +234,8 @@
       "Caravan of Souls and A Pearl in Wine: compiled or edited by him, not authored.",
       "German, French and anthology titles on his Publications page: no ISBN on a page we opened, or contributions to others' books.",
       "Light, Magnetism, and the Healing Power of Nature and Sufi Healing Service: health rule and not his own offerings."
-    ]
+    ],
+    "tier_override": "Luminary by editorial stature (owner, 16 Nov 2026)"
   },
   "images_final": true
 }

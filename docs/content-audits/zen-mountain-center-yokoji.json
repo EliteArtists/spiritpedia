@@ -5,7 +5,7 @@
     "create": {
       "name": "Yokoji Zen Mountain Center",
       "bio": "Yokoji Zen Mountain Center is a year-round Zen training temple set on 160 wild acres in the San Jacinto Mountains above Mountain Center, Southern California. Taizan Maezumi Roshi founded it in 1982 as the summer retreat site of the Zen Center of Los Angeles, and several of his successors trained here before it became a full-time centre in 1995. The name means sunlight temple, fitting for a community that lives off the grid on solar and wind power and draws its water from its own wells.\n\nThe abbot, Charles Tenshin Fletcher Roshi, grew up in Manchester and moved to Los Angeles in 1979 to train with Maezumi, who gave him dharma transmission in the White Plum line in 1994. He is a certified overseas teacher of the Soto school and co-wrote the introductory book Way of Zen. In keeping with his lineage he teaches both koan study and shikantaza.\n\nVisitors can start with the Sunday morning programme of zazen instruction, sitting, a dharma talk and lunch. The calendar runs a sesshin nearly every month, from weekend introductions to week-long retreats, plus two month-long training periods a year. Guests may stay a few nights and follow the daily schedule, longer-term residents can train for months, and Tenshin Roshi's talks go out as a free monthly podcast.",
-      "tier": "local_hero",
+      "tier": "luminary",
       "entity_type": "organisation",
       "availability": "local",
       "city": "Mountain Center, California",
@@ -212,7 +212,8 @@
       "Fall One Month Intensive (started 25 Oct) and Sangha Work Weekend (14 Nov): not after 14 Nov.",
       "New Year's Sesshin and Sunday Schedule: same events page URL as the Rohatsu item.",
       "Videos: talks with unnamed speakers (2008 'zen talk' series), dharma combat ceremonies of students, fundraising appeal, fire/flood tours."
-    ]
+    ],
+    "tier_override": "Luminary by editorial stature (owner, 16 Nov 2026)"
   },
   "images_final": true
 }

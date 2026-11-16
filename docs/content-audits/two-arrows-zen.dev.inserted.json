@@ -1,0 +1,46 @@
+{
+  "env": "dev",
+  "healer": {
+    "id": 1577,
+    "healer_slug": "two-arrows-zen"
+  },
+  "rows": [
+    {
+      "table": "courses",
+      "id": "deb82b76-2000-4c9c-a5e3-687df50097f7",
+      "slug": "rohatsu-winter-sesshin-in-torrey-2026",
+      "title": "Rohatsu Winter Sesshin in Torrey 2026"
+    },
+    {
+      "table": "courses",
+      "id": "27c36f6f-bfc8-4f6b-97f8-94317953f8d6",
+      "slug": "rohatsu-sesshin-2026-with-mugaku-roshi",
+      "title": "Rohatsu Sesshin 2026 with Mugaku Roshi"
+    },
+    {
+      "table": "courses",
+      "id": "5894ba83-0759-4943-a13a-f5da7ca7026e",
+      "slug": "sunday-wake-up-meditation-clarity-community",
+      "title": "Sunday Wake Up: Meditation, Clarity, & Community"
+    },
+    {
+      "table": "courses",
+      "id": "b5b45556-db4f-4679-93ca-e8c50af3fe5e",
+      "slug": "thursday-evening-sit-and-dharma-talk",
+      "title": "Thursday Evening Sit and Dharma Talk"
+    },
+    {
+      "table": "free_resources",
+      "id": "9ba30cbb-f949-407c-b70e-3916f327bc36",
+      "slug": "dharma-talk-audio",
+      "title": "Dharma Talk Audio"
+    },
+    {
+      "table": "free_resources",
+      "id": "6313ff40-be4a-47f6-b98e-04b017c74285",
+      "slug": "daily-meditation-2",
+      "title": "Daily Meditation"
+    }
+  ],
+  "at": "2026-11-16T13:26:20.484Z"
+}
