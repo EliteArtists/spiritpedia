@@ -196,6 +196,38 @@ const organisationShelfMinimum = 5;
 
 const _hubTierRank = {'superhero': 0, 'ascended_master': 1, 'luminary': 2};
 
+/// The site's tier order: Superhero, Ascended Master, Luminary, then Local
+/// Hero and anything untiered. The website's tierRank (utils/listings.js).
+int tierRank(Healer h) => _hubTierRank[h.tier] ?? 3;
+
+/// [healers] in tier order, then by name (a stable order for ties): a
+/// subject page's teachers and channels (owner, 10 Nov 2026). The website's
+/// byTier (utils/listings.js) — change both together.
+List<Healer> byTier(List<Healer> healers) {
+  final indexed = [...healers.indexed]
+    ..sort((a, b) {
+      final tier = tierRank(a.$2) - tierRank(b.$2);
+      if (tier != 0) return tier;
+      final name = a.$2.name.toLowerCase().compareTo(b.$2.name.toLowerCase());
+      return name != 0 ? name : a.$1 - b.$1;
+    });
+  return [for (final (_, h) in indexed) h];
+}
+
+/// A subject page's teachers (owner, 10 Nov 2026): tier order, then by
+/// name; once an area is set, still tier first, then nearest first within
+/// each tier, each with its distance in km, then those with no town. Nobody
+/// is left out. The website's SubjectHealersShelf.jsx.
+List<({Healer healer, double? km})> subjectTeachers(
+  List<Healer> teachers,
+  Place? area,
+  Map<int, Place> places,
+) {
+  final tiered = byTier(teachers);
+  if (area == null) return [for (final h in tiered) (healer: h, km: null)];
+  return byDistance(tiered, area, places, rank: tierRank);
+}
+
 /// Takes Explore These Channels' list (channels, apps, organisations) and
 /// moves the organisations onto their own shelf when there are enough of
 /// them: Spiritpedia Official first, then by tier, then most teachers. Below
@@ -211,14 +243,13 @@ const _hubTierRank = {'superhero': 0, 'ascended_master': 1, 'luminary': 2};
   if (orgs.length < organisationShelfMinimum) {
     return (organisations: const <Healer>[], platforms: platforms);
   }
-  int rank(Healer h) => _hubTierRank[h.tier] ?? 3;
   final scored = [
     for (final (i, h) in orgs.indexed) (h, i, teacherCount(h, links)),
   ];
   scored.sort((a, b) {
     final official = (b.$1.official ? 1 : 0) - (a.$1.official ? 1 : 0);
     if (official != 0) return official;
-    final tier = rank(a.$1) - rank(b.$1);
+    final tier = tierRank(a.$1) - tierRank(b.$1);
     if (tier != 0) return tier;
     final teachers = b.$3 - a.$3;
     return teachers != 0 ? teachers : a.$2 - b.$2;
