@@ -250,6 +250,7 @@ class OutboundButton extends StatelessWidget {
     this.background = SpColors.primary,
     this.foreground = Colors.white,
     this.border,
+    this.onTap,
   });
 
   final String label;
@@ -258,12 +259,18 @@ class OutboundButton extends StatelessWidget {
   final Color foreground;
   final Color? border;
 
+  /// Runs as the link opens, without holding it up (the Amazon tap count).
+  final VoidCallback? onTap;
+
   @override
   Widget build(BuildContext context) => SizedBox(
     width: double.infinity,
     height: 50,
     child: FilledButton(
-      onPressed: () => openExternal(context, url),
+      onPressed: () {
+        onTap?.call();
+        openExternal(context, url);
+      },
       style: FilledButton.styleFrom(
         backgroundColor: background,
         foregroundColor: foreground,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/affiliate/amazon.dart';
+import '../../core/affiliate/amazon_clicks.dart';
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../data/models.dart';
@@ -161,6 +162,11 @@ class PurchaseLinks extends StatelessWidget {
           url: amazon.url,
           background: const Color(0xFFFF9900),
           foreground: Colors.black,
+          onTap: () => countAmazonTap(
+            contentType: 'book',
+            contentSlug: book.slug,
+            url: amazon.url,
+          ),
         ),
       if (book.goodreadsUrl != null)
         OutboundButton(

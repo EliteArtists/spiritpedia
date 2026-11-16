@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/affiliate/amazon.dart';
+import '../../core/affiliate/amazon_clicks.dart';
 import '../../core/config.dart';
 import '../../core/format/dates.dart';
 import '../../core/links/open_link.dart';
@@ -70,6 +71,14 @@ class OfferingScreen extends ConsumerWidget {
           ctaLabel: type.cta,
           ctaUrl: amazon?.url ?? o.url,
           amazonTagged: amazon?.tagged ?? false,
+          // Counted as the website counts it (contentType 'course').
+          onCtaTap: amazon == null
+              ? null
+              : () => countAmazonTap(
+                  contentType: 'course',
+                  contentSlug: o.slug,
+                  url: amazon.url,
+                ),
           missingCta: 'booking',
           subjects: o.subjectSlugs,
           reviews: offeringReviews(o.slug),
@@ -130,6 +139,7 @@ class _OfferingLayout extends ConsumerWidget {
     this.phase = DatePhase.undated,
     this.ends,
     this.amazonTagged = false,
+    this.onCtaTap,
   });
 
   final List<Widget> badges;
@@ -142,6 +152,9 @@ class _OfferingLayout extends ConsumerWidget {
 
   /// The call is a tagged Amazon link, so the disclosure goes under it.
   final bool amazonTagged;
+
+  /// The Amazon tap count, for an offering whose link is an Amazon product.
+  final VoidCallback? onCtaTap;
   final String missingCta;
   final List<String> subjects;
   final ReviewTarget reviews;
@@ -207,8 +220,9 @@ class _OfferingLayout extends ConsumerWidget {
                   background: Colors.transparent,
                   foreground: SpColors.textMuted,
                   border: SpColors.border,
+                  onTap: onCtaTap,
                 )
-              : OutboundButton(label: ctaLabel, url: ctaUrl!),
+              : OutboundButton(label: ctaLabel, url: ctaUrl!, onTap: onCtaTap),
         if (ctaUrl != null && amazonTagged)
           Padding(
             padding: const EdgeInsets.only(top: 14),

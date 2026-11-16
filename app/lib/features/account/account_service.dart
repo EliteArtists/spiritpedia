@@ -56,6 +56,7 @@ class AccountProfile {
       'channel' => 'Channel',
       'app' => 'App',
       'organisation' => 'Organisation',
+      'school' => 'School',
       _ => 'Practitioner',
     };
   }

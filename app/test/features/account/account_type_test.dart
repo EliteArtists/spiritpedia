@@ -32,6 +32,7 @@ void main() {
     expect(label(slug: 'x', entityType: 'channel'), 'Channel');
     expect(label(slug: 'x', entityType: 'app'), 'App');
     expect(label(slug: 'x', entityType: 'organisation'), 'Organisation');
+    expect(label(slug: 'x', entityType: 'school'), 'School');
     expect(label(publisherId: 'p1'), 'Publisher');
   });
 }
