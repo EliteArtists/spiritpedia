@@ -6,6 +6,9 @@ import AuthSync from "@/components/AuthSync";
 import SavePrompt from "@/components/SavePrompt";
 import Analytics from "@/components/Analytics";
 import CookieBanner from "@/components/CookieBanner";
+import AppBanner from "@/components/AppBanner";
+import WelcomeAppCard from "@/components/WelcomeAppCard";
+import { APP_STORE_ID } from "@/utils/appStores";
 import {
   SITE_URL,
   SITE_NAME,
@@ -69,6 +72,10 @@ export const metadata = {
     images: [{ ...DEFAULT_TWITTER_IMAGE, alt: DEFAULT_TITLE }],
   },
   robots: { index: true, follow: true },
+  // Apple's Smart App Banner, drawn by Safari on iPhone and iPad only (owner,
+  // 16 Nov 2026). Teacher pages add their own address as the app-argument;
+  // the admin layout switches it off.
+  itunes: { appId: APP_STORE_ID },
   // Google Search Console ownership proof. Next renders this as
   // <meta name="google-site-verification"> — Google re-checks it periodically,
   // so it stays on the site rather than being removed once verified.
@@ -85,9 +92,13 @@ export default function RootLayout({ children }) {
         // footer's last line is never sitting underneath it.
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex min-h-screen flex-col pb-20`}
       >
+        {/* Android only: the "Get the app" strip. See components/AppBanner.jsx. */}
+        <AppBanner />
         {children}
         <SiteFooter />
         <LibraryBar />
+        {/* Once, after a website sign-up. */}
+        <WelcomeAppCard />
         {/* Renders nothing. Guarantees a signed-in visitor has a profile row
             and that their saved library has been migrated, however they
             arrived — see components/AuthSync.jsx. */}

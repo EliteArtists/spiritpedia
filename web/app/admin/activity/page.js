@@ -8,6 +8,7 @@ import { StatsTab } from '@/components/admin/AdminLiveTabs';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import RefreshButton from '@/components/admin/RefreshButton';
 import AmazonClicksPanel from '@/components/admin/AmazonClicksPanel';
+import AppStoreClicksPanel from '@/components/admin/AppStoreClicksPanel';
 
 // Admin → Activity (migration 0021). Totals only: what is opened, saved and
 // searched for, across everyone, from anonymous daily counts — never what any
@@ -267,6 +268,9 @@ export default function AdminActivityPage() {
           </Panel>
           <div className="lg:col-span-2">
             <AmazonClicksPanel days={days} platform={platform} />
+          </div>
+          <div className="lg:col-span-2">
+            <AppStoreClicksPanel days={days} />
           </div>
           <div className="lg:col-span-2">
             <Panel title="Sign-ups over time" note="By where the account was made (the platform toggle doesn't apply)">

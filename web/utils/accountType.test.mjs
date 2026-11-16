@@ -20,6 +20,7 @@ test('after approval it reads the type set at approval, never the sign-up wordin
   assert.equal(accountTypeLabel({ ...approved, entityType: null }), 'Practitioner');
   assert.equal(accountTypeLabel({ ...approved, entityType: 'channel' }), 'Channel');
   assert.equal(accountTypeLabel({ ...approved, entityType: 'app' }), 'App');
+  assert.equal(accountTypeLabel({ ...approved, entityType: 'school' }), 'School');
   assert.equal(accountTypeLabel({ ...approved, entityType: 'organisation' }), 'Organisation');
   assert.equal(accountTypeLabel({ userType: 'practitioner', status: 'approved', publisherId: 'p1' }), 'Publisher');
 });

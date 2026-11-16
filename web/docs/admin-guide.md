@@ -38,7 +38,9 @@ first (README §19), then the rest.
 
 ## People
 
-**What it's for:** everyone with an account. **What it shows:** two tabs,
+**What it's for:** everyone with an account. **What it shows:** how many
+accounts there are and how many explorer accounts their owners have deleted
+(a count only, no names), then two tabs,
 **Practitioners** and **Explorers**, with a search box and, for
 practitioners, a status filter (pending, incomplete, approved, rejected).
 **View** opens a person's record: their photos, when they joined and last
@@ -133,7 +135,8 @@ in the Inbox.
 
 ## Reports
 
-**What it's for:** reviews that members have reported from the app. The
+**What it's for:** reviews that members have reported, from the app or the
+website. The
 Terms promise a decision within 24 hours, and love@ is emailed as soon as one
 comes in. **What it shows:** **Open**, **Resolved** and **Dismissed**
 reports, each with the review as it was when reported and as it is now, the
@@ -166,7 +169,10 @@ something to send. A glance at the 7-day counts once a week.
 everyone and never one person's browsing. **What it shows:** for 7, 30 or 90
 days, and for the website, the app or both: pages opened, videos watched,
 saves and shares; most opened and most saved; rising subjects; searches that
-found nothing; taps on Buy on Amazon (clicks, not sales); sign-ups over time;
+found nothing; taps on Buy on Amazon (clicks, not sales); taps on the App
+Store and Google Play links ("Get the app": which place on the site, which
+store, which kind of device, and how often the Android strip is closed);
+sign-ups over time;
 and, at the foot, what's in the database. It updates itself every minute.
 **What you do:** read it. "Searches with no results" is a ready-made list of
 content to add. **How often:** once a week.
@@ -413,7 +419,7 @@ the assistant, a script or the Supabase dashboard today.
 - **Outreach for channels, apps, organisations, schools and publishers is
   switched off,** and there's no switch in the admin. Turning a kind on is a
   change to the code. The emails also still go to a test address until the
-  test setting is removed in Vercel.
+  test setting (`JOURNEY_TEST_EMAIL`) is removed in Vercel.
 - **No list of the automatic emails someone was sent.** The database keeps
   a record of emails such as the welcome and Day 4 emails, but the admin
   shows only the outreach journey, an explorer's discovery editions and
@@ -433,6 +439,11 @@ the assistant, a script or the Supabase dashboard today.
   assistant.
 - **Amazon sales aren't shown.** Activity counts taps on Buy on Amazon;
   what actually sold is only in Amazon's own reports.
-- **Buy on Amazon taps in the app aren't counted.** Only the website's taps
-  reach Activity today; the app opens Amazon without telling us (found 16 Nov
-  2026; the fix needs an app update).
+- **Buy on Amazon taps in the app aren't counted yet.** Only the website's
+  taps reach Activity until app 1.0.2 is in the stores (the fix is built on
+  the 1.0.2 branch, 16 Nov 2026).
+- **"Delivered" never shows for outreach emails yet.** Resend has no webhook
+  set up and Vercel has no `RESEND_WEBHOOK_SECRET`, so delivery reports
+  don't reach us (found 16 Nov 2026; the steps are in that day's report).
+- **Taps on Apple's own banner aren't counted.** Safari doesn't tell us; App
+  Store Connect → App Analytics → Sources → Web Referrer shows them.

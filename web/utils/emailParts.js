@@ -55,6 +55,8 @@ const BUTTON_STYLE = [
 //   'A paragraph.'                  — a paragraph; '\n' inside is a line break
 //   { heading: 'Superheroes' }      — a bold line that sits on the paragraph after it
 //   { button: 'Label', url }        — a button; in text, "Label: url" on its own line
+//   { badges: [{ label, src, alt, url }] } — store badge images in a row, each
+//                                     linked; in text, "Label: url" per line
 // Everything is escaped for the HTML; nothing a member typed can become markup.
 // footer, when given, is a small line under the sign-off: the unsubscribe
 // link on emails someone can opt out of. { text, linkText, url }.
@@ -83,6 +85,16 @@ export function renderEmail({ subject, blocks, signOff = 'team', footer = null }
       text.push(`${block.button}: ${block.url}`);
       html.push(
         `<p><a href="${escapeHtml(block.url)}" style="${BUTTON_STYLE}">${escapeHtml(block.button)}</a></p>`
+      );
+    } else if (block.badges) {
+      text.push(block.badges.map((b) => `${b.label}: ${b.url}`).join('\n'));
+      html.push(
+        `<p>${block.badges
+          .map(
+            (b) =>
+              `<a href="${escapeHtml(b.url)}" style="display:inline-block;margin:0 12px 8px 0"><img src="${escapeHtml(b.src)}" alt="${escapeHtml(b.alt)}" height="40" style="height:40px;width:auto;border:0;display:block"></a>`
+          )
+          .join('')}</p>`
       );
     } else {
       throw new Error('unknown email block');

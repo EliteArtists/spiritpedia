@@ -94,7 +94,7 @@ export default function HomeMasthead({ subjects, currentSubjectSlug, shareUrl, s
     <>
       <nav
         data-handed-off={handedOff}
-        className={`sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md transition-transform duration-300 ease-out ${
+        className={`sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/95 transition-transform duration-300 ease-out ${
           handedOff ? '-translate-y-full' : 'translate-y-0'
         }`}
       >

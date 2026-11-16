@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { adminClient, emailsById, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,16 +12,6 @@ export const dynamic = 'force-dynamic';
 //   requests  every claim request (claim_requests, migration 0020), pending
 //             first, with what became of it
 // Deciding a pending request stays in the Inbox; Revoke is here.
-
-async function emailsById(supabase) {
-  const emails = new Map();
-  for (let page = 1; ; page += 1) {
-    const { data } = await supabase.auth.admin.listUsers({ page, perPage: 1000 });
-    for (const user of data?.users || []) emails.set(user.id, user.email);
-    if (!data?.users || data.users.length < 1000) break;
-  }
-  return emails;
-}
 
 export async function GET() {
   if (!(await isAdminRequest())) return NextResponse.json({ error: 'unauthorised' }, { status: 401 });

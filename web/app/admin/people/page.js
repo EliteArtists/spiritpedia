@@ -96,7 +96,13 @@ function PeopleView() {
     <>
       <SectionHeading
         title="People"
-        subtitle={accountsAvailable ? `${counts.users ?? 0} registered` : 'Every account on Spiritpedia'}
+        subtitle={
+          accountsAvailable
+            ? `${counts.users ?? 0} registered · ${counts.explorers_deleted ?? 0} explorer account${
+                counts.explorers_deleted === 1 ? '' : 's'
+              } deleted`
+            : 'Every account on Spiritpedia'
+        }
       />
 
       {loading ? (

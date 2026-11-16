@@ -1,6 +1,6 @@
 // What the account page calls the account: the type set at approval, not the
 // sign-up choice. A practitioner's listing says what they are (a person, a
-// channel, an app, an organisation) and a publisher account manages a
+// channel, an app, an organisation, a school) and a publisher account manages a
 // publisher. Until approval it reads "Practitioner (awaiting approval)"; a
 // declined applicant is an explorer again (user_type reverts).
 const LISTING_WORDS = {
@@ -8,6 +8,7 @@ const LISTING_WORDS = {
   channel: 'Channel',
   app: 'App',
   organisation: 'Organisation',
+  school: 'School',
 };
 
 export function accountTypeLabel({ userType, status, healerSlug, publisherId, entityType }) {

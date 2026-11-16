@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { reviewFlag, splitImages } from './deleteAccount.js';
+import { reviewFlag, splitImages, tallyRow } from './deleteAccount.js';
 
 test('a deleted publisher account flags its listing (migration 0022)', () => {
   const row = reviewFlag(
@@ -46,4 +46,20 @@ test('photos the listing still shows are kept', () => {
   );
   assert.deepEqual(keep, ['u1/a.jpg']);
   assert.deepEqual(remove, ['u1/b.jpg']);
+});
+
+test('an account with nothing to review is only counted, already resolved', () => {
+  const row = tallyRow({ user_type: 'explorer' }, { source: 'app' });
+  assert.equal(row.source, 'app');
+  assert.equal(row.user_type, 'explorer');
+  assert.ok(row.resolved_at);
+  assert.equal('linked_healer_slug' in row, false);
+  assert.equal(tallyRow(null, { source: 'website' }).user_type, 'explorer');
+  assert.equal(tallyRow({ user_type: 'practitioner' }, { source: 'website' }).user_type, 'practitioner');
+});
+
+test('a listing owner is flagged, not tallied; an admin deletion is neither', () => {
+  assert.equal(tallyRow({ linked_healer_slug: 'jane-doe' }, { source: 'website' }), null);
+  assert.equal(tallyRow({ linked_publisher_id: 'pub-1' }, { source: 'app' }), null);
+  assert.equal(tallyRow({ user_type: 'explorer' }, { source: 'admin' }), null);
 });

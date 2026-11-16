@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { adminClient, emailsById, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { MIN_FAILURES } from '@/utils/brokenImages';
 
 export const dynamic = 'force-dynamic';
@@ -67,6 +67,18 @@ export async function GET() {
       head('hub_teachers').then(({ count }) => {
         counts.teacher_links = count ?? 0;
       }),
+      // Explorer accounts their owners deleted (utils/deleteAccount.js →
+      // tallyRow): a number, no names. Service role only, so absent without it.
+      supabase
+        ? supabase
+            .from('account_deletions')
+            .select('*', { count: 'exact', head: true })
+            .is('linked_healer_slug', null)
+            .eq('user_type', 'explorer')
+            .then(({ count }) => {
+              counts.explorers_deleted = count ?? 0;
+            })
+        : null,
       head('hub_teachers')
         .gte('created_at', since)
         .then(({ count }) => {
@@ -181,10 +193,9 @@ export async function GET() {
     .eq('status', 'pending')
     .order('created_at', { ascending: true });
 
-  // user_profiles has no email column — the address lives in auth.users, which
-  // only the service role can read. One listUsers call and a lookup map is far
-  // cheaper than a getUserById per profile.
-  const usersQuery = supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
+  // Emails live in auth.users (utils/supabaseAdmin.js → emailsById), every
+  // page of them.
+  const emailsQuery = emailsById(supabase);
 
   // Every read above starts here, together, with the counts: none depends on
   // another (supabase-js queries run when awaited).
@@ -197,7 +208,7 @@ export async function GET() {
     { data: openReports },
     { data: claimRows },
     { data: submissionRows },
-    { data: userPage },
+    emails,
   ] = await Promise.all([
     profilesQuery,
     pendingReviewsQuery,
@@ -207,16 +218,13 @@ export async function GET() {
     openReportsQuery,
     claimRowsQuery,
     submissionRowsQuery,
-    usersQuery,
+    emailsQuery,
     readCounts(),
   ]);
 
   if (error) {
     return NextResponse.json({ error: 'query_failed', message: error.message, counts }, { status: 200 });
   }
-
-  const emails = new Map();
-  for (const user of userPage?.users || []) emails.set(user.id, user.email);
 
   // Which broken listing pictures are logos (a school, organisation, channel
   // or app) rather than a person's photo, for the queue row's label.

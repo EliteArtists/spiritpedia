@@ -55,6 +55,16 @@ test('B1: the app version speaks of tap and hold; the website version of the but
   assert.doesNotMatch(web.text, /Tap and hold/);
   // No platform recorded (before migration 0021): the website version.
   assert.match(explorerWelcome({ platform: null }).text, /floating My Library button/);
+  // The website version ends with the app line and both badges, counted,
+  // before the farewell; the app version doesn't.
+  assert.match(
+    web.text,
+    /more personal\.\n\nSpiritpedia is even better on the app\.\n\nApp Store: https:\/\/www\.spiritpedia\.co\/get-app\/app-store\?from=welcome_email\nGoogle Play: https:\/\/www\.spiritpedia\.co\/get-app\/google-play\?from=welcome_email\n\nSee you among the stars,/
+  );
+  assert.match(web.html, /<img src="https:\/\/www\.spiritpedia\.co\/email\/app-store\.png" alt="Download on the App Store"/);
+  assert.match(web.html, /<img src="https:\/\/www\.spiritpedia\.co\/email\/google-play\.png" alt="Get it on Google Play"/);
+  assert.doesNotMatch(web.text, /follow/i);
+  assert.doesNotMatch(app.text, /App Store|Google Play|better on the app/);
   assertClean(app);
   assertClean(web);
 });

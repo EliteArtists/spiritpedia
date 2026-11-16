@@ -31,7 +31,7 @@ export default function CookieBanner() {
       // Above the floating My Library button (z-40), below the practitioner
       // modal (z-100): a question about cookies should not cover a question
       // somebody is already answering.
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#0a0f1d]/95 backdrop-blur-md"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#0a0f1d]/95"
       style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
     >
       <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">

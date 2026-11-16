@@ -4,6 +4,7 @@ import { supabaseAuth } from './supabaseAuth.js';
 import { syncFavouritesWithAccount } from './favouritesSync.js';
 import { USER_TYPES, getUserType, takePendingClaim } from './userType.js';
 import { claimPath, findClaimableListing as findClaimable } from './listings.js';
+import { WELCOME_EVENT, WELCOME_KEY } from './appStores.js';
 
 // Everything that happens in the seconds after a code is accepted: move what
 // the visitor saved while anonymous onto their account, give them a profile
@@ -86,6 +87,14 @@ export async function ensureProfile(userId, userType) {
   // callers would be two emails. Not awaited: a new member should never wait on
   // an email, and the route reports nothing they could act on.
   if (created) {
+    // And the one-time "even better on the app" card on the next page they
+    // land on (components/WelcomeAppCard.jsx). This tab only, like the visit.
+    try {
+      sessionStorage.setItem(WELCOME_KEY, '1');
+      window.dispatchEvent(new Event(WELCOME_EVENT));
+    } catch {
+      // No storage, no card: nothing else depends on it.
+    }
     sendWelcome(
       isPractitioner ? '/api/email/practitioner-welcome' : '/api/email/explorer-welcome'
     ).catch(() => {});

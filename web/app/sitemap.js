@@ -112,7 +112,8 @@ export default async function sitemap() {
     // request — move the date when the "Last updated" line on the page moves.
     entry('/affiliate-disclosure', 0.3, 'yearly', '2026-10-08'),
     entry('/terms', 0.3, 'yearly', '2026-10-09'),
-    entry('/privacy', 0.3, 'yearly', '2026-10-09'),
+    entry('/privacy', 0.3, 'yearly', '2026-11-16'),
+    entry('/about', 0.5, 'yearly', '2026-11-16'),
 
     // Profiles are the substance of the site and the pages worth ranking.
     ...withSlug(healers, 'healer_slug').map((h) =>

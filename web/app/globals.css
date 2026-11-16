@@ -52,3 +52,12 @@ body {
 /* Alias used by the homepage content shelves. */
 .scrollbar-hide::-webkit-scrollbar { display: none; }
 .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+/* Shelf cards past the first few. A homepage or subject shelf can hold
+   hundreds of cards in one horizontal row; the browser skips rendering any
+   of these until it is near the screen, so off-screen cards cost nothing on
+   each scroll frame. The first cards of each row render normally and set
+   the row's height; these stretch to it, so nothing shifts as they appear. */
+.shelf-item-deferred {
+  content-visibility: auto;
+  contain-intrinsic-height: auto 1px;
+}

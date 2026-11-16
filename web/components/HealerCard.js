@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import CardImage from './CardImage.js';
 import { FAVORITE_KEYS } from '../utils/favorites.js';
 import { useFavorite } from '../utils/useFavorite.js';
@@ -44,7 +44,9 @@ function TierTooltip({ tier, children, placement = 'above' }) {
       {children}
       <span
         role="tooltip"
-        className={`pointer-events-none invisible absolute ${position} z-30 w-48 rounded-lg border border-white/10 bg-[#0a0f1d]/95 px-3 py-2 text-[11px] font-normal normal-case leading-snug tracking-normal text-gray-300 opacity-0 shadow-xl backdrop-blur-sm transition-opacity duration-200 group-hover/tier:visible group-hover/tier:opacity-100`}
+        // display:none until hovered, and no backdrop blur — see the same
+        // tip in ListingBadges.jsx for why (scroll cost on long pages).
+        className={`pointer-events-none hidden absolute ${position} z-30 w-48 rounded-lg border border-white/10 bg-[#0a0f1d]/95 px-3 py-2 text-[11px] font-normal normal-case leading-snug tracking-normal text-gray-300 opacity-0 shadow-xl transition-[opacity,display] transition-discrete duration-200 starting:opacity-0! group-hover/tier:block group-hover/tier:opacity-100`}
       >
         {copy}
       </span>
@@ -82,11 +84,24 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
     if (rotating) setFrame(Math.floor(Math.random() * frames.length));
   }, [rotating, frames.length]);
 
+  // Rotate only while the card is on screen. A shelf of these each ran its
+  // own timer and 1.5s fade off screen too, so the page never stopped
+  // repainting — and every repaint of a long page costs a phone a frame.
+  const cardRef = useRef(null);
+  const [onScreen, setOnScreen] = useState(false);
   useEffect(() => {
-    if (!rotating) return undefined;
+    const el = cardRef.current;
+    if (!rotating || !el || typeof IntersectionObserver === 'undefined') return undefined;
+    const observer = new IntersectionObserver(([entry]) => setOnScreen(entry.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [rotating]);
+
+  useEffect(() => {
+    if (!rotating || !onScreen) return undefined;
     const timer = setInterval(() => setFrame((prev) => (prev + 1) % frames.length), ROTATE_MS);
     return () => clearInterval(timer);
-  }, [rotating, frames.length]);
+  }, [rotating, onScreen, frames.length]);
 
   function toggleFavorite(e) {
     e.preventDefault();
@@ -95,7 +110,7 @@ export default function HealerCard({ healer, portrait, heightClass = 'h-72', rot
   }
 
   return (
-    <div className={`relative w-full ${heightClass} rounded-2xl overflow-hidden bg-slate-900 shadow-lg group`}>
+    <div ref={cardRef} className={`relative w-full ${heightClass} rounded-2xl overflow-hidden bg-slate-900 shadow-lg group`}>
       <a href={`/healers/${healer.healer_slug}`} className="block w-full h-full cursor-pointer">
         {/* Edge-to-edge media with a micro-zoom on hover. Rotating cards stack
             every portrait and fade between them; the hover zoom is moved to

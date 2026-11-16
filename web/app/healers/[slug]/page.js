@@ -13,6 +13,8 @@ import { buildMetadata, notFoundMetadata, pickImage, SITE_URL } from '@/utils/se
 import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
+import AppLine from '@/components/AppLine';
+import { APP_STORE_ID } from '@/utils/appStores';
 import PublisherLogo from '@/components/PublisherLogo';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
@@ -161,13 +163,18 @@ export async function generateMetadata({ params }) {
     .single();
   if (!healer) return notFoundMetadata('Profile');
 
-  return buildMetadata({
-    title: healer.name,
-    description: healer.bio,
-    path: `/healers/${slug}`,
-    image: pickImage(healer.image_urls?.[0], healer.image_url),
-    type: isPerson(healer.entity_type) ? 'profile' : 'website',
-  });
+  return {
+    ...buildMetadata({
+      title: healer.name,
+      description: healer.bio,
+      path: `/healers/${slug}`,
+      image: pickImage(healer.image_urls?.[0], healer.image_url),
+      type: isPerson(healer.entity_type) ? 'profile' : 'website',
+    }),
+    // Apple's Smart App Banner hands this page's address to the app on "Open",
+    // so the app can show the same teacher (app/lib/router.dart).
+    itunes: { appId: APP_STORE_ID, appArgument: `${SITE_URL}/healers/${slug}` },
+  };
 }
 
 export default async function HealerProfile({ params, searchParams }) {
@@ -353,6 +360,9 @@ export default async function HealerProfile({ params, searchParams }) {
               <div className="mt-3">
                 <ProfileBadges healer={healer} />
               </div>
+
+              {/* One quiet line to the app (owner, 16 Nov 2026). */}
+              <AppLine placement="teacher_page" className="mt-3" />
 
               {/* A school: "Founded 2008 · Visit website →", as on a publisher's
                   page. */}

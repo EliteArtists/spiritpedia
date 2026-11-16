@@ -328,6 +328,11 @@ export default function EmotionSearch() {
   const [isUserActive, setIsUserActive] = useState(false);
   const [ready, setReady] = useState(false); // gates the initial mount delay
   const [cursorOn, setCursorOn] = useState(true);
+  // Whether the search box is on screen. The typewriter pauses once it is
+  // scrolled away: each keystroke of it made the browser redo a frame of
+  // the whole (very long) homepage, ten times a second, while the visitor
+  // was scrolling the shelves below.
+  const [onScreen, setOnScreen] = useState(true);
 
   const containerRef = useRef(null);
   const blurTimer = useRef(null); // closes the dropdown after a click grace period
@@ -474,6 +479,14 @@ export default function EmotionSearch() {
 
   // --- Typewriter animation (unchanged) ------------------------------------
 
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return undefined;
+    const observer = new IntersectionObserver(([entry]) => setOnScreen(entry.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
   // Hold the first phrase back for a beat after the page mounts.
   useEffect(() => {
     const t = setTimeout(() => setReady(true), INITIAL_DELAY_MS);
@@ -484,7 +497,7 @@ export default function EmotionSearch() {
   // changes, advancing type → hold → delete → next phrase. Paused entirely while
   // the user is interacting with the input.
   useEffect(() => {
-    if (!ready || isUserActive) return undefined;
+    if (!ready || isUserActive || !onScreen) return undefined;
     const phrase = PHRASES[phraseIndex];
 
     if (isTyping) {
@@ -509,14 +522,14 @@ export default function EmotionSearch() {
     }
 
     return () => clearTimeout(typeTimer.current);
-  }, [ready, isUserActive, isTyping, displayText, phraseIndex]);
+  }, [ready, isUserActive, onScreen, isTyping, displayText, phraseIndex]);
 
   // Blinking cursor — only while typing; hidden during the deleting phase.
   useEffect(() => {
-    if (!isTyping) return undefined;
+    if (!isTyping || !onScreen) return undefined;
     const id = setInterval(() => setCursorOn((v) => !v), 500);
     return () => clearInterval(id);
-  }, [isTyping]);
+  }, [isTyping, onScreen]);
 
   // Belt-and-braces: clear every outstanding timer on unmount.
   useEffect(

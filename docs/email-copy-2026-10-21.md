@@ -52,6 +52,8 @@ and the Spiritpedia Constellation
 
 **Website version**
 
+(Owner, 16 Nov 2026: the app line and both official store badges added, website version only. Both badges for everyone, because an email can't tell the phone. In plain text the badges are "App Store: [link]" and "Google Play: [link]". Each link goes through spiritpedia.co/get-app/… so the tap is counted, anonymously.)
+
 Subject: Welcome to Spiritpedia
 
 Hi [first name],
@@ -61,6 +63,10 @@ I am your guiding star.
 Your Library is where everything you save is waiting for you. You can open it using the floating My Library button on the website.
 
 As we get to know each other, the discoveries I share will become more personal.
+
+Spiritpedia is even better on the app.
+
+[Download on the App Store badge] [Get it on Google Play badge]
 
 See you among the stars,
 

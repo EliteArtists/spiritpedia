@@ -9,6 +9,8 @@ export const metadata = {
   robots: { index: false, follow: false, nocache: true },
   openGraph: null,
   twitter: null,
+  // No Smart App Banner on the dashboard: no visitor to talk to.
+  itunes: null,
 };
 
 // ADMIN_NAME is read here, in a server component, and handed down as a prop.

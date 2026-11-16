@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import CookieSettingsLink from './CookieSettingsLink';
+import StoreBadges from './StoreBadges';
+import { APP_LINE } from '@/utils/appStores';
 
 // Site-wide footer, rendered once from the root layout.
 //
@@ -33,12 +35,21 @@ export default function SiteFooter() {
             only on book pages; the wording is the Operating Agreement's. */}
         <p className="mt-4">As an Amazon Associate, Spiritpedia earns from qualifying purchases.</p>
 
-        <p className="mt-4">
+        {/* The app (owner, 16 Nov 2026): the store for this device, or both
+            on a computer (components/StoreBadges.jsx). */}
+        <p className="mt-6 text-sm text-gray-400">{APP_LINE}</p>
+        <StoreBadges placement="footer" className="mt-3 justify-center" />
+
+        <p className="mt-6">
           © 2026 Spiritpedia
           <span aria-hidden="true"> · </span>
           {/* next/link rather than a bare anchor: these are internal routes,
               so they should be client-navigated and prefetched like every other
               link on the site. They pointed at "#" until the pages existed. */}
+          <Link href="/about" className="transition-colors hover:text-gray-300">
+            About
+          </Link>
+          <span aria-hidden="true"> · </span>
           <Link href="/privacy" className="transition-colors hover:text-gray-300">
             Privacy Policy
           </Link>

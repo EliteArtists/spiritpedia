@@ -68,6 +68,21 @@ export function reviewFlag(profile, { source, keptImages = 0 }) {
   };
 }
 
+// The tally row a deletion with nothing to review leaves (owner, 16 Nov 2026:
+// "a simple count of deleted Explorer accounts, no names"): the same table,
+// already resolved so it never reaches the Inbox, and as free of personal
+// data as the flag — when, from where and what kind of account. Null for an
+// admin deletion or an account that had a listing (that one is flagged).
+export function tallyRow(profile, { source }) {
+  if (source === 'admin' || profile?.linked_healer_slug || profile?.linked_publisher_id) return null;
+  return {
+    source,
+    user_type: profile?.user_type || 'explorer',
+    kept_image_count: 0,
+    resolved_at: new Date().toISOString(),
+  };
+}
+
 // → { ok: true, flagged, removedImages, keptImages, linkedHealerSlug, linkedPublisherId }
 //   { ok: false, status, error }
 //
@@ -114,6 +129,11 @@ export async function deleteAccount(supabase, userId, { source }) {
     if (flagId) await supabase.from('account_deletions').delete().eq('id', flagId);
     return { ok: false, status: 500, error: 'delete_failed' };
   }
+
+  // Counted only once the account is really gone. A failed count costs a
+  // number on the People screen, never the deletion.
+  const tally = tallyRow(profile, { source });
+  if (tally) await supabase.from('account_deletions').insert(tally).then(() => {}, () => {});
 
   // Photos only once the account is really gone, so a failed delete loses
   // nothing. A failure here leaves files nobody can reach by account; it is

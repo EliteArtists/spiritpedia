@@ -13,8 +13,10 @@ import CookieSettingsLink from '@/components/CookieSettingsLink';
 // introduction and personal discovery emails (legitimate interest, with an
 // unsubscribe in every one), and the app 1.0.1 notification package
 // (Discoveries and Account updates, the opening time and time zone offset,
-// the first-visit note and the record of what was sent; migration 0032).
-const PRIVACY_UPDATED = '3 November 2026';
+// the first-visit note and the record of what was sent; migration 0032), and
+// the anonymous count of taps on the App Store and Google Play links
+// (migration 0052).
+const PRIVACY_UPDATED = '16 November 2026';
 
 export const metadata = buildMetadata({
   title: 'Privacy Policy',
@@ -78,7 +80,8 @@ export default function PrivacyPage() {
             often things are opened, saved, shared and searched for, on the website and in the
             app, without recording who did it: no name, account, device or IP address is kept with
             these totals, and nothing is stored on your device to make them. They help us see what
-            people find useful and what&apos;s missing.
+            people find useful and what&apos;s missing. Taps on our App Store and Google Play links
+            are counted the same way, anonymously: never who tapped.
           </li>
         </List>
 

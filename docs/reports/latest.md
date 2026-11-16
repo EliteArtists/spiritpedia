@@ -1,174 +1,254 @@
-# Pre-launch tidy-up (16 Nov 2026)
+# Owner's decisions, 16 Nov afternoon: what was done
 
-Four parts, from the owner's message of 16 Nov. Part 1 is done on dev and live.
-Part 2 is a test report only: nothing has been fixed yet. Part 3 is built.
-Part 4 is a plan only.
+Every item below is done unless it says otherwise. The website changes go
+live with this push. The app changes are on the local `release/1.0.2` branch.
 
-## Part 1: the 13 Nov decisions (done, dev and live, Ops synced)
+## 1. Outreach emails switch on soon
 
-- **Ingest identity:** the ingest now identifies itself as
-  `Spiritpedia/1.0 (+https://spiritpedia.co/about; love@spiritpedia.co)`
-  (`scripts/lib/images.mjs`). It still obeys robots.txt, and a site that refuses
-  this agent stays refused.
-- **The 8 held plans, retried once:** six went in on dev and live: Mariana
-  Caplan, Vicky Carter, Hayagriva Buddhist Centre, Cedar Rapids Zen Center, Two
-  Arrows Zen and the Zen Center of New York City. Zen Fields still refuses and
-  stays held.
-- **Out (moved to `night-sprint-2026-11-09/dropped/` with the reason):** Eva
-  Payne, Celia Roberts, Kali Basman, Julie Ryan, Jessica Graham, Julie Smith,
-  Pooja Arora, Bruce Tift.
-- **In (dev and live):**
-  - Brooklyn Zen Center. The bio no longer mentions the pandemic, which the
-    health check had flagged.
-  - Clouds in Water Zen Center. "Getting Started in Zen" is now a course.
-  - Zen Center North Shore.
-  - Marysia Miernowska. The health check found no cure claims.
-  - Gabriella Giubilaro, linked as founder of the Istituto Iyengar Yoga Firenze.
-  - Political and identity pages stayed out throughout.
-- **Decorah Zen Center: still held.**
-  - Your OK for the small portrait was set up: the ingest now accepts a photo
-    of at least 150 px when a plan says `small_photo_ok`.
-  - The portrait passed one check. On the insert, sites.google.com answered
-    HTTP 403, which counts as a refusal, so I didn't retry it.
-- **Healthy Minds:** held until a usable photo. The "-24% depression" claim
-  isn't in the listing's text anywhere, and stays out.
-- **Luminary:** Pir Zia Inayat Khan, Zen Mountain Center, Chenrezig Institute
-  and the Maitreya Instituut are raised on dev and live. The script is
-  `docs/content-audits/owner-fixes-2026-11-16.mjs`, which logs the old values
-  and can roll them back. Everyday Zen is still held (no photo); its plan now
-  says Luminary.
-- **New leads (4.9) queued in README §18.7:** Jim Tucker, Breath-Body-Mind,
-  NDERF, Coyote Institute, Jung Platform, Norman Fischer, Shodo Spring and the
-  Prague Yoga Collective. Tara Mandala and Marybeth Hyland are left as they are.
-- **Worth a retry:** five older plans failed with the same socket errors under
-  the old agent (Sati Center, Centre Sivananda Paris, Kathie and Paul Scott,
-  Shakti Shala, SFZC). The new agent may load them on their next retry.
+Noted. Nothing is held back for app 1.0.2, but one thing must be set up
+before outreach starts (see 2.4): **delivery reports don't reach us today.**
 
-## Part 2: account and admin test (dev; report first, nothing fixed yet)
+## 2. Fixes from the test
 
-### How it was run
+### 2.1 App: Buy on Amazon taps are counted (1.0.2)
 
-- Five TEST accounts were created on dev through the Admin API, with the email
-  already confirmed: Explorer, Practitioner, Channel, App and Organisation.
-  - Each used plus-addressing on your inbox.
-  - Each profile row was made first, so no welcome email could go.
-- There were four TEST listings, one per kind.
-  - The Practitioner, Channel and Organisation listings carried their
-    account's address, so those three were claimed by email match.
-  - The App listing had no address, so it went through "Request to claim it"
-    and was approved from the admin.
-- Every step went through the real website routes, on a local copy of the
-  website pointed at dev, and through the same database calls the app makes.
-  - Sending email and push was switched off: no email or notification went to
-    anyone.
-  - Sign-in used the real email-code step. The code was generated without
-    being sent.
-- **At the end, each account was deleted with its own Delete button.** The
-  TEST listings, reviews, reports, submissions, journey and click counts were
-  then removed. Nothing from the test is left on dev, apart from a few opens
-  and saves in today's anonymous Activity totals.
+- **Books:** a tap on Buy on Amazon now sends the same anonymous count the
+  website sends (`/api/amazon-click`, platform "app"). It sends no user and
+  no token, and it never holds up the trip to Amazon.
+- **Offerings whose link is an Amazon product:** counted the same way. The
+  1.0.2 branch already tags these links.
+- Commit `eb76e2f1` on `release/1.0.2`. All 373 app tests pass.
+- **Not counted until 1.0.2 is in the stores.** Until then, Admin → Activity
+  shows website taps only.
 
-### What works
+### 2.2 School accounts say "School"
 
-The test covered each kind (Explorer, Practitioner, Channel, App and
-Organisation) unless a row says otherwise.
+- **Website:** live with this push (`web/utils/accountType.js`).
+- **App:** on `release/1.0.2`, with a test.
 
-| Action | Result |
-| :--- | :--- |
-| Sign in with an email code | Works for every kind |
-| Onboarding / welcome | Explorer: the welcome route ran (no email, as set up). The listing kinds held their welcome until the claim, then got the claim-approved email instead (both as designed) |
-| My Library (save a book, a video and an offering) | Works for every kind |
-| Tailor (interests) | Works for every kind |
-| Write a review | Works for every kind. Each review waits for you. Admin → Reviews showed 5, and the Inbox counted 4 pending after one was approved |
-| Report a review (app) | Works. The Inbox showed 1 open report |
-| Block a reviewer (app) | Works; the blocked review is hidden from the person who blocked it |
-| Claim by email match (Practitioner, Channel, Organisation) | Instant, and shown in Admin → Claims under each listing's own name |
-| Request to claim (App) | In the Inbox, and the Claim requests count went to 1. Approving it linked the listing; the App account then saw its dashboard |
-| Edit own listing | Works for all four listing kinds; the App could do so only after approval, as it should |
-| Submit content (a free resource) | Works for all four listing kinds. "From owners" counted 3, then 4. Approve published it (the page loaded); reject with a reason worked |
-| Push preferences and push token | Saved for every kind |
-| Discovery emails switch | Off and on work for every kind |
-| Activity | Opens and saves showed in Admin → Activity (today's totals and Most saved), with sign-ups by day: 5, website |
-| Amazon Buy tap (website route, both "web" and "app" values) | Counted every time; Admin → Activity's Amazon panel showed the total |
-| Account type labels | Explorer, Practitioner, Channel, App, Organisation, and "Practitioner (awaiting approval)" before approval: all right |
-| Admin moderation | Approve a review, reject one with a reason, take a reported review down, approve and reject a submission, approve a claim request: all worked, each with the right counts |
-| Outreach controls | Mark replied, which stops the journey on its own as designed; it showed in the Outreach list with its kind |
-| Delete account | Works for every kind. Each claimed listing's closed-account note reached the Inbox, and the person's reviews, saves and submissions went with them |
+### 2.3 Report and Block on the website's reviews
 
-### Problems found (for your OK before I fix them)
+- Every review shows small **Report** and **Block** links under it, except
+  the reader's own. They use the app's reasons, wording and database calls.
+- **Report:** choose a reason, add an optional note, Send. You're emailed at
+  once, as with app reports, and the report appears in Admin → Reports.
+- **Block:** asks first. Once blocked, that person's reviews disappear for
+  the reader, on the website and in the app.
+- **My Account** has a new "Blocked reviewers" card with Unblock. It only
+  shows when there is someone to unblock.
+- A signed-out reader who taps either link is asked to sign in.
+- Checked with lint and the build, and the database calls were tested in
+  this morning's walk-through. **I haven't clicked through it in a browser
+  while signed in.** Please try it once after the deploy.
 
-1. **Amazon purchases.** Three things are going on:
-   - **Taps in the app are never counted.** The app opens Amazon directly and
-     never reports the tap (`app/lib/features/detail/book_screen.dart`). The
-     website does count taps, and I checked that live's counter works. Live
-     has **never** recorded a tap, so your three purchases were almost
-     certainly made in the app, or before the counter went live. The fix
-     needs an app update (1.0.2): the app would send the same anonymous tap
-     the website sends.
-   - **Your own purchases won't show as sales.** Amazon doesn't credit an
-     Associate's own orders (README §17.6).
-   - **Reports lag and are split by country.** Amazon's reports run about a
-     day behind. A purchase on amazon.co.uk appears in the UK account
-     (`spiritpedia03-21`), not the US one.
-2. **School accounts are labelled "Practitioner"** on the website's account
-   page and in the app's My Account, where they should say School. It's a small
-   fix in `web/utils/accountType.js` and `account_service.dart` (the app part
-   goes in the next build).
-3. **The website has no Report or Block on reviews.** Only the app has them
-   (a known gap, README §9.6). You asked for both platforms; adding them to
-   the website is a small job.
-4. **Outreach can't be tested end to end on dev.**
-   - Dev has no email-sending key, so Start is refused before anything is
-     sent ("Could not check the address with Resend").
-   - "Delivered" comes from Resend's webhook, which only reaches the live
-     site.
-   - Channels, apps and organisations are refused as designed, since they're
-     switched off.
-   - To see sent and delivered for real, I'd need your OK for **one** of
-     these:
-     - (a) a dev sending key; or
-     - (b) one TEST journey on live, which the live test setting redirects to
-       your plus-addressed inbox, deleted afterwards.
-5. **The Inbox reads at most 1,000 accounts' addresses.** Beyond that, newer
-   people's emails would be missing in the Inbox. Live has 14 accounts, so
-   it isn't urgent, but it's worth fixing before it matters.
-6. **Deleting an Explorer leaves no trace in the admin.** Only claimed
-   listings get a closed-account note. That's by design, but you might want
-   a count.
+### 2.4 One test outreach email from live
 
-## Part 3: admin guide (built)
+- **Sent:** one journey email 1, "An invitation from Spiritpedia", to
+  **rossbaiken+journeytest@gmail.com** at 16:22 UK time today.
+  - It used live's database and live's email account, and the same code as
+    the admin's Start button.
+  - A TEST listing ("TEST Outreach Journey", `test-outreach-journey-2026-11-16`)
+    and its journey are on live now, so you can see it in Admin → Outreach.
+  - Resend reports it **delivered**.
+- **"Delivered" will not appear in the admin.** This is a real gap, found by
+  this test:
+  - Resend has **no webhook** set up.
+  - Vercel has **no `RESEND_WEBHOOK_SECRET`**: the live webhook address
+    answers "webhook_secret_not_set".
+  - So no outreach email has ever been marked delivered or bounced, and a
+    bounced address would not stop its journey on its own.
+- **Your steps (about 5 minutes):**
+  1. Resend → **Webhooks** → **Add endpoint**:
+     - URL: `https://www.spiritpedia.co/api/email/resend-webhook`
+     - Events: `email.delivered` and `email.bounced` only.
+     - Save.
+  2. Open the new webhook and copy its **Signing secret** (it starts with
+     `whsec_`).
+  3. Vercel → `spiritpedia-e58y` → Settings → Environment Variables → add
+     `RESEND_WEBHOOK_SECRET` with that value, for Production.
+  4. Vercel → Deployments → the latest one → **Redeploy**.
+- Resend won't resend the report for today's email, because the webhook
+  didn't exist when it was delivered. **To see "delivered" in the admin, it
+  needs one more test email after step 4.** Say if you want it. Either way,
+  I'll delete the TEST listing and its journey when you say you've seen it.
+  Nothing more will go to it: the next email in the sequence is due in 21
+  days.
 
-- **The guide:** `docs/admin-guide.md`. The file now lives at
-  `web/docs/admin-guide.md` so the website can build it into the admin;
-  `docs/admin-guide.md` points to it.
-  - It has one section per admin screen, in sidebar order: what it's for,
-    what it shows, what you do there and how often to look.
-  - The older badge, approval and owners'-content notes are kept below the
-    screen sections.
-  - "Gaps: things you still can't see or do" is last.
-- **The Help link** is in the admin sidebar, above Logout, and opens
-  `/admin/help`.
-  - I checked it on a local copy against dev.
-  - It builds into the page, so editing the guide redeploys the website.
+### 2.5 The admin works beyond 1,000 accounts
 
-## Part 4: app links (plan only)
+- One shared helper now reads every page of accounts
+  (`web/utils/supabaseAdmin.js` → `emailsById`).
+- It's used by the Inbox and overview, Claims, Reports, and the push test's
+  "send to this email" lookup.
+- All four had read only the first 1,000 accounts.
 
-The plan is in `docs/reports/2026-11-16-app-links-plan.md`, with a table of
-where each link appears. Before building, I need:
+### 2.6 Deleted explorer accounts are counted
 
-1. **The App Store Apple ID.** It's the number at the end of the
-   apps.apple.com link. It isn't in the repo, and I won't guess it.
-2. **Your OK to download Apple's and Google's official badges.**
-3. **A few lines for an About page.** There is no About page yet.
-4. **The wording.** The app has no "follow" yet, so the plan offers
-   alternatives to "Save and follow on the app".
+- Admin → **People** now reads, for example, "14 registered · 0 explorer
+  accounts deleted".
+- Each self-serve deletion of an account with no listing leaves an
+  anonymous row: when, website or app, and the kind of account. It's
+  already marked resolved, so it never reaches the Inbox. There are no
+  names, emails or ids.
+- No migration was needed: the table from 0013 already had the right
+  columns.
+- The count starts today. Earlier deletions left nothing to count.
 
-About 2 days of website work, with no app update needed. Deep links come
-later, with an app release.
+## 3. App links on the website (built)
+
+You chose "Spiritpedia is even better on the app" everywhere. "Follow"
+appears nowhere.
+
+| Where | Who sees it | What |
+| :--- | :--- | :--- |
+| Apple's Smart App Banner | iPhone and iPad, in Safari | Apple's own banner (App Store ID 6821430226). On a teacher's page it also passes that page's address to the app. Not on /admin |
+| Android strip, top of page | Android, after the cookie question is answered | The star, "Spiritpedia is even better on the app" and a purple **Get the app** button. × hides it for 30 days; a tap on the button hides it for 90. Never on /admin or sign-in pages |
+| Footer | Everyone | The line and the badge: iPhone sees the App Store badge only, Android the Google Play badge only, a computer both. New **About** link |
+| **/about** (new) | Everyone | Your text, word for word (with a final full stop), then the app line with the badges and Apple's and Google's trademark lines |
+| Welcome card | Once, after a website sign-up | "Welcome to Spiritpedia." and the app line with the badge, with an × |
+| Explorer welcome email | Website sign-ups | The app line and both badges, before the sign-off. The copy document was updated first |
+| Teacher, school and organisation pages | Everyone | One purple text link: "Spiritpedia is even better on the app →" |
+| My Library | Everyone | The same link |
+| **spiritpedia.co/get-app** | Anyone | A phone goes straight to its store; a computer sees both badges. A short link you can use anywhere |
+
+- **Badges:** Apple's and Google's official files, unchanged, in
+  `web/public/badges/`, with PNG copies for email. Google's badge
+  page now sends you to Google's Partner Marketing Hub, and Apple's moved to
+  toolbox.marketingtools.apple.com; both files came from those official pages.
+- **Taps are counted** in Admin → Activity, in a new **Get the app** panel:
+  - which placement, which store and which kind of device;
+  - how often the Android strip and the welcome card are closed.
+  - It's counts only, never who tapped, and Play Console sees the placement
+    too.
+- The privacy page has one new sentence about it, and its date is updated.
+- **Your step:** run migration **0052** (`supabase/migrations/0052_app_store_clicks.sql`):
+  1. Supabase → the **dev** project → SQL Editor → New query → paste the
+     whole file → Run.
+  2. The last row should read `clicks_rows 0`, `writer_exists true`,
+     `read_exists true`.
+  3. Then the same on **live**.
+  4. Until it runs, the links all work, and the panel says "Not counting yet".
+- **Please check:**
+  - The welcome card's heading, "Welcome to Spiritpedia.", is my addition.
+  - The welcome email uses only your line (no longer sentence).
+- **Not done:** deep links, so that tapping a spiritpedia.co link opens the
+  same page in the app. They need an app release (see section 7).
+- **Can be done now:** the README's open item to add the App Store and
+  Google Play links to the Amazon Associates site list.
+
+## 4. Why the website didn't scroll smoothly, and what changed
+
+These were measured on the live homepage at phone size, with the processor
+slowed four times to stand in for a phone, then on the fixed version.
+
+1. **About 1,500 hidden tooltips on the homepage. This was the main cause.**
+   - Every badge on every card had its own hover tip, hidden but still drawn
+     on every frame.
+   - Each tip had a blur and its own full-size copy of the star picture
+     (1536×1024 shown at 20px; 1,522 copies loaded at once).
+   - **Now:** a closed tip isn't on the page at all and has no blur. The star
+     is a small copy (21 KB instead of 252 KB), loaded only when a tip opens.
+   - The tips look and fade the same.
+2. **The page kept redrawing when nobody touched it.**
+   - The search box's typing animation and blinking cursor kept running.
+   - Every Timeless Teachers card ran its own photo-rotation timer, off
+     screen too.
+   - **Now:** the typing animation pauses when the search box is scrolled
+     away, and a card rotates only while it's on screen.
+   - Idle work over 8 seconds fell from about 3 seconds to under 1 second
+     (0.2 seconds once scrolled down).
+3. **Every card in a shelf was drawn,** including hundreds off to the side
+   (one homepage row has about 900).
+   - **Now:** cards after the sixth in each row are skipped until they come
+     near the screen. The row doesn't jump.
+4. **Blurred sticky header bars and cookie banner.** A blur on a bar that
+   stays on screen has to be redone on every scroll frame, and on iPhones
+   and Androids that is a known cause of stutter.
+   - **Now:** the blur is gone, with a slightly more solid navy, so it looks
+     the same.
+   - This one comes from how phones are known to behave; the test couldn't
+     measure a phone's graphics chip.
+
+**Homepage scrolling, before and after (phone size):**
+
+| | Before | After |
+| :--- | :--- | :--- |
+| Painting | 281ms | 29ms |
+| Touch checks | 343ms | 34ms |
+| Layer building | 417ms | 26ms |
+| Total main-thread work | 2.0s | 1.0s |
+
+- On a computer, painting fell from 310ms to 117ms, and touch checks from
+  110ms to 6ms.
+- Subject pages improved the same way.
+- Teacher pages were already light.
+
+**Your call:** the homepage still has about 3,000 images across its shelves.
+Loading fewer cards per shelf at first, as subject pages already do with
+paging, would help most. It changes what's shown, so it waits for your OK.
+
+**Files:**
+- `ListingBadges.jsx`, `HealerCard.js`, `EmotionSearch.js`
+- `ContentShelf.js`, `SubjectPagedShelf.jsx`
+- `HomeMasthead.jsx`, `CookieBanner.jsx`, `LibraryView.js`
+- `app/subject/[slug]/page.js`, `globals.css`
+- new `public/Transparent_Symbol_small.png`
+
+## 5. Decorah Zen Center
+
+On hold, as it was.
+
+## 6. Tonight's sprint
+
+The five retries come first:
+- the Sati Center
+- Centre Sivananda Paris
+- Kathie and Paul Scott
+- Shakti Shala
+- San Francisco Zen Center
+
+Each runs once with the new name, dev then live. This is written into README
+§18.7 (item 5) and the night-sprint routine, so "Start the night sprint"
+picks it up.
+
+## 7. Everything waiting for app 1.0.2
+
+**Already built on `release/1.0.2` (local branch, all 373 app tests pass):**
+1. Crisis check: hyphens count as spaces ("self-harm").
+2. Crisis check: joined-up forms ("selfharm", "killmyself").
+3. Offerings whose link is an Amazon product are tagged, with the
+   disclosure under them.
+4. The disclosure sentence beside the menu's Affiliate Disclosure entry.
+5. Schools & Academies and Retreat Centres & Platforms: nearest first once
+   an area is set.
+6. **New today:** Buy on Amazon taps counted (books and Amazon offerings).
+7. **New today:** school accounts say "School".
+
+**Still to build for 1.0.2:**
+1. **Near You** sorts and never hides anyone. Today the app shows only
+   people within 50 km plus online ones. Also "Closest to you" as the full
+   list, as on the website.
+2. **Subject search** ignores spaces, hyphens and capitals ("breath work",
+   "tai-chi"), as on the website.
+3. **Subject pages in tier order**, nearest first within each tier, as on
+   the website.
+4. **Deep links:** a spiritpedia.co link opens the same page in the app.
+   - Needs from you: the Play Console **app-signing** SHA-256 (Setup → App
+     signing; not the upload key), and Associated Domains switched on for
+     `co.spiritpedia.app` in the Apple developer site. I'll give exact steps.
+   - Then two website files and the app's settings.
+5. **Check in the simulator** whether Safari's banner "Open" lands on the
+   right teacher (it should, with deep links).
+6. **Before building:** bring `main`'s newer `app/tool/build_release.sh`
+   (the store-build config check) into the branch.
 
 ## For you to decide
 
-- Part 2 fixes 1–5: which to do, and for 1, when the app update goes out.
-- Outreach testing: (a) a dev key or (b) one TEST journey on live.
-- Part 4: the App Store ID, the badges and the wording above.
-- Decorah: hold it, or ask the centre for a photo.
+- Resend webhook and Vercel secret (2.4), then whether to send one more test
+  email to see "delivered", and when to delete the TEST listing.
+- Run migration 0052, dev then live (3).
+- The welcome card heading and the welcome email wording (3).
+- Fewer cards per homepage shelf at first, for smoother scrolling (4).
+- Try Report and Block once on the live site while signed in (2.3).
+- The Play app-signing SHA-256 and Associated Domains, when you want deep
+  links in 1.0.2 (7).

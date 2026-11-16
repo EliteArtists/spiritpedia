@@ -86,13 +86,21 @@ export function Tipped({ tip, label, placement = 'above', align = 'right', child
       >
         {children}
       </span>
+      {/* Closed, the tip is display:none rather than invisible. A homepage or
+          subject page carries 1,000-1,500 of these; merely invisible, every
+          one was still laid out, painted and hit-tested on each scroll frame,
+          and each fetched its star image. The fade is kept: @starting-style
+          (starting:) fades it in from display:none, and transition-discrete
+          holds display until the fade-out ends. No backdrop blur: the
+          background is 95% opaque, so a blur behind it was invisible but
+          costly on phones. */}
       <span
         role="tooltip"
-        className={`pointer-events-none absolute ${vertical} ${horizontal} z-40 flex w-60 items-start gap-2 rounded-xl border border-white/10 bg-[#0a0f1d]/95 px-3 py-2.5 text-left text-[12px] font-normal normal-case leading-snug tracking-normal text-gray-200 shadow-xl backdrop-blur-sm transition-opacity duration-200 ${
-          open ? 'visible opacity-100' : 'invisible opacity-0 group-hover/badge:visible group-hover/badge:opacity-100'
+        className={`pointer-events-none absolute ${vertical} ${horizontal} z-40 w-60 items-start gap-2 rounded-xl border border-white/10 bg-[#0a0f1d]/95 px-3 py-2.5 text-left text-[12px] font-normal normal-case leading-snug tracking-normal text-gray-200 shadow-xl transition-[opacity,display] transition-discrete duration-200 starting:opacity-0! ${
+          open ? 'flex opacity-100' : 'hidden opacity-0 group-hover/badge:flex group-hover/badge:opacity-100'
         }`}
       >
-        <img referrerPolicy="no-referrer" src="/Transparent_Symbol.png" alt="" className="mt-0.5 h-5 w-5 shrink-0 scale-150 object-contain" />
+        <img referrerPolicy="no-referrer" src="/Transparent_Symbol_small.png" alt="" loading="lazy" decoding="async" className="mt-0.5 h-5 w-5 shrink-0 scale-150 object-contain" />
         <span>{tip}</span>
       </span>
     </span>

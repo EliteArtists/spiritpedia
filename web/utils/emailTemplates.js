@@ -4,6 +4,7 @@
 // without Resend (emailTemplates.test.mjs).
 
 import { SITE, greeting, renderEmail } from './emailParts.js';
+import { APP_LINE, BADGES, STORES, getAppHref } from './appStores.js';
 
 // "by [creator name]" is dropped entirely when there is no creator.
 function by(creatorName) {
@@ -11,6 +12,18 @@ function by(creatorName) {
 }
 
 /* ── B1. EXPLORER WELCOME, Day 0 ───────────────────────────────────────── */
+
+// The website version ends with the app (owner, 16 Nov 2026): the line and
+// both official badges, since an email can't tell the phone. PNG copies
+// (public/email), because Gmail and Outlook don't show SVG. Each link goes
+// through the counting address (/get-app/<store>?from=welcome_email).
+const STORE_LABELS = { app_store: 'App Store', google_play: 'Google Play' };
+const EMAIL_BADGES = STORES.map((store) => ({
+  label: STORE_LABELS[store],
+  src: `${SITE}${BADGES[store].email}`,
+  alt: BADGES[store].alt,
+  url: getAppHref(store, 'welcome_email', SITE),
+}));
 
 // platform is user_profiles.signup_platform. Only 'app' gets the app version;
 // anything else, including an account from before migration 0021, gets the
@@ -32,6 +45,7 @@ export function explorerWelcome({ firstName, platform }) {
       greeting(firstName),
       ...body,
       'As we get to know each other, the discoveries I share will become more personal.',
+      ...(platform === 'app' ? [] : [`${APP_LINE}.`, { badges: EMAIL_BADGES }]),
     ],
     signOff: 'starFarewell',
   });

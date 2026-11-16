@@ -14,12 +14,15 @@ import { reviewNameReserved } from '../utils/badges.js';
 // parent without restructuring four pages, so they share a module-level
 // request instead — see `readApproved` below.
 //
-// WHICH CLIENT READS WHAT. Public reads go through `supabase`, the anonymous
-// client: the read policy is `status = 'approved'`, so RLS does the filtering
-// and an unapproved review is not merely hidden by the UI, it never arrives.
-// Anything belonging to the signed-in reader — their own pending or rejected
-// review, and every write — goes through `supabaseAuth`, which carries the
-// session that `auth.uid()` resolves from.
+// WHICH CLIENT READS WHAT. Approved reviews are read through `supabaseAuth`,
+// which is the anonymous client until someone signs in: the read policy is
+// `status = 'approved'` and not a reviewer the reader blocked (migration
+// 0015), so RLS does the filtering and an unapproved or blocked review is not
+// merely hidden by the UI, it never arrives. That is why it is not `supabase`,
+// which never carries a session. Everything else belonging to the signed-in
+// reader — their own pending or rejected review, and every write — goes
+// through `supabaseAuth` too, which carries the session that `auth.uid()`
+// resolves from.
 //
 // WHAT THE CLIENT MUST NOT SEND. `status` and `author_healer_slug` are set by
 // the database trigger, which forces the first to 'pending' and derives the
@@ -44,7 +47,7 @@ function readApproved(contentType, contentSlug) {
   if (!inFlight.has(key)) {
     inFlight.set(
       key,
-      supabase
+      supabaseAuth
         .from('reviews')
         .select('id, rating, body, author_name, author_healer_slug, author_official, created_at')
         .eq('content_type', contentType)
@@ -60,8 +63,8 @@ function readApproved(contentType, contentSlug) {
   return inFlight.get(key);
 }
 
-// Dropped after a successful submission, so the next read is not served the
-// list from before it.
+// Dropped after a successful submission or a block, so the next read is not
+// served the list from before it.
 function forget(contentType, contentSlug) {
   inFlight.delete(`${contentType}:${contentSlug}`);
 }
@@ -337,7 +340,7 @@ const STATUS_STYLES = {
 const OFFICIAL_PILL =
   'rounded-md bg-white px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-[#4c1d95] shadow-sm';
 
-function ReviewCard({ review, status }) {
+function ReviewCard({ review, status, actions }) {
   const name = review.author_official ? 'Spiritpedia' : review.author_name || 'A Spiritpedia member';
 
   return (
@@ -379,7 +382,188 @@ function ReviewCard({ review, status }) {
         {review.author_official && <span className={`ml-2 ${OFFICIAL_PILL}`}>OFFICIAL</span>}
         {review.created_at ? ` · ${formatDate(review.created_at)}` : ''}
       </p>
+
+      {actions && <ReviewActions review={review} name={name} {...actions} />}
     </li>
+  );
+}
+
+/* ── REPORT AND BLOCK ──────────────────────────────────────────────────── */
+
+// The app's (app/lib/features/reviews): the same reasons, words and database
+// calls. Both go through the definer functions of migration 0015, which take a
+// review and never a user id, so no account id is ever read or sent here.
+const REPORT_REASONS = [
+  { code: 'spam', label: 'Spam or advertising' },
+  { code: 'offensive', label: 'Offensive or hateful' },
+  { code: 'harassment', label: 'Harassment or bullying' },
+  { code: 'misleading', label: 'False or misleading' },
+  { code: 'other', label: 'Something else' },
+];
+
+const GONE = 'This review is no longer on Spiritpedia.';
+const QUIET_BUTTON = 'text-xs text-gray-600 transition-colors hover:text-gray-300';
+const PANEL = 'mt-4 rounded-2xl border border-white/10 bg-[#111827] p-5 text-sm';
+
+function ReviewActions({ review, name, signedIn, onBlocked }) {
+  const [open, setOpen] = useState(null); // 'report' | 'block' | 'sign-in'
+  const [reason, setReason] = useState(null);
+  const [note, setNote] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState(null);
+  const [done, setDone] = useState(null);
+
+  const show = (what) => {
+    setOpen(signedIn ? what : 'sign-in');
+    setError(null);
+  };
+
+  const report = async () => {
+    if (!reason || busy) return;
+    setBusy(true);
+    setError(null);
+    const { data: id, error: rpcError } = await supabaseAuth.rpc('report_review', {
+      p_review_id: review.id,
+      p_reason: reason,
+      p_note: note.trim() || null,
+    });
+    setBusy(false);
+    if (rpcError) {
+      setError(rpcError.code === 'P0002' ? GONE : 'Your report could not be sent just now. Please try again.');
+      return;
+    }
+    setOpen(null);
+    if (id == null) {
+      setDone("You've already reported this review. We're looking at it.");
+      return;
+    }
+    setDone("Thank you. We'll look at this review within 24 hours.");
+    // Tells the admin at once, as the app does. The report is already saved
+    // and in the Inbox, so a failed email is not the reporter's problem.
+    const { data: sessionData } = await supabaseAuth.auth.getSession();
+    const token = sessionData?.session?.access_token;
+    if (token) {
+      fetch('/api/email/review-reported', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` },
+        body: JSON.stringify({ reportId: id }),
+      }).catch(() => {});
+    }
+  };
+
+  const block = async () => {
+    if (busy) return;
+    setBusy(true);
+    setError(null);
+    const { error: rpcError } = await supabaseAuth.rpc('block_review_author', { p_review_id: review.id });
+    setBusy(false);
+    if (rpcError) {
+      setError(rpcError.code === 'P0002' ? GONE : 'That could not be done just now. Please try again.');
+      return;
+    }
+    onBlocked?.(name);
+  };
+
+  if (done) return <p className="mt-3 text-xs text-emerald-300">{done}</p>;
+
+  return (
+    <div className="mt-2">
+      {!open && (
+        <div className="flex gap-4">
+          <button type="button" onClick={() => show('report')} className={QUIET_BUTTON}>
+            Report
+          </button>
+          <button type="button" onClick={() => show('block')} className={QUIET_BUTTON}>
+            Block
+          </button>
+        </div>
+      )}
+
+      {open === 'sign-in' && (
+        <div className={PANEL}>
+          <p className="text-gray-400">
+            <Link href="/auth/signup" className="font-semibold text-violet-400 hover:text-violet-300">
+              Sign in
+            </Link>{' '}
+            to report a review or block a reviewer.
+          </p>
+          <button type="button" onClick={() => setOpen(null)} className={`mt-3 ${QUIET_BUTTON}`}>
+            Close
+          </button>
+        </div>
+      )}
+
+      {open === 'report' && (
+        <div className={PANEL}>
+          <h4 className="font-semibold text-white">Report review</h4>
+          <p className="mt-1 text-xs text-gray-500">
+            What&rsquo;s wrong with it? Reports are private: the reviewer isn&rsquo;t told who sent one.
+          </p>
+          <div className="mt-3 space-y-1.5" role="radiogroup" aria-label="Reason">
+            {REPORT_REASONS.map((r) => (
+              <label key={r.code} className="flex cursor-pointer items-center gap-2 text-gray-300">
+                <input
+                  type="radio"
+                  name={`report-${review.id}`}
+                  value={r.code}
+                  checked={reason === r.code}
+                  onChange={() => setReason(r.code)}
+                  className="accent-[#7c3aed]"
+                />
+                {r.label}
+              </label>
+            ))}
+          </div>
+          <textarea
+            rows={3}
+            value={note}
+            // review_reports.note is capped at 500 by the database.
+            maxLength={500}
+            onChange={(e) => setNote(e.target.value)}
+            placeholder="Anything we should know? (optional)"
+            className={`${inputClass} mt-3 resize-y`}
+          />
+          {error && <p className="mt-2 text-xs text-red-400">{error}</p>}
+          <div className="mt-3 flex items-center gap-4">
+            <button
+              type="button"
+              onClick={report}
+              disabled={!reason || busy}
+              className="rounded-xl bg-[#7c3aed] px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+            >
+              {busy ? 'Sending…' : 'Send report'}
+            </button>
+            <button type="button" onClick={() => setOpen(null)} className={QUIET_BUTTON}>
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {open === 'block' && (
+        <div className={PANEL}>
+          <h4 className="font-semibold text-white">Block {name}?</h4>
+          <p className="mt-1 text-gray-400">
+            You won&rsquo;t see their reviews on Spiritpedia any more — here, or in the app when
+            you&rsquo;re signed in. You can unblock them in My Account.
+          </p>
+          {error && <p className="mt-2 text-xs text-red-400">{error}</p>}
+          <div className="mt-3 flex items-center gap-4">
+            <button
+              type="button"
+              onClick={block}
+              disabled={busy}
+              className="rounded-xl bg-red-600 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-red-700 disabled:opacity-40"
+            >
+              {busy ? 'Blocking…' : 'Block'}
+            </button>
+            <button type="button" onClick={() => setOpen(null)} className={QUIET_BUTTON}>
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -391,6 +575,7 @@ export default function ReviewSection({ contentType, contentSlug }) {
   const [signedIn, setSignedIn] = useState(null);
   const [profileName, setProfileName] = useState('');
   const [official, setOfficial] = useState(false);
+  const [blockedName, setBlockedName] = useState(null);
 
   const loadApproved = useCallback(() => {
     readApproved(contentType, contentSlug).then(setApproved);
@@ -467,6 +652,19 @@ export default function ReviewSection({ contentType, contentSlug }) {
   // showing it twice, once with a badge, would read as two reviews.
   const showOwn = mine && mine.status !== 'approved';
 
+  // Report and Block, once the reader is known; never on their own review.
+  const actions =
+    mine === undefined
+      ? null
+      : {
+          signedIn,
+          onBlocked: (name) => {
+            setBlockedName(name);
+            forget(contentType, contentSlug);
+            loadApproved();
+          },
+        };
+
   return (
     <div className="max-w-4xl mx-auto px-6 pb-16">
       <div className="border-t border-white/10 mb-10 mt-4" />
@@ -491,9 +689,23 @@ export default function ReviewSection({ contentType, contentSlug }) {
       {list.length > 0 && (
         <ul className="mt-6">
           {list.map((review) => (
-            <ReviewCard key={review.id} review={review} />
+            <ReviewCard
+              key={review.id}
+              review={review}
+              actions={review.id === mine?.id ? null : actions}
+            />
           ))}
         </ul>
+      )}
+
+      {blockedName && (
+        <p className="mt-4 text-xs text-gray-500">
+          {blockedName} is blocked. You can unblock them in{' '}
+          <Link href="/account" className="text-violet-400 hover:text-violet-300">
+            My Account
+          </Link>
+          .
+        </p>
       )}
 
       {list.length === 0 && !showOwn && (

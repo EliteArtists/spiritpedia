@@ -3193,6 +3193,10 @@ they feed the Upcoming Retreats shelf (open job #24) and drop off when over.
    refuses it stays refused). Six of the eight plans held for dropping the old agent went in with it;
    Zen Fields still refuses. The socket-error plans above (Sati, Centre Sivananda Paris, Kathie and
    Paul Scott, Shakti Shala) may load with the new agent on their next retry.
+   **First thing in the next night sprint (owner, 16 Nov 2026):** retry these five plans once,
+   dev then live, before any other source: `the-sati-center`, `centre-sivananda-paris`,
+   `kathie-and-paul-scott`, `shakti-shala`, `san-francisco-zen-center` (each with its
+   `-teachers.json` links). A plan that still fails stays held with the new reason.
 6. **Waiting:** Ally Bogard (a photo from her); Yongey Mingyur Rinpoche (a clean contact route; decoded emails are never used);
    Aaravindha Himadra (a certain photo; use his contact form).
 7. **Out** (owner, 11 Nov 2026): Lion's Roar (phone only; out unless a contact form

@@ -7,6 +7,7 @@ import SiteLogo from '@/components/SiteLogo';
 import { getUser, signOut, supabaseAuth } from '@/utils/supabaseAuth';
 import PractitionerDashboard from '@/components/PractitionerDashboard';
 import PublisherDashboard from '@/components/PublisherDashboard';
+import BlockedReviewers from '@/components/BlockedReviewers';
 import DeleteAccount from '@/components/DeleteAccount';
 import LearningSwitch from '@/components/LearningSwitch';
 import EmailPreferencesSwitch from '@/components/EmailPreferencesSwitch';
@@ -276,6 +277,12 @@ export default function AccountPage() {
         {!isPractitioner && status !== 'rejected' && !healerSlug && !publisherId && (
           <div className="mt-6">
             <EmailPreferencesSwitch />
+          </div>
+        )}
+
+        {state.userId && (
+          <div className="mt-6 empty:hidden">
+            <BlockedReviewers userId={state.userId} />
           </div>
         )}
 

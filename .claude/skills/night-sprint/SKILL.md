@@ -14,7 +14,9 @@ skip, never decode emails, never fetch the never-fetch list, original bios,
 health rule (narrow since 12 Nov 2026, README §18.4), most-viewed videos,
 no questions overnight).
 
-1. **Target:** 100+ new listings. **First, before any other source** (owner,
+1. **Target:** 100+ new listings. **Before anything else, any one-off retries
+   README §18.7 item 5 says to run first** (16 Nov 2026: the five plans to
+   retry with the new ingest name). **Then, before any other source** (owner,
    12 Nov 2026): re-research the listings skipped or held under the old health
    rule, from `docs/content-audits/night-sprint-2026-11-09/leads/health-restore.json`
    (front of the queue), under the new rule. Each lead's `test` says how to

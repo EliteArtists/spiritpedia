@@ -89,7 +89,7 @@ export default async function SubjectPage({ params }) {
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
       {/* Same sticky chrome as the homepage, so crossing between the two no
           longer drops the user from a dark canvas onto a white one. */}
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/95">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           {/* My Library lives in the floating button now, which is on every
               page — a second copy here was the same link twice on one screen. */}

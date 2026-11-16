@@ -10,6 +10,7 @@ import HealerCard from './HealerCard.js';
 import OfferingCard from './OfferingCard.js';
 import PublisherCard from './PublisherCard.jsx';
 import LibrarySignupNudge from './LibrarySignupNudge.jsx';
+import AppLine from './AppLine.jsx';
 import SubjectPills from './SubjectPills.js';
 import VideoPlayer from './VideoPlayer.js';
 import { FAVORITE_KEYS, FAVORITES_EVENT, readFavorites } from '../utils/favorites.js';
@@ -105,7 +106,7 @@ export default function LibraryView({
 
   return (
     <div className="min-h-screen bg-[#0a0f1d] text-white font-sans">
-      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/90 backdrop-blur-md">
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#0a0f1d]/95">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <SiteLogo />
           <Link
@@ -125,6 +126,8 @@ export default function LibraryView({
               ? `Your saved archive — ${totalSaved} item${totalSaved === 1 ? '' : 's'}.`
               : 'Your saved archive.'}
           </p>
+          {/* One quiet line to the app (owner, 16 Nov 2026), full or empty. */}
+          <AppLine placement="library" className="mt-3" />
         </header>
 
         {saved === null ? null : totalSaved === 0 ? (

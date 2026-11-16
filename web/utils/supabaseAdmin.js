@@ -24,6 +24,23 @@ export function adminClient() {
   });
 }
 
+// Every account's email by id, page by page. user_profiles has no email
+// column: the address lives in auth.users, which only the service role can
+// read, and listUsers returns at most 1,000 a page. One read and a lookup map
+// is far cheaper than a getUserById per row.
+const USERS_PER_PAGE = 1000;
+
+export async function emailsById(supabase) {
+  const emails = new Map();
+  for (let page = 1; ; page += 1) {
+    const { data, error } = await supabase.auth.admin.listUsers({ page, perPage: USERS_PER_PAGE });
+    if (error) break;
+    for (const user of data?.users || []) emails.set(user.id, user.email);
+    if (!data?.users || data.users.length < USERS_PER_PAGE) break;
+  }
+  return emails;
+}
+
 // The dashboard is gated by proxy.js, but an API route under /api is outside
 // that matcher, so each one re-checks the same cookie for itself. Without this
 // the routes below would be an unauthenticated read of every account on the

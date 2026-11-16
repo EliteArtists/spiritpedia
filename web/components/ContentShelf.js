@@ -34,7 +34,12 @@ export default function ContentShelf({
 
       <div className="flex flex-row gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-2">
         {list.map((item, index) => (
-          <div key={item.id ?? index} className={`shrink-0 snap-start ${itemWidthClass}`}>
+          <div
+            key={item.id ?? index}
+            // The first six always render (they size the row); the rest are
+            // skipped while off screen — see .shelf-item-deferred.
+            className={`shrink-0 snap-start ${itemWidthClass}${index >= 6 ? ' shelf-item-deferred' : ''}`}
+          >
             {renderItem(item, index)}
           </div>
         ))}

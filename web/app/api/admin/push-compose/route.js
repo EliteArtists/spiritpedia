@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { adminClient, emailsById, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { pushConfig } from '@/utils/push';
 import { composeAdminPush } from '@/utils/pushRun';
 
@@ -73,10 +73,9 @@ export async function POST(request) {
   let testUserId = null;
   const testEmail = String(body?.test_email || '').trim().toLowerCase();
   if (testEmail) {
-    const { data: page } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
-    const user = (page?.users || []).find((u) => (u.email || '').toLowerCase() === testEmail);
-    if (!user) return NextResponse.json({ error: 'no_such_account' }, { status: 404 });
-    testUserId = user.id;
+    const emails = await emailsById(supabase);
+    testUserId = [...emails].find(([, email]) => (email || '').toLowerCase() === testEmail)?.[0] || null;
+    if (!testUserId) return NextResponse.json({ error: 'no_such_account' }, { status: 404 });
   }
 
   try {

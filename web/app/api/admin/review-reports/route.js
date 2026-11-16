@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
-import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';import { firstNameFrom, sendReviewRejected } from '@/utils/email';
+import { adminClient, emailsById, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { firstNameFrom, sendReviewRejected } from '@/utils/email';
 import { getContentMeta } from '@/utils/contentMeta';
 
 
@@ -40,11 +41,8 @@ export async function GET() {
     for (const row of rows || []) current.set(row.id, row);
   }
 
-  // Emails for the people involved, so the admin knows who is who. One page
-  // of users, as /api/admin/overview reads them.
-  const emails = new Map();
-  const { data: userPage } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
-  for (const u of userPage?.users || []) emails.set(u.id, u.email);
+  // Emails for the people involved, so the admin knows who is who.
+  const emails = await emailsById(supabase);
 
   const banned = new Set((bans || []).map((b) => b.user_id));
   return NextResponse.json({

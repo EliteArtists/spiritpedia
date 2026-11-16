@@ -86,8 +86,11 @@ export default function SubjectPagedShelf({
         ref={trackRef}
         className="flex flex-row gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-2"
       >
-        {items.map((item) => (
-          <div key={item.id} className={`shrink-0 snap-start ${itemWidthClass}`}>
+        {items.map((item, index) => (
+          <div
+            key={item.id}
+            className={`shrink-0 snap-start ${itemWidthClass}${index >= 6 ? ' shelf-item-deferred' : ''}`}
+          >
             {renderItem(item)}
           </div>
         ))}
