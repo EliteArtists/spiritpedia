@@ -442,8 +442,5 @@ the assistant, a script or the Supabase dashboard today.
 - **Buy on Amazon taps in the app aren't counted yet.** Only the website's
   taps reach Activity until app 1.0.2 is in the stores (the fix is built on
   the 1.0.2 branch, 16 Nov 2026).
-- **"Delivered" never shows for outreach emails yet.** Resend has no webhook
-  set up and Vercel has no `RESEND_WEBHOOK_SECRET`, so delivery reports
-  don't reach us (found 16 Nov 2026; the steps are in that day's report).
 - **Taps on Apple's own banner aren't counted.** Safari doesn't tell us; App
   Store Connect → App Analytics → Sources → Web Referrer shows them.

@@ -25,8 +25,8 @@ Not code. Dated, so it's clear what is late.
 | 12 Nov 2026 | **Google Play:** apply for production when closed testing ends |
 | Once production access is granted | **Google Play:** release build 28 |
 | — | **Outreach and email journeys start only when the app is in BOTH stores** |
-| When ready (crisis fix first) | **App 1.0.2:** submit to both stores (branch `release/1.0.2`, §18.7) |
-| Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list; PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
+| Now (built 16 Nov) | **App 1.0.2 (build 29):** build and submit to both stores (`~/Sites/spiritpedia-1.0.2`, steps in `docs/reports/2026-11-16-owner-answers-evening.md` §5) |
+| Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list (owner doing it, 16 Nov); PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
 | Open | **World of Books (Awin):** reapply after fixing the profile |
 | Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
 | Open | **The Shift Network:** referral programme sign-up |
@@ -3215,6 +3215,13 @@ spaces, hyphens and capitals (`content_search.dart`; the feelings normaliser sta
 is); subject pages in tier order, nearest first within a tier (`content_repository.dart`,
 `subject_screen.dart`). Website versions: `web/utils/area.js`, `web/utils/subjectSearch.js`,
 `web/components/SubjectHealersShelf.jsx`.
+**All built (16 Nov 2026):** the ports above (db78102, 7d3f00e, 1105779), Buy on Amazon
+taps counted and the School label (eb76e2f), `main`'s `tool/build_release.sh` (ef617e3),
+version **`1.0.2+29`** (29f686b). 383 tests pass, analyze clean. A worktree for building is at
+`~/Sites/spiritpedia-1.0.2`. Submission steps: `docs/reports/2026-11-16-owner-answers-evening.md` §5.
+**Deep links move to 1.0.3** (owner, 16 Nov): they need the Play app-signing SHA-256 and
+Associated Domains for `co.spiritpedia.app`. Once 1.0.2 is merged, §10.7's Near You rule
+on `main` should be updated to match.
 
 ---
 
