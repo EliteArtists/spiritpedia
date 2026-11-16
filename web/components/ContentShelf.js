@@ -1,4 +1,5 @@
 import ShelfRow from './ShelfRow.js';
+import ShelfTrack from './ShelfTrack.jsx';
 
 // Reusable horizontal-scroll shelf. Every homepage row (healers, books, courses,
 // retreats, downloads, free resources) is one of these — the only thing that
@@ -32,7 +33,8 @@ export default function ContentShelf({
       {/* A line under the heading: "Near London · Change", "Set your area". */}
       {note && <div className="-mt-2 mb-4">{note}</div>}
 
-      <div className="flex flex-row gap-5 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth pb-2">
+      {/* Draws the cards a page at a time as the row scrolls (ShelfTrack.jsx). */}
+      <ShelfTrack>
         {list.map((item, index) => (
           <div
             key={item.id ?? index}
@@ -43,7 +45,7 @@ export default function ContentShelf({
             {renderItem(item, index)}
           </div>
         ))}
-      </div>
+      </ShelfTrack>
     </section>
   );
 }
