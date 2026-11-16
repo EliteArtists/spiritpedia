@@ -114,6 +114,14 @@ function Sidebar({ pathname }) {
           badgeCount={0}
         />
 
+        {/* The admin guide (web/docs/admin-guide.md): what each screen is
+            for and how often to look. */}
+        <NavItem
+          item={{ href: '/admin/help', label: 'Help', icon: 'help' }}
+          pathname={pathname}
+          badgeCount={0}
+        />
+
         {/* A form, not a link: signing out is a state change, and it POSTs to
             the route that clears the session cookie. */}
         <form action="/api/admin/logout" method="POST">
