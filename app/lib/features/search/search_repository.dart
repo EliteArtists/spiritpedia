@@ -1,6 +1,8 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../../core/safety/emotion_safety.dart';
+import '../../data/models.dart';
+import 'subject_search.dart';
 
 /// The universal search's results — healers, books, videos and subjects whose
 /// names match what was typed.
@@ -45,6 +47,13 @@ class SupabaseSearchRepository implements SearchRepository {
   SupabaseSearchRepository(this._db);
 
   final SupabaseClient _db;
+
+  // Subjects by name, ignoring spaces, hyphens and capitals
+  // (subject_search.dart), as the website's EmotionSearch.js does.
+  late final _subjects = SubjectList(() async {
+    final rows = await _db.from('subjects').select('slug, name').order('name');
+    return [for (final r in rows) Subject.fromJson(r)];
+  });
 
   /// The same client, for the plain search beside this one.
   SupabaseClient get client => _db;
@@ -100,7 +109,7 @@ class SupabaseSearchRepository implements SearchRepository {
   @override
   Future<UniversalResults> universal(String term) async {
     final like = '%$term%';
-    final results = await Future.wait([
+    final results = await Future.wait<List<Map<String, dynamic>>>([
       _db
           .from('healers')
           .select(
@@ -118,11 +127,14 @@ class SupabaseSearchRepository implements SearchRepository {
           .select('id, title, slug, platform_url')
           .ilike('title', like)
           .limit(3),
-      _db
-          .from('subjects')
-          .select('id, name, slug')
-          .ilike('name', like)
-          .limit(3),
+      _subjects
+          .match(term)
+          .then(
+            (l) => [
+              for (final s in l)
+                <String, dynamic>{'slug': s.slug, 'name': s.name},
+            ],
+          ),
     ]);
     return UniversalResults(
       healers: results[0],

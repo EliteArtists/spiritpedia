@@ -4,6 +4,7 @@ import '../../core/safety/emotion_safety.dart';
 import '../../data/models.dart';
 import '../../data/shelf_rules.dart';
 import 'search_repository.dart';
+import 'subject_search.dart';
 
 /// The search's second engine: plain search by name and title, beside the
 /// feelings engine (the emotion mapping). It only ever runs after the crisis
@@ -220,14 +221,15 @@ class SupabaseContentSearch implements ContentSearch {
       Book.fromJson(r),
   ];
 
-  Future<List<Object>> _subjects(String term, int limit) async => [
-    for (final r in await _matching(
-      _db.from('subjects').select('slug, name'),
-      'name',
-      term,
-    ).order('name').limit(limit))
-      Subject.fromJson(r),
-  ];
+  // Subjects by name, ignoring spaces, hyphens and capitals
+  // (subject_search.dart): "breath work" finds Breathwork, "tai-chi" Tai Chi.
+  late final _subjectList = SubjectList(() async {
+    final rows = await _db.from('subjects').select('slug, name').order('name');
+    return [for (final r in rows) Subject.fromJson(r)];
+  });
+
+  Future<List<Object>> _subjects(String term, int limit) =>
+      _subjectList.match(term, limit: limit);
 
   Future<List<Object>> _offerings(String term, int limit) async => [
     for (final r in await _matching(
@@ -353,7 +355,13 @@ class SupabaseContentSearch implements ContentSearch {
           ? rows(_db.from('books').select('id'), 'title')
           : none(),
       wanted.contains(ResultKind.subjects)
-          ? rows(_db.from('subjects').select('slug'), 'name')
+          ? _subjectList
+                .match(term, limit: cap)
+                .then(
+                  (l) => [
+                    for (final s in l) <String, dynamic>{'slug': s.slug},
+                  ],
+                )
           : none(),
       any(_offeringKinds)
           ? rows(
