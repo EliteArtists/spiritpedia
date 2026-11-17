@@ -35,7 +35,7 @@ remains separate.
   —
   Spiritpedia is even better on the app: spiritpedia.co/get-app
 
-  C1 also mentions the app once in its body: “It's free, on the web and
+  C1 also mentions the app once in its body: “It's free to use, on the web and
   on the App Store and Google Play.”
 
 - Do not promise bookings, traffic, health outcomes or permanent free
@@ -120,7 +120,7 @@ Hello,
 We came across your \[listing kind\] and wanted to get in contact.
 
 Spiritpedia is a place where people can discover spiritual teachings,
-communities and resources. It's free, on the web and on the App Store
+communities and resources. It's free to use, on the web and on the App Store
 and Google Play. We'd love to speak with someone from your
 team about your work and the people it's intended for. Would you be open
 to a conversation? You can simply reply to this email.

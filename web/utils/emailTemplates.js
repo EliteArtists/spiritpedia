@@ -193,7 +193,7 @@ const OUTREACH = {
     subject: 'An invitation from Spiritpedia',
     body: ({ profileUrl, claimUrl }) => [
       'We came across your work on social sites and wanted to get in contact.',
-      "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
+      "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
       `We've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
       "If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.",
     ],
@@ -366,7 +366,7 @@ const SHARED_OUTREACH = {
     subject: 'An invitation from Spiritpedia',
     body: ({ kind, name, listingUrl, claimUrl }) => [
       `We came across your ${kind} and wanted to get in contact.`,
-      "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free, on the web and on the App Store and Google Play. We'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
+      "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. We'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
       `We've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
       'To stop these emails, simply reply.',
       "If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.",

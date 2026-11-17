@@ -102,7 +102,7 @@ the same greeting rule.
   publishers have their own sequence (below).
 - **App line:** every outreach email, both sequences, ends under the sign-off
   with "—" and "Spiritpedia is even better on the app: spiritpedia.co/get-app"
-  (plain text). C1 also says "It's free, on the web and on the App Store and
+  (plain text). C1 also says "It's free to use, on the web and on the App Store and
   Google Play." D7 (claim approved) has one plain-text app line.
 - **Stops** when the listing is claimed, removed, or loses its contact email;
   when Resend lists the address as bounced or complained (checked before every

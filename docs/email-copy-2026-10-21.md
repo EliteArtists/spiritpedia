@@ -122,7 +122,7 @@ Triggered only by the admin **Start email journey** button. Sender `love@spiritp
 —
 Spiritpedia is even better on the app: spiritpedia.co/get-app
 
-C1 also mentions the app once in its body (the sentence "It's free, on the web and on the App Store and Google Play.", from the owner's About page wording).
+C1 also mentions the app once in its body (owner, 17 Nov afternoon: "free to use") (the sentence "It's free to use, on the web and on the App Store and Google Play.", from the owner's About page wording).
 
 Timing: days **0, 21, 42, 63, 84, 105, 126, 147** from the moment admin starts the journey. Email 8 is the last. Stop on: claim + sign-in (ordinary completion), a removal or no-more-email request, delivery suppression (bounce/complaint), or a manual pause/stop by admin. These templates are for individual practitioners; organisation variants (channels, apps, publishers, organisations) are separate future work.
 
@@ -135,7 +135,7 @@ Hi [first name],
 
 We came across your work on social sites and wanted to get in contact.
 
-Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
 We've also made a short public listing for you from information available online. You can view it here: [PROFILE LINK]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: [CLAIM LINK].
 
