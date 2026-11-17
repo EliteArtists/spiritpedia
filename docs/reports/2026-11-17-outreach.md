@@ -159,3 +159,47 @@ None. The only live journeys are the two you made today.
 
 - "It's free" in email 1, as is or "It's free to use" (section 2).
 - The Next.js upgrade.
+
+---
+
+# Afternoon decisions, 17 Nov
+
+## 1. "It's free to use"
+
+Email 1 in both sequences now reads "It's free to use, on the web and on the
+App Store and Google Play." I changed the copy documents first. Commit
+`112ef7e5`.
+
+## 2. Next.js 16.4.6
+
+- The website is upgraded from 16.4.1 to 16.4.6, in its own commit
+  (`67028d68`). The ESLint settings stay as they were.
+- The build passes with no security warning, and all 234 tests pass.
+- It is deployed: the live site is serving the new build.
+
+## 3. App 1.0.2 (build 29), built for both stores
+
+Built from `~/Sites/spiritpedia-1.0.2` with `tool/build_release.sh`.
+
+**iPhone and iPad:**
+- Archive: `~/Sites/spiritpedia-1.0.2/app/build/ios/archive/Runner.xcarchive`.
+  It is **open in Xcode's Organizer** as Spiritpedia 1.0.2 (29), ready for
+  Distribute App → App Store Connect → Upload.
+- IPA, if you'd rather use Transporter:
+  `~/Sites/spiritpedia-1.0.2/app/build/ios/ipa/Spiritpedia.ipa`.
+- Checked: version 1.0.2, build 29, `co.spiritpedia.app`, push set to
+  production, iPhone and iPad, all four iPad orientations.
+
+**Android:**
+- The file to upload to Play Console:
+  `/Users/SundaySouLounge/Sites/spiritpedia-1.0.2/app/build/android-release/Spiritpedia-1.0.2-29.aab`
+  (61 MB).
+- Checked: version 1.0.2, version code 29, and it's signed with the Play
+  upload key (SHA-256 `29:35:1F:…:27:CE`), not the debug key.
+
+**Disk:** before building I cleared regenerable space: Xcode DerivedData,
+the website's `.next` folder, and the app's test caches and simulator
+builds. That took it from 4.8 GB free to 8.4 GB.
+
+**Next:** follow section 5 of `docs/reports/2026-11-16-owner-answers-evening.md`
+for review and release. Quit Xcode after the upload.
