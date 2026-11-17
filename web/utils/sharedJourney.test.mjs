@@ -54,7 +54,10 @@ test('every shared email, for every kind, is the approved copy word for word', (
 
         assert.equal(email.subject, doc.subject, `C${n} ${kind} subject`);
         assert.ok(email.text.startsWith('Hello,\n\n'), `C${n} ${kind} greeting`);
-        assert.ok(email.text.endsWith('\n\nWith love,\nThe Spiritpedia team'), `C${n} ${kind} sign-off`);
+        assert.ok(
+          email.text.endsWith('\n\nWith love,\nThe Spiritpedia team\n\n—\nSpiritpedia is even better on the app: spiritpedia.co/get-app'),
+          `C${n} ${kind} sign-off, then the app line`
+        );
         const body = email.text.slice('Hello,'.length, email.text.lastIndexOf('With love,'));
         assert.equal(squash(body), squash(expected), `C${n} ${kind} body`);
         assert.doesNotMatch(email.text, /\[|\]|undefined|null/, `C${n} ${kind} placeholder`);
@@ -135,10 +138,10 @@ test('individuals keep the practitioner sequence, unchanged', () => {
   assert.match(journeyTemplate(4, { healerName: 'Jane', healerSlug: 'jane' }).text, /\nClaim your profile: /);
 });
 
-test('installed, switched off: only individuals may be emailed, and the admin is told why', () => {
-  assert.deepEqual(OUTREACH_KINDS_APPROVED, ['individual']);
-  for (const kind of KINDS) {
-    assert.equal(outreachAllowedFor(kind), false, kind);
-    assert.match(outreachRefusal(kind), /wording for .+ is installed, but journeys for .+ stay off until the owner turns them on/);
+test('switched on (owner, 17 Nov 2026): every kind may be emailed', () => {
+  assert.deepEqual(OUTREACH_KINDS_APPROVED, ['individual', 'channel', 'app', 'organisation', 'school', 'publisher']);
+  for (const kind of [...KINDS, 'individual', undefined]) {
+    assert.equal(outreachAllowedFor(kind), true, kind);
+    assert.equal(outreachRefusal(kind), null, kind);
   }
 });

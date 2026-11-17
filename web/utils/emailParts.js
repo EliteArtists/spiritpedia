@@ -59,7 +59,8 @@ const BUTTON_STYLE = [
 //                                     linked; in text, "Label: url" per line
 // Everything is escaped for the HTML; nothing a member typed can become markup.
 // footer, when given, is a small line under the sign-off: the unsubscribe
-// link on emails someone can opt out of. { text, linkText, url }.
+// link on emails someone can opt out of, { text, linkText, url }, or a line
+// of plain text alone, { text } (the outreach emails' app line).
 export function renderEmail({ subject, blocks, signOff = 'team', footer = null }) {
   const ending = SIGN_OFFS[signOff];
   if (!ending) throw new Error(`unknown sign-off ${signOff}`);
@@ -104,7 +105,10 @@ export function renderEmail({ subject, blocks, signOff = 'team', footer = null }
   text.push(ending.join('\n'));
   html.push(`<p>${ending.map(escapeHtml).join('<br>').replace(/(<br>){2}/g, '</p><p>')}</p>`);
 
-  if (footer) {
+  if (footer && !footer.url) {
+    text.push(`—\n${footer.text}`);
+    html.push(`<p style="margin-top:24px;font-size:12px;color:#6b7280">${escapeHtml(footer.text)}</p>`);
+  } else if (footer) {
     text.push(`—\n${footer.text} ${footer.linkText}: ${footer.url}`);
     html.push(
       `<p style="margin-top:24px;font-size:12px;color:#6b7280">${escapeHtml(footer.text)} <a href="${escapeHtml(footer.url)}" style="color:#6b7280">${escapeHtml(footer.linkText)}</a></p>`

@@ -37,10 +37,10 @@ test('the next email is the lowest unsent one that is due', () => {
   assert.equal(nextDue(journey, at(400)), null);
 });
 
-test('outreach is for individuals only', () => {
+test('outreach is for every kind (switched on, owner 17 Nov 2026)', () => {
   assert.equal(outreachAllowedFor('individual'), true);
   assert.equal(outreachAllowedFor(null), true);
-  assert.equal(outreachAllowedFor('channel'), false);
+  assert.equal(outreachAllowedFor('channel'), true);
 });
 
 test('the links are on www and the claim link names the listing', () => {
@@ -50,13 +50,11 @@ test('the links are on www and the claim link names the listing', () => {
   });
 });
 
-test('every kind but individuals is switched off, its wording installed', () => {
-  for (const kind of ['channel', 'app', 'organisation', 'school', 'publisher']) {
-    assert.equal(outreachAllowedFor(kind), false, kind);
-    assert.match(outreachRefusal(kind), /^Switched off. The approved wording for .+ is installed/);
+test('no kind is switched off', () => {
+  for (const kind of ['channel', 'app', 'organisation', 'school', 'publisher', 'individual', undefined]) {
+    assert.equal(outreachAllowedFor(kind), true, kind);
+    assert.equal(outreachRefusal(kind), null, kind);
   }
-  assert.equal(outreachRefusal('individual'), null);
-  assert.equal(outreachRefusal(undefined), null);
 });
 
 test('a person is greeted by first name; anything else "Hello,"', () => {
@@ -78,8 +76,8 @@ test('the daily job checks gone, claimed, kind, address, in that order', () => {
   const person = { contact_email: 'a@b.c' };
   assert.deepEqual(cronDecision({ listing: null, claimed: false, entityType: 'individual' }), { stop: 'healer_removed' });
   assert.deepEqual(cronDecision({ listing: person, claimed: true, entityType: 'school' }), { stop: 'claimed' });
-  assert.deepEqual(cronDecision({ listing: person, claimed: false, entityType: 'organisation' }), { pause: 'kind_not_approved' });
-  assert.deepEqual(cronDecision({ listing: person, claimed: false, entityType: 'publisher' }), { pause: 'kind_not_approved' });
+  assert.deepEqual(cronDecision({ listing: person, claimed: false, entityType: 'organisation' }), { send: true });
+  assert.deepEqual(cronDecision({ listing: person, claimed: false, entityType: 'publisher' }), { send: true });
   assert.deepEqual(cronDecision({ listing: {}, claimed: false, entityType: 'individual' }), { stop: 'no_contact_email' });
   assert.deepEqual(cronDecision({ listing: person, claimed: false, entityType: null }), { send: true });
 });

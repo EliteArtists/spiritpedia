@@ -1,171 +1,161 @@
-# Owner's answers, 16 Nov evening: what was done
+# Outreach, 17 Nov 2026: what was done
 
-## 1. Resend webhook and the second test email
+## 1. The TEST listing and journey: deleted
 
-- **Fresh production deploy:** the homepage change below (commit
-  `663e9b42`) redeployed the website with your new secret.
-- **Webhook check:** the webhook address used to answer
-  "webhook_secret_not_set". It now answers "bad_signature" to an unsigned
-  test, so the secret is in place and Resend's signed reports get through.
-- **Second test email:** the TEST listing ("TEST Outreach Journey") and its
-  journey were made again on live. Only one journey can run per listing, so
-  this afternoon's, whose email could never be marked delivered, was deleted
-  first. Email 1 went to **rossbaiken+journeytest@gmail.com** at **17:59 UK
-  time**.
-- **Delivered:** live recorded it as delivered at 17:59:51, about 1.5 seconds
-  after sending, from Resend's webhook. Admin → Outreach should show the TEST
-  listing with email 1 sent and delivered.
-- **Bounces:** these use the same webhook, so a bounced address will now stop
-  its journey on its own.
-- **Not deleted yet.** The TEST listing and journey stay until you say you've
-  seen them. Nothing more will be sent, because email 2 isn't due for 21
-  days.
-- The admin guide's gap note about "Delivered" has been removed.
+- "TEST Outreach Journey", its journey and its message record are gone from
+  live. I checked: nothing named `test-outreach…` is left.
+- Your real activity today is untouched:
+  - the journey you started for **Karina Grant** at 11:11. Email 1 went to
+    her own address (not the test address) and is marked delivered.
+  - the form contact you recorded for **Amanda Johnson**.
 
-## 2. Migration 0052
+## 2. The app line in every outreach email
 
-Run on dev and live (owner). The Get the app panel in Admin → Activity now
-counts taps.
+**Copy documents first:**
+- `docs/email-copy-2026-10-21.md` (the practitioner sequence and D7)
+- `docs/email-copy-2026-11-11-shared-journey.md` (channels, apps,
+  organisations, schools and publishers)
 
-## 3. Welcome card and welcome email
+**Then the code**, in plain text with no images:
 
-Kept as they are.
+- **Footer of every outreach email**, all eight, for every kind. Under the
+  sign-off, after a dash line:
 
-## 4. Homepage: fewer cards per shelf at first
+  > Spiritpedia is even better on the app: spiritpedia.co/get-app
 
-- Every homepage shelf now draws its first **12 cards**, and 12 more each
-  time the end of the row comes near, the same way subject pages load theirs.
-  Nothing is hidden: scrolling along a row reaches every card (checked on the
-  Worldwide row: 12, 24, 36, 48, then all 59).
-- The same applies to every other row built the same way (My Library,
-  teacher pages' "near you" rows, Explore More).
-- Measured on a local build against live's data, at phone size:
+- **Email 1's body**, both sequences: one sentence added after the one that
+  says what Spiritpedia is, taken from your About page wording: "It's free, on
+  the web and on the App Store and Google Play."
+- **Claim approved (D7)**, a new line before "If you need a hand…":
 
-| | Before today | After this afternoon | Now |
-| :--- | :--- | :--- | :--- |
-| Images in the first load | 3,093 | 3,093 | 194 |
-| Page size | 7.8 MB | 7.8 MB | 3.9 MB |
-| Main-thread work while scrolling (phone, slowed 4×) | 2.0 s | 1.0 s | 0.4 s |
+  > Spiritpedia is also on the App Store and Google Play: spiritpedia.co/get-app
 
-- Files: `web/components/ShelfTrack.jsx` (new), `web/components/ContentShelf.js`.
-  Commit `663e9b42`.
+- Tests check the footer on all 48 outreach emails (8 practitioner, 40
+  shared), the app sentence only in email 1, and D7's line. 234 website tests
+  pass.
 
-## 5. App 1.0.2 (built; ready for you to build and submit)
+### Email 1 for a practitioner
 
-Everything is on the local branch `release/1.0.2`, version **1.0.2, build
-29**. The branch still said 1.0.1 (28), the build already submitted, so it
-was raised. All 383 app tests pass, and `flutter analyze` is clean. No store
-build was made: building and uploading is yours.
+```
+Subject: An invitation from Spiritpedia
 
-**New since this afternoon:**
-1. **Near You never hides anyone.** Once an area is set, it shows every
-   practitioner, nearest first, with how far away each is, and those with no
-   town last. "Closest to you" is the same full list, no longer the ten
-   nearest. (`db781026`)
-2. **Subject search spellings:** "breath work", "tai-chi" and "quantumtouch"
-   find the right subject. The feelings search and the crisis check are
-   unchanged. (`7d3f00e0`)
-3. **Subject pages in tier order:** Superhero, Ascended Master, Luminary, then
-   the rest. Once an area is set, nearest first within each tier. Channels and
-   apps put Spiritpedia's own first. (`1105779a`)
-4. **The newer build script** from `main`: `app/tool/build_release.sh`
-   refuses to build if the store settings are missing or incomplete.
-   (`ef617e3f`)
+Hi Karina,
 
-**Already on the branch:** the two crisis-check fixes, Amazon offering links
-with their disclosure, the disclosure sentence in the menu, nearest-first
-Schools and Retreat Centres, Buy on Amazon taps counted, and the School
-label.
+We came across your work on social sites and wanted to get in contact.
 
-**Deep links** wait for 1.0.3, as you said.
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
-### Before you start
+We've also made a short public listing for you from information available online. You can view it here: https://www.spiritpedia.co/healers/karina-grant. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: https://www.spiritpedia.co/auth/claim?slug=karina-grant.
 
-- **Apple:** 1.0.2 can only go to review once 1.0.1 (build 28) is approved.
-  If 1.0.1 is still in review, you can still upload build 29 and test it in
-  TestFlight.
-- **Google Play:** production needs production access. If it hasn't been
-  granted yet, build 29 can go to closed testing.
-- **A copy of the app on the 1.0.2 branch is ready** at
-  `~/Sites/spiritpedia-1.0.2`, so building it doesn't touch the main folder.
-  - Its first iPhone build sets up its own build files, which takes extra
-    time and disk space.
-  - Check free space first: `df -h /System/Volumes/Data`. It needs a few GB
-    (README §13).
-- **Optional:** as with 1.0.1, I can open it in the simulator first so you
-  can look at Near You and a subject page before you build. Say if you want
-  that.
+If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.
 
-### Build and upload for iPhone and iPad
+With love,
+The Spiritpedia team
 
-1. In Terminal: `cd ~/Sites/spiritpedia-1.0.2/app`
-2. Run `tool/build_release.sh ios`.
-   - If it says "Refusing to build", a value is missing from
-     `config/prod.json`. Tell me which one.
-3. When it finishes, run `open build/ios/archive/Runner.xcarchive`.
-4. In Xcode's Organizer, choose **Spiritpedia 1.0.2 (29)** → **Distribute
-   App** → **App Store Connect** → **Upload**. Keep the defaults.
-   - Or drag `build/ios/ipa/Spiritpedia.ipa` into Transporter and click
-     **Deliver**.
-5. Quit Xcode when the upload finishes, because this Mac is short of memory.
-6. In App Store Connect → Spiritpedia → TestFlight, wait for build 29 to
-   finish processing. If asked about encryption, answer standard encryption
-   only.
+—
+Spiritpedia is even better on the app: spiritpedia.co/get-app
+```
 
-### Submit to Apple (once 1.0.1 is approved)
+(Karina's email 1 went this morning, before this change, so she got the
+earlier wording. Her email 2 onwards will have the footer.)
 
-7. App Store Connect → Spiritpedia → **+** beside iOS App → version
-   **1.0.2**.
-8. Under Build, choose **29**.
-9. Paste the "What's new" text below.
-10. App Privacy needs no change. 1.0.2 collects no new kind of data: an Amazon
-    tap is counted with nobody's name or account attached.
-11. **Add for Review** → **Submit**. A demo account is only needed if Apple
-    asks.
+### Email 1 for an organisation
 
-### Build and upload for Android
+```
+Subject: An invitation from Spiritpedia
 
-12. In the same Terminal folder, run `tool/build_release.sh android`.
-13. The file is `build/app/outputs/bundle/release/app-release.aab`.
-14. Play Console → Spiritpedia:
-    - If production access is granted: **Production** → **Create new
-      release**.
-    - If not: **Testing** → **Closed testing** → your track → **Create new
-      release**.
-15. Upload the `.aab` and name the release **1.0.2 (29)**.
-16. Paste the "What's new" text below into the release notes.
-17. **Next** → **Save** → **Send for review** (or **Start rollout**).
+Hello,
 
-### What's new in 1.0.2 (for both stores)
+We came across your organisation and wanted to get in contact.
 
-> - Near You now shows every practitioner, nearest first, with how far away
->   each one is.
-> - Subject pages list teachers by tier, nearest first within each tier once
->   you've set your area.
-> - Schools & Academies and Retreat Centres & Platforms show the nearest
->   first once you've set your area.
-> - Subject search is more forgiving: "breath work" or "tai-chi" find the
->   right subject.
-> - We now recognise more ways of writing phrases that mean someone may need
->   support, so help is offered when it's needed.
-> - Amazon links carry a clear affiliate disclosure.
-> - School accounts are labelled School in My Account.
+Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free, on the web and on the App Store and Google Play. We'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
 
-### After it's in both stores
+We've made a free public listing for Grateful Living from information available online: https://www.spiritpedia.co/healers/grateful-living. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: https://www.spiritpedia.co/auth/claim?slug=grateful-living.
 
-- Tell me, and I'll merge `release/1.0.2` into `main` (that also fixes
-  `main`'s safety test) and update the README's Near You notes.
-- Admin → Activity will then count Buy on Amazon taps from the app too.
+To stop these emails, simply reply.
 
-## 6. Amazon Associates
+If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.
 
-You're adding the App Store and Google Play links yourself.
+With love,
+The Spiritpedia team
+
+—
+Spiritpedia is even better on the app: spiritpedia.co/get-app
+```
+
+**Please check:**
+- "It's free" is your About wording. In an invitation it could be read as
+  "free for you to be listed". That's true today, but the solicitor
+  questions in the shared copy ask about promising free participation. Say
+  if you'd rather it read "It's free to use".
+- The footer address is written short (`spiritpedia.co/get-app`), as you gave
+  it. Gmail and Apple Mail make it a link; a few mail programs may show it
+  as plain text.
+
+## 3. Admin → Outreach: every journey, every kind
+
+- **The list already showed every journey of every kind**, with filters:
+  - by kind: Individuals, Channels, Apps, Organisations, Schools, Publishers;
+  - by state: Running, Paused, Replied, Claimed, Contacted via form,
+    Sequence complete, Do not contact, Stopped, each with a count.
+- It probably looked publisher-only because the panel at the top is
+  "Start a journey for a publisher", and the note under the heading said
+  only individuals could be started. That note now says every kind is listed
+  and where each is started.
+- **Switched on for every kind.** You chose to switch the shared journeys on.
+  Channels, apps, organisations, schools and publishers can now be started.
+  Nothing starts by itself.
+
+### Where the Start button is
+
+**Practitioner, channel, app, organisation or school:**
+1. Admin → **Content**.
+2. Search for the listing and open it.
+3. Click the **Outreach** tab, next to Profile and Content.
+4. Click **Start email journey**. The line beside it shows the address email
+   1 goes to. If it can't start, it says why instead (claimed, no address,
+   asked to stop, or an inbox type that isn't allowed).
+
+**Publisher** (publishers have no listing page in the admin):
+1. Admin → **Publishers**.
+2. Click **Email journey** on the publisher's row (new). It opens Admin →
+   Outreach with that publisher already chosen.
+3. Click **Start email journey**.
+4. Or search for it in the "Start a journey for a publisher" panel on Admin
+   → Outreach.
+
+### Checked on every kind
+
+- **How:**
+  - Six TEST listings on **dev**, one per kind.
+  - A local copy of the website.
+  - Each Start button pressed in a real browser.
+  - Emails redirected to rossbaiken+journeytest@gmail.com.
+- **Result:**
+  - All six said "Email 1 sent to rossbaiken+journeytest@gmail.com — the test
+    address". Resend reports all six **delivered**.
+  - All six appeared in the Outreach list with the right kind, Running and
+    "1 of 8 sent".
+- **Cleanup:** the TEST listings and journeys were deleted from dev
+  afterwards. Nothing was started on live.
+- **In your test inbox:** six test emails, "An invitation from Spiritpedia",
+  sent early this afternoon. You can delete them.
+
+## 4. No real journeys started
+
+None. The only live journeys are the two you made today.
+
+## Also
+
+- **Next.js security warning:** the website's framework (Next.js 16.4.1)
+  now warns of a known security problem on every build, and one of today's
+  two local builds stopped on it. 16.4.6 is out. I haven't upgraded it.
+  Upgrading in a separate commit is worth doing soon, and it would also stop
+  a deploy from failing on this. Say if you want me to.
+- The admin guide (Outreach and Gaps), `docs/emails.md` and the README are
+  updated.
 
 ## For you to decide
 
-- Look at Admin → Outreach for the TEST listing (sent and delivered), then
-  tell me to delete it and its journey.
-- Whether you want a simulator look at 1.0.2 before building it.
-- Build and submit 1.0.2 (section 5). On Apple, it can only go to review once
-  1.0.1 is approved.
-- Then tell me it's in both stores, so I can merge the branch.
+- "It's free" in email 1, as is or "It's free to use" (section 2).
+- The Next.js upgrade.

@@ -2259,10 +2259,9 @@ browser walk-throughs had typed made-up addresses into the sign-in form.
   images (93 of ~125 from `encrypted-tbn0.gstatic.com`), which is why the
   edition's featured photo is small. Copying listing photos into our own
   storage is a separate project.
-- **Publisher, channel and organisation outreach:** no wording, so the journey
-  refuses them. Write it, then start outreach to them.
-- **No outreach journey has ever been started** for a real listing — a business
-  decision, after the solicitor; everything is built and tested.
+- **Outreach is on for every kind** (owner, 17 Nov 2026): the owner starts each
+  journey by hand from the listing's Outreach tab (publishers: Admin →
+  Publishers → Email journey). The first real one was started 17 Nov 2026.
 - **Most account and review emails are not retried** if Resend fails (only the
   welcome, Day 4 and the journey are); the Inbox says when an email didn't go.
 - Account and review emails are simple HTML with no logo header; only the

@@ -116,6 +116,14 @@ export default function AdminPublishersPage() {
                           {isManaged ? 'Claimed' : 'Unclaimed'}
                         </Badge>
                       )}
+                      {/* Publishers have no listing page in the admin, so their
+                          journey starts on Admin → Outreach, this one picked. */}
+                      <Link
+                        href={`/admin/outreach?publisher=${encodeURIComponent(p.slug)}`}
+                        className="rounded-full border border-white/15 px-4 py-1.5 text-xs font-bold text-slate-300 transition-colors hover:bg-white/5 hover:text-white"
+                      >
+                        Email journey
+                      </Link>
                       <Link
                         href={`/publishers/${encodeURIComponent(p.slug)}`}
                         target="_blank"

@@ -723,7 +723,7 @@ function OutreachTab({ healer }) {
         setToast({
           type: 'success',
           message: json.redirected
-            ? `Email 1 sent to ${json.emailSentTo} — the test address, not the practitioner.`
+            ? `Email 1 sent to ${json.emailSentTo} — the test address, not the listing's own.`
             : `Email 1 sent to ${json.emailSentTo}.`,
         });
         setState(await read());
@@ -809,8 +809,8 @@ function OutreachTab({ healer }) {
     return (
       <>
         <p className="text-sm leading-relaxed text-slate-400">
-          Eight emails over 21 weeks, inviting this practitioner to talk and to claim their
-          listing. It stops by itself the moment they claim it, or if their address bounces or
+          Eight emails over 21 weeks, inviting them to talk and to claim the listing:
+          the practitioner sequence for a person, the shared one for every other kind. It stops by itself the moment they claim it, or if their address bounces or
           marks one as spam. If they reply asking to stop or to be removed, press Stop and choose
           that reason: they are never emailed again.
         </p>

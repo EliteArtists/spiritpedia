@@ -9,6 +9,8 @@ Copy is final wording: do not rephrase. Bracketed tokens are placeholders:
 - `[reason]` — only the admin-approved explanation meant for the recipient, never private admin notes.
 - `by [creator name]` — omit the whole phrase if there is no relevant attribution.
 
+Updated 17 Nov 2026 (owner): the app line under every C1–C8 sign-off, the app sentence in C1's body, and the app line in D7.
+
 Updated 22 Oct 2026: D1, D2, D3, D4, D5, D8, D9 and D11 reworded (we only check that a listing is genuine and really theirs; we're not judging anyone), and the star symbol removed from subjects and sign-offs.
 
 Supersedes: the earlier 5-email practitioner outreach content, and the proposed 6-email generic explorer sequence (do not install that).
@@ -115,6 +117,13 @@ Uses the separately designed template (see the Claude Code prompt for this). Ong
 
 Triggered only by the admin **Start email journey** button. Sender `love@spiritpedia.co` via the existing outreach route. Sign-off on every email: "With love, / The Spiritpedia team".
 
+**App line (owner, 17 Nov 2026).** Every email in this sequence, C1 to C8, ends with this line under the sign-off, after a dash line. Plain text, no images:
+
+—
+Spiritpedia is even better on the app: spiritpedia.co/get-app
+
+C1 also mentions the app once in its body (the sentence "It's free, on the web and on the App Store and Google Play.", from the owner's About page wording).
+
 Timing: days **0, 21, 42, 63, 84, 105, 126, 147** from the moment admin starts the journey. Email 8 is the last. Stop on: claim + sign-in (ordinary completion), a removal or no-more-email request, delivery suppression (bounce/complaint), or a manual pause/stop by admin. These templates are for individual practitioners; organisation variants (channels, apps, publishers, organisations) are separate future work.
 
 Describe "finding out how to book" — never imply payment is processed inside Spiritpedia. No promises of recommendation emails, bookings, exposure figures or prices.
@@ -126,7 +135,7 @@ Hi [first name],
 
 We came across your work on social sites and wanted to get in contact.
 
-Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
 We've also made a short public listing for you from information available online. You can view it here: [PROFILE LINK]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: [CLAIM LINK].
 
@@ -400,6 +409,8 @@ Your request to manage [listing name] has been approved.
 You can now sign in to your Spiritpedia account and manage the listing. Please take a look at the information already there and make any updates you'd like people to see.
 
 [Manage your listing]
+
+Spiritpedia is also on the App Store and Google Play: spiritpedia.co/get-app
 
 If you need a hand, simply reply to this email.
 

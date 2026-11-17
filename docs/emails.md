@@ -98,8 +98,12 @@ the same greeting rule.
   practitioner and back to the listing after the code. An account whose email
   matches the listing claims it at once (D7); any other is offered "ask us to
   check and link it to your account".
-- **Individuals only, for now.** Channels, apps, organisations, schools and
-  publishers have their own sequence installed (below), switched off.
+- **Every kind** (owner, 17 Nov 2026). Channels, apps, organisations, schools and
+  publishers have their own sequence (below).
+- **App line:** every outreach email, both sequences, ends under the sign-off
+  with "—" and "Spiritpedia is even better on the app: spiritpedia.co/get-app"
+  (plain text). C1 also says "It's free, on the web and on the App Store and
+  Google Play." D7 (claim approved) has one plain-text app line.
 - **Stops** when the listing is claimed, removed, or loses its contact email;
   when Resend lists the address as bounced or complained (checked before every
   email; `suppressed`), or reports a permanent bounce through its webhook
@@ -141,13 +145,11 @@ the same greeting rule.
   one); for a person, a missing type is a warning. The type and source are
   copied onto the journey when it starts. Publishers are started from Admin →
   Outreach → "Start a journey for a publisher".
-- **SWITCHED OFF.** Installing it started nothing. The switch is the one list
-  `OUTREACH_KINDS_APPROVED` in `web/utils/journey.js`: today `['individual']`;
-  the owner turns the shared journeys on (when the app is in both stores) by
-  adding `'channel', 'app', 'organisation', 'school', 'publisher'` and
-  deploying. Until then Start is refused with "Switched off. The approved
-  wording for … is installed, but journeys for … stay off until the owner
-  turns them on."
+- **SWITCHED ON** (owner, 17 Nov 2026). The switch is the one list
+  `OUTREACH_KINDS_APPROVED` in `web/utils/journey.js`, now every kind. Taking
+  a kind out turns Start off for it with "Switched off. …", and the daily job
+  pauses its running journeys (`kind_not_approved`). Publishers can also be
+  started from Admin → Publishers → Email journey.
 - **Preview:** `node scripts/shared-journey-preview.mjs` writes all 40, for a
   real listing of each kind, to `docs/reports/<date>-shared-journey-preview.md`
   (read only; sends nothing).

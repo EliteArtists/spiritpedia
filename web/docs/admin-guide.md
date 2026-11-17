@@ -105,13 +105,21 @@ their page, and contacts made by hand through a listing's contact form.
 **What it shows:** every journey ever started: the listing, its kind, when it
 started, each email (sent, delivered or bounced) and how it ended (running,
 paused, replied, claimed, form contact, complete, do not contact, stopped).
-Filter by kind and by state. **What you do:** start a journey for a publisher
-from the panel at the top (for any other listing, start it from that
-listing's **Outreach** tab in Content), **Mark replied** when someone writes
-back, and pause, resume or stop a journey from the listing's own tab. Only
-individuals can be started for now. **How often:** once a week while
-journeys are running. Outreach is due to start only when the app is in both
-stores.
+Filter by kind (practitioners, channels, apps, organisations, schools,
+publishers) and by state. **What you do:**
+- **Start a journey** from the listing's own page: Content → search for the
+  listing → open it → the **Outreach** tab → **Start email journey**. It shows
+  the address email 1 goes to, or why it can't start (claimed, no address,
+  asked to stop, an inbox type that isn't allowed).
+- **A publisher** has no listing page in the admin: Publishers → **Email
+  journey** on its row opens this page with it picked; or search for it in
+  the panel at the top.
+- **Mark replied** when someone writes back, and pause, resume or stop a
+  journey from the listing's own Outreach tab.
+
+Every kind can be started (switched on 17 Nov 2026). Every outreach email
+ends with "Spiritpedia is even better on the app: spiritpedia.co/get-app".
+**How often:** once a week while journeys are running.
 
 ## Claims
 
@@ -416,10 +424,9 @@ the assistant, a script or the Supabase dashboard today.
 - **Ops is read-only, and only as fresh as its last sync.** Held plans
   can't be approved or dropped here; that happens in the chat, and the page
   updates only when `node scripts/ops-sync.mjs --env live` is run.
-- **Outreach for channels, apps, organisations, schools and publishers is
-  switched off,** and there's no switch in the admin. Turning a kind on is a
-  change to the code. The emails also still go to a test address until the
-  test setting (`JOURNEY_TEST_EMAIL`) is removed in Vercel.
+- **Turning outreach off for a kind is a change to the code**
+  (`OUTREACH_KINDS_APPROVED` in `web/utils/journey.js`); there's no switch in
+  the admin.
 - **No list of the automatic emails someone was sent.** The database keeps
   a record of emails such as the welcome and Day 4 emails, but the admin
   shows only the outreach journey, an explorer's discovery editions and

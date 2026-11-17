@@ -28,6 +28,16 @@ remains separate.
   sentence exactly. C1 and C8 additionally say “To stop these emails,
   simply reply.”
 
+- App line (owner, 17 Nov 2026): every email, C1 to C8, for every
+  listing type, ends with this line under the sign-off, after a dash
+  line. Plain text, no images:
+
+  —
+  Spiritpedia is even better on the app: spiritpedia.co/get-app
+
+  C1 also mentions the app once in its body: “It's free, on the web and
+  on the App Store and Google Play.”
+
 - Do not promise bookings, traffic, health outcomes or permanent free
   participation. The interview is optional and independent of claiming.
   Keep replies monitored and stop/removal requests effective.
@@ -110,7 +120,8 @@ Hello,
 We came across your \[listing kind\] and wanted to get in contact.
 
 Spiritpedia is a place where people can discover spiritual teachings,
-communities and resources. We'd love to speak with someone from your
+communities and resources. It's free, on the web and on the App Store
+and Google Play. We'd love to speak with someone from your
 team about your work and the people it's intended for. Would you be open
 to a conversation? You can simply reply to this email.
 

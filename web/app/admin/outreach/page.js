@@ -217,15 +217,36 @@ function ContactFacts({ recipientType, source }) {
 // START A JOURNEY FOR A PUBLISHER (owner, 11 Nov 2026). Publishers have no
 // listing record page with an Outreach tab, so they are started here: find
 // one by name, see its address, where it is published and whose inbox it is,
-// and Start. Switched off with the other shared kinds until the owner turns
-// them on: the button is then disabled with the reason, and the start route
-// refuses anyway.
+// and Start. Admin → Publishers' "Email journey" link arrives with
+// ?publisher=<slug>, and that publisher is already picked.
 function PublisherStart({ onStarted }) {
   const [q, setQ] = useState('');
   const [found, setFound] = useState([]);
   const [picked, setPicked] = useState(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    const slug = new URLSearchParams(window.location.search).get('publisher');
+    if (!slug) return undefined;
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`/api/admin/journey/publishers?slug=${encodeURIComponent(slug)}`, { cache: 'no-store' });
+        const json = await res.json();
+        const publisher = json.publishers?.[0];
+        if (!cancelled && publisher) {
+          setQ(publisher.name);
+          setPicked(publisher);
+        }
+      } catch {
+        // Nothing picked; the search box still works.
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     const term = q.trim();
@@ -399,10 +420,10 @@ export default function AdminOutreachPage() {
       </SectionHeading>
 
       <p className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4 text-xs leading-relaxed text-slate-400">
-        Journeys are started from a listing&apos;s Outreach tab, and a publisher&apos;s from the panel below. Only individuals can be started for now: the wording for channels, apps,
-        organisations, schools and publishers is installed, and those journeys stay switched off until the owner turns
-        them on. Delivered and bounced come
-        from Resend; opens and clicks are not tracked.
+        Every journey of every kind is listed here: practitioners, channels, apps, organisations, schools and
+        publishers. Start one from the listing&apos;s own page: Content → the listing → <strong>Outreach</strong> tab →
+        Start email journey. A publisher has no listing page in the admin, so start it from Publishers → Email
+        journey, or the panel below. Delivered and bounced come from Resend; opens and clicks are not tracked.
       </p>
 
       <PublisherStart onStarted={load} />
@@ -440,7 +461,7 @@ export default function AdminOutreachPage() {
         <Placeholder
           icon="✉"
           title={journeys.length ? 'No journeys match these filters' : 'No journeys yet'}
-          body={journeys.length ? undefined : 'Start one from a listing’s Outreach tab (Content → a listing → Outreach).'}
+          body={journeys.length ? undefined : 'Start one from a listing’s Outreach tab (Content → a listing → Outreach), or a publisher from Publishers → Email journey.'}
         />
       ) : (
         <div className="overflow-x-auto rounded-2xl border border-white/10 bg-[#111827]">

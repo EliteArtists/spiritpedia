@@ -11,7 +11,8 @@ import {
 
 export const dynamic = 'force-dynamic';
 
-// GET /api/admin/journey/publishers?q=hay — publishers by name, for the
+// GET /api/admin/journey/publishers?q=hay — publishers by name (or ?slug=, one
+// publisher), for the
 // Outreach page's "Start a journey for a publisher" (owner, 11 Nov 2026).
 // Each with what Start would say: switched off (OUTREACH_KINDS_APPROVED),
 // claimed, do not contact, an address that isn't eligible (source and
@@ -23,11 +24,15 @@ export async function GET(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
 
-  const q = (new URL(request.url).searchParams.get('q') || '').trim().replace(/[\\%_]/g, (c) => `\\${c}`);
-  if (q.length < 2) return NextResponse.json({ publishers: [] });
+  const params = new URL(request.url).searchParams;
+  const q = (params.get('q') || '').trim().replace(/[\\%_]/g, (c) => `\\${c}`);
+  // ?slug= is one publisher exactly: Admin → Publishers' "Email journey" link.
+  const slug = (params.get('slug') || '').trim();
+  if (q.length < 2 && !slug) return NextResponse.json({ publishers: [] });
 
   // '*' so the 0048 columns are read when they exist and simply absent before.
-  const { data, error } = await supabase.from('publishers').select('*').ilike('name', `%${q}%`).order('name').limit(10);
+  const base = supabase.from('publishers').select('*');
+  const { data, error } = await (slug ? base.eq('slug', slug) : base.ilike('name', `%${q}%`)).order('name').limit(10);
   if (error) return NextResponse.json({ error: 'query_failed', message: error.message }, { status: 500 });
 
   const publishers = await Promise.all(

@@ -95,15 +95,18 @@ export async function doNotContactByAddress(supabase, email) {
 // 2026: healer_journeys.publisher_id, migration 0020). Individuals have the
 // practitioner sequence; channels, apps, organisations, schools and
 // publishers have the shared sequence (utils/emailTemplates.js →
-// sharedOutreachEmail), installed 11 Nov 2026 and SWITCHED OFF.
+// sharedOutreachEmail), installed 11 Nov 2026, switched on 17 Nov 2026.
 //
 // THE SWITCH, AND THE ONLY ONE. The owner turns the shared journeys on when
 // the app is in both stores. To do it, add the kinds to this list, e.g.
 //   export const OUTREACH_KINDS_APPROVED = ['individual', 'channel', 'app', 'organisation', 'school', 'publisher'];
 // and deploy. Start buttons, the start route and the daily job all read it;
 // journeys the daily job paused as kind_not_approved are resumed by hand.
+//
+// SWITCHED ON for every kind (owner, 17 Nov 2026). Nothing starts by itself:
+// the owner presses Start on each listing.
 export const OUTREACH_KINDS = ['individual', 'channel', 'app', 'organisation', 'school', 'publisher'];
-export const OUTREACH_KINDS_APPROVED = ['individual'];
+export const OUTREACH_KINDS_APPROVED = ['individual', 'channel', 'app', 'organisation', 'school', 'publisher'];
 
 // A listing with no entity_type predates the column and is a person.
 export function outreachKind(entityType) {

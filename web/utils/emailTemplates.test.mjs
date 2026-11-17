@@ -90,6 +90,12 @@ test('D3: live, with the listing button', () => {
   assertClean(applicationApproved({ listingUrl: SITE }));
 });
 
+test('D7: the app once, as plain text', () => {
+  const m = claimApproved({ firstName: 'Jane', listingName: 'White Tiger Qigong' });
+  assert.ok(m.text.includes('Spiritpedia is also on the App Store and Google Play: spiritpedia.co/get-app'));
+  assert.doesNotMatch(m.html, /<img/);
+});
+
 test('D7: manage your listing goes to the account', () => {
   const m = claimApproved({ firstName: 'Jane', listingName: 'Tom & <Jerry>' });
   assert.equal(m.subject, 'You can now manage Tom & <Jerry> on Spiritpedia');
@@ -144,7 +150,9 @@ test('C1–C8: eight plain-text emails, each with both links, removal and the te
     assert.ok(m.text.includes(LINKS.profileUrl), `email ${n} profile link`);
     assert.ok(m.text.includes(LINKS.claimUrl), `email ${n} claim link`);
     assert.match(m.text, /remov/i, `email ${n} offers removal`);
-    assert.match(m.text, /With love,\nThe Spiritpedia team$/);
+    // The app line under the sign-off, every email (owner, 17 Nov 2026).
+    assert.match(m.text, /With love,\nThe Spiritpedia team\n\n—\nSpiritpedia is even better on the app: spiritpedia\.co\/get-app$/);
+    assert.equal(m.text.match(/App Store/g)?.length ?? 0, n === 1 ? 1 : 0, `email ${n} mentions the stores in C1 only`);
     assert.doesNotMatch(m.text, /\[|\]|undefined|pay for/);
   }
   assert.deepEqual(subjects, [
