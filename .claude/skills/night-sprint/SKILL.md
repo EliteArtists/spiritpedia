@@ -5,6 +5,10 @@ description: Start Spiritpedia's overnight content sprint from the README queue.
 
 # The night sprint (owner, 11 Nov 2026)
 
+**PAUSED (owner, 18 Nov 2026)** until every current listing has been contacted
+(README §20). If the owner says "Start the night sprint" while paused, say it is
+paused and ask whether to lift the pause; don't run it.
+
 The owner's standing routine is README §20; this is its NIGHT part. The owner's
 words "Start the night sprint" are the whole instruction: everything below is
 already approved. Read README §20, §18.4, §18.7 and

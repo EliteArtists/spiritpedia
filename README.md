@@ -24,8 +24,8 @@ Not code. Dated, so it's clear what is late.
 | 11 Nov 2026 | **Google Play:** store listing and screenshots |
 | 12 Nov 2026 | **Google Play:** apply for production when closed testing ends |
 | Once production access is granted | **Google Play:** release build 28 |
-| — | **Outreach and email journeys start only when the app is in BOTH stores** |
-| Now (built 16 Nov) | **App 1.0.2 (build 29):** build and submit to both stores (`~/Sites/spiritpedia-1.0.2`, steps in `docs/reports/2026-11-16-owner-answers-evening.md` §5) |
+| From 18 Nov 2026 | **Outreach:** up to 50 journeys a day from Admin → Outreach → Up next (§20); night sprints paused until every listing is contacted |
+| Now (built 17 Nov) | **App 1.0.2 (build 29):** Google Play has it; submit on Apple once its outage clears; when both are approved, the assistant merges `release/1.0.2` into `main`. Submit to both stores (`~/Sites/spiritpedia-1.0.2`, steps in `docs/reports/2026-11-16-owner-answers-evening.md` §5) |
 | Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list (owner doing it, 16 Nov); PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
 | Open | **World of Books (Awin):** reapply after fixing the profile |
 | Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
@@ -3275,7 +3275,20 @@ The shared finding and testing code is `scripts/lib/images.mjs`, also used by
 
 ## 20. The daily routine (night sprint, morning, day)
 
-The owner's standing routine (11 Nov 2026).
+**From 18 Nov 2026 (owner): the routine below is changed.**
+- **Night sprints are PAUSED** until every current listing has been contacted. "Start the
+  night sprint" waits until the owner lifts the pause.
+- **Each morning, first job:** fix the broken images in the admin Inbox (§19), then report.
+- **The owner starts up to 50 outreach journeys a day, by hand**, from Admin → Outreach →
+  **Up next**: every listing with an email that has never been contacted, organisations and
+  schools first, then practitioners (by tier, then name), then channels, apps and
+  publishers, each with its own Start, and "Started today: X of 50". At 50 the Start
+  buttons there rest until the next day (a listing's own Outreach tab still works). Left
+  out of the list: anything contacted before (a form contact too), claimed listings,
+  people who have died, and an address already written to through another listing.
+  Code: `web/app/api/admin/journey/up-next/route.js`, `utils/journey.js` → `upNext`.
+
+The owner's standing routine as set on 11 Nov 2026 (night part paused, above):
 
 **NIGHT: the content sprint.** It runs through the night from the queue in §18.7, with
 the standing brief (`docs/content-audits/night-sprint-2026-11-09/BRIEF.md`) and every

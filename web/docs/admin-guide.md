@@ -107,7 +107,16 @@ started, each email (sent, delivered or bounced) and how it ended (running,
 paused, replied, claimed, form contact, complete, do not contact, stopped).
 Filter by kind (practitioners, channels, apps, organisations, schools,
 publishers) and by state. **What you do:**
-- **Start a journey** from the listing's own page: Content → search for the
+- **The day's outreach (from 18 Nov 2026): Up next**, at the top. Every
+  listing with an email that has never been contacted, organisations and
+  schools first, then practitioners (by tier, then name), then channels, apps
+  and publishers, each with its own **Start**, and "Started today: X of 50".
+  At 50 the Start buttons there rest until tomorrow. A started row stays,
+  marked, until you press Refresh the list. Left out: anything contacted
+  before (a form contact too), claimed listings, people who have died, and an
+  address already written to through another listing (two new listings with
+  one address show once, naming the other).
+- **Or start a journey** from the listing's own page: Content → search for the
   listing → open it → the **Outreach** tab → **Start email journey**. It shows
   the address email 1 goes to, or why it can't start (claimed, no address,
   asked to stop, an inbox type that isn't allowed).

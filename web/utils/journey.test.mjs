@@ -14,6 +14,10 @@ import {
   outreachFirstName,
   outreachRefusal,
   schedule,
+  upNext,
+  outreachDay,
+  startedToday,
+  DAILY_STARTS,
 } from './journey.js';
 import { outreachEmail } from './emailTemplates.js';
 
@@ -162,4 +166,79 @@ test('Start is blocked by the first reason a person would read', () => {
   assert.match(startBlocker({ ...ok, doNotContact: 'They asked us to stop emailing.' }), /Not to be emailed again/);
   assert.match(startBlocker({ ...ok, running: 'running' }), /already running/);
   assert.match(startBlocker({ eligibility: { problems: ['No source.'], warnings: [] } }), /No source/);
+});
+
+// UP NEXT (owner, 18 Nov 2026).
+const listing = (key, extra = {}) => ({ key, kind: 'individual', name: key, email: `${key}@example.com`, tier: 'local_hero', ...extra });
+
+test('up next: organisations and schools first, then practitioners by tier and name, then the rest', () => {
+  const { list } = upNext({
+    listings: [
+      listing('zoe'),
+      listing('channel-a', { kind: 'channel' }),
+      listing('amy'),
+      listing('big-name', { tier: 'superhero' }),
+      listing('school-a', { kind: 'school' }),
+      listing('org-b', { kind: 'organisation', name: 'B org' }),
+      listing('org-a', { kind: 'organisation', name: 'a org' }),
+    ],
+    journeys: [],
+  });
+  assert.deepEqual(
+    list.map((l) => l.key),
+    ['org-a', 'org-b', 'school-a', 'big-name', 'amy', 'zoe', 'channel-a']
+  );
+});
+
+test('up next: never contacted means no journey of any kind, a form contact included', () => {
+  const { list, left } = upNext({
+    listings: [listing('emailed'), listing('formed'), listing('new'), listing('no-email', { email: null })],
+    journeys: [{ key: 'emailed' }, { key: 'formed' }],
+  });
+  assert.deepEqual(list.map((l) => l.key), ['new']);
+  assert.equal(left.contacted, 2);
+});
+
+test('up next: claimed, a person who has died, and an address already written to are left out', () => {
+  const { list, left } = upNext({
+    listings: [
+      listing('joined', { claimed: true }),
+      listing('late', { deceased: true }),
+      listing('late-school', { kind: 'school', deceased: true }),
+      listing('founder', { email: 'Hello@School.org' }),
+      listing('school', { kind: 'school', email: 'hello@school.org ' }),
+    ],
+    journeys: [{ key: 'founder' }],
+  });
+  assert.deepEqual(list.map((l) => l.key), ['late-school']);
+  assert.deepEqual(left, { contacted: 1, claimed: 1, deceased: 1, sameAddress: 1, switchedOff: 0 });
+});
+
+test('up next: two new listings with one address get one journey, the other is named on it', () => {
+  const { list, left } = upNext({
+    listings: [listing('founder', { email: 'a@x.org', name: 'The Founder' }), listing('school', { kind: 'school', email: 'A@x.org' })],
+    journeys: [],
+  });
+  assert.deepEqual(list.map((l) => [l.key, l.alsoAt]), [['school', ['The Founder']]]);
+  assert.equal(left.sameAddress, 1);
+});
+
+test('started today: email journeys on the owner’s day, form contacts not counted', () => {
+  const now = new Date('2026-11-18T23:30:00Z'); // 23:30 in London
+  assert.equal(
+    startedToday(
+      [
+        { channel: 'email', started_at: '2026-11-18T00:10:00Z' },
+        { channel: 'email', started_at: '2026-11-18T10:00:00Z', status: 'stopped' },
+        { started_at: '2026-11-18T12:00:00Z' },
+        { channel: 'form', started_at: '2026-11-18T12:00:00Z' },
+        { channel: 'email', started_at: '2026-11-17T23:59:00Z' },
+      ],
+      now
+    ),
+    3
+  );
+  // Summer time: 23:30 UTC on 1 July is already 2 July in London.
+  assert.equal(outreachDay('2026-07-01T23:30:00Z'), '2026-07-02');
+  assert.equal(DAILY_STARTS, 50);
 });

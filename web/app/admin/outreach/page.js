@@ -368,6 +368,183 @@ function PublisherStart({ onStarted }) {
   );
 }
 
+const KIND_LABELS = {
+  individual: 'Practitioner',
+  channel: 'Channel',
+  app: 'App',
+  organisation: 'Organisation',
+  school: 'School',
+  publisher: 'Publisher',
+};
+const UP_NEXT_PAGE = 20;
+
+// UP NEXT (owner, 18 Nov 2026): the day's outreach. Every listing with an
+// email that has never been contacted, organisations and schools first, then
+// practitioners (api/admin/journey/up-next → utils/journey.js upNext), each
+// with its own Start, and how many were started today out of the day's 50.
+// The owner presses each Start; at 50 the buttons here rest until tomorrow
+// (a listing's own Outreach tab still works). Started rows stay in place,
+// marked, until the list is refreshed, so nothing jumps under the pointer.
+function UpNext({ onStarted }) {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [shown, setShown] = useState(UP_NEXT_PAGE);
+  const [busy, setBusy] = useState(null);
+  const [results, setResults] = useState({});
+  const [extra, setExtra] = useState(0);
+
+  const load = useCallback(async () => {
+    setError(null);
+    try {
+      const res = await fetch('/api/admin/journey/up-next', { cache: 'no-store' });
+      const json = await res.json();
+      if (!res.ok || json.error) throw new Error(json.message || json.error || 'Could not load the list.');
+      setData(json);
+      setResults({});
+      setExtra(0);
+    } catch (err) {
+      setError(err.message);
+    }
+  }, []);
+
+  useEffect(() => {
+    load();
+  }, [load]);
+
+  const started = (data?.startedToday || 0) + extra;
+  const limit = data?.dailyStarts || 50;
+  const full = started >= limit;
+  const id = (l) => `${l.publisher ? 'p' : 'h'}:${l.slug}`;
+
+  const start = async (l) => {
+    if (busy || full) return;
+    setBusy(id(l));
+    try {
+      const res = await fetch('/api/admin/journey/start', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(l.publisher ? { publisher_slug: l.slug } : { healer_slug: l.slug }),
+      });
+      const json = await res.json();
+      if (!res.ok || json.error) {
+        setResults((r) => ({ ...r, [id(l)]: { type: 'error', text: json.message || json.error } }));
+        // A journey row exists even when email 1 failed to send.
+        if (json.error === 'send_failed') setExtra((n) => n + 1);
+      } else {
+        setResults((r) => ({
+          ...r,
+          [id(l)]: {
+            type: 'success',
+            text: json.redirected ? `Email 1 sent to ${json.emailSentTo} — the test address.` : `Email 1 sent to ${json.emailSentTo}.`,
+          },
+        }));
+        setExtra((n) => n + 1);
+        await onStarted();
+      }
+    } catch (err) {
+      setResults((r) => ({ ...r, [id(l)]: { type: 'error', text: err.message } }));
+    }
+    setBusy(null);
+  };
+
+  const listings = data?.listings || [];
+  const left = data?.left;
+
+  return (
+    <section className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4">
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Up next</p>
+        {data && (
+          <p className={`text-sm font-bold ${full ? 'text-amber-300' : 'text-white'}`}>
+            Started today: {started} of {limit}
+          </p>
+        )}
+      </div>
+      <p className="mt-1 text-xs text-slate-400">
+        Listings with an email that have never been contacted: organisations and schools first, then practitioners
+        (by tier, then name), then channels, apps and publishers. Each Start sends email 1 straight away.
+      </p>
+      {full && (
+        <p className="mt-3 rounded-lg border border-amber-500/30 bg-amber-500/5 p-3 text-xs text-amber-300">
+          Today&apos;s {limit} are started. The Start buttons here come back tomorrow.
+        </p>
+      )}
+
+      {error ? (
+        <p className="mt-3 text-xs text-red-400">{error}</p>
+      ) : !data ? (
+        <p className="mt-3 text-xs text-slate-500">Loading…</p>
+      ) : listings.length === 0 ? (
+        <p className="mt-3 text-xs text-slate-500">Every listing with an email has been contacted.</p>
+      ) : (
+        <>
+          <ol className="mt-3 divide-y divide-white/5 rounded-lg border border-white/10">
+            {listings.slice(0, shown).map((l, index) => {
+              const result = results[id(l)];
+              const done = result?.type === 'success';
+              return (
+                <li key={id(l)} className={`flex flex-wrap items-start justify-between gap-3 px-3 py-3 ${done ? 'opacity-60' : ''}`}>
+                  <div className="min-w-0 flex-1">
+                    <p className="text-sm text-white">
+                      <span className="mr-2 text-xs text-slate-600">{index + 1}.</span>
+                      <Link
+                        href={l.publisher ? '/admin/publishers' : `/admin/content/${encodeURIComponent(l.slug)}`}
+                        className="font-semibold hover:text-cyan-300"
+                      >
+                        {l.name}
+                      </Link>
+                      <span className="ml-2 text-xs text-slate-500">{KIND_LABELS[l.kind] || l.kind}</span>
+                    </p>
+                    <span className="block break-all font-mono text-[11px] text-slate-500">{l.email}</span>
+                    <ContactFacts recipientType={l.recipient_type} source={l.email_source} />
+                    {l.alsoAt.length > 0 && (
+                      <span className="mt-0.5 block text-[11px] text-slate-500">
+                        Same address as {l.alsoAt.join(', ')}: one journey covers both.
+                      </span>
+                    )}
+                    {result && (
+                      <span className={`mt-1 block text-xs ${done ? 'text-emerald-400' : 'text-red-400'}`}>{result.text}</span>
+                    )}
+                  </div>
+                  {!done && (
+                    <button
+                      type="button"
+                      onClick={() => start(l)}
+                      disabled={Boolean(busy) || full}
+                      title={l.warnings.length ? l.warnings.join(' ') : undefined}
+                      className="shrink-0 rounded-full bg-[#7c3aed] px-4 py-1.5 text-xs font-bold text-white hover:bg-[#6d28d9] disabled:cursor-not-allowed disabled:opacity-40"
+                    >
+                      {busy === id(l) ? 'Sending…' : 'Start'}
+                    </button>
+                  )}
+                </li>
+              );
+            })}
+          </ol>
+          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500">
+            <span>
+              {listings.length} not yet contacted
+              {left?.sameAddress ? ` · ${left.sameAddress} share an address already on the list or written to` : ''}
+              {left?.deceased ? ` · ${left.deceased} left out: the person has died` : ''}
+              {left?.claimed ? ` · ${left.claimed} claimed` : ''}
+            </span>
+            <span className="flex gap-3">
+              {shown < listings.length && (
+                <button type="button" onClick={() => setShown((n) => n + UP_NEXT_PAGE)} className="text-cyan-400 hover:text-cyan-300">
+                  Show {Math.min(UP_NEXT_PAGE, listings.length - shown)} more
+                </button>
+              )}
+              <button type="button" onClick={load} className="text-slate-400 underline hover:text-white">
+                Refresh the list
+              </button>
+            </span>
+          </div>
+        </>
+      )}
+    </section>
+  );
+}
+
 export default function AdminOutreachPage() {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -421,10 +598,13 @@ export default function AdminOutreachPage() {
 
       <p className="mb-5 rounded-xl border border-white/10 bg-[#111827] p-4 text-xs leading-relaxed text-slate-400">
         Every journey of every kind is listed here: practitioners, channels, apps, organisations, schools and
-        publishers. Start one from the listing&apos;s own page: Content → the listing → <strong>Outreach</strong> tab →
-        Start email journey. A publisher has no listing page in the admin, so start it from Publishers → Email
+        publishers. The day&apos;s outreach is in <strong>Up next</strong> below, each listing with its own Start. Or
+        start one from the listing&apos;s own page: Content → the listing → <strong>Outreach</strong> tab → Start
+        email journey. A publisher has no listing page in the admin, so start it from Publishers → Email
         journey, or the panel below. Delivered and bounced come from Resend; opens and clicks are not tracked.
       </p>
+
+      <UpNext onStarted={load} />
 
       <PublisherStart onStarted={load} />
 

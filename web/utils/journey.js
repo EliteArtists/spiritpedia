@@ -235,6 +235,84 @@ export function journeyState(journey, { claimed = false } = {}) {
   return 'stopped';
 }
 
+// UP NEXT (owner, 18 Nov 2026): the daily outreach list on Admin → Outreach.
+// The owner starts up to DAILY_STARTS journeys a day, by hand, one Start
+// button each; nothing here sends.
+export const DAILY_STARTS = 50;
+
+// Organisations and schools first, then practitioners, then the rest. Within
+// a kind, by tier, then by name.
+const UP_NEXT_KINDS = ['organisation', 'school', 'individual', 'channel', 'app', 'publisher'];
+const UP_NEXT_TIERS = ['superhero', 'ascended_master', 'luminary', 'local_hero'];
+const rank = (list, value) => {
+  const i = list.indexOf(value);
+  return i === -1 ? list.length : i;
+};
+const address = (email) => (email || '').trim().toLowerCase();
+
+// Listings with an email that have never been contacted, in order. Pure.
+//   listings  { key, kind, name, email, tier, deceased, claimed }
+//   journeys  every journey ever, of any channel or state: { key }, where key
+//             is the listing's (healer slug, or "publisher:<id>")
+// Left out, and counted in `left`:
+//   contacted     any journey at all, a form contact included
+//   claimed       they have joined
+//   deceased      a person who has died: email 1 asks them for an interview
+//   sameAddress   the address was already written to through another listing
+//                 (one inbox can sit behind a school and its founder)
+//   switchedOff   a kind not in OUTREACH_KINDS_APPROVED
+// Two uncontacted listings with one address: the first in order stays, and
+// the others are named on it (alsoAt), so the inbox gets one journey.
+export function upNext({ listings, journeys }) {
+  const contacted = new Set(journeys.map((j) => j.key));
+  const written = new Set(listings.filter((l) => contacted.has(l.key)).map((l) => address(l.email)));
+  const left = { contacted: 0, claimed: 0, deceased: 0, sameAddress: 0, switchedOff: 0 };
+  const candidates = [];
+  for (const l of listings) {
+    if (!address(l.email)) continue;
+    if (contacted.has(l.key)) left.contacted += 1;
+    else if (l.claimed) left.claimed += 1;
+    else if (l.deceased && l.kind === 'individual') left.deceased += 1;
+    else if (written.has(address(l.email))) left.sameAddress += 1;
+    else if (!outreachAllowedFor(l.kind)) left.switchedOff += 1;
+    else candidates.push(l);
+  }
+  candidates.sort(
+    (a, b) =>
+      rank(UP_NEXT_KINDS, a.kind) - rank(UP_NEXT_KINDS, b.kind) ||
+      rank(UP_NEXT_TIERS, a.tier) - rank(UP_NEXT_TIERS, b.tier) ||
+      (a.name || '').localeCompare(b.name || '', 'en', { sensitivity: 'base' })
+  );
+  const byAddress = new Map();
+  const list = [];
+  for (const l of candidates) {
+    const first = byAddress.get(address(l.email));
+    if (first) {
+      first.alsoAt.push(l.name);
+      left.sameAddress += 1;
+    } else {
+      const row = { ...l, alsoAt: [] };
+      byAddress.set(address(l.email), row);
+      list.push(row);
+    }
+  }
+  return { list, left };
+}
+
+// The owner's day, for "started today": Portugal and the UK share a clock.
+export function outreachDay(value) {
+  return new Date(value).toLocaleDateString('en-CA', { timeZone: 'Europe/London' });
+}
+
+// Email journeys started on the same day as `now`. Form contacts are not
+// emails and don't count; a journey stopped since (a bounce) still does.
+export function startedToday(journeys, now = new Date()) {
+  const todayIs = outreachDay(now);
+  return journeys.filter(
+    (j) => (j.channel || 'email') === 'email' && j.started_at && outreachDay(j.started_at) === todayIs
+  ).length;
+}
+
 // A column or table that migration 0044 adds, and the database has not got
 // yet: Postgres says 42703/42P01, PostgREST PGRST204/PGRST205. The routes
 // then carry on without it and say plainly what is missing.
