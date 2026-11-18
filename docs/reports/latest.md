@@ -82,3 +82,7 @@ All of these ran on a throwaway dev listing and account, deleted afterwards. Dev
 - **Live (read-only):** of 27 open journeys, none is to a claimed listing, so the migration's one-off "stop claimed journeys" step will change nothing there.
 
 **Safe to run 0053 on live.** Expected check row: true, 4, true, 1, 1, 0.
+
+## 0053 on live (18 Nov 2026)
+
+The owner ran it: true, 4, true, 1, 1, 0. Checked read-only: Andrea Kennedy is locked ("owner request — keep minimal (18 Nov 2026)"), with one log line. She has no offerings or free resources, and her journey is stopped (replied). Mike Maher's journey is stopped (claimed).
