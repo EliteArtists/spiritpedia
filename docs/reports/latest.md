@@ -69,3 +69,16 @@ migration 0053". **Not yet tested:** the lock and the change log themselves, whi
    "only her short bio, her photo and her website link". I left these two because the
    videos come from that channel and the email is how visitors reach her. Say if they
    should go too.
+
+## Migration 0053 tested on dev (18 Nov 2026, after the owner ran it: true, 4, true, 1, 1, 0)
+
+All of these ran on a throwaway dev listing and account, deleted afterwards. Dev now holds only Andrea's lock and its log line.
+- **Lock:** Switch lock on and off in the Content tab both work. Each writes a `listing_locks` row (or removes it) and a log line; the Keep minimal badge and the panel show.
+- **Refusal:** with the lock on, adding a video, a book, an offering or a free resource was refused by the database, both for the test listing and for Andrea. The Ingestion form's route gives the reason in words. `ingest.mjs` stopped with "is locked … Nothing inserted" and didn't apply its profile update, and `link-hub.mjs` refused to link. `fix-images.mjs` reads both locks. With the lock off, all four inserts went in again.
+- **Edits while locked:** editing, removing one and removing all still work.
+- **Change log:** 8 entries in order (lock, remove, unlock, edit, lock, edit, remove all, unlock). Edits keep the changed fields before and after; removals keep full copies of the rows (remove all: all 3).
+- **Ops:** Locked listings shows Andrea Kennedy, linked to her Content tab.
+- **Claim trigger:** an unrelated profile change left a running journey alone. Linking the account to the listing stopped it as "claimed", and the same happened for a paused journey and for a publisher journey.
+- **Live (read-only):** of 27 open journeys, none is to a claimed listing, so the migration's one-off "stop claimed journeys" step will change nothing there.
+
+**Safe to run 0053 on live.** Expected check row: true, 4, true, 1, 1, 0.
