@@ -135,21 +135,29 @@ class HomeScreen extends ConsumerWidget {
               ),
             );
             // Practitioners Near You, for their area (docs/personalisation.md):
-            // in person within 50 km, nearest first; then online ones. Never
-            // empty with an area: nobody within 50 km makes it "Closest to
-            // you", the ten nearest with how far away each is (the website's
-            // rule too; docs/reports/2026-11-03-near-you-plan.md).
-            final near = nearYou(shelves.localHeroes, area, places);
-            final closest = area != null && near.near.isEmpty
-                ? closestTo(shelves.localHeroes, area, places)
-                : const <({Healer healer, double km})>[];
-            final nearby = closest.isNotEmpty
-                ? [for (final c in closest) c.healer]
-                : [...near.near, ...near.online];
+            // sorted, never filtered (owner, 10 Nov 2026). Those with a town
+            // nearest first, each with how far away they are; then everyone
+            // with no town. Nobody within 50 km makes it "Closest to you":
+            // the same full list, under that name (the website's rule too,
+            // web/components/NearYouShelf.jsx).
+            // Schools and organisations nearest first once an area is set
+            // (owner, 11 Nov 2026): nobody hidden, those with no town last.
+            final schools = nearestFirst(shelves.schools, area, places);
+            final organisations = nearestFirst(
+              shelves.organisations,
+              area,
+              places,
+            );
+            final sorted = nearYou(shelves.localHeroes, area, places);
             final distances = {
-              for (final c in closest)
-                c.healer.id: distanceLabel(c.km, area!.country),
+              for (final s in sorted)
+                if (s.km != null)
+                  s.healer.id: distanceLabel(s.km!, area!.country),
             };
+            final near = area != null && anyNear(sorted);
+            // "Closest to you" only when there is a distance to show.
+            final closest = area != null && !near && distances.isNotEmpty;
+            final nearby = [for (final s in sorted) s.healer];
             // Never show emptied every shelf: say so, never a blank screen.
             final nothingLeft =
                 !hiding.isEmpty &&
@@ -201,15 +209,9 @@ class HomeScreen extends ConsumerWidget {
               ),
               SliverToBoxAdapter(
                 child: healerShelf(
-                  closest.isNotEmpty
-                      ? 'Closest to you'
-                      : 'Practitioners Near You',
+                  closest ? 'Closest to you' : 'Practitioners Near You',
                   nearby,
-                  note: AreaNote(
-                    area: area,
-                    nearCount: near.near.length,
-                    closest: closest.isNotEmpty,
-                  ),
+                  note: AreaNote(area: area, near: near, closest: closest),
                   distances: distances,
                   badge: ShelfBadge(
                     label: 'LOCAL HERO',
@@ -247,12 +249,12 @@ class HomeScreen extends ConsumerWidget {
                 child: Shelf(
                   title: 'Schools & Academies',
                   subtitle: 'Train With a School',
-                  itemCount: shelves.schools.length,
+                  itemCount: schools.length,
                   itemWidth: 200,
                   height: 230,
                   itemBuilder: (_, i) => SchoolCard(
-                    school: shelves.schools[i],
-                    teacherCount: teacherCount(shelves.schools[i], links),
+                    school: schools[i],
+                    teacherCount: teacherCount(schools[i], links),
                   ),
                 ),
               ),
@@ -262,12 +264,12 @@ class HomeScreen extends ConsumerWidget {
                 child: Shelf(
                   title: 'Retreat Centres & Platforms',
                   subtitle: 'Discover Where They Teach',
-                  itemCount: shelves.organisations.length,
+                  itemCount: organisations.length,
                   itemWidth: 200,
                   height: 230,
                   itemBuilder: (_, i) => SchoolCard(
-                    school: shelves.organisations[i],
-                    teacherCount: teacherCount(shelves.organisations[i], links),
+                    school: organisations[i],
+                    teacherCount: teacherCount(organisations[i], links),
                     kind: 'Organisation',
                   ),
                 ),
@@ -354,17 +356,19 @@ class _Problem extends StatelessWidget {
 /// Under Practitioners Near You: "Set your area" for anyone who wants it
 /// sooner than the star asks; with an area, where it is and a way to change
 /// it — and, when nobody is near yet, that the ones shown are the closest
-/// (or, with nobody placed at all, that they work online).
+/// (or, with nobody placed at all, just that nobody is near yet).
 class AreaNote extends StatelessWidget {
   const AreaNote({
     super.key,
     required this.area,
-    required this.nearCount,
+    this.near = false,
     this.closest = false,
   });
 
   final Place? area;
-  final int nearCount;
+
+  /// Someone on the shelf is within [nearRadiusKm].
+  final bool near;
 
   /// The shelf is "Closest to you".
   final bool closest;
@@ -374,11 +378,11 @@ class AreaNote extends StatelessWidget {
     final place = area;
     final text = place == null
         ? null
-        : nearCount > 0
-        ? 'Near ${place.label}'
+        : near
+        ? 'Near ${place.label}, nearest first'
         : closest
         ? 'Nobody near ${place.name} yet. These are the closest to you.'
-        : 'No practitioners near ${place.name} yet — these offer online sessions.';
+        : 'No practitioners near ${place.name} yet.';
     return Padding(
       padding: const EdgeInsets.only(top: 2),
       child: Wrap(

@@ -25,7 +25,7 @@ Not code. Dated, so it's clear what is late.
 | 12 Nov 2026 | **Google Play:** apply for production when closed testing ends |
 | Once production access is granted | **Google Play:** release build 28 |
 | From 18 Nov 2026 | **Outreach:** up to 50 journeys a day from Admin → Outreach → Up next (§20); night sprints paused until every listing is contacted |
-| Now (built 17 Nov) | **App 1.0.2 (build 29):** Google Play has it; submit on Apple once its outage clears; when both are approved, the assistant merges `release/1.0.2` into `main`. Submit to both stores (`~/Sites/spiritpedia-1.0.2`, steps in `docs/reports/2026-11-16-owner-answers-evening.md` §5) |
+| Done (18 Nov 2026) | **App 1.0.2 (build 29):** live on the App Store and Google Play; `release/1.0.2` merged into `main`. Next app release: 1.0.3 (deep links) |
 | Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list (owner doing it, 16 Nov); PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
 | Open | **World of Books (Awin):** reapply after fixing the profile |
 | Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
@@ -1498,7 +1498,7 @@ detail pages, email-code sign-in with Library sync and account deletion, push.
 | 26 | 28 Oct | *iOS only; built, never uploaded (replaced by 27; IPA and archive deleted 28 Oct).* For You with nothing chosen opens the same Tailor Spiritpedia page as Account, with the same star words ("Entirely optional, and never shared. Your choices only shape what you see in Spiritpedia. Change them anytime.") and the same "Don’t show me again"; Tailor's sections now run More of · Let Spiritpedia learn from what I explore · Never show · Your Area; Your Area unset reads "Do you want me to show you practitioners in your area?" with **Set Your Area**; clearing every choice goes quietly back to View All (no "back to how everyone sees it" message). 334 tests. Not checked in the simulator (skipped at the owner's request) |
 | **27** | 28 Oct | **On TestFlight** (iOS only; Android stays at 25). From For You the star always says the Tailor intro, even after "Don’t show me again" in Account. **"Let Spiritpedia learn from what I explore" signed out:** greyed, with "Sign in so I can learn from what you explore." and a **Sign in** link that signs in in a sheet and stays on Tailor (the switch looked dead on the owner's signed-out iPad and Mac; it was never an iPad layout fault). The star's words on Tailor move on as soon as the page is scrolled (whatever scrolled under them could not be tapped for a few seconds). 336 tests |
 | **28 (1.0.1)** | 3 Nov | **Built for both stores** after the owner's simulator review (`app/build/ios-release/Spiritpedia-1.0.1-28.ipa`, archive `2026-11-03/Spiritpedia 1.0.1 (28).xcarchive`; `app/build/android-release/Spiritpedia-1.0.1-28.aab`, version code 28, the upload key, every native library 16 KB aligned). For the owner to upload: TestFlight and the Google closed test; 1.0.1 goes to Apple review once 1.0 is approved. The **push package** (two switches, Discoveries and Account updates; openings and the first real visit; in-app notes on both platforms, quiet about the screen already open; §9.11, §10.11); **Closest to you** (§10.8); the **hubs app side** (Schools & Academies and Retreat Centres & Platforms shelves, school and organisation pages with Our Teachers, "Founder of / Teaches at / Teaches on" lines, SCHOOL and ORGANISATION labels; §17.11). Needs migration 0032 |
-| **29 (1.0.2)** | 17 Nov | **Built for both stores** from the worktree `~/Sites/spiritpedia-1.0.2` with `tool/build_release.sh` (`app/build/ios/ipa/Spiritpedia.ipa` and archive `app/build/ios/archive/Runner.xcarchive`, build 29, `aps-environment` production, iPhone and iPad; `app/build/android-release/Spiritpedia-1.0.2-29.aab`, version code 29, the upload key). Archive opened in the Organizer for the owner to upload. Near You never hides anyone, subject search spellings, subject pages in tier order, crisis-check spellings, Amazon offering disclosure, nearest-first Schools and Retreat Centres, Amazon taps counted, School label. Deep links in 1.0.3 |
+| **29 (1.0.2)** | 17 Nov | **Built for both stores** from the worktree `~/Sites/spiritpedia-1.0.2` with `tool/build_release.sh` (now kept with the earlier store builds: `app/build/ios-release/Spiritpedia-1.0.2-29.ipa`, and the archive in the Organizer, `~/Library/Developer/Xcode/Archives/2026-11-17/`, build 29, `aps-environment` production, iPhone and iPad; `app/build/android-release/Spiritpedia-1.0.2-29.aab`, version code 29, the upload key). Archive opened in the Organizer for the owner to upload. **Live on both stores 18 Nov 2026.** Near You never hides anyone, subject search spellings, subject pages in tier order, crisis-check spellings, Amazon offering disclosure, nearest-first Schools and Retreat Centres, Amazon taps counted, School label. Deep links in 1.0.3 |
 
 ays one line (`publisherMeta`: "18 authors ·
   Founded 1984", or "Independent press"); the page puts the tier, founding
@@ -1652,16 +1652,24 @@ rank at level 1 (§10.6).
   only (`NSLocationDefaultAccuracyReduced`); the position is rounded to 2
   decimal places (about 1 km) before `nearest_place()`, which stores nothing.
   "Type my city" searches `places`.
-- **Practitioners Near You:** in person within **50 km**, nearest first, then
-  online practitioners from anywhere. With no area, everyone shows.
-- **Closest to you** (1.0.1 and the website, owner 3 Nov 2026; plan in
-  `docs/reports/2026-11-03-near-you-plan.md`): with an area and nobody within
-  50 km, the shelf is never empty. It becomes **Closest to you**: the 10
-  nearest practitioners with a town, each card saying how far ("320 km away";
-  miles when the area is in the UK, US, Liberia or Myanmar), with "Nobody near
-  {town} yet. These are the closest to you." Always the area they set, never
-  live GPS. `closestTo()` and `distanceLabel()` in `shelf_rules.dart` and
-  `web/utils/area.js`, tested on both sides.
+- **Practitioners Near You** (1.0.2 and the website, owner 10 Nov 2026):
+  **sorted, never filtered.** With an area, everyone stays: those with a town
+  first, nearest first, each card saying how far ("320 km away"; miles when
+  the area is in the UK, US, Liberia or Myanmar), then everyone with no town.
+  With no area, everyone shows as before, with "Set your area".
+- **Closest to you:** when nobody is within **50 km**, the same full list is
+  titled Closest to you, with "Nobody near {town} yet. These are the closest
+  to you." Only when nobody in view has a town: "No practitioners near {town}
+  yet." Always the area they set, never live GPS. `nearYou()`, `byDistance()`,
+  `anyNear()` and `distanceLabel()` in `shelf_rules.dart`, and `nearYou` /
+  `nearestFirst` in `web/utils/area.js`: change both together. Detail in
+  `app/docs/personalisation.md` §4. (1.0.1 showed only those within 50 km plus
+  online practitioners, and Closest to you was the 10 nearest; plan in
+  `docs/reports/2026-11-03-near-you-plan.md`.)
+- **Schools & Academies** and **Retreat Centres & Platforms** (1.0.2): nearest
+  first once an area is set, those with no town last, nobody hidden
+  (`nearestFirst()`). Subject pages list teachers in tier order, nearest first
+  within each tier.
 - The Always-location purpose string exists only because Apple's upload scan
   sees geolocator's unused code (ITMS-90683); the app never asks for Always.
 
@@ -3225,8 +3233,9 @@ taps counted and the School label (eb76e2f), `main`'s `tool/build_release.sh` (e
 version **`1.0.2+29`** (29f686b). 383 tests pass, analyze clean. A worktree for building is at
 `~/Sites/spiritpedia-1.0.2`. Submission steps: `docs/reports/2026-11-16-owner-answers-evening.md` §5.
 **Deep links move to 1.0.3** (owner, 16 Nov): they need the Play app-signing SHA-256 and
-Associated Domains for `co.spiritpedia.app`. Once 1.0.2 is merged, §10.7's Near You rule
-on `main` should be updated to match.
+Associated Domains for `co.spiritpedia.app`. **Merged into `main` (18 Nov 2026)**, after both stores approved it; §10.8 now
+describes the 1.0.2 Near You rule, and `flutter test` on `main` passes the safety test again.
+The worktree `~/Sites/spiritpedia-1.0.2` is removed; the branch is kept.
 
 ---
 

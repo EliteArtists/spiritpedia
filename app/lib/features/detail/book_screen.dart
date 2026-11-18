@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/affiliate/amazon.dart';
+import '../../core/affiliate/amazon_clicks.dart';
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../data/models.dart';
@@ -14,12 +15,6 @@ import '../reviews/reviews_service.dart';
 import 'detail_providers.dart';
 import 'detail_widgets.dart';
 import '../../theme/layout.dart';
-
-/// The words the Associates Operating Agreement and FTC / UK ASA rules
-/// require wherever a tagged link appears — the website's wording.
-const amazonDisclosure =
-    'As an Amazon Associate, Spiritpedia earns from qualifying purchases. '
-    'It never changes what we recommend.';
 
 /// A book (web/app/books/[slug]/page.js).
 class BookScreen extends ConsumerWidget {
@@ -167,6 +162,11 @@ class PurchaseLinks extends StatelessWidget {
           url: amazon.url,
           background: const Color(0xFFFF9900),
           foreground: Colors.black,
+          onTap: () => countAmazonTap(
+            contentType: 'book',
+            contentSlug: book.slug,
+            url: amazon.url,
+          ),
         ),
       if (book.goodreadsUrl != null)
         OutboundButton(

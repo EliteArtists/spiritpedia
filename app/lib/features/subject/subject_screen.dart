@@ -3,10 +3,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../core/safety/medical_note.dart';
+import '../../data/models.dart';
 import '../../data/providers.dart';
+import '../../data/shelf_rules.dart';
 import '../../shared/widgets/cards.dart';
 import '../../shared/widgets/shelf.dart';
 import '../../theme/colors.dart';
+import '../area/area.dart';
 import '../detail/detail_widgets.dart';
 import '../interests/hidden_empty.dart';
 import '../interests/interests.dart';
@@ -91,6 +94,11 @@ class _SubjectBody extends ConsumerWidget {
     final name = subjectName(ref.watch(subjectsProvider).value, slug);
     final content = ref.watch(subjectContentProvider(slug));
     final directory = ref.watch(healerDirectoryProvider).value;
+    // Their towns, only once an area is set (as on Discover).
+    final area = ref.watch(areaProvider).place;
+    final places = area == null
+        ? const <int, Place>{}
+        : ref.watch(healerPlacesProvider).value ?? const <int, Place>{};
 
     return Scaffold(
       appBar: AppBar(),
@@ -124,6 +132,29 @@ class _SubjectBody extends ConsumerWidget {
               for (final g in byHealer)
                 if (g.healer.isPlatform) g,
             ];
+            // Teachers in tier order, then by name; nearest first within
+            // each tier once an area is set, with how far away each is
+            // (owner, 10 Nov 2026; the website's subject page). Channels
+            // and apps: Spiritpedia's own first, then by tier and name.
+            final teachers = subjectTeachers(
+              [
+                for (final h in c.healers)
+                  if (!h.isPlatform) h,
+              ],
+              area,
+              places,
+            );
+            final distances = {
+              for (final t in teachers)
+                if (t.km != null)
+                  t.healer.id: distanceLabel(t.km!, area!.country),
+            };
+            final channels = officialFirst(
+              byTier([
+                for (final h in c.healers)
+                  if (h.isPlatform) h,
+              ]),
+            );
             return ListView(
               padding: const EdgeInsets.only(
                 bottom: 32 + FloatingHomeStar.clearance,
@@ -183,19 +214,9 @@ class _SubjectBody extends ConsumerWidget {
                   (
                     'Teachers',
                     'Practitioners & Teachers',
-                    [
-                      for (final h in c.healers)
-                        if (!h.isPlatform) h,
-                    ],
+                    [for (final t in teachers) t.healer],
                   ),
-                  (
-                    'Channels & Apps',
-                    'Platforms & Channels',
-                    [
-                      for (final h in c.healers)
-                        if (h.isPlatform) h,
-                    ],
-                  ),
+                  ('Channels & Apps', 'Platforms & Channels', channels),
                 ])
                   Shelf(
                     title: title,
@@ -203,7 +224,10 @@ class _SubjectBody extends ConsumerWidget {
                     itemCount: people.length,
                     itemWidth: 172,
                     height: 240,
-                    itemBuilder: (_, i) => HealerCard(healer: people[i]),
+                    itemBuilder: (_, i) => HealerCard(
+                      healer: people[i],
+                      distance: distances[people[i].id],
+                    ),
                   ),
                 Shelf(
                   title: 'Free Resources',

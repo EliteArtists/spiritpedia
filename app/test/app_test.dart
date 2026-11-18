@@ -899,8 +899,8 @@ void main() {
         c.healer.name,
     ];
 
-    testWidgets('no area: everyone, and "Set your area"; typing a town ranks '
-        'the shelf: near in person first, then online', (tester) async {
+    testWidgets('no area: everyone, and "Set your area"; typing a town sorts '
+        'the shelf nearest first, nobody hidden', (tester) async {
       await start(tester);
       expect(nearNames(tester), ['Local One', 'No Tier Yet']);
       await tester.ensureVisible(find.byKey(const ValueKey('set-your-area')));
@@ -915,10 +915,13 @@ void main() {
       await tester.pumpAndSettle();
       await tester.tap(find.byKey(const ValueKey('area-result-2643123')));
       await tester.pumpAndSettle();
-      // In Manchester: No Tier Yet sees people there; Local One is London
-      // in person only, so out.
-      expect(find.text('Near Manchester, United Kingdom'), findsOneWidget);
-      expect(nearNames(tester), ['No Tier Yet']);
+      // In Manchester: No Tier Yet is there, so first; Local One is London
+      // in person only, and stays, further down (owner, 10 Nov 2026).
+      expect(
+        find.text('Near Manchester, United Kingdom, nearest first'),
+        findsOneWidget,
+      );
+      expect(nearNames(tester), ['No Tier Yet', 'Local One']);
     });
 
     testWidgets('"Use my location": a town, never a position', (tester) async {
@@ -935,7 +938,10 @@ void main() {
       await tester.pumpAndSettle();
       expect(location.asked, 1);
       expect(area.value.place?.name, 'London');
-      expect(find.text('Near London, United Kingdom'), findsOneWidget);
+      expect(
+        find.text('Near London, United Kingdom, nearest first'),
+        findsOneWidget,
+      );
       expect(nearNames(tester), ['Local One', 'No Tier Yet']);
     });
 

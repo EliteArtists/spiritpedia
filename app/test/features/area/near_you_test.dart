@@ -68,24 +68,39 @@ void main() {
       nowhere,
     ];
 
-    test('no area: everyone, as they were', () {
+    List<Healer> people(List<({Healer healer, double? km})> r) => [
+      for (final s in r) s.healer,
+    ];
+
+    test('no area: everyone, as they were, with no distances', () {
       final r = nearYou(all, null, places);
-      expect(r.near, all);
-      expect(r.online, isEmpty);
+      expect(people(r), all);
+      expect(r.every((s) => s.km == null), isTrue);
     });
 
-    test('in London: within 50 km nearest first, then online from anywhere; '
-        'local-only elsewhere left out', () {
+    test('in London: everyone stays; towns nearest first, then no town', () {
       final r = nearYou(all, london, places);
-      expect(r.near, [inLondon, inCroydon]);
-      expect(r.online, [manchesterOnline, nowhere]);
-      expect([...r.near, ...r.online], isNot(contains(manchesterLocal)));
+      expect(people(r), [
+        inLondon,
+        inCroydon,
+        manchesterLocal,
+        manchesterOnline,
+        nowhere,
+      ]);
+      expect(r.first.km, 0);
+      expect(r.last.km, isNull);
+      expect(anyNear(r), isTrue);
     });
 
-    test('in Manchester: nobody near but the Manchester ones', () {
-      final r = nearYou(all, manchester, places);
-      expect(r.near, [manchesterLocal, manchesterOnline]);
-      expect(r.online, [inLondon, nowhere]);
+    test('the same in Manchester: local-only people elsewhere are kept, '
+        'further down', () {
+      expect(people(nearYou(all, manchester, places)), [
+        manchesterLocal,
+        manchesterOnline,
+        inLondon,
+        inCroydon,
+        nowhere,
+      ]);
     });
 
     // The website's own cases (web/utils/area.test.mjs).
@@ -105,17 +120,28 @@ void main() {
       lng: 2.3488,
     );
 
-    test('closest to you: nearest first, with distances, towns only, ten at '
-        'most', () {
-      final r = closestTo(all, edinburgh, places);
-      expect([for (final c in r) c.healer], [
+    const newYork = Place(
+      id: 5128581,
+      name: 'New York',
+      region: 'New York',
+      country: 'United States',
+      lat: 40.7143,
+      lng: -74.006,
+    );
+
+    test('closest to you: nobody within 50 km, so the same full list, '
+        'nearest first, with distances', () {
+      final r = nearYou(all, edinburgh, places);
+      expect(anyNear(r), isFalse);
+      expect(people(r), [
         manchesterLocal,
         manchesterOnline,
         inLondon,
         inCroydon,
+        nowhere,
       ]);
       expect(r.first.km, closeTo(282, 5));
-      expect(closestTo(all, null, places), isEmpty);
+      // No longer capped at ten.
       final many = [
         for (var i = 0; i < 14; i++)
           FakeContentRepository.healer(
@@ -126,8 +152,68 @@ void main() {
             place: london.id,
           ),
       ];
-      expect(closestTo(many, paris, places), hasLength(10));
-      expect(closestTo([nowhere], paris, places), isEmpty);
+      expect(nearYou(many, paris, places), hasLength(14));
+      // Nobody with a town: still everyone, none with a distance.
+      final alone = nearYou([nowhere], paris, places);
+      expect(people(alone), [nowhere]);
+      expect(alone.single.km, isNull);
+    });
+
+    test('someone 5,000 km away and someone with no base both stay, after '
+        'nearer people', () {
+      final far = FakeContentRepository.healer(
+        6,
+        'far',
+        'Far',
+        'local_hero',
+        place: newYork.id,
+        availability: 'Local Only (In-Person)',
+      );
+      final noBase = FakeContentRepository.healer(
+        7,
+        'no-base',
+        'No Base',
+        'local_hero',
+        availability: 'Local Only (In-Person)',
+      );
+      final r = nearYou([noBase, far, inCroydon, inLondon], london, {
+        ...places,
+        newYork.id: newYork,
+      });
+      expect(people(r), [inLondon, inCroydon, far, noBase]);
+      expect(r[2].km, greaterThan(5000));
+      expect(r[3].km, isNull);
+    });
+
+    test('byDistance groups by rank first, then nearest, then no town, ties '
+        'in the order given', () {
+      int rank(Healer h) => h.id == 1 || h.id == 5 ? 0 : 1;
+      expect(people(byDistance(all, london, places, rank: rank)), [
+        inCroydon,
+        nowhere,
+        inLondon,
+        manchesterLocal,
+        manchesterOnline,
+      ]);
+    });
+
+    test('schools and organisations: nearest first, nobody hidden, no town '
+        'last', () {
+      expect(nearestFirst(all, null, places), all);
+      expect(nearestFirst(all, edinburgh, places), [
+        manchesterLocal,
+        manchesterOnline,
+        inLondon,
+        inCroydon,
+        nowhere,
+      ]);
+      expect(nearestFirst(all, london, places), [
+        inLondon,
+        inCroydon,
+        manchesterLocal,
+        manchesterOnline,
+        nowhere,
+      ]);
     });
 
     test('miles in the United Kingdom and the United States, kilometres '

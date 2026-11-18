@@ -410,11 +410,13 @@ is saved.
   `ensureProfile`). No explorer welcome.
 
 **Your area, the conductor and your name** (build 15; migration 0019)
-- **Practitioners Near You** uses the person's area: in person within 50 km,
-  nearest first, then online practitioners from anywhere. With nobody within
-  50 km it becomes **Closest to you** (1.0.1): the 10 nearest with a town,
-  each card saying how far (km, or miles for the UK, US, Liberia, Myanmar;
-  `closestTo` and `distanceLabel` in `data/shelf_rules.dart`). An area is a town
+- **Practitioners Near You** uses the person's area. From 1.0.2 it sorts and
+  never hides anyone (owner, 10 Nov 2026): those with a town nearest first,
+  each card saying how far (km, or miles for the UK, US, Liberia, Myanmar),
+  then those with no town. With nobody within 50 km it is **Closest to you**,
+  the same full list (`nearYou`, `byDistance` and `distanceLabel` in
+  `data/shelf_rules.dart`). Subject pages list teachers in tier order,
+  nearest first within each tier once an area is set (`subjectTeachers`). An area is a town
   (`places`), never a position; the rules are in `docs/personalisation.md` §4.
 - **Setting it:** "Set your area" on the shelf, Tailor Spiritpedia → Your
   Area ("Do you want me to show you practitioners in your area?" · **Set Your

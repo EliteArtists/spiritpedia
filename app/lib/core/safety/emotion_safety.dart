@@ -183,7 +183,14 @@ class EmotionSafety {
          for (final c in crisisCategories)
            (
              category: c.category,
-             regexes: [for (final p in c.phrases) _phraseRegex(p)],
+             // Each phrase is also matched written as one word, as on the
+             // website (owner, 10 Nov 2026): "selfharm", "killmyself".
+             regexes: [
+               for (final p in c.phrases) _phraseRegex(p),
+               for (final p in c.phrases)
+                 if (p.contains(RegExp(r'[\s-]')))
+                   _phraseRegex(p.replaceAll(RegExp(r'[\s-]+'), '')),
+             ],
            ),
        ],
        _ambiguousCompiled = [
@@ -419,9 +426,22 @@ class EmotionSafety {
       RegExp('(?:^|\\b)${_escapeForRegex(phrase)}(?:\\b|\$)');
 
   /// The crisis category this matches, or null. First category wins.
+  ///
+  /// Hyphens count as spaces here (owner, 10 Nov 2026), as on the website
+  /// (emotionSearchPatterns.js → checkCrisis): the normaliser keeps them, so
+  /// "self-harm" and "kill-myself" slipped past phrases stored with spaces.
+  /// Both forms are tested, so a stored phrase with a hyphen still matches.
   String? checkCrisis(String normalised) {
+    final spaced = normalised
+        .replaceAll('-', ' ')
+        .replaceAll(RegExp(r'\s+'), ' ')
+        .trim();
     for (final c in _crisisCompiled) {
-      if (c.regexes.any((re) => re.hasMatch(normalised))) return c.category;
+      if (c.regexes.any(
+        (re) => re.hasMatch(normalised) || re.hasMatch(spaced),
+      )) {
+        return c.category;
+      }
     }
     return null;
   }

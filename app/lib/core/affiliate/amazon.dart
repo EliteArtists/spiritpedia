@@ -42,6 +42,18 @@ const amazonTagsFromConfig = {
 
 typedef AmazonLink = ({String url, bool tagged});
 
+/// The words the Associates Operating Agreement and FTC / UK ASA rules
+/// require wherever a tagged link appears — the website's wording. Shown under a
+/// tagged link on the book and offering screens.
+const amazonDisclosure =
+    'As an Amazon Associate, Spiritpedia earns from qualifying purchases. '
+    'It never changes what we recommend.';
+
+/// The disclosure sentence alone, beside the menu's Affiliate Disclosure
+/// entry, as in the website's footer (owner, 10 Nov 2026).
+const amazonAssociateLine =
+    'As an Amazon Associate, Spiritpedia earns from qualifying purchases.';
+
 /// rawUrl → (url, tagged), or null for anything that is not a usable Amazon
 /// product link (a Goodreads URL in amazon_url, a malformed ASIN) — the caller
 /// hides the button rather than send someone somewhere misleading.

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../core/affiliate/amazon.dart';
 import '../../core/config.dart';
 import '../../core/links/open_link.dart';
 import '../../core/links/share.dart';
@@ -161,6 +162,7 @@ class AppMenu extends ConsumerWidget {
         key: const ValueKey('menu-affiliate'),
         icon: Icons.handshake_outlined,
         label: 'Affiliate Disclosure',
+        detail: amazonAssociateLine,
         quiet: true,
         onTap: () => open('${AppConfig.siteUrl}/affiliate-disclosure'),
       ),

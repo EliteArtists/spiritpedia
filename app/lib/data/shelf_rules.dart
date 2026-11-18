@@ -196,6 +196,38 @@ const organisationShelfMinimum = 5;
 
 const _hubTierRank = {'superhero': 0, 'ascended_master': 1, 'luminary': 2};
 
+/// The site's tier order: Superhero, Ascended Master, Luminary, then Local
+/// Hero and anything untiered. The website's tierRank (utils/listings.js).
+int tierRank(Healer h) => _hubTierRank[h.tier] ?? 3;
+
+/// [healers] in tier order, then by name (a stable order for ties): a
+/// subject page's teachers and channels (owner, 10 Nov 2026). The website's
+/// byTier (utils/listings.js) — change both together.
+List<Healer> byTier(List<Healer> healers) {
+  final indexed = [...healers.indexed]
+    ..sort((a, b) {
+      final tier = tierRank(a.$2) - tierRank(b.$2);
+      if (tier != 0) return tier;
+      final name = a.$2.name.toLowerCase().compareTo(b.$2.name.toLowerCase());
+      return name != 0 ? name : a.$1 - b.$1;
+    });
+  return [for (final (_, h) in indexed) h];
+}
+
+/// A subject page's teachers (owner, 10 Nov 2026): tier order, then by
+/// name; once an area is set, still tier first, then nearest first within
+/// each tier, each with its distance in km, then those with no town. Nobody
+/// is left out. The website's SubjectHealersShelf.jsx.
+List<({Healer healer, double? km})> subjectTeachers(
+  List<Healer> teachers,
+  Place? area,
+  Map<int, Place> places,
+) {
+  final tiered = byTier(teachers);
+  if (area == null) return [for (final h in tiered) (healer: h, km: null)];
+  return byDistance(tiered, area, places, rank: tierRank);
+}
+
 /// Takes Explore These Channels' list (channels, apps, organisations) and
 /// moves the organisations onto their own shelf when there are enough of
 /// them: Spiritpedia Official first, then by tier, then most teachers. Below
@@ -211,14 +243,13 @@ const _hubTierRank = {'superhero': 0, 'ascended_master': 1, 'luminary': 2};
   if (orgs.length < organisationShelfMinimum) {
     return (organisations: const <Healer>[], platforms: platforms);
   }
-  int rank(Healer h) => _hubTierRank[h.tier] ?? 3;
   final scored = [
     for (final (i, h) in orgs.indexed) (h, i, teacherCount(h, links)),
   ];
   scored.sort((a, b) {
     final official = (b.$1.official ? 1 : 0) - (a.$1.official ? 1 : 0);
     if (official != 0) return official;
-    final tier = rank(a.$1) - rank(b.$1);
+    final tier = tierRank(a.$1) - tierRank(b.$1);
     if (tier != 0) return tier;
     final teachers = b.$3 - a.$3;
     return teachers != 0 ? teachers : a.$2 - b.$2;
@@ -784,7 +815,9 @@ List<String> pillarsByInterest(
 
 // ── Your area (Practitioners Near You) ──────────────────────────────────────
 
-/// How far "near" reaches for in-person sessions.
+/// How far "near" reaches: anyone within it makes the shelf "Practitioners
+/// Near You"; nobody within it, "Closest to you". Nobody is left out either
+/// way ([nearYou]).
 const nearRadiusKm = 50.0;
 
 /// Kilometres between two towns' centres (the haversine formula).
@@ -801,41 +834,74 @@ double distanceKm(Place a, Place b) {
   return 2 * r * math.asin(math.min(1, math.sqrt(h)));
 }
 
-/// Practitioners Near You for someone in [area]: those within
-/// [nearRadiusKm] who see people in person, nearest first; then everyone
-/// who offers sessions online, from anywhere, in [practitioners]' order.
-/// Local-only practitioners elsewhere are left out. [places] are the
-/// practitioners' towns, by id. No area: [practitioners] as they are.
-({List<Healer> near, List<Healer> online}) nearYou(
+/// Practitioners Near You for someone in [area] (owner, 10 Nov 2026):
+/// sorted, never filtered. Everyone given stays. Those with a town come
+/// first, nearest first, each with its distance in km; then everyone with no
+/// town (km null), in [practitioners]' order. [places] are the
+/// practitioners' towns, by id. No area: [practitioners] as they are, with
+/// no distances. The website's nearYou (web/utils/area.js) — change both
+/// together.
+List<({Healer healer, double? km})> nearYou(
   List<Healer> practitioners,
   Place? area,
   Map<int, Place> places,
 ) {
-  if (area == null) return (near: practitioners, online: const []);
-  final near = <(Healer, double, int)>[];
-  for (final (i, h) in practitioners.indexed) {
-    final town = places[h.placeId];
-    if (town == null) continue;
-    final km = distanceKm(area, town);
-    if (km <= nearRadiusKm) near.add((h, km, i));
+  if (area == null) {
+    return [for (final h in practitioners) (healer: h, km: null)];
   }
-  near.sort((a, b) {
-    final c = a.$2.compareTo(b.$2);
-    return c != 0 ? c : a.$3.compareTo(b.$3);
-  });
-  final nearOnes = [for (final (h, _, _) in near) h];
-  final shown = {for (final h in nearOnes) h.id};
-  return (
-    near: nearOnes,
-    online: [
-      for (final h in practitioners)
-        if (h.offersOnline && !shown.contains(h.id)) h,
-    ],
-  );
+  return byDistance(practitioners, area, places);
 }
 
-/// How many "Closest to you" shows when nobody is within [nearRadiusKm].
-const closestCount = 10;
+/// The sort under Near You, the hub shelves and the subject pages. [rank]
+/// groups first (the subject pages pass [tierRank]); within a group, those
+/// with a town nearest first, then those with none; ties keep [list]'s
+/// order. km is null for no town. The website's nearestFirst
+/// (web/utils/area.js) — change both together.
+List<({Healer healer, double? km})> byDistance(
+  List<Healer> list,
+  Place area,
+  Map<int, Place> places, {
+  int Function(Healer)? rank,
+}) {
+  final scored = [
+    for (final (i, h) in list.indexed)
+      (
+        h,
+        i,
+        rank?.call(h) ?? 0,
+        switch (places[h.placeId]) {
+          final town? => distanceKm(area, town),
+          null => null,
+        },
+      ),
+  ];
+  scored.sort((a, b) {
+    final r = a.$3 - b.$3;
+    if (r != 0) return r;
+    final (ka, kb) = (a.$4, b.$4);
+    if ((ka == null) != (kb == null)) return ka == null ? 1 : -1;
+    final d = ka == null ? 0 : ka.compareTo(kb!);
+    return d != 0 ? d : a.$2 - b.$2;
+  });
+  return [for (final (h, _, _, km) in scored) (healer: h, km: km)];
+}
+
+/// True when anyone in a [nearYou] list is within [nearRadiusKm]: the shelf
+/// is then "Practitioners Near You", otherwise "Closest to you".
+bool anyNear(List<({Healer healer, double? km})> sorted) =>
+    sorted.any((s) => s.km != null && s.km! <= nearRadiusKm);
+
+/// Schools & Academies and Retreat Centres & Platforms for someone in [area]
+/// (owner, 11 Nov 2026): sorted, never filtered. Those with a town come
+/// first, nearest first; then those with none, in [hubs]' order; ties keep
+/// that order. No area: [hubs] as they are.
+List<Healer> nearestFirst(
+  List<Healer> hubs,
+  Place? area,
+  Map<int, Place> places,
+) => area == null
+    ? hubs
+    : [for (final s in byDistance(hubs, area, places)) s.healer];
 
 // Countries whose people think in miles; everyone else gets kilometres. Read
 // from the area's own country, never the phone's locale.
@@ -856,28 +922,4 @@ String distanceLabel(double km, String country) {
     (_) => ',',
   );
   return '$digits ${miles ? (n == 1 ? 'mile' : 'miles') : 'km'} away';
-}
-
-/// "Closest to you", for when nobody is within [nearRadiusKm] of [area]: the
-/// [count] practitioners nearest it, town centre to town centre, nearest
-/// first, each with its distance in km. Practitioners with no town can't be
-/// placed, so they are left out. Empty when nobody has a town. The website's
-/// closestTo (utils/area.js) — change both together.
-List<({Healer healer, double km})> closestTo(
-  List<Healer> practitioners,
-  Place? area,
-  Map<int, Place> places, {
-  int count = closestCount,
-}) {
-  if (area == null) return const [];
-  final found = <(Healer, double, int)>[];
-  for (final (i, h) in practitioners.indexed) {
-    final town = places[h.placeId];
-    if (town != null) found.add((h, distanceKm(area, town), i));
-  }
-  found.sort((a, b) {
-    final c = a.$2.compareTo(b.$2);
-    return c != 0 ? c : a.$3.compareTo(b.$3);
-  });
-  return [for (final (h, km, _) in found.take(count)) (healer: h, km: km)];
 }
