@@ -68,3 +68,14 @@ Nothing in `~/.secrets`, any env file, `docs/`, `supabase/` or the git history w
 
 Under 1 GB, not touched: `~/.pub-cache` (773 MB), and four older non-store Spiritpedia
 archives (builds 16, 22, 23, 24; 744 MB together).
+
+## Round 2 (owner, 18 Nov 2026)
+
+- The owner removed the simulator dyld cache (9.9 GB) themselves: 12 → 22 GB free.
+- Removed with the owner's yes: the iOS 18.0 simulator runtime (`xcrun simctl runtime delete`),
+  VS Code updater leftovers (ShipIt, 1.6 GB) and Codex runtimes (`~/.cache/codex-runtimes`,
+  1.6 GB, not in use).
+- Kept, as the owner asked: the iOS 18.2 runtime (older-iOS testing), the Android emulator,
+  the Android NDK, and the Claude, Chrome and VS Code data.
+
+**Free now: 33 GB** (from 3.8 GB at the start of the day).
