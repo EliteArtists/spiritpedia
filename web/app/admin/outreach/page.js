@@ -527,6 +527,7 @@ function UpNext({ onStarted }) {
               {left?.sameAddress ? ` · ${left.sameAddress} share an address already on the list or written to` : ''}
               {left?.deceased ? ` · ${left.deceased} left out: the person has died` : ''}
               {left?.claimed ? ` · ${left.claimed} claimed` : ''}
+              {data.partnerships?.length ? ` · Partnership — no cold email: ${data.partnerships.join(', ')}` : ''}
             </span>
             <span className="flex gap-3">
               {shown < listings.length && (

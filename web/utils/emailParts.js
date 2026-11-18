@@ -24,8 +24,10 @@ export function greeting(firstName) {
 //   team  — the Spiritpedia team, warmly ("we")
 //   star  — the Guiding Star ("I")
 //   plain — a decision or a notice, without "With love"
+//   ross  — Ross, in the first person ("I"): every outreach email (owner, 18 Nov 2026)
 export const SIGN_OFFS = {
   team: ['With love,', 'The Spiritpedia team'],
+  ross: ['With love,', 'Ross'],
   star: ['Your Guiding Star', 'and the Spiritpedia Constellation'],
   starFarewell: ['See you among the stars,', '', 'Your Guiding Star', 'and the Spiritpedia Constellation'],
   plain: ['The Spiritpedia team'],

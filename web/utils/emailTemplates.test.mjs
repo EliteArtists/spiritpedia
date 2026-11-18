@@ -139,7 +139,7 @@ const LINKS = {
   claimUrl: 'https://www.spiritpedia.co/auth/claim?slug=jane-doe',
 };
 
-test('C1–C8: eight plain-text emails, each with both links, removal and the team sign-off', () => {
+test('C1–C8: eight plain-text emails, removal in each, signed by Ross; C1 has one link and no app line', () => {
   assert.equal(OUTREACH_EMAILS, 8);
   const subjects = [];
   for (let n = 1; n <= 8; n += 1) {
@@ -148,24 +148,54 @@ test('C1–C8: eight plain-text emails, each with both links, removal and the te
     assert.equal(m.html, undefined, `email ${n} must be text only`);
     assert.match(m.text, /^Hi Jane,\n\n/);
     assert.ok(m.text.includes(LINKS.profileUrl), `email ${n} profile link`);
-    assert.ok(m.text.includes(LINKS.claimUrl), `email ${n} claim link`);
+    // C1: the listing link only, the claim link offered by reply, no app
+    // line (owner, 18 Nov 2026). C2–C8: both links and the app line.
+    assert.equal(m.text.includes(LINKS.claimUrl), n !== 1, `email ${n} claim link`);
+    assert.equal(m.text.match(/https?:\/\/|spiritpedia\.co\/get-app/g).length, n === 1 ? 1 : 3, `email ${n} links`);
     assert.match(m.text, /remov/i, `email ${n} offers removal`);
-    // The app line under the sign-off, every email (owner, 17 Nov 2026).
-    assert.match(m.text, /With love,\nThe Spiritpedia team\n\n—\nSpiritpedia is even better on the app: spiritpedia\.co\/get-app$/);
+    assert.match(
+      m.text,
+      n === 1
+        ? /reply and I'll send you the link to claim it\.[\s\S]*With love,\nRoss$/
+        : /With love,\nRoss\n\n—\nSpiritpedia is even better on the app: spiritpedia\.co\/get-app$/
+    );
+    assert.doesNotMatch(m.text, /\b(we|our|us)\b(?! can talk)/i, `email ${n} is in "I"`);
     assert.equal(m.text.match(/App Store/g)?.length ?? 0, n === 1 ? 1 : 0, `email ${n} mentions the stores in C1 only`);
     assert.doesNotMatch(m.text, /\[|\]|undefined|pay for/);
   }
   assert.deepEqual(subjects, [
-    'An invitation from Spiritpedia',
+    'Jane, a question about your work',
     'A place for your work on Spiritpedia',
     'Help people find the services you offer',
     'Let people get to know your work',
     'Give people a reason to return to your work',
-    "We'd love to hear the story behind your work",
+    "I'd love to hear the story behind your work",
     'Your work, in your own words',
     'A final invitation from Spiritpedia',
   ]);
   assert.equal(outreachEmail(9, { firstName: 'Jane', ...LINKS }), null);
+  // No usable first name: "Hello," and a subject without a name.
+  assert.equal(outreachEmail(1, { firstName: '', ...LINKS }).subject, 'A question about your work');
+});
+
+// The practitioner C1–C8 against the owner's approved copy itself, as the
+// shared sequence is (sharedJourney.test.mjs), so a drift in either is caught.
+test('every practitioner email is the approved copy word for word', async () => {
+  const fs = await import('node:fs');
+  const doc = fs.readFileSync(new URL('../../docs/email-copy-2026-10-21.md', import.meta.url), 'utf8');
+  const squash = (text) => text.replace(/\s+/g, ' ').trim();
+  for (let n = 1; n <= 8; n += 1) {
+    const start = doc.indexOf(`### C${n}\n`);
+    const section = doc.slice(start, n < 8 ? doc.indexOf(`### C${n + 1}\n`) : doc.indexOf('## PART D'));
+    const subject = section.match(/^Subject: (.+)$/m)[1].replace('[first name]', 'Jane');
+    const body = section
+      .slice(section.indexOf('Hi [first name],') + 'Hi [first name],'.length, section.indexOf('With love,\nRoss'))
+      .replaceAll('[PROFILE LINK]', LINKS.profileUrl)
+      .replaceAll('[CLAIM LINK]', LINKS.claimUrl);
+    const m = outreachEmail(n, { firstName: 'Jane', ...LINKS });
+    assert.equal(m.subject, subject, `C${n} subject`);
+    assert.equal(squash(m.text.slice('Hi Jane,'.length, m.text.lastIndexOf('With love,'))), squash(body), `C${n} body`);
+  }
 });
 
 test('C4–C8 put the two links on their own lines', () => {

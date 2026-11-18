@@ -188,24 +188,30 @@ export function outreachFirstName(entityType, listingName) {
 
 // Removal and stopping are offered in every email, and nothing promises
 // bookings, exposure or prices: the wording is the approved copy, unchanged.
+//
+// ROSS'S VOICE (owner, 18 Nov 2026): every outreach email, both sequences, is
+// written in "I", signed "Ross" and sent as "Ross at Spiritpedia". Email 1 has
+// a personal subject and only the listing link: the claim link is offered by
+// reply, and there is no app footer (the app is mentioned in words). A
+// subject may be a function of the email's fields.
 const OUTREACH = {
   1: {
-    subject: 'An invitation from Spiritpedia',
-    body: ({ profileUrl, claimUrl }) => [
-      'We came across your work on social sites and wanted to get in contact.',
-      "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
-      `We've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
-      "If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.",
+    subject: ({ firstName }) => (firstName ? `${firstName}, a question about your work` : 'A question about your work'),
+    body: ({ profileUrl }) => [
+      'I came across your work on social sites and wanted to get in contact.',
+      "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
+      `I've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.`,
+      "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
     ],
   },
   2: {
     subject: 'A place for your work on Spiritpedia',
     body: ({ profileUrl, claimUrl }) => [
-      'We wanted to follow up on our invitation to Spiritpedia.',
-      "People can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. We'd love your work to be part of that discovery.",
-      `We've created a short public listing for you, but you haven't joined or approved it. You can view it here: ${profileUrl}.`,
+      'I wanted to follow up on my invitation to Spiritpedia.',
+      "People can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. I'd love your work to be part of that discovery.",
+      `I've created a short public listing for you, but you haven't joined or approved it. You can view it here: ${profileUrl}.`,
       `If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
-      "If you'd prefer us to remove it or stop these emails, simply reply and we'll take care of it.",
+      "If you'd prefer me to remove it or stop these emails, simply reply and I'll take care of it.",
     ],
   },
   3: {
@@ -213,10 +219,10 @@ const OUTREACH = {
     body: ({ profileUrl, claimUrl }) => [
       "Finding a practitioner often starts with a question: who can help me with what I'm going through?",
       'Spiritpedia brings spiritual teachings and practitioner services into the same place. Someone exploring a subject that matters to them can discover a practitioner whose work speaks to that interest, then find out how to get in touch or book a session.',
-      "We'd love people to discover what you offer, whether you work online or in person.",
-      `Here's the public listing we made for you: ${profileUrl}.`,
+      "I'd love people to discover what you offer, whether you work online or in person.",
+      `Here's the public listing I made for you: ${profileUrl}.`,
       `You can claim it here: ${claimUrl}.`,
-      "If you'd prefer us to remove it or stop these emails, simply reply.",
+      "If you'd prefer me to remove it or stop these emails, simply reply.",
     ],
   },
   4: {
@@ -224,10 +230,10 @@ const OUTREACH = {
     body: ({ profileUrl, claimUrl }) => [
       'Before someone books a session, they may want to understand your approach and get a feel for the person behind the work.',
       'A Spiritpedia profile can bring your introduction, videos, resources and links together, giving people a place to explore before they get in touch.',
-      "The short public listing we created for you is only a starting point. We'd love you to take charge of how your work is represented.",
+      "The short public listing I created for you is only a starting point. I'd love you to take charge of how your work is represented.",
       links(profileUrl, claimUrl),
-      'Our invitation to an interview is still open too. If that interests you, just reply.',
-      "If you'd prefer us to remove the listing or stop these emails, reply and we'll take care of it.",
+      'My invitation to an interview is still open too. If that interests you, just reply.',
+      "If you'd prefer me to remove the listing or stop these emails, reply and I'll take care of it.",
     ],
   },
   5: {
@@ -237,44 +243,44 @@ const OUTREACH = {
       'They might want to watch a video, explore a resource or simply save your profile for another day. On Spiritpedia, people can keep their favourites in their own Library, making it easier to return to the work that interests them.',
       'Your listing gives them somewhere to begin, and somewhere to come back to when they want to learn more or get in touch.',
       links(profileUrl, claimUrl),
-      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+      "If you'd prefer me to remove the listing or stop these emails, simply reply.",
     ],
   },
   6: {
-    subject: "We'd love to hear the story behind your work",
+    subject: "I'd love to hear the story behind your work",
     body: ({ profileUrl, claimUrl }) => [
       'What brought you to the work you do today?',
-      "That's part of what we'd love to explore in an interview: how you began, what your approach involves, and what you'd like people to understand before working with you.",
+      "That's part of what I'd love to explore in an interview: how you began, what your approach involves, and what you'd like people to understand before working with you.",
       "It's a chance for people to hear from you directly and get to know the person behind the profile.",
       "If you're interested, reply and we can talk about what would work for you. You don't need to claim your listing to discuss an interview, and you don't need to do an interview to claim it.",
       links(profileUrl, claimUrl),
-      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+      "If you'd prefer me to remove the listing or stop these emails, simply reply.",
     ],
   },
   7: {
     subject: 'Your work, in your own words',
     body: ({ profileUrl, claimUrl }) => [
-      "The public listing we created uses information available online. It may not tell the whole story of your work, and we haven't assumed that you approve it.",
+      "The public listing I created uses information available online. It may not tell the whole story of your work, and I haven't assumed that you approve it.",
       'Claiming the listing begins the process of putting you in charge of how your work is represented on Spiritpedia.',
-      "Perhaps there's something you'd like to clarify about your approach, the services you offer or how people should contact you. We'd love the page to reflect what you want people to know.",
+      "Perhaps there's something you'd like to clarify about your approach, the services you offer or how people should contact you. I'd love the page to reflect what you want people to know.",
       links(profileUrl, claimUrl),
-      "You can also reply with a correction or removal request without claiming anything. If you'd like us to stop these emails, just let us know.",
+      "You can also reply with a correction or removal request without claiming anything. If you'd like me to stop these emails, just let me know.",
     ],
   },
   8: {
     subject: 'A final invitation from Spiritpedia',
     body: ({ profileUrl, claimUrl }) => [
-      'This is our final follow-up about your Spiritpedia listing.',
-      "We'd still love to welcome you and hear about your work. If you'd like to speak with us about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.",
+      'This is my final follow-up about your Spiritpedia listing.',
+      "I'd still love to welcome you and hear about your work. If you'd like to speak with me about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.",
       links(profileUrl, claimUrl),
-      "If the timing isn't right, there's nothing you need to do. We won't send any more reminders in this sequence.",
-      "If you'd like the public listing removed, reply and we'll take care of it.",
+      "If the timing isn't right, there's nothing you need to do. I won't send any more reminders in this sequence.",
+      "If you'd like the public listing removed, reply and I'll take care of it.",
     ],
   },
 };
 
-// Under the sign-off of every outreach email, both sequences, every kind
-// (owner, 17 Nov 2026). Plain text: the address is written out short, as the
+// Under the sign-off of every outreach email from email 2 on, both
+// sequences, every kind (owner, 17 Nov 2026; not email 1 since 18 Nov). Plain text: the address is written out short, as the
 // owner gave it, and mail clients make it a link.
 const GET_APP = 'spiritpedia.co/get-app';
 const APP_FOOTER = { text: `${APP_LINE}: ${GET_APP}` };
@@ -285,19 +291,26 @@ function links(profileUrl, claimUrl) {
 
 export const OUTREACH_EMAILS = Object.keys(OUTREACH).length;
 
+// Email 1 carries one link and no footer; the rest carry the app line.
+const outreachFooter = (n) => (n === 1 ? null : APP_FOOTER);
+const subjectOf = (template, fields) =>
+  typeof template.subject === 'function' ? template.subject(fields) : template.subject;
+
 // PLAIN TEXT ONLY: { subject, text }, no html. A multipart email with markup
 // is what Gmail's tabbed inbox files under Promotions, where cold outreach
-// goes unseen; the two links are written out in full and mail clients make
+// goes unseen; the links are written out in full and mail clients make
 // them clickable. null for a number with no template.
 export function outreachEmail(n, { firstName, profileUrl, claimUrl }) {
   const template = OUTREACH[n];
   if (!template) return null;
+  const subject = subjectOf(template, { firstName: (firstName || '').trim() });
   const { text } = renderEmail({
-    subject: template.subject,
+    subject,
     blocks: [greeting(firstName), ...template.body({ profileUrl, claimUrl })],
-    footer: APP_FOOTER,
+    signOff: 'ross',
+    footer: outreachFooter(n),
   });
-  return { subject: template.subject, text };
+  return { subject, text };
 }
 
 /* ── C1–C8, SHARED. CHANNELS, APPS, ORGANISATIONS, SCHOOLS, PUBLISHERS ─── */
@@ -351,7 +364,7 @@ export function listingDetail(kind, facts = {}) {
   }
   if (kind === 'publisher') {
     return facts.books > 0
-      ? 'Your listing brings together an introduction to your publishing house and the books we list from your catalogue.'
+      ? 'Your listing brings together an introduction to your publishing house and the books Spiritpedia lists from your catalogue.'
       : fallback;
   }
   return fallback;
@@ -363,34 +376,34 @@ function listingLinks(listingUrl, claimUrl) {
 
 const SHARED_OUTREACH = {
   1: {
-    subject: 'An invitation from Spiritpedia',
-    body: ({ kind, name, listingUrl, claimUrl }) => [
-      `We came across your ${kind} and wanted to get in contact.`,
-      "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. We'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
-      `We've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: ${claimUrl}.`,
+    subject: ({ name }) => `A question for ${name}`,
+    body: ({ kind, name, listingUrl }) => [
+      `I came across your ${kind} and wanted to get in contact.`,
+      "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
+      `I've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.`,
       'To stop these emails, simply reply.',
-      "If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.",
+      "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
     ],
   },
   2: {
     subject: 'A place for your work on Spiritpedia',
     body: ({ kind, name, listingUrl, claimUrl }) => [
-      `We're following up about the free public listing we created for ${name}.`,
+      `I'm following up about the free public listing I created for ${name}.`,
       'Spiritpedia brings together spiritual teachers, communities and resources. People can explore familiar voices such as Eckhart Tolle and Ram Dass, then discover other work connected to their interests.',
       `Your listing gives them a way to find out about your ${kind}. You haven't joined Spiritpedia or approved it.`,
       listingLinks(listingUrl, claimUrl),
       'You can also reply with any corrections, without claiming it.',
-      "If you'd prefer us to remove it or stop these emails, simply reply and we'll take care of it.",
+      "If you'd prefer me to remove it or stop these emails, simply reply and I'll take care of it.",
     ],
   },
   3: {
     subject: 'Help people find what you offer',
     body: ({ name, listingUrl, claimUrl }) => [
       'People arrive at Spiritpedia looking for spiritual teachings, resources and places to explore.',
-      `We're contacting you about the free public listing we created for ${name}. It gives people interested in your area of work a place to learn what you offer and follow the links to find out more.`,
+      `I'm contacting you about the free public listing I created for ${name}. It gives people interested in your area of work a place to learn what you offer and follow the links to find out more.`,
       "You haven't joined Spiritpedia or approved the listing. You're welcome to claim it or reply with anything that needs correcting.",
       listingLinks(listingUrl, claimUrl),
-      "If you'd prefer us to remove it or stop these emails, simply reply.",
+      "If you'd prefer me to remove it or stop these emails, simply reply.",
     ],
   },
   4: {
@@ -398,11 +411,11 @@ const SHARED_OUTREACH = {
     body: ({ name, detail, listingUrl, claimUrl }) => [
       'Before people explore something new, they may want to understand its approach and the people behind it.',
       "That's part of what Spiritpedia is for: helping people discover spiritual teachings, communities and resources.",
-      `We're following up about the free public listing we made for ${name}. ${detail}`,
+      `I'm following up about the free public listing I made for ${name}. ${detail}`,
       "You haven't joined or approved the listing. You can claim it to begin managing how your work is represented, or reply with corrections.",
       listingLinks(listingUrl, claimUrl),
-      'Our invitation to speak with someone from your team is still open too.',
-      "If you'd prefer us to remove the listing or stop these emails, reply and we'll take care of it.",
+      'My invitation to speak with someone from your team is still open too.',
+      "If you'd prefer me to remove the listing or stop these emails, reply and I'll take care of it.",
     ],
   },
   5: {
@@ -410,41 +423,41 @@ const SHARED_OUTREACH = {
     body: ({ name, listingUrl, claimUrl }) => [
       'People may discover your work before they have time to explore it fully.',
       'On Spiritpedia, a place for discovering spiritual teachings and resources, they can save favourites in their own Library and return another day.',
-      `We're following up about the free public listing we created for ${name}. It gives people somewhere to begin and somewhere to return to when they want to explore further.`,
+      `I'm following up about the free public listing I created for ${name}. It gives people somewhere to begin and somewhere to return to when they want to explore further.`,
       "You haven't joined or approved it. You can claim the listing or reply with corrections.",
       listingLinks(listingUrl, claimUrl),
-      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+      "If you'd prefer me to remove the listing or stop these emails, simply reply.",
     ],
   },
   6: {
-    subject: "We'd love to hear the story behind your work",
+    subject: "I'd love to hear the story behind your work",
     body: ({ name, listingUrl, claimUrl }) => [
       `How did ${name} begin, and what would you like people to understand about its work?`,
-      "We're the Spiritpedia team. We help people discover spiritual teachings, communities and resources, and we'd love to explore those questions with someone you nominate for an interview.",
-      `We previously created a free public listing for you: ${listingUrl}. You haven't joined Spiritpedia or approved it. You can claim it here: ${claimUrl}, or reply with corrections.`,
+      "I'm Ross, from Spiritpedia. Spiritpedia helps people discover spiritual teachings, communities and resources, and I'd love to explore those questions with someone you nominate for an interview.",
+      `I previously created a free public listing for you: ${listingUrl}. You haven't joined Spiritpedia or approved it. You can claim it here: ${claimUrl}, or reply with corrections.`,
       "You don't need to claim your listing to discuss an interview, and you don't need to do an interview to claim it.",
-      "If you'd prefer us to remove the listing or stop these emails, simply reply.",
+      "If you'd prefer me to remove the listing or stop these emails, simply reply.",
     ],
   },
   7: {
     subject: 'Your work, in your own words',
     body: ({ name, listingUrl, claimUrl }) => [
-      `We're following up about the free public listing we created for ${name} on Spiritpedia, our spiritual discovery platform.`,
-      "It uses information available online and may not tell the whole story. You haven't joined Spiritpedia, and we haven't assumed that you approve the listing.",
-      "Claiming it begins the process of putting your team in charge of how your work is represented. We'd welcome any clarification about your approach, the information shown or how people should contact you.",
+      `I'm following up about the free public listing I created for ${name} on Spiritpedia, a spiritual discovery platform.`,
+      "It uses information available online and may not tell the whole story. You haven't joined Spiritpedia, and I haven't assumed that you approve the listing.",
+      "Claiming it begins the process of putting your team in charge of how your work is represented. I'd welcome any clarification about your approach, the information shown or how people should contact you.",
       listingLinks(listingUrl, claimUrl),
-      "You can also reply with a correction or removal request without claiming anything. If you'd like us to stop these emails, just let us know.",
+      "You can also reply with a correction or removal request without claiming anything. If you'd like me to stop these emails, just let me know.",
     ],
   },
   8: {
     subject: 'A final invitation from Spiritpedia',
     body: ({ name, listingUrl, claimUrl }) => [
-      `This is our final follow-up about the free public listing we created for ${name} on Spiritpedia, a place to discover spiritual teachings, communities and resources.`,
-      "You haven't joined Spiritpedia or approved the listing. You're welcome to claim it or reply with corrections. If someone from your team would like to discuss an interview, we'd still be glad to hear from you. Taking part is optional.",
+      `This is my final follow-up about the free public listing I created for ${name} on Spiritpedia, a place to discover spiritual teachings, communities and resources.`,
+      "You haven't joined Spiritpedia or approved the listing. You're welcome to claim it or reply with corrections. If someone from your team would like to discuss an interview, I'd still be glad to hear from you. Taking part is optional.",
       listingLinks(listingUrl, claimUrl),
-      "If the timing isn't right, there's nothing you need to do. We won't send any more reminders in this sequence.",
+      "If the timing isn't right, there's nothing you need to do. I won't send any more reminders in this sequence.",
       'To stop these emails, simply reply.',
-      "If you'd like the public listing removed, reply and we'll take care of it.",
+      "If you'd like the public listing removed, reply and I'll take care of it.",
     ],
   },
 };
@@ -458,15 +471,17 @@ export function sharedOutreachEmail(n, { kind, listingName, profileUrl, claimUrl
   const word = LISTING_KIND_WORDS[kind];
   const name = (listingName || '').trim();
   if (!template || !word || !name || !profileUrl || !claimUrl) return null;
+  const subject = subjectOf(template, { name });
   const { text } = renderEmail({
-    subject: template.subject,
+    subject,
     blocks: [
       greeting(''),
       ...template.body({ kind: word, name, listingUrl: profileUrl, claimUrl, detail: listingDetail(kind, facts) }),
     ],
-    footer: APP_FOOTER,
+    signOff: 'ross',
+    footer: outreachFooter(n),
   });
-  return { subject: template.subject, text };
+  return { subject, text };
 }
 
 /* ── D2. APPLICATION RECEIVED ──────────────────────────────────────────── */

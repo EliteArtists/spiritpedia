@@ -127,7 +127,13 @@ publishers) and by state. **What you do:**
   journey from the listing's own Outreach tab.
 
 Every kind can be started (switched on 17 Nov 2026). Every outreach email
-ends with "Spiritpedia is even better on the app: spiritpedia.co/get-app".
+comes from "Ross at Spiritpedia", signed Ross (18 Nov 2026). Email 1 has one
+link (the listing) and offers the claim link by reply, so when someone asks,
+send them `https://www.spiritpedia.co/auth/claim?slug=<their slug>` (the slug
+is the end of their listing's address). Emails 2–8 carry the claim link and
+end with "Spiritpedia is even better on the app: spiritpedia.co/get-app".
+**The Shift Network and Insight Timer** are partnerships, no cold email: they
+aren't in Up next and Start refuses them.
 **How often:** once a week while journeys are running.
 
 ## Claims

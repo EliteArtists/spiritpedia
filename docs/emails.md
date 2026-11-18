@@ -15,7 +15,8 @@ There are **two senders**:
 ## How the website's emails are sent
 
 - **From:** `Spiritpedia <hello@accounts.spiritpedia.co>`. The outreach journey
-  is the one exception: `Spiritpedia <love@spiritpedia.co>`.
+  is the one exception: `Ross at Spiritpedia <love@spiritpedia.co>` (owner, 18 Nov
+  2026).
 - **Reply-to:** `love@spiritpedia.co`, on every email.
 - **Blind copy:** every email also goes to `spiritpedialove@gmail.com`, the
   archive. It is also the only record of a decline reason: reasons are typed
@@ -30,7 +31,8 @@ There are **two senders**:
 - **Sign-offs:** the team ("With love, / The Spiritpedia team"), the Guiding
   Star ("Your Guiding Star / and the Spiritpedia Constellation", with "See
   you among the stars," on B1 and B2), or plain ("The Spiritpedia team") for
-  decisions and notices.
+  decisions and notices. The outreach journeys, both sequences, are signed
+  "With love, / Ross" (owner, 18 Nov 2026).
 - **Links:** always `https://www.spiritpedia.co`.
 - **No ✦ anywhere** (it reads as another company's logo). Where an email shows
   a picture, the gold star logo (`LOGO_URL`,
@@ -84,25 +86,29 @@ approved** and **Content not added**, from Admin → Inbox → Content
 (`/api/admin/submissions`, wording in `web/utils/contentSubmissions.js`). They use
 the same greeting rule.
 
-## Practitioner outreach journey (C1–C8, team voice)
+## Practitioner outreach journey (C1–C8, Ross's voice)
 
 - **Started** only by the admin's **Start email journey** button (admin listing
   record → Outreach; `/api/admin/journey/start`). Email 1 goes at once.
 - **Then** the daily job `/api/cron/journey-emails` (08:00 UTC) sends emails 2–8
   at days **21, 42, 63, 84, 105, 126 and 147** from the start, one per run, and
   the lowest due first. Email 8 is the last.
-- **From** `love@spiritpedia.co`; plain text; every email carries the listing
-  link (`/healers/{slug}`) and the claim link (`/auth/claim?slug={slug}`), and
-  offers removal.
+- **From** `Ross at Spiritpedia <love@spiritpedia.co>`, written in "I" and
+  signed "Ross" (owner, 18 Nov 2026); plain text; every email offers removal.
+- **C1, one link:** subject "{first name}, a question about your work" ("A
+  question about your work" with no usable first name); only the listing link
+  (`/healers/{slug}`); the claim link is offered by reply; no app line. C2–C8
+  carry the listing link, the claim link (`/auth/claim?slug={slug}`) and the
+  app line.
 - **The claim link works signed out:** it goes through sign-up as a
   practitioner and back to the listing after the code. An account whose email
   matches the listing claims it at once (D7); any other is offered "ask us to
   check and link it to your account".
 - **Every kind** (owner, 17 Nov 2026). Channels, apps, organisations, schools and
   publishers have their own sequence (below).
-- **App line:** every outreach email, both sequences, ends under the sign-off
+- **App line:** every outreach email from C2 on, both sequences, ends under the sign-off
   with "—" and "Spiritpedia is even better on the app: spiritpedia.co/get-app"
-  (plain text). C1 also says "It's free to use, on the web and on the App Store and
+  (plain text). C1 has none, but says "It's free to use, on the web and on the App Store and
   Google Play." D7 (claim approved) has one plain-text app line.
 - **Stops** when the listing is claimed, removed, or loses its contact email;
   when Resend lists the address as bounced or complained (checked before every
@@ -113,6 +119,9 @@ the same greeting rule.
   (`asked_to_stop`), "Asked for removal" (`removal_requested`) or `suppressed`
   blocks any new journey to that listing, and to any other listing that
   publishes the same address (`do_not_contact_address`).
+- **Partnerships, no cold email** (owner, 18 Nov 2026): The Shift Network and
+  Insight Timer (`web/utils/journey.js` → `NO_COLD_EMAIL`). Never in Up next;
+  Start refuses them. The owner contacts them personally.
 - **Paused** by the daily job (`kind_not_approved`) if a listing's kind is
   changed to one that is switched off; resumed by hand.
 
@@ -124,7 +133,8 @@ the same greeting rule.
   practitioner sequence is chosen for individuals and this one for every other
   kind (`web/utils/email.js` → `journeyTemplate`).
 - **Same rules as the practitioner journey:** the same days, sender, plain
-  text, sign-off, stops and suppression. Greeting always "Hello,".
+  text, sign-off, stops and suppression. Greeting always "Hello,". C1's subject
+  is "A question for {listing name}", with one link as in the practitioner C1.
 - **[listing kind]:** channel, app, organisation, school, or "publishing house".
 - **[listing detail], C4 only,** from what is stored (`web/utils/journey.js` →
   `listingFacts`): a channel's videos (podcast-host links count as episodes;

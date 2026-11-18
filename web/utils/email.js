@@ -251,7 +251,8 @@ export async function sendReviewReported({ report, title, adminUrl }) {
 // THE WORDING IS LOAD-BEARING. The recipient has not joined, has not approved
 // anything and has not agreed to be listed. Every template says so plainly and
 // offers removal in the same breath.
-const JOURNEY_FROM = 'Spiritpedia <love@spiritpedia.co>';
+// From Ross by name (owner, 18 Nov 2026): a person writing, not a brand.
+const JOURNEY_FROM = 'Ross at Spiritpedia <love@spiritpedia.co>';
 
 // Days from started_at. Index 0 is email 1, which goes immediately.
 export const JOURNEY_SCHEDULE = [0, 21, 42, 63, 84, 105, 126, 147];

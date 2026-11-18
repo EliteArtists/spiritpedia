@@ -8,6 +8,7 @@ import {
   listingFacts,
   outreachEligibility,
   outreachRefusal,
+  partnershipNote,
   recordMessage,
 } from '@/utils/journey';
 
@@ -75,6 +76,10 @@ export async function POST(request) {
       { status: 400 }
     );
   }
+
+  // A partnership the owner contacts personally (owner, 18 Nov 2026).
+  const partnership = publisherSlug ? null : partnershipNote(slug);
+  if (partnership) return NextResponse.json({ error: 'partnership', message: partnership }, { status: 409 });
 
   // Nobody who has already joined should be asked to join.
   if (await isClaimed(supabase, target)) {

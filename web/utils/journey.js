@@ -235,6 +235,16 @@ export function journeyState(journey, { claimed = false } = {}) {
   return 'stopped';
 }
 
+// PARTNERSHIPS: NO COLD EMAIL (owner, 18 Nov 2026). Listings the owner
+// contacts personally. They are never in Up next, and Start refuses them
+// (start route, and the listing's Outreach tab shows why). By healer slug.
+export const PARTNERSHIP_NOTE = 'Partnership — no cold email. The owner contacts them personally.';
+export const NO_COLD_EMAIL = new Set(['the-shift-network', 'insight-timer']);
+
+export function partnershipNote(slug) {
+  return NO_COLD_EMAIL.has(slug) ? PARTNERSHIP_NOTE : null;
+}
+
 // UP NEXT (owner, 18 Nov 2026): the daily outreach list on Admin → Outreach.
 // The owner starts up to DAILY_STARTS journeys a day, by hand, one Start
 // button each; nothing here sends.
@@ -261,16 +271,21 @@ const address = (email) => (email || '').trim().toLowerCase();
 //   sameAddress   the address was already written to through another listing
 //                 (one inbox can sit behind a school and its founder)
 //   switchedOff   a kind not in OUTREACH_KINDS_APPROVED
+//   partnership   NO_COLD_EMAIL: named in `partnerships` instead
 // Two uncontacted listings with one address: the first in order stays, and
 // the others are named on it (alsoAt), so the inbox gets one journey.
 export function upNext({ listings, journeys }) {
   const contacted = new Set(journeys.map((j) => j.key));
   const written = new Set(listings.filter((l) => contacted.has(l.key)).map((l) => address(l.email)));
-  const left = { contacted: 0, claimed: 0, deceased: 0, sameAddress: 0, switchedOff: 0 };
+  const left = { contacted: 0, claimed: 0, deceased: 0, sameAddress: 0, switchedOff: 0, partnership: 0 };
   const candidates = [];
+  const partnerships = [];
   for (const l of listings) {
     if (!address(l.email)) continue;
-    if (contacted.has(l.key)) left.contacted += 1;
+    if (NO_COLD_EMAIL.has(l.key)) {
+      left.partnership += 1;
+      partnerships.push(l.name);
+    } else if (contacted.has(l.key)) left.contacted += 1;
     else if (l.claimed) left.claimed += 1;
     else if (l.deceased && l.kind === 'individual') left.deceased += 1;
     else if (written.has(address(l.email))) left.sameAddress += 1;
@@ -296,7 +311,7 @@ export function upNext({ listings, journeys }) {
       list.push(row);
     }
   }
-  return { list, left };
+  return { list, left, partnerships };
 }
 
 // The owner's day, for "started today": Portugal and the UK share a clock.

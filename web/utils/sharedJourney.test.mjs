@@ -20,7 +20,7 @@ function docEmail(n) {
   const end = n < 8 ? DOC.indexOf(`# C${n + 1} Day`) : DOC.indexOf('# Questions for the solicitor');
   const section = DOC.slice(start, end);
   const subject = section.match(/\*\*Subject:\*\* (.+)/)[1].trim();
-  const body = section.slice(section.indexOf('Hello,') + 'Hello,'.length, section.indexOf('With love, The Spiritpedia team'));
+  const body = section.slice(section.indexOf('Hello,') + 'Hello,'.length, section.indexOf('With love, Ross'));
   return { subject, body: body.replace(/\\\[/g, '[').replace(/\\\]/g, ']') };
 }
 
@@ -52,11 +52,16 @@ test('every shared email, for every kind, is the approved copy word for word', (
           .replaceAll('[claim link]', links[1])
           .replaceAll('[listing detail]', listingDetail(kind, facts));
 
-        assert.equal(email.subject, doc.subject, `C${n} ${kind} subject`);
+        assert.equal(email.subject, doc.subject.replace(/\\\[listing name\\\]/, 'White Tiger Qigong'), `C${n} ${kind} subject`);
         assert.ok(email.text.startsWith('Hello,\n\n'), `C${n} ${kind} greeting`);
+        // Signed by Ross; the app line from C2 on (owner, 18 Nov 2026).
         assert.ok(
-          email.text.endsWith('\n\nWith love,\nThe Spiritpedia team\n\n—\nSpiritpedia is even better on the app: spiritpedia.co/get-app'),
-          `C${n} ${kind} sign-off, then the app line`
+          email.text.endsWith(
+            n === 1
+              ? '\n\nWith love,\nRoss'
+              : '\n\nWith love,\nRoss\n\n—\nSpiritpedia is even better on the app: spiritpedia.co/get-app'
+          ),
+          `C${n} ${kind} sign-off${n === 1 ? ', no app line' : ', then the app line'}`
         );
         const body = email.text.slice('Hello,'.length, email.text.lastIndexOf('With love,'));
         assert.equal(squash(body), squash(expected), `C${n} ${kind} body`);
@@ -98,7 +103,7 @@ test('[listing detail]: only what is on the listing, else the fallback', () => {
   assert.equal(listingDetail('school', { teachers: 0 }), fallback('school'));
   assert.equal(
     listingDetail('publisher', { books: 1 }),
-    'Your listing brings together an introduction to your publishing house and the books we list from your catalogue.'
+    'Your listing brings together an introduction to your publishing house and the books Spiritpedia lists from your catalogue.'
   );
   assert.equal(listingDetail('publisher', NONE), fallback('publishing house'));
   // An app always has its own sentence, whatever else is counted.
@@ -131,10 +136,11 @@ test('nothing is sent with a gap: no name or no link means no email', () => {
   assert.equal(sharedOutreachEmail(9, base), null);
 });
 
-test('individuals keep the practitioner sequence, unchanged', () => {
+test('individuals keep the practitioner sequence', () => {
   const email = journeyTemplate(1, { entityType: 'individual', healerName: 'Dr Jane Smith', healerSlug: 'jane' });
   assert.ok(email.text.startsWith('Hi Jane,'));
-  assert.match(email.text, /We came across your work on social sites/);
+  assert.equal(email.subject, 'Jane, a question about your work');
+  assert.match(email.text, /I came across your work on social sites/);
   assert.match(journeyTemplate(4, { healerName: 'Jane', healerSlug: 'jane' }).text, /\nClaim your profile: /);
 });
 

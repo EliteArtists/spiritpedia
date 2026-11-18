@@ -236,3 +236,129 @@ Ross.
   - the sender for all eight emails or only email 1;
   - the subject line;
   - "we" or "I".
+
+---
+
+# Morning decisions, 18 Nov
+
+## 1. Up next stops at 50
+
+Kept as built.
+
+## 2. The Shift Network and Insight Timer: partnership, no cold email
+
+- They're no longer in Up next. The list's footer names them as "Partnership —
+  no cold email".
+- Start refuses them, both from the start route and from each listing's own
+  Outreach tab, which says why.
+- The list is in `web/utils/journey.js` → `NO_COLD_EMAIL`, by listing slug.
+
+## 3. Ross's voice, and the one-link email 1 (every kind)
+
+**Copy documents first:**
+- `docs/email-copy-2026-10-21.md` (practitioners)
+- `docs/email-copy-2026-11-11-shared-journey.md` (channels, apps,
+  organisations, schools and publishers)
+
+**What changed:**
+- **Sender** on all eight emails, both sequences: **Ross at Spiritpedia**
+  `<love@spiritpedia.co>`.
+- **Sign-off:** "With love, / Ross".
+- **"I" instead of "we"** throughout, with the same meaning. For example, "If
+  you'd prefer me to remove it…", "My invitation to an interview…", "I won't
+  send any more reminders".
+- **Kept as "we":** C6 (practitioners), "reply and we can talk about what would
+  work for you", because it means the two of you.
+- **Shared C6:** "We're the Spiritpedia team. We help people…" now reads
+  "I'm Ross, from Spiritpedia. Spiritpedia helps people…".
+- **C7:** "our spiritual discovery platform" became "a spiritual discovery
+  platform".
+- **The publisher detail sentence:** "the books we list" became "the books
+  Spiritpedia lists".
+- **C6 subject (practitioners):** "I'd love to hear the story behind your
+  work".
+- **Email 1:**
+  - subject "{First name}, a question about your work" for people, and "A
+    question for {name}" for every other kind;
+  - only the listing link;
+  - "If you'd like to take charge of it, reply and I'll send you the link to
+    claim it.";
+  - no app footer, with the app still mentioned in words.
+- **Emails 2–8** keep the claim link and the app footer.
+- **A person with no usable first name** gets the subject "A question about
+  your work".
+
+**Tests:**
+- 241 pass.
+- A new test compares every practitioner email word for word with the copy
+  document, as the shared ones already were.
+- Email 1 is checked for exactly one link and no footer. Emails 2–8 are checked
+  for both links and the footer. All eight are checked to be in "I".
+
+**When someone asks for the claim link,** send them
+`https://www.spiritpedia.co/auth/claim?slug=<slug>`. The slug is the end of
+their listing's address, for example `karina-grant`. The admin guide says so.
+
+### Email 1 for a practitioner
+
+```
+From: Ross at Spiritpedia <love@spiritpedia.co>
+Subject: Karina, a question about your work
+
+Hi Karina,
+
+I came across your work on social sites and wanted to get in contact.
+
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
+
+I've also made a short public listing for you from information available online. You can view it here: https://www.spiritpedia.co/healers/karina-grant. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.
+
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
+
+With love,
+Ross
+```
+
+### Email 1 for an organisation
+
+```
+From: Ross at Spiritpedia <love@spiritpedia.co>
+Subject: A question for Grateful Living
+
+Hello,
+
+I came across your organisation and wanted to get in contact.
+
+Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
+
+I've made a free public listing for Grateful Living from information available online: https://www.spiritpedia.co/healers/grateful-living. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.
+
+To stop these emails, simply reply.
+
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
+
+With love,
+Ross
+```
+
+**The 10 journeys started this morning** already had the old email 1. Their
+emails 2–8 will be in the new voice, from Ross.
+
+## 4. DNS: both records are right
+
+- **Google Workspace DKIM:** `google._domainkey.spiritpedia.co` holds a valid
+  2048-bit key. I checked it on both of Hostinger's name servers, and on
+  Google's and Cloudflare's public resolvers.
+  - **To finish it**, Google Admin → Gmail → Authenticate email should say
+    "Authenticating email with DKIM". If it still offers **Start
+    authentication**, press it.
+- **DMARC:** `v=DMARC1; p=none; rua=mailto:postmaster@spiritpedia.co,
+  mailto:dmarc@spiritpedia.co; pct=100; adkim=s; aspf=r`.
+  - `aspf=r` is in place, and nothing else changed. Resend's mail now passes
+    SPF alignment as well as DKIM.
+- **Unchanged and still right:** SPF and both Resend DKIM keys.
+
+## 5. App 1.0.2
+
+Build 29 is in review at Apple, and Google Play has it. Once both are approved,
+tell me, and I'll merge `release/1.0.2` into `main`.

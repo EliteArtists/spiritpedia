@@ -1208,7 +1208,7 @@ approved wording is **`docs/email-copy-2026-10-21.md`** (final: change it
 there and in `utils/emailTemplates.js` together, word for word).
 
 - **From** `Spiritpedia <hello@accounts.spiritpedia.co>` (the outreach journey:
-  `love@spiritpedia.co`), **reply-to** love@, every email **blind-copied** to
+  `Ross at Spiritpedia <love@spiritpedia.co>`, in "I", signed "Ross", since 18 Nov 2026), **reply-to** love@, every email **blind-copied** to
   the `spiritpedialove@gmail.com` archive (the only record of a decline reason).
 - **Built from** `utils/emailParts.js`: "Hi {first name}," or "Hello," with no
   name; three sign-offs (the team "With love, / The Spiritpedia team"; the

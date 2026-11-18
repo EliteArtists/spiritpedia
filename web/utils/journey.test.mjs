@@ -15,6 +15,7 @@ import {
   outreachRefusal,
   schedule,
   upNext,
+  partnershipNote,
   outreachDay,
   startedToday,
   DAILY_STARTS,
@@ -211,7 +212,7 @@ test('up next: claimed, a person who has died, and an address already written to
     journeys: [{ key: 'founder' }],
   });
   assert.deepEqual(list.map((l) => l.key), ['late-school']);
-  assert.deepEqual(left, { contacted: 1, claimed: 1, deceased: 1, sameAddress: 1, switchedOff: 0 });
+  assert.deepEqual(left, { contacted: 1, claimed: 1, deceased: 1, sameAddress: 1, switchedOff: 0, partnership: 0 });
 });
 
 test('up next: two new listings with one address get one journey, the other is named on it', () => {
@@ -221,6 +222,22 @@ test('up next: two new listings with one address get one journey, the other is n
   });
   assert.deepEqual(list.map((l) => [l.key, l.alsoAt]), [['school', ['The Founder']]]);
   assert.equal(left.sameAddress, 1);
+});
+
+test('up next: The Shift Network and Insight Timer are partnerships, never cold-emailed', () => {
+  const { list, left, partnerships } = upNext({
+    listings: [
+      listing('the-shift-network', { kind: 'organisation', name: 'The Shift Network' }),
+      listing('insight-timer', { kind: 'organisation', name: 'Insight Timer' }),
+      listing('org', { kind: 'organisation' }),
+    ],
+    journeys: [],
+  });
+  assert.deepEqual(list.map((l) => l.key), ['org']);
+  assert.equal(left.partnership, 2);
+  assert.deepEqual(partnerships, ['The Shift Network', 'Insight Timer']);
+  assert.equal(partnershipNote('insight-timer'), 'Partnership — no cold email. The owner contacts them personally.');
+  assert.equal(partnershipNote('org'), null);
 });
 
 test('started today: email journeys on the owner’s day, form contacts not counted', () => {

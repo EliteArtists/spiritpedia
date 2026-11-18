@@ -113,54 +113,58 @@ Uses the separately designed template (see the Claude Code prompt for this). Ong
 
 ---
 
-## PART C — Practitioner outreach journey (8 emails, Spiritpedia team voice, "we")
+## PART C — Practitioner outreach journey (8 emails, Ross's voice, "I")
 
-Triggered only by the admin **Start email journey** button. Sender `love@spiritpedia.co` via the existing outreach route. Sign-off on every email: "With love, / The Spiritpedia team".
+Triggered only by the admin **Start email journey** button. Sender **"Ross at Spiritpedia" `<love@spiritpedia.co>`** via the existing outreach route. Sign-off on every email: "With love, / Ross".
 
-**App line (owner, 17 Nov 2026).** Every email in this sequence, C1 to C8, ends with this line under the sign-off, after a dash line. Plain text, no images:
+**Ross's voice (owner, 18 Nov 2026).** All eight emails are written in "I" rather than "we", with the same meaning, signed "Ross", from "Ross at Spiritpedia". C1 has a personal subject, only the listing link (the claim link is offered by reply) and no app footer; it still mentions the app in words. C2 to C8 keep the claim link and the app footer.
+
+**App line (owner, 17 Nov 2026; from C2 on since 18 Nov).** Every email in this sequence from C2 to C8 ends with this line under the sign-off, after a dash line. Plain text, no images:
 
 —
 Spiritpedia is even better on the app: spiritpedia.co/get-app
 
-C1 also mentions the app once in its body (owner, 17 Nov afternoon: "free to use") (the sentence "It's free to use, on the web and on the App Store and Google Play.", from the owner's About page wording).
+C1 has no app line (one link only, owner 18 Nov 2026) but mentions the app once in its body (owner, 17 Nov afternoon: "free to use") (the sentence "It's free to use, on the web and on the App Store and Google Play.", from the owner's About page wording).
 
 Timing: days **0, 21, 42, 63, 84, 105, 126, 147** from the moment admin starts the journey. Email 8 is the last. Stop on: claim + sign-in (ordinary completion), a removal or no-more-email request, delivery suppression (bounce/complaint), or a manual pause/stop by admin. These templates are for individual practitioners; organisation variants (channels, apps, publishers, organisations) are separate future work.
 
 Describe "finding out how to book" — never imply payment is processed inside Spiritpedia. No promises of recommendation emails, bookings, exposure figures or prices.
 
 ### C1
-Subject: An invitation from Spiritpedia
+Subject: [first name], a question about your work
+
+(With no usable first name: "A question about your work".)
 
 Hi [first name],
 
-We came across your work on social sites and wanted to get in contact.
+I came across your work on social sites and wanted to get in contact.
 
-Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. We'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
-We've also made a short public listing for you from information available online. You can view it here: [PROFILE LINK]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, you can claim it here: [CLAIM LINK].
+I've also made a short public listing for you from information available online. You can view it here: [PROFILE LINK]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.
 
-If anything is inaccurate, or you'd rather we remove the listing, reply and we'll take care of it. The interview is entirely optional.
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C2
 Subject: A place for your work on Spiritpedia
 
 Hi [first name],
 
-We wanted to follow up on our invitation to Spiritpedia.
+I wanted to follow up on my invitation to Spiritpedia.
 
-People can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. We'd love your work to be part of that discovery.
+People can explore the work of Eckhart Tolle, Abraham Hicks, Ram Dass and other established teachers here, alongside practitioners they may be discovering for the first time. I'd love your work to be part of that discovery.
 
-We've created a short public listing for you, but you haven't joined or approved it. You can view it here: [PROFILE LINK].
+I've created a short public listing for you, but you haven't joined or approved it. You can view it here: [PROFILE LINK].
 
 If you'd like to take charge of it, you can claim it here: [CLAIM LINK].
 
-If you'd prefer us to remove it or stop these emails, simply reply and we'll take care of it.
+If you'd prefer me to remove it or stop these emails, simply reply and I'll take care of it.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C3
 Subject: Help people find the services you offer
@@ -171,16 +175,16 @@ Finding a practitioner often starts with a question: who can help me with what I
 
 Spiritpedia brings spiritual teachings and practitioner services into the same place. Someone exploring a subject that matters to them can discover a practitioner whose work speaks to that interest, then find out how to get in touch or book a session.
 
-We'd love people to discover what you offer, whether you work online or in person.
+I'd love people to discover what you offer, whether you work online or in person.
 
-Here's the public listing we made for you: [PROFILE LINK].
+Here's the public listing I made for you: [PROFILE LINK].
 
 You can claim it here: [CLAIM LINK].
 
-If you'd prefer us to remove it or stop these emails, simply reply.
+If you'd prefer me to remove it or stop these emails, simply reply.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C4
 Subject: Let people get to know your work
@@ -191,17 +195,17 @@ Before someone books a session, they may want to understand your approach and ge
 
 A Spiritpedia profile can bring your introduction, videos, resources and links together, giving people a place to explore before they get in touch.
 
-The short public listing we created for you is only a starting point. We'd love you to take charge of how your work is represented.
+The short public listing I created for you is only a starting point. I'd love you to take charge of how your work is represented.
 
 View your listing: [PROFILE LINK]
 Claim your profile: [CLAIM LINK]
 
-Our invitation to an interview is still open too. If that interests you, just reply.
+My invitation to an interview is still open too. If that interests you, just reply.
 
-If you'd prefer us to remove the listing or stop these emails, reply and we'll take care of it.
+If you'd prefer me to remove the listing or stop these emails, reply and I'll take care of it.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C5
 Subject: Give people a reason to return to your work
@@ -217,19 +221,19 @@ Your listing gives them somewhere to begin, and somewhere to come back to when t
 View your listing: [PROFILE LINK]
 Claim your profile: [CLAIM LINK]
 
-If you'd prefer us to remove the listing or stop these emails, simply reply.
+If you'd prefer me to remove the listing or stop these emails, simply reply.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C6
-Subject: We'd love to hear the story behind your work
+Subject: I'd love to hear the story behind your work
 
 Hi [first name],
 
 What brought you to the work you do today?
 
-That's part of what we'd love to explore in an interview: how you began, what your approach involves, and what you'd like people to understand before working with you.
+That's part of what I'd love to explore in an interview: how you began, what your approach involves, and what you'd like people to understand before working with you.
 
 It's a chance for people to hear from you directly and get to know the person behind the profile.
 
@@ -238,48 +242,48 @@ If you're interested, reply and we can talk about what would work for you. You d
 View your listing: [PROFILE LINK]
 Claim your profile: [CLAIM LINK]
 
-If you'd prefer us to remove the listing or stop these emails, simply reply.
+If you'd prefer me to remove the listing or stop these emails, simply reply.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C7
 Subject: Your work, in your own words
 
 Hi [first name],
 
-The public listing we created uses information available online. It may not tell the whole story of your work, and we haven't assumed that you approve it.
+The public listing I created uses information available online. It may not tell the whole story of your work, and I haven't assumed that you approve it.
 
 Claiming the listing begins the process of putting you in charge of how your work is represented on Spiritpedia.
 
-Perhaps there's something you'd like to clarify about your approach, the services you offer or how people should contact you. We'd love the page to reflect what you want people to know.
+Perhaps there's something you'd like to clarify about your approach, the services you offer or how people should contact you. I'd love the page to reflect what you want people to know.
 
 View your listing: [PROFILE LINK]
 Claim your profile: [CLAIM LINK]
 
-You can also reply with a correction or removal request without claiming anything. If you'd like us to stop these emails, just let us know.
+You can also reply with a correction or removal request without claiming anything. If you'd like me to stop these emails, just let me know.
 
 With love,
-The Spiritpedia team
+Ross
 
 ### C8
 Subject: A final invitation from Spiritpedia
 
 Hi [first name],
 
-This is our final follow-up about your Spiritpedia listing.
+This is my final follow-up about your Spiritpedia listing.
 
-We'd still love to welcome you and hear about your work. If you'd like to speak with us about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.
+I'd still love to welcome you and hear about your work. If you'd like to speak with me about an interview, simply reply. You're welcome to claim your profile whether or not you choose to be interviewed.
 
 View your listing: [PROFILE LINK]
 Claim your profile: [CLAIM LINK]
 
-If the timing isn't right, there's nothing you need to do. We won't send any more reminders in this sequence.
+If the timing isn't right, there's nothing you need to do. I won't send any more reminders in this sequence.
 
-If you'd like the public listing removed, reply and we'll take care of it.
+If you'd like the public listing removed, reply and I'll take care of it.
 
 With love,
-The Spiritpedia team
+Ross
 
 ---
 

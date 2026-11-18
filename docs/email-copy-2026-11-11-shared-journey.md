@@ -8,9 +8,15 @@ remains separate.
 
 # Sending and stopping rules
 
-- From and replies: love@spiritpedia.co, the Spiritpedia team. Greeting:
-  “Hello,”. Plain text with no images. Use the final practitioner
-  sign-off exactly: “With love, The Spiritpedia team”.
+- From and replies: “Ross at Spiritpedia” <love@spiritpedia.co>. Greeting:
+  “Hello,”. Plain text with no images. Use the practitioner sign-off
+  exactly: “With love, Ross”.
+
+- Ross's voice (owner, 18 Nov 2026): every email is written in “I”
+  rather than “we”, with the same meaning, signed “Ross”. C1's subject is
+  “A question for [listing name]”; C1 carries only the listing link,
+  offers the claim link by reply, and has no app line (it still mentions
+  the app in words). C2 to C8 keep the claim link and the app line.
 
 - Keep the existing schedule: days 0, 21, 42, 63, 84, 105, 126 and 147
   after Start. Stop when the listing is claimed, the recipient asks to
@@ -28,14 +34,14 @@ remains separate.
   sentence exactly. C1 and C8 additionally say “To stop these emails,
   simply reply.”
 
-- App line (owner, 17 Nov 2026): every email, C1 to C8, for every
+- App line (owner, 17 Nov 2026; from C2 on since 18 Nov): every email, C2 to C8, for every
   listing type, ends with this line under the sign-off, after a dash
   line. Plain text, no images:
 
   —
   Spiritpedia is even better on the app: spiritpedia.co/get-app
 
-  C1 also mentions the app once in its body: “It's free to use, on the web and
+  C1 has no app line, but mentions the app once in its body: “It's free to use, on the web and
   on the App Store and Google Play.”
 
 - Do not promise bookings, traffic, health outcomes or permanent free
@@ -90,7 +96,7 @@ school and the teachers linked to it.
 \[listing kind\]: publishing house
 
 \[listing detail\]: Your listing brings together an introduction to your
-publishing house and the books we list from your catalogue.
+publishing house and the books Spiritpedia lists from your catalogue.
 
 ## Use only what is actually on the listing
 
@@ -113,33 +119,24 @@ verified.
 
 # C1 Day 0
 
-**Subject:** An invitation from Spiritpedia
+**Subject:** A question for \[listing name\]
 
 Hello,
 
-We came across your \[listing kind\] and wanted to get in contact.
+I came across your \[listing kind\] and wanted to get in contact.
 
-Spiritpedia is a place where people can discover spiritual teachings,
-communities and resources. It's free to use, on the web and on the App Store
-and Google Play. We'd love to speak with someone from your
-team about your work and the people it's intended for. Would you be open
-to a conversation? You can simply reply to this email.
+Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
 
-We've made a free public listing for \[listing name\] from information
-available online: \[listing link\]. You haven't joined Spiritpedia or
-approved the listing. If you'd like to take charge of it, you can claim
-it here: \[claim link\].
+I've made a free public listing for \[listing name\] from information available online: \[listing link\]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.
 
 To stop these emails, simply reply.
 
-If anything is inaccurate, or you'd rather we remove the listing, reply
-and we'll take care of it. The interview is entirely optional.
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Replaces the personal interview
-invitation with a team invitation, identifies the listing type and makes
-the free listing and email opt-out explicit.*
+invitation with a team invitation, identifies the listing type and makes the free listing and email opt-out explicit.*
 
 # C2 Day 21
 
@@ -147,29 +144,23 @@ the free listing and email opt-out explicit.*
 
 Hello,
 
-We're following up about the free public listing we created for
-\[listing name\].
+I'm following up about the free public listing I created for \[listing name\].
 
-Spiritpedia brings together spiritual teachers, communities and
-resources. People can explore familiar voices such as Eckhart Tolle and
-Ram Dass, then discover other work connected to their interests.
+Spiritpedia brings together spiritual teachers, communities and resources. People can explore familiar voices such as Eckhart Tolle and Ram Dass, then discover other work connected to their interests.
 
-Your listing gives them a way to find out about your \[listing kind\].
-You haven't joined Spiritpedia or approved it.
+Your listing gives them a way to find out about your \[listing kind\]. You haven't joined Spiritpedia or approved it.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
 You can also reply with any corrections, without claiming it.
 
-If you'd prefer us to remove it or stop these emails, simply reply and
-we'll take care of it.
+If you'd prefer me to remove it or stop these emails, simply reply and I'll take care of it.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Keeps the discovery theme while
-referring to a team-run listing and adding correction access without a
-claim.*
+referring to a team-run listing and adding correction access without a claim.*
 
 # C3 Day 42
 
@@ -177,26 +168,21 @@ claim.*
 
 Hello,
 
-People arrive at Spiritpedia looking for spiritual teachings, resources
-and places to explore.
+People arrive at Spiritpedia looking for spiritual teachings, resources and places to explore.
 
-We're contacting you about the free public listing we created for
-\[listing name\]. It gives people interested in your area of work a
-place to learn what you offer and follow the links to find out more.
+I'm contacting you about the free public listing I created for \[listing name\]. It gives people interested in your area of work a place to learn what you offer and follow the links to find out more.
 
-You haven't joined Spiritpedia or approved the listing. You're welcome
-to claim it or reply with anything that needs correcting.
+You haven't joined Spiritpedia or approved the listing. You're welcome to claim it or reply with anything that needs correcting.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
-If you'd prefer us to remove it or stop these emails, simply reply.
+If you'd prefer me to remove it or stop these emails, simply reply.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Changes “services” to “what you
-offer” and replaces individual sessions with relevant discovery and
-onward links.*
+offer” and replaces individual sessions with relevant discovery and onward links.*
 
 # C4 Day 63
 
@@ -204,31 +190,25 @@ onward links.*
 
 Hello,
 
-Before people explore something new, they may want to understand its
-approach and the people behind it.
+Before people explore something new, they may want to understand its approach and the people behind it.
 
-That's part of what Spiritpedia is for: helping people discover
-spiritual teachings, communities and resources.
+That's part of what Spiritpedia is for: helping people discover spiritual teachings, communities and resources.
 
-We're following up about the free public listing we made for \[listing
-name\]. \[listing detail\]
+I'm following up about the free public listing I made for \[listing name\]. \[listing detail\]
 
-You haven't joined or approved the listing. You can claim it to begin
-managing how your work is represented, or reply with corrections.
+You haven't joined or approved the listing. You can claim it to begin managing how your work is represented, or reply with corrections.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
-Our invitation to speak with someone from your team is still open too.
+My invitation to speak with someone from your team is still open too.
 
-If you'd prefer us to remove the listing or stop these emails, reply and
-we'll take care of it.
+If you'd prefer me to remove the listing or stop these emails, reply and I'll take care of it.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Replaces session-booking language
-with one factual, type-specific sentence about the content and teachers
-linked on the listing.*
+with one factual, type-specific sentence about the content and teachers linked on the listing.*
 
 # C5 Day 84
 
@@ -238,57 +218,42 @@ Hello,
 
 People may discover your work before they have time to explore it fully.
 
-On Spiritpedia, a place for discovering spiritual teachings and
-resources, they can save favourites in their own Library and return
-another day.
+On Spiritpedia, a place for discovering spiritual teachings and resources, they can save favourites in their own Library and return another day.
 
-We're following up about the free public listing we created for
-\[listing name\]. It gives people somewhere to begin and somewhere to
-return to when they want to explore further.
+I'm following up about the free public listing I created for \[listing name\]. It gives people somewhere to begin and somewhere to return to when they want to explore further.
 
-You haven't joined or approved it. You can claim the listing or reply
-with corrections.
+You haven't joined or approved it. You can claim the listing or reply with corrections.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
-If you'd prefer us to remove the listing or stop these emails, simply
-reply.
+If you'd prefer me to remove the listing or stop these emails, simply reply.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Preserves Library favourites as the
-benefit and removes the assumption that the next step is booking a
-practitioner.*
+benefit and removes the assumption that the next step is booking a practitioner.*
 
 # C6 Day 105
 
-**Subject:** We'd love to hear the story behind your work
+**Subject:** I'd love to hear the story behind your work
 
 Hello,
 
-How did \[listing name\] begin, and what would you like people to
-understand about its work?
+How did \[listing name\] begin, and what would you like people to understand about its work?
 
-We're the Spiritpedia team. We help people discover spiritual teachings,
-communities and resources, and we'd love to explore those questions with
-someone you nominate for an interview.
+I'm Ross, from Spiritpedia. Spiritpedia helps people discover spiritual teachings, communities and resources, and I'd love to explore those questions with someone you nominate for an interview.
 
-We previously created a free public listing for you: \[listing link\].
-You haven't joined Spiritpedia or approved it. You can claim it here:
-\[claim link\], or reply with corrections.
+I previously created a free public listing for you: \[listing link\]. You haven't joined Spiritpedia or approved it. You can claim it here: \[claim link\], or reply with corrections.
 
-You don't need to claim your listing to discuss an interview, and you
-don't need to do an interview to claim it.
+You don't need to claim your listing to discuss an interview, and you don't need to do an interview to claim it.
 
-If you'd prefer us to remove the listing or stop these emails, simply
-reply.
+If you'd prefer me to remove the listing or stop these emails, simply reply.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Invites a representative chosen by
-the recipient and asks about the project or institution rather than an
-individual career.*
+the recipient and asks about the project or institution rather than an individual career.*
 
 # C7 Day 126
 
@@ -296,28 +261,21 @@ individual career.*
 
 Hello,
 
-We're following up about the free public listing we created for
-\[listing name\] on Spiritpedia, our spiritual discovery platform.
+I'm following up about the free public listing I created for \[listing name\] on Spiritpedia, a spiritual discovery platform.
 
-It uses information available online and may not tell the whole story.
-You haven't joined Spiritpedia, and we haven't assumed that you approve
-the listing.
+It uses information available online and may not tell the whole story. You haven't joined Spiritpedia, and I haven't assumed that you approve the listing.
 
-Claiming it begins the process of putting your team in charge of how
-your work is represented. We'd welcome any clarification about your
-approach, the information shown or how people should contact you.
+Claiming it begins the process of putting your team in charge of how your work is represented. I'd welcome any clarification about your approach, the information shown or how people should contact you.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
-You can also reply with a correction or removal request without claiming
-anything. If you'd like us to stop these emails, just let us know.
+You can also reply with a correction or removal request without claiming anything. If you'd like me to stop these emails, just let me know.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Transfers representation to the team
-and removes individual service language while retaining the original
-correction and opt-out wording.*
+and removes individual service language while retaining the original correction and opt-out wording.*
 
 # C8 Day 147
 
@@ -325,31 +283,23 @@ correction and opt-out wording.*
 
 Hello,
 
-This is our final follow-up about the free public listing we created for
-\[listing name\] on Spiritpedia, a place to discover spiritual
-teachings, communities and resources.
+This is my final follow-up about the free public listing I created for \[listing name\] on Spiritpedia, a place to discover spiritual teachings, communities and resources.
 
-You haven't joined Spiritpedia or approved the listing. You're welcome
-to claim it or reply with corrections. If someone from your team would
-like to discuss an interview, we'd still be glad to hear from you.
-Taking part is optional.
+You haven't joined Spiritpedia or approved the listing. You're welcome to claim it or reply with corrections. If someone from your team would like to discuss an interview, I'd still be glad to hear from you. Taking part is optional.
 
 View your listing: \[listing link\]  
 Claim your profile: \[claim link\]
 
-If the timing isn't right, there's nothing you need to do. We won't send
-any more reminders in this sequence.
+If the timing isn't right, there's nothing you need to do. I won't send any more reminders in this sequence.
 
 To stop these emails, simply reply.
 
-If you'd like the public listing removed, reply and we'll take care of
-it.
+If you'd like the public listing removed, reply and I'll take care of it.
 
-With love, The Spiritpedia team
+With love, Ross
 
 *Change from practitioner version: Keeps the final reminder promise,
-addresses a team and repeats the listing disclosure and explicit email
-opt-out.*
+addresses a team and repeats the listing disclosure and explicit email opt-out.*
 
 # Questions for the solicitor
 

@@ -7,6 +7,7 @@ import {
   messagesFor,
   outreachEligibility,
   outreachRefusal,
+  partnershipNote,
   schedule,
 } from '@/utils/journey';
 
@@ -47,9 +48,12 @@ export async function GET(request, { params }) {
   // read as '*' so this works before 0048 runs).
   const { data: healer } = await supabase.from('healers').select('*').eq('healer_slug', slug).maybeSingle();
   const kindRefusal = outreachRefusal(healer?.entity_type);
+  // A partnership (owner, 18 Nov 2026) shows here too, so Start says why it's off.
   const doNotContact = journey
     ? null
-    : (await doNotContactReason(supabase, slug)) || (await doNotContactByAddress(supabase, healer?.contact_email));
+    : partnershipNote(slug) ||
+      (await doNotContactReason(supabase, slug)) ||
+      (await doNotContactByAddress(supabase, healer?.contact_email));
   const eligibility = outreachEligibility({
     entityType: healer?.entity_type,
     email: healer?.contact_email,

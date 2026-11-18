@@ -69,7 +69,7 @@ export async function GET() {
       };
     };
 
-    const { list, left } = upNext({
+    const { list, left, partnerships } = upNext({
       listings: [...healers.map((h) => listing(h, false)), ...publishers.map((p) => listing(p, true))],
       journeys: journeys.map((j) => ({ key: j.publisher_id ? `publisher:${j.publisher_id}` : j.healer_slug })),
     });
@@ -78,6 +78,7 @@ export async function GET() {
       startedToday: startedToday(journeys),
       dailyStarts: DAILY_STARTS,
       left,
+      partnerships,
       listings: list.map((l) => ({
         kind: l.kind,
         name: l.name,
