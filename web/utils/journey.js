@@ -26,6 +26,24 @@ export async function isClaimed(supabase, target) {
   return Array.isArray(data) && data.length > 0;
 }
 
+// A CLAIM STOPS THE JOURNEY (owner, 18 Nov 2026): called wherever an account
+// is linked to a listing (an instant claim, a claim request or an application
+// approved), so a claimed listing gets no further email even if the daily
+// job hasn't run yet. Migration 0053's trigger on user_profiles does the same
+// in the database. → how many journeys stopped.
+export async function stopJourneyOnClaim(supabase, target) {
+  const { slug, publisherId } = journeyTarget(target);
+  if (!slug && !publisherId) return 0;
+  const { data, error } = await supabase
+    .from('healer_journeys')
+    .update({ status: 'stopped', stop_reason: 'claimed' })
+    .eq(publisherId ? 'publisher_id' : 'healer_slug', publisherId || slug)
+    .in('status', ['running', 'paused'])
+    .select('id');
+  if (error) console.error('[journey] stopping a claimed journey failed:', error.message);
+  return data?.length || 0;
+}
+
 // A healer slug, or { slug } / { publisherId } → { slug, publisherId }.
 export function journeyTarget(target) {
   if (typeof target === 'string') return { slug: target, publisherId: null };

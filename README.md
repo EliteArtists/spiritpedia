@@ -2769,6 +2769,11 @@ Turning a Channel into a School is a plan with `"update": { "entity_type":
 
 ### 18.4 The rules
 
+- **Locked listings** (owner, 18 Nov 2026; §20.1): a listing locked "keep
+  minimal" at its owner's request gets nothing new. The ingest stops on it,
+  link-hub won't link it, and the database refuses the insert. Never work
+  round a lock; put the lead under "For you to decide".
+
 - **Item URLs are real pages** (owner, 11 Nov 2026): never a made-up `#fragment`
   or other URL part to keep two items apart (offering URLs are unique,
   `courses_url_unique`). Two items on one page: keep one, note the other in
@@ -3310,5 +3315,33 @@ them (plans dropped, holds lifted, inserts), run `node scripts/ops-sync.mjs --en
 again so Admin → Ops matches the repo.
 
 **DAY:** whatever is being built.
+
+
+### 20.1 Owner change and removal requests (standing rule, owner, 18 Nov 2026)
+
+When the person or team behind a listing asks for changes or removals:
+
+1. **Done within a day**, on dev and live, in Admin → Content → the listing → **Content**:
+   edit or remove any single video, book, offering or free resource (title, description,
+   price, link, image; every removal asks first), or **Remove all** of one type. Profile
+   fields (bio, links, photo) are on the **Profile** tab.
+2. **The listing is locked** against re-adding: **Switch lock on** in the same tab, with
+   the note `owner request — keep minimal (<date>)`. While locked, the database refuses any
+   new video, book, offering or free resource (migration 0053), and `scripts/ingest.mjs`,
+   `scripts/link-hub.mjs` and `scripts/fix-images.mjs` stop or skip it, so no sprint,
+   restore, image fix or ingest adds anything back. Locks show on the listing (a
+   **Keep minimal** badge) and in Admin → Ops → **Locked listings**. Only the owner
+   switches a lock off.
+3. **The journey is stopped**: Outreach tab → **Mark replied** (or the stop reason they
+   asked for: asked to stop, removal requested).
+4. **The request is logged**: the listing's **Change log** (Content tab, `admin_edit_log`)
+   keeps every edit and removal with the rows as they were, and a line goes in
+   `docs/owner-requests/README.md` (who, what they asked, what was done, when).
+
+**Claims stop journeys.** When anyone claims a listing (instant claim, claim request or
+an application approved), its outreach journey stops at once with reason "claimed": in
+the website code (`utils/journey.js` → `stopJourneyOnClaim`) and, once migration 0053
+has run, by a database trigger on `user_profiles` as well. Before 18 Nov 2026 a claimed
+journey only stopped at the next daily run, before its next email.
 
 Made with love in Tavira 💫

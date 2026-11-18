@@ -3,6 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 import { adminClient } from '@/utils/supabaseAdmin';
 import { firstNameFrom, sendClaimDecision } from '@/utils/email';
 import { sendOnce } from '@/utils/emailOnce';
+import { stopJourneyOnClaim } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -41,6 +42,12 @@ export async function POST(request) {
   if (!listingRef || profile.verification_status !== 'approved') {
     return NextResponse.json({ error: 'not_claimed' }, { status: 409 });
   }
+
+  // Claimed: the outreach journey to this listing has done its job.
+  await stopJourneyOnClaim(
+    supabase,
+    profile.linked_healer_slug ? profile.linked_healer_slug : { publisherId: profile.linked_publisher_id }
+  );
 
   const { data: listing } = profile.linked_healer_slug
     ? await supabase.from('healers').select('name').eq('healer_slug', listingRef).maybeSingle()

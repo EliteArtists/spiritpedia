@@ -14,6 +14,7 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { lockedLine, lockedListings } from './lib/locks.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -62,6 +63,8 @@ if (doRollback) {
 
 const file = JSON.parse(fs.readFileSync(filePath, 'utf8'));
 const problems = [];
+const locks = await lockedListings(get);
+if (locks.has(file.hub)) problems.push(lockedLine(file.hub, locks.get(file.hub)));
 const [hub] = await get(`healers?select=id,name,entity_type&healer_slug=eq.${encodeURIComponent(file.hub)}`);
 if (!hub) problems.push(`no listing "${file.hub}"`);
 else if (!HUB_TYPES.includes(hub.entity_type)) problems.push(`"${hub.name}" isn't a school or organisation (it's ${hub.entity_type || 'individual'})`);
@@ -73,6 +76,7 @@ for (const l of file.links || []) {
   if (!HUB_ROLES.includes(role)) { problems.push(`${l.teacher}: role "${role}" isn't one of ${HUB_ROLES.join(', ')}`); continue; }
   const [teacher] = await get(`healers?select=id,name&healer_slug=eq.${encodeURIComponent(l.teacher)}`);
   if (!teacher) { problems.push(`no listing "${l.teacher}"`); continue; }
+  if (locks.has(l.teacher)) { problems.push(lockedLine(l.teacher, locks.get(l.teacher))); continue; }
   if (!hub) continue;
   if (teacher.id === hub.id) { problems.push(`${teacher.name} can't teach at itself`); continue; }
   if ((await get(`hub_teachers?select=id&hub_id=eq.${hub.id}&teacher_id=eq.${teacher.id}`)).length) { skipped.push(teacher.name); continue; }

@@ -1,11 +1,14 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { isMissingSchema } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
 // GET /api/admin/ops — Admin → Ops (migration 0045): held plans, listings on
 // dev only, the retry list and sprint reports, as last copied from the repo by
 // scripts/ops-sync.mjs. Before 0045 runs this answers { missing: true }.
+// Locked listings (migration 0053) are read live from listing_locks, not
+// copied: they change in the admin, not in the repo.
 export async function GET() {
   if (!(await isAdminRequest())) return NextResponse.json({ error: 'unauthorised' }, { status: 401 });
   const supabase = adminClient();
@@ -26,6 +29,21 @@ export async function GET() {
     return NextResponse.json({ error: 'query_failed', message: error.message }, { status: 500 });
   }
 
+  const { data: lockRows, error: lockError } = await supabase
+    .from('listing_locks')
+    .select('healer_slug, note, locked_at, locked_by, healers(name)')
+    .order('locked_at', { ascending: false });
+  if (lockError && !isMissingSchema(lockError)) console.error('[ops] locks:', lockError.message);
+  const locks = (lockRows || []).map((l) => ({
+    kind: 'lock',
+    item_key: l.healer_slug,
+    title: l.healers?.name || l.healer_slug,
+    slug: l.healer_slug,
+    reason: l.note,
+    source_date: l.locked_at?.slice(0, 10) || null,
+    href: `/admin/content/${encodeURIComponent(l.healer_slug)}?tab=content`,
+  }));
+
   const rows = data || [];
   const run = rows.find((r) => r.kind === 'sync_run') || null;
   const group = (kind) => rows.filter((r) => r.kind === kind);
@@ -37,5 +55,7 @@ export async function GET() {
     devOnly: group('dev_only_plan'),
     retry: group('retry'),
     reports: group('sprint_report'),
+    locks,
+    locksReady: !lockError,
   });
 }

@@ -6,6 +6,7 @@ import { forgetSent, sendOnce } from '@/utils/emailOnce';
 import { applicationDeclined } from '@/utils/emailTemplates';
 import { COPY } from '@/utils/pushRules';
 import { sendAccountUpdate } from '@/utils/pushRun';
+import { stopJourneyOnClaim } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -216,6 +217,10 @@ export async function POST(request) {
       .update({ verification_status: 'approved' })
       .eq('id', id);
     if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    await stopJourneyOnClaim(
+      supabase,
+      profile.linked_healer_slug ? profile.linked_healer_slug : { publisherId: profile.linked_publisher_id }
+    );
     // Already linked means a claim of a listing that was public all along: no
     // "Your listing is live". The claim approval email says it is theirs now
     // (utils/claimRequests.js, as for a claim request). Approve pressed on
@@ -360,6 +365,8 @@ async function approvePublisher(supabase, { id, profile, name, email, publisherI
       { status: 500 }
     );
   }
+  // An existing publisher may have been written to.
+  await stopJourneyOnClaim(supabase, { publisherId: targetId });
 
   const notified = await tellOwner({
     supabase,

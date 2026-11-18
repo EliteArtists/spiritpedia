@@ -1,15 +1,22 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
+import Link from 'next/link';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 
 // Admin → Ops (migration 0045). What the content work leaves waiting, which
 // lives in the repo: plans held for the owner, listings on dev that aren't on
 // live, README §18.7's retry list and the sprint reports. scripts/ops-sync.mjs
-// copies them here after every sprint; this page only reads.
+// copies them here after every sprint; this page only reads. Locked listings
+// come from the database itself (migration 0053).
 
 const GROUPS = [
+  {
+    key: 'locks',
+    title: 'Locked listings',
+    note: 'Owner requests (migration 0053): nothing can be added to these until the lock is switched off in Admin → Content.',
+  },
   { key: 'held', title: 'Held plans', note: 'Waiting on your decision; never inserted until then.' },
   { key: 'devOnly', title: 'On dev, not on live', note: 'Listings that reached dev and never live.' },
   { key: 'retry', title: 'Retry another day', note: 'From README §18.7. Never retried the same day.' },
@@ -26,8 +33,14 @@ function Row({ item }) {
     <li className="rounded-xl border border-white/10 bg-[#0a0f1d] p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
         <p className="text-sm font-semibold text-white">
-          {/* No link: none of these listings is on live. */}
-          {item.title}
+          {/* No link, except to a locked listing: the others aren't on live. */}
+          {item.href ? (
+            <Link href={item.href} className="text-cyan-400 hover:text-cyan-300">
+              {item.title}
+            </Link>
+          ) : (
+            item.title
+          )}
           {item.slug && <span className="ml-2 font-mono text-xs font-normal text-slate-600">{item.slug}</span>}
           {item.detail?.entity_type && item.detail.entity_type !== 'individual' && (
             <span className="ml-2 text-xs font-normal text-slate-500">{item.detail.entity_type}</span>
@@ -119,7 +132,9 @@ export default function AdminOpsPage() {
                     ))}
                   </ul>
                 ) : (
-                  <p className="text-sm text-slate-500">None.</p>
+                  <p className="text-sm text-slate-500">
+                    {g.key === 'locks' && data.locksReady === false ? 'Needs migration 0053.' : 'None.'}
+                  </p>
                 )}
               </section>
             );

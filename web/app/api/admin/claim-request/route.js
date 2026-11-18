@@ -7,6 +7,7 @@ import { SITE } from '@/utils/emailParts';
 import { ownershipCheck } from '@/utils/emailTemplates';
 import { COPY } from '@/utils/pushRules';
 import { sendAccountUpdate } from '@/utils/pushRun';
+import { stopJourneyOnClaim } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
 
@@ -206,11 +207,7 @@ export async function POST(request) {
     .eq('id', id);
 
   // Claimed: the outreach journey to this listing has done its job.
-  await supabase
-    .from('healer_journeys')
-    .update({ status: 'stopped', stop_reason: 'claimed' })
-    .eq(claim.healer_slug ? 'healer_slug' : 'publisher_id', wanted)
-    .neq('status', 'stopped');
+  await stopJourneyOnClaim(supabase, claim.healer_slug ? claim.healer_slug : { publisherId: claim.publisher_id });
 
   const notified = await tellClaimant(supabase, claim, 'approved');
   // The notification (Account updates), which opens My Account, where the

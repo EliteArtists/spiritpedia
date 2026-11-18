@@ -14,6 +14,7 @@ import HubTeachers from '@/components/admin/HubTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
 import { RECIPIENT_TYPE_OPTIONS } from '@/utils/recipientTypes';
+import { ITEM_TABLES } from '@/utils/listingEdit';
 
 // ONE HEALER RECORD — read, and edit the fields that are safe to edit here.
 //
@@ -237,7 +238,86 @@ function RowThumb({ item, column, onSave, saving }) {
   );
 }
 
-function ContentList({ title, items, render, onDelete, imageColumn, onSaveImage, savingImageId }) {
+// One row's editor, under the row: the fields its table lets the admin change
+// (utils/listingEdit.js → ITEM_TABLES). Only what changed is sent, and the
+// route checks it again.
+function ItemEditor({ table, item, onSave, onCancel }) {
+  const fields = ITEM_TABLES[table].fields;
+  const [values, setValues] = useState(() =>
+    Object.fromEntries(fields.map((f) => [f.name, item[f.name] ?? '']))
+  );
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState(null);
+
+  const save = async () => {
+    const changed = Object.fromEntries(
+      fields
+        .filter((f) => String(values[f.name] ?? '').trim() !== String(item[f.name] ?? '').trim())
+        .map((f) => [f.name, values[f.name]])
+    );
+    if (!Object.keys(changed).length) {
+      onCancel();
+      return;
+    }
+    setSaving(true);
+    setError(null);
+    const result = await onSave(item, changed);
+    setSaving(false);
+    if (result !== true) setError(result || 'Could not save that.');
+  };
+
+  return (
+    <div className="mt-2 w-full rounded-xl border border-white/10 bg-[#111827] p-3">
+      <div className="grid gap-3 sm:grid-cols-2">
+        {fields.map((f) => (
+          <div key={f.name} className={f.long || f.url ? 'sm:col-span-2' : ''}>
+            <LabelledField label={f.label}>
+              {f.long ? (
+                <textarea
+                  rows={4}
+                  value={values[f.name]}
+                  onChange={(e) => setValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  className={inputClass}
+                />
+              ) : (
+                <input
+                  type="text"
+                  value={values[f.name]}
+                  onChange={(e) => setValues((v) => ({ ...v, [f.name]: e.target.value }))}
+                  placeholder={f.url ? 'https://…' : f.required ? '' : 'Leave empty to remove'}
+                  className={inputClass}
+                />
+              )}
+            </LabelledField>
+          </div>
+        ))}
+      </div>
+      <div className="mt-3 flex items-center justify-between gap-3">
+        <span className="text-xs text-red-400">{error || ''}</span>
+        <span className="flex gap-2">
+          <button
+            type="button"
+            onClick={onCancel}
+            className="rounded-full border border-white/15 px-3 py-1 text-[11px] font-bold text-slate-300 hover:bg-white/5"
+          >
+            Cancel
+          </button>
+          <button
+            type="button"
+            onClick={save}
+            disabled={saving}
+            className="rounded-full bg-[#7c3aed] px-4 py-1 text-[11px] font-bold text-white hover:bg-[#6d28d9] disabled:opacity-40"
+          >
+            {saving ? 'Saving…' : 'Save'}
+          </button>
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function ContentList({ title, table, items, render, onRemove, onEdit, imageColumn, onSaveImage, savingImageId }) {
+  const [editingId, setEditingId] = useState(null);
   if (items.length === 0) return null;
   return (
     <div className="mt-6">
@@ -246,30 +326,35 @@ function ContentList({ title, items, render, onDelete, imageColumn, onSaveImage,
       </p>
       <ul className="mt-2 divide-y divide-white/5 rounded-xl border border-white/10">
         {items.map((item) => (
-          <li
-            key={item.id}
-            className="group/row relative flex items-center gap-3 px-4 py-2.5 text-sm"
-          >
-            {/* relative on the row, so the editor panel below can anchor to it
-                rather than to the page. */}
-            <RowThumb
-              item={item}
-              column={imageColumn}
-              onSave={onSaveImage}
-              saving={savingImageId === item.id}
-            />
-            <span className="min-w-0 flex-1">{render(item)}</span>
-            {onDelete && (
-              // Barely there until the row is hovered: a list of fifty videos
-              // should read as a list, not as fifty invitations to delete
-              // something. It stays reachable by keyboard regardless — opacity
-              // hides it from the eye, not from focus or a screen reader.
+          <li key={item.id} className="group/row relative px-4 py-2.5 text-sm">
+            {/* relative on the row, so the image panel can anchor to it rather
+                than to the page. */}
+            <div className="flex items-center gap-3">
+              <RowThumb
+                item={item}
+                column={imageColumn}
+                onSave={onSaveImage}
+                saving={savingImageId === item.id}
+              />
+              <span className="min-w-0 flex-1">{render(item)}</span>
+              {/* Quiet until the row is hovered (always shown on a phone, which has
+                  no hover), so a list of fifty videos reads
+                  as a list; reachable by keyboard regardless. */}
               <button
                 type="button"
-                onClick={() => onDelete(item)}
-                aria-label={`Delete ${item.title}`}
-                title="Delete"
-                className="shrink-0 rounded-full p-1.5 text-slate-600 opacity-0 transition-all hover:bg-red-500/10 hover:text-red-400 focus:opacity-100 group-hover/row:opacity-100"
+                onClick={() => setEditingId(editingId === item.id ? null : item.id)}
+                aria-label={`Edit ${item.title}`}
+                title="Edit"
+                className="shrink-0 rounded-full px-2.5 py-1 text-[11px] font-bold text-slate-500 transition-all hover:bg-white/5 hover:text-white focus:opacity-100 sm:opacity-0 sm:group-hover/row:opacity-100"
+              >
+                Edit
+              </button>
+              <button
+                type="button"
+                onClick={() => onRemove(table, item)}
+                aria-label={`Remove ${item.title}`}
+                title="Remove"
+                className="shrink-0 rounded-full p-1.5 text-slate-600 transition-all hover:bg-red-500/10 hover:text-red-400 focus:opacity-100 sm:opacity-0 sm:group-hover/row:opacity-100"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -283,6 +368,18 @@ function ContentList({ title, items, render, onDelete, imageColumn, onSaveImage,
                   <path d="M18 6 6 18M6 6l12 12" />
                 </svg>
               </button>
+            </div>
+            {editingId === item.id && (
+              <ItemEditor
+                table={table}
+                item={item}
+                onCancel={() => setEditingId(null)}
+                onSave={async (row, values) => {
+                  const result = await onEdit(table, row, values);
+                  if (result === true) setEditingId(null);
+                  return result;
+                }}
+              />
             )}
           </li>
         ))}
@@ -291,39 +388,159 @@ function ContentList({ title, items, render, onDelete, imageColumn, onSaveImage,
   );
 }
 
-// EVERYTHING A HEALER HAS, which takes two different joins.
+function when(value) {
+  if (!value) return '';
+  return new Date(value).toLocaleString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    timeZone: 'Europe/London',
+  });
+}
+
+// THE "KEEP MINIMAL" LOCK (migration 0053). While it is on, nothing can be
+// added to this listing: the database refuses, and the sprint, restore,
+// image-fix and ingest scripts check first and skip it. Removing and editing
+// still work.
+function LockPanel({ edits, onChange }) {
+  const [note, setNote] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState(null);
+  const lock = edits?.lock;
+
+  if (!edits) return null;
+  if (!edits.ready) {
+    return (
+      <div className="mb-5 rounded-xl border border-white/10 bg-[#0a0f1d] px-4 py-3 text-xs text-slate-500">
+        The keep-minimal lock and the change log need migration 0053 on this database. Edits and
+        removals below still work; they aren&apos;t logged until then.
+      </div>
+    );
+  }
+
+  const toggle = async () => {
+    setBusy(true);
+    setError(null);
+    const res = await fetch('/api/admin/listing-edit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: lock.locked ? 'unlock' : 'lock', slug: edits.slug, note }),
+    });
+    const json = await res.json().catch(() => ({}));
+    setBusy(false);
+    if (!res.ok || json.error) {
+      setError(json.message || json.error || 'Could not change the lock.');
+      return;
+    }
+    setNote('');
+    onChange();
+  };
+
+  return (
+    <div
+      className={`mb-5 rounded-xl border px-4 py-3 ${
+        lock.locked ? 'border-amber-500/40 bg-amber-500/10' : 'border-white/10 bg-[#0a0f1d]'
+      }`}
+    >
+      <p className="text-sm font-semibold text-white">
+        {lock.locked ? '🔒 Locked: keep minimal' : 'Not locked'}
+      </p>
+      <p className="mt-0.5 text-xs text-slate-400">
+        {lock.locked
+          ? `${lock.note} · since ${when(lock.at)}. Nothing can be added to this listing until the lock is switched off.`
+          : 'Switch the lock on when the owner asks for changes or removals, so no sprint, restore, image fix or ingest adds items back.'}
+      </p>
+      <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+        <input
+          type="text"
+          value={note}
+          onChange={(e) => setNote(e.target.value)}
+          placeholder={lock.locked ? 'Why it is being switched off (optional)' : edits.defaultNote}
+          className={inputClass}
+        />
+        <button
+          type="button"
+          onClick={toggle}
+          disabled={busy}
+          className={`shrink-0 rounded-full px-4 py-2 text-xs font-bold text-white disabled:opacity-40 ${
+            lock.locked ? 'border border-white/20 hover:bg-white/5' : 'bg-amber-600 hover:bg-amber-500'
+          }`}
+        >
+          {busy ? 'Saving…' : lock.locked ? 'Switch lock off' : 'Switch lock on'}
+        </button>
+      </div>
+      {error && <p className="mt-2 text-xs text-red-400">{error}</p>}
+    </div>
+  );
+}
+
+// What was changed here and when, newest first (admin_edit_log, 0053). A
+// removal keeps the rows as they were, under "What was removed", so anything
+// can be put back by hand.
+function ChangeLog({ edits }) {
+  if (!edits?.ready) return null;
+  return (
+    <div className="mt-8">
+      <p className={labelClass}>Change log · {edits.log.length}</p>
+      {edits.log.length === 0 ? (
+        <p className="mt-2 text-sm text-slate-500">No changes made here yet.</p>
+      ) : (
+        <ul className="mt-2 divide-y divide-white/5 rounded-xl border border-white/10">
+          {edits.log.map((entry) => (
+            <li key={entry.id} className="px-4 py-2.5 text-sm">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <span className="text-white">{entry.summary}</span>
+                <span className="text-xs text-slate-500">
+                  {when(entry.created_at)}
+                  {entry.created_by ? ` · ${entry.created_by}` : ''}
+                </span>
+              </div>
+              {entry.note && <p className="mt-0.5 text-xs text-slate-400">{entry.note}</p>}
+              {(entry.before || entry.after) && entry.action !== 'lock' && entry.action !== 'unlock' && (
+                <details className="mt-1 text-xs text-slate-500">
+                  <summary className="cursor-pointer">
+                    {entry.action === 'edit' ? 'Before and after' : 'What was removed'}
+                  </summary>
+                  <pre className="mt-1 max-h-64 overflow-auto whitespace-pre-wrap break-all rounded-lg bg-[#0a0f1d] p-2 font-mono text-[11px] text-slate-400">
+                    {JSON.stringify(entry.action === 'edit' ? { before: entry.before, after: entry.after } : entry.before, null, 2)}
+                  </pre>
+                </details>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
+// EVERYTHING A LISTING HAS, which takes two different joins.
 //
 // Videos and books carry the healer's text slug; courses and free resources
 // carry the bigint id. Two keys, four tables — and the reason this tab showed
 // only half of it for so long is that it was handed the slug alone, so the two
-// id-keyed tables were simply never asked for. 1,103 courses and 461 free
-// resources were invisible here while the delete dialog on the same page was
-// already counting them.
+// id-keyed tables were simply never asked for.
 //
 // NOTHING IS FILTERED BY is_active OR end_date, deliberately. The public pages
 // hide an expired offering because a visitor cannot buy it; an admin screen
 // that did the same would be lying about what the database holds.
-// Which table a row belongs to, and what to call it when asking. Keyed by the
-// bucket the UI groups rows into rather than by table, because three of the six
-// buckets are the same table split by product_type.
-const DELETABLE = {
-  videos: { table: 'videos', noun: 'video' },
-  books: { table: 'books', noun: 'book' },
-  courses: { table: 'courses', noun: 'offering' },
-  retreats: { table: 'courses', noun: 'retreat' },
-  downloads: { table: 'courses', noun: 'download' },
-  resources: { table: 'free_resources', noun: 'free resource' },
-};
+//
+// EVERY CHANGE goes through /api/admin/listing-edit (owner, 18 Nov 2026),
+// which checks the item is this listing's and writes the change log.
+const CONTENT_KEY = { videos: 'videos', books: 'books', courses: 'courses', free_resources: 'resources' };
 
-function ContentTab({ slug, healerId }) {
+function ContentTab({ slug, healerId, edits, onEditsChange }) {
   const [content, setContent] = useState(null);
   const [error, setError] = useState(null);
 
-  // The row awaiting confirmation: { bucket, item } or null. One piece of state
-  // for all six lists, because only one thing can be being deleted at a time.
+  // What awaits confirmation: { table, item } for one, { table, all: n } for
+  // every item of a type. One at a time.
   const [pending, setPending] = useState(null);
-  const [deleting, setDeleting] = useState(false);
-  const [deleteError, setDeleteError] = useState(null);
+  const [removing, setRemoving] = useState(false);
+  const [removeError, setRemoveError] = useState(null);
+  const [notice, setNotice] = useState(null);
 
   // The row whose image is being written, so only that thumbnail says "Saving…".
   const [savingImageId, setSavingImageId] = useState(null);
@@ -332,16 +549,10 @@ function ContentTab({ slug, healerId }) {
     let cancelled = false;
     (async () => {
       const [videos, books, courses, resources] = await Promise.all([
-        supabase.from('videos').select('id, title, slug, platform_url').eq('healer_slug', slug),
-        supabase.from('books').select('id, title, slug, mock_cover_url').eq('healer_slug', slug),
-        supabase
-          .from('courses')
-          .select('id, title, slug, product_type, image_url')
-          .eq('healer_id', healerId),
-        supabase
-          .from('free_resources')
-          .select('id, title, slug, resource_type, image_url')
-          .eq('healer_id', healerId),
+        supabase.from('videos').select('*').eq('healer_slug', slug),
+        supabase.from('books').select('*').eq('healer_slug', slug),
+        supabase.from('courses').select('*').eq('healer_id', healerId),
+        supabase.from('free_resources').select('*').eq('healer_id', healerId),
       ]);
       if (cancelled) return;
       const failure = videos.error || books.error || courses.error || resources.error;
@@ -359,154 +570,73 @@ function ContentTab({ slug, healerId }) {
     };
   }, [slug, healerId]);
 
-  // DELETING ONE PIECE OF CONTENT.
-  //
-  // Through /api/admin/write, like every other content write: the anon key has
-  // had no delete grant on these tables since migration 0007, and the route
-  // refuses any delete without a match clause so this cannot widen beyond the
-  // one row.
-  //
-  // The list is corrected in place rather than refetched. Four queries to
-  // redraw a list we already hold, minus one row, would be slower and would
-  // flash the whole tab through its loading state for a change the admin can
-  // already see.
-  const confirmDelete = async () => {
-    if (!pending || deleting) return;
-    const { bucket, item } = pending;
-    const source = DELETABLE[bucket];
-    if (!source) return;
-
-    setDeleting(true);
-    setDeleteError(null);
-    try {
-      const res = await fetch('/api/admin/write', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          table: source.table,
-          op: 'delete',
-          match: { id: item.id },
-        }),
-      });
-      const json = await res.json();
-      if (!res.ok || json.error) {
-        setDeleteError(json.error || `Delete failed (${res.status})`);
-        setDeleting(false);
-        return;
-      }
-
-      // Courses, retreats and downloads are three views of one array, so the
-      // row is removed from whichever array actually holds it rather than from
-      // the bucket it was displayed in.
-      const key = source.table === 'free_resources' ? 'resources' : source.table;
-      setContent((prev) => ({
-        ...prev,
-        [key]: (prev[key] || []).filter((row) => row.id !== item.id),
-      }));
-      setPending(null);
-    } catch (err) {
-      setDeleteError(err.message);
-    }
-    setDeleting(false);
+  const send = async (payload) => {
+    const res = await fetch('/api/admin/listing-edit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug, ...payload }),
+    });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || json.error) return { error: json.message || json.error || `Failed (${res.status})` };
+    // Before 0053 a change isn't logged; say so once rather than silently.
+    setNotice(json.logged === false && !edits?.ready ? 'Done. Not logged: the change log needs migration 0053.' : null);
+    onEditsChange();
+    return json;
   };
 
-  // CHANGING A ROW'S PICTURE.
-  //
-  // Through /api/admin/write like every other content write — the anon key has
-  // had no write grant on these tables since migration 0007 — and matched on
-  // the primary key, so it touches exactly one row.
-  //
-  // The column differs by table and is passed in rather than guessed, because
-  // books call it mock_cover_url and the other two call it image_url. Written
-  // back into the list in memory rather than refetched, for the same reason the
-  // delete is: redrawing four queries to change one string would flash the
-  // whole tab through its loading state.
+  // The list is corrected in place rather than refetched: four queries to
+  // redraw a list we already hold would flash the whole tab.
+  const editItem = async (table, item, values) => {
+    const json = await send({ action: 'edit', table, id: item.id, values });
+    if (json.error) return json.error;
+    const key = CONTENT_KEY[table];
+    setContent((prev) => ({
+      ...prev,
+      [key]: prev[key].map((row) => (row.id === item.id ? { ...row, ...json.item } : row)),
+    }));
+    return true;
+  };
+
+  // The thumbnail's own editor, through the same route, so it is logged too.
+  // books keep the picture in mock_cover_url, offerings and free resources in
+  // image_url; the row's shape says which table it is.
   const saveImage = async (item, column, url) => {
     if (!column || savingImageId) return false;
+    const table =
+      column === 'mock_cover_url' ? 'books' : item.resource_type !== undefined ? 'free_resources' : 'courses';
     setSavingImageId(item.id);
-    try {
-      // books is the only table using mock_cover_url, so the column identifies
-      // it outright. image_url is shared, so the row's own shape settles it: a
-      // free resource carries resource_type, an offering does not.
-      const target =
-        column === 'mock_cover_url'
-          ? 'books'
-          : item.resource_type !== undefined
-            ? 'free_resources'
-            : 'courses';
+    const result = await editItem(table, item, { [column]: url || '' });
+    setSavingImageId(null);
+    return result === true;
+  };
 
-      const res = await fetch('/api/admin/write', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          table: target,
-          op: 'update',
-          values: { [column]: url },
-          match: { id: item.id },
-          select: `id, ${column}`,
-          single: true,
-        }),
-      });
-      const json = await res.json();
-      if (!res.ok || json.error) {
-        setSavingImageId(null);
-        return false;
-      }
-
-      // CLEAR THE QUEUE ROW NOW, not at the next audit.
-      //
-      // The audit visits a seventh of the catalogue a day, so a row fixed here
-      // would otherwise sit in the Inbox for up to a week still claiming to be
-      // broken — and an admin who has just fixed something and watched it stay
-      // in the queue stops believing the queue. Deleting on save makes the
-      // count mean "still wrong".
-      //
-      // Deliberately not awaited for its result beyond this: if the delete
-      // fails the image is still fixed, and the next audit clears the row by
-      // itself. Failing the save over it would be the wrong trade.
-      await fetch('/api/admin/write', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          table: 'broken_images',
-          op: 'delete',
-          // record_id is text — books use bigint ids, courses and free
-          // resources use UUIDs — so the id is stringified to match what the
-          // audit stored.
-          match: { table_name: target, record_id: String(item.id) },
-        }),
-      }).catch(() => {});
-
-      const key = target === 'free_resources' ? 'resources' : target;
-      setContent((prev) => ({
-        ...prev,
-        [key]: (prev[key] || []).map((row) =>
-          row.id === item.id ? { ...row, [column]: url } : row
-        ),
-      }));
-      setSavingImageId(null);
-      return true;
-    } catch {
-      setSavingImageId(null);
-      return false;
+  const confirmRemove = async () => {
+    if (!pending || removing) return;
+    setRemoving(true);
+    setRemoveError(null);
+    const { table, item } = pending;
+    const json = await send(item ? { action: 'remove', table, id: item.id } : { action: 'remove_all', table });
+    setRemoving(false);
+    if (json.error) {
+      setRemoveError(json.error);
+      return;
     }
+    const key = CONTENT_KEY[table];
+    setContent((prev) => ({ ...prev, [key]: item ? prev[key].filter((row) => row.id !== item.id) : [] }));
+    setPending(null);
   };
 
-  const askDelete = (bucket) => (item) => {
-    setDeleteError(null);
-    setPending({ bucket, item });
+  const askRemove = (table, item) => {
+    setRemoveError(null);
+    setPending({ table, item });
   };
 
-  if (error) return <DataProblem error={error} what="This healer's content" />;
+  if (error) return <DataProblem error={error} what="This listing's content" />;
   if (!content) return <Placeholder icon="◴" title="Loading content…" />;
 
   // One table, split by product_type, using the same rule as the public subject
-  // page so the two can never disagree about what a thing is.
-  //
-  // Courses is the CATCH-ALL. The column holds six values, not the three with
-  // their own shelf — membership, meditation and podcast between them account
-  // for 106 rows, and a screen whose job is showing what exists must not drop
-  // them on the floor. A null product_type lands here too, as it does publicly.
+  // page so the two can never disagree about what a thing is. Courses is the
+  // catch-all: membership, meditation, podcast and a null type land there.
   const retreats = content.courses.filter((c) => c.product_type === 'retreat');
   const downloads = content.courses.filter((c) => c.product_type === 'download');
   const courses = content.courses.filter(
@@ -523,19 +653,33 @@ function ContentTab({ slug, healerId }) {
   ];
   const total = counts.reduce((sum, [, n]) => sum + n, 0);
 
-  // Offerings all resolve under /offerings/[slug] whatever their product_type —
-  // they are one table and one route.
+  // "Remove all" by table: offerings are courses, retreats and downloads together.
+  const removeAll = [
+    ['videos', content.videos.length],
+    ['books', content.books.length],
+    ['courses', content.courses.length],
+    ['free_resources', content.resources.length],
+  ].filter(([, n]) => n > 0);
+
+  // Offerings all resolve under /offerings/[slug] whatever their product_type.
   const offeringLink = (item) => (
     <Link href={`/offerings/${item.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
       {item.title}
       {item.product_type && item.product_type !== 'course' ? (
         <span className="ml-2 text-xs text-slate-500">{item.product_type}</span>
       ) : null}
+      {item.price ? <span className="ml-2 text-xs text-slate-500">{item.price}</span> : null}
     </Link>
   );
 
+  const list = { onRemove: askRemove, onEdit: editItem, onSaveImage: saveImage, savingImageId };
+  const pendingNoun = pending ? ITEM_TABLES[pending.table] : null;
+  const pendingCount = pending && !pending.item ? content[CONTENT_KEY[pending.table]].length : 0;
+
   return (
     <>
+      <LockPanel edits={edits ? { ...edits, slug } : null} onChange={onEditsChange} />
+
       <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
         {counts.map(([label, n]) => (
           <div key={label} className="rounded-xl border border-white/10 bg-[#0a0f1d] px-4 py-3">
@@ -547,22 +691,37 @@ function ContentTab({ slug, healerId }) {
         ))}
       </div>
 
+      {removeAll.length > 0 && (
+        <div className="mt-4 flex flex-wrap items-center gap-2">
+          <span className={labelClass}>Remove all</span>
+          {removeAll.map(([table, n]) => (
+            <button
+              key={table}
+              type="button"
+              onClick={() => askRemove(table, null)}
+              className="rounded-full border border-red-500/30 px-3 py-1 text-[11px] font-bold text-red-400 transition-colors hover:bg-red-500/10"
+            >
+              {ITEM_TABLES[table].plural} ({n})
+            </button>
+          ))}
+        </div>
+      )}
+
+      {notice && <p className="mt-3 text-xs text-amber-300">{notice}</p>}
+
       {total === 0 && (
         <p className="mt-6 text-sm text-slate-500">
-          Nothing is tagged to <span className="font-mono text-xs">{slug}</span> yet. Add content
-          from the Ingestion section.
+          Nothing is tagged to <span className="font-mono text-xs">{slug}</span> yet.
+          {edits?.lock?.locked ? ' The listing is locked, so nothing can be added.' : ' Add content from the Ingestion section.'}
         </p>
       )}
 
-      {/* Read-only on purpose: adding and editing content is Ingestion's job,
-          and these links go to the public pages that already exist. */}
       <ContentList
         title="Videos"
+        table="videos"
         items={content.videos}
-        onDelete={askDelete('videos')}
-        imageColumn={null}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        imageColumn={IMAGE_COLUMN.videos}
+        {...list}
         render={(v) =>
           v.slug ? (
             <Link href={`/videos/${v.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
@@ -575,53 +734,47 @@ function ContentTab({ slug, healerId }) {
       />
       <ContentList
         title="Books"
+        table="books"
         items={content.books}
-        onDelete={askDelete('books')}
         imageColumn={IMAGE_COLUMN.books}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        {...list}
         render={(b) => (
           <Link href={`/books/${b.slug}`} target="_blank" className="text-cyan-400 hover:text-cyan-300">
             {b.title}
           </Link>
         )}
       />
-      {/* ContentList renders nothing when its list is empty, so a healer with
-          no retreats shows no Retreats heading — no guards needed here. */}
+      {/* ContentList renders nothing when its list is empty. */}
       <ContentList
         title="Courses & Programmes"
+        table="courses"
         items={courses}
-        render={offeringLink}
-        onDelete={askDelete('courses')}
         imageColumn={IMAGE_COLUMN.courses}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        render={offeringLink}
+        {...list}
       />
       <ContentList
         title="Retreats & Live Events"
+        table="courses"
         items={retreats}
-        render={offeringLink}
-        onDelete={askDelete('retreats')}
         imageColumn={IMAGE_COLUMN.courses}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        render={offeringLink}
+        {...list}
       />
       <ContentList
         title="Downloads & Audio"
+        table="courses"
         items={downloads}
-        render={offeringLink}
-        onDelete={askDelete('downloads')}
         imageColumn={IMAGE_COLUMN.courses}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        render={offeringLink}
+        {...list}
       />
       <ContentList
         title="Free Resources"
+        table="free_resources"
         items={content.resources}
-        onDelete={askDelete('resources')}
         imageColumn={IMAGE_COLUMN.free_resources}
-        onSaveImage={saveImage}
-        savingImageId={savingImageId}
+        {...list}
         render={(r) => (
           <Link
             href={`/free-resources/${r.slug}`}
@@ -636,21 +789,28 @@ function ContentTab({ slug, healerId }) {
         )}
       />
 
-      {/* The same dialog the healer delete uses, so one confirmation looks and
-          behaves the same everywhere in the admin. */}
+      <ChangeLog edits={edits} />
+
+      {/* The same dialog the listing delete uses. */}
       <ConfirmDelete
         open={Boolean(pending)}
-        title={pending ? `Delete this ${DELETABLE[pending.bucket]?.noun}?` : ''}
-        body={pending?.item?.title || ''}
+        title={
+          pending
+            ? pending.item
+              ? `Remove this ${pendingNoun.noun}?`
+              : `Remove all ${pendingCount} ${pendingNoun.plural}?`
+            : ''
+        }
+        body={pending?.item ? pending.item.title : pending ? `Every ${pendingNoun.noun} on this listing.` : ''}
         consequences={[
-          'It is removed from the database, not hidden — this cannot be undone',
+          'Removed from the database, not hidden; the change log keeps a copy of what was removed',
           'Anyone holding a link to its public page will get a 404',
         ]}
-        confirmLabel="Delete"
-        busy={deleting}
-        error={deleteError}
+        confirmLabel={pending?.item ? 'Remove' : `Remove all ${pendingCount}`}
+        busy={removing}
+        error={removeError}
         onCancel={() => setPending(null)}
-        onConfirm={confirmDelete}
+        onConfirm={confirmRemove}
       />
     </>
   );
@@ -1221,6 +1381,27 @@ export default function AdminHealerRecordPage({ params }) {
     };
   }, [slug]);
 
+  // THE LOCK AND THE CHANGE LOG (migration 0053), for the badge here and the
+  // Content tab. Fetched again after every change the tab makes.
+  const [edits, setEdits] = useState(null);
+  const [editsVersion, setEditsVersion] = useState(0);
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      try {
+        const res = await fetch(`/api/admin/listing-edit?slug=${encodeURIComponent(slug)}`, { cache: 'no-store' });
+        const json = await res.json();
+        if (!cancelled && res.ok && !json.error) setEdits(json);
+      } catch {
+        /* the badge and the log stay hidden */
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [slug, editsVersion]);
+  const refreshEdits = useCallback(() => setEditsVersion((v) => v + 1), []);
+
   // The canonical taxonomy, not the slugs that happen to be in use — a healer
   // should be taggable with a subject nobody carries yet.
   useEffect(() => {
@@ -1469,6 +1650,17 @@ export default function AdminHealerRecordPage({ params }) {
                     Unclaimed
                   </span>
                 ))}
+
+              {edits?.lock?.locked && (
+                <button
+                  type="button"
+                  onClick={() => setTab('Content')}
+                  title={edits.lock.note}
+                  className="rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-amber-300 transition-colors hover:bg-amber-500/20"
+                >
+                  🔒 Keep minimal
+                </button>
+              )}
             </div>
           </div>
 
@@ -1766,7 +1958,9 @@ export default function AdminHealerRecordPage({ params }) {
           </>
         )}
 
-        {tab === 'Content' && <ContentTab slug={healer.healer_slug} healerId={healer.id} />}
+        {tab === 'Content' && (
+          <ContentTab slug={healer.healer_slug} healerId={healer.id} edits={edits} onEditsChange={refreshEdits} />
+        )}
 
         {tab === 'Outreach' && <OutreachTab healer={healer} />}
 

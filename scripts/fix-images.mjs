@@ -14,6 +14,8 @@
 //            changes that photo (only that entry of image_urls) like the rest.
 //   remove   a video YouTube no longer has. Listed for the owner to delete.
 //   unsolved nothing usable found.
+//   locked   the listing is locked "keep minimal" at its owner's request
+//            (migration 0053): left alone, never swapped.
 // Set a row's action to `skip` to leave it alone after checking the sheet.
 //
 // dev reads web/.env.development.local, live reads web/.env.local. Keys are
@@ -26,6 +28,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { UA, amazonCover, pageImage, probeImage } from './lib/images.mjs';
 import { isPlaceholderImage, MIN_FAILURES } from '../web/utils/brokenImages.js';
+import { lockedListings } from './lib/locks.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -110,7 +113,9 @@ if (doApply) {
   const logPath = planArg.replace(/\.json$/, `.${envName}.applied.json`);
   const log = fs.existsSync(logPath) ? JSON.parse(fs.readFileSync(logPath, 'utf8')) : { env: envName, fixes: [] };
   const done = [];
+  const locks = await lockedListings(get);
   for (const row of plan.rows) {
+    if (locks.has(row.healer_slug)) { if (row.action === 'swap') console.log(`NOT changed (locked: ${locks.get(row.healer_slug)}): ${row.table} "${row.title}"`); continue; }
     const photo = row.table === 'healers' && row.approved === true;
     if (row.action !== 'swap' || !(SWAPPABLE.has(row.table) || photo) || !row.new) continue;
     // Applied earlier from this plan (a second --apply after approving photos).
@@ -170,8 +175,13 @@ async function bookCover(book, old) {
 }
 
 const queue = await get(`broken_images?select=*&failures=gte.${MIN_FAILURES}&order=first_seen_at.asc`);
+const locks = await lockedListings(get);
 const rows = [];
 for (const q of queue) {
+  if (locks.has(q.healer_slug)) {
+    rows.push({ table: q.table_name, record_id: q.record_id, healer_slug: q.healer_slug, title: q.title, old: q.image_url, action: 'locked', why: `listing locked: ${locks.get(q.healer_slug)}` });
+    continue;
+  }
   const spec = TABLES[q.table_name];
   const [record] = await get(`${q.table_name}?id=eq.${q.record_id}&select=${spec.select.replace(/ /g, '')}`);
   const row = { table: q.table_name, record_id: q.record_id, healer_slug: q.healer_slug, title: q.title, problem: q.problem || 'broken', status: q.status_code, old: q.image_url };
@@ -251,3 +261,4 @@ list('swap', 'To swap (books, offerings, free resources)', (r) => `[${++n}] ${r.
 list('suggest', 'Teacher photos for the owner', (r) => `${r.healer_slug}, photo ${r.index + 1}: ${r.candidates.map((c) => `[${++n}] ${c.source} ${c.url}`).join('  ')}`);
 list('remove', 'Videos to remove', (r) => `${r.healer_slug}: "${r.title}" ${r.link}`);
 list('unsolved', 'Not fixed', (r) => `${r.table} "${r.title}" (${r.healer_slug}): ${r.why}`);
+list('locked', 'Left alone: listing locked at the owner\'s request', (r) => `${r.table} "${r.title}" (${r.healer_slug}): ${r.why}`);

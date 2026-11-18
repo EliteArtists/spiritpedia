@@ -18,6 +18,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { UA, timed, decode, probeImage, pageImage, amazonCover, publisherLogo } from './lib/images.mjs';
 import { healthHits } from './lib/health.mjs';
+import { lockedLine, lockedListings } from './lib/locks.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -255,6 +256,10 @@ if (plan.publisher) {
 // ── The healer ───────────────────────────────────────────────────────────
 const slug = plan.healer?.healer_slug;
 let [healer] = await get(`healers?select=*&healer_slug=eq.${encodeURIComponent(slug)}`);
+// Locked at the owner's request (migration 0053): nothing goes in, not even
+// a profile update. The database refuses the items anyway.
+const locks = await lockedListings(get);
+if (locks.has(slug)) problems.push(lockedLine(slug, locks.get(slug)));
 const create = !healer ? plan.healer.create : null;
 if (!healer && !create) problems.push(`healer "${slug}" doesn't exist and the plan doesn't create it`);
 if (create) {

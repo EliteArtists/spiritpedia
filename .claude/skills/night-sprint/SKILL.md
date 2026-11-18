@@ -36,6 +36,8 @@ no questions overnight).
 2. **Before helpers start:** refresh the names list for duplicate checks:
    `node scripts/dev-names.mjs <scratchpad>/dev-names.json`. Check disk space
    (`df -h /`); below 2 GB, clear work folders first (README §13).
+   **Locked listings** (README §20.1, owner 18 Nov 2026) get nothing new; the ingest stops
+   on them by itself. Skip them as "locked: owner request".
 3. **Leads:** write each batch to
    `docs/content-audits/night-sprint-2026-11-09/leads/<first rank>.json`,
    continuing the ranks from the highest file there. Check every lead against

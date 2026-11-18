@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
+import { lockRefusal } from '@/utils/listingEdit';
 
 export const dynamic = 'force-dynamic';
 
@@ -87,6 +88,8 @@ export async function POST(request) {
 
   const { data, error } = await query;
 
-  if (error) return NextResponse.json({ error: error.message, code: error.code }, { status: 400 });
+  // A listing locked at its owner's request (migration 0053) refuses new
+  // items; the ingestion form shows this sentence.
+  if (error) return NextResponse.json({ error: lockRefusal(error) || error.message, code: error.code }, { status: 400 });
   return NextResponse.json({ data: data ?? null });
 }

@@ -63,14 +63,46 @@ there's no email. You can search by name and filter by kind, subject, claimed
 or not, and contact route. **Edit** opens the listing, with four tabs:
 **Profile** (every field: name, contact details, links, tier, kind, bio,
 photos, subjects, and teachers for a school or organisation), **Content**
-(its videos, books, courses, retreats, downloads and free resources, where you
-can swap a picture or delete an item), **Outreach** (the email journey for
+(its videos, books, courses, retreats, downloads and free resources: see
+"Editing a listing's items" below), **Outreach** (the email journey for
 this listing) and **Admin Notes** (not possible on a listing yet: if
 someone has claimed it, a link takes you to notes on their account). **What
 you do:** fix details, change a tier
 or kind, replace a broken picture, remove a video or an item, or delete the
 whole listing. **How often:** when something needs fixing, usually from an
 Inbox row or the night sprint's report.
+
+### Editing a listing's items (from 18 Nov 2026)
+
+On a listing's **Content** tab:
+- **Edit** on any row opens its fields under it: title, description, price
+  (offerings), link and image, as the item has them (a video has a title and
+  link only; its picture comes from YouTube). Save changes only what you
+  changed. On a phone the Edit and remove (×) buttons are always shown; on a
+  computer they appear when you point at the row.
+- **×** removes one item, after a confirm.
+- **Remove all** removes every item of one type at once (videos, books,
+  offerings, free resources; "offerings" means courses, retreats and
+  downloads together), after a confirm that says how many.
+- **The lock** at the top: **Switch lock on** marks the listing "keep
+  minimal" (the note box starts with "owner request — keep minimal" and
+  today's date; write your own if you like). While it's on, nothing new can
+  be added to the listing by anyone or anything: the sprints, restores, image
+  fixes and the Ingestion form are all refused. Editing and removing still
+  work. **Switch lock off** (with a note, if you like) when the owner is
+  happy for items to come back. A locked listing shows a **Keep minimal**
+  badge beside its name, and is listed in Ops → Locked listings.
+- **Change log** at the bottom: every edit, removal and lock change made
+  here, newest first, with the date and time. "Before and after" shows what
+  an edit changed; "What was removed" keeps a full copy of what went, so the
+  assistant can put anything back.
+
+The lock and the change log need migration 0053; until it has run, the tab
+says so and edits and removals aren't logged.
+
+**When a listing's owner asks for changes or removals** (standing rule): do
+them within a day, switch the lock on, mark their journey replied (Outreach
+tab), and the assistant logs the request in `docs/owner-requests/README.md`.
 
 ## From owners
 
@@ -125,6 +157,9 @@ publishers) and by state. **What you do:**
   the panel at the top.
 - **Mark replied** when someone writes back, and pause, resume or stop a
   journey from the listing's own Outreach tab.
+- **A claim stops its journey at once** (18 Nov 2026): when anyone claims a
+  listing, its journey ends "claimed" straight away, so they get no further
+  email.
 
 Every kind can be started (switched on 17 Nov 2026). Every outreach email
 comes from "Ross at Spiritpedia", signed Ross (18 Nov 2026). Email 1 has one
@@ -215,8 +250,10 @@ something yourself.
 ## Ops
 
 **What it's for:** what the content work has left waiting on you. **What it
-shows:** **Held plans** (listings waiting on your decision), **On dev, not on
-live**, **Retry another day** and the **Sprint reports**, with a filter box.
+shows:** **Locked listings** (kept minimal at their owner's request; each
+links to the listing, read live, not copied), **Held plans** (listings
+waiting on your decision), **On dev, not on live**, **Retry another day** and
+the **Sprint reports**, with a filter box.
 The heading says when it was last copied from the project files. **What you
 do:** read it; it can't be changed here. Give your decisions in the chat, and
 the assistant acts on them and refreshes this page. **How often:** each
@@ -424,10 +461,10 @@ the assistant, a script or the Supabase dashboard today.
 - **No notes on a listing nobody has claimed.** Admin Notes only attach to
   an account, so the Admin Notes tab on a listing is empty unless someone
   has claimed it.
-- **You can't edit an existing video, book, course or free resource.** On a
-  listing's Content tab you can swap its picture or delete it, but not
-  change its title, link, price, dates or description. That needs the
-  assistant (or for an owner to send an edit from their own account).
+- **An item's dates and subjects can't be edited.** Since 18 Nov 2026 you
+  can edit an item's title, description, price, link and image (Content tab
+  → Edit), but an offering's start and end dates, its type, and any item's
+  subjects still need the assistant.
 - **You can't rename a listing's web address (its slug).** It's shown as
   fixed; changing it needs the assistant.
 - **Deleting a listing leaves its content behind.** Its videos, books,
