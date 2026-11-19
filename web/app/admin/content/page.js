@@ -306,7 +306,7 @@ function AdminContentPage() {
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-2">
+                    <div className="flex flex-wrap items-center gap-2">
                       {typeLabel(h.entity_type) && (
                         <Badge className="border-slate-600 bg-slate-800 text-slate-300">{typeLabel(h.entity_type)}</Badge>
                       )}

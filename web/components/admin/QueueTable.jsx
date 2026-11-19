@@ -32,7 +32,7 @@ export function StatusPill({ status }) {
 export default function QueueTable({ items, onOpen, selectedId }) {
   return (
     <div className="overflow-hidden rounded-2xl border border-white/10 bg-[#111827]">
-      <div className="hidden grid-cols-[70px_120px_1fr_120px_90px] gap-3 border-b border-white/10 px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 md:grid">
+      <div className="hidden grid-cols-[70px_120px_1fr_120px_90px] gap-3 border-b border-white/10 px-4 py-2.5 text-[10px] font-bold uppercase tracking-wider text-slate-500 lg:grid">
         <span>Time</span>
         <span>Type</span>
         <span>Person / detail</span>
@@ -44,7 +44,7 @@ export default function QueueTable({ items, onOpen, selectedId }) {
         {items.map((item) => (
           <li
             key={item.id}
-            className={`grid grid-cols-1 gap-2 px-4 py-3 transition-colors md:grid-cols-[70px_120px_1fr_120px_90px] md:items-center md:gap-3 ${
+            className={`grid grid-cols-1 gap-2 px-4 py-3 transition-colors lg:grid-cols-[70px_120px_1fr_120px_90px] lg:items-center lg:gap-3 ${
               selectedId === item.id ? 'bg-[#7c3aed]/10' : 'hover:bg-white/5'
             }`}
           >
@@ -62,7 +62,7 @@ export default function QueueTable({ items, onOpen, selectedId }) {
             <span>
               <StatusPill status={item.status} />
             </span>
-            <span className="flex items-center justify-start gap-1 md:justify-end">
+            <span className="flex items-center justify-start gap-1 lg:justify-end">
               {/* A row that names its own destination goes there. The
                   three-pane reviewer only knows how to render the sources that
                   hang off a profile, so anything else says where it belongs and

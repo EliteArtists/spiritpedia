@@ -1626,7 +1626,7 @@ export default function AdminHealerRecordPage({ params }) {
             </span>
           )}
 
-          <div className="min-w-0 flex-1">
+          <div className="min-w-0 flex-1 basis-64">
             <h3 className="text-xl font-bold text-white">{healer.name}</h3>
             <p className="break-all font-mono text-xs text-slate-500">{healer.healer_slug}</p>
             <div className="mt-2 flex flex-wrap items-center gap-2">

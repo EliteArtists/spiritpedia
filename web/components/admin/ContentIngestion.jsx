@@ -727,7 +727,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
         </header>
 
         {/* TAB SWITCHER */}
-        <div className="flex rounded-xl bg-slate-900 border border-slate-800 p-1 mb-8">
+        <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-900 border border-slate-800 p-1 mb-8 sm:grid-cols-3 xl:grid-cols-6">
           {[
             { key: 'video', label: '🎬 Add Video' },
             { key: 'book', label: '📚 Add Book' },
@@ -743,7 +743,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
                 setTab(t.key);
                 setToast(null);
               }}
-              className={`flex-1 py-3 rounded-lg text-sm font-bold uppercase tracking-wide transition-all ${
+              className={`py-3 px-2 rounded-lg text-sm font-bold uppercase tracking-wide transition-all ${
                 tab === t.key
                   ? 'bg-gradient-to-r from-cyan-500 to-emerald-500 text-slate-950 shadow-lg'
                   : 'text-slate-400 hover:text-white'
