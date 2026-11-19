@@ -142,3 +142,15 @@ pbcopy < ~/Sites/spiritpedia/app/config/dev.json
 For the optional archives, copy `~/Library/Developer/Xcode/Archives/2026-11-17` (and
 `2026-11-03`, `2026-10-28`) to Google Drive. The **Restore on a new Mac** checklist is
 README §22.
+
+## 8. Restore kit complete (owner, 19 Nov 2026)
+
+You've backed up everything to Apple Passwords and Google Drive (My Drive: "ANDROID
+BUILD", "IOS BUILDS", "Xcode archives"). README §22 now has a **Where the backups are**
+table, with names and places only, never values. The old STILL MISSING rows are marked
+backed up, and the checklist points at each entry. Your Apple Passwords entry
+"supbase (spiritpedia)" is written with that spelling so it can be found.
+
+The keystore (Drive) and `key.properties` (Apple Passwords) are needed together to sign
+any Android update. The local `CRON_SECRET` is stale while live is fine; regenerate it
+only if a local cron test needs it.

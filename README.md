@@ -61,10 +61,9 @@ points to.
 **Open items**
 - **Owner:** whether Andrea Kennedy's contact email, YouTube link and "Teaches on Omega
   Institute" line also come off her listing.
-- **`web/.env.local`'s `CRON_SECRET` is out of date** (Vercel's is the real one, and
-  Supabase Vault's matches it: the hourly push job last sent at 10:05 UTC on 17 Nov).
-  Copy Vercel's value into the local file and its backup when convenient (§22).
-- **Owner:** the restore kit items marked STILL MISSING (§22).
+- **`web/.env.local`'s `CRON_SECRET` is stale** (live is fine: Vercel's and Supabase
+  Vault's match). Regenerate it only if a local cron test needs it (§22).
+- **Restore kit: complete** (owner, 19 Nov 2026); where each backup is: §22.
 - **1.0.3** (deep links), then the open jobs list below (items marked done are done).
 - The owner's own jobs are in the next table.
 
@@ -78,7 +77,7 @@ Not code. Dated, so it's clear what is late.
 | Daily, from 18 Nov 2026 | **Outreach:** up to 50 journeys a day from Admin → Outreach → Up next (§20); night sprints paused until every listing is contacted |
 | Done (18 Nov 2026) | **App 1.0.2 (build 29):** live on the App Store and Google Play; `release/1.0.2` merged into `main`. Next app release: 1.0.3 (deep links) |
 | Open | **Andrea Kennedy:** decide whether her contact email, YouTube link and Omega Institute line go too |
-| Open | **Restore kit:** back up the items marked STILL MISSING (§22) |
+| Done (19 Nov 2026) | **Restore kit:** everything backed up (Apple Passwords and Google Drive; §22) |
 | Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list (owner doing it, 16 Nov); PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
 | Open | **World of Books (Awin):** reapply after fixing the profile |
 | Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
@@ -513,7 +512,7 @@ None of these are secrets.
 | :--- | :--- | :--- |
 | `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET`, `YOUTUBE_API_KEY` (YouTube Data API v3, Google Cloud project `spiritpedia-ad62b`; read by `scripts/` only, never by the site) | No (`.env*` in `web/.gitignore`) |
 | `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` (the **dev** project `spiritpedia-dev-5e4d5`), `YOUTUBE_API_KEY` (the same key; scripts run with `--env dev` read it here) | No |
-| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `RESEND_WEBHOOK_SECRET` (the Resend delivered/bounced webhook), and `DISCOVERY_EDITIONS` once switched on. **The source of truth for `CRON_SECRET`**: the copy in `web/.env.local` is out of date | — |
+| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `RESEND_WEBHOOK_SECRET` (the Resend delivered/bounced webhook), and `DISCOVERY_EDITIONS` once switched on. **The source of truth for `CRON_SECRET`**: the copy in `web/.env.local` is stale | — |
 | `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
 | `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
 | `~/.secrets/spiritpedia/firebase/` on the development Mac (folder `700`, files `600`) | The two Firebase service-account keys: `live-spiritpedia-ad62b.json` (its values are in Vercel; not in any local env file) and `dev-spiritpedia-dev-5e4d5.json` (in `web/.env.development.local`) | No — outside the repo |
@@ -3466,22 +3465,44 @@ The detail of every screen is in the admin guide (Admin → **Help**, `web/docs/
 ## 22. Restore on a new Mac
 
 Everything else is in git. These are the things that exist **only on this Mac** (state
-on 19 Nov 2026), and where each is backed up.
+on 19 Nov 2026). All of them are backed up (owner, 19 Nov 2026); where is in the next
+table.
 
 | Item | Path on this Mac | Backed up |
 | :--- | :--- | :--- |
-| Website env, live | `web/.env.local` | Apple Passwords (owner). Its `CRON_SECRET` is out of date: take Vercel's |
-| Website env, dev | `web/.env.development.local` | Apple Passwords (owner) |
+| Website env, live | `web/.env.local` | Apple Passwords |
+| Website env, dev | `web/.env.development.local` | Apple Passwords |
 | App config, live | `app/config/prod.json` | **In git** (public values only), and Apple Passwords |
-| App config, dev | `app/config/dev.json` | **STILL MISSING** (low stakes: public dev values, rebuilt from `dev.example.json` and Supabase (dev) → Settings → API) |
-| Play upload keystore | `~/.secrets/spiritpedia/android/upload-keystore.jks` | Google Drive (owner) |
-| Its passwords and alias | `~/.secrets/spiritpedia/android/key.properties` | **STILL MISSING on 19 Nov 2026** unless the Drive copy included it: Apple Passwords (`pbcopy < ~/.secrets/spiritpedia/android/key.properties` in Terminal, then paste) |
-| Firebase service account, live | `~/.secrets/spiritpedia/firebase/live-spiritpedia-ad62b.json` | **STILL MISSING as a file on 19 Nov 2026** (its values are on Vercel; Firebase can make a new key): Apple Passwords via `pbcopy < …` as above |
+| App config, dev | `app/config/dev.json` | Apple Passwords |
+| Play upload keystore | `~/.secrets/spiritpedia/android/upload-keystore.jks` | Google Drive, and Apple Passwords |
+| Its passwords and alias | `~/.secrets/spiritpedia/android/key.properties` | Apple Passwords |
+| Firebase service account, live | `~/.secrets/spiritpedia/firebase/live-spiritpedia-ad62b.json` | Apple Passwords (its values are also on Vercel) |
 | Firebase service account, dev | `~/.secrets/spiritpedia/firebase/dev-spiritpedia-dev-5e4d5.json` | Its values are in `web/.env.development.local` (Apple Passwords) |
-| Store builds (.ipa, .aab) | `app/build/ios-release/`, `app/build/android-release/` | Google Drive (owner) |
-| Xcode archives (with symbols) | `~/Library/Developer/Xcode/Archives/2026-10-28`, `2026-11-03`, `2026-11-17` | Not backed up (optional: only for reading crash reports) |
+| Store builds (.ipa, .aab) | `app/build/ios-release/`, `app/build/android-release/` | Google Drive |
+| Xcode archives (with symbols) | `~/Library/Developer/Xcode/Archives/2026-10-28`, `2026-11-03`, `2026-11-17` | Google Drive |
 | Claude Code memory | `~/.claude/projects/-Users-SundaySouLounge-Sites-spiritpedia/memory/` | Not backed up (optional; this README holds the rules) |
 | GitHub SSH key | `~/.ssh/id_ed25519` | Not needed: make a new key on the new Mac and add it to GitHub |
+
+### Where the backups are (names and places only, never values)
+
+| Where | Entry or folder | Holds |
+| :--- | :--- | :--- |
+| Apple Passwords | ".env (Spiritpedia)" | `web/.env.local` and `web/.env.development.local` |
+| Apple Passwords | "Spiritpedia Android key.properties" | The upload keystore's passwords and alias |
+| Apple Passwords | "Spiritpedia Android upload key" | The upload keystore |
+| Apple Passwords | "Spiritpedia app prod.json", "Spiritpedia app dev.json" | `app/config/prod.json`, `app/config/dev.json` |
+| Apple Passwords | "Spiritpedia Firebase live service account" | `live-spiritpedia-ad62b.json` |
+| Apple Passwords | "Supabase (spiritpedia-dev)", "supbase (spiritpedia)" (spelt so) | Database logins, dev and live |
+| Apple Passwords | "Spiritpedia Admin Control" | The admin login |
+| Apple Passwords | "OpenAI (Spiritpedia)" | The OpenAI account |
+| Google Drive (My Drive) | "ANDROID BUILD" | The `.aab` files for 1.0.0, 1.0.1 and 1.0.2; `spiritpedia-upload-key.zip` (the keystore); `play-icon-512.png` |
+| Google Drive (My Drive) | "IOS BUILDS" | The `.ipa` files for 1.0.0, 1.0.1 and 1.0.2 |
+| Google Drive (My Drive) | "Xcode archives" | `2026-10-28`, `2026-11-03`, `2026-11-17` |
+
+- **The keystore (Drive) and `key.properties` (Apple Passwords) are needed together**
+  to sign any Android update. Either alone is useless.
+- **The `CRON_SECRET` in the local `web/.env.local` is stale** (live is fine: Vercel and
+  Supabase Vault match). Regenerate it only if a local cron test needs it.
 
 Not on this Mac at all, and safe where they are: Vercel's environment variables, the
 APNs key (Firebase console, both projects), Apple signing (Xcode's automatic signing
@@ -3496,10 +3517,9 @@ Firebase app settings (`app/lib/core/firebase/options_*.dart`, in git), Supabase
 2. Make an SSH key, add it to GitHub, then
    `git clone git@github.com:EliteArtists/spiritpedia.git ~/Sites/spiritpedia`.
 3. From Apple Passwords, recreate `web/.env.local` and `web/.env.development.local`
-   (names in §5); set `CRON_SECRET` to Vercel's value. Create `app/config/dev.json` from
-   `app/config/dev.example.json`.
-4. Recreate `~/.secrets/spiritpedia/android/` (the `.jks` from Google Drive and
-   `key.properties` from Apple Passwords) and `~/.secrets/spiritpedia/firebase/`; then
+   (names in §5), and `app/config/dev.json` (the "Spiritpedia app dev.json" entry).
+4. Recreate `~/.secrets/spiritpedia/android/` (the `.jks` from Drive's
+   `spiritpedia-upload-key.zip` and `key.properties` from Apple Passwords) and `~/.secrets/spiritpedia/firebase/`; then
    `chmod 700` the folders and `chmod 600` the files. `storeFile` in `key.properties`
    must point at the new path.
 5. Website: `cd web && npm ci && npm test && npm run dev` (dev data on port 3000).
@@ -3507,8 +3527,9 @@ Firebase app settings (`app/lib/core/firebase/options_*.dart`, in git), Supabase
    account (team `KT2XV84345`) so automatic signing can make the certificates. Check the
    upload key: `keytool -list -v -keystore ~/.secrets/spiritpedia/android/upload-keystore.jks`
    shows the SHA-256 in §4.
-7. Copy the store builds from Google Drive into `app/build/ios-release/` and
-   `app/build/android-release/`.
+7. Copy the store builds from Google Drive ("IOS BUILDS", "ANDROID BUILD") into
+   `app/build/ios-release/` and `app/build/android-release/`, and the "Xcode archives"
+   folders into `~/Library/Developer/Xcode/Archives/`.
 8. Store builds only through `app/tool/build_release.sh` (§12.5).
 
 Made with love in Tavira 💫
