@@ -11,21 +11,74 @@ email work, migrations 0024–0026, Inbox-only approval, no ✦; then the Fireba
 move to love@spiritpedia.co, builds 23 and 24, and Android made ready for
 Google Play), and again on 28 October 2026 (For You, co-authors, the
 broken-image routine, builds 25–27, the store status and the open jobs below),
-and on 30 October 2026 (the release plan, stale lines tidied), checked against
-the code, not memory. Where it
+and on 30 October 2026 (the release plan, stale lines tidied), and for the
+end-of-session handover on 19 November 2026 (**start with "Start here" just
+below**), checked against the code, not memory. Where it
 and the code disagree, the code is right and this file should be fixed.
 
-## Next steps: Ross's own jobs (owner, 11 Nov 2026)
+## Start here (handover, 19 Nov 2026)
+
+A new session can pick up from this section alone; the detail is in the sections it
+points to.
+
+**Where things are**
+- **App 1.0.2 (build 29) is live on the App Store and Google Play** (18 Nov 2026), and
+  `main` holds it (`release/1.0.2` merged; the branch is kept). Next app release:
+  **1.0.3, deep links** (needs the Play app-signing SHA-256 and Associated Domains for
+  `co.spiritpedia.app`). Store builds are kept in `app/build/ios-release/`,
+  `app/build/android-release/` and Xcode's Archives; never run `flutter clean` in `main`
+  without moving them first (§13).
+- **Website:** live at www.spiritpedia.co; a push that changes `web/` deploys.
+  Migrations **0000–0053** are on dev and live.
+- **Outreach is running for real** (since 17 Nov 2026: email 1 goes to the listing's own
+  address). The owner starts up to **50 journeys a day** from Admin → Outreach →
+  **Up next** (§20). On 19 Nov: 52 journeys, 47 running; the first **email 2s are due
+  on 8 Dec 2026** (the daily 08:00 job sends them).
+- **Night sprints are paused** until every listing has been contacted (§20). The
+  morning's first job is the broken images (§19).
+- **Scheduled jobs** run on their own (§9.10); how to check each is healthy: §21.
+- **Owner change and removal requests:** the standing rule is §20.1 (edit or remove in
+  the admin, lock the listing, stop the journey, log it).
+
+**Recent decisions (newest first)**
+- 19 Nov: the admin works at iPad sizes, portrait and landscape (the Inbox queue is one
+  card per item below 1024 px).
+- 18 Nov: owner requests are done within a day, with the listing locked "keep minimal",
+  the journey stopped and the request logged; every claim stops its journey at once,
+  also by a database trigger (migration 0053; §20.1). Andrea Kennedy (Mainstream Reiki)
+  is locked and minimal (`docs/owner-requests/README.md`).
+- 18 Nov: every outreach email is from "Ross at Spiritpedia", written as "I" and signed
+  "Ross"; email 1 has one link only (the claim is offered by reply); emails 2–8 keep the
+  claim link and the app footer. The Shift Network and Insight Timer are partnerships:
+  no cold email.
+- 18 Nov: the daily routine changed: night sprints paused, broken images first, up to
+  50 journeys a day (§20).
+- 18 Nov: disk cleared to 33 GB free; the iOS 18.2 simulator runtime, the Android
+  emulator and NDK are kept on purpose (§13).
+- 16 Nov: deep links moved to 1.0.3; the ingest identifies itself honestly and still
+  obeys robots.txt.
+
+**Open items**
+- **Owner:** whether Andrea Kennedy's contact email, YouTube link and "Teaches on Omega
+  Institute" line also come off her listing.
+- **`web/.env.local`'s `CRON_SECRET` is out of date** (Vercel's is the real one, and
+  Supabase Vault's matches it: the hourly push job last sent at 10:05 UTC on 17 Nov).
+  Copy Vercel's value into the local file and its backup when convenient (§22).
+- **Owner:** the restore kit items marked STILL MISSING (§22).
+- **1.0.3** (deep links), then the open jobs list below (items marked done are done).
+- The owner's own jobs are in the next table.
+
+## Next steps: Ross's own jobs (owner, 11 Nov 2026; updated 19 Nov)
 
 Not code. Dated, so it's clear what is late.
 
 | Due | Job |
 | :--- | :--- |
-| 11 Nov 2026 | **Google Play:** store listing and screenshots |
-| 12 Nov 2026 | **Google Play:** apply for production when closed testing ends |
-| Once production access is granted | **Google Play:** release build 28 |
-| From 18 Nov 2026 | **Outreach:** up to 50 journeys a day from Admin → Outreach → Up next (§20); night sprints paused until every listing is contacted |
+| Done | **Google Play:** store listing and screenshots, production access, and the release (1.0.2 live on 18 Nov 2026) |
+| Daily, from 18 Nov 2026 | **Outreach:** up to 50 journeys a day from Admin → Outreach → Up next (§20); night sprints paused until every listing is contacted |
 | Done (18 Nov 2026) | **App 1.0.2 (build 29):** live on the App Store and Google Play; `release/1.0.2` merged into `main`. Next app release: 1.0.3 (deep links) |
+| Open | **Andrea Kennedy:** decide whether her contact email, YouTube link and Omega Institute line go too |
+| Open | **Restore kit:** back up the items marked STILL MISSING (§22) |
 | Open | **Amazon Associates:** payment and tax details (W-8BEN-E); add the App Store and Play links to the site list (owner doing it, 16 Nov); PA-API covers once eligible (plan in `docs/reports/2026-11-10-big-content-sprint.md` §5) |
 | Open | **World of Books (Awin):** reapply after fixing the profile |
 | Before 1 Feb 2027 | **Trader status (EU DSA):** declare it |
@@ -33,42 +86,24 @@ Not code. Dated, so it's clear what is late.
 | Open | **Insight Timer:** partnership email |
 | Open | **Owner photos:** Ally Bogard; Kathie and Paul Scott (a photo of both) |
 
-## Open jobs (30 October 2026)
+## Open jobs (30 October 2026; updated 19 Nov)
 
 The list to pick up from. Each points to where the detail lives.
 
-1. **Store status.**
-   - **iOS:** 1.0 is in Apple review (build 24's archive is kept for it).
-     **Build 27 is on TestFlight** (28 Oct;
-     `app/build/ios-release/Spiritpedia-1.0.0-27.ipa`). Builds 25 and 26 were
-     never uploaded; their files were deleted on 28 Oct.
-   - **Android:** the closed test is live with 15 testers; the application
-     for production is due about **9–10 November 2026**. **Build 25**
-     (`app/build/android-release/Spiritpedia-1.0.0-25.aab`) was uploaded to
-     the closed test on **31 Oct 2026** as its first update. 26 and 27 were
-     iOS only (the Gradle cache was cleared on 28 Oct: the first Android
-     build downloads about 3.5 GB again).
-   - **The plan (owner, 3 Nov 2026):** **1.0.1 (build 28, `1.0.1+28`)** for
-     both stores = build 27 + push notifications (job #4) + Near You
-     "Closest to you" (job #12) + the hubs app side (job #10). Shown on the
-     simulator (owner's OK, 3 Nov 2026). **Build 28 is built** (§10.1) for the
-     owner to upload to TestFlight and the Google closed test; 1.0.1 is
-     submitted to Apple once 1.0 is approved. The website half is live (3 Nov
-     2026); migration 0032 is on dev and live; the owner sets the new
-     CRON_SECRET in Vercel and runs the hourly pg_cron job on live. Build map: `docs/reports/2026-11-03-build-map-before-1.0.1.md`.
-     Then the first content batch: **12 Reiki practitioners** (§18, batch mode).
+1. **Store status (19 Nov 2026): done.** 1.0 (27), 1.0.1 (28) and 1.0.2 (29) all
+   shipped; **1.0.2 is live on the App Store and Google Play** (§10.1). Next: 1.0.3
+   (deep links).
 2. **Reviewer demo account: only if Apple asks.** It doesn't exist and isn't
    needed unless a reviewer asks for one. If it is ever built, it must not
    weaken sign-in for anyone else (codes are otherwise emailed; §14).
 3. **Next.js security upgrade.** `web/package.json` asks for `^16.2.11`;
    16.4.0 is installed and 16.4.3 is the latest. Upgrade, run `npm test` and a
    local build, then push (a `web/` push deploys).
-4. **Push notification package: built for 1.0.1** (owner's spec, 3 Nov
+4. **Push notification package: shipped in 1.0.1** (owner's spec, 3 Nov
    2026; §9.11, §10.11). **Invitations only, never reminders of things
-   undone.** Waiting for: migration **0032** (owner, dev then live), the
-   website push (it deploys), `supabase/scheduled/push-hourly.sql` on live,
-   and build 28. Still open: the welcome tray redesign (§16.1), and course
-   and retreat reminders (later).
+   undone.** Migration 0032, the website half and the hourly pg_cron job are
+   on live. Still open: the welcome tray redesign (§16.1), and course and
+   retreat reminders (later).
 5. **Search.** In this order: **positive suggestions first** (what helps,
    before anything about the difficulty); **strict practice subjects** (a
    practice only under subjects it truly belongs to); then **search by
@@ -85,7 +120,7 @@ The list to pick up from. Each points to where the detail lives.
    gentle **"better on the app"** prompts.
 9. **Future companion apps:** **I AM by Spiritpedia** first, then
    **Consciousness by Spiritpedia**.
-10. **Hubs: the app side** (the website is done, §17.11). **Built for 1.0.1**
+10. **Hubs: the app side: shipped in 1.0.1** (the website is done, §17.11). **Built for 1.0.1**
     (owner, 3 Nov 2026: a must for launch; build 28, §10.1): a school's page, Our Teachers on schools and organisations,
     "Teaches at…" / "Teaches on…" and the Schools & Academies shelf in the
     app. Also **Isaac Osborne and Natalie Ramon** for White Tiger once a photo
@@ -96,9 +131,9 @@ The list to pick up from. Each points to where the detail lives.
 11. **Sign-in history in the admin** (plan first; not built): per person,
     when they signed in, from Supabase's auth logs, so activity can be seen
     without copying codes.
-12. **Near You is never empty: built** (app 1.0.1 and the website, §10.8;
-    plan `docs/reports/2026-11-03-near-you-plan.md`). The website half goes
-    live with the next `web/` push.
+12. **Near You is never empty: shipped** (app 1.0.1, and 1.0.2 sorts and
+    never hides anyone; the website too; §10.8, plan
+    `docs/reports/2026-11-03-near-you-plan.md`).
 13. **Hub queue** (§18.7), in order:
     - **The Shift Network:** the first 100 are done (sprint 1, ranks 1–116;
       `docs/content-audits/shift-sprint-1/`). The rest of the 477 after
@@ -334,23 +369,25 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 18. [Content ingestion](#18-content-ingestion)
 19. [Fixing the broken-image queue (the morning routine)](#19-fixing-the-broken-image-queue-the-morning-routine)
 20. [The daily routine (night sprint, morning, day)](#20-the-daily-routine-night-sprint-morning-day)
+21. [Running Spiritpedia without Claude Code](#21-running-spiritpedia-without-claude-code)
+22. [Restore on a new Mac](#22-restore-on-a-new-mac)
 
 ---
 
 ## 1. Where things stand
 
-| | State on 28 October 2026 |
+| | State on 19 November 2026 |
 | :--- | :--- |
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
-| **App (iOS)** | Flutter, iPhone and iPad. **1.0** is in Apple review. **1.0.0 (27)** is on TestFlight (`app/build/ios-release/Spiritpedia-1.0.0-27.ipa`; archive in Xcode's Archives, `2026-10-28/Spiritpedia 1.0.0 (27).xcarchive`, 28 Oct 2026). Build 24's archive (`2026-10-22/Runner 3.xcarchive`) is kept while 1.0 is in review; 25 and 26 were never uploaded and their files were deleted on 28 Oct |
-| **App (Android)** | The same code. The **closed test is live with 15 testers**; the production application is due about 9–10 Nov 2026 (§10.15, §12.8, `docs/google-play.md`). **1.0.0 (25)** (version code 25, `app/build/android-release/Spiritpedia-1.0.0-25.aab`) has been in the closed test since **31 Oct 2026**. Not yet in production |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0042` are on both |
-| **Push** | Firebase Cloud Messaging only, with an APNs key. Moved on 22 Oct 2026 to two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`); checked end to end on iPhone, iPad and Android |
-| **Emails** | The approved copy of 21–22 Oct 2026 is live (§9.7). The outreach journey is eight emails, redirected to a test inbox by `JOURNEY_TEST_EMAIL` until the solicitor has checked cold email; no journey is running. Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
-| **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` only. No staging environment, no feature flags |
+| **App (iOS)** | Flutter, iPhone and iPad. **1.0.2 (29) is live on the App Store** (18 Nov 2026). Store builds: `app/build/ios-release/Spiritpedia-1.0.{0-27,1-28,2-29}.ipa`, archives in Xcode's Archives (`2026-10-28`, `2026-11-03`, `2026-11-17`) |
+| **App (Android)** | The same code. **1.0.2 (29) is live on Google Play** (18 Nov 2026). Store builds: `app/build/android-release/Spiritpedia-1.0.{0-25,1-28,2-29}.aab`, signed with the upload key (§5) |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0053` are on both |
+| **Push** | Firebase Cloud Messaging only, with an APNs key, in two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`). The hourly run is called by Supabase pg_cron (§9.10) |
+| **Emails** | Outreach journeys are **real** since 17 Nov 2026 (email 1 goes to the listing's own address; up to 50 started a day, §20). Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
+| **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` (plus the merged `release/1.0.2`). No staging environment, no feature flags |
 
-Build 24 has been submitted for review. Before 1.0.1, check the App Privacy
-label (§12.6) still matches what the app collects.
+Before 1.0.3, check the App Privacy label (§12.6) still matches what the app
+collects.
 
 ---
 
@@ -476,7 +513,7 @@ None of these are secrets.
 | :--- | :--- | :--- |
 | `web/.env.local` (points at **live**) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `JOURNEY_TEST_EMAIL`, `CRON_SECRET`, `YOUTUBE_API_KEY` (YouTube Data API v3, Google Cloud project `spiritpedia-ad62b`; read by `scripts/` only, never by the site) | No (`.env*` in `web/.gitignore`) |
 | `web/.env.development.local` (points at **dev**; `next dev` loads it over `.env.local`) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `RESEND_API_KEY`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY` (the **dev** project `spiritpedia-dev-5e4d5`), `YOUTUBE_API_KEY` (the same key; scripts run with `--env dev` read it here) | No |
-| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `JOURNEY_TEST_EMAIL` (Production and Preview), and `DISCOVERY_EDITIONS` once switched on | — |
+| Vercel → `spiritpedia-e58y` → Settings → Environment Variables | Everything the live site needs: the Supabase three, `ADMIN_PASSWORD`, `ADMIN_NAME`, `RESEND_API_KEY`, `CRON_SECRET`, `NEXT_PUBLIC_GA_MEASUREMENT_ID`, `FIREBASE_PROJECT_ID` / `_CLIENT_EMAIL` / `_PRIVATE_KEY` (the **live** push service account lives only here), `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU`, `RESEND_WEBHOOK_SECRET` (the Resend delivered/bounced webhook), and `DISCOVERY_EDITIONS` once switched on. **The source of truth for `CRON_SECRET`**: the copy in `web/.env.local` is out of date | — |
 | `app/config/dev.json` | `APP_ENV`, `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `API_BASE_URL` (dev; copy `dev.example.json`) | No (`app/.gitignore`) |
 | `app/config/prod.json` | The same four (live) plus `AMAZON_TAG_US` / `_UK` / `_CA` / `_ES` / `_AU` | **Yes, on purpose**: only public values |
 | `~/.secrets/spiritpedia/firebase/` on the development Mac (folder `700`, files `600`) | The two Firebase service-account keys: `live-spiritpedia-ad62b.json` (its values are in Vercel; not in any local env file) and `dev-spiritpedia-dev-5e4d5.json` (in `web/.env.development.local`) | No — outside the repo |
@@ -486,9 +523,10 @@ None of these are secrets.
 
 - **Email switches (not secrets, but they decide who gets emailed):**
   - `JOURNEY_TEST_EMAIL`: while set, every outreach journey email goes to that
-    address instead of the practitioner. Set on Vercel (Production and
-    Preview) on 21 Oct 2026; **leave it set until the solicitor has checked
-    cold email** (§16.1).
+    address instead of the practitioner. Set on Vercel on 21 Oct 2026; **no
+    longer redirecting since 17 Nov 2026**: journey emails go to the listing's
+    own address. Keep it set in local env files, so a local server can never
+    email a practitioner.
   - `DISCOVERY_EDITIONS`: only the value `on` lets the daily job send personal
     discovery editions (§9.7a). Not set yet. To switch on: Vercel →
     `spiritpedia-e58y` → Settings → Environment Variables → add
@@ -1319,9 +1357,9 @@ the daily job sends at most one due email per journey, the lowest first.
   (`DO_NOT_CONTACT`).
 - The double-send guard is the write itself: a conditional update claims that
   email's "sent" timestamp before sending, and puts it back if the send fails.
-- **`JOURNEY_TEST_EMAIL` redirects every journey email while set**, and it is
-  set on Vercel until the solicitor has checked cold email. **No journey has
-  ever been started for a real listing.**
+- **`JOURNEY_TEST_EMAIL` redirects every journey email while set.** Journeys
+  have been real since 17 Nov 2026 (it no longer redirects on Vercel); it stays
+  in local env files so a local server can't email a practitioner.
 
 ### 9.9 Activity (and Admin → Activity)
 
@@ -2108,6 +2146,16 @@ The development Mac has run out of both.
   deleted, and both simulators erased (the iPhone 18 Pro and the iPad Pro 13;
   they rebuild their iOS data, about 4 GB each, on first boot): 18 GB free.
 - **30 October 2026:** about **36 GB free**.
+- **18 November 2026:** down to 3.8 GB, then **33 GB free**. The owner's standing safe
+  list (all regenerable): Xcode DerivedData, old iOS DeviceSupport, unavailable
+  simulators, CoreSimulator caches (`/Library/Developer/CoreSimulator/Caches/dyld` is
+  root-owned: the owner removes it with `sudo`), Flutter and app build folders **except
+  `app/build/ios-release` and `android-release`**, Gradle, CocoaPods and SPM caches,
+  `web/.next`, npm and Homebrew caches. Anything else over 1 GB: list it with its size
+  and ask. The iOS 18.0 simulator runtime was removed with the owner's OK; **kept on
+  purpose:** the iOS 18.2 runtime (older-iOS testing), the Android emulator and NDK.
+  **Never run `flutter clean` in `main`:** it deletes `app/build`, the release folders
+  with it. Report: `docs/reports/2026-11-18-release-1.0.2-and-disk.md`.
 
 ---
 
@@ -3352,5 +3400,115 @@ an application approved), its outreach journey stops at once with reason "claime
 the website code (`utils/journey.js` → `stopJourneyOnClaim`) and, once migration 0053
 has run, by a database trigger on `user_profiles` as well. Before 18 Nov 2026 a claimed
 journey only stopped at the next daily run, before its next email.
+
+## 21. Running Spiritpedia without Claude Code
+
+Most of Spiritpedia runs by itself. The owner runs the day from the admin; Claude Code
+is needed only for the jobs in §21.3.
+
+### 21.1 What runs on its own, and where to check it
+
+| What | When (UTC) | Where to check it is healthy |
+| :--- | :--- | :--- |
+| **Journey emails** (`/api/cron/journey-emails`, Vercel cron) | daily 08:00 | Vercel → `spiritpedia-e58y` → Settings → **Cron Jobs** → journey-emails → **View logs**: a 200 every morning. Admin → **Outreach**: each journey's emails with sent, delivered or bounced. The first email 2s fall due on **8 Dec 2026**; that morning they should show as sent |
+| **Account emails** (`/api/cron/account-emails`: Day 4, the late practitioner welcome) | daily 09:00 | Vercel → Cron Jobs → account-emails → View logs (200) |
+| **Image audit** (`/api/cron/broken-images`) | daily 07:00 | Admin → **Inbox**: the line under the filters, "Image check last ran …", should show today; it says **overdue** if a run was missed. New broken images appear under Broken Images |
+| **Push** (`/api/cron/push`, called by **Supabase pg_cron**, job `push-hourly`) | hourly, :05 | Supabase (live) → Integrations → **Cron** → `push-hourly` → its runs. Or in the SQL editor: `select status_code, created from net._http_response order by created desc limit 5;` (200 is good). **401** means Vault's `cron_secret` no longer matches Vercel's `CRON_SECRET`: run `supabase/scheduled/push-hourly.sql` again with Vercel's value. Admin → **Notifications** → "The last 7 days" shows what was sent |
+| **Retention** (`/api/cron/activity-purge`) and **pending sign-ups** (`/api/cron/pending-signups`) | daily 05:00 and 06:00 | Vercel → Cron Jobs → View logs (200) |
+| **Resend webhook** (`/api/email/resend-webhook`: delivered and bounced) | on every outreach email | Admin → Outreach: each email shows **Delivered** (or Bounced) within seconds. If emails stay without it, Resend → **Webhooks** shows failed attempts, and `RESEND_WEBHOOK_SECRET` must be set on Vercel |
+| **Website deploys** | each push to `main` that changes `web/` | Vercel → `spiritpedia-e58y` → **Deployments** (Ready) |
+
+On every cron, **401** means the secret is wrong and **503** means it is unset on Vercel.
+Last checked 19 Nov 2026: image audit ran 07:01 that day with no error; account emails
+last sent 09:00 on 17 Nov; push last sent 10:05 on 17 Nov (an hourly run); the webhook
+has reported on all 51 outreach emails sent (6 bounced); no journey email is overdue.
+
+### 21.2 The owner's day in the admin
+
+The detail of every screen is in the admin guide (Admin → **Help**, `web/docs/admin-guide.md`).
+
+1. **Inbox** (`/admin`), first thing: **broken images first** (§19; Fix on each), then
+   applications (Approve or Decline), claim requests, reviews, content from owners,
+   reports and closed accounts. Check "Image check last ran" says today.
+2. **Outreach → Up next:** start up to **50 journeys** ("Started today: X of 50"); each
+   Start sends email 1 at once. Replies come to love@spiritpedia.co: for each one, open
+   the listing → **Outreach** tab → **Mark replied (today)**, or stop the journey with the
+   reason they gave (asked to stop, removal requested: never emailed again).
+3. **Reports** (`/admin/flags`), every day without fail (the Terms promise 24 hours):
+   **Take review down**, **Ban reviewer** or **Dismiss**.
+4. **Claims** (`/admin/claims`): the record of who manages what; waiting requests are
+   decided in the Inbox. A claim stops its listing's journey by itself.
+5. **Owner requests** (a listing's owner asks for changes or removals), within a day,
+   following §20.1: Admin → **Content** → the listing →
+   - **Content** tab: **Edit** any item (title, description, price, link, image), **×**
+     to remove one, **Remove all** for a whole type, each with a confirm;
+   - **Switch lock on** with the note `owner request — keep minimal (<date>)`, so
+     nothing can add items back (shown as **Keep minimal** and in Ops → Locked
+     listings);
+   - **Profile** tab for the bio, links and photo;
+   - **Outreach** tab: **Mark replied** (or the stop reason they asked for);
+   - the **Change log** on the Content tab records it all. Add the line to
+     `docs/owner-requests/README.md` at the next Claude Code session.
+6. **Reviews** (`/admin/reviews`): approve or reject pending reviews.
+
+### 21.3 What still needs Claude Code (or a developer)
+
+- **Migrations:** written in `supabase/migrations/`; the owner runs each in the
+  Supabase SQL editor, dev first, then live (§8, §12.7).
+- **App builds and releases:** `app/tool/build_release.sh` for both stores, then the
+  upload (§12.5–12.8). Next: 1.0.3 (deep links).
+- **Content:** night sprints (paused, §20), hub sprints (§18.7), `scripts/ingest.mjs`
+  plans, `scripts/link-hub.mjs`, `scripts/ops-sync.mjs` after inserts, and image swaps
+  beyond the admin's Fix buttons (`scripts/fix-images.mjs`).
+- **Code changes** to the website (a push deploys) or the app, and the reports in
+  `docs/reports/`.
+
+## 22. Restore on a new Mac
+
+Everything else is in git. These are the things that exist **only on this Mac** (state
+on 19 Nov 2026), and where each is backed up.
+
+| Item | Path on this Mac | Backed up |
+| :--- | :--- | :--- |
+| Website env, live | `web/.env.local` | Apple Passwords (owner). Its `CRON_SECRET` is out of date: take Vercel's |
+| Website env, dev | `web/.env.development.local` | Apple Passwords (owner) |
+| App config, live | `app/config/prod.json` | **In git** (public values only), and Apple Passwords |
+| App config, dev | `app/config/dev.json` | **STILL MISSING** (low stakes: public dev values, rebuilt from `dev.example.json` and Supabase (dev) → Settings → API) |
+| Play upload keystore | `~/.secrets/spiritpedia/android/upload-keystore.jks` | Google Drive (owner) |
+| Its passwords and alias | `~/.secrets/spiritpedia/android/key.properties` | **STILL MISSING on 19 Nov 2026** unless the Drive copy included it: Apple Passwords (`pbcopy < ~/.secrets/spiritpedia/android/key.properties` in Terminal, then paste) |
+| Firebase service account, live | `~/.secrets/spiritpedia/firebase/live-spiritpedia-ad62b.json` | **STILL MISSING as a file on 19 Nov 2026** (its values are on Vercel; Firebase can make a new key): Apple Passwords via `pbcopy < …` as above |
+| Firebase service account, dev | `~/.secrets/spiritpedia/firebase/dev-spiritpedia-dev-5e4d5.json` | Its values are in `web/.env.development.local` (Apple Passwords) |
+| Store builds (.ipa, .aab) | `app/build/ios-release/`, `app/build/android-release/` | Google Drive (owner) |
+| Xcode archives (with symbols) | `~/Library/Developer/Xcode/Archives/2026-10-28`, `2026-11-03`, `2026-11-17` | Not backed up (optional: only for reading crash reports) |
+| Claude Code memory | `~/.claude/projects/-Users-SundaySouLounge-Sites-spiritpedia/memory/` | Not backed up (optional; this README holds the rules) |
+| GitHub SSH key | `~/.ssh/id_ed25519` | Not needed: make a new key on the new Mac and add it to GitHub |
+
+Not on this Mac at all, and safe where they are: Vercel's environment variables, the
+APNs key (Firebase console, both projects), Apple signing (Xcode's automatic signing
+with team `KT2XV84345`; the only local certificate is an Apple Development one), the
+Firebase app settings (`app/lib/core/firebase/options_*.dart`, in git), Supabase Vault's
+`cron_secret`.
+
+**Checklist**
+1. Install Xcode 27 (and its command line tools), Homebrew, Node 24 (nvm), Flutter
+   3.47.7 (in `~/development/flutter`), Android Studio with SDK platforms 34–36 and
+   NDK 28.2, and Chrome.
+2. Make an SSH key, add it to GitHub, then
+   `git clone git@github.com:EliteArtists/spiritpedia.git ~/Sites/spiritpedia`.
+3. From Apple Passwords, recreate `web/.env.local` and `web/.env.development.local`
+   (names in §5); set `CRON_SECRET` to Vercel's value. Create `app/config/dev.json` from
+   `app/config/dev.example.json`.
+4. Recreate `~/.secrets/spiritpedia/android/` (the `.jks` from Google Drive and
+   `key.properties` from Apple Passwords) and `~/.secrets/spiritpedia/firebase/`; then
+   `chmod 700` the folders and `chmod 600` the files. `storeFile` in `key.properties`
+   must point at the new path.
+5. Website: `cd web && npm ci && npm test && npm run dev` (dev data on port 3000).
+6. App: `cd app && flutter pub get && flutter test`. In Xcode, sign in with the Apple
+   account (team `KT2XV84345`) so automatic signing can make the certificates. Check the
+   upload key: `keytool -list -v -keystore ~/.secrets/spiritpedia/android/upload-keystore.jks`
+   shows the SHA-256 in §4.
+7. Copy the store builds from Google Drive into `app/build/ios-release/` and
+   `app/build/android-release/`.
+8. Store builds only through `app/tool/build_release.sh` (§12.5).
 
 Made with love in Tavira 💫
