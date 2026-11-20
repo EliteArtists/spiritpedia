@@ -54,3 +54,11 @@ Run **0054** on dev, then live. Expected check row:
 
 If anyone else claims a replied or form-contacted listing before you run it, live's
 third number is higher; the second must still be 0.
+
+## 0054 run (20 Nov 2026)
+
+You ran it on dev (`1, 0, 0, 0`) and live (`1, 0, 2, 1`). Checked read-only on live:
+- **Cambridge Zen Center:** stopped, "claimed", with its reply date (19 Nov) kept.
+- **Mike Maher:** still "claimed".
+- **Unmarked claims:** none left.
+- **Outreach counts:** 113 running, 3 replied, 2 claimed, 2 do not contact, 1 form.
