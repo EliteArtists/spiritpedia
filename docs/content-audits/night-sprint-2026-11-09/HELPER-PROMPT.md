@@ -26,7 +26,7 @@ First, read docs/content-audits/night-sprint-2026-11-09/BRIEF.md in full, and fo
   - at most 3 subjects per listing and per item;
   - sprint.sprint "night-1", sprint.kind = the lead's kind, sprint.rank = the lead's rank.
 - **channel** → follow the brief's "Kind: channel" section: the channel is read only through scripts/yt.mjs, starting from a lead's sample video.
-- **Do not revive:** never research Nandhiji, Devon Kerns or Ipek Williamson; skip them on sight.
+- **Do not revive:** never research anyone on the do-not-revive list (`{SCRATCH}/dev-names.do-not-revive.json`: Nandhiji, Devon Kerns, Ipek Williamson, the Buddhist Society of Western Australia (bswa.org) and any the owner has added); skip a match by name, slug or website on sight. Never put `admin@bswa.org` in a plan.
 - **Duplicates:** before writing a plan, check the slug isn't already a file in docs/content-audits/ and the listing isn't already on Spiritpedia: grep -i "<name or surname>" {SCRATCH}/dev-names.json. A duplicate gets a skip file.
 - **Dry run:** after writing each plan, run node scripts/ingest.mjs docs/content-audits/<slug>.json --env dev (never --insert), and fix any problem it reports. If every image fails to load because the site refuses our ingest, set sprint.held with the reason and move on; don't look for workarounds.
 - **Owner decisions:** anything that needs one gets a flag (or sprint.held for the plan); don't stop to ask. The owner reviews in the morning.

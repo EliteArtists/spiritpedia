@@ -18,6 +18,7 @@ export default function ConfirmDelete({
   body,
   consequences = [],
   confirmLabel = 'Delete',
+  busyLabel = 'Deleting…',
   busy = false,
   error = null,
   done = null,
@@ -136,7 +137,7 @@ export default function ConfirmDelete({
             disabled={busy || Boolean(done)}
             className="rounded-full bg-red-600 px-5 py-2 text-xs font-bold text-white transition-colors hover:bg-red-500 disabled:cursor-not-allowed disabled:opacity-40"
           >
-            {busy ? 'Deleting…' : confirmLabel}
+            {busy ? busyLabel : confirmLabel}
           </button>
         </div>
       </div>

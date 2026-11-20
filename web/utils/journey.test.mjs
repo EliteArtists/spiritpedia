@@ -217,7 +217,17 @@ test('up next: claimed, a person who has died, and an address already written to
     journeys: [{ key: 'founder' }],
   });
   assert.deepEqual(list.map((l) => l.key), ['late-school']);
-  assert.deepEqual(left, { contacted: 1, claimed: 1, deceased: 1, sameAddress: 1, switchedOff: 0, partnership: 0 });
+  assert.deepEqual(left, { contacted: 1, claimed: 1, deceased: 1, sameAddress: 1, switchedOff: 0, partnership: 0, doNotContact: 0 });
+});
+
+test('up next: an address on the do-not-contact list is left out, whatever its case', () => {
+  const { list, left } = upNext({
+    listings: [listing('monk', { email: ' Admin@BSWA.org' }), listing('other', { email: 'hi@other.org' })],
+    journeys: [],
+    blocked: new Set(['admin@bswa.org']),
+  });
+  assert.deepEqual(list.map((l) => l.key), ['other']);
+  assert.equal(left.doNotContact, 1);
 });
 
 test('up next: two new listings with one address get one journey, the other is named on it', () => {

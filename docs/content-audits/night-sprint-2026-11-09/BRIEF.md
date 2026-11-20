@@ -12,7 +12,7 @@ You research public information so each lead can be listed on Spiritpedia, a dir
 
 **Locked listings** (owner, 18 Nov 2026; README §20.1): a listing locked "keep minimal" at its owner's request (Admin → Ops → Locked listings; today Andrea Kennedy) gets nothing new: no items, no profile update, no teacher link. Never plan anything for it; skip it on sight with the reason "locked: owner request".
 
-**Do not revive** (owner, 5 Nov 2026): never research, plan or add Nandhiji, Devon Kerns or Ipek Williamson. Skip them on sight with the reason "do not revive (README §18.7)".
+**Do not revive** (owner, 5 Nov 2026; the list is a database table since 20 Nov 2026, migration 0055): never research, plan or add anyone on it: Nandhiji, Devon Kerns, Ipek Williamson, the Buddhist Society of Western Australia (BSWA, bswa.org), and whatever the owner adds from the admin. `node scripts/dev-names.mjs` writes the current list beside the names list (`<out>.do-not-revive.json`); give it to every helper. Skip a match (name, slug or website) on sight with the reason "do not revive (README §18.7)". The ingest refuses one anyway. **Do not contact:** never put `admin@bswa.org`, or any address on the owner's do-not-contact list (Admin → Outreach → Never again), in a plan.
 
 **YouTube from this machine (9 Nov 2026).** Channel pages (`youtube.com/@…`, `/channel/…`, `/c/…`) redirect to a cookie-consent page for curl and WebFetch alike. **Don't fetch YouTube channel pages at all**, never follow consent.youtube.com, and never try m.youtube.com or other routes. The owner is getting a YouTube Data API key for subscriber counts. So:
 - record any YouTube subscriber count as "unreadable (consent page, 9 Nov 2026)";

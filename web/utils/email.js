@@ -2,6 +2,7 @@ import { getResend } from './resend.js';
 import { claimDecisionMessage } from './claimRequests.js';
 import { submissionDecisionMessage } from './contentSubmissions.js';
 import { SITE } from './emailParts.js';
+import { isDoNotContactEmail } from './neverAgain.js';
 import {
   OUTREACH_EMAILS,
   applicationApproved,
@@ -70,6 +71,15 @@ export async function sendEmail({ to, subject, html, text, from = FROM, headers 
   if (!process.env.RESEND_API_KEY) {
     console.error('[email] RESEND_API_KEY is not set — nothing sent');
     return { sent: false, error: 'no_api_key' };
+  }
+
+  // DO NOT CONTACT (owner, 20 Nov 2026; migration 0055): an address the owner
+  // marked is never sent anything, of any kind. A failed lookup sends nothing
+  // too: one missed courtesy is better than one unwanted email.
+  const blocked = await isDoNotContactEmail(to);
+  if (blocked !== false) {
+    console.error(`[email] ${blocked ? 'do-not-contact address' : 'do-not-contact lookup failed'} — nothing sent`);
+    return { sent: false, error: blocked ? 'do_not_contact' : 'do_not_contact_check_failed' };
   }
 
   try {

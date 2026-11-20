@@ -10,6 +10,7 @@ import {
   recordMessage,
   sentAtColumn,
 } from '@/utils/journey';
+import { isDoNotContactEmail } from '@/utils/neverAgain';
 
 export const dynamic = 'force-dynamic';
 
@@ -102,6 +103,19 @@ export async function GET(request) {
 
       const due = nextDue(journey);
       if (!due) continue;
+
+      // On the owner's do-not-contact list (0055): stopped for good. A failed
+      // lookup sends nothing today and tries again tomorrow.
+      const listed = await isDoNotContactEmail(listing.contact_email, supabase);
+      if (listed === null) {
+        tally.errors += 1;
+        continue;
+      }
+      if (listed) {
+        await stop(supabase, journey.id, 'do_not_contact_email');
+        tally.stopped += 1;
+        continue;
+      }
 
       // Asked to stop, or for removal, through another listing that publishes
       // the same address: that is a request from this inbox too.

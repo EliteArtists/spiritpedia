@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { adminClient, isAdminRequest, NOT_CONFIGURED } from '@/utils/supabaseAdmin';
 import { DAILY_STARTS, outreachEligibility, outreachKind, startedToday, upNext } from '@/utils/journey';
+import { doNotContactEmails } from '@/utils/neverAgain';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,7 +10,8 @@ export const dynamic = 'force-dynamic';
 // order utils/journey.js → upNext gives, and how many email journeys were
 // started today. Reads only: each row's Start goes through
 // /api/admin/journey/start, which checks everything again (Resend's
-// suppression list included, which this list doesn't ask).
+// suppression list included, which this list doesn't ask). An address on the
+// owner's do-not-contact list (0055) is left out and counted.
 
 // PostgREST returns at most 1,000 rows a request.
 async function everyRow(query) {
@@ -29,7 +31,7 @@ export async function GET() {
 
   try {
     // '*' so the 0048 columns are read when they exist and simply absent before.
-    const [healers, publishers, journeys, profiles] = await Promise.all([
+    const [healers, publishers, journeys, profiles, blocked] = await Promise.all([
       everyRow(() => supabase.from('healers').select('*').not('contact_email', 'is', null).order('id')),
       everyRow(() => supabase.from('publishers').select('*').not('contact_email', 'is', null).order('id')),
       everyRow(() => supabase.from('healer_journeys').select('*').order('started_at')),
@@ -39,6 +41,7 @@ export async function GET() {
           .select('linked_healer_slug, linked_publisher_id')
           .or('linked_healer_slug.not.is.null,linked_publisher_id.not.is.null')
       ),
+      doNotContactEmails(supabase),
     ]);
 
     const claimed = new Set(
@@ -72,6 +75,7 @@ export async function GET() {
     const { list, left, partnerships } = upNext({
       listings: [...healers.map((h) => listing(h, false)), ...publishers.map((p) => listing(p, true))],
       journeys: journeys.map((j) => ({ key: j.publisher_id ? `publisher:${j.publisher_id}` : j.healer_slug })),
+      blocked,
     });
 
     return NextResponse.json({

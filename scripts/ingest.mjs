@@ -19,6 +19,7 @@ import path from 'node:path';
 import { UA, timed, decode, probeImage, pageImage, amazonCover, publisherLogo } from './lib/images.mjs';
 import { healthHits } from './lib/health.mjs';
 import { lockedLine, lockedListings } from './lib/locks.mjs';
+import { doNotContact, doNotRevive, normaliseEmail, reviveLine, reviveMatch } from './lib/neverAgain.mjs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
 const ENV_FILES = { dev: 'web/.env.development.local', live: 'web/.env.local' };
@@ -262,6 +263,17 @@ const locks = await lockedListings(get);
 if (locks.has(slug)) problems.push(lockedLine(slug, locks.get(slug)));
 const create = !healer ? plan.healer.create : null;
 if (!healer && !create) problems.push(`healer "${slug}" doesn't exist and the plan doesn't create it`);
+// Never again (migration 0055): a listing removed at the owner's request
+// isn't created again, and a do-not-contact address isn't written to any
+// listing. The database refuses both anyway; this says why first.
+if (create) {
+  const revived = reviveMatch(await doNotRevive(get), { slug, name: create.name, website: create.website_url });
+  if (revived) problems.push(reviveLine(revived));
+}
+const planEmail = normaliseEmail(create?.contact_email || plan.healer?.update?.contact_email);
+if (planEmail && (await doNotContact(get)).has(planEmail)) {
+  problems.push(`${planEmail} is do not contact (Admin → Outreach → Never again): leave it out of the plan`);
+}
 if (create) {
   fixSubjects('healer', create);
   create.entity_type ||= 'individual';

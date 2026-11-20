@@ -4,6 +4,7 @@ import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
+import DoNotContactButton from '@/components/admin/DoNotContactButton';
 import { RECIPIENT_TYPE_SHORT } from '@/utils/recipientTypes';
 
 // ADMIN → OUTREACH (owner, 11 Nov 2026). Every journey ever started, not just
@@ -51,6 +52,7 @@ const STOP_REASONS = {
   stopped_by_admin: 'Stopped by admin',
   kind_not_approved: 'Its kind is switched off',
   do_not_contact_address: 'Asked to stop through another listing',
+  do_not_contact_email: 'Address marked do not contact',
 };
 
 function day(value) {
@@ -507,6 +509,8 @@ function UpNext({ onStarted }) {
                     )}
                   </div>
                   {!done && (
+                    <span className="flex shrink-0 flex-wrap items-center gap-2">
+                    <DoNotContactButton email={l.email} onDone={load} compact />
                     <button
                       type="button"
                       onClick={() => start(l)}
@@ -516,6 +520,7 @@ function UpNext({ onStarted }) {
                     >
                       {busy === id(l) ? 'Sending…' : 'Start'}
                     </button>
+                    </span>
                   )}
                 </li>
               );
@@ -527,6 +532,7 @@ function UpNext({ onStarted }) {
               {left?.sameAddress ? ` · ${left.sameAddress} share an address already on the list or written to` : ''}
               {left?.deceased ? ` · ${left.deceased} left out: the person has died` : ''}
               {left?.claimed ? ` · ${left.claimed} claimed` : ''}
+              {left?.doNotContact ? ` · ${left.doNotContact} do not contact` : ''}
               {data.partnerships?.length ? ` · Partnership — no cold email: ${data.partnerships.join(', ')}` : ''}
             </span>
             <span className="flex gap-3">
@@ -541,6 +547,143 @@ function UpNext({ onStarted }) {
             </span>
           </div>
         </>
+      )}
+    </section>
+  );
+}
+
+// NEVER AGAIN (owner, 20 Nov 2026; migration 0055): the do-not-contact
+// addresses and the do-not-revive listings, with a way to add an address no
+// listing shows any more, and to take a mistake off either list.
+async function readNeverAgain() {
+  const [contact, revive] = await Promise.all(
+    ['/api/admin/do-not-contact', '/api/admin/do-not-revive'].map(async (url) => {
+      const res = await fetch(url, { cache: 'no-store' });
+      const json = await res.json();
+      if (!res.ok || json.error) throw new Error(json.message || json.error);
+      return json;
+    })
+  );
+  return { contact, revive };
+}
+
+function NeverAgain() {
+  const [lists, setLists] = useState(null);
+  const [error, setError] = useState(null);
+  const [address, setAddress] = useState('');
+  const [sure, setSure] = useState(null);
+
+  const load = useCallback(async () => {
+    try {
+      setLists(await readNeverAgain());
+      setError(null);
+    } catch (err) {
+      setError(err.message);
+    }
+  }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    readNeverAgain().then(
+      (next) => !cancelled && setLists(next),
+      (err) => !cancelled && setError(err.message)
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const remove = async (url, body, key) => {
+    if (sure !== key) {
+      setSure(key);
+      return;
+    }
+    setSure(null);
+    const res = await fetch(url, { method: 'DELETE', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+    const json = await res.json().catch(() => ({}));
+    if (!res.ok || json.error) setError(json.message || json.error || `Failed (${res.status})`);
+    await load();
+  };
+
+  const typed = address.trim().includes('@') ? address.trim() : null;
+
+  return (
+    <section className="mt-8 rounded-xl border border-white/10 bg-[#111827] p-4">
+      <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Never again</p>
+      {error && <p className="mt-2 text-xs text-red-400">{error}</p>}
+      {!lists ? (
+        !error && <p className="mt-2 text-xs text-slate-500">Loading…</p>
+      ) : !lists.contact.ready ? (
+        <p className="mt-2 text-xs text-amber-300">{lists.contact.message}</p>
+      ) : (
+        <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-2">
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-white">Do not contact ({lists.contact.rows.length})</p>
+            <p className="mt-1 text-xs text-slate-400">Never sent anything by Spiritpedia, whatever listing shows them.</p>
+            <ul className="mt-2 divide-y divide-white/5 rounded-lg border border-white/10">
+              {lists.contact.rows.map((row) => (
+                <li key={row.email} className="flex flex-wrap items-baseline justify-between gap-2 px-3 py-2 text-xs">
+                  <span className="min-w-0">
+                    <span className="break-all font-mono text-slate-200">{row.email}</span>
+                    <span className="block text-slate-500">
+                      {day(row.added_at)}
+                      {row.note ? ` · ${row.note}` : ''}
+                    </span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => remove('/api/admin/do-not-contact', { email: row.email }, `c:${row.email}`)}
+                    className="text-slate-500 underline hover:text-white"
+                  >
+                    {sure === `c:${row.email}` ? 'Sure? Take it off the list' : 'Take off the list'}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <input
+                type="email"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
+                placeholder="Another address"
+                className="min-w-0 flex-1 rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-1.5 text-xs text-white placeholder:text-slate-600"
+              />
+              <DoNotContactButton
+                email={typed}
+                compact
+                onDone={() => {
+                  setAddress('');
+                  load();
+                }}
+              />
+            </div>
+          </div>
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-white">Do not revive ({lists.revive.rows.length})</p>
+            <p className="mt-1 text-xs text-slate-400">
+              Removed at your request. No sprint or ingest adds them again (by name, slug or website). Add one with
+              Delete → &ldquo;Removed at owner&apos;s request — never re-add&rdquo; on the listing.
+            </p>
+            <ul className="mt-2 divide-y divide-white/5 rounded-lg border border-white/10">
+              {lists.revive.rows.map((row) => (
+                <li key={row.id} className="flex flex-wrap items-baseline justify-between gap-2 px-3 py-2 text-xs">
+                  <span className="min-w-0">
+                    <span className="text-slate-200">{row.name}</span>
+                    {row.website_url && <span className="ml-2 break-all text-slate-500">{row.website_url}</span>}
+                    <span className="block text-slate-500">{row.reason}</span>
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => remove('/api/admin/do-not-revive', { id: row.id }, `r:${row.id}`)}
+                    className="text-slate-500 underline hover:text-white"
+                  >
+                    {sure === `r:${row.id}` ? 'Sure? Take it off the list' : 'Take off the list'}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       )}
     </section>
   );
@@ -696,11 +839,14 @@ export default function AdminOutreachPage() {
                         <td colSpan={5} className="space-y-4 px-4 py-4">
                           <EmailSteps journey={j} trackingReady={data.trackingReady} />
                           <ReplyControl journey={j} trackingReady={data.trackingReady} onDone={load} />
-                          {j.href && (
-                            <Link href={j.href} className="inline-block text-xs text-cyan-400 hover:text-cyan-300">
-                              Open the listing →
-                            </Link>
-                          )}
+                          <div className="flex flex-wrap items-center gap-3">
+                            {j.href && (
+                              <Link href={j.href} className="inline-block text-xs text-cyan-400 hover:text-cyan-300">
+                                Open the listing →
+                              </Link>
+                            )}
+                            <DoNotContactButton email={j.contact_email} onDone={load} />
+                          </div>
                         </td>
                       </tr>
                     )}
@@ -711,6 +857,8 @@ export default function AdminOutreachPage() {
           </table>
         </div>
       )}
+
+      <NeverAgain />
     </>
   );
 }

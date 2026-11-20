@@ -3,8 +3,10 @@
 //
 //   node scripts/dev-names.mjs <out.json> [--env dev|live]   (default dev)
 //
-// Writes [{ name, healer_slug, website_url, youtube_url, entity_type }, …].
-// Keys are read from the env file, never printed.
+// Writes [{ name, healer_slug, website_url, youtube_url, entity_type }, …],
+// and beside it <out>.do-not-revive.json: the listings removed at the
+// owner's request (migration 0055, README §18.7), never to be researched or
+// added again. Keys are read from the env file, never printed.
 import fs from 'node:fs';
 
 const PROJECTS = { dev: 'khtpbnofcavoerorajni', live: 'uzmvcgewxgvnybdhvsyx' };
@@ -44,3 +46,16 @@ for (let from = 0; ; from += 1000) {
 }
 fs.writeFileSync(out, JSON.stringify(rows, null, 1));
 console.log(`${rows.length} listings → ${out}`);
+
+// The do-not-revive list. Before 0055 runs there is no table: say so.
+const reviveOut = out.replace(/\.json$/, '.do-not-revive.json');
+const r = await fetch(`${BASE}/rest/v1/do_not_revive?select=name,healer_slug,website_url,youtube_url,reason`, {
+  headers: { apikey: KEY, Authorization: `Bearer ${KEY}` },
+});
+if (r.ok) {
+  const revive = await r.json();
+  fs.writeFileSync(reviveOut, JSON.stringify(revive, null, 1));
+  console.log(`${revive.length} do-not-revive → ${reviveOut}`);
+} else {
+  console.log(`No do-not-revive table on ${envName} yet (migration 0055): use README §18.7's list.`);
+}

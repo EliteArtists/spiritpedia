@@ -1,64 +1,94 @@
-# Claimed wins: Cambridge Zen Center — 20 Nov 2026
+# BSWA removal and the never-again buttons — 20 Nov 2026
 
-## The cause
+You deleted BSWA's listing and content in the admin and asked BSWA whether the three
+monks' listings should go too. This covers the rest.
 
-Two things combined:
+## 1. admin@bswa.org: do not contact
 
-1. **The claim only stopped running or paused journeys.** Migration 0053's trigger and
-   the website helper (`stopJourneyOnClaim`) both used `status in (running, paused)`.
-   Cambridge Zen Center's journey was already stopped as "replied" (19 Nov), so the
-   claim on 20 Nov left it as it was.
-2. **Outreach checked "replied" before "claimed".** `journeyState` put a reply date
-   ahead of the claim. Even though the list knew the listing was claimed, it showed
-   Replied.
+**Done now, on live and dev** (service role, each change in the listing's edit log):
 
-## The fix
+- **Ajahn Brahm** and **Ajahn Brahmali**: `admin@bswa.org` removed, with its "where
+  published" and inbox type. No listing or publisher on live shows a bswa.org address
+  now.
+- **Ajahn Canda**: had no email (website anukampaproject.org), so nothing to change.
+- **No journey** has ever gone to BSWA or any of the three, so nothing needed stopping.
+- **Up next** can't offer them: none of the three has an address now. Once 0055 has
+  run, Up next also leaves out any address on the do-not-contact list, whichever
+  listing shows it.
 
-- **Outreach** (deployed): Claimed comes first. A listing that is claimed today counts
-  as Claimed whatever its journey said: replied, contacted via form, complete or
-  stopped. The filter and count go by the account link, as Claims and People do. A
-  claimed row that had replied shows **"Replied 19 Nov"** under the Claimed label, and
-  the listing's own Outreach tab shows "Claimed · replied 19 Nov".
-- **The website helper** (deployed): a claim marks every journey to that listing
-  stopped, "claimed", whatever its state. It doesn't touch `replied_at`.
-- **Migration 0054** (`supabase/migrations/0054_claimed_wins.sql`, for you to run):
-  does the same in the database trigger, plus the backfill.
-- **One exception, deliberately:** the never-again reasons (asked to stop, removal
-  requested, bounced or marked as spam) keep their stored reason. That way the "never
-  email again" block survives if a claim is ever revoked. Outreach still shows them as
-  Claimed while the listing is claimed.
+**Permanent, once you run 0055:** `admin@bswa.org` is on the do-not-contact list. The
+website then checks that list before **every** email it sends, of any kind (outreach,
+welcome, claim and review emails). A failed check sends nothing. Start and the daily
+job refuse it, and the database clears it from any listing it's written to.
 
-251 tests pass, including claimed after a reply, a form contact, a complete or a
-stopped journey; never-again reasons kept; and the replied date kept. The build passes.
+**On dev only:** BSWA's own listing is still there (you deleted it on live). 0055 clears
+its address. Say if you want the dev copy deleted too.
 
-## Backfill: claimed listings whose journey isn't marked Claimed
+## 2. BSWA on the do-not-revive list
 
-| Listing | Journey now | After 0054 |
-|---|---|---|
-| **Cambridge Zen Center** | stopped, "replied" (replied 19 Nov) | stopped, "claimed", replied date kept |
+The do-not-revive list was text in README §18.7 and the briefs. It's now a database
+table (`do_not_revive`, 0055), seeded with **BSWA** (name, slug, bswa.org) and the
+three from 5 Nov (Nandhiji, Devon Kerns, Ipek Williamson). Three things stop a revival:
 
-That's the only one on live. Mike Maher is already "claimed". The third linked account
-is Spiritpedia's own listing, which has no journey, so Claims and People show 3 while
-Outreach shows 2. Dev has no journeys.
+- **The helpers:** `scripts/dev-names.mjs` writes the list beside the names list, and
+  the night-sprint brief, helper prompt and skill tell helpers to skip a match by name,
+  slug or website.
+- **The ingest:** `scripts/ingest.mjs` refuses a plan that matches, or one that carries
+  a do-not-contact address.
+- **The database:** it refuses a new healer with the same slug, name or website.
 
-Live Outreach counts once this deploy is up: 113 running, 3 replied, **2 claimed**,
-2 do not contact, 1 form.
+The website match is the whole address, so `bswa.org/teachers/ajahn-brahm` (the monks'
+pages) is **not** caught. Their listings stay separate until BSWA answers.
 
-## For you
+## 3. Two buttons in the admin
 
-Run **0054** on dev, then live. Expected check row:
+- **Do not contact this email address.** It's on each Up next row ("Do not contact"),
+  on each journey in Admin → Outreach (open the row), and at the bottom of a listing's
+  **Outreach** tab. It asks first and takes an optional reason. Then the address is:
+  - never sent anything again;
+  - taken off every listing that shows it (logged);
+  - stopped on any running or paused journey ("Address marked do not contact");
+  - left out of Up next.
+- **Removed at owner's request — never re-add.** This is a tick box in the listing's
+  **Delete healer** dialog. Beside it is a second box, "Do not contact" for the
+  listing's address. Both are done before the delete; if either fails, nothing is
+  deleted and the dialog says why.
 
-- **dev:** `1, 0, 0, 0`
-- **live:** `1, 0, 2, 1` (the trigger; none left unmarked; Mike Maher and Cambridge Zen
-  Center claimed; Cambridge Zen Center's reply date kept)
+**Never again**, at the bottom of Admin → Outreach, shows both lists. It has a box to
+block an address no listing shows any more, and **Take off the list** (press twice)
+undoes a mistake.
 
-If anyone else claims a replied or form-contacted listing before you run it, live's
-third number is higher; the second must still be 0.
+Both are in the admin guide (Outreach, and Content → "Deleting a listing at the owner's
+request"), README §18.7 and §20.1, and the README's Start here.
 
-## 0054 run (20 Nov 2026)
+## Checks
 
-You ran it on dev (`1, 0, 0, 0`) and live (`1, 0, 2, 1`). Checked read-only on live:
-- **Cambridge Zen Center:** stopped, "claimed", with its reply date (19 Nov) kept.
-- **Mike Maher:** still "claimed".
-- **Unmarked claims:** none left.
-- **Outreach counts:** 113 running, 3 replied, 2 claimed, 2 do not contact, 1 form.
+- Web tests: **260 pass** (9 new: the address and website rules, do-not-revive matching,
+  the do-not-contact lookup including a failed one and the time before 0055, Up next
+  leaving a listed address out, the new stop reason).
+- Lint: no new problems. The build passes.
+- Looked at on a local server against dev, at 1024×768 and 768×1024:
+  - the Up next buttons and the dialog;
+  - confirming on dev, which correctly refuses with "needs migration 0055";
+  - the Never again panel;
+  - the Delete dialog's tick box;
+  - the listing Outreach button.
+
+  Nothing was sent: no email key locally.
+
+## For you: run 0055, dev then live
+
+`supabase/migrations/0055_do_not_contact_and_do_not_revive.sql`. **Check row on both:
+1, 4, 0, 3.** The four numbers are:
+
+- 1 do-not-contact address;
+- 4 do-not-revive listings;
+- 0 listings still showing a blocked address;
+- 3 triggers.
+
+Until it runs, the buttons say "needs migration 0055", and nothing breaks. Until then,
+email and outreach work as before. BSWA is still safe meanwhile: the address is on no
+listing, and no journey exists.
+
+**Still open:** BSWA's answer about Ajahn Brahm, Ajahn Brahmali and Ajahn Canda. If they
+should go, use **Delete healer** with "never re-add" ticked on each.

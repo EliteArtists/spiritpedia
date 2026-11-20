@@ -72,6 +72,19 @@ or kind, replace a broken picture, remove a video or an item, or delete the
 whole listing. **How often:** when something needs fixing, usually from an
 Inbox row or the night sprint's report.
 
+**Deleting a listing at the owner's request** (from 20 Nov 2026): open the
+listing → **Delete healer**. The dialog has two choices before you confirm:
+- **Removed at owner's request — never re-add:** puts the listing on the
+  do-not-revive list (by name, slug and website), so no night sprint or
+  ingest ever adds it back. The database refuses it too.
+- **Do not contact** its address (shown when it has one): the same as the
+  Outreach button above, so no other listing with that address is written to.
+
+Tick what applies, then **Delete healer**. Both lists are done first: if one
+fails, nothing is deleted and the dialog says why. The lists are at the bottom
+of Outreach (**Never again**). A teacher on the same website (bswa.org/teachers/…
+for bswa.org) isn't caught by the website match: their listing is separate.
+
 ### Editing a listing's items (from 18 Nov 2026)
 
 On a listing's **Content** tab:
@@ -162,6 +175,25 @@ publishers) and by state. **What you do:**
   email. **Claimed wins** (20 Nov 2026): a journey you'd already marked replied,
   or a form contact, also becomes Claimed when they claim, and the row still
   shows the date they replied.
+- **Do not contact this email address** (20 Nov 2026): for an address that
+  must never hear from Spiritpedia again, for example someone who asked to be
+  removed. The red button is on each Up next row ("Do not contact"), on each
+  journey here (click the row to open it), and on a listing's own
+  **Outreach** tab, under everything else. It asks first, with a box for why.
+  Then:
+  - nothing from Spiritpedia is ever sent to that address again, outreach or
+    any other email, even if the listing is deleted later;
+  - it comes off every listing that shows it (each change is in the listing's
+    edit log);
+  - any running or paused journey to it stops ("Address marked do not
+    contact");
+  - it's left out of Up next, Start refuses it, and if a sprint or ingest
+    ever adds it to a listing, the database clears it.
+- **Never again**, at the bottom of this page: the do-not-contact addresses
+  and the do-not-revive listings (see Content → deleting a listing). Type an
+  address in the box to block one no listing shows any more. **Take off the
+  list** (press twice) undoes a mistake; a listing doesn't get its address
+  back by itself, so add it again on the Profile tab if you want it.
 
 Every kind can be started (switched on 17 Nov 2026). Every outreach email
 comes from "Ross at Spiritpedia", signed Ross (18 Nov 2026). Email 1 has one

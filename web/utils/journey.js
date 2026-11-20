@@ -6,6 +6,7 @@ import { outreachFirstName } from './emailTemplates.js';
 import { booksByAuthorsFilter } from './bookAuthors.js';
 import { isPlatform } from './listings.js';
 import { RECIPIENT_TYPES } from './recipientTypes.js';
+import { DO_NOT_CONTACT_NOTE, isDoNotContactEmail } from './neverAgain.js';
 
 export const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -72,12 +73,14 @@ export function journeyTarget(target) {
 }
 
 // Stop reasons that mean "never write to this listing again": they asked us to
-// stop, asked for the listing to be removed, or their address bounced or
-// complained. A journey that ended this way blocks any new one.
+// stop, asked for the listing to be removed, their address bounced or
+// complained, or the owner marked the address do not contact (0055). A
+// journey that ended this way blocks any new one.
 export const DO_NOT_CONTACT = {
   asked_to_stop: 'They asked us to stop emailing.',
   removal_requested: 'They asked for the listing to be removed.',
   suppressed: 'Their address bounced or marked an email as spam.',
+  do_not_contact_email: DO_NOT_CONTACT_NOTE,
 };
 
 // The reason a listing must not be written to again, or null. By listing;
@@ -100,7 +103,13 @@ export async function doNotContactReason(supabase, target) {
 // Somebody who asked us to stop (or for removal, or whose address bounced)
 // through one of them must not be written to through another. → the reason,
 // or null. Addresses compare case-insensitively.
+//
+// First, the owner's do-not-contact list (0055), which holds whether or not
+// any listing still shows the address. A failed lookup refuses too.
 export async function doNotContactByAddress(supabase, email) {
+  const listed = await isDoNotContactEmail(email, supabase);
+  if (listed) return DO_NOT_CONTACT_NOTE;
+  if (listed === null) return 'Could not check the do-not-contact list. Try again in a minute.';
   // ilike for case, with its wildcards escaped: "_" is common in addresses.
   const address = (email || '').trim().replace(/[\\%_]/g, (c) => `\\${c}`);
   if (!address) return null;
@@ -315,17 +324,20 @@ const address = (email) => (email || '').trim().toLowerCase();
 //                 (one inbox can sit behind a school and its founder)
 //   switchedOff   a kind not in OUTREACH_KINDS_APPROVED
 //   partnership   NO_COLD_EMAIL: named in `partnerships` instead
+//   doNotContact  the address is on the owner's do-not-contact list (0055):
+//                 `blocked`, a Set of lower-case addresses
 // Two uncontacted listings with one address: the first in order stays, and
 // the others are named on it (alsoAt), so the inbox gets one journey.
-export function upNext({ listings, journeys }) {
+export function upNext({ listings, journeys, blocked = new Set() }) {
   const contacted = new Set(journeys.map((j) => j.key));
   const written = new Set(listings.filter((l) => contacted.has(l.key)).map((l) => address(l.email)));
-  const left = { contacted: 0, claimed: 0, deceased: 0, sameAddress: 0, switchedOff: 0, partnership: 0 };
+  const left = { contacted: 0, claimed: 0, deceased: 0, sameAddress: 0, switchedOff: 0, partnership: 0, doNotContact: 0 };
   const candidates = [];
   const partnerships = [];
   for (const l of listings) {
     if (!address(l.email)) continue;
-    if (NO_COLD_EMAIL.has(l.key)) {
+    if (blocked.has(address(l.email))) left.doNotContact += 1;
+    else if (NO_COLD_EMAIL.has(l.key)) {
       left.partnership += 1;
       partnerships.push(l.name);
     } else if (contacted.has(l.key)) left.contacted += 1;

@@ -10,6 +10,7 @@ import DataProblem from '@/components/admin/DataProblem';
 import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
+import DoNotContactButton from '@/components/admin/DoNotContactButton';
 import HubTeachers from '@/components/admin/HubTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
@@ -839,7 +840,7 @@ function journeyDate(value) {
 // healer_journeys table has RLS on and no policies at all, so the browser's
 // anonymous key cannot read a word of it. That is deliberate — it is a record
 // of what was sent to somebody who has not joined.
-function OutreachTab({ healer }) {
+function OutreachTab({ healer, onChanged }) {
   const [state, setState] = useState(null); // { journey, claimed, doNotContact }
   const [busy, setBusy] = useState(false);
   const [toast, setToast] = useState(null);
@@ -946,6 +947,24 @@ function OutreachTab({ healer }) {
 
   const { journey, claimed, doNotContact, kindRefusal, eligibility, history = [], trackingReady } = state;
 
+  // Do not contact (0055): the listing loses the address, so reload both.
+  const neverAgain = (
+    <div className="mt-6 flex flex-wrap items-center gap-3 border-t border-white/10 pt-4">
+      <DoNotContactButton
+        email={healer.contact_email}
+        onDone={async () => {
+          await onChanged?.();
+          setState(await read());
+        }}
+      />
+      {healer.contact_email && (
+        <span className="text-xs text-slate-500">
+          Never send <span className="font-mono">{healer.contact_email}</span> anything again, and take it off every listing.
+        </span>
+      )}
+    </div>
+  );
+
   // NOTHING RUNNING — the start button, and the reasons it might refuse.
   if (!journey) {
     const blocked = claimed
@@ -1020,6 +1039,7 @@ function OutreachTab({ healer }) {
         )}
 
         <JourneyHistory history={history} trackingReady={trackingReady} busy={busy} act={act} />
+        {neverAgain}
       </>
     );
   }
@@ -1201,6 +1221,7 @@ function OutreachTab({ healer }) {
       </p>
 
       <JourneyHistory history={history} trackingReady={trackingReady} busy={busy} act={act} />
+      {neverAgain}
     </>
   );
 }
@@ -1260,6 +1281,7 @@ const STOP_WORDS = {
   stopped_by_admin: 'Stopped by admin',
   kind_not_approved: 'Its kind is switched off',
   do_not_contact_address: 'Asked to stop through another listing',
+  do_not_contact_email: 'Address marked do not contact',
 };
 
 function JourneyHistory({ history, trackingReady, busy, act }) {
@@ -1341,6 +1363,10 @@ export default function AdminHealerRecordPage({ params }) {
   const [deleting, setDeleting] = useState(false);
   const [deleteError, setDeleteError] = useState(null);
   const [deleted, setDeleted] = useState(null);
+  // "Removed at owner's request — never re-add" (0055), and do not contact
+  // its address: chosen in the Delete dialog, done before the delete.
+  const [neverReAdd, setNeverReAdd] = useState(false);
+  const [blockAddress, setBlockAddress] = useState(false);
   // What this row is holding up. Counted when the dialog opens rather than on
   // every page load, so the cost falls on the one action that needs it.
   const [attached, setAttached] = useState(null);
@@ -1539,6 +1565,8 @@ export default function AdminHealerRecordPage({ params }) {
     setDeleteError(null);
     setDeleted(null);
     setAttached(null);
+    setNeverReAdd(false);
+    setBlockAddress(false);
     setConfirmingDelete(true);
 
     const [videos, books, courses, resources] = await Promise.all([
@@ -1563,6 +1591,27 @@ export default function AdminHealerRecordPage({ params }) {
     if (deleting) return;
     setDeleting(true);
     setDeleteError(null);
+    // The lists first: if either fails, nothing is deleted and the dialog
+    // says why, so the record they need is still there to try again.
+    const first = [
+      neverReAdd && ['/api/admin/do-not-revive', { healer_slug: slug }],
+      blockAddress && healer.contact_email && ['/api/admin/do-not-contact', { email: healer.contact_email, note: `${healer.name} removed at the owner's request` }],
+    ].filter(Boolean);
+    for (const [url, body] of first) {
+      try {
+        const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        const json = await res.json();
+        if (!res.ok || json.error) {
+          setDeleteError(`Nothing deleted. ${json.message || json.error || `Failed (${res.status})`}`);
+          setDeleting(false);
+          return;
+        }
+      } catch (err) {
+        setDeleteError(`Nothing deleted. ${err.message}`);
+        setDeleting(false);
+        return;
+      }
+    }
     try {
       const res = await fetch('/api/admin/write', {
         method: 'POST',
@@ -1581,7 +1630,15 @@ export default function AdminHealerRecordPage({ params }) {
         setDeleting(false);
         return;
       }
-      setDeleted('Healer deleted.');
+      setDeleted(
+        [
+          'Healer deleted.',
+          neverReAdd ? 'On the do-not-revive list.' : '',
+          blockAddress && healer.contact_email ? `${healer.contact_email} is do not contact.` : '',
+        ]
+          .filter(Boolean)
+          .join(' ')
+      );
       setTimeout(() => router.push('/admin/content'), 900);
     } catch (err) {
       setDeleteError(err.message);
@@ -1962,7 +2019,7 @@ export default function AdminHealerRecordPage({ params }) {
           <ContentTab slug={healer.healer_slug} healerId={healer.id} edits={edits} onEditsChange={refreshEdits} />
         )}
 
-        {tab === 'Outreach' && <OutreachTab healer={healer} />}
+        {tab === 'Outreach' && <OutreachTab healer={healer} onChanged={load} />}
 
         {tab === 'Admin Notes' && (
           <Placeholder
@@ -2004,7 +2061,27 @@ export default function AdminHealerRecordPage({ params }) {
         done={deleted}
         onCancel={() => setConfirmingDelete(false)}
         onConfirm={confirmDelete}
-      />
+      >
+        <div className="mt-3 space-y-2 text-xs text-slate-300">
+          <label className="flex items-start gap-2">
+            <input type="checkbox" checked={neverReAdd} onChange={(e) => setNeverReAdd(e.target.checked)} className="mt-0.5" />
+            <span>
+              <strong className="text-white">Removed at owner&apos;s request — never re-add.</strong> Adds it to the
+              do-not-revive list, so no sprint or ingest brings it back.
+            </span>
+          </label>
+          {healer.contact_email && (
+            <label className="flex items-start gap-2">
+              <input type="checkbox" checked={blockAddress} onChange={(e) => setBlockAddress(e.target.checked)} className="mt-0.5" />
+              <span>
+                <strong className="text-white">Do not contact</strong>{' '}
+                <span className="break-all font-mono">{healer.contact_email}</span>: never send it anything again, and take
+                it off any other listing that shows it.
+              </span>
+            </label>
+          )}
+        </div>
+      </ConfirmDelete>
     </>
   );
 }

@@ -29,7 +29,8 @@ points to.
   `app/build/android-release/` and Xcode's Archives; never run `flutter clean` in `main`
   without moving them first (§13).
 - **Website:** live at www.spiritpedia.co; a push that changes `web/` deploys.
-  Migrations **0000–0054** are on dev and live.
+  Migrations **0000–0054** are on dev and live; **0055** (do not contact, do not
+  revive) is written, for the owner to run dev then live.
 - **Outreach is running for real** (since 17 Nov 2026: email 1 goes to the listing's own
   address). The owner starts up to **50 journeys a day** from Admin → Outreach →
   **Up next** (§20). On 19 Nov: 52 journeys, 47 running; the first **email 2s are due
@@ -41,6 +42,14 @@ points to.
   the admin, lock the listing, stop the journey, log it).
 
 **Recent decisions (newest first)**
+- 20 Nov: BSWA removed at their request: `admin@bswa.org` is do not contact and is off
+  Ajahn Brahm's and Ajahn Brahmali's listings; BSWA is on the do-not-revive list
+  (§18.7). The owner now does both from the admin: **Do not contact this email
+  address** (a listing's Outreach tab, Admin → Outreach) and Delete → **Removed at
+  owner's request — never re-add** (migration 0055; §20.1). Whether the three monks'
+  listings stay waits for BSWA's answer.
+- 20 Nov: claimed wins: a claim marks the listing's journey Claimed whatever its state,
+  keeping the replied date (migration 0054; §20.1).
 - 19 Nov: the admin works at iPad sizes, portrait and landscape (the Inbox queue is one
   card per item below 1024 px).
 - 18 Nov: owner requests are done within a day, with the listing locked "keep minimal",
@@ -380,7 +389,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0.2 (29) is live on the App Store** (18 Nov 2026). Store builds: `app/build/ios-release/Spiritpedia-1.0.{0-27,1-28,2-29}.ipa`, archives in Xcode's Archives (`2026-10-28`, `2026-11-03`, `2026-11-17`) |
 | **App (Android)** | The same code. **1.0.2 (29) is live on Google Play** (18 Nov 2026). Store builds: `app/build/android-release/Spiritpedia-1.0.{0-25,1-28,2-29}.aab`, signed with the upload key (§5) |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0054` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0054` are on both; `0055` written, not yet run |
 | **Push** | Firebase Cloud Messaging only, with an APNs key, in two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`). The hourly run is called by Supabase pg_cron (§9.10) |
 | **Emails** | Outreach journeys are **real** since 17 Nov 2026 (email 1 goes to the listing's own address; up to 50 started a day, §20). Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` (plus the merged `release/1.0.2`). No staging environment, no feature flags |
@@ -3127,14 +3136,31 @@ the same rules:
 
 First run: `docs/content-audits/pipelines-sprint-3/` (6 Nov 2026).
 
-**Do not revive** (owner, 5 Nov 2026). These were dropped by the owner and
-are never researched, planned or added again, from any list or hub. Their
-old plans stay in `dropped/` folders as a record only. Every brief says so;
-a lead with one of these names is skipped on sight.
-- **Nandhiji** (dropped 1 Nov 2026, again 5 Nov: probable bought growth,
-  healing claims);
-- **Devon Kerns** (dropped 1 Nov 2026: mainly a life and leadership coach);
-- **Ipek Williamson** (dropped 1 Nov 2026, on fit).
+**Do not revive** (owner, 5 Nov 2026; a database list since 20 Nov 2026,
+migration 0055). These were removed by the owner and are never researched,
+planned or added again, from any list or hub. Their old plans stay in
+`dropped/` folders as a record only. Every brief says so; a lead with one of
+these names, slugs or websites is skipped on sight.
+- **The list itself** is the `do_not_revive` table, shown in Admin → Outreach
+  → **Never again**. The owner adds to it with Delete → "Removed at owner's
+  request — never re-add" on the listing. `node scripts/dev-names.mjs` writes
+  it beside the names list (`<out>.do-not-revive.json`) for the helpers;
+  `scripts/ingest.mjs` refuses a plan that matches it, and the database
+  refuses the insert (same slug, name or website).
+- On it on 20 Nov 2026:
+  - **Buddhist Society of Western Australia (BSWA)** (removed 20 Nov 2026 at
+    their request; `admin@bswa.org` is do not contact. Whether Ajahn Brahm,
+    Ajahn Brahmali and Ajahn Canda stay is waiting for BSWA's answer);
+  - **Nandhiji** (dropped 1 Nov 2026, again 5 Nov: probable bought growth,
+    healing claims);
+  - **Devon Kerns** (dropped 1 Nov 2026: mainly a life and leadership coach);
+  - **Ipek Williamson** (dropped 1 Nov 2026, on fit).
+
+**Do not contact** (owner, 20 Nov 2026; migration 0055): addresses
+Spiritpedia never emails again, whatever listing shows them, in the
+`do_not_contact_emails` table (Admin → Outreach → Never again). Never put
+one in a plan: the ingest refuses it, and the database clears it from any
+listing.
 
 **The hub queue: future hubs** (owner, 31 Oct 2026). **Rotate** between hubs
 rather than taking too many teachers from one source too soon. The Shift
@@ -3405,6 +3431,24 @@ keeping the replied date, which Outreach shows under Claimed. Only the never-aga
 reasons (asked to stop, removal requested, bounced/spam) keep their stored reason, so
 the block outlives a revoked claim; the admin shows those as Claimed too. Outreach's
 Claimed filter goes by the account link, as Claims and People do.
+
+**Never again** (owner, 20 Nov 2026; migration 0055). Two admin buttons for a removal
+request, so it doesn't need Claude Code:
+- **Do not contact this email address** (each Up next row, each journey in Admin →
+  Outreach, and a listing's Outreach tab): the address goes in `do_not_contact_emails`.
+  Nothing is ever sent to it again (`utils/email.js` → `sendEmail` checks the list
+  before every email of any kind, and sends nothing if the check fails); it comes off
+  every listing that shows it (logged in `admin_edit_log`); running or paused journeys
+  to it stop as `do_not_contact_email`; Up next leaves it out; Start and the daily job
+  refuse it. A trigger on `healers` and `publishers` clears it if anything writes it
+  again.
+- **Removed at owner's request — never re-add** (a tick box in the listing's Delete
+  dialog, beside "Do not contact" for its address): the listing goes in
+  `do_not_revive` before it's deleted (§18.7). `scripts/ingest.mjs` refuses a plan with
+  the same slug, name or website, and a trigger refuses the insert.
+
+Both lists are shown, and a mistake can be taken off, in Admin → Outreach → **Never
+again**. The rules are in `web/utils/neverAgain.js` (and its tests).
 
 ## 21. Running Spiritpedia without Claude Code
 
