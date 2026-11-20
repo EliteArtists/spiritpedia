@@ -159,7 +159,9 @@ publishers) and by state. **What you do:**
   journey from the listing's own Outreach tab.
 - **A claim stops its journey at once** (18 Nov 2026): when anyone claims a
   listing, its journey ends "claimed" straight away, so they get no further
-  email.
+  email. **Claimed wins** (20 Nov 2026): a journey you'd already marked replied,
+  or a form contact, also becomes Claimed when they claim, and the row still
+  shows the date they replied.
 
 Every kind can be started (switched on 17 Nov 2026). Every outreach email
 comes from "Ross at Spiritpedia", signed Ross (18 Nov 2026). Email 1 has one

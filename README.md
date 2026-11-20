@@ -29,7 +29,8 @@ points to.
   `app/build/android-release/` and Xcode's Archives; never run `flutter clean` in `main`
   without moving them first (§13).
 - **Website:** live at www.spiritpedia.co; a push that changes `web/` deploys.
-  Migrations **0000–0053** are on dev and live.
+  Migrations **0000–0053** are on dev and live; **0054** (claimed wins) is written,
+  for the owner to run dev then live.
 - **Outreach is running for real** (since 17 Nov 2026: email 1 goes to the listing's own
   address). The owner starts up to **50 journeys a day** from Admin → Outreach →
   **Up next** (§20). On 19 Nov: 52 journeys, 47 running; the first **email 2s are due
@@ -3399,6 +3400,12 @@ an application approved), its outreach journey stops at once with reason "claime
 the website code (`utils/journey.js` → `stopJourneyOnClaim`) and, once migration 0053
 has run, by a database trigger on `user_profiles` as well. Before 18 Nov 2026 a claimed
 journey only stopped at the next daily run, before its next email.
+**Claimed wins** (owner, 20 Nov 2026; migration 0054): a claim marks the journey
+"claimed" whatever state it was in (replied, contacted via form, complete, stopped),
+keeping the replied date, which Outreach shows under Claimed. Only the never-again
+reasons (asked to stop, removal requested, bounced/spam) keep their stored reason, so
+the block outlives a revoked claim; the admin shows those as Claimed too. Outreach's
+Claimed filter goes by the account link, as Claims and People do.
 
 ## 21. Running Spiritpedia without Claude Code
 

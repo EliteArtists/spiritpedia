@@ -51,32 +51,74 @@ test('log lines', () => {
   assert.equal(logSummary({ action: 'unlock' }), 'Lock switched off');
 });
 
-// A stand-in for the supabase-js chain the helper uses.
+// A stand-in for the supabase-js chains the helper uses: a read by listing,
+// then an update by id.
 function fakeJourneys(rows) {
   const calls = [];
-  const chain = {
-    update(values) { calls.push(['update', values]); return chain; },
-    eq(column, value) { calls.push(['eq', column, value]); this.match = [column, value]; return chain; },
-    in(column, values) { calls.push(['in', column, values]); this.statuses = values; return chain; },
-    async select() {
-      const [column, value] = chain.match;
-      const hit = rows.filter((r) => r[column] === value && chain.statuses.includes(r.status));
-      return { data: hit.map((r) => ({ id: r.id })), error: null };
+  const client = {
+    from(table) {
+      calls.push(['from', table]);
+      let values = null;
+      const chain = {
+        select(cols) {
+          calls.push(['select', cols]);
+          if (values) return Promise.resolve({ data: chain.hit.map((r) => ({ id: r.id })), error: null });
+          return chain;
+        },
+        eq(column, value) {
+          calls.push(['eq', column, value]);
+          return Promise.resolve({ data: rows.filter((r) => r[column] === value), error: null });
+        },
+        update(v) { calls.push(['update', v]); values = v; return chain; },
+        in(column, ids) {
+          calls.push(['in', column, ids]);
+          chain.hit = rows.filter((r) => ids.includes(r.id));
+          for (const r of chain.hit) Object.assign(r, values);
+          return chain;
+        },
+      };
+      return chain;
     },
   };
-  return { calls, client: { from: (table) => (calls.push(['from', table]), chain) } };
+  return { calls, client };
 }
 
 test('a claim stops a running or paused journey at once, marked claimed', async () => {
-  const { calls, client } = fakeJourneys([
+  const rows = [
     { id: 1, healer_slug: 'mike-maher', status: 'running' },
     { id: 2, healer_slug: 'someone-else', status: 'running' },
-  ]);
+  ];
+  const { calls, client } = fakeJourneys(rows);
   assert.equal(await stopJourneyOnClaim(client, 'mike-maher'), 1);
-  assert.deepEqual(calls[0], ['from', 'healer_journeys']);
-  assert.deepEqual(calls[1], ['update', { status: 'stopped', stop_reason: 'claimed' }]);
   assert.deepEqual(calls[2], ['eq', 'healer_slug', 'mike-maher']);
-  assert.deepEqual(calls[3], ['in', 'status', ['running', 'paused']]);
+  assert.deepEqual(calls.find((c) => c[0] === 'update'), ['update', { status: 'stopped', stop_reason: 'claimed' }]);
+  assert.deepEqual(calls.find((c) => c[0] === 'in'), ['in', 'id', [1]]);
+  assert.equal(rows[1].status, 'running');
+});
+
+test('claimed wins over replied, form, complete and stopped, and keeps the replied date', async () => {
+  const rows = [
+    { id: 1, healer_slug: 'cambridge-zen-center', status: 'stopped', stop_reason: 'replied', replied_at: '2026-11-19T10:00:00Z' },
+    { id: 2, healer_slug: 'cambridge-zen-center', status: 'stopped', stop_reason: 'contacted_via_form', channel: 'form' },
+    { id: 3, healer_slug: 'cambridge-zen-center', status: 'stopped', stop_reason: 'sequence_complete' },
+    { id: 4, healer_slug: 'cambridge-zen-center', status: 'stopped', stop_reason: 'no_contact_email' },
+  ];
+  const { client } = fakeJourneys(rows);
+  assert.equal(await stopJourneyOnClaim(client, 'cambridge-zen-center'), 4);
+  for (const r of rows) assert.equal(r.stop_reason, 'claimed');
+  assert.equal(rows[0].replied_at, '2026-11-19T10:00:00Z');
+});
+
+test('never-again reasons keep their stop reason; already claimed is left alone', async () => {
+  const rows = [
+    { id: 1, healer_slug: 'x', status: 'stopped', stop_reason: 'asked_to_stop' },
+    { id: 2, healer_slug: 'x', status: 'stopped', stop_reason: 'suppressed' },
+    { id: 3, healer_slug: 'x', status: 'stopped', stop_reason: 'claimed' },
+  ];
+  const { calls, client } = fakeJourneys(rows);
+  assert.equal(await stopJourneyOnClaim(client, 'x'), 0);
+  assert.equal(calls.some((c) => c[0] === 'update'), false);
+  assert.equal(rows[0].stop_reason, 'asked_to_stop');
 });
 
 test('a publisher claim stops the publisher journey', async () => {

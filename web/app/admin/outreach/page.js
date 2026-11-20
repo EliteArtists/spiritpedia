@@ -680,8 +680,14 @@ export default function AdminOutreachPage() {
                         <span className={`rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${s.style}`}>
                           {s.label}
                         </span>
-                        {j.stop_reason && STOP_REASONS[j.stop_reason] !== s.label && (
-                          <span className="mt-1 block text-[11px] text-slate-500">{STOP_REASONS[j.stop_reason] || j.stop_reason}</span>
+                        {/* Claimed wins, but a reply before it still shows. */}
+                        {j.state === 'claimed' && j.replied_at ? (
+                          <span className="mt-1 block text-[11px] text-slate-500">Replied {day(j.replied_at)}</span>
+                        ) : (
+                          j.stop_reason &&
+                          STOP_REASONS[j.stop_reason] !== s.label && (
+                            <span className="mt-1 block text-[11px] text-slate-500">{STOP_REASONS[j.stop_reason] || j.stop_reason}</span>
+                          )
                         )}
                       </td>
                     </tr>

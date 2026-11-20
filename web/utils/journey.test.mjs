@@ -91,6 +91,11 @@ test('a journey state: form, replied and claimed come before the status', () => 
   assert.equal(journeyState({ channel: 'form', status: 'stopped' }), 'form');
   assert.equal(journeyState({ status: 'stopped', stop_reason: 'replied', replied_at: START }), 'replied');
   assert.equal(journeyState({ status: 'running' }, { claimed: true }), 'claimed');
+  // Claimed wins (owner, 20 Nov 2026): over a reply and over a form contact.
+  assert.equal(journeyState({ status: 'stopped', stop_reason: 'replied', replied_at: START }, { claimed: true }), 'claimed');
+  assert.equal(journeyState({ status: 'stopped', stop_reason: 'claimed', replied_at: START }), 'claimed');
+  assert.equal(journeyState({ channel: 'form', status: 'stopped' }, { claimed: true }), 'claimed');
+  assert.equal(journeyState({ status: 'stopped', stop_reason: 'asked_to_stop' }, { claimed: true }), 'claimed');
   assert.equal(journeyState({ status: 'running' }), 'running');
   assert.equal(journeyState({ status: 'paused' }), 'paused');
   assert.equal(journeyState({ status: 'stopped', stop_reason: 'sequence_complete' }), 'complete');

@@ -30,15 +30,36 @@ export async function isClaimed(supabase, target) {
 // is linked to a listing (an instant claim, a claim request or an application
 // approved), so a claimed listing gets no further email even if the daily
 // job hasn't run yet. Migration 0053's trigger on user_profiles does the same
-// in the database. → how many journeys stopped.
+// in the database (0054 widens it as below).
+//
+// CLAIMED WINS (owner, 20 Nov 2026): whatever state the journey was in
+// (running, paused, replied, contacted via form, sequence complete,
+// stopped), it becomes stopped, "claimed". replied_at is left alone, so a
+// reply before the claim still shows. The never-again reasons
+// (DO_NOT_CONTACT) keep their stop reason, so the block outlives a revoked
+// claim; journeyState shows those as Claimed all the same.
+// → how many journeys were marked.
+export function marksClaimed(journey) {
+  return journey.stop_reason !== 'claimed' && !DO_NOT_CONTACT[journey.stop_reason];
+}
+
 export async function stopJourneyOnClaim(supabase, target) {
   const { slug, publisherId } = journeyTarget(target);
   if (!slug && !publisherId) return 0;
+  const { data: journeys, error: readError } = await supabase
+    .from('healer_journeys')
+    .select('id, status, stop_reason')
+    .eq(publisherId ? 'publisher_id' : 'healer_slug', publisherId || slug);
+  if (readError) {
+    console.error('[journey] reading a claimed listing\'s journeys failed:', readError.message);
+    return 0;
+  }
+  const ids = (journeys || []).filter(marksClaimed).map((j) => j.id);
+  if (!ids.length) return 0;
   const { data, error } = await supabase
     .from('healer_journeys')
     .update({ status: 'stopped', stop_reason: 'claimed' })
-    .eq(publisherId ? 'publisher_id' : 'healer_slug', publisherId || slug)
-    .in('status', ['running', 'paused'])
+    .in('id', ids)
     .select('id');
   if (error) console.error('[journey] stopping a claimed journey failed:', error.message);
   return data?.length || 0;
@@ -242,10 +263,14 @@ export const JOURNEY_STATES = {
   stopped: 'Stopped',
 };
 
+// Claimed comes first (owner, 20 Nov 2026): a listing that replied, or was
+// contacted through its form, and then claimed counts as Claimed, so the
+// Outreach filter matches Admin → Claims and People. The replied date still
+// shows on the row.
 export function journeyState(journey, { claimed = false } = {}) {
+  if (claimed || journey.stop_reason === 'claimed') return 'claimed';
   if (journey.channel === 'form') return 'form';
   if (journey.replied_at) return 'replied';
-  if (claimed || journey.stop_reason === 'claimed') return 'claimed';
   if (journey.status === 'running') return 'running';
   if (journey.status === 'paused') return 'paused';
   if (journey.stop_reason === 'sequence_complete') return 'complete';
