@@ -1,0 +1,234 @@
+{
+ "healer": {
+  "id": 1515,
+  "created_at": "2026-11-13T00:14:15.526826+00:00",
+  "name": "Buddhist Society of Western Australia",
+  "bio": "The Buddhist Society of Western Australia (BSWA) is a Perth-based non-profit that supports the Thai Forest tradition of Theravada Buddhism, the lineage of Ajahn Chah. Founded on Vesak Day 1973, it invited monks from Wat Nanachat in Thailand to Perth in the early 1980s, and Ajahn Jagaro and later Ajahn Brahm built up its forest monastery at Serpentine. Ajahn Brahm has served as spiritual director since the mid-1990s, and Ajahn Brahmali, Ajahn Vayama and other senior monks and nuns teach alongside him.\n\nThe society now runs a network of places. Its teaching hub is the Dhammaloka centre in Nollamara, a converted church in Perth's northern suburbs with a large Dhamma hall and library, where Friday evening talks, Saturday meditation classes and festivals are held without charge. It supports Bodhinyana Monastery for monks and Dhammasara Monastery for nuns, several hermitages, and Jhana Grove, a purpose-built retreat centre near Serpentine where members book silent retreats led by monastics. Many talks, guided meditations and retreats are streamed and archived on its YouTube channel and podcasts, and a Zoom meditation group meets weekly.",
+  "healer_slug": "buddhist-society-of-western-australia",
+  "is_famous": false,
+  "subject_slugs": [
+   "meditation",
+   "mindfulness",
+   "spiritual-awakening"
+  ],
+  "city": "Perth, Western Australia",
+  "ad_rank_score": 0,
+  "availability_type": "Worldwide (Famous Names)",
+  "country": "Australia",
+  "image_url": null,
+  "image_urls": [
+   "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj"
+  ],
+  "contact_email": null,
+  "contact_phone": null,
+  "booking_url": "https://bswa.org/location/jhana-grove-retreat-centre/",
+  "tier": "luminary",
+  "website_url": "https://bswa.org/",
+  "youtube_url": "https://www.youtube.com/user/BuddhistSocietyWA/",
+  "instagram_url": null,
+  "facebook_url": null,
+  "twitter_url": null,
+  "tiktok_url": null,
+  "entity_type": "organisation",
+  "birth_year": null,
+  "death_year": null,
+  "place_id": 2063523,
+  "official": false,
+  "verified": false,
+  "founded_year": 1973,
+  "contact_email_source": null,
+  "contact_form_url": null,
+  "contact_recipient_type": null
+ },
+ "videos": [
+  {
+   "id": 11326,
+   "created_at": "2026-11-13T00:14:15.935566+00:00",
+   "title": "Introduction to Meditation: Session 1 - Setting yourself up + guided meditation | Ajahn Brahmali",
+   "platform_url": "https://www.youtube.com/watch?v=dyUCvFlDL8w",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "healer_slug": "buddhist-society-of-western-australia",
+   "slug": "introduction-to-meditation-session-1-setting-yourself-up-guided-meditation-ajahn-brahmali"
+  },
+  {
+   "id": 11327,
+   "created_at": "2026-11-13T00:14:16.336843+00:00",
+   "title": "Introduction to Meditation: Session 2 - Present awareness + guided meditation | Ajahn Brahmali",
+   "platform_url": "https://www.youtube.com/watch?v=mm4QnrIGNZQ",
+   "subject_slugs": [
+    "meditation",
+    "mindfulness"
+   ],
+   "healer_slug": "buddhist-society-of-western-australia",
+   "slug": "introduction-to-meditation-session-2-present-awareness-guided-meditation-ajahn-brahmali"
+  },
+  {
+   "id": 11328,
+   "created_at": "2026-11-13T00:14:16.719096+00:00",
+   "title": "Introduction to Meditation: Session 3 - Breath meditation + guided meditation | Ajahn Brahmali",
+   "platform_url": "https://www.youtube.com/watch?v=HK4ZU-qg0ls",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "healer_slug": "buddhist-society-of-western-australia",
+   "slug": "introduction-to-meditation-session-3-breath-meditation-guided-meditation-ajahn-brahmali"
+  },
+  {
+   "id": 11329,
+   "created_at": "2026-11-13T00:14:17.0951+00:00",
+   "title": "An Introduction to Jhana Grove Meditation Retreat Centre",
+   "platform_url": "https://www.youtube.com/watch?v=KeZdpyoCiW0",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "healer_slug": "buddhist-society-of-western-australia",
+   "slug": "an-introduction-to-jhana-grove-meditation-retreat-centre"
+  }
+ ],
+ "books": [],
+ "co_books": [],
+ "courses": [
+  {
+   "id": "b50c4226-1fce-4ee9-b314-693e9fdf5c8a",
+   "healer_id": 1515,
+   "title": "BSWA 9 day Retreat with Ajahn Sunyo 25 December 2026 – 3 January 2027",
+   "description": "The longer summer retreat at Jhana Grove, nine days of silent practice taught by Ajahn Sunyo across the New Year. It is open to full BSWA members.",
+   "course_url": "https://bswa.org/event/25-dec-2026-3-jan-2027-bswa-ajahn-sunyo-9-day-retreat/",
+   "price": "Contact for pricing",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "created_at": "2026-11-13T00:14:17.69088+00:00",
+   "product_type": "retreat",
+   "affiliate_status": "none",
+   "start_date": "2026-12-25",
+   "end_date": "2027-01-03",
+   "is_active": true,
+   "slug": "bswa-9-day-retreat-with-ajahn-sunyo-25-december-2026-3-january-2027"
+  },
+  {
+   "id": "061916dd-9f95-4647-9e73-319fa2d7c542",
+   "healer_id": 1515,
+   "title": "BSWA 5-day Retreat with Ayya Hasapanna 20-25 November 2026",
+   "description": "A five-day silent retreat at Jhana Grove taught by Ajahn Hasapanna, pitched between the society's weekend retreats and its nine-day retreats. Booking opens first to BSWA members.",
+   "course_url": "https://bswa.org/event/bswa-5-day-retreat-ajahn-hasapanna-20-25-nov-2026/",
+   "price": "Contact for pricing",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "created_at": "2026-11-13T00:14:17.29862+00:00",
+   "product_type": "retreat",
+   "affiliate_status": "none",
+   "start_date": "2026-11-20",
+   "end_date": "2026-11-25",
+   "is_active": true,
+   "slug": "bswa-5-day-retreat-with-ayya-hasapanna-20-25-november-2026"
+  },
+  {
+   "id": "4183af17-3cf5-4e5f-8f01-6649344caa09",
+   "healer_id": 1515,
+   "title": "BSWA Weekend Retreat 11 – 13 December 2026",
+   "description": "A weekend of silent meditation at Jhana Grove with Ayya Seri. Sessions are usually streamed on the society's YouTube channel, and places are booked through the members' system.",
+   "course_url": "https://bswa.org/event/bswa-weekend-retreat-11-13-dec-2026/",
+   "price": "Contact for pricing",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "created_at": "2026-11-13T00:14:17.499837+00:00",
+   "product_type": "retreat",
+   "affiliate_status": "none",
+   "start_date": "2026-12-11",
+   "end_date": "2026-12-13",
+   "is_active": true,
+   "slug": "bswa-weekend-retreat-11-13-december-2026"
+  }
+ ],
+ "free_resources": [
+  {
+   "id": "60873b6d-4ebc-430f-beef-e9a57f8544fe",
+   "healer_id": 1515,
+   "title": "Introduction to Meditation Series – Parts 1 to 5 | Ajahn Brahmali (Video/Audio)",
+   "description": "Five recorded sessions by Ajahn Brahmali for beginners, each pairing a short teaching with a guided sit: getting set up, present-moment awareness, the breath, working with obstacles and other meditation methods.",
+   "resource_url": "https://bswa.org/practices/introduction-meditation-series-parts-1-5-ajahn-brahmali/",
+   "resource_type": "mini_course",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation"
+   ],
+   "is_featured": true,
+   "created_at": "2026-11-13T00:14:17.890076+00:00",
+   "start_date": null,
+   "end_date": null,
+   "is_active": true,
+   "slug": "introduction-to-meditation-series-parts-1-to-5-ajahn-brahmali-video-audio"
+  },
+  {
+   "id": "e0963c1c-dd23-48a8-bf98-6d1ed67ec058",
+   "healer_id": 1515,
+   "title": "Dhammaloka City Centre",
+   "description": "The society's main teaching centre in Nollamara, north of central Perth, open to all without charge: Friday evening talks, Saturday afternoon meditation classes for beginners and regulars, festivals and a lending library.",
+   "resource_url": "https://bswa.org/location/dhammaloka-city-centre/",
+   "resource_type": "meditation",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation",
+    "spirituality"
+   ],
+   "is_featured": false,
+   "created_at": "2026-11-13T00:14:18.085385+00:00",
+   "start_date": null,
+   "end_date": null,
+   "is_active": true,
+   "slug": "dhammaloka-city-centre"
+  },
+  {
+   "id": "2daa9bf2-c2c7-4882-97a6-55eab4869895",
+   "healer_id": 1515,
+   "title": "Practice",
+   "description": "BSWA's guide to its recorded teachings, sorted by stage: beginners' series on Buddhism and meditation by Ajahn Brahm and Ajahn Brahmali, then material for daily-life and deeper practice.",
+   "resource_url": "https://bswa.org/practice/",
+   "resource_type": "practice",
+   "image_url": "https://yt3.googleusercontent.com/ytc/AIdro_mtx0xx4J5LE5QnFj8L-B7WBzxnqRbsFxNVC-kvcelOHqM=s900-c-k-c0x00ffffff-no-rj",
+   "subject_slugs": [
+    "meditation",
+    "spirituality"
+   ],
+   "is_featured": false,
+   "created_at": "2026-11-13T00:14:18.289212+00:00",
+   "start_date": null,
+   "end_date": null,
+   "is_active": true,
+   "slug": "practice"
+  }
+ ],
+ "hub_teachers": [
+  {
+   "id": "2d73f075-6503-438a-9a3b-d811a0d9c2a9",
+   "hub_id": 1515,
+   "teacher_id": 733,
+   "role": "instructor",
+   "created_at": "2026-11-13T00:14:19.247273+00:00"
+  },
+  {
+   "id": "6b38e9d1-9337-4470-85f5-d50f559fedcb",
+   "hub_id": 1515,
+   "teacher_id": 734,
+   "role": "instructor",
+   "created_at": "2026-11-13T00:14:19.347585+00:00"
+  },
+  {
+   "id": "8c86e415-1ace-4767-a15b-f6ca2caed27e",
+   "hub_id": 1515,
+   "teacher_id": 592,
+   "role": "instructor",
+   "created_at": "2026-11-13T00:14:19.440625+00:00"
+  }
+ ],
+ "journeys": [],
+ "locks": []
+}

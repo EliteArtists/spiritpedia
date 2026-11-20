@@ -92,3 +92,16 @@ listing, and no journey exists.
 
 **Still open:** BSWA's answer about Ajahn Brahm, Ajahn Brahmali and Ajahn Canda. If they
 should go, use **Delete healer** with "never re-add" ticked on each.
+
+## 0055 run, and BSWA off dev (20 Nov 2026)
+
+- **0055 ran on dev and live** (your check row: 1, 4, 0, 3). No listing on either
+  database shows a bswa.org address. The monks' listings are still there, with no
+  email, until BSWA answers.
+- **BSWA deleted from dev** (your yes), with its 4 videos, 3 offerings, 3 free
+  resources and 3 teacher links. 0055 had already cleared its address. Backup:
+  `docs/owner-requests/2026-11-20-bswa.dev.backup.json`.
+- **The guard works:** on dev, a test insert of a new listing on `www.bswa.org`
+  under another name and slug was refused ("do_not_revive: Buddhist Society of
+  Western Australia was removed at the owner's request…"). Nothing was added.
+- The buttons and the Never again panel are now live in the admin.
