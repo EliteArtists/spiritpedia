@@ -118,3 +118,18 @@ comes from YouTube. Say if you want a way to replace it.
 - no write rules (only the website's server can store).
 
 Until it runs, Upload says "needs migration 0056"; pasting a link works as before.
+
+## 0056 run, and upload tested (23 Nov 2026)
+
+- **0056 ran on dev and live** (your check row: true, 5242880, 3, 0). Live's bucket
+  reads back the same: public, 5 MB, JPG/PNG/WebP.
+- **Tested on dev, end to end** through the real upload route:
+  - a 4032×3024 sideways phone photo with location details was stored as a JPG,
+    1200×1600, upright, with no hidden details, and opens from its public link;
+  - a transparent logo was stored as a PNG, 600×300, still transparent;
+  - a fake picture was refused;
+  - a write to the bucket without the website's server was refused.
+
+  The two test files were deleted afterwards. No listing was changed.
+- **Not tested on live:** that needs your admin login. Your first upload there is
+  the live test; the steps are in the admin guide (Content → Uploading a picture).
