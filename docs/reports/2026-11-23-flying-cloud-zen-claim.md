@@ -84,3 +84,9 @@ found the right listing 432 times, made no guess 50 times, and was never wrong.
 
   Afterwards the test account, the claim record and the journey were removed, and the
   dev listing was restored.
+
+## Claim approved email sent (23 Nov 2026)
+
+At your yes, Busshō was sent "You can now manage Flying Cloud Zen on Spiritpedia" at
+bussholahn@gmail.com, greeted as "Hi Busshō". It was sent once, recorded as the admin
+records it, so it can't go twice.
