@@ -27,7 +27,9 @@ kind at a time. A line under them says when the broken-image check last ran
 count, except that closed accounts and stand-in pictures are listed but not
 counted. **What you do:** open an application to set its listing type and
 tier, then **Approve**, **Approve & Next** or **Decline** (Decline asks for a
-reason and emails it to them). Open a claim request to send the ownership
+reason and emails it to them). If it's really a listing we already have,
+choose it under **Listing** and press **Approve as a claim** (see "Approving
+a listing" below). Open a claim request to send the ownership
 check to the listing's published address, or make a code, then approve or
 decline. Other rows take you to the right place: reviews to Reviews, reports
 to Reports, owners' content to its review page, a broken image to the
@@ -433,6 +435,29 @@ Always approve or decline here in the Inbox. A person's record (People →
 View) can only send someone back to the Inbox as pending: approving there
 used to set the word "approved" without making the listing or sending the
 email.
+
+**An application that is really an existing listing** (from 23 Nov 2026).
+Someone sometimes applies as new instead of claiming the listing we already
+made for them. If the application looks like a listing we have (the same
+website, email or name), an amber box above **Listing** says so, with links.
+To approve it as a claim:
+
+1. **Listing:** choose **Claim of …** (the likely listings are offered), or
+   **Claim of another listing…** and paste its address (for example
+   `/healers/flying-cloud-zen-community`). A listing someone already manages
+   can't be chosen.
+2. **Use what they wrote on the listing** (ticked to start with): their bio,
+   their pictures (put first), their place, and in person / online replace the
+   listing's. Untick it to keep the listing exactly as it is. Its videos,
+   books, offerings, subjects and email are never changed, and the old values
+   go in its **Change log**.
+3. **Approve as a claim.** No new listing is made. Their account now manages
+   the listing, which shows ✓ Verified, its outreach journey stops ("claimed"),
+   and they're emailed "Your claim to … is approved". Admin → Claims records
+   it as an approved request: "Applied as a new listing; approved in the admin
+   as a claim of this existing listing."
+
+Listing type and tier are greyed out meanwhile: the listing keeps its own.
 
 **Approving a claim** ("Approve claim", or a request in the Inbox): the
 listing was public already, so the owner gets "Your claim to … is approved",

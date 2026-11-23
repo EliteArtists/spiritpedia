@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { supabase } from '@/utils/supabase';
 import BookCard from '@/components/BookCard';
 import BackButton from '@/components/BackButton';
@@ -21,6 +21,7 @@ import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
 import { MEDICAL_NOTE, needsMedicalNote } from '@/utils/medicalNote';
 import { booksByAuthorsFilter } from '@/utils/bookAuthors';
 import { hubLinkPrefix, isHub, isSchool } from '@/utils/listings';
+import { nearListingSlug, withQuery } from '@/utils/nearListing';
 
 // Our Teachers on a hub's page: the founder first, then by tier, then by
 // name.
@@ -195,7 +196,13 @@ export default async function HealerProfile({ params, searchParams }) {
   //
   // generateMetadata above has always returned notFoundMetadata('Healer'), so
   // the noindex was right while the status code was not.
+  //
+  // Unless the address is very close to a real listing (owner, 23 Nov 2026:
+  // /healers/flying-cloud-zen for flying-cloud-zen-community, utils/nearSlug.js):
+  // then the visitor goes on to that one.
   if (error || !healer) {
+    const near = await nearListingSlug('healer', slug);
+    if (near) redirect(withQuery(`/healers/${near}`, await searchParams));
     notFound();
   }
 

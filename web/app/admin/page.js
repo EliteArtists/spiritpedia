@@ -108,13 +108,15 @@ function AdminInboxPage() {
                 : 'Claim request declined.') +
               (json.notified ? ' They have been emailed.' : ' The email to them did not go — tell them yourself.')
             : action === 'approve'
-              ? (json.publisher_slug
+              ? (json.claimed
+                  ? `Approved as a claim — they now manage /healers/${json.healer_slug}.`
+                  : json.publisher_slug
                   ? `Approved — published as /publishers/${json.publisher_slug}.`
                   : json.healer_slug
                     ? `Approved — published as /healers/${json.healer_slug}.`
                     : 'Approved.') +
                 (json.notified === true
-                  ? json.reused
+                  ? json.reused || json.claimed
                     ? ' They have been emailed that their claim is approved.'
                     : ' They have been emailed that it’s live.'
                   : json.notified === false

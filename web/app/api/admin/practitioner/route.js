@@ -7,6 +7,8 @@ import { applicationDeclined } from '@/utils/emailTemplates';
 import { COPY } from '@/utils/pushRules';
 import { sendAccountUpdate } from '@/utils/pushRun';
 import { stopJourneyOnClaim } from '@/utils/journey';
+import { selectAllHealers } from '@/data/subjects';
+import { fillFromApplication, likelyListings } from '@/utils/applicationClaim';
 
 export const dynamic = 'force-dynamic';
 
@@ -112,6 +114,30 @@ async function uniqueSlug(supabase, base, table = 'healers', column = 'healer_sl
   return `${base}-${n}`;
 }
 
+// GET ?id=<account> → { matches }: listings this application may really be
+// (the same website, email or name; utils/applicationClaim.js), for the
+// Inbox's "Listing" choice, with whether someone already manages each.
+export async function GET(request) {
+  if (!(await isAdminRequest())) {
+    return NextResponse.json({ error: 'unauthorised' }, { status: 401 });
+  }
+  const supabase = adminClient();
+  if (!supabase) return NextResponse.json(NOT_CONFIGURED, { status: 503 });
+  const id = new URL(request.url).searchParams.get('id');
+  if (!id) return NextResponse.json({ error: 'missing_id' }, { status: 400 });
+
+  const [{ data: profile }, { data: authUser }, { data: listings, error }] = await Promise.all([
+    supabase.from('user_profiles').select('full_name, website_url').eq('id', id).maybeSingle(),
+    supabase.auth.admin.getUserById(id),
+    selectAllHealers('healer_slug, name, entity_type, website_url, contact_email, verified, official', (q) => q, supabase),
+  ]);
+  if (error && !listings) return NextResponse.json({ error: 'query_failed', message: error.message }, { status: 500 });
+  const matches = likelyListings(profile, authUser?.user?.email, listings).map(
+    ({ healer_slug, name, entity_type, verified, official, why }) => ({ healer_slug, name, entity_type, verified, official, why })
+  );
+  return NextResponse.json({ matches });
+}
+
 export async function POST(request) {
   if (!(await isAdminRequest())) {
     return NextResponse.json({ error: 'unauthorised' }, { status: 401 });
@@ -122,6 +148,10 @@ export async function POST(request) {
 
   const body = await request.json().catch(() => ({}));
   const { action, id, tier = 'local_hero', entityType = 'individual', publisherId = null } = body;
+  // An existing listing this application is really a claim of (owner, 23 Nov
+  // 2026), and whether to put what they wrote on it.
+  const claimSlug = typeof body.healerSlug === 'string' ? body.healerSlug.trim() : '';
+  const fill = body.fill !== false;
   // For a decline: the explanation the applicant reads (D4). Not a private note.
   const reason = typeof body.reason === 'string' ? body.reason.trim() : '';
 
@@ -246,6 +276,8 @@ export async function POST(request) {
       notified,
     });
   }
+
+  if (claimSlug) return approveAsClaim(supabase, { id, profile, email, healerSlug: claimSlug, fill });
 
   const name = (profile.full_name || '').trim();
   if (!name) {
@@ -377,4 +409,92 @@ async function approvePublisher(supabase, { id, profile, name, email, publisherI
     listingPath: `/publishers/${slug}`,
   });
   return NextResponse.json({ ok: true, publisher_slug: slug, notified });
+}
+
+// Approve as a claim of an existing listing (owner, 23 Nov 2026): no new
+// listing. The account is linked to the chosen one, which makes it claimed
+// (✓ Verified, by 0023's trigger), and its outreach journey stops. With
+// `fill`, the listing takes their bio, pictures, place and in person / online
+// (utils/applicationClaim.js), each old value kept in its change log. The
+// application is closed as an approved claim request saying how it came, so
+// Admin → Claims shows it. They get the claim approval email, not "live".
+async function approveAsClaim(supabase, { id, profile, email, healerSlug, fill }) {
+  const { data: listing } = await supabase
+    .from('healers')
+    .select('id, healer_slug, name, bio, image_urls, city, country, availability_type, official')
+    .eq('healer_slug', healerSlug)
+    .maybeSingle();
+  if (!listing) return NextResponse.json({ error: 'listing_not_found', message: 'That listing doesn’t exist.' }, { status: 404 });
+  if (listing.official) {
+    return NextResponse.json({ error: 'official', message: 'That is Spiritpedia’s own listing.' }, { status: 409 });
+  }
+  const { data: others } = await supabase
+    .from('user_profiles')
+    .select('id')
+    .eq('linked_healer_slug', healerSlug)
+    .neq('id', id)
+    .limit(1);
+  if (others?.length) {
+    return NextResponse.json(
+      { error: 'already_claimed', message: 'Someone else already manages this listing.' },
+      { status: 409 }
+    );
+  }
+
+  const changes = fill ? fillFromApplication(profile, listing) : {};
+  if (Object.keys(changes).length) {
+    const before = Object.fromEntries(Object.keys(changes).map((key) => [key, listing[key] ?? null]));
+    const { error } = await supabase.from('healers').update(changes).eq('id', listing.id);
+    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    const { error: logError } = await supabase.from('admin_edit_log').insert({
+      healer_slug: healerSlug,
+      table_name: 'healers',
+      record_id: String(listing.id),
+      action: 'edit',
+      summary: `Updated from their application, approved as a claim (${Object.keys(changes).join(', ')})`,
+      before,
+      after: changes,
+      created_by: process.env.ADMIN_NAME || 'Admin',
+    });
+    if (logError) console.error('[approve as claim] change log failed:', logError.message);
+  }
+
+  const { error: linkError } = await supabase
+    .from('user_profiles')
+    .update({ verification_status: 'approved', linked_healer_slug: healerSlug })
+    .eq('id', id);
+  if (linkError) {
+    return NextResponse.json(
+      { error: 'partial', message: `The listing was updated but the account was not linked: ${linkError.message}` },
+      { status: 500 }
+    );
+  }
+
+  const now = new Date().toISOString();
+  const { error: recordError } = await supabase.from('claim_requests').insert({
+    user_id: id,
+    healer_slug: healerSlug,
+    connection: 'Applied as a new listing; approved in the admin as a claim of this existing listing.',
+    status: 'approved',
+    proof: 'other',
+    decided_at: now,
+  });
+  if (recordError) console.error('[approve as claim] claim record failed:', recordError.message);
+
+  const stopped = await stopJourneyOnClaim(supabase, healerSlug);
+  const notified = await tellClaimant(supabase, {
+    userId: id,
+    listingRef: healerSlug,
+    email,
+    fullName: profile.full_name,
+    listingName: listing.name,
+  });
+  return NextResponse.json({
+    ok: true,
+    healer_slug: healerSlug,
+    claimed: true,
+    updated: Object.keys(changes),
+    journeys_stopped: stopped,
+    notified,
+  });
 }

@@ -41,6 +41,16 @@ points to.
   the admin, lock the listing, stop the journey, log it).
 
 **Recent decisions (newest first)**
+- 23 Nov: an application can be **approved as a claim of an existing listing** (Inbox →
+  the application → Listing → "Claim of …"; `/api/admin/practitioner` with `healerSlug`):
+  no new listing, the account is linked (claimed, journey stopped), optionally the
+  listing takes their bio, pictures and place (logged), and Admin → Claims records it.
+  The Inbox warns when an application looks like a listing we have
+  (`utils/applicationClaim.js`). Done for Flying Cloud Zen (Busshō Lahn) on live.
+- 23 Nov: a listing or publisher address that doesn't exist but is **very close to a
+  real one** redirects to it (`utils/nearSlug.js`: capitals and hyphens, one letter,
+  whole words missing or added at the end; never when two listings are equally close,
+  never for two letters). `/healers/flying-cloud-zen` → `flying-cloud-zen-community`.
 - 23 Nov: every public listing page (healers of every kind, publishers) has **Is this
   you? Claim this listing** until it's claimed (`components/ClaimListingButton.jsx`;
   hidden when verified or official, or for someone who has died). Email 1 of both

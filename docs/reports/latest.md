@@ -1,135 +1,86 @@
-# Claim button, email 1 and image upload — 23 Nov 2026
+# Flying Cloud Zen claim and near addresses — 23 Nov 2026
 
-## 1. Claiming made clear
+Busshō Lahn (bussholahn@gmail.com) applied as a new organisation, "Flying Cloud Zen",
+instead of claiming `flying-cloud-zen-community`. The link he was sent,
+`/healers/flying-cloud-zen`, didn't exist (404 on live).
 
-**Claim this listing button (website).** Every public listing page shows **Is this
-you? Claim this listing →** under the name and badges until the listing is claimed:
-people, organisations, schools, channels, apps (`/healers/<slug>`) and publishers
-(`/publishers/<slug>`). It's hidden when:
-- the listing is claimed (✓ Verified: an approved account is linked);
-- it's Spiritpedia's own listing;
-- it's a person who has died (an Ascended Master, or a death year).
+## 1. The wrong address
 
-It opens the existing claim flow for that listing (`/auth/claim?slug=…`, with
-`&kind=publisher` for a publisher):
-- signed out, it goes through sign-up first;
-- the listing's own email claims it at once;
-- another address can ask, and the request lands in Admin → Claims.
+`/healers/flying-cloud-zen` now redirects to `/healers/flying-cloud-zen-community`. The
+general rule in section 4 covers it, so no special case was needed.
 
-**App:** the same button goes in 1.0.3 (README Start here); nothing in the app now.
+## 2. His application approved as a claim (live, done)
 
-**Email 1, both sequences.** The copy documents were changed first
-(`docs/email-copy-2026-10-21.md` and `docs/email-copy-2026-11-11-shared-journey.md`,
-each with a dated note), then the templates. It keeps its single listing link. Email 1
-as a practitioner and an organisation receive it:
+- **No new listing.** There is still only `flying-cloud-zen-community`.
+- **His account** is linked to the listing and the application is approved. The listing
+  shows **✓ Verified** (claimed).
+- **The journey** is stopped as "claimed". It was running, with email 1 sent on 20 Nov.
+- **Admin → Claims** records an approved request: "Applied as a new organisation (23 Nov
+  2026); approved as a claim of this existing listing at the owner's request."
+- **No email or notification went to him.** You didn't ask for one. The admin button
+  would send "Your claim to Flying Cloud Zen is approved"; say if you want it sent.
 
-```
-Subject: Jane, a question about your work
+## 3. The listing updated from his application (live, done)
 
-Hi Jane,
+- **Bio:** his own three paragraphs replace ours. Ours is in the Change log.
+- **Place:** Minneapolis, United States.
+- **Availability:** "Local & Online Sessions". It said "Worldwide (Famous Names)".
+- **Logo:** already his. The picture you uploaded this morning is the same logo, so it
+  wasn't changed.
+- **Unchanged:** videos, offerings, free resources, subjects and the listing's email
+  (bussho@flyingcloudzen.org). His application picked other subjects (including shadow
+  work and self-healing); the listing keeps meditation, mindfulness and ancient wisdom.
 
-I came across your work on social sites and wanted to get in contact.
+## 4. Approve as a claim, in the admin
 
-Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
+Inbox → the application → **Listing** → **Claim of …** (or **Claim of another
+listing…** with its address) → **Approve as a claim**.
 
-I've also made a short public listing for you from information available online. You can view it here: https://www.spiritpedia.co/healers/jane-example. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
+- An amber box warns when an application looks like a listing we have: the same
+  website, the same email, an email on the listing's own domain (not Gmail and the
+  like) or the same name.
+- **Use what they wrote on the listing** is ticked to start with. It brings over their
+  bio, pictures (put first), place, and in person / online. Old values are logged.
+- A listing someone already manages, or Spiritpedia's own, is refused.
+- They get the claim approved email and notification, not "Your listing is live".
 
-If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
+It's in the admin guide (Inbox, and "Approving a listing").
 
-With love,
-Ross
-```
+## 5. Near addresses redirect
 
-```
-Subject: A question for Example Meditation Centre
+On `/healers/…` and `/publishers/…`, an address that doesn't exist goes to the one
+real listing it is very close to. Very close means:
 
-Hello,
+- the same apart from capitals, spaces or hyphens;
+- one letter wrong, missing or extra;
+- whole words missing or added at the end (two words or more).
 
-I came across your organisation and wanted to get in contact.
+There's no redirect when two listings are equally close (`/healers/sri-sri` stays a
+404). Two letters different never counts, because `sam-harris` and `dan-harris` are
+two people. What comes after the "?" is kept.
 
-Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
+**One risk:** a deleted listing's old address could be one letter from a different
+listing. Two such pairs exist today: `brother-phap-huu` / `brother-phap-luu`, and
+`buddha-haus` / `buddha-house`.
 
-I've made a free public listing for Example Meditation Centre from information available online: https://www.spiritpedia.co/healers/example-meditation-centre. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
-
-To stop these emails, simply reply.
-
-If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
-
-With love,
-Ross
-```
-
-Emails 2–8 are unchanged (they already carry the claim link).
-
-## 2. Image upload in the admin
-
-An **Upload** button sits beside every image link:
-- Profile tab → Images (a listing's photos or logo);
-- the Content tab (a book, offering or free resource image, from the row's picture or
-  Edit);
-- the Ingestion forms (new items, a new listing's photos, a publisher's logo).
-
-How it works:
-1. You pick a JPG, PNG or WebP from the Mac or the iPad.
-2. The browser shrinks it before sending, because Vercel refuses anything over 4.5 MB.
-3. `/api/admin/upload-image` (admin only) checks the file really is a picture by its
-   bytes. It turns it upright, shrinks it to 1600 px on the longer side (never
-   enlarges), removes the location and camera details, and saves a JPG, or a PNG when
-   it has see-through parts.
-4. The picture is stored in the new public bucket `listing-images`, under
-   `<kind>/<listing>/…`. The link fills the box, with a preview.
-5. Nothing changes until you press **Save**.
-
-The old picture is kept in the change log:
-- book, offering and free resource images were already logged with before and after;
-- a listing's photos and a publisher's logo are now logged too, by the write route,
-  which reads the old value first;
-- the entry shows in the listing's Change log.
-
-**Videos:** there's no upload. Videos have no image of their own; the thumbnail always
-comes from YouTube. Say if you want a way to replace it.
+**Tested on live's 1,528 addresses:** dropping the last word of each 3+ word address
+found the right listing 432 times, made no guess 50 times, and was never wrong.
 
 ## Checks
 
-- **Tests:** 267 web tests pass. The new ones cover:
-  - the claim-button rule;
-  - email 1's new sentence;
-  - recognising pictures by their bytes;
-  - safe storage paths;
-  - the 1600 px fit;
-  - real pictures through the server's processing: a 4032×3024 sideways phone photo
-    with GPS comes out upright, 1200×1600, with no location or camera details; a
-    transparent logo stays a PNG; a fake JPG is refused.
-- **Build and lint:** the build passes; lint shows no new problems.
-- **Looked at on a local server against dev:**
-  - a person's and an organisation's page show the button, linked to their claim;
-  - a publisher's links with `&kind=publisher`;
-  - Alan Watts (Ascended Master) has none;
-  - an upload through the real picker reached the server, which answered "needs
-    migration 0056" (dev has no bucket yet).
+- Web tests: **279 pass** (12 new: near addresses; application to listing matching and
+  filling). Lint: no new problems. The build passes.
+- Dev, local server:
+  - `/healers/flying-cloud-zen?from=/x` gave 307 to the real listing with `?from` kept;
+  - `/publishers/hay-hous` gave 307 to hay-house;
+  - an unrelated address gave 404.
+- **Dev, approve as a claim through the Inbox**, with a test account
+  (rossbaiken+journeytest@gmail.com; nothing sent, no email key locally) and a test
+  journey:
+  - account linked and listing ✓ Verified;
+  - bio, place and availability changed and logged;
+  - claim record made and journey stopped;
+  - no second listing.
 
-## For you: run 0056, dev then live
-
-`supabase/migrations/0056_listing_images_bucket.sql`. **Check row: true, 5242880, 3,
-0.** The four numbers are:
-- public;
-- 5 MB a picture;
-- three image types;
-- no write rules (only the website's server can store).
-
-Until it runs, Upload says "needs migration 0056"; pasting a link works as before.
-
-## 0056 run, and upload tested (23 Nov 2026)
-
-- **0056 ran on dev and live** (your check row: true, 5242880, 3, 0). Live's bucket
-  reads back the same: public, 5 MB, JPG/PNG/WebP.
-- **Tested on dev, end to end** through the real upload route:
-  - a 4032×3024 sideways phone photo with location details was stored as a JPG,
-    1200×1600, upright, with no hidden details, and opens from its public link;
-  - a transparent logo was stored as a PNG, 600×300, still transparent;
-  - a fake picture was refused;
-  - a write to the bucket without the website's server was refused.
-
-  The two test files were deleted afterwards. No listing was changed.
-- **Not tested on live:** that needs your admin login. Your first upload there is
-  the live test; the steps are in the admin guide (Content → Uploading a picture).
+  Afterwards the test account, the claim record and the journey were removed, and the
+  dev listing was restored.

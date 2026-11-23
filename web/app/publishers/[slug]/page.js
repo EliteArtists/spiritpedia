@@ -1,5 +1,6 @@
 import { supabase } from '@/utils/supabase';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
+import { nearListingSlug, withQuery } from '@/utils/nearListing';
 import Link from 'next/link';
 import BookCard from '@/components/BookCard';
 import ContentShelf from '@/components/ContentShelf';
@@ -66,7 +67,11 @@ export default async function PublisherProfile({ params, searchParams }) {
     .eq('slug', slug)
     .single();
 
+  // A missing address very close to a real publisher goes on to it
+  // (utils/nearSlug.js), as a listing's does.
   if (error || !publisher) {
+    const near = await nearListingSlug('publisher', slug);
+    if (near) redirect(withQuery(`/publishers/${near}`, await searchParams));
     notFound();
   }
 

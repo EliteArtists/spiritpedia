@@ -102,13 +102,39 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
   const [publisherId, setPublisherId] = useState('');
   const [publishers, setPublishers] = useState([]);
   const [note, setNote] = useState(null);
+  // Really a claim of a listing already on Spiritpedia (owner, 23 Nov 2026):
+  // the listing's slug, or '' for a new listing. Listings that look like the
+  // same one are offered first; "other" takes a typed address.
+  const [matches, setMatches] = useState(null);
+  const [claimSlug, setClaimSlug] = useState('');
+  const [otherSlug, setOtherSlug] = useState('');
+  const [fill, setFill] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    fetch(`/api/admin/practitioner?id=${encodeURIComponent(item.profileId)}`, { cache: 'no-store' })
+      .then((res) => res.json())
+      .then((json) => {
+        if (!cancelled) setMatches(json.matches || []);
+      })
+      .catch(() => {
+        if (!cancelled) setMatches([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [item.profileId]);
 
   const incomplete = isIncomplete(p);
   const place = [p.location_city, p.location_country].filter(Boolean).join(', ');
   const { inPerson, online } = inPersonFrom(p.availability_type);
   const isPublisher = entityType === 'publisher';
-  const blocked = incomplete || !entityType;
-  const options = { tier, entityType, publisherId: isPublisher ? publisherId || null : null };
+  const healerSlug = isPublisher ? '' : claimSlug === 'other' ? otherSlug.trim().replace(/^.*\/healers\//, '').replace(/[/?#].*$/, '') : claimSlug;
+  const asClaim = Boolean(healerSlug);
+  const blocked = incomplete || !entityType || (claimSlug === 'other' && !healerSlug);
+  const options = asClaim
+    ? { healerSlug, fill }
+    : { tier, entityType, publisherId: isPublisher ? publisherId || null : null };
 
   useEffect(() => {
     if (!isPublisher || publishers.length) return undefined;
@@ -199,13 +225,73 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
         </div>
       )}
 
+      {!isPublisher && matches?.length > 0 && !claimSlug && (
+        <div className="mt-5 rounded-xl border border-amber-500/40 bg-amber-500/10 p-4">
+          <p className="text-sm font-bold text-amber-200">This may be a listing we already have</p>
+          <ul className="mt-1 space-y-1 text-sm text-amber-100/90">
+            {matches.map((m) => (
+              <li key={m.healer_slug}>
+                <Link href={`/healers/${m.healer_slug}`} target="_blank" className="underline">
+                  {m.name}
+                </Link>{' '}
+                <span className="text-amber-200/70">({m.why.join(', ')}{m.verified ? '; already claimed' : ''})</span>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-1 text-[12px] text-amber-100/70">
+            If it is, choose it under Listing below and approve it as a claim, so no second listing is made.
+          </p>
+        </div>
+      )}
+
       <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
+        {!isPublisher && (
+          <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500 sm:col-span-2">
+            Listing
+            <select
+              value={claimSlug}
+              onChange={(e) => setClaimSlug(e.target.value)}
+              disabled={incomplete}
+              className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
+            >
+              <option value="">Create a new listing</option>
+              {(matches || []).map((m) => (
+                <option key={m.healer_slug} value={m.healer_slug} disabled={m.verified || m.official}>
+                  Claim of {m.name} ({m.healer_slug}){m.verified ? ': already claimed' : ''}
+                </option>
+              ))}
+              <option value="other">Claim of another listing…</option>
+            </select>
+            {claimSlug === 'other' && (
+              <input
+                type="text"
+                value={otherSlug}
+                onChange={(e) => setOtherSlug(e.target.value)}
+                placeholder="The listing’s address, e.g. /healers/flying-cloud-zen-community"
+                className="mt-2 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white"
+              />
+            )}
+            {asClaim && (
+              <>
+                <span className="mt-2 flex items-center gap-2 text-[12px] font-normal normal-case tracking-normal text-slate-300">
+                  <input type="checkbox" checked={fill} onChange={(e) => setFill(e.target.checked)} />
+                  Use what they wrote on the listing: their bio, pictures (first), place, in person and online
+                </span>
+                <span className="mt-1.5 block text-[11px] font-normal normal-case leading-snug tracking-normal text-slate-500">
+                  No new listing is made. Their account manages /healers/{healerSlug}, which shows as claimed, and its
+                  outreach stops. Its videos, books, offerings and subjects stay as they are; any old bio or picture is
+                  kept in its change log. They get the claim approved email.
+                </span>
+              </>
+            )}
+          </label>
+        )}
         <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
           Listing type
           <select
             value={entityType}
             onChange={(e) => setEntityType(e.target.value)}
-            disabled={incomplete}
+            disabled={incomplete || asClaim}
             className="mt-1 w-full rounded-lg border border-slate-700 bg-[#0a0f1d] px-3 py-2 text-sm font-normal normal-case tracking-normal text-white disabled:opacity-50"
           >
             {!entityType && <option value="">Choose…</option>}
@@ -224,7 +310,7 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
           entityType={entityType}
           tier={tier}
           setTier={setTier}
-          disabled={incomplete || !entityType}
+          disabled={incomplete || !entityType || asClaim}
         />
         {isPublisher && (
           <label className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
@@ -260,7 +346,7 @@ function ApplicationDetail({ item, busy, onDecision, onApproveAndNext, hasNext }
           onClick={() => onDecision(item, 'approve', options)}
           className="rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-bold text-slate-950 transition-colors hover:bg-emerald-400 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          Approve
+          {asClaim ? 'Approve as a claim' : 'Approve'}
         </button>
 
         {hasNext && (
