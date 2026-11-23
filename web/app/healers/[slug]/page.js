@@ -14,6 +14,7 @@ import { formatLifespan, LIFESPAN_BADGE_CLASS } from '@/utils/lifespan';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
 import AppLine from '@/components/AppLine';
+import ClaimListingButton from '@/components/ClaimListingButton';
 import { APP_STORE_ID } from '@/utils/appStores';
 import PublisherLogo from '@/components/PublisherLogo';
 import { actionLabel, actionUrl, isPerson, withScheme } from '@/utils/badges';
@@ -363,6 +364,9 @@ export default async function HealerProfile({ params, searchParams }) {
 
               {/* One quiet line to the app (owner, 16 Nov 2026). */}
               <AppLine placement="teacher_page" className="mt-3" />
+
+              {/* Until someone claims it (owner, 23 Nov 2026). */}
+              <ClaimListingButton listing={healer} slug={healer.healer_slug} className="mt-4" />
 
               {/* A school: "Founded 2008 · Visit website →", as on a publisher's
                   page. */}

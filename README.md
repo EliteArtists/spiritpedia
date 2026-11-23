@@ -24,12 +24,13 @@ points to.
 **Where things are**
 - **App 1.0.2 (build 29) is live on the App Store and Google Play** (18 Nov 2026), and
   `main` holds it (`release/1.0.2` merged; the branch is kept). Next app release:
-  **1.0.3, deep links** (needs the Play app-signing SHA-256 and Associated Domains for
+  **1.0.3, deep links and the "Claim this listing" button on listing screens** (needs the Play app-signing SHA-256 and Associated Domains for
   `co.spiritpedia.app`). Store builds are kept in `app/build/ios-release/`,
   `app/build/android-release/` and Xcode's Archives; never run `flutter clean` in `main`
   without moving them first (§13).
 - **Website:** live at www.spiritpedia.co; a push that changes `web/` deploys.
-  Migrations **0000–0055** are on dev and live.
+  Migrations **0000–0055** are on dev and live; **0056** (the `listing-images` bucket
+  for admin uploads) is written, for the owner to run dev then live.
 - **Outreach is running for real** (since 17 Nov 2026: email 1 goes to the listing's own
   address). The owner starts up to **50 journeys a day** from Admin → Outreach →
   **Up next** (§20). On 19 Nov: 52 journeys, 47 running; the first **email 2s are due
@@ -41,6 +42,17 @@ points to.
   the admin, lock the listing, stop the journey, log it).
 
 **Recent decisions (newest first)**
+- 23 Nov: every public listing page (healers of every kind, publishers) has **Is this
+  you? Claim this listing** until it's claimed (`components/ClaimListingButton.jsx`;
+  hidden when verified or official, or for someone who has died). Email 1 of both
+  sequences now points to that button instead of offering the link by reply (copy docs
+  updated first). The app gets the button in **1.0.3**.
+- 23 Nov: **Upload** beside every image link in the admin (listing photos and logos,
+  publisher logos, book, offering and free resource images): shrunk in the browser,
+  checked and re-encoded by `/api/admin/upload-image` (sharp, 1600 px, JPG or PNG, hidden
+  details removed), stored in the public `listing-images` bucket (migration 0056); the
+  old picture is kept in the listing's change log (`api/admin/write` logs photo and logo
+  changes). Videos keep their YouTube thumbnails.
 - 20 Nov: BSWA removed at their request: `admin@bswa.org` is do not contact and is off
   Ajahn Brahm's and Ajahn Brahmali's listings; BSWA is on the do-not-revive list
   (§18.7). The owner now does both from the admin: **Do not contact this email
@@ -388,7 +400,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0.2 (29) is live on the App Store** (18 Nov 2026). Store builds: `app/build/ios-release/Spiritpedia-1.0.{0-27,1-28,2-29}.ipa`, archives in Xcode's Archives (`2026-10-28`, `2026-11-03`, `2026-11-17`) |
 | **App (Android)** | The same code. **1.0.2 (29) is live on Google Play** (18 Nov 2026). Store builds: `app/build/android-release/Spiritpedia-1.0.{0-25,1-28,2-29}.aab`, signed with the upload key (§5) |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0055` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0055` are on both; `0056` written, not yet run |
 | **Push** | Firebase Cloud Messaging only, with an APNs key, in two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`). The hourly run is called by Supabase pg_cron (§9.10) |
 | **Emails** | Outreach journeys are **real** since 17 Nov 2026 (email 1 goes to the listing's own address; up to 50 started a day, §20). Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` (plus the merged `release/1.0.2`). No staging environment, no feature flags |

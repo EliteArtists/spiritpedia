@@ -7,6 +7,7 @@ import { buildMetadata, notFoundMetadata, pickImage } from '@/utils/seo';
 import { backContextQuery } from '@/utils/backContext';
 import TrackOpen from '@/components/TrackOpen';
 import ListingBadges from '@/components/ListingBadges';
+import ClaimListingButton from '@/components/ClaimListingButton';
 import PublisherLogo from '@/components/PublisherLogo';
 import { isPlatform } from '@/utils/listings';
 import { bookAuthorSlugs, booksByAuthorsFilter } from '@/utils/bookAuthors';
@@ -168,6 +169,8 @@ export default async function PublisherProfile({ params, searchParams }) {
                   </a>
                 )}
               </div>
+              {/* Until someone claims it (owner, 23 Nov 2026). */}
+              <ClaimListingButton listing={publisher} slug={publisher.slug} kind="publisher" className="mt-4" />
             </div>
           </div>
 

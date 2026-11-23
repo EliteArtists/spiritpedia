@@ -7,6 +7,7 @@ import { supabase } from '@/utils/supabase';
 import { adminWrite } from '@/utils/adminWrite';
 import { PLATFORM_TIER_GUIDANCE, tierOptions } from '@/utils/badges';
 import ListingIngestion from './ListingIngestion.jsx';
+import ImageField from './ImageField.jsx';
 import { RECIPIENT_TYPE_OPTIONS } from '@/utils/recipientTypes';
 
 // Extract the canonical YouTube video ID from any common URL shape.
@@ -839,13 +840,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
               </div>
               <div>
                 <label className={labelClass}>Mock Cover Image URL (optional)</label>
-                <input
-                  type="text"
-                  value={coverUrl}
-                  onChange={(e) => setCoverUrl(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
+                <ImageField value={coverUrl} onChange={setCoverUrl} kind="books" slug={linkedHealerSlug} placeholder="https://… — or Upload" inputClass={inputClass} />
               </div>
               <div>
                 <label className={labelClass}>Goodreads Link (optional)</label>
@@ -933,13 +928,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
               </div>
               <div>
                 <label className={labelClass}>Image URL</label>
-                <input
-                  type="text"
-                  value={courseImageUrl}
-                  onChange={(e) => setCourseImageUrl(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
+                <ImageField value={courseImageUrl} onChange={setCourseImageUrl} kind="courses" slug={linkedHealerSlug} placeholder="https://… — or Upload" inputClass={inputClass} />
               </div>
               <div>
                 <label className={labelClass}>Subject Slugs (comma-separated)</label>
@@ -1011,13 +1000,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
               </div>
               <div>
                 <label className={labelClass}>Image URL</label>
-                <input
-                  type="text"
-                  value={freeResourceImageUrl}
-                  onChange={(e) => setFreeResourceImageUrl(e.target.value)}
-                  placeholder="https://..."
-                  className={inputClass}
-                />
+                <ImageField value={freeResourceImageUrl} onChange={setFreeResourceImageUrl} kind="free_resources" slug={linkedHealerSlug} placeholder="https://… — or Upload" inputClass={inputClass} />
               </div>
               <div>
                 <label className={labelClass}>Subject Slugs (comma-separated)</label>
@@ -1222,12 +1205,7 @@ export default function ContentIngestion({ initialPublisherId = null } = {}) {
 
                   <div>
                     <label className={labelClass}>Logo Image URL</label>
-                    <input
-                      type="text"
-                      value={editLogoUrl}
-                      onChange={(e) => setEditLogoUrl(e.target.value)}
-                      className={inputClass}
-                    />
+                    <ImageField value={editLogoUrl} onChange={setEditLogoUrl} kind="publishers" slug={editSlug} placeholder="https://… — or Upload" inputClass={inputClass} />
                   </div>
 
                   <div>

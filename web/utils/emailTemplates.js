@@ -200,7 +200,7 @@ const OUTREACH = {
     body: ({ profileUrl }) => [
       'I came across your work on social sites and wanted to get in contact.',
       "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
-      `I've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.`,
+      `I've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.`,
       "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
     ],
   },
@@ -380,7 +380,7 @@ const SHARED_OUTREACH = {
     body: ({ kind, name, listingUrl }) => [
       `I came across your ${kind} and wanted to get in contact.`,
       "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
-      `I've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, reply and I'll send you the link to claim it.`,
+      `I've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.`,
       'To stop these emails, simply reply.',
       "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
     ],

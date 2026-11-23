@@ -11,6 +11,7 @@ import { useAdminData } from '@/components/admin/AdminData';
 import CardImage from '@/components/CardImage';
 import ConfirmDelete from '@/components/admin/ConfirmDelete';
 import DoNotContactButton from '@/components/admin/DoNotContactButton';
+import ImageField from '@/components/admin/ImageField';
 import HubTeachers from '@/components/admin/HubTeachers';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
@@ -148,7 +149,11 @@ function youTubeThumb(platformUrl) {
 // the placeholder the public site renders, and for the reason that component
 // exists: an <img> that fails before hydration never fires onError, so a
 // complete-check is needed as well.
-function RowThumb({ item, column, onSave, saving }) {
+// Which table a row with a picture belongs to, for the upload's folder.
+const tableForImage = (column, item) =>
+  column === 'mock_cover_url' ? 'books' : item.resource_type !== undefined ? 'free_resources' : 'courses';
+
+function RowThumb({ item, column, onSave, saving, slug }) {
   const [editing, setEditing] = useState(false);
   const [value, setValue] = useState('');
   const [error, setError] = useState(null);
@@ -201,17 +206,18 @@ function RowThumb({ item, column, onSave, saving }) {
 
       {editing && (
         <div className="absolute inset-x-0 top-full z-10 mt-1 rounded-xl border border-white/10 bg-[#111827] p-3 shadow-xl">
-          <input
-            type="text"
+          <ImageField
             value={value}
             autoFocus
-            onChange={(e) => setValue(e.target.value)}
+            onChange={setValue}
+            kind={tableForImage(column, item)}
+            slug={slug}
             onKeyDown={(e) => {
               if (e.key === 'Enter') save();
               if (e.key === 'Escape') setEditing(false);
             }}
-            placeholder="https://… — leave empty to remove the image"
-            className="w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-xs text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
+            placeholder="https://… — or Upload; leave empty to remove the image"
+            inputClass="w-full rounded-lg border border-white/10 bg-[#0a0f1d] px-3 py-2 text-xs text-white placeholder:text-slate-600 focus:border-[#7c3aed] focus:outline-none"
           />
           <div className="mt-2 flex items-center justify-between gap-3">
             <span className="text-[11px] text-red-400">{error || ''}</span>
@@ -242,7 +248,7 @@ function RowThumb({ item, column, onSave, saving }) {
 // One row's editor, under the row: the fields its table lets the admin change
 // (utils/listingEdit.js → ITEM_TABLES). Only what changed is sent, and the
 // route checks it again.
-function ItemEditor({ table, item, onSave, onCancel }) {
+function ItemEditor({ table, item, onSave, onCancel, slug }) {
   const fields = ITEM_TABLES[table].fields;
   const [values, setValues] = useState(() =>
     Object.fromEntries(fields.map((f) => [f.name, item[f.name] ?? '']))
@@ -279,6 +285,15 @@ function ItemEditor({ table, item, onSave, onCancel }) {
                   value={values[f.name]}
                   onChange={(e) => setValues((v) => ({ ...v, [f.name]: e.target.value }))}
                   className={inputClass}
+                />
+              ) : f.label === 'Image' ? (
+                <ImageField
+                  value={values[f.name]}
+                  onChange={(url) => setValues((v) => ({ ...v, [f.name]: url }))}
+                  kind={table}
+                  slug={slug}
+                  placeholder="https://… — or Upload; leave empty to remove"
+                  inputClass={inputClass}
                 />
               ) : (
                 <input
@@ -317,7 +332,7 @@ function ItemEditor({ table, item, onSave, onCancel }) {
   );
 }
 
-function ContentList({ title, table, items, render, onRemove, onEdit, imageColumn, onSaveImage, savingImageId }) {
+function ContentList({ title, table, items, render, onRemove, onEdit, imageColumn, onSaveImage, savingImageId, slug }) {
   const [editingId, setEditingId] = useState(null);
   if (items.length === 0) return null;
   return (
@@ -336,6 +351,7 @@ function ContentList({ title, table, items, render, onRemove, onEdit, imageColum
                 column={imageColumn}
                 onSave={onSaveImage}
                 saving={savingImageId === item.id}
+                slug={slug}
               />
               <span className="min-w-0 flex-1">{render(item)}</span>
               {/* Quiet until the row is hovered (always shown on a phone, which has
@@ -374,6 +390,7 @@ function ContentList({ title, table, items, render, onRemove, onEdit, imageColum
               <ItemEditor
                 table={table}
                 item={item}
+                slug={slug}
                 onCancel={() => setEditingId(null)}
                 onSave={async (row, values) => {
                   const result = await onEdit(table, row, values);
@@ -603,8 +620,7 @@ function ContentTab({ slug, healerId, edits, onEditsChange }) {
   // image_url; the row's shape says which table it is.
   const saveImage = async (item, column, url) => {
     if (!column || savingImageId) return false;
-    const table =
-      column === 'mock_cover_url' ? 'books' : item.resource_type !== undefined ? 'free_resources' : 'courses';
+    const table = tableForImage(column, item);
     setSavingImageId(item.id);
     const result = await editItem(table, item, { [column]: url || '' });
     setSavingImageId(null);
@@ -673,7 +689,7 @@ function ContentTab({ slug, healerId, edits, onEditsChange }) {
     </Link>
   );
 
-  const list = { onRemove: askRemove, onEdit: editItem, onSaveImage: saveImage, savingImageId };
+  const list = { onRemove: askRemove, onEdit: editItem, onSaveImage: saveImage, savingImageId, slug };
   const pendingNoun = pending ? ITEM_TABLES[pending.table] : null;
   const pendingCount = pending && !pending.item ? content[CONTENT_KEY[pending.table]].length : 0;
 
@@ -1547,6 +1563,9 @@ export default function AdminHealerRecordPage({ params }) {
           }).catch(() => {});
         }
 
+        // The old photos are in the Change log now (api/admin/write).
+        if (changes.image_urls) refreshEdits();
+
         const n = Object.keys(changes).length;
         setToast({ type: 'success', message: `Saved. ${n} field${n === 1 ? '' : 's'} updated.` });
       }
@@ -1922,17 +1941,18 @@ export default function AdminHealerRecordPage({ params }) {
                       ) : (
                         <span className="h-9 w-9 shrink-0 rounded border border-dashed border-white/10" />
                       )}
-                      <input
-                        type="text"
+                      <ImageField
                         value={url}
-                        placeholder="https://…"
-                        onChange={(e) => {
+                        placeholder="https://… — or Upload"
+                        kind="healers"
+                        slug={healer.healer_slug}
+                        onChange={(value) => {
                           const next = [...(draft.image_urls || [])];
-                          if (i < next.length) next[i] = e.target.value;
-                          else next.push(e.target.value);
+                          if (i < next.length) next[i] = value;
+                          else next.push(value);
                           set('image_urls', next);
                         }}
-                        className={inputClass}
+                        inputClass={inputClass}
                       />
                     </div>
                   ))}

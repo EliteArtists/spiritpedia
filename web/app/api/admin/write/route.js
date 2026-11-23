@@ -86,10 +86,41 @@ export async function POST(request) {
   if (select) query = query.select(select);
   if (select && single) query = query.single();
 
+  // THE OLD PICTURE GOES IN THE CHANGE LOG (owner, 23 Nov 2026): a listing's
+  // photos or a publisher's logo, read before the update and logged after it
+  // (admin_edit_log, 0053), so a replaced or uploaded image can be put back.
+  const image = op === 'update' && match ? IMAGE_COLUMNS[table]?.find((c) => c in values) : null;
+  let before = null;
+  if (image) {
+    let read = supabase.from(table).select(`id, ${IMAGE_KEYS[table]}, ${image}`);
+    for (const [column, value] of Object.entries(match)) read = read.eq(column, value);
+    ({ data: before } = await read.maybeSingle());
+  }
+
   const { data, error } = await query;
 
   // A listing locked at its owner's request (migration 0053) refuses new
   // items; the ingestion form shows this sentence.
   if (error) return NextResponse.json({ error: lockRefusal(error) || error.message, code: error.code }, { status: 400 });
+
+  if (before && JSON.stringify(before[image] ?? null) !== JSON.stringify(values[image] ?? null)) {
+    const slug = before[IMAGE_KEYS[table]];
+    const { error: logError } = await supabase.from('admin_edit_log').insert({
+      // The log is keyed by listing; a publisher's rows say so.
+      healer_slug: table === 'publishers' ? `publisher:${slug}` : slug,
+      table_name: table,
+      record_id: String(before.id),
+      action: 'edit',
+      summary: table === 'publishers' ? 'Logo changed' : 'Photos changed',
+      before: { [image]: before[image] ?? null },
+      after: { [image]: values[image] ?? null },
+      created_by: process.env.ADMIN_NAME || 'Admin',
+    });
+    if (logError) console.error('[write] image change not logged:', logError.message);
+  }
   return NextResponse.json({ data: data ?? null });
 }
+
+// Where each table keeps its picture, and the column that names the listing.
+const IMAGE_COLUMNS = { healers: ['image_urls', 'image_url'], publishers: ['logo_url'] };
+const IMAGE_KEYS = { healers: 'healer_slug', publishers: 'slug' };

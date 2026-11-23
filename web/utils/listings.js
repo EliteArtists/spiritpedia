@@ -163,6 +163,17 @@ export function chooseClaim(healerSlugs, publisherSlugs) {
   return found.length > 1 ? { ambiguous: true } : null;
 }
 
+// "Is this you? Claim this listing" on a public page (owner, 23 Nov 2026):
+// every listing nobody has claimed yet. Hidden once an approved account is
+// linked (verified, 0023) or it is Spiritpedia's own (official), and for a
+// person who has died (an Ascended Master, or a death year).
+export function showsClaimButton(listing) {
+  if (!listing) return false;
+  if (listing.verified || listing.official) return false;
+  if (listing.tier === 'ascended_master' || listing.death_year) return false;
+  return true;
+}
+
 export function claimPath(claim) {
   if (!claim?.slug) return null;
   const kind = claim.kind === 'publisher' ? '&kind=publisher' : '';

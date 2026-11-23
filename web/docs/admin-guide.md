@@ -72,6 +72,26 @@ or kind, replace a broken picture, remove a video or an item, or delete the
 whole listing. **How often:** when something needs fixing, usually from an
 Inbox row or the night sprint's report.
 
+**Uploading a picture** (from 23 Nov 2026, once migration 0056 has run):
+beside every image link there's an **Upload** button. That covers:
+- a listing's photos or logo (Profile tab → Images, and the Ingestion form);
+- a publisher's logo (Ingestion → Publishers → edit);
+- each book, offering and free resource image: press the row's picture or
+  **Edit** on the Content tab, or use the Ingestion form.
+
+Press **Upload** and pick a JPG, PNG or WebP from the Mac, or from the iPad's
+photos or files (an iPad photo arrives as a JPG). The picture is shrunk so
+its longer side is at most 1600 px. It's also turned the right way up and
+loses its hidden details (where and on what it was taken). Logos with
+see-through parts stay see-through. It's stored on Spiritpedia's own storage,
+and its link fills the box, with a **preview** under it.
+
+Check the preview, then press the form's own **Save**: nothing changes on the
+listing until you do. The old picture stays in the listing's **Change log**
+(Content tab), with its link under "Before and after", so it can be put back.
+Videos have no upload: their picture always comes from YouTube. A picture
+uploaded but never saved just sits unused in storage.
+
 **Deleting a listing at the owner's request** (from 20 Nov 2026): open the
 listing → **Delete healer**. The dialog has two choices before you confirm:
 - **Removed at owner's request — never re-add:** puts the listing on the
@@ -87,7 +107,8 @@ for bswa.org) isn't caught by the website match: their listing is separate.
 
 ### Editing a listing's items (from 18 Nov 2026)
 
-On a listing's **Content** tab:
+On a listing's **Content** tab (pictures can be uploaded too: see "Uploading
+a picture" above):
 - **Edit** on any row opens its fields under it: title, description, price
   (offerings), link and image, as the item has them (a video has a title and
   link only; its picture comes from YouTube). Save changes only what you
@@ -197,12 +218,24 @@ publishers) and by state. **What you do:**
 
 Every kind can be started (switched on 17 Nov 2026). Every outreach email
 comes from "Ross at Spiritpedia", signed Ross (18 Nov 2026). Email 1 has one
-link (the listing) and offers the claim link by reply, so when someone asks,
-send them `https://www.spiritpedia.co/auth/claim?slug=<their slug>` (the slug
-is the end of their listing's address). Emails 2–8 carry the claim link and
+link (the listing) and, since 23 Nov 2026, tells them to press "Claim this
+listing" on the page. If someone still asks, send them
+`https://www.spiritpedia.co/auth/claim?slug=<their slug>` (the slug is the end
+of their listing's address). Emails 2–8 carry the claim link and
 end with "Spiritpedia is even better on the app: spiritpedia.co/get-app".
 **The Shift Network and Insight Timer** are partnerships, no cold email: they
 aren't in Up next and Start refuses them.
+
+**Claiming** (from 23 Nov 2026): every public listing page (people,
+organisations, schools, channels, apps and publishers) has an **Is this you?
+Claim this listing** button under the name. It goes away once the listing is
+claimed (✓ Verified), and never shows for Spiritpedia's own listing or for
+someone who has died. It opens the usual claim: sign up or sign in with the
+listing's own email and it's theirs at once. With another address they can
+ask, and the request comes to **Claims**. Email 1 now says "just press 'Claim
+this listing' on the page" instead of offering the link by reply. So when
+someone replies "what do we need to do?", point them to that button, or send
+the claim link as before. The app gets the same button in 1.0.3.
 **How often:** once a week while journeys are running.
 
 ## Claims

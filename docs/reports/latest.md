@@ -1,107 +1,120 @@
-# BSWA removal and the never-again buttons — 20 Nov 2026
+# Claim button, email 1 and image upload — 23 Nov 2026
 
-You deleted BSWA's listing and content in the admin and asked BSWA whether the three
-monks' listings should go too. This covers the rest.
+## 1. Claiming made clear
 
-## 1. admin@bswa.org: do not contact
+**Claim this listing button (website).** Every public listing page shows **Is this
+you? Claim this listing →** under the name and badges until the listing is claimed:
+people, organisations, schools, channels, apps (`/healers/<slug>`) and publishers
+(`/publishers/<slug>`). It's hidden when:
+- the listing is claimed (✓ Verified: an approved account is linked);
+- it's Spiritpedia's own listing;
+- it's a person who has died (an Ascended Master, or a death year).
 
-**Done now, on live and dev** (service role, each change in the listing's edit log):
+It opens the existing claim flow for that listing (`/auth/claim?slug=…`, with
+`&kind=publisher` for a publisher):
+- signed out, it goes through sign-up first;
+- the listing's own email claims it at once;
+- another address can ask, and the request lands in Admin → Claims.
 
-- **Ajahn Brahm** and **Ajahn Brahmali**: `admin@bswa.org` removed, with its "where
-  published" and inbox type. No listing or publisher on live shows a bswa.org address
-  now.
-- **Ajahn Canda**: had no email (website anukampaproject.org), so nothing to change.
-- **No journey** has ever gone to BSWA or any of the three, so nothing needed stopping.
-- **Up next** can't offer them: none of the three has an address now. Once 0055 has
-  run, Up next also leaves out any address on the do-not-contact list, whichever
-  listing shows it.
+**App:** the same button goes in 1.0.3 (README Start here); nothing in the app now.
 
-**Permanent, once you run 0055:** `admin@bswa.org` is on the do-not-contact list. The
-website then checks that list before **every** email it sends, of any kind (outreach,
-welcome, claim and review emails). A failed check sends nothing. Start and the daily
-job refuse it, and the database clears it from any listing it's written to.
+**Email 1, both sequences.** The copy documents were changed first
+(`docs/email-copy-2026-10-21.md` and `docs/email-copy-2026-11-11-shared-journey.md`,
+each with a dated note), then the templates. It keeps its single listing link. Email 1
+as a practitioner and an organisation receive it:
 
-**On dev only:** BSWA's own listing is still there (you deleted it on live). 0055 clears
-its address. Say if you want the dev copy deleted too.
+```
+Subject: Jane, a question about your work
 
-## 2. BSWA on the do-not-revive list
+Hi Jane,
 
-The do-not-revive list was text in README §18.7 and the briefs. It's now a database
-table (`do_not_revive`, 0055), seeded with **BSWA** (name, slug, bswa.org) and the
-three from 5 Nov (Nandhiji, Devon Kerns, Ipek Williamson). Three things stop a revival:
+I came across your work on social sites and wanted to get in contact.
 
-- **The helpers:** `scripts/dev-names.mjs` writes the list beside the names list, and
-  the night-sprint brief, helper prompt and skill tell helpers to skip a match by name,
-  slug or website.
-- **The ingest:** `scripts/ingest.mjs` refuses a plan that matches, or one that carries
-  a do-not-contact address.
-- **The database:** it refuses a new healer with the same slug, name or website.
+Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
-The website match is the whole address, so `bswa.org/teachers/ajahn-brahm` (the monks'
-pages) is **not** caught. Their listings stay separate until BSWA answers.
+I've also made a short public listing for you from information available online. You can view it here: https://www.spiritpedia.co/healers/jane-example. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
 
-## 3. Two buttons in the admin
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
 
-- **Do not contact this email address.** It's on each Up next row ("Do not contact"),
-  on each journey in Admin → Outreach (open the row), and at the bottom of a listing's
-  **Outreach** tab. It asks first and takes an optional reason. Then the address is:
-  - never sent anything again;
-  - taken off every listing that shows it (logged);
-  - stopped on any running or paused journey ("Address marked do not contact");
-  - left out of Up next.
-- **Removed at owner's request — never re-add.** This is a tick box in the listing's
-  **Delete healer** dialog. Beside it is a second box, "Do not contact" for the
-  listing's address. Both are done before the delete; if either fails, nothing is
-  deleted and the dialog says why.
+With love,
+Ross
+```
 
-**Never again**, at the bottom of Admin → Outreach, shows both lists. It has a box to
-block an address no listing shows any more, and **Take off the list** (press twice)
-undoes a mistake.
+```
+Subject: A question for Example Meditation Centre
 
-Both are in the admin guide (Outreach, and Content → "Deleting a listing at the owner's
-request"), README §18.7 and §20.1, and the README's Start here.
+Hello,
+
+I came across your organisation and wanted to get in contact.
+
+Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
+
+I've made a free public listing for Example Meditation Centre from information available online: https://www.spiritpedia.co/healers/example-meditation-centre. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
+
+To stop these emails, simply reply.
+
+If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
+
+With love,
+Ross
+```
+
+Emails 2–8 are unchanged (they already carry the claim link).
+
+## 2. Image upload in the admin
+
+An **Upload** button sits beside every image link:
+- Profile tab → Images (a listing's photos or logo);
+- the Content tab (a book, offering or free resource image, from the row's picture or
+  Edit);
+- the Ingestion forms (new items, a new listing's photos, a publisher's logo).
+
+How it works:
+1. You pick a JPG, PNG or WebP from the Mac or the iPad.
+2. The browser shrinks it before sending, because Vercel refuses anything over 4.5 MB.
+3. `/api/admin/upload-image` (admin only) checks the file really is a picture by its
+   bytes. It turns it upright, shrinks it to 1600 px on the longer side (never
+   enlarges), removes the location and camera details, and saves a JPG, or a PNG when
+   it has see-through parts.
+4. The picture is stored in the new public bucket `listing-images`, under
+   `<kind>/<listing>/…`. The link fills the box, with a preview.
+5. Nothing changes until you press **Save**.
+
+The old picture is kept in the change log:
+- book, offering and free resource images were already logged with before and after;
+- a listing's photos and a publisher's logo are now logged too, by the write route,
+  which reads the old value first;
+- the entry shows in the listing's Change log.
+
+**Videos:** there's no upload. Videos have no image of their own; the thumbnail always
+comes from YouTube. Say if you want a way to replace it.
 
 ## Checks
 
-- Web tests: **260 pass** (9 new: the address and website rules, do-not-revive matching,
-  the do-not-contact lookup including a failed one and the time before 0055, Up next
-  leaving a listed address out, the new stop reason).
-- Lint: no new problems. The build passes.
-- Looked at on a local server against dev, at 1024×768 and 768×1024:
-  - the Up next buttons and the dialog;
-  - confirming on dev, which correctly refuses with "needs migration 0055";
-  - the Never again panel;
-  - the Delete dialog's tick box;
-  - the listing Outreach button.
+- **Tests:** 267 web tests pass. The new ones cover:
+  - the claim-button rule;
+  - email 1's new sentence;
+  - recognising pictures by their bytes;
+  - safe storage paths;
+  - the 1600 px fit;
+  - real pictures through the server's processing: a 4032×3024 sideways phone photo
+    with GPS comes out upright, 1200×1600, with no location or camera details; a
+    transparent logo stays a PNG; a fake JPG is refused.
+- **Build and lint:** the build passes; lint shows no new problems.
+- **Looked at on a local server against dev:**
+  - a person's and an organisation's page show the button, linked to their claim;
+  - a publisher's links with `&kind=publisher`;
+  - Alan Watts (Ascended Master) has none;
+  - an upload through the real picker reached the server, which answered "needs
+    migration 0056" (dev has no bucket yet).
 
-  Nothing was sent: no email key locally.
+## For you: run 0056, dev then live
 
-## For you: run 0055, dev then live
+`supabase/migrations/0056_listing_images_bucket.sql`. **Check row: true, 5242880, 3,
+0.** The four numbers are:
+- public;
+- 5 MB a picture;
+- three image types;
+- no write rules (only the website's server can store).
 
-`supabase/migrations/0055_do_not_contact_and_do_not_revive.sql`. **Check row on both:
-1, 4, 0, 3.** The four numbers are:
-
-- 1 do-not-contact address;
-- 4 do-not-revive listings;
-- 0 listings still showing a blocked address;
-- 3 triggers.
-
-Until it runs, the buttons say "needs migration 0055", and nothing breaks. Until then,
-email and outreach work as before. BSWA is still safe meanwhile: the address is on no
-listing, and no journey exists.
-
-**Still open:** BSWA's answer about Ajahn Brahm, Ajahn Brahmali and Ajahn Canda. If they
-should go, use **Delete healer** with "never re-add" ticked on each.
-
-## 0055 run, and BSWA off dev (20 Nov 2026)
-
-- **0055 ran on dev and live** (your check row: 1, 4, 0, 3). No listing on either
-  database shows a bswa.org address. The monks' listings are still there, with no
-  email, until BSWA answers.
-- **BSWA deleted from dev** (your yes), with its 4 videos, 3 offerings, 3 free
-  resources and 3 teacher links. 0055 had already cleared its address. Backup:
-  `docs/owner-requests/2026-11-20-bswa.dev.backup.json`.
-- **The guard works:** on dev, a test insert of a new listing on `www.bswa.org`
-  under another name and slug was refused ("do_not_revive: Buddhist Society of
-  Western Australia was removed at the owner's request…"). Nothing was added.
-- The buttons and the Never again panel are now live in the admin.
+Until it runs, Upload says "needs migration 0056"; pasting a link works as before.

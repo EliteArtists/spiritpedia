@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
+import ImageField from './ImageField.jsx';
 import Link from 'next/link';
 import { supabase } from '@/utils/supabase';
 import { tierGuidance, tierName, tierOptions } from '@/utils/badges';
@@ -360,22 +361,26 @@ export default function ListingIngestion({ subjects }) {
       {/* PICTURES */}
       {publisher ? (
         <Field label="Logo URL">
-          <input
+          <ImageField
             value={form.image_urls[0]}
-            onChange={(e) => set('image_urls', [e.target.value, '', ''])}
-            placeholder="https://…/logo.png"
-            className={inputClass}
+            onChange={(url) => set('image_urls', [url, '', ''])}
+            kind="publishers"
+            slug={form.slug}
+            placeholder="https://…/logo.png — or Upload"
+            inputClass={inputClass}
           />
         </Field>
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           {[0, 1, 2].map((i) => (
             <Field key={i} label={`${kind === 'individual' ? 'Photo' : 'Logo or photo'} ${i + 1}`}>
-              <input
+              <ImageField
                 value={form.image_urls[i]}
-                onChange={(e) => set('image_urls', form.image_urls.map((u, j) => (j === i ? e.target.value : u)))}
-                placeholder="https://..."
-                className={inputClass}
+                onChange={(url) => set('image_urls', form.image_urls.map((u, j) => (j === i ? url : u)))}
+                kind="healers"
+                slug={form.slug}
+                placeholder="https://… — or Upload"
+                inputClass={inputClass}
               />
             </Field>
           ))}

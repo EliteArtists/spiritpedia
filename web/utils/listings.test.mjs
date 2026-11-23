@@ -4,6 +4,7 @@ import {
   availabilityFor,
   chooseClaim,
   claimPath,
+  showsClaimButton,
   inPersonFrom,
   isPlatform,
   isSchool,
@@ -135,4 +136,13 @@ test('a publisher’s authors are its people, never its channels', async () => {
   };
   assert.equal(authorCount(publisher), 2);
   assert.equal(authorCount({}), 0);
+});
+
+test('the claim button shows until the listing is claimed, never for Official or someone who has died', () => {
+  assert.equal(showsClaimButton({ tier: 'local_hero', verified: false }), true);
+  assert.equal(showsClaimButton({ tier: 'local_hero', verified: true }), false);
+  assert.equal(showsClaimButton({ tier: 'luminary', official: true }), false);
+  assert.equal(showsClaimButton({ tier: 'ascended_master' }), false);
+  assert.equal(showsClaimButton({ tier: 'luminary', death_year: 2019 }), false);
+  assert.equal(showsClaimButton(null), false);
 });
