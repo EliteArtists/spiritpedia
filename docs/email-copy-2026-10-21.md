@@ -141,9 +141,11 @@ I came across your work on social sites and wanted to get in contact.
 
 Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.
 
-I've also made a short public listing for you from information available online. You can view it here: [PROFILE LINK]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
+I've also made a short public listing for you from information available online: [PROFILE LINK]
 
-If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
+The listing is yours to manage, for free. Just press 'Is this you? Claim this listing' at the top of the page and sign in with this email address. You can then change, add or remove anything on it yourself, whenever you like.
+
+You haven't joined Spiritpedia or approved the listing, so if you'd rather I took it down, or something isn't right, just reply and I'll sort it. The interview is entirely optional.
 
 With love,
 Ross

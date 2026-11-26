@@ -369,11 +369,12 @@ export default async function HealerProfile({ params, searchParams }) {
                 <ProfileBadges healer={healer} />
               </div>
 
+              {/* Until someone claims it (owner, 23 Nov 2026), straight under
+                  the name and badges, where email 1 says it is (26 Nov). */}
+              <ClaimListingButton listing={healer} slug={healer.healer_slug} className="mt-4" />
+
               {/* One quiet line to the app (owner, 16 Nov 2026). */}
               <AppLine placement="teacher_page" className="mt-3" />
-
-              {/* Until someone claims it (owner, 23 Nov 2026). */}
-              <ClaimListingButton listing={healer} slug={healer.healer_slug} className="mt-4" />
 
               {/* A school: "Founded 2008 · Visit website →", as on a publisher's
                   page. */}

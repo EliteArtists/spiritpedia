@@ -127,11 +127,13 @@ I came across your \[listing kind\] and wanted to get in contact.
 
 Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.
 
-I've made a free public listing for \[listing name\] from information available online: \[listing link\]. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.
+I've made a free public listing for \[listing name\] from information available online: \[listing link\]
+
+The listing is yours to manage, for free. Just press 'Is this you? Claim this listing' at the top of the page and sign in with this email address. You can then change, add or remove anything on it yourself, whenever you like.
+
+You haven't joined Spiritpedia or approved the listing, so if you'd rather I took it down, or something isn't right, just reply and I'll sort it. The interview is entirely optional.
 
 To stop these emails, simply reply.
-
-If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.
 
 With love, Ross
 

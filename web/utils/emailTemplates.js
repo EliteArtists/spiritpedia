@@ -191,8 +191,10 @@ export function outreachFirstName(entityType, listingName) {
 //
 // ROSS'S VOICE (owner, 18 Nov 2026): every outreach email, both sequences, is
 // written in "I", signed "Ross" and sent as "Ross at Spiritpedia". Email 1 has
-// a personal subject and only the listing link: the claim link is offered by
-// reply, and there is no app footer (the app is mentioned in words). A
+// a personal subject and only the listing link: the listing page's "Is this
+// you? Claim this listing" button is named instead (owner, 26 Nov 2026: three
+// short paragraphs, the listing, that it's theirs to manage, and removal by
+// reply), and there is no app footer (the app is mentioned in words). A
 // subject may be a function of the email's fields.
 const OUTREACH = {
   1: {
@@ -200,8 +202,9 @@ const OUTREACH = {
     body: ({ profileUrl }) => [
       'I came across your work on social sites and wanted to get in contact.',
       "Spiritpedia is a place where people can discover spiritual teachers and practitioners, explore their work and find out how to book their services. It's free to use, on the web and on the App Store and Google Play. I'd love to interview you about what you do and the people you help. Would you be open to a conversation? You can simply reply to this email.",
-      `I've also made a short public listing for you from information available online. You can view it here: ${profileUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.`,
-      "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
+      `I've also made a short public listing for you from information available online: ${profileUrl}`,
+      "The listing is yours to manage, for free. Just press 'Is this you? Claim this listing' at the top of the page and sign in with this email address. You can then change, add or remove anything on it yourself, whenever you like.",
+      "You haven't joined Spiritpedia or approved the listing, so if you'd rather I took it down, or something isn't right, just reply and I'll sort it. The interview is entirely optional.",
     ],
   },
   2: {
@@ -380,9 +383,10 @@ const SHARED_OUTREACH = {
     body: ({ kind, name, listingUrl }) => [
       `I came across your ${kind} and wanted to get in contact.`,
       "Spiritpedia is a place where people can discover spiritual teachings, communities and resources. It's free to use, on the web and on the App Store and Google Play. I'd love to speak with someone from your team about your work and the people it's intended for. Would you be open to a conversation? You can simply reply to this email.",
-      `I've made a free public listing for ${name} from information available online: ${listingUrl}. You haven't joined Spiritpedia or approved the listing. If you'd like to take charge of it, so you can update the details, add photos and share news, just press 'Claim this listing' on the page. It's free and takes a minute.`,
+      `I've made a free public listing for ${name} from information available online: ${listingUrl}`,
+      "The listing is yours to manage, for free. Just press 'Is this you? Claim this listing' at the top of the page and sign in with this email address. You can then change, add or remove anything on it yourself, whenever you like.",
+      "You haven't joined Spiritpedia or approved the listing, so if you'd rather I took it down, or something isn't right, just reply and I'll sort it. The interview is entirely optional.",
       'To stop these emails, simply reply.',
-      "If anything is inaccurate, or you'd rather I remove the listing, reply and I'll take care of it. The interview is entirely optional.",
     ],
   },
   2: {

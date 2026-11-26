@@ -148,16 +148,16 @@ test('C1–C8: eight plain-text emails, removal in each, signed by Ross; C1 has 
     assert.equal(m.html, undefined, `email ${n} must be text only`);
     assert.match(m.text, /^Hi Jane,\n\n/);
     assert.ok(m.text.includes(LINKS.profileUrl), `email ${n} profile link`);
-    // C1: the listing link only, pointing to the page's Claim this listing
-    // button (owner, 23 Nov 2026), no app line (owner, 18 Nov 2026). C2–C8:
+    // C1: the listing link only, pointing to the page's "Is this you? Claim
+    // this listing" button (owner, 23 and 26 Nov 2026), no app line (owner, 18 Nov 2026). C2–C8:
     // both links and the app line.
     assert.equal(m.text.includes(LINKS.claimUrl), n !== 1, `email ${n} claim link`);
     assert.equal(m.text.match(/https?:\/\/|spiritpedia\.co\/get-app/g).length, n === 1 ? 1 : 3, `email ${n} links`);
-    assert.match(m.text, /remov/i, `email ${n} offers removal`);
+    assert.match(m.text, /remov|took it down/i, `email ${n} offers removal`);
     assert.match(
       m.text,
       n === 1
-        ? /just press 'Claim this listing' on the page\. It's free and takes a minute\.[\s\S]*With love,\nRoss$/
+        ? /Just press 'Is this you\? Claim this listing' at the top of the page and sign in with this email address\.[\s\S]*With love,\nRoss$/
         : /With love,\nRoss\n\n—\nSpiritpedia is even better on the app: spiritpedia\.co\/get-app$/
     );
     assert.doesNotMatch(m.text, /\b(we|our|us)\b(?! can talk)/i, `email ${n} is in "I"`);

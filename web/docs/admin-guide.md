@@ -230,12 +230,14 @@ aren't in Up next and Start refuses them.
 
 **Claiming** (from 23 Nov 2026): every public listing page (people,
 organisations, schools, channels, apps and publishers) has an **Is this you?
-Claim this listing** button under the name. It goes away once the listing is
+Claim this listing** button straight under the name and badges. It goes away once the listing is
 claimed (✓ Verified), and never shows for Spiritpedia's own listing or for
 someone who has died. It opens the usual claim: sign up or sign in with the
 listing's own email and it's theirs at once. With another address they can
-ask, and the request comes to **Claims**. Email 1 now says "just press 'Claim
-this listing' on the page" instead of offering the link by reply. So when
+ask, and the request comes to **Claims**. Since 26 Nov, email 1 says the
+listing "is yours to manage, for free": press 'Is this you? Claim this
+listing' at the top of the page, sign in with this email address, and change,
+add or remove anything yourself. Removal is still offered by reply. So when
 someone replies "what do we need to do?", point them to that button, or send
 the claim link as before. The app gets the same button in 1.0.3.
 **How often:** once a week while journeys are running.
