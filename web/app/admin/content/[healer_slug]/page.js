@@ -1374,6 +1374,9 @@ export default function AdminHealerRecordPage({ params }) {
   const [draft, setDraft] = useState({});
   const [saving, setSaving] = useState(false);
   const [toast, setToast] = useState(null);
+  // After the contact email changes: where the old address is still written
+  // (api/admin/write → utils/oldAddress.js; owner, 26 Nov 2026).
+  const [oldAddress, setOldAddress] = useState(null);
 
   const [confirmingDelete, setConfirmingDelete] = useState(false);
   const [deleting, setDeleting] = useState(false);
@@ -1563,8 +1566,9 @@ export default function AdminHealerRecordPage({ params }) {
           }).catch(() => {});
         }
 
-        // The old photos are in the Change log now (api/admin/write).
-        if (changes.image_urls) refreshEdits();
+        // The old photos and email are in the Change log now (api/admin/write).
+        if (changes.image_urls || 'contact_email' in changes) refreshEdits();
+        setOldAddress(json.oldAddress || null);
 
         const n = Object.keys(changes).length;
         setToast({ type: 'success', message: `Saved. ${n} field${n === 1 ? '' : 's'} updated.` });
@@ -2028,6 +2032,39 @@ export default function AdminHealerRecordPage({ params }) {
                 </span>
               )}
             </div>
+
+            {oldAddress && (
+              <div className="mt-4 rounded-xl border border-amber-500/40 bg-amber-500/10 p-4 text-sm">
+                <p className="font-bold text-amber-200">
+                  {oldAddress.places.length
+                    ? `The old address, ${oldAddress.address}, is still written here:`
+                    : `The old address, ${oldAddress.address}, isn’t written anywhere else.`}
+                </p>
+                {oldAddress.places.length > 0 && (
+                  <ul className="mt-2 space-y-1 text-amber-100/90">
+                    {oldAddress.places.map((place) => (
+                      <li key={`${place.table}-${place.id}-${place.field}`}>
+                        {place.label} on{' '}
+                        {place.href ? (
+                          <Link href={place.href} className="underline">
+                            {place.name}
+                          </Link>
+                        ) : (
+                          place.name
+                        )}
+                        {place.table !== 'healers' && place.table !== 'publishers' ? ` (${place.table.replace('_', ' ')})` : ''}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                <p className="mt-2 text-[12px] text-amber-100/70">
+                  The change is in this listing’s Change log.{oldAddress.places.length ? ' Update each one, or leave it if it’s right.' : ''}
+                </p>
+                <button type="button" onClick={() => setOldAddress(null)} className="mt-2 text-[12px] font-bold text-amber-200 underline">
+                  Done
+                </button>
+              </div>
+            )}
 
             {/* A school's teachers (0029). Saved type only: a listing being
                 turned into a school is saved first, then shows this. */}

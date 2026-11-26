@@ -9,6 +9,7 @@ import {
   messagesFor,
   outreachKind,
   schedule,
+  sentToOf,
 } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
@@ -75,6 +76,9 @@ export async function GET() {
             : null
           : `/admin/content/${encodeURIComponent(j.healer_slug)}`,
         kind: j.publisher_id ? 'publisher' : outreachKind(j.healers?.entity_type),
+        // The address the journey actually went to (owner, 26 Nov 2026;
+        // 0057), and the listing's email today, which may since have changed.
+        sent_to: sentToOf(j, byJourney[j.id] || []),
         contact_email: j.publishers?.contact_email || j.healers?.contact_email || null,
         contact_form_url: j.healers?.contact_form_url || null,
         // Whose inbox and where it is published (migration 0048): what the

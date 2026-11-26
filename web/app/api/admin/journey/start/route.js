@@ -10,6 +10,7 @@ import {
   outreachRefusal,
   partnershipNote,
   recordMessage,
+  replaceLiveJourneys,
 } from '@/utils/journey';
 
 export const dynamic = 'force-dynamic';
@@ -109,9 +110,16 @@ export async function POST(request) {
     );
   }
 
-  // The partial unique index allows one journey per healer that is not stopped,
-  // so this conflicts only with a live one — a previous, finished sequence stays
-  // as history and does not block a restart.
+  // Starting again replaces a running or paused journey (owner, 26 Nov 2026:
+  // Nigel Gee, whose address changed): it stops as "Replaced by a newer
+  // journey" first. The partial unique index still allows only one journey
+  // per listing that isn't stopped, and a finished one stays as history.
+  try {
+    await replaceLiveJourneys(supabase, target);
+  } catch (err) {
+    return NextResponse.json({ error: 'replace_failed', message: err.message }, { status: 500 });
+  }
+
   const { data: journey, error: insertError } = await supabase
     .from('healer_journeys')
     .insert({
@@ -177,7 +185,8 @@ export async function POST(request) {
     .update({ email_1_sent_at: new Date().toISOString() })
     .eq('id', journey.id);
   // For the delivered and bounced webhook (migration 0044).
-  await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: 1 });
+  // And the address it went to (0057).
+  await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: 1, sentTo: result.recipient });
 
   return NextResponse.json({
     message: 'Journey started',

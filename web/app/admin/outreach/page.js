@@ -6,6 +6,7 @@ import SectionHeading from '@/components/admin/SectionHeading';
 import { Placeholder } from '@/components/admin/AdminPlaceholders';
 import DoNotContactButton from '@/components/admin/DoNotContactButton';
 import { RECIPIENT_TYPE_SHORT } from '@/utils/recipientTypes';
+import { bounceKind, bounceLabel } from '@/utils/bounce';
 
 // ADMIN → OUTREACH (owner, 11 Nov 2026). Every journey ever started, not just
 // the running ones: who was written to, each of the eight emails (sent,
@@ -36,6 +37,7 @@ const STATES = {
   form: { label: 'Contacted via form', style: 'border-sky-500/40 bg-sky-500/10 text-sky-300' },
   complete: { label: 'Sequence complete', style: 'border-slate-700 bg-slate-800 text-slate-300' },
   do_not_contact: { label: 'Do not contact', style: 'border-red-500/40 bg-red-500/10 text-red-300' },
+  replaced: { label: 'Replaced by a newer journey', style: 'border-slate-700 bg-slate-800 text-slate-500' },
   stopped: { label: 'Stopped', style: 'border-slate-700 bg-slate-800 text-slate-400' },
 };
 
@@ -53,6 +55,7 @@ const STOP_REASONS = {
   kind_not_approved: 'Its kind is switched off',
   do_not_contact_address: 'Asked to stop through another listing',
   do_not_contact_email: 'Address marked do not contact',
+  replaced: 'Replaced by a newer journey',
 };
 
 function day(value) {
@@ -106,7 +109,7 @@ function EmailSteps({ journey, trackingReady }) {
                 {step.bouncedAt ? (
                   <span className="ml-2 text-red-400">
                     Bounced {day(step.bouncedAt)}
-                    {step.bounceType ? ` (${step.bounceType})` : ''}
+                    {bounceKind(step.bounceType) ? ` (${bounceKind(step.bounceType)})` : ''}
                   </span>
                 ) : step.deliveredAt ? (
                   <span className="ml-2 text-cyan-400">Delivered {day(step.deliveredAt)}</span>
@@ -802,7 +805,11 @@ export default function AdminOutreachPage() {
             <tbody className="divide-y divide-white/5">
               {visible.map((j) => {
                 const sent = j.schedule.filter((s) => s.sentAt).length;
-                const bounced = j.schedule.some((s) => s.bouncedAt);
+                // Permanent if any email bounced for good, else temporary.
+                const bounces = j.schedule.filter((s) => s.bouncedAt);
+                const bounced = bounces.length
+                  ? bounceLabel(bounces.find((b) => bounceKind(b.bounceType) === 'permanent')?.bounceType || bounces[0].bounceType)
+                  : null;
                 const s = STATES[j.state] || STATES.stopped;
                 const expanded = open === j.id;
                 return (
@@ -810,14 +817,28 @@ export default function AdminOutreachPage() {
                     <tr className="cursor-pointer hover:bg-white/5" onClick={() => setOpen(expanded ? null : j.id)}>
                       <td className="px-4 py-3">
                         <span className="font-semibold text-white">{j.name}</span>
-                        {j.contact_email && <span className="block font-mono text-[11px] text-slate-500">{j.contact_email}</span>}
+                        {/* Where it went (0057), not the listing's email today. */}
+                        {j.sent_to ? (
+                          <span className="block font-mono text-[11px] text-slate-500">Sent to {j.sent_to}</span>
+                        ) : (
+                          j.contact_email && (
+                            <span className="block font-mono text-[11px] text-slate-500">
+                              {j.contact_email} <span className="font-sans">(the listing’s email today)</span>
+                            </span>
+                          )
+                        )}
+                        {j.sent_to && j.contact_email && j.sent_to.toLowerCase() !== j.contact_email.toLowerCase() && (
+                          <span className="block text-[11px] text-amber-300/80">Listing’s email now: {j.contact_email}</span>
+                        )}
                         <ContactFacts recipientType={j.recipient_type} source={j.email_source} />
                       </td>
                       <td className="px-4 py-3 text-xs capitalize text-slate-400">{j.kind}</td>
                       <td className="px-4 py-3 text-xs text-slate-400">{day(j.started_at)}</td>
                       <td className="px-4 py-3 text-xs text-slate-300">
                         {j.channel === 'form' ? 'Form' : `${sent} of 8 sent`}
-                        {bounced && <span className="ml-2 text-red-400">bounced</span>}
+                        {bounced && (
+                          <span className={`ml-2 ${bounced.includes('temporary') ? 'text-amber-400' : 'text-red-400'}`}>{bounced}</span>
+                        )}
                       </td>
                       <td className="px-4 py-3">
                         <span className={`rounded-full border px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider ${s.style}`}>

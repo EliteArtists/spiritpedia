@@ -291,6 +291,64 @@ const TEXT_FIELDS = [
   ['availability_type', 'Availability'],
 ];
 
+// FROM THE LISTING (owner, 26 Nov 2026, after Kaedrich Olsen): for an
+// account that manages a listing, what the public listing says, which is
+// what they edit in My Account. Display only: edited on the listing itself.
+function FromTheListing({ healer }) {
+  const photos = (healer.image_urls || []).filter(Boolean);
+  if (!photos.length && healer.image_url) photos.push(healer.image_url);
+  const place = [healer.city, healer.country].filter(Boolean).join(', ');
+  const links = [
+    ['Website', healer.website_url],
+    ['Booking', healer.booking_url],
+    ['YouTube', healer.youtube_url],
+    ['Instagram', healer.instagram_url],
+    ['Facebook', healer.facebook_url],
+    ['TikTok', healer.tiktok_url],
+    ['X / Twitter', healer.twitter_url],
+  ];
+  return (
+    <section>
+      <div className="flex flex-wrap items-baseline justify-between gap-3">
+        <h3 className="text-sm font-bold text-white">From the listing</h3>
+        <Link
+          href={`/admin/content/${encodeURIComponent(healer.healer_slug)}`}
+          className="text-xs font-bold text-[#a78bfa] hover:text-white"
+        >
+          Edit it on the listing →
+        </Link>
+      </div>
+      <p className="mt-1 text-[12px] leading-relaxed text-slate-500">
+        What the public page shows, and what they edit in My Account. Shown here only.
+      </p>
+      {photos.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {photos.map((url) => (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img key={url} src={url} alt="" referrerPolicy="no-referrer" className="h-16 w-16 rounded-lg border border-white/10 object-cover" />
+          ))}
+        </div>
+      )}
+      <dl className="mt-3 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Field label="Name" value={healer.name} href={`/healers/${healer.healer_slug}`} />
+        <Field label="Contact email" value={healer.contact_email} />
+        <Field label="Place" value={place} />
+        <Field label="Availability" value={healer.availability_type} />
+        {links.map(([label, url]) => (
+          <Field key={label} label={label} value={url} href={url || undefined} />
+        ))}
+        <Field label={`Subjects · ${(healer.subject_slugs || []).length}`} value={(healer.subject_slugs || []).join(', ')} />
+        <div className="sm:col-span-2">
+          <dt className={labelClass}>Bio</dt>
+          <dd className="mt-0.5 max-h-40 overflow-y-auto whitespace-pre-line text-sm leading-relaxed text-white">
+            {healer.bio || <span className="text-slate-600">Not given</span>}
+          </dd>
+        </div>
+      </dl>
+    </section>
+  );
+}
+
 function ProfileTab({ profile, healer, onSaved }) {
   const [draft, setDraft] = useState(profile);
   const [subjects, setSubjects] = useState([]);
@@ -366,6 +424,18 @@ function ProfileTab({ profile, healer, onSaved }) {
 
   return (
     <>
+      {healer && <FromTheListing healer={healer} />}
+
+      {healer && (
+        <div className="mb-4 mt-8 border-t border-white/10 pt-6">
+          <h3 className="text-sm font-bold text-white">What they applied with</h3>
+          <p className="mt-1 text-[12px] leading-relaxed text-slate-500">
+            The account’s own application form. Empty when they claimed a listing we already had, since they never
+            filled it in. Saving here changes only the account, never the listing.
+          </p>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         {TEXT_FIELDS.map(([key, label]) => (
           <LabelledField key={key} label={label}>

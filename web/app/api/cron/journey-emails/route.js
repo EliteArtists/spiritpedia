@@ -181,7 +181,8 @@ export async function GET(request) {
 
       tally.sent += 1;
       // For the delivered and bounced webhook (migration 0044).
-      await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: due });
+      // And the address it went to (0057).
+      await recordMessage(supabase, { resendId: result.id, journeyId: journey.id, emailNumber: due, sentTo: result.recipient });
 
       // The last one. The sequence is over whether or not they ever answered.
       if (due === JOURNEY_EMAILS) {

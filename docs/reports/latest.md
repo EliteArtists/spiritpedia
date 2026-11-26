@@ -110,10 +110,11 @@ The rule that applies:
 
 Since 18 Nov, 21 emails have bounced: 5 permanent, 16 temporary.
 
-**Something you'd want to know:** from 23 Nov until he claimed, Nigel had **two
-journeys running at once**. Start didn't stop the older one. Both would have sent their
-next emails to the new address, but he claimed before either sent email 2. Both are
-now stopped as "claimed".
+**Correction (later the same day):** an earlier version of this report said Nigel had two
+journeys running at once. That was wrong. The database allows only one live journey per
+listing, so the 18 Nov journey must have been stopped before you started the 23 Nov one.
+When he claimed on 25 Nov, the claim rule then rewrote its reason to "claimed", which is
+why both rows say Claimed.
 
 **Your email change wasn't logged.** The listing's change log has no entry for it. The
 admin's ordinary edit only logs pictures.
@@ -173,3 +174,73 @@ stays exactly as it is.
 - Web tests: **279 pass**. The build passes.
 - Every look at the live data was read-only. Reading Resend's two message records
   sent nothing.
+
+## Done (26 Nov 2026, your yes)
+
+**Waiting for you: migration 0057**
+(`supabase/migrations/0057_journey_sent_to_and_replaced.sql`), dev then live.
+
+**Check row:**
+- **live: 2, 1, 1, 0**
+- **dev: 2, 1, 0, 0**
+
+The four numbers are:
+- the two "sent to" columns;
+- the claim rule knows "replaced";
+- replaced journeys (on live, Nigel Gee's 18 Nov one);
+- listings with more than one journey not replaced (0).
+
+**After 0057 on each:** run `node scripts/journey-sent-to.mjs --env dev`, then
+`--env live`. I can run these for you once you say 0057 is in. The script:
+- reads from Resend the address each of the ~400 past emails went to, without sending
+  anything;
+- fills those addresses into the database.
+
+**What changed:**
+
+1. **Sent to.** Every email and journey now records the address it went to, and Outreach
+   shows it. If the listing's email has changed since, a second line says "Listing's
+   email now: …". Until 0057 runs, rows show the listing's email with "(the listing's
+   email today)".
+2. **Claimed counts each listing once.** An older journey shows as **Replaced by a newer
+   journey**, and isn't counted.
+3. **Start replaces a running or paused journey** for the same listing, as "Replaced by a
+   newer journey", then begins the new one. Before, it refused with "Journey already
+   exists".
+4. **Bounces:**
+   - shown as **bounced (temporary)** in amber or **bounced (permanent)** in red, on the
+     row and on each email;
+   - only a permanent bounce stops a journey or blocks an address, as before.
+5. **Contact email changes:**
+   - saving a new contact email on a listing's Profile is logged in its Change log;
+   - an amber box lists everywhere the old address is still written, each with a link.
+     That covers the booking button, website, contact form, bio, its books, videos,
+     offerings and free resources, and any other listing or publisher showing it.
+6. **People → Profile** (Kaedrich):
+   - for an account that manages a listing, **From the listing** comes first: photos,
+     name, email, place, availability, links, subjects and bio as the public page shows
+     them, with **Edit it on the listing →**;
+   - then **What they applied with**, the application form, empty after a claim;
+   - display only: nothing is copied, and the public content is unchanged.
+
+**Checks:**
+
+- **Web tests: 282 pass**, 3 of them new, for finding an old address. Lint: no new
+  problems. The build passes.
+- **Dev, local server**, with test data, all removed afterwards and dev's Nigel Gee put
+  back as it was:
+  - **Outreach:** Nigel's 18 Nov row showed "bounced (temporary)" and "Replaced by a
+    newer journey", and the 23 Nov row "Claimed". The Claimed filter said **Claimed
+    (1)**.
+  - **Contact email:** changing it while the booking button was a `mailto:` link to the
+    old address showed "The old address … is still written here: Booking button on Nigel
+    Gee", and the change was logged.
+  - **People → Profile** for a test account linked to Nigel Gee showed From the listing,
+    with his place, availability, booking and 9 subjects, then What they applied with.
+  - **Start's replacing:** a second running journey was refused by the database, as
+    before. After replacing, the old one read "stopped, replaced" and a new one could
+    begin.
+- **A slip of mine on dev:** my first test setup failed halfway and had already changed
+  dev's Nigel Gee email and booking link without keeping the old values. I set both to
+  live's current values, which match what was there. Dev had no journeys, so nothing else
+  was touched.

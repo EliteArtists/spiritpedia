@@ -269,6 +269,7 @@ export const JOURNEY_STATES = {
   form: 'Contacted via form',
   complete: 'Sequence complete',
   do_not_contact: 'Do not contact',
+  replaced: 'Replaced by a newer journey',
   stopped: 'Stopped',
 };
 
@@ -276,7 +277,12 @@ export const JOURNEY_STATES = {
 // contacted through its form, and then claimed counts as Claimed, so the
 // Outreach filter matches Admin → Claims and People. The replied date still
 // shows on the row.
+//
+// Replaced outranks even Claimed (owner, 26 Nov 2026; 0057): an older journey
+// to a listing that was started again (Nigel Gee: his old address, then his
+// new one) is history, so a claimed listing counts once, on its newest one.
 export function journeyState(journey, { claimed = false } = {}) {
+  if (journey.stop_reason === 'replaced') return 'replaced';
   if (claimed || journey.stop_reason === 'claimed') return 'claimed';
   if (journey.channel === 'form') return 'form';
   if (journey.replied_at) return 'replied';
@@ -433,19 +439,58 @@ export function schedule(journey, messages = []) {
       deliveredAt: message?.delivered_at || null,
       bouncedAt: message?.bounced_at || null,
       bounceType: message?.bounce_type || null,
+      sentTo: message?.sent_to || null,
     };
   });
+}
+
+// The address a journey went to (0057): its own record, else that of its
+// newest email that has one. Null for a journey from before 0057 that
+// Resend couldn't fill in; the admin then says it shows the listing's email
+// today.
+export function sentToOf(journey, messages = []) {
+  if (journey?.sent_to) return journey.sent_to;
+  const newest = [...messages].filter((m) => m.sent_to).sort((a, b) => b.email_number - a.email_number)[0];
+  return newest?.sent_to || null;
 }
 
 // Record that Resend accepted email n, so its webhook can find it. Never
 // fails the send: before migration 0044 the table is missing and the email
 // has still gone.
-export async function recordMessage(supabase, { resendId, journeyId, emailNumber }) {
+//
+// With `sentTo`, the address it went to, on the email and on the journey
+// (0057). Before 0057 those columns are missing: the email is recorded
+// without it, as before.
+export async function recordMessage(supabase, { resendId, journeyId, emailNumber, sentTo = null }) {
   if (!resendId) return;
-  const { error } = await supabase
+  const row = { resend_id: resendId, journey_id: journeyId, email_number: emailNumber };
+  let { error } = await supabase
     .from('journey_messages')
-    .upsert({ resend_id: resendId, journey_id: journeyId, email_number: emailNumber }, { onConflict: 'resend_id' });
+    .upsert(sentTo ? { ...row, sent_to: sentTo } : row, { onConflict: 'resend_id' });
+  if (error && sentTo && isMissingSchema(error)) {
+    ({ error } = await supabase.from('journey_messages').upsert(row, { onConflict: 'resend_id' }));
+  }
   if (error && !isMissingSchema(error)) console.error('[journey] message not recorded:', error);
+  if (sentTo) {
+    const { error: journeyError } = await supabase.from('healer_journeys').update({ sent_to: sentTo }).eq('id', journeyId);
+    if (journeyError && !isMissingSchema(journeyError)) console.error('[journey] sent_to not recorded:', journeyError);
+  }
+}
+
+// Before Start begins a new journey (owner, 26 Nov 2026): a running or
+// paused one to the same listing stops as "Replaced by a newer journey".
+// → how many.
+export async function replaceLiveJourneys(supabase, target) {
+  const { slug, publisherId } = journeyTarget(target);
+  if (!slug && !publisherId) return 0;
+  let query = supabase
+    .from('healer_journeys')
+    .update({ status: 'stopped', stop_reason: 'replaced' })
+    .in('status', ['running', 'paused']);
+  query = publisherId ? query.eq('publisher_id', publisherId) : query.eq('healer_slug', slug).is('publisher_id', null);
+  const { data, error } = await query.select('id');
+  if (error) throw new Error(`Could not stop the journey already running: ${error.message}`);
+  return data?.length || 0;
 }
 
 // journey_messages for these journeys, grouped by journey id. `ready` is false
@@ -454,6 +499,19 @@ export async function recordMessage(supabase, { resendId, journeyId, emailNumber
 export async function messagesFor(supabase, journeyIds) {
   const byJourney = {};
   if (!journeyIds.length) return { byJourney, ready: true };
+  const { data, error } = await supabase
+    .from('journey_messages')
+    .select('journey_id, email_number, sent_at, delivered_at, bounced_at, bounce_type, sent_to')
+    .in('journey_id', journeyIds);
+  if (error && isMissingSchema(error)) return messagesBefore0057(supabase, journeyIds);
+  if (error) return { byJourney, ready: true };
+  for (const row of data || []) (byJourney[row.journey_id] ||= []).push(row);
+  return { byJourney, ready: true };
+}
+
+// The same without sent_to, on a database without 0057.
+async function messagesBefore0057(supabase, journeyIds) {
+  const byJourney = {};
   const { data, error } = await supabase
     .from('journey_messages')
     .select('journey_id, email_number, sent_at, delivered_at, bounced_at, bounce_type')

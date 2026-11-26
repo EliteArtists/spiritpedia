@@ -29,7 +29,9 @@ points to.
   `app/build/android-release/` and Xcode's Archives; never run `flutter clean` in `main`
   without moving them first (§13).
 - **Website:** live at www.spiritpedia.co; a push that changes `web/` deploys.
-  Migrations **0000–0056** are on dev and live.
+  Migrations **0000–0056** are on dev and live; **0057** (the address each journey went
+  to, and replaced journeys) is written, for the owner to run dev then live, then
+  `node scripts/journey-sent-to.mjs --env dev` and `--env live`.
 - **Outreach is running for real** (since 17 Nov 2026: email 1 goes to the listing's own
   address). The owner starts up to **50 journeys a day** from Admin → Outreach →
   **Up next** (§20). On 19 Nov: 52 journeys, 47 running; the first **email 2s are due
@@ -41,6 +43,19 @@ points to.
   the admin, lock the listing, stop the journey, log it).
 
 **Recent decisions (newest first)**
+- 26 Nov (after Nigel Gee): Outreach shows the address each journey was **sent to**
+  (`sent_to` on journeys and emails, 0057; `scripts/journey-sent-to.mjs` fills the past
+  from Resend), bounces as **temporary** or **permanent** (`utils/bounce.js`; only
+  permanent blocks), and Start **replaces** a running journey ("Replaced by a newer
+  journey", stop reason `replaced`, which the claim trigger now leaves alone), so a
+  claimed listing counts once. A contact email change is logged, and the admin lists
+  every other place the old address is written (`utils/oldAddress.js`).
+- 26 Nov (after Kaedrich Olsen): a claim links the account to the listing and leaves
+  the application profile empty; owners edit the listing itself. Admin → People →
+  Profile shows **From the listing** first for those accounts (display only). An
+  account that manages a listing can't send the setup form again (`/api/profile/resubmit`).
+- 26 Nov: email 1 of both sequences: the listing link, "The listing is yours to manage,
+  for free…", and removal by reply; the claim button sits straight under the name.
 - 23 Nov: an application can be **approved as a claim of an existing listing** (Inbox →
   the application → Listing → "Claim of …"; `/api/admin/practitioner` with `healerSlug`):
   no new listing, the account is linked (claimed, journey stopped), optionally the
@@ -409,7 +424,7 @@ how-to is `docs/admin-guide.md`; the personalisation rules are
 | **Website** | Live at **https://www.spiritpedia.co** (Next.js on Vercel). Every push that changes `web/` deploys to production |
 | **App (iOS)** | Flutter, iPhone and iPad. **1.0.2 (29) is live on the App Store** (18 Nov 2026). Store builds: `app/build/ios-release/Spiritpedia-1.0.{0-27,1-28,2-29}.ipa`, archives in Xcode's Archives (`2026-10-28`, `2026-11-03`, `2026-11-17`) |
 | **App (Android)** | The same code. **1.0.2 (29) is live on Google Play** (18 Nov 2026). Store builds: `app/build/android-release/Spiritpedia-1.0.{0-25,1-28,2-29}.aab`, signed with the upload key (§5) |
-| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0056` are on both |
+| **Database** | Supabase. Two projects: **live** (`uzmvcgew…`) and **dev** (`khtpbnof…`). Migrations `0000`–`0056` are on both; `0057` written, not yet run |
 | **Push** | Firebase Cloud Messaging only, with an APNs key, in two Firebase projects owned by **love@spiritpedia.co** (live `spiritpedia-ad62b`, dev `spiritpedia-dev-5e4d5`). The hourly run is called by Supabase pg_cron (§9.10) |
 | **Emails** | Outreach journeys are **real** since 17 Nov 2026 (email 1 goes to the listing's own address; up to 50 started a day, §20). Day 4 is live. Personal discovery editions are built but **off** until `DISCOVERY_EDITIONS=on` is set on Vercel (§9.7a) |
 | **Repository** | `https://github.com/EliteArtists/spiritpedia`, branch `main` (plus the merged `release/1.0.2`). No staging environment, no feature flags |

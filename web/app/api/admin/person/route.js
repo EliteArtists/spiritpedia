@@ -40,7 +40,11 @@ export async function GET(request) {
   if (profile.linked_healer_slug) {
     const { data: h } = await supabase
       .from('healers')
-      .select('id, name, healer_slug, tier, entity_type, availability_type, city, country')
+      // And what the public listing says, for Profile → "From the listing"
+      // (owner, 26 Nov 2026): a claimed account's own profile is empty.
+      .select(
+        'id, name, healer_slug, tier, entity_type, availability_type, city, country, bio, website_url, booking_url, youtube_url, instagram_url, facebook_url, tiktok_url, twitter_url, contact_email, subject_slugs, image_urls, image_url, verified, official'
+      )
       .eq('healer_slug', profile.linked_healer_slug)
       .maybeSingle();
     healer = h || null;

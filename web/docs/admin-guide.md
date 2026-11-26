@@ -47,7 +47,10 @@ accounts there are and how many explorer accounts their owners have deleted
 practitioners, a status filter (pending, incomplete, approved, rejected).
 **View** opens a person's record: their photos, when they joined and last
 signed in, and tabs for **Profile** (practitioners: name, links, bio,
-subjects), **Content** (practitioners: what's on their listing),
+subjects; for someone who manages a listing, first **From the listing**,
+what the public page shows and they edit in My Account, with **Edit it on the
+listing →**, then **What they applied with**, their application form, which is
+empty after a claim), **Content** (practitioners: what's on their listing),
 **Discoveries** (explorers: their next personal discovery email, a test send
 to love@ and the send log) and **Admin Notes** (private notes about them).
 **What you do:** correct a practitioner's details and **Save**, add a note,
@@ -198,6 +201,26 @@ publishers) and by state. **What you do:**
   email. **Claimed wins** (20 Nov 2026): a journey you'd already marked replied,
   or a form contact, also becomes Claimed when they claim, and the row still
   shows the date they replied.
+- **Where it went** (26 Nov 2026, once 0057 has run): each row shows **Sent
+  to** the address the journey's emails actually went to. If the listing's
+  email has changed since, a second line says **Listing's email now: …**. A
+  row from before that we couldn't fill in shows the listing's email with
+  "(the listing's email today)".
+- **Bounces say which kind:** **bounced (temporary)** (a full mailbox, a
+  server that was down) in amber, **bounced (permanent)** (no such address) in
+  red. Only a permanent bounce stops a journey and blocks the address; a
+  temporary one only means that email didn't arrive.
+- **Starting again replaces the old journey** (26 Nov 2026). Start on a
+  listing that already has a running or paused journey stops that one as
+  **Replaced by a newer journey**, then begins the new one, for example after
+  you've changed its email. A replaced journey is history: it isn't counted as
+  Claimed, so a claimed listing counts once.
+- **Changing a listing's contact email** (Content → the listing → Profile →
+  Contact email → Save) is logged in its Change log, and an amber box lists
+  everywhere the old address is still written: the booking button (a
+  `mailto:` link), website, contact form or bio, its books, videos, offerings
+  and free resources, and any other listing or publisher that shows it. Each
+  links to where you fix it. Press **Done** when you've dealt with them.
 - **Do not contact this email address** (20 Nov 2026): for an address that
   must never hear from Spiritpedia again, for example someone who asked to be
   removed. The red button is on each Up next row ("Do not contact"), on each
