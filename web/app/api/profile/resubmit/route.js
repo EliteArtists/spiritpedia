@@ -40,6 +40,22 @@ export async function POST(request) {
   const supabase = adminClient();
   if (!supabase) return NextResponse.json({ error: 'service_role_missing' }, { status: 503 });
 
+  // Never for an account that already manages a listing or publisher, or is
+  // approved (owner, 26 Nov 2026): sending the setup form again would put it
+  // back to pending, taking its ✓ Verified badge and its editor away until
+  // the admin approved it again. Its listing is edited from My Account.
+  const { data: current } = await supabase
+    .from('user_profiles')
+    .select('verification_status, linked_healer_slug, linked_publisher_id')
+    .eq('id', user.id)
+    .maybeSingle();
+  if (current?.verification_status === 'approved' || current?.linked_healer_slug || current?.linked_publisher_id) {
+    return NextResponse.json(
+      { error: 'already_approved', message: 'Your listing is already yours: edit it from My Account.' },
+      { status: 409 }
+    );
+  }
+
   const { error } = await supabase
     .from('user_profiles')
     .update({ verification_status: 'pending', user_type: 'practitioner' })

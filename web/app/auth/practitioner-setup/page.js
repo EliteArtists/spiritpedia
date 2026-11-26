@@ -115,6 +115,17 @@ export default function PractitionerSetupPage() {
         .maybeSingle();
 
       if (cancelled) return;
+      // Someone who already manages a listing (a claim or an approval) edits
+      // it from My Account, never here: this form is the application, and
+      // sending it again would put the account back to pending (owner, 26 Nov
+      // 2026; /api/profile/resubmit refuses it too).
+      if (
+        existing &&
+        (existing.verification_status === 'approved' || existing.linked_healer_slug || existing.linked_publisher_id)
+      ) {
+        router.replace('/account');
+        return;
+      }
       if (existing) {
         setForm((prev) => {
           const next = { ...prev };
