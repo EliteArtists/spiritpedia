@@ -252,8 +252,12 @@ The four numbers are:
 - **`scripts/journey-sent-to.mjs` on dev:** nothing to fill, because dev has no
   outreach emails.
 - **On live:** **all 397 past emails** now have the address they went to, read from
-  Resend with nothing sent. 397 journeys got their address. 3 more email journeys never
-  sent email 1, so they have no address to record.
+  Resend with nothing sent. 397 journeys got their address. **Correction:** I first said 3 more
+  journeys never sent email 1. That was wrong. They were journeys started after the
+  script had read its list, and they recorded their own address as they sent. Checked
+  later the same day: **427 email journeys, every one has sent email 1 and has its
+  address**, and every email since the update recorded its address as it went (30 so
+  far). Nothing is stuck.
 - **Nigel Gee:**
   - 18 Nov: "Sent to nigelgee@testcoaching.com", Replaced by a newer journey;
   - 23 Nov: "Sent to journeyhome1111@gmail.com", Claimed.
