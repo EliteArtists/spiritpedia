@@ -244,3 +244,18 @@ The four numbers are:
   dev's Nigel Gee email and booking link without keeping the old values. I set both to
   live's current values, which match what was there. Dev had no journeys, so nothing else
   was touched.
+
+## 0057 run, and past addresses filled (26 Nov 2026)
+
+- **0057 ran on dev and live.** Your check rows matched: dev 2, 1, 0, 0 and live
+  2, 1, 1, 0.
+- **`scripts/journey-sent-to.mjs` on dev:** nothing to fill, because dev has no
+  outreach emails.
+- **On live:** **all 397 past emails** now have the address they went to, read from
+  Resend with nothing sent. 397 journeys got their address. 3 more email journeys never
+  sent email 1, so they have no address to record.
+- **Nigel Gee:**
+  - 18 Nov: "Sent to nigelgee@testcoaching.com", Replaced by a newer journey;
+  - 23 Nov: "Sent to journeyhome1111@gmail.com", Claimed.
+- **Only one listing's email has changed since outreach went to it:** Nigel Gee. Every
+  other journey went to the address its listing still shows.

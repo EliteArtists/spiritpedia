@@ -28,7 +28,6 @@ const env = Object.fromEntries(
     })
 );
 if (!env.NEXT_PUBLIC_SUPABASE_URL?.includes(PROJECTS[target])) throw new Error(`${ENV_FILES[target]} is not the ${target} project`);
-if (!env.RESEND_API_KEY) throw new Error(`${ENV_FILES[target]} has no Resend key`);
 
 const H = {
   apikey: env.SUPABASE_SERVICE_ROLE_KEY,
@@ -68,6 +67,9 @@ try {
 const messages = await db('journey_messages?select=resend_id,journey_id,email_number,sent_to&limit=10000');
 const missing = messages.filter((m) => !m.sent_to);
 console.log(`${target}: ${messages.length} emails, ${missing.length} without an address${dry ? ' (dry run)' : ''}`);
+
+// Dev has no Resend key, and no outreach emails to look up.
+if (missing.length && !env.RESEND_API_KEY) throw new Error(`${ENV_FILES[target]} has no Resend key`);
 
 let filled = 0;
 const failed = [];
